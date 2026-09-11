@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleBigqueryRoutineArgumentsList) validateResolveParameters
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigqueryRoutineArgumentsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBigqueryRoutineArgumentsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleBigqueryRoutineArgumentsListParameters(terraformResource c
 
 	return nil
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleServiceAccountKey.GoogleServiceAccountKey",
-		reflect.TypeOf((*GoogleServiceAccountKey)(nil)).Elem(),
+		reflect.TypeFor[GoogleServiceAccountKey](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -78,7 +78,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "validAfter", GoGetter: "ValidAfter"},
 			_jsii_.MemberProperty{JsiiProperty: "validBefore", GoGetter: "ValidBefore"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleServiceAccountKey{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -86,6 +86,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleServiceAccountKey.GoogleServiceAccountKeyConfig",
-		reflect.TypeOf((*GoogleServiceAccountKeyConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleServiceAccountKeyConfig](),
 	)
 }

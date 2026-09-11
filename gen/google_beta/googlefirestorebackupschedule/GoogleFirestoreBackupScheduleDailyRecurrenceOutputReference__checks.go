@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleFirestoreBackupScheduleDailyRecurrenceOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleFirestoreBackupScheduleDailyRecurrenceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleFirestoreBackupScheduleDailyRecurrenceOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewGoogleFirestoreBackupScheduleDailyRecurrenceOutputReferenceParam
 
 	return nil
 }
-

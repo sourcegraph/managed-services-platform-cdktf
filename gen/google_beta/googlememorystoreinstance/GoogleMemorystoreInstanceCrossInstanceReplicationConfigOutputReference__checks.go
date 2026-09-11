@@ -101,7 +101,7 @@ func (g *jsiiProxy_GoogleMemorystoreInstanceCrossInstanceReplicationConfigOutput
 	return nil
 }
 
-func (g *jsiiProxy_GoogleMemorystoreInstanceCrossInstanceReplicationConfigOutputReference) validatePutSecondaryInstancesParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleMemorystoreInstanceCrossInstanceReplicationConfigOutputReference) validatePutSecondaryInstancesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -140,7 +140,7 @@ func (g *jsiiProxy_GoogleMemorystoreInstanceCrossInstanceReplicationConfigOutput
 	return nil
 }
 
-func (j *jsiiProxy_GoogleMemorystoreInstanceCrossInstanceReplicationConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleMemorystoreInstanceCrossInstanceReplicationConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -248,4 +248,3 @@ func validateNewGoogleMemorystoreInstanceCrossInstanceReplicationConfigOutputRef
 
 	return nil
 }
-

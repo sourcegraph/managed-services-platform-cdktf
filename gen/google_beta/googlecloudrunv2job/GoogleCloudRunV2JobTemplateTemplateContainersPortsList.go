@@ -17,8 +17,8 @@ type GoogleCloudRunV2JobTemplateTemplateContainersPortsList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type GoogleCloudRunV2JobTemplateTemplateContainersPortsList interface {
 	Get(index *float64) GoogleCloudRunV2JobTemplateTemplateContainersPortsOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateContainersPortsList) Fqn()
 	return returns
 }
 
-func (j *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateContainersPortsList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateContainersPortsList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateContainersPortsList) Wraps
 	return returns
 }
 
-
 func NewGoogleCloudRunV2JobTemplateTemplateContainersPortsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleCloudRunV2JobTemplateTemplateContainersPortsList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewGoogleCloudRunV2JobTemplateTemplateContainersPortsList(terraformResource
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleCloudRunV2Job.GoogleCloudRunV2JobTemplateTemplateContainersPortsList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewGoogleCloudRunV2JobTemplateTemplateContainersPortsList_Override(g Google
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleCloudRunV2Job.GoogleCloudRunV2JobTemplateTemplateContainersPortsList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateContainersPortsList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateContainersPortsList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateContainersPortsList)SetInt
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateContainersPortsList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateContainersPortsList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateContainersPortsList)SetTer
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateContainersPortsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateContainersPortsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateContainersPortsList)SetTer
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateContainersPortsList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateContainersPortsList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (g *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateContainersPortsList) AllWi
 	_jsii_.Invoke(
 		g,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (g *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateContainersPortsList) Get(i
 	_jsii_.Invoke(
 		g,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateContainersPortsList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateContainersPortsList) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (g *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateContainersPortsList) ToStr
 
 	return returns
 }
-

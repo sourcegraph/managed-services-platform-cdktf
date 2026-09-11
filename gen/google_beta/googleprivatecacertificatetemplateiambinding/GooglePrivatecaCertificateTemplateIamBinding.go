@@ -20,15 +20,15 @@ type GooglePrivatecaCertificateTemplateIamBinding interface {
 	Condition() GooglePrivatecaCertificateTemplateIamBindingConditionOutputReference
 	ConditionInput() *GooglePrivatecaCertificateTemplateIamBindingCondition
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -65,27 +65,27 @@ type GooglePrivatecaCertificateTemplateIamBinding interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Role() *string
 	SetRole(val *string)
 	RoleInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -103,7 +103,7 @@ type GooglePrivatecaCertificateTemplateIamBinding interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -115,7 +115,7 @@ type GooglePrivatecaCertificateTemplateIamBinding interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -130,17 +130,17 @@ type GooglePrivatecaCertificateTemplateIamBinding interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GooglePrivatecaCertificateTemplateIamBinding
@@ -198,8 +198,8 @@ func (j *jsiiProxy_GooglePrivatecaCertificateTemplateIamBinding) ConditionInput(
 	return returns
 }
 
-func (j *jsiiProxy_GooglePrivatecaCertificateTemplateIamBinding) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GooglePrivatecaCertificateTemplateIamBinding) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -208,8 +208,8 @@ func (j *jsiiProxy_GooglePrivatecaCertificateTemplateIamBinding) Connection() in
 	return returns
 }
 
-func (j *jsiiProxy_GooglePrivatecaCertificateTemplateIamBinding) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GooglePrivatecaCertificateTemplateIamBinding) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -218,8 +218,8 @@ func (j *jsiiProxy_GooglePrivatecaCertificateTemplateIamBinding) ConstructNodeMe
 	return returns
 }
 
-func (j *jsiiProxy_GooglePrivatecaCertificateTemplateIamBinding) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GooglePrivatecaCertificateTemplateIamBinding) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -388,8 +388,8 @@ func (j *jsiiProxy_GooglePrivatecaCertificateTemplateIamBinding) Provider() cdkt
 	return returns
 }
 
-func (j *jsiiProxy_GooglePrivatecaCertificateTemplateIamBinding) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GooglePrivatecaCertificateTemplateIamBinding) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -398,8 +398,8 @@ func (j *jsiiProxy_GooglePrivatecaCertificateTemplateIamBinding) Provisioners() 
 	return returns
 }
 
-func (j *jsiiProxy_GooglePrivatecaCertificateTemplateIamBinding) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GooglePrivatecaCertificateTemplateIamBinding) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -438,8 +438,8 @@ func (j *jsiiProxy_GooglePrivatecaCertificateTemplateIamBinding) TerraformGenera
 	return returns
 }
 
-func (j *jsiiProxy_GooglePrivatecaCertificateTemplateIamBinding) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GooglePrivatecaCertificateTemplateIamBinding) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -458,7 +458,6 @@ func (j *jsiiProxy_GooglePrivatecaCertificateTemplateIamBinding) TerraformResour
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_privateca_certificate_template_iam_binding google_privateca_certificate_template_iam_binding} Resource.
 func NewGooglePrivatecaCertificateTemplateIamBinding(scope constructs.Construct, id *string, config *GooglePrivatecaCertificateTemplateIamBindingConfig) GooglePrivatecaCertificateTemplateIamBinding {
 	_init_.Initialize()
@@ -470,7 +469,7 @@ func NewGooglePrivatecaCertificateTemplateIamBinding(scope constructs.Construct,
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googlePrivatecaCertificateTemplateIamBinding.GooglePrivatecaCertificateTemplateIamBinding",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -483,12 +482,12 @@ func NewGooglePrivatecaCertificateTemplateIamBinding_Override(g GooglePrivatecaC
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googlePrivatecaCertificateTemplateIamBinding.GooglePrivatecaCertificateTemplateIamBinding",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GooglePrivatecaCertificateTemplateIamBinding)SetCertificateTemplate(val *string) {
+func (j *jsiiProxy_GooglePrivatecaCertificateTemplateIamBinding) SetCertificateTemplate(val *string) {
 	if err := j.validateSetCertificateTemplateParameters(val); err != nil {
 		panic(err)
 	}
@@ -499,7 +498,7 @@ func (j *jsiiProxy_GooglePrivatecaCertificateTemplateIamBinding)SetCertificateTe
 	)
 }
 
-func (j *jsiiProxy_GooglePrivatecaCertificateTemplateIamBinding)SetConnection(val interface{}) {
+func (j *jsiiProxy_GooglePrivatecaCertificateTemplateIamBinding) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -510,7 +509,7 @@ func (j *jsiiProxy_GooglePrivatecaCertificateTemplateIamBinding)SetConnection(va
 	)
 }
 
-func (j *jsiiProxy_GooglePrivatecaCertificateTemplateIamBinding)SetCount(val interface{}) {
+func (j *jsiiProxy_GooglePrivatecaCertificateTemplateIamBinding) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -521,7 +520,7 @@ func (j *jsiiProxy_GooglePrivatecaCertificateTemplateIamBinding)SetCount(val int
 	)
 }
 
-func (j *jsiiProxy_GooglePrivatecaCertificateTemplateIamBinding)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GooglePrivatecaCertificateTemplateIamBinding) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -529,7 +528,7 @@ func (j *jsiiProxy_GooglePrivatecaCertificateTemplateIamBinding)SetDependsOn(val
 	)
 }
 
-func (j *jsiiProxy_GooglePrivatecaCertificateTemplateIamBinding)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GooglePrivatecaCertificateTemplateIamBinding) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -537,7 +536,7 @@ func (j *jsiiProxy_GooglePrivatecaCertificateTemplateIamBinding)SetForEach(val c
 	)
 }
 
-func (j *jsiiProxy_GooglePrivatecaCertificateTemplateIamBinding)SetId(val *string) {
+func (j *jsiiProxy_GooglePrivatecaCertificateTemplateIamBinding) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -548,7 +547,7 @@ func (j *jsiiProxy_GooglePrivatecaCertificateTemplateIamBinding)SetId(val *strin
 	)
 }
 
-func (j *jsiiProxy_GooglePrivatecaCertificateTemplateIamBinding)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GooglePrivatecaCertificateTemplateIamBinding) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -559,7 +558,7 @@ func (j *jsiiProxy_GooglePrivatecaCertificateTemplateIamBinding)SetLifecycle(val
 	)
 }
 
-func (j *jsiiProxy_GooglePrivatecaCertificateTemplateIamBinding)SetLocation(val *string) {
+func (j *jsiiProxy_GooglePrivatecaCertificateTemplateIamBinding) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -570,7 +569,7 @@ func (j *jsiiProxy_GooglePrivatecaCertificateTemplateIamBinding)SetLocation(val 
 	)
 }
 
-func (j *jsiiProxy_GooglePrivatecaCertificateTemplateIamBinding)SetMembers(val *[]*string) {
+func (j *jsiiProxy_GooglePrivatecaCertificateTemplateIamBinding) SetMembers(val *[]*string) {
 	if err := j.validateSetMembersParameters(val); err != nil {
 		panic(err)
 	}
@@ -581,7 +580,7 @@ func (j *jsiiProxy_GooglePrivatecaCertificateTemplateIamBinding)SetMembers(val *
 	)
 }
 
-func (j *jsiiProxy_GooglePrivatecaCertificateTemplateIamBinding)SetProject(val *string) {
+func (j *jsiiProxy_GooglePrivatecaCertificateTemplateIamBinding) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -592,7 +591,7 @@ func (j *jsiiProxy_GooglePrivatecaCertificateTemplateIamBinding)SetProject(val *
 	)
 }
 
-func (j *jsiiProxy_GooglePrivatecaCertificateTemplateIamBinding)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GooglePrivatecaCertificateTemplateIamBinding) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -600,7 +599,7 @@ func (j *jsiiProxy_GooglePrivatecaCertificateTemplateIamBinding)SetProvider(val 
 	)
 }
 
-func (j *jsiiProxy_GooglePrivatecaCertificateTemplateIamBinding)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GooglePrivatecaCertificateTemplateIamBinding) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -611,7 +610,7 @@ func (j *jsiiProxy_GooglePrivatecaCertificateTemplateIamBinding)SetProvisioners(
 	)
 }
 
-func (j *jsiiProxy_GooglePrivatecaCertificateTemplateIamBinding)SetRole(val *string) {
+func (j *jsiiProxy_GooglePrivatecaCertificateTemplateIamBinding) SetRole(val *string) {
 	if err := j.validateSetRoleParameters(val); err != nil {
 		panic(err)
 	}
@@ -634,7 +633,7 @@ func GooglePrivatecaCertificateTemplateIamBinding_GenerateConfigForImport(scope 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googlePrivatecaCertificateTemplateIamBinding.GooglePrivatecaCertificateTemplateIamBinding",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -658,7 +657,7 @@ func GooglePrivatecaCertificateTemplateIamBinding_GenerateConfigForImport(scope 
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GooglePrivatecaCertificateTemplateIamBinding_IsConstruct(x interface{}) *bool {
+func GooglePrivatecaCertificateTemplateIamBinding_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGooglePrivatecaCertificateTemplateIamBinding_IsConstructParameters(x); err != nil {
@@ -669,7 +668,7 @@ func GooglePrivatecaCertificateTemplateIamBinding_IsConstruct(x interface{}) *bo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googlePrivatecaCertificateTemplateIamBinding.GooglePrivatecaCertificateTemplateIamBinding",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -677,7 +676,7 @@ func GooglePrivatecaCertificateTemplateIamBinding_IsConstruct(x interface{}) *bo
 }
 
 // Experimental.
-func GooglePrivatecaCertificateTemplateIamBinding_IsTerraformElement(x interface{}) *bool {
+func GooglePrivatecaCertificateTemplateIamBinding_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGooglePrivatecaCertificateTemplateIamBinding_IsTerraformElementParameters(x); err != nil {
@@ -688,7 +687,7 @@ func GooglePrivatecaCertificateTemplateIamBinding_IsTerraformElement(x interface
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googlePrivatecaCertificateTemplateIamBinding.GooglePrivatecaCertificateTemplateIamBinding",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -696,7 +695,7 @@ func GooglePrivatecaCertificateTemplateIamBinding_IsTerraformElement(x interface
 }
 
 // Experimental.
-func GooglePrivatecaCertificateTemplateIamBinding_IsTerraformResource(x interface{}) *bool {
+func GooglePrivatecaCertificateTemplateIamBinding_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGooglePrivatecaCertificateTemplateIamBinding_IsTerraformResourceParameters(x); err != nil {
@@ -707,7 +706,7 @@ func GooglePrivatecaCertificateTemplateIamBinding_IsTerraformResource(x interfac
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googlePrivatecaCertificateTemplateIamBinding.GooglePrivatecaCertificateTemplateIamBinding",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -732,31 +731,31 @@ func (g *jsiiProxy_GooglePrivatecaCertificateTemplateIamBinding) AddMoveTarget(m
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GooglePrivatecaCertificateTemplateIamBinding) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GooglePrivatecaCertificateTemplateIamBinding) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GooglePrivatecaCertificateTemplateIamBinding) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GooglePrivatecaCertificateTemplateIamBinding) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -772,7 +771,7 @@ func (g *jsiiProxy_GooglePrivatecaCertificateTemplateIamBinding) GetBooleanAttri
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -788,7 +787,7 @@ func (g *jsiiProxy_GooglePrivatecaCertificateTemplateIamBinding) GetBooleanMapAt
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -804,7 +803,7 @@ func (g *jsiiProxy_GooglePrivatecaCertificateTemplateIamBinding) GetListAttribut
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -820,7 +819,7 @@ func (g *jsiiProxy_GooglePrivatecaCertificateTemplateIamBinding) GetNumberAttrib
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -836,7 +835,7 @@ func (g *jsiiProxy_GooglePrivatecaCertificateTemplateIamBinding) GetNumberListAt
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -852,7 +851,7 @@ func (g *jsiiProxy_GooglePrivatecaCertificateTemplateIamBinding) GetNumberMapAtt
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -868,7 +867,7 @@ func (g *jsiiProxy_GooglePrivatecaCertificateTemplateIamBinding) GetStringAttrib
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -884,15 +883,15 @@ func (g *jsiiProxy_GooglePrivatecaCertificateTemplateIamBinding) GetStringMapAtt
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GooglePrivatecaCertificateTemplateIamBinding) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GooglePrivatecaCertificateTemplateIamBinding) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -911,7 +910,7 @@ func (g *jsiiProxy_GooglePrivatecaCertificateTemplateIamBinding) ImportFrom(id *
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -924,7 +923,7 @@ func (g *jsiiProxy_GooglePrivatecaCertificateTemplateIamBinding) InterpolationFo
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -938,18 +937,18 @@ func (g *jsiiProxy_GooglePrivatecaCertificateTemplateIamBinding) MoveFromId(id *
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GooglePrivatecaCertificateTemplateIamBinding) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GooglePrivatecaCertificateTemplateIamBinding) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -960,7 +959,7 @@ func (g *jsiiProxy_GooglePrivatecaCertificateTemplateIamBinding) MoveToId(id *st
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -971,7 +970,7 @@ func (g *jsiiProxy_GooglePrivatecaCertificateTemplateIamBinding) OverrideLogical
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -982,7 +981,7 @@ func (g *jsiiProxy_GooglePrivatecaCertificateTemplateIamBinding) PutCondition(va
 	_jsii_.InvokeVoid(
 		g,
 		"putCondition",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1026,8 +1025,8 @@ func (g *jsiiProxy_GooglePrivatecaCertificateTemplateIamBinding) ResetProject() 
 	)
 }
 
-func (g *jsiiProxy_GooglePrivatecaCertificateTemplateIamBinding) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GooglePrivatecaCertificateTemplateIamBinding) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1039,8 +1038,8 @@ func (g *jsiiProxy_GooglePrivatecaCertificateTemplateIamBinding) SynthesizeAttri
 	return returns
 }
 
-func (g *jsiiProxy_GooglePrivatecaCertificateTemplateIamBinding) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GooglePrivatecaCertificateTemplateIamBinding) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1052,8 +1051,8 @@ func (g *jsiiProxy_GooglePrivatecaCertificateTemplateIamBinding) SynthesizeHclAt
 	return returns
 }
 
-func (g *jsiiProxy_GooglePrivatecaCertificateTemplateIamBinding) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GooglePrivatecaCertificateTemplateIamBinding) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1065,8 +1064,8 @@ func (g *jsiiProxy_GooglePrivatecaCertificateTemplateIamBinding) ToHclTerraform(
 	return returns
 }
 
-func (g *jsiiProxy_GooglePrivatecaCertificateTemplateIamBinding) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GooglePrivatecaCertificateTemplateIamBinding) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1091,8 +1090,8 @@ func (g *jsiiProxy_GooglePrivatecaCertificateTemplateIamBinding) ToString() *str
 	return returns
 }
 
-func (g *jsiiProxy_GooglePrivatecaCertificateTemplateIamBinding) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GooglePrivatecaCertificateTemplateIamBinding) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1103,4 +1102,3 @@ func (g *jsiiProxy_GooglePrivatecaCertificateTemplateIamBinding) ToTerraform() i
 
 	return returns
 }
-

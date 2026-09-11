@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleWorkflowsWorkflow.GoogleWorkflowsWorkflow",
-		reflect.TypeOf((*GoogleWorkflowsWorkflow)(nil)).Elem(),
+		reflect.TypeFor[GoogleWorkflowsWorkflow](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -108,7 +108,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "userEnvVars", GoGetter: "UserEnvVars"},
 			_jsii_.MemberProperty{JsiiProperty: "userEnvVarsInput", GoGetter: "UserEnvVarsInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleWorkflowsWorkflow{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -116,15 +116,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleWorkflowsWorkflow.GoogleWorkflowsWorkflowConfig",
-		reflect.TypeOf((*GoogleWorkflowsWorkflowConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleWorkflowsWorkflowConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleWorkflowsWorkflow.GoogleWorkflowsWorkflowTimeouts",
-		reflect.TypeOf((*GoogleWorkflowsWorkflowTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleWorkflowsWorkflowTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleWorkflowsWorkflow.GoogleWorkflowsWorkflowTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleWorkflowsWorkflowTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleWorkflowsWorkflowTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -157,7 +157,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleWorkflowsWorkflowTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

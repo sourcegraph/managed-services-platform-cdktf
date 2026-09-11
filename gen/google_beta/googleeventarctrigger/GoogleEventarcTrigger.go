@@ -19,15 +19,15 @@ type GoogleEventarcTrigger interface {
 	ChannelInput() *string
 	Conditions() cdktf.StringMap
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -62,7 +62,7 @@ type GoogleEventarcTrigger interface {
 	SetLocation(val *string)
 	LocationInput() *string
 	MatchingCriteria() GoogleEventarcTriggerMatchingCriteriaList
-	MatchingCriteriaInput() interface{}
+	MatchingCriteriaInput() any
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -76,11 +76,11 @@ type GoogleEventarcTrigger interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ServiceAccount() *string
 	SetServiceAccount(val *string)
 	ServiceAccountInput() *string
@@ -88,11 +88,11 @@ type GoogleEventarcTrigger interface {
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() GoogleEventarcTriggerTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	Transport() GoogleEventarcTriggerTransportOutputReference
 	TransportInput() *GoogleEventarcTriggerTransport
 	Uid() *string
@@ -101,9 +101,9 @@ type GoogleEventarcTrigger interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -121,7 +121,7 @@ type GoogleEventarcTrigger interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -133,7 +133,7 @@ type GoogleEventarcTrigger interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -141,7 +141,7 @@ type GoogleEventarcTrigger interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutDestination(value *GoogleEventarcTriggerDestination)
-	PutMatchingCriteria(value interface{})
+	PutMatchingCriteria(value any)
 	PutTimeouts(value *GoogleEventarcTriggerTimeouts)
 	PutTransport(value *GoogleEventarcTriggerTransport)
 	ResetChannel()
@@ -155,17 +155,17 @@ type GoogleEventarcTrigger interface {
 	ResetServiceAccount()
 	ResetTimeouts()
 	ResetTransport()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleEventarcTrigger
@@ -213,8 +213,8 @@ func (j *jsiiProxy_GoogleEventarcTrigger) Conditions() cdktf.StringMap {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleEventarcTrigger) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleEventarcTrigger) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -223,8 +223,8 @@ func (j *jsiiProxy_GoogleEventarcTrigger) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleEventarcTrigger) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleEventarcTrigger) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -233,8 +233,8 @@ func (j *jsiiProxy_GoogleEventarcTrigger) ConstructNodeMetadata() *map[string]in
 	return returns
 }
 
-func (j *jsiiProxy_GoogleEventarcTrigger) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleEventarcTrigger) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -433,8 +433,8 @@ func (j *jsiiProxy_GoogleEventarcTrigger) MatchingCriteria() GoogleEventarcTrigg
 	return returns
 }
 
-func (j *jsiiProxy_GoogleEventarcTrigger) MatchingCriteriaInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleEventarcTrigger) MatchingCriteriaInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"matchingCriteriaInput",
@@ -503,8 +503,8 @@ func (j *jsiiProxy_GoogleEventarcTrigger) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleEventarcTrigger) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleEventarcTrigger) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -513,8 +513,8 @@ func (j *jsiiProxy_GoogleEventarcTrigger) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleEventarcTrigger) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleEventarcTrigger) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -563,8 +563,8 @@ func (j *jsiiProxy_GoogleEventarcTrigger) TerraformLabels() cdktf.StringMap {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleEventarcTrigger) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleEventarcTrigger) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -593,8 +593,8 @@ func (j *jsiiProxy_GoogleEventarcTrigger) Timeouts() GoogleEventarcTriggerTimeou
 	return returns
 }
 
-func (j *jsiiProxy_GoogleEventarcTrigger) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleEventarcTrigger) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -643,7 +643,6 @@ func (j *jsiiProxy_GoogleEventarcTrigger) UpdateTime() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_eventarc_trigger google_eventarc_trigger} Resource.
 func NewGoogleEventarcTrigger(scope constructs.Construct, id *string, config *GoogleEventarcTriggerConfig) GoogleEventarcTrigger {
 	_init_.Initialize()
@@ -655,7 +654,7 @@ func NewGoogleEventarcTrigger(scope constructs.Construct, id *string, config *Go
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleEventarcTrigger.GoogleEventarcTrigger",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -668,12 +667,12 @@ func NewGoogleEventarcTrigger_Override(g GoogleEventarcTrigger, scope constructs
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleEventarcTrigger.GoogleEventarcTrigger",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleEventarcTrigger)SetChannel(val *string) {
+func (j *jsiiProxy_GoogleEventarcTrigger) SetChannel(val *string) {
 	if err := j.validateSetChannelParameters(val); err != nil {
 		panic(err)
 	}
@@ -684,7 +683,7 @@ func (j *jsiiProxy_GoogleEventarcTrigger)SetChannel(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleEventarcTrigger)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleEventarcTrigger) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -695,7 +694,7 @@ func (j *jsiiProxy_GoogleEventarcTrigger)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleEventarcTrigger)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleEventarcTrigger) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -706,7 +705,7 @@ func (j *jsiiProxy_GoogleEventarcTrigger)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleEventarcTrigger)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleEventarcTrigger) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -714,7 +713,7 @@ func (j *jsiiProxy_GoogleEventarcTrigger)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleEventarcTrigger)SetEventDataContentType(val *string) {
+func (j *jsiiProxy_GoogleEventarcTrigger) SetEventDataContentType(val *string) {
 	if err := j.validateSetEventDataContentTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -725,7 +724,7 @@ func (j *jsiiProxy_GoogleEventarcTrigger)SetEventDataContentType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleEventarcTrigger)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleEventarcTrigger) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -733,7 +732,7 @@ func (j *jsiiProxy_GoogleEventarcTrigger)SetForEach(val cdktf.ITerraformIterator
 	)
 }
 
-func (j *jsiiProxy_GoogleEventarcTrigger)SetId(val *string) {
+func (j *jsiiProxy_GoogleEventarcTrigger) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -744,7 +743,7 @@ func (j *jsiiProxy_GoogleEventarcTrigger)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleEventarcTrigger)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_GoogleEventarcTrigger) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -755,7 +754,7 @@ func (j *jsiiProxy_GoogleEventarcTrigger)SetLabels(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleEventarcTrigger)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleEventarcTrigger) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -766,7 +765,7 @@ func (j *jsiiProxy_GoogleEventarcTrigger)SetLifecycle(val *cdktf.TerraformResour
 	)
 }
 
-func (j *jsiiProxy_GoogleEventarcTrigger)SetLocation(val *string) {
+func (j *jsiiProxy_GoogleEventarcTrigger) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -777,7 +776,7 @@ func (j *jsiiProxy_GoogleEventarcTrigger)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleEventarcTrigger)SetName(val *string) {
+func (j *jsiiProxy_GoogleEventarcTrigger) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -788,7 +787,7 @@ func (j *jsiiProxy_GoogleEventarcTrigger)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleEventarcTrigger)SetProject(val *string) {
+func (j *jsiiProxy_GoogleEventarcTrigger) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -799,7 +798,7 @@ func (j *jsiiProxy_GoogleEventarcTrigger)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleEventarcTrigger)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleEventarcTrigger) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -807,7 +806,7 @@ func (j *jsiiProxy_GoogleEventarcTrigger)SetProvider(val cdktf.TerraformProvider
 	)
 }
 
-func (j *jsiiProxy_GoogleEventarcTrigger)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleEventarcTrigger) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -818,7 +817,7 @@ func (j *jsiiProxy_GoogleEventarcTrigger)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleEventarcTrigger)SetServiceAccount(val *string) {
+func (j *jsiiProxy_GoogleEventarcTrigger) SetServiceAccount(val *string) {
 	if err := j.validateSetServiceAccountParameters(val); err != nil {
 		panic(err)
 	}
@@ -841,7 +840,7 @@ func GoogleEventarcTrigger_GenerateConfigForImport(scope constructs.Construct, i
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleEventarcTrigger.GoogleEventarcTrigger",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -865,7 +864,7 @@ func GoogleEventarcTrigger_GenerateConfigForImport(scope constructs.Construct, i
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleEventarcTrigger_IsConstruct(x interface{}) *bool {
+func GoogleEventarcTrigger_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleEventarcTrigger_IsConstructParameters(x); err != nil {
@@ -876,7 +875,7 @@ func GoogleEventarcTrigger_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleEventarcTrigger.GoogleEventarcTrigger",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -884,7 +883,7 @@ func GoogleEventarcTrigger_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleEventarcTrigger_IsTerraformElement(x interface{}) *bool {
+func GoogleEventarcTrigger_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleEventarcTrigger_IsTerraformElementParameters(x); err != nil {
@@ -895,7 +894,7 @@ func GoogleEventarcTrigger_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleEventarcTrigger.GoogleEventarcTrigger",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -903,7 +902,7 @@ func GoogleEventarcTrigger_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleEventarcTrigger_IsTerraformResource(x interface{}) *bool {
+func GoogleEventarcTrigger_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleEventarcTrigger_IsTerraformResourceParameters(x); err != nil {
@@ -914,7 +913,7 @@ func GoogleEventarcTrigger_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleEventarcTrigger.GoogleEventarcTrigger",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -939,31 +938,31 @@ func (g *jsiiProxy_GoogleEventarcTrigger) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleEventarcTrigger) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleEventarcTrigger) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleEventarcTrigger) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleEventarcTrigger) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -979,7 +978,7 @@ func (g *jsiiProxy_GoogleEventarcTrigger) GetBooleanAttribute(terraformAttribute
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -995,7 +994,7 @@ func (g *jsiiProxy_GoogleEventarcTrigger) GetBooleanMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1011,7 +1010,7 @@ func (g *jsiiProxy_GoogleEventarcTrigger) GetListAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1027,7 +1026,7 @@ func (g *jsiiProxy_GoogleEventarcTrigger) GetNumberAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1043,7 +1042,7 @@ func (g *jsiiProxy_GoogleEventarcTrigger) GetNumberListAttribute(terraformAttrib
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1059,7 +1058,7 @@ func (g *jsiiProxy_GoogleEventarcTrigger) GetNumberMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1075,7 +1074,7 @@ func (g *jsiiProxy_GoogleEventarcTrigger) GetStringAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1091,15 +1090,15 @@ func (g *jsiiProxy_GoogleEventarcTrigger) GetStringMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleEventarcTrigger) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleEventarcTrigger) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1118,7 +1117,7 @@ func (g *jsiiProxy_GoogleEventarcTrigger) ImportFrom(id *string, provider cdktf.
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1131,7 +1130,7 @@ func (g *jsiiProxy_GoogleEventarcTrigger) InterpolationForAttribute(terraformAtt
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1145,18 +1144,18 @@ func (g *jsiiProxy_GoogleEventarcTrigger) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleEventarcTrigger) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleEventarcTrigger) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1167,7 +1166,7 @@ func (g *jsiiProxy_GoogleEventarcTrigger) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1178,7 +1177,7 @@ func (g *jsiiProxy_GoogleEventarcTrigger) OverrideLogicalId(newLogicalId *string
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1189,18 +1188,18 @@ func (g *jsiiProxy_GoogleEventarcTrigger) PutDestination(value *GoogleEventarcTr
 	_jsii_.InvokeVoid(
 		g,
 		"putDestination",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (g *jsiiProxy_GoogleEventarcTrigger) PutMatchingCriteria(value interface{}) {
+func (g *jsiiProxy_GoogleEventarcTrigger) PutMatchingCriteria(value any) {
 	if err := g.validatePutMatchingCriteriaParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putMatchingCriteria",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1211,7 +1210,7 @@ func (g *jsiiProxy_GoogleEventarcTrigger) PutTimeouts(value *GoogleEventarcTrigg
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1222,7 +1221,7 @@ func (g *jsiiProxy_GoogleEventarcTrigger) PutTransport(value *GoogleEventarcTrig
 	_jsii_.InvokeVoid(
 		g,
 		"putTransport",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1298,8 +1297,8 @@ func (g *jsiiProxy_GoogleEventarcTrigger) ResetTransport() {
 	)
 }
 
-func (g *jsiiProxy_GoogleEventarcTrigger) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleEventarcTrigger) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1311,8 +1310,8 @@ func (g *jsiiProxy_GoogleEventarcTrigger) SynthesizeAttributes() *map[string]int
 	return returns
 }
 
-func (g *jsiiProxy_GoogleEventarcTrigger) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleEventarcTrigger) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1324,8 +1323,8 @@ func (g *jsiiProxy_GoogleEventarcTrigger) SynthesizeHclAttributes() *map[string]
 	return returns
 }
 
-func (g *jsiiProxy_GoogleEventarcTrigger) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleEventarcTrigger) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1337,8 +1336,8 @@ func (g *jsiiProxy_GoogleEventarcTrigger) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleEventarcTrigger) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleEventarcTrigger) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1363,8 +1362,8 @@ func (g *jsiiProxy_GoogleEventarcTrigger) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleEventarcTrigger) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleEventarcTrigger) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1375,4 +1374,3 @@ func (g *jsiiProxy_GoogleEventarcTrigger) ToTerraform() interface{} {
 
 	return returns
 }
-

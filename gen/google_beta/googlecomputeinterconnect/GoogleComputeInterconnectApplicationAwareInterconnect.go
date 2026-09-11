@@ -1,6 +1,5 @@
 package googlecomputeinterconnect
 
-
 type GoogleComputeInterconnectApplicationAwareInterconnect struct {
 	// bandwidth_percentage_policy block.
 	//
@@ -13,10 +12,9 @@ type GoogleComputeInterconnectApplicationAwareInterconnect struct {
 	// shape_average_percentage block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_interconnect#shape_average_percentage GoogleComputeInterconnect#shape_average_percentage}
-	ShapeAveragePercentage interface{} `field:"optional" json:"shapeAveragePercentage" yaml:"shapeAveragePercentage"`
+	ShapeAveragePercentage any `field:"optional" json:"shapeAveragePercentage" yaml:"shapeAveragePercentage"`
 	// strict_priority_policy block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_interconnect#strict_priority_policy GoogleComputeInterconnect#strict_priority_policy}
 	StrictPriorityPolicy *GoogleComputeInterconnectApplicationAwareInterconnectStrictPriorityPolicy `field:"optional" json:"strictPriorityPolicy" yaml:"strictPriorityPolicy"`
 }
-

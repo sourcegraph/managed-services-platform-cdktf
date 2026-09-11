@@ -12,9 +12,9 @@ type GoogleComputeRouterNatLogConfigOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -25,9 +25,9 @@ type GoogleComputeRouterNatLogConfigOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	Enable() interface{}
-	SetEnable(val interface{})
-	EnableInput() interface{}
+	Enable() any
+	SetEnable(val any)
+	EnableInput() any
 	Filter() *string
 	SetFilter(val *string)
 	FilterInput() *string
@@ -46,7 +46,7 @@ type GoogleComputeRouterNatLogConfigOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -69,7 +69,7 @@ type GoogleComputeRouterNatLogConfigOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -82,8 +82,8 @@ type jsiiProxy_GoogleComputeRouterNatLogConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GoogleComputeRouterNatLogConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeRouterNatLogConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -112,8 +112,8 @@ func (j *jsiiProxy_GoogleComputeRouterNatLogConfigOutputReference) CreationStack
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeRouterNatLogConfigOutputReference) Enable() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeRouterNatLogConfigOutputReference) Enable() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enable",
@@ -122,8 +122,8 @@ func (j *jsiiProxy_GoogleComputeRouterNatLogConfigOutputReference) Enable() inte
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeRouterNatLogConfigOutputReference) EnableInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeRouterNatLogConfigOutputReference) EnableInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableInput",
@@ -192,7 +192,6 @@ func (j *jsiiProxy_GoogleComputeRouterNatLogConfigOutputReference) TerraformReso
 	return returns
 }
 
-
 func NewGoogleComputeRouterNatLogConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleComputeRouterNatLogConfigOutputReference {
 	_init_.Initialize()
 
@@ -203,7 +202,7 @@ func NewGoogleComputeRouterNatLogConfigOutputReference(terraformResource cdktf.I
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleComputeRouterNat.GoogleComputeRouterNatLogConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -215,12 +214,12 @@ func NewGoogleComputeRouterNatLogConfigOutputReference_Override(g GoogleComputeR
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleComputeRouterNat.GoogleComputeRouterNatLogConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeRouterNatLogConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleComputeRouterNatLogConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -231,7 +230,7 @@ func (j *jsiiProxy_GoogleComputeRouterNatLogConfigOutputReference)SetComplexObje
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeRouterNatLogConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleComputeRouterNatLogConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -242,7 +241,7 @@ func (j *jsiiProxy_GoogleComputeRouterNatLogConfigOutputReference)SetComplexObje
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeRouterNatLogConfigOutputReference)SetEnable(val interface{}) {
+func (j *jsiiProxy_GoogleComputeRouterNatLogConfigOutputReference) SetEnable(val any) {
 	if err := j.validateSetEnableParameters(val); err != nil {
 		panic(err)
 	}
@@ -253,7 +252,7 @@ func (j *jsiiProxy_GoogleComputeRouterNatLogConfigOutputReference)SetEnable(val 
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeRouterNatLogConfigOutputReference)SetFilter(val *string) {
+func (j *jsiiProxy_GoogleComputeRouterNatLogConfigOutputReference) SetFilter(val *string) {
 	if err := j.validateSetFilterParameters(val); err != nil {
 		panic(err)
 	}
@@ -264,7 +263,7 @@ func (j *jsiiProxy_GoogleComputeRouterNatLogConfigOutputReference)SetFilter(val 
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeRouterNatLogConfigOutputReference)SetInternalValue(val *GoogleComputeRouterNatLogConfig) {
+func (j *jsiiProxy_GoogleComputeRouterNatLogConfigOutputReference) SetInternalValue(val *GoogleComputeRouterNatLogConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -275,7 +274,7 @@ func (j *jsiiProxy_GoogleComputeRouterNatLogConfigOutputReference)SetInternalVal
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeRouterNatLogConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleComputeRouterNatLogConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -286,7 +285,7 @@ func (j *jsiiProxy_GoogleComputeRouterNatLogConfigOutputReference)SetTerraformAt
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeRouterNatLogConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleComputeRouterNatLogConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -310,16 +309,16 @@ func (g *jsiiProxy_GoogleComputeRouterNatLogConfigOutputReference) ComputeFqn() 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeRouterNatLogConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleComputeRouterNatLogConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -335,7 +334,7 @@ func (g *jsiiProxy_GoogleComputeRouterNatLogConfigOutputReference) GetBooleanAtt
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -351,7 +350,7 @@ func (g *jsiiProxy_GoogleComputeRouterNatLogConfigOutputReference) GetBooleanMap
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -367,7 +366,7 @@ func (g *jsiiProxy_GoogleComputeRouterNatLogConfigOutputReference) GetListAttrib
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -383,7 +382,7 @@ func (g *jsiiProxy_GoogleComputeRouterNatLogConfigOutputReference) GetNumberAttr
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -399,7 +398,7 @@ func (g *jsiiProxy_GoogleComputeRouterNatLogConfigOutputReference) GetNumberList
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -415,7 +414,7 @@ func (g *jsiiProxy_GoogleComputeRouterNatLogConfigOutputReference) GetNumberMapA
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -431,7 +430,7 @@ func (g *jsiiProxy_GoogleComputeRouterNatLogConfigOutputReference) GetStringAttr
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -447,7 +446,7 @@ func (g *jsiiProxy_GoogleComputeRouterNatLogConfigOutputReference) GetStringMapA
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -476,23 +475,23 @@ func (g *jsiiProxy_GoogleComputeRouterNatLogConfigOutputReference) Interpolation
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeRouterNatLogConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleComputeRouterNatLogConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -511,4 +510,3 @@ func (g *jsiiProxy_GoogleComputeRouterNatLogConfigOutputReference) ToString() *s
 
 	return returns
 }
-

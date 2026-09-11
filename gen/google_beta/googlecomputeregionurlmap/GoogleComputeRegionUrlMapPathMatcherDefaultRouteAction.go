@@ -1,6 +1,5 @@
 package googlecomputeregionurlmap
 
-
 type GoogleComputeRegionUrlMapPathMatcherDefaultRouteAction struct {
 	// cors_policy block.
 	//
@@ -33,6 +32,5 @@ type GoogleComputeRegionUrlMapPathMatcherDefaultRouteAction struct {
 	// weighted_backend_services block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_region_url_map#weighted_backend_services GoogleComputeRegionUrlMap#weighted_backend_services}
-	WeightedBackendServices interface{} `field:"optional" json:"weightedBackendServices" yaml:"weightedBackendServices"`
+	WeightedBackendServices any `field:"optional" json:"weightedBackendServices" yaml:"weightedBackendServices"`
 }
-

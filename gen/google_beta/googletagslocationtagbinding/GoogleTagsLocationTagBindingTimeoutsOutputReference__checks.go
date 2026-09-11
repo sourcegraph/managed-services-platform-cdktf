@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleTagsLocationTagBindingTimeoutsOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_GoogleTagsLocationTagBindingTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleTagsLocationTagBindingTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_GoogleTagsLocationTagBindingTimeoutsOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_GoogleTagsLocationTagBindingTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleTagsLocationTagBindingTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewGoogleTagsLocationTagBindingTimeoutsOutputReferenceParameters(te
 
 	return nil
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleVmwareengineSubnet.GoogleVmwareengineSubnet",
-		reflect.TypeOf((*GoogleVmwareengineSubnet)(nil)).Elem(),
+		reflect.TypeFor[GoogleVmwareengineSubnet](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -76,7 +76,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 			_jsii_.MemberProperty{JsiiProperty: "vlanId", GoGetter: "VlanId"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleVmwareengineSubnet{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -84,15 +84,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleVmwareengineSubnet.GoogleVmwareengineSubnetConfig",
-		reflect.TypeOf((*GoogleVmwareengineSubnetConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleVmwareengineSubnetConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleVmwareengineSubnet.GoogleVmwareengineSubnetDhcpAddressRanges",
-		reflect.TypeOf((*GoogleVmwareengineSubnetDhcpAddressRanges)(nil)).Elem(),
+		reflect.TypeFor[GoogleVmwareengineSubnetDhcpAddressRanges](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleVmwareengineSubnet.GoogleVmwareengineSubnetDhcpAddressRangesList",
-		reflect.TypeOf((*GoogleVmwareengineSubnetDhcpAddressRangesList)(nil)).Elem(),
+		reflect.TypeFor[GoogleVmwareengineSubnetDhcpAddressRangesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -105,7 +105,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleVmwareengineSubnetDhcpAddressRangesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -113,7 +113,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleVmwareengineSubnet.GoogleVmwareengineSubnetDhcpAddressRangesOutputReference",
-		reflect.TypeOf((*GoogleVmwareengineSubnetDhcpAddressRangesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleVmwareengineSubnetDhcpAddressRangesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -139,7 +139,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleVmwareengineSubnetDhcpAddressRangesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -147,11 +147,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleVmwareengineSubnet.GoogleVmwareengineSubnetTimeouts",
-		reflect.TypeOf((*GoogleVmwareengineSubnetTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleVmwareengineSubnetTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleVmwareengineSubnet.GoogleVmwareengineSubnetTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleVmwareengineSubnetTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleVmwareengineSubnetTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -184,7 +184,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleVmwareengineSubnetTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

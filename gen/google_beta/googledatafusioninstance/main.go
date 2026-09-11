@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataFusionInstance.GoogleDataFusionInstance",
-		reflect.TypeOf((*GoogleDataFusionInstance)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataFusionInstance](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accelerators", GoGetter: "Accelerators"},
 			_jsii_.MemberProperty{JsiiProperty: "acceleratorsInput", GoGetter: "AcceleratorsInput"},
@@ -134,7 +134,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zone", GoGetter: "Zone"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneInput", GoGetter: "ZoneInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataFusionInstance{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -142,11 +142,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataFusionInstance.GoogleDataFusionInstanceAccelerators",
-		reflect.TypeOf((*GoogleDataFusionInstanceAccelerators)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataFusionInstanceAccelerators](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataFusionInstance.GoogleDataFusionInstanceAcceleratorsList",
-		reflect.TypeOf((*GoogleDataFusionInstanceAcceleratorsList)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataFusionInstanceAcceleratorsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -160,7 +160,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataFusionInstanceAcceleratorsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -168,7 +168,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataFusionInstance.GoogleDataFusionInstanceAcceleratorsOutputReference",
-		reflect.TypeOf((*GoogleDataFusionInstanceAcceleratorsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataFusionInstanceAcceleratorsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "acceleratorType", GoGetter: "AcceleratorType"},
 			_jsii_.MemberProperty{JsiiProperty: "acceleratorTypeInput", GoGetter: "AcceleratorTypeInput"},
@@ -196,7 +196,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataFusionInstanceAcceleratorsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -204,15 +204,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataFusionInstance.GoogleDataFusionInstanceConfig",
-		reflect.TypeOf((*GoogleDataFusionInstanceConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataFusionInstanceConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataFusionInstance.GoogleDataFusionInstanceCryptoKeyConfig",
-		reflect.TypeOf((*GoogleDataFusionInstanceCryptoKeyConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataFusionInstanceCryptoKeyConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataFusionInstance.GoogleDataFusionInstanceCryptoKeyConfigOutputReference",
-		reflect.TypeOf((*GoogleDataFusionInstanceCryptoKeyConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataFusionInstanceCryptoKeyConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -238,7 +238,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataFusionInstanceCryptoKeyConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -246,11 +246,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataFusionInstance.GoogleDataFusionInstanceEventPublishConfig",
-		reflect.TypeOf((*GoogleDataFusionInstanceEventPublishConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataFusionInstanceEventPublishConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataFusionInstance.GoogleDataFusionInstanceEventPublishConfigOutputReference",
-		reflect.TypeOf((*GoogleDataFusionInstanceEventPublishConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataFusionInstanceEventPublishConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -278,7 +278,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "topicInput", GoGetter: "TopicInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataFusionInstanceEventPublishConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -286,11 +286,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataFusionInstance.GoogleDataFusionInstanceNetworkConfig",
-		reflect.TypeOf((*GoogleDataFusionInstanceNetworkConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataFusionInstanceNetworkConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataFusionInstance.GoogleDataFusionInstanceNetworkConfigOutputReference",
-		reflect.TypeOf((*GoogleDataFusionInstanceNetworkConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataFusionInstanceNetworkConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -327,7 +327,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataFusionInstanceNetworkConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -335,11 +335,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataFusionInstance.GoogleDataFusionInstanceNetworkConfigPrivateServiceConnectConfig",
-		reflect.TypeOf((*GoogleDataFusionInstanceNetworkConfigPrivateServiceConnectConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataFusionInstanceNetworkConfigPrivateServiceConnectConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataFusionInstance.GoogleDataFusionInstanceNetworkConfigPrivateServiceConnectConfigOutputReference",
-		reflect.TypeOf((*GoogleDataFusionInstanceNetworkConfigPrivateServiceConnectConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataFusionInstanceNetworkConfigPrivateServiceConnectConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -370,7 +370,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "unreachableCidrBlock", GoGetter: "UnreachableCidrBlock"},
 			_jsii_.MemberProperty{JsiiProperty: "unreachableCidrBlockInput", GoGetter: "UnreachableCidrBlockInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataFusionInstanceNetworkConfigPrivateServiceConnectConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -378,11 +378,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataFusionInstance.GoogleDataFusionInstanceTimeouts",
-		reflect.TypeOf((*GoogleDataFusionInstanceTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataFusionInstanceTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataFusionInstance.GoogleDataFusionInstanceTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleDataFusionInstanceTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataFusionInstanceTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -415,7 +415,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataFusionInstanceTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

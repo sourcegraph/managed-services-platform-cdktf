@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleNetappVolumeTieringPolicyOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetappVolumeTieringPolicyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNetappVolumeTieringPolicyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_GoogleNetappVolumeTieringPolicyOutputReference) validateSetCo
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetappVolumeTieringPolicyOutputReference) validateSetHotTierBypassModeEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNetappVolumeTieringPolicyOutputReference) validateSetHotTierBypassModeEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -234,4 +234,3 @@ func validateNewGoogleNetappVolumeTieringPolicyOutputReferenceParameters(terrafo
 
 	return nil
 }
-

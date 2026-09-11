@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleDialogflowEntityTypeEntitiesOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowEntityTypeEntitiesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDialogflowEntityTypeEntitiesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_GoogleDialogflowEntityTypeEntitiesOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowEntityTypeEntitiesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDialogflowEntityTypeEntitiesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGoogleDialogflowEntityTypeEntitiesOutputReferenceParameters(terr
 
 	return nil
 }
-

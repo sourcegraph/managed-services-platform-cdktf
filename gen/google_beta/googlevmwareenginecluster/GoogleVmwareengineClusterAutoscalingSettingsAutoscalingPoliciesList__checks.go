@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleVmwareengineClusterAutoscalingSettingsAutoscalingPolici
 	return nil
 }
 
-func (j *jsiiProxy_GoogleVmwareengineClusterAutoscalingSettingsAutoscalingPoliciesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleVmwareengineClusterAutoscalingSettingsAutoscalingPoliciesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleVmwareengineClusterAutoscalingSettingsAutoscalingPoliciesL
 
 	return nil
 }
-

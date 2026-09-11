@@ -12,14 +12,14 @@ type GoogleSqlDatabaseInstanceSettingsBackupConfigurationOutputReference interfa
 	cdktf.ComplexObject
 	BackupRetentionSettings() GoogleSqlDatabaseInstanceSettingsBackupConfigurationBackupRetentionSettingsOutputReference
 	BackupRetentionSettingsInput() *GoogleSqlDatabaseInstanceSettingsBackupConfigurationBackupRetentionSettings
-	BinaryLogEnabled() interface{}
-	SetBinaryLogEnabled(val interface{})
-	BinaryLogEnabledInput() interface{}
+	BinaryLogEnabled() any
+	SetBinaryLogEnabled(val any)
+	BinaryLogEnabledInput() any
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -30,9 +30,9 @@ type GoogleSqlDatabaseInstanceSettingsBackupConfigurationOutputReference interfa
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	Enabled() interface{}
-	SetEnabled(val interface{})
-	EnabledInput() interface{}
+	Enabled() any
+	SetEnabled(val any)
+	EnabledInput() any
 	// Experimental.
 	Fqn() *string
 	InternalValue() *GoogleSqlDatabaseInstanceSettingsBackupConfiguration
@@ -40,9 +40,9 @@ type GoogleSqlDatabaseInstanceSettingsBackupConfigurationOutputReference interfa
 	Location() *string
 	SetLocation(val *string)
 	LocationInput() *string
-	PointInTimeRecoveryEnabled() interface{}
-	SetPointInTimeRecoveryEnabled(val interface{})
-	PointInTimeRecoveryEnabledInput() interface{}
+	PointInTimeRecoveryEnabled() any
+	SetPointInTimeRecoveryEnabled(val any)
+	PointInTimeRecoveryEnabledInput() any
 	StartTime() *string
 	SetStartTime(val *string)
 	StartTimeInput() *string
@@ -60,7 +60,7 @@ type GoogleSqlDatabaseInstanceSettingsBackupConfigurationOutputReference interfa
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -91,7 +91,7 @@ type GoogleSqlDatabaseInstanceSettingsBackupConfigurationOutputReference interfa
 	ResetTransactionLogRetentionDays()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -124,8 +124,8 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsBackupConfigurationOutputRef
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsBackupConfigurationOutputReference) BinaryLogEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsBackupConfigurationOutputReference) BinaryLogEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"binaryLogEnabled",
@@ -134,8 +134,8 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsBackupConfigurationOutputRef
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsBackupConfigurationOutputReference) BinaryLogEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsBackupConfigurationOutputReference) BinaryLogEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"binaryLogEnabledInput",
@@ -144,8 +144,8 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsBackupConfigurationOutputRef
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsBackupConfigurationOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsBackupConfigurationOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -174,8 +174,8 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsBackupConfigurationOutputRef
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsBackupConfigurationOutputReference) Enabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsBackupConfigurationOutputReference) Enabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabled",
@@ -184,8 +184,8 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsBackupConfigurationOutputRef
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsBackupConfigurationOutputReference) EnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsBackupConfigurationOutputReference) EnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabledInput",
@@ -234,8 +234,8 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsBackupConfigurationOutputRef
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsBackupConfigurationOutputReference) PointInTimeRecoveryEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsBackupConfigurationOutputReference) PointInTimeRecoveryEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"pointInTimeRecoveryEnabled",
@@ -244,8 +244,8 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsBackupConfigurationOutputRef
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsBackupConfigurationOutputReference) PointInTimeRecoveryEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsBackupConfigurationOutputReference) PointInTimeRecoveryEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"pointInTimeRecoveryEnabledInput",
@@ -314,7 +314,6 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsBackupConfigurationOutputRef
 	return returns
 }
 
-
 func NewGoogleSqlDatabaseInstanceSettingsBackupConfigurationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleSqlDatabaseInstanceSettingsBackupConfigurationOutputReference {
 	_init_.Initialize()
 
@@ -325,7 +324,7 @@ func NewGoogleSqlDatabaseInstanceSettingsBackupConfigurationOutputReference(terr
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceSettingsBackupConfigurationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -337,12 +336,12 @@ func NewGoogleSqlDatabaseInstanceSettingsBackupConfigurationOutputReference_Over
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceSettingsBackupConfigurationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsBackupConfigurationOutputReference)SetBinaryLogEnabled(val interface{}) {
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsBackupConfigurationOutputReference) SetBinaryLogEnabled(val any) {
 	if err := j.validateSetBinaryLogEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -353,7 +352,7 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsBackupConfigurationOutputRef
 	)
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsBackupConfigurationOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsBackupConfigurationOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -364,7 +363,7 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsBackupConfigurationOutputRef
 	)
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsBackupConfigurationOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsBackupConfigurationOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -375,7 +374,7 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsBackupConfigurationOutputRef
 	)
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsBackupConfigurationOutputReference)SetEnabled(val interface{}) {
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsBackupConfigurationOutputReference) SetEnabled(val any) {
 	if err := j.validateSetEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -386,7 +385,7 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsBackupConfigurationOutputRef
 	)
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsBackupConfigurationOutputReference)SetInternalValue(val *GoogleSqlDatabaseInstanceSettingsBackupConfiguration) {
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsBackupConfigurationOutputReference) SetInternalValue(val *GoogleSqlDatabaseInstanceSettingsBackupConfiguration) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -397,7 +396,7 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsBackupConfigurationOutputRef
 	)
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsBackupConfigurationOutputReference)SetLocation(val *string) {
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsBackupConfigurationOutputReference) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -408,7 +407,7 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsBackupConfigurationOutputRef
 	)
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsBackupConfigurationOutputReference)SetPointInTimeRecoveryEnabled(val interface{}) {
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsBackupConfigurationOutputReference) SetPointInTimeRecoveryEnabled(val any) {
 	if err := j.validateSetPointInTimeRecoveryEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -419,7 +418,7 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsBackupConfigurationOutputRef
 	)
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsBackupConfigurationOutputReference)SetStartTime(val *string) {
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsBackupConfigurationOutputReference) SetStartTime(val *string) {
 	if err := j.validateSetStartTimeParameters(val); err != nil {
 		panic(err)
 	}
@@ -430,7 +429,7 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsBackupConfigurationOutputRef
 	)
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsBackupConfigurationOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsBackupConfigurationOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -441,7 +440,7 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsBackupConfigurationOutputRef
 	)
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsBackupConfigurationOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsBackupConfigurationOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -452,7 +451,7 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsBackupConfigurationOutputRef
 	)
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsBackupConfigurationOutputReference)SetTransactionLogRetentionDays(val *float64) {
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsBackupConfigurationOutputReference) SetTransactionLogRetentionDays(val *float64) {
 	if err := j.validateSetTransactionLogRetentionDaysParameters(val); err != nil {
 		panic(err)
 	}
@@ -476,16 +475,16 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsBackupConfigurationOutputRef
 	return returns
 }
 
-func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsBackupConfigurationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsBackupConfigurationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -501,7 +500,7 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsBackupConfigurationOutputRef
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -517,7 +516,7 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsBackupConfigurationOutputRef
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -533,7 +532,7 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsBackupConfigurationOutputRef
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -549,7 +548,7 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsBackupConfigurationOutputRef
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -565,7 +564,7 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsBackupConfigurationOutputRef
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -581,7 +580,7 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsBackupConfigurationOutputRef
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -597,7 +596,7 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsBackupConfigurationOutputRef
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -613,7 +612,7 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsBackupConfigurationOutputRef
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -642,7 +641,7 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsBackupConfigurationOutputRef
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -656,7 +655,7 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsBackupConfigurationOutputRef
 	_jsii_.InvokeVoid(
 		g,
 		"putBackupRetentionSettings",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -716,16 +715,16 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsBackupConfigurationOutputRef
 	)
 }
 
-func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsBackupConfigurationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsBackupConfigurationOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -744,4 +743,3 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsBackupConfigurationOutputRef
 
 	return returns
 }
-

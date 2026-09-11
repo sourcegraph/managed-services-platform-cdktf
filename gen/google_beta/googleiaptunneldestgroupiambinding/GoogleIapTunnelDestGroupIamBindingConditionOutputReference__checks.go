@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleIapTunnelDestGroupIamBindingConditionOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIapTunnelDestGroupIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleIapTunnelDestGroupIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewGoogleIapTunnelDestGroupIamBindingConditionOutputReferenceParame
 
 	return nil
 }
-

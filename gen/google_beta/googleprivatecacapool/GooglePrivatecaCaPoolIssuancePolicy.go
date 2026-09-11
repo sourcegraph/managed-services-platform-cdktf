@@ -1,6 +1,5 @@
 package googleprivatecacapool
 
-
 type GooglePrivatecaCaPoolIssuancePolicy struct {
 	// allowed_issuance_modes block.
 	//
@@ -9,7 +8,7 @@ type GooglePrivatecaCaPoolIssuancePolicy struct {
 	// allowed_key_types block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_privateca_ca_pool#allowed_key_types GooglePrivatecaCaPool#allowed_key_types}
-	AllowedKeyTypes interface{} `field:"optional" json:"allowedKeyTypes" yaml:"allowedKeyTypes"`
+	AllowedKeyTypes any `field:"optional" json:"allowedKeyTypes" yaml:"allowedKeyTypes"`
 	// The duration to backdate all certificates issued from this CaPool.
 	//
 	// If not set, the
@@ -36,4 +35,3 @@ type GooglePrivatecaCaPoolIssuancePolicy struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_privateca_ca_pool#maximum_lifetime GooglePrivatecaCaPool#maximum_lifetime}
 	MaximumLifetime *string `field:"optional" json:"maximumLifetime" yaml:"maximumLifetime"`
 }
-

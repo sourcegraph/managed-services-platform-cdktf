@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleDataplexLakeIamMemberConditionOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataplexLakeIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataplexLakeIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewGoogleDataplexLakeIamMemberConditionOutputReferenceParameters(te
 
 	return nil
 }
-

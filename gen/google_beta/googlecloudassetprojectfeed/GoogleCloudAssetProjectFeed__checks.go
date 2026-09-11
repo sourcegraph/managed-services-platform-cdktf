@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleCloudAssetProjectFeed) validateAddMoveTargetParameters(
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCloudAssetProjectFeed) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleCloudAssetProjectFeed) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleCloudAssetProjectFeed) validateMoveFromIdParameters(id 
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCloudAssetProjectFeed) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleCloudAssetProjectFeed) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -253,7 +253,7 @@ func validateGoogleCloudAssetProjectFeed_GenerateConfigForImportParameters(scope
 	return nil
 }
 
-func validateGoogleCloudAssetProjectFeed_IsConstructParameters(x interface{}) error {
+func validateGoogleCloudAssetProjectFeed_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -261,7 +261,7 @@ func validateGoogleCloudAssetProjectFeed_IsConstructParameters(x interface{}) er
 	return nil
 }
 
-func validateGoogleCloudAssetProjectFeed_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleCloudAssetProjectFeed_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -269,7 +269,7 @@ func validateGoogleCloudAssetProjectFeed_IsTerraformElementParameters(x interfac
 	return nil
 }
 
-func validateGoogleCloudAssetProjectFeed_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleCloudAssetProjectFeed_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -301,7 +301,7 @@ func (j *jsiiProxy_GoogleCloudAssetProjectFeed) validateSetBillingProjectParamet
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudAssetProjectFeed) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleCloudAssetProjectFeed) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -342,7 +342,7 @@ func (j *jsiiProxy_GoogleCloudAssetProjectFeed) validateSetContentTypeParameters
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudAssetProjectFeed) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleCloudAssetProjectFeed) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -431,7 +431,7 @@ func (j *jsiiProxy_GoogleCloudAssetProjectFeed) validateSetProjectParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudAssetProjectFeed) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleCloudAssetProjectFeed) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -495,4 +495,3 @@ func validateNewGoogleCloudAssetProjectFeedParameters(scope constructs.Construct
 
 	return nil
 }
-

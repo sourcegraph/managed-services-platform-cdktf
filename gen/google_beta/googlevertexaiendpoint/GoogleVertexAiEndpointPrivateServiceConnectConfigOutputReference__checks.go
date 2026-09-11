@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleVertexAiEndpointPrivateServiceConnectConfigOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_GoogleVertexAiEndpointPrivateServiceConnectConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleVertexAiEndpointPrivateServiceConnectConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_GoogleVertexAiEndpointPrivateServiceConnectConfigOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_GoogleVertexAiEndpointPrivateServiceConnectConfigOutputReference) validateSetEnablePrivateServiceConnectParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleVertexAiEndpointPrivateServiceConnectConfigOutputReference) validateSetEnablePrivateServiceConnectParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -183,7 +183,7 @@ func (j *jsiiProxy_GoogleVertexAiEndpointPrivateServiceConnectConfigOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_GoogleVertexAiEndpointPrivateServiceConnectConfigOutputReference) validateSetEnableSecurePrivateServiceConnectParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleVertexAiEndpointPrivateServiceConnectConfigOutputReference) validateSetEnableSecurePrivateServiceConnectParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -246,4 +246,3 @@ func validateNewGoogleVertexAiEndpointPrivateServiceConnectConfigOutputReference
 
 	return nil
 }
-

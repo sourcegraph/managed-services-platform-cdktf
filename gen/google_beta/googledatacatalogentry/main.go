@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataCatalogEntry.GoogleDataCatalogEntry",
-		reflect.TypeOf((*GoogleDataCatalogEntry)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataCatalogEntry](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -93,7 +93,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "userSpecifiedType", GoGetter: "UserSpecifiedType"},
 			_jsii_.MemberProperty{JsiiProperty: "userSpecifiedTypeInput", GoGetter: "UserSpecifiedTypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataCatalogEntry{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -101,11 +101,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataCatalogEntry.GoogleDataCatalogEntryBigqueryDateShardedSpec",
-		reflect.TypeOf((*GoogleDataCatalogEntryBigqueryDateShardedSpec)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataCatalogEntryBigqueryDateShardedSpec](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataCatalogEntry.GoogleDataCatalogEntryBigqueryDateShardedSpecList",
-		reflect.TypeOf((*GoogleDataCatalogEntryBigqueryDateShardedSpecList)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataCatalogEntryBigqueryDateShardedSpecList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -118,7 +118,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataCatalogEntryBigqueryDateShardedSpecList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -126,7 +126,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataCatalogEntry.GoogleDataCatalogEntryBigqueryDateShardedSpecOutputReference",
-		reflect.TypeOf((*GoogleDataCatalogEntryBigqueryDateShardedSpecOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataCatalogEntryBigqueryDateShardedSpecOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -153,7 +153,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataCatalogEntryBigqueryDateShardedSpecOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -161,11 +161,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataCatalogEntry.GoogleDataCatalogEntryBigqueryTableSpec",
-		reflect.TypeOf((*GoogleDataCatalogEntryBigqueryTableSpec)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataCatalogEntryBigqueryTableSpec](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataCatalogEntry.GoogleDataCatalogEntryBigqueryTableSpecList",
-		reflect.TypeOf((*GoogleDataCatalogEntryBigqueryTableSpecList)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataCatalogEntryBigqueryTableSpecList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -178,7 +178,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataCatalogEntryBigqueryTableSpecList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -186,7 +186,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataCatalogEntry.GoogleDataCatalogEntryBigqueryTableSpecOutputReference",
-		reflect.TypeOf((*GoogleDataCatalogEntryBigqueryTableSpecOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataCatalogEntryBigqueryTableSpecOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -213,7 +213,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "viewSpec", GoGetter: "ViewSpec"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataCatalogEntryBigqueryTableSpecOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -221,11 +221,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataCatalogEntry.GoogleDataCatalogEntryBigqueryTableSpecTableSpec",
-		reflect.TypeOf((*GoogleDataCatalogEntryBigqueryTableSpecTableSpec)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataCatalogEntryBigqueryTableSpecTableSpec](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataCatalogEntry.GoogleDataCatalogEntryBigqueryTableSpecTableSpecList",
-		reflect.TypeOf((*GoogleDataCatalogEntryBigqueryTableSpecTableSpecList)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataCatalogEntryBigqueryTableSpecTableSpecList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -238,7 +238,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataCatalogEntryBigqueryTableSpecTableSpecList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -246,7 +246,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataCatalogEntry.GoogleDataCatalogEntryBigqueryTableSpecTableSpecOutputReference",
-		reflect.TypeOf((*GoogleDataCatalogEntryBigqueryTableSpecTableSpecOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataCatalogEntryBigqueryTableSpecTableSpecOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -271,7 +271,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataCatalogEntryBigqueryTableSpecTableSpecOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -279,11 +279,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataCatalogEntry.GoogleDataCatalogEntryBigqueryTableSpecViewSpec",
-		reflect.TypeOf((*GoogleDataCatalogEntryBigqueryTableSpecViewSpec)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataCatalogEntryBigqueryTableSpecViewSpec](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataCatalogEntry.GoogleDataCatalogEntryBigqueryTableSpecViewSpecList",
-		reflect.TypeOf((*GoogleDataCatalogEntryBigqueryTableSpecViewSpecList)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataCatalogEntryBigqueryTableSpecViewSpecList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -296,7 +296,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataCatalogEntryBigqueryTableSpecViewSpecList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -304,7 +304,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataCatalogEntry.GoogleDataCatalogEntryBigqueryTableSpecViewSpecOutputReference",
-		reflect.TypeOf((*GoogleDataCatalogEntryBigqueryTableSpecViewSpecOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataCatalogEntryBigqueryTableSpecViewSpecOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -329,7 +329,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "viewQuery", GoGetter: "ViewQuery"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataCatalogEntryBigqueryTableSpecViewSpecOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -337,15 +337,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataCatalogEntry.GoogleDataCatalogEntryConfig",
-		reflect.TypeOf((*GoogleDataCatalogEntryConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataCatalogEntryConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataCatalogEntry.GoogleDataCatalogEntryGcsFilesetSpec",
-		reflect.TypeOf((*GoogleDataCatalogEntryGcsFilesetSpec)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataCatalogEntryGcsFilesetSpec](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataCatalogEntry.GoogleDataCatalogEntryGcsFilesetSpecOutputReference",
-		reflect.TypeOf((*GoogleDataCatalogEntryGcsFilesetSpecOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataCatalogEntryGcsFilesetSpecOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -372,7 +372,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataCatalogEntryGcsFilesetSpecOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -380,11 +380,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataCatalogEntry.GoogleDataCatalogEntryGcsFilesetSpecSampleGcsFileSpecs",
-		reflect.TypeOf((*GoogleDataCatalogEntryGcsFilesetSpecSampleGcsFileSpecs)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataCatalogEntryGcsFilesetSpecSampleGcsFileSpecs](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataCatalogEntry.GoogleDataCatalogEntryGcsFilesetSpecSampleGcsFileSpecsList",
-		reflect.TypeOf((*GoogleDataCatalogEntryGcsFilesetSpecSampleGcsFileSpecsList)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataCatalogEntryGcsFilesetSpecSampleGcsFileSpecsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -397,7 +397,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataCatalogEntryGcsFilesetSpecSampleGcsFileSpecsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -405,7 +405,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataCatalogEntry.GoogleDataCatalogEntryGcsFilesetSpecSampleGcsFileSpecsOutputReference",
-		reflect.TypeOf((*GoogleDataCatalogEntryGcsFilesetSpecSampleGcsFileSpecsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataCatalogEntryGcsFilesetSpecSampleGcsFileSpecsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -431,7 +431,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataCatalogEntryGcsFilesetSpecSampleGcsFileSpecsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -439,11 +439,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataCatalogEntry.GoogleDataCatalogEntryTimeouts",
-		reflect.TypeOf((*GoogleDataCatalogEntryTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataCatalogEntryTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataCatalogEntry.GoogleDataCatalogEntryTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleDataCatalogEntryTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataCatalogEntryTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -476,7 +476,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataCatalogEntryTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

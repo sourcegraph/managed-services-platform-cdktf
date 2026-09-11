@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleComputeWireGroupEndpointsInterconnectsList) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeWireGroupEndpointsInterconnectsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeWireGroupEndpointsInterconnectsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleComputeWireGroupEndpointsInterconnectsListParameters(terra
 
 	return nil
 }
-

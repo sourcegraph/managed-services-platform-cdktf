@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleMonitoringSloWindowsBasedSliMetricMeanInRangeRangeOutpu
 	return nil
 }
 
-func (j *jsiiProxy_GoogleMonitoringSloWindowsBasedSliMetricMeanInRangeRangeOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleMonitoringSloWindowsBasedSliMetricMeanInRangeRangeOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGoogleMonitoringSloWindowsBasedSliMetricMeanInRangeRangeOutputRe
 
 	return nil
 }
-

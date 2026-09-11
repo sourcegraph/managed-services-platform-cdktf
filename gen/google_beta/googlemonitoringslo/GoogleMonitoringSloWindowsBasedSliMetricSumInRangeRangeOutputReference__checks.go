@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleMonitoringSloWindowsBasedSliMetricSumInRangeRangeOutput
 	return nil
 }
 
-func (j *jsiiProxy_GoogleMonitoringSloWindowsBasedSliMetricSumInRangeRangeOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleMonitoringSloWindowsBasedSliMetricSumInRangeRangeOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGoogleMonitoringSloWindowsBasedSliMetricSumInRangeRangeOutputRef
 
 	return nil
 }
-

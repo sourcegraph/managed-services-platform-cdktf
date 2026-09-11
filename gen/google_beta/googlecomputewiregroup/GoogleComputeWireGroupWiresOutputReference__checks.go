@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleComputeWireGroupWiresOutputReference) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeWireGroupWiresOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeWireGroupWiresOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleComputeWireGroupWiresOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

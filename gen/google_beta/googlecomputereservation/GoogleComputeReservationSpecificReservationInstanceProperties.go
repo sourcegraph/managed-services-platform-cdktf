@@ -1,6 +1,5 @@
 package googlecomputereservation
 
-
 type GoogleComputeReservationSpecificReservationInstanceProperties struct {
 	// The name of the machine type to reserve.
 	//
@@ -9,11 +8,11 @@ type GoogleComputeReservationSpecificReservationInstanceProperties struct {
 	// guest_accelerators block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_reservation#guest_accelerators GoogleComputeReservation#guest_accelerators}
-	GuestAccelerators interface{} `field:"optional" json:"guestAccelerators" yaml:"guestAccelerators"`
+	GuestAccelerators any `field:"optional" json:"guestAccelerators" yaml:"guestAccelerators"`
 	// local_ssds block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_reservation#local_ssds GoogleComputeReservation#local_ssds}
-	LocalSsds interface{} `field:"optional" json:"localSsds" yaml:"localSsds"`
+	LocalSsds any `field:"optional" json:"localSsds" yaml:"localSsds"`
 	// Specifies the frequency of planned maintenance events. Possible values: ["AS_NEEDED", "PERIODIC", "RECURRENT"].
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_reservation#maintenance_interval GoogleComputeReservation#maintenance_interval}
@@ -28,4 +27,3 @@ type GoogleComputeReservationSpecificReservationInstanceProperties struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_reservation#min_cpu_platform GoogleComputeReservation#min_cpu_platform}
 	MinCpuPlatform *string `field:"optional" json:"minCpuPlatform" yaml:"minCpuPlatform"`
 }
-

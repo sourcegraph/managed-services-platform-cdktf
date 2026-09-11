@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleComputeUrlMapTestHeadersList) validateResolveParameters
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeUrlMapTestHeadersList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeUrlMapTestHeadersList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleComputeUrlMapTestHeadersListParameters(terraformResource c
 
 	return nil
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleAlloydbCluster.GoogleAlloydbCluster",
-		reflect.TypeOf((*GoogleAlloydbCluster)(nil)).Elem(),
+		reflect.TypeFor[GoogleAlloydbCluster](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -146,7 +146,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "trialMetadata", GoGetter: "TrialMetadata"},
 			_jsii_.MemberProperty{JsiiProperty: "uid", GoGetter: "Uid"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleAlloydbCluster{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -154,15 +154,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleAlloydbCluster.GoogleAlloydbClusterAutomatedBackupPolicy",
-		reflect.TypeOf((*GoogleAlloydbClusterAutomatedBackupPolicy)(nil)).Elem(),
+		reflect.TypeFor[GoogleAlloydbClusterAutomatedBackupPolicy](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleAlloydbCluster.GoogleAlloydbClusterAutomatedBackupPolicyEncryptionConfig",
-		reflect.TypeOf((*GoogleAlloydbClusterAutomatedBackupPolicyEncryptionConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleAlloydbClusterAutomatedBackupPolicyEncryptionConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleAlloydbCluster.GoogleAlloydbClusterAutomatedBackupPolicyEncryptionConfigOutputReference",
-		reflect.TypeOf((*GoogleAlloydbClusterAutomatedBackupPolicyEncryptionConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleAlloydbClusterAutomatedBackupPolicyEncryptionConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -189,7 +189,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleAlloydbClusterAutomatedBackupPolicyEncryptionConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -197,7 +197,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleAlloydbCluster.GoogleAlloydbClusterAutomatedBackupPolicyOutputReference",
-		reflect.TypeOf((*GoogleAlloydbClusterAutomatedBackupPolicyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleAlloydbClusterAutomatedBackupPolicyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "backupWindow", GoGetter: "BackupWindow"},
 			_jsii_.MemberProperty{JsiiProperty: "backupWindowInput", GoGetter: "BackupWindowInput"},
@@ -249,7 +249,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "weeklySchedule", GoGetter: "WeeklySchedule"},
 			_jsii_.MemberProperty{JsiiProperty: "weeklyScheduleInput", GoGetter: "WeeklyScheduleInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleAlloydbClusterAutomatedBackupPolicyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -257,11 +257,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleAlloydbCluster.GoogleAlloydbClusterAutomatedBackupPolicyQuantityBasedRetention",
-		reflect.TypeOf((*GoogleAlloydbClusterAutomatedBackupPolicyQuantityBasedRetention)(nil)).Elem(),
+		reflect.TypeFor[GoogleAlloydbClusterAutomatedBackupPolicyQuantityBasedRetention](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleAlloydbCluster.GoogleAlloydbClusterAutomatedBackupPolicyQuantityBasedRetentionOutputReference",
-		reflect.TypeOf((*GoogleAlloydbClusterAutomatedBackupPolicyQuantityBasedRetentionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleAlloydbClusterAutomatedBackupPolicyQuantityBasedRetentionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -288,7 +288,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleAlloydbClusterAutomatedBackupPolicyQuantityBasedRetentionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -296,11 +296,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleAlloydbCluster.GoogleAlloydbClusterAutomatedBackupPolicyTimeBasedRetention",
-		reflect.TypeOf((*GoogleAlloydbClusterAutomatedBackupPolicyTimeBasedRetention)(nil)).Elem(),
+		reflect.TypeFor[GoogleAlloydbClusterAutomatedBackupPolicyTimeBasedRetention](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleAlloydbCluster.GoogleAlloydbClusterAutomatedBackupPolicyTimeBasedRetentionOutputReference",
-		reflect.TypeOf((*GoogleAlloydbClusterAutomatedBackupPolicyTimeBasedRetentionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleAlloydbClusterAutomatedBackupPolicyTimeBasedRetentionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -327,7 +327,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleAlloydbClusterAutomatedBackupPolicyTimeBasedRetentionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -335,11 +335,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleAlloydbCluster.GoogleAlloydbClusterAutomatedBackupPolicyWeeklySchedule",
-		reflect.TypeOf((*GoogleAlloydbClusterAutomatedBackupPolicyWeeklySchedule)(nil)).Elem(),
+		reflect.TypeFor[GoogleAlloydbClusterAutomatedBackupPolicyWeeklySchedule](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleAlloydbCluster.GoogleAlloydbClusterAutomatedBackupPolicyWeeklyScheduleOutputReference",
-		reflect.TypeOf((*GoogleAlloydbClusterAutomatedBackupPolicyWeeklyScheduleOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleAlloydbClusterAutomatedBackupPolicyWeeklyScheduleOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -369,7 +369,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleAlloydbClusterAutomatedBackupPolicyWeeklyScheduleOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -377,11 +377,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleAlloydbCluster.GoogleAlloydbClusterAutomatedBackupPolicyWeeklyScheduleStartTimes",
-		reflect.TypeOf((*GoogleAlloydbClusterAutomatedBackupPolicyWeeklyScheduleStartTimes)(nil)).Elem(),
+		reflect.TypeFor[GoogleAlloydbClusterAutomatedBackupPolicyWeeklyScheduleStartTimes](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleAlloydbCluster.GoogleAlloydbClusterAutomatedBackupPolicyWeeklyScheduleStartTimesList",
-		reflect.TypeOf((*GoogleAlloydbClusterAutomatedBackupPolicyWeeklyScheduleStartTimesList)(nil)).Elem(),
+		reflect.TypeFor[GoogleAlloydbClusterAutomatedBackupPolicyWeeklyScheduleStartTimesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -395,7 +395,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleAlloydbClusterAutomatedBackupPolicyWeeklyScheduleStartTimesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -403,7 +403,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleAlloydbCluster.GoogleAlloydbClusterAutomatedBackupPolicyWeeklyScheduleStartTimesOutputReference",
-		reflect.TypeOf((*GoogleAlloydbClusterAutomatedBackupPolicyWeeklyScheduleStartTimesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleAlloydbClusterAutomatedBackupPolicyWeeklyScheduleStartTimesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -439,7 +439,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleAlloydbClusterAutomatedBackupPolicyWeeklyScheduleStartTimesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -447,11 +447,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleAlloydbCluster.GoogleAlloydbClusterBackupSource",
-		reflect.TypeOf((*GoogleAlloydbClusterBackupSource)(nil)).Elem(),
+		reflect.TypeFor[GoogleAlloydbClusterBackupSource](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleAlloydbCluster.GoogleAlloydbClusterBackupSourceList",
-		reflect.TypeOf((*GoogleAlloydbClusterBackupSourceList)(nil)).Elem(),
+		reflect.TypeFor[GoogleAlloydbClusterBackupSourceList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -464,7 +464,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleAlloydbClusterBackupSourceList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -472,7 +472,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleAlloydbCluster.GoogleAlloydbClusterBackupSourceOutputReference",
-		reflect.TypeOf((*GoogleAlloydbClusterBackupSourceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleAlloydbClusterBackupSourceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "backupName", GoGetter: "BackupName"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -497,7 +497,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleAlloydbClusterBackupSourceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -505,19 +505,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleAlloydbCluster.GoogleAlloydbClusterConfig",
-		reflect.TypeOf((*GoogleAlloydbClusterConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleAlloydbClusterConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleAlloydbCluster.GoogleAlloydbClusterContinuousBackupConfig",
-		reflect.TypeOf((*GoogleAlloydbClusterContinuousBackupConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleAlloydbClusterContinuousBackupConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleAlloydbCluster.GoogleAlloydbClusterContinuousBackupConfigEncryptionConfig",
-		reflect.TypeOf((*GoogleAlloydbClusterContinuousBackupConfigEncryptionConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleAlloydbClusterContinuousBackupConfigEncryptionConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleAlloydbCluster.GoogleAlloydbClusterContinuousBackupConfigEncryptionConfigOutputReference",
-		reflect.TypeOf((*GoogleAlloydbClusterContinuousBackupConfigEncryptionConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleAlloydbClusterContinuousBackupConfigEncryptionConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -544,7 +544,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleAlloydbClusterContinuousBackupConfigEncryptionConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -552,7 +552,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleAlloydbCluster.GoogleAlloydbClusterContinuousBackupConfigOutputReference",
-		reflect.TypeOf((*GoogleAlloydbClusterContinuousBackupConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleAlloydbClusterContinuousBackupConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -586,7 +586,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleAlloydbClusterContinuousBackupConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -594,15 +594,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleAlloydbCluster.GoogleAlloydbClusterContinuousBackupInfo",
-		reflect.TypeOf((*GoogleAlloydbClusterContinuousBackupInfo)(nil)).Elem(),
+		reflect.TypeFor[GoogleAlloydbClusterContinuousBackupInfo](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleAlloydbCluster.GoogleAlloydbClusterContinuousBackupInfoEncryptionInfo",
-		reflect.TypeOf((*GoogleAlloydbClusterContinuousBackupInfoEncryptionInfo)(nil)).Elem(),
+		reflect.TypeFor[GoogleAlloydbClusterContinuousBackupInfoEncryptionInfo](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleAlloydbCluster.GoogleAlloydbClusterContinuousBackupInfoEncryptionInfoList",
-		reflect.TypeOf((*GoogleAlloydbClusterContinuousBackupInfoEncryptionInfoList)(nil)).Elem(),
+		reflect.TypeFor[GoogleAlloydbClusterContinuousBackupInfoEncryptionInfoList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -615,7 +615,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleAlloydbClusterContinuousBackupInfoEncryptionInfoList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -623,7 +623,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleAlloydbCluster.GoogleAlloydbClusterContinuousBackupInfoEncryptionInfoOutputReference",
-		reflect.TypeOf((*GoogleAlloydbClusterContinuousBackupInfoEncryptionInfoOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleAlloydbClusterContinuousBackupInfoEncryptionInfoOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -649,7 +649,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleAlloydbClusterContinuousBackupInfoEncryptionInfoOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -657,7 +657,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleAlloydbCluster.GoogleAlloydbClusterContinuousBackupInfoList",
-		reflect.TypeOf((*GoogleAlloydbClusterContinuousBackupInfoList)(nil)).Elem(),
+		reflect.TypeFor[GoogleAlloydbClusterContinuousBackupInfoList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -670,7 +670,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleAlloydbClusterContinuousBackupInfoList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -678,7 +678,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleAlloydbCluster.GoogleAlloydbClusterContinuousBackupInfoOutputReference",
-		reflect.TypeOf((*GoogleAlloydbClusterContinuousBackupInfoOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleAlloydbClusterContinuousBackupInfoOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -706,7 +706,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleAlloydbClusterContinuousBackupInfoOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -714,11 +714,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleAlloydbCluster.GoogleAlloydbClusterEncryptionConfig",
-		reflect.TypeOf((*GoogleAlloydbClusterEncryptionConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleAlloydbClusterEncryptionConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleAlloydbCluster.GoogleAlloydbClusterEncryptionConfigOutputReference",
-		reflect.TypeOf((*GoogleAlloydbClusterEncryptionConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleAlloydbClusterEncryptionConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -745,7 +745,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleAlloydbClusterEncryptionConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -753,11 +753,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleAlloydbCluster.GoogleAlloydbClusterEncryptionInfo",
-		reflect.TypeOf((*GoogleAlloydbClusterEncryptionInfo)(nil)).Elem(),
+		reflect.TypeFor[GoogleAlloydbClusterEncryptionInfo](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleAlloydbCluster.GoogleAlloydbClusterEncryptionInfoList",
-		reflect.TypeOf((*GoogleAlloydbClusterEncryptionInfoList)(nil)).Elem(),
+		reflect.TypeFor[GoogleAlloydbClusterEncryptionInfoList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -770,7 +770,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleAlloydbClusterEncryptionInfoList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -778,7 +778,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleAlloydbCluster.GoogleAlloydbClusterEncryptionInfoOutputReference",
-		reflect.TypeOf((*GoogleAlloydbClusterEncryptionInfoOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleAlloydbClusterEncryptionInfoOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -804,7 +804,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleAlloydbClusterEncryptionInfoOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -812,11 +812,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleAlloydbCluster.GoogleAlloydbClusterInitialUser",
-		reflect.TypeOf((*GoogleAlloydbClusterInitialUser)(nil)).Elem(),
+		reflect.TypeFor[GoogleAlloydbClusterInitialUser](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleAlloydbCluster.GoogleAlloydbClusterInitialUserOutputReference",
-		reflect.TypeOf((*GoogleAlloydbClusterInitialUserOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleAlloydbClusterInitialUserOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -845,7 +845,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "user", GoGetter: "User"},
 			_jsii_.MemberProperty{JsiiProperty: "userInput", GoGetter: "UserInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleAlloydbClusterInitialUserOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -853,15 +853,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleAlloydbCluster.GoogleAlloydbClusterMaintenanceUpdatePolicy",
-		reflect.TypeOf((*GoogleAlloydbClusterMaintenanceUpdatePolicy)(nil)).Elem(),
+		reflect.TypeFor[GoogleAlloydbClusterMaintenanceUpdatePolicy](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleAlloydbCluster.GoogleAlloydbClusterMaintenanceUpdatePolicyMaintenanceWindows",
-		reflect.TypeOf((*GoogleAlloydbClusterMaintenanceUpdatePolicyMaintenanceWindows)(nil)).Elem(),
+		reflect.TypeFor[GoogleAlloydbClusterMaintenanceUpdatePolicyMaintenanceWindows](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleAlloydbCluster.GoogleAlloydbClusterMaintenanceUpdatePolicyMaintenanceWindowsList",
-		reflect.TypeOf((*GoogleAlloydbClusterMaintenanceUpdatePolicyMaintenanceWindowsList)(nil)).Elem(),
+		reflect.TypeFor[GoogleAlloydbClusterMaintenanceUpdatePolicyMaintenanceWindowsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -875,7 +875,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleAlloydbClusterMaintenanceUpdatePolicyMaintenanceWindowsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -883,7 +883,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleAlloydbCluster.GoogleAlloydbClusterMaintenanceUpdatePolicyMaintenanceWindowsOutputReference",
-		reflect.TypeOf((*GoogleAlloydbClusterMaintenanceUpdatePolicyMaintenanceWindowsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleAlloydbClusterMaintenanceUpdatePolicyMaintenanceWindowsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -912,7 +912,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleAlloydbClusterMaintenanceUpdatePolicyMaintenanceWindowsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -920,11 +920,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleAlloydbCluster.GoogleAlloydbClusterMaintenanceUpdatePolicyMaintenanceWindowsStartTime",
-		reflect.TypeOf((*GoogleAlloydbClusterMaintenanceUpdatePolicyMaintenanceWindowsStartTime)(nil)).Elem(),
+		reflect.TypeFor[GoogleAlloydbClusterMaintenanceUpdatePolicyMaintenanceWindowsStartTime](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleAlloydbCluster.GoogleAlloydbClusterMaintenanceUpdatePolicyMaintenanceWindowsStartTimeOutputReference",
-		reflect.TypeOf((*GoogleAlloydbClusterMaintenanceUpdatePolicyMaintenanceWindowsStartTimeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleAlloydbClusterMaintenanceUpdatePolicyMaintenanceWindowsStartTimeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -959,7 +959,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleAlloydbClusterMaintenanceUpdatePolicyMaintenanceWindowsStartTimeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -967,7 +967,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleAlloydbCluster.GoogleAlloydbClusterMaintenanceUpdatePolicyOutputReference",
-		reflect.TypeOf((*GoogleAlloydbClusterMaintenanceUpdatePolicyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleAlloydbClusterMaintenanceUpdatePolicyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -995,7 +995,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleAlloydbClusterMaintenanceUpdatePolicyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1003,11 +1003,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleAlloydbCluster.GoogleAlloydbClusterMigrationSource",
-		reflect.TypeOf((*GoogleAlloydbClusterMigrationSource)(nil)).Elem(),
+		reflect.TypeFor[GoogleAlloydbClusterMigrationSource](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleAlloydbCluster.GoogleAlloydbClusterMigrationSourceList",
-		reflect.TypeOf((*GoogleAlloydbClusterMigrationSourceList)(nil)).Elem(),
+		reflect.TypeFor[GoogleAlloydbClusterMigrationSourceList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1020,7 +1020,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleAlloydbClusterMigrationSourceList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1028,7 +1028,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleAlloydbCluster.GoogleAlloydbClusterMigrationSourceOutputReference",
-		reflect.TypeOf((*GoogleAlloydbClusterMigrationSourceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleAlloydbClusterMigrationSourceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1055,7 +1055,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleAlloydbClusterMigrationSourceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1063,11 +1063,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleAlloydbCluster.GoogleAlloydbClusterNetworkConfig",
-		reflect.TypeOf((*GoogleAlloydbClusterNetworkConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleAlloydbClusterNetworkConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleAlloydbCluster.GoogleAlloydbClusterNetworkConfigOutputReference",
-		reflect.TypeOf((*GoogleAlloydbClusterNetworkConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleAlloydbClusterNetworkConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allocatedIpRange", GoGetter: "AllocatedIpRange"},
 			_jsii_.MemberProperty{JsiiProperty: "allocatedIpRangeInput", GoGetter: "AllocatedIpRangeInput"},
@@ -1097,7 +1097,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleAlloydbClusterNetworkConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1105,11 +1105,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleAlloydbCluster.GoogleAlloydbClusterPscConfig",
-		reflect.TypeOf((*GoogleAlloydbClusterPscConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleAlloydbClusterPscConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleAlloydbCluster.GoogleAlloydbClusterPscConfigOutputReference",
-		reflect.TypeOf((*GoogleAlloydbClusterPscConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleAlloydbClusterPscConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1137,7 +1137,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleAlloydbClusterPscConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1145,11 +1145,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleAlloydbCluster.GoogleAlloydbClusterRestoreBackupSource",
-		reflect.TypeOf((*GoogleAlloydbClusterRestoreBackupSource)(nil)).Elem(),
+		reflect.TypeFor[GoogleAlloydbClusterRestoreBackupSource](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleAlloydbCluster.GoogleAlloydbClusterRestoreBackupSourceOutputReference",
-		reflect.TypeOf((*GoogleAlloydbClusterRestoreBackupSourceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleAlloydbClusterRestoreBackupSourceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "backupName", GoGetter: "BackupName"},
 			_jsii_.MemberProperty{JsiiProperty: "backupNameInput", GoGetter: "BackupNameInput"},
@@ -1175,7 +1175,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleAlloydbClusterRestoreBackupSourceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1183,11 +1183,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleAlloydbCluster.GoogleAlloydbClusterRestoreContinuousBackupSource",
-		reflect.TypeOf((*GoogleAlloydbClusterRestoreContinuousBackupSource)(nil)).Elem(),
+		reflect.TypeFor[GoogleAlloydbClusterRestoreContinuousBackupSource](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleAlloydbCluster.GoogleAlloydbClusterRestoreContinuousBackupSourceOutputReference",
-		reflect.TypeOf((*GoogleAlloydbClusterRestoreContinuousBackupSourceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleAlloydbClusterRestoreContinuousBackupSourceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cluster", GoGetter: "Cluster"},
 			_jsii_.MemberProperty{JsiiProperty: "clusterInput", GoGetter: "ClusterInput"},
@@ -1215,7 +1215,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleAlloydbClusterRestoreContinuousBackupSourceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1223,11 +1223,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleAlloydbCluster.GoogleAlloydbClusterSecondaryConfig",
-		reflect.TypeOf((*GoogleAlloydbClusterSecondaryConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleAlloydbClusterSecondaryConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleAlloydbCluster.GoogleAlloydbClusterSecondaryConfigOutputReference",
-		reflect.TypeOf((*GoogleAlloydbClusterSecondaryConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleAlloydbClusterSecondaryConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1253,7 +1253,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleAlloydbClusterSecondaryConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1261,11 +1261,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleAlloydbCluster.GoogleAlloydbClusterTimeouts",
-		reflect.TypeOf((*GoogleAlloydbClusterTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleAlloydbClusterTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleAlloydbCluster.GoogleAlloydbClusterTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleAlloydbClusterTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleAlloydbClusterTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1298,7 +1298,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleAlloydbClusterTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1306,11 +1306,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleAlloydbCluster.GoogleAlloydbClusterTrialMetadata",
-		reflect.TypeOf((*GoogleAlloydbClusterTrialMetadata)(nil)).Elem(),
+		reflect.TypeFor[GoogleAlloydbClusterTrialMetadata](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleAlloydbCluster.GoogleAlloydbClusterTrialMetadataList",
-		reflect.TypeOf((*GoogleAlloydbClusterTrialMetadataList)(nil)).Elem(),
+		reflect.TypeFor[GoogleAlloydbClusterTrialMetadataList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1323,7 +1323,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleAlloydbClusterTrialMetadataList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1331,7 +1331,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleAlloydbCluster.GoogleAlloydbClusterTrialMetadataOutputReference",
-		reflect.TypeOf((*GoogleAlloydbClusterTrialMetadataOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleAlloydbClusterTrialMetadataOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1359,7 +1359,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "upgradeTime", GoGetter: "UpgradeTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleAlloydbClusterTrialMetadataOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

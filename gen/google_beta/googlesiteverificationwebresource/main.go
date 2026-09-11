@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleSiteVerificationWebResource.GoogleSiteVerificationWebResource",
-		reflect.TypeOf((*GoogleSiteVerificationWebResource)(nil)).Elem(),
+		reflect.TypeFor[GoogleSiteVerificationWebResource](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -67,7 +67,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "verificationMethodInput", GoGetter: "VerificationMethodInput"},
 			_jsii_.MemberProperty{JsiiProperty: "webResourceId", GoGetter: "WebResourceId"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleSiteVerificationWebResource{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -75,15 +75,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleSiteVerificationWebResource.GoogleSiteVerificationWebResourceConfig",
-		reflect.TypeOf((*GoogleSiteVerificationWebResourceConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleSiteVerificationWebResourceConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleSiteVerificationWebResource.GoogleSiteVerificationWebResourceSite",
-		reflect.TypeOf((*GoogleSiteVerificationWebResourceSite)(nil)).Elem(),
+		reflect.TypeFor[GoogleSiteVerificationWebResourceSite](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleSiteVerificationWebResource.GoogleSiteVerificationWebResourceSiteOutputReference",
-		reflect.TypeOf((*GoogleSiteVerificationWebResourceSiteOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleSiteVerificationWebResourceSiteOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -111,7 +111,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleSiteVerificationWebResourceSiteOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -119,11 +119,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleSiteVerificationWebResource.GoogleSiteVerificationWebResourceTimeouts",
-		reflect.TypeOf((*GoogleSiteVerificationWebResourceTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleSiteVerificationWebResourceTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleSiteVerificationWebResource.GoogleSiteVerificationWebResourceTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleSiteVerificationWebResourceTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleSiteVerificationWebResourceTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -153,7 +153,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleSiteVerificationWebResourceTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

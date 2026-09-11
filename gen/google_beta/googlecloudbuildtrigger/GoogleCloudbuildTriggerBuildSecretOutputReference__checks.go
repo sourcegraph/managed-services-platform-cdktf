@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleCloudbuildTriggerBuildSecretOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudbuildTriggerBuildSecretOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleCloudbuildTriggerBuildSecretOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_GoogleCloudbuildTriggerBuildSecretOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudbuildTriggerBuildSecretOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleCloudbuildTriggerBuildSecretOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGoogleCloudbuildTriggerBuildSecretOutputReferenceParameters(terr
 
 	return nil
 }
-

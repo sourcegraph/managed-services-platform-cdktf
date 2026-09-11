@@ -106,7 +106,7 @@ func (j *jsiiProxy_GoogleMonitoringNotificationChannelSensitiveLabelsOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_GoogleMonitoringNotificationChannelSensitiveLabelsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleMonitoringNotificationChannelSensitiveLabelsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewGoogleMonitoringNotificationChannelSensitiveLabelsOutputReferenc
 
 	return nil
 }
-

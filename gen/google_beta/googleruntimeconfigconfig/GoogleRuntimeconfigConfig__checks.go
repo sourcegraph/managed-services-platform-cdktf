@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleRuntimeconfigConfig) validateAddMoveTargetParameters(mo
 	return nil
 }
 
-func (g *jsiiProxy_GoogleRuntimeconfigConfig) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleRuntimeconfigConfig) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleRuntimeconfigConfig) validateMoveFromIdParameters(id *s
 	return nil
 }
 
-func (g *jsiiProxy_GoogleRuntimeconfigConfig) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleRuntimeconfigConfig) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateGoogleRuntimeconfigConfig_GenerateConfigForImportParameters(scope c
 	return nil
 }
 
-func validateGoogleRuntimeconfigConfig_IsConstructParameters(x interface{}) error {
+func validateGoogleRuntimeconfigConfig_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateGoogleRuntimeconfigConfig_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
-func validateGoogleRuntimeconfigConfig_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleRuntimeconfigConfig_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateGoogleRuntimeconfigConfig_IsTerraformElementParameters(x interface{
 	return nil
 }
 
-func validateGoogleRuntimeconfigConfig_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleRuntimeconfigConfig_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateGoogleRuntimeconfigConfig_IsTerraformResourceParameters(x interface
 	return nil
 }
 
-func (j *jsiiProxy_GoogleRuntimeconfigConfig) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleRuntimeconfigConfig) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_GoogleRuntimeconfigConfig) validateSetConnectionParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleRuntimeconfigConfig) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleRuntimeconfigConfig) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -374,7 +374,7 @@ func (j *jsiiProxy_GoogleRuntimeconfigConfig) validateSetProjectParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_GoogleRuntimeconfigConfig) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleRuntimeconfigConfig) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -438,4 +438,3 @@ func validateNewGoogleRuntimeconfigConfigParameters(scope constructs.Construct, 
 
 	return nil
 }
-

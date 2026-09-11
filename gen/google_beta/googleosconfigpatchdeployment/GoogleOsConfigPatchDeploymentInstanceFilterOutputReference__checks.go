@@ -90,7 +90,7 @@ func (g *jsiiProxy_GoogleOsConfigPatchDeploymentInstanceFilterOutputReference) v
 	return nil
 }
 
-func (g *jsiiProxy_GoogleOsConfigPatchDeploymentInstanceFilterOutputReference) validatePutGroupLabelsParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleOsConfigPatchDeploymentInstanceFilterOutputReference) validatePutGroupLabelsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (g *jsiiProxy_GoogleOsConfigPatchDeploymentInstanceFilterOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_GoogleOsConfigPatchDeploymentInstanceFilterOutputReference) validateSetAllParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleOsConfigPatchDeploymentInstanceFilterOutputReference) validateSetAllParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -149,7 +149,7 @@ func (j *jsiiProxy_GoogleOsConfigPatchDeploymentInstanceFilterOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_GoogleOsConfigPatchDeploymentInstanceFilterOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleOsConfigPatchDeploymentInstanceFilterOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -273,4 +273,3 @@ func validateNewGoogleOsConfigPatchDeploymentInstanceFilterOutputReferenceParame
 
 	return nil
 }
-

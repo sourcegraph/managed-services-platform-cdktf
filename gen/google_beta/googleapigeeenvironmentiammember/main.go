@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleApigeeEnvironmentIamMember.GoogleApigeeEnvironmentIamMember",
-		reflect.TypeOf((*GoogleApigeeEnvironmentIamMember)(nil)).Elem(),
+		reflect.TypeFor[GoogleApigeeEnvironmentIamMember](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -69,7 +69,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleApigeeEnvironmentIamMember{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -77,11 +77,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleApigeeEnvironmentIamMember.GoogleApigeeEnvironmentIamMemberCondition",
-		reflect.TypeOf((*GoogleApigeeEnvironmentIamMemberCondition)(nil)).Elem(),
+		reflect.TypeFor[GoogleApigeeEnvironmentIamMemberCondition](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleApigeeEnvironmentIamMember.GoogleApigeeEnvironmentIamMemberConditionOutputReference",
-		reflect.TypeOf((*GoogleApigeeEnvironmentIamMemberConditionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleApigeeEnvironmentIamMemberConditionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -112,7 +112,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "titleInput", GoGetter: "TitleInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleApigeeEnvironmentIamMemberConditionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -120,6 +120,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleApigeeEnvironmentIamMember.GoogleApigeeEnvironmentIamMemberConfig",
-		reflect.TypeOf((*GoogleApigeeEnvironmentIamMemberConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleApigeeEnvironmentIamMemberConfig](),
 	)
 }

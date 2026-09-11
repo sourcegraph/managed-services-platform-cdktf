@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleFirebaseHostingVersion) validateAddMoveTargetParameters
 	return nil
 }
 
-func (g *jsiiProxy_GoogleFirebaseHostingVersion) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleFirebaseHostingVersion) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleFirebaseHostingVersion) validateMoveFromIdParameters(id
 	return nil
 }
 
-func (g *jsiiProxy_GoogleFirebaseHostingVersion) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleFirebaseHostingVersion) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -242,7 +242,7 @@ func validateGoogleFirebaseHostingVersion_GenerateConfigForImportParameters(scop
 	return nil
 }
 
-func validateGoogleFirebaseHostingVersion_IsConstructParameters(x interface{}) error {
+func validateGoogleFirebaseHostingVersion_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -250,7 +250,7 @@ func validateGoogleFirebaseHostingVersion_IsConstructParameters(x interface{}) e
 	return nil
 }
 
-func validateGoogleFirebaseHostingVersion_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleFirebaseHostingVersion_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -258,7 +258,7 @@ func validateGoogleFirebaseHostingVersion_IsTerraformElementParameters(x interfa
 	return nil
 }
 
-func validateGoogleFirebaseHostingVersion_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleFirebaseHostingVersion_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -266,7 +266,7 @@ func validateGoogleFirebaseHostingVersion_IsTerraformResourceParameters(x interf
 	return nil
 }
 
-func (j *jsiiProxy_GoogleFirebaseHostingVersion) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleFirebaseHostingVersion) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -299,7 +299,7 @@ func (j *jsiiProxy_GoogleFirebaseHostingVersion) validateSetConnectionParameters
 	return nil
 }
 
-func (j *jsiiProxy_GoogleFirebaseHostingVersion) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleFirebaseHostingVersion) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -372,7 +372,7 @@ func (j *jsiiProxy_GoogleFirebaseHostingVersion) validateSetLifecycleParameters(
 	return nil
 }
 
-func (j *jsiiProxy_GoogleFirebaseHostingVersion) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleFirebaseHostingVersion) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -444,4 +444,3 @@ func validateNewGoogleFirebaseHostingVersionParameters(scope constructs.Construc
 
 	return nil
 }
-

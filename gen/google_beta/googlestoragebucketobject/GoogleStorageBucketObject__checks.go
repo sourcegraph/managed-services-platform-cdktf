@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleStorageBucketObject) validateAddMoveTargetParameters(mo
 	return nil
 }
 
-func (g *jsiiProxy_GoogleStorageBucketObject) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleStorageBucketObject) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleStorageBucketObject) validateMoveFromIdParameters(id *s
 	return nil
 }
 
-func (g *jsiiProxy_GoogleStorageBucketObject) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleStorageBucketObject) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -253,7 +253,7 @@ func validateGoogleStorageBucketObject_GenerateConfigForImportParameters(scope c
 	return nil
 }
 
-func validateGoogleStorageBucketObject_IsConstructParameters(x interface{}) error {
+func validateGoogleStorageBucketObject_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -261,7 +261,7 @@ func validateGoogleStorageBucketObject_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
-func validateGoogleStorageBucketObject_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleStorageBucketObject_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -269,7 +269,7 @@ func validateGoogleStorageBucketObject_IsTerraformElementParameters(x interface{
 	return nil
 }
 
-func validateGoogleStorageBucketObject_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleStorageBucketObject_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -293,7 +293,7 @@ func (j *jsiiProxy_GoogleStorageBucketObject) validateSetCacheControlParameters(
 	return nil
 }
 
-func (j *jsiiProxy_GoogleStorageBucketObject) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleStorageBucketObject) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -366,7 +366,7 @@ func (j *jsiiProxy_GoogleStorageBucketObject) validateSetContentTypeParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_GoogleStorageBucketObject) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleStorageBucketObject) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -431,7 +431,7 @@ func (j *jsiiProxy_GoogleStorageBucketObject) validateSetDetectMd5HashParameters
 	return nil
 }
 
-func (j *jsiiProxy_GoogleStorageBucketObject) validateSetEventBasedHoldParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleStorageBucketObject) validateSetEventBasedHoldParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -451,7 +451,7 @@ func (j *jsiiProxy_GoogleStorageBucketObject) validateSetEventBasedHoldParameter
 	return nil
 }
 
-func (j *jsiiProxy_GoogleStorageBucketObject) validateSetForceEmptyContentTypeParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleStorageBucketObject) validateSetForceEmptyContentTypeParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -511,7 +511,7 @@ func (j *jsiiProxy_GoogleStorageBucketObject) validateSetNameParameters(val *str
 	return nil
 }
 
-func (j *jsiiProxy_GoogleStorageBucketObject) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleStorageBucketObject) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -581,7 +581,7 @@ func (j *jsiiProxy_GoogleStorageBucketObject) validateSetStorageClassParameters(
 	return nil
 }
 
-func (j *jsiiProxy_GoogleStorageBucketObject) validateSetTemporaryHoldParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleStorageBucketObject) validateSetTemporaryHoldParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -619,4 +619,3 @@ func validateNewGoogleStorageBucketObjectParameters(scope constructs.Construct, 
 
 	return nil
 }
-

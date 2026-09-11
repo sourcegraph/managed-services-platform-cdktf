@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleApihubCurationEndpointApplicationIntegrationEndpointDet
 	return nil
 }
 
-func (j *jsiiProxy_GoogleApihubCurationEndpointApplicationIntegrationEndpointDetailsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleApihubCurationEndpointApplicationIntegrationEndpointDetailsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGoogleApihubCurationEndpointApplicationIntegrationEndpointDetail
 
 	return nil
 }
-

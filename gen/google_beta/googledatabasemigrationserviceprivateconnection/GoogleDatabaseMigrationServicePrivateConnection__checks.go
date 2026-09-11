@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleDatabaseMigrationServicePrivateConnection) validateAddM
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDatabaseMigrationServicePrivateConnection) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleDatabaseMigrationServicePrivateConnection) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleDatabaseMigrationServicePrivateConnection) validateMove
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDatabaseMigrationServicePrivateConnection) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleDatabaseMigrationServicePrivateConnection) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -242,7 +242,7 @@ func validateGoogleDatabaseMigrationServicePrivateConnection_GenerateConfigForIm
 	return nil
 }
 
-func validateGoogleDatabaseMigrationServicePrivateConnection_IsConstructParameters(x interface{}) error {
+func validateGoogleDatabaseMigrationServicePrivateConnection_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -250,7 +250,7 @@ func validateGoogleDatabaseMigrationServicePrivateConnection_IsConstructParamete
 	return nil
 }
 
-func validateGoogleDatabaseMigrationServicePrivateConnection_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleDatabaseMigrationServicePrivateConnection_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -258,7 +258,7 @@ func validateGoogleDatabaseMigrationServicePrivateConnection_IsTerraformElementP
 	return nil
 }
 
-func validateGoogleDatabaseMigrationServicePrivateConnection_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleDatabaseMigrationServicePrivateConnection_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -266,7 +266,7 @@ func validateGoogleDatabaseMigrationServicePrivateConnection_IsTerraformResource
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDatabaseMigrationServicePrivateConnection) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDatabaseMigrationServicePrivateConnection) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -299,7 +299,7 @@ func (j *jsiiProxy_GoogleDatabaseMigrationServicePrivateConnection) validateSetC
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDatabaseMigrationServicePrivateConnection) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDatabaseMigrationServicePrivateConnection) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -356,7 +356,7 @@ func (j *jsiiProxy_GoogleDatabaseMigrationServicePrivateConnection) validateSetC
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDatabaseMigrationServicePrivateConnection) validateSetCreateWithoutValidationParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDatabaseMigrationServicePrivateConnection) validateSetCreateWithoutValidationParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -432,7 +432,7 @@ func (j *jsiiProxy_GoogleDatabaseMigrationServicePrivateConnection) validateSetP
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDatabaseMigrationServicePrivateConnection) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleDatabaseMigrationServicePrivateConnection) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -496,4 +496,3 @@ func validateNewGoogleDatabaseMigrationServicePrivateConnectionParameters(scope 
 
 	return nil
 }
-

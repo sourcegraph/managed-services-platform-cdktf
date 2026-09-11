@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleComputeInstanceInstanceEncryptionKeyOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceInstanceEncryptionKeyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeInstanceInstanceEncryptionKeyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGoogleComputeInstanceInstanceEncryptionKeyOutputReferenceParamet
 
 	return nil
 }
-

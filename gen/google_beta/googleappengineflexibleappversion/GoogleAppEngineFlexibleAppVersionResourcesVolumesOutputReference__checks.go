@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleAppEngineFlexibleAppVersionResourcesVolumesOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersionResourcesVolumesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersionResourcesVolumesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersionResourcesVolumesOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersionResourcesVolumesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersionResourcesVolumesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewGoogleAppEngineFlexibleAppVersionResourcesVolumesOutputReference
 
 	return nil
 }
-

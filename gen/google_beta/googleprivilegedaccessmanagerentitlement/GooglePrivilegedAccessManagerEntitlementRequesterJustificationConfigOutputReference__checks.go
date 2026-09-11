@@ -120,7 +120,7 @@ func (g *jsiiProxy_GooglePrivilegedAccessManagerEntitlementRequesterJustificatio
 	return nil
 }
 
-func (j *jsiiProxy_GooglePrivilegedAccessManagerEntitlementRequesterJustificationConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GooglePrivilegedAccessManagerEntitlementRequesterJustificationConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -220,4 +220,3 @@ func validateNewGooglePrivilegedAccessManagerEntitlementRequesterJustificationCo
 
 	return nil
 }
-

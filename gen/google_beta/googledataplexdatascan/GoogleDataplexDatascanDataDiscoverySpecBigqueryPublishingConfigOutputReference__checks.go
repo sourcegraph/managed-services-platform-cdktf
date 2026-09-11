@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleDataplexDatascanDataDiscoverySpecBigqueryPublishingConf
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataplexDatascanDataDiscoverySpecBigqueryPublishingConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataplexDatascanDataDiscoverySpecBigqueryPublishingConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -230,4 +230,3 @@ func validateNewGoogleDataplexDatascanDataDiscoverySpecBigqueryPublishingConfigO
 
 	return nil
 }
-

@@ -1,6 +1,5 @@
 package googleclouddomainsregistration
 
-
 type GoogleClouddomainsRegistrationDnsSettings struct {
 	// custom_dns block.
 	//
@@ -9,6 +8,5 @@ type GoogleClouddomainsRegistrationDnsSettings struct {
 	// glue_records block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_clouddomains_registration#glue_records GoogleClouddomainsRegistration#glue_records}
-	GlueRecords interface{} `field:"optional" json:"glueRecords" yaml:"glueRecords"`
+	GlueRecords any `field:"optional" json:"glueRecords" yaml:"glueRecords"`
 }
-

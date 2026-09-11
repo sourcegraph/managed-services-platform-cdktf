@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleNetworkManagementConnectivityTest.GoogleNetworkManagementConnectivityTest",
-		reflect.TypeOf((*GoogleNetworkManagementConnectivityTest)(nil)).Elem(),
+		reflect.TypeFor[GoogleNetworkManagementConnectivityTest](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -91,7 +91,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleNetworkManagementConnectivityTest{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -99,15 +99,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleNetworkManagementConnectivityTest.GoogleNetworkManagementConnectivityTestConfig",
-		reflect.TypeOf((*GoogleNetworkManagementConnectivityTestConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleNetworkManagementConnectivityTestConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleNetworkManagementConnectivityTest.GoogleNetworkManagementConnectivityTestDestination",
-		reflect.TypeOf((*GoogleNetworkManagementConnectivityTestDestination)(nil)).Elem(),
+		reflect.TypeFor[GoogleNetworkManagementConnectivityTestDestination](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleNetworkManagementConnectivityTest.GoogleNetworkManagementConnectivityTestDestinationOutputReference",
-		reflect.TypeOf((*GoogleNetworkManagementConnectivityTestDestinationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleNetworkManagementConnectivityTestDestinationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cloudSqlInstance", GoGetter: "CloudSqlInstance"},
 			_jsii_.MemberProperty{JsiiProperty: "cloudSqlInstanceInput", GoGetter: "CloudSqlInstanceInput"},
@@ -164,7 +164,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleNetworkManagementConnectivityTestDestinationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -172,15 +172,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleNetworkManagementConnectivityTest.GoogleNetworkManagementConnectivityTestSource",
-		reflect.TypeOf((*GoogleNetworkManagementConnectivityTestSource)(nil)).Elem(),
+		reflect.TypeFor[GoogleNetworkManagementConnectivityTestSource](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleNetworkManagementConnectivityTest.GoogleNetworkManagementConnectivityTestSourceAppEngineVersion",
-		reflect.TypeOf((*GoogleNetworkManagementConnectivityTestSourceAppEngineVersion)(nil)).Elem(),
+		reflect.TypeFor[GoogleNetworkManagementConnectivityTestSourceAppEngineVersion](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleNetworkManagementConnectivityTest.GoogleNetworkManagementConnectivityTestSourceAppEngineVersionOutputReference",
-		reflect.TypeOf((*GoogleNetworkManagementConnectivityTestSourceAppEngineVersionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleNetworkManagementConnectivityTestSourceAppEngineVersionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -207,7 +207,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "uri", GoGetter: "Uri"},
 			_jsii_.MemberProperty{JsiiProperty: "uriInput", GoGetter: "UriInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleNetworkManagementConnectivityTestSourceAppEngineVersionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -215,11 +215,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleNetworkManagementConnectivityTest.GoogleNetworkManagementConnectivityTestSourceCloudFunction",
-		reflect.TypeOf((*GoogleNetworkManagementConnectivityTestSourceCloudFunction)(nil)).Elem(),
+		reflect.TypeFor[GoogleNetworkManagementConnectivityTestSourceCloudFunction](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleNetworkManagementConnectivityTest.GoogleNetworkManagementConnectivityTestSourceCloudFunctionOutputReference",
-		reflect.TypeOf((*GoogleNetworkManagementConnectivityTestSourceCloudFunctionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleNetworkManagementConnectivityTestSourceCloudFunctionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -246,7 +246,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "uri", GoGetter: "Uri"},
 			_jsii_.MemberProperty{JsiiProperty: "uriInput", GoGetter: "UriInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleNetworkManagementConnectivityTestSourceCloudFunctionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -254,11 +254,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleNetworkManagementConnectivityTest.GoogleNetworkManagementConnectivityTestSourceCloudRunRevision",
-		reflect.TypeOf((*GoogleNetworkManagementConnectivityTestSourceCloudRunRevision)(nil)).Elem(),
+		reflect.TypeFor[GoogleNetworkManagementConnectivityTestSourceCloudRunRevision](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleNetworkManagementConnectivityTest.GoogleNetworkManagementConnectivityTestSourceCloudRunRevisionOutputReference",
-		reflect.TypeOf((*GoogleNetworkManagementConnectivityTestSourceCloudRunRevisionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleNetworkManagementConnectivityTestSourceCloudRunRevisionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -285,7 +285,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "uri", GoGetter: "Uri"},
 			_jsii_.MemberProperty{JsiiProperty: "uriInput", GoGetter: "UriInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleNetworkManagementConnectivityTestSourceCloudRunRevisionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -293,7 +293,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleNetworkManagementConnectivityTest.GoogleNetworkManagementConnectivityTestSourceOutputReference",
-		reflect.TypeOf((*GoogleNetworkManagementConnectivityTestSourceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleNetworkManagementConnectivityTestSourceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "appEngineVersion", GoGetter: "AppEngineVersion"},
 			_jsii_.MemberProperty{JsiiProperty: "appEngineVersionInput", GoGetter: "AppEngineVersionInput"},
@@ -353,7 +353,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleNetworkManagementConnectivityTestSourceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -361,11 +361,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleNetworkManagementConnectivityTest.GoogleNetworkManagementConnectivityTestTimeouts",
-		reflect.TypeOf((*GoogleNetworkManagementConnectivityTestTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleNetworkManagementConnectivityTestTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleNetworkManagementConnectivityTest.GoogleNetworkManagementConnectivityTestTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleNetworkManagementConnectivityTestTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleNetworkManagementConnectivityTestTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -398,7 +398,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleNetworkManagementConnectivityTestTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

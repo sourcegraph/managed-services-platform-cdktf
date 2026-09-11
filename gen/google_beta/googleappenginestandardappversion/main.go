@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersion",
-		reflect.TypeOf((*GoogleAppEngineStandardAppVersion)(nil)).Elem(),
+		reflect.TypeFor[GoogleAppEngineStandardAppVersion](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -128,7 +128,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vpcAccessConnector", GoGetter: "VpcAccessConnector"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcAccessConnectorInput", GoGetter: "VpcAccessConnectorInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleAppEngineStandardAppVersion{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -136,11 +136,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionAutomaticScaling",
-		reflect.TypeOf((*GoogleAppEngineStandardAppVersionAutomaticScaling)(nil)).Elem(),
+		reflect.TypeFor[GoogleAppEngineStandardAppVersionAutomaticScaling](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionAutomaticScalingOutputReference",
-		reflect.TypeOf((*GoogleAppEngineStandardAppVersionAutomaticScalingOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleAppEngineStandardAppVersionAutomaticScalingOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -183,7 +183,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleAppEngineStandardAppVersionAutomaticScalingOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -191,11 +191,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionAutomaticScalingStandardSchedulerSettings",
-		reflect.TypeOf((*GoogleAppEngineStandardAppVersionAutomaticScalingStandardSchedulerSettings)(nil)).Elem(),
+		reflect.TypeFor[GoogleAppEngineStandardAppVersionAutomaticScalingStandardSchedulerSettings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionAutomaticScalingStandardSchedulerSettingsOutputReference",
-		reflect.TypeOf((*GoogleAppEngineStandardAppVersionAutomaticScalingStandardSchedulerSettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleAppEngineStandardAppVersionAutomaticScalingStandardSchedulerSettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -231,7 +231,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleAppEngineStandardAppVersionAutomaticScalingStandardSchedulerSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -239,11 +239,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionBasicScaling",
-		reflect.TypeOf((*GoogleAppEngineStandardAppVersionBasicScaling)(nil)).Elem(),
+		reflect.TypeFor[GoogleAppEngineStandardAppVersionBasicScaling](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionBasicScalingOutputReference",
-		reflect.TypeOf((*GoogleAppEngineStandardAppVersionBasicScalingOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleAppEngineStandardAppVersionBasicScalingOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -272,7 +272,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleAppEngineStandardAppVersionBasicScalingOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -280,19 +280,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionConfig",
-		reflect.TypeOf((*GoogleAppEngineStandardAppVersionConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleAppEngineStandardAppVersionConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionDeployment",
-		reflect.TypeOf((*GoogleAppEngineStandardAppVersionDeployment)(nil)).Elem(),
+		reflect.TypeFor[GoogleAppEngineStandardAppVersionDeployment](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionDeploymentFiles",
-		reflect.TypeOf((*GoogleAppEngineStandardAppVersionDeploymentFiles)(nil)).Elem(),
+		reflect.TypeFor[GoogleAppEngineStandardAppVersionDeploymentFiles](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionDeploymentFilesList",
-		reflect.TypeOf((*GoogleAppEngineStandardAppVersionDeploymentFilesList)(nil)).Elem(),
+		reflect.TypeFor[GoogleAppEngineStandardAppVersionDeploymentFilesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -306,7 +306,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleAppEngineStandardAppVersionDeploymentFilesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -314,7 +314,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionDeploymentFilesOutputReference",
-		reflect.TypeOf((*GoogleAppEngineStandardAppVersionDeploymentFilesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleAppEngineStandardAppVersionDeploymentFilesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -345,7 +345,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleAppEngineStandardAppVersionDeploymentFilesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -353,7 +353,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionDeploymentOutputReference",
-		reflect.TypeOf((*GoogleAppEngineStandardAppVersionDeploymentOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleAppEngineStandardAppVersionDeploymentOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -385,7 +385,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zip", GoGetter: "Zip"},
 			_jsii_.MemberProperty{JsiiProperty: "zipInput", GoGetter: "ZipInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleAppEngineStandardAppVersionDeploymentOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -393,11 +393,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionDeploymentZip",
-		reflect.TypeOf((*GoogleAppEngineStandardAppVersionDeploymentZip)(nil)).Elem(),
+		reflect.TypeFor[GoogleAppEngineStandardAppVersionDeploymentZip](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionDeploymentZipOutputReference",
-		reflect.TypeOf((*GoogleAppEngineStandardAppVersionDeploymentZipOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleAppEngineStandardAppVersionDeploymentZipOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -426,7 +426,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleAppEngineStandardAppVersionDeploymentZipOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -434,11 +434,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionEntrypoint",
-		reflect.TypeOf((*GoogleAppEngineStandardAppVersionEntrypoint)(nil)).Elem(),
+		reflect.TypeFor[GoogleAppEngineStandardAppVersionEntrypoint](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionEntrypointOutputReference",
-		reflect.TypeOf((*GoogleAppEngineStandardAppVersionEntrypointOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleAppEngineStandardAppVersionEntrypointOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -464,7 +464,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleAppEngineStandardAppVersionEntrypointOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -472,11 +472,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionHandlers",
-		reflect.TypeOf((*GoogleAppEngineStandardAppVersionHandlers)(nil)).Elem(),
+		reflect.TypeFor[GoogleAppEngineStandardAppVersionHandlers](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionHandlersList",
-		reflect.TypeOf((*GoogleAppEngineStandardAppVersionHandlersList)(nil)).Elem(),
+		reflect.TypeFor[GoogleAppEngineStandardAppVersionHandlersList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -490,7 +490,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleAppEngineStandardAppVersionHandlersList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -498,7 +498,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionHandlersOutputReference",
-		reflect.TypeOf((*GoogleAppEngineStandardAppVersionHandlersOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleAppEngineStandardAppVersionHandlersOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authFailAction", GoGetter: "AuthFailAction"},
 			_jsii_.MemberProperty{JsiiProperty: "authFailActionInput", GoGetter: "AuthFailActionInput"},
@@ -545,7 +545,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "urlRegex", GoGetter: "UrlRegex"},
 			_jsii_.MemberProperty{JsiiProperty: "urlRegexInput", GoGetter: "UrlRegexInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleAppEngineStandardAppVersionHandlersOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -553,11 +553,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionHandlersScript",
-		reflect.TypeOf((*GoogleAppEngineStandardAppVersionHandlersScript)(nil)).Elem(),
+		reflect.TypeFor[GoogleAppEngineStandardAppVersionHandlersScript](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionHandlersScriptOutputReference",
-		reflect.TypeOf((*GoogleAppEngineStandardAppVersionHandlersScriptOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleAppEngineStandardAppVersionHandlersScriptOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -583,7 +583,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleAppEngineStandardAppVersionHandlersScriptOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -591,11 +591,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionHandlersStaticFiles",
-		reflect.TypeOf((*GoogleAppEngineStandardAppVersionHandlersStaticFiles)(nil)).Elem(),
+		reflect.TypeFor[GoogleAppEngineStandardAppVersionHandlersStaticFiles](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionHandlersStaticFilesOutputReference",
-		reflect.TypeOf((*GoogleAppEngineStandardAppVersionHandlersStaticFilesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleAppEngineStandardAppVersionHandlersStaticFilesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "applicationReadable", GoGetter: "ApplicationReadable"},
 			_jsii_.MemberProperty{JsiiProperty: "applicationReadableInput", GoGetter: "ApplicationReadableInput"},
@@ -640,7 +640,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "uploadPathRegex", GoGetter: "UploadPathRegex"},
 			_jsii_.MemberProperty{JsiiProperty: "uploadPathRegexInput", GoGetter: "UploadPathRegexInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleAppEngineStandardAppVersionHandlersStaticFilesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -648,11 +648,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionLibraries",
-		reflect.TypeOf((*GoogleAppEngineStandardAppVersionLibraries)(nil)).Elem(),
+		reflect.TypeFor[GoogleAppEngineStandardAppVersionLibraries](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionLibrariesList",
-		reflect.TypeOf((*GoogleAppEngineStandardAppVersionLibrariesList)(nil)).Elem(),
+		reflect.TypeFor[GoogleAppEngineStandardAppVersionLibrariesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -666,7 +666,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleAppEngineStandardAppVersionLibrariesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -674,7 +674,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionLibrariesOutputReference",
-		reflect.TypeOf((*GoogleAppEngineStandardAppVersionLibrariesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleAppEngineStandardAppVersionLibrariesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -704,7 +704,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "version", GoGetter: "Version"},
 			_jsii_.MemberProperty{JsiiProperty: "versionInput", GoGetter: "VersionInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleAppEngineStandardAppVersionLibrariesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -712,11 +712,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionManualScaling",
-		reflect.TypeOf((*GoogleAppEngineStandardAppVersionManualScaling)(nil)).Elem(),
+		reflect.TypeFor[GoogleAppEngineStandardAppVersionManualScaling](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionManualScalingOutputReference",
-		reflect.TypeOf((*GoogleAppEngineStandardAppVersionManualScalingOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleAppEngineStandardAppVersionManualScalingOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -742,7 +742,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleAppEngineStandardAppVersionManualScalingOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -750,11 +750,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionTimeouts",
-		reflect.TypeOf((*GoogleAppEngineStandardAppVersionTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleAppEngineStandardAppVersionTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleAppEngineStandardAppVersionTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleAppEngineStandardAppVersionTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -787,7 +787,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleAppEngineStandardAppVersionTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -795,11 +795,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionVpcAccessConnector",
-		reflect.TypeOf((*GoogleAppEngineStandardAppVersionVpcAccessConnector)(nil)).Elem(),
+		reflect.TypeFor[GoogleAppEngineStandardAppVersionVpcAccessConnector](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionVpcAccessConnectorOutputReference",
-		reflect.TypeOf((*GoogleAppEngineStandardAppVersionVpcAccessConnectorOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleAppEngineStandardAppVersionVpcAccessConnectorOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -828,7 +828,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleAppEngineStandardAppVersionVpcAccessConnectorOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

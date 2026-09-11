@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleRedisClusterCrossClusterReplicationConfigMembershipOutp
 	return nil
 }
 
-func (j *jsiiProxy_GoogleRedisClusterCrossClusterReplicationConfigMembershipOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleRedisClusterCrossClusterReplicationConfigMembershipOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleRedisClusterCrossClusterReplicationConfigMembershipOutputR
 
 	return nil
 }
-

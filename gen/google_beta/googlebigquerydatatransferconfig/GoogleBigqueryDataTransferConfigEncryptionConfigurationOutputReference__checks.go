@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleBigqueryDataTransferConfigEncryptionConfigurationOutput
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigqueryDataTransferConfigEncryptionConfigurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBigqueryDataTransferConfigEncryptionConfigurationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleBigqueryDataTransferConfigEncryptionConfigurationOutputRef
 
 	return nil
 }
-

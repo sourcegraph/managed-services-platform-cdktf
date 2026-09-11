@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleApigeeAppGroupAttributesList) validateResolveParameters
 	return nil
 }
 
-func (j *jsiiProxy_GoogleApigeeAppGroupAttributesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleApigeeAppGroupAttributesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleApigeeAppGroupAttributesListParameters(terraformResource c
 
 	return nil
 }
-

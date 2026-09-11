@@ -15,15 +15,15 @@ type GoogleServiceUsageConsumerQuotaOverride interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -31,9 +31,9 @@ type GoogleServiceUsageConsumerQuotaOverride interface {
 	Dimensions() *map[string]*string
 	SetDimensions(val *map[string]*string)
 	DimensionsInput() *map[string]*string
-	Force() interface{}
-	SetForce(val interface{})
-	ForceInput() interface{}
+	Force() any
+	SetForce(val any)
+	ForceInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -69,29 +69,29 @@ type GoogleServiceUsageConsumerQuotaOverride interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Service() *string
 	SetService(val *string)
 	ServiceInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() GoogleServiceUsageConsumerQuotaOverrideTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -109,7 +109,7 @@ type GoogleServiceUsageConsumerQuotaOverride interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -121,7 +121,7 @@ type GoogleServiceUsageConsumerQuotaOverride interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -137,17 +137,17 @@ type GoogleServiceUsageConsumerQuotaOverride interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleServiceUsageConsumerQuotaOverride
@@ -165,8 +165,8 @@ func (j *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride) CdktfStack() cdktf.T
 	return returns
 }
 
-func (j *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -175,8 +175,8 @@ func (j *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride) Connection() interfa
 	return returns
 }
 
-func (j *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -185,8 +185,8 @@ func (j *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride) ConstructNodeMetadat
 	return returns
 }
 
-func (j *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -225,8 +225,8 @@ func (j *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride) DimensionsInput() *m
 	return returns
 }
 
-func (j *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride) Force() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride) Force() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"force",
@@ -235,8 +235,8 @@ func (j *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride) Force() interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride) ForceInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride) ForceInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"forceInput",
@@ -415,8 +415,8 @@ func (j *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride) Provider() cdktf.Ter
 	return returns
 }
 
-func (j *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -425,8 +425,8 @@ func (j *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride) Provisioners() *[]in
 	return returns
 }
 
-func (j *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -465,8 +465,8 @@ func (j *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride) TerraformGeneratorMe
 	return returns
 }
 
-func (j *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -495,8 +495,8 @@ func (j *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride) Timeouts() GoogleSer
 	return returns
 }
 
-func (j *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -504,7 +504,6 @@ func (j *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride) TimeoutsInput() inte
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_service_usage_consumer_quota_override google_service_usage_consumer_quota_override} Resource.
 func NewGoogleServiceUsageConsumerQuotaOverride(scope constructs.Construct, id *string, config *GoogleServiceUsageConsumerQuotaOverrideConfig) GoogleServiceUsageConsumerQuotaOverride {
@@ -517,7 +516,7 @@ func NewGoogleServiceUsageConsumerQuotaOverride(scope constructs.Construct, id *
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleServiceUsageConsumerQuotaOverride.GoogleServiceUsageConsumerQuotaOverride",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -530,12 +529,12 @@ func NewGoogleServiceUsageConsumerQuotaOverride_Override(g GoogleServiceUsageCon
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleServiceUsageConsumerQuotaOverride.GoogleServiceUsageConsumerQuotaOverride",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -546,7 +545,7 @@ func (j *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride)SetConnection(val int
 	)
 }
 
-func (j *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -557,7 +556,7 @@ func (j *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride)SetCount(val interfac
 	)
 }
 
-func (j *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -565,7 +564,7 @@ func (j *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride)SetDependsOn(val *[]*
 	)
 }
 
-func (j *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride)SetDimensions(val *map[string]*string) {
+func (j *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride) SetDimensions(val *map[string]*string) {
 	if err := j.validateSetDimensionsParameters(val); err != nil {
 		panic(err)
 	}
@@ -576,7 +575,7 @@ func (j *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride)SetDimensions(val *ma
 	)
 }
 
-func (j *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride)SetForce(val interface{}) {
+func (j *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride) SetForce(val any) {
 	if err := j.validateSetForceParameters(val); err != nil {
 		panic(err)
 	}
@@ -587,7 +586,7 @@ func (j *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride)SetForce(val interfac
 	)
 }
 
-func (j *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -595,7 +594,7 @@ func (j *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride)SetForEach(val cdktf.
 	)
 }
 
-func (j *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride)SetId(val *string) {
+func (j *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -606,7 +605,7 @@ func (j *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -617,7 +616,7 @@ func (j *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride)SetLifecycle(val *cdk
 	)
 }
 
-func (j *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride)SetLimit(val *string) {
+func (j *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride) SetLimit(val *string) {
 	if err := j.validateSetLimitParameters(val); err != nil {
 		panic(err)
 	}
@@ -628,7 +627,7 @@ func (j *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride)SetLimit(val *string)
 	)
 }
 
-func (j *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride)SetMetric(val *string) {
+func (j *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride) SetMetric(val *string) {
 	if err := j.validateSetMetricParameters(val); err != nil {
 		panic(err)
 	}
@@ -639,7 +638,7 @@ func (j *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride)SetMetric(val *string
 	)
 }
 
-func (j *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride)SetOverrideValue(val *string) {
+func (j *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride) SetOverrideValue(val *string) {
 	if err := j.validateSetOverrideValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -650,7 +649,7 @@ func (j *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride)SetOverrideValue(val 
 	)
 }
 
-func (j *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride)SetProject(val *string) {
+func (j *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -661,7 +660,7 @@ func (j *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride)SetProject(val *strin
 	)
 }
 
-func (j *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -669,7 +668,7 @@ func (j *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride)SetProvider(val cdktf
 	)
 }
 
-func (j *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -680,7 +679,7 @@ func (j *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride)SetProvisioners(val *
 	)
 }
 
-func (j *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride)SetService(val *string) {
+func (j *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride) SetService(val *string) {
 	if err := j.validateSetServiceParameters(val); err != nil {
 		panic(err)
 	}
@@ -703,7 +702,7 @@ func GoogleServiceUsageConsumerQuotaOverride_GenerateConfigForImport(scope const
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleServiceUsageConsumerQuotaOverride.GoogleServiceUsageConsumerQuotaOverride",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -727,7 +726,7 @@ func GoogleServiceUsageConsumerQuotaOverride_GenerateConfigForImport(scope const
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleServiceUsageConsumerQuotaOverride_IsConstruct(x interface{}) *bool {
+func GoogleServiceUsageConsumerQuotaOverride_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleServiceUsageConsumerQuotaOverride_IsConstructParameters(x); err != nil {
@@ -738,7 +737,7 @@ func GoogleServiceUsageConsumerQuotaOverride_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleServiceUsageConsumerQuotaOverride.GoogleServiceUsageConsumerQuotaOverride",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -746,7 +745,7 @@ func GoogleServiceUsageConsumerQuotaOverride_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleServiceUsageConsumerQuotaOverride_IsTerraformElement(x interface{}) *bool {
+func GoogleServiceUsageConsumerQuotaOverride_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleServiceUsageConsumerQuotaOverride_IsTerraformElementParameters(x); err != nil {
@@ -757,7 +756,7 @@ func GoogleServiceUsageConsumerQuotaOverride_IsTerraformElement(x interface{}) *
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleServiceUsageConsumerQuotaOverride.GoogleServiceUsageConsumerQuotaOverride",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -765,7 +764,7 @@ func GoogleServiceUsageConsumerQuotaOverride_IsTerraformElement(x interface{}) *
 }
 
 // Experimental.
-func GoogleServiceUsageConsumerQuotaOverride_IsTerraformResource(x interface{}) *bool {
+func GoogleServiceUsageConsumerQuotaOverride_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleServiceUsageConsumerQuotaOverride_IsTerraformResourceParameters(x); err != nil {
@@ -776,7 +775,7 @@ func GoogleServiceUsageConsumerQuotaOverride_IsTerraformResource(x interface{}) 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleServiceUsageConsumerQuotaOverride.GoogleServiceUsageConsumerQuotaOverride",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -801,31 +800,31 @@ func (g *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride) AddMoveTarget(moveTa
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -841,7 +840,7 @@ func (g *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride) GetBooleanAttribute(
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -857,7 +856,7 @@ func (g *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride) GetBooleanMapAttribu
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -873,7 +872,7 @@ func (g *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride) GetListAttribute(ter
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -889,7 +888,7 @@ func (g *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride) GetNumberAttribute(t
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -905,7 +904,7 @@ func (g *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride) GetNumberListAttribu
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -921,7 +920,7 @@ func (g *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride) GetNumberMapAttribut
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -937,7 +936,7 @@ func (g *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride) GetStringAttribute(t
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -953,15 +952,15 @@ func (g *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride) GetStringMapAttribut
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -980,7 +979,7 @@ func (g *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride) ImportFrom(id *strin
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -993,7 +992,7 @@ func (g *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride) InterpolationForAttr
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1007,18 +1006,18 @@ func (g *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride) MoveFromId(id *strin
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1029,7 +1028,7 @@ func (g *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride) MoveToId(id *string)
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1040,7 +1039,7 @@ func (g *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride) OverrideLogicalId(ne
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1051,7 +1050,7 @@ func (g *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride) PutTimeouts(value *G
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1103,8 +1102,8 @@ func (g *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride) ResetTimeouts() {
 	)
 }
 
-func (g *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1116,8 +1115,8 @@ func (g *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride) SynthesizeAttributes
 	return returns
 }
 
-func (g *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1129,8 +1128,8 @@ func (g *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride) SynthesizeHclAttribu
 	return returns
 }
 
-func (g *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1142,8 +1141,8 @@ func (g *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride) ToHclTerraform() int
 	return returns
 }
 
-func (g *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1168,8 +1167,8 @@ func (g *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1180,4 +1179,3 @@ func (g *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride) ToTerraform() interf
 
 	return returns
 }
-

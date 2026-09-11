@@ -120,7 +120,7 @@ func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileAlloydbSetting
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileAlloydbSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileAlloydbSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -236,4 +236,3 @@ func validateNewGoogleDatabaseMigrationServiceConnectionProfileAlloydbSettingsOu
 
 	return nil
 }
-

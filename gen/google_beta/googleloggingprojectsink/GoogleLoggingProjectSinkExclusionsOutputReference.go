@@ -12,9 +12,9 @@ type GoogleLoggingProjectSinkExclusionsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -28,16 +28,16 @@ type GoogleLoggingProjectSinkExclusionsOutputReference interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
-	Disabled() interface{}
-	SetDisabled(val interface{})
-	DisabledInput() interface{}
+	Disabled() any
+	SetDisabled(val any)
+	DisabledInput() any
 	Filter() *string
 	SetFilter(val *string)
 	FilterInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -52,7 +52,7 @@ type GoogleLoggingProjectSinkExclusionsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -77,7 +77,7 @@ type GoogleLoggingProjectSinkExclusionsOutputReference interface {
 	ResetDisabled()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -90,8 +90,8 @@ type jsiiProxy_GoogleLoggingProjectSinkExclusionsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GoogleLoggingProjectSinkExclusionsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleLoggingProjectSinkExclusionsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -140,8 +140,8 @@ func (j *jsiiProxy_GoogleLoggingProjectSinkExclusionsOutputReference) Descriptio
 	return returns
 }
 
-func (j *jsiiProxy_GoogleLoggingProjectSinkExclusionsOutputReference) Disabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleLoggingProjectSinkExclusionsOutputReference) Disabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disabled",
@@ -150,8 +150,8 @@ func (j *jsiiProxy_GoogleLoggingProjectSinkExclusionsOutputReference) Disabled()
 	return returns
 }
 
-func (j *jsiiProxy_GoogleLoggingProjectSinkExclusionsOutputReference) DisabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleLoggingProjectSinkExclusionsOutputReference) DisabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disabledInput",
@@ -190,8 +190,8 @@ func (j *jsiiProxy_GoogleLoggingProjectSinkExclusionsOutputReference) Fqn() *str
 	return returns
 }
 
-func (j *jsiiProxy_GoogleLoggingProjectSinkExclusionsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleLoggingProjectSinkExclusionsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -240,7 +240,6 @@ func (j *jsiiProxy_GoogleLoggingProjectSinkExclusionsOutputReference) TerraformR
 	return returns
 }
 
-
 func NewGoogleLoggingProjectSinkExclusionsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) GoogleLoggingProjectSinkExclusionsOutputReference {
 	_init_.Initialize()
 
@@ -251,7 +250,7 @@ func NewGoogleLoggingProjectSinkExclusionsOutputReference(terraformResource cdkt
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleLoggingProjectSink.GoogleLoggingProjectSinkExclusionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -263,12 +262,12 @@ func NewGoogleLoggingProjectSinkExclusionsOutputReference_Override(g GoogleLoggi
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleLoggingProjectSink.GoogleLoggingProjectSinkExclusionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleLoggingProjectSinkExclusionsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleLoggingProjectSinkExclusionsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_GoogleLoggingProjectSinkExclusionsOutputReference)SetComplexO
 	)
 }
 
-func (j *jsiiProxy_GoogleLoggingProjectSinkExclusionsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleLoggingProjectSinkExclusionsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_GoogleLoggingProjectSinkExclusionsOutputReference)SetComplexO
 	)
 }
 
-func (j *jsiiProxy_GoogleLoggingProjectSinkExclusionsOutputReference)SetDescription(val *string) {
+func (j *jsiiProxy_GoogleLoggingProjectSinkExclusionsOutputReference) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_GoogleLoggingProjectSinkExclusionsOutputReference)SetDescript
 	)
 }
 
-func (j *jsiiProxy_GoogleLoggingProjectSinkExclusionsOutputReference)SetDisabled(val interface{}) {
+func (j *jsiiProxy_GoogleLoggingProjectSinkExclusionsOutputReference) SetDisabled(val any) {
 	if err := j.validateSetDisabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_GoogleLoggingProjectSinkExclusionsOutputReference)SetDisabled
 	)
 }
 
-func (j *jsiiProxy_GoogleLoggingProjectSinkExclusionsOutputReference)SetFilter(val *string) {
+func (j *jsiiProxy_GoogleLoggingProjectSinkExclusionsOutputReference) SetFilter(val *string) {
 	if err := j.validateSetFilterParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_GoogleLoggingProjectSinkExclusionsOutputReference)SetFilter(v
 	)
 }
 
-func (j *jsiiProxy_GoogleLoggingProjectSinkExclusionsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_GoogleLoggingProjectSinkExclusionsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -334,7 +333,7 @@ func (j *jsiiProxy_GoogleLoggingProjectSinkExclusionsOutputReference)SetInternal
 	)
 }
 
-func (j *jsiiProxy_GoogleLoggingProjectSinkExclusionsOutputReference)SetName(val *string) {
+func (j *jsiiProxy_GoogleLoggingProjectSinkExclusionsOutputReference) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -345,7 +344,7 @@ func (j *jsiiProxy_GoogleLoggingProjectSinkExclusionsOutputReference)SetName(val
 	)
 }
 
-func (j *jsiiProxy_GoogleLoggingProjectSinkExclusionsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleLoggingProjectSinkExclusionsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -356,7 +355,7 @@ func (j *jsiiProxy_GoogleLoggingProjectSinkExclusionsOutputReference)SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_GoogleLoggingProjectSinkExclusionsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleLoggingProjectSinkExclusionsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -380,16 +379,16 @@ func (g *jsiiProxy_GoogleLoggingProjectSinkExclusionsOutputReference) ComputeFqn
 	return returns
 }
 
-func (g *jsiiProxy_GoogleLoggingProjectSinkExclusionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleLoggingProjectSinkExclusionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -405,7 +404,7 @@ func (g *jsiiProxy_GoogleLoggingProjectSinkExclusionsOutputReference) GetBoolean
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -421,7 +420,7 @@ func (g *jsiiProxy_GoogleLoggingProjectSinkExclusionsOutputReference) GetBoolean
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -437,7 +436,7 @@ func (g *jsiiProxy_GoogleLoggingProjectSinkExclusionsOutputReference) GetListAtt
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -453,7 +452,7 @@ func (g *jsiiProxy_GoogleLoggingProjectSinkExclusionsOutputReference) GetNumberA
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -469,7 +468,7 @@ func (g *jsiiProxy_GoogleLoggingProjectSinkExclusionsOutputReference) GetNumberL
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -485,7 +484,7 @@ func (g *jsiiProxy_GoogleLoggingProjectSinkExclusionsOutputReference) GetNumberM
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -501,7 +500,7 @@ func (g *jsiiProxy_GoogleLoggingProjectSinkExclusionsOutputReference) GetStringA
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -517,7 +516,7 @@ func (g *jsiiProxy_GoogleLoggingProjectSinkExclusionsOutputReference) GetStringM
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -546,7 +545,7 @@ func (g *jsiiProxy_GoogleLoggingProjectSinkExclusionsOutputReference) Interpolat
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -569,16 +568,16 @@ func (g *jsiiProxy_GoogleLoggingProjectSinkExclusionsOutputReference) ResetDisab
 	)
 }
 
-func (g *jsiiProxy_GoogleLoggingProjectSinkExclusionsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleLoggingProjectSinkExclusionsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -597,4 +596,3 @@ func (g *jsiiProxy_GoogleLoggingProjectSinkExclusionsOutputReference) ToString()
 
 	return returns
 }
-

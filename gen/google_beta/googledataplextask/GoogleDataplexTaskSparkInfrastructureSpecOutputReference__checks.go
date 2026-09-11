@@ -131,7 +131,7 @@ func (g *jsiiProxy_GoogleDataplexTaskSparkInfrastructureSpecOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataplexTaskSparkInfrastructureSpecOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataplexTaskSparkInfrastructureSpecOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -231,4 +231,3 @@ func validateNewGoogleDataplexTaskSparkInfrastructureSpecOutputReferenceParamete
 
 	return nil
 }
-

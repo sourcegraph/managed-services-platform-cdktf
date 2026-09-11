@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleBigtableTable) validateAddMoveTargetParameters(moveTarg
 	return nil
 }
 
-func (g *jsiiProxy_GoogleBigtableTable) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleBigtableTable) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleBigtableTable) validateMoveFromIdParameters(id *string)
 	return nil
 }
 
-func (g *jsiiProxy_GoogleBigtableTable) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleBigtableTable) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -215,7 +215,7 @@ func (g *jsiiProxy_GoogleBigtableTable) validatePutAutomatedBackupPolicyParamete
 	return nil
 }
 
-func (g *jsiiProxy_GoogleBigtableTable) validatePutColumnFamilyParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleBigtableTable) validatePutColumnFamilyParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -273,7 +273,7 @@ func validateGoogleBigtableTable_GenerateConfigForImportParameters(scope constru
 	return nil
 }
 
-func validateGoogleBigtableTable_IsConstructParameters(x interface{}) error {
+func validateGoogleBigtableTable_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -281,7 +281,7 @@ func validateGoogleBigtableTable_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateGoogleBigtableTable_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleBigtableTable_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -289,7 +289,7 @@ func validateGoogleBigtableTable_IsTerraformElementParameters(x interface{}) err
 	return nil
 }
 
-func validateGoogleBigtableTable_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleBigtableTable_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -305,7 +305,7 @@ func (j *jsiiProxy_GoogleBigtableTable) validateSetChangeStreamRetentionParamete
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigtableTable) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBigtableTable) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -338,7 +338,7 @@ func (j *jsiiProxy_GoogleBigtableTable) validateSetConnectionParameters(val inte
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigtableTable) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBigtableTable) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -443,7 +443,7 @@ func (j *jsiiProxy_GoogleBigtableTable) validateSetProjectParameters(val *string
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigtableTable) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleBigtableTable) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -523,4 +523,3 @@ func validateNewGoogleBigtableTableParameters(scope constructs.Construct, id *st
 
 	return nil
 }
-

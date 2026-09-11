@@ -1,6 +1,5 @@
 package googlecomputeregionbackendservice
 
-
 type GoogleComputeRegionBackendServiceBackend struct {
 	// The fully-qualified URL of an Instance Group or Network Endpoint Group resource.
 	//
@@ -48,7 +47,7 @@ type GoogleComputeRegionBackendServiceBackend struct {
 	// custom_metrics block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_region_backend_service#custom_metrics GoogleComputeRegionBackendService#custom_metrics}
-	CustomMetrics interface{} `field:"optional" json:"customMetrics" yaml:"customMetrics"`
+	CustomMetrics any `field:"optional" json:"customMetrics" yaml:"customMetrics"`
 	// An optional description of this resource. Provide this property when you create the resource.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_region_backend_service#description GoogleComputeRegionBackendService#description}
@@ -59,7 +58,7 @@ type GoogleComputeRegionBackendServiceBackend struct {
 	// than one failover backend can be configured for a given RegionBackendService.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_region_backend_service#failover GoogleComputeRegionBackendService#failover}
-	Failover interface{} `field:"optional" json:"failover" yaml:"failover"`
+	Failover any `field:"optional" json:"failover" yaml:"failover"`
 	// The max number of simultaneous connections for the group.
 	//
 	// Can
@@ -126,4 +125,3 @@ type GoogleComputeRegionBackendServiceBackend struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_region_backend_service#max_utilization GoogleComputeRegionBackendService#max_utilization}
 	MaxUtilization *float64 `field:"optional" json:"maxUtilization" yaml:"maxUtilization"`
 }
-

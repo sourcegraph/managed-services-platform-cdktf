@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleComputeServiceAttachmentConsumerAcceptListsOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeServiceAttachmentConsumerAcceptListsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeServiceAttachmentConsumerAcceptListsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_GoogleComputeServiceAttachmentConsumerAcceptListsOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeServiceAttachmentConsumerAcceptListsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeServiceAttachmentConsumerAcceptListsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewGoogleComputeServiceAttachmentConsumerAcceptListsOutputReference
 
 	return nil
 }
-

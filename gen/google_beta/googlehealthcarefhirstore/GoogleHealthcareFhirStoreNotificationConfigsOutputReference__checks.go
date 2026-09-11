@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleHealthcareFhirStoreNotificationConfigsOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleHealthcareFhirStoreNotificationConfigsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleHealthcareFhirStoreNotificationConfigsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_GoogleHealthcareFhirStoreNotificationConfigsOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleHealthcareFhirStoreNotificationConfigsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleHealthcareFhirStoreNotificationConfigsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -195,7 +195,7 @@ func (j *jsiiProxy_GoogleHealthcareFhirStoreNotificationConfigsOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleHealthcareFhirStoreNotificationConfigsOutputReference) validateSetSendFullResourceParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleHealthcareFhirStoreNotificationConfigsOutputReference) validateSetSendFullResourceParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -215,7 +215,7 @@ func (j *jsiiProxy_GoogleHealthcareFhirStoreNotificationConfigsOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleHealthcareFhirStoreNotificationConfigsOutputReference) validateSetSendPreviousResourceOnDeleteParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleHealthcareFhirStoreNotificationConfigsOutputReference) validateSetSendPreviousResourceOnDeleteParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -270,4 +270,3 @@ func validateNewGoogleHealthcareFhirStoreNotificationConfigsOutputReferenceParam
 
 	return nil
 }
-

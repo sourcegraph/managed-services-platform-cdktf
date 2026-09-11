@@ -18,15 +18,15 @@ type GoogleSccManagementOrganizationEventThreatDetectionCustomModule interface {
 	SetConfig(val *string)
 	ConfigInput() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -67,19 +67,19 @@ type GoogleSccManagementOrganizationEventThreatDetectionCustomModule interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() GoogleSccManagementOrganizationEventThreatDetectionCustomModuleTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	Type() *string
 	SetType(val *string)
 	TypeInput() *string
@@ -88,9 +88,9 @@ type GoogleSccManagementOrganizationEventThreatDetectionCustomModule interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -108,7 +108,7 @@ type GoogleSccManagementOrganizationEventThreatDetectionCustomModule interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -120,7 +120,7 @@ type GoogleSccManagementOrganizationEventThreatDetectionCustomModule interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -138,17 +138,17 @@ type GoogleSccManagementOrganizationEventThreatDetectionCustomModule interface {
 	ResetOverrideLogicalId()
 	ResetTimeouts()
 	ResetType()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleSccManagementOrganizationEventThreatDetectionCustomModule
@@ -186,8 +186,8 @@ func (j *jsiiProxy_GoogleSccManagementOrganizationEventThreatDetectionCustomModu
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSccManagementOrganizationEventThreatDetectionCustomModule) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleSccManagementOrganizationEventThreatDetectionCustomModule) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -196,8 +196,8 @@ func (j *jsiiProxy_GoogleSccManagementOrganizationEventThreatDetectionCustomModu
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSccManagementOrganizationEventThreatDetectionCustomModule) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleSccManagementOrganizationEventThreatDetectionCustomModule) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -206,8 +206,8 @@ func (j *jsiiProxy_GoogleSccManagementOrganizationEventThreatDetectionCustomModu
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSccManagementOrganizationEventThreatDetectionCustomModule) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleSccManagementOrganizationEventThreatDetectionCustomModule) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -406,8 +406,8 @@ func (j *jsiiProxy_GoogleSccManagementOrganizationEventThreatDetectionCustomModu
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSccManagementOrganizationEventThreatDetectionCustomModule) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleSccManagementOrganizationEventThreatDetectionCustomModule) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -416,8 +416,8 @@ func (j *jsiiProxy_GoogleSccManagementOrganizationEventThreatDetectionCustomModu
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSccManagementOrganizationEventThreatDetectionCustomModule) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleSccManagementOrganizationEventThreatDetectionCustomModule) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -436,8 +436,8 @@ func (j *jsiiProxy_GoogleSccManagementOrganizationEventThreatDetectionCustomModu
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSccManagementOrganizationEventThreatDetectionCustomModule) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleSccManagementOrganizationEventThreatDetectionCustomModule) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -466,8 +466,8 @@ func (j *jsiiProxy_GoogleSccManagementOrganizationEventThreatDetectionCustomModu
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSccManagementOrganizationEventThreatDetectionCustomModule) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleSccManagementOrganizationEventThreatDetectionCustomModule) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -506,7 +506,6 @@ func (j *jsiiProxy_GoogleSccManagementOrganizationEventThreatDetectionCustomModu
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_scc_management_organization_event_threat_detection_custom_module google_scc_management_organization_event_threat_detection_custom_module} Resource.
 func NewGoogleSccManagementOrganizationEventThreatDetectionCustomModule(scope constructs.Construct, id *string, config *GoogleSccManagementOrganizationEventThreatDetectionCustomModuleConfig) GoogleSccManagementOrganizationEventThreatDetectionCustomModule {
 	_init_.Initialize()
@@ -518,7 +517,7 @@ func NewGoogleSccManagementOrganizationEventThreatDetectionCustomModule(scope co
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleSccManagementOrganizationEventThreatDetectionCustomModule.GoogleSccManagementOrganizationEventThreatDetectionCustomModule",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -531,12 +530,12 @@ func NewGoogleSccManagementOrganizationEventThreatDetectionCustomModule_Override
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleSccManagementOrganizationEventThreatDetectionCustomModule.GoogleSccManagementOrganizationEventThreatDetectionCustomModule",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleSccManagementOrganizationEventThreatDetectionCustomModule)SetConfig(val *string) {
+func (j *jsiiProxy_GoogleSccManagementOrganizationEventThreatDetectionCustomModule) SetConfig(val *string) {
 	if err := j.validateSetConfigParameters(val); err != nil {
 		panic(err)
 	}
@@ -547,7 +546,7 @@ func (j *jsiiProxy_GoogleSccManagementOrganizationEventThreatDetectionCustomModu
 	)
 }
 
-func (j *jsiiProxy_GoogleSccManagementOrganizationEventThreatDetectionCustomModule)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleSccManagementOrganizationEventThreatDetectionCustomModule) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -558,7 +557,7 @@ func (j *jsiiProxy_GoogleSccManagementOrganizationEventThreatDetectionCustomModu
 	)
 }
 
-func (j *jsiiProxy_GoogleSccManagementOrganizationEventThreatDetectionCustomModule)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleSccManagementOrganizationEventThreatDetectionCustomModule) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -569,7 +568,7 @@ func (j *jsiiProxy_GoogleSccManagementOrganizationEventThreatDetectionCustomModu
 	)
 }
 
-func (j *jsiiProxy_GoogleSccManagementOrganizationEventThreatDetectionCustomModule)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleSccManagementOrganizationEventThreatDetectionCustomModule) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -577,7 +576,7 @@ func (j *jsiiProxy_GoogleSccManagementOrganizationEventThreatDetectionCustomModu
 	)
 }
 
-func (j *jsiiProxy_GoogleSccManagementOrganizationEventThreatDetectionCustomModule)SetDisplayName(val *string) {
+func (j *jsiiProxy_GoogleSccManagementOrganizationEventThreatDetectionCustomModule) SetDisplayName(val *string) {
 	if err := j.validateSetDisplayNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -588,7 +587,7 @@ func (j *jsiiProxy_GoogleSccManagementOrganizationEventThreatDetectionCustomModu
 	)
 }
 
-func (j *jsiiProxy_GoogleSccManagementOrganizationEventThreatDetectionCustomModule)SetEnablementState(val *string) {
+func (j *jsiiProxy_GoogleSccManagementOrganizationEventThreatDetectionCustomModule) SetEnablementState(val *string) {
 	if err := j.validateSetEnablementStateParameters(val); err != nil {
 		panic(err)
 	}
@@ -599,7 +598,7 @@ func (j *jsiiProxy_GoogleSccManagementOrganizationEventThreatDetectionCustomModu
 	)
 }
 
-func (j *jsiiProxy_GoogleSccManagementOrganizationEventThreatDetectionCustomModule)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleSccManagementOrganizationEventThreatDetectionCustomModule) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -607,7 +606,7 @@ func (j *jsiiProxy_GoogleSccManagementOrganizationEventThreatDetectionCustomModu
 	)
 }
 
-func (j *jsiiProxy_GoogleSccManagementOrganizationEventThreatDetectionCustomModule)SetId(val *string) {
+func (j *jsiiProxy_GoogleSccManagementOrganizationEventThreatDetectionCustomModule) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -618,7 +617,7 @@ func (j *jsiiProxy_GoogleSccManagementOrganizationEventThreatDetectionCustomModu
 	)
 }
 
-func (j *jsiiProxy_GoogleSccManagementOrganizationEventThreatDetectionCustomModule)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleSccManagementOrganizationEventThreatDetectionCustomModule) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -629,7 +628,7 @@ func (j *jsiiProxy_GoogleSccManagementOrganizationEventThreatDetectionCustomModu
 	)
 }
 
-func (j *jsiiProxy_GoogleSccManagementOrganizationEventThreatDetectionCustomModule)SetLocation(val *string) {
+func (j *jsiiProxy_GoogleSccManagementOrganizationEventThreatDetectionCustomModule) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -640,7 +639,7 @@ func (j *jsiiProxy_GoogleSccManagementOrganizationEventThreatDetectionCustomModu
 	)
 }
 
-func (j *jsiiProxy_GoogleSccManagementOrganizationEventThreatDetectionCustomModule)SetOrganization(val *string) {
+func (j *jsiiProxy_GoogleSccManagementOrganizationEventThreatDetectionCustomModule) SetOrganization(val *string) {
 	if err := j.validateSetOrganizationParameters(val); err != nil {
 		panic(err)
 	}
@@ -651,7 +650,7 @@ func (j *jsiiProxy_GoogleSccManagementOrganizationEventThreatDetectionCustomModu
 	)
 }
 
-func (j *jsiiProxy_GoogleSccManagementOrganizationEventThreatDetectionCustomModule)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleSccManagementOrganizationEventThreatDetectionCustomModule) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -659,7 +658,7 @@ func (j *jsiiProxy_GoogleSccManagementOrganizationEventThreatDetectionCustomModu
 	)
 }
 
-func (j *jsiiProxy_GoogleSccManagementOrganizationEventThreatDetectionCustomModule)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleSccManagementOrganizationEventThreatDetectionCustomModule) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -670,7 +669,7 @@ func (j *jsiiProxy_GoogleSccManagementOrganizationEventThreatDetectionCustomModu
 	)
 }
 
-func (j *jsiiProxy_GoogleSccManagementOrganizationEventThreatDetectionCustomModule)SetType(val *string) {
+func (j *jsiiProxy_GoogleSccManagementOrganizationEventThreatDetectionCustomModule) SetType(val *string) {
 	if err := j.validateSetTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -693,7 +692,7 @@ func GoogleSccManagementOrganizationEventThreatDetectionCustomModule_GenerateCon
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleSccManagementOrganizationEventThreatDetectionCustomModule.GoogleSccManagementOrganizationEventThreatDetectionCustomModule",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -717,7 +716,7 @@ func GoogleSccManagementOrganizationEventThreatDetectionCustomModule_GenerateCon
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleSccManagementOrganizationEventThreatDetectionCustomModule_IsConstruct(x interface{}) *bool {
+func GoogleSccManagementOrganizationEventThreatDetectionCustomModule_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleSccManagementOrganizationEventThreatDetectionCustomModule_IsConstructParameters(x); err != nil {
@@ -728,7 +727,7 @@ func GoogleSccManagementOrganizationEventThreatDetectionCustomModule_IsConstruct
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleSccManagementOrganizationEventThreatDetectionCustomModule.GoogleSccManagementOrganizationEventThreatDetectionCustomModule",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -736,7 +735,7 @@ func GoogleSccManagementOrganizationEventThreatDetectionCustomModule_IsConstruct
 }
 
 // Experimental.
-func GoogleSccManagementOrganizationEventThreatDetectionCustomModule_IsTerraformElement(x interface{}) *bool {
+func GoogleSccManagementOrganizationEventThreatDetectionCustomModule_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleSccManagementOrganizationEventThreatDetectionCustomModule_IsTerraformElementParameters(x); err != nil {
@@ -747,7 +746,7 @@ func GoogleSccManagementOrganizationEventThreatDetectionCustomModule_IsTerraform
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleSccManagementOrganizationEventThreatDetectionCustomModule.GoogleSccManagementOrganizationEventThreatDetectionCustomModule",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -755,7 +754,7 @@ func GoogleSccManagementOrganizationEventThreatDetectionCustomModule_IsTerraform
 }
 
 // Experimental.
-func GoogleSccManagementOrganizationEventThreatDetectionCustomModule_IsTerraformResource(x interface{}) *bool {
+func GoogleSccManagementOrganizationEventThreatDetectionCustomModule_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleSccManagementOrganizationEventThreatDetectionCustomModule_IsTerraformResourceParameters(x); err != nil {
@@ -766,7 +765,7 @@ func GoogleSccManagementOrganizationEventThreatDetectionCustomModule_IsTerraform
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleSccManagementOrganizationEventThreatDetectionCustomModule.GoogleSccManagementOrganizationEventThreatDetectionCustomModule",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -791,31 +790,31 @@ func (g *jsiiProxy_GoogleSccManagementOrganizationEventThreatDetectionCustomModu
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleSccManagementOrganizationEventThreatDetectionCustomModule) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleSccManagementOrganizationEventThreatDetectionCustomModule) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleSccManagementOrganizationEventThreatDetectionCustomModule) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleSccManagementOrganizationEventThreatDetectionCustomModule) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -831,7 +830,7 @@ func (g *jsiiProxy_GoogleSccManagementOrganizationEventThreatDetectionCustomModu
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -847,7 +846,7 @@ func (g *jsiiProxy_GoogleSccManagementOrganizationEventThreatDetectionCustomModu
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -863,7 +862,7 @@ func (g *jsiiProxy_GoogleSccManagementOrganizationEventThreatDetectionCustomModu
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -879,7 +878,7 @@ func (g *jsiiProxy_GoogleSccManagementOrganizationEventThreatDetectionCustomModu
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -895,7 +894,7 @@ func (g *jsiiProxy_GoogleSccManagementOrganizationEventThreatDetectionCustomModu
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -911,7 +910,7 @@ func (g *jsiiProxy_GoogleSccManagementOrganizationEventThreatDetectionCustomModu
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -927,7 +926,7 @@ func (g *jsiiProxy_GoogleSccManagementOrganizationEventThreatDetectionCustomModu
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -943,15 +942,15 @@ func (g *jsiiProxy_GoogleSccManagementOrganizationEventThreatDetectionCustomModu
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleSccManagementOrganizationEventThreatDetectionCustomModule) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleSccManagementOrganizationEventThreatDetectionCustomModule) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -970,7 +969,7 @@ func (g *jsiiProxy_GoogleSccManagementOrganizationEventThreatDetectionCustomModu
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -983,7 +982,7 @@ func (g *jsiiProxy_GoogleSccManagementOrganizationEventThreatDetectionCustomModu
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -997,18 +996,18 @@ func (g *jsiiProxy_GoogleSccManagementOrganizationEventThreatDetectionCustomModu
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleSccManagementOrganizationEventThreatDetectionCustomModule) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleSccManagementOrganizationEventThreatDetectionCustomModule) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1019,7 +1018,7 @@ func (g *jsiiProxy_GoogleSccManagementOrganizationEventThreatDetectionCustomModu
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1030,7 +1029,7 @@ func (g *jsiiProxy_GoogleSccManagementOrganizationEventThreatDetectionCustomModu
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1041,7 +1040,7 @@ func (g *jsiiProxy_GoogleSccManagementOrganizationEventThreatDetectionCustomModu
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1109,8 +1108,8 @@ func (g *jsiiProxy_GoogleSccManagementOrganizationEventThreatDetectionCustomModu
 	)
 }
 
-func (g *jsiiProxy_GoogleSccManagementOrganizationEventThreatDetectionCustomModule) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleSccManagementOrganizationEventThreatDetectionCustomModule) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1122,8 +1121,8 @@ func (g *jsiiProxy_GoogleSccManagementOrganizationEventThreatDetectionCustomModu
 	return returns
 }
 
-func (g *jsiiProxy_GoogleSccManagementOrganizationEventThreatDetectionCustomModule) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleSccManagementOrganizationEventThreatDetectionCustomModule) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1135,8 +1134,8 @@ func (g *jsiiProxy_GoogleSccManagementOrganizationEventThreatDetectionCustomModu
 	return returns
 }
 
-func (g *jsiiProxy_GoogleSccManagementOrganizationEventThreatDetectionCustomModule) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleSccManagementOrganizationEventThreatDetectionCustomModule) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1148,8 +1147,8 @@ func (g *jsiiProxy_GoogleSccManagementOrganizationEventThreatDetectionCustomModu
 	return returns
 }
 
-func (g *jsiiProxy_GoogleSccManagementOrganizationEventThreatDetectionCustomModule) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleSccManagementOrganizationEventThreatDetectionCustomModule) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1174,8 +1173,8 @@ func (g *jsiiProxy_GoogleSccManagementOrganizationEventThreatDetectionCustomModu
 	return returns
 }
 
-func (g *jsiiProxy_GoogleSccManagementOrganizationEventThreatDetectionCustomModule) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleSccManagementOrganizationEventThreatDetectionCustomModule) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1186,4 +1185,3 @@ func (g *jsiiProxy_GoogleSccManagementOrganizationEventThreatDetectionCustomModu
 
 	return returns
 }
-

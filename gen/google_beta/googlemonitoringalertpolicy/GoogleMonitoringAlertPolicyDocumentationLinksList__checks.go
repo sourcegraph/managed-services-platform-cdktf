@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleMonitoringAlertPolicyDocumentationLinksList) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleMonitoringAlertPolicyDocumentationLinksList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleMonitoringAlertPolicyDocumentationLinksList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleMonitoringAlertPolicyDocumentationLinksListParameters(terr
 
 	return nil
 }
-

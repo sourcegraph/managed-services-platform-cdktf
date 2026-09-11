@@ -18,9 +18,9 @@ type GooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOutputReference i
 	ClusterIdInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -55,7 +55,7 @@ type GooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOutputReference i
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -79,7 +79,7 @@ type GooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOutputReference i
 	ResetClusterId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -132,8 +132,8 @@ func (j *jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOut
 	return returns
 }
 
-func (j *jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -262,7 +262,6 @@ func (j *jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOut
 	return returns
 }
 
-
 func NewGooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOutputReference {
 	_init_.Initialize()
 
@@ -273,7 +272,7 @@ func NewGooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOutputReferenc
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googlePubsubTopic.GooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -285,12 +284,12 @@ func NewGooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOutputReferenc
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googlePubsubTopic.GooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOutputReference)SetBootstrapServer(val *string) {
+func (j *jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOutputReference) SetBootstrapServer(val *string) {
 	if err := j.validateSetBootstrapServerParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOut
 	)
 }
 
-func (j *jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOutputReference)SetClusterId(val *string) {
+func (j *jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOutputReference) SetClusterId(val *string) {
 	if err := j.validateSetClusterIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOut
 	)
 }
 
-func (j *jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOut
 	)
 }
 
-func (j *jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -334,7 +333,7 @@ func (j *jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOut
 	)
 }
 
-func (j *jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOutputReference)SetGcpServiceAccount(val *string) {
+func (j *jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOutputReference) SetGcpServiceAccount(val *string) {
 	if err := j.validateSetGcpServiceAccountParameters(val); err != nil {
 		panic(err)
 	}
@@ -345,7 +344,7 @@ func (j *jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOut
 	)
 }
 
-func (j *jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOutputReference)SetIdentityPoolId(val *string) {
+func (j *jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOutputReference) SetIdentityPoolId(val *string) {
 	if err := j.validateSetIdentityPoolIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -356,7 +355,7 @@ func (j *jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOut
 	)
 }
 
-func (j *jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOutputReference)SetInternalValue(val *GooglePubsubTopicIngestionDataSourceSettingsConfluentCloud) {
+func (j *jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOutputReference) SetInternalValue(val *GooglePubsubTopicIngestionDataSourceSettingsConfluentCloud) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -367,7 +366,7 @@ func (j *jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOut
 	)
 }
 
-func (j *jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -378,7 +377,7 @@ func (j *jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOut
 	)
 }
 
-func (j *jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -389,7 +388,7 @@ func (j *jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOut
 	)
 }
 
-func (j *jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOutputReference)SetTopic(val *string) {
+func (j *jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOutputReference) SetTopic(val *string) {
 	if err := j.validateSetTopicParameters(val); err != nil {
 		panic(err)
 	}
@@ -413,16 +412,16 @@ func (g *jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOut
 	return returns
 }
 
-func (g *jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -438,7 +437,7 @@ func (g *jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOut
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -454,7 +453,7 @@ func (g *jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOut
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -470,7 +469,7 @@ func (g *jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOut
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -486,7 +485,7 @@ func (g *jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOut
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -502,7 +501,7 @@ func (g *jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOut
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -518,7 +517,7 @@ func (g *jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOut
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -534,7 +533,7 @@ func (g *jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOut
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -550,7 +549,7 @@ func (g *jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOut
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -579,7 +578,7 @@ func (g *jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOut
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -594,16 +593,16 @@ func (g *jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOut
 	)
 }
 
-func (g *jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -622,4 +621,3 @@ func (g *jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOut
 
 	return returns
 }
-

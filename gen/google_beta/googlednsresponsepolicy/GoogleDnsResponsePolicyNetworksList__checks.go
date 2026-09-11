@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleDnsResponsePolicyNetworksList) validateResolveParameter
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDnsResponsePolicyNetworksList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDnsResponsePolicyNetworksList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleDnsResponsePolicyNetworksListParameters(terraformResource 
 
 	return nil
 }
-

@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleAccessContextManagerAccessLevelConditionDevicePolicyOsC
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelConditionDevicePolicyOsConstraintsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelConditionDevicePolicyOsConstraintsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleAccessContextManagerAccessLevelConditionDevicePolicyOsCons
 
 	return nil
 }
-

@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataGoogleComputeBackendBucketIamPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataGoogleComputeBackendBucketIamPolicy) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataGoogleComputeBackendBucketIamPolicy_GenerateConfigForImportPara
 	return nil
 }
 
-func validateDataGoogleComputeBackendBucketIamPolicy_IsConstructParameters(x interface{}) error {
+func validateDataGoogleComputeBackendBucketIamPolicy_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataGoogleComputeBackendBucketIamPolicy_IsConstructParameters(x int
 	return nil
 }
 
-func validateDataGoogleComputeBackendBucketIamPolicy_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataGoogleComputeBackendBucketIamPolicy_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataGoogleComputeBackendBucketIamPolicy_IsTerraformDataSourceParame
 	return nil
 }
 
-func validateDataGoogleComputeBackendBucketIamPolicy_IsTerraformElementParameters(x interface{}) error {
+func validateDataGoogleComputeBackendBucketIamPolicy_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -151,7 +151,7 @@ func validateDataGoogleComputeBackendBucketIamPolicy_IsTerraformElementParameter
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleComputeBackendBucketIamPolicy) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleComputeBackendBucketIamPolicy) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -258,4 +258,3 @@ func validateNewDataGoogleComputeBackendBucketIamPolicyParameters(scope construc
 
 	return nil
 }
-

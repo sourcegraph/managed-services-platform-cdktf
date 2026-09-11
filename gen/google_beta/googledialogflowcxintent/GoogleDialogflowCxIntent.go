@@ -15,15 +15,15 @@ type GoogleDialogflowCxIntent interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -46,15 +46,15 @@ type GoogleDialogflowCxIntent interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
-	IsDefaultNegativeIntent() interface{}
-	SetIsDefaultNegativeIntent(val interface{})
-	IsDefaultNegativeIntentInput() interface{}
-	IsDefaultWelcomeIntent() interface{}
-	SetIsDefaultWelcomeIntent(val interface{})
-	IsDefaultWelcomeIntentInput() interface{}
-	IsFallback() interface{}
-	SetIsFallback(val interface{})
-	IsFallbackInput() interface{}
+	IsDefaultNegativeIntent() any
+	SetIsDefaultNegativeIntent(val any)
+	IsDefaultNegativeIntentInput() any
+	IsDefaultWelcomeIntent() any
+	SetIsDefaultWelcomeIntent(val any)
+	IsDefaultWelcomeIntentInput() any
+	IsFallback() any
+	SetIsFallback(val any)
+	IsFallbackInput() any
 	Labels() *map[string]*string
 	SetLabels(val *map[string]*string)
 	LabelsInput() *map[string]*string
@@ -69,7 +69,7 @@ type GoogleDialogflowCxIntent interface {
 	// The tree node.
 	Node() constructs.Node
 	Parameters() GoogleDialogflowCxIntentParametersList
-	ParametersInput() interface{}
+	ParametersInput() any
 	Parent() *string
 	SetParent(val *string)
 	ParentInput() *string
@@ -81,29 +81,29 @@ type GoogleDialogflowCxIntent interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() GoogleDialogflowCxIntentTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	TrainingPhrases() GoogleDialogflowCxIntentTrainingPhrasesList
-	TrainingPhrasesInput() interface{}
+	TrainingPhrasesInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -121,7 +121,7 @@ type GoogleDialogflowCxIntent interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -133,16 +133,16 @@ type GoogleDialogflowCxIntent interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutParameters(value interface{})
+	PutParameters(value any)
 	PutTimeouts(value *GoogleDialogflowCxIntentTimeouts)
-	PutTrainingPhrases(value interface{})
+	PutTrainingPhrases(value any)
 	ResetDescription()
 	ResetId()
 	ResetIsDefaultNegativeIntent()
@@ -158,17 +158,17 @@ type GoogleDialogflowCxIntent interface {
 	ResetPriority()
 	ResetTimeouts()
 	ResetTrainingPhrases()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleDialogflowCxIntent
@@ -186,8 +186,8 @@ func (j *jsiiProxy_GoogleDialogflowCxIntent) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxIntent) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDialogflowCxIntent) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -196,8 +196,8 @@ func (j *jsiiProxy_GoogleDialogflowCxIntent) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxIntent) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleDialogflowCxIntent) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -206,8 +206,8 @@ func (j *jsiiProxy_GoogleDialogflowCxIntent) ConstructNodeMetadata() *map[string
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxIntent) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDialogflowCxIntent) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -326,8 +326,8 @@ func (j *jsiiProxy_GoogleDialogflowCxIntent) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxIntent) IsDefaultNegativeIntent() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDialogflowCxIntent) IsDefaultNegativeIntent() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"isDefaultNegativeIntent",
@@ -336,8 +336,8 @@ func (j *jsiiProxy_GoogleDialogflowCxIntent) IsDefaultNegativeIntent() interface
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxIntent) IsDefaultNegativeIntentInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDialogflowCxIntent) IsDefaultNegativeIntentInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"isDefaultNegativeIntentInput",
@@ -346,8 +346,8 @@ func (j *jsiiProxy_GoogleDialogflowCxIntent) IsDefaultNegativeIntentInput() inte
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxIntent) IsDefaultWelcomeIntent() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDialogflowCxIntent) IsDefaultWelcomeIntent() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"isDefaultWelcomeIntent",
@@ -356,8 +356,8 @@ func (j *jsiiProxy_GoogleDialogflowCxIntent) IsDefaultWelcomeIntent() interface{
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxIntent) IsDefaultWelcomeIntentInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDialogflowCxIntent) IsDefaultWelcomeIntentInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"isDefaultWelcomeIntentInput",
@@ -366,8 +366,8 @@ func (j *jsiiProxy_GoogleDialogflowCxIntent) IsDefaultWelcomeIntentInput() inter
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxIntent) IsFallback() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDialogflowCxIntent) IsFallback() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"isFallback",
@@ -376,8 +376,8 @@ func (j *jsiiProxy_GoogleDialogflowCxIntent) IsFallback() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxIntent) IsFallbackInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDialogflowCxIntent) IsFallbackInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"isFallbackInput",
@@ -466,8 +466,8 @@ func (j *jsiiProxy_GoogleDialogflowCxIntent) Parameters() GoogleDialogflowCxInte
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxIntent) ParametersInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDialogflowCxIntent) ParametersInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"parametersInput",
@@ -526,8 +526,8 @@ func (j *jsiiProxy_GoogleDialogflowCxIntent) Provider() cdktf.TerraformProvider 
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxIntent) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleDialogflowCxIntent) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -536,8 +536,8 @@ func (j *jsiiProxy_GoogleDialogflowCxIntent) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxIntent) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDialogflowCxIntent) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -566,8 +566,8 @@ func (j *jsiiProxy_GoogleDialogflowCxIntent) TerraformLabels() cdktf.StringMap {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxIntent) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleDialogflowCxIntent) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -596,8 +596,8 @@ func (j *jsiiProxy_GoogleDialogflowCxIntent) Timeouts() GoogleDialogflowCxIntent
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxIntent) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDialogflowCxIntent) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -616,8 +616,8 @@ func (j *jsiiProxy_GoogleDialogflowCxIntent) TrainingPhrases() GoogleDialogflowC
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxIntent) TrainingPhrasesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDialogflowCxIntent) TrainingPhrasesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"trainingPhrasesInput",
@@ -625,7 +625,6 @@ func (j *jsiiProxy_GoogleDialogflowCxIntent) TrainingPhrasesInput() interface{} 
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dialogflow_cx_intent google_dialogflow_cx_intent} Resource.
 func NewGoogleDialogflowCxIntent(scope constructs.Construct, id *string, config *GoogleDialogflowCxIntentConfig) GoogleDialogflowCxIntent {
@@ -638,7 +637,7 @@ func NewGoogleDialogflowCxIntent(scope constructs.Construct, id *string, config 
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleDialogflowCxIntent.GoogleDialogflowCxIntent",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -651,12 +650,12 @@ func NewGoogleDialogflowCxIntent_Override(g GoogleDialogflowCxIntent, scope cons
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleDialogflowCxIntent.GoogleDialogflowCxIntent",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxIntent)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleDialogflowCxIntent) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -667,7 +666,7 @@ func (j *jsiiProxy_GoogleDialogflowCxIntent)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxIntent)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleDialogflowCxIntent) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -678,7 +677,7 @@ func (j *jsiiProxy_GoogleDialogflowCxIntent)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxIntent)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleDialogflowCxIntent) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -686,7 +685,7 @@ func (j *jsiiProxy_GoogleDialogflowCxIntent)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxIntent)SetDescription(val *string) {
+func (j *jsiiProxy_GoogleDialogflowCxIntent) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -697,7 +696,7 @@ func (j *jsiiProxy_GoogleDialogflowCxIntent)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxIntent)SetDisplayName(val *string) {
+func (j *jsiiProxy_GoogleDialogflowCxIntent) SetDisplayName(val *string) {
 	if err := j.validateSetDisplayNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -708,7 +707,7 @@ func (j *jsiiProxy_GoogleDialogflowCxIntent)SetDisplayName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxIntent)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleDialogflowCxIntent) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -716,7 +715,7 @@ func (j *jsiiProxy_GoogleDialogflowCxIntent)SetForEach(val cdktf.ITerraformItera
 	)
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxIntent)SetId(val *string) {
+func (j *jsiiProxy_GoogleDialogflowCxIntent) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -727,7 +726,7 @@ func (j *jsiiProxy_GoogleDialogflowCxIntent)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxIntent)SetIsDefaultNegativeIntent(val interface{}) {
+func (j *jsiiProxy_GoogleDialogflowCxIntent) SetIsDefaultNegativeIntent(val any) {
 	if err := j.validateSetIsDefaultNegativeIntentParameters(val); err != nil {
 		panic(err)
 	}
@@ -738,7 +737,7 @@ func (j *jsiiProxy_GoogleDialogflowCxIntent)SetIsDefaultNegativeIntent(val inter
 	)
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxIntent)SetIsDefaultWelcomeIntent(val interface{}) {
+func (j *jsiiProxy_GoogleDialogflowCxIntent) SetIsDefaultWelcomeIntent(val any) {
 	if err := j.validateSetIsDefaultWelcomeIntentParameters(val); err != nil {
 		panic(err)
 	}
@@ -749,7 +748,7 @@ func (j *jsiiProxy_GoogleDialogflowCxIntent)SetIsDefaultWelcomeIntent(val interf
 	)
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxIntent)SetIsFallback(val interface{}) {
+func (j *jsiiProxy_GoogleDialogflowCxIntent) SetIsFallback(val any) {
 	if err := j.validateSetIsFallbackParameters(val); err != nil {
 		panic(err)
 	}
@@ -760,7 +759,7 @@ func (j *jsiiProxy_GoogleDialogflowCxIntent)SetIsFallback(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxIntent)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_GoogleDialogflowCxIntent) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -771,7 +770,7 @@ func (j *jsiiProxy_GoogleDialogflowCxIntent)SetLabels(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxIntent)SetLanguageCode(val *string) {
+func (j *jsiiProxy_GoogleDialogflowCxIntent) SetLanguageCode(val *string) {
 	if err := j.validateSetLanguageCodeParameters(val); err != nil {
 		panic(err)
 	}
@@ -782,7 +781,7 @@ func (j *jsiiProxy_GoogleDialogflowCxIntent)SetLanguageCode(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxIntent)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleDialogflowCxIntent) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -793,7 +792,7 @@ func (j *jsiiProxy_GoogleDialogflowCxIntent)SetLifecycle(val *cdktf.TerraformRes
 	)
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxIntent)SetParent(val *string) {
+func (j *jsiiProxy_GoogleDialogflowCxIntent) SetParent(val *string) {
 	if err := j.validateSetParentParameters(val); err != nil {
 		panic(err)
 	}
@@ -804,7 +803,7 @@ func (j *jsiiProxy_GoogleDialogflowCxIntent)SetParent(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxIntent)SetPriority(val *float64) {
+func (j *jsiiProxy_GoogleDialogflowCxIntent) SetPriority(val *float64) {
 	if err := j.validateSetPriorityParameters(val); err != nil {
 		panic(err)
 	}
@@ -815,7 +814,7 @@ func (j *jsiiProxy_GoogleDialogflowCxIntent)SetPriority(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxIntent)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleDialogflowCxIntent) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -823,7 +822,7 @@ func (j *jsiiProxy_GoogleDialogflowCxIntent)SetProvider(val cdktf.TerraformProvi
 	)
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxIntent)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleDialogflowCxIntent) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -846,7 +845,7 @@ func GoogleDialogflowCxIntent_GenerateConfigForImport(scope constructs.Construct
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleDialogflowCxIntent.GoogleDialogflowCxIntent",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -870,7 +869,7 @@ func GoogleDialogflowCxIntent_GenerateConfigForImport(scope constructs.Construct
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleDialogflowCxIntent_IsConstruct(x interface{}) *bool {
+func GoogleDialogflowCxIntent_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleDialogflowCxIntent_IsConstructParameters(x); err != nil {
@@ -881,7 +880,7 @@ func GoogleDialogflowCxIntent_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleDialogflowCxIntent.GoogleDialogflowCxIntent",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -889,7 +888,7 @@ func GoogleDialogflowCxIntent_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleDialogflowCxIntent_IsTerraformElement(x interface{}) *bool {
+func GoogleDialogflowCxIntent_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleDialogflowCxIntent_IsTerraformElementParameters(x); err != nil {
@@ -900,7 +899,7 @@ func GoogleDialogflowCxIntent_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleDialogflowCxIntent.GoogleDialogflowCxIntent",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -908,7 +907,7 @@ func GoogleDialogflowCxIntent_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleDialogflowCxIntent_IsTerraformResource(x interface{}) *bool {
+func GoogleDialogflowCxIntent_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleDialogflowCxIntent_IsTerraformResourceParameters(x); err != nil {
@@ -919,7 +918,7 @@ func GoogleDialogflowCxIntent_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleDialogflowCxIntent.GoogleDialogflowCxIntent",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -944,31 +943,31 @@ func (g *jsiiProxy_GoogleDialogflowCxIntent) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleDialogflowCxIntent) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleDialogflowCxIntent) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleDialogflowCxIntent) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleDialogflowCxIntent) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -984,7 +983,7 @@ func (g *jsiiProxy_GoogleDialogflowCxIntent) GetBooleanAttribute(terraformAttrib
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1000,7 +999,7 @@ func (g *jsiiProxy_GoogleDialogflowCxIntent) GetBooleanMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1016,7 +1015,7 @@ func (g *jsiiProxy_GoogleDialogflowCxIntent) GetListAttribute(terraformAttribute
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1032,7 +1031,7 @@ func (g *jsiiProxy_GoogleDialogflowCxIntent) GetNumberAttribute(terraformAttribu
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1048,7 +1047,7 @@ func (g *jsiiProxy_GoogleDialogflowCxIntent) GetNumberListAttribute(terraformAtt
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1064,7 +1063,7 @@ func (g *jsiiProxy_GoogleDialogflowCxIntent) GetNumberMapAttribute(terraformAttr
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1080,7 +1079,7 @@ func (g *jsiiProxy_GoogleDialogflowCxIntent) GetStringAttribute(terraformAttribu
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1096,15 +1095,15 @@ func (g *jsiiProxy_GoogleDialogflowCxIntent) GetStringMapAttribute(terraformAttr
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDialogflowCxIntent) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleDialogflowCxIntent) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1123,7 +1122,7 @@ func (g *jsiiProxy_GoogleDialogflowCxIntent) ImportFrom(id *string, provider cdk
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1136,7 +1135,7 @@ func (g *jsiiProxy_GoogleDialogflowCxIntent) InterpolationForAttribute(terraform
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1150,18 +1149,18 @@ func (g *jsiiProxy_GoogleDialogflowCxIntent) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleDialogflowCxIntent) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleDialogflowCxIntent) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1172,7 +1171,7 @@ func (g *jsiiProxy_GoogleDialogflowCxIntent) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1183,18 +1182,18 @@ func (g *jsiiProxy_GoogleDialogflowCxIntent) OverrideLogicalId(newLogicalId *str
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (g *jsiiProxy_GoogleDialogflowCxIntent) PutParameters(value interface{}) {
+func (g *jsiiProxy_GoogleDialogflowCxIntent) PutParameters(value any) {
 	if err := g.validatePutParametersParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putParameters",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1205,18 +1204,18 @@ func (g *jsiiProxy_GoogleDialogflowCxIntent) PutTimeouts(value *GoogleDialogflow
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (g *jsiiProxy_GoogleDialogflowCxIntent) PutTrainingPhrases(value interface{}) {
+func (g *jsiiProxy_GoogleDialogflowCxIntent) PutTrainingPhrases(value any) {
 	if err := g.validatePutTrainingPhrasesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putTrainingPhrases",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1324,8 +1323,8 @@ func (g *jsiiProxy_GoogleDialogflowCxIntent) ResetTrainingPhrases() {
 	)
 }
 
-func (g *jsiiProxy_GoogleDialogflowCxIntent) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleDialogflowCxIntent) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1337,8 +1336,8 @@ func (g *jsiiProxy_GoogleDialogflowCxIntent) SynthesizeAttributes() *map[string]
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDialogflowCxIntent) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleDialogflowCxIntent) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1350,8 +1349,8 @@ func (g *jsiiProxy_GoogleDialogflowCxIntent) SynthesizeHclAttributes() *map[stri
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDialogflowCxIntent) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleDialogflowCxIntent) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1363,8 +1362,8 @@ func (g *jsiiProxy_GoogleDialogflowCxIntent) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDialogflowCxIntent) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleDialogflowCxIntent) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1389,8 +1388,8 @@ func (g *jsiiProxy_GoogleDialogflowCxIntent) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDialogflowCxIntent) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleDialogflowCxIntent) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1401,4 +1400,3 @@ func (g *jsiiProxy_GoogleDialogflowCxIntent) ToTerraform() interface{} {
 
 	return returns
 }
-

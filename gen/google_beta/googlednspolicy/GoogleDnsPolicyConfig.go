@@ -6,9 +6,9 @@ import (
 
 type GoogleDnsPolicyConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type GoogleDnsPolicyConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// User assigned name for this policy.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dns_policy#name GoogleDnsPolicy#name}
@@ -42,11 +42,11 @@ type GoogleDnsPolicyConfig struct {
 	// that are bound to this policy.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dns_policy#enable_inbound_forwarding GoogleDnsPolicy#enable_inbound_forwarding}
-	EnableInboundForwarding interface{} `field:"optional" json:"enableInboundForwarding" yaml:"enableInboundForwarding"`
+	EnableInboundForwarding any `field:"optional" json:"enableInboundForwarding" yaml:"enableInboundForwarding"`
 	// Controls whether logging is enabled for the networks bound to this policy. Defaults to no logging if not set.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dns_policy#enable_logging GoogleDnsPolicy#enable_logging}
-	EnableLogging interface{} `field:"optional" json:"enableLogging" yaml:"enableLogging"`
+	EnableLogging any `field:"optional" json:"enableLogging" yaml:"enableLogging"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dns_policy#id GoogleDnsPolicy#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -55,7 +55,7 @@ type GoogleDnsPolicyConfig struct {
 	// networks block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dns_policy#networks GoogleDnsPolicy#networks}
-	Networks interface{} `field:"optional" json:"networks" yaml:"networks"`
+	Networks any `field:"optional" json:"networks" yaml:"networks"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dns_policy#project GoogleDnsPolicy#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// timeouts block.
@@ -63,4 +63,3 @@ type GoogleDnsPolicyConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dns_policy#timeouts GoogleDnsPolicy#timeouts}
 	Timeouts *GoogleDnsPolicyTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

@@ -15,24 +15,24 @@ type GoogleNetappActiveDirectory interface {
 	Administrators() *[]*string
 	SetAdministrators(val *[]*string)
 	AdministratorsInput() *[]*string
-	AesEncryption() interface{}
-	SetAesEncryption(val interface{})
-	AesEncryptionInput() interface{}
+	AesEncryption() any
+	SetAesEncryption(val any)
+	AesEncryptionInput() any
 	BackupOperators() *[]*string
 	SetBackupOperators(val *[]*string)
 	BackupOperatorsInput() *[]*string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -48,9 +48,9 @@ type GoogleNetappActiveDirectory interface {
 	SetDomain(val *string)
 	DomainInput() *string
 	EffectiveLabels() cdktf.StringMap
-	EncryptDcConnections() interface{}
-	SetEncryptDcConnections(val interface{})
-	EncryptDcConnectionsInput() interface{}
+	EncryptDcConnections() any
+	SetEncryptDcConnections(val any)
+	EncryptDcConnectionsInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -71,9 +71,9 @@ type GoogleNetappActiveDirectory interface {
 	Labels() *map[string]*string
 	SetLabels(val *map[string]*string)
 	LabelsInput() *map[string]*string
-	LdapSigning() interface{}
-	SetLdapSigning(val interface{})
-	LdapSigningInput() interface{}
+	LdapSigning() any
+	SetLdapSigning(val any)
+	LdapSigningInput() any
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -87,9 +87,9 @@ type GoogleNetappActiveDirectory interface {
 	NetBiosPrefix() *string
 	SetNetBiosPrefix(val *string)
 	NetBiosPrefixInput() *string
-	NfsUsersWithLdap() interface{}
-	SetNfsUsersWithLdap(val interface{})
-	NfsUsersWithLdapInput() interface{}
+	NfsUsersWithLdap() any
+	SetNfsUsersWithLdap(val any)
+	NfsUsersWithLdapInput() any
 	// The tree node.
 	Node() constructs.Node
 	OrganizationalUnit() *string
@@ -106,11 +106,11 @@ type GoogleNetappActiveDirectory interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	SecurityOperators() *[]*string
 	SetSecurityOperators(val *[]*string)
 	SecurityOperatorsInput() *[]*string
@@ -123,11 +123,11 @@ type GoogleNetappActiveDirectory interface {
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() GoogleNetappActiveDirectoryTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	Username() *string
 	SetUsername(val *string)
 	UsernameInput() *string
@@ -135,9 +135,9 @@ type GoogleNetappActiveDirectory interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -155,7 +155,7 @@ type GoogleNetappActiveDirectory interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -167,7 +167,7 @@ type GoogleNetappActiveDirectory interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -194,17 +194,17 @@ type GoogleNetappActiveDirectory interface {
 	ResetSecurityOperators()
 	ResetSite()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleNetappActiveDirectory
@@ -232,8 +232,8 @@ func (j *jsiiProxy_GoogleNetappActiveDirectory) AdministratorsInput() *[]*string
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetappActiveDirectory) AesEncryption() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleNetappActiveDirectory) AesEncryption() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"aesEncryption",
@@ -242,8 +242,8 @@ func (j *jsiiProxy_GoogleNetappActiveDirectory) AesEncryption() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetappActiveDirectory) AesEncryptionInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleNetappActiveDirectory) AesEncryptionInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"aesEncryptionInput",
@@ -282,8 +282,8 @@ func (j *jsiiProxy_GoogleNetappActiveDirectory) CdktfStack() cdktf.TerraformStac
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetappActiveDirectory) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleNetappActiveDirectory) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -292,8 +292,8 @@ func (j *jsiiProxy_GoogleNetappActiveDirectory) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetappActiveDirectory) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleNetappActiveDirectory) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -302,8 +302,8 @@ func (j *jsiiProxy_GoogleNetappActiveDirectory) ConstructNodeMetadata() *map[str
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetappActiveDirectory) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleNetappActiveDirectory) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -402,8 +402,8 @@ func (j *jsiiProxy_GoogleNetappActiveDirectory) EffectiveLabels() cdktf.StringMa
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetappActiveDirectory) EncryptDcConnections() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleNetappActiveDirectory) EncryptDcConnections() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"encryptDcConnections",
@@ -412,8 +412,8 @@ func (j *jsiiProxy_GoogleNetappActiveDirectory) EncryptDcConnections() interface
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetappActiveDirectory) EncryptDcConnectionsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleNetappActiveDirectory) EncryptDcConnectionsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"encryptDcConnectionsInput",
@@ -532,8 +532,8 @@ func (j *jsiiProxy_GoogleNetappActiveDirectory) LabelsInput() *map[string]*strin
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetappActiveDirectory) LdapSigning() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleNetappActiveDirectory) LdapSigning() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ldapSigning",
@@ -542,8 +542,8 @@ func (j *jsiiProxy_GoogleNetappActiveDirectory) LdapSigning() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetappActiveDirectory) LdapSigningInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleNetappActiveDirectory) LdapSigningInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ldapSigningInput",
@@ -622,8 +622,8 @@ func (j *jsiiProxy_GoogleNetappActiveDirectory) NetBiosPrefixInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetappActiveDirectory) NfsUsersWithLdap() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleNetappActiveDirectory) NfsUsersWithLdap() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"nfsUsersWithLdap",
@@ -632,8 +632,8 @@ func (j *jsiiProxy_GoogleNetappActiveDirectory) NfsUsersWithLdap() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetappActiveDirectory) NfsUsersWithLdapInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleNetappActiveDirectory) NfsUsersWithLdapInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"nfsUsersWithLdapInput",
@@ -722,8 +722,8 @@ func (j *jsiiProxy_GoogleNetappActiveDirectory) Provider() cdktf.TerraformProvid
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetappActiveDirectory) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleNetappActiveDirectory) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -732,8 +732,8 @@ func (j *jsiiProxy_GoogleNetappActiveDirectory) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetappActiveDirectory) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleNetappActiveDirectory) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -822,8 +822,8 @@ func (j *jsiiProxy_GoogleNetappActiveDirectory) TerraformLabels() cdktf.StringMa
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetappActiveDirectory) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleNetappActiveDirectory) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -852,8 +852,8 @@ func (j *jsiiProxy_GoogleNetappActiveDirectory) Timeouts() GoogleNetappActiveDir
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetappActiveDirectory) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleNetappActiveDirectory) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -882,7 +882,6 @@ func (j *jsiiProxy_GoogleNetappActiveDirectory) UsernameInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_netapp_active_directory google_netapp_active_directory} Resource.
 func NewGoogleNetappActiveDirectory(scope constructs.Construct, id *string, config *GoogleNetappActiveDirectoryConfig) GoogleNetappActiveDirectory {
 	_init_.Initialize()
@@ -894,7 +893,7 @@ func NewGoogleNetappActiveDirectory(scope constructs.Construct, id *string, conf
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleNetappActiveDirectory.GoogleNetappActiveDirectory",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -907,12 +906,12 @@ func NewGoogleNetappActiveDirectory_Override(g GoogleNetappActiveDirectory, scop
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleNetappActiveDirectory.GoogleNetappActiveDirectory",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleNetappActiveDirectory)SetAdministrators(val *[]*string) {
+func (j *jsiiProxy_GoogleNetappActiveDirectory) SetAdministrators(val *[]*string) {
 	if err := j.validateSetAdministratorsParameters(val); err != nil {
 		panic(err)
 	}
@@ -923,7 +922,7 @@ func (j *jsiiProxy_GoogleNetappActiveDirectory)SetAdministrators(val *[]*string)
 	)
 }
 
-func (j *jsiiProxy_GoogleNetappActiveDirectory)SetAesEncryption(val interface{}) {
+func (j *jsiiProxy_GoogleNetappActiveDirectory) SetAesEncryption(val any) {
 	if err := j.validateSetAesEncryptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -934,7 +933,7 @@ func (j *jsiiProxy_GoogleNetappActiveDirectory)SetAesEncryption(val interface{})
 	)
 }
 
-func (j *jsiiProxy_GoogleNetappActiveDirectory)SetBackupOperators(val *[]*string) {
+func (j *jsiiProxy_GoogleNetappActiveDirectory) SetBackupOperators(val *[]*string) {
 	if err := j.validateSetBackupOperatorsParameters(val); err != nil {
 		panic(err)
 	}
@@ -945,7 +944,7 @@ func (j *jsiiProxy_GoogleNetappActiveDirectory)SetBackupOperators(val *[]*string
 	)
 }
 
-func (j *jsiiProxy_GoogleNetappActiveDirectory)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleNetappActiveDirectory) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -956,7 +955,7 @@ func (j *jsiiProxy_GoogleNetappActiveDirectory)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleNetappActiveDirectory)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleNetappActiveDirectory) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -967,7 +966,7 @@ func (j *jsiiProxy_GoogleNetappActiveDirectory)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleNetappActiveDirectory)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleNetappActiveDirectory) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -975,7 +974,7 @@ func (j *jsiiProxy_GoogleNetappActiveDirectory)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleNetappActiveDirectory)SetDescription(val *string) {
+func (j *jsiiProxy_GoogleNetappActiveDirectory) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -986,7 +985,7 @@ func (j *jsiiProxy_GoogleNetappActiveDirectory)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleNetappActiveDirectory)SetDns(val *string) {
+func (j *jsiiProxy_GoogleNetappActiveDirectory) SetDns(val *string) {
 	if err := j.validateSetDnsParameters(val); err != nil {
 		panic(err)
 	}
@@ -997,7 +996,7 @@ func (j *jsiiProxy_GoogleNetappActiveDirectory)SetDns(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleNetappActiveDirectory)SetDomain(val *string) {
+func (j *jsiiProxy_GoogleNetappActiveDirectory) SetDomain(val *string) {
 	if err := j.validateSetDomainParameters(val); err != nil {
 		panic(err)
 	}
@@ -1008,7 +1007,7 @@ func (j *jsiiProxy_GoogleNetappActiveDirectory)SetDomain(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleNetappActiveDirectory)SetEncryptDcConnections(val interface{}) {
+func (j *jsiiProxy_GoogleNetappActiveDirectory) SetEncryptDcConnections(val any) {
 	if err := j.validateSetEncryptDcConnectionsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1019,7 +1018,7 @@ func (j *jsiiProxy_GoogleNetappActiveDirectory)SetEncryptDcConnections(val inter
 	)
 }
 
-func (j *jsiiProxy_GoogleNetappActiveDirectory)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleNetappActiveDirectory) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -1027,7 +1026,7 @@ func (j *jsiiProxy_GoogleNetappActiveDirectory)SetForEach(val cdktf.ITerraformIt
 	)
 }
 
-func (j *jsiiProxy_GoogleNetappActiveDirectory)SetId(val *string) {
+func (j *jsiiProxy_GoogleNetappActiveDirectory) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1038,7 +1037,7 @@ func (j *jsiiProxy_GoogleNetappActiveDirectory)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleNetappActiveDirectory)SetKdcHostname(val *string) {
+func (j *jsiiProxy_GoogleNetappActiveDirectory) SetKdcHostname(val *string) {
 	if err := j.validateSetKdcHostnameParameters(val); err != nil {
 		panic(err)
 	}
@@ -1049,7 +1048,7 @@ func (j *jsiiProxy_GoogleNetappActiveDirectory)SetKdcHostname(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleNetappActiveDirectory)SetKdcIp(val *string) {
+func (j *jsiiProxy_GoogleNetappActiveDirectory) SetKdcIp(val *string) {
 	if err := j.validateSetKdcIpParameters(val); err != nil {
 		panic(err)
 	}
@@ -1060,7 +1059,7 @@ func (j *jsiiProxy_GoogleNetappActiveDirectory)SetKdcIp(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleNetappActiveDirectory)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_GoogleNetappActiveDirectory) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1071,7 +1070,7 @@ func (j *jsiiProxy_GoogleNetappActiveDirectory)SetLabels(val *map[string]*string
 	)
 }
 
-func (j *jsiiProxy_GoogleNetappActiveDirectory)SetLdapSigning(val interface{}) {
+func (j *jsiiProxy_GoogleNetappActiveDirectory) SetLdapSigning(val any) {
 	if err := j.validateSetLdapSigningParameters(val); err != nil {
 		panic(err)
 	}
@@ -1082,7 +1081,7 @@ func (j *jsiiProxy_GoogleNetappActiveDirectory)SetLdapSigning(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleNetappActiveDirectory)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleNetappActiveDirectory) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -1093,7 +1092,7 @@ func (j *jsiiProxy_GoogleNetappActiveDirectory)SetLifecycle(val *cdktf.Terraform
 	)
 }
 
-func (j *jsiiProxy_GoogleNetappActiveDirectory)SetLocation(val *string) {
+func (j *jsiiProxy_GoogleNetappActiveDirectory) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -1104,7 +1103,7 @@ func (j *jsiiProxy_GoogleNetappActiveDirectory)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleNetappActiveDirectory)SetName(val *string) {
+func (j *jsiiProxy_GoogleNetappActiveDirectory) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -1115,7 +1114,7 @@ func (j *jsiiProxy_GoogleNetappActiveDirectory)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleNetappActiveDirectory)SetNetBiosPrefix(val *string) {
+func (j *jsiiProxy_GoogleNetappActiveDirectory) SetNetBiosPrefix(val *string) {
 	if err := j.validateSetNetBiosPrefixParameters(val); err != nil {
 		panic(err)
 	}
@@ -1126,7 +1125,7 @@ func (j *jsiiProxy_GoogleNetappActiveDirectory)SetNetBiosPrefix(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleNetappActiveDirectory)SetNfsUsersWithLdap(val interface{}) {
+func (j *jsiiProxy_GoogleNetappActiveDirectory) SetNfsUsersWithLdap(val any) {
 	if err := j.validateSetNfsUsersWithLdapParameters(val); err != nil {
 		panic(err)
 	}
@@ -1137,7 +1136,7 @@ func (j *jsiiProxy_GoogleNetappActiveDirectory)SetNfsUsersWithLdap(val interface
 	)
 }
 
-func (j *jsiiProxy_GoogleNetappActiveDirectory)SetOrganizationalUnit(val *string) {
+func (j *jsiiProxy_GoogleNetappActiveDirectory) SetOrganizationalUnit(val *string) {
 	if err := j.validateSetOrganizationalUnitParameters(val); err != nil {
 		panic(err)
 	}
@@ -1148,7 +1147,7 @@ func (j *jsiiProxy_GoogleNetappActiveDirectory)SetOrganizationalUnit(val *string
 	)
 }
 
-func (j *jsiiProxy_GoogleNetappActiveDirectory)SetPassword(val *string) {
+func (j *jsiiProxy_GoogleNetappActiveDirectory) SetPassword(val *string) {
 	if err := j.validateSetPasswordParameters(val); err != nil {
 		panic(err)
 	}
@@ -1159,7 +1158,7 @@ func (j *jsiiProxy_GoogleNetappActiveDirectory)SetPassword(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleNetappActiveDirectory)SetProject(val *string) {
+func (j *jsiiProxy_GoogleNetappActiveDirectory) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -1170,7 +1169,7 @@ func (j *jsiiProxy_GoogleNetappActiveDirectory)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleNetappActiveDirectory)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleNetappActiveDirectory) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1178,7 +1177,7 @@ func (j *jsiiProxy_GoogleNetappActiveDirectory)SetProvider(val cdktf.TerraformPr
 	)
 }
 
-func (j *jsiiProxy_GoogleNetappActiveDirectory)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleNetappActiveDirectory) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -1189,7 +1188,7 @@ func (j *jsiiProxy_GoogleNetappActiveDirectory)SetProvisioners(val *[]interface{
 	)
 }
 
-func (j *jsiiProxy_GoogleNetappActiveDirectory)SetSecurityOperators(val *[]*string) {
+func (j *jsiiProxy_GoogleNetappActiveDirectory) SetSecurityOperators(val *[]*string) {
 	if err := j.validateSetSecurityOperatorsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1200,7 +1199,7 @@ func (j *jsiiProxy_GoogleNetappActiveDirectory)SetSecurityOperators(val *[]*stri
 	)
 }
 
-func (j *jsiiProxy_GoogleNetappActiveDirectory)SetSite(val *string) {
+func (j *jsiiProxy_GoogleNetappActiveDirectory) SetSite(val *string) {
 	if err := j.validateSetSiteParameters(val); err != nil {
 		panic(err)
 	}
@@ -1211,7 +1210,7 @@ func (j *jsiiProxy_GoogleNetappActiveDirectory)SetSite(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleNetappActiveDirectory)SetUsername(val *string) {
+func (j *jsiiProxy_GoogleNetappActiveDirectory) SetUsername(val *string) {
 	if err := j.validateSetUsernameParameters(val); err != nil {
 		panic(err)
 	}
@@ -1234,7 +1233,7 @@ func GoogleNetappActiveDirectory_GenerateConfigForImport(scope constructs.Constr
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleNetappActiveDirectory.GoogleNetappActiveDirectory",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -1258,7 +1257,7 @@ func GoogleNetappActiveDirectory_GenerateConfigForImport(scope constructs.Constr
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleNetappActiveDirectory_IsConstruct(x interface{}) *bool {
+func GoogleNetappActiveDirectory_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleNetappActiveDirectory_IsConstructParameters(x); err != nil {
@@ -1269,7 +1268,7 @@ func GoogleNetappActiveDirectory_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleNetappActiveDirectory.GoogleNetappActiveDirectory",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1277,7 +1276,7 @@ func GoogleNetappActiveDirectory_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleNetappActiveDirectory_IsTerraformElement(x interface{}) *bool {
+func GoogleNetappActiveDirectory_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleNetappActiveDirectory_IsTerraformElementParameters(x); err != nil {
@@ -1288,7 +1287,7 @@ func GoogleNetappActiveDirectory_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleNetappActiveDirectory.GoogleNetappActiveDirectory",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1296,7 +1295,7 @@ func GoogleNetappActiveDirectory_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleNetappActiveDirectory_IsTerraformResource(x interface{}) *bool {
+func GoogleNetappActiveDirectory_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleNetappActiveDirectory_IsTerraformResourceParameters(x); err != nil {
@@ -1307,7 +1306,7 @@ func GoogleNetappActiveDirectory_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleNetappActiveDirectory.GoogleNetappActiveDirectory",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1332,31 +1331,31 @@ func (g *jsiiProxy_GoogleNetappActiveDirectory) AddMoveTarget(moveTarget *string
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleNetappActiveDirectory) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleNetappActiveDirectory) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleNetappActiveDirectory) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleNetappActiveDirectory) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1372,7 +1371,7 @@ func (g *jsiiProxy_GoogleNetappActiveDirectory) GetBooleanAttribute(terraformAtt
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1388,7 +1387,7 @@ func (g *jsiiProxy_GoogleNetappActiveDirectory) GetBooleanMapAttribute(terraform
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1404,7 +1403,7 @@ func (g *jsiiProxy_GoogleNetappActiveDirectory) GetListAttribute(terraformAttrib
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1420,7 +1419,7 @@ func (g *jsiiProxy_GoogleNetappActiveDirectory) GetNumberAttribute(terraformAttr
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1436,7 +1435,7 @@ func (g *jsiiProxy_GoogleNetappActiveDirectory) GetNumberListAttribute(terraform
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1452,7 +1451,7 @@ func (g *jsiiProxy_GoogleNetappActiveDirectory) GetNumberMapAttribute(terraformA
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1468,7 +1467,7 @@ func (g *jsiiProxy_GoogleNetappActiveDirectory) GetStringAttribute(terraformAttr
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1484,15 +1483,15 @@ func (g *jsiiProxy_GoogleNetappActiveDirectory) GetStringMapAttribute(terraformA
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleNetappActiveDirectory) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleNetappActiveDirectory) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1511,7 +1510,7 @@ func (g *jsiiProxy_GoogleNetappActiveDirectory) ImportFrom(id *string, provider 
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1524,7 +1523,7 @@ func (g *jsiiProxy_GoogleNetappActiveDirectory) InterpolationForAttribute(terraf
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1538,18 +1537,18 @@ func (g *jsiiProxy_GoogleNetappActiveDirectory) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleNetappActiveDirectory) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleNetappActiveDirectory) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1560,7 +1559,7 @@ func (g *jsiiProxy_GoogleNetappActiveDirectory) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1571,7 +1570,7 @@ func (g *jsiiProxy_GoogleNetappActiveDirectory) OverrideLogicalId(newLogicalId *
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1582,7 +1581,7 @@ func (g *jsiiProxy_GoogleNetappActiveDirectory) PutTimeouts(value *GoogleNetappA
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1722,8 +1721,8 @@ func (g *jsiiProxy_GoogleNetappActiveDirectory) ResetTimeouts() {
 	)
 }
 
-func (g *jsiiProxy_GoogleNetappActiveDirectory) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleNetappActiveDirectory) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1735,8 +1734,8 @@ func (g *jsiiProxy_GoogleNetappActiveDirectory) SynthesizeAttributes() *map[stri
 	return returns
 }
 
-func (g *jsiiProxy_GoogleNetappActiveDirectory) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleNetappActiveDirectory) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1748,8 +1747,8 @@ func (g *jsiiProxy_GoogleNetappActiveDirectory) SynthesizeHclAttributes() *map[s
 	return returns
 }
 
-func (g *jsiiProxy_GoogleNetappActiveDirectory) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleNetappActiveDirectory) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1761,8 +1760,8 @@ func (g *jsiiProxy_GoogleNetappActiveDirectory) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleNetappActiveDirectory) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleNetappActiveDirectory) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1787,8 +1786,8 @@ func (g *jsiiProxy_GoogleNetappActiveDirectory) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleNetappActiveDirectory) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleNetappActiveDirectory) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1799,4 +1798,3 @@ func (g *jsiiProxy_GoogleNetappActiveDirectory) ToTerraform() interface{} {
 
 	return returns
 }
-

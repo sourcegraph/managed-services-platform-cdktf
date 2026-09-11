@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleSqlDatabase) validateAddMoveTargetParameters(moveTarget
 	return nil
 }
 
-func (g *jsiiProxy_GoogleSqlDatabase) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleSqlDatabase) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleSqlDatabase) validateMoveFromIdParameters(id *string) e
 	return nil
 }
 
-func (g *jsiiProxy_GoogleSqlDatabase) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleSqlDatabase) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateGoogleSqlDatabase_GenerateConfigForImportParameters(scope construct
 	return nil
 }
 
-func validateGoogleSqlDatabase_IsConstructParameters(x interface{}) error {
+func validateGoogleSqlDatabase_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateGoogleSqlDatabase_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateGoogleSqlDatabase_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleSqlDatabase_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateGoogleSqlDatabase_IsTerraformElementParameters(x interface{}) error
 	return nil
 }
 
-func validateGoogleSqlDatabase_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleSqlDatabase_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -271,7 +271,7 @@ func (j *jsiiProxy_GoogleSqlDatabase) validateSetCollationParameters(val *string
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSqlDatabase) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleSqlDatabase) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -304,7 +304,7 @@ func (j *jsiiProxy_GoogleSqlDatabase) validateSetConnectionParameters(val interf
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSqlDatabase) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleSqlDatabase) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -409,7 +409,7 @@ func (j *jsiiProxy_GoogleSqlDatabase) validateSetProjectParameters(val *string) 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSqlDatabase) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleSqlDatabase) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -473,4 +473,3 @@ func validateNewGoogleSqlDatabaseParameters(scope constructs.Construct, id *stri
 
 	return nil
 }
-

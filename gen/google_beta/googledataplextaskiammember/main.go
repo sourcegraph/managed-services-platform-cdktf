@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataplexTaskIamMember.GoogleDataplexTaskIamMember",
-		reflect.TypeOf((*GoogleDataplexTaskIamMember)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataplexTaskIamMember](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -75,7 +75,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataplexTaskIamMember{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -83,11 +83,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataplexTaskIamMember.GoogleDataplexTaskIamMemberCondition",
-		reflect.TypeOf((*GoogleDataplexTaskIamMemberCondition)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataplexTaskIamMemberCondition](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataplexTaskIamMember.GoogleDataplexTaskIamMemberConditionOutputReference",
-		reflect.TypeOf((*GoogleDataplexTaskIamMemberConditionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataplexTaskIamMemberConditionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -118,7 +118,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "titleInput", GoGetter: "TitleInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataplexTaskIamMemberConditionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -126,6 +126,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataplexTaskIamMember.GoogleDataplexTaskIamMemberConfig",
-		reflect.TypeOf((*GoogleDataplexTaskIamMemberConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataplexTaskIamMemberConfig](),
 	)
 }

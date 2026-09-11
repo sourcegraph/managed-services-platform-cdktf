@@ -6,9 +6,9 @@ import (
 
 type GoogleApiGatewayApiConfigAConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type GoogleApiGatewayApiConfigAConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The API to attach the config to.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_api_gateway_api_config#api GoogleApiGatewayApiConfigA#api}
@@ -44,7 +44,7 @@ type GoogleApiGatewayApiConfigAConfig struct {
 	// grpc_services block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_api_gateway_api_config#grpc_services GoogleApiGatewayApiConfigA#grpc_services}
-	GrpcServices interface{} `field:"optional" json:"grpcServices" yaml:"grpcServices"`
+	GrpcServices any `field:"optional" json:"grpcServices" yaml:"grpcServices"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_api_gateway_api_config#id GoogleApiGatewayApiConfigA#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -60,11 +60,11 @@ type GoogleApiGatewayApiConfigAConfig struct {
 	// managed_service_configs block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_api_gateway_api_config#managed_service_configs GoogleApiGatewayApiConfigA#managed_service_configs}
-	ManagedServiceConfigs interface{} `field:"optional" json:"managedServiceConfigs" yaml:"managedServiceConfigs"`
+	ManagedServiceConfigs any `field:"optional" json:"managedServiceConfigs" yaml:"managedServiceConfigs"`
 	// openapi_documents block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_api_gateway_api_config#openapi_documents GoogleApiGatewayApiConfigA#openapi_documents}
-	OpenapiDocuments interface{} `field:"optional" json:"openapiDocuments" yaml:"openapiDocuments"`
+	OpenapiDocuments any `field:"optional" json:"openapiDocuments" yaml:"openapiDocuments"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_api_gateway_api_config#project GoogleApiGatewayApiConfigA#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// timeouts block.
@@ -72,4 +72,3 @@ type GoogleApiGatewayApiConfigAConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_api_gateway_api_config#timeouts GoogleApiGatewayApiConfigA#timeouts}
 	Timeouts *GoogleApiGatewayApiConfigTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

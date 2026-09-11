@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleFirebaseHostingCustomDomainRequiredDnsUpdatesDesiredOut
 	return nil
 }
 
-func (j *jsiiProxy_GoogleFirebaseHostingCustomDomainRequiredDnsUpdatesDesiredOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleFirebaseHostingCustomDomainRequiredDnsUpdatesDesiredOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleFirebaseHostingCustomDomainRequiredDnsUpdatesDesiredOutput
 
 	return nil
 }
-

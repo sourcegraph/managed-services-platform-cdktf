@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleMonitoringUptimeCheckConfig.GoogleMonitoringUptimeCheckConfig",
-		reflect.TypeOf((*GoogleMonitoringUptimeCheckConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleMonitoringUptimeCheckConfig](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -108,7 +108,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "userLabels", GoGetter: "UserLabels"},
 			_jsii_.MemberProperty{JsiiProperty: "userLabelsInput", GoGetter: "UserLabelsInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleMonitoringUptimeCheckConfig{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -116,19 +116,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleMonitoringUptimeCheckConfig.GoogleMonitoringUptimeCheckConfigConfig",
-		reflect.TypeOf((*GoogleMonitoringUptimeCheckConfigConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleMonitoringUptimeCheckConfigConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleMonitoringUptimeCheckConfig.GoogleMonitoringUptimeCheckConfigContentMatchers",
-		reflect.TypeOf((*GoogleMonitoringUptimeCheckConfigContentMatchers)(nil)).Elem(),
+		reflect.TypeFor[GoogleMonitoringUptimeCheckConfigContentMatchers](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleMonitoringUptimeCheckConfig.GoogleMonitoringUptimeCheckConfigContentMatchersJsonPathMatcher",
-		reflect.TypeOf((*GoogleMonitoringUptimeCheckConfigContentMatchersJsonPathMatcher)(nil)).Elem(),
+		reflect.TypeFor[GoogleMonitoringUptimeCheckConfigContentMatchersJsonPathMatcher](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleMonitoringUptimeCheckConfig.GoogleMonitoringUptimeCheckConfigContentMatchersJsonPathMatcherOutputReference",
-		reflect.TypeOf((*GoogleMonitoringUptimeCheckConfigContentMatchersJsonPathMatcherOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleMonitoringUptimeCheckConfigContentMatchersJsonPathMatcherOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -157,7 +157,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleMonitoringUptimeCheckConfigContentMatchersJsonPathMatcherOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -165,7 +165,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleMonitoringUptimeCheckConfig.GoogleMonitoringUptimeCheckConfigContentMatchersList",
-		reflect.TypeOf((*GoogleMonitoringUptimeCheckConfigContentMatchersList)(nil)).Elem(),
+		reflect.TypeFor[GoogleMonitoringUptimeCheckConfigContentMatchersList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -179,7 +179,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleMonitoringUptimeCheckConfigContentMatchersList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -187,7 +187,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleMonitoringUptimeCheckConfig.GoogleMonitoringUptimeCheckConfigContentMatchersOutputReference",
-		reflect.TypeOf((*GoogleMonitoringUptimeCheckConfigContentMatchersOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleMonitoringUptimeCheckConfigContentMatchersOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -220,7 +220,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleMonitoringUptimeCheckConfigContentMatchersOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -228,15 +228,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleMonitoringUptimeCheckConfig.GoogleMonitoringUptimeCheckConfigHttpCheck",
-		reflect.TypeOf((*GoogleMonitoringUptimeCheckConfigHttpCheck)(nil)).Elem(),
+		reflect.TypeFor[GoogleMonitoringUptimeCheckConfigHttpCheck](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleMonitoringUptimeCheckConfig.GoogleMonitoringUptimeCheckConfigHttpCheckAcceptedResponseStatusCodes",
-		reflect.TypeOf((*GoogleMonitoringUptimeCheckConfigHttpCheckAcceptedResponseStatusCodes)(nil)).Elem(),
+		reflect.TypeFor[GoogleMonitoringUptimeCheckConfigHttpCheckAcceptedResponseStatusCodes](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleMonitoringUptimeCheckConfig.GoogleMonitoringUptimeCheckConfigHttpCheckAcceptedResponseStatusCodesList",
-		reflect.TypeOf((*GoogleMonitoringUptimeCheckConfigHttpCheckAcceptedResponseStatusCodesList)(nil)).Elem(),
+		reflect.TypeFor[GoogleMonitoringUptimeCheckConfigHttpCheckAcceptedResponseStatusCodesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -250,7 +250,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleMonitoringUptimeCheckConfigHttpCheckAcceptedResponseStatusCodesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -258,7 +258,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleMonitoringUptimeCheckConfig.GoogleMonitoringUptimeCheckConfigHttpCheckAcceptedResponseStatusCodesOutputReference",
-		reflect.TypeOf((*GoogleMonitoringUptimeCheckConfigHttpCheckAcceptedResponseStatusCodesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleMonitoringUptimeCheckConfigHttpCheckAcceptedResponseStatusCodesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -288,7 +288,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleMonitoringUptimeCheckConfigHttpCheckAcceptedResponseStatusCodesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -296,11 +296,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleMonitoringUptimeCheckConfig.GoogleMonitoringUptimeCheckConfigHttpCheckAuthInfo",
-		reflect.TypeOf((*GoogleMonitoringUptimeCheckConfigHttpCheckAuthInfo)(nil)).Elem(),
+		reflect.TypeFor[GoogleMonitoringUptimeCheckConfigHttpCheckAuthInfo](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleMonitoringUptimeCheckConfig.GoogleMonitoringUptimeCheckConfigHttpCheckAuthInfoOutputReference",
-		reflect.TypeOf((*GoogleMonitoringUptimeCheckConfigHttpCheckAuthInfoOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleMonitoringUptimeCheckConfigHttpCheckAuthInfoOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -335,7 +335,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "username", GoGetter: "Username"},
 			_jsii_.MemberProperty{JsiiProperty: "usernameInput", GoGetter: "UsernameInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleMonitoringUptimeCheckConfigHttpCheckAuthInfoOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -343,7 +343,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleMonitoringUptimeCheckConfig.GoogleMonitoringUptimeCheckConfigHttpCheckOutputReference",
-		reflect.TypeOf((*GoogleMonitoringUptimeCheckConfigHttpCheckOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleMonitoringUptimeCheckConfigHttpCheckOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "acceptedResponseStatusCodes", GoGetter: "AcceptedResponseStatusCodes"},
 			_jsii_.MemberProperty{JsiiProperty: "acceptedResponseStatusCodesInput", GoGetter: "AcceptedResponseStatusCodesInput"},
@@ -413,7 +413,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "validateSsl", GoGetter: "ValidateSsl"},
 			_jsii_.MemberProperty{JsiiProperty: "validateSslInput", GoGetter: "ValidateSslInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleMonitoringUptimeCheckConfigHttpCheckOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -421,11 +421,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleMonitoringUptimeCheckConfig.GoogleMonitoringUptimeCheckConfigHttpCheckPingConfig",
-		reflect.TypeOf((*GoogleMonitoringUptimeCheckConfigHttpCheckPingConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleMonitoringUptimeCheckConfigHttpCheckPingConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleMonitoringUptimeCheckConfig.GoogleMonitoringUptimeCheckConfigHttpCheckPingConfigOutputReference",
-		reflect.TypeOf((*GoogleMonitoringUptimeCheckConfigHttpCheckPingConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleMonitoringUptimeCheckConfigHttpCheckPingConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -451,7 +451,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleMonitoringUptimeCheckConfigHttpCheckPingConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -459,11 +459,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleMonitoringUptimeCheckConfig.GoogleMonitoringUptimeCheckConfigHttpCheckServiceAgentAuthentication",
-		reflect.TypeOf((*GoogleMonitoringUptimeCheckConfigHttpCheckServiceAgentAuthentication)(nil)).Elem(),
+		reflect.TypeFor[GoogleMonitoringUptimeCheckConfigHttpCheckServiceAgentAuthentication](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleMonitoringUptimeCheckConfig.GoogleMonitoringUptimeCheckConfigHttpCheckServiceAgentAuthenticationOutputReference",
-		reflect.TypeOf((*GoogleMonitoringUptimeCheckConfigHttpCheckServiceAgentAuthenticationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleMonitoringUptimeCheckConfigHttpCheckServiceAgentAuthenticationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -490,7 +490,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleMonitoringUptimeCheckConfigHttpCheckServiceAgentAuthenticationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -498,11 +498,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleMonitoringUptimeCheckConfig.GoogleMonitoringUptimeCheckConfigMonitoredResource",
-		reflect.TypeOf((*GoogleMonitoringUptimeCheckConfigMonitoredResource)(nil)).Elem(),
+		reflect.TypeFor[GoogleMonitoringUptimeCheckConfigMonitoredResource](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleMonitoringUptimeCheckConfig.GoogleMonitoringUptimeCheckConfigMonitoredResourceOutputReference",
-		reflect.TypeOf((*GoogleMonitoringUptimeCheckConfigMonitoredResourceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleMonitoringUptimeCheckConfigMonitoredResourceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -530,7 +530,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleMonitoringUptimeCheckConfigMonitoredResourceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -538,11 +538,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleMonitoringUptimeCheckConfig.GoogleMonitoringUptimeCheckConfigResourceGroup",
-		reflect.TypeOf((*GoogleMonitoringUptimeCheckConfigResourceGroup)(nil)).Elem(),
+		reflect.TypeFor[GoogleMonitoringUptimeCheckConfigResourceGroup](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleMonitoringUptimeCheckConfig.GoogleMonitoringUptimeCheckConfigResourceGroupOutputReference",
-		reflect.TypeOf((*GoogleMonitoringUptimeCheckConfigResourceGroupOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleMonitoringUptimeCheckConfigResourceGroupOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -572,7 +572,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleMonitoringUptimeCheckConfigResourceGroupOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -580,15 +580,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleMonitoringUptimeCheckConfig.GoogleMonitoringUptimeCheckConfigSyntheticMonitor",
-		reflect.TypeOf((*GoogleMonitoringUptimeCheckConfigSyntheticMonitor)(nil)).Elem(),
+		reflect.TypeFor[GoogleMonitoringUptimeCheckConfigSyntheticMonitor](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleMonitoringUptimeCheckConfig.GoogleMonitoringUptimeCheckConfigSyntheticMonitorCloudFunctionV2",
-		reflect.TypeOf((*GoogleMonitoringUptimeCheckConfigSyntheticMonitorCloudFunctionV2)(nil)).Elem(),
+		reflect.TypeFor[GoogleMonitoringUptimeCheckConfigSyntheticMonitorCloudFunctionV2](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleMonitoringUptimeCheckConfig.GoogleMonitoringUptimeCheckConfigSyntheticMonitorCloudFunctionV2OutputReference",
-		reflect.TypeOf((*GoogleMonitoringUptimeCheckConfigSyntheticMonitorCloudFunctionV2OutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleMonitoringUptimeCheckConfigSyntheticMonitorCloudFunctionV2OutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -614,7 +614,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleMonitoringUptimeCheckConfigSyntheticMonitorCloudFunctionV2OutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -622,7 +622,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleMonitoringUptimeCheckConfig.GoogleMonitoringUptimeCheckConfigSyntheticMonitorOutputReference",
-		reflect.TypeOf((*GoogleMonitoringUptimeCheckConfigSyntheticMonitorOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleMonitoringUptimeCheckConfigSyntheticMonitorOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cloudFunctionV2", GoGetter: "CloudFunctionV2"},
 			_jsii_.MemberProperty{JsiiProperty: "cloudFunctionV2Input", GoGetter: "CloudFunctionV2Input"},
@@ -649,7 +649,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleMonitoringUptimeCheckConfigSyntheticMonitorOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -657,11 +657,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleMonitoringUptimeCheckConfig.GoogleMonitoringUptimeCheckConfigTcpCheck",
-		reflect.TypeOf((*GoogleMonitoringUptimeCheckConfigTcpCheck)(nil)).Elem(),
+		reflect.TypeFor[GoogleMonitoringUptimeCheckConfigTcpCheck](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleMonitoringUptimeCheckConfig.GoogleMonitoringUptimeCheckConfigTcpCheckOutputReference",
-		reflect.TypeOf((*GoogleMonitoringUptimeCheckConfigTcpCheckOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleMonitoringUptimeCheckConfigTcpCheckOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -691,7 +691,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleMonitoringUptimeCheckConfigTcpCheckOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -699,11 +699,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleMonitoringUptimeCheckConfig.GoogleMonitoringUptimeCheckConfigTcpCheckPingConfig",
-		reflect.TypeOf((*GoogleMonitoringUptimeCheckConfigTcpCheckPingConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleMonitoringUptimeCheckConfigTcpCheckPingConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleMonitoringUptimeCheckConfig.GoogleMonitoringUptimeCheckConfigTcpCheckPingConfigOutputReference",
-		reflect.TypeOf((*GoogleMonitoringUptimeCheckConfigTcpCheckPingConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleMonitoringUptimeCheckConfigTcpCheckPingConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -729,7 +729,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleMonitoringUptimeCheckConfigTcpCheckPingConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -737,11 +737,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleMonitoringUptimeCheckConfig.GoogleMonitoringUptimeCheckConfigTimeouts",
-		reflect.TypeOf((*GoogleMonitoringUptimeCheckConfigTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleMonitoringUptimeCheckConfigTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleMonitoringUptimeCheckConfig.GoogleMonitoringUptimeCheckConfigTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleMonitoringUptimeCheckConfigTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleMonitoringUptimeCheckConfigTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -774,7 +774,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleMonitoringUptimeCheckConfigTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

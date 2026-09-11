@@ -15,15 +15,15 @@ type GoogleComposerUserWorkloadsConfigMap interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	Data() *map[string]*string
 	SetData(val *map[string]*string)
 	DataInput() *map[string]*string
@@ -62,29 +62,29 @@ type GoogleComposerUserWorkloadsConfigMap interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Region() *string
 	SetRegion(val *string)
 	RegionInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() GoogleComposerUserWorkloadsConfigMapTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -102,7 +102,7 @@ type GoogleComposerUserWorkloadsConfigMap interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -114,7 +114,7 @@ type GoogleComposerUserWorkloadsConfigMap interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -130,17 +130,17 @@ type GoogleComposerUserWorkloadsConfigMap interface {
 	ResetProject()
 	ResetRegion()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleComposerUserWorkloadsConfigMap
@@ -158,8 +158,8 @@ func (j *jsiiProxy_GoogleComposerUserWorkloadsConfigMap) CdktfStack() cdktf.Terr
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComposerUserWorkloadsConfigMap) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComposerUserWorkloadsConfigMap) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -168,8 +168,8 @@ func (j *jsiiProxy_GoogleComposerUserWorkloadsConfigMap) Connection() interface{
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComposerUserWorkloadsConfigMap) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleComposerUserWorkloadsConfigMap) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -178,8 +178,8 @@ func (j *jsiiProxy_GoogleComposerUserWorkloadsConfigMap) ConstructNodeMetadata()
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComposerUserWorkloadsConfigMap) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComposerUserWorkloadsConfigMap) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -358,8 +358,8 @@ func (j *jsiiProxy_GoogleComposerUserWorkloadsConfigMap) Provider() cdktf.Terraf
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComposerUserWorkloadsConfigMap) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleComposerUserWorkloadsConfigMap) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -368,8 +368,8 @@ func (j *jsiiProxy_GoogleComposerUserWorkloadsConfigMap) Provisioners() *[]inter
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComposerUserWorkloadsConfigMap) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComposerUserWorkloadsConfigMap) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -408,8 +408,8 @@ func (j *jsiiProxy_GoogleComposerUserWorkloadsConfigMap) TerraformGeneratorMetad
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComposerUserWorkloadsConfigMap) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleComposerUserWorkloadsConfigMap) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -438,8 +438,8 @@ func (j *jsiiProxy_GoogleComposerUserWorkloadsConfigMap) Timeouts() GoogleCompos
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComposerUserWorkloadsConfigMap) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComposerUserWorkloadsConfigMap) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -447,7 +447,6 @@ func (j *jsiiProxy_GoogleComposerUserWorkloadsConfigMap) TimeoutsInput() interfa
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_composer_user_workloads_config_map google_composer_user_workloads_config_map} Resource.
 func NewGoogleComposerUserWorkloadsConfigMap(scope constructs.Construct, id *string, config *GoogleComposerUserWorkloadsConfigMapConfig) GoogleComposerUserWorkloadsConfigMap {
@@ -460,7 +459,7 @@ func NewGoogleComposerUserWorkloadsConfigMap(scope constructs.Construct, id *str
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleComposerUserWorkloadsConfigMap.GoogleComposerUserWorkloadsConfigMap",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -473,12 +472,12 @@ func NewGoogleComposerUserWorkloadsConfigMap_Override(g GoogleComposerUserWorklo
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleComposerUserWorkloadsConfigMap.GoogleComposerUserWorkloadsConfigMap",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleComposerUserWorkloadsConfigMap)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleComposerUserWorkloadsConfigMap) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -489,7 +488,7 @@ func (j *jsiiProxy_GoogleComposerUserWorkloadsConfigMap)SetConnection(val interf
 	)
 }
 
-func (j *jsiiProxy_GoogleComposerUserWorkloadsConfigMap)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleComposerUserWorkloadsConfigMap) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -500,7 +499,7 @@ func (j *jsiiProxy_GoogleComposerUserWorkloadsConfigMap)SetCount(val interface{}
 	)
 }
 
-func (j *jsiiProxy_GoogleComposerUserWorkloadsConfigMap)SetData(val *map[string]*string) {
+func (j *jsiiProxy_GoogleComposerUserWorkloadsConfigMap) SetData(val *map[string]*string) {
 	if err := j.validateSetDataParameters(val); err != nil {
 		panic(err)
 	}
@@ -511,7 +510,7 @@ func (j *jsiiProxy_GoogleComposerUserWorkloadsConfigMap)SetData(val *map[string]
 	)
 }
 
-func (j *jsiiProxy_GoogleComposerUserWorkloadsConfigMap)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleComposerUserWorkloadsConfigMap) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -519,7 +518,7 @@ func (j *jsiiProxy_GoogleComposerUserWorkloadsConfigMap)SetDependsOn(val *[]*str
 	)
 }
 
-func (j *jsiiProxy_GoogleComposerUserWorkloadsConfigMap)SetEnvironment(val *string) {
+func (j *jsiiProxy_GoogleComposerUserWorkloadsConfigMap) SetEnvironment(val *string) {
 	if err := j.validateSetEnvironmentParameters(val); err != nil {
 		panic(err)
 	}
@@ -530,7 +529,7 @@ func (j *jsiiProxy_GoogleComposerUserWorkloadsConfigMap)SetEnvironment(val *stri
 	)
 }
 
-func (j *jsiiProxy_GoogleComposerUserWorkloadsConfigMap)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleComposerUserWorkloadsConfigMap) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -538,7 +537,7 @@ func (j *jsiiProxy_GoogleComposerUserWorkloadsConfigMap)SetForEach(val cdktf.ITe
 	)
 }
 
-func (j *jsiiProxy_GoogleComposerUserWorkloadsConfigMap)SetId(val *string) {
+func (j *jsiiProxy_GoogleComposerUserWorkloadsConfigMap) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -549,7 +548,7 @@ func (j *jsiiProxy_GoogleComposerUserWorkloadsConfigMap)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleComposerUserWorkloadsConfigMap)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleComposerUserWorkloadsConfigMap) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -560,7 +559,7 @@ func (j *jsiiProxy_GoogleComposerUserWorkloadsConfigMap)SetLifecycle(val *cdktf.
 	)
 }
 
-func (j *jsiiProxy_GoogleComposerUserWorkloadsConfigMap)SetName(val *string) {
+func (j *jsiiProxy_GoogleComposerUserWorkloadsConfigMap) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -571,7 +570,7 @@ func (j *jsiiProxy_GoogleComposerUserWorkloadsConfigMap)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleComposerUserWorkloadsConfigMap)SetProject(val *string) {
+func (j *jsiiProxy_GoogleComposerUserWorkloadsConfigMap) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -582,7 +581,7 @@ func (j *jsiiProxy_GoogleComposerUserWorkloadsConfigMap)SetProject(val *string) 
 	)
 }
 
-func (j *jsiiProxy_GoogleComposerUserWorkloadsConfigMap)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleComposerUserWorkloadsConfigMap) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -590,7 +589,7 @@ func (j *jsiiProxy_GoogleComposerUserWorkloadsConfigMap)SetProvider(val cdktf.Te
 	)
 }
 
-func (j *jsiiProxy_GoogleComposerUserWorkloadsConfigMap)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleComposerUserWorkloadsConfigMap) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -601,7 +600,7 @@ func (j *jsiiProxy_GoogleComposerUserWorkloadsConfigMap)SetProvisioners(val *[]i
 	)
 }
 
-func (j *jsiiProxy_GoogleComposerUserWorkloadsConfigMap)SetRegion(val *string) {
+func (j *jsiiProxy_GoogleComposerUserWorkloadsConfigMap) SetRegion(val *string) {
 	if err := j.validateSetRegionParameters(val); err != nil {
 		panic(err)
 	}
@@ -624,7 +623,7 @@ func GoogleComposerUserWorkloadsConfigMap_GenerateConfigForImport(scope construc
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleComposerUserWorkloadsConfigMap.GoogleComposerUserWorkloadsConfigMap",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -648,7 +647,7 @@ func GoogleComposerUserWorkloadsConfigMap_GenerateConfigForImport(scope construc
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleComposerUserWorkloadsConfigMap_IsConstruct(x interface{}) *bool {
+func GoogleComposerUserWorkloadsConfigMap_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleComposerUserWorkloadsConfigMap_IsConstructParameters(x); err != nil {
@@ -659,7 +658,7 @@ func GoogleComposerUserWorkloadsConfigMap_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleComposerUserWorkloadsConfigMap.GoogleComposerUserWorkloadsConfigMap",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -667,7 +666,7 @@ func GoogleComposerUserWorkloadsConfigMap_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleComposerUserWorkloadsConfigMap_IsTerraformElement(x interface{}) *bool {
+func GoogleComposerUserWorkloadsConfigMap_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleComposerUserWorkloadsConfigMap_IsTerraformElementParameters(x); err != nil {
@@ -678,7 +677,7 @@ func GoogleComposerUserWorkloadsConfigMap_IsTerraformElement(x interface{}) *boo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleComposerUserWorkloadsConfigMap.GoogleComposerUserWorkloadsConfigMap",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -686,7 +685,7 @@ func GoogleComposerUserWorkloadsConfigMap_IsTerraformElement(x interface{}) *boo
 }
 
 // Experimental.
-func GoogleComposerUserWorkloadsConfigMap_IsTerraformResource(x interface{}) *bool {
+func GoogleComposerUserWorkloadsConfigMap_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleComposerUserWorkloadsConfigMap_IsTerraformResourceParameters(x); err != nil {
@@ -697,7 +696,7 @@ func GoogleComposerUserWorkloadsConfigMap_IsTerraformResource(x interface{}) *bo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleComposerUserWorkloadsConfigMap.GoogleComposerUserWorkloadsConfigMap",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -722,31 +721,31 @@ func (g *jsiiProxy_GoogleComposerUserWorkloadsConfigMap) AddMoveTarget(moveTarge
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleComposerUserWorkloadsConfigMap) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleComposerUserWorkloadsConfigMap) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleComposerUserWorkloadsConfigMap) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleComposerUserWorkloadsConfigMap) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -762,7 +761,7 @@ func (g *jsiiProxy_GoogleComposerUserWorkloadsConfigMap) GetBooleanAttribute(ter
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -778,7 +777,7 @@ func (g *jsiiProxy_GoogleComposerUserWorkloadsConfigMap) GetBooleanMapAttribute(
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -794,7 +793,7 @@ func (g *jsiiProxy_GoogleComposerUserWorkloadsConfigMap) GetListAttribute(terraf
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -810,7 +809,7 @@ func (g *jsiiProxy_GoogleComposerUserWorkloadsConfigMap) GetNumberAttribute(terr
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -826,7 +825,7 @@ func (g *jsiiProxy_GoogleComposerUserWorkloadsConfigMap) GetNumberListAttribute(
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -842,7 +841,7 @@ func (g *jsiiProxy_GoogleComposerUserWorkloadsConfigMap) GetNumberMapAttribute(t
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -858,7 +857,7 @@ func (g *jsiiProxy_GoogleComposerUserWorkloadsConfigMap) GetStringAttribute(terr
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -874,15 +873,15 @@ func (g *jsiiProxy_GoogleComposerUserWorkloadsConfigMap) GetStringMapAttribute(t
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComposerUserWorkloadsConfigMap) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleComposerUserWorkloadsConfigMap) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -901,7 +900,7 @@ func (g *jsiiProxy_GoogleComposerUserWorkloadsConfigMap) ImportFrom(id *string, 
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -914,7 +913,7 @@ func (g *jsiiProxy_GoogleComposerUserWorkloadsConfigMap) InterpolationForAttribu
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -928,18 +927,18 @@ func (g *jsiiProxy_GoogleComposerUserWorkloadsConfigMap) MoveFromId(id *string) 
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleComposerUserWorkloadsConfigMap) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleComposerUserWorkloadsConfigMap) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -950,7 +949,7 @@ func (g *jsiiProxy_GoogleComposerUserWorkloadsConfigMap) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -961,7 +960,7 @@ func (g *jsiiProxy_GoogleComposerUserWorkloadsConfigMap) OverrideLogicalId(newLo
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -972,7 +971,7 @@ func (g *jsiiProxy_GoogleComposerUserWorkloadsConfigMap) PutTimeouts(value *Goog
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1024,8 +1023,8 @@ func (g *jsiiProxy_GoogleComposerUserWorkloadsConfigMap) ResetTimeouts() {
 	)
 }
 
-func (g *jsiiProxy_GoogleComposerUserWorkloadsConfigMap) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleComposerUserWorkloadsConfigMap) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1037,8 +1036,8 @@ func (g *jsiiProxy_GoogleComposerUserWorkloadsConfigMap) SynthesizeAttributes() 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComposerUserWorkloadsConfigMap) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleComposerUserWorkloadsConfigMap) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1050,8 +1049,8 @@ func (g *jsiiProxy_GoogleComposerUserWorkloadsConfigMap) SynthesizeHclAttributes
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComposerUserWorkloadsConfigMap) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleComposerUserWorkloadsConfigMap) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1063,8 +1062,8 @@ func (g *jsiiProxy_GoogleComposerUserWorkloadsConfigMap) ToHclTerraform() interf
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComposerUserWorkloadsConfigMap) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleComposerUserWorkloadsConfigMap) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1089,8 +1088,8 @@ func (g *jsiiProxy_GoogleComposerUserWorkloadsConfigMap) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComposerUserWorkloadsConfigMap) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleComposerUserWorkloadsConfigMap) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1101,4 +1100,3 @@ func (g *jsiiProxy_GoogleComposerUserWorkloadsConfigMap) ToTerraform() interface
 
 	return returns
 }
-

@@ -90,7 +90,7 @@ func (g *jsiiProxy_GoogleDataplexEntryEntrySourceOutputReference) validateInterp
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDataplexEntryEntrySourceOutputReference) validatePutAncestorsParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleDataplexEntryEntrySourceOutputReference) validatePutAncestorsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (g *jsiiProxy_GoogleDataplexEntryEntrySourceOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataplexEntryEntrySourceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataplexEntryEntrySourceOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -293,4 +293,3 @@ func validateNewGoogleDataplexEntryEntrySourceOutputReferenceParameters(terrafor
 
 	return nil
 }
-

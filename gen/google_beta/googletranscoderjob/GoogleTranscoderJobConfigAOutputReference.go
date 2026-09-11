@@ -11,12 +11,12 @@ import (
 type GoogleTranscoderJobConfigAOutputReference interface {
 	cdktf.ComplexObject
 	AdBreaks() GoogleTranscoderJobConfigAdBreaksList
-	AdBreaksInput() interface{}
+	AdBreaksInput() any
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -28,25 +28,25 @@ type GoogleTranscoderJobConfigAOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	EditList() GoogleTranscoderJobConfigEditListStructList
-	EditListInput() interface{}
+	EditListInput() any
 	ElementaryStreams() GoogleTranscoderJobConfigElementaryStreamsList
-	ElementaryStreamsInput() interface{}
+	ElementaryStreamsInput() any
 	Encryptions() GoogleTranscoderJobConfigEncryptionsList
-	EncryptionsInput() interface{}
+	EncryptionsInput() any
 	// Experimental.
 	Fqn() *string
 	Inputs() GoogleTranscoderJobConfigInputsList
-	InputsInput() interface{}
+	InputsInput() any
 	InternalValue() *GoogleTranscoderJobConfigA
 	SetInternalValue(val *GoogleTranscoderJobConfigA)
 	Manifests() GoogleTranscoderJobConfigManifestsList
-	ManifestsInput() interface{}
+	ManifestsInput() any
 	MuxStreams() GoogleTranscoderJobConfigMuxStreamsList
-	MuxStreamsInput() interface{}
+	MuxStreamsInput() any
 	Output() GoogleTranscoderJobConfigOutputOutputReference
 	OutputInput() *GoogleTranscoderJobConfigOutput
 	Overlays() GoogleTranscoderJobConfigOverlaysList
-	OverlaysInput() interface{}
+	OverlaysInput() any
 	PubsubDestination() GoogleTranscoderJobConfigPubsubDestinationOutputReference
 	PubsubDestinationInput() *GoogleTranscoderJobConfigPubsubDestination
 	// Experimental.
@@ -60,7 +60,7 @@ type GoogleTranscoderJobConfigAOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -81,15 +81,15 @@ type GoogleTranscoderJobConfigAOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutAdBreaks(value interface{})
-	PutEditList(value interface{})
-	PutElementaryStreams(value interface{})
-	PutEncryptions(value interface{})
-	PutInputs(value interface{})
-	PutManifests(value interface{})
-	PutMuxStreams(value interface{})
+	PutAdBreaks(value any)
+	PutEditList(value any)
+	PutElementaryStreams(value any)
+	PutEncryptions(value any)
+	PutInputs(value any)
+	PutManifests(value any)
+	PutMuxStreams(value any)
 	PutOutput(value *GoogleTranscoderJobConfigOutput)
-	PutOverlays(value interface{})
+	PutOverlays(value any)
 	PutPubsubDestination(value *GoogleTranscoderJobConfigPubsubDestination)
 	ResetAdBreaks()
 	ResetEditList()
@@ -103,7 +103,7 @@ type GoogleTranscoderJobConfigAOutputReference interface {
 	ResetPubsubDestination()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -126,8 +126,8 @@ func (j *jsiiProxy_GoogleTranscoderJobConfigAOutputReference) AdBreaks() GoogleT
 	return returns
 }
 
-func (j *jsiiProxy_GoogleTranscoderJobConfigAOutputReference) AdBreaksInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleTranscoderJobConfigAOutputReference) AdBreaksInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"adBreaksInput",
@@ -136,8 +136,8 @@ func (j *jsiiProxy_GoogleTranscoderJobConfigAOutputReference) AdBreaksInput() in
 	return returns
 }
 
-func (j *jsiiProxy_GoogleTranscoderJobConfigAOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleTranscoderJobConfigAOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -176,8 +176,8 @@ func (j *jsiiProxy_GoogleTranscoderJobConfigAOutputReference) EditList() GoogleT
 	return returns
 }
 
-func (j *jsiiProxy_GoogleTranscoderJobConfigAOutputReference) EditListInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleTranscoderJobConfigAOutputReference) EditListInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"editListInput",
@@ -196,8 +196,8 @@ func (j *jsiiProxy_GoogleTranscoderJobConfigAOutputReference) ElementaryStreams(
 	return returns
 }
 
-func (j *jsiiProxy_GoogleTranscoderJobConfigAOutputReference) ElementaryStreamsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleTranscoderJobConfigAOutputReference) ElementaryStreamsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"elementaryStreamsInput",
@@ -216,8 +216,8 @@ func (j *jsiiProxy_GoogleTranscoderJobConfigAOutputReference) Encryptions() Goog
 	return returns
 }
 
-func (j *jsiiProxy_GoogleTranscoderJobConfigAOutputReference) EncryptionsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleTranscoderJobConfigAOutputReference) EncryptionsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"encryptionsInput",
@@ -246,8 +246,8 @@ func (j *jsiiProxy_GoogleTranscoderJobConfigAOutputReference) Inputs() GoogleTra
 	return returns
 }
 
-func (j *jsiiProxy_GoogleTranscoderJobConfigAOutputReference) InputsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleTranscoderJobConfigAOutputReference) InputsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"inputsInput",
@@ -276,8 +276,8 @@ func (j *jsiiProxy_GoogleTranscoderJobConfigAOutputReference) Manifests() Google
 	return returns
 }
 
-func (j *jsiiProxy_GoogleTranscoderJobConfigAOutputReference) ManifestsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleTranscoderJobConfigAOutputReference) ManifestsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"manifestsInput",
@@ -296,8 +296,8 @@ func (j *jsiiProxy_GoogleTranscoderJobConfigAOutputReference) MuxStreams() Googl
 	return returns
 }
 
-func (j *jsiiProxy_GoogleTranscoderJobConfigAOutputReference) MuxStreamsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleTranscoderJobConfigAOutputReference) MuxStreamsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"muxStreamsInput",
@@ -336,8 +336,8 @@ func (j *jsiiProxy_GoogleTranscoderJobConfigAOutputReference) Overlays() GoogleT
 	return returns
 }
 
-func (j *jsiiProxy_GoogleTranscoderJobConfigAOutputReference) OverlaysInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleTranscoderJobConfigAOutputReference) OverlaysInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"overlaysInput",
@@ -386,7 +386,6 @@ func (j *jsiiProxy_GoogleTranscoderJobConfigAOutputReference) TerraformResource(
 	return returns
 }
 
-
 func NewGoogleTranscoderJobConfigAOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleTranscoderJobConfigAOutputReference {
 	_init_.Initialize()
 
@@ -397,7 +396,7 @@ func NewGoogleTranscoderJobConfigAOutputReference(terraformResource cdktf.IInter
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleTranscoderJob.GoogleTranscoderJobConfigAOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -409,12 +408,12 @@ func NewGoogleTranscoderJobConfigAOutputReference_Override(g GoogleTranscoderJob
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleTranscoderJob.GoogleTranscoderJobConfigAOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleTranscoderJobConfigAOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleTranscoderJobConfigAOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -425,7 +424,7 @@ func (j *jsiiProxy_GoogleTranscoderJobConfigAOutputReference)SetComplexObjectInd
 	)
 }
 
-func (j *jsiiProxy_GoogleTranscoderJobConfigAOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleTranscoderJobConfigAOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -436,7 +435,7 @@ func (j *jsiiProxy_GoogleTranscoderJobConfigAOutputReference)SetComplexObjectIsF
 	)
 }
 
-func (j *jsiiProxy_GoogleTranscoderJobConfigAOutputReference)SetInternalValue(val *GoogleTranscoderJobConfigA) {
+func (j *jsiiProxy_GoogleTranscoderJobConfigAOutputReference) SetInternalValue(val *GoogleTranscoderJobConfigA) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -447,7 +446,7 @@ func (j *jsiiProxy_GoogleTranscoderJobConfigAOutputReference)SetInternalValue(va
 	)
 }
 
-func (j *jsiiProxy_GoogleTranscoderJobConfigAOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleTranscoderJobConfigAOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -458,7 +457,7 @@ func (j *jsiiProxy_GoogleTranscoderJobConfigAOutputReference)SetTerraformAttribu
 	)
 }
 
-func (j *jsiiProxy_GoogleTranscoderJobConfigAOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleTranscoderJobConfigAOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -482,16 +481,16 @@ func (g *jsiiProxy_GoogleTranscoderJobConfigAOutputReference) ComputeFqn() *stri
 	return returns
 }
 
-func (g *jsiiProxy_GoogleTranscoderJobConfigAOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleTranscoderJobConfigAOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -507,7 +506,7 @@ func (g *jsiiProxy_GoogleTranscoderJobConfigAOutputReference) GetBooleanAttribut
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -523,7 +522,7 @@ func (g *jsiiProxy_GoogleTranscoderJobConfigAOutputReference) GetBooleanMapAttri
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -539,7 +538,7 @@ func (g *jsiiProxy_GoogleTranscoderJobConfigAOutputReference) GetListAttribute(t
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -555,7 +554,7 @@ func (g *jsiiProxy_GoogleTranscoderJobConfigAOutputReference) GetNumberAttribute
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -571,7 +570,7 @@ func (g *jsiiProxy_GoogleTranscoderJobConfigAOutputReference) GetNumberListAttri
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -587,7 +586,7 @@ func (g *jsiiProxy_GoogleTranscoderJobConfigAOutputReference) GetNumberMapAttrib
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -603,7 +602,7 @@ func (g *jsiiProxy_GoogleTranscoderJobConfigAOutputReference) GetStringAttribute
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -619,7 +618,7 @@ func (g *jsiiProxy_GoogleTranscoderJobConfigAOutputReference) GetStringMapAttrib
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -648,87 +647,87 @@ func (g *jsiiProxy_GoogleTranscoderJobConfigAOutputReference) InterpolationForAt
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleTranscoderJobConfigAOutputReference) PutAdBreaks(value interface{}) {
+func (g *jsiiProxy_GoogleTranscoderJobConfigAOutputReference) PutAdBreaks(value any) {
 	if err := g.validatePutAdBreaksParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putAdBreaks",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (g *jsiiProxy_GoogleTranscoderJobConfigAOutputReference) PutEditList(value interface{}) {
+func (g *jsiiProxy_GoogleTranscoderJobConfigAOutputReference) PutEditList(value any) {
 	if err := g.validatePutEditListParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putEditList",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (g *jsiiProxy_GoogleTranscoderJobConfigAOutputReference) PutElementaryStreams(value interface{}) {
+func (g *jsiiProxy_GoogleTranscoderJobConfigAOutputReference) PutElementaryStreams(value any) {
 	if err := g.validatePutElementaryStreamsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putElementaryStreams",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (g *jsiiProxy_GoogleTranscoderJobConfigAOutputReference) PutEncryptions(value interface{}) {
+func (g *jsiiProxy_GoogleTranscoderJobConfigAOutputReference) PutEncryptions(value any) {
 	if err := g.validatePutEncryptionsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putEncryptions",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (g *jsiiProxy_GoogleTranscoderJobConfigAOutputReference) PutInputs(value interface{}) {
+func (g *jsiiProxy_GoogleTranscoderJobConfigAOutputReference) PutInputs(value any) {
 	if err := g.validatePutInputsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putInputs",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (g *jsiiProxy_GoogleTranscoderJobConfigAOutputReference) PutManifests(value interface{}) {
+func (g *jsiiProxy_GoogleTranscoderJobConfigAOutputReference) PutManifests(value any) {
 	if err := g.validatePutManifestsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putManifests",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (g *jsiiProxy_GoogleTranscoderJobConfigAOutputReference) PutMuxStreams(value interface{}) {
+func (g *jsiiProxy_GoogleTranscoderJobConfigAOutputReference) PutMuxStreams(value any) {
 	if err := g.validatePutMuxStreamsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putMuxStreams",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -739,18 +738,18 @@ func (g *jsiiProxy_GoogleTranscoderJobConfigAOutputReference) PutOutput(value *G
 	_jsii_.InvokeVoid(
 		g,
 		"putOutput",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (g *jsiiProxy_GoogleTranscoderJobConfigAOutputReference) PutOverlays(value interface{}) {
+func (g *jsiiProxy_GoogleTranscoderJobConfigAOutputReference) PutOverlays(value any) {
 	if err := g.validatePutOverlaysParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putOverlays",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -761,7 +760,7 @@ func (g *jsiiProxy_GoogleTranscoderJobConfigAOutputReference) PutPubsubDestinati
 	_jsii_.InvokeVoid(
 		g,
 		"putPubsubDestination",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -845,16 +844,16 @@ func (g *jsiiProxy_GoogleTranscoderJobConfigAOutputReference) ResetPubsubDestina
 	)
 }
 
-func (g *jsiiProxy_GoogleTranscoderJobConfigAOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleTranscoderJobConfigAOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -873,4 +872,3 @@ func (g *jsiiProxy_GoogleTranscoderJobConfigAOutputReference) ToString() *string
 
 	return returns
 }
-

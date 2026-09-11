@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleComputeBackendBucketCdnPolicyNegativeCachingPolicyList)
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeBackendBucketCdnPolicyNegativeCachingPolicyList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeBackendBucketCdnPolicyNegativeCachingPolicyList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleComputeBackendBucketCdnPolicyNegativeCachingPolicyListPara
 
 	return nil
 }
-

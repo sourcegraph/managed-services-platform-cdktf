@@ -12,9 +12,9 @@ type GoogleModelArmorTemplateTemplateMetadataOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -42,17 +42,17 @@ type GoogleModelArmorTemplateTemplateMetadataOutputReference interface {
 	EnforcementTypeInput() *string
 	// Experimental.
 	Fqn() *string
-	IgnorePartialInvocationFailures() interface{}
-	SetIgnorePartialInvocationFailures(val interface{})
-	IgnorePartialInvocationFailuresInput() interface{}
+	IgnorePartialInvocationFailures() any
+	SetIgnorePartialInvocationFailures(val any)
+	IgnorePartialInvocationFailuresInput() any
 	InternalValue() *GoogleModelArmorTemplateTemplateMetadata
 	SetInternalValue(val *GoogleModelArmorTemplateTemplateMetadata)
-	LogSanitizeOperations() interface{}
-	SetLogSanitizeOperations(val interface{})
-	LogSanitizeOperationsInput() interface{}
-	LogTemplateOperations() interface{}
-	SetLogTemplateOperations(val interface{})
-	LogTemplateOperationsInput() interface{}
+	LogSanitizeOperations() any
+	SetLogSanitizeOperations(val any)
+	LogSanitizeOperationsInput() any
+	LogTemplateOperations() any
+	SetLogTemplateOperations(val any)
+	LogTemplateOperationsInput() any
 	MultiLanguageDetection() GoogleModelArmorTemplateTemplateMetadataMultiLanguageDetectionOutputReference
 	MultiLanguageDetectionInput() *GoogleModelArmorTemplateTemplateMetadataMultiLanguageDetection
 	// Experimental.
@@ -66,7 +66,7 @@ type GoogleModelArmorTemplateTemplateMetadataOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -99,7 +99,7 @@ type GoogleModelArmorTemplateTemplateMetadataOutputReference interface {
 	ResetMultiLanguageDetection()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -112,8 +112,8 @@ type jsiiProxy_GoogleModelArmorTemplateTemplateMetadataOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GoogleModelArmorTemplateTemplateMetadataOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleModelArmorTemplateTemplateMetadataOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -252,8 +252,8 @@ func (j *jsiiProxy_GoogleModelArmorTemplateTemplateMetadataOutputReference) Fqn(
 	return returns
 }
 
-func (j *jsiiProxy_GoogleModelArmorTemplateTemplateMetadataOutputReference) IgnorePartialInvocationFailures() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleModelArmorTemplateTemplateMetadataOutputReference) IgnorePartialInvocationFailures() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ignorePartialInvocationFailures",
@@ -262,8 +262,8 @@ func (j *jsiiProxy_GoogleModelArmorTemplateTemplateMetadataOutputReference) Igno
 	return returns
 }
 
-func (j *jsiiProxy_GoogleModelArmorTemplateTemplateMetadataOutputReference) IgnorePartialInvocationFailuresInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleModelArmorTemplateTemplateMetadataOutputReference) IgnorePartialInvocationFailuresInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ignorePartialInvocationFailuresInput",
@@ -282,8 +282,8 @@ func (j *jsiiProxy_GoogleModelArmorTemplateTemplateMetadataOutputReference) Inte
 	return returns
 }
 
-func (j *jsiiProxy_GoogleModelArmorTemplateTemplateMetadataOutputReference) LogSanitizeOperations() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleModelArmorTemplateTemplateMetadataOutputReference) LogSanitizeOperations() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"logSanitizeOperations",
@@ -292,8 +292,8 @@ func (j *jsiiProxy_GoogleModelArmorTemplateTemplateMetadataOutputReference) LogS
 	return returns
 }
 
-func (j *jsiiProxy_GoogleModelArmorTemplateTemplateMetadataOutputReference) LogSanitizeOperationsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleModelArmorTemplateTemplateMetadataOutputReference) LogSanitizeOperationsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"logSanitizeOperationsInput",
@@ -302,8 +302,8 @@ func (j *jsiiProxy_GoogleModelArmorTemplateTemplateMetadataOutputReference) LogS
 	return returns
 }
 
-func (j *jsiiProxy_GoogleModelArmorTemplateTemplateMetadataOutputReference) LogTemplateOperations() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleModelArmorTemplateTemplateMetadataOutputReference) LogTemplateOperations() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"logTemplateOperations",
@@ -312,8 +312,8 @@ func (j *jsiiProxy_GoogleModelArmorTemplateTemplateMetadataOutputReference) LogT
 	return returns
 }
 
-func (j *jsiiProxy_GoogleModelArmorTemplateTemplateMetadataOutputReference) LogTemplateOperationsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleModelArmorTemplateTemplateMetadataOutputReference) LogTemplateOperationsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"logTemplateOperationsInput",
@@ -362,7 +362,6 @@ func (j *jsiiProxy_GoogleModelArmorTemplateTemplateMetadataOutputReference) Terr
 	return returns
 }
 
-
 func NewGoogleModelArmorTemplateTemplateMetadataOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleModelArmorTemplateTemplateMetadataOutputReference {
 	_init_.Initialize()
 
@@ -373,7 +372,7 @@ func NewGoogleModelArmorTemplateTemplateMetadataOutputReference(terraformResourc
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleModelArmorTemplate.GoogleModelArmorTemplateTemplateMetadataOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -385,12 +384,12 @@ func NewGoogleModelArmorTemplateTemplateMetadataOutputReference_Override(g Googl
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleModelArmorTemplate.GoogleModelArmorTemplateTemplateMetadataOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleModelArmorTemplateTemplateMetadataOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleModelArmorTemplateTemplateMetadataOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -401,7 +400,7 @@ func (j *jsiiProxy_GoogleModelArmorTemplateTemplateMetadataOutputReference)SetCo
 	)
 }
 
-func (j *jsiiProxy_GoogleModelArmorTemplateTemplateMetadataOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleModelArmorTemplateTemplateMetadataOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -412,7 +411,7 @@ func (j *jsiiProxy_GoogleModelArmorTemplateTemplateMetadataOutputReference)SetCo
 	)
 }
 
-func (j *jsiiProxy_GoogleModelArmorTemplateTemplateMetadataOutputReference)SetCustomLlmResponseSafetyErrorCode(val *float64) {
+func (j *jsiiProxy_GoogleModelArmorTemplateTemplateMetadataOutputReference) SetCustomLlmResponseSafetyErrorCode(val *float64) {
 	if err := j.validateSetCustomLlmResponseSafetyErrorCodeParameters(val); err != nil {
 		panic(err)
 	}
@@ -423,7 +422,7 @@ func (j *jsiiProxy_GoogleModelArmorTemplateTemplateMetadataOutputReference)SetCu
 	)
 }
 
-func (j *jsiiProxy_GoogleModelArmorTemplateTemplateMetadataOutputReference)SetCustomLlmResponseSafetyErrorMessage(val *string) {
+func (j *jsiiProxy_GoogleModelArmorTemplateTemplateMetadataOutputReference) SetCustomLlmResponseSafetyErrorMessage(val *string) {
 	if err := j.validateSetCustomLlmResponseSafetyErrorMessageParameters(val); err != nil {
 		panic(err)
 	}
@@ -434,7 +433,7 @@ func (j *jsiiProxy_GoogleModelArmorTemplateTemplateMetadataOutputReference)SetCu
 	)
 }
 
-func (j *jsiiProxy_GoogleModelArmorTemplateTemplateMetadataOutputReference)SetCustomPromptSafetyErrorCode(val *float64) {
+func (j *jsiiProxy_GoogleModelArmorTemplateTemplateMetadataOutputReference) SetCustomPromptSafetyErrorCode(val *float64) {
 	if err := j.validateSetCustomPromptSafetyErrorCodeParameters(val); err != nil {
 		panic(err)
 	}
@@ -445,7 +444,7 @@ func (j *jsiiProxy_GoogleModelArmorTemplateTemplateMetadataOutputReference)SetCu
 	)
 }
 
-func (j *jsiiProxy_GoogleModelArmorTemplateTemplateMetadataOutputReference)SetCustomPromptSafetyErrorMessage(val *string) {
+func (j *jsiiProxy_GoogleModelArmorTemplateTemplateMetadataOutputReference) SetCustomPromptSafetyErrorMessage(val *string) {
 	if err := j.validateSetCustomPromptSafetyErrorMessageParameters(val); err != nil {
 		panic(err)
 	}
@@ -456,7 +455,7 @@ func (j *jsiiProxy_GoogleModelArmorTemplateTemplateMetadataOutputReference)SetCu
 	)
 }
 
-func (j *jsiiProxy_GoogleModelArmorTemplateTemplateMetadataOutputReference)SetEnforcementType(val *string) {
+func (j *jsiiProxy_GoogleModelArmorTemplateTemplateMetadataOutputReference) SetEnforcementType(val *string) {
 	if err := j.validateSetEnforcementTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -467,7 +466,7 @@ func (j *jsiiProxy_GoogleModelArmorTemplateTemplateMetadataOutputReference)SetEn
 	)
 }
 
-func (j *jsiiProxy_GoogleModelArmorTemplateTemplateMetadataOutputReference)SetIgnorePartialInvocationFailures(val interface{}) {
+func (j *jsiiProxy_GoogleModelArmorTemplateTemplateMetadataOutputReference) SetIgnorePartialInvocationFailures(val any) {
 	if err := j.validateSetIgnorePartialInvocationFailuresParameters(val); err != nil {
 		panic(err)
 	}
@@ -478,7 +477,7 @@ func (j *jsiiProxy_GoogleModelArmorTemplateTemplateMetadataOutputReference)SetIg
 	)
 }
 
-func (j *jsiiProxy_GoogleModelArmorTemplateTemplateMetadataOutputReference)SetInternalValue(val *GoogleModelArmorTemplateTemplateMetadata) {
+func (j *jsiiProxy_GoogleModelArmorTemplateTemplateMetadataOutputReference) SetInternalValue(val *GoogleModelArmorTemplateTemplateMetadata) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -489,7 +488,7 @@ func (j *jsiiProxy_GoogleModelArmorTemplateTemplateMetadataOutputReference)SetIn
 	)
 }
 
-func (j *jsiiProxy_GoogleModelArmorTemplateTemplateMetadataOutputReference)SetLogSanitizeOperations(val interface{}) {
+func (j *jsiiProxy_GoogleModelArmorTemplateTemplateMetadataOutputReference) SetLogSanitizeOperations(val any) {
 	if err := j.validateSetLogSanitizeOperationsParameters(val); err != nil {
 		panic(err)
 	}
@@ -500,7 +499,7 @@ func (j *jsiiProxy_GoogleModelArmorTemplateTemplateMetadataOutputReference)SetLo
 	)
 }
 
-func (j *jsiiProxy_GoogleModelArmorTemplateTemplateMetadataOutputReference)SetLogTemplateOperations(val interface{}) {
+func (j *jsiiProxy_GoogleModelArmorTemplateTemplateMetadataOutputReference) SetLogTemplateOperations(val any) {
 	if err := j.validateSetLogTemplateOperationsParameters(val); err != nil {
 		panic(err)
 	}
@@ -511,7 +510,7 @@ func (j *jsiiProxy_GoogleModelArmorTemplateTemplateMetadataOutputReference)SetLo
 	)
 }
 
-func (j *jsiiProxy_GoogleModelArmorTemplateTemplateMetadataOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleModelArmorTemplateTemplateMetadataOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -522,7 +521,7 @@ func (j *jsiiProxy_GoogleModelArmorTemplateTemplateMetadataOutputReference)SetTe
 	)
 }
 
-func (j *jsiiProxy_GoogleModelArmorTemplateTemplateMetadataOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleModelArmorTemplateTemplateMetadataOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -546,16 +545,16 @@ func (g *jsiiProxy_GoogleModelArmorTemplateTemplateMetadataOutputReference) Comp
 	return returns
 }
 
-func (g *jsiiProxy_GoogleModelArmorTemplateTemplateMetadataOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleModelArmorTemplateTemplateMetadataOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -571,7 +570,7 @@ func (g *jsiiProxy_GoogleModelArmorTemplateTemplateMetadataOutputReference) GetB
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -587,7 +586,7 @@ func (g *jsiiProxy_GoogleModelArmorTemplateTemplateMetadataOutputReference) GetB
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -603,7 +602,7 @@ func (g *jsiiProxy_GoogleModelArmorTemplateTemplateMetadataOutputReference) GetL
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -619,7 +618,7 @@ func (g *jsiiProxy_GoogleModelArmorTemplateTemplateMetadataOutputReference) GetN
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -635,7 +634,7 @@ func (g *jsiiProxy_GoogleModelArmorTemplateTemplateMetadataOutputReference) GetN
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -651,7 +650,7 @@ func (g *jsiiProxy_GoogleModelArmorTemplateTemplateMetadataOutputReference) GetN
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -667,7 +666,7 @@ func (g *jsiiProxy_GoogleModelArmorTemplateTemplateMetadataOutputReference) GetS
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -683,7 +682,7 @@ func (g *jsiiProxy_GoogleModelArmorTemplateTemplateMetadataOutputReference) GetS
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -712,7 +711,7 @@ func (g *jsiiProxy_GoogleModelArmorTemplateTemplateMetadataOutputReference) Inte
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -726,7 +725,7 @@ func (g *jsiiProxy_GoogleModelArmorTemplateTemplateMetadataOutputReference) PutM
 	_jsii_.InvokeVoid(
 		g,
 		"putMultiLanguageDetection",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -802,16 +801,16 @@ func (g *jsiiProxy_GoogleModelArmorTemplateTemplateMetadataOutputReference) Rese
 	)
 }
 
-func (g *jsiiProxy_GoogleModelArmorTemplateTemplateMetadataOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleModelArmorTemplateTemplateMetadataOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -830,4 +829,3 @@ func (g *jsiiProxy_GoogleModelArmorTemplateTemplateMetadataOutputReference) ToSt
 
 	return returns
 }
-

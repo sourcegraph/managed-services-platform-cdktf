@@ -106,7 +106,7 @@ func (j *jsiiProxy_GoogleDataformRepositoryReleaseConfigCodeCompilationConfigOut
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataformRepositoryReleaseConfigCodeCompilationConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataformRepositoryReleaseConfigCodeCompilationConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -262,4 +262,3 @@ func validateNewGoogleDataformRepositoryReleaseConfigCodeCompilationConfigOutput
 
 	return nil
 }
-

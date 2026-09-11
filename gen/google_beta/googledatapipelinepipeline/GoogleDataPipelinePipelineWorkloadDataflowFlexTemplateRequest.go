@@ -1,6 +1,5 @@
 package googledatapipelinepipeline
 
-
 type GoogleDataPipelinePipelineWorkloadDataflowFlexTemplateRequest struct {
 	// launch_parameter block.
 	//
@@ -17,6 +16,5 @@ type GoogleDataPipelinePipelineWorkloadDataflowFlexTemplateRequest struct {
 	// If true, the request is validated but not actually executed. Defaults to false.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_data_pipeline_pipeline#validate_only GoogleDataPipelinePipeline#validate_only}
-	ValidateOnly interface{} `field:"optional" json:"validateOnly" yaml:"validateOnly"`
+	ValidateOnly any `field:"optional" json:"validateOnly" yaml:"validateOnly"`
 }
-

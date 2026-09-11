@@ -15,15 +15,15 @@ type GoogleBigqueryRowAccessPolicy interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreationTime() *string
 	DatasetId() *string
 	SetDatasetId(val *string)
@@ -67,29 +67,29 @@ type GoogleBigqueryRowAccessPolicy interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	TableId() *string
 	SetTableId(val *string)
 	TableIdInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() GoogleBigqueryRowAccessPolicyTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -107,7 +107,7 @@ type GoogleBigqueryRowAccessPolicy interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -119,7 +119,7 @@ type GoogleBigqueryRowAccessPolicy interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -134,17 +134,17 @@ type GoogleBigqueryRowAccessPolicy interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleBigqueryRowAccessPolicy
@@ -162,8 +162,8 @@ func (j *jsiiProxy_GoogleBigqueryRowAccessPolicy) CdktfStack() cdktf.TerraformSt
 	return returns
 }
 
-func (j *jsiiProxy_GoogleBigqueryRowAccessPolicy) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleBigqueryRowAccessPolicy) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -172,8 +172,8 @@ func (j *jsiiProxy_GoogleBigqueryRowAccessPolicy) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleBigqueryRowAccessPolicy) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleBigqueryRowAccessPolicy) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -182,8 +182,8 @@ func (j *jsiiProxy_GoogleBigqueryRowAccessPolicy) ConstructNodeMetadata() *map[s
 	return returns
 }
 
-func (j *jsiiProxy_GoogleBigqueryRowAccessPolicy) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleBigqueryRowAccessPolicy) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -402,8 +402,8 @@ func (j *jsiiProxy_GoogleBigqueryRowAccessPolicy) Provider() cdktf.TerraformProv
 	return returns
 }
 
-func (j *jsiiProxy_GoogleBigqueryRowAccessPolicy) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleBigqueryRowAccessPolicy) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -412,8 +412,8 @@ func (j *jsiiProxy_GoogleBigqueryRowAccessPolicy) Provisioners() *[]interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_GoogleBigqueryRowAccessPolicy) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleBigqueryRowAccessPolicy) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -452,8 +452,8 @@ func (j *jsiiProxy_GoogleBigqueryRowAccessPolicy) TerraformGeneratorMetadata() *
 	return returns
 }
 
-func (j *jsiiProxy_GoogleBigqueryRowAccessPolicy) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleBigqueryRowAccessPolicy) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -482,8 +482,8 @@ func (j *jsiiProxy_GoogleBigqueryRowAccessPolicy) Timeouts() GoogleBigqueryRowAc
 	return returns
 }
 
-func (j *jsiiProxy_GoogleBigqueryRowAccessPolicy) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleBigqueryRowAccessPolicy) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -491,7 +491,6 @@ func (j *jsiiProxy_GoogleBigqueryRowAccessPolicy) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_bigquery_row_access_policy google_bigquery_row_access_policy} Resource.
 func NewGoogleBigqueryRowAccessPolicy(scope constructs.Construct, id *string, config *GoogleBigqueryRowAccessPolicyConfig) GoogleBigqueryRowAccessPolicy {
@@ -504,7 +503,7 @@ func NewGoogleBigqueryRowAccessPolicy(scope constructs.Construct, id *string, co
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleBigqueryRowAccessPolicy.GoogleBigqueryRowAccessPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -517,12 +516,12 @@ func NewGoogleBigqueryRowAccessPolicy_Override(g GoogleBigqueryRowAccessPolicy, 
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleBigqueryRowAccessPolicy.GoogleBigqueryRowAccessPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryRowAccessPolicy)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleBigqueryRowAccessPolicy) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -533,7 +532,7 @@ func (j *jsiiProxy_GoogleBigqueryRowAccessPolicy)SetConnection(val interface{}) 
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryRowAccessPolicy)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleBigqueryRowAccessPolicy) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -544,7 +543,7 @@ func (j *jsiiProxy_GoogleBigqueryRowAccessPolicy)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryRowAccessPolicy)SetDatasetId(val *string) {
+func (j *jsiiProxy_GoogleBigqueryRowAccessPolicy) SetDatasetId(val *string) {
 	if err := j.validateSetDatasetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -555,7 +554,7 @@ func (j *jsiiProxy_GoogleBigqueryRowAccessPolicy)SetDatasetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryRowAccessPolicy)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleBigqueryRowAccessPolicy) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -563,7 +562,7 @@ func (j *jsiiProxy_GoogleBigqueryRowAccessPolicy)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryRowAccessPolicy)SetFilterPredicate(val *string) {
+func (j *jsiiProxy_GoogleBigqueryRowAccessPolicy) SetFilterPredicate(val *string) {
 	if err := j.validateSetFilterPredicateParameters(val); err != nil {
 		panic(err)
 	}
@@ -574,7 +573,7 @@ func (j *jsiiProxy_GoogleBigqueryRowAccessPolicy)SetFilterPredicate(val *string)
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryRowAccessPolicy)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleBigqueryRowAccessPolicy) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -582,7 +581,7 @@ func (j *jsiiProxy_GoogleBigqueryRowAccessPolicy)SetForEach(val cdktf.ITerraform
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryRowAccessPolicy)SetGrantees(val *[]*string) {
+func (j *jsiiProxy_GoogleBigqueryRowAccessPolicy) SetGrantees(val *[]*string) {
 	if err := j.validateSetGranteesParameters(val); err != nil {
 		panic(err)
 	}
@@ -593,7 +592,7 @@ func (j *jsiiProxy_GoogleBigqueryRowAccessPolicy)SetGrantees(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryRowAccessPolicy)SetId(val *string) {
+func (j *jsiiProxy_GoogleBigqueryRowAccessPolicy) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -604,7 +603,7 @@ func (j *jsiiProxy_GoogleBigqueryRowAccessPolicy)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryRowAccessPolicy)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleBigqueryRowAccessPolicy) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -615,7 +614,7 @@ func (j *jsiiProxy_GoogleBigqueryRowAccessPolicy)SetLifecycle(val *cdktf.Terrafo
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryRowAccessPolicy)SetPolicyId(val *string) {
+func (j *jsiiProxy_GoogleBigqueryRowAccessPolicy) SetPolicyId(val *string) {
 	if err := j.validateSetPolicyIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -626,7 +625,7 @@ func (j *jsiiProxy_GoogleBigqueryRowAccessPolicy)SetPolicyId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryRowAccessPolicy)SetProject(val *string) {
+func (j *jsiiProxy_GoogleBigqueryRowAccessPolicy) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -637,7 +636,7 @@ func (j *jsiiProxy_GoogleBigqueryRowAccessPolicy)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryRowAccessPolicy)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleBigqueryRowAccessPolicy) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -645,7 +644,7 @@ func (j *jsiiProxy_GoogleBigqueryRowAccessPolicy)SetProvider(val cdktf.Terraform
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryRowAccessPolicy)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleBigqueryRowAccessPolicy) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -656,7 +655,7 @@ func (j *jsiiProxy_GoogleBigqueryRowAccessPolicy)SetProvisioners(val *[]interfac
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryRowAccessPolicy)SetTableId(val *string) {
+func (j *jsiiProxy_GoogleBigqueryRowAccessPolicy) SetTableId(val *string) {
 	if err := j.validateSetTableIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -679,7 +678,7 @@ func GoogleBigqueryRowAccessPolicy_GenerateConfigForImport(scope constructs.Cons
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleBigqueryRowAccessPolicy.GoogleBigqueryRowAccessPolicy",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -703,7 +702,7 @@ func GoogleBigqueryRowAccessPolicy_GenerateConfigForImport(scope constructs.Cons
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleBigqueryRowAccessPolicy_IsConstruct(x interface{}) *bool {
+func GoogleBigqueryRowAccessPolicy_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleBigqueryRowAccessPolicy_IsConstructParameters(x); err != nil {
@@ -714,7 +713,7 @@ func GoogleBigqueryRowAccessPolicy_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleBigqueryRowAccessPolicy.GoogleBigqueryRowAccessPolicy",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -722,7 +721,7 @@ func GoogleBigqueryRowAccessPolicy_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleBigqueryRowAccessPolicy_IsTerraformElement(x interface{}) *bool {
+func GoogleBigqueryRowAccessPolicy_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleBigqueryRowAccessPolicy_IsTerraformElementParameters(x); err != nil {
@@ -733,7 +732,7 @@ func GoogleBigqueryRowAccessPolicy_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleBigqueryRowAccessPolicy.GoogleBigqueryRowAccessPolicy",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -741,7 +740,7 @@ func GoogleBigqueryRowAccessPolicy_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleBigqueryRowAccessPolicy_IsTerraformResource(x interface{}) *bool {
+func GoogleBigqueryRowAccessPolicy_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleBigqueryRowAccessPolicy_IsTerraformResourceParameters(x); err != nil {
@@ -752,7 +751,7 @@ func GoogleBigqueryRowAccessPolicy_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleBigqueryRowAccessPolicy.GoogleBigqueryRowAccessPolicy",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -777,31 +776,31 @@ func (g *jsiiProxy_GoogleBigqueryRowAccessPolicy) AddMoveTarget(moveTarget *stri
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleBigqueryRowAccessPolicy) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleBigqueryRowAccessPolicy) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleBigqueryRowAccessPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleBigqueryRowAccessPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -817,7 +816,7 @@ func (g *jsiiProxy_GoogleBigqueryRowAccessPolicy) GetBooleanAttribute(terraformA
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -833,7 +832,7 @@ func (g *jsiiProxy_GoogleBigqueryRowAccessPolicy) GetBooleanMapAttribute(terrafo
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -849,7 +848,7 @@ func (g *jsiiProxy_GoogleBigqueryRowAccessPolicy) GetListAttribute(terraformAttr
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -865,7 +864,7 @@ func (g *jsiiProxy_GoogleBigqueryRowAccessPolicy) GetNumberAttribute(terraformAt
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -881,7 +880,7 @@ func (g *jsiiProxy_GoogleBigqueryRowAccessPolicy) GetNumberListAttribute(terrafo
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -897,7 +896,7 @@ func (g *jsiiProxy_GoogleBigqueryRowAccessPolicy) GetNumberMapAttribute(terrafor
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -913,7 +912,7 @@ func (g *jsiiProxy_GoogleBigqueryRowAccessPolicy) GetStringAttribute(terraformAt
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -929,15 +928,15 @@ func (g *jsiiProxy_GoogleBigqueryRowAccessPolicy) GetStringMapAttribute(terrafor
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleBigqueryRowAccessPolicy) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleBigqueryRowAccessPolicy) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -956,7 +955,7 @@ func (g *jsiiProxy_GoogleBigqueryRowAccessPolicy) ImportFrom(id *string, provide
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -969,7 +968,7 @@ func (g *jsiiProxy_GoogleBigqueryRowAccessPolicy) InterpolationForAttribute(terr
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -983,18 +982,18 @@ func (g *jsiiProxy_GoogleBigqueryRowAccessPolicy) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleBigqueryRowAccessPolicy) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleBigqueryRowAccessPolicy) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1005,7 +1004,7 @@ func (g *jsiiProxy_GoogleBigqueryRowAccessPolicy) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1016,7 +1015,7 @@ func (g *jsiiProxy_GoogleBigqueryRowAccessPolicy) OverrideLogicalId(newLogicalId
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1027,7 +1026,7 @@ func (g *jsiiProxy_GoogleBigqueryRowAccessPolicy) PutTimeouts(value *GoogleBigqu
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1071,8 +1070,8 @@ func (g *jsiiProxy_GoogleBigqueryRowAccessPolicy) ResetTimeouts() {
 	)
 }
 
-func (g *jsiiProxy_GoogleBigqueryRowAccessPolicy) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleBigqueryRowAccessPolicy) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1084,8 +1083,8 @@ func (g *jsiiProxy_GoogleBigqueryRowAccessPolicy) SynthesizeAttributes() *map[st
 	return returns
 }
 
-func (g *jsiiProxy_GoogleBigqueryRowAccessPolicy) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleBigqueryRowAccessPolicy) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1097,8 +1096,8 @@ func (g *jsiiProxy_GoogleBigqueryRowAccessPolicy) SynthesizeHclAttributes() *map
 	return returns
 }
 
-func (g *jsiiProxy_GoogleBigqueryRowAccessPolicy) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleBigqueryRowAccessPolicy) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1110,8 +1109,8 @@ func (g *jsiiProxy_GoogleBigqueryRowAccessPolicy) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleBigqueryRowAccessPolicy) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleBigqueryRowAccessPolicy) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1136,8 +1135,8 @@ func (g *jsiiProxy_GoogleBigqueryRowAccessPolicy) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleBigqueryRowAccessPolicy) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleBigqueryRowAccessPolicy) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1148,4 +1147,3 @@ func (g *jsiiProxy_GoogleBigqueryRowAccessPolicy) ToTerraform() interface{} {
 
 	return returns
 }
-

@@ -19,7 +19,7 @@ func (g *jsiiProxy_GooglePrivatecaCaPoolIamPolicy) validateAddMoveTargetParamete
 	return nil
 }
 
-func (g *jsiiProxy_GooglePrivatecaCaPoolIamPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GooglePrivatecaCaPoolIamPolicy) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GooglePrivatecaCaPoolIamPolicy) validateMoveFromIdParameters(
 	return nil
 }
 
-func (g *jsiiProxy_GooglePrivatecaCaPoolIamPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GooglePrivatecaCaPoolIamPolicy) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateGooglePrivatecaCaPoolIamPolicy_GenerateConfigForImportParameters(sc
 	return nil
 }
 
-func validateGooglePrivatecaCaPoolIamPolicy_IsConstructParameters(x interface{}) error {
+func validateGooglePrivatecaCaPoolIamPolicy_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateGooglePrivatecaCaPoolIamPolicy_IsConstructParameters(x interface{})
 	return nil
 }
 
-func validateGooglePrivatecaCaPoolIamPolicy_IsTerraformElementParameters(x interface{}) error {
+func validateGooglePrivatecaCaPoolIamPolicy_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateGooglePrivatecaCaPoolIamPolicy_IsTerraformElementParameters(x inter
 	return nil
 }
 
-func validateGooglePrivatecaCaPoolIamPolicy_IsTerraformResourceParameters(x interface{}) error {
+func validateGooglePrivatecaCaPoolIamPolicy_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -252,7 +252,7 @@ func (j *jsiiProxy_GooglePrivatecaCaPoolIamPolicy) validateSetCaPoolParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_GooglePrivatecaCaPoolIamPolicy) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GooglePrivatecaCaPoolIamPolicy) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -285,7 +285,7 @@ func (j *jsiiProxy_GooglePrivatecaCaPoolIamPolicy) validateSetConnectionParamete
 	return nil
 }
 
-func (j *jsiiProxy_GooglePrivatecaCaPoolIamPolicy) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GooglePrivatecaCaPoolIamPolicy) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -382,7 +382,7 @@ func (j *jsiiProxy_GooglePrivatecaCaPoolIamPolicy) validateSetProjectParameters(
 	return nil
 }
 
-func (j *jsiiProxy_GooglePrivatecaCaPoolIamPolicy) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GooglePrivatecaCaPoolIamPolicy) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -446,4 +446,3 @@ func validateNewGooglePrivatecaCaPoolIamPolicyParameters(scope constructs.Constr
 
 	return nil
 }
-

@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleLookerInstancePscConfigServiceAttachmentsList) validate
 	return nil
 }
 
-func (j *jsiiProxy_GoogleLookerInstancePscConfigServiceAttachmentsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleLookerInstancePscConfigServiceAttachmentsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleLookerInstancePscConfigServiceAttachmentsListParameters(te
 
 	return nil
 }
-

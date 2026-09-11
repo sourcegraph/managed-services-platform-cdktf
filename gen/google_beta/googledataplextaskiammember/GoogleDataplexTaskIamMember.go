@@ -17,15 +17,15 @@ type GoogleDataplexTaskIamMember interface {
 	Condition() GoogleDataplexTaskIamMemberConditionOutputReference
 	ConditionInput() *GoogleDataplexTaskIamMemberCondition
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -65,11 +65,11 @@ type GoogleDataplexTaskIamMember interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Role() *string
 	SetRole(val *string)
 	RoleInput() *string
@@ -79,16 +79,16 @@ type GoogleDataplexTaskIamMember interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -106,7 +106,7 @@ type GoogleDataplexTaskIamMember interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -118,7 +118,7 @@ type GoogleDataplexTaskIamMember interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -133,17 +133,17 @@ type GoogleDataplexTaskIamMember interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleDataplexTaskIamMember
@@ -181,8 +181,8 @@ func (j *jsiiProxy_GoogleDataplexTaskIamMember) ConditionInput() *GoogleDataplex
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDataplexTaskIamMember) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDataplexTaskIamMember) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -191,8 +191,8 @@ func (j *jsiiProxy_GoogleDataplexTaskIamMember) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDataplexTaskIamMember) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleDataplexTaskIamMember) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -201,8 +201,8 @@ func (j *jsiiProxy_GoogleDataplexTaskIamMember) ConstructNodeMetadata() *map[str
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDataplexTaskIamMember) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDataplexTaskIamMember) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -391,8 +391,8 @@ func (j *jsiiProxy_GoogleDataplexTaskIamMember) Provider() cdktf.TerraformProvid
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDataplexTaskIamMember) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleDataplexTaskIamMember) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -401,8 +401,8 @@ func (j *jsiiProxy_GoogleDataplexTaskIamMember) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDataplexTaskIamMember) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDataplexTaskIamMember) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -461,8 +461,8 @@ func (j *jsiiProxy_GoogleDataplexTaskIamMember) TerraformGeneratorMetadata() *cd
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDataplexTaskIamMember) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleDataplexTaskIamMember) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -481,7 +481,6 @@ func (j *jsiiProxy_GoogleDataplexTaskIamMember) TerraformResourceType() *string 
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dataplex_task_iam_member google_dataplex_task_iam_member} Resource.
 func NewGoogleDataplexTaskIamMember(scope constructs.Construct, id *string, config *GoogleDataplexTaskIamMemberConfig) GoogleDataplexTaskIamMember {
 	_init_.Initialize()
@@ -493,7 +492,7 @@ func NewGoogleDataplexTaskIamMember(scope constructs.Construct, id *string, conf
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleDataplexTaskIamMember.GoogleDataplexTaskIamMember",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -506,12 +505,12 @@ func NewGoogleDataplexTaskIamMember_Override(g GoogleDataplexTaskIamMember, scop
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleDataplexTaskIamMember.GoogleDataplexTaskIamMember",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleDataplexTaskIamMember)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleDataplexTaskIamMember) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -522,7 +521,7 @@ func (j *jsiiProxy_GoogleDataplexTaskIamMember)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleDataplexTaskIamMember)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleDataplexTaskIamMember) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -533,7 +532,7 @@ func (j *jsiiProxy_GoogleDataplexTaskIamMember)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleDataplexTaskIamMember)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleDataplexTaskIamMember) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -541,7 +540,7 @@ func (j *jsiiProxy_GoogleDataplexTaskIamMember)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleDataplexTaskIamMember)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleDataplexTaskIamMember) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -549,7 +548,7 @@ func (j *jsiiProxy_GoogleDataplexTaskIamMember)SetForEach(val cdktf.ITerraformIt
 	)
 }
 
-func (j *jsiiProxy_GoogleDataplexTaskIamMember)SetId(val *string) {
+func (j *jsiiProxy_GoogleDataplexTaskIamMember) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -560,7 +559,7 @@ func (j *jsiiProxy_GoogleDataplexTaskIamMember)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleDataplexTaskIamMember)SetLake(val *string) {
+func (j *jsiiProxy_GoogleDataplexTaskIamMember) SetLake(val *string) {
 	if err := j.validateSetLakeParameters(val); err != nil {
 		panic(err)
 	}
@@ -571,7 +570,7 @@ func (j *jsiiProxy_GoogleDataplexTaskIamMember)SetLake(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleDataplexTaskIamMember)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleDataplexTaskIamMember) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -582,7 +581,7 @@ func (j *jsiiProxy_GoogleDataplexTaskIamMember)SetLifecycle(val *cdktf.Terraform
 	)
 }
 
-func (j *jsiiProxy_GoogleDataplexTaskIamMember)SetLocation(val *string) {
+func (j *jsiiProxy_GoogleDataplexTaskIamMember) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -593,7 +592,7 @@ func (j *jsiiProxy_GoogleDataplexTaskIamMember)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleDataplexTaskIamMember)SetMember(val *string) {
+func (j *jsiiProxy_GoogleDataplexTaskIamMember) SetMember(val *string) {
 	if err := j.validateSetMemberParameters(val); err != nil {
 		panic(err)
 	}
@@ -604,7 +603,7 @@ func (j *jsiiProxy_GoogleDataplexTaskIamMember)SetMember(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleDataplexTaskIamMember)SetProject(val *string) {
+func (j *jsiiProxy_GoogleDataplexTaskIamMember) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -615,7 +614,7 @@ func (j *jsiiProxy_GoogleDataplexTaskIamMember)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleDataplexTaskIamMember)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleDataplexTaskIamMember) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -623,7 +622,7 @@ func (j *jsiiProxy_GoogleDataplexTaskIamMember)SetProvider(val cdktf.TerraformPr
 	)
 }
 
-func (j *jsiiProxy_GoogleDataplexTaskIamMember)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleDataplexTaskIamMember) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -634,7 +633,7 @@ func (j *jsiiProxy_GoogleDataplexTaskIamMember)SetProvisioners(val *[]interface{
 	)
 }
 
-func (j *jsiiProxy_GoogleDataplexTaskIamMember)SetRole(val *string) {
+func (j *jsiiProxy_GoogleDataplexTaskIamMember) SetRole(val *string) {
 	if err := j.validateSetRoleParameters(val); err != nil {
 		panic(err)
 	}
@@ -645,7 +644,7 @@ func (j *jsiiProxy_GoogleDataplexTaskIamMember)SetRole(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleDataplexTaskIamMember)SetTaskId(val *string) {
+func (j *jsiiProxy_GoogleDataplexTaskIamMember) SetTaskId(val *string) {
 	if err := j.validateSetTaskIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -668,7 +667,7 @@ func GoogleDataplexTaskIamMember_GenerateConfigForImport(scope constructs.Constr
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleDataplexTaskIamMember.GoogleDataplexTaskIamMember",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -692,7 +691,7 @@ func GoogleDataplexTaskIamMember_GenerateConfigForImport(scope constructs.Constr
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleDataplexTaskIamMember_IsConstruct(x interface{}) *bool {
+func GoogleDataplexTaskIamMember_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleDataplexTaskIamMember_IsConstructParameters(x); err != nil {
@@ -703,7 +702,7 @@ func GoogleDataplexTaskIamMember_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleDataplexTaskIamMember.GoogleDataplexTaskIamMember",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -711,7 +710,7 @@ func GoogleDataplexTaskIamMember_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleDataplexTaskIamMember_IsTerraformElement(x interface{}) *bool {
+func GoogleDataplexTaskIamMember_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleDataplexTaskIamMember_IsTerraformElementParameters(x); err != nil {
@@ -722,7 +721,7 @@ func GoogleDataplexTaskIamMember_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleDataplexTaskIamMember.GoogleDataplexTaskIamMember",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -730,7 +729,7 @@ func GoogleDataplexTaskIamMember_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleDataplexTaskIamMember_IsTerraformResource(x interface{}) *bool {
+func GoogleDataplexTaskIamMember_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleDataplexTaskIamMember_IsTerraformResourceParameters(x); err != nil {
@@ -741,7 +740,7 @@ func GoogleDataplexTaskIamMember_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleDataplexTaskIamMember.GoogleDataplexTaskIamMember",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -766,31 +765,31 @@ func (g *jsiiProxy_GoogleDataplexTaskIamMember) AddMoveTarget(moveTarget *string
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleDataplexTaskIamMember) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleDataplexTaskIamMember) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleDataplexTaskIamMember) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleDataplexTaskIamMember) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -806,7 +805,7 @@ func (g *jsiiProxy_GoogleDataplexTaskIamMember) GetBooleanAttribute(terraformAtt
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -822,7 +821,7 @@ func (g *jsiiProxy_GoogleDataplexTaskIamMember) GetBooleanMapAttribute(terraform
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -838,7 +837,7 @@ func (g *jsiiProxy_GoogleDataplexTaskIamMember) GetListAttribute(terraformAttrib
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -854,7 +853,7 @@ func (g *jsiiProxy_GoogleDataplexTaskIamMember) GetNumberAttribute(terraformAttr
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -870,7 +869,7 @@ func (g *jsiiProxy_GoogleDataplexTaskIamMember) GetNumberListAttribute(terraform
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -886,7 +885,7 @@ func (g *jsiiProxy_GoogleDataplexTaskIamMember) GetNumberMapAttribute(terraformA
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -902,7 +901,7 @@ func (g *jsiiProxy_GoogleDataplexTaskIamMember) GetStringAttribute(terraformAttr
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -918,15 +917,15 @@ func (g *jsiiProxy_GoogleDataplexTaskIamMember) GetStringMapAttribute(terraformA
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDataplexTaskIamMember) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleDataplexTaskIamMember) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -945,7 +944,7 @@ func (g *jsiiProxy_GoogleDataplexTaskIamMember) ImportFrom(id *string, provider 
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -958,7 +957,7 @@ func (g *jsiiProxy_GoogleDataplexTaskIamMember) InterpolationForAttribute(terraf
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -972,18 +971,18 @@ func (g *jsiiProxy_GoogleDataplexTaskIamMember) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleDataplexTaskIamMember) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleDataplexTaskIamMember) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -994,7 +993,7 @@ func (g *jsiiProxy_GoogleDataplexTaskIamMember) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1005,7 +1004,7 @@ func (g *jsiiProxy_GoogleDataplexTaskIamMember) OverrideLogicalId(newLogicalId *
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1016,7 +1015,7 @@ func (g *jsiiProxy_GoogleDataplexTaskIamMember) PutCondition(value *GoogleDatapl
 	_jsii_.InvokeVoid(
 		g,
 		"putCondition",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1060,8 +1059,8 @@ func (g *jsiiProxy_GoogleDataplexTaskIamMember) ResetProject() {
 	)
 }
 
-func (g *jsiiProxy_GoogleDataplexTaskIamMember) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleDataplexTaskIamMember) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1073,8 +1072,8 @@ func (g *jsiiProxy_GoogleDataplexTaskIamMember) SynthesizeAttributes() *map[stri
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDataplexTaskIamMember) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleDataplexTaskIamMember) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1086,8 +1085,8 @@ func (g *jsiiProxy_GoogleDataplexTaskIamMember) SynthesizeHclAttributes() *map[s
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDataplexTaskIamMember) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleDataplexTaskIamMember) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1099,8 +1098,8 @@ func (g *jsiiProxy_GoogleDataplexTaskIamMember) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDataplexTaskIamMember) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleDataplexTaskIamMember) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1125,8 +1124,8 @@ func (g *jsiiProxy_GoogleDataplexTaskIamMember) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDataplexTaskIamMember) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleDataplexTaskIamMember) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1137,4 +1136,3 @@ func (g *jsiiProxy_GoogleDataplexTaskIamMember) ToTerraform() interface{} {
 
 	return returns
 }
-

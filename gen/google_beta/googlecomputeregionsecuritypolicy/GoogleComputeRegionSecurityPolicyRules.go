@@ -1,6 +1,5 @@
 package googlecomputeregionsecuritypolicy
 
-
 type GoogleComputeRegionSecurityPolicyRules struct {
 	// The Action to perform when the rule is matched. The following are the valid actions:.
 	//
@@ -42,10 +41,9 @@ type GoogleComputeRegionSecurityPolicyRules struct {
 	// If set to true, the specified action is not enforced.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_region_security_policy#preview GoogleComputeRegionSecurityPolicy#preview}
-	Preview interface{} `field:"optional" json:"preview" yaml:"preview"`
+	Preview any `field:"optional" json:"preview" yaml:"preview"`
 	// rate_limit_options block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_region_security_policy#rate_limit_options GoogleComputeRegionSecurityPolicy#rate_limit_options}
 	RateLimitOptions *GoogleComputeRegionSecurityPolicyRulesRateLimitOptions `field:"optional" json:"rateLimitOptions" yaml:"rateLimitOptions"`
 }
-

@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleDnsManagedZoneServiceDirectoryConfigNamespaceOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDnsManagedZoneServiceDirectoryConfigNamespaceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDnsManagedZoneServiceDirectoryConfigNamespaceOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleDnsManagedZoneServiceDirectoryConfigNamespaceOutputReferen
 
 	return nil
 }
-

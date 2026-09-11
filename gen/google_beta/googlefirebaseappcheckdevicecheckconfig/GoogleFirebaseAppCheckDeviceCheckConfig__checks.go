@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleFirebaseAppCheckDeviceCheckConfig) validateAddMoveTarge
 	return nil
 }
 
-func (g *jsiiProxy_GoogleFirebaseAppCheckDeviceCheckConfig) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleFirebaseAppCheckDeviceCheckConfig) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleFirebaseAppCheckDeviceCheckConfig) validateMoveFromIdPa
 	return nil
 }
 
-func (g *jsiiProxy_GoogleFirebaseAppCheckDeviceCheckConfig) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleFirebaseAppCheckDeviceCheckConfig) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateGoogleFirebaseAppCheckDeviceCheckConfig_GenerateConfigForImportPara
 	return nil
 }
 
-func validateGoogleFirebaseAppCheckDeviceCheckConfig_IsConstructParameters(x interface{}) error {
+func validateGoogleFirebaseAppCheckDeviceCheckConfig_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateGoogleFirebaseAppCheckDeviceCheckConfig_IsConstructParameters(x int
 	return nil
 }
 
-func validateGoogleFirebaseAppCheckDeviceCheckConfig_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleFirebaseAppCheckDeviceCheckConfig_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateGoogleFirebaseAppCheckDeviceCheckConfig_IsTerraformElementParameter
 	return nil
 }
 
-func validateGoogleFirebaseAppCheckDeviceCheckConfig_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleFirebaseAppCheckDeviceCheckConfig_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -263,7 +263,7 @@ func (j *jsiiProxy_GoogleFirebaseAppCheckDeviceCheckConfig) validateSetAppIdPara
 	return nil
 }
 
-func (j *jsiiProxy_GoogleFirebaseAppCheckDeviceCheckConfig) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleFirebaseAppCheckDeviceCheckConfig) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -296,7 +296,7 @@ func (j *jsiiProxy_GoogleFirebaseAppCheckDeviceCheckConfig) validateSetConnectio
 	return nil
 }
 
-func (j *jsiiProxy_GoogleFirebaseAppCheckDeviceCheckConfig) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleFirebaseAppCheckDeviceCheckConfig) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -393,7 +393,7 @@ func (j *jsiiProxy_GoogleFirebaseAppCheckDeviceCheckConfig) validateSetProjectPa
 	return nil
 }
 
-func (j *jsiiProxy_GoogleFirebaseAppCheckDeviceCheckConfig) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleFirebaseAppCheckDeviceCheckConfig) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -465,4 +465,3 @@ func validateNewGoogleFirebaseAppCheckDeviceCheckConfigParameters(scope construc
 
 	return nil
 }
-

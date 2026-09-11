@@ -19,15 +19,15 @@ type GoogleKmsSecretCiphertext interface {
 	CdktfStack() cdktf.TerraformStack
 	Ciphertext() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CryptoKey() *string
 	SetCryptoKey(val *string)
 	CryptoKeyInput() *string
@@ -60,26 +60,26 @@ type GoogleKmsSecretCiphertext interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() GoogleKmsSecretCiphertextTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -97,7 +97,7 @@ type GoogleKmsSecretCiphertext interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -109,7 +109,7 @@ type GoogleKmsSecretCiphertext interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -123,17 +123,17 @@ type GoogleKmsSecretCiphertext interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleKmsSecretCiphertext
@@ -181,8 +181,8 @@ func (j *jsiiProxy_GoogleKmsSecretCiphertext) Ciphertext() *string {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleKmsSecretCiphertext) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleKmsSecretCiphertext) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -191,8 +191,8 @@ func (j *jsiiProxy_GoogleKmsSecretCiphertext) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleKmsSecretCiphertext) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleKmsSecretCiphertext) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -201,8 +201,8 @@ func (j *jsiiProxy_GoogleKmsSecretCiphertext) ConstructNodeMetadata() *map[strin
 	return returns
 }
 
-func (j *jsiiProxy_GoogleKmsSecretCiphertext) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleKmsSecretCiphertext) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -341,8 +341,8 @@ func (j *jsiiProxy_GoogleKmsSecretCiphertext) Provider() cdktf.TerraformProvider
 	return returns
 }
 
-func (j *jsiiProxy_GoogleKmsSecretCiphertext) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleKmsSecretCiphertext) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -351,8 +351,8 @@ func (j *jsiiProxy_GoogleKmsSecretCiphertext) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleKmsSecretCiphertext) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleKmsSecretCiphertext) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -371,8 +371,8 @@ func (j *jsiiProxy_GoogleKmsSecretCiphertext) TerraformGeneratorMetadata() *cdkt
 	return returns
 }
 
-func (j *jsiiProxy_GoogleKmsSecretCiphertext) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleKmsSecretCiphertext) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -401,8 +401,8 @@ func (j *jsiiProxy_GoogleKmsSecretCiphertext) Timeouts() GoogleKmsSecretCipherte
 	return returns
 }
 
-func (j *jsiiProxy_GoogleKmsSecretCiphertext) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleKmsSecretCiphertext) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -410,7 +410,6 @@ func (j *jsiiProxy_GoogleKmsSecretCiphertext) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_kms_secret_ciphertext google_kms_secret_ciphertext} Resource.
 func NewGoogleKmsSecretCiphertext(scope constructs.Construct, id *string, config *GoogleKmsSecretCiphertextConfig) GoogleKmsSecretCiphertext {
@@ -423,7 +422,7 @@ func NewGoogleKmsSecretCiphertext(scope constructs.Construct, id *string, config
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleKmsSecretCiphertext.GoogleKmsSecretCiphertext",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -436,12 +435,12 @@ func NewGoogleKmsSecretCiphertext_Override(g GoogleKmsSecretCiphertext, scope co
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleKmsSecretCiphertext.GoogleKmsSecretCiphertext",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleKmsSecretCiphertext)SetAdditionalAuthenticatedData(val *string) {
+func (j *jsiiProxy_GoogleKmsSecretCiphertext) SetAdditionalAuthenticatedData(val *string) {
 	if err := j.validateSetAdditionalAuthenticatedDataParameters(val); err != nil {
 		panic(err)
 	}
@@ -452,7 +451,7 @@ func (j *jsiiProxy_GoogleKmsSecretCiphertext)SetAdditionalAuthenticatedData(val 
 	)
 }
 
-func (j *jsiiProxy_GoogleKmsSecretCiphertext)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleKmsSecretCiphertext) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -463,7 +462,7 @@ func (j *jsiiProxy_GoogleKmsSecretCiphertext)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleKmsSecretCiphertext)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleKmsSecretCiphertext) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -474,7 +473,7 @@ func (j *jsiiProxy_GoogleKmsSecretCiphertext)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleKmsSecretCiphertext)SetCryptoKey(val *string) {
+func (j *jsiiProxy_GoogleKmsSecretCiphertext) SetCryptoKey(val *string) {
 	if err := j.validateSetCryptoKeyParameters(val); err != nil {
 		panic(err)
 	}
@@ -485,7 +484,7 @@ func (j *jsiiProxy_GoogleKmsSecretCiphertext)SetCryptoKey(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleKmsSecretCiphertext)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleKmsSecretCiphertext) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -493,7 +492,7 @@ func (j *jsiiProxy_GoogleKmsSecretCiphertext)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleKmsSecretCiphertext)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleKmsSecretCiphertext) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -501,7 +500,7 @@ func (j *jsiiProxy_GoogleKmsSecretCiphertext)SetForEach(val cdktf.ITerraformIter
 	)
 }
 
-func (j *jsiiProxy_GoogleKmsSecretCiphertext)SetId(val *string) {
+func (j *jsiiProxy_GoogleKmsSecretCiphertext) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -512,7 +511,7 @@ func (j *jsiiProxy_GoogleKmsSecretCiphertext)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleKmsSecretCiphertext)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleKmsSecretCiphertext) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -523,7 +522,7 @@ func (j *jsiiProxy_GoogleKmsSecretCiphertext)SetLifecycle(val *cdktf.TerraformRe
 	)
 }
 
-func (j *jsiiProxy_GoogleKmsSecretCiphertext)SetPlaintext(val *string) {
+func (j *jsiiProxy_GoogleKmsSecretCiphertext) SetPlaintext(val *string) {
 	if err := j.validateSetPlaintextParameters(val); err != nil {
 		panic(err)
 	}
@@ -534,7 +533,7 @@ func (j *jsiiProxy_GoogleKmsSecretCiphertext)SetPlaintext(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleKmsSecretCiphertext)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleKmsSecretCiphertext) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -542,7 +541,7 @@ func (j *jsiiProxy_GoogleKmsSecretCiphertext)SetProvider(val cdktf.TerraformProv
 	)
 }
 
-func (j *jsiiProxy_GoogleKmsSecretCiphertext)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleKmsSecretCiphertext) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -565,7 +564,7 @@ func GoogleKmsSecretCiphertext_GenerateConfigForImport(scope constructs.Construc
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleKmsSecretCiphertext.GoogleKmsSecretCiphertext",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -589,7 +588,7 @@ func GoogleKmsSecretCiphertext_GenerateConfigForImport(scope constructs.Construc
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleKmsSecretCiphertext_IsConstruct(x interface{}) *bool {
+func GoogleKmsSecretCiphertext_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleKmsSecretCiphertext_IsConstructParameters(x); err != nil {
@@ -600,7 +599,7 @@ func GoogleKmsSecretCiphertext_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleKmsSecretCiphertext.GoogleKmsSecretCiphertext",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -608,7 +607,7 @@ func GoogleKmsSecretCiphertext_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleKmsSecretCiphertext_IsTerraformElement(x interface{}) *bool {
+func GoogleKmsSecretCiphertext_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleKmsSecretCiphertext_IsTerraformElementParameters(x); err != nil {
@@ -619,7 +618,7 @@ func GoogleKmsSecretCiphertext_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleKmsSecretCiphertext.GoogleKmsSecretCiphertext",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -627,7 +626,7 @@ func GoogleKmsSecretCiphertext_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleKmsSecretCiphertext_IsTerraformResource(x interface{}) *bool {
+func GoogleKmsSecretCiphertext_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleKmsSecretCiphertext_IsTerraformResourceParameters(x); err != nil {
@@ -638,7 +637,7 @@ func GoogleKmsSecretCiphertext_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleKmsSecretCiphertext.GoogleKmsSecretCiphertext",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -663,31 +662,31 @@ func (g *jsiiProxy_GoogleKmsSecretCiphertext) AddMoveTarget(moveTarget *string) 
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleKmsSecretCiphertext) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleKmsSecretCiphertext) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleKmsSecretCiphertext) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleKmsSecretCiphertext) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -703,7 +702,7 @@ func (g *jsiiProxy_GoogleKmsSecretCiphertext) GetBooleanAttribute(terraformAttri
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -719,7 +718,7 @@ func (g *jsiiProxy_GoogleKmsSecretCiphertext) GetBooleanMapAttribute(terraformAt
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -735,7 +734,7 @@ func (g *jsiiProxy_GoogleKmsSecretCiphertext) GetListAttribute(terraformAttribut
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -751,7 +750,7 @@ func (g *jsiiProxy_GoogleKmsSecretCiphertext) GetNumberAttribute(terraformAttrib
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -767,7 +766,7 @@ func (g *jsiiProxy_GoogleKmsSecretCiphertext) GetNumberListAttribute(terraformAt
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -783,7 +782,7 @@ func (g *jsiiProxy_GoogleKmsSecretCiphertext) GetNumberMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -799,7 +798,7 @@ func (g *jsiiProxy_GoogleKmsSecretCiphertext) GetStringAttribute(terraformAttrib
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -815,15 +814,15 @@ func (g *jsiiProxy_GoogleKmsSecretCiphertext) GetStringMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleKmsSecretCiphertext) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleKmsSecretCiphertext) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -842,7 +841,7 @@ func (g *jsiiProxy_GoogleKmsSecretCiphertext) ImportFrom(id *string, provider cd
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -855,7 +854,7 @@ func (g *jsiiProxy_GoogleKmsSecretCiphertext) InterpolationForAttribute(terrafor
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -869,18 +868,18 @@ func (g *jsiiProxy_GoogleKmsSecretCiphertext) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleKmsSecretCiphertext) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleKmsSecretCiphertext) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -891,7 +890,7 @@ func (g *jsiiProxy_GoogleKmsSecretCiphertext) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -902,7 +901,7 @@ func (g *jsiiProxy_GoogleKmsSecretCiphertext) OverrideLogicalId(newLogicalId *st
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -913,7 +912,7 @@ func (g *jsiiProxy_GoogleKmsSecretCiphertext) PutTimeouts(value *GoogleKmsSecret
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -949,8 +948,8 @@ func (g *jsiiProxy_GoogleKmsSecretCiphertext) ResetTimeouts() {
 	)
 }
 
-func (g *jsiiProxy_GoogleKmsSecretCiphertext) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleKmsSecretCiphertext) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -962,8 +961,8 @@ func (g *jsiiProxy_GoogleKmsSecretCiphertext) SynthesizeAttributes() *map[string
 	return returns
 }
 
-func (g *jsiiProxy_GoogleKmsSecretCiphertext) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleKmsSecretCiphertext) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -975,8 +974,8 @@ func (g *jsiiProxy_GoogleKmsSecretCiphertext) SynthesizeHclAttributes() *map[str
 	return returns
 }
 
-func (g *jsiiProxy_GoogleKmsSecretCiphertext) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleKmsSecretCiphertext) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -988,8 +987,8 @@ func (g *jsiiProxy_GoogleKmsSecretCiphertext) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleKmsSecretCiphertext) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleKmsSecretCiphertext) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1014,8 +1013,8 @@ func (g *jsiiProxy_GoogleKmsSecretCiphertext) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleKmsSecretCiphertext) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleKmsSecretCiphertext) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1026,4 +1025,3 @@ func (g *jsiiProxy_GoogleKmsSecretCiphertext) ToTerraform() interface{} {
 
 	return returns
 }
-

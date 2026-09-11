@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleEventarcGoogleChannelConfig.GoogleEventarcGoogleChannelConfig",
-		reflect.TypeOf((*GoogleEventarcGoogleChannelConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleEventarcGoogleChannelConfig](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -71,7 +71,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleEventarcGoogleChannelConfig{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -79,15 +79,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleEventarcGoogleChannelConfig.GoogleEventarcGoogleChannelConfigConfig",
-		reflect.TypeOf((*GoogleEventarcGoogleChannelConfigConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleEventarcGoogleChannelConfigConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleEventarcGoogleChannelConfig.GoogleEventarcGoogleChannelConfigTimeouts",
-		reflect.TypeOf((*GoogleEventarcGoogleChannelConfigTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleEventarcGoogleChannelConfigTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleEventarcGoogleChannelConfig.GoogleEventarcGoogleChannelConfigTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleEventarcGoogleChannelConfigTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleEventarcGoogleChannelConfigTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -120,7 +120,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleEventarcGoogleChannelConfigTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

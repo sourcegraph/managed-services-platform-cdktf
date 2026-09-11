@@ -109,7 +109,7 @@ func (g *jsiiProxy_GoogleFilestoreInstanceNetworksOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_GoogleFilestoreInstanceNetworksOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleFilestoreInstanceNetworksOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -182,7 +182,7 @@ func (j *jsiiProxy_GoogleFilestoreInstanceNetworksOutputReference) validateSetCo
 	return nil
 }
 
-func (j *jsiiProxy_GoogleFilestoreInstanceNetworksOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleFilestoreInstanceNetworksOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -265,4 +265,3 @@ func validateNewGoogleFilestoreInstanceNetworksOutputReferenceParameters(terrafo
 
 	return nil
 }
-

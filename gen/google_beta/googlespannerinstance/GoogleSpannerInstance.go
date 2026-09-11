@@ -20,15 +20,15 @@ type GoogleSpannerInstance interface {
 	SetConfig(val *string)
 	ConfigInput() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	DefaultBackupScheduleType() *string
 	SetDefaultBackupScheduleType(val *string)
 	DefaultBackupScheduleTypeInput() *string
@@ -43,9 +43,9 @@ type GoogleSpannerInstance interface {
 	SetEdition(val *string)
 	EditionInput() *string
 	EffectiveLabels() cdktf.StringMap
-	ForceDestroy() interface{}
-	SetForceDestroy(val interface{})
-	ForceDestroyInput() interface{}
+	ForceDestroy() any
+	SetForceDestroy(val any)
+	ForceDestroyInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -86,28 +86,28 @@ type GoogleSpannerInstance interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	State() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() GoogleSpannerInstanceTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -125,7 +125,7 @@ type GoogleSpannerInstance interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -137,7 +137,7 @@ type GoogleSpannerInstance interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -161,17 +161,17 @@ type GoogleSpannerInstance interface {
 	ResetProcessingUnits()
 	ResetProject()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleSpannerInstance
@@ -229,8 +229,8 @@ func (j *jsiiProxy_GoogleSpannerInstance) ConfigInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSpannerInstance) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleSpannerInstance) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -239,8 +239,8 @@ func (j *jsiiProxy_GoogleSpannerInstance) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSpannerInstance) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleSpannerInstance) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -249,8 +249,8 @@ func (j *jsiiProxy_GoogleSpannerInstance) ConstructNodeMetadata() *map[string]in
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSpannerInstance) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleSpannerInstance) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -339,8 +339,8 @@ func (j *jsiiProxy_GoogleSpannerInstance) EffectiveLabels() cdktf.StringMap {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSpannerInstance) ForceDestroy() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleSpannerInstance) ForceDestroy() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"forceDestroy",
@@ -349,8 +349,8 @@ func (j *jsiiProxy_GoogleSpannerInstance) ForceDestroy() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSpannerInstance) ForceDestroyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleSpannerInstance) ForceDestroyInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"forceDestroyInput",
@@ -559,8 +559,8 @@ func (j *jsiiProxy_GoogleSpannerInstance) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSpannerInstance) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleSpannerInstance) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -569,8 +569,8 @@ func (j *jsiiProxy_GoogleSpannerInstance) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSpannerInstance) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleSpannerInstance) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -609,8 +609,8 @@ func (j *jsiiProxy_GoogleSpannerInstance) TerraformLabels() cdktf.StringMap {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSpannerInstance) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleSpannerInstance) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -639,8 +639,8 @@ func (j *jsiiProxy_GoogleSpannerInstance) Timeouts() GoogleSpannerInstanceTimeou
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSpannerInstance) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleSpannerInstance) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -648,7 +648,6 @@ func (j *jsiiProxy_GoogleSpannerInstance) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_spanner_instance google_spanner_instance} Resource.
 func NewGoogleSpannerInstance(scope constructs.Construct, id *string, config *GoogleSpannerInstanceConfig) GoogleSpannerInstance {
@@ -661,7 +660,7 @@ func NewGoogleSpannerInstance(scope constructs.Construct, id *string, config *Go
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleSpannerInstance.GoogleSpannerInstance",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -674,12 +673,12 @@ func NewGoogleSpannerInstance_Override(g GoogleSpannerInstance, scope constructs
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleSpannerInstance.GoogleSpannerInstance",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleSpannerInstance)SetConfig(val *string) {
+func (j *jsiiProxy_GoogleSpannerInstance) SetConfig(val *string) {
 	if err := j.validateSetConfigParameters(val); err != nil {
 		panic(err)
 	}
@@ -690,7 +689,7 @@ func (j *jsiiProxy_GoogleSpannerInstance)SetConfig(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleSpannerInstance)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleSpannerInstance) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -701,7 +700,7 @@ func (j *jsiiProxy_GoogleSpannerInstance)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleSpannerInstance)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleSpannerInstance) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -712,7 +711,7 @@ func (j *jsiiProxy_GoogleSpannerInstance)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleSpannerInstance)SetDefaultBackupScheduleType(val *string) {
+func (j *jsiiProxy_GoogleSpannerInstance) SetDefaultBackupScheduleType(val *string) {
 	if err := j.validateSetDefaultBackupScheduleTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -723,7 +722,7 @@ func (j *jsiiProxy_GoogleSpannerInstance)SetDefaultBackupScheduleType(val *strin
 	)
 }
 
-func (j *jsiiProxy_GoogleSpannerInstance)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleSpannerInstance) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -731,7 +730,7 @@ func (j *jsiiProxy_GoogleSpannerInstance)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleSpannerInstance)SetDisplayName(val *string) {
+func (j *jsiiProxy_GoogleSpannerInstance) SetDisplayName(val *string) {
 	if err := j.validateSetDisplayNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -742,7 +741,7 @@ func (j *jsiiProxy_GoogleSpannerInstance)SetDisplayName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleSpannerInstance)SetEdition(val *string) {
+func (j *jsiiProxy_GoogleSpannerInstance) SetEdition(val *string) {
 	if err := j.validateSetEditionParameters(val); err != nil {
 		panic(err)
 	}
@@ -753,7 +752,7 @@ func (j *jsiiProxy_GoogleSpannerInstance)SetEdition(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleSpannerInstance)SetForceDestroy(val interface{}) {
+func (j *jsiiProxy_GoogleSpannerInstance) SetForceDestroy(val any) {
 	if err := j.validateSetForceDestroyParameters(val); err != nil {
 		panic(err)
 	}
@@ -764,7 +763,7 @@ func (j *jsiiProxy_GoogleSpannerInstance)SetForceDestroy(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleSpannerInstance)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleSpannerInstance) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -772,7 +771,7 @@ func (j *jsiiProxy_GoogleSpannerInstance)SetForEach(val cdktf.ITerraformIterator
 	)
 }
 
-func (j *jsiiProxy_GoogleSpannerInstance)SetId(val *string) {
+func (j *jsiiProxy_GoogleSpannerInstance) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -783,7 +782,7 @@ func (j *jsiiProxy_GoogleSpannerInstance)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleSpannerInstance)SetInstanceType(val *string) {
+func (j *jsiiProxy_GoogleSpannerInstance) SetInstanceType(val *string) {
 	if err := j.validateSetInstanceTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -794,7 +793,7 @@ func (j *jsiiProxy_GoogleSpannerInstance)SetInstanceType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleSpannerInstance)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_GoogleSpannerInstance) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -805,7 +804,7 @@ func (j *jsiiProxy_GoogleSpannerInstance)SetLabels(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleSpannerInstance)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleSpannerInstance) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -816,7 +815,7 @@ func (j *jsiiProxy_GoogleSpannerInstance)SetLifecycle(val *cdktf.TerraformResour
 	)
 }
 
-func (j *jsiiProxy_GoogleSpannerInstance)SetName(val *string) {
+func (j *jsiiProxy_GoogleSpannerInstance) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -827,7 +826,7 @@ func (j *jsiiProxy_GoogleSpannerInstance)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleSpannerInstance)SetNumNodes(val *float64) {
+func (j *jsiiProxy_GoogleSpannerInstance) SetNumNodes(val *float64) {
 	if err := j.validateSetNumNodesParameters(val); err != nil {
 		panic(err)
 	}
@@ -838,7 +837,7 @@ func (j *jsiiProxy_GoogleSpannerInstance)SetNumNodes(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_GoogleSpannerInstance)SetProcessingUnits(val *float64) {
+func (j *jsiiProxy_GoogleSpannerInstance) SetProcessingUnits(val *float64) {
 	if err := j.validateSetProcessingUnitsParameters(val); err != nil {
 		panic(err)
 	}
@@ -849,7 +848,7 @@ func (j *jsiiProxy_GoogleSpannerInstance)SetProcessingUnits(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_GoogleSpannerInstance)SetProject(val *string) {
+func (j *jsiiProxy_GoogleSpannerInstance) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -860,7 +859,7 @@ func (j *jsiiProxy_GoogleSpannerInstance)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleSpannerInstance)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleSpannerInstance) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -868,7 +867,7 @@ func (j *jsiiProxy_GoogleSpannerInstance)SetProvider(val cdktf.TerraformProvider
 	)
 }
 
-func (j *jsiiProxy_GoogleSpannerInstance)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleSpannerInstance) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -891,7 +890,7 @@ func GoogleSpannerInstance_GenerateConfigForImport(scope constructs.Construct, i
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleSpannerInstance.GoogleSpannerInstance",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -915,7 +914,7 @@ func GoogleSpannerInstance_GenerateConfigForImport(scope constructs.Construct, i
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleSpannerInstance_IsConstruct(x interface{}) *bool {
+func GoogleSpannerInstance_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleSpannerInstance_IsConstructParameters(x); err != nil {
@@ -926,7 +925,7 @@ func GoogleSpannerInstance_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleSpannerInstance.GoogleSpannerInstance",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -934,7 +933,7 @@ func GoogleSpannerInstance_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleSpannerInstance_IsTerraformElement(x interface{}) *bool {
+func GoogleSpannerInstance_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleSpannerInstance_IsTerraformElementParameters(x); err != nil {
@@ -945,7 +944,7 @@ func GoogleSpannerInstance_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleSpannerInstance.GoogleSpannerInstance",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -953,7 +952,7 @@ func GoogleSpannerInstance_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleSpannerInstance_IsTerraformResource(x interface{}) *bool {
+func GoogleSpannerInstance_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleSpannerInstance_IsTerraformResourceParameters(x); err != nil {
@@ -964,7 +963,7 @@ func GoogleSpannerInstance_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleSpannerInstance.GoogleSpannerInstance",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -989,31 +988,31 @@ func (g *jsiiProxy_GoogleSpannerInstance) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleSpannerInstance) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleSpannerInstance) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleSpannerInstance) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleSpannerInstance) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1029,7 +1028,7 @@ func (g *jsiiProxy_GoogleSpannerInstance) GetBooleanAttribute(terraformAttribute
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1045,7 +1044,7 @@ func (g *jsiiProxy_GoogleSpannerInstance) GetBooleanMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1061,7 +1060,7 @@ func (g *jsiiProxy_GoogleSpannerInstance) GetListAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1077,7 +1076,7 @@ func (g *jsiiProxy_GoogleSpannerInstance) GetNumberAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1093,7 +1092,7 @@ func (g *jsiiProxy_GoogleSpannerInstance) GetNumberListAttribute(terraformAttrib
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1109,7 +1108,7 @@ func (g *jsiiProxy_GoogleSpannerInstance) GetNumberMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1125,7 +1124,7 @@ func (g *jsiiProxy_GoogleSpannerInstance) GetStringAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1141,15 +1140,15 @@ func (g *jsiiProxy_GoogleSpannerInstance) GetStringMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleSpannerInstance) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleSpannerInstance) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1168,7 +1167,7 @@ func (g *jsiiProxy_GoogleSpannerInstance) ImportFrom(id *string, provider cdktf.
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1181,7 +1180,7 @@ func (g *jsiiProxy_GoogleSpannerInstance) InterpolationForAttribute(terraformAtt
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1195,18 +1194,18 @@ func (g *jsiiProxy_GoogleSpannerInstance) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleSpannerInstance) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleSpannerInstance) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1217,7 +1216,7 @@ func (g *jsiiProxy_GoogleSpannerInstance) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1228,7 +1227,7 @@ func (g *jsiiProxy_GoogleSpannerInstance) OverrideLogicalId(newLogicalId *string
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1239,7 +1238,7 @@ func (g *jsiiProxy_GoogleSpannerInstance) PutAutoscalingConfig(value *GoogleSpan
 	_jsii_.InvokeVoid(
 		g,
 		"putAutoscalingConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1250,7 +1249,7 @@ func (g *jsiiProxy_GoogleSpannerInstance) PutTimeouts(value *GoogleSpannerInstan
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1358,8 +1357,8 @@ func (g *jsiiProxy_GoogleSpannerInstance) ResetTimeouts() {
 	)
 }
 
-func (g *jsiiProxy_GoogleSpannerInstance) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleSpannerInstance) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1371,8 +1370,8 @@ func (g *jsiiProxy_GoogleSpannerInstance) SynthesizeAttributes() *map[string]int
 	return returns
 }
 
-func (g *jsiiProxy_GoogleSpannerInstance) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleSpannerInstance) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1384,8 +1383,8 @@ func (g *jsiiProxy_GoogleSpannerInstance) SynthesizeHclAttributes() *map[string]
 	return returns
 }
 
-func (g *jsiiProxy_GoogleSpannerInstance) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleSpannerInstance) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1397,8 +1396,8 @@ func (g *jsiiProxy_GoogleSpannerInstance) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleSpannerInstance) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleSpannerInstance) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1423,8 +1422,8 @@ func (g *jsiiProxy_GoogleSpannerInstance) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleSpannerInstance) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleSpannerInstance) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1435,4 +1434,3 @@ func (g *jsiiProxy_GoogleSpannerInstance) ToTerraform() interface{} {
 
 	return returns
 }
-

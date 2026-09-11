@@ -15,15 +15,15 @@ type GooglePrivatecaCaPool interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -65,32 +65,32 @@ type GooglePrivatecaCaPool interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	PublishingOptions() GooglePrivatecaCaPoolPublishingOptionsOutputReference
 	PublishingOptionsInput() *GooglePrivatecaCaPoolPublishingOptions
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Tier() *string
 	SetTier(val *string)
 	TierInput() *string
 	Timeouts() GooglePrivatecaCaPoolTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -108,7 +108,7 @@ type GooglePrivatecaCaPool interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -120,7 +120,7 @@ type GooglePrivatecaCaPool interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -139,17 +139,17 @@ type GooglePrivatecaCaPool interface {
 	ResetProject()
 	ResetPublishingOptions()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GooglePrivatecaCaPool
@@ -167,8 +167,8 @@ func (j *jsiiProxy_GooglePrivatecaCaPool) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_GooglePrivatecaCaPool) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GooglePrivatecaCaPool) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -177,8 +177,8 @@ func (j *jsiiProxy_GooglePrivatecaCaPool) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GooglePrivatecaCaPool) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GooglePrivatecaCaPool) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -187,8 +187,8 @@ func (j *jsiiProxy_GooglePrivatecaCaPool) ConstructNodeMetadata() *map[string]in
 	return returns
 }
 
-func (j *jsiiProxy_GooglePrivatecaCaPool) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GooglePrivatecaCaPool) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -397,8 +397,8 @@ func (j *jsiiProxy_GooglePrivatecaCaPool) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_GooglePrivatecaCaPool) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GooglePrivatecaCaPool) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -427,8 +427,8 @@ func (j *jsiiProxy_GooglePrivatecaCaPool) PublishingOptionsInput() *GooglePrivat
 	return returns
 }
 
-func (j *jsiiProxy_GooglePrivatecaCaPool) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GooglePrivatecaCaPool) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -457,8 +457,8 @@ func (j *jsiiProxy_GooglePrivatecaCaPool) TerraformLabels() cdktf.StringMap {
 	return returns
 }
 
-func (j *jsiiProxy_GooglePrivatecaCaPool) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GooglePrivatecaCaPool) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -507,8 +507,8 @@ func (j *jsiiProxy_GooglePrivatecaCaPool) Timeouts() GooglePrivatecaCaPoolTimeou
 	return returns
 }
 
-func (j *jsiiProxy_GooglePrivatecaCaPool) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GooglePrivatecaCaPool) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -516,7 +516,6 @@ func (j *jsiiProxy_GooglePrivatecaCaPool) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_privateca_ca_pool google_privateca_ca_pool} Resource.
 func NewGooglePrivatecaCaPool(scope constructs.Construct, id *string, config *GooglePrivatecaCaPoolConfig) GooglePrivatecaCaPool {
@@ -529,7 +528,7 @@ func NewGooglePrivatecaCaPool(scope constructs.Construct, id *string, config *Go
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googlePrivatecaCaPool.GooglePrivatecaCaPool",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -542,12 +541,12 @@ func NewGooglePrivatecaCaPool_Override(g GooglePrivatecaCaPool, scope constructs
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googlePrivatecaCaPool.GooglePrivatecaCaPool",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GooglePrivatecaCaPool)SetConnection(val interface{}) {
+func (j *jsiiProxy_GooglePrivatecaCaPool) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -558,7 +557,7 @@ func (j *jsiiProxy_GooglePrivatecaCaPool)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GooglePrivatecaCaPool)SetCount(val interface{}) {
+func (j *jsiiProxy_GooglePrivatecaCaPool) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -569,7 +568,7 @@ func (j *jsiiProxy_GooglePrivatecaCaPool)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GooglePrivatecaCaPool)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GooglePrivatecaCaPool) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -577,7 +576,7 @@ func (j *jsiiProxy_GooglePrivatecaCaPool)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GooglePrivatecaCaPool)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GooglePrivatecaCaPool) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -585,7 +584,7 @@ func (j *jsiiProxy_GooglePrivatecaCaPool)SetForEach(val cdktf.ITerraformIterator
 	)
 }
 
-func (j *jsiiProxy_GooglePrivatecaCaPool)SetId(val *string) {
+func (j *jsiiProxy_GooglePrivatecaCaPool) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -596,7 +595,7 @@ func (j *jsiiProxy_GooglePrivatecaCaPool)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GooglePrivatecaCaPool)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_GooglePrivatecaCaPool) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -607,7 +606,7 @@ func (j *jsiiProxy_GooglePrivatecaCaPool)SetLabels(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_GooglePrivatecaCaPool)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GooglePrivatecaCaPool) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -618,7 +617,7 @@ func (j *jsiiProxy_GooglePrivatecaCaPool)SetLifecycle(val *cdktf.TerraformResour
 	)
 }
 
-func (j *jsiiProxy_GooglePrivatecaCaPool)SetLocation(val *string) {
+func (j *jsiiProxy_GooglePrivatecaCaPool) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -629,7 +628,7 @@ func (j *jsiiProxy_GooglePrivatecaCaPool)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GooglePrivatecaCaPool)SetName(val *string) {
+func (j *jsiiProxy_GooglePrivatecaCaPool) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -640,7 +639,7 @@ func (j *jsiiProxy_GooglePrivatecaCaPool)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GooglePrivatecaCaPool)SetProject(val *string) {
+func (j *jsiiProxy_GooglePrivatecaCaPool) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -651,7 +650,7 @@ func (j *jsiiProxy_GooglePrivatecaCaPool)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GooglePrivatecaCaPool)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GooglePrivatecaCaPool) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -659,7 +658,7 @@ func (j *jsiiProxy_GooglePrivatecaCaPool)SetProvider(val cdktf.TerraformProvider
 	)
 }
 
-func (j *jsiiProxy_GooglePrivatecaCaPool)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GooglePrivatecaCaPool) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -670,7 +669,7 @@ func (j *jsiiProxy_GooglePrivatecaCaPool)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GooglePrivatecaCaPool)SetTier(val *string) {
+func (j *jsiiProxy_GooglePrivatecaCaPool) SetTier(val *string) {
 	if err := j.validateSetTierParameters(val); err != nil {
 		panic(err)
 	}
@@ -693,7 +692,7 @@ func GooglePrivatecaCaPool_GenerateConfigForImport(scope constructs.Construct, i
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googlePrivatecaCaPool.GooglePrivatecaCaPool",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -717,7 +716,7 @@ func GooglePrivatecaCaPool_GenerateConfigForImport(scope constructs.Construct, i
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GooglePrivatecaCaPool_IsConstruct(x interface{}) *bool {
+func GooglePrivatecaCaPool_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGooglePrivatecaCaPool_IsConstructParameters(x); err != nil {
@@ -728,7 +727,7 @@ func GooglePrivatecaCaPool_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googlePrivatecaCaPool.GooglePrivatecaCaPool",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -736,7 +735,7 @@ func GooglePrivatecaCaPool_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GooglePrivatecaCaPool_IsTerraformElement(x interface{}) *bool {
+func GooglePrivatecaCaPool_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGooglePrivatecaCaPool_IsTerraformElementParameters(x); err != nil {
@@ -747,7 +746,7 @@ func GooglePrivatecaCaPool_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googlePrivatecaCaPool.GooglePrivatecaCaPool",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -755,7 +754,7 @@ func GooglePrivatecaCaPool_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func GooglePrivatecaCaPool_IsTerraformResource(x interface{}) *bool {
+func GooglePrivatecaCaPool_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGooglePrivatecaCaPool_IsTerraformResourceParameters(x); err != nil {
@@ -766,7 +765,7 @@ func GooglePrivatecaCaPool_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googlePrivatecaCaPool.GooglePrivatecaCaPool",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -791,31 +790,31 @@ func (g *jsiiProxy_GooglePrivatecaCaPool) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GooglePrivatecaCaPool) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GooglePrivatecaCaPool) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GooglePrivatecaCaPool) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GooglePrivatecaCaPool) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -831,7 +830,7 @@ func (g *jsiiProxy_GooglePrivatecaCaPool) GetBooleanAttribute(terraformAttribute
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -847,7 +846,7 @@ func (g *jsiiProxy_GooglePrivatecaCaPool) GetBooleanMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -863,7 +862,7 @@ func (g *jsiiProxy_GooglePrivatecaCaPool) GetListAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -879,7 +878,7 @@ func (g *jsiiProxy_GooglePrivatecaCaPool) GetNumberAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -895,7 +894,7 @@ func (g *jsiiProxy_GooglePrivatecaCaPool) GetNumberListAttribute(terraformAttrib
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -911,7 +910,7 @@ func (g *jsiiProxy_GooglePrivatecaCaPool) GetNumberMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -927,7 +926,7 @@ func (g *jsiiProxy_GooglePrivatecaCaPool) GetStringAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -943,15 +942,15 @@ func (g *jsiiProxy_GooglePrivatecaCaPool) GetStringMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GooglePrivatecaCaPool) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GooglePrivatecaCaPool) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -970,7 +969,7 @@ func (g *jsiiProxy_GooglePrivatecaCaPool) ImportFrom(id *string, provider cdktf.
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -983,7 +982,7 @@ func (g *jsiiProxy_GooglePrivatecaCaPool) InterpolationForAttribute(terraformAtt
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -997,18 +996,18 @@ func (g *jsiiProxy_GooglePrivatecaCaPool) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GooglePrivatecaCaPool) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GooglePrivatecaCaPool) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1019,7 +1018,7 @@ func (g *jsiiProxy_GooglePrivatecaCaPool) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1030,7 +1029,7 @@ func (g *jsiiProxy_GooglePrivatecaCaPool) OverrideLogicalId(newLogicalId *string
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1041,7 +1040,7 @@ func (g *jsiiProxy_GooglePrivatecaCaPool) PutIssuancePolicy(value *GooglePrivate
 	_jsii_.InvokeVoid(
 		g,
 		"putIssuancePolicy",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1052,7 +1051,7 @@ func (g *jsiiProxy_GooglePrivatecaCaPool) PutPublishingOptions(value *GooglePriv
 	_jsii_.InvokeVoid(
 		g,
 		"putPublishingOptions",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1063,7 +1062,7 @@ func (g *jsiiProxy_GooglePrivatecaCaPool) PutTimeouts(value *GooglePrivatecaCaPo
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1123,8 +1122,8 @@ func (g *jsiiProxy_GooglePrivatecaCaPool) ResetTimeouts() {
 	)
 }
 
-func (g *jsiiProxy_GooglePrivatecaCaPool) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GooglePrivatecaCaPool) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1136,8 +1135,8 @@ func (g *jsiiProxy_GooglePrivatecaCaPool) SynthesizeAttributes() *map[string]int
 	return returns
 }
 
-func (g *jsiiProxy_GooglePrivatecaCaPool) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GooglePrivatecaCaPool) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1149,8 +1148,8 @@ func (g *jsiiProxy_GooglePrivatecaCaPool) SynthesizeHclAttributes() *map[string]
 	return returns
 }
 
-func (g *jsiiProxy_GooglePrivatecaCaPool) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GooglePrivatecaCaPool) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1162,8 +1161,8 @@ func (g *jsiiProxy_GooglePrivatecaCaPool) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (g *jsiiProxy_GooglePrivatecaCaPool) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GooglePrivatecaCaPool) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1188,8 +1187,8 @@ func (g *jsiiProxy_GooglePrivatecaCaPool) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GooglePrivatecaCaPool) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GooglePrivatecaCaPool) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1200,4 +1199,3 @@ func (g *jsiiProxy_GooglePrivatecaCaPool) ToTerraform() interface{} {
 
 	return returns
 }
-

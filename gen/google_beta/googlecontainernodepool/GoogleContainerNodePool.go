@@ -20,15 +20,15 @@ type GoogleContainerNodePool interface {
 	SetCluster(val *string)
 	ClusterInput() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -90,21 +90,21 @@ type GoogleContainerNodePool interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	QueuedProvisioning() GoogleContainerNodePoolQueuedProvisioningOutputReference
 	QueuedProvisioningInput() *GoogleContainerNodePoolQueuedProvisioning
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() GoogleContainerNodePoolTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	UpgradeSettings() GoogleContainerNodePoolUpgradeSettingsOutputReference
 	UpgradeSettingsInput() *GoogleContainerNodePoolUpgradeSettings
 	Version() *string
@@ -114,9 +114,9 @@ type GoogleContainerNodePool interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -134,7 +134,7 @@ type GoogleContainerNodePool interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -146,7 +146,7 @@ type GoogleContainerNodePool interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -182,17 +182,17 @@ type GoogleContainerNodePool interface {
 	ResetTimeouts()
 	ResetUpgradeSettings()
 	ResetVersion()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleContainerNodePool
@@ -250,8 +250,8 @@ func (j *jsiiProxy_GoogleContainerNodePool) ClusterInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleContainerNodePool) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleContainerNodePool) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -260,8 +260,8 @@ func (j *jsiiProxy_GoogleContainerNodePool) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleContainerNodePool) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleContainerNodePool) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -270,8 +270,8 @@ func (j *jsiiProxy_GoogleContainerNodePool) ConstructNodeMetadata() *map[string]
 	return returns
 }
 
-func (j *jsiiProxy_GoogleContainerNodePool) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleContainerNodePool) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -640,8 +640,8 @@ func (j *jsiiProxy_GoogleContainerNodePool) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleContainerNodePool) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleContainerNodePool) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -670,8 +670,8 @@ func (j *jsiiProxy_GoogleContainerNodePool) QueuedProvisioningInput() *GoogleCon
 	return returns
 }
 
-func (j *jsiiProxy_GoogleContainerNodePool) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleContainerNodePool) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -690,8 +690,8 @@ func (j *jsiiProxy_GoogleContainerNodePool) TerraformGeneratorMetadata() *cdktf.
 	return returns
 }
 
-func (j *jsiiProxy_GoogleContainerNodePool) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleContainerNodePool) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -720,8 +720,8 @@ func (j *jsiiProxy_GoogleContainerNodePool) Timeouts() GoogleContainerNodePoolTi
 	return returns
 }
 
-func (j *jsiiProxy_GoogleContainerNodePool) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleContainerNodePool) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -770,7 +770,6 @@ func (j *jsiiProxy_GoogleContainerNodePool) VersionInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_container_node_pool google_container_node_pool} Resource.
 func NewGoogleContainerNodePool(scope constructs.Construct, id *string, config *GoogleContainerNodePoolConfig) GoogleContainerNodePool {
 	_init_.Initialize()
@@ -782,7 +781,7 @@ func NewGoogleContainerNodePool(scope constructs.Construct, id *string, config *
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleContainerNodePool.GoogleContainerNodePool",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -795,12 +794,12 @@ func NewGoogleContainerNodePool_Override(g GoogleContainerNodePool, scope constr
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleContainerNodePool.GoogleContainerNodePool",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerNodePool)SetCluster(val *string) {
+func (j *jsiiProxy_GoogleContainerNodePool) SetCluster(val *string) {
 	if err := j.validateSetClusterParameters(val); err != nil {
 		panic(err)
 	}
@@ -811,7 +810,7 @@ func (j *jsiiProxy_GoogleContainerNodePool)SetCluster(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerNodePool)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleContainerNodePool) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -822,7 +821,7 @@ func (j *jsiiProxy_GoogleContainerNodePool)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerNodePool)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleContainerNodePool) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -833,7 +832,7 @@ func (j *jsiiProxy_GoogleContainerNodePool)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerNodePool)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleContainerNodePool) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -841,7 +840,7 @@ func (j *jsiiProxy_GoogleContainerNodePool)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerNodePool)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleContainerNodePool) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -849,7 +848,7 @@ func (j *jsiiProxy_GoogleContainerNodePool)SetForEach(val cdktf.ITerraformIterat
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerNodePool)SetId(val *string) {
+func (j *jsiiProxy_GoogleContainerNodePool) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -860,7 +859,7 @@ func (j *jsiiProxy_GoogleContainerNodePool)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerNodePool)SetInitialNodeCount(val *float64) {
+func (j *jsiiProxy_GoogleContainerNodePool) SetInitialNodeCount(val *float64) {
 	if err := j.validateSetInitialNodeCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -871,7 +870,7 @@ func (j *jsiiProxy_GoogleContainerNodePool)SetInitialNodeCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerNodePool)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleContainerNodePool) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -882,7 +881,7 @@ func (j *jsiiProxy_GoogleContainerNodePool)SetLifecycle(val *cdktf.TerraformReso
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerNodePool)SetLocation(val *string) {
+func (j *jsiiProxy_GoogleContainerNodePool) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -893,7 +892,7 @@ func (j *jsiiProxy_GoogleContainerNodePool)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerNodePool)SetMaxPodsPerNode(val *float64) {
+func (j *jsiiProxy_GoogleContainerNodePool) SetMaxPodsPerNode(val *float64) {
 	if err := j.validateSetMaxPodsPerNodeParameters(val); err != nil {
 		panic(err)
 	}
@@ -904,7 +903,7 @@ func (j *jsiiProxy_GoogleContainerNodePool)SetMaxPodsPerNode(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerNodePool)SetName(val *string) {
+func (j *jsiiProxy_GoogleContainerNodePool) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -915,7 +914,7 @@ func (j *jsiiProxy_GoogleContainerNodePool)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerNodePool)SetNamePrefix(val *string) {
+func (j *jsiiProxy_GoogleContainerNodePool) SetNamePrefix(val *string) {
 	if err := j.validateSetNamePrefixParameters(val); err != nil {
 		panic(err)
 	}
@@ -926,7 +925,7 @@ func (j *jsiiProxy_GoogleContainerNodePool)SetNamePrefix(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerNodePool)SetNodeCount(val *float64) {
+func (j *jsiiProxy_GoogleContainerNodePool) SetNodeCount(val *float64) {
 	if err := j.validateSetNodeCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -937,7 +936,7 @@ func (j *jsiiProxy_GoogleContainerNodePool)SetNodeCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerNodePool)SetNodeLocations(val *[]*string) {
+func (j *jsiiProxy_GoogleContainerNodePool) SetNodeLocations(val *[]*string) {
 	if err := j.validateSetNodeLocationsParameters(val); err != nil {
 		panic(err)
 	}
@@ -948,7 +947,7 @@ func (j *jsiiProxy_GoogleContainerNodePool)SetNodeLocations(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerNodePool)SetProject(val *string) {
+func (j *jsiiProxy_GoogleContainerNodePool) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -959,7 +958,7 @@ func (j *jsiiProxy_GoogleContainerNodePool)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerNodePool)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleContainerNodePool) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -967,7 +966,7 @@ func (j *jsiiProxy_GoogleContainerNodePool)SetProvider(val cdktf.TerraformProvid
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerNodePool)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleContainerNodePool) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -978,7 +977,7 @@ func (j *jsiiProxy_GoogleContainerNodePool)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerNodePool)SetVersion(val *string) {
+func (j *jsiiProxy_GoogleContainerNodePool) SetVersion(val *string) {
 	if err := j.validateSetVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1001,7 +1000,7 @@ func GoogleContainerNodePool_GenerateConfigForImport(scope constructs.Construct,
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleContainerNodePool.GoogleContainerNodePool",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -1025,7 +1024,7 @@ func GoogleContainerNodePool_GenerateConfigForImport(scope constructs.Construct,
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleContainerNodePool_IsConstruct(x interface{}) *bool {
+func GoogleContainerNodePool_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleContainerNodePool_IsConstructParameters(x); err != nil {
@@ -1036,7 +1035,7 @@ func GoogleContainerNodePool_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleContainerNodePool.GoogleContainerNodePool",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1044,7 +1043,7 @@ func GoogleContainerNodePool_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleContainerNodePool_IsTerraformElement(x interface{}) *bool {
+func GoogleContainerNodePool_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleContainerNodePool_IsTerraformElementParameters(x); err != nil {
@@ -1055,7 +1054,7 @@ func GoogleContainerNodePool_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleContainerNodePool.GoogleContainerNodePool",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1063,7 +1062,7 @@ func GoogleContainerNodePool_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleContainerNodePool_IsTerraformResource(x interface{}) *bool {
+func GoogleContainerNodePool_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleContainerNodePool_IsTerraformResourceParameters(x); err != nil {
@@ -1074,7 +1073,7 @@ func GoogleContainerNodePool_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleContainerNodePool.GoogleContainerNodePool",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1099,31 +1098,31 @@ func (g *jsiiProxy_GoogleContainerNodePool) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleContainerNodePool) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleContainerNodePool) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleContainerNodePool) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleContainerNodePool) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1139,7 +1138,7 @@ func (g *jsiiProxy_GoogleContainerNodePool) GetBooleanAttribute(terraformAttribu
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1155,7 +1154,7 @@ func (g *jsiiProxy_GoogleContainerNodePool) GetBooleanMapAttribute(terraformAttr
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1171,7 +1170,7 @@ func (g *jsiiProxy_GoogleContainerNodePool) GetListAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1187,7 +1186,7 @@ func (g *jsiiProxy_GoogleContainerNodePool) GetNumberAttribute(terraformAttribut
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1203,7 +1202,7 @@ func (g *jsiiProxy_GoogleContainerNodePool) GetNumberListAttribute(terraformAttr
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1219,7 +1218,7 @@ func (g *jsiiProxy_GoogleContainerNodePool) GetNumberMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1235,7 +1234,7 @@ func (g *jsiiProxy_GoogleContainerNodePool) GetStringAttribute(terraformAttribut
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1251,15 +1250,15 @@ func (g *jsiiProxy_GoogleContainerNodePool) GetStringMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleContainerNodePool) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleContainerNodePool) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1278,7 +1277,7 @@ func (g *jsiiProxy_GoogleContainerNodePool) ImportFrom(id *string, provider cdkt
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1291,7 +1290,7 @@ func (g *jsiiProxy_GoogleContainerNodePool) InterpolationForAttribute(terraformA
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1305,18 +1304,18 @@ func (g *jsiiProxy_GoogleContainerNodePool) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleContainerNodePool) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleContainerNodePool) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1327,7 +1326,7 @@ func (g *jsiiProxy_GoogleContainerNodePool) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1338,7 +1337,7 @@ func (g *jsiiProxy_GoogleContainerNodePool) OverrideLogicalId(newLogicalId *stri
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1349,7 +1348,7 @@ func (g *jsiiProxy_GoogleContainerNodePool) PutAutoscaling(value *GoogleContaine
 	_jsii_.InvokeVoid(
 		g,
 		"putAutoscaling",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1360,7 +1359,7 @@ func (g *jsiiProxy_GoogleContainerNodePool) PutManagement(value *GoogleContainer
 	_jsii_.InvokeVoid(
 		g,
 		"putManagement",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1371,7 +1370,7 @@ func (g *jsiiProxy_GoogleContainerNodePool) PutNetworkConfig(value *GoogleContai
 	_jsii_.InvokeVoid(
 		g,
 		"putNetworkConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1382,7 +1381,7 @@ func (g *jsiiProxy_GoogleContainerNodePool) PutNodeConfig(value *GoogleContainer
 	_jsii_.InvokeVoid(
 		g,
 		"putNodeConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1393,7 +1392,7 @@ func (g *jsiiProxy_GoogleContainerNodePool) PutPlacementPolicy(value *GoogleCont
 	_jsii_.InvokeVoid(
 		g,
 		"putPlacementPolicy",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1404,7 +1403,7 @@ func (g *jsiiProxy_GoogleContainerNodePool) PutQueuedProvisioning(value *GoogleC
 	_jsii_.InvokeVoid(
 		g,
 		"putQueuedProvisioning",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1415,7 +1414,7 @@ func (g *jsiiProxy_GoogleContainerNodePool) PutTimeouts(value *GoogleContainerNo
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1426,7 +1425,7 @@ func (g *jsiiProxy_GoogleContainerNodePool) PutUpgradeSettings(value *GoogleCont
 	_jsii_.InvokeVoid(
 		g,
 		"putUpgradeSettings",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1582,8 +1581,8 @@ func (g *jsiiProxy_GoogleContainerNodePool) ResetVersion() {
 	)
 }
 
-func (g *jsiiProxy_GoogleContainerNodePool) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleContainerNodePool) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1595,8 +1594,8 @@ func (g *jsiiProxy_GoogleContainerNodePool) SynthesizeAttributes() *map[string]i
 	return returns
 }
 
-func (g *jsiiProxy_GoogleContainerNodePool) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleContainerNodePool) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1608,8 +1607,8 @@ func (g *jsiiProxy_GoogleContainerNodePool) SynthesizeHclAttributes() *map[strin
 	return returns
 }
 
-func (g *jsiiProxy_GoogleContainerNodePool) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleContainerNodePool) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1621,8 +1620,8 @@ func (g *jsiiProxy_GoogleContainerNodePool) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleContainerNodePool) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleContainerNodePool) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1647,8 +1646,8 @@ func (g *jsiiProxy_GoogleContainerNodePool) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleContainerNodePool) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleContainerNodePool) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1659,4 +1658,3 @@ func (g *jsiiProxy_GoogleContainerNodePool) ToTerraform() interface{} {
 
 	return returns
 }
-

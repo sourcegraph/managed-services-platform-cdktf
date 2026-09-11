@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleComputeForwardingRule) validateAddMoveTargetParameters(
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeForwardingRule) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleComputeForwardingRule) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleComputeForwardingRule) validateMoveFromIdParameters(id 
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeForwardingRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleComputeForwardingRule) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -242,7 +242,7 @@ func validateGoogleComputeForwardingRule_GenerateConfigForImportParameters(scope
 	return nil
 }
 
-func validateGoogleComputeForwardingRule_IsConstructParameters(x interface{}) error {
+func validateGoogleComputeForwardingRule_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -250,7 +250,7 @@ func validateGoogleComputeForwardingRule_IsConstructParameters(x interface{}) er
 	return nil
 }
 
-func validateGoogleComputeForwardingRule_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleComputeForwardingRule_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -258,7 +258,7 @@ func validateGoogleComputeForwardingRule_IsTerraformElementParameters(x interfac
 	return nil
 }
 
-func validateGoogleComputeForwardingRule_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleComputeForwardingRule_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -266,7 +266,7 @@ func validateGoogleComputeForwardingRule_IsTerraformResourceParameters(x interfa
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeForwardingRule) validateSetAllowGlobalAccessParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeForwardingRule) validateSetAllowGlobalAccessParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -286,7 +286,7 @@ func (j *jsiiProxy_GoogleComputeForwardingRule) validateSetAllowGlobalAccessPara
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeForwardingRule) validateSetAllowPscGlobalAccessParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeForwardingRule) validateSetAllowPscGlobalAccessParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -306,7 +306,7 @@ func (j *jsiiProxy_GoogleComputeForwardingRule) validateSetAllowPscGlobalAccessP
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeForwardingRule) validateSetAllPortsParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeForwardingRule) validateSetAllPortsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -334,7 +334,7 @@ func (j *jsiiProxy_GoogleComputeForwardingRule) validateSetBackendServiceParamet
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeForwardingRule) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeForwardingRule) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -367,7 +367,7 @@ func (j *jsiiProxy_GoogleComputeForwardingRule) validateSetConnectionParameters(
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeForwardingRule) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeForwardingRule) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -472,7 +472,7 @@ func (j *jsiiProxy_GoogleComputeForwardingRule) validateSetIpVersionParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeForwardingRule) validateSetIsMirroringCollectorParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeForwardingRule) validateSetIsMirroringCollectorParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -540,7 +540,7 @@ func (j *jsiiProxy_GoogleComputeForwardingRule) validateSetNetworkTierParameters
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeForwardingRule) validateSetNoAutomateDnsZoneParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeForwardingRule) validateSetNoAutomateDnsZoneParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -584,7 +584,7 @@ func (j *jsiiProxy_GoogleComputeForwardingRule) validateSetProjectParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeForwardingRule) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleComputeForwardingRule) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -630,7 +630,7 @@ func (j *jsiiProxy_GoogleComputeForwardingRule) validateSetProvisionersParameter
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeForwardingRule) validateSetRecreateClosedPscParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeForwardingRule) validateSetRecreateClosedPscParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -708,4 +708,3 @@ func validateNewGoogleComputeForwardingRuleParameters(scope constructs.Construct
 
 	return nil
 }
-

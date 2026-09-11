@@ -18,15 +18,15 @@ type GoogleSccV2OrganizationSccBigQueryExports interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	Dataset() *string
 	SetDataset(val *string)
@@ -74,27 +74,27 @@ type GoogleSccV2OrganizationSccBigQueryExports interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() GoogleSccV2OrganizationSccBigQueryExportsTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	UpdateTime() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -112,7 +112,7 @@ type GoogleSccV2OrganizationSccBigQueryExports interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -124,7 +124,7 @@ type GoogleSccV2OrganizationSccBigQueryExports interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -142,17 +142,17 @@ type GoogleSccV2OrganizationSccBigQueryExports interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleSccV2OrganizationSccBigQueryExports
@@ -190,8 +190,8 @@ func (j *jsiiProxy_GoogleSccV2OrganizationSccBigQueryExports) CdktfStack() cdktf
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSccV2OrganizationSccBigQueryExports) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleSccV2OrganizationSccBigQueryExports) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -200,8 +200,8 @@ func (j *jsiiProxy_GoogleSccV2OrganizationSccBigQueryExports) Connection() inter
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSccV2OrganizationSccBigQueryExports) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleSccV2OrganizationSccBigQueryExports) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -210,8 +210,8 @@ func (j *jsiiProxy_GoogleSccV2OrganizationSccBigQueryExports) ConstructNodeMetad
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSccV2OrganizationSccBigQueryExports) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleSccV2OrganizationSccBigQueryExports) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -460,8 +460,8 @@ func (j *jsiiProxy_GoogleSccV2OrganizationSccBigQueryExports) Provider() cdktf.T
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSccV2OrganizationSccBigQueryExports) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleSccV2OrganizationSccBigQueryExports) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -470,8 +470,8 @@ func (j *jsiiProxy_GoogleSccV2OrganizationSccBigQueryExports) Provisioners() *[]
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSccV2OrganizationSccBigQueryExports) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleSccV2OrganizationSccBigQueryExports) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -490,8 +490,8 @@ func (j *jsiiProxy_GoogleSccV2OrganizationSccBigQueryExports) TerraformGenerator
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSccV2OrganizationSccBigQueryExports) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleSccV2OrganizationSccBigQueryExports) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -520,8 +520,8 @@ func (j *jsiiProxy_GoogleSccV2OrganizationSccBigQueryExports) Timeouts() GoogleS
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSccV2OrganizationSccBigQueryExports) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleSccV2OrganizationSccBigQueryExports) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -540,7 +540,6 @@ func (j *jsiiProxy_GoogleSccV2OrganizationSccBigQueryExports) UpdateTime() *stri
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_scc_v2_organization_scc_big_query_exports google_scc_v2_organization_scc_big_query_exports} Resource.
 func NewGoogleSccV2OrganizationSccBigQueryExports(scope constructs.Construct, id *string, config *GoogleSccV2OrganizationSccBigQueryExportsConfig) GoogleSccV2OrganizationSccBigQueryExports {
 	_init_.Initialize()
@@ -552,7 +551,7 @@ func NewGoogleSccV2OrganizationSccBigQueryExports(scope constructs.Construct, id
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleSccV2OrganizationSccBigQueryExports.GoogleSccV2OrganizationSccBigQueryExports",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -565,12 +564,12 @@ func NewGoogleSccV2OrganizationSccBigQueryExports_Override(g GoogleSccV2Organiza
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleSccV2OrganizationSccBigQueryExports.GoogleSccV2OrganizationSccBigQueryExports",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleSccV2OrganizationSccBigQueryExports)SetBigQueryExportId(val *string) {
+func (j *jsiiProxy_GoogleSccV2OrganizationSccBigQueryExports) SetBigQueryExportId(val *string) {
 	if err := j.validateSetBigQueryExportIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -581,7 +580,7 @@ func (j *jsiiProxy_GoogleSccV2OrganizationSccBigQueryExports)SetBigQueryExportId
 	)
 }
 
-func (j *jsiiProxy_GoogleSccV2OrganizationSccBigQueryExports)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleSccV2OrganizationSccBigQueryExports) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -592,7 +591,7 @@ func (j *jsiiProxy_GoogleSccV2OrganizationSccBigQueryExports)SetConnection(val i
 	)
 }
 
-func (j *jsiiProxy_GoogleSccV2OrganizationSccBigQueryExports)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleSccV2OrganizationSccBigQueryExports) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -603,7 +602,7 @@ func (j *jsiiProxy_GoogleSccV2OrganizationSccBigQueryExports)SetCount(val interf
 	)
 }
 
-func (j *jsiiProxy_GoogleSccV2OrganizationSccBigQueryExports)SetDataset(val *string) {
+func (j *jsiiProxy_GoogleSccV2OrganizationSccBigQueryExports) SetDataset(val *string) {
 	if err := j.validateSetDatasetParameters(val); err != nil {
 		panic(err)
 	}
@@ -614,7 +613,7 @@ func (j *jsiiProxy_GoogleSccV2OrganizationSccBigQueryExports)SetDataset(val *str
 	)
 }
 
-func (j *jsiiProxy_GoogleSccV2OrganizationSccBigQueryExports)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleSccV2OrganizationSccBigQueryExports) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -622,7 +621,7 @@ func (j *jsiiProxy_GoogleSccV2OrganizationSccBigQueryExports)SetDependsOn(val *[
 	)
 }
 
-func (j *jsiiProxy_GoogleSccV2OrganizationSccBigQueryExports)SetDescription(val *string) {
+func (j *jsiiProxy_GoogleSccV2OrganizationSccBigQueryExports) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -633,7 +632,7 @@ func (j *jsiiProxy_GoogleSccV2OrganizationSccBigQueryExports)SetDescription(val 
 	)
 }
 
-func (j *jsiiProxy_GoogleSccV2OrganizationSccBigQueryExports)SetFilter(val *string) {
+func (j *jsiiProxy_GoogleSccV2OrganizationSccBigQueryExports) SetFilter(val *string) {
 	if err := j.validateSetFilterParameters(val); err != nil {
 		panic(err)
 	}
@@ -644,7 +643,7 @@ func (j *jsiiProxy_GoogleSccV2OrganizationSccBigQueryExports)SetFilter(val *stri
 	)
 }
 
-func (j *jsiiProxy_GoogleSccV2OrganizationSccBigQueryExports)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleSccV2OrganizationSccBigQueryExports) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -652,7 +651,7 @@ func (j *jsiiProxy_GoogleSccV2OrganizationSccBigQueryExports)SetForEach(val cdkt
 	)
 }
 
-func (j *jsiiProxy_GoogleSccV2OrganizationSccBigQueryExports)SetId(val *string) {
+func (j *jsiiProxy_GoogleSccV2OrganizationSccBigQueryExports) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -663,7 +662,7 @@ func (j *jsiiProxy_GoogleSccV2OrganizationSccBigQueryExports)SetId(val *string) 
 	)
 }
 
-func (j *jsiiProxy_GoogleSccV2OrganizationSccBigQueryExports)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleSccV2OrganizationSccBigQueryExports) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -674,7 +673,7 @@ func (j *jsiiProxy_GoogleSccV2OrganizationSccBigQueryExports)SetLifecycle(val *c
 	)
 }
 
-func (j *jsiiProxy_GoogleSccV2OrganizationSccBigQueryExports)SetLocation(val *string) {
+func (j *jsiiProxy_GoogleSccV2OrganizationSccBigQueryExports) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -685,7 +684,7 @@ func (j *jsiiProxy_GoogleSccV2OrganizationSccBigQueryExports)SetLocation(val *st
 	)
 }
 
-func (j *jsiiProxy_GoogleSccV2OrganizationSccBigQueryExports)SetName(val *string) {
+func (j *jsiiProxy_GoogleSccV2OrganizationSccBigQueryExports) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -696,7 +695,7 @@ func (j *jsiiProxy_GoogleSccV2OrganizationSccBigQueryExports)SetName(val *string
 	)
 }
 
-func (j *jsiiProxy_GoogleSccV2OrganizationSccBigQueryExports)SetOrganization(val *string) {
+func (j *jsiiProxy_GoogleSccV2OrganizationSccBigQueryExports) SetOrganization(val *string) {
 	if err := j.validateSetOrganizationParameters(val); err != nil {
 		panic(err)
 	}
@@ -707,7 +706,7 @@ func (j *jsiiProxy_GoogleSccV2OrganizationSccBigQueryExports)SetOrganization(val
 	)
 }
 
-func (j *jsiiProxy_GoogleSccV2OrganizationSccBigQueryExports)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleSccV2OrganizationSccBigQueryExports) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -715,7 +714,7 @@ func (j *jsiiProxy_GoogleSccV2OrganizationSccBigQueryExports)SetProvider(val cdk
 	)
 }
 
-func (j *jsiiProxy_GoogleSccV2OrganizationSccBigQueryExports)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleSccV2OrganizationSccBigQueryExports) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -738,7 +737,7 @@ func GoogleSccV2OrganizationSccBigQueryExports_GenerateConfigForImport(scope con
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleSccV2OrganizationSccBigQueryExports.GoogleSccV2OrganizationSccBigQueryExports",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -762,7 +761,7 @@ func GoogleSccV2OrganizationSccBigQueryExports_GenerateConfigForImport(scope con
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleSccV2OrganizationSccBigQueryExports_IsConstruct(x interface{}) *bool {
+func GoogleSccV2OrganizationSccBigQueryExports_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleSccV2OrganizationSccBigQueryExports_IsConstructParameters(x); err != nil {
@@ -773,7 +772,7 @@ func GoogleSccV2OrganizationSccBigQueryExports_IsConstruct(x interface{}) *bool 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleSccV2OrganizationSccBigQueryExports.GoogleSccV2OrganizationSccBigQueryExports",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -781,7 +780,7 @@ func GoogleSccV2OrganizationSccBigQueryExports_IsConstruct(x interface{}) *bool 
 }
 
 // Experimental.
-func GoogleSccV2OrganizationSccBigQueryExports_IsTerraformElement(x interface{}) *bool {
+func GoogleSccV2OrganizationSccBigQueryExports_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleSccV2OrganizationSccBigQueryExports_IsTerraformElementParameters(x); err != nil {
@@ -792,7 +791,7 @@ func GoogleSccV2OrganizationSccBigQueryExports_IsTerraformElement(x interface{})
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleSccV2OrganizationSccBigQueryExports.GoogleSccV2OrganizationSccBigQueryExports",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -800,7 +799,7 @@ func GoogleSccV2OrganizationSccBigQueryExports_IsTerraformElement(x interface{})
 }
 
 // Experimental.
-func GoogleSccV2OrganizationSccBigQueryExports_IsTerraformResource(x interface{}) *bool {
+func GoogleSccV2OrganizationSccBigQueryExports_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleSccV2OrganizationSccBigQueryExports_IsTerraformResourceParameters(x); err != nil {
@@ -811,7 +810,7 @@ func GoogleSccV2OrganizationSccBigQueryExports_IsTerraformResource(x interface{}
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleSccV2OrganizationSccBigQueryExports.GoogleSccV2OrganizationSccBigQueryExports",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -836,31 +835,31 @@ func (g *jsiiProxy_GoogleSccV2OrganizationSccBigQueryExports) AddMoveTarget(move
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleSccV2OrganizationSccBigQueryExports) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleSccV2OrganizationSccBigQueryExports) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleSccV2OrganizationSccBigQueryExports) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleSccV2OrganizationSccBigQueryExports) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -876,7 +875,7 @@ func (g *jsiiProxy_GoogleSccV2OrganizationSccBigQueryExports) GetBooleanAttribut
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -892,7 +891,7 @@ func (g *jsiiProxy_GoogleSccV2OrganizationSccBigQueryExports) GetBooleanMapAttri
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -908,7 +907,7 @@ func (g *jsiiProxy_GoogleSccV2OrganizationSccBigQueryExports) GetListAttribute(t
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -924,7 +923,7 @@ func (g *jsiiProxy_GoogleSccV2OrganizationSccBigQueryExports) GetNumberAttribute
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -940,7 +939,7 @@ func (g *jsiiProxy_GoogleSccV2OrganizationSccBigQueryExports) GetNumberListAttri
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -956,7 +955,7 @@ func (g *jsiiProxy_GoogleSccV2OrganizationSccBigQueryExports) GetNumberMapAttrib
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -972,7 +971,7 @@ func (g *jsiiProxy_GoogleSccV2OrganizationSccBigQueryExports) GetStringAttribute
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -988,15 +987,15 @@ func (g *jsiiProxy_GoogleSccV2OrganizationSccBigQueryExports) GetStringMapAttrib
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleSccV2OrganizationSccBigQueryExports) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleSccV2OrganizationSccBigQueryExports) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1015,7 +1014,7 @@ func (g *jsiiProxy_GoogleSccV2OrganizationSccBigQueryExports) ImportFrom(id *str
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1028,7 +1027,7 @@ func (g *jsiiProxy_GoogleSccV2OrganizationSccBigQueryExports) InterpolationForAt
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1042,18 +1041,18 @@ func (g *jsiiProxy_GoogleSccV2OrganizationSccBigQueryExports) MoveFromId(id *str
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleSccV2OrganizationSccBigQueryExports) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleSccV2OrganizationSccBigQueryExports) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1064,7 +1063,7 @@ func (g *jsiiProxy_GoogleSccV2OrganizationSccBigQueryExports) MoveToId(id *strin
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1075,7 +1074,7 @@ func (g *jsiiProxy_GoogleSccV2OrganizationSccBigQueryExports) OverrideLogicalId(
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1086,7 +1085,7 @@ func (g *jsiiProxy_GoogleSccV2OrganizationSccBigQueryExports) PutTimeouts(value 
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1154,8 +1153,8 @@ func (g *jsiiProxy_GoogleSccV2OrganizationSccBigQueryExports) ResetTimeouts() {
 	)
 }
 
-func (g *jsiiProxy_GoogleSccV2OrganizationSccBigQueryExports) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleSccV2OrganizationSccBigQueryExports) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1167,8 +1166,8 @@ func (g *jsiiProxy_GoogleSccV2OrganizationSccBigQueryExports) SynthesizeAttribut
 	return returns
 }
 
-func (g *jsiiProxy_GoogleSccV2OrganizationSccBigQueryExports) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleSccV2OrganizationSccBigQueryExports) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1180,8 +1179,8 @@ func (g *jsiiProxy_GoogleSccV2OrganizationSccBigQueryExports) SynthesizeHclAttri
 	return returns
 }
 
-func (g *jsiiProxy_GoogleSccV2OrganizationSccBigQueryExports) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleSccV2OrganizationSccBigQueryExports) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1193,8 +1192,8 @@ func (g *jsiiProxy_GoogleSccV2OrganizationSccBigQueryExports) ToHclTerraform() i
 	return returns
 }
 
-func (g *jsiiProxy_GoogleSccV2OrganizationSccBigQueryExports) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleSccV2OrganizationSccBigQueryExports) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1219,8 +1218,8 @@ func (g *jsiiProxy_GoogleSccV2OrganizationSccBigQueryExports) ToString() *string
 	return returns
 }
 
-func (g *jsiiProxy_GoogleSccV2OrganizationSccBigQueryExports) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleSccV2OrganizationSccBigQueryExports) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1231,4 +1230,3 @@ func (g *jsiiProxy_GoogleSccV2OrganizationSccBigQueryExports) ToTerraform() inte
 
 	return returns
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleColabRuntimeTemplate.GoogleColabRuntimeTemplate",
-		reflect.TypeOf((*GoogleColabRuntimeTemplate)(nil)).Elem(),
+		reflect.TypeFor[GoogleColabRuntimeTemplate](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -113,7 +113,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleColabRuntimeTemplate{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -121,15 +121,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleColabRuntimeTemplate.GoogleColabRuntimeTemplateConfig",
-		reflect.TypeOf((*GoogleColabRuntimeTemplateConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleColabRuntimeTemplateConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleColabRuntimeTemplate.GoogleColabRuntimeTemplateDataPersistentDiskSpec",
-		reflect.TypeOf((*GoogleColabRuntimeTemplateDataPersistentDiskSpec)(nil)).Elem(),
+		reflect.TypeFor[GoogleColabRuntimeTemplateDataPersistentDiskSpec](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleColabRuntimeTemplate.GoogleColabRuntimeTemplateDataPersistentDiskSpecOutputReference",
-		reflect.TypeOf((*GoogleColabRuntimeTemplateDataPersistentDiskSpecOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleColabRuntimeTemplateDataPersistentDiskSpecOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -159,7 +159,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleColabRuntimeTemplateDataPersistentDiskSpecOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -167,11 +167,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleColabRuntimeTemplate.GoogleColabRuntimeTemplateEncryptionSpec",
-		reflect.TypeOf((*GoogleColabRuntimeTemplateEncryptionSpec)(nil)).Elem(),
+		reflect.TypeFor[GoogleColabRuntimeTemplateEncryptionSpec](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleColabRuntimeTemplate.GoogleColabRuntimeTemplateEncryptionSpecOutputReference",
-		reflect.TypeOf((*GoogleColabRuntimeTemplateEncryptionSpecOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleColabRuntimeTemplateEncryptionSpecOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -198,7 +198,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleColabRuntimeTemplateEncryptionSpecOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -206,11 +206,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleColabRuntimeTemplate.GoogleColabRuntimeTemplateEucConfig",
-		reflect.TypeOf((*GoogleColabRuntimeTemplateEucConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleColabRuntimeTemplateEucConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleColabRuntimeTemplate.GoogleColabRuntimeTemplateEucConfigOutputReference",
-		reflect.TypeOf((*GoogleColabRuntimeTemplateEucConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleColabRuntimeTemplateEucConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -237,7 +237,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleColabRuntimeTemplateEucConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -245,11 +245,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleColabRuntimeTemplate.GoogleColabRuntimeTemplateIdleShutdownConfig",
-		reflect.TypeOf((*GoogleColabRuntimeTemplateIdleShutdownConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleColabRuntimeTemplateIdleShutdownConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleColabRuntimeTemplate.GoogleColabRuntimeTemplateIdleShutdownConfigOutputReference",
-		reflect.TypeOf((*GoogleColabRuntimeTemplateIdleShutdownConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleColabRuntimeTemplateIdleShutdownConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -276,7 +276,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleColabRuntimeTemplateIdleShutdownConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -284,11 +284,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleColabRuntimeTemplate.GoogleColabRuntimeTemplateMachineSpec",
-		reflect.TypeOf((*GoogleColabRuntimeTemplateMachineSpec)(nil)).Elem(),
+		reflect.TypeFor[GoogleColabRuntimeTemplateMachineSpec](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleColabRuntimeTemplate.GoogleColabRuntimeTemplateMachineSpecOutputReference",
-		reflect.TypeOf((*GoogleColabRuntimeTemplateMachineSpecOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleColabRuntimeTemplateMachineSpecOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "acceleratorCount", GoGetter: "AcceleratorCount"},
 			_jsii_.MemberProperty{JsiiProperty: "acceleratorCountInput", GoGetter: "AcceleratorCountInput"},
@@ -321,7 +321,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleColabRuntimeTemplateMachineSpecOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -329,11 +329,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleColabRuntimeTemplate.GoogleColabRuntimeTemplateNetworkSpec",
-		reflect.TypeOf((*GoogleColabRuntimeTemplateNetworkSpec)(nil)).Elem(),
+		reflect.TypeFor[GoogleColabRuntimeTemplateNetworkSpec](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleColabRuntimeTemplate.GoogleColabRuntimeTemplateNetworkSpecOutputReference",
-		reflect.TypeOf((*GoogleColabRuntimeTemplateNetworkSpecOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleColabRuntimeTemplateNetworkSpecOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -366,7 +366,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleColabRuntimeTemplateNetworkSpecOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -374,11 +374,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleColabRuntimeTemplate.GoogleColabRuntimeTemplateShieldedVmConfig",
-		reflect.TypeOf((*GoogleColabRuntimeTemplateShieldedVmConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleColabRuntimeTemplateShieldedVmConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleColabRuntimeTemplate.GoogleColabRuntimeTemplateShieldedVmConfigOutputReference",
-		reflect.TypeOf((*GoogleColabRuntimeTemplateShieldedVmConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleColabRuntimeTemplateShieldedVmConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -405,7 +405,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleColabRuntimeTemplateShieldedVmConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -413,15 +413,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleColabRuntimeTemplate.GoogleColabRuntimeTemplateSoftwareConfig",
-		reflect.TypeOf((*GoogleColabRuntimeTemplateSoftwareConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleColabRuntimeTemplateSoftwareConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleColabRuntimeTemplate.GoogleColabRuntimeTemplateSoftwareConfigEnv",
-		reflect.TypeOf((*GoogleColabRuntimeTemplateSoftwareConfigEnv)(nil)).Elem(),
+		reflect.TypeFor[GoogleColabRuntimeTemplateSoftwareConfigEnv](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleColabRuntimeTemplate.GoogleColabRuntimeTemplateSoftwareConfigEnvList",
-		reflect.TypeOf((*GoogleColabRuntimeTemplateSoftwareConfigEnvList)(nil)).Elem(),
+		reflect.TypeFor[GoogleColabRuntimeTemplateSoftwareConfigEnvList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -435,7 +435,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleColabRuntimeTemplateSoftwareConfigEnvList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -443,7 +443,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleColabRuntimeTemplate.GoogleColabRuntimeTemplateSoftwareConfigEnvOutputReference",
-		reflect.TypeOf((*GoogleColabRuntimeTemplateSoftwareConfigEnvOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleColabRuntimeTemplateSoftwareConfigEnvOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -473,7 +473,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleColabRuntimeTemplateSoftwareConfigEnvOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -481,7 +481,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleColabRuntimeTemplate.GoogleColabRuntimeTemplateSoftwareConfigOutputReference",
-		reflect.TypeOf((*GoogleColabRuntimeTemplateSoftwareConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleColabRuntimeTemplateSoftwareConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -513,7 +513,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleColabRuntimeTemplateSoftwareConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -521,11 +521,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleColabRuntimeTemplate.GoogleColabRuntimeTemplateSoftwareConfigPostStartupScriptConfig",
-		reflect.TypeOf((*GoogleColabRuntimeTemplateSoftwareConfigPostStartupScriptConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleColabRuntimeTemplateSoftwareConfigPostStartupScriptConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleColabRuntimeTemplate.GoogleColabRuntimeTemplateSoftwareConfigPostStartupScriptConfigOutputReference",
-		reflect.TypeOf((*GoogleColabRuntimeTemplateSoftwareConfigPostStartupScriptConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleColabRuntimeTemplateSoftwareConfigPostStartupScriptConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -558,7 +558,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleColabRuntimeTemplateSoftwareConfigPostStartupScriptConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -566,11 +566,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleColabRuntimeTemplate.GoogleColabRuntimeTemplateTimeouts",
-		reflect.TypeOf((*GoogleColabRuntimeTemplateTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleColabRuntimeTemplateTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleColabRuntimeTemplate.GoogleColabRuntimeTemplateTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleColabRuntimeTemplateTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleColabRuntimeTemplateTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -603,7 +603,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleColabRuntimeTemplateTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

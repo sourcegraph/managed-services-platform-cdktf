@@ -109,7 +109,7 @@ func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigHostOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -209,4 +209,3 @@ func validateNewGoogleWorkstationsWorkstationConfigHostOutputReferenceParameters
 
 	return nil
 }
-

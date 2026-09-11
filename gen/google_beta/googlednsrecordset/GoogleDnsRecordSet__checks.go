@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleDnsRecordSet) validateAddMoveTargetParameters(moveTarge
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDnsRecordSet) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleDnsRecordSet) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleDnsRecordSet) validateMoveFromIdParameters(id *string) 
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDnsRecordSet) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleDnsRecordSet) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateGoogleDnsRecordSet_GenerateConfigForImportParameters(scope construc
 	return nil
 }
 
-func validateGoogleDnsRecordSet_IsConstructParameters(x interface{}) error {
+func validateGoogleDnsRecordSet_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateGoogleDnsRecordSet_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateGoogleDnsRecordSet_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleDnsRecordSet_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateGoogleDnsRecordSet_IsTerraformElementParameters(x interface{}) erro
 	return nil
 }
 
-func validateGoogleDnsRecordSet_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleDnsRecordSet_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateGoogleDnsRecordSet_IsTerraformResourceParameters(x interface{}) err
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDnsRecordSet) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDnsRecordSet) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_GoogleDnsRecordSet) validateSetConnectionParameters(val inter
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDnsRecordSet) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDnsRecordSet) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -385,7 +385,7 @@ func (j *jsiiProxy_GoogleDnsRecordSet) validateSetProjectParameters(val *string)
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDnsRecordSet) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleDnsRecordSet) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -473,4 +473,3 @@ func validateNewGoogleDnsRecordSetParameters(scope constructs.Construct, id *str
 
 	return nil
 }
-

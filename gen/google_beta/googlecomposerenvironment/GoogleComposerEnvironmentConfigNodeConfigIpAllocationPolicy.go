@@ -1,6 +1,5 @@
 package googlecomposerenvironment
 
-
 type GoogleComposerEnvironmentConfigNodeConfigIpAllocationPolicy struct {
 	// The IP address range used to allocate IP addresses to pods in the cluster.
 	//
@@ -31,6 +30,5 @@ type GoogleComposerEnvironmentConfigNodeConfigIpAllocationPolicy struct {
 	// If true, a VPC-native cluster is created. Defaults to true if the ip_allocation_policy block is present in config. This field is only supported for Cloud Composer environments in versions composer-1.*.*-airflow-*.*.*. Environments in newer versions always use VPC-native GKE clusters.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_composer_environment#use_ip_aliases GoogleComposerEnvironment#use_ip_aliases}
-	UseIpAliases interface{} `field:"optional" json:"useIpAliases" yaml:"useIpAliases"`
+	UseIpAliases any `field:"optional" json:"useIpAliases" yaml:"useIpAliases"`
 }
-

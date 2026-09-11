@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleBillingBudgetBudgetFilterCustomPeriodEndDateOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBillingBudgetBudgetFilterCustomPeriodEndDateOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBillingBudgetBudgetFilterCustomPeriodEndDateOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewGoogleBillingBudgetBudgetFilterCustomPeriodEndDateOutputReferenc
 
 	return nil
 }
-

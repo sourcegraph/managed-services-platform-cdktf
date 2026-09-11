@@ -1,6 +1,5 @@
 package googlecloudrunv2job
 
-
 type GoogleCloudRunV2JobTemplateTemplateVolumesNfs struct {
 	// Hostname or IP address of the NFS server.
 	//
@@ -13,6 +12,5 @@ type GoogleCloudRunV2JobTemplateTemplateVolumesNfs struct {
 	// If true, mount this volume as read-only in all mounts.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_cloud_run_v2_job#read_only GoogleCloudRunV2Job#read_only}
-	ReadOnly interface{} `field:"optional" json:"readOnly" yaml:"readOnly"`
+	ReadOnly any `field:"optional" json:"readOnly" yaml:"readOnly"`
 }
-

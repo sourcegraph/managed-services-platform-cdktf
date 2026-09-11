@@ -120,7 +120,7 @@ func (g *jsiiProxy_GoogleBigqueryJobExtractOutputReference) validateResolveParam
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigqueryJobExtractOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBigqueryJobExtractOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -225,7 +225,7 @@ func (j *jsiiProxy_GoogleBigqueryJobExtractOutputReference) validateSetInternalV
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigqueryJobExtractOutputReference) validateSetPrintHeaderParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBigqueryJobExtractOutputReference) validateSetPrintHeaderParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -261,7 +261,7 @@ func (j *jsiiProxy_GoogleBigqueryJobExtractOutputReference) validateSetTerraform
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigqueryJobExtractOutputReference) validateSetUseAvroLogicalTypesParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBigqueryJobExtractOutputReference) validateSetUseAvroLogicalTypesParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -292,4 +292,3 @@ func validateNewGoogleBigqueryJobExtractOutputReferenceParameters(terraformResou
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleContainerAwsNodePoolConfigInstancePlacementOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerAwsNodePoolConfigInstancePlacementOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContainerAwsNodePoolConfigInstancePlacementOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleContainerAwsNodePoolConfigInstancePlacementOutputReference
 
 	return nil
 }
-

@@ -1,6 +1,5 @@
 package googledatastreamstream
 
-
 type GoogleDatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemas struct {
 	// Database name.
 	//
@@ -9,6 +8,5 @@ type GoogleDatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemas
 	// postgresql_tables block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_datastream_stream#postgresql_tables GoogleDatastreamStream#postgresql_tables}
-	PostgresqlTables interface{} `field:"optional" json:"postgresqlTables" yaml:"postgresqlTables"`
+	PostgresqlTables any `field:"optional" json:"postgresqlTables" yaml:"postgresqlTables"`
 }
-

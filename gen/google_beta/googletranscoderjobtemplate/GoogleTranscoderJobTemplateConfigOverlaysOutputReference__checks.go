@@ -90,7 +90,7 @@ func (g *jsiiProxy_GoogleTranscoderJobTemplateConfigOverlaysOutputReference) val
 	return nil
 }
 
-func (g *jsiiProxy_GoogleTranscoderJobTemplateConfigOverlaysOutputReference) validatePutAnimationsParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleTranscoderJobTemplateConfigOverlaysOutputReference) validatePutAnimationsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -140,7 +140,7 @@ func (g *jsiiProxy_GoogleTranscoderJobTemplateConfigOverlaysOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_GoogleTranscoderJobTemplateConfigOverlaysOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleTranscoderJobTemplateConfigOverlaysOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -205,7 +205,7 @@ func (j *jsiiProxy_GoogleTranscoderJobTemplateConfigOverlaysOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_GoogleTranscoderJobTemplateConfigOverlaysOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleTranscoderJobTemplateConfigOverlaysOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -264,4 +264,3 @@ func validateNewGoogleTranscoderJobTemplateConfigOverlaysOutputReferenceParamete
 
 	return nil
 }
-

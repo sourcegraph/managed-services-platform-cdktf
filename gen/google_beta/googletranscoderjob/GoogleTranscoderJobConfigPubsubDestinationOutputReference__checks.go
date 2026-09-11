@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleTranscoderJobConfigPubsubDestinationOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleTranscoderJobConfigPubsubDestinationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleTranscoderJobConfigPubsubDestinationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleTranscoderJobConfigPubsubDestinationOutputReferenceParamet
 
 	return nil
 }
-

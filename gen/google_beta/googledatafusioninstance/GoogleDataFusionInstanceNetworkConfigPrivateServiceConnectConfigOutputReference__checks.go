@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleDataFusionInstanceNetworkConfigPrivateServiceConnectCon
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataFusionInstanceNetworkConfigPrivateServiceConnectConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataFusionInstanceNetworkConfigPrivateServiceConnectConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGoogleDataFusionInstanceNetworkConfigPrivateServiceConnectConfig
 
 	return nil
 }
-

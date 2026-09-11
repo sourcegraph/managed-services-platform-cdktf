@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleComputeBackendServiceLocalityLbPoliciesList) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeBackendServiceLocalityLbPoliciesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeBackendServiceLocalityLbPoliciesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleComputeBackendServiceLocalityLbPoliciesListParameters(terr
 
 	return nil
 }
-

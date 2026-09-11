@@ -109,7 +109,7 @@ func (g *jsiiProxy_GoogleDataprocMetastoreServiceScalingConfigAutoscalingConfigO
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataprocMetastoreServiceScalingConfigAutoscalingConfigOutputReference) validateSetAutoscalingEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataprocMetastoreServiceScalingConfigAutoscalingConfigOutputReference) validateSetAutoscalingEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (j *jsiiProxy_GoogleDataprocMetastoreServiceScalingConfigAutoscalingConfigO
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataprocMetastoreServiceScalingConfigAutoscalingConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataprocMetastoreServiceScalingConfigAutoscalingConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -229,4 +229,3 @@ func validateNewGoogleDataprocMetastoreServiceScalingConfigAutoscalingConfigOutp
 
 	return nil
 }
-

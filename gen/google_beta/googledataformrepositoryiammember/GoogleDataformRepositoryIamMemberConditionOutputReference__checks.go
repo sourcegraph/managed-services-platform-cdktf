@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleDataformRepositoryIamMemberConditionOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataformRepositoryIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataformRepositoryIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewGoogleDataformRepositoryIamMemberConditionOutputReferenceParamet
 
 	return nil
 }
-

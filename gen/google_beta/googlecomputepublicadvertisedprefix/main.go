@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputePublicAdvertisedPrefix.GoogleComputePublicAdvertisedPrefix",
-		reflect.TypeOf((*GoogleComputePublicAdvertisedPrefix)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputePublicAdvertisedPrefix](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -77,7 +77,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputePublicAdvertisedPrefix{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -85,15 +85,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleComputePublicAdvertisedPrefix.GoogleComputePublicAdvertisedPrefixConfig",
-		reflect.TypeOf((*GoogleComputePublicAdvertisedPrefixConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputePublicAdvertisedPrefixConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleComputePublicAdvertisedPrefix.GoogleComputePublicAdvertisedPrefixTimeouts",
-		reflect.TypeOf((*GoogleComputePublicAdvertisedPrefixTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputePublicAdvertisedPrefixTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputePublicAdvertisedPrefix.GoogleComputePublicAdvertisedPrefixTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleComputePublicAdvertisedPrefixTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputePublicAdvertisedPrefixTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -123,7 +123,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputePublicAdvertisedPrefixTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

@@ -6,9 +6,9 @@ import (
 
 type GoogleGkeBackupBackupPlanConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type GoogleGkeBackupBackupPlanConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The source cluster from which Backups will be created via this BackupPlan.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_gke_backup_backup_plan#cluster GoogleGkeBackupBackupPlan#cluster}
@@ -46,7 +46,7 @@ type GoogleGkeBackupBackupPlanConfig struct {
 	// from being created via this BackupPlan (including scheduled Backups).
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_gke_backup_backup_plan#deactivated GoogleGkeBackupBackupPlan#deactivated}
-	Deactivated interface{} `field:"optional" json:"deactivated" yaml:"deactivated"`
+	Deactivated any `field:"optional" json:"deactivated" yaml:"deactivated"`
 	// User specified descriptive string for this BackupPlan.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_gke_backup_backup_plan#description GoogleGkeBackupBackupPlan#description}
@@ -78,4 +78,3 @@ type GoogleGkeBackupBackupPlanConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_gke_backup_backup_plan#timeouts GoogleGkeBackupBackupPlan#timeouts}
 	Timeouts *GoogleGkeBackupBackupPlanTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

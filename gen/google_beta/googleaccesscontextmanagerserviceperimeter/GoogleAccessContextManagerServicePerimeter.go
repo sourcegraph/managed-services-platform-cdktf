@@ -15,15 +15,15 @@ type GoogleAccessContextManagerServicePerimeter interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -63,11 +63,11 @@ type GoogleAccessContextManagerServicePerimeter interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Spec() GoogleAccessContextManagerServicePerimeterSpecOutputReference
 	SpecInput() *GoogleAccessContextManagerServicePerimeterSpec
 	Status() GoogleAccessContextManagerServicePerimeterStatusOutputReference
@@ -75,25 +75,25 @@ type GoogleAccessContextManagerServicePerimeter interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() GoogleAccessContextManagerServicePerimeterTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	Title() *string
 	SetTitle(val *string)
 	TitleInput() *string
 	UpdateTime() *string
-	UseExplicitDryRunSpec() interface{}
-	SetUseExplicitDryRunSpec(val interface{})
-	UseExplicitDryRunSpecInput() interface{}
+	UseExplicitDryRunSpec() any
+	SetUseExplicitDryRunSpec(val any)
+	UseExplicitDryRunSpecInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -111,7 +111,7 @@ type GoogleAccessContextManagerServicePerimeter interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -123,7 +123,7 @@ type GoogleAccessContextManagerServicePerimeter interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -143,17 +143,17 @@ type GoogleAccessContextManagerServicePerimeter interface {
 	ResetStatus()
 	ResetTimeouts()
 	ResetUseExplicitDryRunSpec()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleAccessContextManagerServicePerimeter
@@ -171,8 +171,8 @@ func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeter) CdktfStack() cdkt
 	return returns
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeter) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeter) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -181,8 +181,8 @@ func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeter) Connection() inte
 	return returns
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeter) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeter) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -191,8 +191,8 @@ func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeter) ConstructNodeMeta
 	return returns
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeter) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeter) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -381,8 +381,8 @@ func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeter) Provider() cdktf.
 	return returns
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeter) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeter) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -391,8 +391,8 @@ func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeter) Provisioners() *[
 	return returns
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeter) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeter) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -451,8 +451,8 @@ func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeter) TerraformGenerato
 	return returns
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeter) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeter) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -481,8 +481,8 @@ func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeter) Timeouts() Google
 	return returns
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeter) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeter) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -521,8 +521,8 @@ func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeter) UpdateTime() *str
 	return returns
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeter) UseExplicitDryRunSpec() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeter) UseExplicitDryRunSpec() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"useExplicitDryRunSpec",
@@ -531,8 +531,8 @@ func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeter) UseExplicitDryRun
 	return returns
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeter) UseExplicitDryRunSpecInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeter) UseExplicitDryRunSpecInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"useExplicitDryRunSpecInput",
@@ -540,7 +540,6 @@ func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeter) UseExplicitDryRun
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_access_context_manager_service_perimeter google_access_context_manager_service_perimeter} Resource.
 func NewGoogleAccessContextManagerServicePerimeter(scope constructs.Construct, id *string, config *GoogleAccessContextManagerServicePerimeterConfig) GoogleAccessContextManagerServicePerimeter {
@@ -553,7 +552,7 @@ func NewGoogleAccessContextManagerServicePerimeter(scope constructs.Construct, i
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleAccessContextManagerServicePerimeter.GoogleAccessContextManagerServicePerimeter",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -566,12 +565,12 @@ func NewGoogleAccessContextManagerServicePerimeter_Override(g GoogleAccessContex
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleAccessContextManagerServicePerimeter.GoogleAccessContextManagerServicePerimeter",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeter)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeter) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -582,7 +581,7 @@ func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeter)SetConnection(val 
 	)
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeter)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeter) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -593,7 +592,7 @@ func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeter)SetCount(val inter
 	)
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeter)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeter) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -601,7 +600,7 @@ func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeter)SetDependsOn(val *
 	)
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeter)SetDescription(val *string) {
+func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeter) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -612,7 +611,7 @@ func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeter)SetDescription(val
 	)
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeter)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeter) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -620,7 +619,7 @@ func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeter)SetForEach(val cdk
 	)
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeter)SetId(val *string) {
+func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeter) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -631,7 +630,7 @@ func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeter)SetId(val *string)
 	)
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeter)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeter) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -642,7 +641,7 @@ func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeter)SetLifecycle(val *
 	)
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeter)SetName(val *string) {
+func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeter) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -653,7 +652,7 @@ func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeter)SetName(val *strin
 	)
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeter)SetParent(val *string) {
+func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeter) SetParent(val *string) {
 	if err := j.validateSetParentParameters(val); err != nil {
 		panic(err)
 	}
@@ -664,7 +663,7 @@ func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeter)SetParent(val *str
 	)
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeter)SetPerimeterType(val *string) {
+func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeter) SetPerimeterType(val *string) {
 	if err := j.validateSetPerimeterTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -675,7 +674,7 @@ func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeter)SetPerimeterType(v
 	)
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeter)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeter) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -683,7 +682,7 @@ func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeter)SetProvider(val cd
 	)
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeter)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeter) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -694,7 +693,7 @@ func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeter)SetProvisioners(va
 	)
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeter)SetTitle(val *string) {
+func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeter) SetTitle(val *string) {
 	if err := j.validateSetTitleParameters(val); err != nil {
 		panic(err)
 	}
@@ -705,7 +704,7 @@ func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeter)SetTitle(val *stri
 	)
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeter)SetUseExplicitDryRunSpec(val interface{}) {
+func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeter) SetUseExplicitDryRunSpec(val any) {
 	if err := j.validateSetUseExplicitDryRunSpecParameters(val); err != nil {
 		panic(err)
 	}
@@ -728,7 +727,7 @@ func GoogleAccessContextManagerServicePerimeter_GenerateConfigForImport(scope co
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleAccessContextManagerServicePerimeter.GoogleAccessContextManagerServicePerimeter",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -752,7 +751,7 @@ func GoogleAccessContextManagerServicePerimeter_GenerateConfigForImport(scope co
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleAccessContextManagerServicePerimeter_IsConstruct(x interface{}) *bool {
+func GoogleAccessContextManagerServicePerimeter_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleAccessContextManagerServicePerimeter_IsConstructParameters(x); err != nil {
@@ -763,7 +762,7 @@ func GoogleAccessContextManagerServicePerimeter_IsConstruct(x interface{}) *bool
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleAccessContextManagerServicePerimeter.GoogleAccessContextManagerServicePerimeter",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -771,7 +770,7 @@ func GoogleAccessContextManagerServicePerimeter_IsConstruct(x interface{}) *bool
 }
 
 // Experimental.
-func GoogleAccessContextManagerServicePerimeter_IsTerraformElement(x interface{}) *bool {
+func GoogleAccessContextManagerServicePerimeter_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleAccessContextManagerServicePerimeter_IsTerraformElementParameters(x); err != nil {
@@ -782,7 +781,7 @@ func GoogleAccessContextManagerServicePerimeter_IsTerraformElement(x interface{}
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleAccessContextManagerServicePerimeter.GoogleAccessContextManagerServicePerimeter",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -790,7 +789,7 @@ func GoogleAccessContextManagerServicePerimeter_IsTerraformElement(x interface{}
 }
 
 // Experimental.
-func GoogleAccessContextManagerServicePerimeter_IsTerraformResource(x interface{}) *bool {
+func GoogleAccessContextManagerServicePerimeter_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleAccessContextManagerServicePerimeter_IsTerraformResourceParameters(x); err != nil {
@@ -801,7 +800,7 @@ func GoogleAccessContextManagerServicePerimeter_IsTerraformResource(x interface{
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleAccessContextManagerServicePerimeter.GoogleAccessContextManagerServicePerimeter",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -826,31 +825,31 @@ func (g *jsiiProxy_GoogleAccessContextManagerServicePerimeter) AddMoveTarget(mov
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleAccessContextManagerServicePerimeter) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleAccessContextManagerServicePerimeter) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleAccessContextManagerServicePerimeter) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleAccessContextManagerServicePerimeter) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -866,7 +865,7 @@ func (g *jsiiProxy_GoogleAccessContextManagerServicePerimeter) GetBooleanAttribu
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -882,7 +881,7 @@ func (g *jsiiProxy_GoogleAccessContextManagerServicePerimeter) GetBooleanMapAttr
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -898,7 +897,7 @@ func (g *jsiiProxy_GoogleAccessContextManagerServicePerimeter) GetListAttribute(
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -914,7 +913,7 @@ func (g *jsiiProxy_GoogleAccessContextManagerServicePerimeter) GetNumberAttribut
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -930,7 +929,7 @@ func (g *jsiiProxy_GoogleAccessContextManagerServicePerimeter) GetNumberListAttr
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -946,7 +945,7 @@ func (g *jsiiProxy_GoogleAccessContextManagerServicePerimeter) GetNumberMapAttri
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -962,7 +961,7 @@ func (g *jsiiProxy_GoogleAccessContextManagerServicePerimeter) GetStringAttribut
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -978,15 +977,15 @@ func (g *jsiiProxy_GoogleAccessContextManagerServicePerimeter) GetStringMapAttri
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleAccessContextManagerServicePerimeter) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleAccessContextManagerServicePerimeter) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1005,7 +1004,7 @@ func (g *jsiiProxy_GoogleAccessContextManagerServicePerimeter) ImportFrom(id *st
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1018,7 +1017,7 @@ func (g *jsiiProxy_GoogleAccessContextManagerServicePerimeter) InterpolationForA
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1032,18 +1031,18 @@ func (g *jsiiProxy_GoogleAccessContextManagerServicePerimeter) MoveFromId(id *st
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleAccessContextManagerServicePerimeter) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleAccessContextManagerServicePerimeter) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1054,7 +1053,7 @@ func (g *jsiiProxy_GoogleAccessContextManagerServicePerimeter) MoveToId(id *stri
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1065,7 +1064,7 @@ func (g *jsiiProxy_GoogleAccessContextManagerServicePerimeter) OverrideLogicalId
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1076,7 +1075,7 @@ func (g *jsiiProxy_GoogleAccessContextManagerServicePerimeter) PutSpec(value *Go
 	_jsii_.InvokeVoid(
 		g,
 		"putSpec",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1087,7 +1086,7 @@ func (g *jsiiProxy_GoogleAccessContextManagerServicePerimeter) PutStatus(value *
 	_jsii_.InvokeVoid(
 		g,
 		"putStatus",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1098,7 +1097,7 @@ func (g *jsiiProxy_GoogleAccessContextManagerServicePerimeter) PutTimeouts(value
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1166,8 +1165,8 @@ func (g *jsiiProxy_GoogleAccessContextManagerServicePerimeter) ResetUseExplicitD
 	)
 }
 
-func (g *jsiiProxy_GoogleAccessContextManagerServicePerimeter) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleAccessContextManagerServicePerimeter) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1179,8 +1178,8 @@ func (g *jsiiProxy_GoogleAccessContextManagerServicePerimeter) SynthesizeAttribu
 	return returns
 }
 
-func (g *jsiiProxy_GoogleAccessContextManagerServicePerimeter) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleAccessContextManagerServicePerimeter) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1192,8 +1191,8 @@ func (g *jsiiProxy_GoogleAccessContextManagerServicePerimeter) SynthesizeHclAttr
 	return returns
 }
 
-func (g *jsiiProxy_GoogleAccessContextManagerServicePerimeter) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleAccessContextManagerServicePerimeter) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1205,8 +1204,8 @@ func (g *jsiiProxy_GoogleAccessContextManagerServicePerimeter) ToHclTerraform() 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleAccessContextManagerServicePerimeter) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleAccessContextManagerServicePerimeter) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1231,8 +1230,8 @@ func (g *jsiiProxy_GoogleAccessContextManagerServicePerimeter) ToString() *strin
 	return returns
 }
 
-func (g *jsiiProxy_GoogleAccessContextManagerServicePerimeter) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleAccessContextManagerServicePerimeter) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1243,4 +1242,3 @@ func (g *jsiiProxy_GoogleAccessContextManagerServicePerimeter) ToTerraform() int
 
 	return returns
 }
-

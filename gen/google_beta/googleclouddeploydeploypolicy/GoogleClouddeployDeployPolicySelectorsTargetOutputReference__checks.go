@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleClouddeployDeployPolicySelectorsTargetOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleClouddeployDeployPolicySelectorsTargetOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleClouddeployDeployPolicySelectorsTargetOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGoogleClouddeployDeployPolicySelectorsTargetOutputReferenceParam
 
 	return nil
 }
-

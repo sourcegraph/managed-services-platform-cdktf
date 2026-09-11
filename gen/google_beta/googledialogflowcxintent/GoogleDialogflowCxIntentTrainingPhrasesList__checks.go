@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleDialogflowCxIntentTrainingPhrasesList) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxIntentTrainingPhrasesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDialogflowCxIntentTrainingPhrasesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleDialogflowCxIntentTrainingPhrasesListParameters(terraformR
 
 	return nil
 }
-

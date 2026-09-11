@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleWorkstationsWorkstationCluster) validateAddMoveTargetPa
 	return nil
 }
 
-func (g *jsiiProxy_GoogleWorkstationsWorkstationCluster) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleWorkstationsWorkstationCluster) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleWorkstationsWorkstationCluster) validateMoveFromIdParam
 	return nil
 }
 
-func (g *jsiiProxy_GoogleWorkstationsWorkstationCluster) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleWorkstationsWorkstationCluster) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -253,7 +253,7 @@ func validateGoogleWorkstationsWorkstationCluster_GenerateConfigForImportParamet
 	return nil
 }
 
-func validateGoogleWorkstationsWorkstationCluster_IsConstructParameters(x interface{}) error {
+func validateGoogleWorkstationsWorkstationCluster_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -261,7 +261,7 @@ func validateGoogleWorkstationsWorkstationCluster_IsConstructParameters(x interf
 	return nil
 }
 
-func validateGoogleWorkstationsWorkstationCluster_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleWorkstationsWorkstationCluster_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -269,7 +269,7 @@ func validateGoogleWorkstationsWorkstationCluster_IsTerraformElementParameters(x
 	return nil
 }
 
-func validateGoogleWorkstationsWorkstationCluster_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleWorkstationsWorkstationCluster_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -285,7 +285,7 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationCluster) validateSetAnnotationsP
 	return nil
 }
 
-func (j *jsiiProxy_GoogleWorkstationsWorkstationCluster) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleWorkstationsWorkstationCluster) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -318,7 +318,7 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationCluster) validateSetConnectionPa
 	return nil
 }
 
-func (j *jsiiProxy_GoogleWorkstationsWorkstationCluster) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleWorkstationsWorkstationCluster) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -431,7 +431,7 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationCluster) validateSetProjectParam
 	return nil
 }
 
-func (j *jsiiProxy_GoogleWorkstationsWorkstationCluster) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleWorkstationsWorkstationCluster) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -519,4 +519,3 @@ func validateNewGoogleWorkstationsWorkstationClusterParameters(scope constructs.
 
 	return nil
 }
-

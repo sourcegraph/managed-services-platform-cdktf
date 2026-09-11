@@ -90,7 +90,7 @@ func (g *jsiiProxy_GoogleMonitoringUptimeCheckConfigHttpCheckOutputReference) va
 	return nil
 }
 
-func (g *jsiiProxy_GoogleMonitoringUptimeCheckConfigHttpCheckOutputReference) validatePutAcceptedResponseStatusCodesParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleMonitoringUptimeCheckConfigHttpCheckOutputReference) validatePutAcceptedResponseStatusCodesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -170,7 +170,7 @@ func (j *jsiiProxy_GoogleMonitoringUptimeCheckConfigHttpCheckOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleMonitoringUptimeCheckConfigHttpCheckOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleMonitoringUptimeCheckConfigHttpCheckOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -267,7 +267,7 @@ func (j *jsiiProxy_GoogleMonitoringUptimeCheckConfigHttpCheckOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleMonitoringUptimeCheckConfigHttpCheckOutputReference) validateSetMaskHeadersParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleMonitoringUptimeCheckConfigHttpCheckOutputReference) validateSetMaskHeadersParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -327,7 +327,7 @@ func (j *jsiiProxy_GoogleMonitoringUptimeCheckConfigHttpCheckOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleMonitoringUptimeCheckConfigHttpCheckOutputReference) validateSetUseSslParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleMonitoringUptimeCheckConfigHttpCheckOutputReference) validateSetUseSslParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -347,7 +347,7 @@ func (j *jsiiProxy_GoogleMonitoringUptimeCheckConfigHttpCheckOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleMonitoringUptimeCheckConfigHttpCheckOutputReference) validateSetValidateSslParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleMonitoringUptimeCheckConfigHttpCheckOutputReference) validateSetValidateSslParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -378,4 +378,3 @@ func validateNewGoogleMonitoringUptimeCheckConfigHttpCheckOutputReferenceParamet
 
 	return nil
 }
-

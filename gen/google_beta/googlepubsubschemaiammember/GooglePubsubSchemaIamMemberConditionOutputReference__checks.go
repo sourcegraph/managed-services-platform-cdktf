@@ -98,7 +98,7 @@ func (g *jsiiProxy_GooglePubsubSchemaIamMemberConditionOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_GooglePubsubSchemaIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GooglePubsubSchemaIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewGooglePubsubSchemaIamMemberConditionOutputReferenceParameters(te
 
 	return nil
 }
-

@@ -90,7 +90,7 @@ func (g *jsiiProxy_GoogleSccOrganizationCustomModuleCustomConfigCustomOutputOutp
 	return nil
 }
 
-func (g *jsiiProxy_GoogleSccOrganizationCustomModuleCustomConfigCustomOutputOutputReference) validatePutPropertiesParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleSccOrganizationCustomModuleCustomConfigCustomOutputOutputReference) validatePutPropertiesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (g *jsiiProxy_GoogleSccOrganizationCustomModuleCustomConfigCustomOutputOutp
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSccOrganizationCustomModuleCustomConfigCustomOutputOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleSccOrganizationCustomModuleCustomConfigCustomOutputOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -229,4 +229,3 @@ func validateNewGoogleSccOrganizationCustomModuleCustomConfigCustomOutputOutputR
 
 	return nil
 }
-

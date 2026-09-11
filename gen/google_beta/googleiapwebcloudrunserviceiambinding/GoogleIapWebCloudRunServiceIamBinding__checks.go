@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleIapWebCloudRunServiceIamBinding) validateAddMoveTargetP
 	return nil
 }
 
-func (g *jsiiProxy_GoogleIapWebCloudRunServiceIamBinding) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleIapWebCloudRunServiceIamBinding) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleIapWebCloudRunServiceIamBinding) validateMoveFromIdPara
 	return nil
 }
 
-func (g *jsiiProxy_GoogleIapWebCloudRunServiceIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleIapWebCloudRunServiceIamBinding) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateGoogleIapWebCloudRunServiceIamBinding_GenerateConfigForImportParame
 	return nil
 }
 
-func validateGoogleIapWebCloudRunServiceIamBinding_IsConstructParameters(x interface{}) error {
+func validateGoogleIapWebCloudRunServiceIamBinding_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateGoogleIapWebCloudRunServiceIamBinding_IsConstructParameters(x inter
 	return nil
 }
 
-func validateGoogleIapWebCloudRunServiceIamBinding_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleIapWebCloudRunServiceIamBinding_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateGoogleIapWebCloudRunServiceIamBinding_IsTerraformElementParameters(
 	return nil
 }
 
-func validateGoogleIapWebCloudRunServiceIamBinding_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleIapWebCloudRunServiceIamBinding_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -263,7 +263,7 @@ func (j *jsiiProxy_GoogleIapWebCloudRunServiceIamBinding) validateSetCloudRunSer
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIapWebCloudRunServiceIamBinding) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleIapWebCloudRunServiceIamBinding) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -296,7 +296,7 @@ func (j *jsiiProxy_GoogleIapWebCloudRunServiceIamBinding) validateSetConnectionP
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIapWebCloudRunServiceIamBinding) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleIapWebCloudRunServiceIamBinding) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -393,7 +393,7 @@ func (j *jsiiProxy_GoogleIapWebCloudRunServiceIamBinding) validateSetProjectPara
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIapWebCloudRunServiceIamBinding) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleIapWebCloudRunServiceIamBinding) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -465,4 +465,3 @@ func validateNewGoogleIapWebCloudRunServiceIamBindingParameters(scope constructs
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleApigeeSecurityMonitoringConditionIncludeAllResourcesOut
 	return nil
 }
 
-func (j *jsiiProxy_GoogleApigeeSecurityMonitoringConditionIncludeAllResourcesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleApigeeSecurityMonitoringConditionIncludeAllResourcesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewGoogleApigeeSecurityMonitoringConditionIncludeAllResourcesOutput
 
 	return nil
 }
-

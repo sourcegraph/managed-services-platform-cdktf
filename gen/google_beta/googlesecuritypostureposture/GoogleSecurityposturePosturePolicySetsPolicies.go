@@ -1,6 +1,5 @@
 package googlesecuritypostureposture
 
-
 type GoogleSecurityposturePosturePolicySetsPolicies struct {
 	// constraint block.
 	//
@@ -13,10 +12,9 @@ type GoogleSecurityposturePosturePolicySetsPolicies struct {
 	// compliance_standards block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_securityposture_posture#compliance_standards GoogleSecurityposturePosture#compliance_standards}
-	ComplianceStandards interface{} `field:"optional" json:"complianceStandards" yaml:"complianceStandards"`
+	ComplianceStandards any `field:"optional" json:"complianceStandards" yaml:"complianceStandards"`
 	// Description of the policy.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_securityposture_posture#description GoogleSecurityposturePosture#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
 }
-

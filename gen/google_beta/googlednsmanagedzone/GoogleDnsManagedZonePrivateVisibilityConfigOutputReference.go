@@ -12,9 +12,9 @@ type GoogleDnsManagedZonePrivateVisibilityConfigOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -28,11 +28,11 @@ type GoogleDnsManagedZonePrivateVisibilityConfigOutputReference interface {
 	// Experimental.
 	Fqn() *string
 	GkeClusters() GoogleDnsManagedZonePrivateVisibilityConfigGkeClustersList
-	GkeClustersInput() interface{}
+	GkeClustersInput() any
 	InternalValue() *GoogleDnsManagedZonePrivateVisibilityConfig
 	SetInternalValue(val *GoogleDnsManagedZonePrivateVisibilityConfig)
 	Networks() GoogleDnsManagedZonePrivateVisibilityConfigNetworksList
-	NetworksInput() interface{}
+	NetworksInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -44,7 +44,7 @@ type GoogleDnsManagedZonePrivateVisibilityConfigOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -65,13 +65,13 @@ type GoogleDnsManagedZonePrivateVisibilityConfigOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutGkeClusters(value interface{})
-	PutNetworks(value interface{})
+	PutGkeClusters(value any)
+	PutNetworks(value any)
 	ResetGkeClusters()
 	ResetNetworks()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,8 +84,8 @@ type jsiiProxy_GoogleDnsManagedZonePrivateVisibilityConfigOutputReference struct
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GoogleDnsManagedZonePrivateVisibilityConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDnsManagedZonePrivateVisibilityConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -134,8 +134,8 @@ func (j *jsiiProxy_GoogleDnsManagedZonePrivateVisibilityConfigOutputReference) G
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDnsManagedZonePrivateVisibilityConfigOutputReference) GkeClustersInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDnsManagedZonePrivateVisibilityConfigOutputReference) GkeClustersInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"gkeClustersInput",
@@ -164,8 +164,8 @@ func (j *jsiiProxy_GoogleDnsManagedZonePrivateVisibilityConfigOutputReference) N
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDnsManagedZonePrivateVisibilityConfigOutputReference) NetworksInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDnsManagedZonePrivateVisibilityConfigOutputReference) NetworksInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"networksInput",
@@ -194,7 +194,6 @@ func (j *jsiiProxy_GoogleDnsManagedZonePrivateVisibilityConfigOutputReference) T
 	return returns
 }
 
-
 func NewGoogleDnsManagedZonePrivateVisibilityConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleDnsManagedZonePrivateVisibilityConfigOutputReference {
 	_init_.Initialize()
 
@@ -205,7 +204,7 @@ func NewGoogleDnsManagedZonePrivateVisibilityConfigOutputReference(terraformReso
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleDnsManagedZone.GoogleDnsManagedZonePrivateVisibilityConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -217,12 +216,12 @@ func NewGoogleDnsManagedZonePrivateVisibilityConfigOutputReference_Override(g Go
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleDnsManagedZone.GoogleDnsManagedZonePrivateVisibilityConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleDnsManagedZonePrivateVisibilityConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleDnsManagedZonePrivateVisibilityConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -233,7 +232,7 @@ func (j *jsiiProxy_GoogleDnsManagedZonePrivateVisibilityConfigOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_GoogleDnsManagedZonePrivateVisibilityConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleDnsManagedZonePrivateVisibilityConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -244,7 +243,7 @@ func (j *jsiiProxy_GoogleDnsManagedZonePrivateVisibilityConfigOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_GoogleDnsManagedZonePrivateVisibilityConfigOutputReference)SetInternalValue(val *GoogleDnsManagedZonePrivateVisibilityConfig) {
+func (j *jsiiProxy_GoogleDnsManagedZonePrivateVisibilityConfigOutputReference) SetInternalValue(val *GoogleDnsManagedZonePrivateVisibilityConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_GoogleDnsManagedZonePrivateVisibilityConfigOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_GoogleDnsManagedZonePrivateVisibilityConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleDnsManagedZonePrivateVisibilityConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_GoogleDnsManagedZonePrivateVisibilityConfigOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_GoogleDnsManagedZonePrivateVisibilityConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleDnsManagedZonePrivateVisibilityConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,16 +289,16 @@ func (g *jsiiProxy_GoogleDnsManagedZonePrivateVisibilityConfigOutputReference) C
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDnsManagedZonePrivateVisibilityConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleDnsManagedZonePrivateVisibilityConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -315,7 +314,7 @@ func (g *jsiiProxy_GoogleDnsManagedZonePrivateVisibilityConfigOutputReference) G
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -331,7 +330,7 @@ func (g *jsiiProxy_GoogleDnsManagedZonePrivateVisibilityConfigOutputReference) G
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -347,7 +346,7 @@ func (g *jsiiProxy_GoogleDnsManagedZonePrivateVisibilityConfigOutputReference) G
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -363,7 +362,7 @@ func (g *jsiiProxy_GoogleDnsManagedZonePrivateVisibilityConfigOutputReference) G
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -379,7 +378,7 @@ func (g *jsiiProxy_GoogleDnsManagedZonePrivateVisibilityConfigOutputReference) G
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -395,7 +394,7 @@ func (g *jsiiProxy_GoogleDnsManagedZonePrivateVisibilityConfigOutputReference) G
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -411,7 +410,7 @@ func (g *jsiiProxy_GoogleDnsManagedZonePrivateVisibilityConfigOutputReference) G
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -427,7 +426,7 @@ func (g *jsiiProxy_GoogleDnsManagedZonePrivateVisibilityConfigOutputReference) G
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -456,32 +455,32 @@ func (g *jsiiProxy_GoogleDnsManagedZonePrivateVisibilityConfigOutputReference) I
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDnsManagedZonePrivateVisibilityConfigOutputReference) PutGkeClusters(value interface{}) {
+func (g *jsiiProxy_GoogleDnsManagedZonePrivateVisibilityConfigOutputReference) PutGkeClusters(value any) {
 	if err := g.validatePutGkeClustersParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putGkeClusters",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (g *jsiiProxy_GoogleDnsManagedZonePrivateVisibilityConfigOutputReference) PutNetworks(value interface{}) {
+func (g *jsiiProxy_GoogleDnsManagedZonePrivateVisibilityConfigOutputReference) PutNetworks(value any) {
 	if err := g.validatePutNetworksParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putNetworks",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -501,16 +500,16 @@ func (g *jsiiProxy_GoogleDnsManagedZonePrivateVisibilityConfigOutputReference) R
 	)
 }
 
-func (g *jsiiProxy_GoogleDnsManagedZonePrivateVisibilityConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleDnsManagedZonePrivateVisibilityConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -529,4 +528,3 @@ func (g *jsiiProxy_GoogleDnsManagedZonePrivateVisibilityConfigOutputReference) T
 
 	return returns
 }
-

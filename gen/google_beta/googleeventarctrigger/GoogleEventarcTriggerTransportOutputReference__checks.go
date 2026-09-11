@@ -109,7 +109,7 @@ func (g *jsiiProxy_GoogleEventarcTriggerTransportOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_GoogleEventarcTriggerTransportOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleEventarcTriggerTransportOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -209,4 +209,3 @@ func validateNewGoogleEventarcTriggerTransportOutputReferenceParameters(terrafor
 
 	return nil
 }
-

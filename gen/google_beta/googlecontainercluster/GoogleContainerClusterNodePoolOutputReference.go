@@ -14,9 +14,9 @@ type GoogleContainerClusterNodePoolOutputReference interface {
 	AutoscalingInput() *GoogleContainerClusterNodePoolAutoscaling
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -33,8 +33,8 @@ type GoogleContainerClusterNodePoolOutputReference interface {
 	SetInitialNodeCount(val *float64)
 	InitialNodeCountInput() *float64
 	InstanceGroupUrls() *[]*string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	ManagedInstanceGroupUrls() *[]*string
 	Management() GoogleContainerClusterNodePoolManagementOutputReference
 	ManagementInput() *GoogleContainerClusterNodePoolManagement
@@ -77,7 +77,7 @@ type GoogleContainerClusterNodePoolOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -121,7 +121,7 @@ type GoogleContainerClusterNodePoolOutputReference interface {
 	ResetVersion()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -154,8 +154,8 @@ func (j *jsiiProxy_GoogleContainerClusterNodePoolOutputReference) AutoscalingInp
 	return returns
 }
 
-func (j *jsiiProxy_GoogleContainerClusterNodePoolOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleContainerClusterNodePoolOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -224,8 +224,8 @@ func (j *jsiiProxy_GoogleContainerClusterNodePoolOutputReference) InstanceGroupU
 	return returns
 }
 
-func (j *jsiiProxy_GoogleContainerClusterNodePoolOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleContainerClusterNodePoolOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -504,7 +504,6 @@ func (j *jsiiProxy_GoogleContainerClusterNodePoolOutputReference) VersionInput()
 	return returns
 }
 
-
 func NewGoogleContainerClusterNodePoolOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) GoogleContainerClusterNodePoolOutputReference {
 	_init_.Initialize()
 
@@ -515,7 +514,7 @@ func NewGoogleContainerClusterNodePoolOutputReference(terraformResource cdktf.II
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleContainerCluster.GoogleContainerClusterNodePoolOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -527,12 +526,12 @@ func NewGoogleContainerClusterNodePoolOutputReference_Override(g GoogleContainer
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleContainerCluster.GoogleContainerClusterNodePoolOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerClusterNodePoolOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleContainerClusterNodePoolOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -543,7 +542,7 @@ func (j *jsiiProxy_GoogleContainerClusterNodePoolOutputReference)SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerClusterNodePoolOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleContainerClusterNodePoolOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -554,7 +553,7 @@ func (j *jsiiProxy_GoogleContainerClusterNodePoolOutputReference)SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerClusterNodePoolOutputReference)SetInitialNodeCount(val *float64) {
+func (j *jsiiProxy_GoogleContainerClusterNodePoolOutputReference) SetInitialNodeCount(val *float64) {
 	if err := j.validateSetInitialNodeCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -565,7 +564,7 @@ func (j *jsiiProxy_GoogleContainerClusterNodePoolOutputReference)SetInitialNodeC
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerClusterNodePoolOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_GoogleContainerClusterNodePoolOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -576,7 +575,7 @@ func (j *jsiiProxy_GoogleContainerClusterNodePoolOutputReference)SetInternalValu
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerClusterNodePoolOutputReference)SetMaxPodsPerNode(val *float64) {
+func (j *jsiiProxy_GoogleContainerClusterNodePoolOutputReference) SetMaxPodsPerNode(val *float64) {
 	if err := j.validateSetMaxPodsPerNodeParameters(val); err != nil {
 		panic(err)
 	}
@@ -587,7 +586,7 @@ func (j *jsiiProxy_GoogleContainerClusterNodePoolOutputReference)SetMaxPodsPerNo
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerClusterNodePoolOutputReference)SetName(val *string) {
+func (j *jsiiProxy_GoogleContainerClusterNodePoolOutputReference) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -598,7 +597,7 @@ func (j *jsiiProxy_GoogleContainerClusterNodePoolOutputReference)SetName(val *st
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerClusterNodePoolOutputReference)SetNamePrefix(val *string) {
+func (j *jsiiProxy_GoogleContainerClusterNodePoolOutputReference) SetNamePrefix(val *string) {
 	if err := j.validateSetNamePrefixParameters(val); err != nil {
 		panic(err)
 	}
@@ -609,7 +608,7 @@ func (j *jsiiProxy_GoogleContainerClusterNodePoolOutputReference)SetNamePrefix(v
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerClusterNodePoolOutputReference)SetNodeCount(val *float64) {
+func (j *jsiiProxy_GoogleContainerClusterNodePoolOutputReference) SetNodeCount(val *float64) {
 	if err := j.validateSetNodeCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -620,7 +619,7 @@ func (j *jsiiProxy_GoogleContainerClusterNodePoolOutputReference)SetNodeCount(va
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerClusterNodePoolOutputReference)SetNodeLocations(val *[]*string) {
+func (j *jsiiProxy_GoogleContainerClusterNodePoolOutputReference) SetNodeLocations(val *[]*string) {
 	if err := j.validateSetNodeLocationsParameters(val); err != nil {
 		panic(err)
 	}
@@ -631,7 +630,7 @@ func (j *jsiiProxy_GoogleContainerClusterNodePoolOutputReference)SetNodeLocation
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerClusterNodePoolOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleContainerClusterNodePoolOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -642,7 +641,7 @@ func (j *jsiiProxy_GoogleContainerClusterNodePoolOutputReference)SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerClusterNodePoolOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleContainerClusterNodePoolOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -653,7 +652,7 @@ func (j *jsiiProxy_GoogleContainerClusterNodePoolOutputReference)SetTerraformRes
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerClusterNodePoolOutputReference)SetVersion(val *string) {
+func (j *jsiiProxy_GoogleContainerClusterNodePoolOutputReference) SetVersion(val *string) {
 	if err := j.validateSetVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -677,16 +676,16 @@ func (g *jsiiProxy_GoogleContainerClusterNodePoolOutputReference) ComputeFqn() *
 	return returns
 }
 
-func (g *jsiiProxy_GoogleContainerClusterNodePoolOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleContainerClusterNodePoolOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -702,7 +701,7 @@ func (g *jsiiProxy_GoogleContainerClusterNodePoolOutputReference) GetBooleanAttr
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -718,7 +717,7 @@ func (g *jsiiProxy_GoogleContainerClusterNodePoolOutputReference) GetBooleanMapA
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -734,7 +733,7 @@ func (g *jsiiProxy_GoogleContainerClusterNodePoolOutputReference) GetListAttribu
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -750,7 +749,7 @@ func (g *jsiiProxy_GoogleContainerClusterNodePoolOutputReference) GetNumberAttri
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -766,7 +765,7 @@ func (g *jsiiProxy_GoogleContainerClusterNodePoolOutputReference) GetNumberListA
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -782,7 +781,7 @@ func (g *jsiiProxy_GoogleContainerClusterNodePoolOutputReference) GetNumberMapAt
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -798,7 +797,7 @@ func (g *jsiiProxy_GoogleContainerClusterNodePoolOutputReference) GetStringAttri
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -814,7 +813,7 @@ func (g *jsiiProxy_GoogleContainerClusterNodePoolOutputReference) GetStringMapAt
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -843,7 +842,7 @@ func (g *jsiiProxy_GoogleContainerClusterNodePoolOutputReference) InterpolationF
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -857,7 +856,7 @@ func (g *jsiiProxy_GoogleContainerClusterNodePoolOutputReference) PutAutoscaling
 	_jsii_.InvokeVoid(
 		g,
 		"putAutoscaling",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -868,7 +867,7 @@ func (g *jsiiProxy_GoogleContainerClusterNodePoolOutputReference) PutManagement(
 	_jsii_.InvokeVoid(
 		g,
 		"putManagement",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -879,7 +878,7 @@ func (g *jsiiProxy_GoogleContainerClusterNodePoolOutputReference) PutNetworkConf
 	_jsii_.InvokeVoid(
 		g,
 		"putNetworkConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -890,7 +889,7 @@ func (g *jsiiProxy_GoogleContainerClusterNodePoolOutputReference) PutNodeConfig(
 	_jsii_.InvokeVoid(
 		g,
 		"putNodeConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -901,7 +900,7 @@ func (g *jsiiProxy_GoogleContainerClusterNodePoolOutputReference) PutPlacementPo
 	_jsii_.InvokeVoid(
 		g,
 		"putPlacementPolicy",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -912,7 +911,7 @@ func (g *jsiiProxy_GoogleContainerClusterNodePoolOutputReference) PutQueuedProvi
 	_jsii_.InvokeVoid(
 		g,
 		"putQueuedProvisioning",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -923,7 +922,7 @@ func (g *jsiiProxy_GoogleContainerClusterNodePoolOutputReference) PutUpgradeSett
 	_jsii_.InvokeVoid(
 		g,
 		"putUpgradeSettings",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1039,16 +1038,16 @@ func (g *jsiiProxy_GoogleContainerClusterNodePoolOutputReference) ResetVersion()
 	)
 }
 
-func (g *jsiiProxy_GoogleContainerClusterNodePoolOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleContainerClusterNodePoolOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -1067,4 +1066,3 @@ func (g *jsiiProxy_GoogleContainerClusterNodePoolOutputReference) ToString() *st
 
 	return returns
 }
-

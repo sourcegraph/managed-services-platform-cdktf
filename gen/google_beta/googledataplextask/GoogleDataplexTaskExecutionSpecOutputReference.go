@@ -15,9 +15,9 @@ type GoogleDataplexTaskExecutionSpecOutputReference interface {
 	ArgsInput() *map[string]*string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -55,7 +55,7 @@ type GoogleDataplexTaskExecutionSpecOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -82,7 +82,7 @@ type GoogleDataplexTaskExecutionSpecOutputReference interface {
 	ResetProject()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -115,8 +115,8 @@ func (j *jsiiProxy_GoogleDataplexTaskExecutionSpecOutputReference) ArgsInput() *
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDataplexTaskExecutionSpecOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDataplexTaskExecutionSpecOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -265,7 +265,6 @@ func (j *jsiiProxy_GoogleDataplexTaskExecutionSpecOutputReference) TerraformReso
 	return returns
 }
 
-
 func NewGoogleDataplexTaskExecutionSpecOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleDataplexTaskExecutionSpecOutputReference {
 	_init_.Initialize()
 
@@ -276,7 +275,7 @@ func NewGoogleDataplexTaskExecutionSpecOutputReference(terraformResource cdktf.I
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleDataplexTask.GoogleDataplexTaskExecutionSpecOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -288,12 +287,12 @@ func NewGoogleDataplexTaskExecutionSpecOutputReference_Override(g GoogleDataplex
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleDataplexTask.GoogleDataplexTaskExecutionSpecOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleDataplexTaskExecutionSpecOutputReference)SetArgs(val *map[string]*string) {
+func (j *jsiiProxy_GoogleDataplexTaskExecutionSpecOutputReference) SetArgs(val *map[string]*string) {
 	if err := j.validateSetArgsParameters(val); err != nil {
 		panic(err)
 	}
@@ -304,7 +303,7 @@ func (j *jsiiProxy_GoogleDataplexTaskExecutionSpecOutputReference)SetArgs(val *m
 	)
 }
 
-func (j *jsiiProxy_GoogleDataplexTaskExecutionSpecOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleDataplexTaskExecutionSpecOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -315,7 +314,7 @@ func (j *jsiiProxy_GoogleDataplexTaskExecutionSpecOutputReference)SetComplexObje
 	)
 }
 
-func (j *jsiiProxy_GoogleDataplexTaskExecutionSpecOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleDataplexTaskExecutionSpecOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -326,7 +325,7 @@ func (j *jsiiProxy_GoogleDataplexTaskExecutionSpecOutputReference)SetComplexObje
 	)
 }
 
-func (j *jsiiProxy_GoogleDataplexTaskExecutionSpecOutputReference)SetInternalValue(val *GoogleDataplexTaskExecutionSpec) {
+func (j *jsiiProxy_GoogleDataplexTaskExecutionSpecOutputReference) SetInternalValue(val *GoogleDataplexTaskExecutionSpec) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -337,7 +336,7 @@ func (j *jsiiProxy_GoogleDataplexTaskExecutionSpecOutputReference)SetInternalVal
 	)
 }
 
-func (j *jsiiProxy_GoogleDataplexTaskExecutionSpecOutputReference)SetKmsKey(val *string) {
+func (j *jsiiProxy_GoogleDataplexTaskExecutionSpecOutputReference) SetKmsKey(val *string) {
 	if err := j.validateSetKmsKeyParameters(val); err != nil {
 		panic(err)
 	}
@@ -348,7 +347,7 @@ func (j *jsiiProxy_GoogleDataplexTaskExecutionSpecOutputReference)SetKmsKey(val 
 	)
 }
 
-func (j *jsiiProxy_GoogleDataplexTaskExecutionSpecOutputReference)SetMaxJobExecutionLifetime(val *string) {
+func (j *jsiiProxy_GoogleDataplexTaskExecutionSpecOutputReference) SetMaxJobExecutionLifetime(val *string) {
 	if err := j.validateSetMaxJobExecutionLifetimeParameters(val); err != nil {
 		panic(err)
 	}
@@ -359,7 +358,7 @@ func (j *jsiiProxy_GoogleDataplexTaskExecutionSpecOutputReference)SetMaxJobExecu
 	)
 }
 
-func (j *jsiiProxy_GoogleDataplexTaskExecutionSpecOutputReference)SetProject(val *string) {
+func (j *jsiiProxy_GoogleDataplexTaskExecutionSpecOutputReference) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -370,7 +369,7 @@ func (j *jsiiProxy_GoogleDataplexTaskExecutionSpecOutputReference)SetProject(val
 	)
 }
 
-func (j *jsiiProxy_GoogleDataplexTaskExecutionSpecOutputReference)SetServiceAccount(val *string) {
+func (j *jsiiProxy_GoogleDataplexTaskExecutionSpecOutputReference) SetServiceAccount(val *string) {
 	if err := j.validateSetServiceAccountParameters(val); err != nil {
 		panic(err)
 	}
@@ -381,7 +380,7 @@ func (j *jsiiProxy_GoogleDataplexTaskExecutionSpecOutputReference)SetServiceAcco
 	)
 }
 
-func (j *jsiiProxy_GoogleDataplexTaskExecutionSpecOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleDataplexTaskExecutionSpecOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -392,7 +391,7 @@ func (j *jsiiProxy_GoogleDataplexTaskExecutionSpecOutputReference)SetTerraformAt
 	)
 }
 
-func (j *jsiiProxy_GoogleDataplexTaskExecutionSpecOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleDataplexTaskExecutionSpecOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -416,16 +415,16 @@ func (g *jsiiProxy_GoogleDataplexTaskExecutionSpecOutputReference) ComputeFqn() 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDataplexTaskExecutionSpecOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleDataplexTaskExecutionSpecOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -441,7 +440,7 @@ func (g *jsiiProxy_GoogleDataplexTaskExecutionSpecOutputReference) GetBooleanAtt
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -457,7 +456,7 @@ func (g *jsiiProxy_GoogleDataplexTaskExecutionSpecOutputReference) GetBooleanMap
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -473,7 +472,7 @@ func (g *jsiiProxy_GoogleDataplexTaskExecutionSpecOutputReference) GetListAttrib
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -489,7 +488,7 @@ func (g *jsiiProxy_GoogleDataplexTaskExecutionSpecOutputReference) GetNumberAttr
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -505,7 +504,7 @@ func (g *jsiiProxy_GoogleDataplexTaskExecutionSpecOutputReference) GetNumberList
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -521,7 +520,7 @@ func (g *jsiiProxy_GoogleDataplexTaskExecutionSpecOutputReference) GetNumberMapA
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -537,7 +536,7 @@ func (g *jsiiProxy_GoogleDataplexTaskExecutionSpecOutputReference) GetStringAttr
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -553,7 +552,7 @@ func (g *jsiiProxy_GoogleDataplexTaskExecutionSpecOutputReference) GetStringMapA
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -582,7 +581,7 @@ func (g *jsiiProxy_GoogleDataplexTaskExecutionSpecOutputReference) Interpolation
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -621,16 +620,16 @@ func (g *jsiiProxy_GoogleDataplexTaskExecutionSpecOutputReference) ResetProject(
 	)
 }
 
-func (g *jsiiProxy_GoogleDataplexTaskExecutionSpecOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleDataplexTaskExecutionSpecOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -649,4 +648,3 @@ func (g *jsiiProxy_GoogleDataplexTaskExecutionSpecOutputReference) ToString() *s
 
 	return returns
 }
-

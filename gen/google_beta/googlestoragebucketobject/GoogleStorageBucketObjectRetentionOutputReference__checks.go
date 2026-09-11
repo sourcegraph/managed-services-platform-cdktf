@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleStorageBucketObjectRetentionOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleStorageBucketObjectRetentionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleStorageBucketObjectRetentionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGoogleStorageBucketObjectRetentionOutputReferenceParameters(terr
 
 	return nil
 }
-

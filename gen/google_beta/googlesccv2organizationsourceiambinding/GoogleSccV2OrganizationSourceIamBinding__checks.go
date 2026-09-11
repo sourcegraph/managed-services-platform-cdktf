@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleSccV2OrganizationSourceIamBinding) validateAddMoveTarge
 	return nil
 }
 
-func (g *jsiiProxy_GoogleSccV2OrganizationSourceIamBinding) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleSccV2OrganizationSourceIamBinding) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleSccV2OrganizationSourceIamBinding) validateMoveFromIdPa
 	return nil
 }
 
-func (g *jsiiProxy_GoogleSccV2OrganizationSourceIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleSccV2OrganizationSourceIamBinding) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateGoogleSccV2OrganizationSourceIamBinding_GenerateConfigForImportPara
 	return nil
 }
 
-func validateGoogleSccV2OrganizationSourceIamBinding_IsConstructParameters(x interface{}) error {
+func validateGoogleSccV2OrganizationSourceIamBinding_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateGoogleSccV2OrganizationSourceIamBinding_IsConstructParameters(x int
 	return nil
 }
 
-func validateGoogleSccV2OrganizationSourceIamBinding_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleSccV2OrganizationSourceIamBinding_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateGoogleSccV2OrganizationSourceIamBinding_IsTerraformElementParameter
 	return nil
 }
 
-func validateGoogleSccV2OrganizationSourceIamBinding_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleSccV2OrganizationSourceIamBinding_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateGoogleSccV2OrganizationSourceIamBinding_IsTerraformResourceParamete
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSccV2OrganizationSourceIamBinding) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleSccV2OrganizationSourceIamBinding) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_GoogleSccV2OrganizationSourceIamBinding) validateSetConnectio
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSccV2OrganizationSourceIamBinding) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleSccV2OrganizationSourceIamBinding) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -377,7 +377,7 @@ func (j *jsiiProxy_GoogleSccV2OrganizationSourceIamBinding) validateSetOrganizat
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSccV2OrganizationSourceIamBinding) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleSccV2OrganizationSourceIamBinding) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -457,4 +457,3 @@ func validateNewGoogleSccV2OrganizationSourceIamBindingParameters(scope construc
 
 	return nil
 }
-

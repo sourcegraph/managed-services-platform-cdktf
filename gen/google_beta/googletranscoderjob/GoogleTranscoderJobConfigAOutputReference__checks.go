@@ -90,7 +90,7 @@ func (g *jsiiProxy_GoogleTranscoderJobConfigAOutputReference) validateInterpolat
 	return nil
 }
 
-func (g *jsiiProxy_GoogleTranscoderJobConfigAOutputReference) validatePutAdBreaksParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleTranscoderJobConfigAOutputReference) validatePutAdBreaksParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (g *jsiiProxy_GoogleTranscoderJobConfigAOutputReference) validatePutAdBreak
 	return nil
 }
 
-func (g *jsiiProxy_GoogleTranscoderJobConfigAOutputReference) validatePutEditListParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleTranscoderJobConfigAOutputReference) validatePutEditListParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -152,7 +152,7 @@ func (g *jsiiProxy_GoogleTranscoderJobConfigAOutputReference) validatePutEditLis
 	return nil
 }
 
-func (g *jsiiProxy_GoogleTranscoderJobConfigAOutputReference) validatePutElementaryStreamsParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleTranscoderJobConfigAOutputReference) validatePutElementaryStreamsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -183,7 +183,7 @@ func (g *jsiiProxy_GoogleTranscoderJobConfigAOutputReference) validatePutElement
 	return nil
 }
 
-func (g *jsiiProxy_GoogleTranscoderJobConfigAOutputReference) validatePutEncryptionsParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleTranscoderJobConfigAOutputReference) validatePutEncryptionsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -214,7 +214,7 @@ func (g *jsiiProxy_GoogleTranscoderJobConfigAOutputReference) validatePutEncrypt
 	return nil
 }
 
-func (g *jsiiProxy_GoogleTranscoderJobConfigAOutputReference) validatePutInputsParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleTranscoderJobConfigAOutputReference) validatePutInputsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -245,7 +245,7 @@ func (g *jsiiProxy_GoogleTranscoderJobConfigAOutputReference) validatePutInputsP
 	return nil
 }
 
-func (g *jsiiProxy_GoogleTranscoderJobConfigAOutputReference) validatePutManifestsParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleTranscoderJobConfigAOutputReference) validatePutManifestsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -276,7 +276,7 @@ func (g *jsiiProxy_GoogleTranscoderJobConfigAOutputReference) validatePutManifes
 	return nil
 }
 
-func (g *jsiiProxy_GoogleTranscoderJobConfigAOutputReference) validatePutMuxStreamsParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleTranscoderJobConfigAOutputReference) validatePutMuxStreamsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -318,7 +318,7 @@ func (g *jsiiProxy_GoogleTranscoderJobConfigAOutputReference) validatePutOutputP
 	return nil
 }
 
-func (g *jsiiProxy_GoogleTranscoderJobConfigAOutputReference) validatePutOverlaysParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleTranscoderJobConfigAOutputReference) validatePutOverlaysParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -368,7 +368,7 @@ func (g *jsiiProxy_GoogleTranscoderJobConfigAOutputReference) validateResolvePar
 	return nil
 }
 
-func (j *jsiiProxy_GoogleTranscoderJobConfigAOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleTranscoderJobConfigAOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -468,4 +468,3 @@ func validateNewGoogleTranscoderJobConfigAOutputReferenceParameters(terraformRes
 
 	return nil
 }
-

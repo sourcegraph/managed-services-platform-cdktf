@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleIamWorkloadIdentityPoolManagedIdentityAttestationRulesL
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIamWorkloadIdentityPoolManagedIdentityAttestationRulesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleIamWorkloadIdentityPoolManagedIdentityAttestationRulesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleIamWorkloadIdentityPoolManagedIdentityAttestationRulesList
 
 	return nil
 }
-

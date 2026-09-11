@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleDataformRepositoryGitRemoteSettingsSshAuthenticationCon
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataformRepositoryGitRemoteSettingsSshAuthenticationConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataformRepositoryGitRemoteSettingsSshAuthenticationConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGoogleDataformRepositoryGitRemoteSettingsSshAuthenticationConfig
 
 	return nil
 }
-

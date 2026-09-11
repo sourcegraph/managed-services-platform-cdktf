@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeDiskIamMember.GoogleComputeDiskIamMember",
-		reflect.TypeOf((*GoogleComputeDiskIamMember)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeDiskIamMember](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -73,7 +73,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zone", GoGetter: "Zone"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneInput", GoGetter: "ZoneInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeDiskIamMember{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -81,11 +81,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleComputeDiskIamMember.GoogleComputeDiskIamMemberCondition",
-		reflect.TypeOf((*GoogleComputeDiskIamMemberCondition)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeDiskIamMemberCondition](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeDiskIamMember.GoogleComputeDiskIamMemberConditionOutputReference",
-		reflect.TypeOf((*GoogleComputeDiskIamMemberConditionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeDiskIamMemberConditionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -116,7 +116,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "titleInput", GoGetter: "TitleInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeDiskIamMemberConditionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -124,6 +124,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleComputeDiskIamMember.GoogleComputeDiskIamMemberConfig",
-		reflect.TypeOf((*GoogleComputeDiskIamMemberConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeDiskIamMemberConfig](),
 	)
 }

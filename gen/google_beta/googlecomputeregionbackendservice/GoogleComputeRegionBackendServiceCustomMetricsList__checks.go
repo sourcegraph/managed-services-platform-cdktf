@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleComputeRegionBackendServiceCustomMetricsList) validateR
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRegionBackendServiceCustomMetricsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeRegionBackendServiceCustomMetricsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleComputeRegionBackendServiceCustomMetricsListParameters(ter
 
 	return nil
 }
-

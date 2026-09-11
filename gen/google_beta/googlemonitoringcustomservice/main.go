@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleMonitoringCustomService.GoogleMonitoringCustomService",
-		reflect.TypeOf((*GoogleMonitoringCustomService)(nil)).Elem(),
+		reflect.TypeFor[GoogleMonitoringCustomService](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -77,7 +77,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "userLabels", GoGetter: "UserLabels"},
 			_jsii_.MemberProperty{JsiiProperty: "userLabelsInput", GoGetter: "UserLabelsInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleMonitoringCustomService{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -85,15 +85,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleMonitoringCustomService.GoogleMonitoringCustomServiceConfig",
-		reflect.TypeOf((*GoogleMonitoringCustomServiceConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleMonitoringCustomServiceConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleMonitoringCustomService.GoogleMonitoringCustomServiceTelemetry",
-		reflect.TypeOf((*GoogleMonitoringCustomServiceTelemetry)(nil)).Elem(),
+		reflect.TypeFor[GoogleMonitoringCustomServiceTelemetry](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleMonitoringCustomService.GoogleMonitoringCustomServiceTelemetryOutputReference",
-		reflect.TypeOf((*GoogleMonitoringCustomServiceTelemetryOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleMonitoringCustomServiceTelemetryOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -120,7 +120,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleMonitoringCustomServiceTelemetryOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -128,11 +128,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleMonitoringCustomService.GoogleMonitoringCustomServiceTimeouts",
-		reflect.TypeOf((*GoogleMonitoringCustomServiceTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleMonitoringCustomServiceTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleMonitoringCustomService.GoogleMonitoringCustomServiceTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleMonitoringCustomServiceTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleMonitoringCustomServiceTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -165,7 +165,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleMonitoringCustomServiceTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

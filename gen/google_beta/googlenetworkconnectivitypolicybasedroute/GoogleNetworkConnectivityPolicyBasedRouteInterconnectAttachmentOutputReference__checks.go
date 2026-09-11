@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleNetworkConnectivityPolicyBasedRouteInterconnectAttachme
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkConnectivityPolicyBasedRouteInterconnectAttachmentOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNetworkConnectivityPolicyBasedRouteInterconnectAttachmentOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleNetworkConnectivityPolicyBasedRouteInterconnectAttachmentO
 
 	return nil
 }
-

@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleDialogflowCxEntityTypeEntitiesList) validateResolvePara
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxEntityTypeEntitiesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDialogflowCxEntityTypeEntitiesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleDialogflowCxEntityTypeEntitiesListParameters(terraformReso
 
 	return nil
 }
-

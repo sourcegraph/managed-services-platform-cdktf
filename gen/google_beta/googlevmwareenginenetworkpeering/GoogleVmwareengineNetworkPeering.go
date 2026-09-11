@@ -15,15 +15,15 @@ type GoogleVmwareengineNetworkPeering interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -32,12 +32,12 @@ type GoogleVmwareengineNetworkPeering interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
-	ExportCustomRoutes() interface{}
-	SetExportCustomRoutes(val interface{})
-	ExportCustomRoutesInput() interface{}
-	ExportCustomRoutesWithPublicIp() interface{}
-	SetExportCustomRoutesWithPublicIp(val interface{})
-	ExportCustomRoutesWithPublicIpInput() interface{}
+	ExportCustomRoutes() any
+	SetExportCustomRoutes(val any)
+	ExportCustomRoutesInput() any
+	ExportCustomRoutesWithPublicIp() any
+	SetExportCustomRoutesWithPublicIp(val any)
+	ExportCustomRoutesWithPublicIpInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -49,12 +49,12 @@ type GoogleVmwareengineNetworkPeering interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
-	ImportCustomRoutes() interface{}
-	SetImportCustomRoutes(val interface{})
-	ImportCustomRoutesInput() interface{}
-	ImportCustomRoutesWithPublicIp() interface{}
-	SetImportCustomRoutesWithPublicIp(val interface{})
-	ImportCustomRoutesWithPublicIpInput() interface{}
+	ImportCustomRoutes() any
+	SetImportCustomRoutes(val any)
+	ImportCustomRoutesInput() any
+	ImportCustomRoutesWithPublicIp() any
+	SetImportCustomRoutesWithPublicIp(val any)
+	ImportCustomRoutesWithPublicIpInput() any
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -78,21 +78,21 @@ type GoogleVmwareengineNetworkPeering interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	State() *string
 	StateDetails() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() GoogleVmwareengineNetworkPeeringTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	Uid() *string
 	UpdateTime() *string
 	VmwareEngineNetwork() *string
@@ -103,9 +103,9 @@ type GoogleVmwareengineNetworkPeering interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -123,7 +123,7 @@ type GoogleVmwareengineNetworkPeering interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -135,7 +135,7 @@ type GoogleVmwareengineNetworkPeering interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -154,17 +154,17 @@ type GoogleVmwareengineNetworkPeering interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleVmwareengineNetworkPeering
@@ -182,8 +182,8 @@ func (j *jsiiProxy_GoogleVmwareengineNetworkPeering) CdktfStack() cdktf.Terrafor
 	return returns
 }
 
-func (j *jsiiProxy_GoogleVmwareengineNetworkPeering) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleVmwareengineNetworkPeering) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -192,8 +192,8 @@ func (j *jsiiProxy_GoogleVmwareengineNetworkPeering) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleVmwareengineNetworkPeering) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleVmwareengineNetworkPeering) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -202,8 +202,8 @@ func (j *jsiiProxy_GoogleVmwareengineNetworkPeering) ConstructNodeMetadata() *ma
 	return returns
 }
 
-func (j *jsiiProxy_GoogleVmwareengineNetworkPeering) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleVmwareengineNetworkPeering) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -252,8 +252,8 @@ func (j *jsiiProxy_GoogleVmwareengineNetworkPeering) DescriptionInput() *string 
 	return returns
 }
 
-func (j *jsiiProxy_GoogleVmwareengineNetworkPeering) ExportCustomRoutes() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleVmwareengineNetworkPeering) ExportCustomRoutes() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"exportCustomRoutes",
@@ -262,8 +262,8 @@ func (j *jsiiProxy_GoogleVmwareengineNetworkPeering) ExportCustomRoutes() interf
 	return returns
 }
 
-func (j *jsiiProxy_GoogleVmwareengineNetworkPeering) ExportCustomRoutesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleVmwareengineNetworkPeering) ExportCustomRoutesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"exportCustomRoutesInput",
@@ -272,8 +272,8 @@ func (j *jsiiProxy_GoogleVmwareengineNetworkPeering) ExportCustomRoutesInput() i
 	return returns
 }
 
-func (j *jsiiProxy_GoogleVmwareengineNetworkPeering) ExportCustomRoutesWithPublicIp() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleVmwareengineNetworkPeering) ExportCustomRoutesWithPublicIp() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"exportCustomRoutesWithPublicIp",
@@ -282,8 +282,8 @@ func (j *jsiiProxy_GoogleVmwareengineNetworkPeering) ExportCustomRoutesWithPubli
 	return returns
 }
 
-func (j *jsiiProxy_GoogleVmwareengineNetworkPeering) ExportCustomRoutesWithPublicIpInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleVmwareengineNetworkPeering) ExportCustomRoutesWithPublicIpInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"exportCustomRoutesWithPublicIpInput",
@@ -342,8 +342,8 @@ func (j *jsiiProxy_GoogleVmwareengineNetworkPeering) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleVmwareengineNetworkPeering) ImportCustomRoutes() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleVmwareengineNetworkPeering) ImportCustomRoutes() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"importCustomRoutes",
@@ -352,8 +352,8 @@ func (j *jsiiProxy_GoogleVmwareengineNetworkPeering) ImportCustomRoutes() interf
 	return returns
 }
 
-func (j *jsiiProxy_GoogleVmwareengineNetworkPeering) ImportCustomRoutesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleVmwareengineNetworkPeering) ImportCustomRoutesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"importCustomRoutesInput",
@@ -362,8 +362,8 @@ func (j *jsiiProxy_GoogleVmwareengineNetworkPeering) ImportCustomRoutesInput() i
 	return returns
 }
 
-func (j *jsiiProxy_GoogleVmwareengineNetworkPeering) ImportCustomRoutesWithPublicIp() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleVmwareengineNetworkPeering) ImportCustomRoutesWithPublicIp() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"importCustomRoutesWithPublicIp",
@@ -372,8 +372,8 @@ func (j *jsiiProxy_GoogleVmwareengineNetworkPeering) ImportCustomRoutesWithPubli
 	return returns
 }
 
-func (j *jsiiProxy_GoogleVmwareengineNetworkPeering) ImportCustomRoutesWithPublicIpInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleVmwareengineNetworkPeering) ImportCustomRoutesWithPublicIpInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"importCustomRoutesWithPublicIpInput",
@@ -492,8 +492,8 @@ func (j *jsiiProxy_GoogleVmwareengineNetworkPeering) Provider() cdktf.TerraformP
 	return returns
 }
 
-func (j *jsiiProxy_GoogleVmwareengineNetworkPeering) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleVmwareengineNetworkPeering) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -502,8 +502,8 @@ func (j *jsiiProxy_GoogleVmwareengineNetworkPeering) Provisioners() *[]interface
 	return returns
 }
 
-func (j *jsiiProxy_GoogleVmwareengineNetworkPeering) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleVmwareengineNetworkPeering) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -542,8 +542,8 @@ func (j *jsiiProxy_GoogleVmwareengineNetworkPeering) TerraformGeneratorMetadata(
 	return returns
 }
 
-func (j *jsiiProxy_GoogleVmwareengineNetworkPeering) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleVmwareengineNetworkPeering) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -572,8 +572,8 @@ func (j *jsiiProxy_GoogleVmwareengineNetworkPeering) Timeouts() GoogleVmwareengi
 	return returns
 }
 
-func (j *jsiiProxy_GoogleVmwareengineNetworkPeering) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleVmwareengineNetworkPeering) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -632,7 +632,6 @@ func (j *jsiiProxy_GoogleVmwareengineNetworkPeering) VmwareEngineNetworkInput() 
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_vmwareengine_network_peering google_vmwareengine_network_peering} Resource.
 func NewGoogleVmwareengineNetworkPeering(scope constructs.Construct, id *string, config *GoogleVmwareengineNetworkPeeringConfig) GoogleVmwareengineNetworkPeering {
 	_init_.Initialize()
@@ -644,7 +643,7 @@ func NewGoogleVmwareengineNetworkPeering(scope constructs.Construct, id *string,
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleVmwareengineNetworkPeering.GoogleVmwareengineNetworkPeering",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -657,12 +656,12 @@ func NewGoogleVmwareengineNetworkPeering_Override(g GoogleVmwareengineNetworkPee
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleVmwareengineNetworkPeering.GoogleVmwareengineNetworkPeering",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleVmwareengineNetworkPeering)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleVmwareengineNetworkPeering) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -673,7 +672,7 @@ func (j *jsiiProxy_GoogleVmwareengineNetworkPeering)SetConnection(val interface{
 	)
 }
 
-func (j *jsiiProxy_GoogleVmwareengineNetworkPeering)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleVmwareengineNetworkPeering) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -684,7 +683,7 @@ func (j *jsiiProxy_GoogleVmwareengineNetworkPeering)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleVmwareengineNetworkPeering)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleVmwareengineNetworkPeering) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -692,7 +691,7 @@ func (j *jsiiProxy_GoogleVmwareengineNetworkPeering)SetDependsOn(val *[]*string)
 	)
 }
 
-func (j *jsiiProxy_GoogleVmwareengineNetworkPeering)SetDescription(val *string) {
+func (j *jsiiProxy_GoogleVmwareengineNetworkPeering) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -703,7 +702,7 @@ func (j *jsiiProxy_GoogleVmwareengineNetworkPeering)SetDescription(val *string) 
 	)
 }
 
-func (j *jsiiProxy_GoogleVmwareengineNetworkPeering)SetExportCustomRoutes(val interface{}) {
+func (j *jsiiProxy_GoogleVmwareengineNetworkPeering) SetExportCustomRoutes(val any) {
 	if err := j.validateSetExportCustomRoutesParameters(val); err != nil {
 		panic(err)
 	}
@@ -714,7 +713,7 @@ func (j *jsiiProxy_GoogleVmwareengineNetworkPeering)SetExportCustomRoutes(val in
 	)
 }
 
-func (j *jsiiProxy_GoogleVmwareengineNetworkPeering)SetExportCustomRoutesWithPublicIp(val interface{}) {
+func (j *jsiiProxy_GoogleVmwareengineNetworkPeering) SetExportCustomRoutesWithPublicIp(val any) {
 	if err := j.validateSetExportCustomRoutesWithPublicIpParameters(val); err != nil {
 		panic(err)
 	}
@@ -725,7 +724,7 @@ func (j *jsiiProxy_GoogleVmwareengineNetworkPeering)SetExportCustomRoutesWithPub
 	)
 }
 
-func (j *jsiiProxy_GoogleVmwareengineNetworkPeering)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleVmwareengineNetworkPeering) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -733,7 +732,7 @@ func (j *jsiiProxy_GoogleVmwareengineNetworkPeering)SetForEach(val cdktf.ITerraf
 	)
 }
 
-func (j *jsiiProxy_GoogleVmwareengineNetworkPeering)SetId(val *string) {
+func (j *jsiiProxy_GoogleVmwareengineNetworkPeering) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -744,7 +743,7 @@ func (j *jsiiProxy_GoogleVmwareengineNetworkPeering)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleVmwareengineNetworkPeering)SetImportCustomRoutes(val interface{}) {
+func (j *jsiiProxy_GoogleVmwareengineNetworkPeering) SetImportCustomRoutes(val any) {
 	if err := j.validateSetImportCustomRoutesParameters(val); err != nil {
 		panic(err)
 	}
@@ -755,7 +754,7 @@ func (j *jsiiProxy_GoogleVmwareengineNetworkPeering)SetImportCustomRoutes(val in
 	)
 }
 
-func (j *jsiiProxy_GoogleVmwareengineNetworkPeering)SetImportCustomRoutesWithPublicIp(val interface{}) {
+func (j *jsiiProxy_GoogleVmwareengineNetworkPeering) SetImportCustomRoutesWithPublicIp(val any) {
 	if err := j.validateSetImportCustomRoutesWithPublicIpParameters(val); err != nil {
 		panic(err)
 	}
@@ -766,7 +765,7 @@ func (j *jsiiProxy_GoogleVmwareengineNetworkPeering)SetImportCustomRoutesWithPub
 	)
 }
 
-func (j *jsiiProxy_GoogleVmwareengineNetworkPeering)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleVmwareengineNetworkPeering) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -777,7 +776,7 @@ func (j *jsiiProxy_GoogleVmwareengineNetworkPeering)SetLifecycle(val *cdktf.Terr
 	)
 }
 
-func (j *jsiiProxy_GoogleVmwareengineNetworkPeering)SetName(val *string) {
+func (j *jsiiProxy_GoogleVmwareengineNetworkPeering) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -788,7 +787,7 @@ func (j *jsiiProxy_GoogleVmwareengineNetworkPeering)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleVmwareengineNetworkPeering)SetPeerNetwork(val *string) {
+func (j *jsiiProxy_GoogleVmwareengineNetworkPeering) SetPeerNetwork(val *string) {
 	if err := j.validateSetPeerNetworkParameters(val); err != nil {
 		panic(err)
 	}
@@ -799,7 +798,7 @@ func (j *jsiiProxy_GoogleVmwareengineNetworkPeering)SetPeerNetwork(val *string) 
 	)
 }
 
-func (j *jsiiProxy_GoogleVmwareengineNetworkPeering)SetPeerNetworkType(val *string) {
+func (j *jsiiProxy_GoogleVmwareengineNetworkPeering) SetPeerNetworkType(val *string) {
 	if err := j.validateSetPeerNetworkTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -810,7 +809,7 @@ func (j *jsiiProxy_GoogleVmwareengineNetworkPeering)SetPeerNetworkType(val *stri
 	)
 }
 
-func (j *jsiiProxy_GoogleVmwareengineNetworkPeering)SetProject(val *string) {
+func (j *jsiiProxy_GoogleVmwareengineNetworkPeering) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -821,7 +820,7 @@ func (j *jsiiProxy_GoogleVmwareengineNetworkPeering)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleVmwareengineNetworkPeering)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleVmwareengineNetworkPeering) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -829,7 +828,7 @@ func (j *jsiiProxy_GoogleVmwareengineNetworkPeering)SetProvider(val cdktf.Terraf
 	)
 }
 
-func (j *jsiiProxy_GoogleVmwareengineNetworkPeering)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleVmwareengineNetworkPeering) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -840,7 +839,7 @@ func (j *jsiiProxy_GoogleVmwareengineNetworkPeering)SetProvisioners(val *[]inter
 	)
 }
 
-func (j *jsiiProxy_GoogleVmwareengineNetworkPeering)SetVmwareEngineNetwork(val *string) {
+func (j *jsiiProxy_GoogleVmwareengineNetworkPeering) SetVmwareEngineNetwork(val *string) {
 	if err := j.validateSetVmwareEngineNetworkParameters(val); err != nil {
 		panic(err)
 	}
@@ -863,7 +862,7 @@ func GoogleVmwareengineNetworkPeering_GenerateConfigForImport(scope constructs.C
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleVmwareengineNetworkPeering.GoogleVmwareengineNetworkPeering",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -887,7 +886,7 @@ func GoogleVmwareengineNetworkPeering_GenerateConfigForImport(scope constructs.C
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleVmwareengineNetworkPeering_IsConstruct(x interface{}) *bool {
+func GoogleVmwareengineNetworkPeering_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleVmwareengineNetworkPeering_IsConstructParameters(x); err != nil {
@@ -898,7 +897,7 @@ func GoogleVmwareengineNetworkPeering_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleVmwareengineNetworkPeering.GoogleVmwareengineNetworkPeering",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -906,7 +905,7 @@ func GoogleVmwareengineNetworkPeering_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleVmwareengineNetworkPeering_IsTerraformElement(x interface{}) *bool {
+func GoogleVmwareengineNetworkPeering_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleVmwareengineNetworkPeering_IsTerraformElementParameters(x); err != nil {
@@ -917,7 +916,7 @@ func GoogleVmwareengineNetworkPeering_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleVmwareengineNetworkPeering.GoogleVmwareengineNetworkPeering",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -925,7 +924,7 @@ func GoogleVmwareengineNetworkPeering_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleVmwareengineNetworkPeering_IsTerraformResource(x interface{}) *bool {
+func GoogleVmwareengineNetworkPeering_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleVmwareengineNetworkPeering_IsTerraformResourceParameters(x); err != nil {
@@ -936,7 +935,7 @@ func GoogleVmwareengineNetworkPeering_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleVmwareengineNetworkPeering.GoogleVmwareengineNetworkPeering",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -961,31 +960,31 @@ func (g *jsiiProxy_GoogleVmwareengineNetworkPeering) AddMoveTarget(moveTarget *s
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleVmwareengineNetworkPeering) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleVmwareengineNetworkPeering) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleVmwareengineNetworkPeering) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleVmwareengineNetworkPeering) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1001,7 +1000,7 @@ func (g *jsiiProxy_GoogleVmwareengineNetworkPeering) GetBooleanAttribute(terrafo
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1017,7 +1016,7 @@ func (g *jsiiProxy_GoogleVmwareengineNetworkPeering) GetBooleanMapAttribute(terr
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1033,7 +1032,7 @@ func (g *jsiiProxy_GoogleVmwareengineNetworkPeering) GetListAttribute(terraformA
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1049,7 +1048,7 @@ func (g *jsiiProxy_GoogleVmwareengineNetworkPeering) GetNumberAttribute(terrafor
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1065,7 +1064,7 @@ func (g *jsiiProxy_GoogleVmwareengineNetworkPeering) GetNumberListAttribute(terr
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1081,7 +1080,7 @@ func (g *jsiiProxy_GoogleVmwareengineNetworkPeering) GetNumberMapAttribute(terra
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1097,7 +1096,7 @@ func (g *jsiiProxy_GoogleVmwareengineNetworkPeering) GetStringAttribute(terrafor
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1113,15 +1112,15 @@ func (g *jsiiProxy_GoogleVmwareengineNetworkPeering) GetStringMapAttribute(terra
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleVmwareengineNetworkPeering) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleVmwareengineNetworkPeering) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1140,7 +1139,7 @@ func (g *jsiiProxy_GoogleVmwareengineNetworkPeering) ImportFrom(id *string, prov
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1153,7 +1152,7 @@ func (g *jsiiProxy_GoogleVmwareengineNetworkPeering) InterpolationForAttribute(t
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1167,18 +1166,18 @@ func (g *jsiiProxy_GoogleVmwareengineNetworkPeering) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleVmwareengineNetworkPeering) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleVmwareengineNetworkPeering) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1189,7 +1188,7 @@ func (g *jsiiProxy_GoogleVmwareengineNetworkPeering) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1200,7 +1199,7 @@ func (g *jsiiProxy_GoogleVmwareengineNetworkPeering) OverrideLogicalId(newLogica
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1211,7 +1210,7 @@ func (g *jsiiProxy_GoogleVmwareengineNetworkPeering) PutTimeouts(value *GoogleVm
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1287,8 +1286,8 @@ func (g *jsiiProxy_GoogleVmwareengineNetworkPeering) ResetTimeouts() {
 	)
 }
 
-func (g *jsiiProxy_GoogleVmwareengineNetworkPeering) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleVmwareengineNetworkPeering) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1300,8 +1299,8 @@ func (g *jsiiProxy_GoogleVmwareengineNetworkPeering) SynthesizeAttributes() *map
 	return returns
 }
 
-func (g *jsiiProxy_GoogleVmwareengineNetworkPeering) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleVmwareengineNetworkPeering) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1313,8 +1312,8 @@ func (g *jsiiProxy_GoogleVmwareengineNetworkPeering) SynthesizeHclAttributes() *
 	return returns
 }
 
-func (g *jsiiProxy_GoogleVmwareengineNetworkPeering) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleVmwareengineNetworkPeering) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1326,8 +1325,8 @@ func (g *jsiiProxy_GoogleVmwareengineNetworkPeering) ToHclTerraform() interface{
 	return returns
 }
 
-func (g *jsiiProxy_GoogleVmwareengineNetworkPeering) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleVmwareengineNetworkPeering) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1352,8 +1351,8 @@ func (g *jsiiProxy_GoogleVmwareengineNetworkPeering) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleVmwareengineNetworkPeering) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleVmwareengineNetworkPeering) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1364,4 +1363,3 @@ func (g *jsiiProxy_GoogleVmwareengineNetworkPeering) ToTerraform() interface{} {
 
 	return returns
 }
-

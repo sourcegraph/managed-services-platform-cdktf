@@ -114,7 +114,7 @@ func (j *jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigIpAllocationPolicyOu
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigIpAllocationPolicyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigIpAllocationPolicyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -219,7 +219,7 @@ func (j *jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigIpAllocationPolicyOu
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigIpAllocationPolicyOutputReference) validateSetUseIpAliasesParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigIpAllocationPolicyOutputReference) validateSetUseIpAliasesParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -250,4 +250,3 @@ func validateNewGoogleComposerEnvironmentConfigNodeConfigIpAllocationPolicyOutpu
 
 	return nil
 }
-

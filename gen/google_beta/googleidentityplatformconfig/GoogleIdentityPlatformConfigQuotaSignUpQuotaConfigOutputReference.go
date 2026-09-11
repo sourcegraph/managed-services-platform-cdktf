@@ -12,9 +12,9 @@ type GoogleIdentityPlatformConfigQuotaSignUpQuotaConfigOutputReference interface
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -49,7 +49,7 @@ type GoogleIdentityPlatformConfigQuotaSignUpQuotaConfigOutputReference interface
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,7 +75,7 @@ type GoogleIdentityPlatformConfigQuotaSignUpQuotaConfigOutputReference interface
 	ResetStartTime()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,8 +88,8 @@ type jsiiProxy_GoogleIdentityPlatformConfigQuotaSignUpQuotaConfigOutputReference
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GoogleIdentityPlatformConfigQuotaSignUpQuotaConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleIdentityPlatformConfigQuotaSignUpQuotaConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -218,7 +218,6 @@ func (j *jsiiProxy_GoogleIdentityPlatformConfigQuotaSignUpQuotaConfigOutputRefer
 	return returns
 }
 
-
 func NewGoogleIdentityPlatformConfigQuotaSignUpQuotaConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleIdentityPlatformConfigQuotaSignUpQuotaConfigOutputReference {
 	_init_.Initialize()
 
@@ -229,7 +228,7 @@ func NewGoogleIdentityPlatformConfigQuotaSignUpQuotaConfigOutputReference(terraf
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleIdentityPlatformConfig.GoogleIdentityPlatformConfigQuotaSignUpQuotaConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -241,12 +240,12 @@ func NewGoogleIdentityPlatformConfigQuotaSignUpQuotaConfigOutputReference_Overri
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleIdentityPlatformConfig.GoogleIdentityPlatformConfigQuotaSignUpQuotaConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleIdentityPlatformConfigQuotaSignUpQuotaConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleIdentityPlatformConfigQuotaSignUpQuotaConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -257,7 +256,7 @@ func (j *jsiiProxy_GoogleIdentityPlatformConfigQuotaSignUpQuotaConfigOutputRefer
 	)
 }
 
-func (j *jsiiProxy_GoogleIdentityPlatformConfigQuotaSignUpQuotaConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleIdentityPlatformConfigQuotaSignUpQuotaConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -268,7 +267,7 @@ func (j *jsiiProxy_GoogleIdentityPlatformConfigQuotaSignUpQuotaConfigOutputRefer
 	)
 }
 
-func (j *jsiiProxy_GoogleIdentityPlatformConfigQuotaSignUpQuotaConfigOutputReference)SetInternalValue(val *GoogleIdentityPlatformConfigQuotaSignUpQuotaConfig) {
+func (j *jsiiProxy_GoogleIdentityPlatformConfigQuotaSignUpQuotaConfigOutputReference) SetInternalValue(val *GoogleIdentityPlatformConfigQuotaSignUpQuotaConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_GoogleIdentityPlatformConfigQuotaSignUpQuotaConfigOutputRefer
 	)
 }
 
-func (j *jsiiProxy_GoogleIdentityPlatformConfigQuotaSignUpQuotaConfigOutputReference)SetQuota(val *float64) {
+func (j *jsiiProxy_GoogleIdentityPlatformConfigQuotaSignUpQuotaConfigOutputReference) SetQuota(val *float64) {
 	if err := j.validateSetQuotaParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_GoogleIdentityPlatformConfigQuotaSignUpQuotaConfigOutputRefer
 	)
 }
 
-func (j *jsiiProxy_GoogleIdentityPlatformConfigQuotaSignUpQuotaConfigOutputReference)SetQuotaDuration(val *string) {
+func (j *jsiiProxy_GoogleIdentityPlatformConfigQuotaSignUpQuotaConfigOutputReference) SetQuotaDuration(val *string) {
 	if err := j.validateSetQuotaDurationParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_GoogleIdentityPlatformConfigQuotaSignUpQuotaConfigOutputRefer
 	)
 }
 
-func (j *jsiiProxy_GoogleIdentityPlatformConfigQuotaSignUpQuotaConfigOutputReference)SetStartTime(val *string) {
+func (j *jsiiProxy_GoogleIdentityPlatformConfigQuotaSignUpQuotaConfigOutputReference) SetStartTime(val *string) {
 	if err := j.validateSetStartTimeParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_GoogleIdentityPlatformConfigQuotaSignUpQuotaConfigOutputRefer
 	)
 }
 
-func (j *jsiiProxy_GoogleIdentityPlatformConfigQuotaSignUpQuotaConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleIdentityPlatformConfigQuotaSignUpQuotaConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_GoogleIdentityPlatformConfigQuotaSignUpQuotaConfigOutputRefer
 	)
 }
 
-func (j *jsiiProxy_GoogleIdentityPlatformConfigQuotaSignUpQuotaConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleIdentityPlatformConfigQuotaSignUpQuotaConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,16 +346,16 @@ func (g *jsiiProxy_GoogleIdentityPlatformConfigQuotaSignUpQuotaConfigOutputRefer
 	return returns
 }
 
-func (g *jsiiProxy_GoogleIdentityPlatformConfigQuotaSignUpQuotaConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleIdentityPlatformConfigQuotaSignUpQuotaConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -372,7 +371,7 @@ func (g *jsiiProxy_GoogleIdentityPlatformConfigQuotaSignUpQuotaConfigOutputRefer
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -388,7 +387,7 @@ func (g *jsiiProxy_GoogleIdentityPlatformConfigQuotaSignUpQuotaConfigOutputRefer
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -404,7 +403,7 @@ func (g *jsiiProxy_GoogleIdentityPlatformConfigQuotaSignUpQuotaConfigOutputRefer
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -420,7 +419,7 @@ func (g *jsiiProxy_GoogleIdentityPlatformConfigQuotaSignUpQuotaConfigOutputRefer
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -436,7 +435,7 @@ func (g *jsiiProxy_GoogleIdentityPlatformConfigQuotaSignUpQuotaConfigOutputRefer
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -452,7 +451,7 @@ func (g *jsiiProxy_GoogleIdentityPlatformConfigQuotaSignUpQuotaConfigOutputRefer
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -468,7 +467,7 @@ func (g *jsiiProxy_GoogleIdentityPlatformConfigQuotaSignUpQuotaConfigOutputRefer
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -484,7 +483,7 @@ func (g *jsiiProxy_GoogleIdentityPlatformConfigQuotaSignUpQuotaConfigOutputRefer
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -513,7 +512,7 @@ func (g *jsiiProxy_GoogleIdentityPlatformConfigQuotaSignUpQuotaConfigOutputRefer
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -544,16 +543,16 @@ func (g *jsiiProxy_GoogleIdentityPlatformConfigQuotaSignUpQuotaConfigOutputRefer
 	)
 }
 
-func (g *jsiiProxy_GoogleIdentityPlatformConfigQuotaSignUpQuotaConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleIdentityPlatformConfigQuotaSignUpQuotaConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -572,4 +571,3 @@ func (g *jsiiProxy_GoogleIdentityPlatformConfigQuotaSignUpQuotaConfigOutputRefer
 
 	return returns
 }
-

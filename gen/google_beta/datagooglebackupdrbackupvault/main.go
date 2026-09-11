@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.dataGoogleBackupDrBackupVault.DataGoogleBackupDrBackupVault",
-		reflect.TypeOf((*DataGoogleBackupDrBackupVault)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleBackupDrBackupVault](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessRestriction", GoGetter: "AccessRestriction"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -79,7 +79,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "uid", GoGetter: "Uid"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleBackupDrBackupVault{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -87,6 +87,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.dataGoogleBackupDrBackupVault.DataGoogleBackupDrBackupVaultConfig",
-		reflect.TypeOf((*DataGoogleBackupDrBackupVaultConfig)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleBackupDrBackupVaultConfig](),
 	)
 }

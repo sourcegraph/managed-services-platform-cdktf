@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleDataplexEntryTypeRequiredAspectsList) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataplexEntryTypeRequiredAspectsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataplexEntryTypeRequiredAspectsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleDataplexEntryTypeRequiredAspectsListParameters(terraformRe
 
 	return nil
 }
-

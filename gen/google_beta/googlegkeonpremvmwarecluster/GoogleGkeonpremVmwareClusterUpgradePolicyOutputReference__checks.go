@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleGkeonpremVmwareClusterUpgradePolicyOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGkeonpremVmwareClusterUpgradePolicyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleGkeonpremVmwareClusterUpgradePolicyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_GoogleGkeonpremVmwareClusterUpgradePolicyOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGkeonpremVmwareClusterUpgradePolicyOutputReference) validateSetControlPlaneOnlyParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleGkeonpremVmwareClusterUpgradePolicyOutputReference) validateSetControlPlaneOnlyParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -218,4 +218,3 @@ func validateNewGoogleGkeonpremVmwareClusterUpgradePolicyOutputReferenceParamete
 
 	return nil
 }
-

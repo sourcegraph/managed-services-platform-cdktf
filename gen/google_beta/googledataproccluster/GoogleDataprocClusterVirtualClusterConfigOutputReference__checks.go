@@ -120,7 +120,7 @@ func (g *jsiiProxy_GoogleDataprocClusterVirtualClusterConfigOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataprocClusterVirtualClusterConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataprocClusterVirtualClusterConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -228,4 +228,3 @@ func validateNewGoogleDataprocClusterVirtualClusterConfigOutputReferenceParamete
 
 	return nil
 }
-

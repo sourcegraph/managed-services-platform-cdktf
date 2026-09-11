@@ -1,6 +1,5 @@
 package googleaccesscontextmanagerserviceperimeters
 
-
 type GoogleAccessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressFrom struct {
 	// A list of identities that are allowed access through this ingress policy.
 	//
@@ -19,6 +18,5 @@ type GoogleAccessContextManagerServicePerimetersServicePerimetersStatusIngressPo
 	// sources block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_access_context_manager_service_perimeters#sources GoogleAccessContextManagerServicePerimeters#sources}
-	Sources interface{} `field:"optional" json:"sources" yaml:"sources"`
+	Sources any `field:"optional" json:"sources" yaml:"sources"`
 }
-

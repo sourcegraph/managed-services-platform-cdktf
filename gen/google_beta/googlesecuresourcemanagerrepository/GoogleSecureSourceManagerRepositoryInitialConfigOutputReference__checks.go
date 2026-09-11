@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleSecureSourceManagerRepositoryInitialConfigOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSecureSourceManagerRepositoryInitialConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleSecureSourceManagerRepositoryInitialConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -230,4 +230,3 @@ func validateNewGoogleSecureSourceManagerRepositoryInitialConfigOutputReferenceP
 
 	return nil
 }
-

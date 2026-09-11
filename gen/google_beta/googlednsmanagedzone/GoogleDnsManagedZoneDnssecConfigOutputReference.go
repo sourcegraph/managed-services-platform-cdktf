@@ -12,9 +12,9 @@ type GoogleDnsManagedZoneDnssecConfigOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -26,7 +26,7 @@ type GoogleDnsManagedZoneDnssecConfigOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	DefaultKeySpecs() GoogleDnsManagedZoneDnssecConfigDefaultKeySpecsList
-	DefaultKeySpecsInput() interface{}
+	DefaultKeySpecsInput() any
 	// Experimental.
 	Fqn() *string
 	InternalValue() *GoogleDnsManagedZoneDnssecConfig
@@ -51,7 +51,7 @@ type GoogleDnsManagedZoneDnssecConfigOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -72,14 +72,14 @@ type GoogleDnsManagedZoneDnssecConfigOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutDefaultKeySpecs(value interface{})
+	PutDefaultKeySpecs(value any)
 	ResetDefaultKeySpecs()
 	ResetKind()
 	ResetNonExistence()
 	ResetState()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -92,8 +92,8 @@ type jsiiProxy_GoogleDnsManagedZoneDnssecConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GoogleDnsManagedZoneDnssecConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDnsManagedZoneDnssecConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -132,8 +132,8 @@ func (j *jsiiProxy_GoogleDnsManagedZoneDnssecConfigOutputReference) DefaultKeySp
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDnsManagedZoneDnssecConfigOutputReference) DefaultKeySpecsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDnsManagedZoneDnssecConfigOutputReference) DefaultKeySpecsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"defaultKeySpecsInput",
@@ -242,7 +242,6 @@ func (j *jsiiProxy_GoogleDnsManagedZoneDnssecConfigOutputReference) TerraformRes
 	return returns
 }
 
-
 func NewGoogleDnsManagedZoneDnssecConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleDnsManagedZoneDnssecConfigOutputReference {
 	_init_.Initialize()
 
@@ -253,7 +252,7 @@ func NewGoogleDnsManagedZoneDnssecConfigOutputReference(terraformResource cdktf.
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleDnsManagedZone.GoogleDnsManagedZoneDnssecConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -265,12 +264,12 @@ func NewGoogleDnsManagedZoneDnssecConfigOutputReference_Override(g GoogleDnsMana
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleDnsManagedZone.GoogleDnsManagedZoneDnssecConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleDnsManagedZoneDnssecConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleDnsManagedZoneDnssecConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -281,7 +280,7 @@ func (j *jsiiProxy_GoogleDnsManagedZoneDnssecConfigOutputReference)SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_GoogleDnsManagedZoneDnssecConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleDnsManagedZoneDnssecConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -292,7 +291,7 @@ func (j *jsiiProxy_GoogleDnsManagedZoneDnssecConfigOutputReference)SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_GoogleDnsManagedZoneDnssecConfigOutputReference)SetInternalValue(val *GoogleDnsManagedZoneDnssecConfig) {
+func (j *jsiiProxy_GoogleDnsManagedZoneDnssecConfigOutputReference) SetInternalValue(val *GoogleDnsManagedZoneDnssecConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -303,7 +302,7 @@ func (j *jsiiProxy_GoogleDnsManagedZoneDnssecConfigOutputReference)SetInternalVa
 	)
 }
 
-func (j *jsiiProxy_GoogleDnsManagedZoneDnssecConfigOutputReference)SetKind(val *string) {
+func (j *jsiiProxy_GoogleDnsManagedZoneDnssecConfigOutputReference) SetKind(val *string) {
 	if err := j.validateSetKindParameters(val); err != nil {
 		panic(err)
 	}
@@ -314,7 +313,7 @@ func (j *jsiiProxy_GoogleDnsManagedZoneDnssecConfigOutputReference)SetKind(val *
 	)
 }
 
-func (j *jsiiProxy_GoogleDnsManagedZoneDnssecConfigOutputReference)SetNonExistence(val *string) {
+func (j *jsiiProxy_GoogleDnsManagedZoneDnssecConfigOutputReference) SetNonExistence(val *string) {
 	if err := j.validateSetNonExistenceParameters(val); err != nil {
 		panic(err)
 	}
@@ -325,7 +324,7 @@ func (j *jsiiProxy_GoogleDnsManagedZoneDnssecConfigOutputReference)SetNonExisten
 	)
 }
 
-func (j *jsiiProxy_GoogleDnsManagedZoneDnssecConfigOutputReference)SetState(val *string) {
+func (j *jsiiProxy_GoogleDnsManagedZoneDnssecConfigOutputReference) SetState(val *string) {
 	if err := j.validateSetStateParameters(val); err != nil {
 		panic(err)
 	}
@@ -336,7 +335,7 @@ func (j *jsiiProxy_GoogleDnsManagedZoneDnssecConfigOutputReference)SetState(val 
 	)
 }
 
-func (j *jsiiProxy_GoogleDnsManagedZoneDnssecConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleDnsManagedZoneDnssecConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,7 +346,7 @@ func (j *jsiiProxy_GoogleDnsManagedZoneDnssecConfigOutputReference)SetTerraformA
 	)
 }
 
-func (j *jsiiProxy_GoogleDnsManagedZoneDnssecConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleDnsManagedZoneDnssecConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -371,16 +370,16 @@ func (g *jsiiProxy_GoogleDnsManagedZoneDnssecConfigOutputReference) ComputeFqn()
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDnsManagedZoneDnssecConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleDnsManagedZoneDnssecConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -396,7 +395,7 @@ func (g *jsiiProxy_GoogleDnsManagedZoneDnssecConfigOutputReference) GetBooleanAt
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -412,7 +411,7 @@ func (g *jsiiProxy_GoogleDnsManagedZoneDnssecConfigOutputReference) GetBooleanMa
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -428,7 +427,7 @@ func (g *jsiiProxy_GoogleDnsManagedZoneDnssecConfigOutputReference) GetListAttri
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -444,7 +443,7 @@ func (g *jsiiProxy_GoogleDnsManagedZoneDnssecConfigOutputReference) GetNumberAtt
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -460,7 +459,7 @@ func (g *jsiiProxy_GoogleDnsManagedZoneDnssecConfigOutputReference) GetNumberLis
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -476,7 +475,7 @@ func (g *jsiiProxy_GoogleDnsManagedZoneDnssecConfigOutputReference) GetNumberMap
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -492,7 +491,7 @@ func (g *jsiiProxy_GoogleDnsManagedZoneDnssecConfigOutputReference) GetStringAtt
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -508,7 +507,7 @@ func (g *jsiiProxy_GoogleDnsManagedZoneDnssecConfigOutputReference) GetStringMap
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -537,21 +536,21 @@ func (g *jsiiProxy_GoogleDnsManagedZoneDnssecConfigOutputReference) Interpolatio
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDnsManagedZoneDnssecConfigOutputReference) PutDefaultKeySpecs(value interface{}) {
+func (g *jsiiProxy_GoogleDnsManagedZoneDnssecConfigOutputReference) PutDefaultKeySpecs(value any) {
 	if err := g.validatePutDefaultKeySpecsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putDefaultKeySpecs",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -587,16 +586,16 @@ func (g *jsiiProxy_GoogleDnsManagedZoneDnssecConfigOutputReference) ResetState()
 	)
 }
 
-func (g *jsiiProxy_GoogleDnsManagedZoneDnssecConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleDnsManagedZoneDnssecConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -615,4 +614,3 @@ func (g *jsiiProxy_GoogleDnsManagedZoneDnssecConfigOutputReference) ToString() *
 
 	return returns
 }
-

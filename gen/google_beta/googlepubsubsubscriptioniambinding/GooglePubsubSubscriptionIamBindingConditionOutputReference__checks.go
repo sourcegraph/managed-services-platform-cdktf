@@ -98,7 +98,7 @@ func (g *jsiiProxy_GooglePubsubSubscriptionIamBindingConditionOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_GooglePubsubSubscriptionIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GooglePubsubSubscriptionIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewGooglePubsubSubscriptionIamBindingConditionOutputReferenceParame
 
 	return nil
 }
-

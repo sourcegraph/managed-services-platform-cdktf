@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleBigtableMaterializedView) validateAddMoveTargetParamete
 	return nil
 }
 
-func (g *jsiiProxy_GoogleBigtableMaterializedView) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleBigtableMaterializedView) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleBigtableMaterializedView) validateMoveFromIdParameters(
 	return nil
 }
 
-func (g *jsiiProxy_GoogleBigtableMaterializedView) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleBigtableMaterializedView) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateGoogleBigtableMaterializedView_GenerateConfigForImportParameters(sc
 	return nil
 }
 
-func validateGoogleBigtableMaterializedView_IsConstructParameters(x interface{}) error {
+func validateGoogleBigtableMaterializedView_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateGoogleBigtableMaterializedView_IsConstructParameters(x interface{})
 	return nil
 }
 
-func validateGoogleBigtableMaterializedView_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleBigtableMaterializedView_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateGoogleBigtableMaterializedView_IsTerraformElementParameters(x inter
 	return nil
 }
 
-func validateGoogleBigtableMaterializedView_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleBigtableMaterializedView_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateGoogleBigtableMaterializedView_IsTerraformResourceParameters(x inte
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigtableMaterializedView) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBigtableMaterializedView) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_GoogleBigtableMaterializedView) validateSetConnectionParamete
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigtableMaterializedView) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBigtableMaterializedView) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -345,7 +345,7 @@ func (j *jsiiProxy_GoogleBigtableMaterializedView) validateSetCountParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigtableMaterializedView) validateSetDeletionProtectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBigtableMaterializedView) validateSetDeletionProtectionParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -405,7 +405,7 @@ func (j *jsiiProxy_GoogleBigtableMaterializedView) validateSetProjectParameters(
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigtableMaterializedView) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleBigtableMaterializedView) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -477,4 +477,3 @@ func validateNewGoogleBigtableMaterializedViewParameters(scope constructs.Constr
 
 	return nil
 }
-

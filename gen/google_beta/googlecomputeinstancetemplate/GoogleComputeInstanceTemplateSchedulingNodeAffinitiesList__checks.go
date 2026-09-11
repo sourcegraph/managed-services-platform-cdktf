@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleComputeInstanceTemplateSchedulingNodeAffinitiesList) va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceTemplateSchedulingNodeAffinitiesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeInstanceTemplateSchedulingNodeAffinitiesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleComputeInstanceTemplateSchedulingNodeAffinitiesListParamet
 
 	return nil
 }
-

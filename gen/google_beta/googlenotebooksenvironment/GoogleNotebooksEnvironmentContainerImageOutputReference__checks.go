@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleNotebooksEnvironmentContainerImageOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNotebooksEnvironmentContainerImageOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNotebooksEnvironmentContainerImageOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGoogleNotebooksEnvironmentContainerImageOutputReferenceParameter
 
 	return nil
 }
-

@@ -12,9 +12,9 @@ type GoogleComputeBackendServiceLogConfigOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -25,9 +25,9 @@ type GoogleComputeBackendServiceLogConfigOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	Enable() interface{}
-	SetEnable(val interface{})
-	EnableInput() interface{}
+	Enable() any
+	SetEnable(val any)
+	EnableInput() any
 	// Experimental.
 	Fqn() *string
 	InternalValue() *GoogleComputeBackendServiceLogConfig
@@ -52,7 +52,7 @@ type GoogleComputeBackendServiceLogConfigOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -79,7 +79,7 @@ type GoogleComputeBackendServiceLogConfigOutputReference interface {
 	ResetSampleRate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -92,8 +92,8 @@ type jsiiProxy_GoogleComputeBackendServiceLogConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GoogleComputeBackendServiceLogConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeBackendServiceLogConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -122,8 +122,8 @@ func (j *jsiiProxy_GoogleComputeBackendServiceLogConfigOutputReference) Creation
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeBackendServiceLogConfigOutputReference) Enable() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeBackendServiceLogConfigOutputReference) Enable() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enable",
@@ -132,8 +132,8 @@ func (j *jsiiProxy_GoogleComputeBackendServiceLogConfigOutputReference) Enable()
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeBackendServiceLogConfigOutputReference) EnableInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeBackendServiceLogConfigOutputReference) EnableInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableInput",
@@ -242,7 +242,6 @@ func (j *jsiiProxy_GoogleComputeBackendServiceLogConfigOutputReference) Terrafor
 	return returns
 }
 
-
 func NewGoogleComputeBackendServiceLogConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleComputeBackendServiceLogConfigOutputReference {
 	_init_.Initialize()
 
@@ -253,7 +252,7 @@ func NewGoogleComputeBackendServiceLogConfigOutputReference(terraformResource cd
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleComputeBackendService.GoogleComputeBackendServiceLogConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -265,12 +264,12 @@ func NewGoogleComputeBackendServiceLogConfigOutputReference_Override(g GoogleCom
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleComputeBackendService.GoogleComputeBackendServiceLogConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeBackendServiceLogConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleComputeBackendServiceLogConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -281,7 +280,7 @@ func (j *jsiiProxy_GoogleComputeBackendServiceLogConfigOutputReference)SetComple
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeBackendServiceLogConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleComputeBackendServiceLogConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -292,7 +291,7 @@ func (j *jsiiProxy_GoogleComputeBackendServiceLogConfigOutputReference)SetComple
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeBackendServiceLogConfigOutputReference)SetEnable(val interface{}) {
+func (j *jsiiProxy_GoogleComputeBackendServiceLogConfigOutputReference) SetEnable(val any) {
 	if err := j.validateSetEnableParameters(val); err != nil {
 		panic(err)
 	}
@@ -303,7 +302,7 @@ func (j *jsiiProxy_GoogleComputeBackendServiceLogConfigOutputReference)SetEnable
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeBackendServiceLogConfigOutputReference)SetInternalValue(val *GoogleComputeBackendServiceLogConfig) {
+func (j *jsiiProxy_GoogleComputeBackendServiceLogConfigOutputReference) SetInternalValue(val *GoogleComputeBackendServiceLogConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -314,7 +313,7 @@ func (j *jsiiProxy_GoogleComputeBackendServiceLogConfigOutputReference)SetIntern
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeBackendServiceLogConfigOutputReference)SetOptionalFields(val *[]*string) {
+func (j *jsiiProxy_GoogleComputeBackendServiceLogConfigOutputReference) SetOptionalFields(val *[]*string) {
 	if err := j.validateSetOptionalFieldsParameters(val); err != nil {
 		panic(err)
 	}
@@ -325,7 +324,7 @@ func (j *jsiiProxy_GoogleComputeBackendServiceLogConfigOutputReference)SetOption
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeBackendServiceLogConfigOutputReference)SetOptionalMode(val *string) {
+func (j *jsiiProxy_GoogleComputeBackendServiceLogConfigOutputReference) SetOptionalMode(val *string) {
 	if err := j.validateSetOptionalModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -336,7 +335,7 @@ func (j *jsiiProxy_GoogleComputeBackendServiceLogConfigOutputReference)SetOption
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeBackendServiceLogConfigOutputReference)SetSampleRate(val *float64) {
+func (j *jsiiProxy_GoogleComputeBackendServiceLogConfigOutputReference) SetSampleRate(val *float64) {
 	if err := j.validateSetSampleRateParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,7 +346,7 @@ func (j *jsiiProxy_GoogleComputeBackendServiceLogConfigOutputReference)SetSample
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeBackendServiceLogConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleComputeBackendServiceLogConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -358,7 +357,7 @@ func (j *jsiiProxy_GoogleComputeBackendServiceLogConfigOutputReference)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeBackendServiceLogConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleComputeBackendServiceLogConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -382,16 +381,16 @@ func (g *jsiiProxy_GoogleComputeBackendServiceLogConfigOutputReference) ComputeF
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeBackendServiceLogConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleComputeBackendServiceLogConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -407,7 +406,7 @@ func (g *jsiiProxy_GoogleComputeBackendServiceLogConfigOutputReference) GetBoole
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -423,7 +422,7 @@ func (g *jsiiProxy_GoogleComputeBackendServiceLogConfigOutputReference) GetBoole
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -439,7 +438,7 @@ func (g *jsiiProxy_GoogleComputeBackendServiceLogConfigOutputReference) GetListA
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -455,7 +454,7 @@ func (g *jsiiProxy_GoogleComputeBackendServiceLogConfigOutputReference) GetNumbe
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -471,7 +470,7 @@ func (g *jsiiProxy_GoogleComputeBackendServiceLogConfigOutputReference) GetNumbe
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -487,7 +486,7 @@ func (g *jsiiProxy_GoogleComputeBackendServiceLogConfigOutputReference) GetNumbe
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -503,7 +502,7 @@ func (g *jsiiProxy_GoogleComputeBackendServiceLogConfigOutputReference) GetStrin
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -519,7 +518,7 @@ func (g *jsiiProxy_GoogleComputeBackendServiceLogConfigOutputReference) GetStrin
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -548,7 +547,7 @@ func (g *jsiiProxy_GoogleComputeBackendServiceLogConfigOutputReference) Interpol
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -587,16 +586,16 @@ func (g *jsiiProxy_GoogleComputeBackendServiceLogConfigOutputReference) ResetSam
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeBackendServiceLogConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleComputeBackendServiceLogConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -615,4 +614,3 @@ func (g *jsiiProxy_GoogleComputeBackendServiceLogConfigOutputReference) ToString
 
 	return returns
 }
-

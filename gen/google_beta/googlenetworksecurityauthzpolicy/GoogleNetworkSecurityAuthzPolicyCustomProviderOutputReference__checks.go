@@ -120,7 +120,7 @@ func (g *jsiiProxy_GoogleNetworkSecurityAuthzPolicyCustomProviderOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityAuthzPolicyCustomProviderOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNetworkSecurityAuthzPolicyCustomProviderOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -220,4 +220,3 @@ func validateNewGoogleNetworkSecurityAuthzPolicyCustomProviderOutputReferencePar
 
 	return nil
 }
-

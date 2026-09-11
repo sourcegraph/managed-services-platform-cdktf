@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleWorkbenchInstanceGceSetupContainerImageOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_GoogleWorkbenchInstanceGceSetupContainerImageOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleWorkbenchInstanceGceSetupContainerImageOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGoogleWorkbenchInstanceGceSetupContainerImageOutputReferencePara
 
 	return nil
 }
-

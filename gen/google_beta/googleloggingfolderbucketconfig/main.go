@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleLoggingFolderBucketConfig.GoogleLoggingFolderBucketConfig",
-		reflect.TypeOf((*GoogleLoggingFolderBucketConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleLoggingFolderBucketConfig](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -78,7 +78,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleLoggingFolderBucketConfig{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -86,11 +86,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleLoggingFolderBucketConfig.GoogleLoggingFolderBucketConfigCmekSettings",
-		reflect.TypeOf((*GoogleLoggingFolderBucketConfigCmekSettings)(nil)).Elem(),
+		reflect.TypeFor[GoogleLoggingFolderBucketConfigCmekSettings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleLoggingFolderBucketConfig.GoogleLoggingFolderBucketConfigCmekSettingsOutputReference",
-		reflect.TypeOf((*GoogleLoggingFolderBucketConfigCmekSettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleLoggingFolderBucketConfigCmekSettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -119,7 +119,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleLoggingFolderBucketConfigCmekSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -127,15 +127,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleLoggingFolderBucketConfig.GoogleLoggingFolderBucketConfigConfig",
-		reflect.TypeOf((*GoogleLoggingFolderBucketConfigConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleLoggingFolderBucketConfigConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleLoggingFolderBucketConfig.GoogleLoggingFolderBucketConfigIndexConfigs",
-		reflect.TypeOf((*GoogleLoggingFolderBucketConfigIndexConfigs)(nil)).Elem(),
+		reflect.TypeFor[GoogleLoggingFolderBucketConfigIndexConfigs](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleLoggingFolderBucketConfig.GoogleLoggingFolderBucketConfigIndexConfigsList",
-		reflect.TypeOf((*GoogleLoggingFolderBucketConfigIndexConfigsList)(nil)).Elem(),
+		reflect.TypeFor[GoogleLoggingFolderBucketConfigIndexConfigsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -149,7 +149,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleLoggingFolderBucketConfigIndexConfigsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -157,7 +157,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleLoggingFolderBucketConfig.GoogleLoggingFolderBucketConfigIndexConfigsOutputReference",
-		reflect.TypeOf((*GoogleLoggingFolderBucketConfigIndexConfigsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleLoggingFolderBucketConfigIndexConfigsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -185,7 +185,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleLoggingFolderBucketConfigIndexConfigsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleApigeeAddonsConfig.GoogleApigeeAddonsConfig",
-		reflect.TypeOf((*GoogleApigeeAddonsConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleApigeeAddonsConfig](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberProperty{JsiiProperty: "addonsConfig", GoGetter: "AddonsConfig"},
@@ -66,7 +66,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleApigeeAddonsConfig{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -74,15 +74,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleApigeeAddonsConfig.GoogleApigeeAddonsConfigAddonsConfig",
-		reflect.TypeOf((*GoogleApigeeAddonsConfigAddonsConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleApigeeAddonsConfigAddonsConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleApigeeAddonsConfig.GoogleApigeeAddonsConfigAddonsConfigAdvancedApiOpsConfig",
-		reflect.TypeOf((*GoogleApigeeAddonsConfigAddonsConfigAdvancedApiOpsConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleApigeeAddonsConfigAddonsConfigAdvancedApiOpsConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleApigeeAddonsConfig.GoogleApigeeAddonsConfigAddonsConfigAdvancedApiOpsConfigOutputReference",
-		reflect.TypeOf((*GoogleApigeeAddonsConfigAddonsConfigAdvancedApiOpsConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleApigeeAddonsConfigAddonsConfigAdvancedApiOpsConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -109,7 +109,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleApigeeAddonsConfigAddonsConfigAdvancedApiOpsConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -117,11 +117,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleApigeeAddonsConfig.GoogleApigeeAddonsConfigAddonsConfigApiSecurityConfig",
-		reflect.TypeOf((*GoogleApigeeAddonsConfigAddonsConfigApiSecurityConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleApigeeAddonsConfigAddonsConfigApiSecurityConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleApigeeAddonsConfig.GoogleApigeeAddonsConfigAddonsConfigApiSecurityConfigOutputReference",
-		reflect.TypeOf((*GoogleApigeeAddonsConfigAddonsConfigApiSecurityConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleApigeeAddonsConfigAddonsConfigApiSecurityConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -149,7 +149,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleApigeeAddonsConfigAddonsConfigApiSecurityConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -157,11 +157,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleApigeeAddonsConfig.GoogleApigeeAddonsConfigAddonsConfigConnectorsPlatformConfig",
-		reflect.TypeOf((*GoogleApigeeAddonsConfigAddonsConfigConnectorsPlatformConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleApigeeAddonsConfigAddonsConfigConnectorsPlatformConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleApigeeAddonsConfig.GoogleApigeeAddonsConfigAddonsConfigConnectorsPlatformConfigOutputReference",
-		reflect.TypeOf((*GoogleApigeeAddonsConfigAddonsConfigConnectorsPlatformConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleApigeeAddonsConfigAddonsConfigConnectorsPlatformConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -189,7 +189,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleApigeeAddonsConfigAddonsConfigConnectorsPlatformConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -197,11 +197,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleApigeeAddonsConfig.GoogleApigeeAddonsConfigAddonsConfigIntegrationConfig",
-		reflect.TypeOf((*GoogleApigeeAddonsConfigAddonsConfigIntegrationConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleApigeeAddonsConfigAddonsConfigIntegrationConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleApigeeAddonsConfig.GoogleApigeeAddonsConfigAddonsConfigIntegrationConfigOutputReference",
-		reflect.TypeOf((*GoogleApigeeAddonsConfigAddonsConfigIntegrationConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleApigeeAddonsConfigAddonsConfigIntegrationConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -228,7 +228,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleApigeeAddonsConfigAddonsConfigIntegrationConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -236,11 +236,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleApigeeAddonsConfig.GoogleApigeeAddonsConfigAddonsConfigMonetizationConfig",
-		reflect.TypeOf((*GoogleApigeeAddonsConfigAddonsConfigMonetizationConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleApigeeAddonsConfigAddonsConfigMonetizationConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleApigeeAddonsConfig.GoogleApigeeAddonsConfigAddonsConfigMonetizationConfigOutputReference",
-		reflect.TypeOf((*GoogleApigeeAddonsConfigAddonsConfigMonetizationConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleApigeeAddonsConfigAddonsConfigMonetizationConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -267,7 +267,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleApigeeAddonsConfigAddonsConfigMonetizationConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -275,7 +275,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleApigeeAddonsConfig.GoogleApigeeAddonsConfigAddonsConfigOutputReference",
-		reflect.TypeOf((*GoogleApigeeAddonsConfigAddonsConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleApigeeAddonsConfigAddonsConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "advancedApiOpsConfig", GoGetter: "AdvancedApiOpsConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "advancedApiOpsConfigInput", GoGetter: "AdvancedApiOpsConfigInput"},
@@ -319,7 +319,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleApigeeAddonsConfigAddonsConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -327,15 +327,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleApigeeAddonsConfig.GoogleApigeeAddonsConfigConfig",
-		reflect.TypeOf((*GoogleApigeeAddonsConfigConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleApigeeAddonsConfigConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleApigeeAddonsConfig.GoogleApigeeAddonsConfigTimeouts",
-		reflect.TypeOf((*GoogleApigeeAddonsConfigTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleApigeeAddonsConfigTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleApigeeAddonsConfig.GoogleApigeeAddonsConfigTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleApigeeAddonsConfigTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleApigeeAddonsConfigTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -368,7 +368,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleApigeeAddonsConfigTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

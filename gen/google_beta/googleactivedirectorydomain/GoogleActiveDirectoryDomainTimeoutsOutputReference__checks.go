@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleActiveDirectoryDomainTimeoutsOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_GoogleActiveDirectoryDomainTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleActiveDirectoryDomainTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_GoogleActiveDirectoryDomainTimeoutsOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_GoogleActiveDirectoryDomainTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleActiveDirectoryDomainTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGoogleActiveDirectoryDomainTimeoutsOutputReferenceParameters(ter
 
 	return nil
 }
-

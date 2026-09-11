@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleCloudRunV2Service) validateAddMoveTargetParameters(move
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCloudRunV2Service) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleCloudRunV2Service) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleCloudRunV2Service) validateMoveFromIdParameters(id *str
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCloudRunV2Service) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleCloudRunV2Service) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -259,7 +259,7 @@ func (g *jsiiProxy_GoogleCloudRunV2Service) validatePutTimeoutsParameters(value 
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCloudRunV2Service) validatePutTrafficParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleCloudRunV2Service) validatePutTrafficParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -306,7 +306,7 @@ func validateGoogleCloudRunV2Service_GenerateConfigForImportParameters(scope con
 	return nil
 }
 
-func validateGoogleCloudRunV2Service_IsConstructParameters(x interface{}) error {
+func validateGoogleCloudRunV2Service_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -314,7 +314,7 @@ func validateGoogleCloudRunV2Service_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
-func validateGoogleCloudRunV2Service_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleCloudRunV2Service_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -322,7 +322,7 @@ func validateGoogleCloudRunV2Service_IsTerraformElementParameters(x interface{})
 	return nil
 }
 
-func validateGoogleCloudRunV2Service_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleCloudRunV2Service_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -354,7 +354,7 @@ func (j *jsiiProxy_GoogleCloudRunV2Service) validateSetClientVersionParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudRunV2Service) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleCloudRunV2Service) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -387,7 +387,7 @@ func (j *jsiiProxy_GoogleCloudRunV2Service) validateSetConnectionParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudRunV2Service) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleCloudRunV2Service) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -452,7 +452,7 @@ func (j *jsiiProxy_GoogleCloudRunV2Service) validateSetCustomAudiencesParameters
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudRunV2Service) validateSetDefaultUriDisabledParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleCloudRunV2Service) validateSetDefaultUriDisabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -472,7 +472,7 @@ func (j *jsiiProxy_GoogleCloudRunV2Service) validateSetDefaultUriDisabledParamet
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudRunV2Service) validateSetDeletionProtectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleCloudRunV2Service) validateSetDeletionProtectionParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -500,7 +500,7 @@ func (j *jsiiProxy_GoogleCloudRunV2Service) validateSetDescriptionParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudRunV2Service) validateSetIapEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleCloudRunV2Service) validateSetIapEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -536,7 +536,7 @@ func (j *jsiiProxy_GoogleCloudRunV2Service) validateSetIngressParameters(val *st
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudRunV2Service) validateSetInvokerIamDisabledParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleCloudRunV2Service) validateSetInvokerIamDisabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -604,7 +604,7 @@ func (j *jsiiProxy_GoogleCloudRunV2Service) validateSetProjectParameters(val *st
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudRunV2Service) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleCloudRunV2Service) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -668,4 +668,3 @@ func validateNewGoogleCloudRunV2ServiceParameters(scope constructs.Construct, id
 
 	return nil
 }
-

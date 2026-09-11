@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleOsConfigPatchDeploymentInstanceFilterGroupLabelsList) v
 	return nil
 }
 
-func (j *jsiiProxy_GoogleOsConfigPatchDeploymentInstanceFilterGroupLabelsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleOsConfigPatchDeploymentInstanceFilterGroupLabelsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleOsConfigPatchDeploymentInstanceFilterGroupLabelsListParame
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleSourcerepoRepositoryIamBindingConditionOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSourcerepoRepositoryIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleSourcerepoRepositoryIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewGoogleSourcerepoRepositoryIamBindingConditionOutputReferencePara
 
 	return nil
 }
-

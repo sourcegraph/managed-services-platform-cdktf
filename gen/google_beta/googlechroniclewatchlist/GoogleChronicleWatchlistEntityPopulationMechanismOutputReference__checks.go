@@ -109,7 +109,7 @@ func (g *jsiiProxy_GoogleChronicleWatchlistEntityPopulationMechanismOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_GoogleChronicleWatchlistEntityPopulationMechanismOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleChronicleWatchlistEntityPopulationMechanismOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -209,4 +209,3 @@ func validateNewGoogleChronicleWatchlistEntityPopulationMechanismOutputReference
 
 	return nil
 }
-

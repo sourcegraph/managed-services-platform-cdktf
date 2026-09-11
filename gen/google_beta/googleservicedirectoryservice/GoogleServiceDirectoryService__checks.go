@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleServiceDirectoryService) validateAddMoveTargetParameter
 	return nil
 }
 
-func (g *jsiiProxy_GoogleServiceDirectoryService) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleServiceDirectoryService) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleServiceDirectoryService) validateMoveFromIdParameters(i
 	return nil
 }
 
-func (g *jsiiProxy_GoogleServiceDirectoryService) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleServiceDirectoryService) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateGoogleServiceDirectoryService_GenerateConfigForImportParameters(sco
 	return nil
 }
 
-func validateGoogleServiceDirectoryService_IsConstructParameters(x interface{}) error {
+func validateGoogleServiceDirectoryService_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateGoogleServiceDirectoryService_IsConstructParameters(x interface{}) 
 	return nil
 }
 
-func validateGoogleServiceDirectoryService_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleServiceDirectoryService_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateGoogleServiceDirectoryService_IsTerraformElementParameters(x interf
 	return nil
 }
 
-func validateGoogleServiceDirectoryService_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleServiceDirectoryService_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateGoogleServiceDirectoryService_IsTerraformResourceParameters(x inter
 	return nil
 }
 
-func (j *jsiiProxy_GoogleServiceDirectoryService) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleServiceDirectoryService) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_GoogleServiceDirectoryService) validateSetConnectionParameter
 	return nil
 }
 
-func (j *jsiiProxy_GoogleServiceDirectoryService) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleServiceDirectoryService) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -377,7 +377,7 @@ func (j *jsiiProxy_GoogleServiceDirectoryService) validateSetNamespaceParameters
 	return nil
 }
 
-func (j *jsiiProxy_GoogleServiceDirectoryService) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleServiceDirectoryService) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -449,4 +449,3 @@ func validateNewGoogleServiceDirectoryServiceParameters(scope constructs.Constru
 
 	return nil
 }
-

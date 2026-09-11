@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleComputeBackendServiceIapOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeBackendServiceIapOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeBackendServiceIapOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_GoogleComputeBackendServiceIapOutputReference) validateSetCom
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeBackendServiceIapOutputReference) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeBackendServiceIapOutputReference) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -234,4 +234,3 @@ func validateNewGoogleComputeBackendServiceIapOutputReferenceParameters(terrafor
 
 	return nil
 }
-

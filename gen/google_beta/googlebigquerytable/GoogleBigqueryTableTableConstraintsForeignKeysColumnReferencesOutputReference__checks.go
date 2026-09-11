@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleBigqueryTableTableConstraintsForeignKeysColumnReference
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigqueryTableTableConstraintsForeignKeysColumnReferencesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBigqueryTableTableConstraintsForeignKeysColumnReferencesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGoogleBigqueryTableTableConstraintsForeignKeysColumnReferencesOu
 
 	return nil
 }
-

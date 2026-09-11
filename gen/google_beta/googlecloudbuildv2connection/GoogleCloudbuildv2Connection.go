@@ -22,23 +22,23 @@ type GoogleCloudbuildv2Connection interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	Disabled() interface{}
-	SetDisabled(val interface{})
-	DisabledInput() interface{}
+	Disabled() any
+	SetDisabled(val any)
+	DisabledInput() any
 	EffectiveAnnotations() cdktf.StringMap
 	Etag() *string
 	// Experimental.
@@ -79,28 +79,28 @@ type GoogleCloudbuildv2Connection interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Reconciling() cdktf.IResolvable
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() GoogleCloudbuildv2ConnectionTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	UpdateTime() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -118,7 +118,7 @@ type GoogleCloudbuildv2Connection interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -130,7 +130,7 @@ type GoogleCloudbuildv2Connection interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -156,17 +156,17 @@ type GoogleCloudbuildv2Connection interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleCloudbuildv2Connection
@@ -244,8 +244,8 @@ func (j *jsiiProxy_GoogleCloudbuildv2Connection) CdktfStack() cdktf.TerraformSta
 	return returns
 }
 
-func (j *jsiiProxy_GoogleCloudbuildv2Connection) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleCloudbuildv2Connection) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -254,8 +254,8 @@ func (j *jsiiProxy_GoogleCloudbuildv2Connection) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleCloudbuildv2Connection) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleCloudbuildv2Connection) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -264,8 +264,8 @@ func (j *jsiiProxy_GoogleCloudbuildv2Connection) ConstructNodeMetadata() *map[st
 	return returns
 }
 
-func (j *jsiiProxy_GoogleCloudbuildv2Connection) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleCloudbuildv2Connection) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -294,8 +294,8 @@ func (j *jsiiProxy_GoogleCloudbuildv2Connection) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleCloudbuildv2Connection) Disabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleCloudbuildv2Connection) Disabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disabled",
@@ -304,8 +304,8 @@ func (j *jsiiProxy_GoogleCloudbuildv2Connection) Disabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleCloudbuildv2Connection) DisabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleCloudbuildv2Connection) DisabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disabledInput",
@@ -544,8 +544,8 @@ func (j *jsiiProxy_GoogleCloudbuildv2Connection) Provider() cdktf.TerraformProvi
 	return returns
 }
 
-func (j *jsiiProxy_GoogleCloudbuildv2Connection) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleCloudbuildv2Connection) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -554,8 +554,8 @@ func (j *jsiiProxy_GoogleCloudbuildv2Connection) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleCloudbuildv2Connection) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleCloudbuildv2Connection) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -584,8 +584,8 @@ func (j *jsiiProxy_GoogleCloudbuildv2Connection) TerraformGeneratorMetadata() *c
 	return returns
 }
 
-func (j *jsiiProxy_GoogleCloudbuildv2Connection) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleCloudbuildv2Connection) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -614,8 +614,8 @@ func (j *jsiiProxy_GoogleCloudbuildv2Connection) Timeouts() GoogleCloudbuildv2Co
 	return returns
 }
 
-func (j *jsiiProxy_GoogleCloudbuildv2Connection) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleCloudbuildv2Connection) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -634,7 +634,6 @@ func (j *jsiiProxy_GoogleCloudbuildv2Connection) UpdateTime() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_cloudbuildv2_connection google_cloudbuildv2_connection} Resource.
 func NewGoogleCloudbuildv2Connection(scope constructs.Construct, id *string, config *GoogleCloudbuildv2ConnectionConfig) GoogleCloudbuildv2Connection {
 	_init_.Initialize()
@@ -646,7 +645,7 @@ func NewGoogleCloudbuildv2Connection(scope constructs.Construct, id *string, con
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleCloudbuildv2Connection.GoogleCloudbuildv2Connection",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -659,12 +658,12 @@ func NewGoogleCloudbuildv2Connection_Override(g GoogleCloudbuildv2Connection, sc
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleCloudbuildv2Connection.GoogleCloudbuildv2Connection",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudbuildv2Connection)SetAnnotations(val *map[string]*string) {
+func (j *jsiiProxy_GoogleCloudbuildv2Connection) SetAnnotations(val *map[string]*string) {
 	if err := j.validateSetAnnotationsParameters(val); err != nil {
 		panic(err)
 	}
@@ -675,7 +674,7 @@ func (j *jsiiProxy_GoogleCloudbuildv2Connection)SetAnnotations(val *map[string]*
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudbuildv2Connection)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleCloudbuildv2Connection) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -686,7 +685,7 @@ func (j *jsiiProxy_GoogleCloudbuildv2Connection)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudbuildv2Connection)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleCloudbuildv2Connection) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -697,7 +696,7 @@ func (j *jsiiProxy_GoogleCloudbuildv2Connection)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudbuildv2Connection)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleCloudbuildv2Connection) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -705,7 +704,7 @@ func (j *jsiiProxy_GoogleCloudbuildv2Connection)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudbuildv2Connection)SetDisabled(val interface{}) {
+func (j *jsiiProxy_GoogleCloudbuildv2Connection) SetDisabled(val any) {
 	if err := j.validateSetDisabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -716,7 +715,7 @@ func (j *jsiiProxy_GoogleCloudbuildv2Connection)SetDisabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudbuildv2Connection)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleCloudbuildv2Connection) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -724,7 +723,7 @@ func (j *jsiiProxy_GoogleCloudbuildv2Connection)SetForEach(val cdktf.ITerraformI
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudbuildv2Connection)SetId(val *string) {
+func (j *jsiiProxy_GoogleCloudbuildv2Connection) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -735,7 +734,7 @@ func (j *jsiiProxy_GoogleCloudbuildv2Connection)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudbuildv2Connection)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleCloudbuildv2Connection) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -746,7 +745,7 @@ func (j *jsiiProxy_GoogleCloudbuildv2Connection)SetLifecycle(val *cdktf.Terrafor
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudbuildv2Connection)SetLocation(val *string) {
+func (j *jsiiProxy_GoogleCloudbuildv2Connection) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -757,7 +756,7 @@ func (j *jsiiProxy_GoogleCloudbuildv2Connection)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudbuildv2Connection)SetName(val *string) {
+func (j *jsiiProxy_GoogleCloudbuildv2Connection) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -768,7 +767,7 @@ func (j *jsiiProxy_GoogleCloudbuildv2Connection)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudbuildv2Connection)SetProject(val *string) {
+func (j *jsiiProxy_GoogleCloudbuildv2Connection) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -779,7 +778,7 @@ func (j *jsiiProxy_GoogleCloudbuildv2Connection)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudbuildv2Connection)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleCloudbuildv2Connection) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -787,7 +786,7 @@ func (j *jsiiProxy_GoogleCloudbuildv2Connection)SetProvider(val cdktf.TerraformP
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudbuildv2Connection)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleCloudbuildv2Connection) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -810,7 +809,7 @@ func GoogleCloudbuildv2Connection_GenerateConfigForImport(scope constructs.Const
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleCloudbuildv2Connection.GoogleCloudbuildv2Connection",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -834,7 +833,7 @@ func GoogleCloudbuildv2Connection_GenerateConfigForImport(scope constructs.Const
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleCloudbuildv2Connection_IsConstruct(x interface{}) *bool {
+func GoogleCloudbuildv2Connection_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleCloudbuildv2Connection_IsConstructParameters(x); err != nil {
@@ -845,7 +844,7 @@ func GoogleCloudbuildv2Connection_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleCloudbuildv2Connection.GoogleCloudbuildv2Connection",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -853,7 +852,7 @@ func GoogleCloudbuildv2Connection_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleCloudbuildv2Connection_IsTerraformElement(x interface{}) *bool {
+func GoogleCloudbuildv2Connection_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleCloudbuildv2Connection_IsTerraformElementParameters(x); err != nil {
@@ -864,7 +863,7 @@ func GoogleCloudbuildv2Connection_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleCloudbuildv2Connection.GoogleCloudbuildv2Connection",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -872,7 +871,7 @@ func GoogleCloudbuildv2Connection_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleCloudbuildv2Connection_IsTerraformResource(x interface{}) *bool {
+func GoogleCloudbuildv2Connection_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleCloudbuildv2Connection_IsTerraformResourceParameters(x); err != nil {
@@ -883,7 +882,7 @@ func GoogleCloudbuildv2Connection_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleCloudbuildv2Connection.GoogleCloudbuildv2Connection",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -908,31 +907,31 @@ func (g *jsiiProxy_GoogleCloudbuildv2Connection) AddMoveTarget(moveTarget *strin
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleCloudbuildv2Connection) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleCloudbuildv2Connection) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleCloudbuildv2Connection) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleCloudbuildv2Connection) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -948,7 +947,7 @@ func (g *jsiiProxy_GoogleCloudbuildv2Connection) GetBooleanAttribute(terraformAt
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -964,7 +963,7 @@ func (g *jsiiProxy_GoogleCloudbuildv2Connection) GetBooleanMapAttribute(terrafor
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -980,7 +979,7 @@ func (g *jsiiProxy_GoogleCloudbuildv2Connection) GetListAttribute(terraformAttri
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -996,7 +995,7 @@ func (g *jsiiProxy_GoogleCloudbuildv2Connection) GetNumberAttribute(terraformAtt
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1012,7 +1011,7 @@ func (g *jsiiProxy_GoogleCloudbuildv2Connection) GetNumberListAttribute(terrafor
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1028,7 +1027,7 @@ func (g *jsiiProxy_GoogleCloudbuildv2Connection) GetNumberMapAttribute(terraform
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1044,7 +1043,7 @@ func (g *jsiiProxy_GoogleCloudbuildv2Connection) GetStringAttribute(terraformAtt
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1060,15 +1059,15 @@ func (g *jsiiProxy_GoogleCloudbuildv2Connection) GetStringMapAttribute(terraform
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleCloudbuildv2Connection) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleCloudbuildv2Connection) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1087,7 +1086,7 @@ func (g *jsiiProxy_GoogleCloudbuildv2Connection) ImportFrom(id *string, provider
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1100,7 +1099,7 @@ func (g *jsiiProxy_GoogleCloudbuildv2Connection) InterpolationForAttribute(terra
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1114,18 +1113,18 @@ func (g *jsiiProxy_GoogleCloudbuildv2Connection) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleCloudbuildv2Connection) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleCloudbuildv2Connection) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1136,7 +1135,7 @@ func (g *jsiiProxy_GoogleCloudbuildv2Connection) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1147,7 +1146,7 @@ func (g *jsiiProxy_GoogleCloudbuildv2Connection) OverrideLogicalId(newLogicalId 
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1158,7 +1157,7 @@ func (g *jsiiProxy_GoogleCloudbuildv2Connection) PutBitbucketCloudConfig(value *
 	_jsii_.InvokeVoid(
 		g,
 		"putBitbucketCloudConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1169,7 +1168,7 @@ func (g *jsiiProxy_GoogleCloudbuildv2Connection) PutBitbucketDataCenterConfig(va
 	_jsii_.InvokeVoid(
 		g,
 		"putBitbucketDataCenterConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1180,7 +1179,7 @@ func (g *jsiiProxy_GoogleCloudbuildv2Connection) PutGithubConfig(value *GoogleCl
 	_jsii_.InvokeVoid(
 		g,
 		"putGithubConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1191,7 +1190,7 @@ func (g *jsiiProxy_GoogleCloudbuildv2Connection) PutGithubEnterpriseConfig(value
 	_jsii_.InvokeVoid(
 		g,
 		"putGithubEnterpriseConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1202,7 +1201,7 @@ func (g *jsiiProxy_GoogleCloudbuildv2Connection) PutGitlabConfig(value *GoogleCl
 	_jsii_.InvokeVoid(
 		g,
 		"putGitlabConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1213,7 +1212,7 @@ func (g *jsiiProxy_GoogleCloudbuildv2Connection) PutTimeouts(value *GoogleCloudb
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1305,8 +1304,8 @@ func (g *jsiiProxy_GoogleCloudbuildv2Connection) ResetTimeouts() {
 	)
 }
 
-func (g *jsiiProxy_GoogleCloudbuildv2Connection) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleCloudbuildv2Connection) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1318,8 +1317,8 @@ func (g *jsiiProxy_GoogleCloudbuildv2Connection) SynthesizeAttributes() *map[str
 	return returns
 }
 
-func (g *jsiiProxy_GoogleCloudbuildv2Connection) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleCloudbuildv2Connection) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1331,8 +1330,8 @@ func (g *jsiiProxy_GoogleCloudbuildv2Connection) SynthesizeHclAttributes() *map[
 	return returns
 }
 
-func (g *jsiiProxy_GoogleCloudbuildv2Connection) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleCloudbuildv2Connection) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1344,8 +1343,8 @@ func (g *jsiiProxy_GoogleCloudbuildv2Connection) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleCloudbuildv2Connection) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleCloudbuildv2Connection) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1370,8 +1369,8 @@ func (g *jsiiProxy_GoogleCloudbuildv2Connection) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleCloudbuildv2Connection) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleCloudbuildv2Connection) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1382,4 +1381,3 @@ func (g *jsiiProxy_GoogleCloudbuildv2Connection) ToTerraform() interface{} {
 
 	return returns
 }
-

@@ -12,9 +12,9 @@ type GoogleCloudRunV2JobTemplateTemplateVolumesSecretOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -33,7 +33,7 @@ type GoogleCloudRunV2JobTemplateTemplateVolumesSecretOutputReference interface {
 	InternalValue() *GoogleCloudRunV2JobTemplateTemplateVolumesSecret
 	SetInternalValue(val *GoogleCloudRunV2JobTemplateTemplateVolumesSecret)
 	Items() GoogleCloudRunV2JobTemplateTemplateVolumesSecretItemsList
-	ItemsInput() interface{}
+	ItemsInput() any
 	Secret() *string
 	SetSecret(val *string)
 	SecretInput() *string
@@ -48,7 +48,7 @@ type GoogleCloudRunV2JobTemplateTemplateVolumesSecretOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -69,12 +69,12 @@ type GoogleCloudRunV2JobTemplateTemplateVolumesSecretOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutItems(value interface{})
+	PutItems(value any)
 	ResetDefaultMode()
 	ResetItems()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -87,8 +87,8 @@ type jsiiProxy_GoogleCloudRunV2JobTemplateTemplateVolumesSecretOutputReference s
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateVolumesSecretOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateVolumesSecretOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -167,8 +167,8 @@ func (j *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateVolumesSecretOutputReferen
 	return returns
 }
 
-func (j *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateVolumesSecretOutputReference) ItemsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateVolumesSecretOutputReference) ItemsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"itemsInput",
@@ -217,7 +217,6 @@ func (j *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateVolumesSecretOutputReferen
 	return returns
 }
 
-
 func NewGoogleCloudRunV2JobTemplateTemplateVolumesSecretOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleCloudRunV2JobTemplateTemplateVolumesSecretOutputReference {
 	_init_.Initialize()
 
@@ -228,7 +227,7 @@ func NewGoogleCloudRunV2JobTemplateTemplateVolumesSecretOutputReference(terrafor
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleCloudRunV2Job.GoogleCloudRunV2JobTemplateTemplateVolumesSecretOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -240,12 +239,12 @@ func NewGoogleCloudRunV2JobTemplateTemplateVolumesSecretOutputReference_Override
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleCloudRunV2Job.GoogleCloudRunV2JobTemplateTemplateVolumesSecretOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateVolumesSecretOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateVolumesSecretOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -256,7 +255,7 @@ func (j *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateVolumesSecretOutputReferen
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateVolumesSecretOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateVolumesSecretOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -267,7 +266,7 @@ func (j *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateVolumesSecretOutputReferen
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateVolumesSecretOutputReference)SetDefaultMode(val *float64) {
+func (j *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateVolumesSecretOutputReference) SetDefaultMode(val *float64) {
 	if err := j.validateSetDefaultModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -278,7 +277,7 @@ func (j *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateVolumesSecretOutputReferen
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateVolumesSecretOutputReference)SetInternalValue(val *GoogleCloudRunV2JobTemplateTemplateVolumesSecret) {
+func (j *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateVolumesSecretOutputReference) SetInternalValue(val *GoogleCloudRunV2JobTemplateTemplateVolumesSecret) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -289,7 +288,7 @@ func (j *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateVolumesSecretOutputReferen
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateVolumesSecretOutputReference)SetSecret(val *string) {
+func (j *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateVolumesSecretOutputReference) SetSecret(val *string) {
 	if err := j.validateSetSecretParameters(val); err != nil {
 		panic(err)
 	}
@@ -300,7 +299,7 @@ func (j *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateVolumesSecretOutputReferen
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateVolumesSecretOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateVolumesSecretOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -311,7 +310,7 @@ func (j *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateVolumesSecretOutputReferen
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateVolumesSecretOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateVolumesSecretOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -335,16 +334,16 @@ func (g *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateVolumesSecretOutputReferen
 	return returns
 }
 
-func (g *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateVolumesSecretOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateVolumesSecretOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -360,7 +359,7 @@ func (g *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateVolumesSecretOutputReferen
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -376,7 +375,7 @@ func (g *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateVolumesSecretOutputReferen
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -392,7 +391,7 @@ func (g *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateVolumesSecretOutputReferen
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -408,7 +407,7 @@ func (g *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateVolumesSecretOutputReferen
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -424,7 +423,7 @@ func (g *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateVolumesSecretOutputReferen
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -440,7 +439,7 @@ func (g *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateVolumesSecretOutputReferen
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -456,7 +455,7 @@ func (g *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateVolumesSecretOutputReferen
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -472,7 +471,7 @@ func (g *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateVolumesSecretOutputReferen
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -501,21 +500,21 @@ func (g *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateVolumesSecretOutputReferen
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateVolumesSecretOutputReference) PutItems(value interface{}) {
+func (g *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateVolumesSecretOutputReference) PutItems(value any) {
 	if err := g.validatePutItemsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putItems",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -535,16 +534,16 @@ func (g *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateVolumesSecretOutputReferen
 	)
 }
 
-func (g *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateVolumesSecretOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateVolumesSecretOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -563,4 +562,3 @@ func (g *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateVolumesSecretOutputReferen
 
 	return returns
 }
-

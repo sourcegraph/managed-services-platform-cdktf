@@ -1,10 +1,8 @@
 package googlegkeonpremvmwarecluster
 
-
 type GoogleGkeonpremVmwareClusterAuthorization struct {
 	// admin_users block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_gkeonprem_vmware_cluster#admin_users GoogleGkeonpremVmwareCluster#admin_users}
-	AdminUsers interface{} `field:"optional" json:"adminUsers" yaml:"adminUsers"`
+	AdminUsers any `field:"optional" json:"adminUsers" yaml:"adminUsers"`
 }
-

@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleComputeHealthCheckLogConfigOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeHealthCheckLogConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeHealthCheckLogConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_GoogleComputeHealthCheckLogConfigOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeHealthCheckLogConfigOutputReference) validateSetEnableParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeHealthCheckLogConfigOutputReference) validateSetEnableParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -218,4 +218,3 @@ func validateNewGoogleComputeHealthCheckLogConfigOutputReferenceParameters(terra
 
 	return nil
 }
-

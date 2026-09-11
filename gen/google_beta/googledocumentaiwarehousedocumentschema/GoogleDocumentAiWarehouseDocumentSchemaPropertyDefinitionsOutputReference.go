@@ -12,9 +12,9 @@ type GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsOutputReference i
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -38,23 +38,23 @@ type GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsOutputReference i
 	Fqn() *string
 	IntegerTypeOptions() GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsIntegerTypeOptionsOutputReference
 	IntegerTypeOptionsInput() *GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsIntegerTypeOptions
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
-	IsFilterable() interface{}
-	SetIsFilterable(val interface{})
-	IsFilterableInput() interface{}
-	IsMetadata() interface{}
-	SetIsMetadata(val interface{})
-	IsMetadataInput() interface{}
-	IsRepeatable() interface{}
-	SetIsRepeatable(val interface{})
-	IsRepeatableInput() interface{}
-	IsRequired() interface{}
-	SetIsRequired(val interface{})
-	IsRequiredInput() interface{}
-	IsSearchable() interface{}
-	SetIsSearchable(val interface{})
-	IsSearchableInput() interface{}
+	InternalValue() any
+	SetInternalValue(val any)
+	IsFilterable() any
+	SetIsFilterable(val any)
+	IsFilterableInput() any
+	IsMetadata() any
+	SetIsMetadata(val any)
+	IsMetadataInput() any
+	IsRepeatable() any
+	SetIsRepeatable(val any)
+	IsRepeatableInput() any
+	IsRequired() any
+	SetIsRequired(val any)
+	IsRequiredInput() any
+	IsSearchable() any
+	SetIsSearchable(val any)
+	IsSearchableInput() any
 	MapTypeOptions() GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsMapTypeOptionsOutputReference
 	MapTypeOptionsInput() *GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsMapTypeOptions
 	Name() *string
@@ -66,7 +66,7 @@ type GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsOutputReference i
 	SetRetrievalImportance(val *string)
 	RetrievalImportanceInput() *string
 	SchemaSources() GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsSchemaSourcesList
-	SchemaSourcesInput() interface{}
+	SchemaSourcesInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -82,7 +82,7 @@ type GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsOutputReference i
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -109,7 +109,7 @@ type GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsOutputReference i
 	PutIntegerTypeOptions(value *GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsIntegerTypeOptions)
 	PutMapTypeOptions(value *GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsMapTypeOptions)
 	PutPropertyTypeOptions(value *GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptions)
-	PutSchemaSources(value interface{})
+	PutSchemaSources(value any)
 	PutTextTypeOptions(value *GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsTextTypeOptions)
 	PutTimestampTypeOptions(value *GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsTimestampTypeOptions)
 	ResetDateTimeTypeOptions()
@@ -130,7 +130,7 @@ type GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsOutputReference i
 	ResetTimestampTypeOptions()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -143,8 +143,8 @@ type jsiiProxy_GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsOutputR
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -283,8 +283,8 @@ func (j *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsOut
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -293,8 +293,8 @@ func (j *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsOut
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsOutputReference) IsFilterable() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsOutputReference) IsFilterable() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"isFilterable",
@@ -303,8 +303,8 @@ func (j *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsOut
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsOutputReference) IsFilterableInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsOutputReference) IsFilterableInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"isFilterableInput",
@@ -313,8 +313,8 @@ func (j *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsOut
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsOutputReference) IsMetadata() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsOutputReference) IsMetadata() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"isMetadata",
@@ -323,8 +323,8 @@ func (j *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsOut
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsOutputReference) IsMetadataInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsOutputReference) IsMetadataInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"isMetadataInput",
@@ -333,8 +333,8 @@ func (j *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsOut
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsOutputReference) IsRepeatable() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsOutputReference) IsRepeatable() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"isRepeatable",
@@ -343,8 +343,8 @@ func (j *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsOut
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsOutputReference) IsRepeatableInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsOutputReference) IsRepeatableInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"isRepeatableInput",
@@ -353,8 +353,8 @@ func (j *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsOut
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsOutputReference) IsRequired() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsOutputReference) IsRequired() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"isRequired",
@@ -363,8 +363,8 @@ func (j *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsOut
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsOutputReference) IsRequiredInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsOutputReference) IsRequiredInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"isRequiredInput",
@@ -373,8 +373,8 @@ func (j *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsOut
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsOutputReference) IsSearchable() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsOutputReference) IsSearchable() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"isSearchable",
@@ -383,8 +383,8 @@ func (j *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsOut
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsOutputReference) IsSearchableInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsOutputReference) IsSearchableInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"isSearchableInput",
@@ -483,8 +483,8 @@ func (j *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsOut
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsOutputReference) SchemaSourcesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsOutputReference) SchemaSourcesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"schemaSourcesInput",
@@ -553,7 +553,6 @@ func (j *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsOut
 	return returns
 }
 
-
 func NewGoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsOutputReference {
 	_init_.Initialize()
 
@@ -564,7 +563,7 @@ func NewGoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsOutputReferenc
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleDocumentAiWarehouseDocumentSchema.GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -576,12 +575,12 @@ func NewGoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsOutputReferenc
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleDocumentAiWarehouseDocumentSchema.GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -592,7 +591,7 @@ func (j *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsOut
 	)
 }
 
-func (j *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -603,7 +602,7 @@ func (j *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsOut
 	)
 }
 
-func (j *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsOutputReference)SetDisplayName(val *string) {
+func (j *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsOutputReference) SetDisplayName(val *string) {
 	if err := j.validateSetDisplayNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -614,7 +613,7 @@ func (j *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsOut
 	)
 }
 
-func (j *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -625,7 +624,7 @@ func (j *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsOut
 	)
 }
 
-func (j *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsOutputReference)SetIsFilterable(val interface{}) {
+func (j *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsOutputReference) SetIsFilterable(val any) {
 	if err := j.validateSetIsFilterableParameters(val); err != nil {
 		panic(err)
 	}
@@ -636,7 +635,7 @@ func (j *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsOut
 	)
 }
 
-func (j *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsOutputReference)SetIsMetadata(val interface{}) {
+func (j *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsOutputReference) SetIsMetadata(val any) {
 	if err := j.validateSetIsMetadataParameters(val); err != nil {
 		panic(err)
 	}
@@ -647,7 +646,7 @@ func (j *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsOut
 	)
 }
 
-func (j *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsOutputReference)SetIsRepeatable(val interface{}) {
+func (j *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsOutputReference) SetIsRepeatable(val any) {
 	if err := j.validateSetIsRepeatableParameters(val); err != nil {
 		panic(err)
 	}
@@ -658,7 +657,7 @@ func (j *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsOut
 	)
 }
 
-func (j *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsOutputReference)SetIsRequired(val interface{}) {
+func (j *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsOutputReference) SetIsRequired(val any) {
 	if err := j.validateSetIsRequiredParameters(val); err != nil {
 		panic(err)
 	}
@@ -669,7 +668,7 @@ func (j *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsOut
 	)
 }
 
-func (j *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsOutputReference)SetIsSearchable(val interface{}) {
+func (j *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsOutputReference) SetIsSearchable(val any) {
 	if err := j.validateSetIsSearchableParameters(val); err != nil {
 		panic(err)
 	}
@@ -680,7 +679,7 @@ func (j *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsOut
 	)
 }
 
-func (j *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsOutputReference)SetName(val *string) {
+func (j *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsOutputReference) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -691,7 +690,7 @@ func (j *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsOut
 	)
 }
 
-func (j *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsOutputReference)SetRetrievalImportance(val *string) {
+func (j *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsOutputReference) SetRetrievalImportance(val *string) {
 	if err := j.validateSetRetrievalImportanceParameters(val); err != nil {
 		panic(err)
 	}
@@ -702,7 +701,7 @@ func (j *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsOut
 	)
 }
 
-func (j *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -713,7 +712,7 @@ func (j *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsOut
 	)
 }
 
-func (j *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -737,16 +736,16 @@ func (g *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsOut
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -762,7 +761,7 @@ func (g *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsOut
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -778,7 +777,7 @@ func (g *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsOut
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -794,7 +793,7 @@ func (g *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsOut
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -810,7 +809,7 @@ func (g *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsOut
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -826,7 +825,7 @@ func (g *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsOut
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -842,7 +841,7 @@ func (g *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsOut
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -858,7 +857,7 @@ func (g *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsOut
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -874,7 +873,7 @@ func (g *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsOut
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -903,7 +902,7 @@ func (g *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsOut
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -917,7 +916,7 @@ func (g *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsOut
 	_jsii_.InvokeVoid(
 		g,
 		"putDateTimeTypeOptions",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -928,7 +927,7 @@ func (g *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsOut
 	_jsii_.InvokeVoid(
 		g,
 		"putEnumTypeOptions",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -939,7 +938,7 @@ func (g *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsOut
 	_jsii_.InvokeVoid(
 		g,
 		"putFloatTypeOptions",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -950,7 +949,7 @@ func (g *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsOut
 	_jsii_.InvokeVoid(
 		g,
 		"putIntegerTypeOptions",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -961,7 +960,7 @@ func (g *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsOut
 	_jsii_.InvokeVoid(
 		g,
 		"putMapTypeOptions",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -972,18 +971,18 @@ func (g *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsOut
 	_jsii_.InvokeVoid(
 		g,
 		"putPropertyTypeOptions",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (g *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsOutputReference) PutSchemaSources(value interface{}) {
+func (g *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsOutputReference) PutSchemaSources(value any) {
 	if err := g.validatePutSchemaSourcesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putSchemaSources",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -994,7 +993,7 @@ func (g *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsOut
 	_jsii_.InvokeVoid(
 		g,
 		"putTextTypeOptions",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1005,7 +1004,7 @@ func (g *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsOut
 	_jsii_.InvokeVoid(
 		g,
 		"putTimestampTypeOptions",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1137,16 +1136,16 @@ func (g *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsOut
 	)
 }
 
-func (g *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -1165,4 +1164,3 @@ func (g *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsOut
 
 	return returns
 }
-

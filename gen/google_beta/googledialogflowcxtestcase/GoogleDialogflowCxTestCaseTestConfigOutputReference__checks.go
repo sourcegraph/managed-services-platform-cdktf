@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleDialogflowCxTestCaseTestConfigOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxTestCaseTestConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDialogflowCxTestCaseTestConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewGoogleDialogflowCxTestCaseTestConfigOutputReferenceParameters(te
 
 	return nil
 }
-

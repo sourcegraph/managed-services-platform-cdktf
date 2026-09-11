@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleDataprocBatchEnvironmentConfigPeripheralsConfigSparkHis
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataprocBatchEnvironmentConfigPeripheralsConfigSparkHistoryServerConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataprocBatchEnvironmentConfigPeripheralsConfigSparkHistoryServerConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleDataprocBatchEnvironmentConfigPeripheralsConfigSparkHistor
 
 	return nil
 }
-

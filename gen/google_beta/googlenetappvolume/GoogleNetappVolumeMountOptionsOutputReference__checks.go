@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleNetappVolumeMountOptionsOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetappVolumeMountOptionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNetappVolumeMountOptionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleNetappVolumeMountOptionsOutputReferenceParameters(terrafor
 
 	return nil
 }
-

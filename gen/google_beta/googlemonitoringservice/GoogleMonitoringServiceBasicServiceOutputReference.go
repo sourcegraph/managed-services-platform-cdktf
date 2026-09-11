@@ -12,9 +12,9 @@ type GoogleMonitoringServiceBasicServiceOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -46,7 +46,7 @@ type GoogleMonitoringServiceBasicServiceOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -71,7 +71,7 @@ type GoogleMonitoringServiceBasicServiceOutputReference interface {
 	ResetServiceType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,8 +84,8 @@ type jsiiProxy_GoogleMonitoringServiceBasicServiceOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GoogleMonitoringServiceBasicServiceOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleMonitoringServiceBasicServiceOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -194,7 +194,6 @@ func (j *jsiiProxy_GoogleMonitoringServiceBasicServiceOutputReference) Terraform
 	return returns
 }
 
-
 func NewGoogleMonitoringServiceBasicServiceOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleMonitoringServiceBasicServiceOutputReference {
 	_init_.Initialize()
 
@@ -205,7 +204,7 @@ func NewGoogleMonitoringServiceBasicServiceOutputReference(terraformResource cdk
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleMonitoringService.GoogleMonitoringServiceBasicServiceOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -217,12 +216,12 @@ func NewGoogleMonitoringServiceBasicServiceOutputReference_Override(g GoogleMoni
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleMonitoringService.GoogleMonitoringServiceBasicServiceOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleMonitoringServiceBasicServiceOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleMonitoringServiceBasicServiceOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -233,7 +232,7 @@ func (j *jsiiProxy_GoogleMonitoringServiceBasicServiceOutputReference)SetComplex
 	)
 }
 
-func (j *jsiiProxy_GoogleMonitoringServiceBasicServiceOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleMonitoringServiceBasicServiceOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -244,7 +243,7 @@ func (j *jsiiProxy_GoogleMonitoringServiceBasicServiceOutputReference)SetComplex
 	)
 }
 
-func (j *jsiiProxy_GoogleMonitoringServiceBasicServiceOutputReference)SetInternalValue(val *GoogleMonitoringServiceBasicService) {
+func (j *jsiiProxy_GoogleMonitoringServiceBasicServiceOutputReference) SetInternalValue(val *GoogleMonitoringServiceBasicService) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_GoogleMonitoringServiceBasicServiceOutputReference)SetInterna
 	)
 }
 
-func (j *jsiiProxy_GoogleMonitoringServiceBasicServiceOutputReference)SetServiceLabels(val *map[string]*string) {
+func (j *jsiiProxy_GoogleMonitoringServiceBasicServiceOutputReference) SetServiceLabels(val *map[string]*string) {
 	if err := j.validateSetServiceLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_GoogleMonitoringServiceBasicServiceOutputReference)SetService
 	)
 }
 
-func (j *jsiiProxy_GoogleMonitoringServiceBasicServiceOutputReference)SetServiceType(val *string) {
+func (j *jsiiProxy_GoogleMonitoringServiceBasicServiceOutputReference) SetServiceType(val *string) {
 	if err := j.validateSetServiceTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_GoogleMonitoringServiceBasicServiceOutputReference)SetService
 	)
 }
 
-func (j *jsiiProxy_GoogleMonitoringServiceBasicServiceOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleMonitoringServiceBasicServiceOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_GoogleMonitoringServiceBasicServiceOutputReference)SetTerrafo
 	)
 }
 
-func (j *jsiiProxy_GoogleMonitoringServiceBasicServiceOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleMonitoringServiceBasicServiceOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,16 +311,16 @@ func (g *jsiiProxy_GoogleMonitoringServiceBasicServiceOutputReference) ComputeFq
 	return returns
 }
 
-func (g *jsiiProxy_GoogleMonitoringServiceBasicServiceOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleMonitoringServiceBasicServiceOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -337,7 +336,7 @@ func (g *jsiiProxy_GoogleMonitoringServiceBasicServiceOutputReference) GetBoolea
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -353,7 +352,7 @@ func (g *jsiiProxy_GoogleMonitoringServiceBasicServiceOutputReference) GetBoolea
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -369,7 +368,7 @@ func (g *jsiiProxy_GoogleMonitoringServiceBasicServiceOutputReference) GetListAt
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -385,7 +384,7 @@ func (g *jsiiProxy_GoogleMonitoringServiceBasicServiceOutputReference) GetNumber
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -401,7 +400,7 @@ func (g *jsiiProxy_GoogleMonitoringServiceBasicServiceOutputReference) GetNumber
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -417,7 +416,7 @@ func (g *jsiiProxy_GoogleMonitoringServiceBasicServiceOutputReference) GetNumber
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -433,7 +432,7 @@ func (g *jsiiProxy_GoogleMonitoringServiceBasicServiceOutputReference) GetString
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -449,7 +448,7 @@ func (g *jsiiProxy_GoogleMonitoringServiceBasicServiceOutputReference) GetString
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -478,7 +477,7 @@ func (g *jsiiProxy_GoogleMonitoringServiceBasicServiceOutputReference) Interpola
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -501,16 +500,16 @@ func (g *jsiiProxy_GoogleMonitoringServiceBasicServiceOutputReference) ResetServ
 	)
 }
 
-func (g *jsiiProxy_GoogleMonitoringServiceBasicServiceOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleMonitoringServiceBasicServiceOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -529,4 +528,3 @@ func (g *jsiiProxy_GoogleMonitoringServiceBasicServiceOutputReference) ToString(
 
 	return returns
 }
-

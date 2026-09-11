@@ -1,6 +1,5 @@
 package googleosconfigpatchdeployment
 
-
 type GoogleOsConfigPatchDeploymentPatchConfigZypper struct {
 	// Install only patches with these categories. Common categories include security, recommended, and feature.
 	//
@@ -24,10 +23,9 @@ type GoogleOsConfigPatchDeploymentPatchConfigZypper struct {
 	// Adds the --with-optional flag to zypper patch.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_os_config_patch_deployment#with_optional GoogleOsConfigPatchDeployment#with_optional}
-	WithOptional interface{} `field:"optional" json:"withOptional" yaml:"withOptional"`
+	WithOptional any `field:"optional" json:"withOptional" yaml:"withOptional"`
 	// Adds the --with-update flag, to zypper patch.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_os_config_patch_deployment#with_update GoogleOsConfigPatchDeployment#with_update}
-	WithUpdate interface{} `field:"optional" json:"withUpdate" yaml:"withUpdate"`
+	WithUpdate any `field:"optional" json:"withUpdate" yaml:"withUpdate"`
 }
-

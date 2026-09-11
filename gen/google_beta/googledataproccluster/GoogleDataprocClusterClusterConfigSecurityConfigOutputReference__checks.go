@@ -120,7 +120,7 @@ func (g *jsiiProxy_GoogleDataprocClusterClusterConfigSecurityConfigOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataprocClusterClusterConfigSecurityConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataprocClusterClusterConfigSecurityConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -220,4 +220,3 @@ func validateNewGoogleDataprocClusterClusterConfigSecurityConfigOutputReferenceP
 
 	return nil
 }
-

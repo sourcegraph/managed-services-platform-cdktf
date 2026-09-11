@@ -109,7 +109,7 @@ func (g *jsiiProxy_GoogleContainerClusterMasterAuthOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerClusterMasterAuthOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContainerClusterMasterAuthOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -209,4 +209,3 @@ func validateNewGoogleContainerClusterMasterAuthOutputReferenceParameters(terraf
 
 	return nil
 }
-

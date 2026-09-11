@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleEdgecontainerNodePoolNodeConfigOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_GoogleEdgecontainerNodePoolNodeConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleEdgecontainerNodePoolNodeConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleEdgecontainerNodePoolNodeConfigOutputReferenceParameters(t
 
 	return nil
 }
-

@@ -17,8 +17,8 @@ type GoogleFilestoreInstanceNetworksList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type GoogleFilestoreInstanceNetworksList interface {
 	Get(index *float64) GoogleFilestoreInstanceNetworksOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_GoogleFilestoreInstanceNetworksList) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleFilestoreInstanceNetworksList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleFilestoreInstanceNetworksList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_GoogleFilestoreInstanceNetworksList) WrapsSet() *bool {
 	return returns
 }
 
-
 func NewGoogleFilestoreInstanceNetworksList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleFilestoreInstanceNetworksList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewGoogleFilestoreInstanceNetworksList(terraformResource cdktf.IInterpolati
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleFilestoreInstance.GoogleFilestoreInstanceNetworksList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewGoogleFilestoreInstanceNetworksList_Override(g GoogleFilestoreInstanceNe
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleFilestoreInstance.GoogleFilestoreInstanceNetworksList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleFilestoreInstanceNetworksList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_GoogleFilestoreInstanceNetworksList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_GoogleFilestoreInstanceNetworksList)SetInternalValue(val inte
 	)
 }
 
-func (j *jsiiProxy_GoogleFilestoreInstanceNetworksList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleFilestoreInstanceNetworksList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_GoogleFilestoreInstanceNetworksList)SetTerraformAttribute(val
 	)
 }
 
-func (j *jsiiProxy_GoogleFilestoreInstanceNetworksList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleFilestoreInstanceNetworksList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_GoogleFilestoreInstanceNetworksList)SetTerraformResource(val 
 	)
 }
 
-func (j *jsiiProxy_GoogleFilestoreInstanceNetworksList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_GoogleFilestoreInstanceNetworksList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (g *jsiiProxy_GoogleFilestoreInstanceNetworksList) AllWithMapKey(mapKeyAttr
 	_jsii_.Invoke(
 		g,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (g *jsiiProxy_GoogleFilestoreInstanceNetworksList) Get(index *float64) Goog
 	_jsii_.Invoke(
 		g,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleFilestoreInstanceNetworksList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleFilestoreInstanceNetworksList) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (g *jsiiProxy_GoogleFilestoreInstanceNetworksList) ToString() *string {
 
 	return returns
 }
-

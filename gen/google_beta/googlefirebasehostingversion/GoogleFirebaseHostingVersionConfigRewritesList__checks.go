@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleFirebaseHostingVersionConfigRewritesList) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_GoogleFirebaseHostingVersionConfigRewritesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleFirebaseHostingVersionConfigRewritesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleFirebaseHostingVersionConfigRewritesListParameters(terrafo
 
 	return nil
 }
-

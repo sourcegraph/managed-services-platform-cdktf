@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleComputeRegionCommitmentResourcesList) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRegionCommitmentResourcesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeRegionCommitmentResourcesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleComputeRegionCommitmentResourcesListParameters(terraformRe
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleKmsKeyRingIamMemberConditionOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleKmsKeyRingIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleKmsKeyRingIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewGoogleKmsKeyRingIamMemberConditionOutputReferenceParameters(terr
 
 	return nil
 }
-

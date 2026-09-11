@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleGkeonpremVmwareNodePool) validateAddMoveTargetParameter
 	return nil
 }
 
-func (g *jsiiProxy_GoogleGkeonpremVmwareNodePool) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleGkeonpremVmwareNodePool) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleGkeonpremVmwareNodePool) validateMoveFromIdParameters(i
 	return nil
 }
 
-func (g *jsiiProxy_GoogleGkeonpremVmwareNodePool) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleGkeonpremVmwareNodePool) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -253,7 +253,7 @@ func validateGoogleGkeonpremVmwareNodePool_GenerateConfigForImportParameters(sco
 	return nil
 }
 
-func validateGoogleGkeonpremVmwareNodePool_IsConstructParameters(x interface{}) error {
+func validateGoogleGkeonpremVmwareNodePool_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -261,7 +261,7 @@ func validateGoogleGkeonpremVmwareNodePool_IsConstructParameters(x interface{}) 
 	return nil
 }
 
-func validateGoogleGkeonpremVmwareNodePool_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleGkeonpremVmwareNodePool_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -269,7 +269,7 @@ func validateGoogleGkeonpremVmwareNodePool_IsTerraformElementParameters(x interf
 	return nil
 }
 
-func validateGoogleGkeonpremVmwareNodePool_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleGkeonpremVmwareNodePool_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -285,7 +285,7 @@ func (j *jsiiProxy_GoogleGkeonpremVmwareNodePool) validateSetAnnotationsParamete
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGkeonpremVmwareNodePool) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleGkeonpremVmwareNodePool) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -318,7 +318,7 @@ func (j *jsiiProxy_GoogleGkeonpremVmwareNodePool) validateSetConnectionParameter
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGkeonpremVmwareNodePool) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleGkeonpremVmwareNodePool) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -423,7 +423,7 @@ func (j *jsiiProxy_GoogleGkeonpremVmwareNodePool) validateSetProjectParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGkeonpremVmwareNodePool) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleGkeonpremVmwareNodePool) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -495,4 +495,3 @@ func validateNewGoogleGkeonpremVmwareNodePoolParameters(scope constructs.Constru
 
 	return nil
 }
-

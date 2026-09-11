@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.provider.GoogleBetaProvider",
-		reflect.TypeOf((*GoogleBetaProvider)(nil)).Elem(),
+		reflect.TypeFor[GoogleBetaProvider](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessApprovalCustomEndpoint", GoGetter: "AccessApprovalCustomEndpoint"},
 			_jsii_.MemberProperty{JsiiProperty: "accessApprovalCustomEndpointInput", GoGetter: "AccessApprovalCustomEndpointInput"},
@@ -616,7 +616,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zone", GoGetter: "Zone"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneInput", GoGetter: "ZoneInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleBetaProvider{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformProvider)
 			return &j
@@ -624,14 +624,14 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.provider.GoogleBetaProviderBatching",
-		reflect.TypeOf((*GoogleBetaProviderBatching)(nil)).Elem(),
+		reflect.TypeFor[GoogleBetaProviderBatching](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.provider.GoogleBetaProviderConfig",
-		reflect.TypeOf((*GoogleBetaProviderConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleBetaProviderConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.provider.GoogleBetaProviderExternalCredentials",
-		reflect.TypeOf((*GoogleBetaProviderExternalCredentials)(nil)).Elem(),
+		reflect.TypeFor[GoogleBetaProviderExternalCredentials](),
 	)
 }

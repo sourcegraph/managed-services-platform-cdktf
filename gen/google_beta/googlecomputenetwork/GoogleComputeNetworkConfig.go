@@ -6,9 +6,9 @@ import (
 
 type GoogleComputeNetworkConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type GoogleComputeNetworkConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Name of the resource.
 	//
 	// Provided by the client when the resource is
@@ -37,13 +37,13 @@ type GoogleComputeNetworkConfig struct {
 	// the user can explicitly connect subnetwork resources.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_network#auto_create_subnetworks GoogleComputeNetwork#auto_create_subnetworks}
-	AutoCreateSubnetworks interface{} `field:"optional" json:"autoCreateSubnetworks" yaml:"autoCreateSubnetworks"`
+	AutoCreateSubnetworks any `field:"optional" json:"autoCreateSubnetworks" yaml:"autoCreateSubnetworks"`
 	// Enables/disables the comparison of MED across routes with different Neighbor ASNs.
 	//
 	// This value can only be set if the --bgp-best-path-selection-mode is STANDARD
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_network#bgp_always_compare_med GoogleComputeNetwork#bgp_always_compare_med}
-	BgpAlwaysCompareMed interface{} `field:"optional" json:"bgpAlwaysCompareMed" yaml:"bgpAlwaysCompareMed"`
+	BgpAlwaysCompareMed any `field:"optional" json:"bgpAlwaysCompareMed" yaml:"bgpAlwaysCompareMed"`
 	// The BGP best selection algorithm to be employed. MODE can be LEGACY or STANDARD. Possible values: ["LEGACY", "STANDARD"].
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_network#bgp_best_path_selection_mode GoogleComputeNetwork#bgp_best_path_selection_mode}
@@ -55,7 +55,7 @@ type GoogleComputeNetworkConfig struct {
 	// If set to 'true', default routes ('0.0.0.0/0') will be deleted immediately after network creation. Defaults to 'false'.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_network#delete_default_routes_on_create GoogleComputeNetwork#delete_default_routes_on_create}
-	DeleteDefaultRoutesOnCreate interface{} `field:"optional" json:"deleteDefaultRoutesOnCreate" yaml:"deleteDefaultRoutesOnCreate"`
+	DeleteDefaultRoutesOnCreate any `field:"optional" json:"deleteDefaultRoutesOnCreate" yaml:"deleteDefaultRoutesOnCreate"`
 	// An optional description of this resource. The resource must be recreated to modify this field.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_network#description GoogleComputeNetwork#description}
@@ -63,7 +63,7 @@ type GoogleComputeNetworkConfig struct {
 	// Enable ULA internal ipv6 on this network. Enabling this feature will assign a /48 from google defined ULA prefix fd20::/20.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_network#enable_ula_internal_ipv6 GoogleComputeNetwork#enable_ula_internal_ipv6}
-	EnableUlaInternalIpv6 interface{} `field:"optional" json:"enableUlaInternalIpv6" yaml:"enableUlaInternalIpv6"`
+	EnableUlaInternalIpv6 any `field:"optional" json:"enableUlaInternalIpv6" yaml:"enableUlaInternalIpv6"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_network#id GoogleComputeNetwork#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -122,4 +122,3 @@ type GoogleComputeNetworkConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_network#timeouts GoogleComputeNetwork#timeouts}
 	Timeouts *GoogleComputeNetworkTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

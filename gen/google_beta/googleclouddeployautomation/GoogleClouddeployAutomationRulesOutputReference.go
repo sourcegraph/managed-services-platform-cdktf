@@ -14,9 +14,9 @@ type GoogleClouddeployAutomationRulesOutputReference interface {
 	AdvanceRolloutRuleInput() *GoogleClouddeployAutomationRulesAdvanceRolloutRule
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -29,8 +29,8 @@ type GoogleClouddeployAutomationRulesOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	PromoteReleaseRule() GoogleClouddeployAutomationRulesPromoteReleaseRuleOutputReference
 	PromoteReleaseRuleInput() *GoogleClouddeployAutomationRulesPromoteReleaseRule
 	RepairRolloutRule() GoogleClouddeployAutomationRulesRepairRolloutRuleOutputReference
@@ -48,7 +48,7 @@ type GoogleClouddeployAutomationRulesOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -79,7 +79,7 @@ type GoogleClouddeployAutomationRulesOutputReference interface {
 	ResetTimedPromoteReleaseRule()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -112,8 +112,8 @@ func (j *jsiiProxy_GoogleClouddeployAutomationRulesOutputReference) AdvanceRollo
 	return returns
 }
 
-func (j *jsiiProxy_GoogleClouddeployAutomationRulesOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleClouddeployAutomationRulesOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -152,8 +152,8 @@ func (j *jsiiProxy_GoogleClouddeployAutomationRulesOutputReference) Fqn() *strin
 	return returns
 }
 
-func (j *jsiiProxy_GoogleClouddeployAutomationRulesOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleClouddeployAutomationRulesOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -242,7 +242,6 @@ func (j *jsiiProxy_GoogleClouddeployAutomationRulesOutputReference) TimedPromote
 	return returns
 }
 
-
 func NewGoogleClouddeployAutomationRulesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) GoogleClouddeployAutomationRulesOutputReference {
 	_init_.Initialize()
 
@@ -253,7 +252,7 @@ func NewGoogleClouddeployAutomationRulesOutputReference(terraformResource cdktf.
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleClouddeployAutomation.GoogleClouddeployAutomationRulesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -265,12 +264,12 @@ func NewGoogleClouddeployAutomationRulesOutputReference_Override(g GoogleCloudde
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleClouddeployAutomation.GoogleClouddeployAutomationRulesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleClouddeployAutomationRulesOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleClouddeployAutomationRulesOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -281,7 +280,7 @@ func (j *jsiiProxy_GoogleClouddeployAutomationRulesOutputReference)SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_GoogleClouddeployAutomationRulesOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleClouddeployAutomationRulesOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -292,7 +291,7 @@ func (j *jsiiProxy_GoogleClouddeployAutomationRulesOutputReference)SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_GoogleClouddeployAutomationRulesOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_GoogleClouddeployAutomationRulesOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -303,7 +302,7 @@ func (j *jsiiProxy_GoogleClouddeployAutomationRulesOutputReference)SetInternalVa
 	)
 }
 
-func (j *jsiiProxy_GoogleClouddeployAutomationRulesOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleClouddeployAutomationRulesOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -314,7 +313,7 @@ func (j *jsiiProxy_GoogleClouddeployAutomationRulesOutputReference)SetTerraformA
 	)
 }
 
-func (j *jsiiProxy_GoogleClouddeployAutomationRulesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleClouddeployAutomationRulesOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -338,16 +337,16 @@ func (g *jsiiProxy_GoogleClouddeployAutomationRulesOutputReference) ComputeFqn()
 	return returns
 }
 
-func (g *jsiiProxy_GoogleClouddeployAutomationRulesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleClouddeployAutomationRulesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -363,7 +362,7 @@ func (g *jsiiProxy_GoogleClouddeployAutomationRulesOutputReference) GetBooleanAt
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -379,7 +378,7 @@ func (g *jsiiProxy_GoogleClouddeployAutomationRulesOutputReference) GetBooleanMa
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -395,7 +394,7 @@ func (g *jsiiProxy_GoogleClouddeployAutomationRulesOutputReference) GetListAttri
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -411,7 +410,7 @@ func (g *jsiiProxy_GoogleClouddeployAutomationRulesOutputReference) GetNumberAtt
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -427,7 +426,7 @@ func (g *jsiiProxy_GoogleClouddeployAutomationRulesOutputReference) GetNumberLis
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -443,7 +442,7 @@ func (g *jsiiProxy_GoogleClouddeployAutomationRulesOutputReference) GetNumberMap
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -459,7 +458,7 @@ func (g *jsiiProxy_GoogleClouddeployAutomationRulesOutputReference) GetStringAtt
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -475,7 +474,7 @@ func (g *jsiiProxy_GoogleClouddeployAutomationRulesOutputReference) GetStringMap
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -504,7 +503,7 @@ func (g *jsiiProxy_GoogleClouddeployAutomationRulesOutputReference) Interpolatio
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -518,7 +517,7 @@ func (g *jsiiProxy_GoogleClouddeployAutomationRulesOutputReference) PutAdvanceRo
 	_jsii_.InvokeVoid(
 		g,
 		"putAdvanceRolloutRule",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -529,7 +528,7 @@ func (g *jsiiProxy_GoogleClouddeployAutomationRulesOutputReference) PutPromoteRe
 	_jsii_.InvokeVoid(
 		g,
 		"putPromoteReleaseRule",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -540,7 +539,7 @@ func (g *jsiiProxy_GoogleClouddeployAutomationRulesOutputReference) PutRepairRol
 	_jsii_.InvokeVoid(
 		g,
 		"putRepairRolloutRule",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -551,7 +550,7 @@ func (g *jsiiProxy_GoogleClouddeployAutomationRulesOutputReference) PutTimedProm
 	_jsii_.InvokeVoid(
 		g,
 		"putTimedPromoteReleaseRule",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -587,16 +586,16 @@ func (g *jsiiProxy_GoogleClouddeployAutomationRulesOutputReference) ResetTimedPr
 	)
 }
 
-func (g *jsiiProxy_GoogleClouddeployAutomationRulesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleClouddeployAutomationRulesOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -615,4 +614,3 @@ func (g *jsiiProxy_GoogleClouddeployAutomationRulesOutputReference) ToString() *
 
 	return returns
 }
-

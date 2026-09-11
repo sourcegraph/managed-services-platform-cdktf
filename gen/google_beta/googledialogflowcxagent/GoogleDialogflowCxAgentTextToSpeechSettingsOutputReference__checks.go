@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleDialogflowCxAgentTextToSpeechSettingsOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxAgentTextToSpeechSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDialogflowCxAgentTextToSpeechSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleDialogflowCxAgentTextToSpeechSettingsOutputReferenceParame
 
 	return nil
 }
-

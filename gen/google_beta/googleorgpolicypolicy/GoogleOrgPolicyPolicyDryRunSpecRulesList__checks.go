@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleOrgPolicyPolicyDryRunSpecRulesList) validateResolvePara
 	return nil
 }
 
-func (j *jsiiProxy_GoogleOrgPolicyPolicyDryRunSpecRulesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleOrgPolicyPolicyDryRunSpecRulesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleOrgPolicyPolicyDryRunSpecRulesListParameters(terraformReso
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleSourcerepoRepositoryPubsubConfigsOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSourcerepoRepositoryPubsubConfigsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleSourcerepoRepositoryPubsubConfigsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_GoogleSourcerepoRepositoryPubsubConfigsOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSourcerepoRepositoryPubsubConfigsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleSourcerepoRepositoryPubsubConfigsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewGoogleSourcerepoRepositoryPubsubConfigsOutputReferenceParameters
 
 	return nil
 }
-

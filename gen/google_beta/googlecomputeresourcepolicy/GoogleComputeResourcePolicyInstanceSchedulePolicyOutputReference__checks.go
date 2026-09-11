@@ -120,7 +120,7 @@ func (g *jsiiProxy_GoogleComputeResourcePolicyInstanceSchedulePolicyOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeResourcePolicyInstanceSchedulePolicyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeResourcePolicyInstanceSchedulePolicyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -244,4 +244,3 @@ func validateNewGoogleComputeResourcePolicyInstanceSchedulePolicyOutputReference
 
 	return nil
 }
-

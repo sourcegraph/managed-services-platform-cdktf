@@ -1,11 +1,10 @@
 package googledataplexasset
 
-
 type GoogleDataplexAssetDiscoverySpec struct {
 	// Required. Whether discovery is enabled.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dataplex_asset#enabled GoogleDataplexAsset#enabled}
-	Enabled interface{} `field:"required" json:"enabled" yaml:"enabled"`
+	Enabled any `field:"required" json:"enabled" yaml:"enabled"`
 	// csv_options block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dataplex_asset#csv_options GoogleDataplexAsset#csv_options}
@@ -33,4 +32,3 @@ type GoogleDataplexAssetDiscoverySpec struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dataplex_asset#schedule GoogleDataplexAsset#schedule}
 	Schedule *string `field:"optional" json:"schedule" yaml:"schedule"`
 }
-

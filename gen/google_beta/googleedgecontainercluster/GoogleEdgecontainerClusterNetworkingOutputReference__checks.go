@@ -114,7 +114,7 @@ func (j *jsiiProxy_GoogleEdgecontainerClusterNetworkingOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_GoogleEdgecontainerClusterNetworkingOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleEdgecontainerClusterNetworkingOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -230,4 +230,3 @@ func validateNewGoogleEdgecontainerClusterNetworkingOutputReferenceParameters(te
 
 	return nil
 }
-

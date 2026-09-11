@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleLoggingProjectExclusion) validateAddMoveTargetParameter
 	return nil
 }
 
-func (g *jsiiProxy_GoogleLoggingProjectExclusion) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleLoggingProjectExclusion) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleLoggingProjectExclusion) validateMoveFromIdParameters(i
 	return nil
 }
 
-func (g *jsiiProxy_GoogleLoggingProjectExclusion) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleLoggingProjectExclusion) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateGoogleLoggingProjectExclusion_GenerateConfigForImportParameters(sco
 	return nil
 }
 
-func validateGoogleLoggingProjectExclusion_IsConstructParameters(x interface{}) error {
+func validateGoogleLoggingProjectExclusion_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateGoogleLoggingProjectExclusion_IsConstructParameters(x interface{}) 
 	return nil
 }
 
-func validateGoogleLoggingProjectExclusion_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleLoggingProjectExclusion_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateGoogleLoggingProjectExclusion_IsTerraformElementParameters(x interf
 	return nil
 }
 
-func validateGoogleLoggingProjectExclusion_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleLoggingProjectExclusion_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateGoogleLoggingProjectExclusion_IsTerraformResourceParameters(x inter
 	return nil
 }
 
-func (j *jsiiProxy_GoogleLoggingProjectExclusion) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleLoggingProjectExclusion) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_GoogleLoggingProjectExclusion) validateSetConnectionParameter
 	return nil
 }
 
-func (j *jsiiProxy_GoogleLoggingProjectExclusion) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleLoggingProjectExclusion) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -342,7 +342,7 @@ func (j *jsiiProxy_GoogleLoggingProjectExclusion) validateSetDescriptionParamete
 	return nil
 }
 
-func (j *jsiiProxy_GoogleLoggingProjectExclusion) validateSetDisabledParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleLoggingProjectExclusion) validateSetDisabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -402,7 +402,7 @@ func (j *jsiiProxy_GoogleLoggingProjectExclusion) validateSetProjectParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_GoogleLoggingProjectExclusion) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleLoggingProjectExclusion) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -466,4 +466,3 @@ func validateNewGoogleLoggingProjectExclusionParameters(scope constructs.Constru
 
 	return nil
 }
-

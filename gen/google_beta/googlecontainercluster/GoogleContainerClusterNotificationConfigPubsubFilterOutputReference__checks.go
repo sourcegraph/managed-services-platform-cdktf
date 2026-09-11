@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleContainerClusterNotificationConfigPubsubFilterOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerClusterNotificationConfigPubsubFilterOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContainerClusterNotificationConfigPubsubFilterOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleContainerClusterNotificationConfigPubsubFilterOutputRefere
 
 	return nil
 }
-

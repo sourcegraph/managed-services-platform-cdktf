@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleStorageBucketIamBindingConditionOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_GoogleStorageBucketIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleStorageBucketIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewGoogleStorageBucketIamBindingConditionOutputReferenceParameters(
 
 	return nil
 }
-

@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleSpannerBackupSchedule) validateAddMoveTargetParameters(
 	return nil
 }
 
-func (g *jsiiProxy_GoogleSpannerBackupSchedule) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleSpannerBackupSchedule) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleSpannerBackupSchedule) validateMoveFromIdParameters(id 
 	return nil
 }
 
-func (g *jsiiProxy_GoogleSpannerBackupSchedule) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleSpannerBackupSchedule) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -275,7 +275,7 @@ func validateGoogleSpannerBackupSchedule_GenerateConfigForImportParameters(scope
 	return nil
 }
 
-func validateGoogleSpannerBackupSchedule_IsConstructParameters(x interface{}) error {
+func validateGoogleSpannerBackupSchedule_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -283,7 +283,7 @@ func validateGoogleSpannerBackupSchedule_IsConstructParameters(x interface{}) er
 	return nil
 }
 
-func validateGoogleSpannerBackupSchedule_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleSpannerBackupSchedule_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -291,7 +291,7 @@ func validateGoogleSpannerBackupSchedule_IsTerraformElementParameters(x interfac
 	return nil
 }
 
-func validateGoogleSpannerBackupSchedule_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleSpannerBackupSchedule_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -299,7 +299,7 @@ func validateGoogleSpannerBackupSchedule_IsTerraformResourceParameters(x interfa
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSpannerBackupSchedule) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleSpannerBackupSchedule) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -332,7 +332,7 @@ func (j *jsiiProxy_GoogleSpannerBackupSchedule) validateSetConnectionParameters(
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSpannerBackupSchedule) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleSpannerBackupSchedule) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -437,7 +437,7 @@ func (j *jsiiProxy_GoogleSpannerBackupSchedule) validateSetProjectParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSpannerBackupSchedule) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleSpannerBackupSchedule) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -509,4 +509,3 @@ func validateNewGoogleSpannerBackupScheduleParameters(scope constructs.Construct
 
 	return nil
 }
-

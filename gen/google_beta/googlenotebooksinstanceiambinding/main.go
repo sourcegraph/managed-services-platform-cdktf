@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleNotebooksInstanceIamBinding.GoogleNotebooksInstanceIamBinding",
-		reflect.TypeOf((*GoogleNotebooksInstanceIamBinding)(nil)).Elem(),
+		reflect.TypeFor[GoogleNotebooksInstanceIamBinding](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -73,7 +73,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleNotebooksInstanceIamBinding{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -81,11 +81,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleNotebooksInstanceIamBinding.GoogleNotebooksInstanceIamBindingCondition",
-		reflect.TypeOf((*GoogleNotebooksInstanceIamBindingCondition)(nil)).Elem(),
+		reflect.TypeFor[GoogleNotebooksInstanceIamBindingCondition](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleNotebooksInstanceIamBinding.GoogleNotebooksInstanceIamBindingConditionOutputReference",
-		reflect.TypeOf((*GoogleNotebooksInstanceIamBindingConditionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleNotebooksInstanceIamBindingConditionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -116,7 +116,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "titleInput", GoGetter: "TitleInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleNotebooksInstanceIamBindingConditionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -124,6 +124,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleNotebooksInstanceIamBinding.GoogleNotebooksInstanceIamBindingConfig",
-		reflect.TypeOf((*GoogleNotebooksInstanceIamBindingConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleNotebooksInstanceIamBindingConfig](),
 	)
 }

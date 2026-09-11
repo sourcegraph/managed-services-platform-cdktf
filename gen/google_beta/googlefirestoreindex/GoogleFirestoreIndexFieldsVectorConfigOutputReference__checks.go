@@ -109,7 +109,7 @@ func (g *jsiiProxy_GoogleFirestoreIndexFieldsVectorConfigOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_GoogleFirestoreIndexFieldsVectorConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleFirestoreIndexFieldsVectorConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -217,4 +217,3 @@ func validateNewGoogleFirestoreIndexFieldsVectorConfigOutputReferenceParameters(
 
 	return nil
 }
-

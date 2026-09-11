@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleAppEngineStandardAppVersionHandlersStaticFilesOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAppEngineStandardAppVersionHandlersStaticFilesOutputReference) validateSetApplicationReadableParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleAppEngineStandardAppVersionHandlersStaticFilesOutputReference) validateSetApplicationReadableParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -118,7 +118,7 @@ func (j *jsiiProxy_GoogleAppEngineStandardAppVersionHandlersStaticFilesOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAppEngineStandardAppVersionHandlersStaticFilesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleAppEngineStandardAppVersionHandlersStaticFilesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -223,7 +223,7 @@ func (j *jsiiProxy_GoogleAppEngineStandardAppVersionHandlersStaticFilesOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAppEngineStandardAppVersionHandlersStaticFilesOutputReference) validateSetRequireMatchingFileParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleAppEngineStandardAppVersionHandlersStaticFilesOutputReference) validateSetRequireMatchingFileParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -278,4 +278,3 @@ func validateNewGoogleAppEngineStandardAppVersionHandlersStaticFilesOutputRefere
 
 	return nil
 }
-

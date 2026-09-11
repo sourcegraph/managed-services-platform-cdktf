@@ -1,11 +1,10 @@
 package googlecomputenetworkfirewallpolicyrule
 
-
 type GoogleComputeNetworkFirewallPolicyRuleMatch struct {
 	// layer4_configs block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_network_firewall_policy_rule#layer4_configs GoogleComputeNetworkFirewallPolicyRule#layer4_configs}
-	Layer4Configs interface{} `field:"required" json:"layer4Configs" yaml:"layer4Configs"`
+	Layer4Configs any `field:"required" json:"layer4Configs" yaml:"layer4Configs"`
 	// Address groups which should be matched against the traffic destination. Maximum number of destination address groups is 10.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_network_firewall_policy_rule#dest_address_groups GoogleComputeNetworkFirewallPolicyRule#dest_address_groups}
@@ -65,10 +64,9 @@ type GoogleComputeNetworkFirewallPolicyRuleMatch struct {
 	// src_secure_tags block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_network_firewall_policy_rule#src_secure_tags GoogleComputeNetworkFirewallPolicyRule#src_secure_tags}
-	SrcSecureTags interface{} `field:"optional" json:"srcSecureTags" yaml:"srcSecureTags"`
+	SrcSecureTags any `field:"optional" json:"srcSecureTags" yaml:"srcSecureTags"`
 	// Names of Network Threat Intelligence lists. The IPs in these lists will be matched against traffic source.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_network_firewall_policy_rule#src_threat_intelligences GoogleComputeNetworkFirewallPolicyRule#src_threat_intelligences}
 	SrcThreatIntelligences *[]*string `field:"optional" json:"srcThreatIntelligences" yaml:"srcThreatIntelligences"`
 }
-

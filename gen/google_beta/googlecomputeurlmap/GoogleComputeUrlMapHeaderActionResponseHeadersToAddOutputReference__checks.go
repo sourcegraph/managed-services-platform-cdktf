@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleComputeUrlMapHeaderActionResponseHeadersToAddOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeUrlMapHeaderActionResponseHeadersToAddOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeUrlMapHeaderActionResponseHeadersToAddOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_GoogleComputeUrlMapHeaderActionResponseHeadersToAddOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeUrlMapHeaderActionResponseHeadersToAddOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeUrlMapHeaderActionResponseHeadersToAddOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -203,7 +203,7 @@ func (j *jsiiProxy_GoogleComputeUrlMapHeaderActionResponseHeadersToAddOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeUrlMapHeaderActionResponseHeadersToAddOutputReference) validateSetReplaceParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeUrlMapHeaderActionResponseHeadersToAddOutputReference) validateSetReplaceParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -258,4 +258,3 @@ func validateNewGoogleComputeUrlMapHeaderActionResponseHeadersToAddOutputReferen
 
 	return nil
 }
-

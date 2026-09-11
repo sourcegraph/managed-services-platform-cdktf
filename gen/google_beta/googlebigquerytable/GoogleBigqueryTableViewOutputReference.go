@@ -12,9 +12,9 @@ type GoogleBigqueryTableViewOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -40,13 +40,13 @@ type GoogleBigqueryTableViewOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
-	UseLegacySql() interface{}
-	SetUseLegacySql(val interface{})
-	UseLegacySqlInput() interface{}
+	UseLegacySql() any
+	SetUseLegacySql(val any)
+	UseLegacySqlInput() any
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -70,7 +70,7 @@ type GoogleBigqueryTableViewOutputReference interface {
 	ResetUseLegacySql()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -83,8 +83,8 @@ type jsiiProxy_GoogleBigqueryTableViewOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GoogleBigqueryTableViewOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleBigqueryTableViewOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -173,8 +173,8 @@ func (j *jsiiProxy_GoogleBigqueryTableViewOutputReference) TerraformResource() c
 	return returns
 }
 
-func (j *jsiiProxy_GoogleBigqueryTableViewOutputReference) UseLegacySql() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleBigqueryTableViewOutputReference) UseLegacySql() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"useLegacySql",
@@ -183,8 +183,8 @@ func (j *jsiiProxy_GoogleBigqueryTableViewOutputReference) UseLegacySql() interf
 	return returns
 }
 
-func (j *jsiiProxy_GoogleBigqueryTableViewOutputReference) UseLegacySqlInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleBigqueryTableViewOutputReference) UseLegacySqlInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"useLegacySqlInput",
@@ -192,7 +192,6 @@ func (j *jsiiProxy_GoogleBigqueryTableViewOutputReference) UseLegacySqlInput() i
 	)
 	return returns
 }
-
 
 func NewGoogleBigqueryTableViewOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleBigqueryTableViewOutputReference {
 	_init_.Initialize()
@@ -204,7 +203,7 @@ func NewGoogleBigqueryTableViewOutputReference(terraformResource cdktf.IInterpol
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleBigqueryTable.GoogleBigqueryTableViewOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -216,12 +215,12 @@ func NewGoogleBigqueryTableViewOutputReference_Override(g GoogleBigqueryTableVie
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleBigqueryTable.GoogleBigqueryTableViewOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryTableViewOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleBigqueryTableViewOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -232,7 +231,7 @@ func (j *jsiiProxy_GoogleBigqueryTableViewOutputReference)SetComplexObjectIndex(
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryTableViewOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleBigqueryTableViewOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -243,7 +242,7 @@ func (j *jsiiProxy_GoogleBigqueryTableViewOutputReference)SetComplexObjectIsFrom
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryTableViewOutputReference)SetInternalValue(val *GoogleBigqueryTableView) {
+func (j *jsiiProxy_GoogleBigqueryTableViewOutputReference) SetInternalValue(val *GoogleBigqueryTableView) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -254,7 +253,7 @@ func (j *jsiiProxy_GoogleBigqueryTableViewOutputReference)SetInternalValue(val *
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryTableViewOutputReference)SetQuery(val *string) {
+func (j *jsiiProxy_GoogleBigqueryTableViewOutputReference) SetQuery(val *string) {
 	if err := j.validateSetQueryParameters(val); err != nil {
 		panic(err)
 	}
@@ -265,7 +264,7 @@ func (j *jsiiProxy_GoogleBigqueryTableViewOutputReference)SetQuery(val *string) 
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryTableViewOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleBigqueryTableViewOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,7 +275,7 @@ func (j *jsiiProxy_GoogleBigqueryTableViewOutputReference)SetTerraformAttribute(
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryTableViewOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleBigqueryTableViewOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -287,7 +286,7 @@ func (j *jsiiProxy_GoogleBigqueryTableViewOutputReference)SetTerraformResource(v
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryTableViewOutputReference)SetUseLegacySql(val interface{}) {
+func (j *jsiiProxy_GoogleBigqueryTableViewOutputReference) SetUseLegacySql(val any) {
 	if err := j.validateSetUseLegacySqlParameters(val); err != nil {
 		panic(err)
 	}
@@ -311,16 +310,16 @@ func (g *jsiiProxy_GoogleBigqueryTableViewOutputReference) ComputeFqn() *string 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleBigqueryTableViewOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleBigqueryTableViewOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -336,7 +335,7 @@ func (g *jsiiProxy_GoogleBigqueryTableViewOutputReference) GetBooleanAttribute(t
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -352,7 +351,7 @@ func (g *jsiiProxy_GoogleBigqueryTableViewOutputReference) GetBooleanMapAttribut
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -368,7 +367,7 @@ func (g *jsiiProxy_GoogleBigqueryTableViewOutputReference) GetListAttribute(terr
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -384,7 +383,7 @@ func (g *jsiiProxy_GoogleBigqueryTableViewOutputReference) GetNumberAttribute(te
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -400,7 +399,7 @@ func (g *jsiiProxy_GoogleBigqueryTableViewOutputReference) GetNumberListAttribut
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -416,7 +415,7 @@ func (g *jsiiProxy_GoogleBigqueryTableViewOutputReference) GetNumberMapAttribute
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -432,7 +431,7 @@ func (g *jsiiProxy_GoogleBigqueryTableViewOutputReference) GetStringAttribute(te
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -448,7 +447,7 @@ func (g *jsiiProxy_GoogleBigqueryTableViewOutputReference) GetStringMapAttribute
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -477,7 +476,7 @@ func (g *jsiiProxy_GoogleBigqueryTableViewOutputReference) InterpolationForAttri
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -492,16 +491,16 @@ func (g *jsiiProxy_GoogleBigqueryTableViewOutputReference) ResetUseLegacySql() {
 	)
 }
 
-func (g *jsiiProxy_GoogleBigqueryTableViewOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleBigqueryTableViewOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -520,4 +519,3 @@ func (g *jsiiProxy_GoogleBigqueryTableViewOutputReference) ToString() *string {
 
 	return returns
 }
-

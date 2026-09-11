@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleIapSettings) validateAddMoveTargetParameters(moveTarget
 	return nil
 }
 
-func (g *jsiiProxy_GoogleIapSettings) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleIapSettings) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleIapSettings) validateMoveFromIdParameters(id *string) e
 	return nil
 }
 
-func (g *jsiiProxy_GoogleIapSettings) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleIapSettings) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -253,7 +253,7 @@ func validateGoogleIapSettings_GenerateConfigForImportParameters(scope construct
 	return nil
 }
 
-func validateGoogleIapSettings_IsConstructParameters(x interface{}) error {
+func validateGoogleIapSettings_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -261,7 +261,7 @@ func validateGoogleIapSettings_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateGoogleIapSettings_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleIapSettings_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -269,7 +269,7 @@ func validateGoogleIapSettings_IsTerraformElementParameters(x interface{}) error
 	return nil
 }
 
-func validateGoogleIapSettings_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleIapSettings_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -277,7 +277,7 @@ func validateGoogleIapSettings_IsTerraformResourceParameters(x interface{}) erro
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIapSettings) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleIapSettings) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -310,7 +310,7 @@ func (j *jsiiProxy_GoogleIapSettings) validateSetConnectionParameters(val interf
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIapSettings) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleIapSettings) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -391,7 +391,7 @@ func (j *jsiiProxy_GoogleIapSettings) validateSetNameParameters(val *string) err
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIapSettings) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleIapSettings) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -455,4 +455,3 @@ func validateNewGoogleIapSettingsParameters(scope constructs.Construct, id *stri
 
 	return nil
 }
-

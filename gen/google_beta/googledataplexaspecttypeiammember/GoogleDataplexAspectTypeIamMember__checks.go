@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleDataplexAspectTypeIamMember) validateAddMoveTargetParam
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDataplexAspectTypeIamMember) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleDataplexAspectTypeIamMember) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleDataplexAspectTypeIamMember) validateMoveFromIdParamete
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDataplexAspectTypeIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleDataplexAspectTypeIamMember) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateGoogleDataplexAspectTypeIamMember_GenerateConfigForImportParameters
 	return nil
 }
 
-func validateGoogleDataplexAspectTypeIamMember_IsConstructParameters(x interface{}) error {
+func validateGoogleDataplexAspectTypeIamMember_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateGoogleDataplexAspectTypeIamMember_IsConstructParameters(x interface
 	return nil
 }
 
-func validateGoogleDataplexAspectTypeIamMember_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleDataplexAspectTypeIamMember_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateGoogleDataplexAspectTypeIamMember_IsTerraformElementParameters(x in
 	return nil
 }
 
-func validateGoogleDataplexAspectTypeIamMember_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleDataplexAspectTypeIamMember_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -263,7 +263,7 @@ func (j *jsiiProxy_GoogleDataplexAspectTypeIamMember) validateSetAspectTypeIdPar
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataplexAspectTypeIamMember) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataplexAspectTypeIamMember) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -296,7 +296,7 @@ func (j *jsiiProxy_GoogleDataplexAspectTypeIamMember) validateSetConnectionParam
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataplexAspectTypeIamMember) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataplexAspectTypeIamMember) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -393,7 +393,7 @@ func (j *jsiiProxy_GoogleDataplexAspectTypeIamMember) validateSetProjectParamete
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataplexAspectTypeIamMember) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleDataplexAspectTypeIamMember) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -465,4 +465,3 @@ func validateNewGoogleDataplexAspectTypeIamMemberParameters(scope constructs.Con
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleContainerClusterNodePoolManagementOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerClusterNodePoolManagementOutputReference) validateSetAutoRepairParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContainerClusterNodePoolManagementOutputReference) validateSetAutoRepairParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -118,7 +118,7 @@ func (j *jsiiProxy_GoogleContainerClusterNodePoolManagementOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerClusterNodePoolManagementOutputReference) validateSetAutoUpgradeParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContainerClusterNodePoolManagementOutputReference) validateSetAutoUpgradeParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -138,7 +138,7 @@ func (j *jsiiProxy_GoogleContainerClusterNodePoolManagementOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerClusterNodePoolManagementOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContainerClusterNodePoolManagementOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGoogleContainerClusterNodePoolManagementOutputReferenceParameter
 
 	return nil
 }
-

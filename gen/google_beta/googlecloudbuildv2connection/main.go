@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleCloudbuildv2Connection.GoogleCloudbuildv2Connection",
-		reflect.TypeOf((*GoogleCloudbuildv2Connection)(nil)).Elem(),
+		reflect.TypeFor[GoogleCloudbuildv2Connection](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -99,7 +99,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleCloudbuildv2Connection{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -107,15 +107,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleCloudbuildv2Connection.GoogleCloudbuildv2ConnectionBitbucketCloudConfig",
-		reflect.TypeOf((*GoogleCloudbuildv2ConnectionBitbucketCloudConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleCloudbuildv2ConnectionBitbucketCloudConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleCloudbuildv2Connection.GoogleCloudbuildv2ConnectionBitbucketCloudConfigAuthorizerCredential",
-		reflect.TypeOf((*GoogleCloudbuildv2ConnectionBitbucketCloudConfigAuthorizerCredential)(nil)).Elem(),
+		reflect.TypeFor[GoogleCloudbuildv2ConnectionBitbucketCloudConfigAuthorizerCredential](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleCloudbuildv2Connection.GoogleCloudbuildv2ConnectionBitbucketCloudConfigAuthorizerCredentialOutputReference",
-		reflect.TypeOf((*GoogleCloudbuildv2ConnectionBitbucketCloudConfigAuthorizerCredentialOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleCloudbuildv2ConnectionBitbucketCloudConfigAuthorizerCredentialOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -142,7 +142,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "userTokenSecretVersion", GoGetter: "UserTokenSecretVersion"},
 			_jsii_.MemberProperty{JsiiProperty: "userTokenSecretVersionInput", GoGetter: "UserTokenSecretVersionInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleCloudbuildv2ConnectionBitbucketCloudConfigAuthorizerCredentialOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -150,7 +150,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleCloudbuildv2Connection.GoogleCloudbuildv2ConnectionBitbucketCloudConfigOutputReference",
-		reflect.TypeOf((*GoogleCloudbuildv2ConnectionBitbucketCloudConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleCloudbuildv2ConnectionBitbucketCloudConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authorizerCredential", GoGetter: "AuthorizerCredential"},
 			_jsii_.MemberProperty{JsiiProperty: "authorizerCredentialInput", GoGetter: "AuthorizerCredentialInput"},
@@ -184,7 +184,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "workspace", GoGetter: "Workspace"},
 			_jsii_.MemberProperty{JsiiProperty: "workspaceInput", GoGetter: "WorkspaceInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleCloudbuildv2ConnectionBitbucketCloudConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -192,11 +192,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleCloudbuildv2Connection.GoogleCloudbuildv2ConnectionBitbucketCloudConfigReadAuthorizerCredential",
-		reflect.TypeOf((*GoogleCloudbuildv2ConnectionBitbucketCloudConfigReadAuthorizerCredential)(nil)).Elem(),
+		reflect.TypeFor[GoogleCloudbuildv2ConnectionBitbucketCloudConfigReadAuthorizerCredential](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleCloudbuildv2Connection.GoogleCloudbuildv2ConnectionBitbucketCloudConfigReadAuthorizerCredentialOutputReference",
-		reflect.TypeOf((*GoogleCloudbuildv2ConnectionBitbucketCloudConfigReadAuthorizerCredentialOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleCloudbuildv2ConnectionBitbucketCloudConfigReadAuthorizerCredentialOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -223,7 +223,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "userTokenSecretVersion", GoGetter: "UserTokenSecretVersion"},
 			_jsii_.MemberProperty{JsiiProperty: "userTokenSecretVersionInput", GoGetter: "UserTokenSecretVersionInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleCloudbuildv2ConnectionBitbucketCloudConfigReadAuthorizerCredentialOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -231,15 +231,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleCloudbuildv2Connection.GoogleCloudbuildv2ConnectionBitbucketDataCenterConfig",
-		reflect.TypeOf((*GoogleCloudbuildv2ConnectionBitbucketDataCenterConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleCloudbuildv2ConnectionBitbucketDataCenterConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleCloudbuildv2Connection.GoogleCloudbuildv2ConnectionBitbucketDataCenterConfigAuthorizerCredential",
-		reflect.TypeOf((*GoogleCloudbuildv2ConnectionBitbucketDataCenterConfigAuthorizerCredential)(nil)).Elem(),
+		reflect.TypeFor[GoogleCloudbuildv2ConnectionBitbucketDataCenterConfigAuthorizerCredential](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleCloudbuildv2Connection.GoogleCloudbuildv2ConnectionBitbucketDataCenterConfigAuthorizerCredentialOutputReference",
-		reflect.TypeOf((*GoogleCloudbuildv2ConnectionBitbucketDataCenterConfigAuthorizerCredentialOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleCloudbuildv2ConnectionBitbucketDataCenterConfigAuthorizerCredentialOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -266,7 +266,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "userTokenSecretVersion", GoGetter: "UserTokenSecretVersion"},
 			_jsii_.MemberProperty{JsiiProperty: "userTokenSecretVersionInput", GoGetter: "UserTokenSecretVersionInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleCloudbuildv2ConnectionBitbucketDataCenterConfigAuthorizerCredentialOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -274,7 +274,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleCloudbuildv2Connection.GoogleCloudbuildv2ConnectionBitbucketDataCenterConfigOutputReference",
-		reflect.TypeOf((*GoogleCloudbuildv2ConnectionBitbucketDataCenterConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleCloudbuildv2ConnectionBitbucketDataCenterConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authorizerCredential", GoGetter: "AuthorizerCredential"},
 			_jsii_.MemberProperty{JsiiProperty: "authorizerCredentialInput", GoGetter: "AuthorizerCredentialInput"},
@@ -316,7 +316,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "webhookSecretSecretVersion", GoGetter: "WebhookSecretSecretVersion"},
 			_jsii_.MemberProperty{JsiiProperty: "webhookSecretSecretVersionInput", GoGetter: "WebhookSecretSecretVersionInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleCloudbuildv2ConnectionBitbucketDataCenterConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -324,11 +324,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleCloudbuildv2Connection.GoogleCloudbuildv2ConnectionBitbucketDataCenterConfigReadAuthorizerCredential",
-		reflect.TypeOf((*GoogleCloudbuildv2ConnectionBitbucketDataCenterConfigReadAuthorizerCredential)(nil)).Elem(),
+		reflect.TypeFor[GoogleCloudbuildv2ConnectionBitbucketDataCenterConfigReadAuthorizerCredential](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleCloudbuildv2Connection.GoogleCloudbuildv2ConnectionBitbucketDataCenterConfigReadAuthorizerCredentialOutputReference",
-		reflect.TypeOf((*GoogleCloudbuildv2ConnectionBitbucketDataCenterConfigReadAuthorizerCredentialOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleCloudbuildv2ConnectionBitbucketDataCenterConfigReadAuthorizerCredentialOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -355,7 +355,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "userTokenSecretVersion", GoGetter: "UserTokenSecretVersion"},
 			_jsii_.MemberProperty{JsiiProperty: "userTokenSecretVersionInput", GoGetter: "UserTokenSecretVersionInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleCloudbuildv2ConnectionBitbucketDataCenterConfigReadAuthorizerCredentialOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -363,11 +363,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleCloudbuildv2Connection.GoogleCloudbuildv2ConnectionBitbucketDataCenterConfigServiceDirectoryConfig",
-		reflect.TypeOf((*GoogleCloudbuildv2ConnectionBitbucketDataCenterConfigServiceDirectoryConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleCloudbuildv2ConnectionBitbucketDataCenterConfigServiceDirectoryConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleCloudbuildv2Connection.GoogleCloudbuildv2ConnectionBitbucketDataCenterConfigServiceDirectoryConfigOutputReference",
-		reflect.TypeOf((*GoogleCloudbuildv2ConnectionBitbucketDataCenterConfigServiceDirectoryConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleCloudbuildv2ConnectionBitbucketDataCenterConfigServiceDirectoryConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -393,7 +393,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleCloudbuildv2ConnectionBitbucketDataCenterConfigServiceDirectoryConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -401,19 +401,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleCloudbuildv2Connection.GoogleCloudbuildv2ConnectionConfig",
-		reflect.TypeOf((*GoogleCloudbuildv2ConnectionConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleCloudbuildv2ConnectionConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleCloudbuildv2Connection.GoogleCloudbuildv2ConnectionGithubConfig",
-		reflect.TypeOf((*GoogleCloudbuildv2ConnectionGithubConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleCloudbuildv2ConnectionGithubConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleCloudbuildv2Connection.GoogleCloudbuildv2ConnectionGithubConfigAuthorizerCredential",
-		reflect.TypeOf((*GoogleCloudbuildv2ConnectionGithubConfigAuthorizerCredential)(nil)).Elem(),
+		reflect.TypeFor[GoogleCloudbuildv2ConnectionGithubConfigAuthorizerCredential](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleCloudbuildv2Connection.GoogleCloudbuildv2ConnectionGithubConfigAuthorizerCredentialOutputReference",
-		reflect.TypeOf((*GoogleCloudbuildv2ConnectionGithubConfigAuthorizerCredentialOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleCloudbuildv2ConnectionGithubConfigAuthorizerCredentialOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -441,7 +441,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "username", GoGetter: "Username"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleCloudbuildv2ConnectionGithubConfigAuthorizerCredentialOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -449,7 +449,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleCloudbuildv2Connection.GoogleCloudbuildv2ConnectionGithubConfigOutputReference",
-		reflect.TypeOf((*GoogleCloudbuildv2ConnectionGithubConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleCloudbuildv2ConnectionGithubConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "appInstallationId", GoGetter: "AppInstallationId"},
 			_jsii_.MemberProperty{JsiiProperty: "appInstallationIdInput", GoGetter: "AppInstallationIdInput"},
@@ -480,7 +480,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleCloudbuildv2ConnectionGithubConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -488,11 +488,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleCloudbuildv2Connection.GoogleCloudbuildv2ConnectionGithubEnterpriseConfig",
-		reflect.TypeOf((*GoogleCloudbuildv2ConnectionGithubEnterpriseConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleCloudbuildv2ConnectionGithubEnterpriseConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleCloudbuildv2Connection.GoogleCloudbuildv2ConnectionGithubEnterpriseConfigOutputReference",
-		reflect.TypeOf((*GoogleCloudbuildv2ConnectionGithubEnterpriseConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleCloudbuildv2ConnectionGithubEnterpriseConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "appId", GoGetter: "AppId"},
 			_jsii_.MemberProperty{JsiiProperty: "appIdInput", GoGetter: "AppIdInput"},
@@ -540,7 +540,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "webhookSecretSecretVersion", GoGetter: "WebhookSecretSecretVersion"},
 			_jsii_.MemberProperty{JsiiProperty: "webhookSecretSecretVersionInput", GoGetter: "WebhookSecretSecretVersionInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleCloudbuildv2ConnectionGithubEnterpriseConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -548,11 +548,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleCloudbuildv2Connection.GoogleCloudbuildv2ConnectionGithubEnterpriseConfigServiceDirectoryConfig",
-		reflect.TypeOf((*GoogleCloudbuildv2ConnectionGithubEnterpriseConfigServiceDirectoryConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleCloudbuildv2ConnectionGithubEnterpriseConfigServiceDirectoryConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleCloudbuildv2Connection.GoogleCloudbuildv2ConnectionGithubEnterpriseConfigServiceDirectoryConfigOutputReference",
-		reflect.TypeOf((*GoogleCloudbuildv2ConnectionGithubEnterpriseConfigServiceDirectoryConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleCloudbuildv2ConnectionGithubEnterpriseConfigServiceDirectoryConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -578,7 +578,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleCloudbuildv2ConnectionGithubEnterpriseConfigServiceDirectoryConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -586,15 +586,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleCloudbuildv2Connection.GoogleCloudbuildv2ConnectionGitlabConfig",
-		reflect.TypeOf((*GoogleCloudbuildv2ConnectionGitlabConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleCloudbuildv2ConnectionGitlabConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleCloudbuildv2Connection.GoogleCloudbuildv2ConnectionGitlabConfigAuthorizerCredential",
-		reflect.TypeOf((*GoogleCloudbuildv2ConnectionGitlabConfigAuthorizerCredential)(nil)).Elem(),
+		reflect.TypeFor[GoogleCloudbuildv2ConnectionGitlabConfigAuthorizerCredential](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleCloudbuildv2Connection.GoogleCloudbuildv2ConnectionGitlabConfigAuthorizerCredentialOutputReference",
-		reflect.TypeOf((*GoogleCloudbuildv2ConnectionGitlabConfigAuthorizerCredentialOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleCloudbuildv2ConnectionGitlabConfigAuthorizerCredentialOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -621,7 +621,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "userTokenSecretVersion", GoGetter: "UserTokenSecretVersion"},
 			_jsii_.MemberProperty{JsiiProperty: "userTokenSecretVersionInput", GoGetter: "UserTokenSecretVersionInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleCloudbuildv2ConnectionGitlabConfigAuthorizerCredentialOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -629,7 +629,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleCloudbuildv2Connection.GoogleCloudbuildv2ConnectionGitlabConfigOutputReference",
-		reflect.TypeOf((*GoogleCloudbuildv2ConnectionGitlabConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleCloudbuildv2ConnectionGitlabConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authorizerCredential", GoGetter: "AuthorizerCredential"},
 			_jsii_.MemberProperty{JsiiProperty: "authorizerCredentialInput", GoGetter: "AuthorizerCredentialInput"},
@@ -672,7 +672,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "webhookSecretSecretVersion", GoGetter: "WebhookSecretSecretVersion"},
 			_jsii_.MemberProperty{JsiiProperty: "webhookSecretSecretVersionInput", GoGetter: "WebhookSecretSecretVersionInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleCloudbuildv2ConnectionGitlabConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -680,11 +680,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleCloudbuildv2Connection.GoogleCloudbuildv2ConnectionGitlabConfigReadAuthorizerCredential",
-		reflect.TypeOf((*GoogleCloudbuildv2ConnectionGitlabConfigReadAuthorizerCredential)(nil)).Elem(),
+		reflect.TypeFor[GoogleCloudbuildv2ConnectionGitlabConfigReadAuthorizerCredential](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleCloudbuildv2Connection.GoogleCloudbuildv2ConnectionGitlabConfigReadAuthorizerCredentialOutputReference",
-		reflect.TypeOf((*GoogleCloudbuildv2ConnectionGitlabConfigReadAuthorizerCredentialOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleCloudbuildv2ConnectionGitlabConfigReadAuthorizerCredentialOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -711,7 +711,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "userTokenSecretVersion", GoGetter: "UserTokenSecretVersion"},
 			_jsii_.MemberProperty{JsiiProperty: "userTokenSecretVersionInput", GoGetter: "UserTokenSecretVersionInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleCloudbuildv2ConnectionGitlabConfigReadAuthorizerCredentialOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -719,11 +719,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleCloudbuildv2Connection.GoogleCloudbuildv2ConnectionGitlabConfigServiceDirectoryConfig",
-		reflect.TypeOf((*GoogleCloudbuildv2ConnectionGitlabConfigServiceDirectoryConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleCloudbuildv2ConnectionGitlabConfigServiceDirectoryConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleCloudbuildv2Connection.GoogleCloudbuildv2ConnectionGitlabConfigServiceDirectoryConfigOutputReference",
-		reflect.TypeOf((*GoogleCloudbuildv2ConnectionGitlabConfigServiceDirectoryConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleCloudbuildv2ConnectionGitlabConfigServiceDirectoryConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -749,7 +749,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleCloudbuildv2ConnectionGitlabConfigServiceDirectoryConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -757,11 +757,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleCloudbuildv2Connection.GoogleCloudbuildv2ConnectionInstallationState",
-		reflect.TypeOf((*GoogleCloudbuildv2ConnectionInstallationState)(nil)).Elem(),
+		reflect.TypeFor[GoogleCloudbuildv2ConnectionInstallationState](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleCloudbuildv2Connection.GoogleCloudbuildv2ConnectionInstallationStateList",
-		reflect.TypeOf((*GoogleCloudbuildv2ConnectionInstallationStateList)(nil)).Elem(),
+		reflect.TypeFor[GoogleCloudbuildv2ConnectionInstallationStateList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -774,7 +774,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleCloudbuildv2ConnectionInstallationStateList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -782,7 +782,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleCloudbuildv2Connection.GoogleCloudbuildv2ConnectionInstallationStateOutputReference",
-		reflect.TypeOf((*GoogleCloudbuildv2ConnectionInstallationStateOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleCloudbuildv2ConnectionInstallationStateOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "actionUri", GoGetter: "ActionUri"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -809,7 +809,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleCloudbuildv2ConnectionInstallationStateOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -817,11 +817,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleCloudbuildv2Connection.GoogleCloudbuildv2ConnectionTimeouts",
-		reflect.TypeOf((*GoogleCloudbuildv2ConnectionTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleCloudbuildv2ConnectionTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleCloudbuildv2Connection.GoogleCloudbuildv2ConnectionTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleCloudbuildv2ConnectionTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleCloudbuildv2ConnectionTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -854,7 +854,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleCloudbuildv2ConnectionTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

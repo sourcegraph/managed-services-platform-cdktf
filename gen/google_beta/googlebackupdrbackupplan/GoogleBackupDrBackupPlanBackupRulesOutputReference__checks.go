@@ -117,7 +117,7 @@ func (j *jsiiProxy_GoogleBackupDrBackupPlanBackupRulesOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBackupDrBackupPlanBackupRulesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBackupDrBackupPlanBackupRulesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -182,7 +182,7 @@ func (j *jsiiProxy_GoogleBackupDrBackupPlanBackupRulesOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBackupDrBackupPlanBackupRulesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBackupDrBackupPlanBackupRulesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -249,4 +249,3 @@ func validateNewGoogleBackupDrBackupPlanBackupRulesOutputReferenceParameters(ter
 
 	return nil
 }
-

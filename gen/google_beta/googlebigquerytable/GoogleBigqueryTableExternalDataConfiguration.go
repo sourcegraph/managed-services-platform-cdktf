@@ -1,11 +1,10 @@
 package googlebigquerytable
 
-
 type GoogleBigqueryTableExternalDataConfiguration struct {
 	// Let BigQuery try to autodetect the schema and format of the table.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_bigquery_table#autodetect GoogleBigqueryTable#autodetect}
-	Autodetect interface{} `field:"required" json:"autodetect" yaml:"autodetect"`
+	Autodetect any `field:"required" json:"autodetect" yaml:"autodetect"`
 	// A list of the fully-qualified URIs that point to your data in Google Cloud.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_bigquery_table#source_uris GoogleBigqueryTable#source_uris}
@@ -51,7 +50,7 @@ type GoogleBigqueryTableExternalDataConfiguration struct {
 	// If true, the extra values are ignored. If false, records with extra columns are treated as bad records, and if there are too many bad records, an invalid error is returned in the job result. The default value is false.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_bigquery_table#ignore_unknown_values GoogleBigqueryTable#ignore_unknown_values}
-	IgnoreUnknownValues interface{} `field:"optional" json:"ignoreUnknownValues" yaml:"ignoreUnknownValues"`
+	IgnoreUnknownValues any `field:"optional" json:"ignoreUnknownValues" yaml:"ignoreUnknownValues"`
 	// Load option to be used together with sourceFormat newline-delimited JSON to indicate that a variant of JSON is being loaded.
 	//
 	// To load newline-delimited GeoJSON, specify GEOJSON (and sourceFormat must be set to NEWLINE_DELIMITED_JSON).
@@ -97,4 +96,3 @@ type GoogleBigqueryTableExternalDataConfiguration struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_bigquery_table#source_format GoogleBigqueryTable#source_format}
 	SourceFormat *string `field:"optional" json:"sourceFormat" yaml:"sourceFormat"`
 }
-

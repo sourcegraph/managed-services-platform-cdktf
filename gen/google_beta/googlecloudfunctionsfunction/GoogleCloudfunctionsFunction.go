@@ -27,15 +27,15 @@ type GoogleCloudfunctionsFunction interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -107,11 +107,11 @@ type GoogleCloudfunctionsFunction interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Region() *string
 	SetRegion(val *string)
 	RegionInput() *string
@@ -119,9 +119,9 @@ type GoogleCloudfunctionsFunction interface {
 	SetRuntime(val *string)
 	RuntimeInput() *string
 	SecretEnvironmentVariables() GoogleCloudfunctionsFunctionSecretEnvironmentVariablesList
-	SecretEnvironmentVariablesInput() interface{}
+	SecretEnvironmentVariablesInput() any
 	SecretVolumes() GoogleCloudfunctionsFunctionSecretVolumesList
-	SecretVolumesInput() interface{}
+	SecretVolumesInput() any
 	ServiceAccountEmail() *string
 	SetServiceAccountEmail(val *string)
 	ServiceAccountEmailInput() *string
@@ -138,17 +138,17 @@ type GoogleCloudfunctionsFunction interface {
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeout() *float64
 	SetTimeout(val *float64)
 	TimeoutInput() *float64
 	Timeouts() GoogleCloudfunctionsFunctionTimeoutsOutputReference
-	TimeoutsInput() interface{}
-	TriggerHttp() interface{}
-	SetTriggerHttp(val interface{})
-	TriggerHttpInput() interface{}
+	TimeoutsInput() any
+	TriggerHttp() any
+	SetTriggerHttp(val any)
+	TriggerHttpInput() any
 	VersionId() *string
 	VpcConnector() *string
 	SetVpcConnector(val *string)
@@ -160,9 +160,9 @@ type GoogleCloudfunctionsFunction interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -180,7 +180,7 @@ type GoogleCloudfunctionsFunction interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -192,7 +192,7 @@ type GoogleCloudfunctionsFunction interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -200,8 +200,8 @@ type GoogleCloudfunctionsFunction interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutEventTrigger(value *GoogleCloudfunctionsFunctionEventTrigger)
-	PutSecretEnvironmentVariables(value interface{})
-	PutSecretVolumes(value interface{})
+	PutSecretEnvironmentVariables(value any)
+	PutSecretVolumes(value any)
 	PutSourceRepository(value *GoogleCloudfunctionsFunctionSourceRepository)
 	PutTimeouts(value *GoogleCloudfunctionsFunctionTimeouts)
 	ResetAvailableMemoryMb()
@@ -238,17 +238,17 @@ type GoogleCloudfunctionsFunction interface {
 	ResetTriggerHttp()
 	ResetVpcConnector()
 	ResetVpcConnectorEgressSettings()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleCloudfunctionsFunction
@@ -346,8 +346,8 @@ func (j *jsiiProxy_GoogleCloudfunctionsFunction) CdktfStack() cdktf.TerraformSta
 	return returns
 }
 
-func (j *jsiiProxy_GoogleCloudfunctionsFunction) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleCloudfunctionsFunction) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -356,8 +356,8 @@ func (j *jsiiProxy_GoogleCloudfunctionsFunction) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleCloudfunctionsFunction) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleCloudfunctionsFunction) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -366,8 +366,8 @@ func (j *jsiiProxy_GoogleCloudfunctionsFunction) ConstructNodeMetadata() *map[st
 	return returns
 }
 
-func (j *jsiiProxy_GoogleCloudfunctionsFunction) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleCloudfunctionsFunction) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -776,8 +776,8 @@ func (j *jsiiProxy_GoogleCloudfunctionsFunction) Provider() cdktf.TerraformProvi
 	return returns
 }
 
-func (j *jsiiProxy_GoogleCloudfunctionsFunction) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleCloudfunctionsFunction) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -786,8 +786,8 @@ func (j *jsiiProxy_GoogleCloudfunctionsFunction) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleCloudfunctionsFunction) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleCloudfunctionsFunction) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -846,8 +846,8 @@ func (j *jsiiProxy_GoogleCloudfunctionsFunction) SecretEnvironmentVariables() Go
 	return returns
 }
 
-func (j *jsiiProxy_GoogleCloudfunctionsFunction) SecretEnvironmentVariablesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleCloudfunctionsFunction) SecretEnvironmentVariablesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"secretEnvironmentVariablesInput",
@@ -866,8 +866,8 @@ func (j *jsiiProxy_GoogleCloudfunctionsFunction) SecretVolumes() GoogleCloudfunc
 	return returns
 }
 
-func (j *jsiiProxy_GoogleCloudfunctionsFunction) SecretVolumesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleCloudfunctionsFunction) SecretVolumesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"secretVolumesInput",
@@ -986,8 +986,8 @@ func (j *jsiiProxy_GoogleCloudfunctionsFunction) TerraformLabels() cdktf.StringM
 	return returns
 }
 
-func (j *jsiiProxy_GoogleCloudfunctionsFunction) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleCloudfunctionsFunction) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -1036,8 +1036,8 @@ func (j *jsiiProxy_GoogleCloudfunctionsFunction) Timeouts() GoogleCloudfunctions
 	return returns
 }
 
-func (j *jsiiProxy_GoogleCloudfunctionsFunction) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleCloudfunctionsFunction) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -1046,8 +1046,8 @@ func (j *jsiiProxy_GoogleCloudfunctionsFunction) TimeoutsInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleCloudfunctionsFunction) TriggerHttp() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleCloudfunctionsFunction) TriggerHttp() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"triggerHttp",
@@ -1056,8 +1056,8 @@ func (j *jsiiProxy_GoogleCloudfunctionsFunction) TriggerHttp() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleCloudfunctionsFunction) TriggerHttpInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleCloudfunctionsFunction) TriggerHttpInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"triggerHttpInput",
@@ -1116,7 +1116,6 @@ func (j *jsiiProxy_GoogleCloudfunctionsFunction) VpcConnectorInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_cloudfunctions_function google_cloudfunctions_function} Resource.
 func NewGoogleCloudfunctionsFunction(scope constructs.Construct, id *string, config *GoogleCloudfunctionsFunctionConfig) GoogleCloudfunctionsFunction {
 	_init_.Initialize()
@@ -1128,7 +1127,7 @@ func NewGoogleCloudfunctionsFunction(scope constructs.Construct, id *string, con
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleCloudfunctionsFunction.GoogleCloudfunctionsFunction",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -1141,12 +1140,12 @@ func NewGoogleCloudfunctionsFunction_Override(g GoogleCloudfunctionsFunction, sc
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleCloudfunctionsFunction.GoogleCloudfunctionsFunction",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudfunctionsFunction)SetAvailableMemoryMb(val *float64) {
+func (j *jsiiProxy_GoogleCloudfunctionsFunction) SetAvailableMemoryMb(val *float64) {
 	if err := j.validateSetAvailableMemoryMbParameters(val); err != nil {
 		panic(err)
 	}
@@ -1157,7 +1156,7 @@ func (j *jsiiProxy_GoogleCloudfunctionsFunction)SetAvailableMemoryMb(val *float6
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudfunctionsFunction)SetBuildEnvironmentVariables(val *map[string]*string) {
+func (j *jsiiProxy_GoogleCloudfunctionsFunction) SetBuildEnvironmentVariables(val *map[string]*string) {
 	if err := j.validateSetBuildEnvironmentVariablesParameters(val); err != nil {
 		panic(err)
 	}
@@ -1168,7 +1167,7 @@ func (j *jsiiProxy_GoogleCloudfunctionsFunction)SetBuildEnvironmentVariables(val
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudfunctionsFunction)SetBuildServiceAccount(val *string) {
+func (j *jsiiProxy_GoogleCloudfunctionsFunction) SetBuildServiceAccount(val *string) {
 	if err := j.validateSetBuildServiceAccountParameters(val); err != nil {
 		panic(err)
 	}
@@ -1179,7 +1178,7 @@ func (j *jsiiProxy_GoogleCloudfunctionsFunction)SetBuildServiceAccount(val *stri
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudfunctionsFunction)SetBuildWorkerPool(val *string) {
+func (j *jsiiProxy_GoogleCloudfunctionsFunction) SetBuildWorkerPool(val *string) {
 	if err := j.validateSetBuildWorkerPoolParameters(val); err != nil {
 		panic(err)
 	}
@@ -1190,7 +1189,7 @@ func (j *jsiiProxy_GoogleCloudfunctionsFunction)SetBuildWorkerPool(val *string) 
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudfunctionsFunction)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleCloudfunctionsFunction) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1201,7 +1200,7 @@ func (j *jsiiProxy_GoogleCloudfunctionsFunction)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudfunctionsFunction)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleCloudfunctionsFunction) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -1212,7 +1211,7 @@ func (j *jsiiProxy_GoogleCloudfunctionsFunction)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudfunctionsFunction)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleCloudfunctionsFunction) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -1220,7 +1219,7 @@ func (j *jsiiProxy_GoogleCloudfunctionsFunction)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudfunctionsFunction)SetDescription(val *string) {
+func (j *jsiiProxy_GoogleCloudfunctionsFunction) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1231,7 +1230,7 @@ func (j *jsiiProxy_GoogleCloudfunctionsFunction)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudfunctionsFunction)SetDockerRegistry(val *string) {
+func (j *jsiiProxy_GoogleCloudfunctionsFunction) SetDockerRegistry(val *string) {
 	if err := j.validateSetDockerRegistryParameters(val); err != nil {
 		panic(err)
 	}
@@ -1242,7 +1241,7 @@ func (j *jsiiProxy_GoogleCloudfunctionsFunction)SetDockerRegistry(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudfunctionsFunction)SetDockerRepository(val *string) {
+func (j *jsiiProxy_GoogleCloudfunctionsFunction) SetDockerRepository(val *string) {
 	if err := j.validateSetDockerRepositoryParameters(val); err != nil {
 		panic(err)
 	}
@@ -1253,7 +1252,7 @@ func (j *jsiiProxy_GoogleCloudfunctionsFunction)SetDockerRepository(val *string)
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudfunctionsFunction)SetEntryPoint(val *string) {
+func (j *jsiiProxy_GoogleCloudfunctionsFunction) SetEntryPoint(val *string) {
 	if err := j.validateSetEntryPointParameters(val); err != nil {
 		panic(err)
 	}
@@ -1264,7 +1263,7 @@ func (j *jsiiProxy_GoogleCloudfunctionsFunction)SetEntryPoint(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudfunctionsFunction)SetEnvironmentVariables(val *map[string]*string) {
+func (j *jsiiProxy_GoogleCloudfunctionsFunction) SetEnvironmentVariables(val *map[string]*string) {
 	if err := j.validateSetEnvironmentVariablesParameters(val); err != nil {
 		panic(err)
 	}
@@ -1275,7 +1274,7 @@ func (j *jsiiProxy_GoogleCloudfunctionsFunction)SetEnvironmentVariables(val *map
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudfunctionsFunction)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleCloudfunctionsFunction) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -1283,7 +1282,7 @@ func (j *jsiiProxy_GoogleCloudfunctionsFunction)SetForEach(val cdktf.ITerraformI
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudfunctionsFunction)SetHttpsTriggerSecurityLevel(val *string) {
+func (j *jsiiProxy_GoogleCloudfunctionsFunction) SetHttpsTriggerSecurityLevel(val *string) {
 	if err := j.validateSetHttpsTriggerSecurityLevelParameters(val); err != nil {
 		panic(err)
 	}
@@ -1294,7 +1293,7 @@ func (j *jsiiProxy_GoogleCloudfunctionsFunction)SetHttpsTriggerSecurityLevel(val
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudfunctionsFunction)SetHttpsTriggerUrl(val *string) {
+func (j *jsiiProxy_GoogleCloudfunctionsFunction) SetHttpsTriggerUrl(val *string) {
 	if err := j.validateSetHttpsTriggerUrlParameters(val); err != nil {
 		panic(err)
 	}
@@ -1305,7 +1304,7 @@ func (j *jsiiProxy_GoogleCloudfunctionsFunction)SetHttpsTriggerUrl(val *string) 
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudfunctionsFunction)SetId(val *string) {
+func (j *jsiiProxy_GoogleCloudfunctionsFunction) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1316,7 +1315,7 @@ func (j *jsiiProxy_GoogleCloudfunctionsFunction)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudfunctionsFunction)SetIngressSettings(val *string) {
+func (j *jsiiProxy_GoogleCloudfunctionsFunction) SetIngressSettings(val *string) {
 	if err := j.validateSetIngressSettingsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1327,7 +1326,7 @@ func (j *jsiiProxy_GoogleCloudfunctionsFunction)SetIngressSettings(val *string) 
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudfunctionsFunction)SetKmsKeyName(val *string) {
+func (j *jsiiProxy_GoogleCloudfunctionsFunction) SetKmsKeyName(val *string) {
 	if err := j.validateSetKmsKeyNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -1338,7 +1337,7 @@ func (j *jsiiProxy_GoogleCloudfunctionsFunction)SetKmsKeyName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudfunctionsFunction)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_GoogleCloudfunctionsFunction) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1349,7 +1348,7 @@ func (j *jsiiProxy_GoogleCloudfunctionsFunction)SetLabels(val *map[string]*strin
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudfunctionsFunction)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleCloudfunctionsFunction) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -1360,7 +1359,7 @@ func (j *jsiiProxy_GoogleCloudfunctionsFunction)SetLifecycle(val *cdktf.Terrafor
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudfunctionsFunction)SetMaxInstances(val *float64) {
+func (j *jsiiProxy_GoogleCloudfunctionsFunction) SetMaxInstances(val *float64) {
 	if err := j.validateSetMaxInstancesParameters(val); err != nil {
 		panic(err)
 	}
@@ -1371,7 +1370,7 @@ func (j *jsiiProxy_GoogleCloudfunctionsFunction)SetMaxInstances(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudfunctionsFunction)SetMinInstances(val *float64) {
+func (j *jsiiProxy_GoogleCloudfunctionsFunction) SetMinInstances(val *float64) {
 	if err := j.validateSetMinInstancesParameters(val); err != nil {
 		panic(err)
 	}
@@ -1382,7 +1381,7 @@ func (j *jsiiProxy_GoogleCloudfunctionsFunction)SetMinInstances(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudfunctionsFunction)SetName(val *string) {
+func (j *jsiiProxy_GoogleCloudfunctionsFunction) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -1393,7 +1392,7 @@ func (j *jsiiProxy_GoogleCloudfunctionsFunction)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudfunctionsFunction)SetProject(val *string) {
+func (j *jsiiProxy_GoogleCloudfunctionsFunction) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -1404,7 +1403,7 @@ func (j *jsiiProxy_GoogleCloudfunctionsFunction)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudfunctionsFunction)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleCloudfunctionsFunction) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1412,7 +1411,7 @@ func (j *jsiiProxy_GoogleCloudfunctionsFunction)SetProvider(val cdktf.TerraformP
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudfunctionsFunction)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleCloudfunctionsFunction) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -1423,7 +1422,7 @@ func (j *jsiiProxy_GoogleCloudfunctionsFunction)SetProvisioners(val *[]interface
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudfunctionsFunction)SetRegion(val *string) {
+func (j *jsiiProxy_GoogleCloudfunctionsFunction) SetRegion(val *string) {
 	if err := j.validateSetRegionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1434,7 +1433,7 @@ func (j *jsiiProxy_GoogleCloudfunctionsFunction)SetRegion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudfunctionsFunction)SetRuntime(val *string) {
+func (j *jsiiProxy_GoogleCloudfunctionsFunction) SetRuntime(val *string) {
 	if err := j.validateSetRuntimeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1445,7 +1444,7 @@ func (j *jsiiProxy_GoogleCloudfunctionsFunction)SetRuntime(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudfunctionsFunction)SetServiceAccountEmail(val *string) {
+func (j *jsiiProxy_GoogleCloudfunctionsFunction) SetServiceAccountEmail(val *string) {
 	if err := j.validateSetServiceAccountEmailParameters(val); err != nil {
 		panic(err)
 	}
@@ -1456,7 +1455,7 @@ func (j *jsiiProxy_GoogleCloudfunctionsFunction)SetServiceAccountEmail(val *stri
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudfunctionsFunction)SetSourceArchiveBucket(val *string) {
+func (j *jsiiProxy_GoogleCloudfunctionsFunction) SetSourceArchiveBucket(val *string) {
 	if err := j.validateSetSourceArchiveBucketParameters(val); err != nil {
 		panic(err)
 	}
@@ -1467,7 +1466,7 @@ func (j *jsiiProxy_GoogleCloudfunctionsFunction)SetSourceArchiveBucket(val *stri
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudfunctionsFunction)SetSourceArchiveObject(val *string) {
+func (j *jsiiProxy_GoogleCloudfunctionsFunction) SetSourceArchiveObject(val *string) {
 	if err := j.validateSetSourceArchiveObjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -1478,7 +1477,7 @@ func (j *jsiiProxy_GoogleCloudfunctionsFunction)SetSourceArchiveObject(val *stri
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudfunctionsFunction)SetTimeout(val *float64) {
+func (j *jsiiProxy_GoogleCloudfunctionsFunction) SetTimeout(val *float64) {
 	if err := j.validateSetTimeoutParameters(val); err != nil {
 		panic(err)
 	}
@@ -1489,7 +1488,7 @@ func (j *jsiiProxy_GoogleCloudfunctionsFunction)SetTimeout(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudfunctionsFunction)SetTriggerHttp(val interface{}) {
+func (j *jsiiProxy_GoogleCloudfunctionsFunction) SetTriggerHttp(val any) {
 	if err := j.validateSetTriggerHttpParameters(val); err != nil {
 		panic(err)
 	}
@@ -1500,7 +1499,7 @@ func (j *jsiiProxy_GoogleCloudfunctionsFunction)SetTriggerHttp(val interface{}) 
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudfunctionsFunction)SetVpcConnector(val *string) {
+func (j *jsiiProxy_GoogleCloudfunctionsFunction) SetVpcConnector(val *string) {
 	if err := j.validateSetVpcConnectorParameters(val); err != nil {
 		panic(err)
 	}
@@ -1511,7 +1510,7 @@ func (j *jsiiProxy_GoogleCloudfunctionsFunction)SetVpcConnector(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudfunctionsFunction)SetVpcConnectorEgressSettings(val *string) {
+func (j *jsiiProxy_GoogleCloudfunctionsFunction) SetVpcConnectorEgressSettings(val *string) {
 	if err := j.validateSetVpcConnectorEgressSettingsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1534,7 +1533,7 @@ func GoogleCloudfunctionsFunction_GenerateConfigForImport(scope constructs.Const
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleCloudfunctionsFunction.GoogleCloudfunctionsFunction",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -1558,7 +1557,7 @@ func GoogleCloudfunctionsFunction_GenerateConfigForImport(scope constructs.Const
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleCloudfunctionsFunction_IsConstruct(x interface{}) *bool {
+func GoogleCloudfunctionsFunction_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleCloudfunctionsFunction_IsConstructParameters(x); err != nil {
@@ -1569,7 +1568,7 @@ func GoogleCloudfunctionsFunction_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleCloudfunctionsFunction.GoogleCloudfunctionsFunction",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1577,7 +1576,7 @@ func GoogleCloudfunctionsFunction_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleCloudfunctionsFunction_IsTerraformElement(x interface{}) *bool {
+func GoogleCloudfunctionsFunction_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleCloudfunctionsFunction_IsTerraformElementParameters(x); err != nil {
@@ -1588,7 +1587,7 @@ func GoogleCloudfunctionsFunction_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleCloudfunctionsFunction.GoogleCloudfunctionsFunction",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1596,7 +1595,7 @@ func GoogleCloudfunctionsFunction_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleCloudfunctionsFunction_IsTerraformResource(x interface{}) *bool {
+func GoogleCloudfunctionsFunction_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleCloudfunctionsFunction_IsTerraformResourceParameters(x); err != nil {
@@ -1607,7 +1606,7 @@ func GoogleCloudfunctionsFunction_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleCloudfunctionsFunction.GoogleCloudfunctionsFunction",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1632,31 +1631,31 @@ func (g *jsiiProxy_GoogleCloudfunctionsFunction) AddMoveTarget(moveTarget *strin
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleCloudfunctionsFunction) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleCloudfunctionsFunction) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleCloudfunctionsFunction) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleCloudfunctionsFunction) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1672,7 +1671,7 @@ func (g *jsiiProxy_GoogleCloudfunctionsFunction) GetBooleanAttribute(terraformAt
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1688,7 +1687,7 @@ func (g *jsiiProxy_GoogleCloudfunctionsFunction) GetBooleanMapAttribute(terrafor
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1704,7 +1703,7 @@ func (g *jsiiProxy_GoogleCloudfunctionsFunction) GetListAttribute(terraformAttri
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1720,7 +1719,7 @@ func (g *jsiiProxy_GoogleCloudfunctionsFunction) GetNumberAttribute(terraformAtt
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1736,7 +1735,7 @@ func (g *jsiiProxy_GoogleCloudfunctionsFunction) GetNumberListAttribute(terrafor
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1752,7 +1751,7 @@ func (g *jsiiProxy_GoogleCloudfunctionsFunction) GetNumberMapAttribute(terraform
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1768,7 +1767,7 @@ func (g *jsiiProxy_GoogleCloudfunctionsFunction) GetStringAttribute(terraformAtt
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1784,15 +1783,15 @@ func (g *jsiiProxy_GoogleCloudfunctionsFunction) GetStringMapAttribute(terraform
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleCloudfunctionsFunction) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleCloudfunctionsFunction) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1811,7 +1810,7 @@ func (g *jsiiProxy_GoogleCloudfunctionsFunction) ImportFrom(id *string, provider
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1824,7 +1823,7 @@ func (g *jsiiProxy_GoogleCloudfunctionsFunction) InterpolationForAttribute(terra
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1838,18 +1837,18 @@ func (g *jsiiProxy_GoogleCloudfunctionsFunction) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleCloudfunctionsFunction) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleCloudfunctionsFunction) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1860,7 +1859,7 @@ func (g *jsiiProxy_GoogleCloudfunctionsFunction) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1871,7 +1870,7 @@ func (g *jsiiProxy_GoogleCloudfunctionsFunction) OverrideLogicalId(newLogicalId 
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1882,29 +1881,29 @@ func (g *jsiiProxy_GoogleCloudfunctionsFunction) PutEventTrigger(value *GoogleCl
 	_jsii_.InvokeVoid(
 		g,
 		"putEventTrigger",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (g *jsiiProxy_GoogleCloudfunctionsFunction) PutSecretEnvironmentVariables(value interface{}) {
+func (g *jsiiProxy_GoogleCloudfunctionsFunction) PutSecretEnvironmentVariables(value any) {
 	if err := g.validatePutSecretEnvironmentVariablesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putSecretEnvironmentVariables",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (g *jsiiProxy_GoogleCloudfunctionsFunction) PutSecretVolumes(value interface{}) {
+func (g *jsiiProxy_GoogleCloudfunctionsFunction) PutSecretVolumes(value any) {
 	if err := g.validatePutSecretVolumesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putSecretVolumes",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1915,7 +1914,7 @@ func (g *jsiiProxy_GoogleCloudfunctionsFunction) PutSourceRepository(value *Goog
 	_jsii_.InvokeVoid(
 		g,
 		"putSourceRepository",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1926,7 +1925,7 @@ func (g *jsiiProxy_GoogleCloudfunctionsFunction) PutTimeouts(value *GoogleCloudf
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -2186,8 +2185,8 @@ func (g *jsiiProxy_GoogleCloudfunctionsFunction) ResetVpcConnectorEgressSettings
 	)
 }
 
-func (g *jsiiProxy_GoogleCloudfunctionsFunction) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleCloudfunctionsFunction) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -2199,8 +2198,8 @@ func (g *jsiiProxy_GoogleCloudfunctionsFunction) SynthesizeAttributes() *map[str
 	return returns
 }
 
-func (g *jsiiProxy_GoogleCloudfunctionsFunction) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleCloudfunctionsFunction) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -2212,8 +2211,8 @@ func (g *jsiiProxy_GoogleCloudfunctionsFunction) SynthesizeHclAttributes() *map[
 	return returns
 }
 
-func (g *jsiiProxy_GoogleCloudfunctionsFunction) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleCloudfunctionsFunction) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -2225,8 +2224,8 @@ func (g *jsiiProxy_GoogleCloudfunctionsFunction) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleCloudfunctionsFunction) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleCloudfunctionsFunction) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -2251,8 +2250,8 @@ func (g *jsiiProxy_GoogleCloudfunctionsFunction) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleCloudfunctionsFunction) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleCloudfunctionsFunction) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -2263,4 +2262,3 @@ func (g *jsiiProxy_GoogleCloudfunctionsFunction) ToTerraform() interface{} {
 
 	return returns
 }
-

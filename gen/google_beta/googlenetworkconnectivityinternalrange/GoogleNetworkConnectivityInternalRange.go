@@ -15,15 +15,15 @@ type GoogleNetworkConnectivityInternalRange interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -46,9 +46,9 @@ type GoogleNetworkConnectivityInternalRange interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
-	Immutable() interface{}
-	SetImmutable(val interface{})
-	ImmutableInput() interface{}
+	Immutable() any
+	SetImmutable(val any)
+	ImmutableInput() any
 	IpCidrRange() *string
 	SetIpCidrRange(val *string)
 	IpCidrRangeInput() *string
@@ -86,11 +86,11 @@ type GoogleNetworkConnectivityInternalRange interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	TargetCidrRange() *[]*string
 	SetTargetCidrRange(val *[]*string)
 	TargetCidrRangeInput() *[]*string
@@ -98,11 +98,11 @@ type GoogleNetworkConnectivityInternalRange interface {
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() GoogleNetworkConnectivityInternalRangeTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	Usage() *string
 	SetUsage(val *string)
 	UsageInput() *string
@@ -111,9 +111,9 @@ type GoogleNetworkConnectivityInternalRange interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -131,7 +131,7 @@ type GoogleNetworkConnectivityInternalRange interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -143,7 +143,7 @@ type GoogleNetworkConnectivityInternalRange interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -167,17 +167,17 @@ type GoogleNetworkConnectivityInternalRange interface {
 	ResetProject()
 	ResetTargetCidrRange()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleNetworkConnectivityInternalRange
@@ -195,8 +195,8 @@ func (j *jsiiProxy_GoogleNetworkConnectivityInternalRange) CdktfStack() cdktf.Te
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetworkConnectivityInternalRange) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleNetworkConnectivityInternalRange) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -205,8 +205,8 @@ func (j *jsiiProxy_GoogleNetworkConnectivityInternalRange) Connection() interfac
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetworkConnectivityInternalRange) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleNetworkConnectivityInternalRange) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -215,8 +215,8 @@ func (j *jsiiProxy_GoogleNetworkConnectivityInternalRange) ConstructNodeMetadata
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetworkConnectivityInternalRange) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleNetworkConnectivityInternalRange) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -335,8 +335,8 @@ func (j *jsiiProxy_GoogleNetworkConnectivityInternalRange) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetworkConnectivityInternalRange) Immutable() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleNetworkConnectivityInternalRange) Immutable() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"immutable",
@@ -345,8 +345,8 @@ func (j *jsiiProxy_GoogleNetworkConnectivityInternalRange) Immutable() interface
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetworkConnectivityInternalRange) ImmutableInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleNetworkConnectivityInternalRange) ImmutableInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"immutableInput",
@@ -565,8 +565,8 @@ func (j *jsiiProxy_GoogleNetworkConnectivityInternalRange) Provider() cdktf.Terr
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetworkConnectivityInternalRange) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleNetworkConnectivityInternalRange) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -575,8 +575,8 @@ func (j *jsiiProxy_GoogleNetworkConnectivityInternalRange) Provisioners() *[]int
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetworkConnectivityInternalRange) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleNetworkConnectivityInternalRange) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -625,8 +625,8 @@ func (j *jsiiProxy_GoogleNetworkConnectivityInternalRange) TerraformLabels() cdk
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetworkConnectivityInternalRange) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleNetworkConnectivityInternalRange) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -655,8 +655,8 @@ func (j *jsiiProxy_GoogleNetworkConnectivityInternalRange) Timeouts() GoogleNetw
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetworkConnectivityInternalRange) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleNetworkConnectivityInternalRange) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -695,7 +695,6 @@ func (j *jsiiProxy_GoogleNetworkConnectivityInternalRange) Users() *[]*string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_network_connectivity_internal_range google_network_connectivity_internal_range} Resource.
 func NewGoogleNetworkConnectivityInternalRange(scope constructs.Construct, id *string, config *GoogleNetworkConnectivityInternalRangeConfig) GoogleNetworkConnectivityInternalRange {
 	_init_.Initialize()
@@ -707,7 +706,7 @@ func NewGoogleNetworkConnectivityInternalRange(scope constructs.Construct, id *s
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleNetworkConnectivityInternalRange.GoogleNetworkConnectivityInternalRange",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -720,12 +719,12 @@ func NewGoogleNetworkConnectivityInternalRange_Override(g GoogleNetworkConnectiv
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleNetworkConnectivityInternalRange.GoogleNetworkConnectivityInternalRange",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkConnectivityInternalRange)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleNetworkConnectivityInternalRange) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -736,7 +735,7 @@ func (j *jsiiProxy_GoogleNetworkConnectivityInternalRange)SetConnection(val inte
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkConnectivityInternalRange)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleNetworkConnectivityInternalRange) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -747,7 +746,7 @@ func (j *jsiiProxy_GoogleNetworkConnectivityInternalRange)SetCount(val interface
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkConnectivityInternalRange)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleNetworkConnectivityInternalRange) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -755,7 +754,7 @@ func (j *jsiiProxy_GoogleNetworkConnectivityInternalRange)SetDependsOn(val *[]*s
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkConnectivityInternalRange)SetDescription(val *string) {
+func (j *jsiiProxy_GoogleNetworkConnectivityInternalRange) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -766,7 +765,7 @@ func (j *jsiiProxy_GoogleNetworkConnectivityInternalRange)SetDescription(val *st
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkConnectivityInternalRange)SetExcludeCidrRanges(val *[]*string) {
+func (j *jsiiProxy_GoogleNetworkConnectivityInternalRange) SetExcludeCidrRanges(val *[]*string) {
 	if err := j.validateSetExcludeCidrRangesParameters(val); err != nil {
 		panic(err)
 	}
@@ -777,7 +776,7 @@ func (j *jsiiProxy_GoogleNetworkConnectivityInternalRange)SetExcludeCidrRanges(v
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkConnectivityInternalRange)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleNetworkConnectivityInternalRange) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -785,7 +784,7 @@ func (j *jsiiProxy_GoogleNetworkConnectivityInternalRange)SetForEach(val cdktf.I
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkConnectivityInternalRange)SetId(val *string) {
+func (j *jsiiProxy_GoogleNetworkConnectivityInternalRange) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -796,7 +795,7 @@ func (j *jsiiProxy_GoogleNetworkConnectivityInternalRange)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkConnectivityInternalRange)SetImmutable(val interface{}) {
+func (j *jsiiProxy_GoogleNetworkConnectivityInternalRange) SetImmutable(val any) {
 	if err := j.validateSetImmutableParameters(val); err != nil {
 		panic(err)
 	}
@@ -807,7 +806,7 @@ func (j *jsiiProxy_GoogleNetworkConnectivityInternalRange)SetImmutable(val inter
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkConnectivityInternalRange)SetIpCidrRange(val *string) {
+func (j *jsiiProxy_GoogleNetworkConnectivityInternalRange) SetIpCidrRange(val *string) {
 	if err := j.validateSetIpCidrRangeParameters(val); err != nil {
 		panic(err)
 	}
@@ -818,7 +817,7 @@ func (j *jsiiProxy_GoogleNetworkConnectivityInternalRange)SetIpCidrRange(val *st
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkConnectivityInternalRange)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_GoogleNetworkConnectivityInternalRange) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -829,7 +828,7 @@ func (j *jsiiProxy_GoogleNetworkConnectivityInternalRange)SetLabels(val *map[str
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkConnectivityInternalRange)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleNetworkConnectivityInternalRange) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -840,7 +839,7 @@ func (j *jsiiProxy_GoogleNetworkConnectivityInternalRange)SetLifecycle(val *cdkt
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkConnectivityInternalRange)SetName(val *string) {
+func (j *jsiiProxy_GoogleNetworkConnectivityInternalRange) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -851,7 +850,7 @@ func (j *jsiiProxy_GoogleNetworkConnectivityInternalRange)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkConnectivityInternalRange)SetNetwork(val *string) {
+func (j *jsiiProxy_GoogleNetworkConnectivityInternalRange) SetNetwork(val *string) {
 	if err := j.validateSetNetworkParameters(val); err != nil {
 		panic(err)
 	}
@@ -862,7 +861,7 @@ func (j *jsiiProxy_GoogleNetworkConnectivityInternalRange)SetNetwork(val *string
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkConnectivityInternalRange)SetOverlaps(val *[]*string) {
+func (j *jsiiProxy_GoogleNetworkConnectivityInternalRange) SetOverlaps(val *[]*string) {
 	if err := j.validateSetOverlapsParameters(val); err != nil {
 		panic(err)
 	}
@@ -873,7 +872,7 @@ func (j *jsiiProxy_GoogleNetworkConnectivityInternalRange)SetOverlaps(val *[]*st
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkConnectivityInternalRange)SetPeering(val *string) {
+func (j *jsiiProxy_GoogleNetworkConnectivityInternalRange) SetPeering(val *string) {
 	if err := j.validateSetPeeringParameters(val); err != nil {
 		panic(err)
 	}
@@ -884,7 +883,7 @@ func (j *jsiiProxy_GoogleNetworkConnectivityInternalRange)SetPeering(val *string
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkConnectivityInternalRange)SetPrefixLength(val *float64) {
+func (j *jsiiProxy_GoogleNetworkConnectivityInternalRange) SetPrefixLength(val *float64) {
 	if err := j.validateSetPrefixLengthParameters(val); err != nil {
 		panic(err)
 	}
@@ -895,7 +894,7 @@ func (j *jsiiProxy_GoogleNetworkConnectivityInternalRange)SetPrefixLength(val *f
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkConnectivityInternalRange)SetProject(val *string) {
+func (j *jsiiProxy_GoogleNetworkConnectivityInternalRange) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -906,7 +905,7 @@ func (j *jsiiProxy_GoogleNetworkConnectivityInternalRange)SetProject(val *string
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkConnectivityInternalRange)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleNetworkConnectivityInternalRange) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -914,7 +913,7 @@ func (j *jsiiProxy_GoogleNetworkConnectivityInternalRange)SetProvider(val cdktf.
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkConnectivityInternalRange)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleNetworkConnectivityInternalRange) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -925,7 +924,7 @@ func (j *jsiiProxy_GoogleNetworkConnectivityInternalRange)SetProvisioners(val *[
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkConnectivityInternalRange)SetTargetCidrRange(val *[]*string) {
+func (j *jsiiProxy_GoogleNetworkConnectivityInternalRange) SetTargetCidrRange(val *[]*string) {
 	if err := j.validateSetTargetCidrRangeParameters(val); err != nil {
 		panic(err)
 	}
@@ -936,7 +935,7 @@ func (j *jsiiProxy_GoogleNetworkConnectivityInternalRange)SetTargetCidrRange(val
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkConnectivityInternalRange)SetUsage(val *string) {
+func (j *jsiiProxy_GoogleNetworkConnectivityInternalRange) SetUsage(val *string) {
 	if err := j.validateSetUsageParameters(val); err != nil {
 		panic(err)
 	}
@@ -959,7 +958,7 @@ func GoogleNetworkConnectivityInternalRange_GenerateConfigForImport(scope constr
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleNetworkConnectivityInternalRange.GoogleNetworkConnectivityInternalRange",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -983,7 +982,7 @@ func GoogleNetworkConnectivityInternalRange_GenerateConfigForImport(scope constr
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleNetworkConnectivityInternalRange_IsConstruct(x interface{}) *bool {
+func GoogleNetworkConnectivityInternalRange_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleNetworkConnectivityInternalRange_IsConstructParameters(x); err != nil {
@@ -994,7 +993,7 @@ func GoogleNetworkConnectivityInternalRange_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleNetworkConnectivityInternalRange.GoogleNetworkConnectivityInternalRange",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1002,7 +1001,7 @@ func GoogleNetworkConnectivityInternalRange_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleNetworkConnectivityInternalRange_IsTerraformElement(x interface{}) *bool {
+func GoogleNetworkConnectivityInternalRange_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleNetworkConnectivityInternalRange_IsTerraformElementParameters(x); err != nil {
@@ -1013,7 +1012,7 @@ func GoogleNetworkConnectivityInternalRange_IsTerraformElement(x interface{}) *b
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleNetworkConnectivityInternalRange.GoogleNetworkConnectivityInternalRange",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1021,7 +1020,7 @@ func GoogleNetworkConnectivityInternalRange_IsTerraformElement(x interface{}) *b
 }
 
 // Experimental.
-func GoogleNetworkConnectivityInternalRange_IsTerraformResource(x interface{}) *bool {
+func GoogleNetworkConnectivityInternalRange_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleNetworkConnectivityInternalRange_IsTerraformResourceParameters(x); err != nil {
@@ -1032,7 +1031,7 @@ func GoogleNetworkConnectivityInternalRange_IsTerraformResource(x interface{}) *
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleNetworkConnectivityInternalRange.GoogleNetworkConnectivityInternalRange",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1057,31 +1056,31 @@ func (g *jsiiProxy_GoogleNetworkConnectivityInternalRange) AddMoveTarget(moveTar
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleNetworkConnectivityInternalRange) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleNetworkConnectivityInternalRange) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleNetworkConnectivityInternalRange) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleNetworkConnectivityInternalRange) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1097,7 +1096,7 @@ func (g *jsiiProxy_GoogleNetworkConnectivityInternalRange) GetBooleanAttribute(t
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1113,7 +1112,7 @@ func (g *jsiiProxy_GoogleNetworkConnectivityInternalRange) GetBooleanMapAttribut
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1129,7 +1128,7 @@ func (g *jsiiProxy_GoogleNetworkConnectivityInternalRange) GetListAttribute(terr
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1145,7 +1144,7 @@ func (g *jsiiProxy_GoogleNetworkConnectivityInternalRange) GetNumberAttribute(te
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1161,7 +1160,7 @@ func (g *jsiiProxy_GoogleNetworkConnectivityInternalRange) GetNumberListAttribut
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1177,7 +1176,7 @@ func (g *jsiiProxy_GoogleNetworkConnectivityInternalRange) GetNumberMapAttribute
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1193,7 +1192,7 @@ func (g *jsiiProxy_GoogleNetworkConnectivityInternalRange) GetStringAttribute(te
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1209,15 +1208,15 @@ func (g *jsiiProxy_GoogleNetworkConnectivityInternalRange) GetStringMapAttribute
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleNetworkConnectivityInternalRange) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleNetworkConnectivityInternalRange) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1236,7 +1235,7 @@ func (g *jsiiProxy_GoogleNetworkConnectivityInternalRange) ImportFrom(id *string
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1249,7 +1248,7 @@ func (g *jsiiProxy_GoogleNetworkConnectivityInternalRange) InterpolationForAttri
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1263,18 +1262,18 @@ func (g *jsiiProxy_GoogleNetworkConnectivityInternalRange) MoveFromId(id *string
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleNetworkConnectivityInternalRange) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleNetworkConnectivityInternalRange) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1285,7 +1284,7 @@ func (g *jsiiProxy_GoogleNetworkConnectivityInternalRange) MoveToId(id *string) 
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1296,7 +1295,7 @@ func (g *jsiiProxy_GoogleNetworkConnectivityInternalRange) OverrideLogicalId(new
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1307,7 +1306,7 @@ func (g *jsiiProxy_GoogleNetworkConnectivityInternalRange) PutMigration(value *G
 	_jsii_.InvokeVoid(
 		g,
 		"putMigration",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1318,7 +1317,7 @@ func (g *jsiiProxy_GoogleNetworkConnectivityInternalRange) PutTimeouts(value *Go
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1426,8 +1425,8 @@ func (g *jsiiProxy_GoogleNetworkConnectivityInternalRange) ResetTimeouts() {
 	)
 }
 
-func (g *jsiiProxy_GoogleNetworkConnectivityInternalRange) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleNetworkConnectivityInternalRange) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1439,8 +1438,8 @@ func (g *jsiiProxy_GoogleNetworkConnectivityInternalRange) SynthesizeAttributes(
 	return returns
 }
 
-func (g *jsiiProxy_GoogleNetworkConnectivityInternalRange) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleNetworkConnectivityInternalRange) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1452,8 +1451,8 @@ func (g *jsiiProxy_GoogleNetworkConnectivityInternalRange) SynthesizeHclAttribut
 	return returns
 }
 
-func (g *jsiiProxy_GoogleNetworkConnectivityInternalRange) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleNetworkConnectivityInternalRange) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1465,8 +1464,8 @@ func (g *jsiiProxy_GoogleNetworkConnectivityInternalRange) ToHclTerraform() inte
 	return returns
 }
 
-func (g *jsiiProxy_GoogleNetworkConnectivityInternalRange) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleNetworkConnectivityInternalRange) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1491,8 +1490,8 @@ func (g *jsiiProxy_GoogleNetworkConnectivityInternalRange) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleNetworkConnectivityInternalRange) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleNetworkConnectivityInternalRange) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1503,4 +1502,3 @@ func (g *jsiiProxy_GoogleNetworkConnectivityInternalRange) ToTerraform() interfa
 
 	return returns
 }
-

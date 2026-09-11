@@ -17,8 +17,8 @@ type GoogleComputeInstanceTemplateSchedulingNodeAffinitiesList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type GoogleComputeInstanceTemplateSchedulingNodeAffinitiesList interface {
 	Get(index *float64) GoogleComputeInstanceTemplateSchedulingNodeAffinitiesOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_GoogleComputeInstanceTemplateSchedulingNodeAffinitiesList) Fq
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceTemplateSchedulingNodeAffinitiesList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeInstanceTemplateSchedulingNodeAffinitiesList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_GoogleComputeInstanceTemplateSchedulingNodeAffinitiesList) Wr
 	return returns
 }
 
-
 func NewGoogleComputeInstanceTemplateSchedulingNodeAffinitiesList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleComputeInstanceTemplateSchedulingNodeAffinitiesList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewGoogleComputeInstanceTemplateSchedulingNodeAffinitiesList(terraformResou
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleComputeInstanceTemplate.GoogleComputeInstanceTemplateSchedulingNodeAffinitiesList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewGoogleComputeInstanceTemplateSchedulingNodeAffinitiesList_Override(g Goo
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleComputeInstanceTemplate.GoogleComputeInstanceTemplateSchedulingNodeAffinitiesList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceTemplateSchedulingNodeAffinitiesList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_GoogleComputeInstanceTemplateSchedulingNodeAffinitiesList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_GoogleComputeInstanceTemplateSchedulingNodeAffinitiesList)Set
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceTemplateSchedulingNodeAffinitiesList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleComputeInstanceTemplateSchedulingNodeAffinitiesList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_GoogleComputeInstanceTemplateSchedulingNodeAffinitiesList)Set
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceTemplateSchedulingNodeAffinitiesList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleComputeInstanceTemplateSchedulingNodeAffinitiesList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_GoogleComputeInstanceTemplateSchedulingNodeAffinitiesList)Set
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceTemplateSchedulingNodeAffinitiesList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_GoogleComputeInstanceTemplateSchedulingNodeAffinitiesList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (g *jsiiProxy_GoogleComputeInstanceTemplateSchedulingNodeAffinitiesList) Al
 	_jsii_.Invoke(
 		g,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (g *jsiiProxy_GoogleComputeInstanceTemplateSchedulingNodeAffinitiesList) Ge
 	_jsii_.Invoke(
 		g,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeInstanceTemplateSchedulingNodeAffinitiesList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleComputeInstanceTemplateSchedulingNodeAffinitiesList) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (g *jsiiProxy_GoogleComputeInstanceTemplateSchedulingNodeAffinitiesList) To
 
 	return returns
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleKmsEkmConnection.GoogleKmsEkmConnection",
-		reflect.TypeOf((*GoogleKmsEkmConnection)(nil)).Elem(),
+		reflect.TypeFor[GoogleKmsEkmConnection](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -80,7 +80,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleKmsEkmConnection{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -88,15 +88,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleKmsEkmConnection.GoogleKmsEkmConnectionConfig",
-		reflect.TypeOf((*GoogleKmsEkmConnectionConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleKmsEkmConnectionConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleKmsEkmConnection.GoogleKmsEkmConnectionServiceResolvers",
-		reflect.TypeOf((*GoogleKmsEkmConnectionServiceResolvers)(nil)).Elem(),
+		reflect.TypeFor[GoogleKmsEkmConnectionServiceResolvers](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleKmsEkmConnection.GoogleKmsEkmConnectionServiceResolversList",
-		reflect.TypeOf((*GoogleKmsEkmConnectionServiceResolversList)(nil)).Elem(),
+		reflect.TypeFor[GoogleKmsEkmConnectionServiceResolversList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -110,7 +110,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleKmsEkmConnectionServiceResolversList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -118,7 +118,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleKmsEkmConnection.GoogleKmsEkmConnectionServiceResolversOutputReference",
-		reflect.TypeOf((*GoogleKmsEkmConnectionServiceResolversOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleKmsEkmConnectionServiceResolversOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -152,7 +152,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleKmsEkmConnectionServiceResolversOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -160,11 +160,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleKmsEkmConnection.GoogleKmsEkmConnectionServiceResolversServerCertificates",
-		reflect.TypeOf((*GoogleKmsEkmConnectionServiceResolversServerCertificates)(nil)).Elem(),
+		reflect.TypeFor[GoogleKmsEkmConnectionServiceResolversServerCertificates](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleKmsEkmConnection.GoogleKmsEkmConnectionServiceResolversServerCertificatesList",
-		reflect.TypeOf((*GoogleKmsEkmConnectionServiceResolversServerCertificatesList)(nil)).Elem(),
+		reflect.TypeFor[GoogleKmsEkmConnectionServiceResolversServerCertificatesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -178,7 +178,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleKmsEkmConnectionServiceResolversServerCertificatesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -186,7 +186,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleKmsEkmConnection.GoogleKmsEkmConnectionServiceResolversServerCertificatesOutputReference",
-		reflect.TypeOf((*GoogleKmsEkmConnectionServiceResolversServerCertificatesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleKmsEkmConnectionServiceResolversServerCertificatesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -222,7 +222,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleKmsEkmConnectionServiceResolversServerCertificatesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -230,11 +230,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleKmsEkmConnection.GoogleKmsEkmConnectionTimeouts",
-		reflect.TypeOf((*GoogleKmsEkmConnectionTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleKmsEkmConnectionTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleKmsEkmConnection.GoogleKmsEkmConnectionTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleKmsEkmConnectionTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleKmsEkmConnectionTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -267,7 +267,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleKmsEkmConnectionTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

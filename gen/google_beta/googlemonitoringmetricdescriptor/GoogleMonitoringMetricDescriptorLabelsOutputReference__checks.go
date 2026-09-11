@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleMonitoringMetricDescriptorLabelsOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_GoogleMonitoringMetricDescriptorLabelsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleMonitoringMetricDescriptorLabelsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_GoogleMonitoringMetricDescriptorLabelsOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_GoogleMonitoringMetricDescriptorLabelsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleMonitoringMetricDescriptorLabelsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewGoogleMonitoringMetricDescriptorLabelsOutputReferenceParameters(
 
 	return nil
 }
-

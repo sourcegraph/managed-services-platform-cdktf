@@ -120,7 +120,7 @@ func (g *jsiiProxy_GoogleCloudRunServiceTemplateOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudRunServiceTemplateOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleCloudRunServiceTemplateOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -220,4 +220,3 @@ func validateNewGoogleCloudRunServiceTemplateOutputReferenceParameters(terraform
 
 	return nil
 }
-

@@ -1,6 +1,5 @@
 package googledataprocworkflowtemplate
 
-
 type GoogleDataprocWorkflowTemplatePlacementManagedClusterConfigSecurityConfigKerberosConfig struct {
 	// Optional. The admin server (IP or hostname) for the remote trusted realm in a cross realm trust relationship.
 	//
@@ -25,7 +24,7 @@ type GoogleDataprocWorkflowTemplatePlacementManagedClusterConfigSecurityConfigKe
 	// Flag to indicate whether to Kerberize the cluster (default: false). Set this field to true to enable Kerberos on a cluster.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dataproc_workflow_template#enable_kerberos GoogleDataprocWorkflowTemplate#enable_kerberos}
-	EnableKerberos interface{} `field:"optional" json:"enableKerberos" yaml:"enableKerberos"`
+	EnableKerberos any `field:"optional" json:"enableKerberos" yaml:"enableKerberos"`
 	// Optional. The Cloud Storage URI of a KMS encrypted file containing the master key of the KDC database.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dataproc_workflow_template#kdc_db_key GoogleDataprocWorkflowTemplate#kdc_db_key}
@@ -81,4 +80,3 @@ type GoogleDataprocWorkflowTemplatePlacementManagedClusterConfigSecurityConfigKe
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dataproc_workflow_template#truststore_password GoogleDataprocWorkflowTemplate#truststore_password}
 	TruststorePassword *string `field:"optional" json:"truststorePassword" yaml:"truststorePassword"`
 }
-

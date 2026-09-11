@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleDataprocBatchRuntimeInfoOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataprocBatchRuntimeInfoOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataprocBatchRuntimeInfoOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleDataprocBatchRuntimeInfoOutputReferenceParameters(terrafor
 
 	return nil
 }
-

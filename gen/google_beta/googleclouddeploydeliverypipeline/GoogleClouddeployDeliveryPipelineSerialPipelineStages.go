@@ -1,11 +1,10 @@
 package googleclouddeploydeliverypipeline
 
-
 type GoogleClouddeployDeliveryPipelineSerialPipelineStages struct {
 	// deploy_parameters block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_clouddeploy_delivery_pipeline#deploy_parameters GoogleClouddeployDeliveryPipeline#deploy_parameters}
-	DeployParameters interface{} `field:"optional" json:"deployParameters" yaml:"deployParameters"`
+	DeployParameters any `field:"optional" json:"deployParameters" yaml:"deployParameters"`
 	// Skaffold profiles to use when rendering the manifest for this stage's `Target`.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_clouddeploy_delivery_pipeline#profiles GoogleClouddeployDeliveryPipeline#profiles}
@@ -21,4 +20,3 @@ type GoogleClouddeployDeliveryPipelineSerialPipelineStages struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_clouddeploy_delivery_pipeline#target_id GoogleClouddeployDeliveryPipeline#target_id}
 	TargetId *string `field:"optional" json:"targetId" yaml:"targetId"`
 }
-

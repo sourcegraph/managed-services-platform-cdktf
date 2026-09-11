@@ -15,15 +15,15 @@ type GoogleComputeDiskAsyncReplication interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -53,28 +53,28 @@ type GoogleComputeDiskAsyncReplication interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	SecondaryDisk() GoogleComputeDiskAsyncReplicationSecondaryDiskOutputReference
 	SecondaryDiskInput() *GoogleComputeDiskAsyncReplicationSecondaryDisk
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() GoogleComputeDiskAsyncReplicationTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -92,7 +92,7 @@ type GoogleComputeDiskAsyncReplication interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -104,7 +104,7 @@ type GoogleComputeDiskAsyncReplication interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -118,17 +118,17 @@ type GoogleComputeDiskAsyncReplication interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleComputeDiskAsyncReplication
@@ -146,8 +146,8 @@ func (j *jsiiProxy_GoogleComputeDiskAsyncReplication) CdktfStack() cdktf.Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeDiskAsyncReplication) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeDiskAsyncReplication) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -156,8 +156,8 @@ func (j *jsiiProxy_GoogleComputeDiskAsyncReplication) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeDiskAsyncReplication) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleComputeDiskAsyncReplication) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -166,8 +166,8 @@ func (j *jsiiProxy_GoogleComputeDiskAsyncReplication) ConstructNodeMetadata() *m
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeDiskAsyncReplication) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeDiskAsyncReplication) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -286,8 +286,8 @@ func (j *jsiiProxy_GoogleComputeDiskAsyncReplication) Provider() cdktf.Terraform
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeDiskAsyncReplication) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleComputeDiskAsyncReplication) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -296,8 +296,8 @@ func (j *jsiiProxy_GoogleComputeDiskAsyncReplication) Provisioners() *[]interfac
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeDiskAsyncReplication) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeDiskAsyncReplication) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -336,8 +336,8 @@ func (j *jsiiProxy_GoogleComputeDiskAsyncReplication) TerraformGeneratorMetadata
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeDiskAsyncReplication) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleComputeDiskAsyncReplication) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -366,8 +366,8 @@ func (j *jsiiProxy_GoogleComputeDiskAsyncReplication) Timeouts() GoogleComputeDi
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeDiskAsyncReplication) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeDiskAsyncReplication) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -375,7 +375,6 @@ func (j *jsiiProxy_GoogleComputeDiskAsyncReplication) TimeoutsInput() interface{
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_disk_async_replication google_compute_disk_async_replication} Resource.
 func NewGoogleComputeDiskAsyncReplication(scope constructs.Construct, id *string, config *GoogleComputeDiskAsyncReplicationConfig) GoogleComputeDiskAsyncReplication {
@@ -388,7 +387,7 @@ func NewGoogleComputeDiskAsyncReplication(scope constructs.Construct, id *string
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleComputeDiskAsyncReplication.GoogleComputeDiskAsyncReplication",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -401,12 +400,12 @@ func NewGoogleComputeDiskAsyncReplication_Override(g GoogleComputeDiskAsyncRepli
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleComputeDiskAsyncReplication.GoogleComputeDiskAsyncReplication",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeDiskAsyncReplication)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleComputeDiskAsyncReplication) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -417,7 +416,7 @@ func (j *jsiiProxy_GoogleComputeDiskAsyncReplication)SetConnection(val interface
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeDiskAsyncReplication)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleComputeDiskAsyncReplication) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -428,7 +427,7 @@ func (j *jsiiProxy_GoogleComputeDiskAsyncReplication)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeDiskAsyncReplication)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleComputeDiskAsyncReplication) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -436,7 +435,7 @@ func (j *jsiiProxy_GoogleComputeDiskAsyncReplication)SetDependsOn(val *[]*string
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeDiskAsyncReplication)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleComputeDiskAsyncReplication) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -444,7 +443,7 @@ func (j *jsiiProxy_GoogleComputeDiskAsyncReplication)SetForEach(val cdktf.ITerra
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeDiskAsyncReplication)SetId(val *string) {
+func (j *jsiiProxy_GoogleComputeDiskAsyncReplication) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -455,7 +454,7 @@ func (j *jsiiProxy_GoogleComputeDiskAsyncReplication)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeDiskAsyncReplication)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleComputeDiskAsyncReplication) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -466,7 +465,7 @@ func (j *jsiiProxy_GoogleComputeDiskAsyncReplication)SetLifecycle(val *cdktf.Ter
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeDiskAsyncReplication)SetPrimaryDisk(val *string) {
+func (j *jsiiProxy_GoogleComputeDiskAsyncReplication) SetPrimaryDisk(val *string) {
 	if err := j.validateSetPrimaryDiskParameters(val); err != nil {
 		panic(err)
 	}
@@ -477,7 +476,7 @@ func (j *jsiiProxy_GoogleComputeDiskAsyncReplication)SetPrimaryDisk(val *string)
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeDiskAsyncReplication)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleComputeDiskAsyncReplication) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -485,7 +484,7 @@ func (j *jsiiProxy_GoogleComputeDiskAsyncReplication)SetProvider(val cdktf.Terra
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeDiskAsyncReplication)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleComputeDiskAsyncReplication) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -508,7 +507,7 @@ func GoogleComputeDiskAsyncReplication_GenerateConfigForImport(scope constructs.
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleComputeDiskAsyncReplication.GoogleComputeDiskAsyncReplication",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -532,7 +531,7 @@ func GoogleComputeDiskAsyncReplication_GenerateConfigForImport(scope constructs.
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleComputeDiskAsyncReplication_IsConstruct(x interface{}) *bool {
+func GoogleComputeDiskAsyncReplication_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleComputeDiskAsyncReplication_IsConstructParameters(x); err != nil {
@@ -543,7 +542,7 @@ func GoogleComputeDiskAsyncReplication_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleComputeDiskAsyncReplication.GoogleComputeDiskAsyncReplication",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -551,7 +550,7 @@ func GoogleComputeDiskAsyncReplication_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleComputeDiskAsyncReplication_IsTerraformElement(x interface{}) *bool {
+func GoogleComputeDiskAsyncReplication_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleComputeDiskAsyncReplication_IsTerraformElementParameters(x); err != nil {
@@ -562,7 +561,7 @@ func GoogleComputeDiskAsyncReplication_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleComputeDiskAsyncReplication.GoogleComputeDiskAsyncReplication",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -570,7 +569,7 @@ func GoogleComputeDiskAsyncReplication_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleComputeDiskAsyncReplication_IsTerraformResource(x interface{}) *bool {
+func GoogleComputeDiskAsyncReplication_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleComputeDiskAsyncReplication_IsTerraformResourceParameters(x); err != nil {
@@ -581,7 +580,7 @@ func GoogleComputeDiskAsyncReplication_IsTerraformResource(x interface{}) *bool 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleComputeDiskAsyncReplication.GoogleComputeDiskAsyncReplication",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -606,31 +605,31 @@ func (g *jsiiProxy_GoogleComputeDiskAsyncReplication) AddMoveTarget(moveTarget *
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeDiskAsyncReplication) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleComputeDiskAsyncReplication) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeDiskAsyncReplication) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleComputeDiskAsyncReplication) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -646,7 +645,7 @@ func (g *jsiiProxy_GoogleComputeDiskAsyncReplication) GetBooleanAttribute(terraf
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -662,7 +661,7 @@ func (g *jsiiProxy_GoogleComputeDiskAsyncReplication) GetBooleanMapAttribute(ter
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -678,7 +677,7 @@ func (g *jsiiProxy_GoogleComputeDiskAsyncReplication) GetListAttribute(terraform
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -694,7 +693,7 @@ func (g *jsiiProxy_GoogleComputeDiskAsyncReplication) GetNumberAttribute(terrafo
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -710,7 +709,7 @@ func (g *jsiiProxy_GoogleComputeDiskAsyncReplication) GetNumberListAttribute(ter
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -726,7 +725,7 @@ func (g *jsiiProxy_GoogleComputeDiskAsyncReplication) GetNumberMapAttribute(terr
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -742,7 +741,7 @@ func (g *jsiiProxy_GoogleComputeDiskAsyncReplication) GetStringAttribute(terrafo
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -758,15 +757,15 @@ func (g *jsiiProxy_GoogleComputeDiskAsyncReplication) GetStringMapAttribute(terr
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeDiskAsyncReplication) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleComputeDiskAsyncReplication) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -785,7 +784,7 @@ func (g *jsiiProxy_GoogleComputeDiskAsyncReplication) ImportFrom(id *string, pro
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -798,7 +797,7 @@ func (g *jsiiProxy_GoogleComputeDiskAsyncReplication) InterpolationForAttribute(
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -812,18 +811,18 @@ func (g *jsiiProxy_GoogleComputeDiskAsyncReplication) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeDiskAsyncReplication) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleComputeDiskAsyncReplication) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -834,7 +833,7 @@ func (g *jsiiProxy_GoogleComputeDiskAsyncReplication) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -845,7 +844,7 @@ func (g *jsiiProxy_GoogleComputeDiskAsyncReplication) OverrideLogicalId(newLogic
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -856,7 +855,7 @@ func (g *jsiiProxy_GoogleComputeDiskAsyncReplication) PutSecondaryDisk(value *Go
 	_jsii_.InvokeVoid(
 		g,
 		"putSecondaryDisk",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -867,7 +866,7 @@ func (g *jsiiProxy_GoogleComputeDiskAsyncReplication) PutTimeouts(value *GoogleC
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -895,8 +894,8 @@ func (g *jsiiProxy_GoogleComputeDiskAsyncReplication) ResetTimeouts() {
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeDiskAsyncReplication) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleComputeDiskAsyncReplication) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -908,8 +907,8 @@ func (g *jsiiProxy_GoogleComputeDiskAsyncReplication) SynthesizeAttributes() *ma
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeDiskAsyncReplication) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleComputeDiskAsyncReplication) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -921,8 +920,8 @@ func (g *jsiiProxy_GoogleComputeDiskAsyncReplication) SynthesizeHclAttributes() 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeDiskAsyncReplication) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleComputeDiskAsyncReplication) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -934,8 +933,8 @@ func (g *jsiiProxy_GoogleComputeDiskAsyncReplication) ToHclTerraform() interface
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeDiskAsyncReplication) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleComputeDiskAsyncReplication) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -960,8 +959,8 @@ func (g *jsiiProxy_GoogleComputeDiskAsyncReplication) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeDiskAsyncReplication) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleComputeDiskAsyncReplication) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -972,4 +971,3 @@ func (g *jsiiProxy_GoogleComputeDiskAsyncReplication) ToTerraform() interface{} 
 
 	return returns
 }
-

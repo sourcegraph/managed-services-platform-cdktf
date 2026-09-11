@@ -114,7 +114,7 @@ func (j *jsiiProxy_GoogleIapSettingsAccessSettingsWorkforceIdentitySettingsOauth
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIapSettingsAccessSettingsWorkforceIdentitySettingsOauth2OutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleIapSettingsAccessSettingsWorkforceIdentitySettingsOauth2OutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGoogleIapSettingsAccessSettingsWorkforceIdentitySettingsOauth2Ou
 
 	return nil
 }
-

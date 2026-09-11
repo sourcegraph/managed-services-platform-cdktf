@@ -114,7 +114,7 @@ func (j *jsiiProxy_GoogleDataprocBatchPysparkBatchOutputReference) validateSetAr
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataprocBatchPysparkBatchOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataprocBatchPysparkBatchOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -246,4 +246,3 @@ func validateNewGoogleDataprocBatchPysparkBatchOutputReferenceParameters(terrafo
 
 	return nil
 }
-

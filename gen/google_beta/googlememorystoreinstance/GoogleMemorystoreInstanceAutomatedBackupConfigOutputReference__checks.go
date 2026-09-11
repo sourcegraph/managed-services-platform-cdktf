@@ -109,7 +109,7 @@ func (g *jsiiProxy_GoogleMemorystoreInstanceAutomatedBackupConfigOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_GoogleMemorystoreInstanceAutomatedBackupConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleMemorystoreInstanceAutomatedBackupConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -217,4 +217,3 @@ func validateNewGoogleMemorystoreInstanceAutomatedBackupConfigOutputReferencePar
 
 	return nil
 }
-

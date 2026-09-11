@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleDataformRepositoryWorkspaceCompilationOverridesOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataformRepositoryWorkspaceCompilationOverridesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataformRepositoryWorkspaceCompilationOverridesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewGoogleDataformRepositoryWorkspaceCompilationOverridesOutputRefer
 
 	return nil
 }
-

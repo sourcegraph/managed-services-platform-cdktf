@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleNetworkSecurityInterceptEndpointGroupAssociationLocatio
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityInterceptEndpointGroupAssociationLocationsDetailsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNetworkSecurityInterceptEndpointGroupAssociationLocationsDetailsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleNetworkSecurityInterceptEndpointGroupAssociationLocationsD
 
 	return nil
 }
-

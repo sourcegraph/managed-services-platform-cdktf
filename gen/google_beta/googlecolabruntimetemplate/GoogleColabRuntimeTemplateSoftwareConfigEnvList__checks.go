@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleColabRuntimeTemplateSoftwareConfigEnvList) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_GoogleColabRuntimeTemplateSoftwareConfigEnvList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleColabRuntimeTemplateSoftwareConfigEnvList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleColabRuntimeTemplateSoftwareConfigEnvListParameters(terraf
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleAssuredWorkloadsWorkloadEkmProvisioningResponseOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAssuredWorkloadsWorkloadEkmProvisioningResponseOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleAssuredWorkloadsWorkloadEkmProvisioningResponseOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleAssuredWorkloadsWorkloadEkmProvisioningResponseOutputRefer
 
 	return nil
 }
-

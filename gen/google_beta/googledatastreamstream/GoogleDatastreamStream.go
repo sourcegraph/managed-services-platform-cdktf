@@ -19,18 +19,18 @@ type GoogleDatastreamStream interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
-	CreateWithoutValidation() interface{}
-	SetCreateWithoutValidation(val interface{})
-	CreateWithoutValidationInput() interface{}
+	SetCount(val any)
+	CreateWithoutValidation() any
+	SetCreateWithoutValidation(val any)
+	CreateWithoutValidationInput() any
 	CustomerManagedEncryptionKey() *string
 	SetCustomerManagedEncryptionKey(val *string)
 	CustomerManagedEncryptionKeyInput() *string
@@ -79,11 +79,11 @@ type GoogleDatastreamStream interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	SourceConfig() GoogleDatastreamStreamSourceConfigOutputReference
 	SourceConfigInput() *GoogleDatastreamStreamSourceConfig
 	State() *string
@@ -94,18 +94,18 @@ type GoogleDatastreamStream interface {
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() GoogleDatastreamStreamTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -123,7 +123,7 @@ type GoogleDatastreamStream interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -135,7 +135,7 @@ type GoogleDatastreamStream interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -159,17 +159,17 @@ type GoogleDatastreamStream interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleDatastreamStream
@@ -227,8 +227,8 @@ func (j *jsiiProxy_GoogleDatastreamStream) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDatastreamStream) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDatastreamStream) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -237,8 +237,8 @@ func (j *jsiiProxy_GoogleDatastreamStream) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDatastreamStream) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleDatastreamStream) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -247,8 +247,8 @@ func (j *jsiiProxy_GoogleDatastreamStream) ConstructNodeMetadata() *map[string]i
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDatastreamStream) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDatastreamStream) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -257,8 +257,8 @@ func (j *jsiiProxy_GoogleDatastreamStream) Count() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDatastreamStream) CreateWithoutValidation() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDatastreamStream) CreateWithoutValidation() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"createWithoutValidation",
@@ -267,8 +267,8 @@ func (j *jsiiProxy_GoogleDatastreamStream) CreateWithoutValidation() interface{}
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDatastreamStream) CreateWithoutValidationInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDatastreamStream) CreateWithoutValidationInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"createWithoutValidationInput",
@@ -527,8 +527,8 @@ func (j *jsiiProxy_GoogleDatastreamStream) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDatastreamStream) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleDatastreamStream) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -537,8 +537,8 @@ func (j *jsiiProxy_GoogleDatastreamStream) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDatastreamStream) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDatastreamStream) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -617,8 +617,8 @@ func (j *jsiiProxy_GoogleDatastreamStream) TerraformLabels() cdktf.StringMap {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDatastreamStream) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleDatastreamStream) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -647,8 +647,8 @@ func (j *jsiiProxy_GoogleDatastreamStream) Timeouts() GoogleDatastreamStreamTime
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDatastreamStream) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDatastreamStream) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -656,7 +656,6 @@ func (j *jsiiProxy_GoogleDatastreamStream) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_datastream_stream google_datastream_stream} Resource.
 func NewGoogleDatastreamStream(scope constructs.Construct, id *string, config *GoogleDatastreamStreamConfig) GoogleDatastreamStream {
@@ -669,7 +668,7 @@ func NewGoogleDatastreamStream(scope constructs.Construct, id *string, config *G
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleDatastreamStream.GoogleDatastreamStream",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -682,12 +681,12 @@ func NewGoogleDatastreamStream_Override(g GoogleDatastreamStream, scope construc
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleDatastreamStream.GoogleDatastreamStream",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleDatastreamStream)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleDatastreamStream) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -698,7 +697,7 @@ func (j *jsiiProxy_GoogleDatastreamStream)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleDatastreamStream)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleDatastreamStream) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -709,7 +708,7 @@ func (j *jsiiProxy_GoogleDatastreamStream)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleDatastreamStream)SetCreateWithoutValidation(val interface{}) {
+func (j *jsiiProxy_GoogleDatastreamStream) SetCreateWithoutValidation(val any) {
 	if err := j.validateSetCreateWithoutValidationParameters(val); err != nil {
 		panic(err)
 	}
@@ -720,7 +719,7 @@ func (j *jsiiProxy_GoogleDatastreamStream)SetCreateWithoutValidation(val interfa
 	)
 }
 
-func (j *jsiiProxy_GoogleDatastreamStream)SetCustomerManagedEncryptionKey(val *string) {
+func (j *jsiiProxy_GoogleDatastreamStream) SetCustomerManagedEncryptionKey(val *string) {
 	if err := j.validateSetCustomerManagedEncryptionKeyParameters(val); err != nil {
 		panic(err)
 	}
@@ -731,7 +730,7 @@ func (j *jsiiProxy_GoogleDatastreamStream)SetCustomerManagedEncryptionKey(val *s
 	)
 }
 
-func (j *jsiiProxy_GoogleDatastreamStream)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleDatastreamStream) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -739,7 +738,7 @@ func (j *jsiiProxy_GoogleDatastreamStream)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleDatastreamStream)SetDesiredState(val *string) {
+func (j *jsiiProxy_GoogleDatastreamStream) SetDesiredState(val *string) {
 	if err := j.validateSetDesiredStateParameters(val); err != nil {
 		panic(err)
 	}
@@ -750,7 +749,7 @@ func (j *jsiiProxy_GoogleDatastreamStream)SetDesiredState(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleDatastreamStream)SetDisplayName(val *string) {
+func (j *jsiiProxy_GoogleDatastreamStream) SetDisplayName(val *string) {
 	if err := j.validateSetDisplayNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -761,7 +760,7 @@ func (j *jsiiProxy_GoogleDatastreamStream)SetDisplayName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleDatastreamStream)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleDatastreamStream) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -769,7 +768,7 @@ func (j *jsiiProxy_GoogleDatastreamStream)SetForEach(val cdktf.ITerraformIterato
 	)
 }
 
-func (j *jsiiProxy_GoogleDatastreamStream)SetId(val *string) {
+func (j *jsiiProxy_GoogleDatastreamStream) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -780,7 +779,7 @@ func (j *jsiiProxy_GoogleDatastreamStream)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleDatastreamStream)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_GoogleDatastreamStream) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -791,7 +790,7 @@ func (j *jsiiProxy_GoogleDatastreamStream)SetLabels(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleDatastreamStream)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleDatastreamStream) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -802,7 +801,7 @@ func (j *jsiiProxy_GoogleDatastreamStream)SetLifecycle(val *cdktf.TerraformResou
 	)
 }
 
-func (j *jsiiProxy_GoogleDatastreamStream)SetLocation(val *string) {
+func (j *jsiiProxy_GoogleDatastreamStream) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -813,7 +812,7 @@ func (j *jsiiProxy_GoogleDatastreamStream)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleDatastreamStream)SetProject(val *string) {
+func (j *jsiiProxy_GoogleDatastreamStream) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -824,7 +823,7 @@ func (j *jsiiProxy_GoogleDatastreamStream)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleDatastreamStream)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleDatastreamStream) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -832,7 +831,7 @@ func (j *jsiiProxy_GoogleDatastreamStream)SetProvider(val cdktf.TerraformProvide
 	)
 }
 
-func (j *jsiiProxy_GoogleDatastreamStream)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleDatastreamStream) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -843,7 +842,7 @@ func (j *jsiiProxy_GoogleDatastreamStream)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleDatastreamStream)SetStreamId(val *string) {
+func (j *jsiiProxy_GoogleDatastreamStream) SetStreamId(val *string) {
 	if err := j.validateSetStreamIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -866,7 +865,7 @@ func GoogleDatastreamStream_GenerateConfigForImport(scope constructs.Construct, 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleDatastreamStream.GoogleDatastreamStream",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -890,7 +889,7 @@ func GoogleDatastreamStream_GenerateConfigForImport(scope constructs.Construct, 
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleDatastreamStream_IsConstruct(x interface{}) *bool {
+func GoogleDatastreamStream_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleDatastreamStream_IsConstructParameters(x); err != nil {
@@ -901,7 +900,7 @@ func GoogleDatastreamStream_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleDatastreamStream.GoogleDatastreamStream",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -909,7 +908,7 @@ func GoogleDatastreamStream_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleDatastreamStream_IsTerraformElement(x interface{}) *bool {
+func GoogleDatastreamStream_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleDatastreamStream_IsTerraformElementParameters(x); err != nil {
@@ -920,7 +919,7 @@ func GoogleDatastreamStream_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleDatastreamStream.GoogleDatastreamStream",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -928,7 +927,7 @@ func GoogleDatastreamStream_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleDatastreamStream_IsTerraformResource(x interface{}) *bool {
+func GoogleDatastreamStream_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleDatastreamStream_IsTerraformResourceParameters(x); err != nil {
@@ -939,7 +938,7 @@ func GoogleDatastreamStream_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleDatastreamStream.GoogleDatastreamStream",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -964,31 +963,31 @@ func (g *jsiiProxy_GoogleDatastreamStream) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleDatastreamStream) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleDatastreamStream) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleDatastreamStream) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleDatastreamStream) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1004,7 +1003,7 @@ func (g *jsiiProxy_GoogleDatastreamStream) GetBooleanAttribute(terraformAttribut
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1020,7 +1019,7 @@ func (g *jsiiProxy_GoogleDatastreamStream) GetBooleanMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1036,7 +1035,7 @@ func (g *jsiiProxy_GoogleDatastreamStream) GetListAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1052,7 +1051,7 @@ func (g *jsiiProxy_GoogleDatastreamStream) GetNumberAttribute(terraformAttribute
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1068,7 +1067,7 @@ func (g *jsiiProxy_GoogleDatastreamStream) GetNumberListAttribute(terraformAttri
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1084,7 +1083,7 @@ func (g *jsiiProxy_GoogleDatastreamStream) GetNumberMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1100,7 +1099,7 @@ func (g *jsiiProxy_GoogleDatastreamStream) GetStringAttribute(terraformAttribute
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1116,15 +1115,15 @@ func (g *jsiiProxy_GoogleDatastreamStream) GetStringMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDatastreamStream) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleDatastreamStream) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1143,7 +1142,7 @@ func (g *jsiiProxy_GoogleDatastreamStream) ImportFrom(id *string, provider cdktf
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1156,7 +1155,7 @@ func (g *jsiiProxy_GoogleDatastreamStream) InterpolationForAttribute(terraformAt
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1170,18 +1169,18 @@ func (g *jsiiProxy_GoogleDatastreamStream) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleDatastreamStream) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleDatastreamStream) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1192,7 +1191,7 @@ func (g *jsiiProxy_GoogleDatastreamStream) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1203,7 +1202,7 @@ func (g *jsiiProxy_GoogleDatastreamStream) OverrideLogicalId(newLogicalId *strin
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1214,7 +1213,7 @@ func (g *jsiiProxy_GoogleDatastreamStream) PutBackfillAll(value *GoogleDatastrea
 	_jsii_.InvokeVoid(
 		g,
 		"putBackfillAll",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1225,7 +1224,7 @@ func (g *jsiiProxy_GoogleDatastreamStream) PutBackfillNone(value *GoogleDatastre
 	_jsii_.InvokeVoid(
 		g,
 		"putBackfillNone",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1236,7 +1235,7 @@ func (g *jsiiProxy_GoogleDatastreamStream) PutDestinationConfig(value *GoogleDat
 	_jsii_.InvokeVoid(
 		g,
 		"putDestinationConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1247,7 +1246,7 @@ func (g *jsiiProxy_GoogleDatastreamStream) PutSourceConfig(value *GoogleDatastre
 	_jsii_.InvokeVoid(
 		g,
 		"putSourceConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1258,7 +1257,7 @@ func (g *jsiiProxy_GoogleDatastreamStream) PutTimeouts(value *GoogleDatastreamSt
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1342,8 +1341,8 @@ func (g *jsiiProxy_GoogleDatastreamStream) ResetTimeouts() {
 	)
 }
 
-func (g *jsiiProxy_GoogleDatastreamStream) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleDatastreamStream) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1355,8 +1354,8 @@ func (g *jsiiProxy_GoogleDatastreamStream) SynthesizeAttributes() *map[string]in
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDatastreamStream) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleDatastreamStream) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1368,8 +1367,8 @@ func (g *jsiiProxy_GoogleDatastreamStream) SynthesizeHclAttributes() *map[string
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDatastreamStream) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleDatastreamStream) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1381,8 +1380,8 @@ func (g *jsiiProxy_GoogleDatastreamStream) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDatastreamStream) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleDatastreamStream) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1407,8 +1406,8 @@ func (g *jsiiProxy_GoogleDatastreamStream) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDatastreamStream) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleDatastreamStream) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1419,4 +1418,3 @@ func (g *jsiiProxy_GoogleDatastreamStream) ToTerraform() interface{} {
 
 	return returns
 }
-

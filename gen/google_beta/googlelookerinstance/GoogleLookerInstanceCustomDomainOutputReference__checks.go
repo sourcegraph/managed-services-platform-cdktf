@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleLookerInstanceCustomDomainOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_GoogleLookerInstanceCustomDomainOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleLookerInstanceCustomDomainOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleLookerInstanceCustomDomainOutputReferenceParameters(terraf
 
 	return nil
 }
-

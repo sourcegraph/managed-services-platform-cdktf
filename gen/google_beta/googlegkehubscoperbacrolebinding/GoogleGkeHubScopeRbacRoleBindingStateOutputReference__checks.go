@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleGkeHubScopeRbacRoleBindingStateOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGkeHubScopeRbacRoleBindingStateOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleGkeHubScopeRbacRoleBindingStateOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleGkeHubScopeRbacRoleBindingStateOutputReferenceParameters(t
 
 	return nil
 }
-

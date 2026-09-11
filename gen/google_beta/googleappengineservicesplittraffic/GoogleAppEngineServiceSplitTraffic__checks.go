@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleAppEngineServiceSplitTraffic) validateAddMoveTargetPara
 	return nil
 }
 
-func (g *jsiiProxy_GoogleAppEngineServiceSplitTraffic) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleAppEngineServiceSplitTraffic) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleAppEngineServiceSplitTraffic) validateMoveFromIdParamet
 	return nil
 }
 
-func (g *jsiiProxy_GoogleAppEngineServiceSplitTraffic) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleAppEngineServiceSplitTraffic) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -242,7 +242,7 @@ func validateGoogleAppEngineServiceSplitTraffic_GenerateConfigForImportParameter
 	return nil
 }
 
-func validateGoogleAppEngineServiceSplitTraffic_IsConstructParameters(x interface{}) error {
+func validateGoogleAppEngineServiceSplitTraffic_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -250,7 +250,7 @@ func validateGoogleAppEngineServiceSplitTraffic_IsConstructParameters(x interfac
 	return nil
 }
 
-func validateGoogleAppEngineServiceSplitTraffic_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleAppEngineServiceSplitTraffic_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -258,7 +258,7 @@ func validateGoogleAppEngineServiceSplitTraffic_IsTerraformElementParameters(x i
 	return nil
 }
 
-func validateGoogleAppEngineServiceSplitTraffic_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleAppEngineServiceSplitTraffic_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -266,7 +266,7 @@ func validateGoogleAppEngineServiceSplitTraffic_IsTerraformResourceParameters(x 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAppEngineServiceSplitTraffic) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleAppEngineServiceSplitTraffic) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -299,7 +299,7 @@ func (j *jsiiProxy_GoogleAppEngineServiceSplitTraffic) validateSetConnectionPara
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAppEngineServiceSplitTraffic) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleAppEngineServiceSplitTraffic) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -372,7 +372,7 @@ func (j *jsiiProxy_GoogleAppEngineServiceSplitTraffic) validateSetLifecycleParam
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAppEngineServiceSplitTraffic) validateSetMigrateTrafficParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleAppEngineServiceSplitTraffic) validateSetMigrateTrafficParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -400,7 +400,7 @@ func (j *jsiiProxy_GoogleAppEngineServiceSplitTraffic) validateSetProjectParamet
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAppEngineServiceSplitTraffic) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleAppEngineServiceSplitTraffic) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -472,4 +472,3 @@ func validateNewGoogleAppEngineServiceSplitTrafficParameters(scope constructs.Co
 
 	return nil
 }
-

@@ -1,6 +1,5 @@
 package googlestoragetransferjob
 
-
 type GoogleStorageTransferJobTransferSpecAwsS3DataSource struct {
 	// S3 Bucket name.
 	//
@@ -13,7 +12,7 @@ type GoogleStorageTransferJobTransferSpecAwsS3DataSource struct {
 	// Egress bytes over a Google-managed private network. This network is shared between other users of Storage Transfer Service.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_storage_transfer_job#managed_private_network GoogleStorageTransferJob#managed_private_network}
-	ManagedPrivateNetwork interface{} `field:"optional" json:"managedPrivateNetwork" yaml:"managedPrivateNetwork"`
+	ManagedPrivateNetwork any `field:"optional" json:"managedPrivateNetwork" yaml:"managedPrivateNetwork"`
 	// S3 Bucket path in bucket to transfer.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_storage_transfer_job#path GoogleStorageTransferJob#path}
@@ -25,4 +24,3 @@ type GoogleStorageTransferJobTransferSpecAwsS3DataSource struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_storage_transfer_job#role_arn GoogleStorageTransferJob#role_arn}
 	RoleArn *string `field:"optional" json:"roleArn" yaml:"roleArn"`
 }
-

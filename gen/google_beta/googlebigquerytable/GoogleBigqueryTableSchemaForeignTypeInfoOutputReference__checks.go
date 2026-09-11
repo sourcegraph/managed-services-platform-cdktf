@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleBigqueryTableSchemaForeignTypeInfoOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigqueryTableSchemaForeignTypeInfoOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBigqueryTableSchemaForeignTypeInfoOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleBigqueryTableSchemaForeignTypeInfoOutputReferenceParameter
 
 	return nil
 }
-

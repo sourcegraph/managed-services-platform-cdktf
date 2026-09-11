@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleManagedKafkaAclAclEntriesOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_GoogleManagedKafkaAclAclEntriesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleManagedKafkaAclAclEntriesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_GoogleManagedKafkaAclAclEntriesOutputReference) validateSetHo
 	return nil
 }
 
-func (j *jsiiProxy_GoogleManagedKafkaAclAclEntriesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleManagedKafkaAclAclEntriesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -254,4 +254,3 @@ func validateNewGoogleManagedKafkaAclAclEntriesOutputReferenceParameters(terrafo
 
 	return nil
 }
-

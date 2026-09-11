@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleHealthcareDicomStoreStreamConfigsList) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_GoogleHealthcareDicomStoreStreamConfigsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleHealthcareDicomStoreStreamConfigsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleHealthcareDicomStoreStreamConfigsListParameters(terraformR
 
 	return nil
 }
-

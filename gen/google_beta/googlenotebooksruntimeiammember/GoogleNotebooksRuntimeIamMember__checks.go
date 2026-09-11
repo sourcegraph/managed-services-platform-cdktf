@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleNotebooksRuntimeIamMember) validateAddMoveTargetParamet
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNotebooksRuntimeIamMember) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleNotebooksRuntimeIamMember) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleNotebooksRuntimeIamMember) validateMoveFromIdParameters
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNotebooksRuntimeIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleNotebooksRuntimeIamMember) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateGoogleNotebooksRuntimeIamMember_GenerateConfigForImportParameters(s
 	return nil
 }
 
-func validateGoogleNotebooksRuntimeIamMember_IsConstructParameters(x interface{}) error {
+func validateGoogleNotebooksRuntimeIamMember_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateGoogleNotebooksRuntimeIamMember_IsConstructParameters(x interface{}
 	return nil
 }
 
-func validateGoogleNotebooksRuntimeIamMember_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleNotebooksRuntimeIamMember_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateGoogleNotebooksRuntimeIamMember_IsTerraformElementParameters(x inte
 	return nil
 }
 
-func validateGoogleNotebooksRuntimeIamMember_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleNotebooksRuntimeIamMember_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateGoogleNotebooksRuntimeIamMember_IsTerraformResourceParameters(x int
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNotebooksRuntimeIamMember) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNotebooksRuntimeIamMember) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_GoogleNotebooksRuntimeIamMember) validateSetConnectionParamet
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNotebooksRuntimeIamMember) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNotebooksRuntimeIamMember) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -385,7 +385,7 @@ func (j *jsiiProxy_GoogleNotebooksRuntimeIamMember) validateSetProjectParameters
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNotebooksRuntimeIamMember) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleNotebooksRuntimeIamMember) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -465,4 +465,3 @@ func validateNewGoogleNotebooksRuntimeIamMemberParameters(scope constructs.Const
 
 	return nil
 }
-

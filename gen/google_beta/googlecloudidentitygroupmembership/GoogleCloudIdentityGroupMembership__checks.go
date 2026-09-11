@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleCloudIdentityGroupMembership) validateAddMoveTargetPara
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCloudIdentityGroupMembership) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleCloudIdentityGroupMembership) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleCloudIdentityGroupMembership) validateMoveFromIdParamet
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCloudIdentityGroupMembership) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleCloudIdentityGroupMembership) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -226,7 +226,7 @@ func (g *jsiiProxy_GoogleCloudIdentityGroupMembership) validatePutPreferredMembe
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCloudIdentityGroupMembership) validatePutRolesParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleCloudIdentityGroupMembership) validatePutRolesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -284,7 +284,7 @@ func validateGoogleCloudIdentityGroupMembership_GenerateConfigForImportParameter
 	return nil
 }
 
-func validateGoogleCloudIdentityGroupMembership_IsConstructParameters(x interface{}) error {
+func validateGoogleCloudIdentityGroupMembership_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -292,7 +292,7 @@ func validateGoogleCloudIdentityGroupMembership_IsConstructParameters(x interfac
 	return nil
 }
 
-func validateGoogleCloudIdentityGroupMembership_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleCloudIdentityGroupMembership_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -300,7 +300,7 @@ func validateGoogleCloudIdentityGroupMembership_IsTerraformElementParameters(x i
 	return nil
 }
 
-func validateGoogleCloudIdentityGroupMembership_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleCloudIdentityGroupMembership_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -308,7 +308,7 @@ func validateGoogleCloudIdentityGroupMembership_IsTerraformResourceParameters(x 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudIdentityGroupMembership) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleCloudIdentityGroupMembership) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -341,7 +341,7 @@ func (j *jsiiProxy_GoogleCloudIdentityGroupMembership) validateSetConnectionPara
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudIdentityGroupMembership) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleCloudIdentityGroupMembership) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -398,7 +398,7 @@ func (j *jsiiProxy_GoogleCloudIdentityGroupMembership) validateSetCountParameter
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudIdentityGroupMembership) validateSetCreateIgnoreAlreadyExistsParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleCloudIdentityGroupMembership) validateSetCreateIgnoreAlreadyExistsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -442,7 +442,7 @@ func (j *jsiiProxy_GoogleCloudIdentityGroupMembership) validateSetLifecycleParam
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudIdentityGroupMembership) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleCloudIdentityGroupMembership) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -506,4 +506,3 @@ func validateNewGoogleCloudIdentityGroupMembershipParameters(scope constructs.Co
 
 	return nil
 }
-

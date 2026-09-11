@@ -6,9 +6,9 @@ import (
 
 type GoogleColabRuntimeConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type GoogleColabRuntimeConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Required. The display name of the Runtime.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_colab_runtime#display_name GoogleColabRuntime#display_name}
@@ -34,7 +34,7 @@ type GoogleColabRuntimeConfig struct {
 	// Triggers an upgrade anytime the runtime is started if it is upgradable.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_colab_runtime#auto_upgrade GoogleColabRuntime#auto_upgrade}
-	AutoUpgrade interface{} `field:"optional" json:"autoUpgrade" yaml:"autoUpgrade"`
+	AutoUpgrade any `field:"optional" json:"autoUpgrade" yaml:"autoUpgrade"`
 	// The description of the Runtime.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_colab_runtime#description GoogleColabRuntime#description}
@@ -65,4 +65,3 @@ type GoogleColabRuntimeConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_colab_runtime#timeouts GoogleColabRuntime#timeouts}
 	Timeouts *GoogleColabRuntimeTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleDataprocClusterIamMember) validateAddMoveTargetParamete
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDataprocClusterIamMember) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleDataprocClusterIamMember) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleDataprocClusterIamMember) validateMoveFromIdParameters(
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDataprocClusterIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleDataprocClusterIamMember) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateGoogleDataprocClusterIamMember_GenerateConfigForImportParameters(sc
 	return nil
 }
 
-func validateGoogleDataprocClusterIamMember_IsConstructParameters(x interface{}) error {
+func validateGoogleDataprocClusterIamMember_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateGoogleDataprocClusterIamMember_IsConstructParameters(x interface{})
 	return nil
 }
 
-func validateGoogleDataprocClusterIamMember_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleDataprocClusterIamMember_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateGoogleDataprocClusterIamMember_IsTerraformElementParameters(x inter
 	return nil
 }
 
-func validateGoogleDataprocClusterIamMember_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleDataprocClusterIamMember_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -263,7 +263,7 @@ func (j *jsiiProxy_GoogleDataprocClusterIamMember) validateSetClusterParameters(
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataprocClusterIamMember) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataprocClusterIamMember) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -296,7 +296,7 @@ func (j *jsiiProxy_GoogleDataprocClusterIamMember) validateSetConnectionParamete
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataprocClusterIamMember) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataprocClusterIamMember) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -385,7 +385,7 @@ func (j *jsiiProxy_GoogleDataprocClusterIamMember) validateSetProjectParameters(
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataprocClusterIamMember) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleDataprocClusterIamMember) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -465,4 +465,3 @@ func validateNewGoogleDataprocClusterIamMemberParameters(scope constructs.Constr
 
 	return nil
 }
-

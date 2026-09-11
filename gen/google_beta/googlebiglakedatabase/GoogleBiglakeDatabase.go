@@ -18,15 +18,15 @@ type GoogleBiglakeDatabase interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	DeleteTime() *string
 	// Experimental.
@@ -61,19 +61,19 @@ type GoogleBiglakeDatabase interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() GoogleBiglakeDatabaseTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	Type() *string
 	SetType(val *string)
 	TypeInput() *string
@@ -82,9 +82,9 @@ type GoogleBiglakeDatabase interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -102,7 +102,7 @@ type GoogleBiglakeDatabase interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -114,7 +114,7 @@ type GoogleBiglakeDatabase interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -128,17 +128,17 @@ type GoogleBiglakeDatabase interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleBiglakeDatabase
@@ -176,8 +176,8 @@ func (j *jsiiProxy_GoogleBiglakeDatabase) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleBiglakeDatabase) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleBiglakeDatabase) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -186,8 +186,8 @@ func (j *jsiiProxy_GoogleBiglakeDatabase) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleBiglakeDatabase) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleBiglakeDatabase) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -196,8 +196,8 @@ func (j *jsiiProxy_GoogleBiglakeDatabase) ConstructNodeMetadata() *map[string]in
 	return returns
 }
 
-func (j *jsiiProxy_GoogleBiglakeDatabase) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleBiglakeDatabase) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -366,8 +366,8 @@ func (j *jsiiProxy_GoogleBiglakeDatabase) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleBiglakeDatabase) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleBiglakeDatabase) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -376,8 +376,8 @@ func (j *jsiiProxy_GoogleBiglakeDatabase) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleBiglakeDatabase) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleBiglakeDatabase) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -396,8 +396,8 @@ func (j *jsiiProxy_GoogleBiglakeDatabase) TerraformGeneratorMetadata() *cdktf.Te
 	return returns
 }
 
-func (j *jsiiProxy_GoogleBiglakeDatabase) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleBiglakeDatabase) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -426,8 +426,8 @@ func (j *jsiiProxy_GoogleBiglakeDatabase) Timeouts() GoogleBiglakeDatabaseTimeou
 	return returns
 }
 
-func (j *jsiiProxy_GoogleBiglakeDatabase) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleBiglakeDatabase) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -466,7 +466,6 @@ func (j *jsiiProxy_GoogleBiglakeDatabase) UpdateTime() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_biglake_database google_biglake_database} Resource.
 func NewGoogleBiglakeDatabase(scope constructs.Construct, id *string, config *GoogleBiglakeDatabaseConfig) GoogleBiglakeDatabase {
 	_init_.Initialize()
@@ -478,7 +477,7 @@ func NewGoogleBiglakeDatabase(scope constructs.Construct, id *string, config *Go
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleBiglakeDatabase.GoogleBiglakeDatabase",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -491,12 +490,12 @@ func NewGoogleBiglakeDatabase_Override(g GoogleBiglakeDatabase, scope constructs
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleBiglakeDatabase.GoogleBiglakeDatabase",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleBiglakeDatabase)SetCatalog(val *string) {
+func (j *jsiiProxy_GoogleBiglakeDatabase) SetCatalog(val *string) {
 	if err := j.validateSetCatalogParameters(val); err != nil {
 		panic(err)
 	}
@@ -507,7 +506,7 @@ func (j *jsiiProxy_GoogleBiglakeDatabase)SetCatalog(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleBiglakeDatabase)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleBiglakeDatabase) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -518,7 +517,7 @@ func (j *jsiiProxy_GoogleBiglakeDatabase)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleBiglakeDatabase)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleBiglakeDatabase) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -529,7 +528,7 @@ func (j *jsiiProxy_GoogleBiglakeDatabase)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleBiglakeDatabase)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleBiglakeDatabase) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -537,7 +536,7 @@ func (j *jsiiProxy_GoogleBiglakeDatabase)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleBiglakeDatabase)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleBiglakeDatabase) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -545,7 +544,7 @@ func (j *jsiiProxy_GoogleBiglakeDatabase)SetForEach(val cdktf.ITerraformIterator
 	)
 }
 
-func (j *jsiiProxy_GoogleBiglakeDatabase)SetId(val *string) {
+func (j *jsiiProxy_GoogleBiglakeDatabase) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -556,7 +555,7 @@ func (j *jsiiProxy_GoogleBiglakeDatabase)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleBiglakeDatabase)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleBiglakeDatabase) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -567,7 +566,7 @@ func (j *jsiiProxy_GoogleBiglakeDatabase)SetLifecycle(val *cdktf.TerraformResour
 	)
 }
 
-func (j *jsiiProxy_GoogleBiglakeDatabase)SetName(val *string) {
+func (j *jsiiProxy_GoogleBiglakeDatabase) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -578,7 +577,7 @@ func (j *jsiiProxy_GoogleBiglakeDatabase)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleBiglakeDatabase)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleBiglakeDatabase) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -586,7 +585,7 @@ func (j *jsiiProxy_GoogleBiglakeDatabase)SetProvider(val cdktf.TerraformProvider
 	)
 }
 
-func (j *jsiiProxy_GoogleBiglakeDatabase)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleBiglakeDatabase) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -597,7 +596,7 @@ func (j *jsiiProxy_GoogleBiglakeDatabase)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleBiglakeDatabase)SetType(val *string) {
+func (j *jsiiProxy_GoogleBiglakeDatabase) SetType(val *string) {
 	if err := j.validateSetTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -620,7 +619,7 @@ func GoogleBiglakeDatabase_GenerateConfigForImport(scope constructs.Construct, i
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleBiglakeDatabase.GoogleBiglakeDatabase",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -644,7 +643,7 @@ func GoogleBiglakeDatabase_GenerateConfigForImport(scope constructs.Construct, i
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleBiglakeDatabase_IsConstruct(x interface{}) *bool {
+func GoogleBiglakeDatabase_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleBiglakeDatabase_IsConstructParameters(x); err != nil {
@@ -655,7 +654,7 @@ func GoogleBiglakeDatabase_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleBiglakeDatabase.GoogleBiglakeDatabase",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -663,7 +662,7 @@ func GoogleBiglakeDatabase_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleBiglakeDatabase_IsTerraformElement(x interface{}) *bool {
+func GoogleBiglakeDatabase_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleBiglakeDatabase_IsTerraformElementParameters(x); err != nil {
@@ -674,7 +673,7 @@ func GoogleBiglakeDatabase_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleBiglakeDatabase.GoogleBiglakeDatabase",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -682,7 +681,7 @@ func GoogleBiglakeDatabase_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleBiglakeDatabase_IsTerraformResource(x interface{}) *bool {
+func GoogleBiglakeDatabase_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleBiglakeDatabase_IsTerraformResourceParameters(x); err != nil {
@@ -693,7 +692,7 @@ func GoogleBiglakeDatabase_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleBiglakeDatabase.GoogleBiglakeDatabase",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -718,31 +717,31 @@ func (g *jsiiProxy_GoogleBiglakeDatabase) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleBiglakeDatabase) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleBiglakeDatabase) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleBiglakeDatabase) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleBiglakeDatabase) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -758,7 +757,7 @@ func (g *jsiiProxy_GoogleBiglakeDatabase) GetBooleanAttribute(terraformAttribute
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -774,7 +773,7 @@ func (g *jsiiProxy_GoogleBiglakeDatabase) GetBooleanMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -790,7 +789,7 @@ func (g *jsiiProxy_GoogleBiglakeDatabase) GetListAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -806,7 +805,7 @@ func (g *jsiiProxy_GoogleBiglakeDatabase) GetNumberAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -822,7 +821,7 @@ func (g *jsiiProxy_GoogleBiglakeDatabase) GetNumberListAttribute(terraformAttrib
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -838,7 +837,7 @@ func (g *jsiiProxy_GoogleBiglakeDatabase) GetNumberMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -854,7 +853,7 @@ func (g *jsiiProxy_GoogleBiglakeDatabase) GetStringAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -870,15 +869,15 @@ func (g *jsiiProxy_GoogleBiglakeDatabase) GetStringMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleBiglakeDatabase) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleBiglakeDatabase) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -897,7 +896,7 @@ func (g *jsiiProxy_GoogleBiglakeDatabase) ImportFrom(id *string, provider cdktf.
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -910,7 +909,7 @@ func (g *jsiiProxy_GoogleBiglakeDatabase) InterpolationForAttribute(terraformAtt
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -924,18 +923,18 @@ func (g *jsiiProxy_GoogleBiglakeDatabase) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleBiglakeDatabase) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleBiglakeDatabase) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -946,7 +945,7 @@ func (g *jsiiProxy_GoogleBiglakeDatabase) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -957,7 +956,7 @@ func (g *jsiiProxy_GoogleBiglakeDatabase) OverrideLogicalId(newLogicalId *string
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -968,7 +967,7 @@ func (g *jsiiProxy_GoogleBiglakeDatabase) PutHiveOptions(value *GoogleBiglakeDat
 	_jsii_.InvokeVoid(
 		g,
 		"putHiveOptions",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -979,7 +978,7 @@ func (g *jsiiProxy_GoogleBiglakeDatabase) PutTimeouts(value *GoogleBiglakeDataba
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1007,8 +1006,8 @@ func (g *jsiiProxy_GoogleBiglakeDatabase) ResetTimeouts() {
 	)
 }
 
-func (g *jsiiProxy_GoogleBiglakeDatabase) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleBiglakeDatabase) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1020,8 +1019,8 @@ func (g *jsiiProxy_GoogleBiglakeDatabase) SynthesizeAttributes() *map[string]int
 	return returns
 }
 
-func (g *jsiiProxy_GoogleBiglakeDatabase) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleBiglakeDatabase) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1033,8 +1032,8 @@ func (g *jsiiProxy_GoogleBiglakeDatabase) SynthesizeHclAttributes() *map[string]
 	return returns
 }
 
-func (g *jsiiProxy_GoogleBiglakeDatabase) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleBiglakeDatabase) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1046,8 +1045,8 @@ func (g *jsiiProxy_GoogleBiglakeDatabase) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleBiglakeDatabase) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleBiglakeDatabase) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1072,8 +1071,8 @@ func (g *jsiiProxy_GoogleBiglakeDatabase) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleBiglakeDatabase) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleBiglakeDatabase) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1084,4 +1083,3 @@ func (g *jsiiProxy_GoogleBiglakeDatabase) ToTerraform() interface{} {
 
 	return returns
 }
-

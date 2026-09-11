@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleFirebaseAppCheckPlayIntegrityConfig) validateAddMoveTar
 	return nil
 }
 
-func (g *jsiiProxy_GoogleFirebaseAppCheckPlayIntegrityConfig) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleFirebaseAppCheckPlayIntegrityConfig) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleFirebaseAppCheckPlayIntegrityConfig) validateMoveFromId
 	return nil
 }
 
-func (g *jsiiProxy_GoogleFirebaseAppCheckPlayIntegrityConfig) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleFirebaseAppCheckPlayIntegrityConfig) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateGoogleFirebaseAppCheckPlayIntegrityConfig_GenerateConfigForImportPa
 	return nil
 }
 
-func validateGoogleFirebaseAppCheckPlayIntegrityConfig_IsConstructParameters(x interface{}) error {
+func validateGoogleFirebaseAppCheckPlayIntegrityConfig_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateGoogleFirebaseAppCheckPlayIntegrityConfig_IsConstructParameters(x i
 	return nil
 }
 
-func validateGoogleFirebaseAppCheckPlayIntegrityConfig_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleFirebaseAppCheckPlayIntegrityConfig_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateGoogleFirebaseAppCheckPlayIntegrityConfig_IsTerraformElementParamet
 	return nil
 }
 
-func validateGoogleFirebaseAppCheckPlayIntegrityConfig_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleFirebaseAppCheckPlayIntegrityConfig_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -263,7 +263,7 @@ func (j *jsiiProxy_GoogleFirebaseAppCheckPlayIntegrityConfig) validateSetAppIdPa
 	return nil
 }
 
-func (j *jsiiProxy_GoogleFirebaseAppCheckPlayIntegrityConfig) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleFirebaseAppCheckPlayIntegrityConfig) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -296,7 +296,7 @@ func (j *jsiiProxy_GoogleFirebaseAppCheckPlayIntegrityConfig) validateSetConnect
 	return nil
 }
 
-func (j *jsiiProxy_GoogleFirebaseAppCheckPlayIntegrityConfig) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleFirebaseAppCheckPlayIntegrityConfig) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -377,7 +377,7 @@ func (j *jsiiProxy_GoogleFirebaseAppCheckPlayIntegrityConfig) validateSetProject
 	return nil
 }
 
-func (j *jsiiProxy_GoogleFirebaseAppCheckPlayIntegrityConfig) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleFirebaseAppCheckPlayIntegrityConfig) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -449,4 +449,3 @@ func validateNewGoogleFirebaseAppCheckPlayIntegrityConfigParameters(scope constr
 
 	return nil
 }
-

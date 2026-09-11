@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleDataFusionInstance) validateAddMoveTargetParameters(mov
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDataFusionInstance) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleDataFusionInstance) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleDataFusionInstance) validateMoveFromIdParameters(id *st
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDataFusionInstance) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleDataFusionInstance) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (g *jsiiProxy_GoogleDataFusionInstance) validateOverrideLogicalIdParameters
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDataFusionInstance) validatePutAcceleratorsParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleDataFusionInstance) validatePutAcceleratorsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -295,7 +295,7 @@ func validateGoogleDataFusionInstance_GenerateConfigForImportParameters(scope co
 	return nil
 }
 
-func validateGoogleDataFusionInstance_IsConstructParameters(x interface{}) error {
+func validateGoogleDataFusionInstance_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -303,7 +303,7 @@ func validateGoogleDataFusionInstance_IsConstructParameters(x interface{}) error
 	return nil
 }
 
-func validateGoogleDataFusionInstance_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleDataFusionInstance_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -311,7 +311,7 @@ func validateGoogleDataFusionInstance_IsTerraformElementParameters(x interface{}
 	return nil
 }
 
-func validateGoogleDataFusionInstance_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleDataFusionInstance_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -319,7 +319,7 @@ func validateGoogleDataFusionInstance_IsTerraformResourceParameters(x interface{
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataFusionInstance) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataFusionInstance) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -352,7 +352,7 @@ func (j *jsiiProxy_GoogleDataFusionInstance) validateSetConnectionParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataFusionInstance) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataFusionInstance) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -433,7 +433,7 @@ func (j *jsiiProxy_GoogleDataFusionInstance) validateSetDisplayNameParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataFusionInstance) validateSetEnableRbacParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataFusionInstance) validateSetEnableRbacParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -453,7 +453,7 @@ func (j *jsiiProxy_GoogleDataFusionInstance) validateSetEnableRbacParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataFusionInstance) validateSetEnableStackdriverLoggingParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataFusionInstance) validateSetEnableStackdriverLoggingParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -473,7 +473,7 @@ func (j *jsiiProxy_GoogleDataFusionInstance) validateSetEnableStackdriverLogging
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataFusionInstance) validateSetEnableStackdriverMonitoringParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataFusionInstance) validateSetEnableStackdriverMonitoringParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -533,7 +533,7 @@ func (j *jsiiProxy_GoogleDataFusionInstance) validateSetOptionsParameters(val *m
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataFusionInstance) validateSetPrivateInstanceParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataFusionInstance) validateSetPrivateInstanceParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -561,7 +561,7 @@ func (j *jsiiProxy_GoogleDataFusionInstance) validateSetProjectParameters(val *s
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataFusionInstance) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleDataFusionInstance) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -665,4 +665,3 @@ func validateNewGoogleDataFusionInstanceParameters(scope constructs.Construct, i
 
 	return nil
 }
-

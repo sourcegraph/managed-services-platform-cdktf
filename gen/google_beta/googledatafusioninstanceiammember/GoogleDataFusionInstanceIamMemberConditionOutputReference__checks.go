@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleDataFusionInstanceIamMemberConditionOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataFusionInstanceIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataFusionInstanceIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewGoogleDataFusionInstanceIamMemberConditionOutputReferenceParamet
 
 	return nil
 }
-

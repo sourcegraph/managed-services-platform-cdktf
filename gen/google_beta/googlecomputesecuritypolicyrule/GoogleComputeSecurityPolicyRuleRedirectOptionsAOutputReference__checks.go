@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleComputeSecurityPolicyRuleRedirectOptionsAOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeSecurityPolicyRuleRedirectOptionsAOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeSecurityPolicyRuleRedirectOptionsAOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGoogleComputeSecurityPolicyRuleRedirectOptionsAOutputReferencePa
 
 	return nil
 }
-

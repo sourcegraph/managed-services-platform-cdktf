@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleComputeInstanceFromMachineImageAdvancedMachineFeaturesO
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageAdvancedMachineFeaturesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageAdvancedMachineFeaturesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageAdvancedMachineFeaturesO
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageAdvancedMachineFeaturesOutputReference) validateSetEnableNestedVirtualizationParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageAdvancedMachineFeaturesOutputReference) validateSetEnableNestedVirtualizationParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -183,7 +183,7 @@ func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageAdvancedMachineFeaturesO
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageAdvancedMachineFeaturesOutputReference) validateSetEnableUefiNetworkingParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageAdvancedMachineFeaturesOutputReference) validateSetEnableUefiNetworkingParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -270,4 +270,3 @@ func validateNewGoogleComputeInstanceFromMachineImageAdvancedMachineFeaturesOutp
 
 	return nil
 }
-

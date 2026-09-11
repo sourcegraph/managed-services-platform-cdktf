@@ -1,11 +1,10 @@
 package googlebigqueryjob
 
-
 type GoogleBigqueryJobCopy struct {
 	// source_tables block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_bigquery_job#source_tables GoogleBigqueryJob#source_tables}
-	SourceTables interface{} `field:"required" json:"sourceTables" yaml:"sourceTables"`
+	SourceTables any `field:"required" json:"sourceTables" yaml:"sourceTables"`
 	// Specifies whether the job is allowed to create new tables.
 	//
 	// The following values are supported:
@@ -35,4 +34,3 @@ type GoogleBigqueryJobCopy struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_bigquery_job#write_disposition GoogleBigqueryJob#write_disposition}
 	WriteDisposition *string `field:"optional" json:"writeDisposition" yaml:"writeDisposition"`
 }
-

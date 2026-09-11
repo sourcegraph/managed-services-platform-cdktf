@@ -15,15 +15,15 @@ type GoogleComputeMachineImage interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -39,9 +39,9 @@ type GoogleComputeMachineImage interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
-	GuestFlush() interface{}
-	SetGuestFlush(val interface{})
-	GuestFlushInput() interface{}
+	GuestFlush() any
+	SetGuestFlush(val any)
+	GuestFlushInput() any
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -64,11 +64,11 @@ type GoogleComputeMachineImage interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	SelfLink() *string
 	SourceInstance() *string
 	SetSourceInstance(val *string)
@@ -77,18 +77,18 @@ type GoogleComputeMachineImage interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() GoogleComputeMachineImageTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -106,7 +106,7 @@ type GoogleComputeMachineImage interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -118,7 +118,7 @@ type GoogleComputeMachineImage interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -136,17 +136,17 @@ type GoogleComputeMachineImage interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleComputeMachineImage
@@ -164,8 +164,8 @@ func (j *jsiiProxy_GoogleComputeMachineImage) CdktfStack() cdktf.TerraformStack 
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeMachineImage) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeMachineImage) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -174,8 +174,8 @@ func (j *jsiiProxy_GoogleComputeMachineImage) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeMachineImage) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleComputeMachineImage) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -184,8 +184,8 @@ func (j *jsiiProxy_GoogleComputeMachineImage) ConstructNodeMetadata() *map[strin
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeMachineImage) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeMachineImage) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -254,8 +254,8 @@ func (j *jsiiProxy_GoogleComputeMachineImage) FriendlyUniqueId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeMachineImage) GuestFlush() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeMachineImage) GuestFlush() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"guestFlush",
@@ -264,8 +264,8 @@ func (j *jsiiProxy_GoogleComputeMachineImage) GuestFlush() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeMachineImage) GuestFlushInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeMachineImage) GuestFlushInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"guestFlushInput",
@@ -384,8 +384,8 @@ func (j *jsiiProxy_GoogleComputeMachineImage) Provider() cdktf.TerraformProvider
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeMachineImage) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleComputeMachineImage) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -394,8 +394,8 @@ func (j *jsiiProxy_GoogleComputeMachineImage) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeMachineImage) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeMachineImage) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -454,8 +454,8 @@ func (j *jsiiProxy_GoogleComputeMachineImage) TerraformGeneratorMetadata() *cdkt
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeMachineImage) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleComputeMachineImage) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -484,8 +484,8 @@ func (j *jsiiProxy_GoogleComputeMachineImage) Timeouts() GoogleComputeMachineIma
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeMachineImage) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeMachineImage) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -493,7 +493,6 @@ func (j *jsiiProxy_GoogleComputeMachineImage) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_machine_image google_compute_machine_image} Resource.
 func NewGoogleComputeMachineImage(scope constructs.Construct, id *string, config *GoogleComputeMachineImageConfig) GoogleComputeMachineImage {
@@ -506,7 +505,7 @@ func NewGoogleComputeMachineImage(scope constructs.Construct, id *string, config
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleComputeMachineImage.GoogleComputeMachineImage",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -519,12 +518,12 @@ func NewGoogleComputeMachineImage_Override(g GoogleComputeMachineImage, scope co
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleComputeMachineImage.GoogleComputeMachineImage",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeMachineImage)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleComputeMachineImage) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -535,7 +534,7 @@ func (j *jsiiProxy_GoogleComputeMachineImage)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeMachineImage)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleComputeMachineImage) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -546,7 +545,7 @@ func (j *jsiiProxy_GoogleComputeMachineImage)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeMachineImage)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleComputeMachineImage) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -554,7 +553,7 @@ func (j *jsiiProxy_GoogleComputeMachineImage)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeMachineImage)SetDescription(val *string) {
+func (j *jsiiProxy_GoogleComputeMachineImage) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -565,7 +564,7 @@ func (j *jsiiProxy_GoogleComputeMachineImage)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeMachineImage)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleComputeMachineImage) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -573,7 +572,7 @@ func (j *jsiiProxy_GoogleComputeMachineImage)SetForEach(val cdktf.ITerraformIter
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeMachineImage)SetGuestFlush(val interface{}) {
+func (j *jsiiProxy_GoogleComputeMachineImage) SetGuestFlush(val any) {
 	if err := j.validateSetGuestFlushParameters(val); err != nil {
 		panic(err)
 	}
@@ -584,7 +583,7 @@ func (j *jsiiProxy_GoogleComputeMachineImage)SetGuestFlush(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeMachineImage)SetId(val *string) {
+func (j *jsiiProxy_GoogleComputeMachineImage) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -595,7 +594,7 @@ func (j *jsiiProxy_GoogleComputeMachineImage)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeMachineImage)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleComputeMachineImage) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -606,7 +605,7 @@ func (j *jsiiProxy_GoogleComputeMachineImage)SetLifecycle(val *cdktf.TerraformRe
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeMachineImage)SetName(val *string) {
+func (j *jsiiProxy_GoogleComputeMachineImage) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -617,7 +616,7 @@ func (j *jsiiProxy_GoogleComputeMachineImage)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeMachineImage)SetProject(val *string) {
+func (j *jsiiProxy_GoogleComputeMachineImage) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -628,7 +627,7 @@ func (j *jsiiProxy_GoogleComputeMachineImage)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeMachineImage)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleComputeMachineImage) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -636,7 +635,7 @@ func (j *jsiiProxy_GoogleComputeMachineImage)SetProvider(val cdktf.TerraformProv
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeMachineImage)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleComputeMachineImage) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -647,7 +646,7 @@ func (j *jsiiProxy_GoogleComputeMachineImage)SetProvisioners(val *[]interface{})
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeMachineImage)SetSourceInstance(val *string) {
+func (j *jsiiProxy_GoogleComputeMachineImage) SetSourceInstance(val *string) {
 	if err := j.validateSetSourceInstanceParameters(val); err != nil {
 		panic(err)
 	}
@@ -670,7 +669,7 @@ func GoogleComputeMachineImage_GenerateConfigForImport(scope constructs.Construc
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleComputeMachineImage.GoogleComputeMachineImage",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -694,7 +693,7 @@ func GoogleComputeMachineImage_GenerateConfigForImport(scope constructs.Construc
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleComputeMachineImage_IsConstruct(x interface{}) *bool {
+func GoogleComputeMachineImage_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleComputeMachineImage_IsConstructParameters(x); err != nil {
@@ -705,7 +704,7 @@ func GoogleComputeMachineImage_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleComputeMachineImage.GoogleComputeMachineImage",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -713,7 +712,7 @@ func GoogleComputeMachineImage_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleComputeMachineImage_IsTerraformElement(x interface{}) *bool {
+func GoogleComputeMachineImage_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleComputeMachineImage_IsTerraformElementParameters(x); err != nil {
@@ -724,7 +723,7 @@ func GoogleComputeMachineImage_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleComputeMachineImage.GoogleComputeMachineImage",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -732,7 +731,7 @@ func GoogleComputeMachineImage_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleComputeMachineImage_IsTerraformResource(x interface{}) *bool {
+func GoogleComputeMachineImage_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleComputeMachineImage_IsTerraformResourceParameters(x); err != nil {
@@ -743,7 +742,7 @@ func GoogleComputeMachineImage_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleComputeMachineImage.GoogleComputeMachineImage",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -768,31 +767,31 @@ func (g *jsiiProxy_GoogleComputeMachineImage) AddMoveTarget(moveTarget *string) 
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeMachineImage) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleComputeMachineImage) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeMachineImage) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleComputeMachineImage) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -808,7 +807,7 @@ func (g *jsiiProxy_GoogleComputeMachineImage) GetBooleanAttribute(terraformAttri
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -824,7 +823,7 @@ func (g *jsiiProxy_GoogleComputeMachineImage) GetBooleanMapAttribute(terraformAt
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -840,7 +839,7 @@ func (g *jsiiProxy_GoogleComputeMachineImage) GetListAttribute(terraformAttribut
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -856,7 +855,7 @@ func (g *jsiiProxy_GoogleComputeMachineImage) GetNumberAttribute(terraformAttrib
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -872,7 +871,7 @@ func (g *jsiiProxy_GoogleComputeMachineImage) GetNumberListAttribute(terraformAt
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -888,7 +887,7 @@ func (g *jsiiProxy_GoogleComputeMachineImage) GetNumberMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -904,7 +903,7 @@ func (g *jsiiProxy_GoogleComputeMachineImage) GetStringAttribute(terraformAttrib
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -920,15 +919,15 @@ func (g *jsiiProxy_GoogleComputeMachineImage) GetStringMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeMachineImage) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleComputeMachineImage) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -947,7 +946,7 @@ func (g *jsiiProxy_GoogleComputeMachineImage) ImportFrom(id *string, provider cd
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -960,7 +959,7 @@ func (g *jsiiProxy_GoogleComputeMachineImage) InterpolationForAttribute(terrafor
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -974,18 +973,18 @@ func (g *jsiiProxy_GoogleComputeMachineImage) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeMachineImage) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleComputeMachineImage) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -996,7 +995,7 @@ func (g *jsiiProxy_GoogleComputeMachineImage) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1007,7 +1006,7 @@ func (g *jsiiProxy_GoogleComputeMachineImage) OverrideLogicalId(newLogicalId *st
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1018,7 +1017,7 @@ func (g *jsiiProxy_GoogleComputeMachineImage) PutMachineImageEncryptionKey(value
 	_jsii_.InvokeVoid(
 		g,
 		"putMachineImageEncryptionKey",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1029,7 +1028,7 @@ func (g *jsiiProxy_GoogleComputeMachineImage) PutTimeouts(value *GoogleComputeMa
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1089,8 +1088,8 @@ func (g *jsiiProxy_GoogleComputeMachineImage) ResetTimeouts() {
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeMachineImage) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleComputeMachineImage) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1102,8 +1101,8 @@ func (g *jsiiProxy_GoogleComputeMachineImage) SynthesizeAttributes() *map[string
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeMachineImage) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleComputeMachineImage) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1115,8 +1114,8 @@ func (g *jsiiProxy_GoogleComputeMachineImage) SynthesizeHclAttributes() *map[str
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeMachineImage) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleComputeMachineImage) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1128,8 +1127,8 @@ func (g *jsiiProxy_GoogleComputeMachineImage) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeMachineImage) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleComputeMachineImage) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1154,8 +1153,8 @@ func (g *jsiiProxy_GoogleComputeMachineImage) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeMachineImage) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleComputeMachineImage) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1166,4 +1165,3 @@ func (g *jsiiProxy_GoogleComputeMachineImage) ToTerraform() interface{} {
 
 	return returns
 }
-

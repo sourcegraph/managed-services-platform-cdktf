@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleNetworkServicesTlsRouteRulesMatchesList) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkServicesTlsRouteRulesMatchesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNetworkServicesTlsRouteRulesMatchesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleNetworkServicesTlsRouteRulesMatchesListParameters(terrafor
 
 	return nil
 }
-

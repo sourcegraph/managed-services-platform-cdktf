@@ -197,7 +197,7 @@ func (g *jsiiProxy_GoogleDataprocWorkflowTemplateJobsOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataprocWorkflowTemplateJobsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataprocWorkflowTemplateJobsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -262,7 +262,7 @@ func (j *jsiiProxy_GoogleDataprocWorkflowTemplateJobsOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataprocWorkflowTemplateJobsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataprocWorkflowTemplateJobsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -345,4 +345,3 @@ func validateNewGoogleDataprocWorkflowTemplateJobsOutputReferenceParameters(terr
 
 	return nil
 }
-

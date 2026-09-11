@@ -15,9 +15,9 @@ type GoogleSqlUserPasswordPolicyOutputReference interface {
 	AllowedFailedAttemptsInput() *float64
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -28,12 +28,12 @@ type GoogleSqlUserPasswordPolicyOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	EnableFailedAttemptsCheck() interface{}
-	SetEnableFailedAttemptsCheck(val interface{})
-	EnableFailedAttemptsCheckInput() interface{}
-	EnablePasswordVerification() interface{}
-	SetEnablePasswordVerification(val interface{})
-	EnablePasswordVerificationInput() interface{}
+	EnableFailedAttemptsCheck() any
+	SetEnableFailedAttemptsCheck(val any)
+	EnableFailedAttemptsCheckInput() any
+	EnablePasswordVerification() any
+	SetEnablePasswordVerification(val any)
+	EnablePasswordVerificationInput() any
 	// Experimental.
 	Fqn() *string
 	InternalValue() *GoogleSqlUserPasswordPolicy
@@ -53,7 +53,7 @@ type GoogleSqlUserPasswordPolicyOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -80,7 +80,7 @@ type GoogleSqlUserPasswordPolicyOutputReference interface {
 	ResetPasswordExpirationDuration()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -113,8 +113,8 @@ func (j *jsiiProxy_GoogleSqlUserPasswordPolicyOutputReference) AllowedFailedAtte
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSqlUserPasswordPolicyOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleSqlUserPasswordPolicyOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -143,8 +143,8 @@ func (j *jsiiProxy_GoogleSqlUserPasswordPolicyOutputReference) CreationStack() *
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSqlUserPasswordPolicyOutputReference) EnableFailedAttemptsCheck() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleSqlUserPasswordPolicyOutputReference) EnableFailedAttemptsCheck() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableFailedAttemptsCheck",
@@ -153,8 +153,8 @@ func (j *jsiiProxy_GoogleSqlUserPasswordPolicyOutputReference) EnableFailedAttem
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSqlUserPasswordPolicyOutputReference) EnableFailedAttemptsCheckInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleSqlUserPasswordPolicyOutputReference) EnableFailedAttemptsCheckInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableFailedAttemptsCheckInput",
@@ -163,8 +163,8 @@ func (j *jsiiProxy_GoogleSqlUserPasswordPolicyOutputReference) EnableFailedAttem
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSqlUserPasswordPolicyOutputReference) EnablePasswordVerification() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleSqlUserPasswordPolicyOutputReference) EnablePasswordVerification() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enablePasswordVerification",
@@ -173,8 +173,8 @@ func (j *jsiiProxy_GoogleSqlUserPasswordPolicyOutputReference) EnablePasswordVer
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSqlUserPasswordPolicyOutputReference) EnablePasswordVerificationInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleSqlUserPasswordPolicyOutputReference) EnablePasswordVerificationInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enablePasswordVerificationInput",
@@ -253,7 +253,6 @@ func (j *jsiiProxy_GoogleSqlUserPasswordPolicyOutputReference) TerraformResource
 	return returns
 }
 
-
 func NewGoogleSqlUserPasswordPolicyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleSqlUserPasswordPolicyOutputReference {
 	_init_.Initialize()
 
@@ -264,7 +263,7 @@ func NewGoogleSqlUserPasswordPolicyOutputReference(terraformResource cdktf.IInte
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleSqlUser.GoogleSqlUserPasswordPolicyOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -276,12 +275,12 @@ func NewGoogleSqlUserPasswordPolicyOutputReference_Override(g GoogleSqlUserPassw
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleSqlUser.GoogleSqlUserPasswordPolicyOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleSqlUserPasswordPolicyOutputReference)SetAllowedFailedAttempts(val *float64) {
+func (j *jsiiProxy_GoogleSqlUserPasswordPolicyOutputReference) SetAllowedFailedAttempts(val *float64) {
 	if err := j.validateSetAllowedFailedAttemptsParameters(val); err != nil {
 		panic(err)
 	}
@@ -292,7 +291,7 @@ func (j *jsiiProxy_GoogleSqlUserPasswordPolicyOutputReference)SetAllowedFailedAt
 	)
 }
 
-func (j *jsiiProxy_GoogleSqlUserPasswordPolicyOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleSqlUserPasswordPolicyOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -303,7 +302,7 @@ func (j *jsiiProxy_GoogleSqlUserPasswordPolicyOutputReference)SetComplexObjectIn
 	)
 }
 
-func (j *jsiiProxy_GoogleSqlUserPasswordPolicyOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleSqlUserPasswordPolicyOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -314,7 +313,7 @@ func (j *jsiiProxy_GoogleSqlUserPasswordPolicyOutputReference)SetComplexObjectIs
 	)
 }
 
-func (j *jsiiProxy_GoogleSqlUserPasswordPolicyOutputReference)SetEnableFailedAttemptsCheck(val interface{}) {
+func (j *jsiiProxy_GoogleSqlUserPasswordPolicyOutputReference) SetEnableFailedAttemptsCheck(val any) {
 	if err := j.validateSetEnableFailedAttemptsCheckParameters(val); err != nil {
 		panic(err)
 	}
@@ -325,7 +324,7 @@ func (j *jsiiProxy_GoogleSqlUserPasswordPolicyOutputReference)SetEnableFailedAtt
 	)
 }
 
-func (j *jsiiProxy_GoogleSqlUserPasswordPolicyOutputReference)SetEnablePasswordVerification(val interface{}) {
+func (j *jsiiProxy_GoogleSqlUserPasswordPolicyOutputReference) SetEnablePasswordVerification(val any) {
 	if err := j.validateSetEnablePasswordVerificationParameters(val); err != nil {
 		panic(err)
 	}
@@ -336,7 +335,7 @@ func (j *jsiiProxy_GoogleSqlUserPasswordPolicyOutputReference)SetEnablePasswordV
 	)
 }
 
-func (j *jsiiProxy_GoogleSqlUserPasswordPolicyOutputReference)SetInternalValue(val *GoogleSqlUserPasswordPolicy) {
+func (j *jsiiProxy_GoogleSqlUserPasswordPolicyOutputReference) SetInternalValue(val *GoogleSqlUserPasswordPolicy) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,7 +346,7 @@ func (j *jsiiProxy_GoogleSqlUserPasswordPolicyOutputReference)SetInternalValue(v
 	)
 }
 
-func (j *jsiiProxy_GoogleSqlUserPasswordPolicyOutputReference)SetPasswordExpirationDuration(val *string) {
+func (j *jsiiProxy_GoogleSqlUserPasswordPolicyOutputReference) SetPasswordExpirationDuration(val *string) {
 	if err := j.validateSetPasswordExpirationDurationParameters(val); err != nil {
 		panic(err)
 	}
@@ -358,7 +357,7 @@ func (j *jsiiProxy_GoogleSqlUserPasswordPolicyOutputReference)SetPasswordExpirat
 	)
 }
 
-func (j *jsiiProxy_GoogleSqlUserPasswordPolicyOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleSqlUserPasswordPolicyOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -369,7 +368,7 @@ func (j *jsiiProxy_GoogleSqlUserPasswordPolicyOutputReference)SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_GoogleSqlUserPasswordPolicyOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleSqlUserPasswordPolicyOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -393,16 +392,16 @@ func (g *jsiiProxy_GoogleSqlUserPasswordPolicyOutputReference) ComputeFqn() *str
 	return returns
 }
 
-func (g *jsiiProxy_GoogleSqlUserPasswordPolicyOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleSqlUserPasswordPolicyOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -418,7 +417,7 @@ func (g *jsiiProxy_GoogleSqlUserPasswordPolicyOutputReference) GetBooleanAttribu
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -434,7 +433,7 @@ func (g *jsiiProxy_GoogleSqlUserPasswordPolicyOutputReference) GetBooleanMapAttr
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -450,7 +449,7 @@ func (g *jsiiProxy_GoogleSqlUserPasswordPolicyOutputReference) GetListAttribute(
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -466,7 +465,7 @@ func (g *jsiiProxy_GoogleSqlUserPasswordPolicyOutputReference) GetNumberAttribut
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -482,7 +481,7 @@ func (g *jsiiProxy_GoogleSqlUserPasswordPolicyOutputReference) GetNumberListAttr
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -498,7 +497,7 @@ func (g *jsiiProxy_GoogleSqlUserPasswordPolicyOutputReference) GetNumberMapAttri
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -514,7 +513,7 @@ func (g *jsiiProxy_GoogleSqlUserPasswordPolicyOutputReference) GetStringAttribut
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -530,7 +529,7 @@ func (g *jsiiProxy_GoogleSqlUserPasswordPolicyOutputReference) GetStringMapAttri
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -559,7 +558,7 @@ func (g *jsiiProxy_GoogleSqlUserPasswordPolicyOutputReference) InterpolationForA
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -598,16 +597,16 @@ func (g *jsiiProxy_GoogleSqlUserPasswordPolicyOutputReference) ResetPasswordExpi
 	)
 }
 
-func (g *jsiiProxy_GoogleSqlUserPasswordPolicyOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleSqlUserPasswordPolicyOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -626,4 +625,3 @@ func (g *jsiiProxy_GoogleSqlUserPasswordPolicyOutputReference) ToString() *strin
 
 	return returns
 }
-

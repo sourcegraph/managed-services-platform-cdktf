@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleStorageBucketCorsOutputReference) validateResolveParame
 	return nil
 }
 
-func (j *jsiiProxy_GoogleStorageBucketCorsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleStorageBucketCorsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_GoogleStorageBucketCorsOutputReference) validateSetComplexObj
 	return nil
 }
 
-func (j *jsiiProxy_GoogleStorageBucketCorsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleStorageBucketCorsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -254,4 +254,3 @@ func validateNewGoogleStorageBucketCorsOutputReferenceParameters(terraformResour
 
 	return nil
 }
-

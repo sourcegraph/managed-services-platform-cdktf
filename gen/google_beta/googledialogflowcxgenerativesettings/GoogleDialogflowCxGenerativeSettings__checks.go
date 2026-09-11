@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleDialogflowCxGenerativeSettings) validateAddMoveTargetPa
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDialogflowCxGenerativeSettings) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleDialogflowCxGenerativeSettings) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleDialogflowCxGenerativeSettings) validateMoveFromIdParam
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDialogflowCxGenerativeSettings) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleDialogflowCxGenerativeSettings) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -275,7 +275,7 @@ func validateGoogleDialogflowCxGenerativeSettings_GenerateConfigForImportParamet
 	return nil
 }
 
-func validateGoogleDialogflowCxGenerativeSettings_IsConstructParameters(x interface{}) error {
+func validateGoogleDialogflowCxGenerativeSettings_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -283,7 +283,7 @@ func validateGoogleDialogflowCxGenerativeSettings_IsConstructParameters(x interf
 	return nil
 }
 
-func validateGoogleDialogflowCxGenerativeSettings_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleDialogflowCxGenerativeSettings_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -291,7 +291,7 @@ func validateGoogleDialogflowCxGenerativeSettings_IsTerraformElementParameters(x
 	return nil
 }
 
-func validateGoogleDialogflowCxGenerativeSettings_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleDialogflowCxGenerativeSettings_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -299,7 +299,7 @@ func validateGoogleDialogflowCxGenerativeSettings_IsTerraformResourceParameters(
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxGenerativeSettings) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDialogflowCxGenerativeSettings) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -332,7 +332,7 @@ func (j *jsiiProxy_GoogleDialogflowCxGenerativeSettings) validateSetConnectionPa
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxGenerativeSettings) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDialogflowCxGenerativeSettings) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -421,7 +421,7 @@ func (j *jsiiProxy_GoogleDialogflowCxGenerativeSettings) validateSetParentParame
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxGenerativeSettings) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleDialogflowCxGenerativeSettings) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -485,4 +485,3 @@ func validateNewGoogleDialogflowCxGenerativeSettingsParameters(scope constructs.
 
 	return nil
 }
-

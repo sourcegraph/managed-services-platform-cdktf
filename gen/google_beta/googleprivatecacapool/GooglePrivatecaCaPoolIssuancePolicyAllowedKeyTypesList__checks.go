@@ -34,7 +34,7 @@ func (g *jsiiProxy_GooglePrivatecaCaPoolIssuancePolicyAllowedKeyTypesList) valid
 	return nil
 }
 
-func (j *jsiiProxy_GooglePrivatecaCaPoolIssuancePolicyAllowedKeyTypesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GooglePrivatecaCaPoolIssuancePolicyAllowedKeyTypesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGooglePrivatecaCaPoolIssuancePolicyAllowedKeyTypesListParameters
 
 	return nil
 }
-

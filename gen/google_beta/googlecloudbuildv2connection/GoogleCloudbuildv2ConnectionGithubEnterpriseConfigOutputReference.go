@@ -21,9 +21,9 @@ type GoogleCloudbuildv2ConnectionGithubEnterpriseConfigOutputReference interface
 	AppSlugInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -63,7 +63,7 @@ type GoogleCloudbuildv2ConnectionGithubEnterpriseConfigOutputReference interface
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -94,7 +94,7 @@ type GoogleCloudbuildv2ConnectionGithubEnterpriseConfigOutputReference interface
 	ResetWebhookSecretSecretVersion()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -167,8 +167,8 @@ func (j *jsiiProxy_GoogleCloudbuildv2ConnectionGithubEnterpriseConfigOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_GoogleCloudbuildv2ConnectionGithubEnterpriseConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleCloudbuildv2ConnectionGithubEnterpriseConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -337,7 +337,6 @@ func (j *jsiiProxy_GoogleCloudbuildv2ConnectionGithubEnterpriseConfigOutputRefer
 	return returns
 }
 
-
 func NewGoogleCloudbuildv2ConnectionGithubEnterpriseConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleCloudbuildv2ConnectionGithubEnterpriseConfigOutputReference {
 	_init_.Initialize()
 
@@ -348,7 +347,7 @@ func NewGoogleCloudbuildv2ConnectionGithubEnterpriseConfigOutputReference(terraf
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleCloudbuildv2Connection.GoogleCloudbuildv2ConnectionGithubEnterpriseConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -360,12 +359,12 @@ func NewGoogleCloudbuildv2ConnectionGithubEnterpriseConfigOutputReference_Overri
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleCloudbuildv2Connection.GoogleCloudbuildv2ConnectionGithubEnterpriseConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudbuildv2ConnectionGithubEnterpriseConfigOutputReference)SetAppId(val *float64) {
+func (j *jsiiProxy_GoogleCloudbuildv2ConnectionGithubEnterpriseConfigOutputReference) SetAppId(val *float64) {
 	if err := j.validateSetAppIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -376,7 +375,7 @@ func (j *jsiiProxy_GoogleCloudbuildv2ConnectionGithubEnterpriseConfigOutputRefer
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudbuildv2ConnectionGithubEnterpriseConfigOutputReference)SetAppInstallationId(val *float64) {
+func (j *jsiiProxy_GoogleCloudbuildv2ConnectionGithubEnterpriseConfigOutputReference) SetAppInstallationId(val *float64) {
 	if err := j.validateSetAppInstallationIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -387,7 +386,7 @@ func (j *jsiiProxy_GoogleCloudbuildv2ConnectionGithubEnterpriseConfigOutputRefer
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudbuildv2ConnectionGithubEnterpriseConfigOutputReference)SetAppSlug(val *string) {
+func (j *jsiiProxy_GoogleCloudbuildv2ConnectionGithubEnterpriseConfigOutputReference) SetAppSlug(val *string) {
 	if err := j.validateSetAppSlugParameters(val); err != nil {
 		panic(err)
 	}
@@ -398,7 +397,7 @@ func (j *jsiiProxy_GoogleCloudbuildv2ConnectionGithubEnterpriseConfigOutputRefer
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudbuildv2ConnectionGithubEnterpriseConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleCloudbuildv2ConnectionGithubEnterpriseConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -409,7 +408,7 @@ func (j *jsiiProxy_GoogleCloudbuildv2ConnectionGithubEnterpriseConfigOutputRefer
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudbuildv2ConnectionGithubEnterpriseConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleCloudbuildv2ConnectionGithubEnterpriseConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -420,7 +419,7 @@ func (j *jsiiProxy_GoogleCloudbuildv2ConnectionGithubEnterpriseConfigOutputRefer
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudbuildv2ConnectionGithubEnterpriseConfigOutputReference)SetHostUri(val *string) {
+func (j *jsiiProxy_GoogleCloudbuildv2ConnectionGithubEnterpriseConfigOutputReference) SetHostUri(val *string) {
 	if err := j.validateSetHostUriParameters(val); err != nil {
 		panic(err)
 	}
@@ -431,7 +430,7 @@ func (j *jsiiProxy_GoogleCloudbuildv2ConnectionGithubEnterpriseConfigOutputRefer
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudbuildv2ConnectionGithubEnterpriseConfigOutputReference)SetInternalValue(val *GoogleCloudbuildv2ConnectionGithubEnterpriseConfig) {
+func (j *jsiiProxy_GoogleCloudbuildv2ConnectionGithubEnterpriseConfigOutputReference) SetInternalValue(val *GoogleCloudbuildv2ConnectionGithubEnterpriseConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -442,7 +441,7 @@ func (j *jsiiProxy_GoogleCloudbuildv2ConnectionGithubEnterpriseConfigOutputRefer
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudbuildv2ConnectionGithubEnterpriseConfigOutputReference)SetPrivateKeySecretVersion(val *string) {
+func (j *jsiiProxy_GoogleCloudbuildv2ConnectionGithubEnterpriseConfigOutputReference) SetPrivateKeySecretVersion(val *string) {
 	if err := j.validateSetPrivateKeySecretVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -453,7 +452,7 @@ func (j *jsiiProxy_GoogleCloudbuildv2ConnectionGithubEnterpriseConfigOutputRefer
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudbuildv2ConnectionGithubEnterpriseConfigOutputReference)SetSslCa(val *string) {
+func (j *jsiiProxy_GoogleCloudbuildv2ConnectionGithubEnterpriseConfigOutputReference) SetSslCa(val *string) {
 	if err := j.validateSetSslCaParameters(val); err != nil {
 		panic(err)
 	}
@@ -464,7 +463,7 @@ func (j *jsiiProxy_GoogleCloudbuildv2ConnectionGithubEnterpriseConfigOutputRefer
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudbuildv2ConnectionGithubEnterpriseConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleCloudbuildv2ConnectionGithubEnterpriseConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -475,7 +474,7 @@ func (j *jsiiProxy_GoogleCloudbuildv2ConnectionGithubEnterpriseConfigOutputRefer
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudbuildv2ConnectionGithubEnterpriseConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleCloudbuildv2ConnectionGithubEnterpriseConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -486,7 +485,7 @@ func (j *jsiiProxy_GoogleCloudbuildv2ConnectionGithubEnterpriseConfigOutputRefer
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudbuildv2ConnectionGithubEnterpriseConfigOutputReference)SetWebhookSecretSecretVersion(val *string) {
+func (j *jsiiProxy_GoogleCloudbuildv2ConnectionGithubEnterpriseConfigOutputReference) SetWebhookSecretSecretVersion(val *string) {
 	if err := j.validateSetWebhookSecretSecretVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -510,16 +509,16 @@ func (g *jsiiProxy_GoogleCloudbuildv2ConnectionGithubEnterpriseConfigOutputRefer
 	return returns
 }
 
-func (g *jsiiProxy_GoogleCloudbuildv2ConnectionGithubEnterpriseConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleCloudbuildv2ConnectionGithubEnterpriseConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -535,7 +534,7 @@ func (g *jsiiProxy_GoogleCloudbuildv2ConnectionGithubEnterpriseConfigOutputRefer
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -551,7 +550,7 @@ func (g *jsiiProxy_GoogleCloudbuildv2ConnectionGithubEnterpriseConfigOutputRefer
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -567,7 +566,7 @@ func (g *jsiiProxy_GoogleCloudbuildv2ConnectionGithubEnterpriseConfigOutputRefer
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -583,7 +582,7 @@ func (g *jsiiProxy_GoogleCloudbuildv2ConnectionGithubEnterpriseConfigOutputRefer
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -599,7 +598,7 @@ func (g *jsiiProxy_GoogleCloudbuildv2ConnectionGithubEnterpriseConfigOutputRefer
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -615,7 +614,7 @@ func (g *jsiiProxy_GoogleCloudbuildv2ConnectionGithubEnterpriseConfigOutputRefer
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -631,7 +630,7 @@ func (g *jsiiProxy_GoogleCloudbuildv2ConnectionGithubEnterpriseConfigOutputRefer
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -647,7 +646,7 @@ func (g *jsiiProxy_GoogleCloudbuildv2ConnectionGithubEnterpriseConfigOutputRefer
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -676,7 +675,7 @@ func (g *jsiiProxy_GoogleCloudbuildv2ConnectionGithubEnterpriseConfigOutputRefer
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -690,7 +689,7 @@ func (g *jsiiProxy_GoogleCloudbuildv2ConnectionGithubEnterpriseConfigOutputRefer
 	_jsii_.InvokeVoid(
 		g,
 		"putServiceDirectoryConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -750,16 +749,16 @@ func (g *jsiiProxy_GoogleCloudbuildv2ConnectionGithubEnterpriseConfigOutputRefer
 	)
 }
 
-func (g *jsiiProxy_GoogleCloudbuildv2ConnectionGithubEnterpriseConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleCloudbuildv2ConnectionGithubEnterpriseConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -778,4 +777,3 @@ func (g *jsiiProxy_GoogleCloudbuildv2ConnectionGithubEnterpriseConfigOutputRefer
 
 	return returns
 }
-

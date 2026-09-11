@@ -117,7 +117,7 @@ func (j *jsiiProxy_GoogleApigeeTargetServerSSlInfoOutputReference) validateSetCi
 	return nil
 }
 
-func (j *jsiiProxy_GoogleApigeeTargetServerSSlInfoOutputReference) validateSetClientAuthEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleApigeeTargetServerSSlInfoOutputReference) validateSetClientAuthEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -137,7 +137,7 @@ func (j *jsiiProxy_GoogleApigeeTargetServerSSlInfoOutputReference) validateSetCl
 	return nil
 }
 
-func (j *jsiiProxy_GoogleApigeeTargetServerSSlInfoOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleApigeeTargetServerSSlInfoOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -202,7 +202,7 @@ func (j *jsiiProxy_GoogleApigeeTargetServerSSlInfoOutputReference) validateSetCo
 	return nil
 }
 
-func (j *jsiiProxy_GoogleApigeeTargetServerSSlInfoOutputReference) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleApigeeTargetServerSSlInfoOutputReference) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -222,7 +222,7 @@ func (j *jsiiProxy_GoogleApigeeTargetServerSSlInfoOutputReference) validateSetEn
 	return nil
 }
 
-func (j *jsiiProxy_GoogleApigeeTargetServerSSlInfoOutputReference) validateSetEnforceParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleApigeeTargetServerSSlInfoOutputReference) validateSetEnforceParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -242,7 +242,7 @@ func (j *jsiiProxy_GoogleApigeeTargetServerSSlInfoOutputReference) validateSetEn
 	return nil
 }
 
-func (j *jsiiProxy_GoogleApigeeTargetServerSSlInfoOutputReference) validateSetIgnoreValidationErrorsParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleApigeeTargetServerSSlInfoOutputReference) validateSetIgnoreValidationErrorsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -329,4 +329,3 @@ func validateNewGoogleApigeeTargetServerSSlInfoOutputReferenceParameters(terrafo
 
 	return nil
 }
-

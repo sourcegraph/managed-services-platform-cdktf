@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleDataplexEntryEntrySourceAncestorsList) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataplexEntryEntrySourceAncestorsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataplexEntryEntrySourceAncestorsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleDataplexEntryEntrySourceAncestorsListParameters(terraformR
 
 	return nil
 }
-

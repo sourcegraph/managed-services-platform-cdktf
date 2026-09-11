@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleCloudTasksQueueHttpTargetHeaderOverridesList) validateR
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudTasksQueueHttpTargetHeaderOverridesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleCloudTasksQueueHttpTargetHeaderOverridesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleCloudTasksQueueHttpTargetHeaderOverridesListParameters(ter
 
 	return nil
 }
-

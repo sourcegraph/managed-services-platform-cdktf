@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleComputeInstanceTemplateSchedulingGracefulShutdownMaxDur
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceTemplateSchedulingGracefulShutdownMaxDurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeInstanceTemplateSchedulingGracefulShutdownMaxDurationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGoogleComputeInstanceTemplateSchedulingGracefulShutdownMaxDurati
 
 	return nil
 }
-

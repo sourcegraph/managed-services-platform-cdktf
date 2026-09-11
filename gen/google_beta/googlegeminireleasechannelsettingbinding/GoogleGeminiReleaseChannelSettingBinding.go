@@ -15,15 +15,15 @@ type GoogleGeminiReleaseChannelSettingBinding interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -65,11 +65,11 @@ type GoogleGeminiReleaseChannelSettingBinding interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ReleaseChannelSettingId() *string
 	SetReleaseChannelSettingId(val *string)
 	ReleaseChannelSettingIdInput() *string
@@ -83,19 +83,19 @@ type GoogleGeminiReleaseChannelSettingBinding interface {
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() GoogleGeminiReleaseChannelSettingBindingTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	UpdateTime() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -113,7 +113,7 @@ type GoogleGeminiReleaseChannelSettingBinding interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -125,7 +125,7 @@ type GoogleGeminiReleaseChannelSettingBinding interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -142,17 +142,17 @@ type GoogleGeminiReleaseChannelSettingBinding interface {
 	ResetProduct()
 	ResetProject()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleGeminiReleaseChannelSettingBinding
@@ -170,8 +170,8 @@ func (j *jsiiProxy_GoogleGeminiReleaseChannelSettingBinding) CdktfStack() cdktf.
 	return returns
 }
 
-func (j *jsiiProxy_GoogleGeminiReleaseChannelSettingBinding) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleGeminiReleaseChannelSettingBinding) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -180,8 +180,8 @@ func (j *jsiiProxy_GoogleGeminiReleaseChannelSettingBinding) Connection() interf
 	return returns
 }
 
-func (j *jsiiProxy_GoogleGeminiReleaseChannelSettingBinding) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleGeminiReleaseChannelSettingBinding) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -190,8 +190,8 @@ func (j *jsiiProxy_GoogleGeminiReleaseChannelSettingBinding) ConstructNodeMetada
 	return returns
 }
 
-func (j *jsiiProxy_GoogleGeminiReleaseChannelSettingBinding) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleGeminiReleaseChannelSettingBinding) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -400,8 +400,8 @@ func (j *jsiiProxy_GoogleGeminiReleaseChannelSettingBinding) Provider() cdktf.Te
 	return returns
 }
 
-func (j *jsiiProxy_GoogleGeminiReleaseChannelSettingBinding) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleGeminiReleaseChannelSettingBinding) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -410,8 +410,8 @@ func (j *jsiiProxy_GoogleGeminiReleaseChannelSettingBinding) Provisioners() *[]i
 	return returns
 }
 
-func (j *jsiiProxy_GoogleGeminiReleaseChannelSettingBinding) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleGeminiReleaseChannelSettingBinding) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -500,8 +500,8 @@ func (j *jsiiProxy_GoogleGeminiReleaseChannelSettingBinding) TerraformLabels() c
 	return returns
 }
 
-func (j *jsiiProxy_GoogleGeminiReleaseChannelSettingBinding) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleGeminiReleaseChannelSettingBinding) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -530,8 +530,8 @@ func (j *jsiiProxy_GoogleGeminiReleaseChannelSettingBinding) Timeouts() GoogleGe
 	return returns
 }
 
-func (j *jsiiProxy_GoogleGeminiReleaseChannelSettingBinding) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleGeminiReleaseChannelSettingBinding) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -550,7 +550,6 @@ func (j *jsiiProxy_GoogleGeminiReleaseChannelSettingBinding) UpdateTime() *strin
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_gemini_release_channel_setting_binding google_gemini_release_channel_setting_binding} Resource.
 func NewGoogleGeminiReleaseChannelSettingBinding(scope constructs.Construct, id *string, config *GoogleGeminiReleaseChannelSettingBindingConfig) GoogleGeminiReleaseChannelSettingBinding {
 	_init_.Initialize()
@@ -562,7 +561,7 @@ func NewGoogleGeminiReleaseChannelSettingBinding(scope constructs.Construct, id 
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleGeminiReleaseChannelSettingBinding.GoogleGeminiReleaseChannelSettingBinding",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -575,12 +574,12 @@ func NewGoogleGeminiReleaseChannelSettingBinding_Override(g GoogleGeminiReleaseC
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleGeminiReleaseChannelSettingBinding.GoogleGeminiReleaseChannelSettingBinding",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleGeminiReleaseChannelSettingBinding)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleGeminiReleaseChannelSettingBinding) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -591,7 +590,7 @@ func (j *jsiiProxy_GoogleGeminiReleaseChannelSettingBinding)SetConnection(val in
 	)
 }
 
-func (j *jsiiProxy_GoogleGeminiReleaseChannelSettingBinding)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleGeminiReleaseChannelSettingBinding) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -602,7 +601,7 @@ func (j *jsiiProxy_GoogleGeminiReleaseChannelSettingBinding)SetCount(val interfa
 	)
 }
 
-func (j *jsiiProxy_GoogleGeminiReleaseChannelSettingBinding)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleGeminiReleaseChannelSettingBinding) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -610,7 +609,7 @@ func (j *jsiiProxy_GoogleGeminiReleaseChannelSettingBinding)SetDependsOn(val *[]
 	)
 }
 
-func (j *jsiiProxy_GoogleGeminiReleaseChannelSettingBinding)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleGeminiReleaseChannelSettingBinding) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -618,7 +617,7 @@ func (j *jsiiProxy_GoogleGeminiReleaseChannelSettingBinding)SetForEach(val cdktf
 	)
 }
 
-func (j *jsiiProxy_GoogleGeminiReleaseChannelSettingBinding)SetId(val *string) {
+func (j *jsiiProxy_GoogleGeminiReleaseChannelSettingBinding) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -629,7 +628,7 @@ func (j *jsiiProxy_GoogleGeminiReleaseChannelSettingBinding)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleGeminiReleaseChannelSettingBinding)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_GoogleGeminiReleaseChannelSettingBinding) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -640,7 +639,7 @@ func (j *jsiiProxy_GoogleGeminiReleaseChannelSettingBinding)SetLabels(val *map[s
 	)
 }
 
-func (j *jsiiProxy_GoogleGeminiReleaseChannelSettingBinding)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleGeminiReleaseChannelSettingBinding) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -651,7 +650,7 @@ func (j *jsiiProxy_GoogleGeminiReleaseChannelSettingBinding)SetLifecycle(val *cd
 	)
 }
 
-func (j *jsiiProxy_GoogleGeminiReleaseChannelSettingBinding)SetLocation(val *string) {
+func (j *jsiiProxy_GoogleGeminiReleaseChannelSettingBinding) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -662,7 +661,7 @@ func (j *jsiiProxy_GoogleGeminiReleaseChannelSettingBinding)SetLocation(val *str
 	)
 }
 
-func (j *jsiiProxy_GoogleGeminiReleaseChannelSettingBinding)SetProduct(val *string) {
+func (j *jsiiProxy_GoogleGeminiReleaseChannelSettingBinding) SetProduct(val *string) {
 	if err := j.validateSetProductParameters(val); err != nil {
 		panic(err)
 	}
@@ -673,7 +672,7 @@ func (j *jsiiProxy_GoogleGeminiReleaseChannelSettingBinding)SetProduct(val *stri
 	)
 }
 
-func (j *jsiiProxy_GoogleGeminiReleaseChannelSettingBinding)SetProject(val *string) {
+func (j *jsiiProxy_GoogleGeminiReleaseChannelSettingBinding) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -684,7 +683,7 @@ func (j *jsiiProxy_GoogleGeminiReleaseChannelSettingBinding)SetProject(val *stri
 	)
 }
 
-func (j *jsiiProxy_GoogleGeminiReleaseChannelSettingBinding)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleGeminiReleaseChannelSettingBinding) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -692,7 +691,7 @@ func (j *jsiiProxy_GoogleGeminiReleaseChannelSettingBinding)SetProvider(val cdkt
 	)
 }
 
-func (j *jsiiProxy_GoogleGeminiReleaseChannelSettingBinding)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleGeminiReleaseChannelSettingBinding) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -703,7 +702,7 @@ func (j *jsiiProxy_GoogleGeminiReleaseChannelSettingBinding)SetProvisioners(val 
 	)
 }
 
-func (j *jsiiProxy_GoogleGeminiReleaseChannelSettingBinding)SetReleaseChannelSettingId(val *string) {
+func (j *jsiiProxy_GoogleGeminiReleaseChannelSettingBinding) SetReleaseChannelSettingId(val *string) {
 	if err := j.validateSetReleaseChannelSettingIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -714,7 +713,7 @@ func (j *jsiiProxy_GoogleGeminiReleaseChannelSettingBinding)SetReleaseChannelSet
 	)
 }
 
-func (j *jsiiProxy_GoogleGeminiReleaseChannelSettingBinding)SetSettingBindingId(val *string) {
+func (j *jsiiProxy_GoogleGeminiReleaseChannelSettingBinding) SetSettingBindingId(val *string) {
 	if err := j.validateSetSettingBindingIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -725,7 +724,7 @@ func (j *jsiiProxy_GoogleGeminiReleaseChannelSettingBinding)SetSettingBindingId(
 	)
 }
 
-func (j *jsiiProxy_GoogleGeminiReleaseChannelSettingBinding)SetTarget(val *string) {
+func (j *jsiiProxy_GoogleGeminiReleaseChannelSettingBinding) SetTarget(val *string) {
 	if err := j.validateSetTargetParameters(val); err != nil {
 		panic(err)
 	}
@@ -748,7 +747,7 @@ func GoogleGeminiReleaseChannelSettingBinding_GenerateConfigForImport(scope cons
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleGeminiReleaseChannelSettingBinding.GoogleGeminiReleaseChannelSettingBinding",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -772,7 +771,7 @@ func GoogleGeminiReleaseChannelSettingBinding_GenerateConfigForImport(scope cons
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleGeminiReleaseChannelSettingBinding_IsConstruct(x interface{}) *bool {
+func GoogleGeminiReleaseChannelSettingBinding_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleGeminiReleaseChannelSettingBinding_IsConstructParameters(x); err != nil {
@@ -783,7 +782,7 @@ func GoogleGeminiReleaseChannelSettingBinding_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleGeminiReleaseChannelSettingBinding.GoogleGeminiReleaseChannelSettingBinding",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -791,7 +790,7 @@ func GoogleGeminiReleaseChannelSettingBinding_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleGeminiReleaseChannelSettingBinding_IsTerraformElement(x interface{}) *bool {
+func GoogleGeminiReleaseChannelSettingBinding_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleGeminiReleaseChannelSettingBinding_IsTerraformElementParameters(x); err != nil {
@@ -802,7 +801,7 @@ func GoogleGeminiReleaseChannelSettingBinding_IsTerraformElement(x interface{}) 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleGeminiReleaseChannelSettingBinding.GoogleGeminiReleaseChannelSettingBinding",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -810,7 +809,7 @@ func GoogleGeminiReleaseChannelSettingBinding_IsTerraformElement(x interface{}) 
 }
 
 // Experimental.
-func GoogleGeminiReleaseChannelSettingBinding_IsTerraformResource(x interface{}) *bool {
+func GoogleGeminiReleaseChannelSettingBinding_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleGeminiReleaseChannelSettingBinding_IsTerraformResourceParameters(x); err != nil {
@@ -821,7 +820,7 @@ func GoogleGeminiReleaseChannelSettingBinding_IsTerraformResource(x interface{})
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleGeminiReleaseChannelSettingBinding.GoogleGeminiReleaseChannelSettingBinding",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -846,31 +845,31 @@ func (g *jsiiProxy_GoogleGeminiReleaseChannelSettingBinding) AddMoveTarget(moveT
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleGeminiReleaseChannelSettingBinding) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleGeminiReleaseChannelSettingBinding) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleGeminiReleaseChannelSettingBinding) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleGeminiReleaseChannelSettingBinding) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -886,7 +885,7 @@ func (g *jsiiProxy_GoogleGeminiReleaseChannelSettingBinding) GetBooleanAttribute
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -902,7 +901,7 @@ func (g *jsiiProxy_GoogleGeminiReleaseChannelSettingBinding) GetBooleanMapAttrib
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -918,7 +917,7 @@ func (g *jsiiProxy_GoogleGeminiReleaseChannelSettingBinding) GetListAttribute(te
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -934,7 +933,7 @@ func (g *jsiiProxy_GoogleGeminiReleaseChannelSettingBinding) GetNumberAttribute(
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -950,7 +949,7 @@ func (g *jsiiProxy_GoogleGeminiReleaseChannelSettingBinding) GetNumberListAttrib
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -966,7 +965,7 @@ func (g *jsiiProxy_GoogleGeminiReleaseChannelSettingBinding) GetNumberMapAttribu
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -982,7 +981,7 @@ func (g *jsiiProxy_GoogleGeminiReleaseChannelSettingBinding) GetStringAttribute(
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -998,15 +997,15 @@ func (g *jsiiProxy_GoogleGeminiReleaseChannelSettingBinding) GetStringMapAttribu
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleGeminiReleaseChannelSettingBinding) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleGeminiReleaseChannelSettingBinding) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1025,7 +1024,7 @@ func (g *jsiiProxy_GoogleGeminiReleaseChannelSettingBinding) ImportFrom(id *stri
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1038,7 +1037,7 @@ func (g *jsiiProxy_GoogleGeminiReleaseChannelSettingBinding) InterpolationForAtt
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1052,18 +1051,18 @@ func (g *jsiiProxy_GoogleGeminiReleaseChannelSettingBinding) MoveFromId(id *stri
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleGeminiReleaseChannelSettingBinding) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleGeminiReleaseChannelSettingBinding) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1074,7 +1073,7 @@ func (g *jsiiProxy_GoogleGeminiReleaseChannelSettingBinding) MoveToId(id *string
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1085,7 +1084,7 @@ func (g *jsiiProxy_GoogleGeminiReleaseChannelSettingBinding) OverrideLogicalId(n
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1096,7 +1095,7 @@ func (g *jsiiProxy_GoogleGeminiReleaseChannelSettingBinding) PutTimeouts(value *
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1156,8 +1155,8 @@ func (g *jsiiProxy_GoogleGeminiReleaseChannelSettingBinding) ResetTimeouts() {
 	)
 }
 
-func (g *jsiiProxy_GoogleGeminiReleaseChannelSettingBinding) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleGeminiReleaseChannelSettingBinding) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1169,8 +1168,8 @@ func (g *jsiiProxy_GoogleGeminiReleaseChannelSettingBinding) SynthesizeAttribute
 	return returns
 }
 
-func (g *jsiiProxy_GoogleGeminiReleaseChannelSettingBinding) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleGeminiReleaseChannelSettingBinding) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1182,8 +1181,8 @@ func (g *jsiiProxy_GoogleGeminiReleaseChannelSettingBinding) SynthesizeHclAttrib
 	return returns
 }
 
-func (g *jsiiProxy_GoogleGeminiReleaseChannelSettingBinding) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleGeminiReleaseChannelSettingBinding) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1195,8 +1194,8 @@ func (g *jsiiProxy_GoogleGeminiReleaseChannelSettingBinding) ToHclTerraform() in
 	return returns
 }
 
-func (g *jsiiProxy_GoogleGeminiReleaseChannelSettingBinding) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleGeminiReleaseChannelSettingBinding) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1221,8 +1220,8 @@ func (g *jsiiProxy_GoogleGeminiReleaseChannelSettingBinding) ToString() *string 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleGeminiReleaseChannelSettingBinding) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleGeminiReleaseChannelSettingBinding) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1233,4 +1232,3 @@ func (g *jsiiProxy_GoogleGeminiReleaseChannelSettingBinding) ToTerraform() inter
 
 	return returns
 }
-

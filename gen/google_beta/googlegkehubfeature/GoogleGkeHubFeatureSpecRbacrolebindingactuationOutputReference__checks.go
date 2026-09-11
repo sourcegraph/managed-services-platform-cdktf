@@ -106,7 +106,7 @@ func (j *jsiiProxy_GoogleGkeHubFeatureSpecRbacrolebindingactuationOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGkeHubFeatureSpecRbacrolebindingactuationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleGkeHubFeatureSpecRbacrolebindingactuationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleGkeHubFeatureSpecRbacrolebindingactuationOutputReferencePa
 
 	return nil
 }
-

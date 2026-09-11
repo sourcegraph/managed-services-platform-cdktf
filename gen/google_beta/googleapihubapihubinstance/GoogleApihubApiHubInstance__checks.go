@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleApihubApiHubInstance) validateAddMoveTargetParameters(m
 	return nil
 }
 
-func (g *jsiiProxy_GoogleApihubApiHubInstance) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleApihubApiHubInstance) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleApihubApiHubInstance) validateMoveFromIdParameters(id *
 	return nil
 }
 
-func (g *jsiiProxy_GoogleApihubApiHubInstance) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleApihubApiHubInstance) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -242,7 +242,7 @@ func validateGoogleApihubApiHubInstance_GenerateConfigForImportParameters(scope 
 	return nil
 }
 
-func validateGoogleApihubApiHubInstance_IsConstructParameters(x interface{}) error {
+func validateGoogleApihubApiHubInstance_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -250,7 +250,7 @@ func validateGoogleApihubApiHubInstance_IsConstructParameters(x interface{}) err
 	return nil
 }
 
-func validateGoogleApihubApiHubInstance_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleApihubApiHubInstance_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -258,7 +258,7 @@ func validateGoogleApihubApiHubInstance_IsTerraformElementParameters(x interface
 	return nil
 }
 
-func validateGoogleApihubApiHubInstance_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleApihubApiHubInstance_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -274,7 +274,7 @@ func (j *jsiiProxy_GoogleApihubApiHubInstance) validateSetApiHubInstanceIdParame
 	return nil
 }
 
-func (j *jsiiProxy_GoogleApihubApiHubInstance) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleApihubApiHubInstance) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -307,7 +307,7 @@ func (j *jsiiProxy_GoogleApihubApiHubInstance) validateSetConnectionParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_GoogleApihubApiHubInstance) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleApihubApiHubInstance) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -412,7 +412,7 @@ func (j *jsiiProxy_GoogleApihubApiHubInstance) validateSetProjectParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleApihubApiHubInstance) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleApihubApiHubInstance) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -476,4 +476,3 @@ func validateNewGoogleApihubApiHubInstanceParameters(scope constructs.Construct,
 
 	return nil
 }
-

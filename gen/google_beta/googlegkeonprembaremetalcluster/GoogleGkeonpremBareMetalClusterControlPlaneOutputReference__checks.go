@@ -90,7 +90,7 @@ func (g *jsiiProxy_GoogleGkeonpremBareMetalClusterControlPlaneOutputReference) v
 	return nil
 }
 
-func (g *jsiiProxy_GoogleGkeonpremBareMetalClusterControlPlaneOutputReference) validatePutApiServerArgsParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleGkeonpremBareMetalClusterControlPlaneOutputReference) validatePutApiServerArgsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -140,7 +140,7 @@ func (g *jsiiProxy_GoogleGkeonpremBareMetalClusterControlPlaneOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGkeonpremBareMetalClusterControlPlaneOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleGkeonpremBareMetalClusterControlPlaneOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -240,4 +240,3 @@ func validateNewGoogleGkeonpremBareMetalClusterControlPlaneOutputReferenceParame
 
 	return nil
 }
-

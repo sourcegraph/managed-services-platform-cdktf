@@ -142,7 +142,7 @@ func (g *jsiiProxy_GoogleGkeonpremVmwareAdminClusterLoadBalancerOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGkeonpremVmwareAdminClusterLoadBalancerOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleGkeonpremVmwareAdminClusterLoadBalancerOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -242,4 +242,3 @@ func validateNewGoogleGkeonpremVmwareAdminClusterLoadBalancerOutputReferencePara
 
 	return nil
 }
-

@@ -109,7 +109,7 @@ func (g *jsiiProxy_GoogleTranscoderJobConfigElementaryStreamsVideoStreamOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleTranscoderJobConfigElementaryStreamsVideoStreamOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleTranscoderJobConfigElementaryStreamsVideoStreamOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -209,4 +209,3 @@ func validateNewGoogleTranscoderJobConfigElementaryStreamsVideoStreamOutputRefer
 
 	return nil
 }
-

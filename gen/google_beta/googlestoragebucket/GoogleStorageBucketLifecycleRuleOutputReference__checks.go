@@ -120,7 +120,7 @@ func (g *jsiiProxy_GoogleStorageBucketLifecycleRuleOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -185,7 +185,7 @@ func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleOutputReference) validateSetC
 	return nil
 }
 
-func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -244,4 +244,3 @@ func validateNewGoogleStorageBucketLifecycleRuleOutputReferenceParameters(terraf
 
 	return nil
 }
-

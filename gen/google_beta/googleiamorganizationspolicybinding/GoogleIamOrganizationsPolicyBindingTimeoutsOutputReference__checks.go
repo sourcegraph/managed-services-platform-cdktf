@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleIamOrganizationsPolicyBindingTimeoutsOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIamOrganizationsPolicyBindingTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleIamOrganizationsPolicyBindingTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_GoogleIamOrganizationsPolicyBindingTimeoutsOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIamOrganizationsPolicyBindingTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleIamOrganizationsPolicyBindingTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGoogleIamOrganizationsPolicyBindingTimeoutsOutputReferenceParame
 
 	return nil
 }
-

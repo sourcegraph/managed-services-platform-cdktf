@@ -1,6 +1,5 @@
 package googlerediscluster
 
-
 type GoogleRedisClusterCrossClusterReplicationConfig struct {
 	// The role of the cluster in cross cluster replication. Supported values are:.
 	//
@@ -21,6 +20,5 @@ type GoogleRedisClusterCrossClusterReplicationConfig struct {
 	// secondary_clusters block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_redis_cluster#secondary_clusters GoogleRedisCluster#secondary_clusters}
-	SecondaryClusters interface{} `field:"optional" json:"secondaryClusters" yaml:"secondaryClusters"`
+	SecondaryClusters any `field:"optional" json:"secondaryClusters" yaml:"secondaryClusters"`
 }
-

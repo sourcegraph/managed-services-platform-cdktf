@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleKmsCryptoKeyIamMemberConditionOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_GoogleKmsCryptoKeyIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleKmsCryptoKeyIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewGoogleKmsCryptoKeyIamMemberConditionOutputReferenceParameters(te
 
 	return nil
 }
-

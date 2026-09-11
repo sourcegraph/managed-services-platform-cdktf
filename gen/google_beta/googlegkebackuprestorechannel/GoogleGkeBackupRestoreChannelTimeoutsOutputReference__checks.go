@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleGkeBackupRestoreChannelTimeoutsOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGkeBackupRestoreChannelTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleGkeBackupRestoreChannelTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_GoogleGkeBackupRestoreChannelTimeoutsOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGkeBackupRestoreChannelTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleGkeBackupRestoreChannelTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGoogleGkeBackupRestoreChannelTimeoutsOutputReferenceParameters(t
 
 	return nil
 }
-

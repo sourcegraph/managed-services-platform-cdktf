@@ -106,7 +106,7 @@ func (j *jsiiProxy_GoogleStorageBatchOperationsJobPutMetadataOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleStorageBatchOperationsJobPutMetadataOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleStorageBatchOperationsJobPutMetadataOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -254,4 +254,3 @@ func validateNewGoogleStorageBatchOperationsJobPutMetadataOutputReferenceParamet
 
 	return nil
 }
-

@@ -1,6 +1,5 @@
 package googleosconfigv2policyorchestrator
 
-
 type GoogleOsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicies struct {
 	// Required. The id of the OS policy with the following restrictions:.
 	//
@@ -22,7 +21,7 @@ type GoogleOsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1P
 	// resource_groups block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_os_config_v2_policy_orchestrator#resource_groups GoogleOsConfigV2PolicyOrchestrator#resource_groups}
-	ResourceGroups interface{} `field:"required" json:"resourceGroups" yaml:"resourceGroups"`
+	ResourceGroups any `field:"required" json:"resourceGroups" yaml:"resourceGroups"`
 	// This flag determines the OS policy compliance status when none of the resource groups within the policy are applicable for a VM.
 	//
 	// Set this value
@@ -30,10 +29,9 @@ type GoogleOsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1P
 	// policy has nothing to validate or enforce.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_os_config_v2_policy_orchestrator#allow_no_resource_group_match GoogleOsConfigV2PolicyOrchestrator#allow_no_resource_group_match}
-	AllowNoResourceGroupMatch interface{} `field:"optional" json:"allowNoResourceGroupMatch" yaml:"allowNoResourceGroupMatch"`
+	AllowNoResourceGroupMatch any `field:"optional" json:"allowNoResourceGroupMatch" yaml:"allowNoResourceGroupMatch"`
 	// Policy description. Length of the description is limited to 1024 characters.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_os_config_v2_policy_orchestrator#description GoogleOsConfigV2PolicyOrchestrator#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
 }
-

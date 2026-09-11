@@ -98,7 +98,7 @@ func (g *jsiiProxy_GooglePubsubLiteReservationTimeoutsOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_GooglePubsubLiteReservationTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GooglePubsubLiteReservationTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_GooglePubsubLiteReservationTimeoutsOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_GooglePubsubLiteReservationTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GooglePubsubLiteReservationTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGooglePubsubLiteReservationTimeoutsOutputReferenceParameters(ter
 
 	return nil
 }
-

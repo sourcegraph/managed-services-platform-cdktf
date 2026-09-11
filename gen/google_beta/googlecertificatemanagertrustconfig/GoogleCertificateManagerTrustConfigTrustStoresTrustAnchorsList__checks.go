@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleCertificateManagerTrustConfigTrustStoresTrustAnchorsLis
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCertificateManagerTrustConfigTrustStoresTrustAnchorsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleCertificateManagerTrustConfigTrustStoresTrustAnchorsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleCertificateManagerTrustConfigTrustStoresTrustAnchorsListPa
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleHealthcareDicomStoreNotificationConfigOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleHealthcareDicomStoreNotificationConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleHealthcareDicomStoreNotificationConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_GoogleHealthcareDicomStoreNotificationConfigOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleHealthcareDicomStoreNotificationConfigOutputReference) validateSetSendForBulkImportParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleHealthcareDicomStoreNotificationConfigOutputReference) validateSetSendForBulkImportParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -226,4 +226,3 @@ func validateNewGoogleHealthcareDicomStoreNotificationConfigOutputReferenceParam
 
 	return nil
 }
-

@@ -15,15 +15,15 @@ type GooglePubsubLiteTopic interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -58,11 +58,11 @@ type GooglePubsubLiteTopic interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Region() *string
 	SetRegion(val *string)
 	RegionInput() *string
@@ -73,11 +73,11 @@ type GooglePubsubLiteTopic interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() GooglePubsubLiteTopicTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	Zone() *string
 	SetZone(val *string)
 	ZoneInput() *string
@@ -85,9 +85,9 @@ type GooglePubsubLiteTopic interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -105,7 +105,7 @@ type GooglePubsubLiteTopic interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -117,7 +117,7 @@ type GooglePubsubLiteTopic interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -139,17 +139,17 @@ type GooglePubsubLiteTopic interface {
 	ResetRetentionConfig()
 	ResetTimeouts()
 	ResetZone()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GooglePubsubLiteTopic
@@ -167,8 +167,8 @@ func (j *jsiiProxy_GooglePubsubLiteTopic) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_GooglePubsubLiteTopic) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GooglePubsubLiteTopic) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -177,8 +177,8 @@ func (j *jsiiProxy_GooglePubsubLiteTopic) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GooglePubsubLiteTopic) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GooglePubsubLiteTopic) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -187,8 +187,8 @@ func (j *jsiiProxy_GooglePubsubLiteTopic) ConstructNodeMetadata() *map[string]in
 	return returns
 }
 
-func (j *jsiiProxy_GooglePubsubLiteTopic) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GooglePubsubLiteTopic) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -347,8 +347,8 @@ func (j *jsiiProxy_GooglePubsubLiteTopic) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_GooglePubsubLiteTopic) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GooglePubsubLiteTopic) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -357,8 +357,8 @@ func (j *jsiiProxy_GooglePubsubLiteTopic) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GooglePubsubLiteTopic) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GooglePubsubLiteTopic) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -437,8 +437,8 @@ func (j *jsiiProxy_GooglePubsubLiteTopic) TerraformGeneratorMetadata() *cdktf.Te
 	return returns
 }
 
-func (j *jsiiProxy_GooglePubsubLiteTopic) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GooglePubsubLiteTopic) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -467,8 +467,8 @@ func (j *jsiiProxy_GooglePubsubLiteTopic) Timeouts() GooglePubsubLiteTopicTimeou
 	return returns
 }
 
-func (j *jsiiProxy_GooglePubsubLiteTopic) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GooglePubsubLiteTopic) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -497,7 +497,6 @@ func (j *jsiiProxy_GooglePubsubLiteTopic) ZoneInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_pubsub_lite_topic google_pubsub_lite_topic} Resource.
 func NewGooglePubsubLiteTopic(scope constructs.Construct, id *string, config *GooglePubsubLiteTopicConfig) GooglePubsubLiteTopic {
 	_init_.Initialize()
@@ -509,7 +508,7 @@ func NewGooglePubsubLiteTopic(scope constructs.Construct, id *string, config *Go
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googlePubsubLiteTopic.GooglePubsubLiteTopic",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -522,12 +521,12 @@ func NewGooglePubsubLiteTopic_Override(g GooglePubsubLiteTopic, scope constructs
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googlePubsubLiteTopic.GooglePubsubLiteTopic",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GooglePubsubLiteTopic)SetConnection(val interface{}) {
+func (j *jsiiProxy_GooglePubsubLiteTopic) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -538,7 +537,7 @@ func (j *jsiiProxy_GooglePubsubLiteTopic)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GooglePubsubLiteTopic)SetCount(val interface{}) {
+func (j *jsiiProxy_GooglePubsubLiteTopic) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -549,7 +548,7 @@ func (j *jsiiProxy_GooglePubsubLiteTopic)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GooglePubsubLiteTopic)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GooglePubsubLiteTopic) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -557,7 +556,7 @@ func (j *jsiiProxy_GooglePubsubLiteTopic)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GooglePubsubLiteTopic)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GooglePubsubLiteTopic) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -565,7 +564,7 @@ func (j *jsiiProxy_GooglePubsubLiteTopic)SetForEach(val cdktf.ITerraformIterator
 	)
 }
 
-func (j *jsiiProxy_GooglePubsubLiteTopic)SetId(val *string) {
+func (j *jsiiProxy_GooglePubsubLiteTopic) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -576,7 +575,7 @@ func (j *jsiiProxy_GooglePubsubLiteTopic)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GooglePubsubLiteTopic)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GooglePubsubLiteTopic) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -587,7 +586,7 @@ func (j *jsiiProxy_GooglePubsubLiteTopic)SetLifecycle(val *cdktf.TerraformResour
 	)
 }
 
-func (j *jsiiProxy_GooglePubsubLiteTopic)SetName(val *string) {
+func (j *jsiiProxy_GooglePubsubLiteTopic) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -598,7 +597,7 @@ func (j *jsiiProxy_GooglePubsubLiteTopic)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GooglePubsubLiteTopic)SetProject(val *string) {
+func (j *jsiiProxy_GooglePubsubLiteTopic) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -609,7 +608,7 @@ func (j *jsiiProxy_GooglePubsubLiteTopic)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GooglePubsubLiteTopic)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GooglePubsubLiteTopic) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -617,7 +616,7 @@ func (j *jsiiProxy_GooglePubsubLiteTopic)SetProvider(val cdktf.TerraformProvider
 	)
 }
 
-func (j *jsiiProxy_GooglePubsubLiteTopic)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GooglePubsubLiteTopic) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -628,7 +627,7 @@ func (j *jsiiProxy_GooglePubsubLiteTopic)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GooglePubsubLiteTopic)SetRegion(val *string) {
+func (j *jsiiProxy_GooglePubsubLiteTopic) SetRegion(val *string) {
 	if err := j.validateSetRegionParameters(val); err != nil {
 		panic(err)
 	}
@@ -639,7 +638,7 @@ func (j *jsiiProxy_GooglePubsubLiteTopic)SetRegion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GooglePubsubLiteTopic)SetZone(val *string) {
+func (j *jsiiProxy_GooglePubsubLiteTopic) SetZone(val *string) {
 	if err := j.validateSetZoneParameters(val); err != nil {
 		panic(err)
 	}
@@ -662,7 +661,7 @@ func GooglePubsubLiteTopic_GenerateConfigForImport(scope constructs.Construct, i
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googlePubsubLiteTopic.GooglePubsubLiteTopic",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -686,7 +685,7 @@ func GooglePubsubLiteTopic_GenerateConfigForImport(scope constructs.Construct, i
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GooglePubsubLiteTopic_IsConstruct(x interface{}) *bool {
+func GooglePubsubLiteTopic_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGooglePubsubLiteTopic_IsConstructParameters(x); err != nil {
@@ -697,7 +696,7 @@ func GooglePubsubLiteTopic_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googlePubsubLiteTopic.GooglePubsubLiteTopic",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -705,7 +704,7 @@ func GooglePubsubLiteTopic_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GooglePubsubLiteTopic_IsTerraformElement(x interface{}) *bool {
+func GooglePubsubLiteTopic_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGooglePubsubLiteTopic_IsTerraformElementParameters(x); err != nil {
@@ -716,7 +715,7 @@ func GooglePubsubLiteTopic_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googlePubsubLiteTopic.GooglePubsubLiteTopic",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -724,7 +723,7 @@ func GooglePubsubLiteTopic_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func GooglePubsubLiteTopic_IsTerraformResource(x interface{}) *bool {
+func GooglePubsubLiteTopic_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGooglePubsubLiteTopic_IsTerraformResourceParameters(x); err != nil {
@@ -735,7 +734,7 @@ func GooglePubsubLiteTopic_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googlePubsubLiteTopic.GooglePubsubLiteTopic",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -760,31 +759,31 @@ func (g *jsiiProxy_GooglePubsubLiteTopic) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GooglePubsubLiteTopic) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GooglePubsubLiteTopic) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GooglePubsubLiteTopic) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GooglePubsubLiteTopic) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -800,7 +799,7 @@ func (g *jsiiProxy_GooglePubsubLiteTopic) GetBooleanAttribute(terraformAttribute
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -816,7 +815,7 @@ func (g *jsiiProxy_GooglePubsubLiteTopic) GetBooleanMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -832,7 +831,7 @@ func (g *jsiiProxy_GooglePubsubLiteTopic) GetListAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -848,7 +847,7 @@ func (g *jsiiProxy_GooglePubsubLiteTopic) GetNumberAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -864,7 +863,7 @@ func (g *jsiiProxy_GooglePubsubLiteTopic) GetNumberListAttribute(terraformAttrib
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -880,7 +879,7 @@ func (g *jsiiProxy_GooglePubsubLiteTopic) GetNumberMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -896,7 +895,7 @@ func (g *jsiiProxy_GooglePubsubLiteTopic) GetStringAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -912,15 +911,15 @@ func (g *jsiiProxy_GooglePubsubLiteTopic) GetStringMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GooglePubsubLiteTopic) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GooglePubsubLiteTopic) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -939,7 +938,7 @@ func (g *jsiiProxy_GooglePubsubLiteTopic) ImportFrom(id *string, provider cdktf.
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -952,7 +951,7 @@ func (g *jsiiProxy_GooglePubsubLiteTopic) InterpolationForAttribute(terraformAtt
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -966,18 +965,18 @@ func (g *jsiiProxy_GooglePubsubLiteTopic) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GooglePubsubLiteTopic) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GooglePubsubLiteTopic) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -988,7 +987,7 @@ func (g *jsiiProxy_GooglePubsubLiteTopic) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -999,7 +998,7 @@ func (g *jsiiProxy_GooglePubsubLiteTopic) OverrideLogicalId(newLogicalId *string
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1010,7 +1009,7 @@ func (g *jsiiProxy_GooglePubsubLiteTopic) PutPartitionConfig(value *GooglePubsub
 	_jsii_.InvokeVoid(
 		g,
 		"putPartitionConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1021,7 +1020,7 @@ func (g *jsiiProxy_GooglePubsubLiteTopic) PutReservationConfig(value *GooglePubs
 	_jsii_.InvokeVoid(
 		g,
 		"putReservationConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1032,7 +1031,7 @@ func (g *jsiiProxy_GooglePubsubLiteTopic) PutRetentionConfig(value *GooglePubsub
 	_jsii_.InvokeVoid(
 		g,
 		"putRetentionConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1043,7 +1042,7 @@ func (g *jsiiProxy_GooglePubsubLiteTopic) PutTimeouts(value *GooglePubsubLiteTop
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1119,8 +1118,8 @@ func (g *jsiiProxy_GooglePubsubLiteTopic) ResetZone() {
 	)
 }
 
-func (g *jsiiProxy_GooglePubsubLiteTopic) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GooglePubsubLiteTopic) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1132,8 +1131,8 @@ func (g *jsiiProxy_GooglePubsubLiteTopic) SynthesizeAttributes() *map[string]int
 	return returns
 }
 
-func (g *jsiiProxy_GooglePubsubLiteTopic) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GooglePubsubLiteTopic) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1145,8 +1144,8 @@ func (g *jsiiProxy_GooglePubsubLiteTopic) SynthesizeHclAttributes() *map[string]
 	return returns
 }
 
-func (g *jsiiProxy_GooglePubsubLiteTopic) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GooglePubsubLiteTopic) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1158,8 +1157,8 @@ func (g *jsiiProxy_GooglePubsubLiteTopic) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (g *jsiiProxy_GooglePubsubLiteTopic) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GooglePubsubLiteTopic) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1184,8 +1183,8 @@ func (g *jsiiProxy_GooglePubsubLiteTopic) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GooglePubsubLiteTopic) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GooglePubsubLiteTopic) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1196,4 +1195,3 @@ func (g *jsiiProxy_GooglePubsubLiteTopic) ToTerraform() interface{} {
 
 	return returns
 }
-

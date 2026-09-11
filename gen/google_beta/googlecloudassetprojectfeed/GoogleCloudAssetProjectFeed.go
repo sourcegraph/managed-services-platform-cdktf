@@ -26,18 +26,18 @@ type GoogleCloudAssetProjectFeed interface {
 	Condition() GoogleCloudAssetProjectFeedConditionOutputReference
 	ConditionInput() *GoogleCloudAssetProjectFeedCondition
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	ContentType() *string
 	SetContentType(val *string)
 	ContentTypeInput() *string
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -73,26 +73,26 @@ type GoogleCloudAssetProjectFeed interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() GoogleCloudAssetProjectFeedTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -110,7 +110,7 @@ type GoogleCloudAssetProjectFeed interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -122,7 +122,7 @@ type GoogleCloudAssetProjectFeed interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -143,17 +143,17 @@ type GoogleCloudAssetProjectFeed interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleCloudAssetProjectFeed
@@ -251,8 +251,8 @@ func (j *jsiiProxy_GoogleCloudAssetProjectFeed) ConditionInput() *GoogleCloudAss
 	return returns
 }
 
-func (j *jsiiProxy_GoogleCloudAssetProjectFeed) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleCloudAssetProjectFeed) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -261,8 +261,8 @@ func (j *jsiiProxy_GoogleCloudAssetProjectFeed) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleCloudAssetProjectFeed) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleCloudAssetProjectFeed) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -291,8 +291,8 @@ func (j *jsiiProxy_GoogleCloudAssetProjectFeed) ContentTypeInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleCloudAssetProjectFeed) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleCloudAssetProjectFeed) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -461,8 +461,8 @@ func (j *jsiiProxy_GoogleCloudAssetProjectFeed) Provider() cdktf.TerraformProvid
 	return returns
 }
 
-func (j *jsiiProxy_GoogleCloudAssetProjectFeed) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleCloudAssetProjectFeed) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -471,8 +471,8 @@ func (j *jsiiProxy_GoogleCloudAssetProjectFeed) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleCloudAssetProjectFeed) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleCloudAssetProjectFeed) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -491,8 +491,8 @@ func (j *jsiiProxy_GoogleCloudAssetProjectFeed) TerraformGeneratorMetadata() *cd
 	return returns
 }
 
-func (j *jsiiProxy_GoogleCloudAssetProjectFeed) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleCloudAssetProjectFeed) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -521,8 +521,8 @@ func (j *jsiiProxy_GoogleCloudAssetProjectFeed) Timeouts() GoogleCloudAssetProje
 	return returns
 }
 
-func (j *jsiiProxy_GoogleCloudAssetProjectFeed) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleCloudAssetProjectFeed) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -530,7 +530,6 @@ func (j *jsiiProxy_GoogleCloudAssetProjectFeed) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_cloud_asset_project_feed google_cloud_asset_project_feed} Resource.
 func NewGoogleCloudAssetProjectFeed(scope constructs.Construct, id *string, config *GoogleCloudAssetProjectFeedConfig) GoogleCloudAssetProjectFeed {
@@ -543,7 +542,7 @@ func NewGoogleCloudAssetProjectFeed(scope constructs.Construct, id *string, conf
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleCloudAssetProjectFeed.GoogleCloudAssetProjectFeed",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -556,12 +555,12 @@ func NewGoogleCloudAssetProjectFeed_Override(g GoogleCloudAssetProjectFeed, scop
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleCloudAssetProjectFeed.GoogleCloudAssetProjectFeed",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudAssetProjectFeed)SetAssetNames(val *[]*string) {
+func (j *jsiiProxy_GoogleCloudAssetProjectFeed) SetAssetNames(val *[]*string) {
 	if err := j.validateSetAssetNamesParameters(val); err != nil {
 		panic(err)
 	}
@@ -572,7 +571,7 @@ func (j *jsiiProxy_GoogleCloudAssetProjectFeed)SetAssetNames(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudAssetProjectFeed)SetAssetTypes(val *[]*string) {
+func (j *jsiiProxy_GoogleCloudAssetProjectFeed) SetAssetTypes(val *[]*string) {
 	if err := j.validateSetAssetTypesParameters(val); err != nil {
 		panic(err)
 	}
@@ -583,7 +582,7 @@ func (j *jsiiProxy_GoogleCloudAssetProjectFeed)SetAssetTypes(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudAssetProjectFeed)SetBillingProject(val *string) {
+func (j *jsiiProxy_GoogleCloudAssetProjectFeed) SetBillingProject(val *string) {
 	if err := j.validateSetBillingProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -594,7 +593,7 @@ func (j *jsiiProxy_GoogleCloudAssetProjectFeed)SetBillingProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudAssetProjectFeed)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleCloudAssetProjectFeed) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -605,7 +604,7 @@ func (j *jsiiProxy_GoogleCloudAssetProjectFeed)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudAssetProjectFeed)SetContentType(val *string) {
+func (j *jsiiProxy_GoogleCloudAssetProjectFeed) SetContentType(val *string) {
 	if err := j.validateSetContentTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -616,7 +615,7 @@ func (j *jsiiProxy_GoogleCloudAssetProjectFeed)SetContentType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudAssetProjectFeed)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleCloudAssetProjectFeed) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -627,7 +626,7 @@ func (j *jsiiProxy_GoogleCloudAssetProjectFeed)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudAssetProjectFeed)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleCloudAssetProjectFeed) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -635,7 +634,7 @@ func (j *jsiiProxy_GoogleCloudAssetProjectFeed)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudAssetProjectFeed)SetFeedId(val *string) {
+func (j *jsiiProxy_GoogleCloudAssetProjectFeed) SetFeedId(val *string) {
 	if err := j.validateSetFeedIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -646,7 +645,7 @@ func (j *jsiiProxy_GoogleCloudAssetProjectFeed)SetFeedId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudAssetProjectFeed)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleCloudAssetProjectFeed) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -654,7 +653,7 @@ func (j *jsiiProxy_GoogleCloudAssetProjectFeed)SetForEach(val cdktf.ITerraformIt
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudAssetProjectFeed)SetId(val *string) {
+func (j *jsiiProxy_GoogleCloudAssetProjectFeed) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -665,7 +664,7 @@ func (j *jsiiProxy_GoogleCloudAssetProjectFeed)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudAssetProjectFeed)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleCloudAssetProjectFeed) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -676,7 +675,7 @@ func (j *jsiiProxy_GoogleCloudAssetProjectFeed)SetLifecycle(val *cdktf.Terraform
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudAssetProjectFeed)SetProject(val *string) {
+func (j *jsiiProxy_GoogleCloudAssetProjectFeed) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -687,7 +686,7 @@ func (j *jsiiProxy_GoogleCloudAssetProjectFeed)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudAssetProjectFeed)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleCloudAssetProjectFeed) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -695,7 +694,7 @@ func (j *jsiiProxy_GoogleCloudAssetProjectFeed)SetProvider(val cdktf.TerraformPr
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudAssetProjectFeed)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleCloudAssetProjectFeed) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -718,7 +717,7 @@ func GoogleCloudAssetProjectFeed_GenerateConfigForImport(scope constructs.Constr
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleCloudAssetProjectFeed.GoogleCloudAssetProjectFeed",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -742,7 +741,7 @@ func GoogleCloudAssetProjectFeed_GenerateConfigForImport(scope constructs.Constr
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleCloudAssetProjectFeed_IsConstruct(x interface{}) *bool {
+func GoogleCloudAssetProjectFeed_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleCloudAssetProjectFeed_IsConstructParameters(x); err != nil {
@@ -753,7 +752,7 @@ func GoogleCloudAssetProjectFeed_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleCloudAssetProjectFeed.GoogleCloudAssetProjectFeed",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -761,7 +760,7 @@ func GoogleCloudAssetProjectFeed_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleCloudAssetProjectFeed_IsTerraformElement(x interface{}) *bool {
+func GoogleCloudAssetProjectFeed_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleCloudAssetProjectFeed_IsTerraformElementParameters(x); err != nil {
@@ -772,7 +771,7 @@ func GoogleCloudAssetProjectFeed_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleCloudAssetProjectFeed.GoogleCloudAssetProjectFeed",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -780,7 +779,7 @@ func GoogleCloudAssetProjectFeed_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleCloudAssetProjectFeed_IsTerraformResource(x interface{}) *bool {
+func GoogleCloudAssetProjectFeed_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleCloudAssetProjectFeed_IsTerraformResourceParameters(x); err != nil {
@@ -791,7 +790,7 @@ func GoogleCloudAssetProjectFeed_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleCloudAssetProjectFeed.GoogleCloudAssetProjectFeed",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -816,31 +815,31 @@ func (g *jsiiProxy_GoogleCloudAssetProjectFeed) AddMoveTarget(moveTarget *string
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleCloudAssetProjectFeed) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleCloudAssetProjectFeed) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleCloudAssetProjectFeed) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleCloudAssetProjectFeed) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -856,7 +855,7 @@ func (g *jsiiProxy_GoogleCloudAssetProjectFeed) GetBooleanAttribute(terraformAtt
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -872,7 +871,7 @@ func (g *jsiiProxy_GoogleCloudAssetProjectFeed) GetBooleanMapAttribute(terraform
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -888,7 +887,7 @@ func (g *jsiiProxy_GoogleCloudAssetProjectFeed) GetListAttribute(terraformAttrib
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -904,7 +903,7 @@ func (g *jsiiProxy_GoogleCloudAssetProjectFeed) GetNumberAttribute(terraformAttr
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -920,7 +919,7 @@ func (g *jsiiProxy_GoogleCloudAssetProjectFeed) GetNumberListAttribute(terraform
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -936,7 +935,7 @@ func (g *jsiiProxy_GoogleCloudAssetProjectFeed) GetNumberMapAttribute(terraformA
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -952,7 +951,7 @@ func (g *jsiiProxy_GoogleCloudAssetProjectFeed) GetStringAttribute(terraformAttr
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -968,15 +967,15 @@ func (g *jsiiProxy_GoogleCloudAssetProjectFeed) GetStringMapAttribute(terraformA
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleCloudAssetProjectFeed) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleCloudAssetProjectFeed) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -995,7 +994,7 @@ func (g *jsiiProxy_GoogleCloudAssetProjectFeed) ImportFrom(id *string, provider 
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1008,7 +1007,7 @@ func (g *jsiiProxy_GoogleCloudAssetProjectFeed) InterpolationForAttribute(terraf
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1022,18 +1021,18 @@ func (g *jsiiProxy_GoogleCloudAssetProjectFeed) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleCloudAssetProjectFeed) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleCloudAssetProjectFeed) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1044,7 +1043,7 @@ func (g *jsiiProxy_GoogleCloudAssetProjectFeed) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1055,7 +1054,7 @@ func (g *jsiiProxy_GoogleCloudAssetProjectFeed) OverrideLogicalId(newLogicalId *
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1066,7 +1065,7 @@ func (g *jsiiProxy_GoogleCloudAssetProjectFeed) PutCondition(value *GoogleCloudA
 	_jsii_.InvokeVoid(
 		g,
 		"putCondition",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1077,7 +1076,7 @@ func (g *jsiiProxy_GoogleCloudAssetProjectFeed) PutFeedOutputConfig(value *Googl
 	_jsii_.InvokeVoid(
 		g,
 		"putFeedOutputConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1088,7 +1087,7 @@ func (g *jsiiProxy_GoogleCloudAssetProjectFeed) PutTimeouts(value *GoogleCloudAs
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1164,8 +1163,8 @@ func (g *jsiiProxy_GoogleCloudAssetProjectFeed) ResetTimeouts() {
 	)
 }
 
-func (g *jsiiProxy_GoogleCloudAssetProjectFeed) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleCloudAssetProjectFeed) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1177,8 +1176,8 @@ func (g *jsiiProxy_GoogleCloudAssetProjectFeed) SynthesizeAttributes() *map[stri
 	return returns
 }
 
-func (g *jsiiProxy_GoogleCloudAssetProjectFeed) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleCloudAssetProjectFeed) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1190,8 +1189,8 @@ func (g *jsiiProxy_GoogleCloudAssetProjectFeed) SynthesizeHclAttributes() *map[s
 	return returns
 }
 
-func (g *jsiiProxy_GoogleCloudAssetProjectFeed) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleCloudAssetProjectFeed) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1203,8 +1202,8 @@ func (g *jsiiProxy_GoogleCloudAssetProjectFeed) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleCloudAssetProjectFeed) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleCloudAssetProjectFeed) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1229,8 +1228,8 @@ func (g *jsiiProxy_GoogleCloudAssetProjectFeed) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleCloudAssetProjectFeed) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleCloudAssetProjectFeed) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1241,4 +1240,3 @@ func (g *jsiiProxy_GoogleCloudAssetProjectFeed) ToTerraform() interface{} {
 
 	return returns
 }
-

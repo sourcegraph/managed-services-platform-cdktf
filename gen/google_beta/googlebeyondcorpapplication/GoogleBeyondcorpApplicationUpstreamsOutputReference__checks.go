@@ -120,7 +120,7 @@ func (g *jsiiProxy_GoogleBeyondcorpApplicationUpstreamsOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBeyondcorpApplicationUpstreamsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBeyondcorpApplicationUpstreamsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -185,7 +185,7 @@ func (j *jsiiProxy_GoogleBeyondcorpApplicationUpstreamsOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBeyondcorpApplicationUpstreamsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBeyondcorpApplicationUpstreamsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -244,4 +244,3 @@ func validateNewGoogleBeyondcorpApplicationUpstreamsOutputReferenceParameters(te
 
 	return nil
 }
-

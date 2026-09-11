@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) validateAddMoveT
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) validateMoveFrom
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -242,7 +242,7 @@ func validateGoogleComputeOrganizationSecurityPolicyRule_GenerateConfigForImport
 	return nil
 }
 
-func validateGoogleComputeOrganizationSecurityPolicyRule_IsConstructParameters(x interface{}) error {
+func validateGoogleComputeOrganizationSecurityPolicyRule_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -250,7 +250,7 @@ func validateGoogleComputeOrganizationSecurityPolicyRule_IsConstructParameters(x
 	return nil
 }
 
-func validateGoogleComputeOrganizationSecurityPolicyRule_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleComputeOrganizationSecurityPolicyRule_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -258,7 +258,7 @@ func validateGoogleComputeOrganizationSecurityPolicyRule_IsTerraformElementParam
 	return nil
 }
 
-func validateGoogleComputeOrganizationSecurityPolicyRule_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleComputeOrganizationSecurityPolicyRule_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -274,7 +274,7 @@ func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) validateSetActio
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -307,7 +307,7 @@ func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) validateSetConne
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -380,7 +380,7 @@ func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) validateSetDirec
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) validateSetEnableLoggingParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) validateSetEnableLoggingParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -424,7 +424,7 @@ func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) validateSetPolic
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) validateSetPreviewParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) validateSetPreviewParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -452,7 +452,7 @@ func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) validateSetPrior
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -532,4 +532,3 @@ func validateNewGoogleComputeOrganizationSecurityPolicyRuleParameters(scope cons
 
 	return nil
 }
-

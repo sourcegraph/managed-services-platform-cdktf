@@ -120,7 +120,7 @@ func (g *jsiiProxy_GoogleHealthcarePipelineJobMappingPipelineJobOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_GoogleHealthcarePipelineJobMappingPipelineJobOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleHealthcarePipelineJobMappingPipelineJobOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -201,7 +201,7 @@ func (j *jsiiProxy_GoogleHealthcarePipelineJobMappingPipelineJobOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_GoogleHealthcarePipelineJobMappingPipelineJobOutputReference) validateSetReconciliationDestinationParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleHealthcarePipelineJobMappingPipelineJobOutputReference) validateSetReconciliationDestinationParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -248,4 +248,3 @@ func validateNewGoogleHealthcarePipelineJobMappingPipelineJobOutputReferencePara
 
 	return nil
 }
-

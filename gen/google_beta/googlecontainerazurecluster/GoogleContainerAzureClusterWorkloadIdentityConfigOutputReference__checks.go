@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleContainerAzureClusterWorkloadIdentityConfigOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerAzureClusterWorkloadIdentityConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContainerAzureClusterWorkloadIdentityConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleContainerAzureClusterWorkloadIdentityConfigOutputReference
 
 	return nil
 }
-

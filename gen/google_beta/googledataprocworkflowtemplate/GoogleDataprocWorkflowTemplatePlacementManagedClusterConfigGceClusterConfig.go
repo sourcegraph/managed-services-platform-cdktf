@@ -1,13 +1,12 @@
 package googledataprocworkflowtemplate
 
-
 type GoogleDataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfig struct {
 	// Optional.
 	//
 	// If true, all instances in the cluster will only have internal IP addresses. By default, clusters are not restricted to internal IP addresses, and will have ephemeral external IP addresses assigned to each instance. This `internal_ip_only` restriction can only be enabled for subnetwork enabled networks, and all off-cluster dependencies must be configured to be accessible without external IP addresses.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dataproc_workflow_template#internal_ip_only GoogleDataprocWorkflowTemplate#internal_ip_only}
-	InternalIpOnly interface{} `field:"optional" json:"internalIpOnly" yaml:"internalIpOnly"`
+	InternalIpOnly any `field:"optional" json:"internalIpOnly" yaml:"internalIpOnly"`
 	// The Compute Engine metadata entries to add to all instances (see [Project and instance metadata](https://cloud.google.com/compute/docs/storing-retrieving-metadata#project_and_instance_metadata)).
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dataproc_workflow_template#metadata GoogleDataprocWorkflowTemplate#metadata}
@@ -63,4 +62,3 @@ type GoogleDataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfig
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dataproc_workflow_template#zone GoogleDataprocWorkflowTemplate#zone}
 	Zone *string `field:"optional" json:"zone" yaml:"zone"`
 }
-

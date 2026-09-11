@@ -1,6 +1,5 @@
 package googlecomputenodegroup
 
-
 type GoogleComputeNodeGroupShareSettings struct {
 	// Node group sharing type. Possible values: ["ORGANIZATION", "SPECIFIC_PROJECTS", "LOCAL"].
 	//
@@ -9,6 +8,5 @@ type GoogleComputeNodeGroupShareSettings struct {
 	// project_map block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_node_group#project_map GoogleComputeNodeGroup#project_map}
-	ProjectMap interface{} `field:"optional" json:"projectMap" yaml:"projectMap"`
+	ProjectMap any `field:"optional" json:"projectMap" yaml:"projectMap"`
 }
-

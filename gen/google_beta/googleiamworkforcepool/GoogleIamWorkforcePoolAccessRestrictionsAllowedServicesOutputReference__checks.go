@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleIamWorkforcePoolAccessRestrictionsAllowedServicesOutput
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIamWorkforcePoolAccessRestrictionsAllowedServicesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleIamWorkforcePoolAccessRestrictionsAllowedServicesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_GoogleIamWorkforcePoolAccessRestrictionsAllowedServicesOutput
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIamWorkforcePoolAccessRestrictionsAllowedServicesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleIamWorkforcePoolAccessRestrictionsAllowedServicesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewGoogleIamWorkforcePoolAccessRestrictionsAllowedServicesOutputRef
 
 	return nil
 }
-

@@ -106,7 +106,7 @@ func (j *jsiiProxy_GoogleDataplexTaskExecutionSpecOutputReference) validateSetAr
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataplexTaskExecutionSpecOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataplexTaskExecutionSpecOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGoogleDataplexTaskExecutionSpecOutputReferenceParameters(terrafo
 
 	return nil
 }
-

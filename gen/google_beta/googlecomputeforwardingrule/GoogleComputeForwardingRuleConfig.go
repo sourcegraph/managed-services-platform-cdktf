@@ -6,9 +6,9 @@ import (
 
 type GoogleComputeForwardingRuleConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type GoogleComputeForwardingRuleConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Name of the resource;
 	//
 	// provided by the client when the resource is created.
@@ -46,11 +46,11 @@ type GoogleComputeForwardingRuleConfig struct {
 	// internal load balancer.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_forwarding_rule#allow_global_access GoogleComputeForwardingRule#allow_global_access}
-	AllowGlobalAccess interface{} `field:"optional" json:"allowGlobalAccess" yaml:"allowGlobalAccess"`
+	AllowGlobalAccess any `field:"optional" json:"allowGlobalAccess" yaml:"allowGlobalAccess"`
 	// This is used in PSC consumer ForwardingRule to control whether the PSC endpoint can be accessed from another region.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_forwarding_rule#allow_psc_global_access GoogleComputeForwardingRule#allow_psc_global_access}
-	AllowPscGlobalAccess interface{} `field:"optional" json:"allowPscGlobalAccess" yaml:"allowPscGlobalAccess"`
+	AllowPscGlobalAccess any `field:"optional" json:"allowPscGlobalAccess" yaml:"allowPscGlobalAccess"`
 	// The 'ports', 'portRange', and 'allPorts' fields are mutually exclusive.
 	//
 	// Only packets addressed to ports in the specified range will be forwarded
@@ -69,7 +69,7 @@ type GoogleComputeForwardingRuleConfig struct {
 	// true.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_forwarding_rule#all_ports GoogleComputeForwardingRule#all_ports}
-	AllPorts interface{} `field:"optional" json:"allPorts" yaml:"allPorts"`
+	AllPorts any `field:"optional" json:"allPorts" yaml:"allPorts"`
 	// Identifies the backend service to which the forwarding rule sends traffic.
 	//
 	// Required for Internal TCP/UDP Load Balancing and Network Load Balancing;
@@ -176,7 +176,7 @@ type GoogleComputeForwardingRuleConfig struct {
 	// 'loadBalancingScheme' set to 'INTERNAL'.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_forwarding_rule#is_mirroring_collector GoogleComputeForwardingRule#is_mirroring_collector}
-	IsMirroringCollector interface{} `field:"optional" json:"isMirroringCollector" yaml:"isMirroringCollector"`
+	IsMirroringCollector any `field:"optional" json:"isMirroringCollector" yaml:"isMirroringCollector"`
 	// Labels to apply to this forwarding rule.  A list of key->value pairs.
 	//
 	// **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
@@ -225,7 +225,7 @@ type GoogleComputeForwardingRuleConfig struct {
 	// Non-PSC forwarding rules do not use this field.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_forwarding_rule#no_automate_dns_zone GoogleComputeForwardingRule#no_automate_dns_zone}
-	NoAutomateDnsZone interface{} `field:"optional" json:"noAutomateDnsZone" yaml:"noAutomateDnsZone"`
+	NoAutomateDnsZone any `field:"optional" json:"noAutomateDnsZone" yaml:"noAutomateDnsZone"`
 	// The 'ports', 'portRange', and 'allPorts' fields are mutually exclusive.
 	//
 	// Only packets addressed to ports in the specified range will be forwarded
@@ -277,7 +277,7 @@ type GoogleComputeForwardingRuleConfig struct {
 	// This is used in PSC consumer ForwardingRule to make terraform recreate the ForwardingRule when the status is closed.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_forwarding_rule#recreate_closed_psc GoogleComputeForwardingRule#recreate_closed_psc}
-	RecreateClosedPsc interface{} `field:"optional" json:"recreateClosedPsc" yaml:"recreateClosedPsc"`
+	RecreateClosedPsc any `field:"optional" json:"recreateClosedPsc" yaml:"recreateClosedPsc"`
 	// A reference to the region where the regional forwarding rule resides.
 	//
 	// This field is not applicable to global forwarding rules.
@@ -340,4 +340,3 @@ type GoogleComputeForwardingRuleConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_forwarding_rule#timeouts GoogleComputeForwardingRule#timeouts}
 	Timeouts *GoogleComputeForwardingRuleTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

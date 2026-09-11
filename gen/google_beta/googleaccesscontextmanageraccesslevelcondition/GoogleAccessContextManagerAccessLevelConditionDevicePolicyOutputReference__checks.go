@@ -90,7 +90,7 @@ func (g *jsiiProxy_GoogleAccessContextManagerAccessLevelConditionDevicePolicyOut
 	return nil
 }
 
-func (g *jsiiProxy_GoogleAccessContextManagerAccessLevelConditionDevicePolicyOutputReference) validatePutOsConstraintsParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleAccessContextManagerAccessLevelConditionDevicePolicyOutputReference) validatePutOsConstraintsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -145,7 +145,7 @@ func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelConditionDevicePolicyOut
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelConditionDevicePolicyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelConditionDevicePolicyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -218,7 +218,7 @@ func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelConditionDevicePolicyOut
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelConditionDevicePolicyOutputReference) validateSetRequireAdminApprovalParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelConditionDevicePolicyOutputReference) validateSetRequireAdminApprovalParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -238,7 +238,7 @@ func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelConditionDevicePolicyOut
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelConditionDevicePolicyOutputReference) validateSetRequireCorpOwnedParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelConditionDevicePolicyOutputReference) validateSetRequireCorpOwnedParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -258,7 +258,7 @@ func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelConditionDevicePolicyOut
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelConditionDevicePolicyOutputReference) validateSetRequireScreenLockParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelConditionDevicePolicyOutputReference) validateSetRequireScreenLockParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -305,4 +305,3 @@ func validateNewGoogleAccessContextManagerAccessLevelConditionDevicePolicyOutput
 
 	return nil
 }
-

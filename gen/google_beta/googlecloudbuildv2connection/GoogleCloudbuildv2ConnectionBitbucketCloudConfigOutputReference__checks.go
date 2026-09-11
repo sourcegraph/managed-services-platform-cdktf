@@ -120,7 +120,7 @@ func (g *jsiiProxy_GoogleCloudbuildv2ConnectionBitbucketCloudConfigOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudbuildv2ConnectionBitbucketCloudConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleCloudbuildv2ConnectionBitbucketCloudConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -236,4 +236,3 @@ func validateNewGoogleCloudbuildv2ConnectionBitbucketCloudConfigOutputReferenceP
 
 	return nil
 }
-

@@ -1,6 +1,5 @@
 package googlesecuresourcemanagerinstance
 
-
 type GoogleSecureSourceManagerInstancePrivateConfig struct {
 	// CA pool resource, resource must in the format of 'projects/{project}/locations/{location}/caPools/{ca_pool}'.
 	//
@@ -9,6 +8,5 @@ type GoogleSecureSourceManagerInstancePrivateConfig struct {
 	// 'Indicate if it's private instance.'.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_secure_source_manager_instance#is_private GoogleSecureSourceManagerInstance#is_private}
-	IsPrivate interface{} `field:"required" json:"isPrivate" yaml:"isPrivate"`
+	IsPrivate any `field:"required" json:"isPrivate" yaml:"isPrivate"`
 }
-

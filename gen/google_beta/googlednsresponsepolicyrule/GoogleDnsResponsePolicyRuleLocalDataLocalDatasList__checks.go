@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleDnsResponsePolicyRuleLocalDataLocalDatasList) validateR
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDnsResponsePolicyRuleLocalDataLocalDatasList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDnsResponsePolicyRuleLocalDataLocalDatasList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleDnsResponsePolicyRuleLocalDataLocalDatasListParameters(ter
 
 	return nil
 }
-

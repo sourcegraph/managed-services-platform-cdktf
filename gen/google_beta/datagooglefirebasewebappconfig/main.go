@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.dataGoogleFirebaseWebAppConfig.DataGoogleFirebaseWebAppConfigA",
-		reflect.TypeOf((*DataGoogleFirebaseWebAppConfigA)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleFirebaseWebAppConfigA](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "apiKey", GoGetter: "ApiKey"},
@@ -58,7 +58,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "webAppId", GoGetter: "WebAppId"},
 			_jsii_.MemberProperty{JsiiProperty: "webAppIdInput", GoGetter: "WebAppIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleFirebaseWebAppConfigA{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -66,6 +66,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.dataGoogleFirebaseWebAppConfig.DataGoogleFirebaseWebAppConfigAConfig",
-		reflect.TypeOf((*DataGoogleFirebaseWebAppConfigAConfig)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleFirebaseWebAppConfigAConfig](),
 	)
 }

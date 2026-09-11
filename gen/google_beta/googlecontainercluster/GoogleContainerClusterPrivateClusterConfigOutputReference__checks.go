@@ -109,7 +109,7 @@ func (g *jsiiProxy_GoogleContainerClusterPrivateClusterConfigOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerClusterPrivateClusterConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContainerClusterPrivateClusterConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -174,7 +174,7 @@ func (j *jsiiProxy_GoogleContainerClusterPrivateClusterConfigOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerClusterPrivateClusterConfigOutputReference) validateSetEnablePrivateEndpointParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContainerClusterPrivateClusterConfigOutputReference) validateSetEnablePrivateEndpointParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -194,7 +194,7 @@ func (j *jsiiProxy_GoogleContainerClusterPrivateClusterConfigOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerClusterPrivateClusterConfigOutputReference) validateSetEnablePrivateNodesParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContainerClusterPrivateClusterConfigOutputReference) validateSetEnablePrivateNodesParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -265,4 +265,3 @@ func validateNewGoogleContainerClusterPrivateClusterConfigOutputReferenceParamet
 
 	return nil
 }
-

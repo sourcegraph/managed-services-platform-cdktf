@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleLoggingBillingAccountBucketConfig) validateAddMoveTarge
 	return nil
 }
 
-func (g *jsiiProxy_GoogleLoggingBillingAccountBucketConfig) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleLoggingBillingAccountBucketConfig) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleLoggingBillingAccountBucketConfig) validateMoveFromIdPa
 	return nil
 }
 
-func (g *jsiiProxy_GoogleLoggingBillingAccountBucketConfig) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleLoggingBillingAccountBucketConfig) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -215,7 +215,7 @@ func (g *jsiiProxy_GoogleLoggingBillingAccountBucketConfig) validatePutCmekSetti
 	return nil
 }
 
-func (g *jsiiProxy_GoogleLoggingBillingAccountBucketConfig) validatePutIndexConfigsParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleLoggingBillingAccountBucketConfig) validatePutIndexConfigsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -262,7 +262,7 @@ func validateGoogleLoggingBillingAccountBucketConfig_GenerateConfigForImportPara
 	return nil
 }
 
-func validateGoogleLoggingBillingAccountBucketConfig_IsConstructParameters(x interface{}) error {
+func validateGoogleLoggingBillingAccountBucketConfig_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -270,7 +270,7 @@ func validateGoogleLoggingBillingAccountBucketConfig_IsConstructParameters(x int
 	return nil
 }
 
-func validateGoogleLoggingBillingAccountBucketConfig_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleLoggingBillingAccountBucketConfig_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -278,7 +278,7 @@ func validateGoogleLoggingBillingAccountBucketConfig_IsTerraformElementParameter
 	return nil
 }
 
-func validateGoogleLoggingBillingAccountBucketConfig_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleLoggingBillingAccountBucketConfig_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -302,7 +302,7 @@ func (j *jsiiProxy_GoogleLoggingBillingAccountBucketConfig) validateSetBucketIdP
 	return nil
 }
 
-func (j *jsiiProxy_GoogleLoggingBillingAccountBucketConfig) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleLoggingBillingAccountBucketConfig) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -335,7 +335,7 @@ func (j *jsiiProxy_GoogleLoggingBillingAccountBucketConfig) validateSetConnectio
 	return nil
 }
 
-func (j *jsiiProxy_GoogleLoggingBillingAccountBucketConfig) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleLoggingBillingAccountBucketConfig) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -424,7 +424,7 @@ func (j *jsiiProxy_GoogleLoggingBillingAccountBucketConfig) validateSetLocationP
 	return nil
 }
 
-func (j *jsiiProxy_GoogleLoggingBillingAccountBucketConfig) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleLoggingBillingAccountBucketConfig) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -496,4 +496,3 @@ func validateNewGoogleLoggingBillingAccountBucketConfigParameters(scope construc
 
 	return nil
 }
-

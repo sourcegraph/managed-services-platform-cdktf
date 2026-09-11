@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleTpuV2VmSchedulingConfigOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_GoogleTpuV2VmSchedulingConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleTpuV2VmSchedulingConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_GoogleTpuV2VmSchedulingConfigOutputReference) validateSetInte
 	return nil
 }
 
-func (j *jsiiProxy_GoogleTpuV2VmSchedulingConfigOutputReference) validateSetPreemptibleParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleTpuV2VmSchedulingConfigOutputReference) validateSetPreemptibleParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -191,7 +191,7 @@ func (j *jsiiProxy_GoogleTpuV2VmSchedulingConfigOutputReference) validateSetPree
 	return nil
 }
 
-func (j *jsiiProxy_GoogleTpuV2VmSchedulingConfigOutputReference) validateSetReservedParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleTpuV2VmSchedulingConfigOutputReference) validateSetReservedParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -211,7 +211,7 @@ func (j *jsiiProxy_GoogleTpuV2VmSchedulingConfigOutputReference) validateSetRese
 	return nil
 }
 
-func (j *jsiiProxy_GoogleTpuV2VmSchedulingConfigOutputReference) validateSetSpotParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleTpuV2VmSchedulingConfigOutputReference) validateSetSpotParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -258,4 +258,3 @@ func validateNewGoogleTpuV2VmSchedulingConfigOutputReferenceParameters(terraform
 
 	return nil
 }
-

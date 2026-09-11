@@ -106,7 +106,7 @@ func (j *jsiiProxy_GoogleIdentityPlatformConfigMfaProviderConfigsTotpProviderCon
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIdentityPlatformConfigMfaProviderConfigsTotpProviderConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleIdentityPlatformConfigMfaProviderConfigsTotpProviderConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleIdentityPlatformConfigMfaProviderConfigsTotpProviderConfig
 
 	return nil
 }
-

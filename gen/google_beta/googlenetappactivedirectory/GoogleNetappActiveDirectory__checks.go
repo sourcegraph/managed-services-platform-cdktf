@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleNetappActiveDirectory) validateAddMoveTargetParameters(
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetappActiveDirectory) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleNetappActiveDirectory) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleNetappActiveDirectory) validateMoveFromIdParameters(id 
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetappActiveDirectory) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleNetappActiveDirectory) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateGoogleNetappActiveDirectory_GenerateConfigForImportParameters(scope
 	return nil
 }
 
-func validateGoogleNetappActiveDirectory_IsConstructParameters(x interface{}) error {
+func validateGoogleNetappActiveDirectory_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateGoogleNetappActiveDirectory_IsConstructParameters(x interface{}) er
 	return nil
 }
 
-func validateGoogleNetappActiveDirectory_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleNetappActiveDirectory_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateGoogleNetappActiveDirectory_IsTerraformElementParameters(x interfac
 	return nil
 }
 
-func validateGoogleNetappActiveDirectory_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleNetappActiveDirectory_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -263,7 +263,7 @@ func (j *jsiiProxy_GoogleNetappActiveDirectory) validateSetAdministratorsParamet
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetappActiveDirectory) validateSetAesEncryptionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNetappActiveDirectory) validateSetAesEncryptionParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -291,7 +291,7 @@ func (j *jsiiProxy_GoogleNetappActiveDirectory) validateSetBackupOperatorsParame
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetappActiveDirectory) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNetappActiveDirectory) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -324,7 +324,7 @@ func (j *jsiiProxy_GoogleNetappActiveDirectory) validateSetConnectionParameters(
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetappActiveDirectory) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNetappActiveDirectory) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -405,7 +405,7 @@ func (j *jsiiProxy_GoogleNetappActiveDirectory) validateSetDomainParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetappActiveDirectory) validateSetEncryptDcConnectionsParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNetappActiveDirectory) validateSetEncryptDcConnectionsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -457,7 +457,7 @@ func (j *jsiiProxy_GoogleNetappActiveDirectory) validateSetLabelsParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetappActiveDirectory) validateSetLdapSigningParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNetappActiveDirectory) validateSetLdapSigningParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -509,7 +509,7 @@ func (j *jsiiProxy_GoogleNetappActiveDirectory) validateSetNetBiosPrefixParamete
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetappActiveDirectory) validateSetNfsUsersWithLdapParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNetappActiveDirectory) validateSetNfsUsersWithLdapParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -553,7 +553,7 @@ func (j *jsiiProxy_GoogleNetappActiveDirectory) validateSetProjectParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetappActiveDirectory) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleNetappActiveDirectory) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -641,4 +641,3 @@ func validateNewGoogleNetappActiveDirectoryParameters(scope constructs.Construct
 
 	return nil
 }
-

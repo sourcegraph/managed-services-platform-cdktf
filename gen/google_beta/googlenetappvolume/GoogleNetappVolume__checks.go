@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleNetappVolume) validateAddMoveTargetParameters(moveTarge
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetappVolume) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleNetappVolume) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleNetappVolume) validateMoveFromIdParameters(id *string) 
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetappVolume) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleNetappVolume) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -297,7 +297,7 @@ func validateGoogleNetappVolume_GenerateConfigForImportParameters(scope construc
 	return nil
 }
 
-func validateGoogleNetappVolume_IsConstructParameters(x interface{}) error {
+func validateGoogleNetappVolume_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -305,7 +305,7 @@ func validateGoogleNetappVolume_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateGoogleNetappVolume_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleNetappVolume_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -313,7 +313,7 @@ func validateGoogleNetappVolume_IsTerraformElementParameters(x interface{}) erro
 	return nil
 }
 
-func validateGoogleNetappVolume_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleNetappVolume_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -329,7 +329,7 @@ func (j *jsiiProxy_GoogleNetappVolume) validateSetCapacityGibParameters(val *str
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetappVolume) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNetappVolume) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -362,7 +362,7 @@ func (j *jsiiProxy_GoogleNetappVolume) validateSetConnectionParameters(val inter
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetappVolume) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNetappVolume) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -443,7 +443,7 @@ func (j *jsiiProxy_GoogleNetappVolume) validateSetIdParameters(val *string) erro
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetappVolume) validateSetKerberosEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNetappVolume) validateSetKerberosEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -471,7 +471,7 @@ func (j *jsiiProxy_GoogleNetappVolume) validateSetLabelsParameters(val *map[stri
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetappVolume) validateSetLargeCapacityParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNetappVolume) validateSetLargeCapacityParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -507,7 +507,7 @@ func (j *jsiiProxy_GoogleNetappVolume) validateSetLocationParameters(val *string
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetappVolume) validateSetMultipleEndpointsParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNetappVolume) validateSetMultipleEndpointsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -551,7 +551,7 @@ func (j *jsiiProxy_GoogleNetappVolume) validateSetProtocolsParameters(val *[]*st
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetappVolume) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleNetappVolume) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -629,7 +629,7 @@ func (j *jsiiProxy_GoogleNetappVolume) validateSetSmbSettingsParameters(val *[]*
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetappVolume) validateSetSnapshotDirectoryParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNetappVolume) validateSetSnapshotDirectoryParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -683,4 +683,3 @@ func validateNewGoogleNetappVolumeParameters(scope constructs.Construct, id *str
 
 	return nil
 }
-

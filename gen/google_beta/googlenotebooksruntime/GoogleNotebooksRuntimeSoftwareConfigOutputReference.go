@@ -12,9 +12,9 @@ type GoogleNotebooksRuntimeSoftwareConfigOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -28,24 +28,24 @@ type GoogleNotebooksRuntimeSoftwareConfigOutputReference interface {
 	CustomGpuDriverPath() *string
 	SetCustomGpuDriverPath(val *string)
 	CustomGpuDriverPathInput() *string
-	EnableHealthMonitoring() interface{}
-	SetEnableHealthMonitoring(val interface{})
-	EnableHealthMonitoringInput() interface{}
+	EnableHealthMonitoring() any
+	SetEnableHealthMonitoring(val any)
+	EnableHealthMonitoringInput() any
 	// Experimental.
 	Fqn() *string
-	IdleShutdown() interface{}
-	SetIdleShutdown(val interface{})
-	IdleShutdownInput() interface{}
+	IdleShutdown() any
+	SetIdleShutdown(val any)
+	IdleShutdownInput() any
 	IdleShutdownTimeout() *float64
 	SetIdleShutdownTimeout(val *float64)
 	IdleShutdownTimeoutInput() *float64
-	InstallGpuDriver() interface{}
-	SetInstallGpuDriver(val interface{})
-	InstallGpuDriverInput() interface{}
+	InstallGpuDriver() any
+	SetInstallGpuDriver(val any)
+	InstallGpuDriverInput() any
 	InternalValue() *GoogleNotebooksRuntimeSoftwareConfig
 	SetInternalValue(val *GoogleNotebooksRuntimeSoftwareConfig)
 	Kernels() GoogleNotebooksRuntimeSoftwareConfigKernelsList
-	KernelsInput() interface{}
+	KernelsInput() any
 	NotebookUpgradeSchedule() *string
 	SetNotebookUpgradeSchedule(val *string)
 	NotebookUpgradeScheduleInput() *string
@@ -67,7 +67,7 @@ type GoogleNotebooksRuntimeSoftwareConfigOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -88,7 +88,7 @@ type GoogleNotebooksRuntimeSoftwareConfigOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutKernels(value interface{})
+	PutKernels(value any)
 	ResetCustomGpuDriverPath()
 	ResetEnableHealthMonitoring()
 	ResetIdleShutdown()
@@ -100,7 +100,7 @@ type GoogleNotebooksRuntimeSoftwareConfigOutputReference interface {
 	ResetPostStartupScriptBehavior()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -113,8 +113,8 @@ type jsiiProxy_GoogleNotebooksRuntimeSoftwareConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GoogleNotebooksRuntimeSoftwareConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleNotebooksRuntimeSoftwareConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -163,8 +163,8 @@ func (j *jsiiProxy_GoogleNotebooksRuntimeSoftwareConfigOutputReference) CustomGp
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNotebooksRuntimeSoftwareConfigOutputReference) EnableHealthMonitoring() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleNotebooksRuntimeSoftwareConfigOutputReference) EnableHealthMonitoring() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableHealthMonitoring",
@@ -173,8 +173,8 @@ func (j *jsiiProxy_GoogleNotebooksRuntimeSoftwareConfigOutputReference) EnableHe
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNotebooksRuntimeSoftwareConfigOutputReference) EnableHealthMonitoringInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleNotebooksRuntimeSoftwareConfigOutputReference) EnableHealthMonitoringInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableHealthMonitoringInput",
@@ -193,8 +193,8 @@ func (j *jsiiProxy_GoogleNotebooksRuntimeSoftwareConfigOutputReference) Fqn() *s
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNotebooksRuntimeSoftwareConfigOutputReference) IdleShutdown() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleNotebooksRuntimeSoftwareConfigOutputReference) IdleShutdown() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"idleShutdown",
@@ -203,8 +203,8 @@ func (j *jsiiProxy_GoogleNotebooksRuntimeSoftwareConfigOutputReference) IdleShut
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNotebooksRuntimeSoftwareConfigOutputReference) IdleShutdownInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleNotebooksRuntimeSoftwareConfigOutputReference) IdleShutdownInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"idleShutdownInput",
@@ -233,8 +233,8 @@ func (j *jsiiProxy_GoogleNotebooksRuntimeSoftwareConfigOutputReference) IdleShut
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNotebooksRuntimeSoftwareConfigOutputReference) InstallGpuDriver() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleNotebooksRuntimeSoftwareConfigOutputReference) InstallGpuDriver() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"installGpuDriver",
@@ -243,8 +243,8 @@ func (j *jsiiProxy_GoogleNotebooksRuntimeSoftwareConfigOutputReference) InstallG
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNotebooksRuntimeSoftwareConfigOutputReference) InstallGpuDriverInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleNotebooksRuntimeSoftwareConfigOutputReference) InstallGpuDriverInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"installGpuDriverInput",
@@ -273,8 +273,8 @@ func (j *jsiiProxy_GoogleNotebooksRuntimeSoftwareConfigOutputReference) Kernels(
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNotebooksRuntimeSoftwareConfigOutputReference) KernelsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleNotebooksRuntimeSoftwareConfigOutputReference) KernelsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"kernelsInput",
@@ -373,7 +373,6 @@ func (j *jsiiProxy_GoogleNotebooksRuntimeSoftwareConfigOutputReference) Upgradea
 	return returns
 }
 
-
 func NewGoogleNotebooksRuntimeSoftwareConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleNotebooksRuntimeSoftwareConfigOutputReference {
 	_init_.Initialize()
 
@@ -384,7 +383,7 @@ func NewGoogleNotebooksRuntimeSoftwareConfigOutputReference(terraformResource cd
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleNotebooksRuntime.GoogleNotebooksRuntimeSoftwareConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -396,12 +395,12 @@ func NewGoogleNotebooksRuntimeSoftwareConfigOutputReference_Override(g GoogleNot
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleNotebooksRuntime.GoogleNotebooksRuntimeSoftwareConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleNotebooksRuntimeSoftwareConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleNotebooksRuntimeSoftwareConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -412,7 +411,7 @@ func (j *jsiiProxy_GoogleNotebooksRuntimeSoftwareConfigOutputReference)SetComple
 	)
 }
 
-func (j *jsiiProxy_GoogleNotebooksRuntimeSoftwareConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleNotebooksRuntimeSoftwareConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -423,7 +422,7 @@ func (j *jsiiProxy_GoogleNotebooksRuntimeSoftwareConfigOutputReference)SetComple
 	)
 }
 
-func (j *jsiiProxy_GoogleNotebooksRuntimeSoftwareConfigOutputReference)SetCustomGpuDriverPath(val *string) {
+func (j *jsiiProxy_GoogleNotebooksRuntimeSoftwareConfigOutputReference) SetCustomGpuDriverPath(val *string) {
 	if err := j.validateSetCustomGpuDriverPathParameters(val); err != nil {
 		panic(err)
 	}
@@ -434,7 +433,7 @@ func (j *jsiiProxy_GoogleNotebooksRuntimeSoftwareConfigOutputReference)SetCustom
 	)
 }
 
-func (j *jsiiProxy_GoogleNotebooksRuntimeSoftwareConfigOutputReference)SetEnableHealthMonitoring(val interface{}) {
+func (j *jsiiProxy_GoogleNotebooksRuntimeSoftwareConfigOutputReference) SetEnableHealthMonitoring(val any) {
 	if err := j.validateSetEnableHealthMonitoringParameters(val); err != nil {
 		panic(err)
 	}
@@ -445,7 +444,7 @@ func (j *jsiiProxy_GoogleNotebooksRuntimeSoftwareConfigOutputReference)SetEnable
 	)
 }
 
-func (j *jsiiProxy_GoogleNotebooksRuntimeSoftwareConfigOutputReference)SetIdleShutdown(val interface{}) {
+func (j *jsiiProxy_GoogleNotebooksRuntimeSoftwareConfigOutputReference) SetIdleShutdown(val any) {
 	if err := j.validateSetIdleShutdownParameters(val); err != nil {
 		panic(err)
 	}
@@ -456,7 +455,7 @@ func (j *jsiiProxy_GoogleNotebooksRuntimeSoftwareConfigOutputReference)SetIdleSh
 	)
 }
 
-func (j *jsiiProxy_GoogleNotebooksRuntimeSoftwareConfigOutputReference)SetIdleShutdownTimeout(val *float64) {
+func (j *jsiiProxy_GoogleNotebooksRuntimeSoftwareConfigOutputReference) SetIdleShutdownTimeout(val *float64) {
 	if err := j.validateSetIdleShutdownTimeoutParameters(val); err != nil {
 		panic(err)
 	}
@@ -467,7 +466,7 @@ func (j *jsiiProxy_GoogleNotebooksRuntimeSoftwareConfigOutputReference)SetIdleSh
 	)
 }
 
-func (j *jsiiProxy_GoogleNotebooksRuntimeSoftwareConfigOutputReference)SetInstallGpuDriver(val interface{}) {
+func (j *jsiiProxy_GoogleNotebooksRuntimeSoftwareConfigOutputReference) SetInstallGpuDriver(val any) {
 	if err := j.validateSetInstallGpuDriverParameters(val); err != nil {
 		panic(err)
 	}
@@ -478,7 +477,7 @@ func (j *jsiiProxy_GoogleNotebooksRuntimeSoftwareConfigOutputReference)SetInstal
 	)
 }
 
-func (j *jsiiProxy_GoogleNotebooksRuntimeSoftwareConfigOutputReference)SetInternalValue(val *GoogleNotebooksRuntimeSoftwareConfig) {
+func (j *jsiiProxy_GoogleNotebooksRuntimeSoftwareConfigOutputReference) SetInternalValue(val *GoogleNotebooksRuntimeSoftwareConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -489,7 +488,7 @@ func (j *jsiiProxy_GoogleNotebooksRuntimeSoftwareConfigOutputReference)SetIntern
 	)
 }
 
-func (j *jsiiProxy_GoogleNotebooksRuntimeSoftwareConfigOutputReference)SetNotebookUpgradeSchedule(val *string) {
+func (j *jsiiProxy_GoogleNotebooksRuntimeSoftwareConfigOutputReference) SetNotebookUpgradeSchedule(val *string) {
 	if err := j.validateSetNotebookUpgradeScheduleParameters(val); err != nil {
 		panic(err)
 	}
@@ -500,7 +499,7 @@ func (j *jsiiProxy_GoogleNotebooksRuntimeSoftwareConfigOutputReference)SetNotebo
 	)
 }
 
-func (j *jsiiProxy_GoogleNotebooksRuntimeSoftwareConfigOutputReference)SetPostStartupScript(val *string) {
+func (j *jsiiProxy_GoogleNotebooksRuntimeSoftwareConfigOutputReference) SetPostStartupScript(val *string) {
 	if err := j.validateSetPostStartupScriptParameters(val); err != nil {
 		panic(err)
 	}
@@ -511,7 +510,7 @@ func (j *jsiiProxy_GoogleNotebooksRuntimeSoftwareConfigOutputReference)SetPostSt
 	)
 }
 
-func (j *jsiiProxy_GoogleNotebooksRuntimeSoftwareConfigOutputReference)SetPostStartupScriptBehavior(val *string) {
+func (j *jsiiProxy_GoogleNotebooksRuntimeSoftwareConfigOutputReference) SetPostStartupScriptBehavior(val *string) {
 	if err := j.validateSetPostStartupScriptBehaviorParameters(val); err != nil {
 		panic(err)
 	}
@@ -522,7 +521,7 @@ func (j *jsiiProxy_GoogleNotebooksRuntimeSoftwareConfigOutputReference)SetPostSt
 	)
 }
 
-func (j *jsiiProxy_GoogleNotebooksRuntimeSoftwareConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleNotebooksRuntimeSoftwareConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -533,7 +532,7 @@ func (j *jsiiProxy_GoogleNotebooksRuntimeSoftwareConfigOutputReference)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_GoogleNotebooksRuntimeSoftwareConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleNotebooksRuntimeSoftwareConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -557,16 +556,16 @@ func (g *jsiiProxy_GoogleNotebooksRuntimeSoftwareConfigOutputReference) ComputeF
 	return returns
 }
 
-func (g *jsiiProxy_GoogleNotebooksRuntimeSoftwareConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleNotebooksRuntimeSoftwareConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -582,7 +581,7 @@ func (g *jsiiProxy_GoogleNotebooksRuntimeSoftwareConfigOutputReference) GetBoole
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -598,7 +597,7 @@ func (g *jsiiProxy_GoogleNotebooksRuntimeSoftwareConfigOutputReference) GetBoole
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -614,7 +613,7 @@ func (g *jsiiProxy_GoogleNotebooksRuntimeSoftwareConfigOutputReference) GetListA
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -630,7 +629,7 @@ func (g *jsiiProxy_GoogleNotebooksRuntimeSoftwareConfigOutputReference) GetNumbe
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -646,7 +645,7 @@ func (g *jsiiProxy_GoogleNotebooksRuntimeSoftwareConfigOutputReference) GetNumbe
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -662,7 +661,7 @@ func (g *jsiiProxy_GoogleNotebooksRuntimeSoftwareConfigOutputReference) GetNumbe
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -678,7 +677,7 @@ func (g *jsiiProxy_GoogleNotebooksRuntimeSoftwareConfigOutputReference) GetStrin
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -694,7 +693,7 @@ func (g *jsiiProxy_GoogleNotebooksRuntimeSoftwareConfigOutputReference) GetStrin
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -723,21 +722,21 @@ func (g *jsiiProxy_GoogleNotebooksRuntimeSoftwareConfigOutputReference) Interpol
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleNotebooksRuntimeSoftwareConfigOutputReference) PutKernels(value interface{}) {
+func (g *jsiiProxy_GoogleNotebooksRuntimeSoftwareConfigOutputReference) PutKernels(value any) {
 	if err := g.validatePutKernelsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putKernels",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -813,16 +812,16 @@ func (g *jsiiProxy_GoogleNotebooksRuntimeSoftwareConfigOutputReference) ResetPos
 	)
 }
 
-func (g *jsiiProxy_GoogleNotebooksRuntimeSoftwareConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleNotebooksRuntimeSoftwareConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -841,4 +840,3 @@ func (g *jsiiProxy_GoogleNotebooksRuntimeSoftwareConfigOutputReference) ToString
 
 	return returns
 }
-

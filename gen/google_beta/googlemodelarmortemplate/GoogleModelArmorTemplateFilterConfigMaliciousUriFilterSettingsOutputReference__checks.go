@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleModelArmorTemplateFilterConfigMaliciousUriFilterSetting
 	return nil
 }
 
-func (j *jsiiProxy_GoogleModelArmorTemplateFilterConfigMaliciousUriFilterSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleModelArmorTemplateFilterConfigMaliciousUriFilterSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleModelArmorTemplateFilterConfigMaliciousUriFilterSettingsOu
 
 	return nil
 }
-

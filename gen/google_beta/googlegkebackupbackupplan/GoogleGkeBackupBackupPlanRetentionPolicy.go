@@ -1,6 +1,5 @@
 package googlegkebackupbackupplan
 
-
 type GoogleGkeBackupBackupPlanRetentionPolicy struct {
 	// Minimum age for a Backup created via this BackupPlan (in days).
 	//
@@ -34,6 +33,5 @@ type GoogleGkeBackupBackupPlanRetentionPolicy struct {
 	// the locked field itself.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_gke_backup_backup_plan#locked GoogleGkeBackupBackupPlan#locked}
-	Locked interface{} `field:"optional" json:"locked" yaml:"locked"`
+	Locked any `field:"optional" json:"locked" yaml:"locked"`
 }
-

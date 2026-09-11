@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleDialogflowCxGeneratorPromptTextOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxGeneratorPromptTextOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDialogflowCxGeneratorPromptTextOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleDialogflowCxGeneratorPromptTextOutputReferenceParameters(t
 
 	return nil
 }
-

@@ -17,15 +17,15 @@ type GoogleVertexAiFeaturestoreEntitytypeIamMember interface {
 	Condition() GoogleVertexAiFeaturestoreEntitytypeIamMemberConditionOutputReference
 	ConditionInput() *GoogleVertexAiFeaturestoreEntitytypeIamMemberCondition
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -62,27 +62,27 @@ type GoogleVertexAiFeaturestoreEntitytypeIamMember interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Role() *string
 	SetRole(val *string)
 	RoleInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -100,7 +100,7 @@ type GoogleVertexAiFeaturestoreEntitytypeIamMember interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -112,7 +112,7 @@ type GoogleVertexAiFeaturestoreEntitytypeIamMember interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -125,17 +125,17 @@ type GoogleVertexAiFeaturestoreEntitytypeIamMember interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleVertexAiFeaturestoreEntitytypeIamMember
@@ -173,8 +173,8 @@ func (j *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeIamMember) ConditionInput
 	return returns
 }
 
-func (j *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeIamMember) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeIamMember) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -183,8 +183,8 @@ func (j *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeIamMember) Connection() i
 	return returns
 }
 
-func (j *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeIamMember) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeIamMember) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -193,8 +193,8 @@ func (j *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeIamMember) ConstructNodeM
 	return returns
 }
 
-func (j *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeIamMember) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeIamMember) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -363,8 +363,8 @@ func (j *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeIamMember) Provider() cdk
 	return returns
 }
 
-func (j *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeIamMember) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeIamMember) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -373,8 +373,8 @@ func (j *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeIamMember) Provisioners()
 	return returns
 }
 
-func (j *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeIamMember) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeIamMember) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -413,8 +413,8 @@ func (j *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeIamMember) TerraformGener
 	return returns
 }
 
-func (j *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeIamMember) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeIamMember) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -433,7 +433,6 @@ func (j *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeIamMember) TerraformResou
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_vertex_ai_featurestore_entitytype_iam_member google_vertex_ai_featurestore_entitytype_iam_member} Resource.
 func NewGoogleVertexAiFeaturestoreEntitytypeIamMember(scope constructs.Construct, id *string, config *GoogleVertexAiFeaturestoreEntitytypeIamMemberConfig) GoogleVertexAiFeaturestoreEntitytypeIamMember {
 	_init_.Initialize()
@@ -445,7 +444,7 @@ func NewGoogleVertexAiFeaturestoreEntitytypeIamMember(scope constructs.Construct
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleVertexAiFeaturestoreEntitytypeIamMember.GoogleVertexAiFeaturestoreEntitytypeIamMember",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -458,12 +457,12 @@ func NewGoogleVertexAiFeaturestoreEntitytypeIamMember_Override(g GoogleVertexAiF
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleVertexAiFeaturestoreEntitytypeIamMember.GoogleVertexAiFeaturestoreEntitytypeIamMember",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeIamMember)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeIamMember) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -474,7 +473,7 @@ func (j *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeIamMember)SetConnection(v
 	)
 }
 
-func (j *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeIamMember)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeIamMember) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -485,7 +484,7 @@ func (j *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeIamMember)SetCount(val in
 	)
 }
 
-func (j *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeIamMember)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeIamMember) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -493,7 +492,7 @@ func (j *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeIamMember)SetDependsOn(va
 	)
 }
 
-func (j *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeIamMember)SetEntitytype(val *string) {
+func (j *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeIamMember) SetEntitytype(val *string) {
 	if err := j.validateSetEntitytypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -504,7 +503,7 @@ func (j *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeIamMember)SetEntitytype(v
 	)
 }
 
-func (j *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeIamMember)SetFeaturestore(val *string) {
+func (j *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeIamMember) SetFeaturestore(val *string) {
 	if err := j.validateSetFeaturestoreParameters(val); err != nil {
 		panic(err)
 	}
@@ -515,7 +514,7 @@ func (j *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeIamMember)SetFeaturestore
 	)
 }
 
-func (j *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeIamMember)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeIamMember) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -523,7 +522,7 @@ func (j *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeIamMember)SetForEach(val 
 	)
 }
 
-func (j *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeIamMember)SetId(val *string) {
+func (j *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeIamMember) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -534,7 +533,7 @@ func (j *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeIamMember)SetId(val *stri
 	)
 }
 
-func (j *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeIamMember)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeIamMember) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -545,7 +544,7 @@ func (j *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeIamMember)SetLifecycle(va
 	)
 }
 
-func (j *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeIamMember)SetMember(val *string) {
+func (j *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeIamMember) SetMember(val *string) {
 	if err := j.validateSetMemberParameters(val); err != nil {
 		panic(err)
 	}
@@ -556,7 +555,7 @@ func (j *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeIamMember)SetMember(val *
 	)
 }
 
-func (j *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeIamMember)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeIamMember) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -564,7 +563,7 @@ func (j *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeIamMember)SetProvider(val
 	)
 }
 
-func (j *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeIamMember)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeIamMember) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -575,7 +574,7 @@ func (j *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeIamMember)SetProvisioners
 	)
 }
 
-func (j *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeIamMember)SetRole(val *string) {
+func (j *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeIamMember) SetRole(val *string) {
 	if err := j.validateSetRoleParameters(val); err != nil {
 		panic(err)
 	}
@@ -598,7 +597,7 @@ func GoogleVertexAiFeaturestoreEntitytypeIamMember_GenerateConfigForImport(scope
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleVertexAiFeaturestoreEntitytypeIamMember.GoogleVertexAiFeaturestoreEntitytypeIamMember",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -622,7 +621,7 @@ func GoogleVertexAiFeaturestoreEntitytypeIamMember_GenerateConfigForImport(scope
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleVertexAiFeaturestoreEntitytypeIamMember_IsConstruct(x interface{}) *bool {
+func GoogleVertexAiFeaturestoreEntitytypeIamMember_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleVertexAiFeaturestoreEntitytypeIamMember_IsConstructParameters(x); err != nil {
@@ -633,7 +632,7 @@ func GoogleVertexAiFeaturestoreEntitytypeIamMember_IsConstruct(x interface{}) *b
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleVertexAiFeaturestoreEntitytypeIamMember.GoogleVertexAiFeaturestoreEntitytypeIamMember",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -641,7 +640,7 @@ func GoogleVertexAiFeaturestoreEntitytypeIamMember_IsConstruct(x interface{}) *b
 }
 
 // Experimental.
-func GoogleVertexAiFeaturestoreEntitytypeIamMember_IsTerraformElement(x interface{}) *bool {
+func GoogleVertexAiFeaturestoreEntitytypeIamMember_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleVertexAiFeaturestoreEntitytypeIamMember_IsTerraformElementParameters(x); err != nil {
@@ -652,7 +651,7 @@ func GoogleVertexAiFeaturestoreEntitytypeIamMember_IsTerraformElement(x interfac
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleVertexAiFeaturestoreEntitytypeIamMember.GoogleVertexAiFeaturestoreEntitytypeIamMember",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -660,7 +659,7 @@ func GoogleVertexAiFeaturestoreEntitytypeIamMember_IsTerraformElement(x interfac
 }
 
 // Experimental.
-func GoogleVertexAiFeaturestoreEntitytypeIamMember_IsTerraformResource(x interface{}) *bool {
+func GoogleVertexAiFeaturestoreEntitytypeIamMember_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleVertexAiFeaturestoreEntitytypeIamMember_IsTerraformResourceParameters(x); err != nil {
@@ -671,7 +670,7 @@ func GoogleVertexAiFeaturestoreEntitytypeIamMember_IsTerraformResource(x interfa
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleVertexAiFeaturestoreEntitytypeIamMember.GoogleVertexAiFeaturestoreEntitytypeIamMember",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -696,31 +695,31 @@ func (g *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeIamMember) AddMoveTarget(
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeIamMember) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeIamMember) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeIamMember) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeIamMember) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -736,7 +735,7 @@ func (g *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeIamMember) GetBooleanAttr
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -752,7 +751,7 @@ func (g *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeIamMember) GetBooleanMapA
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -768,7 +767,7 @@ func (g *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeIamMember) GetListAttribu
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -784,7 +783,7 @@ func (g *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeIamMember) GetNumberAttri
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -800,7 +799,7 @@ func (g *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeIamMember) GetNumberListA
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -816,7 +815,7 @@ func (g *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeIamMember) GetNumberMapAt
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -832,7 +831,7 @@ func (g *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeIamMember) GetStringAttri
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -848,15 +847,15 @@ func (g *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeIamMember) GetStringMapAt
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeIamMember) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeIamMember) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -875,7 +874,7 @@ func (g *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeIamMember) ImportFrom(id 
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -888,7 +887,7 @@ func (g *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeIamMember) InterpolationF
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -902,18 +901,18 @@ func (g *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeIamMember) MoveFromId(id 
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeIamMember) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeIamMember) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -924,7 +923,7 @@ func (g *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeIamMember) MoveToId(id *s
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -935,7 +934,7 @@ func (g *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeIamMember) OverrideLogica
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -946,7 +945,7 @@ func (g *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeIamMember) PutCondition(v
 	_jsii_.InvokeVoid(
 		g,
 		"putCondition",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -974,8 +973,8 @@ func (g *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeIamMember) ResetOverrideL
 	)
 }
 
-func (g *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeIamMember) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeIamMember) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -987,8 +986,8 @@ func (g *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeIamMember) SynthesizeAttr
 	return returns
 }
 
-func (g *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeIamMember) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeIamMember) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1000,8 +999,8 @@ func (g *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeIamMember) SynthesizeHclA
 	return returns
 }
 
-func (g *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeIamMember) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeIamMember) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1013,8 +1012,8 @@ func (g *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeIamMember) ToHclTerraform
 	return returns
 }
 
-func (g *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeIamMember) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeIamMember) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1039,8 +1038,8 @@ func (g *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeIamMember) ToString() *st
 	return returns
 }
 
-func (g *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeIamMember) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeIamMember) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1051,4 +1050,3 @@ func (g *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeIamMember) ToTerraform() 
 
 	return returns
 }
-

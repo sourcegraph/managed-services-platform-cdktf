@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleComputeInstanceNetworkInterfaceIpv6AccessConfigList) va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceNetworkInterfaceIpv6AccessConfigList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeInstanceNetworkInterfaceIpv6AccessConfigList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleComputeInstanceNetworkInterfaceIpv6AccessConfigListParamet
 
 	return nil
 }
-

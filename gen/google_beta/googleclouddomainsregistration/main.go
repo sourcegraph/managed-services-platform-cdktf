@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleClouddomainsRegistration.GoogleClouddomainsRegistration",
-		reflect.TypeOf((*GoogleClouddomainsRegistration)(nil)).Elem(),
+		reflect.TypeFor[GoogleClouddomainsRegistration](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -99,7 +99,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "yearlyPrice", GoGetter: "YearlyPrice"},
 			_jsii_.MemberProperty{JsiiProperty: "yearlyPriceInput", GoGetter: "YearlyPriceInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleClouddomainsRegistration{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -107,19 +107,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleClouddomainsRegistration.GoogleClouddomainsRegistrationConfig",
-		reflect.TypeOf((*GoogleClouddomainsRegistrationConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleClouddomainsRegistrationConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleClouddomainsRegistration.GoogleClouddomainsRegistrationContactSettings",
-		reflect.TypeOf((*GoogleClouddomainsRegistrationContactSettings)(nil)).Elem(),
+		reflect.TypeFor[GoogleClouddomainsRegistrationContactSettings](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleClouddomainsRegistration.GoogleClouddomainsRegistrationContactSettingsAdminContact",
-		reflect.TypeOf((*GoogleClouddomainsRegistrationContactSettingsAdminContact)(nil)).Elem(),
+		reflect.TypeFor[GoogleClouddomainsRegistrationContactSettingsAdminContact](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleClouddomainsRegistration.GoogleClouddomainsRegistrationContactSettingsAdminContactOutputReference",
-		reflect.TypeOf((*GoogleClouddomainsRegistrationContactSettingsAdminContactOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleClouddomainsRegistrationContactSettingsAdminContactOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -153,7 +153,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleClouddomainsRegistrationContactSettingsAdminContactOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -161,11 +161,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleClouddomainsRegistration.GoogleClouddomainsRegistrationContactSettingsAdminContactPostalAddress",
-		reflect.TypeOf((*GoogleClouddomainsRegistrationContactSettingsAdminContactPostalAddress)(nil)).Elem(),
+		reflect.TypeFor[GoogleClouddomainsRegistrationContactSettingsAdminContactPostalAddress](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleClouddomainsRegistration.GoogleClouddomainsRegistrationContactSettingsAdminContactPostalAddressOutputReference",
-		reflect.TypeOf((*GoogleClouddomainsRegistrationContactSettingsAdminContactPostalAddressOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleClouddomainsRegistrationContactSettingsAdminContactPostalAddressOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "addressLines", GoGetter: "AddressLines"},
 			_jsii_.MemberProperty{JsiiProperty: "addressLinesInput", GoGetter: "AddressLinesInput"},
@@ -209,7 +209,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleClouddomainsRegistrationContactSettingsAdminContactPostalAddressOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -217,7 +217,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleClouddomainsRegistration.GoogleClouddomainsRegistrationContactSettingsOutputReference",
-		reflect.TypeOf((*GoogleClouddomainsRegistrationContactSettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleClouddomainsRegistrationContactSettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "adminContact", GoGetter: "AdminContact"},
 			_jsii_.MemberProperty{JsiiProperty: "adminContactInput", GoGetter: "AdminContactInput"},
@@ -252,7 +252,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleClouddomainsRegistrationContactSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -260,11 +260,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleClouddomainsRegistration.GoogleClouddomainsRegistrationContactSettingsRegistrantContact",
-		reflect.TypeOf((*GoogleClouddomainsRegistrationContactSettingsRegistrantContact)(nil)).Elem(),
+		reflect.TypeFor[GoogleClouddomainsRegistrationContactSettingsRegistrantContact](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleClouddomainsRegistration.GoogleClouddomainsRegistrationContactSettingsRegistrantContactOutputReference",
-		reflect.TypeOf((*GoogleClouddomainsRegistrationContactSettingsRegistrantContactOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleClouddomainsRegistrationContactSettingsRegistrantContactOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -298,7 +298,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleClouddomainsRegistrationContactSettingsRegistrantContactOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -306,11 +306,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleClouddomainsRegistration.GoogleClouddomainsRegistrationContactSettingsRegistrantContactPostalAddress",
-		reflect.TypeOf((*GoogleClouddomainsRegistrationContactSettingsRegistrantContactPostalAddress)(nil)).Elem(),
+		reflect.TypeFor[GoogleClouddomainsRegistrationContactSettingsRegistrantContactPostalAddress](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleClouddomainsRegistration.GoogleClouddomainsRegistrationContactSettingsRegistrantContactPostalAddressOutputReference",
-		reflect.TypeOf((*GoogleClouddomainsRegistrationContactSettingsRegistrantContactPostalAddressOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleClouddomainsRegistrationContactSettingsRegistrantContactPostalAddressOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "addressLines", GoGetter: "AddressLines"},
 			_jsii_.MemberProperty{JsiiProperty: "addressLinesInput", GoGetter: "AddressLinesInput"},
@@ -354,7 +354,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleClouddomainsRegistrationContactSettingsRegistrantContactPostalAddressOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -362,11 +362,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleClouddomainsRegistration.GoogleClouddomainsRegistrationContactSettingsTechnicalContact",
-		reflect.TypeOf((*GoogleClouddomainsRegistrationContactSettingsTechnicalContact)(nil)).Elem(),
+		reflect.TypeFor[GoogleClouddomainsRegistrationContactSettingsTechnicalContact](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleClouddomainsRegistration.GoogleClouddomainsRegistrationContactSettingsTechnicalContactOutputReference",
-		reflect.TypeOf((*GoogleClouddomainsRegistrationContactSettingsTechnicalContactOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleClouddomainsRegistrationContactSettingsTechnicalContactOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -400,7 +400,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleClouddomainsRegistrationContactSettingsTechnicalContactOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -408,11 +408,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleClouddomainsRegistration.GoogleClouddomainsRegistrationContactSettingsTechnicalContactPostalAddress",
-		reflect.TypeOf((*GoogleClouddomainsRegistrationContactSettingsTechnicalContactPostalAddress)(nil)).Elem(),
+		reflect.TypeFor[GoogleClouddomainsRegistrationContactSettingsTechnicalContactPostalAddress](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleClouddomainsRegistration.GoogleClouddomainsRegistrationContactSettingsTechnicalContactPostalAddressOutputReference",
-		reflect.TypeOf((*GoogleClouddomainsRegistrationContactSettingsTechnicalContactPostalAddressOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleClouddomainsRegistrationContactSettingsTechnicalContactPostalAddressOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "addressLines", GoGetter: "AddressLines"},
 			_jsii_.MemberProperty{JsiiProperty: "addressLinesInput", GoGetter: "AddressLinesInput"},
@@ -456,7 +456,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleClouddomainsRegistrationContactSettingsTechnicalContactPostalAddressOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -464,19 +464,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleClouddomainsRegistration.GoogleClouddomainsRegistrationDnsSettings",
-		reflect.TypeOf((*GoogleClouddomainsRegistrationDnsSettings)(nil)).Elem(),
+		reflect.TypeFor[GoogleClouddomainsRegistrationDnsSettings](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleClouddomainsRegistration.GoogleClouddomainsRegistrationDnsSettingsCustomDns",
-		reflect.TypeOf((*GoogleClouddomainsRegistrationDnsSettingsCustomDns)(nil)).Elem(),
+		reflect.TypeFor[GoogleClouddomainsRegistrationDnsSettingsCustomDns](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleClouddomainsRegistration.GoogleClouddomainsRegistrationDnsSettingsCustomDnsDsRecords",
-		reflect.TypeOf((*GoogleClouddomainsRegistrationDnsSettingsCustomDnsDsRecords)(nil)).Elem(),
+		reflect.TypeFor[GoogleClouddomainsRegistrationDnsSettingsCustomDnsDsRecords](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleClouddomainsRegistration.GoogleClouddomainsRegistrationDnsSettingsCustomDnsDsRecordsList",
-		reflect.TypeOf((*GoogleClouddomainsRegistrationDnsSettingsCustomDnsDsRecordsList)(nil)).Elem(),
+		reflect.TypeFor[GoogleClouddomainsRegistrationDnsSettingsCustomDnsDsRecordsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -490,7 +490,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleClouddomainsRegistrationDnsSettingsCustomDnsDsRecordsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -498,7 +498,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleClouddomainsRegistration.GoogleClouddomainsRegistrationDnsSettingsCustomDnsDsRecordsOutputReference",
-		reflect.TypeOf((*GoogleClouddomainsRegistrationDnsSettingsCustomDnsDsRecordsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleClouddomainsRegistrationDnsSettingsCustomDnsDsRecordsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "algorithm", GoGetter: "Algorithm"},
 			_jsii_.MemberProperty{JsiiProperty: "algorithmInput", GoGetter: "AlgorithmInput"},
@@ -534,7 +534,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleClouddomainsRegistrationDnsSettingsCustomDnsDsRecordsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -542,7 +542,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleClouddomainsRegistration.GoogleClouddomainsRegistrationDnsSettingsCustomDnsOutputReference",
-		reflect.TypeOf((*GoogleClouddomainsRegistrationDnsSettingsCustomDnsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleClouddomainsRegistrationDnsSettingsCustomDnsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -572,7 +572,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleClouddomainsRegistrationDnsSettingsCustomDnsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -580,11 +580,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleClouddomainsRegistration.GoogleClouddomainsRegistrationDnsSettingsGlueRecords",
-		reflect.TypeOf((*GoogleClouddomainsRegistrationDnsSettingsGlueRecords)(nil)).Elem(),
+		reflect.TypeFor[GoogleClouddomainsRegistrationDnsSettingsGlueRecords](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleClouddomainsRegistration.GoogleClouddomainsRegistrationDnsSettingsGlueRecordsList",
-		reflect.TypeOf((*GoogleClouddomainsRegistrationDnsSettingsGlueRecordsList)(nil)).Elem(),
+		reflect.TypeFor[GoogleClouddomainsRegistrationDnsSettingsGlueRecordsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -598,7 +598,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleClouddomainsRegistrationDnsSettingsGlueRecordsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -606,7 +606,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleClouddomainsRegistration.GoogleClouddomainsRegistrationDnsSettingsGlueRecordsOutputReference",
-		reflect.TypeOf((*GoogleClouddomainsRegistrationDnsSettingsGlueRecordsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleClouddomainsRegistrationDnsSettingsGlueRecordsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -638,7 +638,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleClouddomainsRegistrationDnsSettingsGlueRecordsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -646,7 +646,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleClouddomainsRegistration.GoogleClouddomainsRegistrationDnsSettingsOutputReference",
-		reflect.TypeOf((*GoogleClouddomainsRegistrationDnsSettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleClouddomainsRegistrationDnsSettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -678,7 +678,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleClouddomainsRegistrationDnsSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -686,11 +686,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleClouddomainsRegistration.GoogleClouddomainsRegistrationManagementSettings",
-		reflect.TypeOf((*GoogleClouddomainsRegistrationManagementSettings)(nil)).Elem(),
+		reflect.TypeFor[GoogleClouddomainsRegistrationManagementSettings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleClouddomainsRegistration.GoogleClouddomainsRegistrationManagementSettingsOutputReference",
-		reflect.TypeOf((*GoogleClouddomainsRegistrationManagementSettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleClouddomainsRegistrationManagementSettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -721,7 +721,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "transferLockState", GoGetter: "TransferLockState"},
 			_jsii_.MemberProperty{JsiiProperty: "transferLockStateInput", GoGetter: "TransferLockStateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleClouddomainsRegistrationManagementSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -729,11 +729,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleClouddomainsRegistration.GoogleClouddomainsRegistrationTimeouts",
-		reflect.TypeOf((*GoogleClouddomainsRegistrationTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleClouddomainsRegistrationTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleClouddomainsRegistration.GoogleClouddomainsRegistrationTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleClouddomainsRegistrationTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleClouddomainsRegistrationTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -766,7 +766,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleClouddomainsRegistrationTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -774,11 +774,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleClouddomainsRegistration.GoogleClouddomainsRegistrationYearlyPrice",
-		reflect.TypeOf((*GoogleClouddomainsRegistrationYearlyPrice)(nil)).Elem(),
+		reflect.TypeFor[GoogleClouddomainsRegistrationYearlyPrice](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleClouddomainsRegistration.GoogleClouddomainsRegistrationYearlyPriceOutputReference",
-		reflect.TypeOf((*GoogleClouddomainsRegistrationYearlyPriceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleClouddomainsRegistrationYearlyPriceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -808,7 +808,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "units", GoGetter: "Units"},
 			_jsii_.MemberProperty{JsiiProperty: "unitsInput", GoGetter: "UnitsInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleClouddomainsRegistrationYearlyPriceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

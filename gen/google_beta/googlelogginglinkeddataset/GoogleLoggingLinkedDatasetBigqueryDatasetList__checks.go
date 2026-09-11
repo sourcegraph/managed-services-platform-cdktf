@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleLoggingLinkedDatasetBigqueryDatasetList) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_GoogleLoggingLinkedDatasetBigqueryDatasetList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleLoggingLinkedDatasetBigqueryDatasetList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleLoggingLinkedDatasetBigqueryDatasetListParameters(terrafor
 
 	return nil
 }
-

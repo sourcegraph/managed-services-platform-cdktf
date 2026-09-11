@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleRedisClusterManagedServerCaOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_GoogleRedisClusterManagedServerCaOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleRedisClusterManagedServerCaOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleRedisClusterManagedServerCaOutputReferenceParameters(terra
 
 	return nil
 }
-

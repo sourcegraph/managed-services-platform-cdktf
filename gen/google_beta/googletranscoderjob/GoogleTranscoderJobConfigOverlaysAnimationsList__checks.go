@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleTranscoderJobConfigOverlaysAnimationsList) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_GoogleTranscoderJobConfigOverlaysAnimationsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleTranscoderJobConfigOverlaysAnimationsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleTranscoderJobConfigOverlaysAnimationsListParameters(terraf
 
 	return nil
 }
-

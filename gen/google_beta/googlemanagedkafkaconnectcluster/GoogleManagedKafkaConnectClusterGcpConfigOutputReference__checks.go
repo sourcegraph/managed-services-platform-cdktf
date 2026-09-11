@@ -109,7 +109,7 @@ func (g *jsiiProxy_GoogleManagedKafkaConnectClusterGcpConfigOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_GoogleManagedKafkaConnectClusterGcpConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleManagedKafkaConnectClusterGcpConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -209,4 +209,3 @@ func validateNewGoogleManagedKafkaConnectClusterGcpConfigOutputReferenceParamete
 
 	return nil
 }
-

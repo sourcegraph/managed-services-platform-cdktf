@@ -106,7 +106,7 @@ func (j *jsiiProxy_GoogleBinaryAuthorizationPolicyClusterAdmissionRulesOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBinaryAuthorizationPolicyClusterAdmissionRulesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBinaryAuthorizationPolicyClusterAdmissionRulesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -187,7 +187,7 @@ func (j *jsiiProxy_GoogleBinaryAuthorizationPolicyClusterAdmissionRulesOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBinaryAuthorizationPolicyClusterAdmissionRulesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBinaryAuthorizationPolicyClusterAdmissionRulesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -254,4 +254,3 @@ func validateNewGoogleBinaryAuthorizationPolicyClusterAdmissionRulesOutputRefere
 
 	return nil
 }
-

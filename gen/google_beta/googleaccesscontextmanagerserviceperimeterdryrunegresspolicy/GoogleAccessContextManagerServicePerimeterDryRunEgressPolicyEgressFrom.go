@@ -1,6 +1,5 @@
 package googleaccesscontextmanagerserviceperimeterdryrunegresspolicy
 
-
 type GoogleAccessContextManagerServicePerimeterDryRunEgressPolicyEgressFrom struct {
 	// Identities can be an individual user, service account, Google group, or third-party identity.
 	//
@@ -27,6 +26,5 @@ type GoogleAccessContextManagerServicePerimeterDryRunEgressPolicyEgressFrom stru
 	// sources block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_access_context_manager_service_perimeter_dry_run_egress_policy#sources GoogleAccessContextManagerServicePerimeterDryRunEgressPolicy#sources}
-	Sources interface{} `field:"optional" json:"sources" yaml:"sources"`
+	Sources any `field:"optional" json:"sources" yaml:"sources"`
 }
-

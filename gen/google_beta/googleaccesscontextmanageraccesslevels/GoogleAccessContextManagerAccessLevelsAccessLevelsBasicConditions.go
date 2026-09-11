@@ -1,6 +1,5 @@
 package googleaccesscontextmanageraccesslevels
 
-
 type GoogleAccessContextManagerAccessLevelsAccessLevelsBasicConditions struct {
 	// device_policy block.
 	//
@@ -38,7 +37,7 @@ type GoogleAccessContextManagerAccessLevelsAccessLevelsBasicConditions struct {
 	// the Condition overall to be satisfied. Defaults to false.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_access_context_manager_access_levels#negate GoogleAccessContextManagerAccessLevels#negate}
-	Negate interface{} `field:"optional" json:"negate" yaml:"negate"`
+	Negate any `field:"optional" json:"negate" yaml:"negate"`
 	// The request must originate from one of the provided countries/regions. Format: A valid ISO 3166-1 alpha-2 code.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_access_context_manager_access_levels#regions GoogleAccessContextManagerAccessLevels#regions}
@@ -55,6 +54,5 @@ type GoogleAccessContextManagerAccessLevelsAccessLevelsBasicConditions struct {
 	// vpc_network_sources block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_access_context_manager_access_levels#vpc_network_sources GoogleAccessContextManagerAccessLevels#vpc_network_sources}
-	VpcNetworkSources interface{} `field:"optional" json:"vpcNetworkSources" yaml:"vpcNetworkSources"`
+	VpcNetworkSources any `field:"optional" json:"vpcNetworkSources" yaml:"vpcNetworkSources"`
 }
-

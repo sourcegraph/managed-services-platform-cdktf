@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDialogflowCxGenerator.GoogleDialogflowCxGenerator",
-		reflect.TypeOf((*GoogleDialogflowCxGenerator)(nil)).Elem(),
+		reflect.TypeFor[GoogleDialogflowCxGenerator](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -84,7 +84,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDialogflowCxGenerator{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -92,15 +92,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDialogflowCxGenerator.GoogleDialogflowCxGeneratorConfig",
-		reflect.TypeOf((*GoogleDialogflowCxGeneratorConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleDialogflowCxGeneratorConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDialogflowCxGenerator.GoogleDialogflowCxGeneratorLlmModelSettings",
-		reflect.TypeOf((*GoogleDialogflowCxGeneratorLlmModelSettings)(nil)).Elem(),
+		reflect.TypeFor[GoogleDialogflowCxGeneratorLlmModelSettings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDialogflowCxGenerator.GoogleDialogflowCxGeneratorLlmModelSettingsOutputReference",
-		reflect.TypeOf((*GoogleDialogflowCxGeneratorLlmModelSettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDialogflowCxGeneratorLlmModelSettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -130,7 +130,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDialogflowCxGeneratorLlmModelSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -138,11 +138,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDialogflowCxGenerator.GoogleDialogflowCxGeneratorModelParameter",
-		reflect.TypeOf((*GoogleDialogflowCxGeneratorModelParameter)(nil)).Elem(),
+		reflect.TypeFor[GoogleDialogflowCxGeneratorModelParameter](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDialogflowCxGenerator.GoogleDialogflowCxGeneratorModelParameterOutputReference",
-		reflect.TypeOf((*GoogleDialogflowCxGeneratorModelParameterOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDialogflowCxGeneratorModelParameterOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -178,7 +178,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "topPInput", GoGetter: "TopPInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDialogflowCxGeneratorModelParameterOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -186,11 +186,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDialogflowCxGenerator.GoogleDialogflowCxGeneratorPlaceholders",
-		reflect.TypeOf((*GoogleDialogflowCxGeneratorPlaceholders)(nil)).Elem(),
+		reflect.TypeFor[GoogleDialogflowCxGeneratorPlaceholders](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDialogflowCxGenerator.GoogleDialogflowCxGeneratorPlaceholdersList",
-		reflect.TypeOf((*GoogleDialogflowCxGeneratorPlaceholdersList)(nil)).Elem(),
+		reflect.TypeFor[GoogleDialogflowCxGeneratorPlaceholdersList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -204,7 +204,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDialogflowCxGeneratorPlaceholdersList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -212,7 +212,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDialogflowCxGenerator.GoogleDialogflowCxGeneratorPlaceholdersOutputReference",
-		reflect.TypeOf((*GoogleDialogflowCxGeneratorPlaceholdersOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDialogflowCxGeneratorPlaceholdersOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -242,7 +242,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDialogflowCxGeneratorPlaceholdersOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -250,11 +250,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDialogflowCxGenerator.GoogleDialogflowCxGeneratorPromptText",
-		reflect.TypeOf((*GoogleDialogflowCxGeneratorPromptText)(nil)).Elem(),
+		reflect.TypeFor[GoogleDialogflowCxGeneratorPromptText](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDialogflowCxGenerator.GoogleDialogflowCxGeneratorPromptTextOutputReference",
-		reflect.TypeOf((*GoogleDialogflowCxGeneratorPromptTextOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDialogflowCxGeneratorPromptTextOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -281,7 +281,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "textInput", GoGetter: "TextInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDialogflowCxGeneratorPromptTextOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -289,11 +289,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDialogflowCxGenerator.GoogleDialogflowCxGeneratorTimeouts",
-		reflect.TypeOf((*GoogleDialogflowCxGeneratorTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleDialogflowCxGeneratorTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDialogflowCxGenerator.GoogleDialogflowCxGeneratorTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleDialogflowCxGeneratorTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDialogflowCxGeneratorTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -326,7 +326,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDialogflowCxGeneratorTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

@@ -6,9 +6,9 @@ import (
 
 type GoogleVertexAiFeatureGroupIamPolicyConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type GoogleVertexAiFeatureGroupIamPolicyConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_vertex_ai_feature_group_iam_policy#feature_group GoogleVertexAiFeatureGroupIamPolicy#feature_group}.
 	FeatureGroup *string `field:"required" json:"featureGroup" yaml:"featureGroup"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_vertex_ai_feature_group_iam_policy#policy_data GoogleVertexAiFeatureGroupIamPolicy#policy_data}.
@@ -33,4 +33,3 @@ type GoogleVertexAiFeatureGroupIamPolicyConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_vertex_ai_feature_group_iam_policy#region GoogleVertexAiFeatureGroupIamPolicy#region}.
 	Region *string `field:"optional" json:"region" yaml:"region"`
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleCloudIdentityGroup.GoogleCloudIdentityGroup",
-		reflect.TypeOf((*GoogleCloudIdentityGroup)(nil)).Elem(),
+		reflect.TypeFor[GoogleCloudIdentityGroup](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "additionalGroupKeys", GoGetter: "AdditionalGroupKeys"},
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -80,7 +80,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleCloudIdentityGroup{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -88,11 +88,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleCloudIdentityGroup.GoogleCloudIdentityGroupAdditionalGroupKeys",
-		reflect.TypeOf((*GoogleCloudIdentityGroupAdditionalGroupKeys)(nil)).Elem(),
+		reflect.TypeFor[GoogleCloudIdentityGroupAdditionalGroupKeys](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleCloudIdentityGroup.GoogleCloudIdentityGroupAdditionalGroupKeysList",
-		reflect.TypeOf((*GoogleCloudIdentityGroupAdditionalGroupKeysList)(nil)).Elem(),
+		reflect.TypeFor[GoogleCloudIdentityGroupAdditionalGroupKeysList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -105,7 +105,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleCloudIdentityGroupAdditionalGroupKeysList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -113,7 +113,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleCloudIdentityGroup.GoogleCloudIdentityGroupAdditionalGroupKeysOutputReference",
-		reflect.TypeOf((*GoogleCloudIdentityGroupAdditionalGroupKeysOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleCloudIdentityGroupAdditionalGroupKeysOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -139,7 +139,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleCloudIdentityGroupAdditionalGroupKeysOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -147,15 +147,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleCloudIdentityGroup.GoogleCloudIdentityGroupConfig",
-		reflect.TypeOf((*GoogleCloudIdentityGroupConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleCloudIdentityGroupConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleCloudIdentityGroup.GoogleCloudIdentityGroupGroupKey",
-		reflect.TypeOf((*GoogleCloudIdentityGroupGroupKey)(nil)).Elem(),
+		reflect.TypeFor[GoogleCloudIdentityGroupGroupKey](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleCloudIdentityGroup.GoogleCloudIdentityGroupGroupKeyOutputReference",
-		reflect.TypeOf((*GoogleCloudIdentityGroupGroupKeyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleCloudIdentityGroupGroupKeyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -184,7 +184,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleCloudIdentityGroupGroupKeyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -192,11 +192,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleCloudIdentityGroup.GoogleCloudIdentityGroupTimeouts",
-		reflect.TypeOf((*GoogleCloudIdentityGroupTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleCloudIdentityGroupTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleCloudIdentityGroup.GoogleCloudIdentityGroupTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleCloudIdentityGroupTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleCloudIdentityGroupTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -229,7 +229,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleCloudIdentityGroupTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

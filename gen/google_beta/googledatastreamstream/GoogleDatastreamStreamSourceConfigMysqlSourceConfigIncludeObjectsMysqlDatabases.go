@@ -1,6 +1,5 @@
 package googledatastreamstream
 
-
 type GoogleDatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabases struct {
 	// Database name.
 	//
@@ -9,6 +8,5 @@ type GoogleDatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatab
 	// mysql_tables block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_datastream_stream#mysql_tables GoogleDatastreamStream#mysql_tables}
-	MysqlTables interface{} `field:"optional" json:"mysqlTables" yaml:"mysqlTables"`
+	MysqlTables any `field:"optional" json:"mysqlTables" yaml:"mysqlTables"`
 }
-

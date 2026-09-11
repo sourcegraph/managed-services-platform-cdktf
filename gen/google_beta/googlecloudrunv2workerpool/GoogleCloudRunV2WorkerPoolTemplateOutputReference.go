@@ -15,16 +15,16 @@ type GoogleCloudRunV2WorkerPoolTemplateOutputReference interface {
 	AnnotationsInput() *map[string]*string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
 	Containers() GoogleCloudRunV2WorkerPoolTemplateContainersList
-	ContainersInput() interface{}
+	ContainersInput() any
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -41,9 +41,9 @@ type GoogleCloudRunV2WorkerPoolTemplateOutputReference interface {
 	EncryptionKeyShutdownDurationInput() *string
 	// Experimental.
 	Fqn() *string
-	GpuZonalRedundancyDisabled() interface{}
-	SetGpuZonalRedundancyDisabled(val interface{})
-	GpuZonalRedundancyDisabledInput() interface{}
+	GpuZonalRedundancyDisabled() any
+	SetGpuZonalRedundancyDisabled(val any)
+	GpuZonalRedundancyDisabledInput() any
 	InternalValue() *GoogleCloudRunV2WorkerPoolTemplate
 	SetInternalValue(val *GoogleCloudRunV2WorkerPoolTemplate)
 	Labels() *map[string]*string
@@ -66,13 +66,13 @@ type GoogleCloudRunV2WorkerPoolTemplateOutputReference interface {
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
 	Volumes() GoogleCloudRunV2WorkerPoolTemplateVolumesList
-	VolumesInput() interface{}
+	VolumesInput() any
 	VpcAccess() GoogleCloudRunV2WorkerPoolTemplateVpcAccessOutputReference
 	VpcAccessInput() *GoogleCloudRunV2WorkerPoolTemplateVpcAccess
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -93,9 +93,9 @@ type GoogleCloudRunV2WorkerPoolTemplateOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutContainers(value interface{})
+	PutContainers(value any)
 	PutNodeSelector(value *GoogleCloudRunV2WorkerPoolTemplateNodeSelector)
-	PutVolumes(value interface{})
+	PutVolumes(value any)
 	PutVpcAccess(value *GoogleCloudRunV2WorkerPoolTemplateVpcAccess)
 	ResetAnnotations()
 	ResetContainers()
@@ -111,7 +111,7 @@ type GoogleCloudRunV2WorkerPoolTemplateOutputReference interface {
 	ResetVpcAccess()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -144,8 +144,8 @@ func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateOutputReference) Annotation
 	return returns
 }
 
-func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -174,8 +174,8 @@ func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateOutputReference) Containers
 	return returns
 }
 
-func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateOutputReference) ContainersInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateOutputReference) ContainersInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"containersInput",
@@ -264,8 +264,8 @@ func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateOutputReference) Fqn() *str
 	return returns
 }
 
-func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateOutputReference) GpuZonalRedundancyDisabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateOutputReference) GpuZonalRedundancyDisabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"gpuZonalRedundancyDisabled",
@@ -274,8 +274,8 @@ func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateOutputReference) GpuZonalRe
 	return returns
 }
 
-func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateOutputReference) GpuZonalRedundancyDisabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateOutputReference) GpuZonalRedundancyDisabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"gpuZonalRedundancyDisabledInput",
@@ -404,8 +404,8 @@ func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateOutputReference) Volumes() 
 	return returns
 }
 
-func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateOutputReference) VolumesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateOutputReference) VolumesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"volumesInput",
@@ -434,7 +434,6 @@ func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateOutputReference) VpcAccessI
 	return returns
 }
 
-
 func NewGoogleCloudRunV2WorkerPoolTemplateOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleCloudRunV2WorkerPoolTemplateOutputReference {
 	_init_.Initialize()
 
@@ -445,7 +444,7 @@ func NewGoogleCloudRunV2WorkerPoolTemplateOutputReference(terraformResource cdkt
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleCloudRunV2WorkerPool.GoogleCloudRunV2WorkerPoolTemplateOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -457,12 +456,12 @@ func NewGoogleCloudRunV2WorkerPoolTemplateOutputReference_Override(g GoogleCloud
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleCloudRunV2WorkerPool.GoogleCloudRunV2WorkerPoolTemplateOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateOutputReference)SetAnnotations(val *map[string]*string) {
+func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateOutputReference) SetAnnotations(val *map[string]*string) {
 	if err := j.validateSetAnnotationsParameters(val); err != nil {
 		panic(err)
 	}
@@ -473,7 +472,7 @@ func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateOutputReference)SetAnnotati
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -484,7 +483,7 @@ func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateOutputReference)SetComplexO
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -495,7 +494,7 @@ func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateOutputReference)SetComplexO
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateOutputReference)SetEncryptionKey(val *string) {
+func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateOutputReference) SetEncryptionKey(val *string) {
 	if err := j.validateSetEncryptionKeyParameters(val); err != nil {
 		panic(err)
 	}
@@ -506,7 +505,7 @@ func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateOutputReference)SetEncrypti
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateOutputReference)SetEncryptionKeyRevocationAction(val *string) {
+func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateOutputReference) SetEncryptionKeyRevocationAction(val *string) {
 	if err := j.validateSetEncryptionKeyRevocationActionParameters(val); err != nil {
 		panic(err)
 	}
@@ -517,7 +516,7 @@ func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateOutputReference)SetEncrypti
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateOutputReference)SetEncryptionKeyShutdownDuration(val *string) {
+func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateOutputReference) SetEncryptionKeyShutdownDuration(val *string) {
 	if err := j.validateSetEncryptionKeyShutdownDurationParameters(val); err != nil {
 		panic(err)
 	}
@@ -528,7 +527,7 @@ func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateOutputReference)SetEncrypti
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateOutputReference)SetGpuZonalRedundancyDisabled(val interface{}) {
+func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateOutputReference) SetGpuZonalRedundancyDisabled(val any) {
 	if err := j.validateSetGpuZonalRedundancyDisabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -539,7 +538,7 @@ func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateOutputReference)SetGpuZonal
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateOutputReference)SetInternalValue(val *GoogleCloudRunV2WorkerPoolTemplate) {
+func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateOutputReference) SetInternalValue(val *GoogleCloudRunV2WorkerPoolTemplate) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -550,7 +549,7 @@ func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateOutputReference)SetInternal
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateOutputReference)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateOutputReference) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -561,7 +560,7 @@ func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateOutputReference)SetLabels(v
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateOutputReference)SetRevision(val *string) {
+func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateOutputReference) SetRevision(val *string) {
 	if err := j.validateSetRevisionParameters(val); err != nil {
 		panic(err)
 	}
@@ -572,7 +571,7 @@ func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateOutputReference)SetRevision
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateOutputReference)SetServiceAccount(val *string) {
+func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateOutputReference) SetServiceAccount(val *string) {
 	if err := j.validateSetServiceAccountParameters(val); err != nil {
 		panic(err)
 	}
@@ -583,7 +582,7 @@ func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateOutputReference)SetServiceA
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -594,7 +593,7 @@ func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateOutputReference)SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -618,16 +617,16 @@ func (g *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateOutputReference) ComputeFqn
 	return returns
 }
 
-func (g *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -643,7 +642,7 @@ func (g *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateOutputReference) GetBoolean
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -659,7 +658,7 @@ func (g *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateOutputReference) GetBoolean
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -675,7 +674,7 @@ func (g *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateOutputReference) GetListAtt
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -691,7 +690,7 @@ func (g *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateOutputReference) GetNumberA
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -707,7 +706,7 @@ func (g *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateOutputReference) GetNumberL
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -723,7 +722,7 @@ func (g *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateOutputReference) GetNumberM
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -739,7 +738,7 @@ func (g *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateOutputReference) GetStringA
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -755,7 +754,7 @@ func (g *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateOutputReference) GetStringM
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -784,21 +783,21 @@ func (g *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateOutputReference) Interpolat
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateOutputReference) PutContainers(value interface{}) {
+func (g *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateOutputReference) PutContainers(value any) {
 	if err := g.validatePutContainersParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putContainers",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -809,18 +808,18 @@ func (g *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateOutputReference) PutNodeSel
 	_jsii_.InvokeVoid(
 		g,
 		"putNodeSelector",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (g *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateOutputReference) PutVolumes(value interface{}) {
+func (g *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateOutputReference) PutVolumes(value any) {
 	if err := g.validatePutVolumesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putVolumes",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -831,7 +830,7 @@ func (g *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateOutputReference) PutVpcAcce
 	_jsii_.InvokeVoid(
 		g,
 		"putVpcAccess",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -931,16 +930,16 @@ func (g *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateOutputReference) ResetVpcAc
 	)
 }
 
-func (g *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -959,4 +958,3 @@ func (g *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateOutputReference) ToString()
 
 	return returns
 }
-

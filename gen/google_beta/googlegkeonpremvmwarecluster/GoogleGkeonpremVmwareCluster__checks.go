@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleGkeonpremVmwareCluster) validateAddMoveTargetParameters
 	return nil
 }
 
-func (g *jsiiProxy_GoogleGkeonpremVmwareCluster) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleGkeonpremVmwareCluster) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleGkeonpremVmwareCluster) validateMoveFromIdParameters(id
 	return nil
 }
 
-func (g *jsiiProxy_GoogleGkeonpremVmwareCluster) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleGkeonpremVmwareCluster) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -341,7 +341,7 @@ func validateGoogleGkeonpremVmwareCluster_GenerateConfigForImportParameters(scop
 	return nil
 }
 
-func validateGoogleGkeonpremVmwareCluster_IsConstructParameters(x interface{}) error {
+func validateGoogleGkeonpremVmwareCluster_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -349,7 +349,7 @@ func validateGoogleGkeonpremVmwareCluster_IsConstructParameters(x interface{}) e
 	return nil
 }
 
-func validateGoogleGkeonpremVmwareCluster_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleGkeonpremVmwareCluster_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -357,7 +357,7 @@ func validateGoogleGkeonpremVmwareCluster_IsTerraformElementParameters(x interfa
 	return nil
 }
 
-func validateGoogleGkeonpremVmwareCluster_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleGkeonpremVmwareCluster_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -381,7 +381,7 @@ func (j *jsiiProxy_GoogleGkeonpremVmwareCluster) validateSetAnnotationsParameter
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGkeonpremVmwareCluster) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleGkeonpremVmwareCluster) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -414,7 +414,7 @@ func (j *jsiiProxy_GoogleGkeonpremVmwareCluster) validateSetConnectionParameters
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGkeonpremVmwareCluster) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleGkeonpremVmwareCluster) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -479,7 +479,7 @@ func (j *jsiiProxy_GoogleGkeonpremVmwareCluster) validateSetDescriptionParameter
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGkeonpremVmwareCluster) validateSetDisableBundledIngressParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleGkeonpremVmwareCluster) validateSetDisableBundledIngressParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -499,7 +499,7 @@ func (j *jsiiProxy_GoogleGkeonpremVmwareCluster) validateSetDisableBundledIngres
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGkeonpremVmwareCluster) validateSetEnableAdvancedClusterParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleGkeonpremVmwareCluster) validateSetEnableAdvancedClusterParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -519,7 +519,7 @@ func (j *jsiiProxy_GoogleGkeonpremVmwareCluster) validateSetEnableAdvancedCluste
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGkeonpremVmwareCluster) validateSetEnableControlPlaneV2Parameters(val interface{}) error {
+func (j *jsiiProxy_GoogleGkeonpremVmwareCluster) validateSetEnableControlPlaneV2Parameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -587,7 +587,7 @@ func (j *jsiiProxy_GoogleGkeonpremVmwareCluster) validateSetProjectParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGkeonpremVmwareCluster) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleGkeonpremVmwareCluster) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -633,7 +633,7 @@ func (j *jsiiProxy_GoogleGkeonpremVmwareCluster) validateSetProvisionersParamete
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGkeonpremVmwareCluster) validateSetVmTrackingEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleGkeonpremVmwareCluster) validateSetVmTrackingEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -671,4 +671,3 @@ func validateNewGoogleGkeonpremVmwareClusterParameters(scope constructs.Construc
 
 	return nil
 }
-

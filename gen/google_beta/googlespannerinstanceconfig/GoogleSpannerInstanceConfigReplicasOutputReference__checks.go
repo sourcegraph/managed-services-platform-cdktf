@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleSpannerInstanceConfigReplicasOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSpannerInstanceConfigReplicasOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleSpannerInstanceConfigReplicasOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_GoogleSpannerInstanceConfigReplicasOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSpannerInstanceConfigReplicasOutputReference) validateSetDefaultLeaderLocationParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleSpannerInstanceConfigReplicasOutputReference) validateSetDefaultLeaderLocationParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -183,7 +183,7 @@ func (j *jsiiProxy_GoogleSpannerInstanceConfigReplicasOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSpannerInstanceConfigReplicasOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleSpannerInstanceConfigReplicasOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -258,4 +258,3 @@ func validateNewGoogleSpannerInstanceConfigReplicasOutputReferenceParameters(ter
 
 	return nil
 }
-

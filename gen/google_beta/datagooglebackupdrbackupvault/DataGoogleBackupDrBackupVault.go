@@ -23,11 +23,11 @@ type DataGoogleBackupDrBackupVault interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	Deletable() cdktf.IResolvable
 	// Experimental.
@@ -73,23 +73,23 @@ type DataGoogleBackupDrBackupVault interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ServiceAccount() *string
 	State() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	TotalStoredBytes() *string
 	Uid() *string
 	UpdateTime() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -116,18 +116,18 @@ type DataGoogleBackupDrBackupVault interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataGoogleBackupDrBackupVault
@@ -215,8 +215,8 @@ func (j *jsiiProxy_DataGoogleBackupDrBackupVault) CdktfStack() cdktf.TerraformSt
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleBackupDrBackupVault) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleBackupDrBackupVault) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -225,8 +225,8 @@ func (j *jsiiProxy_DataGoogleBackupDrBackupVault) ConstructNodeMetadata() *map[s
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleBackupDrBackupVault) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleBackupDrBackupVault) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -495,8 +495,8 @@ func (j *jsiiProxy_DataGoogleBackupDrBackupVault) Provider() cdktf.TerraformProv
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleBackupDrBackupVault) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleBackupDrBackupVault) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -545,8 +545,8 @@ func (j *jsiiProxy_DataGoogleBackupDrBackupVault) TerraformLabels() cdktf.String
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleBackupDrBackupVault) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleBackupDrBackupVault) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -595,7 +595,6 @@ func (j *jsiiProxy_DataGoogleBackupDrBackupVault) UpdateTime() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/data-sources/google_backup_dr_backup_vault google_backup_dr_backup_vault} Data Source.
 func NewDataGoogleBackupDrBackupVault(scope constructs.Construct, id *string, config *DataGoogleBackupDrBackupVaultConfig) DataGoogleBackupDrBackupVault {
 	_init_.Initialize()
@@ -607,7 +606,7 @@ func NewDataGoogleBackupDrBackupVault(scope constructs.Construct, id *string, co
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.dataGoogleBackupDrBackupVault.DataGoogleBackupDrBackupVault",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -620,12 +619,12 @@ func NewDataGoogleBackupDrBackupVault_Override(d DataGoogleBackupDrBackupVault, 
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.dataGoogleBackupDrBackupVault.DataGoogleBackupDrBackupVault",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataGoogleBackupDrBackupVault)SetBackupVaultId(val *string) {
+func (j *jsiiProxy_DataGoogleBackupDrBackupVault) SetBackupVaultId(val *string) {
 	if err := j.validateSetBackupVaultIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -636,7 +635,7 @@ func (j *jsiiProxy_DataGoogleBackupDrBackupVault)SetBackupVaultId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleBackupDrBackupVault)SetCount(val interface{}) {
+func (j *jsiiProxy_DataGoogleBackupDrBackupVault) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -647,7 +646,7 @@ func (j *jsiiProxy_DataGoogleBackupDrBackupVault)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleBackupDrBackupVault)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataGoogleBackupDrBackupVault) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -655,7 +654,7 @@ func (j *jsiiProxy_DataGoogleBackupDrBackupVault)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleBackupDrBackupVault)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataGoogleBackupDrBackupVault) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -663,7 +662,7 @@ func (j *jsiiProxy_DataGoogleBackupDrBackupVault)SetForEach(val cdktf.ITerraform
 	)
 }
 
-func (j *jsiiProxy_DataGoogleBackupDrBackupVault)SetId(val *string) {
+func (j *jsiiProxy_DataGoogleBackupDrBackupVault) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -674,7 +673,7 @@ func (j *jsiiProxy_DataGoogleBackupDrBackupVault)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleBackupDrBackupVault)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataGoogleBackupDrBackupVault) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -685,7 +684,7 @@ func (j *jsiiProxy_DataGoogleBackupDrBackupVault)SetLifecycle(val *cdktf.Terrafo
 	)
 }
 
-func (j *jsiiProxy_DataGoogleBackupDrBackupVault)SetLocation(val *string) {
+func (j *jsiiProxy_DataGoogleBackupDrBackupVault) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -696,7 +695,7 @@ func (j *jsiiProxy_DataGoogleBackupDrBackupVault)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleBackupDrBackupVault)SetProject(val *string) {
+func (j *jsiiProxy_DataGoogleBackupDrBackupVault) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -707,7 +706,7 @@ func (j *jsiiProxy_DataGoogleBackupDrBackupVault)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleBackupDrBackupVault)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataGoogleBackupDrBackupVault) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -727,7 +726,7 @@ func DataGoogleBackupDrBackupVault_GenerateConfigForImport(scope constructs.Cons
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.dataGoogleBackupDrBackupVault.DataGoogleBackupDrBackupVault",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -751,7 +750,7 @@ func DataGoogleBackupDrBackupVault_GenerateConfigForImport(scope constructs.Cons
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataGoogleBackupDrBackupVault_IsConstruct(x interface{}) *bool {
+func DataGoogleBackupDrBackupVault_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleBackupDrBackupVault_IsConstructParameters(x); err != nil {
@@ -762,7 +761,7 @@ func DataGoogleBackupDrBackupVault_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.dataGoogleBackupDrBackupVault.DataGoogleBackupDrBackupVault",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -770,7 +769,7 @@ func DataGoogleBackupDrBackupVault_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataGoogleBackupDrBackupVault_IsTerraformDataSource(x interface{}) *bool {
+func DataGoogleBackupDrBackupVault_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleBackupDrBackupVault_IsTerraformDataSourceParameters(x); err != nil {
@@ -781,7 +780,7 @@ func DataGoogleBackupDrBackupVault_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.dataGoogleBackupDrBackupVault.DataGoogleBackupDrBackupVault",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -789,7 +788,7 @@ func DataGoogleBackupDrBackupVault_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataGoogleBackupDrBackupVault_IsTerraformElement(x interface{}) *bool {
+func DataGoogleBackupDrBackupVault_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleBackupDrBackupVault_IsTerraformElementParameters(x); err != nil {
@@ -800,7 +799,7 @@ func DataGoogleBackupDrBackupVault_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.dataGoogleBackupDrBackupVault.DataGoogleBackupDrBackupVault",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -818,27 +817,27 @@ func DataGoogleBackupDrBackupVault_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleBackupDrBackupVault) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataGoogleBackupDrBackupVault) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataGoogleBackupDrBackupVault) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataGoogleBackupDrBackupVault) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -854,7 +853,7 @@ func (d *jsiiProxy_DataGoogleBackupDrBackupVault) GetBooleanAttribute(terraformA
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -870,7 +869,7 @@ func (d *jsiiProxy_DataGoogleBackupDrBackupVault) GetBooleanMapAttribute(terrafo
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -886,7 +885,7 @@ func (d *jsiiProxy_DataGoogleBackupDrBackupVault) GetListAttribute(terraformAttr
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -902,7 +901,7 @@ func (d *jsiiProxy_DataGoogleBackupDrBackupVault) GetNumberAttribute(terraformAt
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -918,7 +917,7 @@ func (d *jsiiProxy_DataGoogleBackupDrBackupVault) GetNumberListAttribute(terrafo
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -934,7 +933,7 @@ func (d *jsiiProxy_DataGoogleBackupDrBackupVault) GetNumberMapAttribute(terrafor
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -950,7 +949,7 @@ func (d *jsiiProxy_DataGoogleBackupDrBackupVault) GetStringAttribute(terraformAt
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -966,7 +965,7 @@ func (d *jsiiProxy_DataGoogleBackupDrBackupVault) GetStringMapAttribute(terrafor
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -982,7 +981,7 @@ func (d *jsiiProxy_DataGoogleBackupDrBackupVault) InterpolationForAttribute(terr
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -996,7 +995,7 @@ func (d *jsiiProxy_DataGoogleBackupDrBackupVault) OverrideLogicalId(newLogicalId
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1024,8 +1023,8 @@ func (d *jsiiProxy_DataGoogleBackupDrBackupVault) ResetProject() {
 	)
 }
 
-func (d *jsiiProxy_DataGoogleBackupDrBackupVault) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleBackupDrBackupVault) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1037,8 +1036,8 @@ func (d *jsiiProxy_DataGoogleBackupDrBackupVault) SynthesizeAttributes() *map[st
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleBackupDrBackupVault) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleBackupDrBackupVault) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1050,8 +1049,8 @@ func (d *jsiiProxy_DataGoogleBackupDrBackupVault) SynthesizeHclAttributes() *map
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleBackupDrBackupVault) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleBackupDrBackupVault) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1063,8 +1062,8 @@ func (d *jsiiProxy_DataGoogleBackupDrBackupVault) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleBackupDrBackupVault) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleBackupDrBackupVault) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1089,8 +1088,8 @@ func (d *jsiiProxy_DataGoogleBackupDrBackupVault) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleBackupDrBackupVault) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleBackupDrBackupVault) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1101,4 +1100,3 @@ func (d *jsiiProxy_DataGoogleBackupDrBackupVault) ToTerraform() interface{} {
 
 	return returns
 }
-

@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleDeveloperConnectAccountConnectorProviderOauthConfigOutp
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDeveloperConnectAccountConnectorProviderOauthConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDeveloperConnectAccountConnectorProviderOauthConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGoogleDeveloperConnectAccountConnectorProviderOauthConfigOutputR
 
 	return nil
 }
-

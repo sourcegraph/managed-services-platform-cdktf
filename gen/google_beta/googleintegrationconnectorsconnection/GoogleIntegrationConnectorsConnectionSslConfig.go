@@ -1,6 +1,5 @@
 package googleintegrationconnectorsconnection
 
-
 type GoogleIntegrationConnectorsConnectionSslConfig struct {
 	// Enum for controlling the SSL Type (TLS/MTLS) Possible values: ["TLS", "MTLS"].
 	//
@@ -9,7 +8,7 @@ type GoogleIntegrationConnectorsConnectionSslConfig struct {
 	// additional_variable block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_integration_connectors_connection#additional_variable GoogleIntegrationConnectorsConnection#additional_variable}
-	AdditionalVariable interface{} `field:"optional" json:"additionalVariable" yaml:"additionalVariable"`
+	AdditionalVariable any `field:"optional" json:"additionalVariable" yaml:"additionalVariable"`
 	// client_certificate block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_integration_connectors_connection#client_certificate GoogleIntegrationConnectorsConnection#client_certificate}
@@ -41,6 +40,5 @@ type GoogleIntegrationConnectorsConnectionSslConfig struct {
 	// Bool for enabling SSL.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_integration_connectors_connection#use_ssl GoogleIntegrationConnectorsConnection#use_ssl}
-	UseSsl interface{} `field:"optional" json:"useSsl" yaml:"useSsl"`
+	UseSsl any `field:"optional" json:"useSsl" yaml:"useSsl"`
 }
-

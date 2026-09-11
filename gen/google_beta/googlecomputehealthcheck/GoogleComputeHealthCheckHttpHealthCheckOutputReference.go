@@ -12,9 +12,9 @@ type GoogleComputeHealthCheckHttpHealthCheckOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -61,7 +61,7 @@ type GoogleComputeHealthCheckHttpHealthCheckOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -91,7 +91,7 @@ type GoogleComputeHealthCheckHttpHealthCheckOutputReference interface {
 	ResetResponse()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -104,8 +104,8 @@ type jsiiProxy_GoogleComputeHealthCheckHttpHealthCheckOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GoogleComputeHealthCheckHttpHealthCheckOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeHealthCheckHttpHealthCheckOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -314,7 +314,6 @@ func (j *jsiiProxy_GoogleComputeHealthCheckHttpHealthCheckOutputReference) Terra
 	return returns
 }
 
-
 func NewGoogleComputeHealthCheckHttpHealthCheckOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleComputeHealthCheckHttpHealthCheckOutputReference {
 	_init_.Initialize()
 
@@ -325,7 +324,7 @@ func NewGoogleComputeHealthCheckHttpHealthCheckOutputReference(terraformResource
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleComputeHealthCheck.GoogleComputeHealthCheckHttpHealthCheckOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -337,12 +336,12 @@ func NewGoogleComputeHealthCheckHttpHealthCheckOutputReference_Override(g Google
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleComputeHealthCheck.GoogleComputeHealthCheckHttpHealthCheckOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeHealthCheckHttpHealthCheckOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleComputeHealthCheckHttpHealthCheckOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -353,7 +352,7 @@ func (j *jsiiProxy_GoogleComputeHealthCheckHttpHealthCheckOutputReference)SetCom
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeHealthCheckHttpHealthCheckOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleComputeHealthCheckHttpHealthCheckOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -364,7 +363,7 @@ func (j *jsiiProxy_GoogleComputeHealthCheckHttpHealthCheckOutputReference)SetCom
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeHealthCheckHttpHealthCheckOutputReference)SetHost(val *string) {
+func (j *jsiiProxy_GoogleComputeHealthCheckHttpHealthCheckOutputReference) SetHost(val *string) {
 	if err := j.validateSetHostParameters(val); err != nil {
 		panic(err)
 	}
@@ -375,7 +374,7 @@ func (j *jsiiProxy_GoogleComputeHealthCheckHttpHealthCheckOutputReference)SetHos
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeHealthCheckHttpHealthCheckOutputReference)SetInternalValue(val *GoogleComputeHealthCheckHttpHealthCheck) {
+func (j *jsiiProxy_GoogleComputeHealthCheckHttpHealthCheckOutputReference) SetInternalValue(val *GoogleComputeHealthCheckHttpHealthCheck) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -386,7 +385,7 @@ func (j *jsiiProxy_GoogleComputeHealthCheckHttpHealthCheckOutputReference)SetInt
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeHealthCheckHttpHealthCheckOutputReference)SetPort(val *float64) {
+func (j *jsiiProxy_GoogleComputeHealthCheckHttpHealthCheckOutputReference) SetPort(val *float64) {
 	if err := j.validateSetPortParameters(val); err != nil {
 		panic(err)
 	}
@@ -397,7 +396,7 @@ func (j *jsiiProxy_GoogleComputeHealthCheckHttpHealthCheckOutputReference)SetPor
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeHealthCheckHttpHealthCheckOutputReference)SetPortName(val *string) {
+func (j *jsiiProxy_GoogleComputeHealthCheckHttpHealthCheckOutputReference) SetPortName(val *string) {
 	if err := j.validateSetPortNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -408,7 +407,7 @@ func (j *jsiiProxy_GoogleComputeHealthCheckHttpHealthCheckOutputReference)SetPor
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeHealthCheckHttpHealthCheckOutputReference)SetPortSpecification(val *string) {
+func (j *jsiiProxy_GoogleComputeHealthCheckHttpHealthCheckOutputReference) SetPortSpecification(val *string) {
 	if err := j.validateSetPortSpecificationParameters(val); err != nil {
 		panic(err)
 	}
@@ -419,7 +418,7 @@ func (j *jsiiProxy_GoogleComputeHealthCheckHttpHealthCheckOutputReference)SetPor
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeHealthCheckHttpHealthCheckOutputReference)SetProxyHeader(val *string) {
+func (j *jsiiProxy_GoogleComputeHealthCheckHttpHealthCheckOutputReference) SetProxyHeader(val *string) {
 	if err := j.validateSetProxyHeaderParameters(val); err != nil {
 		panic(err)
 	}
@@ -430,7 +429,7 @@ func (j *jsiiProxy_GoogleComputeHealthCheckHttpHealthCheckOutputReference)SetPro
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeHealthCheckHttpHealthCheckOutputReference)SetRequestPath(val *string) {
+func (j *jsiiProxy_GoogleComputeHealthCheckHttpHealthCheckOutputReference) SetRequestPath(val *string) {
 	if err := j.validateSetRequestPathParameters(val); err != nil {
 		panic(err)
 	}
@@ -441,7 +440,7 @@ func (j *jsiiProxy_GoogleComputeHealthCheckHttpHealthCheckOutputReference)SetReq
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeHealthCheckHttpHealthCheckOutputReference)SetResponse(val *string) {
+func (j *jsiiProxy_GoogleComputeHealthCheckHttpHealthCheckOutputReference) SetResponse(val *string) {
 	if err := j.validateSetResponseParameters(val); err != nil {
 		panic(err)
 	}
@@ -452,7 +451,7 @@ func (j *jsiiProxy_GoogleComputeHealthCheckHttpHealthCheckOutputReference)SetRes
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeHealthCheckHttpHealthCheckOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleComputeHealthCheckHttpHealthCheckOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -463,7 +462,7 @@ func (j *jsiiProxy_GoogleComputeHealthCheckHttpHealthCheckOutputReference)SetTer
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeHealthCheckHttpHealthCheckOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleComputeHealthCheckHttpHealthCheckOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -487,16 +486,16 @@ func (g *jsiiProxy_GoogleComputeHealthCheckHttpHealthCheckOutputReference) Compu
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeHealthCheckHttpHealthCheckOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleComputeHealthCheckHttpHealthCheckOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -512,7 +511,7 @@ func (g *jsiiProxy_GoogleComputeHealthCheckHttpHealthCheckOutputReference) GetBo
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -528,7 +527,7 @@ func (g *jsiiProxy_GoogleComputeHealthCheckHttpHealthCheckOutputReference) GetBo
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -544,7 +543,7 @@ func (g *jsiiProxy_GoogleComputeHealthCheckHttpHealthCheckOutputReference) GetLi
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -560,7 +559,7 @@ func (g *jsiiProxy_GoogleComputeHealthCheckHttpHealthCheckOutputReference) GetNu
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -576,7 +575,7 @@ func (g *jsiiProxy_GoogleComputeHealthCheckHttpHealthCheckOutputReference) GetNu
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -592,7 +591,7 @@ func (g *jsiiProxy_GoogleComputeHealthCheckHttpHealthCheckOutputReference) GetNu
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -608,7 +607,7 @@ func (g *jsiiProxy_GoogleComputeHealthCheckHttpHealthCheckOutputReference) GetSt
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -624,7 +623,7 @@ func (g *jsiiProxy_GoogleComputeHealthCheckHttpHealthCheckOutputReference) GetSt
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -653,7 +652,7 @@ func (g *jsiiProxy_GoogleComputeHealthCheckHttpHealthCheckOutputReference) Inter
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -716,16 +715,16 @@ func (g *jsiiProxy_GoogleComputeHealthCheckHttpHealthCheckOutputReference) Reset
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeHealthCheckHttpHealthCheckOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleComputeHealthCheckHttpHealthCheckOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -744,4 +743,3 @@ func (g *jsiiProxy_GoogleComputeHealthCheckHttpHealthCheckOutputReference) ToStr
 
 	return returns
 }
-

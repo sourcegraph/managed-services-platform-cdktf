@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleApigeeSharedflow) validateAddMoveTargetParameters(moveT
 	return nil
 }
 
-func (g *jsiiProxy_GoogleApigeeSharedflow) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleApigeeSharedflow) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleApigeeSharedflow) validateMoveFromIdParameters(id *stri
 	return nil
 }
 
-func (g *jsiiProxy_GoogleApigeeSharedflow) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleApigeeSharedflow) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateGoogleApigeeSharedflow_GenerateConfigForImportParameters(scope cons
 	return nil
 }
 
-func validateGoogleApigeeSharedflow_IsConstructParameters(x interface{}) error {
+func validateGoogleApigeeSharedflow_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateGoogleApigeeSharedflow_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateGoogleApigeeSharedflow_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleApigeeSharedflow_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateGoogleApigeeSharedflow_IsTerraformElementParameters(x interface{}) 
 	return nil
 }
 
-func validateGoogleApigeeSharedflow_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleApigeeSharedflow_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -263,7 +263,7 @@ func (j *jsiiProxy_GoogleApigeeSharedflow) validateSetConfigBundleParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_GoogleApigeeSharedflow) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleApigeeSharedflow) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -296,7 +296,7 @@ func (j *jsiiProxy_GoogleApigeeSharedflow) validateSetConnectionParameters(val i
 	return nil
 }
 
-func (j *jsiiProxy_GoogleApigeeSharedflow) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleApigeeSharedflow) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -393,7 +393,7 @@ func (j *jsiiProxy_GoogleApigeeSharedflow) validateSetOrgIdParameters(val *strin
 	return nil
 }
 
-func (j *jsiiProxy_GoogleApigeeSharedflow) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleApigeeSharedflow) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -457,4 +457,3 @@ func validateNewGoogleApigeeSharedflowParameters(scope constructs.Construct, id 
 
 	return nil
 }
-

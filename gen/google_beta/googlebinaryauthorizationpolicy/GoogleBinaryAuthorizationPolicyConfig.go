@@ -6,9 +6,9 @@ import (
 
 type GoogleBinaryAuthorizationPolicyConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type GoogleBinaryAuthorizationPolicyConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// default_admission_rule block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_binary_authorization_policy#default_admission_rule GoogleBinaryAuthorizationPolicy#default_admission_rule}
@@ -26,11 +26,11 @@ type GoogleBinaryAuthorizationPolicyConfig struct {
 	// admission_whitelist_patterns block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_binary_authorization_policy#admission_whitelist_patterns GoogleBinaryAuthorizationPolicy#admission_whitelist_patterns}
-	AdmissionWhitelistPatterns interface{} `field:"optional" json:"admissionWhitelistPatterns" yaml:"admissionWhitelistPatterns"`
+	AdmissionWhitelistPatterns any `field:"optional" json:"admissionWhitelistPatterns" yaml:"admissionWhitelistPatterns"`
 	// cluster_admission_rules block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_binary_authorization_policy#cluster_admission_rules GoogleBinaryAuthorizationPolicy#cluster_admission_rules}
-	ClusterAdmissionRules interface{} `field:"optional" json:"clusterAdmissionRules" yaml:"clusterAdmissionRules"`
+	ClusterAdmissionRules any `field:"optional" json:"clusterAdmissionRules" yaml:"clusterAdmissionRules"`
 	// A descriptive comment.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_binary_authorization_policy#description GoogleBinaryAuthorizationPolicy#description}
@@ -54,4 +54,3 @@ type GoogleBinaryAuthorizationPolicyConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_binary_authorization_policy#timeouts GoogleBinaryAuthorizationPolicy#timeouts}
 	Timeouts *GoogleBinaryAuthorizationPolicyTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

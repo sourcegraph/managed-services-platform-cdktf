@@ -90,7 +90,7 @@ func (g *jsiiProxy_GoogleLookerInstancePscConfigOutputReference) validateInterpo
 	return nil
 }
 
-func (g *jsiiProxy_GoogleLookerInstancePscConfigOutputReference) validatePutServiceAttachmentsParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleLookerInstancePscConfigOutputReference) validatePutServiceAttachmentsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -137,7 +137,7 @@ func (j *jsiiProxy_GoogleLookerInstancePscConfigOutputReference) validateSetAllo
 	return nil
 }
 
-func (j *jsiiProxy_GoogleLookerInstancePscConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleLookerInstancePscConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -237,4 +237,3 @@ func validateNewGoogleLookerInstancePscConfigOutputReferenceParameters(terraform
 
 	return nil
 }
-

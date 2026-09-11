@@ -109,7 +109,7 @@ func (g *jsiiProxy_GoogleCloudIdentityGroupMembershipRolesOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudIdentityGroupMembershipRolesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleCloudIdentityGroupMembershipRolesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -174,7 +174,7 @@ func (j *jsiiProxy_GoogleCloudIdentityGroupMembershipRolesOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudIdentityGroupMembershipRolesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleCloudIdentityGroupMembershipRolesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -241,4 +241,3 @@ func validateNewGoogleCloudIdentityGroupMembershipRolesOutputReferenceParameters
 
 	return nil
 }
-

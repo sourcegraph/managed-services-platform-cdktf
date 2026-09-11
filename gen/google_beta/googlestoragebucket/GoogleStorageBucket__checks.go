@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleStorageBucket) validateAddMoveTargetParameters(moveTarg
 	return nil
 }
 
-func (g *jsiiProxy_GoogleStorageBucket) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleStorageBucket) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleStorageBucket) validateMoveFromIdParameters(id *string)
 	return nil
 }
 
-func (g *jsiiProxy_GoogleStorageBucket) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleStorageBucket) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -215,7 +215,7 @@ func (g *jsiiProxy_GoogleStorageBucket) validatePutAutoclassParameters(value *Go
 	return nil
 }
 
-func (g *jsiiProxy_GoogleStorageBucket) validatePutCorsParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleStorageBucket) validatePutCorsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -290,7 +290,7 @@ func (g *jsiiProxy_GoogleStorageBucket) validatePutIpFilterParameters(value *Goo
 	return nil
 }
 
-func (g *jsiiProxy_GoogleStorageBucket) validatePutLifecycleRuleParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleStorageBucket) validatePutLifecycleRuleParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -403,7 +403,7 @@ func validateGoogleStorageBucket_GenerateConfigForImportParameters(scope constru
 	return nil
 }
 
-func validateGoogleStorageBucket_IsConstructParameters(x interface{}) error {
+func validateGoogleStorageBucket_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -411,7 +411,7 @@ func validateGoogleStorageBucket_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateGoogleStorageBucket_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleStorageBucket_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -419,7 +419,7 @@ func validateGoogleStorageBucket_IsTerraformElementParameters(x interface{}) err
 	return nil
 }
 
-func validateGoogleStorageBucket_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleStorageBucket_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -427,7 +427,7 @@ func validateGoogleStorageBucket_IsTerraformResourceParameters(x interface{}) er
 	return nil
 }
 
-func (j *jsiiProxy_GoogleStorageBucket) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleStorageBucket) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -460,7 +460,7 @@ func (j *jsiiProxy_GoogleStorageBucket) validateSetConnectionParameters(val inte
 	return nil
 }
 
-func (j *jsiiProxy_GoogleStorageBucket) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleStorageBucket) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -517,7 +517,7 @@ func (j *jsiiProxy_GoogleStorageBucket) validateSetCountParameters(val interface
 	return nil
 }
 
-func (j *jsiiProxy_GoogleStorageBucket) validateSetDefaultEventBasedHoldParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleStorageBucket) validateSetDefaultEventBasedHoldParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -537,7 +537,7 @@ func (j *jsiiProxy_GoogleStorageBucket) validateSetDefaultEventBasedHoldParamete
 	return nil
 }
 
-func (j *jsiiProxy_GoogleStorageBucket) validateSetEnableObjectRetentionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleStorageBucket) validateSetEnableObjectRetentionParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -557,7 +557,7 @@ func (j *jsiiProxy_GoogleStorageBucket) validateSetEnableObjectRetentionParamete
 	return nil
 }
 
-func (j *jsiiProxy_GoogleStorageBucket) validateSetForceDestroyParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleStorageBucket) validateSetForceDestroyParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -625,7 +625,7 @@ func (j *jsiiProxy_GoogleStorageBucket) validateSetProjectParameters(val *string
 	return nil
 }
 
-func (j *jsiiProxy_GoogleStorageBucket) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleStorageBucket) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -679,7 +679,7 @@ func (j *jsiiProxy_GoogleStorageBucket) validateSetPublicAccessPreventionParamet
 	return nil
 }
 
-func (j *jsiiProxy_GoogleStorageBucket) validateSetRequesterPaysParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleStorageBucket) validateSetRequesterPaysParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -715,7 +715,7 @@ func (j *jsiiProxy_GoogleStorageBucket) validateSetStorageClassParameters(val *s
 	return nil
 }
 
-func (j *jsiiProxy_GoogleStorageBucket) validateSetUniformBucketLevelAccessParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleStorageBucket) validateSetUniformBucketLevelAccessParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -753,4 +753,3 @@ func validateNewGoogleStorageBucketParameters(scope constructs.Construct, id *st
 
 	return nil
 }
-

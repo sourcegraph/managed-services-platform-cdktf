@@ -98,7 +98,7 @@ func (g *jsiiProxy_GooglePubsubSubscriptionExpirationPolicyOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_GooglePubsubSubscriptionExpirationPolicyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GooglePubsubSubscriptionExpirationPolicyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGooglePubsubSubscriptionExpirationPolicyOutputReferenceParameter
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleVmwareenginePrivateCloudHcxOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_GoogleVmwareenginePrivateCloudHcxOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleVmwareenginePrivateCloudHcxOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleVmwareenginePrivateCloudHcxOutputReferenceParameters(terra
 
 	return nil
 }
-

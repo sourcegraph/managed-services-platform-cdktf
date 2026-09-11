@@ -90,7 +90,7 @@ func (g *jsiiProxy_GoogleFilestoreInstanceFileSharesOutputReference) validateInt
 	return nil
 }
 
-func (g *jsiiProxy_GoogleFilestoreInstanceFileSharesOutputReference) validatePutNfsExportOptionsParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleFilestoreInstanceFileSharesOutputReference) validatePutNfsExportOptionsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -137,7 +137,7 @@ func (j *jsiiProxy_GoogleFilestoreInstanceFileSharesOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_GoogleFilestoreInstanceFileSharesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleFilestoreInstanceFileSharesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -253,4 +253,3 @@ func validateNewGoogleFilestoreInstanceFileSharesOutputReferenceParameters(terra
 
 	return nil
 }
-

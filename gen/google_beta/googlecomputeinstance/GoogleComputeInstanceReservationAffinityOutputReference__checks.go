@@ -109,7 +109,7 @@ func (g *jsiiProxy_GoogleComputeInstanceReservationAffinityOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceReservationAffinityOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeInstanceReservationAffinityOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -217,4 +217,3 @@ func validateNewGoogleComputeInstanceReservationAffinityOutputReferenceParameter
 
 	return nil
 }
-

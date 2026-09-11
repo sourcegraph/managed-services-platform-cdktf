@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleApiGatewayApiConfigGatewayConfigBackendConfigOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleApiGatewayApiConfigGatewayConfigBackendConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleApiGatewayApiConfigGatewayConfigBackendConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleApiGatewayApiConfigGatewayConfigBackendConfigOutputReferen
 
 	return nil
 }
-

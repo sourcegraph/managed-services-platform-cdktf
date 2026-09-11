@@ -128,7 +128,7 @@ func (j *jsiiProxy_GoogleCloudbuildTriggerBitbucketServerTriggerConfigOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudbuildTriggerBitbucketServerTriggerConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleCloudbuildTriggerBitbucketServerTriggerConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -244,4 +244,3 @@ func validateNewGoogleCloudbuildTriggerBitbucketServerTriggerConfigOutputReferen
 
 	return nil
 }
-

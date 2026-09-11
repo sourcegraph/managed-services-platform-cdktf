@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleSccV2OrganizationSourceIamMember.GoogleSccV2OrganizationSourceIamMember",
-		reflect.TypeOf((*GoogleSccV2OrganizationSourceIamMember)(nil)).Elem(),
+		reflect.TypeFor[GoogleSccV2OrganizationSourceIamMember](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -69,7 +69,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleSccV2OrganizationSourceIamMember{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -77,11 +77,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleSccV2OrganizationSourceIamMember.GoogleSccV2OrganizationSourceIamMemberCondition",
-		reflect.TypeOf((*GoogleSccV2OrganizationSourceIamMemberCondition)(nil)).Elem(),
+		reflect.TypeFor[GoogleSccV2OrganizationSourceIamMemberCondition](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleSccV2OrganizationSourceIamMember.GoogleSccV2OrganizationSourceIamMemberConditionOutputReference",
-		reflect.TypeOf((*GoogleSccV2OrganizationSourceIamMemberConditionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleSccV2OrganizationSourceIamMemberConditionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -112,7 +112,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "titleInput", GoGetter: "TitleInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleSccV2OrganizationSourceIamMemberConditionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -120,6 +120,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleSccV2OrganizationSourceIamMember.GoogleSccV2OrganizationSourceIamMemberConfig",
-		reflect.TypeOf((*GoogleSccV2OrganizationSourceIamMemberConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleSccV2OrganizationSourceIamMemberConfig](),
 	)
 }

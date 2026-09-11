@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleFirebaseAppCheckDebugToken.GoogleFirebaseAppCheckDebugToken",
-		reflect.TypeOf((*GoogleFirebaseAppCheckDebugToken)(nil)).Elem(),
+		reflect.TypeFor[GoogleFirebaseAppCheckDebugToken](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -70,7 +70,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleFirebaseAppCheckDebugToken{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -78,15 +78,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleFirebaseAppCheckDebugToken.GoogleFirebaseAppCheckDebugTokenConfig",
-		reflect.TypeOf((*GoogleFirebaseAppCheckDebugTokenConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleFirebaseAppCheckDebugTokenConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleFirebaseAppCheckDebugToken.GoogleFirebaseAppCheckDebugTokenTimeouts",
-		reflect.TypeOf((*GoogleFirebaseAppCheckDebugTokenTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleFirebaseAppCheckDebugTokenTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleFirebaseAppCheckDebugToken.GoogleFirebaseAppCheckDebugTokenTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleFirebaseAppCheckDebugTokenTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleFirebaseAppCheckDebugTokenTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -119,7 +119,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleFirebaseAppCheckDebugTokenTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

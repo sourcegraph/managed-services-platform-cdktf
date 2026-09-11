@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleComputeBackendServiceSignedUrlKey) validateAddMoveTarge
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeBackendServiceSignedUrlKey) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleComputeBackendServiceSignedUrlKey) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleComputeBackendServiceSignedUrlKey) validateMoveFromIdPa
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeBackendServiceSignedUrlKey) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleComputeBackendServiceSignedUrlKey) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateGoogleComputeBackendServiceSignedUrlKey_GenerateConfigForImportPara
 	return nil
 }
 
-func validateGoogleComputeBackendServiceSignedUrlKey_IsConstructParameters(x interface{}) error {
+func validateGoogleComputeBackendServiceSignedUrlKey_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateGoogleComputeBackendServiceSignedUrlKey_IsConstructParameters(x int
 	return nil
 }
 
-func validateGoogleComputeBackendServiceSignedUrlKey_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleComputeBackendServiceSignedUrlKey_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateGoogleComputeBackendServiceSignedUrlKey_IsTerraformElementParameter
 	return nil
 }
 
-func validateGoogleComputeBackendServiceSignedUrlKey_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleComputeBackendServiceSignedUrlKey_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -263,7 +263,7 @@ func (j *jsiiProxy_GoogleComputeBackendServiceSignedUrlKey) validateSetBackendSe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeBackendServiceSignedUrlKey) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeBackendServiceSignedUrlKey) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -296,7 +296,7 @@ func (j *jsiiProxy_GoogleComputeBackendServiceSignedUrlKey) validateSetConnectio
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeBackendServiceSignedUrlKey) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeBackendServiceSignedUrlKey) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -393,7 +393,7 @@ func (j *jsiiProxy_GoogleComputeBackendServiceSignedUrlKey) validateSetProjectPa
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeBackendServiceSignedUrlKey) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleComputeBackendServiceSignedUrlKey) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -457,4 +457,3 @@ func validateNewGoogleComputeBackendServiceSignedUrlKeyParameters(scope construc
 
 	return nil
 }
-

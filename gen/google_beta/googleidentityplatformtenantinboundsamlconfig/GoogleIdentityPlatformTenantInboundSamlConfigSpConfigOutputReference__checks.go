@@ -106,7 +106,7 @@ func (j *jsiiProxy_GoogleIdentityPlatformTenantInboundSamlConfigSpConfigOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIdentityPlatformTenantInboundSamlConfigSpConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleIdentityPlatformTenantInboundSamlConfigSpConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGoogleIdentityPlatformTenantInboundSamlConfigSpConfigOutputRefer
 
 	return nil
 }
-

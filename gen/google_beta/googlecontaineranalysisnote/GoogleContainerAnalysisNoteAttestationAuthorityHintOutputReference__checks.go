@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleContainerAnalysisNoteAttestationAuthorityHintOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerAnalysisNoteAttestationAuthorityHintOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContainerAnalysisNoteAttestationAuthorityHintOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleContainerAnalysisNoteAttestationAuthorityHintOutputReferen
 
 	return nil
 }
-

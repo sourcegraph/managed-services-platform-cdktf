@@ -1,6 +1,5 @@
 package googlecomputeregionsecuritypolicy
 
-
 type GoogleComputeRegionSecurityPolicyRulesRateLimitOptions struct {
 	// Can only be specified if the action for the rule is "rate_based_ban".
 	//
@@ -36,7 +35,7 @@ type GoogleComputeRegionSecurityPolicyRulesRateLimitOptions struct {
 	// enforce_on_key_configs block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_region_security_policy#enforce_on_key_configs GoogleComputeRegionSecurityPolicy#enforce_on_key_configs}
-	EnforceOnKeyConfigs interface{} `field:"optional" json:"enforceOnKeyConfigs" yaml:"enforceOnKeyConfigs"`
+	EnforceOnKeyConfigs any `field:"optional" json:"enforceOnKeyConfigs" yaml:"enforceOnKeyConfigs"`
 	// Rate limit key name applicable only for the following key types: HTTP_HEADER -- Name of the HTTP header whose value is taken as the key value.
 	//
 	// HTTP_COOKIE -- Name of the HTTP cookie whose value is taken as the key value.
@@ -54,4 +53,3 @@ type GoogleComputeRegionSecurityPolicyRulesRateLimitOptions struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_region_security_policy#rate_limit_threshold GoogleComputeRegionSecurityPolicy#rate_limit_threshold}
 	RateLimitThreshold *GoogleComputeRegionSecurityPolicyRulesRateLimitOptionsRateLimitThreshold `field:"optional" json:"rateLimitThreshold" yaml:"rateLimitThreshold"`
 }
-

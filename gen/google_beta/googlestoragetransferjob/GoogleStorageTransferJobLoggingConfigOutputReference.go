@@ -12,9 +12,9 @@ type GoogleStorageTransferJobLoggingConfigOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -25,9 +25,9 @@ type GoogleStorageTransferJobLoggingConfigOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	EnableOnPremGcsTransferLogs() interface{}
-	SetEnableOnPremGcsTransferLogs(val interface{})
-	EnableOnPremGcsTransferLogsInput() interface{}
+	EnableOnPremGcsTransferLogs() any
+	SetEnableOnPremGcsTransferLogs(val any)
+	EnableOnPremGcsTransferLogsInput() any
 	// Experimental.
 	Fqn() *string
 	InternalValue() *GoogleStorageTransferJobLoggingConfig
@@ -49,7 +49,7 @@ type GoogleStorageTransferJobLoggingConfigOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,7 +75,7 @@ type GoogleStorageTransferJobLoggingConfigOutputReference interface {
 	ResetLogActionStates()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,8 +88,8 @@ type jsiiProxy_GoogleStorageTransferJobLoggingConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GoogleStorageTransferJobLoggingConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleStorageTransferJobLoggingConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -118,8 +118,8 @@ func (j *jsiiProxy_GoogleStorageTransferJobLoggingConfigOutputReference) Creatio
 	return returns
 }
 
-func (j *jsiiProxy_GoogleStorageTransferJobLoggingConfigOutputReference) EnableOnPremGcsTransferLogs() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleStorageTransferJobLoggingConfigOutputReference) EnableOnPremGcsTransferLogs() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableOnPremGcsTransferLogs",
@@ -128,8 +128,8 @@ func (j *jsiiProxy_GoogleStorageTransferJobLoggingConfigOutputReference) EnableO
 	return returns
 }
 
-func (j *jsiiProxy_GoogleStorageTransferJobLoggingConfigOutputReference) EnableOnPremGcsTransferLogsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleStorageTransferJobLoggingConfigOutputReference) EnableOnPremGcsTransferLogsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableOnPremGcsTransferLogsInput",
@@ -218,7 +218,6 @@ func (j *jsiiProxy_GoogleStorageTransferJobLoggingConfigOutputReference) Terrafo
 	return returns
 }
 
-
 func NewGoogleStorageTransferJobLoggingConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleStorageTransferJobLoggingConfigOutputReference {
 	_init_.Initialize()
 
@@ -229,7 +228,7 @@ func NewGoogleStorageTransferJobLoggingConfigOutputReference(terraformResource c
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleStorageTransferJob.GoogleStorageTransferJobLoggingConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -241,12 +240,12 @@ func NewGoogleStorageTransferJobLoggingConfigOutputReference_Override(g GoogleSt
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleStorageTransferJob.GoogleStorageTransferJobLoggingConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleStorageTransferJobLoggingConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleStorageTransferJobLoggingConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -257,7 +256,7 @@ func (j *jsiiProxy_GoogleStorageTransferJobLoggingConfigOutputReference)SetCompl
 	)
 }
 
-func (j *jsiiProxy_GoogleStorageTransferJobLoggingConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleStorageTransferJobLoggingConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -268,7 +267,7 @@ func (j *jsiiProxy_GoogleStorageTransferJobLoggingConfigOutputReference)SetCompl
 	)
 }
 
-func (j *jsiiProxy_GoogleStorageTransferJobLoggingConfigOutputReference)SetEnableOnPremGcsTransferLogs(val interface{}) {
+func (j *jsiiProxy_GoogleStorageTransferJobLoggingConfigOutputReference) SetEnableOnPremGcsTransferLogs(val any) {
 	if err := j.validateSetEnableOnPremGcsTransferLogsParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_GoogleStorageTransferJobLoggingConfigOutputReference)SetEnabl
 	)
 }
 
-func (j *jsiiProxy_GoogleStorageTransferJobLoggingConfigOutputReference)SetInternalValue(val *GoogleStorageTransferJobLoggingConfig) {
+func (j *jsiiProxy_GoogleStorageTransferJobLoggingConfigOutputReference) SetInternalValue(val *GoogleStorageTransferJobLoggingConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_GoogleStorageTransferJobLoggingConfigOutputReference)SetInter
 	)
 }
 
-func (j *jsiiProxy_GoogleStorageTransferJobLoggingConfigOutputReference)SetLogActions(val *[]*string) {
+func (j *jsiiProxy_GoogleStorageTransferJobLoggingConfigOutputReference) SetLogActions(val *[]*string) {
 	if err := j.validateSetLogActionsParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_GoogleStorageTransferJobLoggingConfigOutputReference)SetLogAc
 	)
 }
 
-func (j *jsiiProxy_GoogleStorageTransferJobLoggingConfigOutputReference)SetLogActionStates(val *[]*string) {
+func (j *jsiiProxy_GoogleStorageTransferJobLoggingConfigOutputReference) SetLogActionStates(val *[]*string) {
 	if err := j.validateSetLogActionStatesParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_GoogleStorageTransferJobLoggingConfigOutputReference)SetLogAc
 	)
 }
 
-func (j *jsiiProxy_GoogleStorageTransferJobLoggingConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleStorageTransferJobLoggingConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_GoogleStorageTransferJobLoggingConfigOutputReference)SetTerra
 	)
 }
 
-func (j *jsiiProxy_GoogleStorageTransferJobLoggingConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleStorageTransferJobLoggingConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,16 +346,16 @@ func (g *jsiiProxy_GoogleStorageTransferJobLoggingConfigOutputReference) Compute
 	return returns
 }
 
-func (g *jsiiProxy_GoogleStorageTransferJobLoggingConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleStorageTransferJobLoggingConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -372,7 +371,7 @@ func (g *jsiiProxy_GoogleStorageTransferJobLoggingConfigOutputReference) GetBool
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -388,7 +387,7 @@ func (g *jsiiProxy_GoogleStorageTransferJobLoggingConfigOutputReference) GetBool
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -404,7 +403,7 @@ func (g *jsiiProxy_GoogleStorageTransferJobLoggingConfigOutputReference) GetList
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -420,7 +419,7 @@ func (g *jsiiProxy_GoogleStorageTransferJobLoggingConfigOutputReference) GetNumb
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -436,7 +435,7 @@ func (g *jsiiProxy_GoogleStorageTransferJobLoggingConfigOutputReference) GetNumb
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -452,7 +451,7 @@ func (g *jsiiProxy_GoogleStorageTransferJobLoggingConfigOutputReference) GetNumb
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -468,7 +467,7 @@ func (g *jsiiProxy_GoogleStorageTransferJobLoggingConfigOutputReference) GetStri
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -484,7 +483,7 @@ func (g *jsiiProxy_GoogleStorageTransferJobLoggingConfigOutputReference) GetStri
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -513,7 +512,7 @@ func (g *jsiiProxy_GoogleStorageTransferJobLoggingConfigOutputReference) Interpo
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -544,16 +543,16 @@ func (g *jsiiProxy_GoogleStorageTransferJobLoggingConfigOutputReference) ResetLo
 	)
 }
 
-func (g *jsiiProxy_GoogleStorageTransferJobLoggingConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleStorageTransferJobLoggingConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -572,4 +571,3 @@ func (g *jsiiProxy_GoogleStorageTransferJobLoggingConfigOutputReference) ToStrin
 
 	return returns
 }
-

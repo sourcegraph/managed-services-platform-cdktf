@@ -12,9 +12,9 @@ type GoogleBigqueryJobLoadParquetOptionsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -25,12 +25,12 @@ type GoogleBigqueryJobLoadParquetOptionsOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	EnableListInference() interface{}
-	SetEnableListInference(val interface{})
-	EnableListInferenceInput() interface{}
-	EnumAsString() interface{}
-	SetEnumAsString(val interface{})
-	EnumAsStringInput() interface{}
+	EnableListInference() any
+	SetEnableListInference(val any)
+	EnableListInferenceInput() any
+	EnumAsString() any
+	SetEnumAsString(val any)
+	EnumAsStringInput() any
 	// Experimental.
 	Fqn() *string
 	InternalValue() *GoogleBigqueryJobLoadParquetOptions
@@ -46,7 +46,7 @@ type GoogleBigqueryJobLoadParquetOptionsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -71,7 +71,7 @@ type GoogleBigqueryJobLoadParquetOptionsOutputReference interface {
 	ResetEnumAsString()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,8 +84,8 @@ type jsiiProxy_GoogleBigqueryJobLoadParquetOptionsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GoogleBigqueryJobLoadParquetOptionsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleBigqueryJobLoadParquetOptionsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -114,8 +114,8 @@ func (j *jsiiProxy_GoogleBigqueryJobLoadParquetOptionsOutputReference) CreationS
 	return returns
 }
 
-func (j *jsiiProxy_GoogleBigqueryJobLoadParquetOptionsOutputReference) EnableListInference() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleBigqueryJobLoadParquetOptionsOutputReference) EnableListInference() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableListInference",
@@ -124,8 +124,8 @@ func (j *jsiiProxy_GoogleBigqueryJobLoadParquetOptionsOutputReference) EnableLis
 	return returns
 }
 
-func (j *jsiiProxy_GoogleBigqueryJobLoadParquetOptionsOutputReference) EnableListInferenceInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleBigqueryJobLoadParquetOptionsOutputReference) EnableListInferenceInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableListInferenceInput",
@@ -134,8 +134,8 @@ func (j *jsiiProxy_GoogleBigqueryJobLoadParquetOptionsOutputReference) EnableLis
 	return returns
 }
 
-func (j *jsiiProxy_GoogleBigqueryJobLoadParquetOptionsOutputReference) EnumAsString() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleBigqueryJobLoadParquetOptionsOutputReference) EnumAsString() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enumAsString",
@@ -144,8 +144,8 @@ func (j *jsiiProxy_GoogleBigqueryJobLoadParquetOptionsOutputReference) EnumAsStr
 	return returns
 }
 
-func (j *jsiiProxy_GoogleBigqueryJobLoadParquetOptionsOutputReference) EnumAsStringInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleBigqueryJobLoadParquetOptionsOutputReference) EnumAsStringInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enumAsStringInput",
@@ -194,7 +194,6 @@ func (j *jsiiProxy_GoogleBigqueryJobLoadParquetOptionsOutputReference) Terraform
 	return returns
 }
 
-
 func NewGoogleBigqueryJobLoadParquetOptionsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleBigqueryJobLoadParquetOptionsOutputReference {
 	_init_.Initialize()
 
@@ -205,7 +204,7 @@ func NewGoogleBigqueryJobLoadParquetOptionsOutputReference(terraformResource cdk
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleBigqueryJob.GoogleBigqueryJobLoadParquetOptionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -217,12 +216,12 @@ func NewGoogleBigqueryJobLoadParquetOptionsOutputReference_Override(g GoogleBigq
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleBigqueryJob.GoogleBigqueryJobLoadParquetOptionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryJobLoadParquetOptionsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleBigqueryJobLoadParquetOptionsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -233,7 +232,7 @@ func (j *jsiiProxy_GoogleBigqueryJobLoadParquetOptionsOutputReference)SetComplex
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryJobLoadParquetOptionsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleBigqueryJobLoadParquetOptionsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -244,7 +243,7 @@ func (j *jsiiProxy_GoogleBigqueryJobLoadParquetOptionsOutputReference)SetComplex
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryJobLoadParquetOptionsOutputReference)SetEnableListInference(val interface{}) {
+func (j *jsiiProxy_GoogleBigqueryJobLoadParquetOptionsOutputReference) SetEnableListInference(val any) {
 	if err := j.validateSetEnableListInferenceParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_GoogleBigqueryJobLoadParquetOptionsOutputReference)SetEnableL
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryJobLoadParquetOptionsOutputReference)SetEnumAsString(val interface{}) {
+func (j *jsiiProxy_GoogleBigqueryJobLoadParquetOptionsOutputReference) SetEnumAsString(val any) {
 	if err := j.validateSetEnumAsStringParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_GoogleBigqueryJobLoadParquetOptionsOutputReference)SetEnumAsS
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryJobLoadParquetOptionsOutputReference)SetInternalValue(val *GoogleBigqueryJobLoadParquetOptions) {
+func (j *jsiiProxy_GoogleBigqueryJobLoadParquetOptionsOutputReference) SetInternalValue(val *GoogleBigqueryJobLoadParquetOptions) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_GoogleBigqueryJobLoadParquetOptionsOutputReference)SetInterna
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryJobLoadParquetOptionsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleBigqueryJobLoadParquetOptionsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_GoogleBigqueryJobLoadParquetOptionsOutputReference)SetTerrafo
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryJobLoadParquetOptionsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleBigqueryJobLoadParquetOptionsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,16 +311,16 @@ func (g *jsiiProxy_GoogleBigqueryJobLoadParquetOptionsOutputReference) ComputeFq
 	return returns
 }
 
-func (g *jsiiProxy_GoogleBigqueryJobLoadParquetOptionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleBigqueryJobLoadParquetOptionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -337,7 +336,7 @@ func (g *jsiiProxy_GoogleBigqueryJobLoadParquetOptionsOutputReference) GetBoolea
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -353,7 +352,7 @@ func (g *jsiiProxy_GoogleBigqueryJobLoadParquetOptionsOutputReference) GetBoolea
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -369,7 +368,7 @@ func (g *jsiiProxy_GoogleBigqueryJobLoadParquetOptionsOutputReference) GetListAt
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -385,7 +384,7 @@ func (g *jsiiProxy_GoogleBigqueryJobLoadParquetOptionsOutputReference) GetNumber
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -401,7 +400,7 @@ func (g *jsiiProxy_GoogleBigqueryJobLoadParquetOptionsOutputReference) GetNumber
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -417,7 +416,7 @@ func (g *jsiiProxy_GoogleBigqueryJobLoadParquetOptionsOutputReference) GetNumber
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -433,7 +432,7 @@ func (g *jsiiProxy_GoogleBigqueryJobLoadParquetOptionsOutputReference) GetString
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -449,7 +448,7 @@ func (g *jsiiProxy_GoogleBigqueryJobLoadParquetOptionsOutputReference) GetString
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -478,7 +477,7 @@ func (g *jsiiProxy_GoogleBigqueryJobLoadParquetOptionsOutputReference) Interpola
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -501,16 +500,16 @@ func (g *jsiiProxy_GoogleBigqueryJobLoadParquetOptionsOutputReference) ResetEnum
 	)
 }
 
-func (g *jsiiProxy_GoogleBigqueryJobLoadParquetOptionsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleBigqueryJobLoadParquetOptionsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -529,4 +528,3 @@ func (g *jsiiProxy_GoogleBigqueryJobLoadParquetOptionsOutputReference) ToString(
 
 	return returns
 }
-

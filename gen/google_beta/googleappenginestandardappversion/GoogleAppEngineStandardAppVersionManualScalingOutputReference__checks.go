@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleAppEngineStandardAppVersionManualScalingOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAppEngineStandardAppVersionManualScalingOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleAppEngineStandardAppVersionManualScalingOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleAppEngineStandardAppVersionManualScalingOutputReferencePar
 
 	return nil
 }
-

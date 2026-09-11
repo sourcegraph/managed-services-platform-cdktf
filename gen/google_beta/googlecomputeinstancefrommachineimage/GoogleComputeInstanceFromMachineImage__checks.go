@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) validateAddMoveTargetP
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) validateMoveFromIdPara
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -226,7 +226,7 @@ func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) validatePutConfidentia
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) validatePutGuestAcceleratorParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) validatePutGuestAcceleratorParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -268,7 +268,7 @@ func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) validatePutInstanceEnc
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) validatePutNetworkInterfaceParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) validatePutNetworkInterfaceParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -403,7 +403,7 @@ func validateGoogleComputeInstanceFromMachineImage_GenerateConfigForImportParame
 	return nil
 }
 
-func validateGoogleComputeInstanceFromMachineImage_IsConstructParameters(x interface{}) error {
+func validateGoogleComputeInstanceFromMachineImage_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -411,7 +411,7 @@ func validateGoogleComputeInstanceFromMachineImage_IsConstructParameters(x inter
 	return nil
 }
 
-func validateGoogleComputeInstanceFromMachineImage_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleComputeInstanceFromMachineImage_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -419,7 +419,7 @@ func validateGoogleComputeInstanceFromMachineImage_IsTerraformElementParameters(
 	return nil
 }
 
-func validateGoogleComputeInstanceFromMachineImage_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleComputeInstanceFromMachineImage_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -427,7 +427,7 @@ func validateGoogleComputeInstanceFromMachineImage_IsTerraformResourceParameters
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) validateSetAllowStoppingForUpdateParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) validateSetAllowStoppingForUpdateParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -447,7 +447,7 @@ func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) validateSetAllowStoppi
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) validateSetCanIpForwardParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) validateSetCanIpForwardParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -467,7 +467,7 @@ func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) validateSetCanIpForwar
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -500,7 +500,7 @@ func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) validateSetConnectionP
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -557,7 +557,7 @@ func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) validateSetCountParame
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) validateSetDeletionProtectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) validateSetDeletionProtectionParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -593,7 +593,7 @@ func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) validateSetDesiredStat
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) validateSetEnableDisplayParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) validateSetEnableDisplayParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -709,7 +709,7 @@ func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) validateSetProjectPara
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -805,4 +805,3 @@ func validateNewGoogleComputeInstanceFromMachineImageParameters(scope constructs
 
 	return nil
 }
-

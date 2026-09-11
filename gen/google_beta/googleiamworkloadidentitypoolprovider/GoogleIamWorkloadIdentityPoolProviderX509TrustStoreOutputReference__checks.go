@@ -90,7 +90,7 @@ func (g *jsiiProxy_GoogleIamWorkloadIdentityPoolProviderX509TrustStoreOutputRefe
 	return nil
 }
 
-func (g *jsiiProxy_GoogleIamWorkloadIdentityPoolProviderX509TrustStoreOutputReference) validatePutIntermediateCasParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleIamWorkloadIdentityPoolProviderX509TrustStoreOutputReference) validatePutIntermediateCasParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (g *jsiiProxy_GoogleIamWorkloadIdentityPoolProviderX509TrustStoreOutputRefe
 	return nil
 }
 
-func (g *jsiiProxy_GoogleIamWorkloadIdentityPoolProviderX509TrustStoreOutputReference) validatePutTrustAnchorsParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleIamWorkloadIdentityPoolProviderX509TrustStoreOutputReference) validatePutTrustAnchorsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -160,7 +160,7 @@ func (g *jsiiProxy_GoogleIamWorkloadIdentityPoolProviderX509TrustStoreOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIamWorkloadIdentityPoolProviderX509TrustStoreOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleIamWorkloadIdentityPoolProviderX509TrustStoreOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -260,4 +260,3 @@ func validateNewGoogleIamWorkloadIdentityPoolProviderX509TrustStoreOutputReferen
 
 	return nil
 }
-

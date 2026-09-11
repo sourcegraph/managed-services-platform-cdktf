@@ -12,9 +12,9 @@ type GooglePubsubSubscriptionBigqueryConfigOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -25,9 +25,9 @@ type GooglePubsubSubscriptionBigqueryConfigOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	DropUnknownFields() interface{}
-	SetDropUnknownFields(val interface{})
-	DropUnknownFieldsInput() interface{}
+	DropUnknownFields() any
+	SetDropUnknownFields(val any)
+	DropUnknownFieldsInput() any
 	// Experimental.
 	Fqn() *string
 	InternalValue() *GooglePubsubSubscriptionBigqueryConfig
@@ -46,19 +46,19 @@ type GooglePubsubSubscriptionBigqueryConfigOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
-	UseTableSchema() interface{}
-	SetUseTableSchema(val interface{})
-	UseTableSchemaInput() interface{}
-	UseTopicSchema() interface{}
-	SetUseTopicSchema(val interface{})
-	UseTopicSchemaInput() interface{}
-	WriteMetadata() interface{}
-	SetWriteMetadata(val interface{})
-	WriteMetadataInput() interface{}
+	UseTableSchema() any
+	SetUseTableSchema(val any)
+	UseTableSchemaInput() any
+	UseTopicSchema() any
+	SetUseTopicSchema(val any)
+	UseTopicSchemaInput() any
+	WriteMetadata() any
+	SetWriteMetadata(val any)
+	WriteMetadataInput() any
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -86,7 +86,7 @@ type GooglePubsubSubscriptionBigqueryConfigOutputReference interface {
 	ResetWriteMetadata()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -99,8 +99,8 @@ type jsiiProxy_GooglePubsubSubscriptionBigqueryConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GooglePubsubSubscriptionBigqueryConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GooglePubsubSubscriptionBigqueryConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -129,8 +129,8 @@ func (j *jsiiProxy_GooglePubsubSubscriptionBigqueryConfigOutputReference) Creati
 	return returns
 }
 
-func (j *jsiiProxy_GooglePubsubSubscriptionBigqueryConfigOutputReference) DropUnknownFields() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GooglePubsubSubscriptionBigqueryConfigOutputReference) DropUnknownFields() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"dropUnknownFields",
@@ -139,8 +139,8 @@ func (j *jsiiProxy_GooglePubsubSubscriptionBigqueryConfigOutputReference) DropUn
 	return returns
 }
 
-func (j *jsiiProxy_GooglePubsubSubscriptionBigqueryConfigOutputReference) DropUnknownFieldsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GooglePubsubSubscriptionBigqueryConfigOutputReference) DropUnknownFieldsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"dropUnknownFieldsInput",
@@ -229,8 +229,8 @@ func (j *jsiiProxy_GooglePubsubSubscriptionBigqueryConfigOutputReference) Terraf
 	return returns
 }
 
-func (j *jsiiProxy_GooglePubsubSubscriptionBigqueryConfigOutputReference) UseTableSchema() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GooglePubsubSubscriptionBigqueryConfigOutputReference) UseTableSchema() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"useTableSchema",
@@ -239,8 +239,8 @@ func (j *jsiiProxy_GooglePubsubSubscriptionBigqueryConfigOutputReference) UseTab
 	return returns
 }
 
-func (j *jsiiProxy_GooglePubsubSubscriptionBigqueryConfigOutputReference) UseTableSchemaInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GooglePubsubSubscriptionBigqueryConfigOutputReference) UseTableSchemaInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"useTableSchemaInput",
@@ -249,8 +249,8 @@ func (j *jsiiProxy_GooglePubsubSubscriptionBigqueryConfigOutputReference) UseTab
 	return returns
 }
 
-func (j *jsiiProxy_GooglePubsubSubscriptionBigqueryConfigOutputReference) UseTopicSchema() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GooglePubsubSubscriptionBigqueryConfigOutputReference) UseTopicSchema() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"useTopicSchema",
@@ -259,8 +259,8 @@ func (j *jsiiProxy_GooglePubsubSubscriptionBigqueryConfigOutputReference) UseTop
 	return returns
 }
 
-func (j *jsiiProxy_GooglePubsubSubscriptionBigqueryConfigOutputReference) UseTopicSchemaInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GooglePubsubSubscriptionBigqueryConfigOutputReference) UseTopicSchemaInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"useTopicSchemaInput",
@@ -269,8 +269,8 @@ func (j *jsiiProxy_GooglePubsubSubscriptionBigqueryConfigOutputReference) UseTop
 	return returns
 }
 
-func (j *jsiiProxy_GooglePubsubSubscriptionBigqueryConfigOutputReference) WriteMetadata() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GooglePubsubSubscriptionBigqueryConfigOutputReference) WriteMetadata() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"writeMetadata",
@@ -279,8 +279,8 @@ func (j *jsiiProxy_GooglePubsubSubscriptionBigqueryConfigOutputReference) WriteM
 	return returns
 }
 
-func (j *jsiiProxy_GooglePubsubSubscriptionBigqueryConfigOutputReference) WriteMetadataInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GooglePubsubSubscriptionBigqueryConfigOutputReference) WriteMetadataInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"writeMetadataInput",
@@ -288,7 +288,6 @@ func (j *jsiiProxy_GooglePubsubSubscriptionBigqueryConfigOutputReference) WriteM
 	)
 	return returns
 }
-
 
 func NewGooglePubsubSubscriptionBigqueryConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GooglePubsubSubscriptionBigqueryConfigOutputReference {
 	_init_.Initialize()
@@ -300,7 +299,7 @@ func NewGooglePubsubSubscriptionBigqueryConfigOutputReference(terraformResource 
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googlePubsubSubscription.GooglePubsubSubscriptionBigqueryConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -312,12 +311,12 @@ func NewGooglePubsubSubscriptionBigqueryConfigOutputReference_Override(g GoogleP
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googlePubsubSubscription.GooglePubsubSubscriptionBigqueryConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GooglePubsubSubscriptionBigqueryConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GooglePubsubSubscriptionBigqueryConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -328,7 +327,7 @@ func (j *jsiiProxy_GooglePubsubSubscriptionBigqueryConfigOutputReference)SetComp
 	)
 }
 
-func (j *jsiiProxy_GooglePubsubSubscriptionBigqueryConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GooglePubsubSubscriptionBigqueryConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -339,7 +338,7 @@ func (j *jsiiProxy_GooglePubsubSubscriptionBigqueryConfigOutputReference)SetComp
 	)
 }
 
-func (j *jsiiProxy_GooglePubsubSubscriptionBigqueryConfigOutputReference)SetDropUnknownFields(val interface{}) {
+func (j *jsiiProxy_GooglePubsubSubscriptionBigqueryConfigOutputReference) SetDropUnknownFields(val any) {
 	if err := j.validateSetDropUnknownFieldsParameters(val); err != nil {
 		panic(err)
 	}
@@ -350,7 +349,7 @@ func (j *jsiiProxy_GooglePubsubSubscriptionBigqueryConfigOutputReference)SetDrop
 	)
 }
 
-func (j *jsiiProxy_GooglePubsubSubscriptionBigqueryConfigOutputReference)SetInternalValue(val *GooglePubsubSubscriptionBigqueryConfig) {
+func (j *jsiiProxy_GooglePubsubSubscriptionBigqueryConfigOutputReference) SetInternalValue(val *GooglePubsubSubscriptionBigqueryConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -361,7 +360,7 @@ func (j *jsiiProxy_GooglePubsubSubscriptionBigqueryConfigOutputReference)SetInte
 	)
 }
 
-func (j *jsiiProxy_GooglePubsubSubscriptionBigqueryConfigOutputReference)SetServiceAccountEmail(val *string) {
+func (j *jsiiProxy_GooglePubsubSubscriptionBigqueryConfigOutputReference) SetServiceAccountEmail(val *string) {
 	if err := j.validateSetServiceAccountEmailParameters(val); err != nil {
 		panic(err)
 	}
@@ -372,7 +371,7 @@ func (j *jsiiProxy_GooglePubsubSubscriptionBigqueryConfigOutputReference)SetServ
 	)
 }
 
-func (j *jsiiProxy_GooglePubsubSubscriptionBigqueryConfigOutputReference)SetTable(val *string) {
+func (j *jsiiProxy_GooglePubsubSubscriptionBigqueryConfigOutputReference) SetTable(val *string) {
 	if err := j.validateSetTableParameters(val); err != nil {
 		panic(err)
 	}
@@ -383,7 +382,7 @@ func (j *jsiiProxy_GooglePubsubSubscriptionBigqueryConfigOutputReference)SetTabl
 	)
 }
 
-func (j *jsiiProxy_GooglePubsubSubscriptionBigqueryConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GooglePubsubSubscriptionBigqueryConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -394,7 +393,7 @@ func (j *jsiiProxy_GooglePubsubSubscriptionBigqueryConfigOutputReference)SetTerr
 	)
 }
 
-func (j *jsiiProxy_GooglePubsubSubscriptionBigqueryConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GooglePubsubSubscriptionBigqueryConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -405,7 +404,7 @@ func (j *jsiiProxy_GooglePubsubSubscriptionBigqueryConfigOutputReference)SetTerr
 	)
 }
 
-func (j *jsiiProxy_GooglePubsubSubscriptionBigqueryConfigOutputReference)SetUseTableSchema(val interface{}) {
+func (j *jsiiProxy_GooglePubsubSubscriptionBigqueryConfigOutputReference) SetUseTableSchema(val any) {
 	if err := j.validateSetUseTableSchemaParameters(val); err != nil {
 		panic(err)
 	}
@@ -416,7 +415,7 @@ func (j *jsiiProxy_GooglePubsubSubscriptionBigqueryConfigOutputReference)SetUseT
 	)
 }
 
-func (j *jsiiProxy_GooglePubsubSubscriptionBigqueryConfigOutputReference)SetUseTopicSchema(val interface{}) {
+func (j *jsiiProxy_GooglePubsubSubscriptionBigqueryConfigOutputReference) SetUseTopicSchema(val any) {
 	if err := j.validateSetUseTopicSchemaParameters(val); err != nil {
 		panic(err)
 	}
@@ -427,7 +426,7 @@ func (j *jsiiProxy_GooglePubsubSubscriptionBigqueryConfigOutputReference)SetUseT
 	)
 }
 
-func (j *jsiiProxy_GooglePubsubSubscriptionBigqueryConfigOutputReference)SetWriteMetadata(val interface{}) {
+func (j *jsiiProxy_GooglePubsubSubscriptionBigqueryConfigOutputReference) SetWriteMetadata(val any) {
 	if err := j.validateSetWriteMetadataParameters(val); err != nil {
 		panic(err)
 	}
@@ -451,16 +450,16 @@ func (g *jsiiProxy_GooglePubsubSubscriptionBigqueryConfigOutputReference) Comput
 	return returns
 }
 
-func (g *jsiiProxy_GooglePubsubSubscriptionBigqueryConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GooglePubsubSubscriptionBigqueryConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -476,7 +475,7 @@ func (g *jsiiProxy_GooglePubsubSubscriptionBigqueryConfigOutputReference) GetBoo
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -492,7 +491,7 @@ func (g *jsiiProxy_GooglePubsubSubscriptionBigqueryConfigOutputReference) GetBoo
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -508,7 +507,7 @@ func (g *jsiiProxy_GooglePubsubSubscriptionBigqueryConfigOutputReference) GetLis
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -524,7 +523,7 @@ func (g *jsiiProxy_GooglePubsubSubscriptionBigqueryConfigOutputReference) GetNum
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -540,7 +539,7 @@ func (g *jsiiProxy_GooglePubsubSubscriptionBigqueryConfigOutputReference) GetNum
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -556,7 +555,7 @@ func (g *jsiiProxy_GooglePubsubSubscriptionBigqueryConfigOutputReference) GetNum
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -572,7 +571,7 @@ func (g *jsiiProxy_GooglePubsubSubscriptionBigqueryConfigOutputReference) GetStr
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -588,7 +587,7 @@ func (g *jsiiProxy_GooglePubsubSubscriptionBigqueryConfigOutputReference) GetStr
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -617,7 +616,7 @@ func (g *jsiiProxy_GooglePubsubSubscriptionBigqueryConfigOutputReference) Interp
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -664,16 +663,16 @@ func (g *jsiiProxy_GooglePubsubSubscriptionBigqueryConfigOutputReference) ResetW
 	)
 }
 
-func (g *jsiiProxy_GooglePubsubSubscriptionBigqueryConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GooglePubsubSubscriptionBigqueryConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -692,4 +691,3 @@ func (g *jsiiProxy_GooglePubsubSubscriptionBigqueryConfigOutputReference) ToStri
 
 	return returns
 }
-

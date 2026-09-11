@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleDataplexTaskExecutionStatusLatestJobOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataplexTaskExecutionStatusLatestJobOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataplexTaskExecutionStatusLatestJobOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleDataplexTaskExecutionStatusLatestJobOutputReferenceParamet
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleGkeHubMembershipIamMemberConditionOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGkeHubMembershipIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleGkeHubMembershipIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewGoogleGkeHubMembershipIamMemberConditionOutputReferenceParameter
 
 	return nil
 }
-

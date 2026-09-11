@@ -1,6 +1,5 @@
 package googledataplexdatascan
 
-
 type GoogleDataplexDatascanDataDiscoverySpecStorageConfigCsvOptions struct {
 	// The delimiter that is used to separate values. The default is ',' (comma).
 	//
@@ -23,6 +22,5 @@ type GoogleDataplexDatascanDataDiscoverySpecStorageConfigCsvOptions struct {
 	// Whether to disable the inference of data types for CSV data. If true, all columns are registered as strings.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dataplex_datascan#type_inference_disabled GoogleDataplexDatascan#type_inference_disabled}
-	TypeInferenceDisabled interface{} `field:"optional" json:"typeInferenceDisabled" yaml:"typeInferenceDisabled"`
+	TypeInferenceDisabled any `field:"optional" json:"typeInferenceDisabled" yaml:"typeInferenceDisabled"`
 }
-

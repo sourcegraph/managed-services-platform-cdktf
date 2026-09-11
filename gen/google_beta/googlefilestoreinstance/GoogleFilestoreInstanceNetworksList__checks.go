@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleFilestoreInstanceNetworksList) validateResolveParameter
 	return nil
 }
 
-func (j *jsiiProxy_GoogleFilestoreInstanceNetworksList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleFilestoreInstanceNetworksList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleFilestoreInstanceNetworksListParameters(terraformResource 
 
 	return nil
 }
-

@@ -90,7 +90,7 @@ func (g *jsiiProxy_GoogleClouddeployDeliveryPipelineSerialPipelineOutputReferenc
 	return nil
 }
 
-func (g *jsiiProxy_GoogleClouddeployDeliveryPipelineSerialPipelineOutputReference) validatePutStagesParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleClouddeployDeliveryPipelineSerialPipelineOutputReference) validatePutStagesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (g *jsiiProxy_GoogleClouddeployDeliveryPipelineSerialPipelineOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_GoogleClouddeployDeliveryPipelineSerialPipelineOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleClouddeployDeliveryPipelineSerialPipelineOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -229,4 +229,3 @@ func validateNewGoogleClouddeployDeliveryPipelineSerialPipelineOutputReferencePa
 
 	return nil
 }
-

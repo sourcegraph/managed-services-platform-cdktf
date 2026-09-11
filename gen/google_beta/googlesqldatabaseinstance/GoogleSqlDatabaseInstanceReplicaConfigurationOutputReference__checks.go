@@ -106,7 +106,7 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference) validateSetCascadableReplicaParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference) validateSetCascadableReplicaParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -142,7 +142,7 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -223,7 +223,7 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference) validateSetFailoverTargetParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference) validateSetFailoverTargetParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -299,7 +299,7 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference) validateSetVerifyServerCertificateParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference) validateSetVerifyServerCertificateParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -330,4 +330,3 @@ func validateNewGoogleSqlDatabaseInstanceReplicaConfigurationOutputReferencePara
 
 	return nil
 }
-

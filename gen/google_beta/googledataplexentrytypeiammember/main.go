@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataplexEntryTypeIamMember.GoogleDataplexEntryTypeIamMember",
-		reflect.TypeOf((*GoogleDataplexEntryTypeIamMember)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataplexEntryTypeIamMember](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -73,7 +73,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataplexEntryTypeIamMember{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -81,11 +81,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataplexEntryTypeIamMember.GoogleDataplexEntryTypeIamMemberCondition",
-		reflect.TypeOf((*GoogleDataplexEntryTypeIamMemberCondition)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataplexEntryTypeIamMemberCondition](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataplexEntryTypeIamMember.GoogleDataplexEntryTypeIamMemberConditionOutputReference",
-		reflect.TypeOf((*GoogleDataplexEntryTypeIamMemberConditionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataplexEntryTypeIamMemberConditionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -116,7 +116,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "titleInput", GoGetter: "TitleInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataplexEntryTypeIamMemberConditionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -124,6 +124,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataplexEntryTypeIamMember.GoogleDataplexEntryTypeIamMemberConfig",
-		reflect.TypeOf((*GoogleDataplexEntryTypeIamMemberConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataplexEntryTypeIamMemberConfig](),
 	)
 }

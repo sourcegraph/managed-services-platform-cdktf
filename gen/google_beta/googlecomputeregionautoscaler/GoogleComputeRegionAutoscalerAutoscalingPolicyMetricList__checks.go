@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleComputeRegionAutoscalerAutoscalingPolicyMetricList) val
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRegionAutoscalerAutoscalingPolicyMetricList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeRegionAutoscalerAutoscalingPolicyMetricList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleComputeRegionAutoscalerAutoscalingPolicyMetricListParamete
 
 	return nil
 }
-

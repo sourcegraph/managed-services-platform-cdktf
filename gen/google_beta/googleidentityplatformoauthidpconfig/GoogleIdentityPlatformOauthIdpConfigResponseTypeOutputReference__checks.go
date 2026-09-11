@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleIdentityPlatformOauthIdpConfigResponseTypeOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIdentityPlatformOauthIdpConfigResponseTypeOutputReference) validateSetCodeParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleIdentityPlatformOauthIdpConfigResponseTypeOutputReference) validateSetCodeParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -118,7 +118,7 @@ func (j *jsiiProxy_GoogleIdentityPlatformOauthIdpConfigResponseTypeOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIdentityPlatformOauthIdpConfigResponseTypeOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleIdentityPlatformOauthIdpConfigResponseTypeOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -183,7 +183,7 @@ func (j *jsiiProxy_GoogleIdentityPlatformOauthIdpConfigResponseTypeOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIdentityPlatformOauthIdpConfigResponseTypeOutputReference) validateSetIdTokenParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleIdentityPlatformOauthIdpConfigResponseTypeOutputReference) validateSetIdTokenParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -238,4 +238,3 @@ func validateNewGoogleIdentityPlatformOauthIdpConfigResponseTypeOutputReferenceP
 
 	return nil
 }
-

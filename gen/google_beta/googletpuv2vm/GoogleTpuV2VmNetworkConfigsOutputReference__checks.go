@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleTpuV2VmNetworkConfigsOutputReference) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_GoogleTpuV2VmNetworkConfigsOutputReference) validateSetCanIpForwardParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleTpuV2VmNetworkConfigsOutputReference) validateSetCanIpForwardParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -118,7 +118,7 @@ func (j *jsiiProxy_GoogleTpuV2VmNetworkConfigsOutputReference) validateSetCanIpF
 	return nil
 }
 
-func (j *jsiiProxy_GoogleTpuV2VmNetworkConfigsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleTpuV2VmNetworkConfigsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -183,7 +183,7 @@ func (j *jsiiProxy_GoogleTpuV2VmNetworkConfigsOutputReference) validateSetComple
 	return nil
 }
 
-func (j *jsiiProxy_GoogleTpuV2VmNetworkConfigsOutputReference) validateSetEnableExternalIpsParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleTpuV2VmNetworkConfigsOutputReference) validateSetEnableExternalIpsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -203,7 +203,7 @@ func (j *jsiiProxy_GoogleTpuV2VmNetworkConfigsOutputReference) validateSetEnable
 	return nil
 }
 
-func (j *jsiiProxy_GoogleTpuV2VmNetworkConfigsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleTpuV2VmNetworkConfigsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -286,4 +286,3 @@ func validateNewGoogleTpuV2VmNetworkConfigsOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

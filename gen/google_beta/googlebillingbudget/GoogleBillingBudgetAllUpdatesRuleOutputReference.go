@@ -12,9 +12,9 @@ type GoogleBillingBudgetAllUpdatesRuleOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -25,12 +25,12 @@ type GoogleBillingBudgetAllUpdatesRuleOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	DisableDefaultIamRecipients() interface{}
-	SetDisableDefaultIamRecipients(val interface{})
-	DisableDefaultIamRecipientsInput() interface{}
-	EnableProjectLevelRecipients() interface{}
-	SetEnableProjectLevelRecipients(val interface{})
-	EnableProjectLevelRecipientsInput() interface{}
+	DisableDefaultIamRecipients() any
+	SetDisableDefaultIamRecipients(val any)
+	DisableDefaultIamRecipientsInput() any
+	EnableProjectLevelRecipients() any
+	SetEnableProjectLevelRecipients(val any)
+	EnableProjectLevelRecipientsInput() any
 	// Experimental.
 	Fqn() *string
 	InternalValue() *GoogleBillingBudgetAllUpdatesRule
@@ -55,7 +55,7 @@ type GoogleBillingBudgetAllUpdatesRuleOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -83,7 +83,7 @@ type GoogleBillingBudgetAllUpdatesRuleOutputReference interface {
 	ResetSchemaVersion()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -96,8 +96,8 @@ type jsiiProxy_GoogleBillingBudgetAllUpdatesRuleOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GoogleBillingBudgetAllUpdatesRuleOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleBillingBudgetAllUpdatesRuleOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -126,8 +126,8 @@ func (j *jsiiProxy_GoogleBillingBudgetAllUpdatesRuleOutputReference) CreationSta
 	return returns
 }
 
-func (j *jsiiProxy_GoogleBillingBudgetAllUpdatesRuleOutputReference) DisableDefaultIamRecipients() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleBillingBudgetAllUpdatesRuleOutputReference) DisableDefaultIamRecipients() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disableDefaultIamRecipients",
@@ -136,8 +136,8 @@ func (j *jsiiProxy_GoogleBillingBudgetAllUpdatesRuleOutputReference) DisableDefa
 	return returns
 }
 
-func (j *jsiiProxy_GoogleBillingBudgetAllUpdatesRuleOutputReference) DisableDefaultIamRecipientsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleBillingBudgetAllUpdatesRuleOutputReference) DisableDefaultIamRecipientsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disableDefaultIamRecipientsInput",
@@ -146,8 +146,8 @@ func (j *jsiiProxy_GoogleBillingBudgetAllUpdatesRuleOutputReference) DisableDefa
 	return returns
 }
 
-func (j *jsiiProxy_GoogleBillingBudgetAllUpdatesRuleOutputReference) EnableProjectLevelRecipients() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleBillingBudgetAllUpdatesRuleOutputReference) EnableProjectLevelRecipients() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableProjectLevelRecipients",
@@ -156,8 +156,8 @@ func (j *jsiiProxy_GoogleBillingBudgetAllUpdatesRuleOutputReference) EnableProje
 	return returns
 }
 
-func (j *jsiiProxy_GoogleBillingBudgetAllUpdatesRuleOutputReference) EnableProjectLevelRecipientsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleBillingBudgetAllUpdatesRuleOutputReference) EnableProjectLevelRecipientsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableProjectLevelRecipientsInput",
@@ -266,7 +266,6 @@ func (j *jsiiProxy_GoogleBillingBudgetAllUpdatesRuleOutputReference) TerraformRe
 	return returns
 }
 
-
 func NewGoogleBillingBudgetAllUpdatesRuleOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleBillingBudgetAllUpdatesRuleOutputReference {
 	_init_.Initialize()
 
@@ -277,7 +276,7 @@ func NewGoogleBillingBudgetAllUpdatesRuleOutputReference(terraformResource cdktf
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleBillingBudget.GoogleBillingBudgetAllUpdatesRuleOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -289,12 +288,12 @@ func NewGoogleBillingBudgetAllUpdatesRuleOutputReference_Override(g GoogleBillin
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleBillingBudget.GoogleBillingBudgetAllUpdatesRuleOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleBillingBudgetAllUpdatesRuleOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleBillingBudgetAllUpdatesRuleOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -305,7 +304,7 @@ func (j *jsiiProxy_GoogleBillingBudgetAllUpdatesRuleOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_GoogleBillingBudgetAllUpdatesRuleOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleBillingBudgetAllUpdatesRuleOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -316,7 +315,7 @@ func (j *jsiiProxy_GoogleBillingBudgetAllUpdatesRuleOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_GoogleBillingBudgetAllUpdatesRuleOutputReference)SetDisableDefaultIamRecipients(val interface{}) {
+func (j *jsiiProxy_GoogleBillingBudgetAllUpdatesRuleOutputReference) SetDisableDefaultIamRecipients(val any) {
 	if err := j.validateSetDisableDefaultIamRecipientsParameters(val); err != nil {
 		panic(err)
 	}
@@ -327,7 +326,7 @@ func (j *jsiiProxy_GoogleBillingBudgetAllUpdatesRuleOutputReference)SetDisableDe
 	)
 }
 
-func (j *jsiiProxy_GoogleBillingBudgetAllUpdatesRuleOutputReference)SetEnableProjectLevelRecipients(val interface{}) {
+func (j *jsiiProxy_GoogleBillingBudgetAllUpdatesRuleOutputReference) SetEnableProjectLevelRecipients(val any) {
 	if err := j.validateSetEnableProjectLevelRecipientsParameters(val); err != nil {
 		panic(err)
 	}
@@ -338,7 +337,7 @@ func (j *jsiiProxy_GoogleBillingBudgetAllUpdatesRuleOutputReference)SetEnablePro
 	)
 }
 
-func (j *jsiiProxy_GoogleBillingBudgetAllUpdatesRuleOutputReference)SetInternalValue(val *GoogleBillingBudgetAllUpdatesRule) {
+func (j *jsiiProxy_GoogleBillingBudgetAllUpdatesRuleOutputReference) SetInternalValue(val *GoogleBillingBudgetAllUpdatesRule) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -349,7 +348,7 @@ func (j *jsiiProxy_GoogleBillingBudgetAllUpdatesRuleOutputReference)SetInternalV
 	)
 }
 
-func (j *jsiiProxy_GoogleBillingBudgetAllUpdatesRuleOutputReference)SetMonitoringNotificationChannels(val *[]*string) {
+func (j *jsiiProxy_GoogleBillingBudgetAllUpdatesRuleOutputReference) SetMonitoringNotificationChannels(val *[]*string) {
 	if err := j.validateSetMonitoringNotificationChannelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -360,7 +359,7 @@ func (j *jsiiProxy_GoogleBillingBudgetAllUpdatesRuleOutputReference)SetMonitorin
 	)
 }
 
-func (j *jsiiProxy_GoogleBillingBudgetAllUpdatesRuleOutputReference)SetPubsubTopic(val *string) {
+func (j *jsiiProxy_GoogleBillingBudgetAllUpdatesRuleOutputReference) SetPubsubTopic(val *string) {
 	if err := j.validateSetPubsubTopicParameters(val); err != nil {
 		panic(err)
 	}
@@ -371,7 +370,7 @@ func (j *jsiiProxy_GoogleBillingBudgetAllUpdatesRuleOutputReference)SetPubsubTop
 	)
 }
 
-func (j *jsiiProxy_GoogleBillingBudgetAllUpdatesRuleOutputReference)SetSchemaVersion(val *string) {
+func (j *jsiiProxy_GoogleBillingBudgetAllUpdatesRuleOutputReference) SetSchemaVersion(val *string) {
 	if err := j.validateSetSchemaVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -382,7 +381,7 @@ func (j *jsiiProxy_GoogleBillingBudgetAllUpdatesRuleOutputReference)SetSchemaVer
 	)
 }
 
-func (j *jsiiProxy_GoogleBillingBudgetAllUpdatesRuleOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleBillingBudgetAllUpdatesRuleOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -393,7 +392,7 @@ func (j *jsiiProxy_GoogleBillingBudgetAllUpdatesRuleOutputReference)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_GoogleBillingBudgetAllUpdatesRuleOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleBillingBudgetAllUpdatesRuleOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -417,16 +416,16 @@ func (g *jsiiProxy_GoogleBillingBudgetAllUpdatesRuleOutputReference) ComputeFqn(
 	return returns
 }
 
-func (g *jsiiProxy_GoogleBillingBudgetAllUpdatesRuleOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleBillingBudgetAllUpdatesRuleOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -442,7 +441,7 @@ func (g *jsiiProxy_GoogleBillingBudgetAllUpdatesRuleOutputReference) GetBooleanA
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -458,7 +457,7 @@ func (g *jsiiProxy_GoogleBillingBudgetAllUpdatesRuleOutputReference) GetBooleanM
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -474,7 +473,7 @@ func (g *jsiiProxy_GoogleBillingBudgetAllUpdatesRuleOutputReference) GetListAttr
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -490,7 +489,7 @@ func (g *jsiiProxy_GoogleBillingBudgetAllUpdatesRuleOutputReference) GetNumberAt
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -506,7 +505,7 @@ func (g *jsiiProxy_GoogleBillingBudgetAllUpdatesRuleOutputReference) GetNumberLi
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -522,7 +521,7 @@ func (g *jsiiProxy_GoogleBillingBudgetAllUpdatesRuleOutputReference) GetNumberMa
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -538,7 +537,7 @@ func (g *jsiiProxy_GoogleBillingBudgetAllUpdatesRuleOutputReference) GetStringAt
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -554,7 +553,7 @@ func (g *jsiiProxy_GoogleBillingBudgetAllUpdatesRuleOutputReference) GetStringMa
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -583,7 +582,7 @@ func (g *jsiiProxy_GoogleBillingBudgetAllUpdatesRuleOutputReference) Interpolati
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -630,16 +629,16 @@ func (g *jsiiProxy_GoogleBillingBudgetAllUpdatesRuleOutputReference) ResetSchema
 	)
 }
 
-func (g *jsiiProxy_GoogleBillingBudgetAllUpdatesRuleOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleBillingBudgetAllUpdatesRuleOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -658,4 +657,3 @@ func (g *jsiiProxy_GoogleBillingBudgetAllUpdatesRuleOutputReference) ToString() 
 
 	return returns
 }
-

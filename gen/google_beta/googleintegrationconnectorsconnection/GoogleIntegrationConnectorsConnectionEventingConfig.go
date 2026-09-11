@@ -1,6 +1,5 @@
 package googleintegrationconnectorsconnection
 
-
 type GoogleIntegrationConnectorsConnectionEventingConfig struct {
 	// registration_destination_config block.
 	//
@@ -9,7 +8,7 @@ type GoogleIntegrationConnectorsConnectionEventingConfig struct {
 	// additional_variable block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_integration_connectors_connection#additional_variable GoogleIntegrationConnectorsConnection#additional_variable}
-	AdditionalVariable interface{} `field:"optional" json:"additionalVariable" yaml:"additionalVariable"`
+	AdditionalVariable any `field:"optional" json:"additionalVariable" yaml:"additionalVariable"`
 	// auth_config block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_integration_connectors_connection#auth_config GoogleIntegrationConnectorsConnection#auth_config}
@@ -17,6 +16,5 @@ type GoogleIntegrationConnectorsConnectionEventingConfig struct {
 	// Enrichment Enabled.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_integration_connectors_connection#enrichment_enabled GoogleIntegrationConnectorsConnection#enrichment_enabled}
-	EnrichmentEnabled interface{} `field:"optional" json:"enrichmentEnabled" yaml:"enrichmentEnabled"`
+	EnrichmentEnabled any `field:"optional" json:"enrichmentEnabled" yaml:"enrichmentEnabled"`
 }
-

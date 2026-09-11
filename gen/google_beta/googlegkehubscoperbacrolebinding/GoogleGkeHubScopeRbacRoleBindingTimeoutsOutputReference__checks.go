@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleGkeHubScopeRbacRoleBindingTimeoutsOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGkeHubScopeRbacRoleBindingTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleGkeHubScopeRbacRoleBindingTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_GoogleGkeHubScopeRbacRoleBindingTimeoutsOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGkeHubScopeRbacRoleBindingTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleGkeHubScopeRbacRoleBindingTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGoogleGkeHubScopeRbacRoleBindingTimeoutsOutputReferenceParameter
 
 	return nil
 }
-

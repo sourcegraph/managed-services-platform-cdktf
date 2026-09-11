@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleIapSettingsApplicationSettingsAttributePropagationSetti
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIapSettingsApplicationSettingsAttributePropagationSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleIapSettingsApplicationSettingsAttributePropagationSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_GoogleIapSettingsApplicationSettingsAttributePropagationSetti
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIapSettingsApplicationSettingsAttributePropagationSettingsOutputReference) validateSetEnableParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleIapSettingsApplicationSettingsAttributePropagationSettingsOutputReference) validateSetEnableParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -234,4 +234,3 @@ func validateNewGoogleIapSettingsApplicationSettingsAttributePropagationSettings
 
 	return nil
 }
-

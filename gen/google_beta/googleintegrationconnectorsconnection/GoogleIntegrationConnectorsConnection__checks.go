@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleIntegrationConnectorsConnection) validateAddMoveTargetP
 	return nil
 }
 
-func (g *jsiiProxy_GoogleIntegrationConnectorsConnection) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleIntegrationConnectorsConnection) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleIntegrationConnectorsConnection) validateMoveFromIdPara
 	return nil
 }
 
-func (g *jsiiProxy_GoogleIntegrationConnectorsConnection) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleIntegrationConnectorsConnection) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -215,7 +215,7 @@ func (g *jsiiProxy_GoogleIntegrationConnectorsConnection) validatePutAuthConfigP
 	return nil
 }
 
-func (g *jsiiProxy_GoogleIntegrationConnectorsConnection) validatePutConfigVariableParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleIntegrationConnectorsConnection) validatePutConfigVariableParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -246,7 +246,7 @@ func (g *jsiiProxy_GoogleIntegrationConnectorsConnection) validatePutConfigVaria
 	return nil
 }
 
-func (g *jsiiProxy_GoogleIntegrationConnectorsConnection) validatePutDestinationConfigParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleIntegrationConnectorsConnection) validatePutDestinationConfigParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -359,7 +359,7 @@ func validateGoogleIntegrationConnectorsConnection_GenerateConfigForImportParame
 	return nil
 }
 
-func validateGoogleIntegrationConnectorsConnection_IsConstructParameters(x interface{}) error {
+func validateGoogleIntegrationConnectorsConnection_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -367,7 +367,7 @@ func validateGoogleIntegrationConnectorsConnection_IsConstructParameters(x inter
 	return nil
 }
 
-func validateGoogleIntegrationConnectorsConnection_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleIntegrationConnectorsConnection_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -375,7 +375,7 @@ func validateGoogleIntegrationConnectorsConnection_IsTerraformElementParameters(
 	return nil
 }
 
-func validateGoogleIntegrationConnectorsConnection_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleIntegrationConnectorsConnection_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -383,7 +383,7 @@ func validateGoogleIntegrationConnectorsConnection_IsTerraformResourceParameters
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIntegrationConnectorsConnection) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleIntegrationConnectorsConnection) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -424,7 +424,7 @@ func (j *jsiiProxy_GoogleIntegrationConnectorsConnection) validateSetConnectorVe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIntegrationConnectorsConnection) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleIntegrationConnectorsConnection) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -545,7 +545,7 @@ func (j *jsiiProxy_GoogleIntegrationConnectorsConnection) validateSetProjectPara
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIntegrationConnectorsConnection) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleIntegrationConnectorsConnection) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -599,7 +599,7 @@ func (j *jsiiProxy_GoogleIntegrationConnectorsConnection) validateSetServiceAcco
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIntegrationConnectorsConnection) validateSetSuspendedParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleIntegrationConnectorsConnection) validateSetSuspendedParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -637,4 +637,3 @@ func validateNewGoogleIntegrationConnectorsConnectionParameters(scope constructs
 
 	return nil
 }
-

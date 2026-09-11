@@ -1,6 +1,5 @@
 package googledatapipelinepipeline
 
-
 type GoogleDataPipelinePipelineWorkloadDataflowFlexTemplateRequestLaunchParameterEnvironment struct {
 	// Additional experiment flags for the job.
 	//
@@ -17,7 +16,7 @@ type GoogleDataPipelinePipelineWorkloadDataflowFlexTemplateRequestLaunchParamete
 	// Whether to enable Streaming Engine for the job.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_data_pipeline_pipeline#enable_streaming_engine GoogleDataPipelinePipeline#enable_streaming_engine}
-	EnableStreamingEngine interface{} `field:"optional" json:"enableStreamingEngine" yaml:"enableStreamingEngine"`
+	EnableStreamingEngine any `field:"optional" json:"enableStreamingEngine" yaml:"enableStreamingEngine"`
 	// Set FlexRS goal for the job. https://cloud.google.com/dataflow/docs/guides/flexrs https://cloud.google.com/dataflow/docs/reference/data-pipelines/rest/v1/projects.locations.pipelines#FlexResourceSchedulingGoal Possible values: ["FLEXRS_UNSPECIFIED", "FLEXRS_SPEED_OPTIMIZED", "FLEXRS_COST_OPTIMIZED"].
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_data_pipeline_pipeline#flexrs_goal GoogleDataPipelinePipeline#flexrs_goal}
@@ -75,4 +74,3 @@ type GoogleDataPipelinePipelineWorkloadDataflowFlexTemplateRequestLaunchParamete
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_data_pipeline_pipeline#zone GoogleDataPipelinePipeline#zone}
 	Zone *string `field:"optional" json:"zone" yaml:"zone"`
 }
-

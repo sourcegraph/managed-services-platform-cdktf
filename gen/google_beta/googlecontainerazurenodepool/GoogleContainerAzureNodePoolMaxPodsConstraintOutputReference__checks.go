@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleContainerAzureNodePoolMaxPodsConstraintOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerAzureNodePoolMaxPodsConstraintOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContainerAzureNodePoolMaxPodsConstraintOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleContainerAzureNodePoolMaxPodsConstraintOutputReferencePara
 
 	return nil
 }
-

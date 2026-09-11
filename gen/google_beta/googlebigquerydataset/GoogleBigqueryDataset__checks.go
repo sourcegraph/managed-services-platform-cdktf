@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleBigqueryDataset) validateAddMoveTargetParameters(moveTa
 	return nil
 }
 
-func (g *jsiiProxy_GoogleBigqueryDataset) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleBigqueryDataset) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleBigqueryDataset) validateMoveFromIdParameters(id *strin
 	return nil
 }
 
-func (g *jsiiProxy_GoogleBigqueryDataset) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleBigqueryDataset) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (g *jsiiProxy_GoogleBigqueryDataset) validateOverrideLogicalIdParameters(ne
 	return nil
 }
 
-func (g *jsiiProxy_GoogleBigqueryDataset) validatePutAccessParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleBigqueryDataset) validatePutAccessParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -295,7 +295,7 @@ func validateGoogleBigqueryDataset_GenerateConfigForImportParameters(scope const
 	return nil
 }
 
-func validateGoogleBigqueryDataset_IsConstructParameters(x interface{}) error {
+func validateGoogleBigqueryDataset_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -303,7 +303,7 @@ func validateGoogleBigqueryDataset_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateGoogleBigqueryDataset_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleBigqueryDataset_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -311,7 +311,7 @@ func validateGoogleBigqueryDataset_IsTerraformElementParameters(x interface{}) e
 	return nil
 }
 
-func validateGoogleBigqueryDataset_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleBigqueryDataset_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -319,7 +319,7 @@ func validateGoogleBigqueryDataset_IsTerraformResourceParameters(x interface{}) 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigqueryDataset) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBigqueryDataset) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -352,7 +352,7 @@ func (j *jsiiProxy_GoogleBigqueryDataset) validateSetConnectionParameters(val in
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigqueryDataset) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBigqueryDataset) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -441,7 +441,7 @@ func (j *jsiiProxy_GoogleBigqueryDataset) validateSetDefaultTableExpirationMsPar
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigqueryDataset) validateSetDeleteContentsOnDestroyParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBigqueryDataset) validateSetDeleteContentsOnDestroyParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -485,7 +485,7 @@ func (j *jsiiProxy_GoogleBigqueryDataset) validateSetIdParameters(val *string) e
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigqueryDataset) validateSetIsCaseInsensitiveParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBigqueryDataset) validateSetIsCaseInsensitiveParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -545,7 +545,7 @@ func (j *jsiiProxy_GoogleBigqueryDataset) validateSetProjectParameters(val *stri
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigqueryDataset) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleBigqueryDataset) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -625,4 +625,3 @@ func validateNewGoogleBigqueryDatasetParameters(scope constructs.Construct, id *
 
 	return nil
 }
-

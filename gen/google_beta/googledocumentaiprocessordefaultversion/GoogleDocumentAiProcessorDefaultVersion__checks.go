@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleDocumentAiProcessorDefaultVersion) validateAddMoveTarge
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDocumentAiProcessorDefaultVersion) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleDocumentAiProcessorDefaultVersion) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleDocumentAiProcessorDefaultVersion) validateMoveFromIdPa
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDocumentAiProcessorDefaultVersion) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleDocumentAiProcessorDefaultVersion) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateGoogleDocumentAiProcessorDefaultVersion_GenerateConfigForImportPara
 	return nil
 }
 
-func validateGoogleDocumentAiProcessorDefaultVersion_IsConstructParameters(x interface{}) error {
+func validateGoogleDocumentAiProcessorDefaultVersion_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateGoogleDocumentAiProcessorDefaultVersion_IsConstructParameters(x int
 	return nil
 }
 
-func validateGoogleDocumentAiProcessorDefaultVersion_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleDocumentAiProcessorDefaultVersion_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateGoogleDocumentAiProcessorDefaultVersion_IsTerraformElementParameter
 	return nil
 }
 
-func validateGoogleDocumentAiProcessorDefaultVersion_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleDocumentAiProcessorDefaultVersion_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateGoogleDocumentAiProcessorDefaultVersion_IsTerraformResourceParamete
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDocumentAiProcessorDefaultVersion) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDocumentAiProcessorDefaultVersion) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_GoogleDocumentAiProcessorDefaultVersion) validateSetConnectio
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDocumentAiProcessorDefaultVersion) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDocumentAiProcessorDefaultVersion) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -369,7 +369,7 @@ func (j *jsiiProxy_GoogleDocumentAiProcessorDefaultVersion) validateSetProcessor
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDocumentAiProcessorDefaultVersion) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleDocumentAiProcessorDefaultVersion) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -441,4 +441,3 @@ func validateNewGoogleDocumentAiProcessorDefaultVersionParameters(scope construc
 
 	return nil
 }
-

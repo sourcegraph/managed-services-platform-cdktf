@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleMonitoringSloBasicSliLatencyOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleMonitoringSloBasicSliLatencyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleMonitoringSloBasicSliLatencyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleMonitoringSloBasicSliLatencyOutputReferenceParameters(terr
 
 	return nil
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleApigeeSyncAuthorization.GoogleApigeeSyncAuthorization",
-		reflect.TypeOf((*GoogleApigeeSyncAuthorization)(nil)).Elem(),
+		reflect.TypeFor[GoogleApigeeSyncAuthorization](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -65,7 +65,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleApigeeSyncAuthorization{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -73,15 +73,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleApigeeSyncAuthorization.GoogleApigeeSyncAuthorizationConfig",
-		reflect.TypeOf((*GoogleApigeeSyncAuthorizationConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleApigeeSyncAuthorizationConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleApigeeSyncAuthorization.GoogleApigeeSyncAuthorizationTimeouts",
-		reflect.TypeOf((*GoogleApigeeSyncAuthorizationTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleApigeeSyncAuthorizationTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleApigeeSyncAuthorization.GoogleApigeeSyncAuthorizationTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleApigeeSyncAuthorizationTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleApigeeSyncAuthorizationTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -114,7 +114,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleApigeeSyncAuthorizationTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

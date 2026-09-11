@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleBiglakeDatabase.GoogleBiglakeDatabase",
-		reflect.TypeOf((*GoogleBiglakeDatabase)(nil)).Elem(),
+		reflect.TypeFor[GoogleBiglakeDatabase](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -73,7 +73,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleBiglakeDatabase{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -81,15 +81,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleBiglakeDatabase.GoogleBiglakeDatabaseConfig",
-		reflect.TypeOf((*GoogleBiglakeDatabaseConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleBiglakeDatabaseConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleBiglakeDatabase.GoogleBiglakeDatabaseHiveOptions",
-		reflect.TypeOf((*GoogleBiglakeDatabaseHiveOptions)(nil)).Elem(),
+		reflect.TypeFor[GoogleBiglakeDatabaseHiveOptions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleBiglakeDatabase.GoogleBiglakeDatabaseHiveOptionsOutputReference",
-		reflect.TypeOf((*GoogleBiglakeDatabaseHiveOptionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleBiglakeDatabaseHiveOptionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -119,7 +119,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleBiglakeDatabaseHiveOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -127,11 +127,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleBiglakeDatabase.GoogleBiglakeDatabaseTimeouts",
-		reflect.TypeOf((*GoogleBiglakeDatabaseTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleBiglakeDatabaseTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleBiglakeDatabase.GoogleBiglakeDatabaseTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleBiglakeDatabaseTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleBiglakeDatabaseTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -164,7 +164,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleBiglakeDatabaseTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

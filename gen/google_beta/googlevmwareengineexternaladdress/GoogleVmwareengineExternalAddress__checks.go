@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleVmwareengineExternalAddress) validateAddMoveTargetParam
 	return nil
 }
 
-func (g *jsiiProxy_GoogleVmwareengineExternalAddress) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleVmwareengineExternalAddress) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleVmwareengineExternalAddress) validateMoveFromIdParamete
 	return nil
 }
 
-func (g *jsiiProxy_GoogleVmwareengineExternalAddress) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleVmwareengineExternalAddress) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateGoogleVmwareengineExternalAddress_GenerateConfigForImportParameters
 	return nil
 }
 
-func validateGoogleVmwareengineExternalAddress_IsConstructParameters(x interface{}) error {
+func validateGoogleVmwareengineExternalAddress_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateGoogleVmwareengineExternalAddress_IsConstructParameters(x interface
 	return nil
 }
 
-func validateGoogleVmwareengineExternalAddress_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleVmwareengineExternalAddress_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateGoogleVmwareengineExternalAddress_IsTerraformElementParameters(x in
 	return nil
 }
 
-func validateGoogleVmwareengineExternalAddress_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleVmwareengineExternalAddress_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateGoogleVmwareengineExternalAddress_IsTerraformResourceParameters(x i
 	return nil
 }
 
-func (j *jsiiProxy_GoogleVmwareengineExternalAddress) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleVmwareengineExternalAddress) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_GoogleVmwareengineExternalAddress) validateSetConnectionParam
 	return nil
 }
 
-func (j *jsiiProxy_GoogleVmwareengineExternalAddress) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleVmwareengineExternalAddress) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -393,7 +393,7 @@ func (j *jsiiProxy_GoogleVmwareengineExternalAddress) validateSetParentParameter
 	return nil
 }
 
-func (j *jsiiProxy_GoogleVmwareengineExternalAddress) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleVmwareengineExternalAddress) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -457,4 +457,3 @@ func validateNewGoogleVmwareengineExternalAddressParameters(scope constructs.Con
 
 	return nil
 }
-

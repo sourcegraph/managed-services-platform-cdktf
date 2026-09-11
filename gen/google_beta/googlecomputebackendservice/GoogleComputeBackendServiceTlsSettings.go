@@ -1,6 +1,5 @@
 package googlecomputebackendservice
 
-
 type GoogleComputeBackendServiceTlsSettings struct {
 	// Reference to the BackendAuthenticationConfig resource from the networksecurity.googleapis.com namespace. Can be used in authenticating TLS connections to the backend, as specified by the authenticationMode field. Can only be specified if authenticationMode is not NONE.
 	//
@@ -13,6 +12,5 @@ type GoogleComputeBackendServiceTlsSettings struct {
 	// subject_alt_names block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_backend_service#subject_alt_names GoogleComputeBackendService#subject_alt_names}
-	SubjectAltNames interface{} `field:"optional" json:"subjectAltNames" yaml:"subjectAltNames"`
+	SubjectAltNames any `field:"optional" json:"subjectAltNames" yaml:"subjectAltNames"`
 }
-

@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleAccessContextManagerAccessLevelBasicConditionsList) val
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelBasicConditionsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelBasicConditionsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleAccessContextManagerAccessLevelBasicConditionsListParamete
 
 	return nil
 }
-

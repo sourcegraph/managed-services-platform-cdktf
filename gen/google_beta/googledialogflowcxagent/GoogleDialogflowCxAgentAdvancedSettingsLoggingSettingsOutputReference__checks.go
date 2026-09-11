@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleDialogflowCxAgentAdvancedSettingsLoggingSettingsOutputR
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxAgentAdvancedSettingsLoggingSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDialogflowCxAgentAdvancedSettingsLoggingSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_GoogleDialogflowCxAgentAdvancedSettingsLoggingSettingsOutputR
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxAgentAdvancedSettingsLoggingSettingsOutputReference) validateSetEnableConsentBasedRedactionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDialogflowCxAgentAdvancedSettingsLoggingSettingsOutputReference) validateSetEnableConsentBasedRedactionParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -183,7 +183,7 @@ func (j *jsiiProxy_GoogleDialogflowCxAgentAdvancedSettingsLoggingSettingsOutputR
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxAgentAdvancedSettingsLoggingSettingsOutputReference) validateSetEnableInteractionLoggingParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDialogflowCxAgentAdvancedSettingsLoggingSettingsOutputReference) validateSetEnableInteractionLoggingParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -203,7 +203,7 @@ func (j *jsiiProxy_GoogleDialogflowCxAgentAdvancedSettingsLoggingSettingsOutputR
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxAgentAdvancedSettingsLoggingSettingsOutputReference) validateSetEnableStackdriverLoggingParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDialogflowCxAgentAdvancedSettingsLoggingSettingsOutputReference) validateSetEnableStackdriverLoggingParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -258,4 +258,3 @@ func validateNewGoogleDialogflowCxAgentAdvancedSettingsLoggingSettingsOutputRefe
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleNetworkSecurityAuthorizationPolicyRulesDestinationsHttp
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityAuthorizationPolicyRulesDestinationsHttpHeaderMatchOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNetworkSecurityAuthorizationPolicyRulesDestinationsHttpHeaderMatchOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGoogleNetworkSecurityAuthorizationPolicyRulesDestinationsHttpHea
 
 	return nil
 }
-

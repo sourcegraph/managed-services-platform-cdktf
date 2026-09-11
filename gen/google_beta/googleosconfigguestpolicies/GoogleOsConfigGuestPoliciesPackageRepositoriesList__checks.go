@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleOsConfigGuestPoliciesPackageRepositoriesList) validateR
 	return nil
 }
 
-func (j *jsiiProxy_GoogleOsConfigGuestPoliciesPackageRepositoriesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleOsConfigGuestPoliciesPackageRepositoriesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleOsConfigGuestPoliciesPackageRepositoriesListParameters(ter
 
 	return nil
 }
-

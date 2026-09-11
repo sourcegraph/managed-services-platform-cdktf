@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleModelArmorTemplateFilterConfigPiAndJailbreakFilterSetti
 	return nil
 }
 
-func (j *jsiiProxy_GoogleModelArmorTemplateFilterConfigPiAndJailbreakFilterSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleModelArmorTemplateFilterConfigPiAndJailbreakFilterSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGoogleModelArmorTemplateFilterConfigPiAndJailbreakFilterSettings
 
 	return nil
 }
-

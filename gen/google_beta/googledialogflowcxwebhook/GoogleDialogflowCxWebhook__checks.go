@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleDialogflowCxWebhook) validateAddMoveTargetParameters(mo
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDialogflowCxWebhook) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleDialogflowCxWebhook) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleDialogflowCxWebhook) validateMoveFromIdParameters(id *s
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDialogflowCxWebhook) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleDialogflowCxWebhook) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -253,7 +253,7 @@ func validateGoogleDialogflowCxWebhook_GenerateConfigForImportParameters(scope c
 	return nil
 }
 
-func validateGoogleDialogflowCxWebhook_IsConstructParameters(x interface{}) error {
+func validateGoogleDialogflowCxWebhook_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -261,7 +261,7 @@ func validateGoogleDialogflowCxWebhook_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
-func validateGoogleDialogflowCxWebhook_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleDialogflowCxWebhook_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -269,7 +269,7 @@ func validateGoogleDialogflowCxWebhook_IsTerraformElementParameters(x interface{
 	return nil
 }
 
-func validateGoogleDialogflowCxWebhook_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleDialogflowCxWebhook_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -277,7 +277,7 @@ func validateGoogleDialogflowCxWebhook_IsTerraformResourceParameters(x interface
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxWebhook) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDialogflowCxWebhook) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -310,7 +310,7 @@ func (j *jsiiProxy_GoogleDialogflowCxWebhook) validateSetConnectionParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxWebhook) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDialogflowCxWebhook) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -367,7 +367,7 @@ func (j *jsiiProxy_GoogleDialogflowCxWebhook) validateSetCountParameters(val int
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxWebhook) validateSetDisabledParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDialogflowCxWebhook) validateSetDisabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -395,7 +395,7 @@ func (j *jsiiProxy_GoogleDialogflowCxWebhook) validateSetDisplayNameParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxWebhook) validateSetEnableSpellCorrectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDialogflowCxWebhook) validateSetEnableSpellCorrectionParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -415,7 +415,7 @@ func (j *jsiiProxy_GoogleDialogflowCxWebhook) validateSetEnableSpellCorrectionPa
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxWebhook) validateSetEnableStackdriverLoggingParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDialogflowCxWebhook) validateSetEnableStackdriverLoggingParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -459,7 +459,7 @@ func (j *jsiiProxy_GoogleDialogflowCxWebhook) validateSetParentParameters(val *s
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxWebhook) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleDialogflowCxWebhook) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -539,4 +539,3 @@ func validateNewGoogleDialogflowCxWebhookParameters(scope constructs.Construct, 
 
 	return nil
 }
-

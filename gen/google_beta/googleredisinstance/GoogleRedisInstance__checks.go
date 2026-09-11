@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleRedisInstance) validateAddMoveTargetParameters(moveTarg
 	return nil
 }
 
-func (g *jsiiProxy_GoogleRedisInstance) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleRedisInstance) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleRedisInstance) validateMoveFromIdParameters(id *string)
 	return nil
 }
 
-func (g *jsiiProxy_GoogleRedisInstance) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleRedisInstance) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -253,7 +253,7 @@ func validateGoogleRedisInstance_GenerateConfigForImportParameters(scope constru
 	return nil
 }
 
-func validateGoogleRedisInstance_IsConstructParameters(x interface{}) error {
+func validateGoogleRedisInstance_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -261,7 +261,7 @@ func validateGoogleRedisInstance_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateGoogleRedisInstance_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleRedisInstance_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -269,7 +269,7 @@ func validateGoogleRedisInstance_IsTerraformElementParameters(x interface{}) err
 	return nil
 }
 
-func validateGoogleRedisInstance_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleRedisInstance_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -285,7 +285,7 @@ func (j *jsiiProxy_GoogleRedisInstance) validateSetAlternativeLocationIdParamete
 	return nil
 }
 
-func (j *jsiiProxy_GoogleRedisInstance) validateSetAuthEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleRedisInstance) validateSetAuthEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -313,7 +313,7 @@ func (j *jsiiProxy_GoogleRedisInstance) validateSetAuthorizedNetworkParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_GoogleRedisInstance) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleRedisInstance) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -354,7 +354,7 @@ func (j *jsiiProxy_GoogleRedisInstance) validateSetConnectModeParameters(val *st
 	return nil
 }
 
-func (j *jsiiProxy_GoogleRedisInstance) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleRedisInstance) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -491,7 +491,7 @@ func (j *jsiiProxy_GoogleRedisInstance) validateSetProjectParameters(val *string
 	return nil
 }
 
-func (j *jsiiProxy_GoogleRedisInstance) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleRedisInstance) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -627,4 +627,3 @@ func validateNewGoogleRedisInstanceParameters(scope constructs.Construct, id *st
 
 	return nil
 }
-

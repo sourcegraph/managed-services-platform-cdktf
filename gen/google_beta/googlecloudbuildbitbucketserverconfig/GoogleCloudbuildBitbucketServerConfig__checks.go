@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleCloudbuildBitbucketServerConfig) validateAddMoveTargetP
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCloudbuildBitbucketServerConfig) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleCloudbuildBitbucketServerConfig) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleCloudbuildBitbucketServerConfig) validateMoveFromIdPara
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCloudbuildBitbucketServerConfig) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleCloudbuildBitbucketServerConfig) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (g *jsiiProxy_GoogleCloudbuildBitbucketServerConfig) validateOverrideLogica
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCloudbuildBitbucketServerConfig) validatePutConnectedRepositoriesParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleCloudbuildBitbucketServerConfig) validatePutConnectedRepositoriesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -273,7 +273,7 @@ func validateGoogleCloudbuildBitbucketServerConfig_GenerateConfigForImportParame
 	return nil
 }
 
-func validateGoogleCloudbuildBitbucketServerConfig_IsConstructParameters(x interface{}) error {
+func validateGoogleCloudbuildBitbucketServerConfig_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -281,7 +281,7 @@ func validateGoogleCloudbuildBitbucketServerConfig_IsConstructParameters(x inter
 	return nil
 }
 
-func validateGoogleCloudbuildBitbucketServerConfig_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleCloudbuildBitbucketServerConfig_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -289,7 +289,7 @@ func validateGoogleCloudbuildBitbucketServerConfig_IsTerraformElementParameters(
 	return nil
 }
 
-func validateGoogleCloudbuildBitbucketServerConfig_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleCloudbuildBitbucketServerConfig_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -313,7 +313,7 @@ func (j *jsiiProxy_GoogleCloudbuildBitbucketServerConfig) validateSetConfigIdPar
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudbuildBitbucketServerConfig) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleCloudbuildBitbucketServerConfig) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -346,7 +346,7 @@ func (j *jsiiProxy_GoogleCloudbuildBitbucketServerConfig) validateSetConnectionP
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudbuildBitbucketServerConfig) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleCloudbuildBitbucketServerConfig) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -451,7 +451,7 @@ func (j *jsiiProxy_GoogleCloudbuildBitbucketServerConfig) validateSetProjectPara
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudbuildBitbucketServerConfig) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleCloudbuildBitbucketServerConfig) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -531,4 +531,3 @@ func validateNewGoogleCloudbuildBitbucketServerConfigParameters(scope constructs
 
 	return nil
 }
-

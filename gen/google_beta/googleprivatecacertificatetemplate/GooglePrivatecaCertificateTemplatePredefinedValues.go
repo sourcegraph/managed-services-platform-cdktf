@@ -1,11 +1,10 @@
 package googleprivatecacertificatetemplate
 
-
 type GooglePrivatecaCertificateTemplatePredefinedValues struct {
 	// additional_extensions block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_privateca_certificate_template#additional_extensions GooglePrivatecaCertificateTemplate#additional_extensions}
-	AdditionalExtensions interface{} `field:"optional" json:"additionalExtensions" yaml:"additionalExtensions"`
+	AdditionalExtensions any `field:"optional" json:"additionalExtensions" yaml:"additionalExtensions"`
 	// Optional.
 	//
 	// Describes Online Certificate Status Protocol (OCSP) endpoint addresses that appear in the "Authority Information Access" extension in the certificate.
@@ -27,6 +26,5 @@ type GooglePrivatecaCertificateTemplatePredefinedValues struct {
 	// policy_ids block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_privateca_certificate_template#policy_ids GooglePrivatecaCertificateTemplate#policy_ids}
-	PolicyIds interface{} `field:"optional" json:"policyIds" yaml:"policyIds"`
+	PolicyIds any `field:"optional" json:"policyIds" yaml:"policyIds"`
 }
-

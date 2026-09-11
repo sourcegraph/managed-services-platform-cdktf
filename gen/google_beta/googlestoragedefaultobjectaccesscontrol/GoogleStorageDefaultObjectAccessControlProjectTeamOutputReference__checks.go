@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleStorageDefaultObjectAccessControlProjectTeamOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_GoogleStorageDefaultObjectAccessControlProjectTeamOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleStorageDefaultObjectAccessControlProjectTeamOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleStorageDefaultObjectAccessControlProjectTeamOutputReferenc
 
 	return nil
 }
-

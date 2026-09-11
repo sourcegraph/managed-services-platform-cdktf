@@ -125,7 +125,7 @@ func (j *jsiiProxy_GoogleDataprocJobPysparkConfigOutputReference) validateSetArg
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataprocJobPysparkConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataprocJobPysparkConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -265,4 +265,3 @@ func validateNewGoogleDataprocJobPysparkConfigOutputReferenceParameters(terrafor
 
 	return nil
 }
-

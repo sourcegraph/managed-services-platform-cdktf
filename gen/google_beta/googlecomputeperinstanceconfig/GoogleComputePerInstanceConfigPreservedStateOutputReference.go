@@ -12,9 +12,9 @@ type GoogleComputePerInstanceConfigPreservedStateOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -26,13 +26,13 @@ type GoogleComputePerInstanceConfigPreservedStateOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	Disk() GoogleComputePerInstanceConfigPreservedStateDiskList
-	DiskInput() interface{}
+	DiskInput() any
 	ExternalIp() GoogleComputePerInstanceConfigPreservedStateExternalIpList
-	ExternalIpInput() interface{}
+	ExternalIpInput() any
 	// Experimental.
 	Fqn() *string
 	InternalIp() GoogleComputePerInstanceConfigPreservedStateInternalIpList
-	InternalIpInput() interface{}
+	InternalIpInput() any
 	InternalValue() *GoogleComputePerInstanceConfigPreservedState
 	SetInternalValue(val *GoogleComputePerInstanceConfigPreservedState)
 	Metadata() *map[string]*string
@@ -49,7 +49,7 @@ type GoogleComputePerInstanceConfigPreservedStateOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -70,16 +70,16 @@ type GoogleComputePerInstanceConfigPreservedStateOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutDisk(value interface{})
-	PutExternalIp(value interface{})
-	PutInternalIp(value interface{})
+	PutDisk(value any)
+	PutExternalIp(value any)
+	PutInternalIp(value any)
 	ResetDisk()
 	ResetExternalIp()
 	ResetInternalIp()
 	ResetMetadata()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -92,8 +92,8 @@ type jsiiProxy_GoogleComputePerInstanceConfigPreservedStateOutputReference struc
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GoogleComputePerInstanceConfigPreservedStateOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputePerInstanceConfigPreservedStateOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -132,8 +132,8 @@ func (j *jsiiProxy_GoogleComputePerInstanceConfigPreservedStateOutputReference) 
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputePerInstanceConfigPreservedStateOutputReference) DiskInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputePerInstanceConfigPreservedStateOutputReference) DiskInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"diskInput",
@@ -152,8 +152,8 @@ func (j *jsiiProxy_GoogleComputePerInstanceConfigPreservedStateOutputReference) 
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputePerInstanceConfigPreservedStateOutputReference) ExternalIpInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputePerInstanceConfigPreservedStateOutputReference) ExternalIpInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"externalIpInput",
@@ -182,8 +182,8 @@ func (j *jsiiProxy_GoogleComputePerInstanceConfigPreservedStateOutputReference) 
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputePerInstanceConfigPreservedStateOutputReference) InternalIpInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputePerInstanceConfigPreservedStateOutputReference) InternalIpInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalIpInput",
@@ -242,7 +242,6 @@ func (j *jsiiProxy_GoogleComputePerInstanceConfigPreservedStateOutputReference) 
 	return returns
 }
 
-
 func NewGoogleComputePerInstanceConfigPreservedStateOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleComputePerInstanceConfigPreservedStateOutputReference {
 	_init_.Initialize()
 
@@ -253,7 +252,7 @@ func NewGoogleComputePerInstanceConfigPreservedStateOutputReference(terraformRes
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleComputePerInstanceConfig.GoogleComputePerInstanceConfigPreservedStateOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -265,12 +264,12 @@ func NewGoogleComputePerInstanceConfigPreservedStateOutputReference_Override(g G
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleComputePerInstanceConfig.GoogleComputePerInstanceConfigPreservedStateOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleComputePerInstanceConfigPreservedStateOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleComputePerInstanceConfigPreservedStateOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -281,7 +280,7 @@ func (j *jsiiProxy_GoogleComputePerInstanceConfigPreservedStateOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_GoogleComputePerInstanceConfigPreservedStateOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleComputePerInstanceConfigPreservedStateOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -292,7 +291,7 @@ func (j *jsiiProxy_GoogleComputePerInstanceConfigPreservedStateOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_GoogleComputePerInstanceConfigPreservedStateOutputReference)SetInternalValue(val *GoogleComputePerInstanceConfigPreservedState) {
+func (j *jsiiProxy_GoogleComputePerInstanceConfigPreservedStateOutputReference) SetInternalValue(val *GoogleComputePerInstanceConfigPreservedState) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -303,7 +302,7 @@ func (j *jsiiProxy_GoogleComputePerInstanceConfigPreservedStateOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_GoogleComputePerInstanceConfigPreservedStateOutputReference)SetMetadata(val *map[string]*string) {
+func (j *jsiiProxy_GoogleComputePerInstanceConfigPreservedStateOutputReference) SetMetadata(val *map[string]*string) {
 	if err := j.validateSetMetadataParameters(val); err != nil {
 		panic(err)
 	}
@@ -314,7 +313,7 @@ func (j *jsiiProxy_GoogleComputePerInstanceConfigPreservedStateOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_GoogleComputePerInstanceConfigPreservedStateOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleComputePerInstanceConfigPreservedStateOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -325,7 +324,7 @@ func (j *jsiiProxy_GoogleComputePerInstanceConfigPreservedStateOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_GoogleComputePerInstanceConfigPreservedStateOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleComputePerInstanceConfigPreservedStateOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -349,16 +348,16 @@ func (g *jsiiProxy_GoogleComputePerInstanceConfigPreservedStateOutputReference) 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputePerInstanceConfigPreservedStateOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleComputePerInstanceConfigPreservedStateOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -374,7 +373,7 @@ func (g *jsiiProxy_GoogleComputePerInstanceConfigPreservedStateOutputReference) 
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -390,7 +389,7 @@ func (g *jsiiProxy_GoogleComputePerInstanceConfigPreservedStateOutputReference) 
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -406,7 +405,7 @@ func (g *jsiiProxy_GoogleComputePerInstanceConfigPreservedStateOutputReference) 
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -422,7 +421,7 @@ func (g *jsiiProxy_GoogleComputePerInstanceConfigPreservedStateOutputReference) 
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -438,7 +437,7 @@ func (g *jsiiProxy_GoogleComputePerInstanceConfigPreservedStateOutputReference) 
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -454,7 +453,7 @@ func (g *jsiiProxy_GoogleComputePerInstanceConfigPreservedStateOutputReference) 
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -470,7 +469,7 @@ func (g *jsiiProxy_GoogleComputePerInstanceConfigPreservedStateOutputReference) 
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -486,7 +485,7 @@ func (g *jsiiProxy_GoogleComputePerInstanceConfigPreservedStateOutputReference) 
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -515,43 +514,43 @@ func (g *jsiiProxy_GoogleComputePerInstanceConfigPreservedStateOutputReference) 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputePerInstanceConfigPreservedStateOutputReference) PutDisk(value interface{}) {
+func (g *jsiiProxy_GoogleComputePerInstanceConfigPreservedStateOutputReference) PutDisk(value any) {
 	if err := g.validatePutDiskParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putDisk",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (g *jsiiProxy_GoogleComputePerInstanceConfigPreservedStateOutputReference) PutExternalIp(value interface{}) {
+func (g *jsiiProxy_GoogleComputePerInstanceConfigPreservedStateOutputReference) PutExternalIp(value any) {
 	if err := g.validatePutExternalIpParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putExternalIp",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (g *jsiiProxy_GoogleComputePerInstanceConfigPreservedStateOutputReference) PutInternalIp(value interface{}) {
+func (g *jsiiProxy_GoogleComputePerInstanceConfigPreservedStateOutputReference) PutInternalIp(value any) {
 	if err := g.validatePutInternalIpParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putInternalIp",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -587,16 +586,16 @@ func (g *jsiiProxy_GoogleComputePerInstanceConfigPreservedStateOutputReference) 
 	)
 }
 
-func (g *jsiiProxy_GoogleComputePerInstanceConfigPreservedStateOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleComputePerInstanceConfigPreservedStateOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -615,4 +614,3 @@ func (g *jsiiProxy_GoogleComputePerInstanceConfigPreservedStateOutputReference) 
 
 	return returns
 }
-

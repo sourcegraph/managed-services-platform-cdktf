@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleAlloydbInstanceMachineConfigOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAlloydbInstanceMachineConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleAlloydbInstanceMachineConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGoogleAlloydbInstanceMachineConfigOutputReferenceParameters(terr
 
 	return nil
 }
-

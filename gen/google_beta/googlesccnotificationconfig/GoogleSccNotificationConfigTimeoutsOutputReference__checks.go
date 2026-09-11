@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleSccNotificationConfigTimeoutsOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSccNotificationConfigTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleSccNotificationConfigTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_GoogleSccNotificationConfigTimeoutsOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSccNotificationConfigTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleSccNotificationConfigTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGoogleSccNotificationConfigTimeoutsOutputReferenceParameters(ter
 
 	return nil
 }
-

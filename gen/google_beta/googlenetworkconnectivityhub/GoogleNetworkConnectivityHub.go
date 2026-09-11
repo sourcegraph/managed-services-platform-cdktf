@@ -15,15 +15,15 @@ type GoogleNetworkConnectivityHub interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -33,9 +33,9 @@ type GoogleNetworkConnectivityHub interface {
 	SetDescription(val *string)
 	DescriptionInput() *string
 	EffectiveLabels() cdktf.StringMap
-	ExportPsc() interface{}
-	SetExportPsc(val interface{})
-	ExportPscInput() interface{}
+	ExportPsc() any
+	SetExportPsc(val any)
+	ExportPscInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -73,31 +73,31 @@ type GoogleNetworkConnectivityHub interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RoutingVpcs() GoogleNetworkConnectivityHubRoutingVpcsList
 	State() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() GoogleNetworkConnectivityHubTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	UniqueId() *string
 	UpdateTime() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -115,7 +115,7 @@ type GoogleNetworkConnectivityHub interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -127,7 +127,7 @@ type GoogleNetworkConnectivityHub interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -147,17 +147,17 @@ type GoogleNetworkConnectivityHub interface {
 	ResetPresetTopology()
 	ResetProject()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleNetworkConnectivityHub
@@ -175,8 +175,8 @@ func (j *jsiiProxy_GoogleNetworkConnectivityHub) CdktfStack() cdktf.TerraformSta
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetworkConnectivityHub) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleNetworkConnectivityHub) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -185,8 +185,8 @@ func (j *jsiiProxy_GoogleNetworkConnectivityHub) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetworkConnectivityHub) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleNetworkConnectivityHub) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -195,8 +195,8 @@ func (j *jsiiProxy_GoogleNetworkConnectivityHub) ConstructNodeMetadata() *map[st
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetworkConnectivityHub) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleNetworkConnectivityHub) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -255,8 +255,8 @@ func (j *jsiiProxy_GoogleNetworkConnectivityHub) EffectiveLabels() cdktf.StringM
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetworkConnectivityHub) ExportPsc() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleNetworkConnectivityHub) ExportPsc() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"exportPsc",
@@ -265,8 +265,8 @@ func (j *jsiiProxy_GoogleNetworkConnectivityHub) ExportPsc() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetworkConnectivityHub) ExportPscInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleNetworkConnectivityHub) ExportPscInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"exportPscInput",
@@ -455,8 +455,8 @@ func (j *jsiiProxy_GoogleNetworkConnectivityHub) Provider() cdktf.TerraformProvi
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetworkConnectivityHub) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleNetworkConnectivityHub) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -465,8 +465,8 @@ func (j *jsiiProxy_GoogleNetworkConnectivityHub) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetworkConnectivityHub) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleNetworkConnectivityHub) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -515,8 +515,8 @@ func (j *jsiiProxy_GoogleNetworkConnectivityHub) TerraformLabels() cdktf.StringM
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetworkConnectivityHub) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleNetworkConnectivityHub) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -545,8 +545,8 @@ func (j *jsiiProxy_GoogleNetworkConnectivityHub) Timeouts() GoogleNetworkConnect
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetworkConnectivityHub) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleNetworkConnectivityHub) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -575,7 +575,6 @@ func (j *jsiiProxy_GoogleNetworkConnectivityHub) UpdateTime() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_network_connectivity_hub google_network_connectivity_hub} Resource.
 func NewGoogleNetworkConnectivityHub(scope constructs.Construct, id *string, config *GoogleNetworkConnectivityHubConfig) GoogleNetworkConnectivityHub {
 	_init_.Initialize()
@@ -587,7 +586,7 @@ func NewGoogleNetworkConnectivityHub(scope constructs.Construct, id *string, con
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleNetworkConnectivityHub.GoogleNetworkConnectivityHub",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -600,12 +599,12 @@ func NewGoogleNetworkConnectivityHub_Override(g GoogleNetworkConnectivityHub, sc
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleNetworkConnectivityHub.GoogleNetworkConnectivityHub",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkConnectivityHub)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleNetworkConnectivityHub) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -616,7 +615,7 @@ func (j *jsiiProxy_GoogleNetworkConnectivityHub)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkConnectivityHub)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleNetworkConnectivityHub) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -627,7 +626,7 @@ func (j *jsiiProxy_GoogleNetworkConnectivityHub)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkConnectivityHub)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleNetworkConnectivityHub) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -635,7 +634,7 @@ func (j *jsiiProxy_GoogleNetworkConnectivityHub)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkConnectivityHub)SetDescription(val *string) {
+func (j *jsiiProxy_GoogleNetworkConnectivityHub) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -646,7 +645,7 @@ func (j *jsiiProxy_GoogleNetworkConnectivityHub)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkConnectivityHub)SetExportPsc(val interface{}) {
+func (j *jsiiProxy_GoogleNetworkConnectivityHub) SetExportPsc(val any) {
 	if err := j.validateSetExportPscParameters(val); err != nil {
 		panic(err)
 	}
@@ -657,7 +656,7 @@ func (j *jsiiProxy_GoogleNetworkConnectivityHub)SetExportPsc(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkConnectivityHub)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleNetworkConnectivityHub) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -665,7 +664,7 @@ func (j *jsiiProxy_GoogleNetworkConnectivityHub)SetForEach(val cdktf.ITerraformI
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkConnectivityHub)SetId(val *string) {
+func (j *jsiiProxy_GoogleNetworkConnectivityHub) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -676,7 +675,7 @@ func (j *jsiiProxy_GoogleNetworkConnectivityHub)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkConnectivityHub)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_GoogleNetworkConnectivityHub) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -687,7 +686,7 @@ func (j *jsiiProxy_GoogleNetworkConnectivityHub)SetLabels(val *map[string]*strin
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkConnectivityHub)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleNetworkConnectivityHub) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -698,7 +697,7 @@ func (j *jsiiProxy_GoogleNetworkConnectivityHub)SetLifecycle(val *cdktf.Terrafor
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkConnectivityHub)SetName(val *string) {
+func (j *jsiiProxy_GoogleNetworkConnectivityHub) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -709,7 +708,7 @@ func (j *jsiiProxy_GoogleNetworkConnectivityHub)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkConnectivityHub)SetPolicyMode(val *string) {
+func (j *jsiiProxy_GoogleNetworkConnectivityHub) SetPolicyMode(val *string) {
 	if err := j.validateSetPolicyModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -720,7 +719,7 @@ func (j *jsiiProxy_GoogleNetworkConnectivityHub)SetPolicyMode(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkConnectivityHub)SetPresetTopology(val *string) {
+func (j *jsiiProxy_GoogleNetworkConnectivityHub) SetPresetTopology(val *string) {
 	if err := j.validateSetPresetTopologyParameters(val); err != nil {
 		panic(err)
 	}
@@ -731,7 +730,7 @@ func (j *jsiiProxy_GoogleNetworkConnectivityHub)SetPresetTopology(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkConnectivityHub)SetProject(val *string) {
+func (j *jsiiProxy_GoogleNetworkConnectivityHub) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -742,7 +741,7 @@ func (j *jsiiProxy_GoogleNetworkConnectivityHub)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkConnectivityHub)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleNetworkConnectivityHub) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -750,7 +749,7 @@ func (j *jsiiProxy_GoogleNetworkConnectivityHub)SetProvider(val cdktf.TerraformP
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkConnectivityHub)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleNetworkConnectivityHub) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -773,7 +772,7 @@ func GoogleNetworkConnectivityHub_GenerateConfigForImport(scope constructs.Const
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleNetworkConnectivityHub.GoogleNetworkConnectivityHub",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -797,7 +796,7 @@ func GoogleNetworkConnectivityHub_GenerateConfigForImport(scope constructs.Const
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleNetworkConnectivityHub_IsConstruct(x interface{}) *bool {
+func GoogleNetworkConnectivityHub_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleNetworkConnectivityHub_IsConstructParameters(x); err != nil {
@@ -808,7 +807,7 @@ func GoogleNetworkConnectivityHub_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleNetworkConnectivityHub.GoogleNetworkConnectivityHub",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -816,7 +815,7 @@ func GoogleNetworkConnectivityHub_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleNetworkConnectivityHub_IsTerraformElement(x interface{}) *bool {
+func GoogleNetworkConnectivityHub_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleNetworkConnectivityHub_IsTerraformElementParameters(x); err != nil {
@@ -827,7 +826,7 @@ func GoogleNetworkConnectivityHub_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleNetworkConnectivityHub.GoogleNetworkConnectivityHub",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -835,7 +834,7 @@ func GoogleNetworkConnectivityHub_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleNetworkConnectivityHub_IsTerraformResource(x interface{}) *bool {
+func GoogleNetworkConnectivityHub_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleNetworkConnectivityHub_IsTerraformResourceParameters(x); err != nil {
@@ -846,7 +845,7 @@ func GoogleNetworkConnectivityHub_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleNetworkConnectivityHub.GoogleNetworkConnectivityHub",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -871,31 +870,31 @@ func (g *jsiiProxy_GoogleNetworkConnectivityHub) AddMoveTarget(moveTarget *strin
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleNetworkConnectivityHub) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleNetworkConnectivityHub) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleNetworkConnectivityHub) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleNetworkConnectivityHub) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -911,7 +910,7 @@ func (g *jsiiProxy_GoogleNetworkConnectivityHub) GetBooleanAttribute(terraformAt
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -927,7 +926,7 @@ func (g *jsiiProxy_GoogleNetworkConnectivityHub) GetBooleanMapAttribute(terrafor
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -943,7 +942,7 @@ func (g *jsiiProxy_GoogleNetworkConnectivityHub) GetListAttribute(terraformAttri
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -959,7 +958,7 @@ func (g *jsiiProxy_GoogleNetworkConnectivityHub) GetNumberAttribute(terraformAtt
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -975,7 +974,7 @@ func (g *jsiiProxy_GoogleNetworkConnectivityHub) GetNumberListAttribute(terrafor
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -991,7 +990,7 @@ func (g *jsiiProxy_GoogleNetworkConnectivityHub) GetNumberMapAttribute(terraform
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1007,7 +1006,7 @@ func (g *jsiiProxy_GoogleNetworkConnectivityHub) GetStringAttribute(terraformAtt
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1023,15 +1022,15 @@ func (g *jsiiProxy_GoogleNetworkConnectivityHub) GetStringMapAttribute(terraform
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleNetworkConnectivityHub) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleNetworkConnectivityHub) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1050,7 +1049,7 @@ func (g *jsiiProxy_GoogleNetworkConnectivityHub) ImportFrom(id *string, provider
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1063,7 +1062,7 @@ func (g *jsiiProxy_GoogleNetworkConnectivityHub) InterpolationForAttribute(terra
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1077,18 +1076,18 @@ func (g *jsiiProxy_GoogleNetworkConnectivityHub) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleNetworkConnectivityHub) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleNetworkConnectivityHub) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1099,7 +1098,7 @@ func (g *jsiiProxy_GoogleNetworkConnectivityHub) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1110,7 +1109,7 @@ func (g *jsiiProxy_GoogleNetworkConnectivityHub) OverrideLogicalId(newLogicalId 
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1121,7 +1120,7 @@ func (g *jsiiProxy_GoogleNetworkConnectivityHub) PutTimeouts(value *GoogleNetwor
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1205,8 +1204,8 @@ func (g *jsiiProxy_GoogleNetworkConnectivityHub) ResetTimeouts() {
 	)
 }
 
-func (g *jsiiProxy_GoogleNetworkConnectivityHub) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleNetworkConnectivityHub) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1218,8 +1217,8 @@ func (g *jsiiProxy_GoogleNetworkConnectivityHub) SynthesizeAttributes() *map[str
 	return returns
 }
 
-func (g *jsiiProxy_GoogleNetworkConnectivityHub) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleNetworkConnectivityHub) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1231,8 +1230,8 @@ func (g *jsiiProxy_GoogleNetworkConnectivityHub) SynthesizeHclAttributes() *map[
 	return returns
 }
 
-func (g *jsiiProxy_GoogleNetworkConnectivityHub) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleNetworkConnectivityHub) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1244,8 +1243,8 @@ func (g *jsiiProxy_GoogleNetworkConnectivityHub) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleNetworkConnectivityHub) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleNetworkConnectivityHub) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1270,8 +1269,8 @@ func (g *jsiiProxy_GoogleNetworkConnectivityHub) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleNetworkConnectivityHub) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleNetworkConnectivityHub) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1282,4 +1281,3 @@ func (g *jsiiProxy_GoogleNetworkConnectivityHub) ToTerraform() interface{} {
 
 	return returns
 }
-

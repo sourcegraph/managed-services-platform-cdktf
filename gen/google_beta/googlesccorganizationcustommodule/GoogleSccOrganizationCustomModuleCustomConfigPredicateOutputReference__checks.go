@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleSccOrganizationCustomModuleCustomConfigPredicateOutputR
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSccOrganizationCustomModuleCustomConfigPredicateOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleSccOrganizationCustomModuleCustomConfigPredicateOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -230,4 +230,3 @@ func validateNewGoogleSccOrganizationCustomModuleCustomConfigPredicateOutputRefe
 
 	return nil
 }
-

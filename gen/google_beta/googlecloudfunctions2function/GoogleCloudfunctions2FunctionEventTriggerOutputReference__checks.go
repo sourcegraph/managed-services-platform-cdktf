@@ -90,7 +90,7 @@ func (g *jsiiProxy_GoogleCloudfunctions2FunctionEventTriggerOutputReference) val
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCloudfunctions2FunctionEventTriggerOutputReference) validatePutEventFiltersParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleCloudfunctions2FunctionEventTriggerOutputReference) validatePutEventFiltersParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (g *jsiiProxy_GoogleCloudfunctions2FunctionEventTriggerOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudfunctions2FunctionEventTriggerOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleCloudfunctions2FunctionEventTriggerOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -269,4 +269,3 @@ func validateNewGoogleCloudfunctions2FunctionEventTriggerOutputReferenceParamete
 
 	return nil
 }
-

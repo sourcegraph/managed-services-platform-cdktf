@@ -1,6 +1,5 @@
 package googlegeminicodetoolssetting
 
-
 type GoogleGeminiCodeToolsSettingEnabledTool struct {
 	// Handle used to invoke the tool.
 	//
@@ -17,10 +16,9 @@ type GoogleGeminiCodeToolsSettingEnabledTool struct {
 	// config block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_gemini_code_tools_setting#config GoogleGeminiCodeToolsSetting#config}
-	Config interface{} `field:"optional" json:"config" yaml:"config"`
+	Config any `field:"optional" json:"config" yaml:"config"`
 	// Overridden URI, if allowed by Tool.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_gemini_code_tools_setting#uri_override GoogleGeminiCodeToolsSetting#uri_override}
 	UriOverride *string `field:"optional" json:"uriOverride" yaml:"uriOverride"`
 }
-

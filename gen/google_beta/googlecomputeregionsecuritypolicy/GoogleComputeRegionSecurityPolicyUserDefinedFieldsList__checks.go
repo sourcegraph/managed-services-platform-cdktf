@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleComputeRegionSecurityPolicyUserDefinedFieldsList) valid
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRegionSecurityPolicyUserDefinedFieldsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeRegionSecurityPolicyUserDefinedFieldsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleComputeRegionSecurityPolicyUserDefinedFieldsListParameters
 
 	return nil
 }
-

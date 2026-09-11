@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleIapSettingsAccessSettingsReauthSettingsOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIapSettingsAccessSettingsReauthSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleIapSettingsAccessSettingsReauthSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewGoogleIapSettingsAccessSettingsReauthSettingsOutputReferencePara
 
 	return nil
 }
-

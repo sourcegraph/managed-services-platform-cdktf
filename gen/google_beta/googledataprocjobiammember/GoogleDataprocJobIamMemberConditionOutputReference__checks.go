@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleDataprocJobIamMemberConditionOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataprocJobIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataprocJobIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewGoogleDataprocJobIamMemberConditionOutputReferenceParameters(ter
 
 	return nil
 }
-

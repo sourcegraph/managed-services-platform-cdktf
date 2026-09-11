@@ -90,7 +90,7 @@ func (g *jsiiProxy_GoogleNetworkServicesEdgeCacheServiceRoutingOutputReference) 
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetworkServicesEdgeCacheServiceRoutingOutputReference) validatePutHostRuleParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleNetworkServicesEdgeCacheServiceRoutingOutputReference) validatePutHostRuleParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (g *jsiiProxy_GoogleNetworkServicesEdgeCacheServiceRoutingOutputReference) 
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetworkServicesEdgeCacheServiceRoutingOutputReference) validatePutPathMatcherParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleNetworkServicesEdgeCacheServiceRoutingOutputReference) validatePutPathMatcherParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -160,7 +160,7 @@ func (g *jsiiProxy_GoogleNetworkServicesEdgeCacheServiceRoutingOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkServicesEdgeCacheServiceRoutingOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNetworkServicesEdgeCacheServiceRoutingOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -260,4 +260,3 @@ func validateNewGoogleNetworkServicesEdgeCacheServiceRoutingOutputReferenceParam
 
 	return nil
 }
-

@@ -6,9 +6,9 @@ import (
 
 type GoogleBigtableGcPolicyConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type GoogleBigtableGcPolicyConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The name of the column family.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_bigtable_gc_policy#column_family GoogleBigtableGcPolicy#column_family}
@@ -56,7 +56,7 @@ type GoogleBigtableGcPolicyConfig struct {
 	// 				the risks listed at https://cloud.google.com/bigtable/docs/garbage-collection#increasing
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_bigtable_gc_policy#ignore_warnings GoogleBigtableGcPolicy#ignore_warnings}
-	IgnoreWarnings interface{} `field:"optional" json:"ignoreWarnings" yaml:"ignoreWarnings"`
+	IgnoreWarnings any `field:"optional" json:"ignoreWarnings" yaml:"ignoreWarnings"`
 	// max_age block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_bigtable_gc_policy#max_age GoogleBigtableGcPolicy#max_age}
@@ -64,7 +64,7 @@ type GoogleBigtableGcPolicyConfig struct {
 	// max_version block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_bigtable_gc_policy#max_version GoogleBigtableGcPolicy#max_version}
-	MaxVersion interface{} `field:"optional" json:"maxVersion" yaml:"maxVersion"`
+	MaxVersion any `field:"optional" json:"maxVersion" yaml:"maxVersion"`
 	// NOTE: 'gc_rules' is more flexible, and should be preferred over this field for new resources.
 	//
 	// This field may be deprecated in the future. If multiple policies are set, you should choose between UNION OR INTERSECTION.
@@ -82,4 +82,3 @@ type GoogleBigtableGcPolicyConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_bigtable_gc_policy#timeouts GoogleBigtableGcPolicy#timeouts}
 	Timeouts *GoogleBigtableGcPolicyTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

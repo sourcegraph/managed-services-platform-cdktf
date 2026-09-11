@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleGeminiRepositoryGroup.GoogleGeminiRepositoryGroup",
-		reflect.TypeOf((*GoogleGeminiRepositoryGroup)(nil)).Elem(),
+		reflect.TypeFor[GoogleGeminiRepositoryGroup](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -80,7 +80,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleGeminiRepositoryGroup{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -88,15 +88,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleGeminiRepositoryGroup.GoogleGeminiRepositoryGroupConfig",
-		reflect.TypeOf((*GoogleGeminiRepositoryGroupConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleGeminiRepositoryGroupConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleGeminiRepositoryGroup.GoogleGeminiRepositoryGroupRepositories",
-		reflect.TypeOf((*GoogleGeminiRepositoryGroupRepositories)(nil)).Elem(),
+		reflect.TypeFor[GoogleGeminiRepositoryGroupRepositories](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleGeminiRepositoryGroup.GoogleGeminiRepositoryGroupRepositoriesList",
-		reflect.TypeOf((*GoogleGeminiRepositoryGroupRepositoriesList)(nil)).Elem(),
+		reflect.TypeFor[GoogleGeminiRepositoryGroupRepositoriesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -110,7 +110,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleGeminiRepositoryGroupRepositoriesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -118,7 +118,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleGeminiRepositoryGroup.GoogleGeminiRepositoryGroupRepositoriesOutputReference",
-		reflect.TypeOf((*GoogleGeminiRepositoryGroupRepositoriesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleGeminiRepositoryGroupRepositoriesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "branchPattern", GoGetter: "BranchPattern"},
 			_jsii_.MemberProperty{JsiiProperty: "branchPatternInput", GoGetter: "BranchPatternInput"},
@@ -146,7 +146,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleGeminiRepositoryGroupRepositoriesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -154,11 +154,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleGeminiRepositoryGroup.GoogleGeminiRepositoryGroupTimeouts",
-		reflect.TypeOf((*GoogleGeminiRepositoryGroupTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleGeminiRepositoryGroupTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleGeminiRepositoryGroup.GoogleGeminiRepositoryGroupTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleGeminiRepositoryGroupTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleGeminiRepositoryGroupTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -191,7 +191,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleGeminiRepositoryGroupTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

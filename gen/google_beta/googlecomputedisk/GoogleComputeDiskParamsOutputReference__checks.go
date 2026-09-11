@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleComputeDiskParamsOutputReference) validateResolveParame
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeDiskParamsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeDiskParamsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleComputeDiskParamsOutputReferenceParameters(terraformResour
 
 	return nil
 }
-

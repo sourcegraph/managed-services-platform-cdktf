@@ -6,9 +6,9 @@ import (
 
 type GoogleKmsEkmConnectionConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type GoogleKmsEkmConnectionConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The location for the EkmConnection. A full list of valid locations can be found by running 'gcloud kms locations list'.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_kms_ekm_connection#location GoogleKmsEkmConnection#location}
@@ -30,7 +30,7 @@ type GoogleKmsEkmConnectionConfig struct {
 	// service_resolvers block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_kms_ekm_connection#service_resolvers GoogleKmsEkmConnection#service_resolvers}
-	ServiceResolvers interface{} `field:"required" json:"serviceResolvers" yaml:"serviceResolvers"`
+	ServiceResolvers any `field:"required" json:"serviceResolvers" yaml:"serviceResolvers"`
 	// Optional.
 	//
 	// Identifies the EKM Crypto Space that this EkmConnection maps to. Note: This field is required if KeyManagementMode is CLOUD_KMS.
@@ -59,4 +59,3 @@ type GoogleKmsEkmConnectionConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_kms_ekm_connection#timeouts GoogleKmsEkmConnection#timeouts}
 	Timeouts *GoogleKmsEkmConnectionTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

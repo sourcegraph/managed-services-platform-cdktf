@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleComputeSnapshotSourceDiskEncryptionKeyOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeSnapshotSourceDiskEncryptionKeyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeSnapshotSourceDiskEncryptionKeyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -230,4 +230,3 @@ func validateNewGoogleComputeSnapshotSourceDiskEncryptionKeyOutputReferenceParam
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleApigeeAddonsConfigAddonsConfigAdvancedApiOpsConfigOutpu
 	return nil
 }
 
-func (j *jsiiProxy_GoogleApigeeAddonsConfigAddonsConfigAdvancedApiOpsConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleApigeeAddonsConfigAddonsConfigAdvancedApiOpsConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_GoogleApigeeAddonsConfigAddonsConfigAdvancedApiOpsConfigOutpu
 	return nil
 }
 
-func (j *jsiiProxy_GoogleApigeeAddonsConfigAddonsConfigAdvancedApiOpsConfigOutputReference) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleApigeeAddonsConfigAddonsConfigAdvancedApiOpsConfigOutputReference) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -218,4 +218,3 @@ func validateNewGoogleApigeeAddonsConfigAddonsConfigAdvancedApiOpsConfigOutputRe
 
 	return nil
 }
-

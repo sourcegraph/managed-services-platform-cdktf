@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleStorageBucketCustomPlacementConfigOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_GoogleStorageBucketCustomPlacementConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleStorageBucketCustomPlacementConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleStorageBucketCustomPlacementConfigOutputReferenceParameter
 
 	return nil
 }
-

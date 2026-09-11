@@ -14,9 +14,9 @@ type GoogleContainerAwsClusterControlPlaneOutputReference interface {
 	AwsServicesAuthenticationInput() *GoogleContainerAwsClusterControlPlaneAwsServicesAuthentication
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -74,7 +74,7 @@ type GoogleContainerAwsClusterControlPlaneOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -113,7 +113,7 @@ type GoogleContainerAwsClusterControlPlaneOutputReference interface {
 	ResetTags()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -146,8 +146,8 @@ func (j *jsiiProxy_GoogleContainerAwsClusterControlPlaneOutputReference) AwsServ
 	return returns
 }
 
-func (j *jsiiProxy_GoogleContainerAwsClusterControlPlaneOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleContainerAwsClusterControlPlaneOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -476,7 +476,6 @@ func (j *jsiiProxy_GoogleContainerAwsClusterControlPlaneOutputReference) Version
 	return returns
 }
 
-
 func NewGoogleContainerAwsClusterControlPlaneOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleContainerAwsClusterControlPlaneOutputReference {
 	_init_.Initialize()
 
@@ -487,7 +486,7 @@ func NewGoogleContainerAwsClusterControlPlaneOutputReference(terraformResource c
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleContainerAwsCluster.GoogleContainerAwsClusterControlPlaneOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -499,12 +498,12 @@ func NewGoogleContainerAwsClusterControlPlaneOutputReference_Override(g GoogleCo
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleContainerAwsCluster.GoogleContainerAwsClusterControlPlaneOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerAwsClusterControlPlaneOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleContainerAwsClusterControlPlaneOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -515,7 +514,7 @@ func (j *jsiiProxy_GoogleContainerAwsClusterControlPlaneOutputReference)SetCompl
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerAwsClusterControlPlaneOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleContainerAwsClusterControlPlaneOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -526,7 +525,7 @@ func (j *jsiiProxy_GoogleContainerAwsClusterControlPlaneOutputReference)SetCompl
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerAwsClusterControlPlaneOutputReference)SetIamInstanceProfile(val *string) {
+func (j *jsiiProxy_GoogleContainerAwsClusterControlPlaneOutputReference) SetIamInstanceProfile(val *string) {
 	if err := j.validateSetIamInstanceProfileParameters(val); err != nil {
 		panic(err)
 	}
@@ -537,7 +536,7 @@ func (j *jsiiProxy_GoogleContainerAwsClusterControlPlaneOutputReference)SetIamIn
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerAwsClusterControlPlaneOutputReference)SetInstanceType(val *string) {
+func (j *jsiiProxy_GoogleContainerAwsClusterControlPlaneOutputReference) SetInstanceType(val *string) {
 	if err := j.validateSetInstanceTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -548,7 +547,7 @@ func (j *jsiiProxy_GoogleContainerAwsClusterControlPlaneOutputReference)SetInsta
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerAwsClusterControlPlaneOutputReference)SetInternalValue(val *GoogleContainerAwsClusterControlPlane) {
+func (j *jsiiProxy_GoogleContainerAwsClusterControlPlaneOutputReference) SetInternalValue(val *GoogleContainerAwsClusterControlPlane) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -559,7 +558,7 @@ func (j *jsiiProxy_GoogleContainerAwsClusterControlPlaneOutputReference)SetInter
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerAwsClusterControlPlaneOutputReference)SetSecurityGroupIds(val *[]*string) {
+func (j *jsiiProxy_GoogleContainerAwsClusterControlPlaneOutputReference) SetSecurityGroupIds(val *[]*string) {
 	if err := j.validateSetSecurityGroupIdsParameters(val); err != nil {
 		panic(err)
 	}
@@ -570,7 +569,7 @@ func (j *jsiiProxy_GoogleContainerAwsClusterControlPlaneOutputReference)SetSecur
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerAwsClusterControlPlaneOutputReference)SetSubnetIds(val *[]*string) {
+func (j *jsiiProxy_GoogleContainerAwsClusterControlPlaneOutputReference) SetSubnetIds(val *[]*string) {
 	if err := j.validateSetSubnetIdsParameters(val); err != nil {
 		panic(err)
 	}
@@ -581,7 +580,7 @@ func (j *jsiiProxy_GoogleContainerAwsClusterControlPlaneOutputReference)SetSubne
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerAwsClusterControlPlaneOutputReference)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_GoogleContainerAwsClusterControlPlaneOutputReference) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -592,7 +591,7 @@ func (j *jsiiProxy_GoogleContainerAwsClusterControlPlaneOutputReference)SetTags(
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerAwsClusterControlPlaneOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleContainerAwsClusterControlPlaneOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -603,7 +602,7 @@ func (j *jsiiProxy_GoogleContainerAwsClusterControlPlaneOutputReference)SetTerra
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerAwsClusterControlPlaneOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleContainerAwsClusterControlPlaneOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -614,7 +613,7 @@ func (j *jsiiProxy_GoogleContainerAwsClusterControlPlaneOutputReference)SetTerra
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerAwsClusterControlPlaneOutputReference)SetVersion(val *string) {
+func (j *jsiiProxy_GoogleContainerAwsClusterControlPlaneOutputReference) SetVersion(val *string) {
 	if err := j.validateSetVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -638,16 +637,16 @@ func (g *jsiiProxy_GoogleContainerAwsClusterControlPlaneOutputReference) Compute
 	return returns
 }
 
-func (g *jsiiProxy_GoogleContainerAwsClusterControlPlaneOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleContainerAwsClusterControlPlaneOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -663,7 +662,7 @@ func (g *jsiiProxy_GoogleContainerAwsClusterControlPlaneOutputReference) GetBool
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -679,7 +678,7 @@ func (g *jsiiProxy_GoogleContainerAwsClusterControlPlaneOutputReference) GetBool
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -695,7 +694,7 @@ func (g *jsiiProxy_GoogleContainerAwsClusterControlPlaneOutputReference) GetList
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -711,7 +710,7 @@ func (g *jsiiProxy_GoogleContainerAwsClusterControlPlaneOutputReference) GetNumb
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -727,7 +726,7 @@ func (g *jsiiProxy_GoogleContainerAwsClusterControlPlaneOutputReference) GetNumb
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -743,7 +742,7 @@ func (g *jsiiProxy_GoogleContainerAwsClusterControlPlaneOutputReference) GetNumb
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -759,7 +758,7 @@ func (g *jsiiProxy_GoogleContainerAwsClusterControlPlaneOutputReference) GetStri
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -775,7 +774,7 @@ func (g *jsiiProxy_GoogleContainerAwsClusterControlPlaneOutputReference) GetStri
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -804,7 +803,7 @@ func (g *jsiiProxy_GoogleContainerAwsClusterControlPlaneOutputReference) Interpo
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -818,7 +817,7 @@ func (g *jsiiProxy_GoogleContainerAwsClusterControlPlaneOutputReference) PutAwsS
 	_jsii_.InvokeVoid(
 		g,
 		"putAwsServicesAuthentication",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -829,7 +828,7 @@ func (g *jsiiProxy_GoogleContainerAwsClusterControlPlaneOutputReference) PutConf
 	_jsii_.InvokeVoid(
 		g,
 		"putConfigEncryption",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -840,7 +839,7 @@ func (g *jsiiProxy_GoogleContainerAwsClusterControlPlaneOutputReference) PutData
 	_jsii_.InvokeVoid(
 		g,
 		"putDatabaseEncryption",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -851,7 +850,7 @@ func (g *jsiiProxy_GoogleContainerAwsClusterControlPlaneOutputReference) PutInst
 	_jsii_.InvokeVoid(
 		g,
 		"putInstancePlacement",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -862,7 +861,7 @@ func (g *jsiiProxy_GoogleContainerAwsClusterControlPlaneOutputReference) PutMain
 	_jsii_.InvokeVoid(
 		g,
 		"putMainVolume",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -873,7 +872,7 @@ func (g *jsiiProxy_GoogleContainerAwsClusterControlPlaneOutputReference) PutProx
 	_jsii_.InvokeVoid(
 		g,
 		"putProxyConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -884,7 +883,7 @@ func (g *jsiiProxy_GoogleContainerAwsClusterControlPlaneOutputReference) PutRoot
 	_jsii_.InvokeVoid(
 		g,
 		"putRootVolume",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -895,7 +894,7 @@ func (g *jsiiProxy_GoogleContainerAwsClusterControlPlaneOutputReference) PutSshC
 	_jsii_.InvokeVoid(
 		g,
 		"putSshConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -963,16 +962,16 @@ func (g *jsiiProxy_GoogleContainerAwsClusterControlPlaneOutputReference) ResetTa
 	)
 }
 
-func (g *jsiiProxy_GoogleContainerAwsClusterControlPlaneOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleContainerAwsClusterControlPlaneOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -991,4 +990,3 @@ func (g *jsiiProxy_GoogleContainerAwsClusterControlPlaneOutputReference) ToStrin
 
 	return returns
 }
-

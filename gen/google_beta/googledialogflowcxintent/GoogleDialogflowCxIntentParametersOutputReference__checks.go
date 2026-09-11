@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleDialogflowCxIntentParametersOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxIntentParametersOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDialogflowCxIntentParametersOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_GoogleDialogflowCxIntentParametersOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxIntentParametersOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDialogflowCxIntentParametersOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -203,7 +203,7 @@ func (j *jsiiProxy_GoogleDialogflowCxIntentParametersOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxIntentParametersOutputReference) validateSetIsListParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDialogflowCxIntentParametersOutputReference) validateSetIsListParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -223,7 +223,7 @@ func (j *jsiiProxy_GoogleDialogflowCxIntentParametersOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxIntentParametersOutputReference) validateSetRedactParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDialogflowCxIntentParametersOutputReference) validateSetRedactParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -278,4 +278,3 @@ func validateNewGoogleDialogflowCxIntentParametersOutputReferenceParameters(terr
 
 	return nil
 }
-

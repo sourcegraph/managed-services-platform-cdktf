@@ -120,7 +120,7 @@ func (g *jsiiProxy_GoogleDataplexZoneDiscoverySpecOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataplexZoneDiscoverySpecOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataplexZoneDiscoverySpecOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -185,7 +185,7 @@ func (j *jsiiProxy_GoogleDataplexZoneDiscoverySpecOutputReference) validateSetCo
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataplexZoneDiscoverySpecOutputReference) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataplexZoneDiscoverySpecOutputReference) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -264,4 +264,3 @@ func validateNewGoogleDataplexZoneDiscoverySpecOutputReferenceParameters(terrafo
 
 	return nil
 }
-

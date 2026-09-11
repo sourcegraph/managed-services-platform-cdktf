@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleSecretManagerSecretTopicsOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSecretManagerSecretTopicsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleSecretManagerSecretTopicsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_GoogleSecretManagerSecretTopicsOutputReference) validateSetCo
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSecretManagerSecretTopicsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleSecretManagerSecretTopicsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewGoogleSecretManagerSecretTopicsOutputReferenceParameters(terrafo
 
 	return nil
 }
-

@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleSecretManagerSecretIamPolicy) validateAddMoveTargetPara
 	return nil
 }
 
-func (g *jsiiProxy_GoogleSecretManagerSecretIamPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleSecretManagerSecretIamPolicy) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleSecretManagerSecretIamPolicy) validateMoveFromIdParamet
 	return nil
 }
 
-func (g *jsiiProxy_GoogleSecretManagerSecretIamPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleSecretManagerSecretIamPolicy) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateGoogleSecretManagerSecretIamPolicy_GenerateConfigForImportParameter
 	return nil
 }
 
-func validateGoogleSecretManagerSecretIamPolicy_IsConstructParameters(x interface{}) error {
+func validateGoogleSecretManagerSecretIamPolicy_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateGoogleSecretManagerSecretIamPolicy_IsConstructParameters(x interfac
 	return nil
 }
 
-func validateGoogleSecretManagerSecretIamPolicy_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleSecretManagerSecretIamPolicy_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateGoogleSecretManagerSecretIamPolicy_IsTerraformElementParameters(x i
 	return nil
 }
 
-func validateGoogleSecretManagerSecretIamPolicy_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleSecretManagerSecretIamPolicy_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateGoogleSecretManagerSecretIamPolicy_IsTerraformResourceParameters(x 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSecretManagerSecretIamPolicy) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleSecretManagerSecretIamPolicy) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_GoogleSecretManagerSecretIamPolicy) validateSetConnectionPara
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSecretManagerSecretIamPolicy) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleSecretManagerSecretIamPolicy) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -366,7 +366,7 @@ func (j *jsiiProxy_GoogleSecretManagerSecretIamPolicy) validateSetProjectParamet
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSecretManagerSecretIamPolicy) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleSecretManagerSecretIamPolicy) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -438,4 +438,3 @@ func validateNewGoogleSecretManagerSecretIamPolicyParameters(scope constructs.Co
 
 	return nil
 }
-

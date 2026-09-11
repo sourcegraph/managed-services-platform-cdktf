@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleBigqueryTableExternalDataConfigurationParquetOptionsOut
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigqueryTableExternalDataConfigurationParquetOptionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBigqueryTableExternalDataConfigurationParquetOptionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_GoogleBigqueryTableExternalDataConfigurationParquetOptionsOut
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigqueryTableExternalDataConfigurationParquetOptionsOutputReference) validateSetEnableListInferenceParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBigqueryTableExternalDataConfigurationParquetOptionsOutputReference) validateSetEnableListInferenceParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -183,7 +183,7 @@ func (j *jsiiProxy_GoogleBigqueryTableExternalDataConfigurationParquetOptionsOut
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigqueryTableExternalDataConfigurationParquetOptionsOutputReference) validateSetEnumAsStringParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBigqueryTableExternalDataConfigurationParquetOptionsOutputReference) validateSetEnumAsStringParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -238,4 +238,3 @@ func validateNewGoogleBigqueryTableExternalDataConfigurationParquetOptionsOutput
 
 	return nil
 }
-

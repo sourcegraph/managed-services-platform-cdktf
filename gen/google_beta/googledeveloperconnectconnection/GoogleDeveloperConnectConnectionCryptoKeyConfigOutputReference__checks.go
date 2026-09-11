@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleDeveloperConnectConnectionCryptoKeyConfigOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDeveloperConnectConnectionCryptoKeyConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDeveloperConnectConnectionCryptoKeyConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleDeveloperConnectConnectionCryptoKeyConfigOutputReferencePa
 
 	return nil
 }
-

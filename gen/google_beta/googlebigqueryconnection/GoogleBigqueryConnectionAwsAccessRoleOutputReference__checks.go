@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleBigqueryConnectionAwsAccessRoleOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigqueryConnectionAwsAccessRoleOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBigqueryConnectionAwsAccessRoleOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleBigqueryConnectionAwsAccessRoleOutputReferenceParameters(t
 
 	return nil
 }
-

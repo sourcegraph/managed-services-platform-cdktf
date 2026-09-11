@@ -1,6 +1,5 @@
 package googlecomputeregionbackendservice
 
-
 type GoogleComputeRegionBackendServiceConnectionTrackingPolicy struct {
 	// Specifies connection persistence when backends are unhealthy.
 	//
@@ -24,7 +23,7 @@ type GoogleComputeRegionBackendServiceConnectionTrackingPolicy struct {
 	// Enable Strong Session Affinity for Network Load Balancing. This option is not available publicly.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_region_backend_service#enable_strong_affinity GoogleComputeRegionBackendService#enable_strong_affinity}
-	EnableStrongAffinity interface{} `field:"optional" json:"enableStrongAffinity" yaml:"enableStrongAffinity"`
+	EnableStrongAffinity any `field:"optional" json:"enableStrongAffinity" yaml:"enableStrongAffinity"`
 	// Specifies how long to keep a Connection Tracking entry while there is no matching traffic (in seconds).
 	//
 	// For L4 ILB the minimum(default) is 10 minutes and maximum is 16 hours.
@@ -45,4 +44,3 @@ type GoogleComputeRegionBackendServiceConnectionTrackingPolicy struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_region_backend_service#tracking_mode GoogleComputeRegionBackendService#tracking_mode}
 	TrackingMode *string `field:"optional" json:"trackingMode" yaml:"trackingMode"`
 }
-

@@ -17,15 +17,15 @@ type GoogleAccessContextManagerAccessPolicyIamBinding interface {
 	Condition() GoogleAccessContextManagerAccessPolicyIamBindingConditionOutputReference
 	ConditionInput() *GoogleAccessContextManagerAccessPolicyIamBindingCondition
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -59,27 +59,27 @@ type GoogleAccessContextManagerAccessPolicyIamBinding interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Role() *string
 	SetRole(val *string)
 	RoleInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -97,7 +97,7 @@ type GoogleAccessContextManagerAccessPolicyIamBinding interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -109,7 +109,7 @@ type GoogleAccessContextManagerAccessPolicyIamBinding interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -122,17 +122,17 @@ type GoogleAccessContextManagerAccessPolicyIamBinding interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleAccessContextManagerAccessPolicyIamBinding
@@ -170,8 +170,8 @@ func (j *jsiiProxy_GoogleAccessContextManagerAccessPolicyIamBinding) ConditionIn
 	return returns
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerAccessPolicyIamBinding) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleAccessContextManagerAccessPolicyIamBinding) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -180,8 +180,8 @@ func (j *jsiiProxy_GoogleAccessContextManagerAccessPolicyIamBinding) Connection(
 	return returns
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerAccessPolicyIamBinding) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleAccessContextManagerAccessPolicyIamBinding) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -190,8 +190,8 @@ func (j *jsiiProxy_GoogleAccessContextManagerAccessPolicyIamBinding) ConstructNo
 	return returns
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerAccessPolicyIamBinding) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleAccessContextManagerAccessPolicyIamBinding) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -340,8 +340,8 @@ func (j *jsiiProxy_GoogleAccessContextManagerAccessPolicyIamBinding) Provider() 
 	return returns
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerAccessPolicyIamBinding) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleAccessContextManagerAccessPolicyIamBinding) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -350,8 +350,8 @@ func (j *jsiiProxy_GoogleAccessContextManagerAccessPolicyIamBinding) Provisioner
 	return returns
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerAccessPolicyIamBinding) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleAccessContextManagerAccessPolicyIamBinding) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -390,8 +390,8 @@ func (j *jsiiProxy_GoogleAccessContextManagerAccessPolicyIamBinding) TerraformGe
 	return returns
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerAccessPolicyIamBinding) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleAccessContextManagerAccessPolicyIamBinding) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -410,7 +410,6 @@ func (j *jsiiProxy_GoogleAccessContextManagerAccessPolicyIamBinding) TerraformRe
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_access_context_manager_access_policy_iam_binding google_access_context_manager_access_policy_iam_binding} Resource.
 func NewGoogleAccessContextManagerAccessPolicyIamBinding(scope constructs.Construct, id *string, config *GoogleAccessContextManagerAccessPolicyIamBindingConfig) GoogleAccessContextManagerAccessPolicyIamBinding {
 	_init_.Initialize()
@@ -422,7 +421,7 @@ func NewGoogleAccessContextManagerAccessPolicyIamBinding(scope constructs.Constr
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleAccessContextManagerAccessPolicyIamBinding.GoogleAccessContextManagerAccessPolicyIamBinding",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -435,12 +434,12 @@ func NewGoogleAccessContextManagerAccessPolicyIamBinding_Override(g GoogleAccess
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleAccessContextManagerAccessPolicyIamBinding.GoogleAccessContextManagerAccessPolicyIamBinding",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerAccessPolicyIamBinding)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleAccessContextManagerAccessPolicyIamBinding) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -451,7 +450,7 @@ func (j *jsiiProxy_GoogleAccessContextManagerAccessPolicyIamBinding)SetConnectio
 	)
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerAccessPolicyIamBinding)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleAccessContextManagerAccessPolicyIamBinding) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -462,7 +461,7 @@ func (j *jsiiProxy_GoogleAccessContextManagerAccessPolicyIamBinding)SetCount(val
 	)
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerAccessPolicyIamBinding)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleAccessContextManagerAccessPolicyIamBinding) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -470,7 +469,7 @@ func (j *jsiiProxy_GoogleAccessContextManagerAccessPolicyIamBinding)SetDependsOn
 	)
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerAccessPolicyIamBinding)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleAccessContextManagerAccessPolicyIamBinding) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -478,7 +477,7 @@ func (j *jsiiProxy_GoogleAccessContextManagerAccessPolicyIamBinding)SetForEach(v
 	)
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerAccessPolicyIamBinding)SetId(val *string) {
+func (j *jsiiProxy_GoogleAccessContextManagerAccessPolicyIamBinding) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -489,7 +488,7 @@ func (j *jsiiProxy_GoogleAccessContextManagerAccessPolicyIamBinding)SetId(val *s
 	)
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerAccessPolicyIamBinding)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleAccessContextManagerAccessPolicyIamBinding) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -500,7 +499,7 @@ func (j *jsiiProxy_GoogleAccessContextManagerAccessPolicyIamBinding)SetLifecycle
 	)
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerAccessPolicyIamBinding)SetMembers(val *[]*string) {
+func (j *jsiiProxy_GoogleAccessContextManagerAccessPolicyIamBinding) SetMembers(val *[]*string) {
 	if err := j.validateSetMembersParameters(val); err != nil {
 		panic(err)
 	}
@@ -511,7 +510,7 @@ func (j *jsiiProxy_GoogleAccessContextManagerAccessPolicyIamBinding)SetMembers(v
 	)
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerAccessPolicyIamBinding)SetName(val *string) {
+func (j *jsiiProxy_GoogleAccessContextManagerAccessPolicyIamBinding) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -522,7 +521,7 @@ func (j *jsiiProxy_GoogleAccessContextManagerAccessPolicyIamBinding)SetName(val 
 	)
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerAccessPolicyIamBinding)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleAccessContextManagerAccessPolicyIamBinding) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -530,7 +529,7 @@ func (j *jsiiProxy_GoogleAccessContextManagerAccessPolicyIamBinding)SetProvider(
 	)
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerAccessPolicyIamBinding)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleAccessContextManagerAccessPolicyIamBinding) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -541,7 +540,7 @@ func (j *jsiiProxy_GoogleAccessContextManagerAccessPolicyIamBinding)SetProvision
 	)
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerAccessPolicyIamBinding)SetRole(val *string) {
+func (j *jsiiProxy_GoogleAccessContextManagerAccessPolicyIamBinding) SetRole(val *string) {
 	if err := j.validateSetRoleParameters(val); err != nil {
 		panic(err)
 	}
@@ -564,7 +563,7 @@ func GoogleAccessContextManagerAccessPolicyIamBinding_GenerateConfigForImport(sc
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleAccessContextManagerAccessPolicyIamBinding.GoogleAccessContextManagerAccessPolicyIamBinding",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -588,7 +587,7 @@ func GoogleAccessContextManagerAccessPolicyIamBinding_GenerateConfigForImport(sc
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleAccessContextManagerAccessPolicyIamBinding_IsConstruct(x interface{}) *bool {
+func GoogleAccessContextManagerAccessPolicyIamBinding_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleAccessContextManagerAccessPolicyIamBinding_IsConstructParameters(x); err != nil {
@@ -599,7 +598,7 @@ func GoogleAccessContextManagerAccessPolicyIamBinding_IsConstruct(x interface{})
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleAccessContextManagerAccessPolicyIamBinding.GoogleAccessContextManagerAccessPolicyIamBinding",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -607,7 +606,7 @@ func GoogleAccessContextManagerAccessPolicyIamBinding_IsConstruct(x interface{})
 }
 
 // Experimental.
-func GoogleAccessContextManagerAccessPolicyIamBinding_IsTerraformElement(x interface{}) *bool {
+func GoogleAccessContextManagerAccessPolicyIamBinding_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleAccessContextManagerAccessPolicyIamBinding_IsTerraformElementParameters(x); err != nil {
@@ -618,7 +617,7 @@ func GoogleAccessContextManagerAccessPolicyIamBinding_IsTerraformElement(x inter
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleAccessContextManagerAccessPolicyIamBinding.GoogleAccessContextManagerAccessPolicyIamBinding",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -626,7 +625,7 @@ func GoogleAccessContextManagerAccessPolicyIamBinding_IsTerraformElement(x inter
 }
 
 // Experimental.
-func GoogleAccessContextManagerAccessPolicyIamBinding_IsTerraformResource(x interface{}) *bool {
+func GoogleAccessContextManagerAccessPolicyIamBinding_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleAccessContextManagerAccessPolicyIamBinding_IsTerraformResourceParameters(x); err != nil {
@@ -637,7 +636,7 @@ func GoogleAccessContextManagerAccessPolicyIamBinding_IsTerraformResource(x inte
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleAccessContextManagerAccessPolicyIamBinding.GoogleAccessContextManagerAccessPolicyIamBinding",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -662,31 +661,31 @@ func (g *jsiiProxy_GoogleAccessContextManagerAccessPolicyIamBinding) AddMoveTarg
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleAccessContextManagerAccessPolicyIamBinding) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleAccessContextManagerAccessPolicyIamBinding) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleAccessContextManagerAccessPolicyIamBinding) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleAccessContextManagerAccessPolicyIamBinding) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -702,7 +701,7 @@ func (g *jsiiProxy_GoogleAccessContextManagerAccessPolicyIamBinding) GetBooleanA
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -718,7 +717,7 @@ func (g *jsiiProxy_GoogleAccessContextManagerAccessPolicyIamBinding) GetBooleanM
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -734,7 +733,7 @@ func (g *jsiiProxy_GoogleAccessContextManagerAccessPolicyIamBinding) GetListAttr
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -750,7 +749,7 @@ func (g *jsiiProxy_GoogleAccessContextManagerAccessPolicyIamBinding) GetNumberAt
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -766,7 +765,7 @@ func (g *jsiiProxy_GoogleAccessContextManagerAccessPolicyIamBinding) GetNumberLi
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -782,7 +781,7 @@ func (g *jsiiProxy_GoogleAccessContextManagerAccessPolicyIamBinding) GetNumberMa
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -798,7 +797,7 @@ func (g *jsiiProxy_GoogleAccessContextManagerAccessPolicyIamBinding) GetStringAt
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -814,15 +813,15 @@ func (g *jsiiProxy_GoogleAccessContextManagerAccessPolicyIamBinding) GetStringMa
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleAccessContextManagerAccessPolicyIamBinding) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleAccessContextManagerAccessPolicyIamBinding) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -841,7 +840,7 @@ func (g *jsiiProxy_GoogleAccessContextManagerAccessPolicyIamBinding) ImportFrom(
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -854,7 +853,7 @@ func (g *jsiiProxy_GoogleAccessContextManagerAccessPolicyIamBinding) Interpolati
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -868,18 +867,18 @@ func (g *jsiiProxy_GoogleAccessContextManagerAccessPolicyIamBinding) MoveFromId(
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleAccessContextManagerAccessPolicyIamBinding) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleAccessContextManagerAccessPolicyIamBinding) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -890,7 +889,7 @@ func (g *jsiiProxy_GoogleAccessContextManagerAccessPolicyIamBinding) MoveToId(id
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -901,7 +900,7 @@ func (g *jsiiProxy_GoogleAccessContextManagerAccessPolicyIamBinding) OverrideLog
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -912,7 +911,7 @@ func (g *jsiiProxy_GoogleAccessContextManagerAccessPolicyIamBinding) PutConditio
 	_jsii_.InvokeVoid(
 		g,
 		"putCondition",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -940,8 +939,8 @@ func (g *jsiiProxy_GoogleAccessContextManagerAccessPolicyIamBinding) ResetOverri
 	)
 }
 
-func (g *jsiiProxy_GoogleAccessContextManagerAccessPolicyIamBinding) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleAccessContextManagerAccessPolicyIamBinding) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -953,8 +952,8 @@ func (g *jsiiProxy_GoogleAccessContextManagerAccessPolicyIamBinding) SynthesizeA
 	return returns
 }
 
-func (g *jsiiProxy_GoogleAccessContextManagerAccessPolicyIamBinding) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleAccessContextManagerAccessPolicyIamBinding) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -966,8 +965,8 @@ func (g *jsiiProxy_GoogleAccessContextManagerAccessPolicyIamBinding) SynthesizeH
 	return returns
 }
 
-func (g *jsiiProxy_GoogleAccessContextManagerAccessPolicyIamBinding) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleAccessContextManagerAccessPolicyIamBinding) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -979,8 +978,8 @@ func (g *jsiiProxy_GoogleAccessContextManagerAccessPolicyIamBinding) ToHclTerraf
 	return returns
 }
 
-func (g *jsiiProxy_GoogleAccessContextManagerAccessPolicyIamBinding) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleAccessContextManagerAccessPolicyIamBinding) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1005,8 +1004,8 @@ func (g *jsiiProxy_GoogleAccessContextManagerAccessPolicyIamBinding) ToString() 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleAccessContextManagerAccessPolicyIamBinding) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleAccessContextManagerAccessPolicyIamBinding) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1017,4 +1016,3 @@ func (g *jsiiProxy_GoogleAccessContextManagerAccessPolicyIamBinding) ToTerraform
 
 	return returns
 }
-

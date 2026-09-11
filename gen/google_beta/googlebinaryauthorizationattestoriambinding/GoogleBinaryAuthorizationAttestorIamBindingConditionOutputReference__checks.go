@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleBinaryAuthorizationAttestorIamBindingConditionOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBinaryAuthorizationAttestorIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBinaryAuthorizationAttestorIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewGoogleBinaryAuthorizationAttestorIamBindingConditionOutputRefere
 
 	return nil
 }
-

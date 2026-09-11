@@ -106,7 +106,7 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsPasswordValidationPolicyOutp
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsPasswordValidationPolicyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsPasswordValidationPolicyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsPasswordValidationPolicyOutp
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsPasswordValidationPolicyOutputReference) validateSetDisallowUsernameSubstringParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsPasswordValidationPolicyOutputReference) validateSetDisallowUsernameSubstringParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -191,7 +191,7 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsPasswordValidationPolicyOutp
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsPasswordValidationPolicyOutputReference) validateSetEnablePasswordPolicyParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsPasswordValidationPolicyOutputReference) validateSetEnablePasswordPolicyParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -270,4 +270,3 @@ func validateNewGoogleSqlDatabaseInstanceSettingsPasswordValidationPolicyOutputR
 
 	return nil
 }
-

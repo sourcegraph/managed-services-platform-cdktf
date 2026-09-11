@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleCloudQuotasQuotaPreference.GoogleCloudQuotasQuotaPreference",
-		reflect.TypeOf((*GoogleCloudQuotasQuotaPreference)(nil)).Elem(),
+		reflect.TypeFor[GoogleCloudQuotasQuotaPreference](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -91,7 +91,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleCloudQuotasQuotaPreference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -99,15 +99,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleCloudQuotasQuotaPreference.GoogleCloudQuotasQuotaPreferenceConfig",
-		reflect.TypeOf((*GoogleCloudQuotasQuotaPreferenceConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleCloudQuotasQuotaPreferenceConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleCloudQuotasQuotaPreference.GoogleCloudQuotasQuotaPreferenceQuotaConfig",
-		reflect.TypeOf((*GoogleCloudQuotasQuotaPreferenceQuotaConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleCloudQuotasQuotaPreferenceQuotaConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleCloudQuotasQuotaPreference.GoogleCloudQuotasQuotaPreferenceQuotaConfigOutputReference",
-		reflect.TypeOf((*GoogleCloudQuotasQuotaPreferenceQuotaConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleCloudQuotasQuotaPreferenceQuotaConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "annotations", GoGetter: "Annotations"},
 			_jsii_.MemberProperty{JsiiProperty: "annotationsInput", GoGetter: "AnnotationsInput"},
@@ -140,7 +140,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "traceId", GoGetter: "TraceId"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleCloudQuotasQuotaPreferenceQuotaConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -148,11 +148,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleCloudQuotasQuotaPreference.GoogleCloudQuotasQuotaPreferenceTimeouts",
-		reflect.TypeOf((*GoogleCloudQuotasQuotaPreferenceTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleCloudQuotasQuotaPreferenceTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleCloudQuotasQuotaPreference.GoogleCloudQuotasQuotaPreferenceTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleCloudQuotasQuotaPreferenceTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleCloudQuotasQuotaPreferenceTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -185,7 +185,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleCloudQuotasQuotaPreferenceTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

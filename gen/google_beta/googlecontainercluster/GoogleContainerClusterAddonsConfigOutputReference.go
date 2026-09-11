@@ -14,9 +14,9 @@ type GoogleContainerClusterAddonsConfigOutputReference interface {
 	CloudrunConfigInput() *GoogleContainerClusterAddonsConfigCloudrunConfig
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -56,7 +56,7 @@ type GoogleContainerClusterAddonsConfigOutputReference interface {
 	ParallelstoreCsiDriverConfig() GoogleContainerClusterAddonsConfigParallelstoreCsiDriverConfigOutputReference
 	ParallelstoreCsiDriverConfigInput() *GoogleContainerClusterAddonsConfigParallelstoreCsiDriverConfig
 	RayOperatorConfig() GoogleContainerClusterAddonsConfigRayOperatorConfigList
-	RayOperatorConfigInput() interface{}
+	RayOperatorConfigInput() any
 	StatefulHaConfig() GoogleContainerClusterAddonsConfigStatefulHaConfigOutputReference
 	StatefulHaConfigInput() *GoogleContainerClusterAddonsConfigStatefulHaConfig
 	// Experimental.
@@ -70,7 +70,7 @@ type GoogleContainerClusterAddonsConfigOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -104,7 +104,7 @@ type GoogleContainerClusterAddonsConfigOutputReference interface {
 	PutKalmConfig(value *GoogleContainerClusterAddonsConfigKalmConfig)
 	PutNetworkPolicyConfig(value *GoogleContainerClusterAddonsConfigNetworkPolicyConfig)
 	PutParallelstoreCsiDriverConfig(value *GoogleContainerClusterAddonsConfigParallelstoreCsiDriverConfig)
-	PutRayOperatorConfig(value interface{})
+	PutRayOperatorConfig(value any)
 	PutStatefulHaConfig(value *GoogleContainerClusterAddonsConfigStatefulHaConfig)
 	ResetCloudrunConfig()
 	ResetConfigConnectorConfig()
@@ -123,7 +123,7 @@ type GoogleContainerClusterAddonsConfigOutputReference interface {
 	ResetStatefulHaConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -156,8 +156,8 @@ func (j *jsiiProxy_GoogleContainerClusterAddonsConfigOutputReference) CloudrunCo
 	return returns
 }
 
-func (j *jsiiProxy_GoogleContainerClusterAddonsConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleContainerClusterAddonsConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -456,8 +456,8 @@ func (j *jsiiProxy_GoogleContainerClusterAddonsConfigOutputReference) RayOperato
 	return returns
 }
 
-func (j *jsiiProxy_GoogleContainerClusterAddonsConfigOutputReference) RayOperatorConfigInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleContainerClusterAddonsConfigOutputReference) RayOperatorConfigInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rayOperatorConfigInput",
@@ -506,7 +506,6 @@ func (j *jsiiProxy_GoogleContainerClusterAddonsConfigOutputReference) TerraformR
 	return returns
 }
 
-
 func NewGoogleContainerClusterAddonsConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleContainerClusterAddonsConfigOutputReference {
 	_init_.Initialize()
 
@@ -517,7 +516,7 @@ func NewGoogleContainerClusterAddonsConfigOutputReference(terraformResource cdkt
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleContainerCluster.GoogleContainerClusterAddonsConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -529,12 +528,12 @@ func NewGoogleContainerClusterAddonsConfigOutputReference_Override(g GoogleConta
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleContainerCluster.GoogleContainerClusterAddonsConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerClusterAddonsConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleContainerClusterAddonsConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -545,7 +544,7 @@ func (j *jsiiProxy_GoogleContainerClusterAddonsConfigOutputReference)SetComplexO
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerClusterAddonsConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleContainerClusterAddonsConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -556,7 +555,7 @@ func (j *jsiiProxy_GoogleContainerClusterAddonsConfigOutputReference)SetComplexO
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerClusterAddonsConfigOutputReference)SetInternalValue(val *GoogleContainerClusterAddonsConfig) {
+func (j *jsiiProxy_GoogleContainerClusterAddonsConfigOutputReference) SetInternalValue(val *GoogleContainerClusterAddonsConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -567,7 +566,7 @@ func (j *jsiiProxy_GoogleContainerClusterAddonsConfigOutputReference)SetInternal
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerClusterAddonsConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleContainerClusterAddonsConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -578,7 +577,7 @@ func (j *jsiiProxy_GoogleContainerClusterAddonsConfigOutputReference)SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerClusterAddonsConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleContainerClusterAddonsConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -602,16 +601,16 @@ func (g *jsiiProxy_GoogleContainerClusterAddonsConfigOutputReference) ComputeFqn
 	return returns
 }
 
-func (g *jsiiProxy_GoogleContainerClusterAddonsConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleContainerClusterAddonsConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -627,7 +626,7 @@ func (g *jsiiProxy_GoogleContainerClusterAddonsConfigOutputReference) GetBoolean
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -643,7 +642,7 @@ func (g *jsiiProxy_GoogleContainerClusterAddonsConfigOutputReference) GetBoolean
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -659,7 +658,7 @@ func (g *jsiiProxy_GoogleContainerClusterAddonsConfigOutputReference) GetListAtt
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -675,7 +674,7 @@ func (g *jsiiProxy_GoogleContainerClusterAddonsConfigOutputReference) GetNumberA
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -691,7 +690,7 @@ func (g *jsiiProxy_GoogleContainerClusterAddonsConfigOutputReference) GetNumberL
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -707,7 +706,7 @@ func (g *jsiiProxy_GoogleContainerClusterAddonsConfigOutputReference) GetNumberM
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -723,7 +722,7 @@ func (g *jsiiProxy_GoogleContainerClusterAddonsConfigOutputReference) GetStringA
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -739,7 +738,7 @@ func (g *jsiiProxy_GoogleContainerClusterAddonsConfigOutputReference) GetStringM
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -768,7 +767,7 @@ func (g *jsiiProxy_GoogleContainerClusterAddonsConfigOutputReference) Interpolat
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -782,7 +781,7 @@ func (g *jsiiProxy_GoogleContainerClusterAddonsConfigOutputReference) PutCloudru
 	_jsii_.InvokeVoid(
 		g,
 		"putCloudrunConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -793,7 +792,7 @@ func (g *jsiiProxy_GoogleContainerClusterAddonsConfigOutputReference) PutConfigC
 	_jsii_.InvokeVoid(
 		g,
 		"putConfigConnectorConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -804,7 +803,7 @@ func (g *jsiiProxy_GoogleContainerClusterAddonsConfigOutputReference) PutDnsCach
 	_jsii_.InvokeVoid(
 		g,
 		"putDnsCacheConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -815,7 +814,7 @@ func (g *jsiiProxy_GoogleContainerClusterAddonsConfigOutputReference) PutGcePers
 	_jsii_.InvokeVoid(
 		g,
 		"putGcePersistentDiskCsiDriverConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -826,7 +825,7 @@ func (g *jsiiProxy_GoogleContainerClusterAddonsConfigOutputReference) PutGcpFile
 	_jsii_.InvokeVoid(
 		g,
 		"putGcpFilestoreCsiDriverConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -837,7 +836,7 @@ func (g *jsiiProxy_GoogleContainerClusterAddonsConfigOutputReference) PutGcsFuse
 	_jsii_.InvokeVoid(
 		g,
 		"putGcsFuseCsiDriverConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -848,7 +847,7 @@ func (g *jsiiProxy_GoogleContainerClusterAddonsConfigOutputReference) PutGkeBack
 	_jsii_.InvokeVoid(
 		g,
 		"putGkeBackupAgentConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -859,7 +858,7 @@ func (g *jsiiProxy_GoogleContainerClusterAddonsConfigOutputReference) PutHorizon
 	_jsii_.InvokeVoid(
 		g,
 		"putHorizontalPodAutoscaling",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -870,7 +869,7 @@ func (g *jsiiProxy_GoogleContainerClusterAddonsConfigOutputReference) PutHttpLoa
 	_jsii_.InvokeVoid(
 		g,
 		"putHttpLoadBalancing",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -881,7 +880,7 @@ func (g *jsiiProxy_GoogleContainerClusterAddonsConfigOutputReference) PutIstioCo
 	_jsii_.InvokeVoid(
 		g,
 		"putIstioConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -892,7 +891,7 @@ func (g *jsiiProxy_GoogleContainerClusterAddonsConfigOutputReference) PutKalmCon
 	_jsii_.InvokeVoid(
 		g,
 		"putKalmConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -903,7 +902,7 @@ func (g *jsiiProxy_GoogleContainerClusterAddonsConfigOutputReference) PutNetwork
 	_jsii_.InvokeVoid(
 		g,
 		"putNetworkPolicyConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -914,18 +913,18 @@ func (g *jsiiProxy_GoogleContainerClusterAddonsConfigOutputReference) PutParalle
 	_jsii_.InvokeVoid(
 		g,
 		"putParallelstoreCsiDriverConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (g *jsiiProxy_GoogleContainerClusterAddonsConfigOutputReference) PutRayOperatorConfig(value interface{}) {
+func (g *jsiiProxy_GoogleContainerClusterAddonsConfigOutputReference) PutRayOperatorConfig(value any) {
 	if err := g.validatePutRayOperatorConfigParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putRayOperatorConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -936,7 +935,7 @@ func (g *jsiiProxy_GoogleContainerClusterAddonsConfigOutputReference) PutStatefu
 	_jsii_.InvokeVoid(
 		g,
 		"putStatefulHaConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1060,16 +1059,16 @@ func (g *jsiiProxy_GoogleContainerClusterAddonsConfigOutputReference) ResetState
 	)
 }
 
-func (g *jsiiProxy_GoogleContainerClusterAddonsConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleContainerClusterAddonsConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -1088,4 +1087,3 @@ func (g *jsiiProxy_GoogleContainerClusterAddonsConfigOutputReference) ToString()
 
 	return returns
 }
-

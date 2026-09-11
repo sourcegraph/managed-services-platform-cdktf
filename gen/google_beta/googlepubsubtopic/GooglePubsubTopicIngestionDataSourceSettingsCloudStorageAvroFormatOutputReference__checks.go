@@ -98,7 +98,7 @@ func (g *jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsCloudStorageAvroF
 	return nil
 }
 
-func (j *jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsCloudStorageAvroFormatOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsCloudStorageAvroFormatOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewGooglePubsubTopicIngestionDataSourceSettingsCloudStorageAvroForm
 
 	return nil
 }
-

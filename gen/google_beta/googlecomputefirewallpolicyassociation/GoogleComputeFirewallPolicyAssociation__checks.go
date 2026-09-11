@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleComputeFirewallPolicyAssociation) validateAddMoveTarget
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeFirewallPolicyAssociation) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleComputeFirewallPolicyAssociation) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleComputeFirewallPolicyAssociation) validateMoveFromIdPar
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeFirewallPolicyAssociation) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleComputeFirewallPolicyAssociation) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateGoogleComputeFirewallPolicyAssociation_GenerateConfigForImportParam
 	return nil
 }
 
-func validateGoogleComputeFirewallPolicyAssociation_IsConstructParameters(x interface{}) error {
+func validateGoogleComputeFirewallPolicyAssociation_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateGoogleComputeFirewallPolicyAssociation_IsConstructParameters(x inte
 	return nil
 }
 
-func validateGoogleComputeFirewallPolicyAssociation_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleComputeFirewallPolicyAssociation_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateGoogleComputeFirewallPolicyAssociation_IsTerraformElementParameters
 	return nil
 }
 
-func validateGoogleComputeFirewallPolicyAssociation_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleComputeFirewallPolicyAssociation_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -263,7 +263,7 @@ func (j *jsiiProxy_GoogleComputeFirewallPolicyAssociation) validateSetAttachment
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeFirewallPolicyAssociation) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeFirewallPolicyAssociation) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -296,7 +296,7 @@ func (j *jsiiProxy_GoogleComputeFirewallPolicyAssociation) validateSetConnection
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeFirewallPolicyAssociation) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeFirewallPolicyAssociation) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -385,7 +385,7 @@ func (j *jsiiProxy_GoogleComputeFirewallPolicyAssociation) validateSetNameParame
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeFirewallPolicyAssociation) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleComputeFirewallPolicyAssociation) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -449,4 +449,3 @@ func validateNewGoogleComputeFirewallPolicyAssociationParameters(scope construct
 
 	return nil
 }
-

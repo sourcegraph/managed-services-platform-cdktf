@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleStorageInsightsReportConfigParquetOptionsOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_GoogleStorageInsightsReportConfigParquetOptionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleStorageInsightsReportConfigParquetOptionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewGoogleStorageInsightsReportConfigParquetOptionsOutputReferencePa
 
 	return nil
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleContainerAzureCluster.GoogleContainerAzureCluster",
-		reflect.TypeOf((*GoogleContainerAzureCluster)(nil)).Elem(),
+		reflect.TypeFor[GoogleContainerAzureCluster](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -109,7 +109,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 			_jsii_.MemberProperty{JsiiProperty: "workloadIdentityConfig", GoGetter: "WorkloadIdentityConfig"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleContainerAzureCluster{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -117,15 +117,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleContainerAzureCluster.GoogleContainerAzureClusterAuthorization",
-		reflect.TypeOf((*GoogleContainerAzureClusterAuthorization)(nil)).Elem(),
+		reflect.TypeFor[GoogleContainerAzureClusterAuthorization](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleContainerAzureCluster.GoogleContainerAzureClusterAuthorizationAdminGroups",
-		reflect.TypeOf((*GoogleContainerAzureClusterAuthorizationAdminGroups)(nil)).Elem(),
+		reflect.TypeFor[GoogleContainerAzureClusterAuthorizationAdminGroups](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleContainerAzureCluster.GoogleContainerAzureClusterAuthorizationAdminGroupsList",
-		reflect.TypeOf((*GoogleContainerAzureClusterAuthorizationAdminGroupsList)(nil)).Elem(),
+		reflect.TypeFor[GoogleContainerAzureClusterAuthorizationAdminGroupsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -139,7 +139,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleContainerAzureClusterAuthorizationAdminGroupsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -147,7 +147,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleContainerAzureCluster.GoogleContainerAzureClusterAuthorizationAdminGroupsOutputReference",
-		reflect.TypeOf((*GoogleContainerAzureClusterAuthorizationAdminGroupsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleContainerAzureClusterAuthorizationAdminGroupsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -173,7 +173,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleContainerAzureClusterAuthorizationAdminGroupsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -181,11 +181,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleContainerAzureCluster.GoogleContainerAzureClusterAuthorizationAdminUsers",
-		reflect.TypeOf((*GoogleContainerAzureClusterAuthorizationAdminUsers)(nil)).Elem(),
+		reflect.TypeFor[GoogleContainerAzureClusterAuthorizationAdminUsers](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleContainerAzureCluster.GoogleContainerAzureClusterAuthorizationAdminUsersList",
-		reflect.TypeOf((*GoogleContainerAzureClusterAuthorizationAdminUsersList)(nil)).Elem(),
+		reflect.TypeFor[GoogleContainerAzureClusterAuthorizationAdminUsersList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -199,7 +199,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleContainerAzureClusterAuthorizationAdminUsersList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -207,7 +207,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleContainerAzureCluster.GoogleContainerAzureClusterAuthorizationAdminUsersOutputReference",
-		reflect.TypeOf((*GoogleContainerAzureClusterAuthorizationAdminUsersOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleContainerAzureClusterAuthorizationAdminUsersOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -233,7 +233,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "username", GoGetter: "Username"},
 			_jsii_.MemberProperty{JsiiProperty: "usernameInput", GoGetter: "UsernameInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleContainerAzureClusterAuthorizationAdminUsersOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -241,7 +241,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleContainerAzureCluster.GoogleContainerAzureClusterAuthorizationOutputReference",
-		reflect.TypeOf((*GoogleContainerAzureClusterAuthorizationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleContainerAzureClusterAuthorizationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "adminGroups", GoGetter: "AdminGroups"},
 			_jsii_.MemberProperty{JsiiProperty: "adminGroupsInput", GoGetter: "AdminGroupsInput"},
@@ -272,7 +272,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleContainerAzureClusterAuthorizationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -280,11 +280,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleContainerAzureCluster.GoogleContainerAzureClusterAzureServicesAuthentication",
-		reflect.TypeOf((*GoogleContainerAzureClusterAzureServicesAuthentication)(nil)).Elem(),
+		reflect.TypeFor[GoogleContainerAzureClusterAzureServicesAuthentication](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleContainerAzureCluster.GoogleContainerAzureClusterAzureServicesAuthenticationOutputReference",
-		reflect.TypeOf((*GoogleContainerAzureClusterAzureServicesAuthenticationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleContainerAzureClusterAzureServicesAuthenticationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "applicationId", GoGetter: "ApplicationId"},
 			_jsii_.MemberProperty{JsiiProperty: "applicationIdInput", GoGetter: "ApplicationIdInput"},
@@ -312,7 +312,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleContainerAzureClusterAzureServicesAuthenticationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -320,19 +320,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleContainerAzureCluster.GoogleContainerAzureClusterConfig",
-		reflect.TypeOf((*GoogleContainerAzureClusterConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleContainerAzureClusterConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleContainerAzureCluster.GoogleContainerAzureClusterControlPlane",
-		reflect.TypeOf((*GoogleContainerAzureClusterControlPlane)(nil)).Elem(),
+		reflect.TypeFor[GoogleContainerAzureClusterControlPlane](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleContainerAzureCluster.GoogleContainerAzureClusterControlPlaneDatabaseEncryption",
-		reflect.TypeOf((*GoogleContainerAzureClusterControlPlaneDatabaseEncryption)(nil)).Elem(),
+		reflect.TypeFor[GoogleContainerAzureClusterControlPlaneDatabaseEncryption](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleContainerAzureCluster.GoogleContainerAzureClusterControlPlaneDatabaseEncryptionOutputReference",
-		reflect.TypeOf((*GoogleContainerAzureClusterControlPlaneDatabaseEncryptionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleContainerAzureClusterControlPlaneDatabaseEncryptionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -358,7 +358,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleContainerAzureClusterControlPlaneDatabaseEncryptionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -366,11 +366,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleContainerAzureCluster.GoogleContainerAzureClusterControlPlaneMainVolume",
-		reflect.TypeOf((*GoogleContainerAzureClusterControlPlaneMainVolume)(nil)).Elem(),
+		reflect.TypeFor[GoogleContainerAzureClusterControlPlaneMainVolume](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleContainerAzureCluster.GoogleContainerAzureClusterControlPlaneMainVolumeOutputReference",
-		reflect.TypeOf((*GoogleContainerAzureClusterControlPlaneMainVolumeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleContainerAzureClusterControlPlaneMainVolumeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -397,7 +397,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleContainerAzureClusterControlPlaneMainVolumeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -405,7 +405,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleContainerAzureCluster.GoogleContainerAzureClusterControlPlaneOutputReference",
-		reflect.TypeOf((*GoogleContainerAzureClusterControlPlaneOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleContainerAzureClusterControlPlaneOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -462,7 +462,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vmSize", GoGetter: "VmSize"},
 			_jsii_.MemberProperty{JsiiProperty: "vmSizeInput", GoGetter: "VmSizeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleContainerAzureClusterControlPlaneOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -470,11 +470,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleContainerAzureCluster.GoogleContainerAzureClusterControlPlaneProxyConfig",
-		reflect.TypeOf((*GoogleContainerAzureClusterControlPlaneProxyConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleContainerAzureClusterControlPlaneProxyConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleContainerAzureCluster.GoogleContainerAzureClusterControlPlaneProxyConfigOutputReference",
-		reflect.TypeOf((*GoogleContainerAzureClusterControlPlaneProxyConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleContainerAzureClusterControlPlaneProxyConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -502,7 +502,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleContainerAzureClusterControlPlaneProxyConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -510,11 +510,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleContainerAzureCluster.GoogleContainerAzureClusterControlPlaneReplicaPlacements",
-		reflect.TypeOf((*GoogleContainerAzureClusterControlPlaneReplicaPlacements)(nil)).Elem(),
+		reflect.TypeFor[GoogleContainerAzureClusterControlPlaneReplicaPlacements](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleContainerAzureCluster.GoogleContainerAzureClusterControlPlaneReplicaPlacementsList",
-		reflect.TypeOf((*GoogleContainerAzureClusterControlPlaneReplicaPlacementsList)(nil)).Elem(),
+		reflect.TypeFor[GoogleContainerAzureClusterControlPlaneReplicaPlacementsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -528,7 +528,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleContainerAzureClusterControlPlaneReplicaPlacementsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -536,7 +536,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleContainerAzureCluster.GoogleContainerAzureClusterControlPlaneReplicaPlacementsOutputReference",
-		reflect.TypeOf((*GoogleContainerAzureClusterControlPlaneReplicaPlacementsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleContainerAzureClusterControlPlaneReplicaPlacementsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "azureAvailabilityZone", GoGetter: "AzureAvailabilityZone"},
 			_jsii_.MemberProperty{JsiiProperty: "azureAvailabilityZoneInput", GoGetter: "AzureAvailabilityZoneInput"},
@@ -564,7 +564,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleContainerAzureClusterControlPlaneReplicaPlacementsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -572,11 +572,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleContainerAzureCluster.GoogleContainerAzureClusterControlPlaneRootVolume",
-		reflect.TypeOf((*GoogleContainerAzureClusterControlPlaneRootVolume)(nil)).Elem(),
+		reflect.TypeFor[GoogleContainerAzureClusterControlPlaneRootVolume](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleContainerAzureCluster.GoogleContainerAzureClusterControlPlaneRootVolumeOutputReference",
-		reflect.TypeOf((*GoogleContainerAzureClusterControlPlaneRootVolumeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleContainerAzureClusterControlPlaneRootVolumeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -603,7 +603,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleContainerAzureClusterControlPlaneRootVolumeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -611,11 +611,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleContainerAzureCluster.GoogleContainerAzureClusterControlPlaneSshConfig",
-		reflect.TypeOf((*GoogleContainerAzureClusterControlPlaneSshConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleContainerAzureClusterControlPlaneSshConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleContainerAzureCluster.GoogleContainerAzureClusterControlPlaneSshConfigOutputReference",
-		reflect.TypeOf((*GoogleContainerAzureClusterControlPlaneSshConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleContainerAzureClusterControlPlaneSshConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authorizedKey", GoGetter: "AuthorizedKey"},
 			_jsii_.MemberProperty{JsiiProperty: "authorizedKeyInput", GoGetter: "AuthorizedKeyInput"},
@@ -641,7 +641,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleContainerAzureClusterControlPlaneSshConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -649,11 +649,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleContainerAzureCluster.GoogleContainerAzureClusterFleet",
-		reflect.TypeOf((*GoogleContainerAzureClusterFleet)(nil)).Elem(),
+		reflect.TypeFor[GoogleContainerAzureClusterFleet](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleContainerAzureCluster.GoogleContainerAzureClusterFleetOutputReference",
-		reflect.TypeOf((*GoogleContainerAzureClusterFleetOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleContainerAzureClusterFleetOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -681,7 +681,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleContainerAzureClusterFleetOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -689,15 +689,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleContainerAzureCluster.GoogleContainerAzureClusterLoggingConfig",
-		reflect.TypeOf((*GoogleContainerAzureClusterLoggingConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleContainerAzureClusterLoggingConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleContainerAzureCluster.GoogleContainerAzureClusterLoggingConfigComponentConfig",
-		reflect.TypeOf((*GoogleContainerAzureClusterLoggingConfigComponentConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleContainerAzureClusterLoggingConfigComponentConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleContainerAzureCluster.GoogleContainerAzureClusterLoggingConfigComponentConfigOutputReference",
-		reflect.TypeOf((*GoogleContainerAzureClusterLoggingConfigComponentConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleContainerAzureClusterLoggingConfigComponentConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -724,7 +724,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleContainerAzureClusterLoggingConfigComponentConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -732,7 +732,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleContainerAzureCluster.GoogleContainerAzureClusterLoggingConfigOutputReference",
-		reflect.TypeOf((*GoogleContainerAzureClusterLoggingConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleContainerAzureClusterLoggingConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -760,7 +760,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleContainerAzureClusterLoggingConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -768,11 +768,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleContainerAzureCluster.GoogleContainerAzureClusterNetworking",
-		reflect.TypeOf((*GoogleContainerAzureClusterNetworking)(nil)).Elem(),
+		reflect.TypeFor[GoogleContainerAzureClusterNetworking](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleContainerAzureCluster.GoogleContainerAzureClusterNetworkingOutputReference",
-		reflect.TypeOf((*GoogleContainerAzureClusterNetworkingOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleContainerAzureClusterNetworkingOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -802,7 +802,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "virtualNetworkId", GoGetter: "VirtualNetworkId"},
 			_jsii_.MemberProperty{JsiiProperty: "virtualNetworkIdInput", GoGetter: "VirtualNetworkIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleContainerAzureClusterNetworkingOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -810,11 +810,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleContainerAzureCluster.GoogleContainerAzureClusterTimeouts",
-		reflect.TypeOf((*GoogleContainerAzureClusterTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleContainerAzureClusterTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleContainerAzureCluster.GoogleContainerAzureClusterTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleContainerAzureClusterTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleContainerAzureClusterTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -847,7 +847,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleContainerAzureClusterTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -855,11 +855,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleContainerAzureCluster.GoogleContainerAzureClusterWorkloadIdentityConfig",
-		reflect.TypeOf((*GoogleContainerAzureClusterWorkloadIdentityConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleContainerAzureClusterWorkloadIdentityConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleContainerAzureCluster.GoogleContainerAzureClusterWorkloadIdentityConfigList",
-		reflect.TypeOf((*GoogleContainerAzureClusterWorkloadIdentityConfigList)(nil)).Elem(),
+		reflect.TypeFor[GoogleContainerAzureClusterWorkloadIdentityConfigList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -872,7 +872,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleContainerAzureClusterWorkloadIdentityConfigList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -880,7 +880,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleContainerAzureCluster.GoogleContainerAzureClusterWorkloadIdentityConfigOutputReference",
-		reflect.TypeOf((*GoogleContainerAzureClusterWorkloadIdentityConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleContainerAzureClusterWorkloadIdentityConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -907,7 +907,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "workloadPool", GoGetter: "WorkloadPool"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleContainerAzureClusterWorkloadIdentityConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

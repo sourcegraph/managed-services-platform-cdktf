@@ -106,7 +106,7 @@ func (j *jsiiProxy_GoogleComputeRegionBackendServiceCdnPolicyNegativeCachingPoli
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRegionBackendServiceCdnPolicyNegativeCachingPolicyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeRegionBackendServiceCdnPolicyNegativeCachingPolicyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_GoogleComputeRegionBackendServiceCdnPolicyNegativeCachingPoli
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRegionBackendServiceCdnPolicyNegativeCachingPolicyOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeRegionBackendServiceCdnPolicyNegativeCachingPolicyOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGoogleComputeRegionBackendServiceCdnPolicyNegativeCachingPolicyO
 
 	return nil
 }
-

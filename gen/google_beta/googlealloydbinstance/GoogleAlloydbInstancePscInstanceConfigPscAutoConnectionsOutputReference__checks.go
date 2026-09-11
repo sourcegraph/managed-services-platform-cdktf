@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleAlloydbInstancePscInstanceConfigPscAutoConnectionsOutpu
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAlloydbInstancePscInstanceConfigPscAutoConnectionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleAlloydbInstancePscInstanceConfigPscAutoConnectionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_GoogleAlloydbInstancePscInstanceConfigPscAutoConnectionsOutpu
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAlloydbInstancePscInstanceConfigPscAutoConnectionsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleAlloydbInstancePscInstanceConfigPscAutoConnectionsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGoogleAlloydbInstancePscInstanceConfigPscAutoConnectionsOutputRe
 
 	return nil
 }
-

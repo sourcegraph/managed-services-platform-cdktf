@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleComputeInstanceScratchDiskOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceScratchDiskOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeInstanceScratchDiskOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_GoogleComputeInstanceScratchDiskOutputReference) validateSetI
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceScratchDiskOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeInstanceScratchDiskOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewGoogleComputeInstanceScratchDiskOutputReferenceParameters(terraf
 
 	return nil
 }
-

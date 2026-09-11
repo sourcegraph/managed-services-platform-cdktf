@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPolicies",
-		reflect.TypeOf((*GoogleOsConfigGuestPolicies)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigGuestPolicies](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -89,7 +89,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleOsConfigGuestPolicies{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -97,15 +97,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesAssignment",
-		reflect.TypeOf((*GoogleOsConfigGuestPoliciesAssignment)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigGuestPoliciesAssignment](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesAssignmentGroupLabels",
-		reflect.TypeOf((*GoogleOsConfigGuestPoliciesAssignmentGroupLabels)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigGuestPoliciesAssignmentGroupLabels](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesAssignmentGroupLabelsList",
-		reflect.TypeOf((*GoogleOsConfigGuestPoliciesAssignmentGroupLabelsList)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigGuestPoliciesAssignmentGroupLabelsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -119,7 +119,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleOsConfigGuestPoliciesAssignmentGroupLabelsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -127,7 +127,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesAssignmentGroupLabelsOutputReference",
-		reflect.TypeOf((*GoogleOsConfigGuestPoliciesAssignmentGroupLabelsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigGuestPoliciesAssignmentGroupLabelsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -153,7 +153,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleOsConfigGuestPoliciesAssignmentGroupLabelsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -161,11 +161,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesAssignmentOsTypes",
-		reflect.TypeOf((*GoogleOsConfigGuestPoliciesAssignmentOsTypes)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigGuestPoliciesAssignmentOsTypes](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesAssignmentOsTypesList",
-		reflect.TypeOf((*GoogleOsConfigGuestPoliciesAssignmentOsTypesList)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigGuestPoliciesAssignmentOsTypesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -179,7 +179,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleOsConfigGuestPoliciesAssignmentOsTypesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -187,7 +187,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesAssignmentOsTypesOutputReference",
-		reflect.TypeOf((*GoogleOsConfigGuestPoliciesAssignmentOsTypesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigGuestPoliciesAssignmentOsTypesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -220,7 +220,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleOsConfigGuestPoliciesAssignmentOsTypesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -228,7 +228,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesAssignmentOutputReference",
-		reflect.TypeOf((*GoogleOsConfigGuestPoliciesAssignmentOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigGuestPoliciesAssignmentOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -269,7 +269,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zones", GoGetter: "Zones"},
 			_jsii_.MemberProperty{JsiiProperty: "zonesInput", GoGetter: "ZonesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleOsConfigGuestPoliciesAssignmentOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -277,19 +277,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesConfig",
-		reflect.TypeOf((*GoogleOsConfigGuestPoliciesConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigGuestPoliciesConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesPackageRepositories",
-		reflect.TypeOf((*GoogleOsConfigGuestPoliciesPackageRepositories)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigGuestPoliciesPackageRepositories](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesPackageRepositoriesApt",
-		reflect.TypeOf((*GoogleOsConfigGuestPoliciesPackageRepositoriesApt)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigGuestPoliciesPackageRepositoriesApt](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesPackageRepositoriesAptOutputReference",
-		reflect.TypeOf((*GoogleOsConfigGuestPoliciesPackageRepositoriesAptOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigGuestPoliciesPackageRepositoriesAptOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "archiveType", GoGetter: "ArchiveType"},
 			_jsii_.MemberProperty{JsiiProperty: "archiveTypeInput", GoGetter: "ArchiveTypeInput"},
@@ -325,7 +325,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "uri", GoGetter: "Uri"},
 			_jsii_.MemberProperty{JsiiProperty: "uriInput", GoGetter: "UriInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleOsConfigGuestPoliciesPackageRepositoriesAptOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -333,11 +333,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesPackageRepositoriesGoo",
-		reflect.TypeOf((*GoogleOsConfigGuestPoliciesPackageRepositoriesGoo)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigGuestPoliciesPackageRepositoriesGoo](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesPackageRepositoriesGooOutputReference",
-		reflect.TypeOf((*GoogleOsConfigGuestPoliciesPackageRepositoriesGooOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigGuestPoliciesPackageRepositoriesGooOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -365,7 +365,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "url", GoGetter: "Url"},
 			_jsii_.MemberProperty{JsiiProperty: "urlInput", GoGetter: "UrlInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleOsConfigGuestPoliciesPackageRepositoriesGooOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -373,7 +373,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesPackageRepositoriesList",
-		reflect.TypeOf((*GoogleOsConfigGuestPoliciesPackageRepositoriesList)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigGuestPoliciesPackageRepositoriesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -387,7 +387,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleOsConfigGuestPoliciesPackageRepositoriesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -395,7 +395,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesPackageRepositoriesOutputReference",
-		reflect.TypeOf((*GoogleOsConfigGuestPoliciesPackageRepositoriesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigGuestPoliciesPackageRepositoriesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "apt", GoGetter: "Apt"},
 			_jsii_.MemberProperty{JsiiProperty: "aptInput", GoGetter: "AptInput"},
@@ -435,7 +435,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zypper", GoGetter: "Zypper"},
 			_jsii_.MemberProperty{JsiiProperty: "zypperInput", GoGetter: "ZypperInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleOsConfigGuestPoliciesPackageRepositoriesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -443,11 +443,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesPackageRepositoriesYum",
-		reflect.TypeOf((*GoogleOsConfigGuestPoliciesPackageRepositoriesYum)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigGuestPoliciesPackageRepositoriesYum](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesPackageRepositoriesYumOutputReference",
-		reflect.TypeOf((*GoogleOsConfigGuestPoliciesPackageRepositoriesYumOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigGuestPoliciesPackageRepositoriesYumOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "baseUrl", GoGetter: "BaseUrl"},
 			_jsii_.MemberProperty{JsiiProperty: "baseUrlInput", GoGetter: "BaseUrlInput"},
@@ -481,7 +481,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleOsConfigGuestPoliciesPackageRepositoriesYumOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -489,11 +489,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesPackageRepositoriesZypper",
-		reflect.TypeOf((*GoogleOsConfigGuestPoliciesPackageRepositoriesZypper)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigGuestPoliciesPackageRepositoriesZypper](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesPackageRepositoriesZypperOutputReference",
-		reflect.TypeOf((*GoogleOsConfigGuestPoliciesPackageRepositoriesZypperOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigGuestPoliciesPackageRepositoriesZypperOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "baseUrl", GoGetter: "BaseUrl"},
 			_jsii_.MemberProperty{JsiiProperty: "baseUrlInput", GoGetter: "BaseUrlInput"},
@@ -527,7 +527,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleOsConfigGuestPoliciesPackageRepositoriesZypperOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -535,11 +535,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesPackages",
-		reflect.TypeOf((*GoogleOsConfigGuestPoliciesPackages)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigGuestPoliciesPackages](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesPackagesList",
-		reflect.TypeOf((*GoogleOsConfigGuestPoliciesPackagesList)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigGuestPoliciesPackagesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -553,7 +553,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleOsConfigGuestPoliciesPackagesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -561,7 +561,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesPackagesOutputReference",
-		reflect.TypeOf((*GoogleOsConfigGuestPoliciesPackagesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigGuestPoliciesPackagesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -593,7 +593,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleOsConfigGuestPoliciesPackagesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -601,19 +601,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipes",
-		reflect.TypeOf((*GoogleOsConfigGuestPoliciesRecipes)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigGuestPoliciesRecipes](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesArtifacts",
-		reflect.TypeOf((*GoogleOsConfigGuestPoliciesRecipesArtifacts)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigGuestPoliciesRecipesArtifacts](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesArtifactsGcs",
-		reflect.TypeOf((*GoogleOsConfigGuestPoliciesRecipesArtifactsGcs)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigGuestPoliciesRecipesArtifactsGcs](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesArtifactsGcsOutputReference",
-		reflect.TypeOf((*GoogleOsConfigGuestPoliciesRecipesArtifactsGcsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigGuestPoliciesRecipesArtifactsGcsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucket", GoGetter: "Bucket"},
 			_jsii_.MemberProperty{JsiiProperty: "bucketInput", GoGetter: "BucketInput"},
@@ -646,7 +646,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleOsConfigGuestPoliciesRecipesArtifactsGcsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -654,7 +654,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesArtifactsList",
-		reflect.TypeOf((*GoogleOsConfigGuestPoliciesRecipesArtifactsList)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigGuestPoliciesRecipesArtifactsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -668,7 +668,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleOsConfigGuestPoliciesRecipesArtifactsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -676,7 +676,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesArtifactsOutputReference",
-		reflect.TypeOf((*GoogleOsConfigGuestPoliciesRecipesArtifactsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigGuestPoliciesRecipesArtifactsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowInsecure", GoGetter: "AllowInsecure"},
 			_jsii_.MemberProperty{JsiiProperty: "allowInsecureInput", GoGetter: "AllowInsecureInput"},
@@ -713,7 +713,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleOsConfigGuestPoliciesRecipesArtifactsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -721,11 +721,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesArtifactsRemote",
-		reflect.TypeOf((*GoogleOsConfigGuestPoliciesRecipesArtifactsRemote)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigGuestPoliciesRecipesArtifactsRemote](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesArtifactsRemoteOutputReference",
-		reflect.TypeOf((*GoogleOsConfigGuestPoliciesRecipesArtifactsRemoteOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigGuestPoliciesRecipesArtifactsRemoteOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "checkSum", GoGetter: "CheckSum"},
 			_jsii_.MemberProperty{JsiiProperty: "checkSumInput", GoGetter: "CheckSumInput"},
@@ -755,7 +755,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "uri", GoGetter: "Uri"},
 			_jsii_.MemberProperty{JsiiProperty: "uriInput", GoGetter: "UriInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleOsConfigGuestPoliciesRecipesArtifactsRemoteOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -763,15 +763,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesInstallSteps",
-		reflect.TypeOf((*GoogleOsConfigGuestPoliciesRecipesInstallSteps)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigGuestPoliciesRecipesInstallSteps](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesInstallStepsArchiveExtraction",
-		reflect.TypeOf((*GoogleOsConfigGuestPoliciesRecipesInstallStepsArchiveExtraction)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigGuestPoliciesRecipesInstallStepsArchiveExtraction](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesInstallStepsArchiveExtractionOutputReference",
-		reflect.TypeOf((*GoogleOsConfigGuestPoliciesRecipesInstallStepsArchiveExtractionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigGuestPoliciesRecipesInstallStepsArchiveExtractionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "artifactId", GoGetter: "ArtifactId"},
 			_jsii_.MemberProperty{JsiiProperty: "artifactIdInput", GoGetter: "ArtifactIdInput"},
@@ -802,7 +802,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleOsConfigGuestPoliciesRecipesInstallStepsArchiveExtractionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -810,11 +810,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesInstallStepsDpkgInstallation",
-		reflect.TypeOf((*GoogleOsConfigGuestPoliciesRecipesInstallStepsDpkgInstallation)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigGuestPoliciesRecipesInstallStepsDpkgInstallation](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesInstallStepsDpkgInstallationOutputReference",
-		reflect.TypeOf((*GoogleOsConfigGuestPoliciesRecipesInstallStepsDpkgInstallationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigGuestPoliciesRecipesInstallStepsDpkgInstallationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "artifactId", GoGetter: "ArtifactId"},
 			_jsii_.MemberProperty{JsiiProperty: "artifactIdInput", GoGetter: "ArtifactIdInput"},
@@ -840,7 +840,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleOsConfigGuestPoliciesRecipesInstallStepsDpkgInstallationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -848,11 +848,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesInstallStepsFileCopy",
-		reflect.TypeOf((*GoogleOsConfigGuestPoliciesRecipesInstallStepsFileCopy)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigGuestPoliciesRecipesInstallStepsFileCopy](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesInstallStepsFileCopyOutputReference",
-		reflect.TypeOf((*GoogleOsConfigGuestPoliciesRecipesInstallStepsFileCopyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigGuestPoliciesRecipesInstallStepsFileCopyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "artifactId", GoGetter: "ArtifactId"},
 			_jsii_.MemberProperty{JsiiProperty: "artifactIdInput", GoGetter: "ArtifactIdInput"},
@@ -886,7 +886,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleOsConfigGuestPoliciesRecipesInstallStepsFileCopyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -894,11 +894,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesInstallStepsFileExec",
-		reflect.TypeOf((*GoogleOsConfigGuestPoliciesRecipesInstallStepsFileExec)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigGuestPoliciesRecipesInstallStepsFileExec](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesInstallStepsFileExecOutputReference",
-		reflect.TypeOf((*GoogleOsConfigGuestPoliciesRecipesInstallStepsFileExecOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigGuestPoliciesRecipesInstallStepsFileExecOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowedExitCodes", GoGetter: "AllowedExitCodes"},
 			_jsii_.MemberProperty{JsiiProperty: "allowedExitCodesInput", GoGetter: "AllowedExitCodesInput"},
@@ -934,7 +934,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleOsConfigGuestPoliciesRecipesInstallStepsFileExecOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -942,7 +942,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesInstallStepsList",
-		reflect.TypeOf((*GoogleOsConfigGuestPoliciesRecipesInstallStepsList)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigGuestPoliciesRecipesInstallStepsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -956,7 +956,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleOsConfigGuestPoliciesRecipesInstallStepsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -964,11 +964,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesInstallStepsMsiInstallation",
-		reflect.TypeOf((*GoogleOsConfigGuestPoliciesRecipesInstallStepsMsiInstallation)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigGuestPoliciesRecipesInstallStepsMsiInstallation](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesInstallStepsMsiInstallationOutputReference",
-		reflect.TypeOf((*GoogleOsConfigGuestPoliciesRecipesInstallStepsMsiInstallationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigGuestPoliciesRecipesInstallStepsMsiInstallationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowedExitCodes", GoGetter: "AllowedExitCodes"},
 			_jsii_.MemberProperty{JsiiProperty: "allowedExitCodesInput", GoGetter: "AllowedExitCodesInput"},
@@ -1000,7 +1000,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleOsConfigGuestPoliciesRecipesInstallStepsMsiInstallationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1008,7 +1008,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesInstallStepsOutputReference",
-		reflect.TypeOf((*GoogleOsConfigGuestPoliciesRecipesInstallStepsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigGuestPoliciesRecipesInstallStepsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "archiveExtraction", GoGetter: "ArchiveExtraction"},
 			_jsii_.MemberProperty{JsiiProperty: "archiveExtractionInput", GoGetter: "ArchiveExtractionInput"},
@@ -1060,7 +1060,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleOsConfigGuestPoliciesRecipesInstallStepsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1068,11 +1068,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesInstallStepsRpmInstallation",
-		reflect.TypeOf((*GoogleOsConfigGuestPoliciesRecipesInstallStepsRpmInstallation)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigGuestPoliciesRecipesInstallStepsRpmInstallation](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesInstallStepsRpmInstallationOutputReference",
-		reflect.TypeOf((*GoogleOsConfigGuestPoliciesRecipesInstallStepsRpmInstallationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigGuestPoliciesRecipesInstallStepsRpmInstallationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "artifactId", GoGetter: "ArtifactId"},
 			_jsii_.MemberProperty{JsiiProperty: "artifactIdInput", GoGetter: "ArtifactIdInput"},
@@ -1098,7 +1098,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleOsConfigGuestPoliciesRecipesInstallStepsRpmInstallationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1106,11 +1106,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesInstallStepsScriptRun",
-		reflect.TypeOf((*GoogleOsConfigGuestPoliciesRecipesInstallStepsScriptRun)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigGuestPoliciesRecipesInstallStepsScriptRun](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesInstallStepsScriptRunOutputReference",
-		reflect.TypeOf((*GoogleOsConfigGuestPoliciesRecipesInstallStepsScriptRunOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigGuestPoliciesRecipesInstallStepsScriptRunOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowedExitCodes", GoGetter: "AllowedExitCodes"},
 			_jsii_.MemberProperty{JsiiProperty: "allowedExitCodesInput", GoGetter: "AllowedExitCodesInput"},
@@ -1142,7 +1142,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleOsConfigGuestPoliciesRecipesInstallStepsScriptRunOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1150,7 +1150,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesList",
-		reflect.TypeOf((*GoogleOsConfigGuestPoliciesRecipesList)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigGuestPoliciesRecipesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1164,7 +1164,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleOsConfigGuestPoliciesRecipesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1172,7 +1172,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesOutputReference",
-		reflect.TypeOf((*GoogleOsConfigGuestPoliciesRecipesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigGuestPoliciesRecipesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "artifacts", GoGetter: "Artifacts"},
 			_jsii_.MemberProperty{JsiiProperty: "artifactsInput", GoGetter: "ArtifactsInput"},
@@ -1216,7 +1216,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "version", GoGetter: "Version"},
 			_jsii_.MemberProperty{JsiiProperty: "versionInput", GoGetter: "VersionInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleOsConfigGuestPoliciesRecipesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1224,15 +1224,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesUpdateSteps",
-		reflect.TypeOf((*GoogleOsConfigGuestPoliciesRecipesUpdateSteps)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigGuestPoliciesRecipesUpdateSteps](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesUpdateStepsArchiveExtraction",
-		reflect.TypeOf((*GoogleOsConfigGuestPoliciesRecipesUpdateStepsArchiveExtraction)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigGuestPoliciesRecipesUpdateStepsArchiveExtraction](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesUpdateStepsArchiveExtractionOutputReference",
-		reflect.TypeOf((*GoogleOsConfigGuestPoliciesRecipesUpdateStepsArchiveExtractionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigGuestPoliciesRecipesUpdateStepsArchiveExtractionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "artifactId", GoGetter: "ArtifactId"},
 			_jsii_.MemberProperty{JsiiProperty: "artifactIdInput", GoGetter: "ArtifactIdInput"},
@@ -1263,7 +1263,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleOsConfigGuestPoliciesRecipesUpdateStepsArchiveExtractionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1271,11 +1271,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesUpdateStepsDpkgInstallation",
-		reflect.TypeOf((*GoogleOsConfigGuestPoliciesRecipesUpdateStepsDpkgInstallation)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigGuestPoliciesRecipesUpdateStepsDpkgInstallation](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesUpdateStepsDpkgInstallationOutputReference",
-		reflect.TypeOf((*GoogleOsConfigGuestPoliciesRecipesUpdateStepsDpkgInstallationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigGuestPoliciesRecipesUpdateStepsDpkgInstallationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "artifactId", GoGetter: "ArtifactId"},
 			_jsii_.MemberProperty{JsiiProperty: "artifactIdInput", GoGetter: "ArtifactIdInput"},
@@ -1301,7 +1301,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleOsConfigGuestPoliciesRecipesUpdateStepsDpkgInstallationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1309,11 +1309,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesUpdateStepsFileCopy",
-		reflect.TypeOf((*GoogleOsConfigGuestPoliciesRecipesUpdateStepsFileCopy)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigGuestPoliciesRecipesUpdateStepsFileCopy](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesUpdateStepsFileCopyOutputReference",
-		reflect.TypeOf((*GoogleOsConfigGuestPoliciesRecipesUpdateStepsFileCopyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigGuestPoliciesRecipesUpdateStepsFileCopyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "artifactId", GoGetter: "ArtifactId"},
 			_jsii_.MemberProperty{JsiiProperty: "artifactIdInput", GoGetter: "ArtifactIdInput"},
@@ -1347,7 +1347,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleOsConfigGuestPoliciesRecipesUpdateStepsFileCopyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1355,11 +1355,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesUpdateStepsFileExec",
-		reflect.TypeOf((*GoogleOsConfigGuestPoliciesRecipesUpdateStepsFileExec)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigGuestPoliciesRecipesUpdateStepsFileExec](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesUpdateStepsFileExecOutputReference",
-		reflect.TypeOf((*GoogleOsConfigGuestPoliciesRecipesUpdateStepsFileExecOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigGuestPoliciesRecipesUpdateStepsFileExecOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowedExitCodes", GoGetter: "AllowedExitCodes"},
 			_jsii_.MemberProperty{JsiiProperty: "allowedExitCodesInput", GoGetter: "AllowedExitCodesInput"},
@@ -1395,7 +1395,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleOsConfigGuestPoliciesRecipesUpdateStepsFileExecOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1403,7 +1403,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesUpdateStepsList",
-		reflect.TypeOf((*GoogleOsConfigGuestPoliciesRecipesUpdateStepsList)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigGuestPoliciesRecipesUpdateStepsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1417,7 +1417,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleOsConfigGuestPoliciesRecipesUpdateStepsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1425,11 +1425,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesUpdateStepsMsiInstallation",
-		reflect.TypeOf((*GoogleOsConfigGuestPoliciesRecipesUpdateStepsMsiInstallation)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigGuestPoliciesRecipesUpdateStepsMsiInstallation](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesUpdateStepsMsiInstallationOutputReference",
-		reflect.TypeOf((*GoogleOsConfigGuestPoliciesRecipesUpdateStepsMsiInstallationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigGuestPoliciesRecipesUpdateStepsMsiInstallationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowedExitCodes", GoGetter: "AllowedExitCodes"},
 			_jsii_.MemberProperty{JsiiProperty: "allowedExitCodesInput", GoGetter: "AllowedExitCodesInput"},
@@ -1461,7 +1461,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleOsConfigGuestPoliciesRecipesUpdateStepsMsiInstallationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1469,7 +1469,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesUpdateStepsOutputReference",
-		reflect.TypeOf((*GoogleOsConfigGuestPoliciesRecipesUpdateStepsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigGuestPoliciesRecipesUpdateStepsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "archiveExtraction", GoGetter: "ArchiveExtraction"},
 			_jsii_.MemberProperty{JsiiProperty: "archiveExtractionInput", GoGetter: "ArchiveExtractionInput"},
@@ -1521,7 +1521,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleOsConfigGuestPoliciesRecipesUpdateStepsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1529,11 +1529,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesUpdateStepsRpmInstallation",
-		reflect.TypeOf((*GoogleOsConfigGuestPoliciesRecipesUpdateStepsRpmInstallation)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigGuestPoliciesRecipesUpdateStepsRpmInstallation](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesUpdateStepsRpmInstallationOutputReference",
-		reflect.TypeOf((*GoogleOsConfigGuestPoliciesRecipesUpdateStepsRpmInstallationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigGuestPoliciesRecipesUpdateStepsRpmInstallationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "artifactId", GoGetter: "ArtifactId"},
 			_jsii_.MemberProperty{JsiiProperty: "artifactIdInput", GoGetter: "ArtifactIdInput"},
@@ -1559,7 +1559,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleOsConfigGuestPoliciesRecipesUpdateStepsRpmInstallationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1567,11 +1567,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesUpdateStepsScriptRun",
-		reflect.TypeOf((*GoogleOsConfigGuestPoliciesRecipesUpdateStepsScriptRun)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigGuestPoliciesRecipesUpdateStepsScriptRun](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesUpdateStepsScriptRunOutputReference",
-		reflect.TypeOf((*GoogleOsConfigGuestPoliciesRecipesUpdateStepsScriptRunOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigGuestPoliciesRecipesUpdateStepsScriptRunOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowedExitCodes", GoGetter: "AllowedExitCodes"},
 			_jsii_.MemberProperty{JsiiProperty: "allowedExitCodesInput", GoGetter: "AllowedExitCodesInput"},
@@ -1603,7 +1603,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleOsConfigGuestPoliciesRecipesUpdateStepsScriptRunOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1611,11 +1611,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesTimeouts",
-		reflect.TypeOf((*GoogleOsConfigGuestPoliciesTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigGuestPoliciesTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleOsConfigGuestPoliciesTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsConfigGuestPoliciesTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1648,7 +1648,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleOsConfigGuestPoliciesTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

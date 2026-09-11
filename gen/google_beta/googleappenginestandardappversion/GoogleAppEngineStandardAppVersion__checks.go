@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleAppEngineStandardAppVersion) validateAddMoveTargetParam
 	return nil
 }
 
-func (g *jsiiProxy_GoogleAppEngineStandardAppVersion) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleAppEngineStandardAppVersion) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleAppEngineStandardAppVersion) validateMoveFromIdParamete
 	return nil
 }
 
-func (g *jsiiProxy_GoogleAppEngineStandardAppVersion) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleAppEngineStandardAppVersion) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -248,7 +248,7 @@ func (g *jsiiProxy_GoogleAppEngineStandardAppVersion) validatePutEntrypointParam
 	return nil
 }
 
-func (g *jsiiProxy_GoogleAppEngineStandardAppVersion) validatePutHandlersParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleAppEngineStandardAppVersion) validatePutHandlersParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -279,7 +279,7 @@ func (g *jsiiProxy_GoogleAppEngineStandardAppVersion) validatePutHandlersParamet
 	return nil
 }
 
-func (g *jsiiProxy_GoogleAppEngineStandardAppVersion) validatePutLibrariesParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleAppEngineStandardAppVersion) validatePutLibrariesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -359,7 +359,7 @@ func validateGoogleAppEngineStandardAppVersion_GenerateConfigForImportParameters
 	return nil
 }
 
-func validateGoogleAppEngineStandardAppVersion_IsConstructParameters(x interface{}) error {
+func validateGoogleAppEngineStandardAppVersion_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -367,7 +367,7 @@ func validateGoogleAppEngineStandardAppVersion_IsConstructParameters(x interface
 	return nil
 }
 
-func validateGoogleAppEngineStandardAppVersion_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleAppEngineStandardAppVersion_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -375,7 +375,7 @@ func validateGoogleAppEngineStandardAppVersion_IsTerraformElementParameters(x in
 	return nil
 }
 
-func validateGoogleAppEngineStandardAppVersion_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleAppEngineStandardAppVersion_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -383,7 +383,7 @@ func validateGoogleAppEngineStandardAppVersion_IsTerraformResourceParameters(x i
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAppEngineStandardAppVersion) validateSetAppEngineApisParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleAppEngineStandardAppVersion) validateSetAppEngineApisParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -403,7 +403,7 @@ func (j *jsiiProxy_GoogleAppEngineStandardAppVersion) validateSetAppEngineApisPa
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAppEngineStandardAppVersion) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleAppEngineStandardAppVersion) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -436,7 +436,7 @@ func (j *jsiiProxy_GoogleAppEngineStandardAppVersion) validateSetConnectionParam
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAppEngineStandardAppVersion) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleAppEngineStandardAppVersion) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -493,7 +493,7 @@ func (j *jsiiProxy_GoogleAppEngineStandardAppVersion) validateSetCountParameters
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAppEngineStandardAppVersion) validateSetDeleteServiceOnDestroyParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleAppEngineStandardAppVersion) validateSetDeleteServiceOnDestroyParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -553,7 +553,7 @@ func (j *jsiiProxy_GoogleAppEngineStandardAppVersion) validateSetLifecycleParame
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAppEngineStandardAppVersion) validateSetNoopOnDestroyParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleAppEngineStandardAppVersion) validateSetNoopOnDestroyParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -581,7 +581,7 @@ func (j *jsiiProxy_GoogleAppEngineStandardAppVersion) validateSetProjectParamete
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAppEngineStandardAppVersion) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleAppEngineStandardAppVersion) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -659,7 +659,7 @@ func (j *jsiiProxy_GoogleAppEngineStandardAppVersion) validateSetServiceAccountP
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAppEngineStandardAppVersion) validateSetThreadsafeParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleAppEngineStandardAppVersion) validateSetThreadsafeParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -705,4 +705,3 @@ func validateNewGoogleAppEngineStandardAppVersionParameters(scope constructs.Con
 
 	return nil
 }
-

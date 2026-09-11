@@ -120,7 +120,7 @@ func (g *jsiiProxy_GoogleBigqueryAnalyticsHubDataExchangeSharingEnvironmentConfi
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigqueryAnalyticsHubDataExchangeSharingEnvironmentConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBigqueryAnalyticsHubDataExchangeSharingEnvironmentConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -220,4 +220,3 @@ func validateNewGoogleBigqueryAnalyticsHubDataExchangeSharingEnvironmentConfigOu
 
 	return nil
 }
-

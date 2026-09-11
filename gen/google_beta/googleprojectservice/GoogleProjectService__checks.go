@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleProjectService) validateAddMoveTargetParameters(moveTar
 	return nil
 }
 
-func (g *jsiiProxy_GoogleProjectService) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleProjectService) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleProjectService) validateMoveFromIdParameters(id *string
 	return nil
 }
 
-func (g *jsiiProxy_GoogleProjectService) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleProjectService) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateGoogleProjectService_GenerateConfigForImportParameters(scope constr
 	return nil
 }
 
-func validateGoogleProjectService_IsConstructParameters(x interface{}) error {
+func validateGoogleProjectService_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateGoogleProjectService_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateGoogleProjectService_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleProjectService_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateGoogleProjectService_IsTerraformElementParameters(x interface{}) er
 	return nil
 }
 
-func validateGoogleProjectService_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleProjectService_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateGoogleProjectService_IsTerraformResourceParameters(x interface{}) e
 	return nil
 }
 
-func (j *jsiiProxy_GoogleProjectService) validateSetCheckIfServiceHasUsageOnDestroyParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleProjectService) validateSetCheckIfServiceHasUsageOnDestroyParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -275,7 +275,7 @@ func (j *jsiiProxy_GoogleProjectService) validateSetCheckIfServiceHasUsageOnDest
 	return nil
 }
 
-func (j *jsiiProxy_GoogleProjectService) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleProjectService) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -308,7 +308,7 @@ func (j *jsiiProxy_GoogleProjectService) validateSetConnectionParameters(val int
 	return nil
 }
 
-func (j *jsiiProxy_GoogleProjectService) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleProjectService) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -365,7 +365,7 @@ func (j *jsiiProxy_GoogleProjectService) validateSetCountParameters(val interfac
 	return nil
 }
 
-func (j *jsiiProxy_GoogleProjectService) validateSetDisableDependentServicesParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleProjectService) validateSetDisableDependentServicesParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -385,7 +385,7 @@ func (j *jsiiProxy_GoogleProjectService) validateSetDisableDependentServicesPara
 	return nil
 }
 
-func (j *jsiiProxy_GoogleProjectService) validateSetDisableOnDestroyParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleProjectService) validateSetDisableOnDestroyParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -429,7 +429,7 @@ func (j *jsiiProxy_GoogleProjectService) validateSetProjectParameters(val *strin
 	return nil
 }
 
-func (j *jsiiProxy_GoogleProjectService) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleProjectService) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -501,4 +501,3 @@ func validateNewGoogleProjectServiceParameters(scope constructs.Construct, id *s
 
 	return nil
 }
-

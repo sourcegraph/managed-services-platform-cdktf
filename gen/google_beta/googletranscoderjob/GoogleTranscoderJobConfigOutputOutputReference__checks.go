@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleTranscoderJobConfigOutputOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_GoogleTranscoderJobConfigOutputOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleTranscoderJobConfigOutputOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleTranscoderJobConfigOutputOutputReferenceParameters(terrafo
 
 	return nil
 }
-

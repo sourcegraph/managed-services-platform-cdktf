@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleColabRuntimeTemplateSoftwareConfigPostStartupScriptConf
 	return nil
 }
 
-func (j *jsiiProxy_GoogleColabRuntimeTemplateSoftwareConfigPostStartupScriptConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleColabRuntimeTemplateSoftwareConfigPostStartupScriptConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewGoogleColabRuntimeTemplateSoftwareConfigPostStartupScriptConfigO
 
 	return nil
 }
-

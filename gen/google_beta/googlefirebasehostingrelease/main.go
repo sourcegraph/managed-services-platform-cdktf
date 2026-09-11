@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleFirebaseHostingRelease.GoogleFirebaseHostingRelease",
-		reflect.TypeOf((*GoogleFirebaseHostingRelease)(nil)).Elem(),
+		reflect.TypeFor[GoogleFirebaseHostingRelease](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -76,7 +76,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "versionName", GoGetter: "VersionName"},
 			_jsii_.MemberProperty{JsiiProperty: "versionNameInput", GoGetter: "VersionNameInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleFirebaseHostingRelease{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -84,15 +84,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleFirebaseHostingRelease.GoogleFirebaseHostingReleaseConfig",
-		reflect.TypeOf((*GoogleFirebaseHostingReleaseConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleFirebaseHostingReleaseConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleFirebaseHostingRelease.GoogleFirebaseHostingReleaseTimeouts",
-		reflect.TypeOf((*GoogleFirebaseHostingReleaseTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleFirebaseHostingReleaseTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleFirebaseHostingRelease.GoogleFirebaseHostingReleaseTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleFirebaseHostingReleaseTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleFirebaseHostingReleaseTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -122,7 +122,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleFirebaseHostingReleaseTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

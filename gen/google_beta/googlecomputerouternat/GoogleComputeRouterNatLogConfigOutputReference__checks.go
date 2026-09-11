@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleComputeRouterNatLogConfigOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRouterNatLogConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeRouterNatLogConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_GoogleComputeRouterNatLogConfigOutputReference) validateSetCo
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRouterNatLogConfigOutputReference) validateSetEnableParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeRouterNatLogConfigOutputReference) validateSetEnableParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -226,4 +226,3 @@ func validateNewGoogleComputeRouterNatLogConfigOutputReferenceParameters(terrafo
 
 	return nil
 }
-

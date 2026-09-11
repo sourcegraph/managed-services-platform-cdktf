@@ -1,6 +1,5 @@
 package googlebigquerytable
 
-
 type GoogleBigqueryTableView struct {
 	// A query that BigQuery executes when the view is referenced.
 	//
@@ -11,6 +10,5 @@ type GoogleBigqueryTableView struct {
 	// The default value is true. If set to false, the view will use BigQuery's standard SQL
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_bigquery_table#use_legacy_sql GoogleBigqueryTable#use_legacy_sql}
-	UseLegacySql interface{} `field:"optional" json:"useLegacySql" yaml:"useLegacySql"`
+	UseLegacySql any `field:"optional" json:"useLegacySql" yaml:"useLegacySql"`
 }
-

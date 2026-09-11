@@ -1,6 +1,5 @@
 package googlecomputeinstance
 
-
 type GoogleComputeInstanceConfidentialInstanceConfig struct {
 	// The confidential computing technology the instance uses.
 	//
@@ -13,6 +12,5 @@ type GoogleComputeInstanceConfidentialInstanceConfig struct {
 	// Defines whether the instance should have confidential compute enabled. Field will be deprecated in a future release.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_instance#enable_confidential_compute GoogleComputeInstance#enable_confidential_compute}
-	EnableConfidentialCompute interface{} `field:"optional" json:"enableConfidentialCompute" yaml:"enableConfidentialCompute"`
+	EnableConfidentialCompute any `field:"optional" json:"enableConfidentialCompute" yaml:"enableConfidentialCompute"`
 }
-

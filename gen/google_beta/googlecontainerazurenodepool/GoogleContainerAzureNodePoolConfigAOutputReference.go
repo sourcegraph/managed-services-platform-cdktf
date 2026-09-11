@@ -12,9 +12,9 @@ type GoogleContainerAzureNodePoolConfigAOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -58,7 +58,7 @@ type GoogleContainerAzureNodePoolConfigAOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -90,7 +90,7 @@ type GoogleContainerAzureNodePoolConfigAOutputReference interface {
 	ResetVmSize()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -103,8 +103,8 @@ type jsiiProxy_GoogleContainerAzureNodePoolConfigAOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GoogleContainerAzureNodePoolConfigAOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleContainerAzureNodePoolConfigAOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -313,7 +313,6 @@ func (j *jsiiProxy_GoogleContainerAzureNodePoolConfigAOutputReference) VmSizeInp
 	return returns
 }
 
-
 func NewGoogleContainerAzureNodePoolConfigAOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleContainerAzureNodePoolConfigAOutputReference {
 	_init_.Initialize()
 
@@ -324,7 +323,7 @@ func NewGoogleContainerAzureNodePoolConfigAOutputReference(terraformResource cdk
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleContainerAzureNodePool.GoogleContainerAzureNodePoolConfigAOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -336,12 +335,12 @@ func NewGoogleContainerAzureNodePoolConfigAOutputReference_Override(g GoogleCont
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleContainerAzureNodePool.GoogleContainerAzureNodePoolConfigAOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerAzureNodePoolConfigAOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleContainerAzureNodePoolConfigAOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -352,7 +351,7 @@ func (j *jsiiProxy_GoogleContainerAzureNodePoolConfigAOutputReference)SetComplex
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerAzureNodePoolConfigAOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleContainerAzureNodePoolConfigAOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -363,7 +362,7 @@ func (j *jsiiProxy_GoogleContainerAzureNodePoolConfigAOutputReference)SetComplex
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerAzureNodePoolConfigAOutputReference)SetImageType(val *string) {
+func (j *jsiiProxy_GoogleContainerAzureNodePoolConfigAOutputReference) SetImageType(val *string) {
 	if err := j.validateSetImageTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -374,7 +373,7 @@ func (j *jsiiProxy_GoogleContainerAzureNodePoolConfigAOutputReference)SetImageTy
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerAzureNodePoolConfigAOutputReference)SetInternalValue(val *GoogleContainerAzureNodePoolConfigA) {
+func (j *jsiiProxy_GoogleContainerAzureNodePoolConfigAOutputReference) SetInternalValue(val *GoogleContainerAzureNodePoolConfigA) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -385,7 +384,7 @@ func (j *jsiiProxy_GoogleContainerAzureNodePoolConfigAOutputReference)SetInterna
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerAzureNodePoolConfigAOutputReference)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_GoogleContainerAzureNodePoolConfigAOutputReference) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -396,7 +395,7 @@ func (j *jsiiProxy_GoogleContainerAzureNodePoolConfigAOutputReference)SetLabels(
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerAzureNodePoolConfigAOutputReference)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_GoogleContainerAzureNodePoolConfigAOutputReference) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -407,7 +406,7 @@ func (j *jsiiProxy_GoogleContainerAzureNodePoolConfigAOutputReference)SetTags(va
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerAzureNodePoolConfigAOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleContainerAzureNodePoolConfigAOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -418,7 +417,7 @@ func (j *jsiiProxy_GoogleContainerAzureNodePoolConfigAOutputReference)SetTerrafo
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerAzureNodePoolConfigAOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleContainerAzureNodePoolConfigAOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -429,7 +428,7 @@ func (j *jsiiProxy_GoogleContainerAzureNodePoolConfigAOutputReference)SetTerrafo
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerAzureNodePoolConfigAOutputReference)SetVmSize(val *string) {
+func (j *jsiiProxy_GoogleContainerAzureNodePoolConfigAOutputReference) SetVmSize(val *string) {
 	if err := j.validateSetVmSizeParameters(val); err != nil {
 		panic(err)
 	}
@@ -453,16 +452,16 @@ func (g *jsiiProxy_GoogleContainerAzureNodePoolConfigAOutputReference) ComputeFq
 	return returns
 }
 
-func (g *jsiiProxy_GoogleContainerAzureNodePoolConfigAOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleContainerAzureNodePoolConfigAOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -478,7 +477,7 @@ func (g *jsiiProxy_GoogleContainerAzureNodePoolConfigAOutputReference) GetBoolea
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -494,7 +493,7 @@ func (g *jsiiProxy_GoogleContainerAzureNodePoolConfigAOutputReference) GetBoolea
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -510,7 +509,7 @@ func (g *jsiiProxy_GoogleContainerAzureNodePoolConfigAOutputReference) GetListAt
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -526,7 +525,7 @@ func (g *jsiiProxy_GoogleContainerAzureNodePoolConfigAOutputReference) GetNumber
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -542,7 +541,7 @@ func (g *jsiiProxy_GoogleContainerAzureNodePoolConfigAOutputReference) GetNumber
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -558,7 +557,7 @@ func (g *jsiiProxy_GoogleContainerAzureNodePoolConfigAOutputReference) GetNumber
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -574,7 +573,7 @@ func (g *jsiiProxy_GoogleContainerAzureNodePoolConfigAOutputReference) GetString
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -590,7 +589,7 @@ func (g *jsiiProxy_GoogleContainerAzureNodePoolConfigAOutputReference) GetString
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -619,7 +618,7 @@ func (g *jsiiProxy_GoogleContainerAzureNodePoolConfigAOutputReference) Interpola
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -633,7 +632,7 @@ func (g *jsiiProxy_GoogleContainerAzureNodePoolConfigAOutputReference) PutProxyC
 	_jsii_.InvokeVoid(
 		g,
 		"putProxyConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -644,7 +643,7 @@ func (g *jsiiProxy_GoogleContainerAzureNodePoolConfigAOutputReference) PutRootVo
 	_jsii_.InvokeVoid(
 		g,
 		"putRootVolume",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -655,7 +654,7 @@ func (g *jsiiProxy_GoogleContainerAzureNodePoolConfigAOutputReference) PutSshCon
 	_jsii_.InvokeVoid(
 		g,
 		"putSshConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -707,16 +706,16 @@ func (g *jsiiProxy_GoogleContainerAzureNodePoolConfigAOutputReference) ResetVmSi
 	)
 }
 
-func (g *jsiiProxy_GoogleContainerAzureNodePoolConfigAOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleContainerAzureNodePoolConfigAOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -735,4 +734,3 @@ func (g *jsiiProxy_GoogleContainerAzureNodePoolConfigAOutputReference) ToString(
 
 	return returns
 }
-

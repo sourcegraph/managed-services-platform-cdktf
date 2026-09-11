@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleCloudbuildTriggerBuildStepVolumesList) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudbuildTriggerBuildStepVolumesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleCloudbuildTriggerBuildStepVolumesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleCloudbuildTriggerBuildStepVolumesListParameters(terraformR
 
 	return nil
 }
-

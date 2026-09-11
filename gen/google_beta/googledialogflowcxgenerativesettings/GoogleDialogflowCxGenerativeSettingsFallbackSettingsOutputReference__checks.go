@@ -90,7 +90,7 @@ func (g *jsiiProxy_GoogleDialogflowCxGenerativeSettingsFallbackSettingsOutputRef
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDialogflowCxGenerativeSettingsFallbackSettingsOutputReference) validatePutPromptTemplatesParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleDialogflowCxGenerativeSettingsFallbackSettingsOutputReference) validatePutPromptTemplatesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (g *jsiiProxy_GoogleDialogflowCxGenerativeSettingsFallbackSettingsOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxGenerativeSettingsFallbackSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDialogflowCxGenerativeSettingsFallbackSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -237,4 +237,3 @@ func validateNewGoogleDialogflowCxGenerativeSettingsFallbackSettingsOutputRefere
 
 	return nil
 }
-

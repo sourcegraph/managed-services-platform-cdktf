@@ -15,9 +15,9 @@ type GoogleApihubPluginInstanceActionsOutputReference interface {
 	ActionIdInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -33,8 +33,8 @@ type GoogleApihubPluginInstanceActionsOutputReference interface {
 	// Experimental.
 	Fqn() *string
 	HubInstanceAction() GoogleApihubPluginInstanceActionsHubInstanceActionList
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	ScheduleCronExpression() *string
 	SetScheduleCronExpression(val *string)
 	ScheduleCronExpressionInput() *string
@@ -53,7 +53,7 @@ type GoogleApihubPluginInstanceActionsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -80,7 +80,7 @@ type GoogleApihubPluginInstanceActionsOutputReference interface {
 	ResetScheduleTimeZone()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -113,8 +113,8 @@ func (j *jsiiProxy_GoogleApihubPluginInstanceActionsOutputReference) ActionIdInp
 	return returns
 }
 
-func (j *jsiiProxy_GoogleApihubPluginInstanceActionsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleApihubPluginInstanceActionsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -183,8 +183,8 @@ func (j *jsiiProxy_GoogleApihubPluginInstanceActionsOutputReference) HubInstance
 	return returns
 }
 
-func (j *jsiiProxy_GoogleApihubPluginInstanceActionsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleApihubPluginInstanceActionsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -263,7 +263,6 @@ func (j *jsiiProxy_GoogleApihubPluginInstanceActionsOutputReference) TerraformRe
 	return returns
 }
 
-
 func NewGoogleApihubPluginInstanceActionsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) GoogleApihubPluginInstanceActionsOutputReference {
 	_init_.Initialize()
 
@@ -274,7 +273,7 @@ func NewGoogleApihubPluginInstanceActionsOutputReference(terraformResource cdktf
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleApihubPluginInstance.GoogleApihubPluginInstanceActionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -286,12 +285,12 @@ func NewGoogleApihubPluginInstanceActionsOutputReference_Override(g GoogleApihub
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleApihubPluginInstance.GoogleApihubPluginInstanceActionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleApihubPluginInstanceActionsOutputReference)SetActionId(val *string) {
+func (j *jsiiProxy_GoogleApihubPluginInstanceActionsOutputReference) SetActionId(val *string) {
 	if err := j.validateSetActionIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -302,7 +301,7 @@ func (j *jsiiProxy_GoogleApihubPluginInstanceActionsOutputReference)SetActionId(
 	)
 }
 
-func (j *jsiiProxy_GoogleApihubPluginInstanceActionsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleApihubPluginInstanceActionsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -313,7 +312,7 @@ func (j *jsiiProxy_GoogleApihubPluginInstanceActionsOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_GoogleApihubPluginInstanceActionsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleApihubPluginInstanceActionsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -324,7 +323,7 @@ func (j *jsiiProxy_GoogleApihubPluginInstanceActionsOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_GoogleApihubPluginInstanceActionsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_GoogleApihubPluginInstanceActionsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -335,7 +334,7 @@ func (j *jsiiProxy_GoogleApihubPluginInstanceActionsOutputReference)SetInternalV
 	)
 }
 
-func (j *jsiiProxy_GoogleApihubPluginInstanceActionsOutputReference)SetScheduleCronExpression(val *string) {
+func (j *jsiiProxy_GoogleApihubPluginInstanceActionsOutputReference) SetScheduleCronExpression(val *string) {
 	if err := j.validateSetScheduleCronExpressionParameters(val); err != nil {
 		panic(err)
 	}
@@ -346,7 +345,7 @@ func (j *jsiiProxy_GoogleApihubPluginInstanceActionsOutputReference)SetScheduleC
 	)
 }
 
-func (j *jsiiProxy_GoogleApihubPluginInstanceActionsOutputReference)SetScheduleTimeZone(val *string) {
+func (j *jsiiProxy_GoogleApihubPluginInstanceActionsOutputReference) SetScheduleTimeZone(val *string) {
 	if err := j.validateSetScheduleTimeZoneParameters(val); err != nil {
 		panic(err)
 	}
@@ -357,7 +356,7 @@ func (j *jsiiProxy_GoogleApihubPluginInstanceActionsOutputReference)SetScheduleT
 	)
 }
 
-func (j *jsiiProxy_GoogleApihubPluginInstanceActionsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleApihubPluginInstanceActionsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -368,7 +367,7 @@ func (j *jsiiProxy_GoogleApihubPluginInstanceActionsOutputReference)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_GoogleApihubPluginInstanceActionsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleApihubPluginInstanceActionsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -392,16 +391,16 @@ func (g *jsiiProxy_GoogleApihubPluginInstanceActionsOutputReference) ComputeFqn(
 	return returns
 }
 
-func (g *jsiiProxy_GoogleApihubPluginInstanceActionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleApihubPluginInstanceActionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -417,7 +416,7 @@ func (g *jsiiProxy_GoogleApihubPluginInstanceActionsOutputReference) GetBooleanA
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -433,7 +432,7 @@ func (g *jsiiProxy_GoogleApihubPluginInstanceActionsOutputReference) GetBooleanM
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -449,7 +448,7 @@ func (g *jsiiProxy_GoogleApihubPluginInstanceActionsOutputReference) GetListAttr
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -465,7 +464,7 @@ func (g *jsiiProxy_GoogleApihubPluginInstanceActionsOutputReference) GetNumberAt
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -481,7 +480,7 @@ func (g *jsiiProxy_GoogleApihubPluginInstanceActionsOutputReference) GetNumberLi
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -497,7 +496,7 @@ func (g *jsiiProxy_GoogleApihubPluginInstanceActionsOutputReference) GetNumberMa
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -513,7 +512,7 @@ func (g *jsiiProxy_GoogleApihubPluginInstanceActionsOutputReference) GetStringAt
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -529,7 +528,7 @@ func (g *jsiiProxy_GoogleApihubPluginInstanceActionsOutputReference) GetStringMa
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -558,7 +557,7 @@ func (g *jsiiProxy_GoogleApihubPluginInstanceActionsOutputReference) Interpolati
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -572,7 +571,7 @@ func (g *jsiiProxy_GoogleApihubPluginInstanceActionsOutputReference) PutCuration
 	_jsii_.InvokeVoid(
 		g,
 		"putCurationConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -600,16 +599,16 @@ func (g *jsiiProxy_GoogleApihubPluginInstanceActionsOutputReference) ResetSchedu
 	)
 }
 
-func (g *jsiiProxy_GoogleApihubPluginInstanceActionsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleApihubPluginInstanceActionsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -628,4 +627,3 @@ func (g *jsiiProxy_GoogleApihubPluginInstanceActionsOutputReference) ToString() 
 
 	return returns
 }
-

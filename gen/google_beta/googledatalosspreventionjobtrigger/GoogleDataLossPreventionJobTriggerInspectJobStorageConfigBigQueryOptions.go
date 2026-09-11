@@ -1,6 +1,5 @@
 package googledatalosspreventionjobtrigger
 
-
 type GoogleDataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptions struct {
 	// table_reference block.
 	//
@@ -9,15 +8,15 @@ type GoogleDataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptions st
 	// excluded_fields block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_data_loss_prevention_job_trigger#excluded_fields GoogleDataLossPreventionJobTrigger#excluded_fields}
-	ExcludedFields interface{} `field:"optional" json:"excludedFields" yaml:"excludedFields"`
+	ExcludedFields any `field:"optional" json:"excludedFields" yaml:"excludedFields"`
 	// identifying_fields block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_data_loss_prevention_job_trigger#identifying_fields GoogleDataLossPreventionJobTrigger#identifying_fields}
-	IdentifyingFields interface{} `field:"optional" json:"identifyingFields" yaml:"identifyingFields"`
+	IdentifyingFields any `field:"optional" json:"identifyingFields" yaml:"identifyingFields"`
 	// included_fields block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_data_loss_prevention_job_trigger#included_fields GoogleDataLossPreventionJobTrigger#included_fields}
-	IncludedFields interface{} `field:"optional" json:"includedFields" yaml:"includedFields"`
+	IncludedFields any `field:"optional" json:"includedFields" yaml:"includedFields"`
 	// Max number of rows to scan.
 	//
 	// If the table has more rows than this value, the rest of the rows are omitted.
@@ -43,4 +42,3 @@ type GoogleDataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptions st
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_data_loss_prevention_job_trigger#sample_method GoogleDataLossPreventionJobTrigger#sample_method}
 	SampleMethod *string `field:"optional" json:"sampleMethod" yaml:"sampleMethod"`
 }
-

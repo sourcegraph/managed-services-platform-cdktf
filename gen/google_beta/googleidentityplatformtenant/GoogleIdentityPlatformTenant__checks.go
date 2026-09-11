@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleIdentityPlatformTenant) validateAddMoveTargetParameters
 	return nil
 }
 
-func (g *jsiiProxy_GoogleIdentityPlatformTenant) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleIdentityPlatformTenant) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleIdentityPlatformTenant) validateMoveFromIdParameters(id
 	return nil
 }
 
-func (g *jsiiProxy_GoogleIdentityPlatformTenant) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleIdentityPlatformTenant) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -242,7 +242,7 @@ func validateGoogleIdentityPlatformTenant_GenerateConfigForImportParameters(scop
 	return nil
 }
 
-func validateGoogleIdentityPlatformTenant_IsConstructParameters(x interface{}) error {
+func validateGoogleIdentityPlatformTenant_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -250,7 +250,7 @@ func validateGoogleIdentityPlatformTenant_IsConstructParameters(x interface{}) e
 	return nil
 }
 
-func validateGoogleIdentityPlatformTenant_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleIdentityPlatformTenant_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -258,7 +258,7 @@ func validateGoogleIdentityPlatformTenant_IsTerraformElementParameters(x interfa
 	return nil
 }
 
-func validateGoogleIdentityPlatformTenant_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleIdentityPlatformTenant_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -266,7 +266,7 @@ func validateGoogleIdentityPlatformTenant_IsTerraformResourceParameters(x interf
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIdentityPlatformTenant) validateSetAllowPasswordSignupParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleIdentityPlatformTenant) validateSetAllowPasswordSignupParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -286,7 +286,7 @@ func (j *jsiiProxy_GoogleIdentityPlatformTenant) validateSetAllowPasswordSignupP
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIdentityPlatformTenant) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleIdentityPlatformTenant) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -319,7 +319,7 @@ func (j *jsiiProxy_GoogleIdentityPlatformTenant) validateSetConnectionParameters
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIdentityPlatformTenant) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleIdentityPlatformTenant) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -376,7 +376,7 @@ func (j *jsiiProxy_GoogleIdentityPlatformTenant) validateSetCountParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIdentityPlatformTenant) validateSetDisableAuthParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleIdentityPlatformTenant) validateSetDisableAuthParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -404,7 +404,7 @@ func (j *jsiiProxy_GoogleIdentityPlatformTenant) validateSetDisplayNameParameter
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIdentityPlatformTenant) validateSetEnableEmailLinkSigninParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleIdentityPlatformTenant) validateSetEnableEmailLinkSigninParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -448,7 +448,7 @@ func (j *jsiiProxy_GoogleIdentityPlatformTenant) validateSetProjectParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIdentityPlatformTenant) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleIdentityPlatformTenant) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -512,4 +512,3 @@ func validateNewGoogleIdentityPlatformTenantParameters(scope constructs.Construc
 
 	return nil
 }
-

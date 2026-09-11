@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleChronicleWatchlist) validateAddMoveTargetParameters(mov
 	return nil
 }
 
-func (g *jsiiProxy_GoogleChronicleWatchlist) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleChronicleWatchlist) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleChronicleWatchlist) validateMoveFromIdParameters(id *st
 	return nil
 }
 
-func (g *jsiiProxy_GoogleChronicleWatchlist) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleChronicleWatchlist) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -253,7 +253,7 @@ func validateGoogleChronicleWatchlist_GenerateConfigForImportParameters(scope co
 	return nil
 }
 
-func validateGoogleChronicleWatchlist_IsConstructParameters(x interface{}) error {
+func validateGoogleChronicleWatchlist_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -261,7 +261,7 @@ func validateGoogleChronicleWatchlist_IsConstructParameters(x interface{}) error
 	return nil
 }
 
-func validateGoogleChronicleWatchlist_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleChronicleWatchlist_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -269,7 +269,7 @@ func validateGoogleChronicleWatchlist_IsTerraformElementParameters(x interface{}
 	return nil
 }
 
-func validateGoogleChronicleWatchlist_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleChronicleWatchlist_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -277,7 +277,7 @@ func validateGoogleChronicleWatchlist_IsTerraformResourceParameters(x interface{
 	return nil
 }
 
-func (j *jsiiProxy_GoogleChronicleWatchlist) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleChronicleWatchlist) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -310,7 +310,7 @@ func (j *jsiiProxy_GoogleChronicleWatchlist) validateSetConnectionParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_GoogleChronicleWatchlist) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleChronicleWatchlist) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -431,7 +431,7 @@ func (j *jsiiProxy_GoogleChronicleWatchlist) validateSetProjectParameters(val *s
 	return nil
 }
 
-func (j *jsiiProxy_GoogleChronicleWatchlist) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleChronicleWatchlist) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -503,4 +503,3 @@ func validateNewGoogleChronicleWatchlistParameters(scope constructs.Construct, i
 
 	return nil
 }
-

@@ -1,6 +1,5 @@
 package googlecomposerenvironment
 
-
 type GoogleComposerEnvironmentConfigNodeConfig struct {
 	// IPv4 cidr range that will be used by Composer internal components.
 	//
@@ -23,7 +22,7 @@ type GoogleComposerEnvironmentConfigNodeConfig struct {
 	// See: https://cloud.google.com/kubernetes-engine/docs/how-to/ip-masquerade-agent
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_composer_environment#enable_ip_masq_agent GoogleComposerEnvironment#enable_ip_masq_agent}
-	EnableIpMasqAgent interface{} `field:"optional" json:"enableIpMasqAgent" yaml:"enableIpMasqAgent"`
+	EnableIpMasqAgent any `field:"optional" json:"enableIpMasqAgent" yaml:"enableIpMasqAgent"`
 	// ip_allocation_policy block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_composer_environment#ip_allocation_policy GoogleComposerEnvironment#ip_allocation_policy}
@@ -73,4 +72,3 @@ type GoogleComposerEnvironmentConfigNodeConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_composer_environment#zone GoogleComposerEnvironment#zone}
 	Zone *string `field:"optional" json:"zone" yaml:"zone"`
 }
-

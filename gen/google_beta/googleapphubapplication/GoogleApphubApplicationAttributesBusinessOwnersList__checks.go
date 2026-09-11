@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleApphubApplicationAttributesBusinessOwnersList) validate
 	return nil
 }
 
-func (j *jsiiProxy_GoogleApphubApplicationAttributesBusinessOwnersList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleApphubApplicationAttributesBusinessOwnersList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleApphubApplicationAttributesBusinessOwnersListParameters(te
 
 	return nil
 }
-

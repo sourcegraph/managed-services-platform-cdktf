@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleTpuNodeNetworkEndpointsOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_GoogleTpuNodeNetworkEndpointsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleTpuNodeNetworkEndpointsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleTpuNodeNetworkEndpointsOutputReferenceParameters(terraform
 
 	return nil
 }
-

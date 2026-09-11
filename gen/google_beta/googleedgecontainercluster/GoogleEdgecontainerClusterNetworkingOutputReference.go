@@ -18,9 +18,9 @@ type GoogleEdgecontainerClusterNetworkingOutputReference interface {
 	ClusterIpv6CidrBlocksInput() *[]*string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -53,7 +53,7 @@ type GoogleEdgecontainerClusterNetworkingOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -78,7 +78,7 @@ type GoogleEdgecontainerClusterNetworkingOutputReference interface {
 	ResetServicesIpv6CidrBlocks()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -131,8 +131,8 @@ func (j *jsiiProxy_GoogleEdgecontainerClusterNetworkingOutputReference) ClusterI
 	return returns
 }
 
-func (j *jsiiProxy_GoogleEdgecontainerClusterNetworkingOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleEdgecontainerClusterNetworkingOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -251,7 +251,6 @@ func (j *jsiiProxy_GoogleEdgecontainerClusterNetworkingOutputReference) Terrafor
 	return returns
 }
 
-
 func NewGoogleEdgecontainerClusterNetworkingOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleEdgecontainerClusterNetworkingOutputReference {
 	_init_.Initialize()
 
@@ -262,7 +261,7 @@ func NewGoogleEdgecontainerClusterNetworkingOutputReference(terraformResource cd
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleEdgecontainerCluster.GoogleEdgecontainerClusterNetworkingOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -274,12 +273,12 @@ func NewGoogleEdgecontainerClusterNetworkingOutputReference_Override(g GoogleEdg
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleEdgecontainerCluster.GoogleEdgecontainerClusterNetworkingOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleEdgecontainerClusterNetworkingOutputReference)SetClusterIpv4CidrBlocks(val *[]*string) {
+func (j *jsiiProxy_GoogleEdgecontainerClusterNetworkingOutputReference) SetClusterIpv4CidrBlocks(val *[]*string) {
 	if err := j.validateSetClusterIpv4CidrBlocksParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_GoogleEdgecontainerClusterNetworkingOutputReference)SetCluste
 	)
 }
 
-func (j *jsiiProxy_GoogleEdgecontainerClusterNetworkingOutputReference)SetClusterIpv6CidrBlocks(val *[]*string) {
+func (j *jsiiProxy_GoogleEdgecontainerClusterNetworkingOutputReference) SetClusterIpv6CidrBlocks(val *[]*string) {
 	if err := j.validateSetClusterIpv6CidrBlocksParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_GoogleEdgecontainerClusterNetworkingOutputReference)SetCluste
 	)
 }
 
-func (j *jsiiProxy_GoogleEdgecontainerClusterNetworkingOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleEdgecontainerClusterNetworkingOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_GoogleEdgecontainerClusterNetworkingOutputReference)SetComple
 	)
 }
 
-func (j *jsiiProxy_GoogleEdgecontainerClusterNetworkingOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleEdgecontainerClusterNetworkingOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_GoogleEdgecontainerClusterNetworkingOutputReference)SetComple
 	)
 }
 
-func (j *jsiiProxy_GoogleEdgecontainerClusterNetworkingOutputReference)SetInternalValue(val *GoogleEdgecontainerClusterNetworking) {
+func (j *jsiiProxy_GoogleEdgecontainerClusterNetworkingOutputReference) SetInternalValue(val *GoogleEdgecontainerClusterNetworking) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -334,7 +333,7 @@ func (j *jsiiProxy_GoogleEdgecontainerClusterNetworkingOutputReference)SetIntern
 	)
 }
 
-func (j *jsiiProxy_GoogleEdgecontainerClusterNetworkingOutputReference)SetServicesIpv4CidrBlocks(val *[]*string) {
+func (j *jsiiProxy_GoogleEdgecontainerClusterNetworkingOutputReference) SetServicesIpv4CidrBlocks(val *[]*string) {
 	if err := j.validateSetServicesIpv4CidrBlocksParameters(val); err != nil {
 		panic(err)
 	}
@@ -345,7 +344,7 @@ func (j *jsiiProxy_GoogleEdgecontainerClusterNetworkingOutputReference)SetServic
 	)
 }
 
-func (j *jsiiProxy_GoogleEdgecontainerClusterNetworkingOutputReference)SetServicesIpv6CidrBlocks(val *[]*string) {
+func (j *jsiiProxy_GoogleEdgecontainerClusterNetworkingOutputReference) SetServicesIpv6CidrBlocks(val *[]*string) {
 	if err := j.validateSetServicesIpv6CidrBlocksParameters(val); err != nil {
 		panic(err)
 	}
@@ -356,7 +355,7 @@ func (j *jsiiProxy_GoogleEdgecontainerClusterNetworkingOutputReference)SetServic
 	)
 }
 
-func (j *jsiiProxy_GoogleEdgecontainerClusterNetworkingOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleEdgecontainerClusterNetworkingOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -367,7 +366,7 @@ func (j *jsiiProxy_GoogleEdgecontainerClusterNetworkingOutputReference)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_GoogleEdgecontainerClusterNetworkingOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleEdgecontainerClusterNetworkingOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -391,16 +390,16 @@ func (g *jsiiProxy_GoogleEdgecontainerClusterNetworkingOutputReference) ComputeF
 	return returns
 }
 
-func (g *jsiiProxy_GoogleEdgecontainerClusterNetworkingOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleEdgecontainerClusterNetworkingOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -416,7 +415,7 @@ func (g *jsiiProxy_GoogleEdgecontainerClusterNetworkingOutputReference) GetBoole
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -432,7 +431,7 @@ func (g *jsiiProxy_GoogleEdgecontainerClusterNetworkingOutputReference) GetBoole
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -448,7 +447,7 @@ func (g *jsiiProxy_GoogleEdgecontainerClusterNetworkingOutputReference) GetListA
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -464,7 +463,7 @@ func (g *jsiiProxy_GoogleEdgecontainerClusterNetworkingOutputReference) GetNumbe
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -480,7 +479,7 @@ func (g *jsiiProxy_GoogleEdgecontainerClusterNetworkingOutputReference) GetNumbe
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -496,7 +495,7 @@ func (g *jsiiProxy_GoogleEdgecontainerClusterNetworkingOutputReference) GetNumbe
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -512,7 +511,7 @@ func (g *jsiiProxy_GoogleEdgecontainerClusterNetworkingOutputReference) GetStrin
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -528,7 +527,7 @@ func (g *jsiiProxy_GoogleEdgecontainerClusterNetworkingOutputReference) GetStrin
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -557,7 +556,7 @@ func (g *jsiiProxy_GoogleEdgecontainerClusterNetworkingOutputReference) Interpol
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -580,16 +579,16 @@ func (g *jsiiProxy_GoogleEdgecontainerClusterNetworkingOutputReference) ResetSer
 	)
 }
 
-func (g *jsiiProxy_GoogleEdgecontainerClusterNetworkingOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleEdgecontainerClusterNetworkingOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -608,4 +607,3 @@ func (g *jsiiProxy_GoogleEdgecontainerClusterNetworkingOutputReference) ToString
 
 	return returns
 }
-

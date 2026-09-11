@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleRedisClusterStateInfoUpdateInfoOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_GoogleRedisClusterStateInfoUpdateInfoOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleRedisClusterStateInfoUpdateInfoOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleRedisClusterStateInfoUpdateInfoOutputReferenceParameters(t
 
 	return nil
 }
-

@@ -12,9 +12,9 @@ type GoogleTpuV2VmSchedulingConfigOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -29,15 +29,15 @@ type GoogleTpuV2VmSchedulingConfigOutputReference interface {
 	Fqn() *string
 	InternalValue() *GoogleTpuV2VmSchedulingConfig
 	SetInternalValue(val *GoogleTpuV2VmSchedulingConfig)
-	Preemptible() interface{}
-	SetPreemptible(val interface{})
-	PreemptibleInput() interface{}
-	Reserved() interface{}
-	SetReserved(val interface{})
-	ReservedInput() interface{}
-	Spot() interface{}
-	SetSpot(val interface{})
-	SpotInput() interface{}
+	Preemptible() any
+	SetPreemptible(val any)
+	PreemptibleInput() any
+	Reserved() any
+	SetReserved(val any)
+	ReservedInput() any
+	Spot() any
+	SetSpot(val any)
+	SpotInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -49,7 +49,7 @@ type GoogleTpuV2VmSchedulingConfigOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,7 +75,7 @@ type GoogleTpuV2VmSchedulingConfigOutputReference interface {
 	ResetSpot()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,8 +88,8 @@ type jsiiProxy_GoogleTpuV2VmSchedulingConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GoogleTpuV2VmSchedulingConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleTpuV2VmSchedulingConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -138,8 +138,8 @@ func (j *jsiiProxy_GoogleTpuV2VmSchedulingConfigOutputReference) InternalValue()
 	return returns
 }
 
-func (j *jsiiProxy_GoogleTpuV2VmSchedulingConfigOutputReference) Preemptible() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleTpuV2VmSchedulingConfigOutputReference) Preemptible() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"preemptible",
@@ -148,8 +148,8 @@ func (j *jsiiProxy_GoogleTpuV2VmSchedulingConfigOutputReference) Preemptible() i
 	return returns
 }
 
-func (j *jsiiProxy_GoogleTpuV2VmSchedulingConfigOutputReference) PreemptibleInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleTpuV2VmSchedulingConfigOutputReference) PreemptibleInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"preemptibleInput",
@@ -158,8 +158,8 @@ func (j *jsiiProxy_GoogleTpuV2VmSchedulingConfigOutputReference) PreemptibleInpu
 	return returns
 }
 
-func (j *jsiiProxy_GoogleTpuV2VmSchedulingConfigOutputReference) Reserved() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleTpuV2VmSchedulingConfigOutputReference) Reserved() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"reserved",
@@ -168,8 +168,8 @@ func (j *jsiiProxy_GoogleTpuV2VmSchedulingConfigOutputReference) Reserved() inte
 	return returns
 }
 
-func (j *jsiiProxy_GoogleTpuV2VmSchedulingConfigOutputReference) ReservedInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleTpuV2VmSchedulingConfigOutputReference) ReservedInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"reservedInput",
@@ -178,8 +178,8 @@ func (j *jsiiProxy_GoogleTpuV2VmSchedulingConfigOutputReference) ReservedInput()
 	return returns
 }
 
-func (j *jsiiProxy_GoogleTpuV2VmSchedulingConfigOutputReference) Spot() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleTpuV2VmSchedulingConfigOutputReference) Spot() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"spot",
@@ -188,8 +188,8 @@ func (j *jsiiProxy_GoogleTpuV2VmSchedulingConfigOutputReference) Spot() interfac
 	return returns
 }
 
-func (j *jsiiProxy_GoogleTpuV2VmSchedulingConfigOutputReference) SpotInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleTpuV2VmSchedulingConfigOutputReference) SpotInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"spotInput",
@@ -218,7 +218,6 @@ func (j *jsiiProxy_GoogleTpuV2VmSchedulingConfigOutputReference) TerraformResour
 	return returns
 }
 
-
 func NewGoogleTpuV2VmSchedulingConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleTpuV2VmSchedulingConfigOutputReference {
 	_init_.Initialize()
 
@@ -229,7 +228,7 @@ func NewGoogleTpuV2VmSchedulingConfigOutputReference(terraformResource cdktf.IIn
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleTpuV2Vm.GoogleTpuV2VmSchedulingConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -241,12 +240,12 @@ func NewGoogleTpuV2VmSchedulingConfigOutputReference_Override(g GoogleTpuV2VmSch
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleTpuV2Vm.GoogleTpuV2VmSchedulingConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleTpuV2VmSchedulingConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleTpuV2VmSchedulingConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -257,7 +256,7 @@ func (j *jsiiProxy_GoogleTpuV2VmSchedulingConfigOutputReference)SetComplexObject
 	)
 }
 
-func (j *jsiiProxy_GoogleTpuV2VmSchedulingConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleTpuV2VmSchedulingConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -268,7 +267,7 @@ func (j *jsiiProxy_GoogleTpuV2VmSchedulingConfigOutputReference)SetComplexObject
 	)
 }
 
-func (j *jsiiProxy_GoogleTpuV2VmSchedulingConfigOutputReference)SetInternalValue(val *GoogleTpuV2VmSchedulingConfig) {
+func (j *jsiiProxy_GoogleTpuV2VmSchedulingConfigOutputReference) SetInternalValue(val *GoogleTpuV2VmSchedulingConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_GoogleTpuV2VmSchedulingConfigOutputReference)SetInternalValue
 	)
 }
 
-func (j *jsiiProxy_GoogleTpuV2VmSchedulingConfigOutputReference)SetPreemptible(val interface{}) {
+func (j *jsiiProxy_GoogleTpuV2VmSchedulingConfigOutputReference) SetPreemptible(val any) {
 	if err := j.validateSetPreemptibleParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_GoogleTpuV2VmSchedulingConfigOutputReference)SetPreemptible(v
 	)
 }
 
-func (j *jsiiProxy_GoogleTpuV2VmSchedulingConfigOutputReference)SetReserved(val interface{}) {
+func (j *jsiiProxy_GoogleTpuV2VmSchedulingConfigOutputReference) SetReserved(val any) {
 	if err := j.validateSetReservedParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_GoogleTpuV2VmSchedulingConfigOutputReference)SetReserved(val 
 	)
 }
 
-func (j *jsiiProxy_GoogleTpuV2VmSchedulingConfigOutputReference)SetSpot(val interface{}) {
+func (j *jsiiProxy_GoogleTpuV2VmSchedulingConfigOutputReference) SetSpot(val any) {
 	if err := j.validateSetSpotParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_GoogleTpuV2VmSchedulingConfigOutputReference)SetSpot(val inte
 	)
 }
 
-func (j *jsiiProxy_GoogleTpuV2VmSchedulingConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleTpuV2VmSchedulingConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_GoogleTpuV2VmSchedulingConfigOutputReference)SetTerraformAttr
 	)
 }
 
-func (j *jsiiProxy_GoogleTpuV2VmSchedulingConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleTpuV2VmSchedulingConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,16 +346,16 @@ func (g *jsiiProxy_GoogleTpuV2VmSchedulingConfigOutputReference) ComputeFqn() *s
 	return returns
 }
 
-func (g *jsiiProxy_GoogleTpuV2VmSchedulingConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleTpuV2VmSchedulingConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -372,7 +371,7 @@ func (g *jsiiProxy_GoogleTpuV2VmSchedulingConfigOutputReference) GetBooleanAttri
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -388,7 +387,7 @@ func (g *jsiiProxy_GoogleTpuV2VmSchedulingConfigOutputReference) GetBooleanMapAt
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -404,7 +403,7 @@ func (g *jsiiProxy_GoogleTpuV2VmSchedulingConfigOutputReference) GetListAttribut
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -420,7 +419,7 @@ func (g *jsiiProxy_GoogleTpuV2VmSchedulingConfigOutputReference) GetNumberAttrib
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -436,7 +435,7 @@ func (g *jsiiProxy_GoogleTpuV2VmSchedulingConfigOutputReference) GetNumberListAt
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -452,7 +451,7 @@ func (g *jsiiProxy_GoogleTpuV2VmSchedulingConfigOutputReference) GetNumberMapAtt
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -468,7 +467,7 @@ func (g *jsiiProxy_GoogleTpuV2VmSchedulingConfigOutputReference) GetStringAttrib
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -484,7 +483,7 @@ func (g *jsiiProxy_GoogleTpuV2VmSchedulingConfigOutputReference) GetStringMapAtt
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -513,7 +512,7 @@ func (g *jsiiProxy_GoogleTpuV2VmSchedulingConfigOutputReference) InterpolationFo
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -544,16 +543,16 @@ func (g *jsiiProxy_GoogleTpuV2VmSchedulingConfigOutputReference) ResetSpot() {
 	)
 }
 
-func (g *jsiiProxy_GoogleTpuV2VmSchedulingConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleTpuV2VmSchedulingConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -572,4 +571,3 @@ func (g *jsiiProxy_GoogleTpuV2VmSchedulingConfigOutputReference) ToString() *str
 
 	return returns
 }
-

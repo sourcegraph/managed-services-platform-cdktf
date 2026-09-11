@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleChronicleRuleSeverityOutputReference) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_GoogleChronicleRuleSeverityOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleChronicleRuleSeverityOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleChronicleRuleSeverityOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

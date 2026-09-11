@@ -12,9 +12,9 @@ type GoogleComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference interface
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -27,21 +27,21 @@ type GoogleComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference interface
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	IncludeHost() interface{}
-	SetIncludeHost(val interface{})
-	IncludeHostInput() interface{}
+	IncludeHost() any
+	SetIncludeHost(val any)
+	IncludeHostInput() any
 	IncludeHttpHeaders() *[]*string
 	SetIncludeHttpHeaders(val *[]*string)
 	IncludeHttpHeadersInput() *[]*string
 	IncludeNamedCookies() *[]*string
 	SetIncludeNamedCookies(val *[]*string)
 	IncludeNamedCookiesInput() *[]*string
-	IncludeProtocol() interface{}
-	SetIncludeProtocol(val interface{})
-	IncludeProtocolInput() interface{}
-	IncludeQueryString() interface{}
-	SetIncludeQueryString(val interface{})
-	IncludeQueryStringInput() interface{}
+	IncludeProtocol() any
+	SetIncludeProtocol(val any)
+	IncludeProtocolInput() any
+	IncludeQueryString() any
+	SetIncludeQueryString(val any)
+	IncludeQueryStringInput() any
 	InternalValue() *GoogleComputeBackendServiceCdnPolicyCacheKeyPolicy
 	SetInternalValue(val *GoogleComputeBackendServiceCdnPolicyCacheKeyPolicy)
 	QueryStringBlacklist() *[]*string
@@ -61,7 +61,7 @@ type GoogleComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference interface
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -91,7 +91,7 @@ type GoogleComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference interface
 	ResetQueryStringWhitelist()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -104,8 +104,8 @@ type jsiiProxy_GoogleComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GoogleComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -144,8 +144,8 @@ func (j *jsiiProxy_GoogleComputeBackendServiceCdnPolicyCacheKeyPolicyOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference) IncludeHost() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference) IncludeHost() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"includeHost",
@@ -154,8 +154,8 @@ func (j *jsiiProxy_GoogleComputeBackendServiceCdnPolicyCacheKeyPolicyOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference) IncludeHostInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference) IncludeHostInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"includeHostInput",
@@ -204,8 +204,8 @@ func (j *jsiiProxy_GoogleComputeBackendServiceCdnPolicyCacheKeyPolicyOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference) IncludeProtocol() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference) IncludeProtocol() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"includeProtocol",
@@ -214,8 +214,8 @@ func (j *jsiiProxy_GoogleComputeBackendServiceCdnPolicyCacheKeyPolicyOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference) IncludeProtocolInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference) IncludeProtocolInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"includeProtocolInput",
@@ -224,8 +224,8 @@ func (j *jsiiProxy_GoogleComputeBackendServiceCdnPolicyCacheKeyPolicyOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference) IncludeQueryString() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference) IncludeQueryString() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"includeQueryString",
@@ -234,8 +234,8 @@ func (j *jsiiProxy_GoogleComputeBackendServiceCdnPolicyCacheKeyPolicyOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference) IncludeQueryStringInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference) IncludeQueryStringInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"includeQueryStringInput",
@@ -314,7 +314,6 @@ func (j *jsiiProxy_GoogleComputeBackendServiceCdnPolicyCacheKeyPolicyOutputRefer
 	return returns
 }
 
-
 func NewGoogleComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference {
 	_init_.Initialize()
 
@@ -325,7 +324,7 @@ func NewGoogleComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference(terraf
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleComputeBackendService.GoogleComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -337,12 +336,12 @@ func NewGoogleComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference_Overri
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleComputeBackendService.GoogleComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -353,7 +352,7 @@ func (j *jsiiProxy_GoogleComputeBackendServiceCdnPolicyCacheKeyPolicyOutputRefer
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -364,7 +363,7 @@ func (j *jsiiProxy_GoogleComputeBackendServiceCdnPolicyCacheKeyPolicyOutputRefer
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference)SetIncludeHost(val interface{}) {
+func (j *jsiiProxy_GoogleComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference) SetIncludeHost(val any) {
 	if err := j.validateSetIncludeHostParameters(val); err != nil {
 		panic(err)
 	}
@@ -375,7 +374,7 @@ func (j *jsiiProxy_GoogleComputeBackendServiceCdnPolicyCacheKeyPolicyOutputRefer
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference)SetIncludeHttpHeaders(val *[]*string) {
+func (j *jsiiProxy_GoogleComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference) SetIncludeHttpHeaders(val *[]*string) {
 	if err := j.validateSetIncludeHttpHeadersParameters(val); err != nil {
 		panic(err)
 	}
@@ -386,7 +385,7 @@ func (j *jsiiProxy_GoogleComputeBackendServiceCdnPolicyCacheKeyPolicyOutputRefer
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference)SetIncludeNamedCookies(val *[]*string) {
+func (j *jsiiProxy_GoogleComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference) SetIncludeNamedCookies(val *[]*string) {
 	if err := j.validateSetIncludeNamedCookiesParameters(val); err != nil {
 		panic(err)
 	}
@@ -397,7 +396,7 @@ func (j *jsiiProxy_GoogleComputeBackendServiceCdnPolicyCacheKeyPolicyOutputRefer
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference)SetIncludeProtocol(val interface{}) {
+func (j *jsiiProxy_GoogleComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference) SetIncludeProtocol(val any) {
 	if err := j.validateSetIncludeProtocolParameters(val); err != nil {
 		panic(err)
 	}
@@ -408,7 +407,7 @@ func (j *jsiiProxy_GoogleComputeBackendServiceCdnPolicyCacheKeyPolicyOutputRefer
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference)SetIncludeQueryString(val interface{}) {
+func (j *jsiiProxy_GoogleComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference) SetIncludeQueryString(val any) {
 	if err := j.validateSetIncludeQueryStringParameters(val); err != nil {
 		panic(err)
 	}
@@ -419,7 +418,7 @@ func (j *jsiiProxy_GoogleComputeBackendServiceCdnPolicyCacheKeyPolicyOutputRefer
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference)SetInternalValue(val *GoogleComputeBackendServiceCdnPolicyCacheKeyPolicy) {
+func (j *jsiiProxy_GoogleComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference) SetInternalValue(val *GoogleComputeBackendServiceCdnPolicyCacheKeyPolicy) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -430,7 +429,7 @@ func (j *jsiiProxy_GoogleComputeBackendServiceCdnPolicyCacheKeyPolicyOutputRefer
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference)SetQueryStringBlacklist(val *[]*string) {
+func (j *jsiiProxy_GoogleComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference) SetQueryStringBlacklist(val *[]*string) {
 	if err := j.validateSetQueryStringBlacklistParameters(val); err != nil {
 		panic(err)
 	}
@@ -441,7 +440,7 @@ func (j *jsiiProxy_GoogleComputeBackendServiceCdnPolicyCacheKeyPolicyOutputRefer
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference)SetQueryStringWhitelist(val *[]*string) {
+func (j *jsiiProxy_GoogleComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference) SetQueryStringWhitelist(val *[]*string) {
 	if err := j.validateSetQueryStringWhitelistParameters(val); err != nil {
 		panic(err)
 	}
@@ -452,7 +451,7 @@ func (j *jsiiProxy_GoogleComputeBackendServiceCdnPolicyCacheKeyPolicyOutputRefer
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -463,7 +462,7 @@ func (j *jsiiProxy_GoogleComputeBackendServiceCdnPolicyCacheKeyPolicyOutputRefer
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -487,16 +486,16 @@ func (g *jsiiProxy_GoogleComputeBackendServiceCdnPolicyCacheKeyPolicyOutputRefer
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -512,7 +511,7 @@ func (g *jsiiProxy_GoogleComputeBackendServiceCdnPolicyCacheKeyPolicyOutputRefer
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -528,7 +527,7 @@ func (g *jsiiProxy_GoogleComputeBackendServiceCdnPolicyCacheKeyPolicyOutputRefer
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -544,7 +543,7 @@ func (g *jsiiProxy_GoogleComputeBackendServiceCdnPolicyCacheKeyPolicyOutputRefer
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -560,7 +559,7 @@ func (g *jsiiProxy_GoogleComputeBackendServiceCdnPolicyCacheKeyPolicyOutputRefer
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -576,7 +575,7 @@ func (g *jsiiProxy_GoogleComputeBackendServiceCdnPolicyCacheKeyPolicyOutputRefer
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -592,7 +591,7 @@ func (g *jsiiProxy_GoogleComputeBackendServiceCdnPolicyCacheKeyPolicyOutputRefer
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -608,7 +607,7 @@ func (g *jsiiProxy_GoogleComputeBackendServiceCdnPolicyCacheKeyPolicyOutputRefer
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -624,7 +623,7 @@ func (g *jsiiProxy_GoogleComputeBackendServiceCdnPolicyCacheKeyPolicyOutputRefer
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -653,7 +652,7 @@ func (g *jsiiProxy_GoogleComputeBackendServiceCdnPolicyCacheKeyPolicyOutputRefer
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -716,16 +715,16 @@ func (g *jsiiProxy_GoogleComputeBackendServiceCdnPolicyCacheKeyPolicyOutputRefer
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -744,4 +743,3 @@ func (g *jsiiProxy_GoogleComputeBackendServiceCdnPolicyCacheKeyPolicyOutputRefer
 
 	return returns
 }
-

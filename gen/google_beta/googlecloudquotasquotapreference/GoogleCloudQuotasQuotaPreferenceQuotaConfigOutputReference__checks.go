@@ -106,7 +106,7 @@ func (j *jsiiProxy_GoogleCloudQuotasQuotaPreferenceQuotaConfigOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudQuotasQuotaPreferenceQuotaConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleCloudQuotasQuotaPreferenceQuotaConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGoogleCloudQuotasQuotaPreferenceQuotaConfigOutputReferenceParame
 
 	return nil
 }
-

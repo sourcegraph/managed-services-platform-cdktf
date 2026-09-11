@@ -10,14 +10,14 @@ import (
 
 type GoogleTpuV2VmNetworkConfigsOutputReference interface {
 	cdktf.ComplexObject
-	CanIpForward() interface{}
-	SetCanIpForward(val interface{})
-	CanIpForwardInput() interface{}
+	CanIpForward() any
+	SetCanIpForward(val any)
+	CanIpForwardInput() any
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -28,13 +28,13 @@ type GoogleTpuV2VmNetworkConfigsOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	EnableExternalIps() interface{}
-	SetEnableExternalIps(val interface{})
-	EnableExternalIpsInput() interface{}
+	EnableExternalIps() any
+	SetEnableExternalIps(val any)
+	EnableExternalIpsInput() any
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Network() *string
 	SetNetwork(val *string)
 	NetworkInput() *string
@@ -55,7 +55,7 @@ type GoogleTpuV2VmNetworkConfigsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -83,7 +83,7 @@ type GoogleTpuV2VmNetworkConfigsOutputReference interface {
 	ResetSubnetwork()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -96,8 +96,8 @@ type jsiiProxy_GoogleTpuV2VmNetworkConfigsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GoogleTpuV2VmNetworkConfigsOutputReference) CanIpForward() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleTpuV2VmNetworkConfigsOutputReference) CanIpForward() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"canIpForward",
@@ -106,8 +106,8 @@ func (j *jsiiProxy_GoogleTpuV2VmNetworkConfigsOutputReference) CanIpForward() in
 	return returns
 }
 
-func (j *jsiiProxy_GoogleTpuV2VmNetworkConfigsOutputReference) CanIpForwardInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleTpuV2VmNetworkConfigsOutputReference) CanIpForwardInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"canIpForwardInput",
@@ -116,8 +116,8 @@ func (j *jsiiProxy_GoogleTpuV2VmNetworkConfigsOutputReference) CanIpForwardInput
 	return returns
 }
 
-func (j *jsiiProxy_GoogleTpuV2VmNetworkConfigsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleTpuV2VmNetworkConfigsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -146,8 +146,8 @@ func (j *jsiiProxy_GoogleTpuV2VmNetworkConfigsOutputReference) CreationStack() *
 	return returns
 }
 
-func (j *jsiiProxy_GoogleTpuV2VmNetworkConfigsOutputReference) EnableExternalIps() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleTpuV2VmNetworkConfigsOutputReference) EnableExternalIps() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableExternalIps",
@@ -156,8 +156,8 @@ func (j *jsiiProxy_GoogleTpuV2VmNetworkConfigsOutputReference) EnableExternalIps
 	return returns
 }
 
-func (j *jsiiProxy_GoogleTpuV2VmNetworkConfigsOutputReference) EnableExternalIpsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleTpuV2VmNetworkConfigsOutputReference) EnableExternalIpsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableExternalIpsInput",
@@ -176,8 +176,8 @@ func (j *jsiiProxy_GoogleTpuV2VmNetworkConfigsOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleTpuV2VmNetworkConfigsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleTpuV2VmNetworkConfigsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -266,7 +266,6 @@ func (j *jsiiProxy_GoogleTpuV2VmNetworkConfigsOutputReference) TerraformResource
 	return returns
 }
 
-
 func NewGoogleTpuV2VmNetworkConfigsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) GoogleTpuV2VmNetworkConfigsOutputReference {
 	_init_.Initialize()
 
@@ -277,7 +276,7 @@ func NewGoogleTpuV2VmNetworkConfigsOutputReference(terraformResource cdktf.IInte
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleTpuV2Vm.GoogleTpuV2VmNetworkConfigsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -289,12 +288,12 @@ func NewGoogleTpuV2VmNetworkConfigsOutputReference_Override(g GoogleTpuV2VmNetwo
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleTpuV2Vm.GoogleTpuV2VmNetworkConfigsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleTpuV2VmNetworkConfigsOutputReference)SetCanIpForward(val interface{}) {
+func (j *jsiiProxy_GoogleTpuV2VmNetworkConfigsOutputReference) SetCanIpForward(val any) {
 	if err := j.validateSetCanIpForwardParameters(val); err != nil {
 		panic(err)
 	}
@@ -305,7 +304,7 @@ func (j *jsiiProxy_GoogleTpuV2VmNetworkConfigsOutputReference)SetCanIpForward(va
 	)
 }
 
-func (j *jsiiProxy_GoogleTpuV2VmNetworkConfigsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleTpuV2VmNetworkConfigsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -316,7 +315,7 @@ func (j *jsiiProxy_GoogleTpuV2VmNetworkConfigsOutputReference)SetComplexObjectIn
 	)
 }
 
-func (j *jsiiProxy_GoogleTpuV2VmNetworkConfigsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleTpuV2VmNetworkConfigsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -327,7 +326,7 @@ func (j *jsiiProxy_GoogleTpuV2VmNetworkConfigsOutputReference)SetComplexObjectIs
 	)
 }
 
-func (j *jsiiProxy_GoogleTpuV2VmNetworkConfigsOutputReference)SetEnableExternalIps(val interface{}) {
+func (j *jsiiProxy_GoogleTpuV2VmNetworkConfigsOutputReference) SetEnableExternalIps(val any) {
 	if err := j.validateSetEnableExternalIpsParameters(val); err != nil {
 		panic(err)
 	}
@@ -338,7 +337,7 @@ func (j *jsiiProxy_GoogleTpuV2VmNetworkConfigsOutputReference)SetEnableExternalI
 	)
 }
 
-func (j *jsiiProxy_GoogleTpuV2VmNetworkConfigsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_GoogleTpuV2VmNetworkConfigsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -349,7 +348,7 @@ func (j *jsiiProxy_GoogleTpuV2VmNetworkConfigsOutputReference)SetInternalValue(v
 	)
 }
 
-func (j *jsiiProxy_GoogleTpuV2VmNetworkConfigsOutputReference)SetNetwork(val *string) {
+func (j *jsiiProxy_GoogleTpuV2VmNetworkConfigsOutputReference) SetNetwork(val *string) {
 	if err := j.validateSetNetworkParameters(val); err != nil {
 		panic(err)
 	}
@@ -360,7 +359,7 @@ func (j *jsiiProxy_GoogleTpuV2VmNetworkConfigsOutputReference)SetNetwork(val *st
 	)
 }
 
-func (j *jsiiProxy_GoogleTpuV2VmNetworkConfigsOutputReference)SetQueueCount(val *float64) {
+func (j *jsiiProxy_GoogleTpuV2VmNetworkConfigsOutputReference) SetQueueCount(val *float64) {
 	if err := j.validateSetQueueCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -371,7 +370,7 @@ func (j *jsiiProxy_GoogleTpuV2VmNetworkConfigsOutputReference)SetQueueCount(val 
 	)
 }
 
-func (j *jsiiProxy_GoogleTpuV2VmNetworkConfigsOutputReference)SetSubnetwork(val *string) {
+func (j *jsiiProxy_GoogleTpuV2VmNetworkConfigsOutputReference) SetSubnetwork(val *string) {
 	if err := j.validateSetSubnetworkParameters(val); err != nil {
 		panic(err)
 	}
@@ -382,7 +381,7 @@ func (j *jsiiProxy_GoogleTpuV2VmNetworkConfigsOutputReference)SetSubnetwork(val 
 	)
 }
 
-func (j *jsiiProxy_GoogleTpuV2VmNetworkConfigsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleTpuV2VmNetworkConfigsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -393,7 +392,7 @@ func (j *jsiiProxy_GoogleTpuV2VmNetworkConfigsOutputReference)SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_GoogleTpuV2VmNetworkConfigsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleTpuV2VmNetworkConfigsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -417,16 +416,16 @@ func (g *jsiiProxy_GoogleTpuV2VmNetworkConfigsOutputReference) ComputeFqn() *str
 	return returns
 }
 
-func (g *jsiiProxy_GoogleTpuV2VmNetworkConfigsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleTpuV2VmNetworkConfigsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -442,7 +441,7 @@ func (g *jsiiProxy_GoogleTpuV2VmNetworkConfigsOutputReference) GetBooleanAttribu
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -458,7 +457,7 @@ func (g *jsiiProxy_GoogleTpuV2VmNetworkConfigsOutputReference) GetBooleanMapAttr
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -474,7 +473,7 @@ func (g *jsiiProxy_GoogleTpuV2VmNetworkConfigsOutputReference) GetListAttribute(
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -490,7 +489,7 @@ func (g *jsiiProxy_GoogleTpuV2VmNetworkConfigsOutputReference) GetNumberAttribut
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -506,7 +505,7 @@ func (g *jsiiProxy_GoogleTpuV2VmNetworkConfigsOutputReference) GetNumberListAttr
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -522,7 +521,7 @@ func (g *jsiiProxy_GoogleTpuV2VmNetworkConfigsOutputReference) GetNumberMapAttri
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -538,7 +537,7 @@ func (g *jsiiProxy_GoogleTpuV2VmNetworkConfigsOutputReference) GetStringAttribut
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -554,7 +553,7 @@ func (g *jsiiProxy_GoogleTpuV2VmNetworkConfigsOutputReference) GetStringMapAttri
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -583,7 +582,7 @@ func (g *jsiiProxy_GoogleTpuV2VmNetworkConfigsOutputReference) InterpolationForA
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -630,16 +629,16 @@ func (g *jsiiProxy_GoogleTpuV2VmNetworkConfigsOutputReference) ResetSubnetwork()
 	)
 }
 
-func (g *jsiiProxy_GoogleTpuV2VmNetworkConfigsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleTpuV2VmNetworkConfigsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -658,4 +657,3 @@ func (g *jsiiProxy_GoogleTpuV2VmNetworkConfigsOutputReference) ToString() *strin
 
 	return returns
 }
-

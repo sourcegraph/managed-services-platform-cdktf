@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleSqlUser.GoogleSqlUser",
-		reflect.TypeOf((*GoogleSqlUser)(nil)).Elem(),
+		reflect.TypeFor[GoogleSqlUser](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -90,7 +90,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleSqlUser{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -98,15 +98,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleSqlUser.GoogleSqlUserConfig",
-		reflect.TypeOf((*GoogleSqlUserConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleSqlUserConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleSqlUser.GoogleSqlUserPasswordPolicy",
-		reflect.TypeOf((*GoogleSqlUserPasswordPolicy)(nil)).Elem(),
+		reflect.TypeFor[GoogleSqlUserPasswordPolicy](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleSqlUser.GoogleSqlUserPasswordPolicyOutputReference",
-		reflect.TypeOf((*GoogleSqlUserPasswordPolicyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleSqlUserPasswordPolicyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowedFailedAttempts", GoGetter: "AllowedFailedAttempts"},
 			_jsii_.MemberProperty{JsiiProperty: "allowedFailedAttemptsInput", GoGetter: "AllowedFailedAttemptsInput"},
@@ -143,7 +143,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleSqlUserPasswordPolicyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -151,11 +151,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleSqlUser.GoogleSqlUserPasswordPolicyStatus",
-		reflect.TypeOf((*GoogleSqlUserPasswordPolicyStatus)(nil)).Elem(),
+		reflect.TypeFor[GoogleSqlUserPasswordPolicyStatus](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleSqlUser.GoogleSqlUserPasswordPolicyStatusList",
-		reflect.TypeOf((*GoogleSqlUserPasswordPolicyStatusList)(nil)).Elem(),
+		reflect.TypeFor[GoogleSqlUserPasswordPolicyStatusList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -168,7 +168,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleSqlUserPasswordPolicyStatusList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -176,7 +176,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleSqlUser.GoogleSqlUserPasswordPolicyStatusOutputReference",
-		reflect.TypeOf((*GoogleSqlUserPasswordPolicyStatusOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleSqlUserPasswordPolicyStatusOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -202,7 +202,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleSqlUserPasswordPolicyStatusOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -210,11 +210,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleSqlUser.GoogleSqlUserSqlServerUserDetails",
-		reflect.TypeOf((*GoogleSqlUserSqlServerUserDetails)(nil)).Elem(),
+		reflect.TypeFor[GoogleSqlUserSqlServerUserDetails](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleSqlUser.GoogleSqlUserSqlServerUserDetailsList",
-		reflect.TypeOf((*GoogleSqlUserSqlServerUserDetailsList)(nil)).Elem(),
+		reflect.TypeFor[GoogleSqlUserSqlServerUserDetailsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -227,7 +227,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleSqlUserSqlServerUserDetailsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -235,7 +235,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleSqlUser.GoogleSqlUserSqlServerUserDetailsOutputReference",
-		reflect.TypeOf((*GoogleSqlUserSqlServerUserDetailsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleSqlUserSqlServerUserDetailsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -261,7 +261,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleSqlUserSqlServerUserDetailsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -269,11 +269,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleSqlUser.GoogleSqlUserTimeouts",
-		reflect.TypeOf((*GoogleSqlUserTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleSqlUserTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleSqlUser.GoogleSqlUserTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleSqlUserTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleSqlUserTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -306,7 +306,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleSqlUserTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

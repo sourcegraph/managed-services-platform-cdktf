@@ -17,18 +17,18 @@ type GoogleEndpointsServiceConsumersIamMember interface {
 	Condition() GoogleEndpointsServiceConsumersIamMemberConditionOutputReference
 	ConditionInput() *GoogleEndpointsServiceConsumersIamMemberCondition
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	ConsumerProject() *string
 	SetConsumerProject(val *string)
 	ConsumerProjectInput() *string
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -59,11 +59,11 @@ type GoogleEndpointsServiceConsumersIamMember interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Role() *string
 	SetRole(val *string)
 	RoleInput() *string
@@ -73,16 +73,16 @@ type GoogleEndpointsServiceConsumersIamMember interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -100,7 +100,7 @@ type GoogleEndpointsServiceConsumersIamMember interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -112,7 +112,7 @@ type GoogleEndpointsServiceConsumersIamMember interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -125,17 +125,17 @@ type GoogleEndpointsServiceConsumersIamMember interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleEndpointsServiceConsumersIamMember
@@ -173,8 +173,8 @@ func (j *jsiiProxy_GoogleEndpointsServiceConsumersIamMember) ConditionInput() *G
 	return returns
 }
 
-func (j *jsiiProxy_GoogleEndpointsServiceConsumersIamMember) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleEndpointsServiceConsumersIamMember) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -183,8 +183,8 @@ func (j *jsiiProxy_GoogleEndpointsServiceConsumersIamMember) Connection() interf
 	return returns
 }
 
-func (j *jsiiProxy_GoogleEndpointsServiceConsumersIamMember) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleEndpointsServiceConsumersIamMember) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -213,8 +213,8 @@ func (j *jsiiProxy_GoogleEndpointsServiceConsumersIamMember) ConsumerProjectInpu
 	return returns
 }
 
-func (j *jsiiProxy_GoogleEndpointsServiceConsumersIamMember) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleEndpointsServiceConsumersIamMember) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -343,8 +343,8 @@ func (j *jsiiProxy_GoogleEndpointsServiceConsumersIamMember) Provider() cdktf.Te
 	return returns
 }
 
-func (j *jsiiProxy_GoogleEndpointsServiceConsumersIamMember) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleEndpointsServiceConsumersIamMember) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -353,8 +353,8 @@ func (j *jsiiProxy_GoogleEndpointsServiceConsumersIamMember) Provisioners() *[]i
 	return returns
 }
 
-func (j *jsiiProxy_GoogleEndpointsServiceConsumersIamMember) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleEndpointsServiceConsumersIamMember) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -413,8 +413,8 @@ func (j *jsiiProxy_GoogleEndpointsServiceConsumersIamMember) TerraformGeneratorM
 	return returns
 }
 
-func (j *jsiiProxy_GoogleEndpointsServiceConsumersIamMember) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleEndpointsServiceConsumersIamMember) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -433,7 +433,6 @@ func (j *jsiiProxy_GoogleEndpointsServiceConsumersIamMember) TerraformResourceTy
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_endpoints_service_consumers_iam_member google_endpoints_service_consumers_iam_member} Resource.
 func NewGoogleEndpointsServiceConsumersIamMember(scope constructs.Construct, id *string, config *GoogleEndpointsServiceConsumersIamMemberConfig) GoogleEndpointsServiceConsumersIamMember {
 	_init_.Initialize()
@@ -445,7 +444,7 @@ func NewGoogleEndpointsServiceConsumersIamMember(scope constructs.Construct, id 
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleEndpointsServiceConsumersIamMember.GoogleEndpointsServiceConsumersIamMember",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -458,12 +457,12 @@ func NewGoogleEndpointsServiceConsumersIamMember_Override(g GoogleEndpointsServi
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleEndpointsServiceConsumersIamMember.GoogleEndpointsServiceConsumersIamMember",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleEndpointsServiceConsumersIamMember)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleEndpointsServiceConsumersIamMember) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -474,7 +473,7 @@ func (j *jsiiProxy_GoogleEndpointsServiceConsumersIamMember)SetConnection(val in
 	)
 }
 
-func (j *jsiiProxy_GoogleEndpointsServiceConsumersIamMember)SetConsumerProject(val *string) {
+func (j *jsiiProxy_GoogleEndpointsServiceConsumersIamMember) SetConsumerProject(val *string) {
 	if err := j.validateSetConsumerProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -485,7 +484,7 @@ func (j *jsiiProxy_GoogleEndpointsServiceConsumersIamMember)SetConsumerProject(v
 	)
 }
 
-func (j *jsiiProxy_GoogleEndpointsServiceConsumersIamMember)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleEndpointsServiceConsumersIamMember) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -496,7 +495,7 @@ func (j *jsiiProxy_GoogleEndpointsServiceConsumersIamMember)SetCount(val interfa
 	)
 }
 
-func (j *jsiiProxy_GoogleEndpointsServiceConsumersIamMember)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleEndpointsServiceConsumersIamMember) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -504,7 +503,7 @@ func (j *jsiiProxy_GoogleEndpointsServiceConsumersIamMember)SetDependsOn(val *[]
 	)
 }
 
-func (j *jsiiProxy_GoogleEndpointsServiceConsumersIamMember)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleEndpointsServiceConsumersIamMember) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -512,7 +511,7 @@ func (j *jsiiProxy_GoogleEndpointsServiceConsumersIamMember)SetForEach(val cdktf
 	)
 }
 
-func (j *jsiiProxy_GoogleEndpointsServiceConsumersIamMember)SetId(val *string) {
+func (j *jsiiProxy_GoogleEndpointsServiceConsumersIamMember) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -523,7 +522,7 @@ func (j *jsiiProxy_GoogleEndpointsServiceConsumersIamMember)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleEndpointsServiceConsumersIamMember)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleEndpointsServiceConsumersIamMember) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -534,7 +533,7 @@ func (j *jsiiProxy_GoogleEndpointsServiceConsumersIamMember)SetLifecycle(val *cd
 	)
 }
 
-func (j *jsiiProxy_GoogleEndpointsServiceConsumersIamMember)SetMember(val *string) {
+func (j *jsiiProxy_GoogleEndpointsServiceConsumersIamMember) SetMember(val *string) {
 	if err := j.validateSetMemberParameters(val); err != nil {
 		panic(err)
 	}
@@ -545,7 +544,7 @@ func (j *jsiiProxy_GoogleEndpointsServiceConsumersIamMember)SetMember(val *strin
 	)
 }
 
-func (j *jsiiProxy_GoogleEndpointsServiceConsumersIamMember)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleEndpointsServiceConsumersIamMember) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -553,7 +552,7 @@ func (j *jsiiProxy_GoogleEndpointsServiceConsumersIamMember)SetProvider(val cdkt
 	)
 }
 
-func (j *jsiiProxy_GoogleEndpointsServiceConsumersIamMember)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleEndpointsServiceConsumersIamMember) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -564,7 +563,7 @@ func (j *jsiiProxy_GoogleEndpointsServiceConsumersIamMember)SetProvisioners(val 
 	)
 }
 
-func (j *jsiiProxy_GoogleEndpointsServiceConsumersIamMember)SetRole(val *string) {
+func (j *jsiiProxy_GoogleEndpointsServiceConsumersIamMember) SetRole(val *string) {
 	if err := j.validateSetRoleParameters(val); err != nil {
 		panic(err)
 	}
@@ -575,7 +574,7 @@ func (j *jsiiProxy_GoogleEndpointsServiceConsumersIamMember)SetRole(val *string)
 	)
 }
 
-func (j *jsiiProxy_GoogleEndpointsServiceConsumersIamMember)SetServiceName(val *string) {
+func (j *jsiiProxy_GoogleEndpointsServiceConsumersIamMember) SetServiceName(val *string) {
 	if err := j.validateSetServiceNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -598,7 +597,7 @@ func GoogleEndpointsServiceConsumersIamMember_GenerateConfigForImport(scope cons
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleEndpointsServiceConsumersIamMember.GoogleEndpointsServiceConsumersIamMember",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -622,7 +621,7 @@ func GoogleEndpointsServiceConsumersIamMember_GenerateConfigForImport(scope cons
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleEndpointsServiceConsumersIamMember_IsConstruct(x interface{}) *bool {
+func GoogleEndpointsServiceConsumersIamMember_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleEndpointsServiceConsumersIamMember_IsConstructParameters(x); err != nil {
@@ -633,7 +632,7 @@ func GoogleEndpointsServiceConsumersIamMember_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleEndpointsServiceConsumersIamMember.GoogleEndpointsServiceConsumersIamMember",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -641,7 +640,7 @@ func GoogleEndpointsServiceConsumersIamMember_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleEndpointsServiceConsumersIamMember_IsTerraformElement(x interface{}) *bool {
+func GoogleEndpointsServiceConsumersIamMember_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleEndpointsServiceConsumersIamMember_IsTerraformElementParameters(x); err != nil {
@@ -652,7 +651,7 @@ func GoogleEndpointsServiceConsumersIamMember_IsTerraformElement(x interface{}) 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleEndpointsServiceConsumersIamMember.GoogleEndpointsServiceConsumersIamMember",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -660,7 +659,7 @@ func GoogleEndpointsServiceConsumersIamMember_IsTerraformElement(x interface{}) 
 }
 
 // Experimental.
-func GoogleEndpointsServiceConsumersIamMember_IsTerraformResource(x interface{}) *bool {
+func GoogleEndpointsServiceConsumersIamMember_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleEndpointsServiceConsumersIamMember_IsTerraformResourceParameters(x); err != nil {
@@ -671,7 +670,7 @@ func GoogleEndpointsServiceConsumersIamMember_IsTerraformResource(x interface{})
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleEndpointsServiceConsumersIamMember.GoogleEndpointsServiceConsumersIamMember",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -696,31 +695,31 @@ func (g *jsiiProxy_GoogleEndpointsServiceConsumersIamMember) AddMoveTarget(moveT
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleEndpointsServiceConsumersIamMember) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleEndpointsServiceConsumersIamMember) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleEndpointsServiceConsumersIamMember) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleEndpointsServiceConsumersIamMember) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -736,7 +735,7 @@ func (g *jsiiProxy_GoogleEndpointsServiceConsumersIamMember) GetBooleanAttribute
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -752,7 +751,7 @@ func (g *jsiiProxy_GoogleEndpointsServiceConsumersIamMember) GetBooleanMapAttrib
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -768,7 +767,7 @@ func (g *jsiiProxy_GoogleEndpointsServiceConsumersIamMember) GetListAttribute(te
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -784,7 +783,7 @@ func (g *jsiiProxy_GoogleEndpointsServiceConsumersIamMember) GetNumberAttribute(
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -800,7 +799,7 @@ func (g *jsiiProxy_GoogleEndpointsServiceConsumersIamMember) GetNumberListAttrib
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -816,7 +815,7 @@ func (g *jsiiProxy_GoogleEndpointsServiceConsumersIamMember) GetNumberMapAttribu
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -832,7 +831,7 @@ func (g *jsiiProxy_GoogleEndpointsServiceConsumersIamMember) GetStringAttribute(
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -848,15 +847,15 @@ func (g *jsiiProxy_GoogleEndpointsServiceConsumersIamMember) GetStringMapAttribu
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleEndpointsServiceConsumersIamMember) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleEndpointsServiceConsumersIamMember) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -875,7 +874,7 @@ func (g *jsiiProxy_GoogleEndpointsServiceConsumersIamMember) ImportFrom(id *stri
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -888,7 +887,7 @@ func (g *jsiiProxy_GoogleEndpointsServiceConsumersIamMember) InterpolationForAtt
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -902,18 +901,18 @@ func (g *jsiiProxy_GoogleEndpointsServiceConsumersIamMember) MoveFromId(id *stri
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleEndpointsServiceConsumersIamMember) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleEndpointsServiceConsumersIamMember) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -924,7 +923,7 @@ func (g *jsiiProxy_GoogleEndpointsServiceConsumersIamMember) MoveToId(id *string
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -935,7 +934,7 @@ func (g *jsiiProxy_GoogleEndpointsServiceConsumersIamMember) OverrideLogicalId(n
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -946,7 +945,7 @@ func (g *jsiiProxy_GoogleEndpointsServiceConsumersIamMember) PutCondition(value 
 	_jsii_.InvokeVoid(
 		g,
 		"putCondition",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -974,8 +973,8 @@ func (g *jsiiProxy_GoogleEndpointsServiceConsumersIamMember) ResetOverrideLogica
 	)
 }
 
-func (g *jsiiProxy_GoogleEndpointsServiceConsumersIamMember) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleEndpointsServiceConsumersIamMember) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -987,8 +986,8 @@ func (g *jsiiProxy_GoogleEndpointsServiceConsumersIamMember) SynthesizeAttribute
 	return returns
 }
 
-func (g *jsiiProxy_GoogleEndpointsServiceConsumersIamMember) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleEndpointsServiceConsumersIamMember) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1000,8 +999,8 @@ func (g *jsiiProxy_GoogleEndpointsServiceConsumersIamMember) SynthesizeHclAttrib
 	return returns
 }
 
-func (g *jsiiProxy_GoogleEndpointsServiceConsumersIamMember) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleEndpointsServiceConsumersIamMember) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1013,8 +1012,8 @@ func (g *jsiiProxy_GoogleEndpointsServiceConsumersIamMember) ToHclTerraform() in
 	return returns
 }
 
-func (g *jsiiProxy_GoogleEndpointsServiceConsumersIamMember) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleEndpointsServiceConsumersIamMember) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1039,8 +1038,8 @@ func (g *jsiiProxy_GoogleEndpointsServiceConsumersIamMember) ToString() *string 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleEndpointsServiceConsumersIamMember) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleEndpointsServiceConsumersIamMember) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1051,4 +1050,3 @@ func (g *jsiiProxy_GoogleEndpointsServiceConsumersIamMember) ToTerraform() inter
 
 	return returns
 }
-

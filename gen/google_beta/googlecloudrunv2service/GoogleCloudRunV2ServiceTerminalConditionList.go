@@ -36,7 +36,7 @@ type GoogleCloudRunV2ServiceTerminalConditionList interface {
 	Get(index *float64) GoogleCloudRunV2ServiceTerminalConditionOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -99,7 +99,6 @@ func (j *jsiiProxy_GoogleCloudRunV2ServiceTerminalConditionList) WrapsSet() *boo
 	return returns
 }
 
-
 func NewGoogleCloudRunV2ServiceTerminalConditionList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleCloudRunV2ServiceTerminalConditionList {
 	_init_.Initialize()
 
@@ -110,7 +109,7 @@ func NewGoogleCloudRunV2ServiceTerminalConditionList(terraformResource cdktf.IIn
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTerminalConditionList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -122,12 +121,12 @@ func NewGoogleCloudRunV2ServiceTerminalConditionList_Override(g GoogleCloudRunV2
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTerminalConditionList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudRunV2ServiceTerminalConditionList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleCloudRunV2ServiceTerminalConditionList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -138,7 +137,7 @@ func (j *jsiiProxy_GoogleCloudRunV2ServiceTerminalConditionList)SetTerraformAttr
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudRunV2ServiceTerminalConditionList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleCloudRunV2ServiceTerminalConditionList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -149,7 +148,7 @@ func (j *jsiiProxy_GoogleCloudRunV2ServiceTerminalConditionList)SetTerraformReso
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudRunV2ServiceTerminalConditionList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_GoogleCloudRunV2ServiceTerminalConditionList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -169,7 +168,7 @@ func (g *jsiiProxy_GoogleCloudRunV2ServiceTerminalConditionList) AllWithMapKey(m
 	_jsii_.Invoke(
 		g,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -198,23 +197,23 @@ func (g *jsiiProxy_GoogleCloudRunV2ServiceTerminalConditionList) Get(index *floa
 	_jsii_.Invoke(
 		g,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleCloudRunV2ServiceTerminalConditionList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleCloudRunV2ServiceTerminalConditionList) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -233,4 +232,3 @@ func (g *jsiiProxy_GoogleCloudRunV2ServiceTerminalConditionList) ToString() *str
 
 	return returns
 }
-

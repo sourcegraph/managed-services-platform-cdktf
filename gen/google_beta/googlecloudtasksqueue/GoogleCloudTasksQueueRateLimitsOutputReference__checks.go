@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleCloudTasksQueueRateLimitsOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudTasksQueueRateLimitsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleCloudTasksQueueRateLimitsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGoogleCloudTasksQueueRateLimitsOutputReferenceParameters(terrafo
 
 	return nil
 }
-

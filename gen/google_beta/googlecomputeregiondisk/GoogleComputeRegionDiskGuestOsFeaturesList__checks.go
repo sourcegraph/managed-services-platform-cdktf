@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleComputeRegionDiskGuestOsFeaturesList) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRegionDiskGuestOsFeaturesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeRegionDiskGuestOsFeaturesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleComputeRegionDiskGuestOsFeaturesListParameters(terraformRe
 
 	return nil
 }
-

@@ -1,6 +1,5 @@
 package googlegkeonpremvmwarenodepool
 
-
 type GoogleGkeonpremVmwareNodePoolConfigVsphereConfig struct {
 	// The name of the vCenter datastore. Inherited from the user cluster.
 	//
@@ -13,6 +12,5 @@ type GoogleGkeonpremVmwareNodePoolConfigVsphereConfig struct {
 	// tags block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_gkeonprem_vmware_node_pool#tags GoogleGkeonpremVmwareNodePool#tags}
-	Tags interface{} `field:"optional" json:"tags" yaml:"tags"`
+	Tags any `field:"optional" json:"tags" yaml:"tags"`
 }
-

@@ -106,7 +106,7 @@ func (j *jsiiProxy_GoogleNetworkServicesLbRouteExtensionExtensionChainsMatchCond
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkServicesLbRouteExtensionExtensionChainsMatchConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNetworkServicesLbRouteExtensionExtensionChainsMatchConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleNetworkServicesLbRouteExtensionExtensionChainsMatchConditi
 
 	return nil
 }
-

@@ -15,9 +15,9 @@ type GoogleLookerInstancePscConfigOutputReference interface {
 	AllowedVpcsInput() *[]*string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -34,7 +34,7 @@ type GoogleLookerInstancePscConfigOutputReference interface {
 	SetInternalValue(val *GoogleLookerInstancePscConfig)
 	LookerServiceAttachmentUri() *string
 	ServiceAttachments() GoogleLookerInstancePscConfigServiceAttachmentsList
-	ServiceAttachmentsInput() interface{}
+	ServiceAttachmentsInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -46,7 +46,7 @@ type GoogleLookerInstancePscConfigOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -67,12 +67,12 @@ type GoogleLookerInstancePscConfigOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutServiceAttachments(value interface{})
+	PutServiceAttachments(value any)
 	ResetAllowedVpcs()
 	ResetServiceAttachments()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -105,8 +105,8 @@ func (j *jsiiProxy_GoogleLookerInstancePscConfigOutputReference) AllowedVpcsInpu
 	return returns
 }
 
-func (j *jsiiProxy_GoogleLookerInstancePscConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleLookerInstancePscConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -175,8 +175,8 @@ func (j *jsiiProxy_GoogleLookerInstancePscConfigOutputReference) ServiceAttachme
 	return returns
 }
 
-func (j *jsiiProxy_GoogleLookerInstancePscConfigOutputReference) ServiceAttachmentsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleLookerInstancePscConfigOutputReference) ServiceAttachmentsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"serviceAttachmentsInput",
@@ -205,7 +205,6 @@ func (j *jsiiProxy_GoogleLookerInstancePscConfigOutputReference) TerraformResour
 	return returns
 }
 
-
 func NewGoogleLookerInstancePscConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleLookerInstancePscConfigOutputReference {
 	_init_.Initialize()
 
@@ -216,7 +215,7 @@ func NewGoogleLookerInstancePscConfigOutputReference(terraformResource cdktf.IIn
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleLookerInstance.GoogleLookerInstancePscConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -228,12 +227,12 @@ func NewGoogleLookerInstancePscConfigOutputReference_Override(g GoogleLookerInst
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleLookerInstance.GoogleLookerInstancePscConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleLookerInstancePscConfigOutputReference)SetAllowedVpcs(val *[]*string) {
+func (j *jsiiProxy_GoogleLookerInstancePscConfigOutputReference) SetAllowedVpcs(val *[]*string) {
 	if err := j.validateSetAllowedVpcsParameters(val); err != nil {
 		panic(err)
 	}
@@ -244,7 +243,7 @@ func (j *jsiiProxy_GoogleLookerInstancePscConfigOutputReference)SetAllowedVpcs(v
 	)
 }
 
-func (j *jsiiProxy_GoogleLookerInstancePscConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleLookerInstancePscConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_GoogleLookerInstancePscConfigOutputReference)SetComplexObject
 	)
 }
 
-func (j *jsiiProxy_GoogleLookerInstancePscConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleLookerInstancePscConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_GoogleLookerInstancePscConfigOutputReference)SetComplexObject
 	)
 }
 
-func (j *jsiiProxy_GoogleLookerInstancePscConfigOutputReference)SetInternalValue(val *GoogleLookerInstancePscConfig) {
+func (j *jsiiProxy_GoogleLookerInstancePscConfigOutputReference) SetInternalValue(val *GoogleLookerInstancePscConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_GoogleLookerInstancePscConfigOutputReference)SetInternalValue
 	)
 }
 
-func (j *jsiiProxy_GoogleLookerInstancePscConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleLookerInstancePscConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_GoogleLookerInstancePscConfigOutputReference)SetTerraformAttr
 	)
 }
 
-func (j *jsiiProxy_GoogleLookerInstancePscConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleLookerInstancePscConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,16 +311,16 @@ func (g *jsiiProxy_GoogleLookerInstancePscConfigOutputReference) ComputeFqn() *s
 	return returns
 }
 
-func (g *jsiiProxy_GoogleLookerInstancePscConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleLookerInstancePscConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -337,7 +336,7 @@ func (g *jsiiProxy_GoogleLookerInstancePscConfigOutputReference) GetBooleanAttri
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -353,7 +352,7 @@ func (g *jsiiProxy_GoogleLookerInstancePscConfigOutputReference) GetBooleanMapAt
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -369,7 +368,7 @@ func (g *jsiiProxy_GoogleLookerInstancePscConfigOutputReference) GetListAttribut
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -385,7 +384,7 @@ func (g *jsiiProxy_GoogleLookerInstancePscConfigOutputReference) GetNumberAttrib
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -401,7 +400,7 @@ func (g *jsiiProxy_GoogleLookerInstancePscConfigOutputReference) GetNumberListAt
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -417,7 +416,7 @@ func (g *jsiiProxy_GoogleLookerInstancePscConfigOutputReference) GetNumberMapAtt
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -433,7 +432,7 @@ func (g *jsiiProxy_GoogleLookerInstancePscConfigOutputReference) GetStringAttrib
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -449,7 +448,7 @@ func (g *jsiiProxy_GoogleLookerInstancePscConfigOutputReference) GetStringMapAtt
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -478,21 +477,21 @@ func (g *jsiiProxy_GoogleLookerInstancePscConfigOutputReference) InterpolationFo
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleLookerInstancePscConfigOutputReference) PutServiceAttachments(value interface{}) {
+func (g *jsiiProxy_GoogleLookerInstancePscConfigOutputReference) PutServiceAttachments(value any) {
 	if err := g.validatePutServiceAttachmentsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putServiceAttachments",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -512,16 +511,16 @@ func (g *jsiiProxy_GoogleLookerInstancePscConfigOutputReference) ResetServiceAtt
 	)
 }
 
-func (g *jsiiProxy_GoogleLookerInstancePscConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleLookerInstancePscConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -540,4 +539,3 @@ func (g *jsiiProxy_GoogleLookerInstancePscConfigOutputReference) ToString() *str
 
 	return returns
 }
-

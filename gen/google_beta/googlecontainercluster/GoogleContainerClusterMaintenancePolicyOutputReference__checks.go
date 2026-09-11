@@ -101,7 +101,7 @@ func (g *jsiiProxy_GoogleContainerClusterMaintenancePolicyOutputReference) valid
 	return nil
 }
 
-func (g *jsiiProxy_GoogleContainerClusterMaintenancePolicyOutputReference) validatePutMaintenanceExclusionParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleContainerClusterMaintenancePolicyOutputReference) validatePutMaintenanceExclusionParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -151,7 +151,7 @@ func (g *jsiiProxy_GoogleContainerClusterMaintenancePolicyOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerClusterMaintenancePolicyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContainerClusterMaintenancePolicyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -251,4 +251,3 @@ func validateNewGoogleContainerClusterMaintenancePolicyOutputReferenceParameters
 
 	return nil
 }
-

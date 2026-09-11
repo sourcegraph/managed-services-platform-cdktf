@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleLoggingMetricMetricDescriptorLabelsList) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_GoogleLoggingMetricMetricDescriptorLabelsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleLoggingMetricMetricDescriptorLabelsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleLoggingMetricMetricDescriptorLabelsListParameters(terrafor
 
 	return nil
 }
-

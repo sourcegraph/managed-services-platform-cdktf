@@ -1,6 +1,5 @@
 package googlenetworksecurityauthzpolicy
 
-
 type GoogleNetworkSecurityAuthzPolicyHttpRulesToOperations struct {
 	// header_set block.
 	//
@@ -9,7 +8,7 @@ type GoogleNetworkSecurityAuthzPolicyHttpRulesToOperations struct {
 	// hosts block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_network_security_authz_policy#hosts GoogleNetworkSecurityAuthzPolicy#hosts}
-	Hosts interface{} `field:"optional" json:"hosts" yaml:"hosts"`
+	Hosts any `field:"optional" json:"hosts" yaml:"hosts"`
 	// A list of HTTP methods to match against.
 	//
 	// Each entry must be a valid HTTP method name (GET, PUT, POST, HEAD, PATCH, DELETE, OPTIONS). It only allows exact match and is always case sensitive.
@@ -19,6 +18,5 @@ type GoogleNetworkSecurityAuthzPolicyHttpRulesToOperations struct {
 	// paths block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_network_security_authz_policy#paths GoogleNetworkSecurityAuthzPolicy#paths}
-	Paths interface{} `field:"optional" json:"paths" yaml:"paths"`
+	Paths any `field:"optional" json:"paths" yaml:"paths"`
 }
-

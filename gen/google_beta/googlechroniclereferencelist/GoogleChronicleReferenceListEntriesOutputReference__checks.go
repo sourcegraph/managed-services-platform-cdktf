@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleChronicleReferenceListEntriesOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_GoogleChronicleReferenceListEntriesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleChronicleReferenceListEntriesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_GoogleChronicleReferenceListEntriesOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_GoogleChronicleReferenceListEntriesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleChronicleReferenceListEntriesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewGoogleChronicleReferenceListEntriesOutputReferenceParameters(ter
 
 	return nil
 }
-

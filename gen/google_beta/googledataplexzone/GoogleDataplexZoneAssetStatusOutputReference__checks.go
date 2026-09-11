@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleDataplexZoneAssetStatusOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataplexZoneAssetStatusOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataplexZoneAssetStatusOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleDataplexZoneAssetStatusOutputReferenceParameters(terraform
 
 	return nil
 }
-

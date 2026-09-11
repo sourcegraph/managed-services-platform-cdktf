@@ -17,8 +17,8 @@ type GoogleDeploymentManagerDeploymentLabelsList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type GoogleDeploymentManagerDeploymentLabelsList interface {
 	Get(index *float64) GoogleDeploymentManagerDeploymentLabelsOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_GoogleDeploymentManagerDeploymentLabelsList) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDeploymentManagerDeploymentLabelsList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDeploymentManagerDeploymentLabelsList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_GoogleDeploymentManagerDeploymentLabelsList) WrapsSet() *bool
 	return returns
 }
 
-
 func NewGoogleDeploymentManagerDeploymentLabelsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleDeploymentManagerDeploymentLabelsList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewGoogleDeploymentManagerDeploymentLabelsList(terraformResource cdktf.IInt
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleDeploymentManagerDeployment.GoogleDeploymentManagerDeploymentLabelsList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewGoogleDeploymentManagerDeploymentLabelsList_Override(g GoogleDeploymentM
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleDeploymentManagerDeployment.GoogleDeploymentManagerDeploymentLabelsList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleDeploymentManagerDeploymentLabelsList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_GoogleDeploymentManagerDeploymentLabelsList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_GoogleDeploymentManagerDeploymentLabelsList)SetInternalValue(
 	)
 }
 
-func (j *jsiiProxy_GoogleDeploymentManagerDeploymentLabelsList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleDeploymentManagerDeploymentLabelsList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_GoogleDeploymentManagerDeploymentLabelsList)SetTerraformAttri
 	)
 }
 
-func (j *jsiiProxy_GoogleDeploymentManagerDeploymentLabelsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleDeploymentManagerDeploymentLabelsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_GoogleDeploymentManagerDeploymentLabelsList)SetTerraformResou
 	)
 }
 
-func (j *jsiiProxy_GoogleDeploymentManagerDeploymentLabelsList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_GoogleDeploymentManagerDeploymentLabelsList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (g *jsiiProxy_GoogleDeploymentManagerDeploymentLabelsList) AllWithMapKey(ma
 	_jsii_.Invoke(
 		g,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (g *jsiiProxy_GoogleDeploymentManagerDeploymentLabelsList) Get(index *float
 	_jsii_.Invoke(
 		g,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDeploymentManagerDeploymentLabelsList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleDeploymentManagerDeploymentLabelsList) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (g *jsiiProxy_GoogleDeploymentManagerDeploymentLabelsList) ToString() *stri
 
 	return returns
 }
-

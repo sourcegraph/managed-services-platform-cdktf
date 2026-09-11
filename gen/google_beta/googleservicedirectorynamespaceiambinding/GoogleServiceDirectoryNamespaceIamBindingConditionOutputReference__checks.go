@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleServiceDirectoryNamespaceIamBindingConditionOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_GoogleServiceDirectoryNamespaceIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleServiceDirectoryNamespaceIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewGoogleServiceDirectoryNamespaceIamBindingConditionOutputReferenc
 
 	return nil
 }
-

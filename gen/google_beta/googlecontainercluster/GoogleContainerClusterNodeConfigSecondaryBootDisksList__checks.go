@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleContainerClusterNodeConfigSecondaryBootDisksList) valid
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerClusterNodeConfigSecondaryBootDisksList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContainerClusterNodeConfigSecondaryBootDisksList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleContainerClusterNodeConfigSecondaryBootDisksListParameters
 
 	return nil
 }
-

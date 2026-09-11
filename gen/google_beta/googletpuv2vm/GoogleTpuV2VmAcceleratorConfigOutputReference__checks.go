@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleTpuV2VmAcceleratorConfigOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_GoogleTpuV2VmAcceleratorConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleTpuV2VmAcceleratorConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGoogleTpuV2VmAcceleratorConfigOutputReferenceParameters(terrafor
 
 	return nil
 }
-

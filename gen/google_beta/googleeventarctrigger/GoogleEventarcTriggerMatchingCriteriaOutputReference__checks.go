@@ -106,7 +106,7 @@ func (j *jsiiProxy_GoogleEventarcTriggerMatchingCriteriaOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_GoogleEventarcTriggerMatchingCriteriaOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleEventarcTriggerMatchingCriteriaOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_GoogleEventarcTriggerMatchingCriteriaOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_GoogleEventarcTriggerMatchingCriteriaOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleEventarcTriggerMatchingCriteriaOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewGoogleEventarcTriggerMatchingCriteriaOutputReferenceParameters(t
 
 	return nil
 }
-

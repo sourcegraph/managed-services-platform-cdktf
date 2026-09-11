@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleComputeRegionAutoscaler) validateAddMoveTargetParameter
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeRegionAutoscaler) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleComputeRegionAutoscaler) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleComputeRegionAutoscaler) validateMoveFromIdParameters(i
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeRegionAutoscaler) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleComputeRegionAutoscaler) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -242,7 +242,7 @@ func validateGoogleComputeRegionAutoscaler_GenerateConfigForImportParameters(sco
 	return nil
 }
 
-func validateGoogleComputeRegionAutoscaler_IsConstructParameters(x interface{}) error {
+func validateGoogleComputeRegionAutoscaler_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -250,7 +250,7 @@ func validateGoogleComputeRegionAutoscaler_IsConstructParameters(x interface{}) 
 	return nil
 }
 
-func validateGoogleComputeRegionAutoscaler_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleComputeRegionAutoscaler_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -258,7 +258,7 @@ func validateGoogleComputeRegionAutoscaler_IsTerraformElementParameters(x interf
 	return nil
 }
 
-func validateGoogleComputeRegionAutoscaler_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleComputeRegionAutoscaler_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -266,7 +266,7 @@ func validateGoogleComputeRegionAutoscaler_IsTerraformResourceParameters(x inter
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRegionAutoscaler) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeRegionAutoscaler) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -299,7 +299,7 @@ func (j *jsiiProxy_GoogleComputeRegionAutoscaler) validateSetConnectionParameter
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRegionAutoscaler) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeRegionAutoscaler) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -396,7 +396,7 @@ func (j *jsiiProxy_GoogleComputeRegionAutoscaler) validateSetProjectParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRegionAutoscaler) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleComputeRegionAutoscaler) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -476,4 +476,3 @@ func validateNewGoogleComputeRegionAutoscalerParameters(scope constructs.Constru
 
 	return nil
 }
-

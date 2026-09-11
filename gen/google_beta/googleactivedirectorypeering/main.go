@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleActiveDirectoryPeering.GoogleActiveDirectoryPeering",
-		reflect.TypeOf((*GoogleActiveDirectoryPeering)(nil)).Elem(),
+		reflect.TypeFor[GoogleActiveDirectoryPeering](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -81,7 +81,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleActiveDirectoryPeering{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -89,15 +89,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleActiveDirectoryPeering.GoogleActiveDirectoryPeeringConfig",
-		reflect.TypeOf((*GoogleActiveDirectoryPeeringConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleActiveDirectoryPeeringConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleActiveDirectoryPeering.GoogleActiveDirectoryPeeringTimeouts",
-		reflect.TypeOf((*GoogleActiveDirectoryPeeringTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleActiveDirectoryPeeringTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleActiveDirectoryPeering.GoogleActiveDirectoryPeeringTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleActiveDirectoryPeeringTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleActiveDirectoryPeeringTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -130,7 +130,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleActiveDirectoryPeeringTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

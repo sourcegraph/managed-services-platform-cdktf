@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleDataprocBatchSparkSqlBatchOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataprocBatchSparkSqlBatchOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataprocBatchSparkSqlBatchOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewGoogleDataprocBatchSparkSqlBatchOutputReferenceParameters(terraf
 
 	return nil
 }
-

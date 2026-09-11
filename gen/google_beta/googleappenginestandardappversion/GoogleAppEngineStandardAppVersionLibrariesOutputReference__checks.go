@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleAppEngineStandardAppVersionLibrariesOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAppEngineStandardAppVersionLibrariesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleAppEngineStandardAppVersionLibrariesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_GoogleAppEngineStandardAppVersionLibrariesOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAppEngineStandardAppVersionLibrariesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleAppEngineStandardAppVersionLibrariesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGoogleAppEngineStandardAppVersionLibrariesOutputReferenceParamet
 
 	return nil
 }
-

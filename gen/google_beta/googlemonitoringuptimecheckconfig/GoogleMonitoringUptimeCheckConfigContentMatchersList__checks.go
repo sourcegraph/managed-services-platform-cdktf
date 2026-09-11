@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleMonitoringUptimeCheckConfigContentMatchersList) validat
 	return nil
 }
 
-func (j *jsiiProxy_GoogleMonitoringUptimeCheckConfigContentMatchersList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleMonitoringUptimeCheckConfigContentMatchersList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleMonitoringUptimeCheckConfigContentMatchersListParameters(t
 
 	return nil
 }
-

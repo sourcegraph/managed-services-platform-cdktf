@@ -1,11 +1,10 @@
 package googlecomputeinstance
 
-
 type GoogleComputeInstanceBootDisk struct {
 	// Whether the disk will be auto-deleted when the instance is deleted.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_instance#auto_delete GoogleComputeInstance#auto_delete}
-	AutoDelete interface{} `field:"optional" json:"autoDelete" yaml:"autoDelete"`
+	AutoDelete any `field:"optional" json:"autoDelete" yaml:"autoDelete"`
 	// Name with which attached disk will be accessible under /dev/disk/by-id/.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_instance#device_name GoogleComputeInstance#device_name}
@@ -33,7 +32,7 @@ type GoogleComputeInstanceBootDisk struct {
 	// If you try to force attach a zonal disk to an instance, you will receive an error. Setting this parameter cause VM recreation.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_instance#force_attach GoogleComputeInstance#force_attach}
-	ForceAttach interface{} `field:"optional" json:"forceAttach" yaml:"forceAttach"`
+	ForceAttach any `field:"optional" json:"forceAttach" yaml:"forceAttach"`
 	// A list of features to enable on the guest operating system. Applicable only for bootable images.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_instance#guest_os_features GoogleComputeInstance#guest_os_features}
@@ -63,4 +62,3 @@ type GoogleComputeInstanceBootDisk struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_instance#source GoogleComputeInstance#source}
 	Source *string `field:"optional" json:"source" yaml:"source"`
 }
-

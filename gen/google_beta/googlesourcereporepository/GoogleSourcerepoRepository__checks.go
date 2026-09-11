@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleSourcerepoRepository) validateAddMoveTargetParameters(m
 	return nil
 }
 
-func (g *jsiiProxy_GoogleSourcerepoRepository) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleSourcerepoRepository) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleSourcerepoRepository) validateMoveFromIdParameters(id *
 	return nil
 }
 
-func (g *jsiiProxy_GoogleSourcerepoRepository) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleSourcerepoRepository) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (g *jsiiProxy_GoogleSourcerepoRepository) validateOverrideLogicalIdParamete
 	return nil
 }
 
-func (g *jsiiProxy_GoogleSourcerepoRepository) validatePutPubsubConfigsParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleSourcerepoRepository) validatePutPubsubConfigsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -262,7 +262,7 @@ func validateGoogleSourcerepoRepository_GenerateConfigForImportParameters(scope 
 	return nil
 }
 
-func validateGoogleSourcerepoRepository_IsConstructParameters(x interface{}) error {
+func validateGoogleSourcerepoRepository_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -270,7 +270,7 @@ func validateGoogleSourcerepoRepository_IsConstructParameters(x interface{}) err
 	return nil
 }
 
-func validateGoogleSourcerepoRepository_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleSourcerepoRepository_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -278,7 +278,7 @@ func validateGoogleSourcerepoRepository_IsTerraformElementParameters(x interface
 	return nil
 }
 
-func validateGoogleSourcerepoRepository_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleSourcerepoRepository_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -286,7 +286,7 @@ func validateGoogleSourcerepoRepository_IsTerraformResourceParameters(x interfac
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSourcerepoRepository) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleSourcerepoRepository) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -319,7 +319,7 @@ func (j *jsiiProxy_GoogleSourcerepoRepository) validateSetConnectionParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSourcerepoRepository) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleSourcerepoRepository) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -376,7 +376,7 @@ func (j *jsiiProxy_GoogleSourcerepoRepository) validateSetCountParameters(val in
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSourcerepoRepository) validateSetCreateIgnoreAlreadyExistsParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleSourcerepoRepository) validateSetCreateIgnoreAlreadyExistsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -428,7 +428,7 @@ func (j *jsiiProxy_GoogleSourcerepoRepository) validateSetProjectParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSourcerepoRepository) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleSourcerepoRepository) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -492,4 +492,3 @@ func validateNewGoogleSourcerepoRepositoryParameters(scope constructs.Construct,
 
 	return nil
 }
-

@@ -10,14 +10,14 @@ import (
 
 type GoogleArtifactRegistryRepositoryMavenConfigOutputReference interface {
 	cdktf.ComplexObject
-	AllowSnapshotOverwrites() interface{}
-	SetAllowSnapshotOverwrites(val interface{})
-	AllowSnapshotOverwritesInput() interface{}
+	AllowSnapshotOverwrites() any
+	SetAllowSnapshotOverwrites(val any)
+	AllowSnapshotOverwritesInput() any
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -46,7 +46,7 @@ type GoogleArtifactRegistryRepositoryMavenConfigOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -71,7 +71,7 @@ type GoogleArtifactRegistryRepositoryMavenConfigOutputReference interface {
 	ResetVersionPolicy()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,8 +84,8 @@ type jsiiProxy_GoogleArtifactRegistryRepositoryMavenConfigOutputReference struct
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GoogleArtifactRegistryRepositoryMavenConfigOutputReference) AllowSnapshotOverwrites() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleArtifactRegistryRepositoryMavenConfigOutputReference) AllowSnapshotOverwrites() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowSnapshotOverwrites",
@@ -94,8 +94,8 @@ func (j *jsiiProxy_GoogleArtifactRegistryRepositoryMavenConfigOutputReference) A
 	return returns
 }
 
-func (j *jsiiProxy_GoogleArtifactRegistryRepositoryMavenConfigOutputReference) AllowSnapshotOverwritesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleArtifactRegistryRepositoryMavenConfigOutputReference) AllowSnapshotOverwritesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowSnapshotOverwritesInput",
@@ -104,8 +104,8 @@ func (j *jsiiProxy_GoogleArtifactRegistryRepositoryMavenConfigOutputReference) A
 	return returns
 }
 
-func (j *jsiiProxy_GoogleArtifactRegistryRepositoryMavenConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleArtifactRegistryRepositoryMavenConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -194,7 +194,6 @@ func (j *jsiiProxy_GoogleArtifactRegistryRepositoryMavenConfigOutputReference) V
 	return returns
 }
 
-
 func NewGoogleArtifactRegistryRepositoryMavenConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleArtifactRegistryRepositoryMavenConfigOutputReference {
 	_init_.Initialize()
 
@@ -205,7 +204,7 @@ func NewGoogleArtifactRegistryRepositoryMavenConfigOutputReference(terraformReso
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleArtifactRegistryRepository.GoogleArtifactRegistryRepositoryMavenConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -217,12 +216,12 @@ func NewGoogleArtifactRegistryRepositoryMavenConfigOutputReference_Override(g Go
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleArtifactRegistryRepository.GoogleArtifactRegistryRepositoryMavenConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleArtifactRegistryRepositoryMavenConfigOutputReference)SetAllowSnapshotOverwrites(val interface{}) {
+func (j *jsiiProxy_GoogleArtifactRegistryRepositoryMavenConfigOutputReference) SetAllowSnapshotOverwrites(val any) {
 	if err := j.validateSetAllowSnapshotOverwritesParameters(val); err != nil {
 		panic(err)
 	}
@@ -233,7 +232,7 @@ func (j *jsiiProxy_GoogleArtifactRegistryRepositoryMavenConfigOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_GoogleArtifactRegistryRepositoryMavenConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleArtifactRegistryRepositoryMavenConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -244,7 +243,7 @@ func (j *jsiiProxy_GoogleArtifactRegistryRepositoryMavenConfigOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_GoogleArtifactRegistryRepositoryMavenConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleArtifactRegistryRepositoryMavenConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_GoogleArtifactRegistryRepositoryMavenConfigOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_GoogleArtifactRegistryRepositoryMavenConfigOutputReference)SetInternalValue(val *GoogleArtifactRegistryRepositoryMavenConfig) {
+func (j *jsiiProxy_GoogleArtifactRegistryRepositoryMavenConfigOutputReference) SetInternalValue(val *GoogleArtifactRegistryRepositoryMavenConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_GoogleArtifactRegistryRepositoryMavenConfigOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_GoogleArtifactRegistryRepositoryMavenConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleArtifactRegistryRepositoryMavenConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_GoogleArtifactRegistryRepositoryMavenConfigOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_GoogleArtifactRegistryRepositoryMavenConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleArtifactRegistryRepositoryMavenConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_GoogleArtifactRegistryRepositoryMavenConfigOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_GoogleArtifactRegistryRepositoryMavenConfigOutputReference)SetVersionPolicy(val *string) {
+func (j *jsiiProxy_GoogleArtifactRegistryRepositoryMavenConfigOutputReference) SetVersionPolicy(val *string) {
 	if err := j.validateSetVersionPolicyParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,16 +311,16 @@ func (g *jsiiProxy_GoogleArtifactRegistryRepositoryMavenConfigOutputReference) C
 	return returns
 }
 
-func (g *jsiiProxy_GoogleArtifactRegistryRepositoryMavenConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleArtifactRegistryRepositoryMavenConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -337,7 +336,7 @@ func (g *jsiiProxy_GoogleArtifactRegistryRepositoryMavenConfigOutputReference) G
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -353,7 +352,7 @@ func (g *jsiiProxy_GoogleArtifactRegistryRepositoryMavenConfigOutputReference) G
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -369,7 +368,7 @@ func (g *jsiiProxy_GoogleArtifactRegistryRepositoryMavenConfigOutputReference) G
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -385,7 +384,7 @@ func (g *jsiiProxy_GoogleArtifactRegistryRepositoryMavenConfigOutputReference) G
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -401,7 +400,7 @@ func (g *jsiiProxy_GoogleArtifactRegistryRepositoryMavenConfigOutputReference) G
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -417,7 +416,7 @@ func (g *jsiiProxy_GoogleArtifactRegistryRepositoryMavenConfigOutputReference) G
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -433,7 +432,7 @@ func (g *jsiiProxy_GoogleArtifactRegistryRepositoryMavenConfigOutputReference) G
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -449,7 +448,7 @@ func (g *jsiiProxy_GoogleArtifactRegistryRepositoryMavenConfigOutputReference) G
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -478,7 +477,7 @@ func (g *jsiiProxy_GoogleArtifactRegistryRepositoryMavenConfigOutputReference) I
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -501,16 +500,16 @@ func (g *jsiiProxy_GoogleArtifactRegistryRepositoryMavenConfigOutputReference) R
 	)
 }
 
-func (g *jsiiProxy_GoogleArtifactRegistryRepositoryMavenConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleArtifactRegistryRepositoryMavenConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -529,4 +528,3 @@ func (g *jsiiProxy_GoogleArtifactRegistryRepositoryMavenConfigOutputReference) T
 
 	return returns
 }
-

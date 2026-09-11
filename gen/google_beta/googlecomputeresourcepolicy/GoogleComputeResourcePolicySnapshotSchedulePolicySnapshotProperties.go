@@ -1,6 +1,5 @@
 package googlecomputeresourcepolicy
 
-
 type GoogleComputeResourcePolicySnapshotSchedulePolicySnapshotProperties struct {
 	// Creates the new snapshot in the snapshot chain labeled with the specified name.
 	//
@@ -12,7 +11,7 @@ type GoogleComputeResourcePolicySnapshotSchedulePolicySnapshotProperties struct 
 	// Whether to perform a 'guest aware' snapshot.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_resource_policy#guest_flush GoogleComputeResourcePolicy#guest_flush}
-	GuestFlush interface{} `field:"optional" json:"guestFlush" yaml:"guestFlush"`
+	GuestFlush any `field:"optional" json:"guestFlush" yaml:"guestFlush"`
 	// A set of key-value pairs.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_resource_policy#labels GoogleComputeResourcePolicy#labels}
@@ -22,4 +21,3 @@ type GoogleComputeResourcePolicySnapshotSchedulePolicySnapshotProperties struct 
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_resource_policy#storage_locations GoogleComputeResourcePolicy#storage_locations}
 	StorageLocations *[]*string `field:"optional" json:"storageLocations" yaml:"storageLocations"`
 }
-

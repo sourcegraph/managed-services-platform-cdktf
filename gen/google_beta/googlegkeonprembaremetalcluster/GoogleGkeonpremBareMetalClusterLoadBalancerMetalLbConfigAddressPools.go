@@ -1,6 +1,5 @@
 package googlegkeonprembaremetalcluster
 
-
 type GoogleGkeonpremBareMetalClusterLoadBalancerMetalLbConfigAddressPools struct {
 	// The addresses that are part of this pool.
 	//
@@ -15,10 +14,9 @@ type GoogleGkeonpremBareMetalClusterLoadBalancerMetalLbConfigAddressPools struct
 	// If true, avoid using IPs ending in .0 or .255. This avoids buggy consumer devices mistakenly dropping IPv4 traffic for those special IP addresses.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_gkeonprem_bare_metal_cluster#avoid_buggy_ips GoogleGkeonpremBareMetalCluster#avoid_buggy_ips}
-	AvoidBuggyIps interface{} `field:"optional" json:"avoidBuggyIps" yaml:"avoidBuggyIps"`
+	AvoidBuggyIps any `field:"optional" json:"avoidBuggyIps" yaml:"avoidBuggyIps"`
 	// If true, prevent IP addresses from being automatically assigned.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_gkeonprem_bare_metal_cluster#manual_assign GoogleGkeonpremBareMetalCluster#manual_assign}
-	ManualAssign interface{} `field:"optional" json:"manualAssign" yaml:"manualAssign"`
+	ManualAssign any `field:"optional" json:"manualAssign" yaml:"manualAssign"`
 }
-

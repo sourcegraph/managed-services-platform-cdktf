@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleLookerInstance.GoogleLookerInstance",
-		reflect.TypeOf((*GoogleLookerInstance)(nil)).Elem(),
+		reflect.TypeFor[GoogleLookerInstance](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -130,7 +130,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "userMetadata", GoGetter: "UserMetadata"},
 			_jsii_.MemberProperty{JsiiProperty: "userMetadataInput", GoGetter: "UserMetadataInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleLookerInstance{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -138,11 +138,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleLookerInstance.GoogleLookerInstanceAdminSettings",
-		reflect.TypeOf((*GoogleLookerInstanceAdminSettings)(nil)).Elem(),
+		reflect.TypeFor[GoogleLookerInstanceAdminSettings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleLookerInstance.GoogleLookerInstanceAdminSettingsOutputReference",
-		reflect.TypeOf((*GoogleLookerInstanceAdminSettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleLookerInstanceAdminSettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowedEmailDomains", GoGetter: "AllowedEmailDomains"},
 			_jsii_.MemberProperty{JsiiProperty: "allowedEmailDomainsInput", GoGetter: "AllowedEmailDomainsInput"},
@@ -169,7 +169,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleLookerInstanceAdminSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -177,15 +177,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleLookerInstance.GoogleLookerInstanceConfig",
-		reflect.TypeOf((*GoogleLookerInstanceConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleLookerInstanceConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleLookerInstance.GoogleLookerInstanceCustomDomain",
-		reflect.TypeOf((*GoogleLookerInstanceCustomDomain)(nil)).Elem(),
+		reflect.TypeFor[GoogleLookerInstanceCustomDomain](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleLookerInstance.GoogleLookerInstanceCustomDomainOutputReference",
-		reflect.TypeOf((*GoogleLookerInstanceCustomDomainOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleLookerInstanceCustomDomainOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -213,7 +213,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleLookerInstanceCustomDomainOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -221,15 +221,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleLookerInstance.GoogleLookerInstanceDenyMaintenancePeriod",
-		reflect.TypeOf((*GoogleLookerInstanceDenyMaintenancePeriod)(nil)).Elem(),
+		reflect.TypeFor[GoogleLookerInstanceDenyMaintenancePeriod](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleLookerInstance.GoogleLookerInstanceDenyMaintenancePeriodEndDate",
-		reflect.TypeOf((*GoogleLookerInstanceDenyMaintenancePeriodEndDate)(nil)).Elem(),
+		reflect.TypeFor[GoogleLookerInstanceDenyMaintenancePeriodEndDate](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleLookerInstance.GoogleLookerInstanceDenyMaintenancePeriodEndDateOutputReference",
-		reflect.TypeOf((*GoogleLookerInstanceDenyMaintenancePeriodEndDateOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleLookerInstanceDenyMaintenancePeriodEndDateOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -262,7 +262,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "year", GoGetter: "Year"},
 			_jsii_.MemberProperty{JsiiProperty: "yearInput", GoGetter: "YearInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleLookerInstanceDenyMaintenancePeriodEndDateOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -270,7 +270,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleLookerInstance.GoogleLookerInstanceDenyMaintenancePeriodOutputReference",
-		reflect.TypeOf((*GoogleLookerInstanceDenyMaintenancePeriodOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleLookerInstanceDenyMaintenancePeriodOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -303,7 +303,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "timeInput", GoGetter: "TimeInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleLookerInstanceDenyMaintenancePeriodOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -311,11 +311,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleLookerInstance.GoogleLookerInstanceDenyMaintenancePeriodStartDate",
-		reflect.TypeOf((*GoogleLookerInstanceDenyMaintenancePeriodStartDate)(nil)).Elem(),
+		reflect.TypeFor[GoogleLookerInstanceDenyMaintenancePeriodStartDate](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleLookerInstance.GoogleLookerInstanceDenyMaintenancePeriodStartDateOutputReference",
-		reflect.TypeOf((*GoogleLookerInstanceDenyMaintenancePeriodStartDateOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleLookerInstanceDenyMaintenancePeriodStartDateOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -348,7 +348,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "year", GoGetter: "Year"},
 			_jsii_.MemberProperty{JsiiProperty: "yearInput", GoGetter: "YearInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleLookerInstanceDenyMaintenancePeriodStartDateOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -356,11 +356,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleLookerInstance.GoogleLookerInstanceDenyMaintenancePeriodTime",
-		reflect.TypeOf((*GoogleLookerInstanceDenyMaintenancePeriodTime)(nil)).Elem(),
+		reflect.TypeFor[GoogleLookerInstanceDenyMaintenancePeriodTime](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleLookerInstance.GoogleLookerInstanceDenyMaintenancePeriodTimeOutputReference",
-		reflect.TypeOf((*GoogleLookerInstanceDenyMaintenancePeriodTimeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleLookerInstanceDenyMaintenancePeriodTimeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -396,7 +396,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleLookerInstanceDenyMaintenancePeriodTimeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -404,11 +404,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleLookerInstance.GoogleLookerInstanceEncryptionConfig",
-		reflect.TypeOf((*GoogleLookerInstanceEncryptionConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleLookerInstanceEncryptionConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleLookerInstance.GoogleLookerInstanceEncryptionConfigOutputReference",
-		reflect.TypeOf((*GoogleLookerInstanceEncryptionConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleLookerInstanceEncryptionConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -437,7 +437,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleLookerInstanceEncryptionConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -445,11 +445,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleLookerInstance.GoogleLookerInstanceMaintenanceWindow",
-		reflect.TypeOf((*GoogleLookerInstanceMaintenanceWindow)(nil)).Elem(),
+		reflect.TypeFor[GoogleLookerInstanceMaintenanceWindow](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleLookerInstance.GoogleLookerInstanceMaintenanceWindowOutputReference",
-		reflect.TypeOf((*GoogleLookerInstanceMaintenanceWindowOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleLookerInstanceMaintenanceWindowOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -478,7 +478,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleLookerInstanceMaintenanceWindowOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -486,11 +486,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleLookerInstance.GoogleLookerInstanceMaintenanceWindowStartTime",
-		reflect.TypeOf((*GoogleLookerInstanceMaintenanceWindowStartTime)(nil)).Elem(),
+		reflect.TypeFor[GoogleLookerInstanceMaintenanceWindowStartTime](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleLookerInstance.GoogleLookerInstanceMaintenanceWindowStartTimeOutputReference",
-		reflect.TypeOf((*GoogleLookerInstanceMaintenanceWindowStartTimeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleLookerInstanceMaintenanceWindowStartTimeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -526,7 +526,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleLookerInstanceMaintenanceWindowStartTimeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -534,11 +534,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleLookerInstance.GoogleLookerInstanceOauthConfig",
-		reflect.TypeOf((*GoogleLookerInstanceOauthConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleLookerInstanceOauthConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleLookerInstance.GoogleLookerInstanceOauthConfigOutputReference",
-		reflect.TypeOf((*GoogleLookerInstanceOauthConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleLookerInstanceOauthConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "clientId", GoGetter: "ClientId"},
 			_jsii_.MemberProperty{JsiiProperty: "clientIdInput", GoGetter: "ClientIdInput"},
@@ -566,7 +566,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleLookerInstanceOauthConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -574,11 +574,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleLookerInstance.GoogleLookerInstancePscConfig",
-		reflect.TypeOf((*GoogleLookerInstancePscConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleLookerInstancePscConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleLookerInstance.GoogleLookerInstancePscConfigOutputReference",
-		reflect.TypeOf((*GoogleLookerInstancePscConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleLookerInstancePscConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowedVpcs", GoGetter: "AllowedVpcs"},
 			_jsii_.MemberProperty{JsiiProperty: "allowedVpcsInput", GoGetter: "AllowedVpcsInput"},
@@ -610,7 +610,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleLookerInstancePscConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -618,11 +618,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleLookerInstance.GoogleLookerInstancePscConfigServiceAttachments",
-		reflect.TypeOf((*GoogleLookerInstancePscConfigServiceAttachments)(nil)).Elem(),
+		reflect.TypeFor[GoogleLookerInstancePscConfigServiceAttachments](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleLookerInstance.GoogleLookerInstancePscConfigServiceAttachmentsList",
-		reflect.TypeOf((*GoogleLookerInstancePscConfigServiceAttachmentsList)(nil)).Elem(),
+		reflect.TypeFor[GoogleLookerInstancePscConfigServiceAttachmentsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -636,7 +636,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleLookerInstancePscConfigServiceAttachmentsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -644,7 +644,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleLookerInstance.GoogleLookerInstancePscConfigServiceAttachmentsOutputReference",
-		reflect.TypeOf((*GoogleLookerInstancePscConfigServiceAttachmentsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleLookerInstancePscConfigServiceAttachmentsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -675,7 +675,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleLookerInstancePscConfigServiceAttachmentsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -683,11 +683,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleLookerInstance.GoogleLookerInstanceTimeouts",
-		reflect.TypeOf((*GoogleLookerInstanceTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleLookerInstanceTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleLookerInstance.GoogleLookerInstanceTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleLookerInstanceTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleLookerInstanceTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -720,7 +720,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleLookerInstanceTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -728,11 +728,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleLookerInstance.GoogleLookerInstanceUserMetadata",
-		reflect.TypeOf((*GoogleLookerInstanceUserMetadata)(nil)).Elem(),
+		reflect.TypeFor[GoogleLookerInstanceUserMetadata](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleLookerInstance.GoogleLookerInstanceUserMetadataOutputReference",
-		reflect.TypeOf((*GoogleLookerInstanceUserMetadataOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleLookerInstanceUserMetadataOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "additionalDeveloperUserCount", GoGetter: "AdditionalDeveloperUserCount"},
 			_jsii_.MemberProperty{JsiiProperty: "additionalDeveloperUserCountInput", GoGetter: "AdditionalDeveloperUserCountInput"},
@@ -765,7 +765,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleLookerInstanceUserMetadataOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

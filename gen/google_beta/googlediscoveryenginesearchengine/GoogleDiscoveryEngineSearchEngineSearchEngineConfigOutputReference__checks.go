@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleDiscoveryEngineSearchEngineSearchEngineConfigOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDiscoveryEngineSearchEngineSearchEngineConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDiscoveryEngineSearchEngineSearchEngineConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGoogleDiscoveryEngineSearchEngineSearchEngineConfigOutputReferen
 
 	return nil
 }
-

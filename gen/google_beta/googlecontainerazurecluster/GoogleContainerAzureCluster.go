@@ -28,17 +28,17 @@ type GoogleContainerAzureCluster interface {
 	SetClient(val *string)
 	ClientInput() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	ControlPlane() GoogleContainerAzureClusterControlPlaneOutputReference
 	ControlPlaneInput() *GoogleContainerAzureClusterControlPlane
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -87,11 +87,11 @@ type GoogleContainerAzureCluster interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Reconciling() cdktf.IResolvable
 	ResourceGroupId() *string
 	SetResourceGroupId(val *string)
@@ -100,11 +100,11 @@ type GoogleContainerAzureCluster interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() GoogleContainerAzureClusterTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	Uid() *string
 	UpdateTime() *string
 	WorkloadIdentityConfig() GoogleContainerAzureClusterWorkloadIdentityConfigList
@@ -112,9 +112,9 @@ type GoogleContainerAzureCluster interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -132,7 +132,7 @@ type GoogleContainerAzureCluster interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -144,7 +144,7 @@ type GoogleContainerAzureCluster interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -169,17 +169,17 @@ type GoogleContainerAzureCluster interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleContainerAzureCluster
@@ -297,8 +297,8 @@ func (j *jsiiProxy_GoogleContainerAzureCluster) ClientInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleContainerAzureCluster) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleContainerAzureCluster) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -307,8 +307,8 @@ func (j *jsiiProxy_GoogleContainerAzureCluster) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleContainerAzureCluster) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleContainerAzureCluster) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -337,8 +337,8 @@ func (j *jsiiProxy_GoogleContainerAzureCluster) ControlPlaneInput() *GoogleConta
 	return returns
 }
 
-func (j *jsiiProxy_GoogleContainerAzureCluster) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleContainerAzureCluster) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -617,8 +617,8 @@ func (j *jsiiProxy_GoogleContainerAzureCluster) Provider() cdktf.TerraformProvid
 	return returns
 }
 
-func (j *jsiiProxy_GoogleContainerAzureCluster) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleContainerAzureCluster) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -627,8 +627,8 @@ func (j *jsiiProxy_GoogleContainerAzureCluster) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleContainerAzureCluster) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleContainerAzureCluster) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -687,8 +687,8 @@ func (j *jsiiProxy_GoogleContainerAzureCluster) TerraformGeneratorMetadata() *cd
 	return returns
 }
 
-func (j *jsiiProxy_GoogleContainerAzureCluster) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleContainerAzureCluster) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -717,8 +717,8 @@ func (j *jsiiProxy_GoogleContainerAzureCluster) Timeouts() GoogleContainerAzureC
 	return returns
 }
 
-func (j *jsiiProxy_GoogleContainerAzureCluster) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleContainerAzureCluster) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -757,7 +757,6 @@ func (j *jsiiProxy_GoogleContainerAzureCluster) WorkloadIdentityConfig() GoogleC
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_container_azure_cluster google_container_azure_cluster} Resource.
 func NewGoogleContainerAzureCluster(scope constructs.Construct, id *string, config *GoogleContainerAzureClusterConfig) GoogleContainerAzureCluster {
 	_init_.Initialize()
@@ -769,7 +768,7 @@ func NewGoogleContainerAzureCluster(scope constructs.Construct, id *string, conf
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleContainerAzureCluster.GoogleContainerAzureCluster",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -782,12 +781,12 @@ func NewGoogleContainerAzureCluster_Override(g GoogleContainerAzureCluster, scop
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleContainerAzureCluster.GoogleContainerAzureCluster",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerAzureCluster)SetAnnotations(val *map[string]*string) {
+func (j *jsiiProxy_GoogleContainerAzureCluster) SetAnnotations(val *map[string]*string) {
 	if err := j.validateSetAnnotationsParameters(val); err != nil {
 		panic(err)
 	}
@@ -798,7 +797,7 @@ func (j *jsiiProxy_GoogleContainerAzureCluster)SetAnnotations(val *map[string]*s
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerAzureCluster)SetAzureRegion(val *string) {
+func (j *jsiiProxy_GoogleContainerAzureCluster) SetAzureRegion(val *string) {
 	if err := j.validateSetAzureRegionParameters(val); err != nil {
 		panic(err)
 	}
@@ -809,7 +808,7 @@ func (j *jsiiProxy_GoogleContainerAzureCluster)SetAzureRegion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerAzureCluster)SetClient(val *string) {
+func (j *jsiiProxy_GoogleContainerAzureCluster) SetClient(val *string) {
 	if err := j.validateSetClientParameters(val); err != nil {
 		panic(err)
 	}
@@ -820,7 +819,7 @@ func (j *jsiiProxy_GoogleContainerAzureCluster)SetClient(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerAzureCluster)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleContainerAzureCluster) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -831,7 +830,7 @@ func (j *jsiiProxy_GoogleContainerAzureCluster)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerAzureCluster)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleContainerAzureCluster) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -842,7 +841,7 @@ func (j *jsiiProxy_GoogleContainerAzureCluster)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerAzureCluster)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleContainerAzureCluster) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -850,7 +849,7 @@ func (j *jsiiProxy_GoogleContainerAzureCluster)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerAzureCluster)SetDescription(val *string) {
+func (j *jsiiProxy_GoogleContainerAzureCluster) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -861,7 +860,7 @@ func (j *jsiiProxy_GoogleContainerAzureCluster)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerAzureCluster)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleContainerAzureCluster) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -869,7 +868,7 @@ func (j *jsiiProxy_GoogleContainerAzureCluster)SetForEach(val cdktf.ITerraformIt
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerAzureCluster)SetId(val *string) {
+func (j *jsiiProxy_GoogleContainerAzureCluster) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -880,7 +879,7 @@ func (j *jsiiProxy_GoogleContainerAzureCluster)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerAzureCluster)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleContainerAzureCluster) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -891,7 +890,7 @@ func (j *jsiiProxy_GoogleContainerAzureCluster)SetLifecycle(val *cdktf.Terraform
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerAzureCluster)SetLocation(val *string) {
+func (j *jsiiProxy_GoogleContainerAzureCluster) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -902,7 +901,7 @@ func (j *jsiiProxy_GoogleContainerAzureCluster)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerAzureCluster)SetName(val *string) {
+func (j *jsiiProxy_GoogleContainerAzureCluster) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -913,7 +912,7 @@ func (j *jsiiProxy_GoogleContainerAzureCluster)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerAzureCluster)SetProject(val *string) {
+func (j *jsiiProxy_GoogleContainerAzureCluster) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -924,7 +923,7 @@ func (j *jsiiProxy_GoogleContainerAzureCluster)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerAzureCluster)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleContainerAzureCluster) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -932,7 +931,7 @@ func (j *jsiiProxy_GoogleContainerAzureCluster)SetProvider(val cdktf.TerraformPr
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerAzureCluster)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleContainerAzureCluster) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -943,7 +942,7 @@ func (j *jsiiProxy_GoogleContainerAzureCluster)SetProvisioners(val *[]interface{
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerAzureCluster)SetResourceGroupId(val *string) {
+func (j *jsiiProxy_GoogleContainerAzureCluster) SetResourceGroupId(val *string) {
 	if err := j.validateSetResourceGroupIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -966,7 +965,7 @@ func GoogleContainerAzureCluster_GenerateConfigForImport(scope constructs.Constr
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleContainerAzureCluster.GoogleContainerAzureCluster",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -990,7 +989,7 @@ func GoogleContainerAzureCluster_GenerateConfigForImport(scope constructs.Constr
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleContainerAzureCluster_IsConstruct(x interface{}) *bool {
+func GoogleContainerAzureCluster_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleContainerAzureCluster_IsConstructParameters(x); err != nil {
@@ -1001,7 +1000,7 @@ func GoogleContainerAzureCluster_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleContainerAzureCluster.GoogleContainerAzureCluster",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1009,7 +1008,7 @@ func GoogleContainerAzureCluster_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleContainerAzureCluster_IsTerraformElement(x interface{}) *bool {
+func GoogleContainerAzureCluster_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleContainerAzureCluster_IsTerraformElementParameters(x); err != nil {
@@ -1020,7 +1019,7 @@ func GoogleContainerAzureCluster_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleContainerAzureCluster.GoogleContainerAzureCluster",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1028,7 +1027,7 @@ func GoogleContainerAzureCluster_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleContainerAzureCluster_IsTerraformResource(x interface{}) *bool {
+func GoogleContainerAzureCluster_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleContainerAzureCluster_IsTerraformResourceParameters(x); err != nil {
@@ -1039,7 +1038,7 @@ func GoogleContainerAzureCluster_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleContainerAzureCluster.GoogleContainerAzureCluster",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1064,31 +1063,31 @@ func (g *jsiiProxy_GoogleContainerAzureCluster) AddMoveTarget(moveTarget *string
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleContainerAzureCluster) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleContainerAzureCluster) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleContainerAzureCluster) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleContainerAzureCluster) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1104,7 +1103,7 @@ func (g *jsiiProxy_GoogleContainerAzureCluster) GetBooleanAttribute(terraformAtt
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1120,7 +1119,7 @@ func (g *jsiiProxy_GoogleContainerAzureCluster) GetBooleanMapAttribute(terraform
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1136,7 +1135,7 @@ func (g *jsiiProxy_GoogleContainerAzureCluster) GetListAttribute(terraformAttrib
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1152,7 +1151,7 @@ func (g *jsiiProxy_GoogleContainerAzureCluster) GetNumberAttribute(terraformAttr
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1168,7 +1167,7 @@ func (g *jsiiProxy_GoogleContainerAzureCluster) GetNumberListAttribute(terraform
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1184,7 +1183,7 @@ func (g *jsiiProxy_GoogleContainerAzureCluster) GetNumberMapAttribute(terraformA
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1200,7 +1199,7 @@ func (g *jsiiProxy_GoogleContainerAzureCluster) GetStringAttribute(terraformAttr
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1216,15 +1215,15 @@ func (g *jsiiProxy_GoogleContainerAzureCluster) GetStringMapAttribute(terraformA
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleContainerAzureCluster) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleContainerAzureCluster) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1243,7 +1242,7 @@ func (g *jsiiProxy_GoogleContainerAzureCluster) ImportFrom(id *string, provider 
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1256,7 +1255,7 @@ func (g *jsiiProxy_GoogleContainerAzureCluster) InterpolationForAttribute(terraf
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1270,18 +1269,18 @@ func (g *jsiiProxy_GoogleContainerAzureCluster) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleContainerAzureCluster) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleContainerAzureCluster) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1292,7 +1291,7 @@ func (g *jsiiProxy_GoogleContainerAzureCluster) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1303,7 +1302,7 @@ func (g *jsiiProxy_GoogleContainerAzureCluster) OverrideLogicalId(newLogicalId *
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1314,7 +1313,7 @@ func (g *jsiiProxy_GoogleContainerAzureCluster) PutAuthorization(value *GoogleCo
 	_jsii_.InvokeVoid(
 		g,
 		"putAuthorization",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1325,7 +1324,7 @@ func (g *jsiiProxy_GoogleContainerAzureCluster) PutAzureServicesAuthentication(v
 	_jsii_.InvokeVoid(
 		g,
 		"putAzureServicesAuthentication",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1336,7 +1335,7 @@ func (g *jsiiProxy_GoogleContainerAzureCluster) PutControlPlane(value *GoogleCon
 	_jsii_.InvokeVoid(
 		g,
 		"putControlPlane",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1347,7 +1346,7 @@ func (g *jsiiProxy_GoogleContainerAzureCluster) PutFleet(value *GoogleContainerA
 	_jsii_.InvokeVoid(
 		g,
 		"putFleet",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1358,7 +1357,7 @@ func (g *jsiiProxy_GoogleContainerAzureCluster) PutLoggingConfig(value *GoogleCo
 	_jsii_.InvokeVoid(
 		g,
 		"putLoggingConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1369,7 +1368,7 @@ func (g *jsiiProxy_GoogleContainerAzureCluster) PutNetworking(value *GoogleConta
 	_jsii_.InvokeVoid(
 		g,
 		"putNetworking",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1380,7 +1379,7 @@ func (g *jsiiProxy_GoogleContainerAzureCluster) PutTimeouts(value *GoogleContain
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1456,8 +1455,8 @@ func (g *jsiiProxy_GoogleContainerAzureCluster) ResetTimeouts() {
 	)
 }
 
-func (g *jsiiProxy_GoogleContainerAzureCluster) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleContainerAzureCluster) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1469,8 +1468,8 @@ func (g *jsiiProxy_GoogleContainerAzureCluster) SynthesizeAttributes() *map[stri
 	return returns
 }
 
-func (g *jsiiProxy_GoogleContainerAzureCluster) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleContainerAzureCluster) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1482,8 +1481,8 @@ func (g *jsiiProxy_GoogleContainerAzureCluster) SynthesizeHclAttributes() *map[s
 	return returns
 }
 
-func (g *jsiiProxy_GoogleContainerAzureCluster) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleContainerAzureCluster) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1495,8 +1494,8 @@ func (g *jsiiProxy_GoogleContainerAzureCluster) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleContainerAzureCluster) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleContainerAzureCluster) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1521,8 +1520,8 @@ func (g *jsiiProxy_GoogleContainerAzureCluster) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleContainerAzureCluster) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleContainerAzureCluster) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1533,4 +1532,3 @@ func (g *jsiiProxy_GoogleContainerAzureCluster) ToTerraform() interface{} {
 
 	return returns
 }
-

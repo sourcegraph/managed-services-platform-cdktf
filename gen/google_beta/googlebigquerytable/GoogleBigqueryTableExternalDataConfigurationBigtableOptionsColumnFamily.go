@@ -1,11 +1,10 @@
 package googlebigquerytable
 
-
 type GoogleBigqueryTableExternalDataConfigurationBigtableOptionsColumnFamily struct {
 	// column block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_bigquery_table#column GoogleBigqueryTable#column}
-	Column interface{} `field:"optional" json:"column" yaml:"column"`
+	Column any `field:"optional" json:"column" yaml:"column"`
 	// The encoding of the values when the type is not STRING.
 	//
 	// Acceptable encoding values are: TEXT - indicates values are alphanumeric text strings. BINARY - indicates values are encoded using HBase Bytes.toBytes family of functions. This can be overridden for a specific column by listing that column in 'columns' and specifying an encoding for it.
@@ -21,7 +20,7 @@ type GoogleBigqueryTableExternalDataConfigurationBigtableOptionsColumnFamily str
 	// This can be overridden for a specific column by listing that column in 'columns' and specifying a different setting for that column.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_bigquery_table#only_read_latest GoogleBigqueryTable#only_read_latest}
-	OnlyReadLatest interface{} `field:"optional" json:"onlyReadLatest" yaml:"onlyReadLatest"`
+	OnlyReadLatest any `field:"optional" json:"onlyReadLatest" yaml:"onlyReadLatest"`
 	// The type to convert the value in cells of this column family.
 	//
 	// The values are expected to be encoded using HBase Bytes.toBytes function when using the BINARY encoding value. Following BigQuery types are allowed (case-sensitive): "BYTES", "STRING", "INTEGER", "FLOAT", "BOOLEAN", "JSON". Default type is BYTES. This can be overridden for a specific column by listing that column in 'columns' and specifying a type for it.
@@ -29,4 +28,3 @@ type GoogleBigqueryTableExternalDataConfigurationBigtableOptionsColumnFamily str
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_bigquery_table#type GoogleBigqueryTable#type}
 	Type *string `field:"optional" json:"type" yaml:"type"`
 }
-

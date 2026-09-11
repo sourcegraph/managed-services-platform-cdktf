@@ -15,15 +15,15 @@ type GoogleMlEngineModel interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	DefaultVersion() GoogleMlEngineModelDefaultVersionOutputReference
 	DefaultVersionInput() *GoogleMlEngineModelDefaultVersion
 	// Experimental.
@@ -57,12 +57,12 @@ type GoogleMlEngineModel interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
-	OnlinePredictionConsoleLogging() interface{}
-	SetOnlinePredictionConsoleLogging(val interface{})
-	OnlinePredictionConsoleLoggingInput() interface{}
-	OnlinePredictionLogging() interface{}
-	SetOnlinePredictionLogging(val interface{})
-	OnlinePredictionLoggingInput() interface{}
+	OnlinePredictionConsoleLogging() any
+	SetOnlinePredictionConsoleLogging(val any)
+	OnlinePredictionConsoleLoggingInput() any
+	OnlinePredictionLogging() any
+	SetOnlinePredictionLogging(val any)
+	OnlinePredictionLoggingInput() any
 	Project() *string
 	SetProject(val *string)
 	ProjectInput() *string
@@ -71,11 +71,11 @@ type GoogleMlEngineModel interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Regions() *[]*string
 	SetRegions(val *[]*string)
 	RegionsInput() *[]*string
@@ -83,18 +83,18 @@ type GoogleMlEngineModel interface {
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() GoogleMlEngineModelTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -112,7 +112,7 @@ type GoogleMlEngineModel interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -124,7 +124,7 @@ type GoogleMlEngineModel interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -145,17 +145,17 @@ type GoogleMlEngineModel interface {
 	ResetProject()
 	ResetRegions()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleMlEngineModel
@@ -173,8 +173,8 @@ func (j *jsiiProxy_GoogleMlEngineModel) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleMlEngineModel) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleMlEngineModel) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -183,8 +183,8 @@ func (j *jsiiProxy_GoogleMlEngineModel) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleMlEngineModel) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleMlEngineModel) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -193,8 +193,8 @@ func (j *jsiiProxy_GoogleMlEngineModel) ConstructNodeMetadata() *map[string]inte
 	return returns
 }
 
-func (j *jsiiProxy_GoogleMlEngineModel) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleMlEngineModel) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -373,8 +373,8 @@ func (j *jsiiProxy_GoogleMlEngineModel) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleMlEngineModel) OnlinePredictionConsoleLogging() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleMlEngineModel) OnlinePredictionConsoleLogging() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"onlinePredictionConsoleLogging",
@@ -383,8 +383,8 @@ func (j *jsiiProxy_GoogleMlEngineModel) OnlinePredictionConsoleLogging() interfa
 	return returns
 }
 
-func (j *jsiiProxy_GoogleMlEngineModel) OnlinePredictionConsoleLoggingInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleMlEngineModel) OnlinePredictionConsoleLoggingInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"onlinePredictionConsoleLoggingInput",
@@ -393,8 +393,8 @@ func (j *jsiiProxy_GoogleMlEngineModel) OnlinePredictionConsoleLoggingInput() in
 	return returns
 }
 
-func (j *jsiiProxy_GoogleMlEngineModel) OnlinePredictionLogging() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleMlEngineModel) OnlinePredictionLogging() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"onlinePredictionLogging",
@@ -403,8 +403,8 @@ func (j *jsiiProxy_GoogleMlEngineModel) OnlinePredictionLogging() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleMlEngineModel) OnlinePredictionLoggingInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleMlEngineModel) OnlinePredictionLoggingInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"onlinePredictionLoggingInput",
@@ -443,8 +443,8 @@ func (j *jsiiProxy_GoogleMlEngineModel) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleMlEngineModel) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleMlEngineModel) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -453,8 +453,8 @@ func (j *jsiiProxy_GoogleMlEngineModel) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleMlEngineModel) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleMlEngineModel) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -503,8 +503,8 @@ func (j *jsiiProxy_GoogleMlEngineModel) TerraformLabels() cdktf.StringMap {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleMlEngineModel) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleMlEngineModel) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -533,8 +533,8 @@ func (j *jsiiProxy_GoogleMlEngineModel) Timeouts() GoogleMlEngineModelTimeoutsOu
 	return returns
 }
 
-func (j *jsiiProxy_GoogleMlEngineModel) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleMlEngineModel) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -542,7 +542,6 @@ func (j *jsiiProxy_GoogleMlEngineModel) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_ml_engine_model google_ml_engine_model} Resource.
 func NewGoogleMlEngineModel(scope constructs.Construct, id *string, config *GoogleMlEngineModelConfig) GoogleMlEngineModel {
@@ -555,7 +554,7 @@ func NewGoogleMlEngineModel(scope constructs.Construct, id *string, config *Goog
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleMlEngineModel.GoogleMlEngineModel",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -568,12 +567,12 @@ func NewGoogleMlEngineModel_Override(g GoogleMlEngineModel, scope constructs.Con
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleMlEngineModel.GoogleMlEngineModel",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleMlEngineModel)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleMlEngineModel) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -584,7 +583,7 @@ func (j *jsiiProxy_GoogleMlEngineModel)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleMlEngineModel)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleMlEngineModel) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -595,7 +594,7 @@ func (j *jsiiProxy_GoogleMlEngineModel)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleMlEngineModel)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleMlEngineModel) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -603,7 +602,7 @@ func (j *jsiiProxy_GoogleMlEngineModel)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleMlEngineModel)SetDescription(val *string) {
+func (j *jsiiProxy_GoogleMlEngineModel) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -614,7 +613,7 @@ func (j *jsiiProxy_GoogleMlEngineModel)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleMlEngineModel)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleMlEngineModel) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -622,7 +621,7 @@ func (j *jsiiProxy_GoogleMlEngineModel)SetForEach(val cdktf.ITerraformIterator) 
 	)
 }
 
-func (j *jsiiProxy_GoogleMlEngineModel)SetId(val *string) {
+func (j *jsiiProxy_GoogleMlEngineModel) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -633,7 +632,7 @@ func (j *jsiiProxy_GoogleMlEngineModel)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleMlEngineModel)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_GoogleMlEngineModel) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -644,7 +643,7 @@ func (j *jsiiProxy_GoogleMlEngineModel)SetLabels(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleMlEngineModel)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleMlEngineModel) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -655,7 +654,7 @@ func (j *jsiiProxy_GoogleMlEngineModel)SetLifecycle(val *cdktf.TerraformResource
 	)
 }
 
-func (j *jsiiProxy_GoogleMlEngineModel)SetName(val *string) {
+func (j *jsiiProxy_GoogleMlEngineModel) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -666,7 +665,7 @@ func (j *jsiiProxy_GoogleMlEngineModel)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleMlEngineModel)SetOnlinePredictionConsoleLogging(val interface{}) {
+func (j *jsiiProxy_GoogleMlEngineModel) SetOnlinePredictionConsoleLogging(val any) {
 	if err := j.validateSetOnlinePredictionConsoleLoggingParameters(val); err != nil {
 		panic(err)
 	}
@@ -677,7 +676,7 @@ func (j *jsiiProxy_GoogleMlEngineModel)SetOnlinePredictionConsoleLogging(val int
 	)
 }
 
-func (j *jsiiProxy_GoogleMlEngineModel)SetOnlinePredictionLogging(val interface{}) {
+func (j *jsiiProxy_GoogleMlEngineModel) SetOnlinePredictionLogging(val any) {
 	if err := j.validateSetOnlinePredictionLoggingParameters(val); err != nil {
 		panic(err)
 	}
@@ -688,7 +687,7 @@ func (j *jsiiProxy_GoogleMlEngineModel)SetOnlinePredictionLogging(val interface{
 	)
 }
 
-func (j *jsiiProxy_GoogleMlEngineModel)SetProject(val *string) {
+func (j *jsiiProxy_GoogleMlEngineModel) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -699,7 +698,7 @@ func (j *jsiiProxy_GoogleMlEngineModel)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleMlEngineModel)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleMlEngineModel) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -707,7 +706,7 @@ func (j *jsiiProxy_GoogleMlEngineModel)SetProvider(val cdktf.TerraformProvider) 
 	)
 }
 
-func (j *jsiiProxy_GoogleMlEngineModel)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleMlEngineModel) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -718,7 +717,7 @@ func (j *jsiiProxy_GoogleMlEngineModel)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleMlEngineModel)SetRegions(val *[]*string) {
+func (j *jsiiProxy_GoogleMlEngineModel) SetRegions(val *[]*string) {
 	if err := j.validateSetRegionsParameters(val); err != nil {
 		panic(err)
 	}
@@ -741,7 +740,7 @@ func GoogleMlEngineModel_GenerateConfigForImport(scope constructs.Construct, imp
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleMlEngineModel.GoogleMlEngineModel",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -765,7 +764,7 @@ func GoogleMlEngineModel_GenerateConfigForImport(scope constructs.Construct, imp
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleMlEngineModel_IsConstruct(x interface{}) *bool {
+func GoogleMlEngineModel_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleMlEngineModel_IsConstructParameters(x); err != nil {
@@ -776,7 +775,7 @@ func GoogleMlEngineModel_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleMlEngineModel.GoogleMlEngineModel",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -784,7 +783,7 @@ func GoogleMlEngineModel_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleMlEngineModel_IsTerraformElement(x interface{}) *bool {
+func GoogleMlEngineModel_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleMlEngineModel_IsTerraformElementParameters(x); err != nil {
@@ -795,7 +794,7 @@ func GoogleMlEngineModel_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleMlEngineModel.GoogleMlEngineModel",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -803,7 +802,7 @@ func GoogleMlEngineModel_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleMlEngineModel_IsTerraformResource(x interface{}) *bool {
+func GoogleMlEngineModel_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleMlEngineModel_IsTerraformResourceParameters(x); err != nil {
@@ -814,7 +813,7 @@ func GoogleMlEngineModel_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleMlEngineModel.GoogleMlEngineModel",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -839,31 +838,31 @@ func (g *jsiiProxy_GoogleMlEngineModel) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleMlEngineModel) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleMlEngineModel) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleMlEngineModel) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleMlEngineModel) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -879,7 +878,7 @@ func (g *jsiiProxy_GoogleMlEngineModel) GetBooleanAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -895,7 +894,7 @@ func (g *jsiiProxy_GoogleMlEngineModel) GetBooleanMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -911,7 +910,7 @@ func (g *jsiiProxy_GoogleMlEngineModel) GetListAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -927,7 +926,7 @@ func (g *jsiiProxy_GoogleMlEngineModel) GetNumberAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -943,7 +942,7 @@ func (g *jsiiProxy_GoogleMlEngineModel) GetNumberListAttribute(terraformAttribut
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -959,7 +958,7 @@ func (g *jsiiProxy_GoogleMlEngineModel) GetNumberMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -975,7 +974,7 @@ func (g *jsiiProxy_GoogleMlEngineModel) GetStringAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -991,15 +990,15 @@ func (g *jsiiProxy_GoogleMlEngineModel) GetStringMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleMlEngineModel) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleMlEngineModel) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1018,7 +1017,7 @@ func (g *jsiiProxy_GoogleMlEngineModel) ImportFrom(id *string, provider cdktf.Te
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1031,7 +1030,7 @@ func (g *jsiiProxy_GoogleMlEngineModel) InterpolationForAttribute(terraformAttri
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1045,18 +1044,18 @@ func (g *jsiiProxy_GoogleMlEngineModel) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleMlEngineModel) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleMlEngineModel) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1067,7 +1066,7 @@ func (g *jsiiProxy_GoogleMlEngineModel) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1078,7 +1077,7 @@ func (g *jsiiProxy_GoogleMlEngineModel) OverrideLogicalId(newLogicalId *string) 
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1089,7 +1088,7 @@ func (g *jsiiProxy_GoogleMlEngineModel) PutDefaultVersion(value *GoogleMlEngineM
 	_jsii_.InvokeVoid(
 		g,
 		"putDefaultVersion",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1100,7 +1099,7 @@ func (g *jsiiProxy_GoogleMlEngineModel) PutTimeouts(value *GoogleMlEngineModelTi
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1184,8 +1183,8 @@ func (g *jsiiProxy_GoogleMlEngineModel) ResetTimeouts() {
 	)
 }
 
-func (g *jsiiProxy_GoogleMlEngineModel) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleMlEngineModel) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1197,8 +1196,8 @@ func (g *jsiiProxy_GoogleMlEngineModel) SynthesizeAttributes() *map[string]inter
 	return returns
 }
 
-func (g *jsiiProxy_GoogleMlEngineModel) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleMlEngineModel) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1210,8 +1209,8 @@ func (g *jsiiProxy_GoogleMlEngineModel) SynthesizeHclAttributes() *map[string]in
 	return returns
 }
 
-func (g *jsiiProxy_GoogleMlEngineModel) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleMlEngineModel) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1223,8 +1222,8 @@ func (g *jsiiProxy_GoogleMlEngineModel) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleMlEngineModel) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleMlEngineModel) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1249,8 +1248,8 @@ func (g *jsiiProxy_GoogleMlEngineModel) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleMlEngineModel) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleMlEngineModel) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1261,4 +1260,3 @@ func (g *jsiiProxy_GoogleMlEngineModel) ToTerraform() interface{} {
 
 	return returns
 }
-

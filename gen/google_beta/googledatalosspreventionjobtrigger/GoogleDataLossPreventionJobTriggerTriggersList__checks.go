@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleDataLossPreventionJobTriggerTriggersList) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataLossPreventionJobTriggerTriggersList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataLossPreventionJobTriggerTriggersList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleDataLossPreventionJobTriggerTriggersListParameters(terrafo
 
 	return nil
 }
-

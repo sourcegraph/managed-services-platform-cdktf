@@ -120,7 +120,7 @@ func (g *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigPreStepOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigPreStepOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigPreStepOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -220,4 +220,3 @@ func validateNewGoogleOsConfigPatchDeploymentPatchConfigPreStepOutputReferencePa
 
 	return nil
 }
-

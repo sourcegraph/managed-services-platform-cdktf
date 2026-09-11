@@ -106,7 +106,7 @@ func (j *jsiiProxy_GoogleComposerEnvironmentStorageConfigOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComposerEnvironmentStorageConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComposerEnvironmentStorageConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleComposerEnvironmentStorageConfigOutputReferenceParameters(
 
 	return nil
 }
-

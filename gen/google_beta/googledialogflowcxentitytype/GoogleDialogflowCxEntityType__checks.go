@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleDialogflowCxEntityType) validateAddMoveTargetParameters
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDialogflowCxEntityType) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleDialogflowCxEntityType) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleDialogflowCxEntityType) validateMoveFromIdParameters(id
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDialogflowCxEntityType) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleDialogflowCxEntityType) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (g *jsiiProxy_GoogleDialogflowCxEntityType) validateOverrideLogicalIdParame
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDialogflowCxEntityType) validatePutEntitiesParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleDialogflowCxEntityType) validatePutEntitiesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -235,7 +235,7 @@ func (g *jsiiProxy_GoogleDialogflowCxEntityType) validatePutEntitiesParameters(v
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDialogflowCxEntityType) validatePutExcludedPhrasesParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleDialogflowCxEntityType) validatePutExcludedPhrasesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -293,7 +293,7 @@ func validateGoogleDialogflowCxEntityType_GenerateConfigForImportParameters(scop
 	return nil
 }
 
-func validateGoogleDialogflowCxEntityType_IsConstructParameters(x interface{}) error {
+func validateGoogleDialogflowCxEntityType_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -301,7 +301,7 @@ func validateGoogleDialogflowCxEntityType_IsConstructParameters(x interface{}) e
 	return nil
 }
 
-func validateGoogleDialogflowCxEntityType_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleDialogflowCxEntityType_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -309,7 +309,7 @@ func validateGoogleDialogflowCxEntityType_IsTerraformElementParameters(x interfa
 	return nil
 }
 
-func validateGoogleDialogflowCxEntityType_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleDialogflowCxEntityType_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -325,7 +325,7 @@ func (j *jsiiProxy_GoogleDialogflowCxEntityType) validateSetAutoExpansionModePar
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxEntityType) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDialogflowCxEntityType) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -358,7 +358,7 @@ func (j *jsiiProxy_GoogleDialogflowCxEntityType) validateSetConnectionParameters
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxEntityType) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDialogflowCxEntityType) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -423,7 +423,7 @@ func (j *jsiiProxy_GoogleDialogflowCxEntityType) validateSetDisplayNameParameter
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxEntityType) validateSetEnableFuzzyExtractionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDialogflowCxEntityType) validateSetEnableFuzzyExtractionParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -483,7 +483,7 @@ func (j *jsiiProxy_GoogleDialogflowCxEntityType) validateSetParentParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxEntityType) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleDialogflowCxEntityType) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -529,7 +529,7 @@ func (j *jsiiProxy_GoogleDialogflowCxEntityType) validateSetProvisionersParamete
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxEntityType) validateSetRedactParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDialogflowCxEntityType) validateSetRedactParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -567,4 +567,3 @@ func validateNewGoogleDialogflowCxEntityTypeParameters(scope constructs.Construc
 
 	return nil
 }
-

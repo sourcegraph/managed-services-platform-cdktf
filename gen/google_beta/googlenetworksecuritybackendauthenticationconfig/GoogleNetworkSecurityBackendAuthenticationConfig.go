@@ -18,15 +18,15 @@ type GoogleNetworkSecurityBackendAuthenticationConfig interface {
 	SetClientCertificate(val *string)
 	ClientCertificateInput() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -70,20 +70,20 @@ type GoogleNetworkSecurityBackendAuthenticationConfig interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() GoogleNetworkSecurityBackendAuthenticationConfigTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	TrustConfig() *string
 	SetTrustConfig(val *string)
 	TrustConfigInput() *string
@@ -95,9 +95,9 @@ type GoogleNetworkSecurityBackendAuthenticationConfig interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -115,7 +115,7 @@ type GoogleNetworkSecurityBackendAuthenticationConfig interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -127,7 +127,7 @@ type GoogleNetworkSecurityBackendAuthenticationConfig interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -147,17 +147,17 @@ type GoogleNetworkSecurityBackendAuthenticationConfig interface {
 	ResetTimeouts()
 	ResetTrustConfig()
 	ResetWellKnownRoots()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleNetworkSecurityBackendAuthenticationConfig
@@ -195,8 +195,8 @@ func (j *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig) ClientCerti
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -205,8 +205,8 @@ func (j *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig) Connection(
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -215,8 +215,8 @@ func (j *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig) ConstructNo
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -435,8 +435,8 @@ func (j *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig) Provider() 
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -445,8 +445,8 @@ func (j *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig) Provisioner
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -475,8 +475,8 @@ func (j *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig) TerraformLa
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -505,8 +505,8 @@ func (j *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig) Timeouts() 
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -565,7 +565,6 @@ func (j *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig) WellKnownRo
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_network_security_backend_authentication_config google_network_security_backend_authentication_config} Resource.
 func NewGoogleNetworkSecurityBackendAuthenticationConfig(scope constructs.Construct, id *string, config *GoogleNetworkSecurityBackendAuthenticationConfigConfig) GoogleNetworkSecurityBackendAuthenticationConfig {
 	_init_.Initialize()
@@ -577,7 +576,7 @@ func NewGoogleNetworkSecurityBackendAuthenticationConfig(scope constructs.Constr
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleNetworkSecurityBackendAuthenticationConfig.GoogleNetworkSecurityBackendAuthenticationConfig",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -590,12 +589,12 @@ func NewGoogleNetworkSecurityBackendAuthenticationConfig_Override(g GoogleNetwor
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleNetworkSecurityBackendAuthenticationConfig.GoogleNetworkSecurityBackendAuthenticationConfig",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig)SetClientCertificate(val *string) {
+func (j *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig) SetClientCertificate(val *string) {
 	if err := j.validateSetClientCertificateParameters(val); err != nil {
 		panic(err)
 	}
@@ -606,7 +605,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig)SetClientCer
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -617,7 +616,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig)SetConnectio
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -628,7 +627,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig)SetCount(val
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -636,7 +635,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig)SetDependsOn
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig)SetDescription(val *string) {
+func (j *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -647,7 +646,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig)SetDescripti
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -655,7 +654,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig)SetForEach(v
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig)SetId(val *string) {
+func (j *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -666,7 +665,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig)SetId(val *s
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -677,7 +676,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig)SetLabels(va
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -688,7 +687,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig)SetLifecycle
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig)SetLocation(val *string) {
+func (j *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -699,7 +698,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig)SetLocation(
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig)SetName(val *string) {
+func (j *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -710,7 +709,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig)SetName(val 
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig)SetProject(val *string) {
+func (j *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -721,7 +720,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig)SetProject(v
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -729,7 +728,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig)SetProvider(
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -740,7 +739,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig)SetProvision
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig)SetTrustConfig(val *string) {
+func (j *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig) SetTrustConfig(val *string) {
 	if err := j.validateSetTrustConfigParameters(val); err != nil {
 		panic(err)
 	}
@@ -751,7 +750,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig)SetTrustConf
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig)SetWellKnownRoots(val *string) {
+func (j *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig) SetWellKnownRoots(val *string) {
 	if err := j.validateSetWellKnownRootsParameters(val); err != nil {
 		panic(err)
 	}
@@ -774,7 +773,7 @@ func GoogleNetworkSecurityBackendAuthenticationConfig_GenerateConfigForImport(sc
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleNetworkSecurityBackendAuthenticationConfig.GoogleNetworkSecurityBackendAuthenticationConfig",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -798,7 +797,7 @@ func GoogleNetworkSecurityBackendAuthenticationConfig_GenerateConfigForImport(sc
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleNetworkSecurityBackendAuthenticationConfig_IsConstruct(x interface{}) *bool {
+func GoogleNetworkSecurityBackendAuthenticationConfig_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleNetworkSecurityBackendAuthenticationConfig_IsConstructParameters(x); err != nil {
@@ -809,7 +808,7 @@ func GoogleNetworkSecurityBackendAuthenticationConfig_IsConstruct(x interface{})
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleNetworkSecurityBackendAuthenticationConfig.GoogleNetworkSecurityBackendAuthenticationConfig",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -817,7 +816,7 @@ func GoogleNetworkSecurityBackendAuthenticationConfig_IsConstruct(x interface{})
 }
 
 // Experimental.
-func GoogleNetworkSecurityBackendAuthenticationConfig_IsTerraformElement(x interface{}) *bool {
+func GoogleNetworkSecurityBackendAuthenticationConfig_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleNetworkSecurityBackendAuthenticationConfig_IsTerraformElementParameters(x); err != nil {
@@ -828,7 +827,7 @@ func GoogleNetworkSecurityBackendAuthenticationConfig_IsTerraformElement(x inter
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleNetworkSecurityBackendAuthenticationConfig.GoogleNetworkSecurityBackendAuthenticationConfig",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -836,7 +835,7 @@ func GoogleNetworkSecurityBackendAuthenticationConfig_IsTerraformElement(x inter
 }
 
 // Experimental.
-func GoogleNetworkSecurityBackendAuthenticationConfig_IsTerraformResource(x interface{}) *bool {
+func GoogleNetworkSecurityBackendAuthenticationConfig_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleNetworkSecurityBackendAuthenticationConfig_IsTerraformResourceParameters(x); err != nil {
@@ -847,7 +846,7 @@ func GoogleNetworkSecurityBackendAuthenticationConfig_IsTerraformResource(x inte
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleNetworkSecurityBackendAuthenticationConfig.GoogleNetworkSecurityBackendAuthenticationConfig",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -872,31 +871,31 @@ func (g *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig) AddMoveTarg
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -912,7 +911,7 @@ func (g *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig) GetBooleanA
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -928,7 +927,7 @@ func (g *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig) GetBooleanM
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -944,7 +943,7 @@ func (g *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig) GetListAttr
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -960,7 +959,7 @@ func (g *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig) GetNumberAt
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -976,7 +975,7 @@ func (g *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig) GetNumberLi
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -992,7 +991,7 @@ func (g *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig) GetNumberMa
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1008,7 +1007,7 @@ func (g *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig) GetStringAt
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1024,15 +1023,15 @@ func (g *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig) GetStringMa
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1051,7 +1050,7 @@ func (g *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig) ImportFrom(
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1064,7 +1063,7 @@ func (g *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig) Interpolati
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1078,18 +1077,18 @@ func (g *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig) MoveFromId(
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1100,7 +1099,7 @@ func (g *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig) MoveToId(id
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1111,7 +1110,7 @@ func (g *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig) OverrideLog
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1122,7 +1121,7 @@ func (g *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig) PutTimeouts
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1206,8 +1205,8 @@ func (g *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig) ResetWellKn
 	)
 }
 
-func (g *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1219,8 +1218,8 @@ func (g *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig) SynthesizeA
 	return returns
 }
 
-func (g *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1232,8 +1231,8 @@ func (g *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig) SynthesizeH
 	return returns
 }
 
-func (g *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1245,8 +1244,8 @@ func (g *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig) ToHclTerraf
 	return returns
 }
 
-func (g *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1271,8 +1270,8 @@ func (g *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig) ToString() 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1283,4 +1282,3 @@ func (g *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig) ToTerraform
 
 	return returns
 }
-

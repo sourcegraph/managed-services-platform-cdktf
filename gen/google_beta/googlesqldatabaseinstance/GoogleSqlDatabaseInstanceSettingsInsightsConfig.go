@@ -1,11 +1,10 @@
 package googlesqldatabaseinstance
 
-
 type GoogleSqlDatabaseInstanceSettingsInsightsConfig struct {
 	// True if Query Insights feature is enabled.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_sql_database_instance#query_insights_enabled GoogleSqlDatabaseInstance#query_insights_enabled}
-	QueryInsightsEnabled interface{} `field:"optional" json:"queryInsightsEnabled" yaml:"queryInsightsEnabled"`
+	QueryInsightsEnabled any `field:"optional" json:"queryInsightsEnabled" yaml:"queryInsightsEnabled"`
 	// Number of query execution plans captured by Insights per minute for all queries combined.
 	//
 	// Between 0 and 20. Default to 5. For Enterprise Plus instances, from 0 to 200.
@@ -21,10 +20,9 @@ type GoogleSqlDatabaseInstanceSettingsInsightsConfig struct {
 	// True if Query Insights will record application tags from query when enabled.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_sql_database_instance#record_application_tags GoogleSqlDatabaseInstance#record_application_tags}
-	RecordApplicationTags interface{} `field:"optional" json:"recordApplicationTags" yaml:"recordApplicationTags"`
+	RecordApplicationTags any `field:"optional" json:"recordApplicationTags" yaml:"recordApplicationTags"`
 	// True if Query Insights will record client address when enabled.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_sql_database_instance#record_client_address GoogleSqlDatabaseInstance#record_client_address}
-	RecordClientAddress interface{} `field:"optional" json:"recordClientAddress" yaml:"recordClientAddress"`
+	RecordClientAddress any `field:"optional" json:"recordClientAddress" yaml:"recordClientAddress"`
 }
-

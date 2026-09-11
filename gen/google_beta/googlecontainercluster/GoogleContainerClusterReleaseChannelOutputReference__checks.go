@@ -106,7 +106,7 @@ func (j *jsiiProxy_GoogleContainerClusterReleaseChannelOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerClusterReleaseChannelOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContainerClusterReleaseChannelOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleContainerClusterReleaseChannelOutputReferenceParameters(te
 
 	return nil
 }
-

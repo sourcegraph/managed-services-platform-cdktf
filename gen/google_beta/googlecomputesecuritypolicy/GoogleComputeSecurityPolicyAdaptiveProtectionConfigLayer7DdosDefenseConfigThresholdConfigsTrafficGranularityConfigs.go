@@ -1,6 +1,5 @@
 package googlecomputesecuritypolicy
 
-
 type GoogleComputeSecurityPolicyAdaptiveProtectionConfigLayer7DdosDefenseConfigThresholdConfigsTrafficGranularityConfigs struct {
 	// Type of this configuration.
 	//
@@ -11,10 +10,9 @@ type GoogleComputeSecurityPolicyAdaptiveProtectionConfigLayer7DdosDefenseConfigT
 	// It can only be set to true if value is empty.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_security_policy#enable_each_unique_value GoogleComputeSecurityPolicy#enable_each_unique_value}
-	EnableEachUniqueValue interface{} `field:"optional" json:"enableEachUniqueValue" yaml:"enableEachUniqueValue"`
+	EnableEachUniqueValue any `field:"optional" json:"enableEachUniqueValue" yaml:"enableEachUniqueValue"`
 	// Requests that match this value constitute a granular traffic unit.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_security_policy#value GoogleComputeSecurityPolicy#value}
 	Value *string `field:"optional" json:"value" yaml:"value"`
 }
-

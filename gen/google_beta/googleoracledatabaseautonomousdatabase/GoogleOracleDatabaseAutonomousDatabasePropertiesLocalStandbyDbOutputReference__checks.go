@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleOracleDatabaseAutonomousDatabasePropertiesLocalStandbyD
 	return nil
 }
 
-func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabasePropertiesLocalStandbyDbOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabasePropertiesLocalStandbyDbOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleOracleDatabaseAutonomousDatabasePropertiesLocalStandbyDbOu
 
 	return nil
 }
-

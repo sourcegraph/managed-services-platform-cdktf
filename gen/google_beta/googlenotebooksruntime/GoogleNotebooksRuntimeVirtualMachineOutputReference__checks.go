@@ -109,7 +109,7 @@ func (g *jsiiProxy_GoogleNotebooksRuntimeVirtualMachineOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNotebooksRuntimeVirtualMachineOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNotebooksRuntimeVirtualMachineOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -209,4 +209,3 @@ func validateNewGoogleNotebooksRuntimeVirtualMachineOutputReferenceParameters(te
 
 	return nil
 }
-

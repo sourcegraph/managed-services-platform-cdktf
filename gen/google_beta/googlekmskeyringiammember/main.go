@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleKmsKeyRingIamMember.GoogleKmsKeyRingIamMember",
-		reflect.TypeOf((*GoogleKmsKeyRingIamMember)(nil)).Elem(),
+		reflect.TypeFor[GoogleKmsKeyRingIamMember](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -67,7 +67,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleKmsKeyRingIamMember{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -75,11 +75,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleKmsKeyRingIamMember.GoogleKmsKeyRingIamMemberCondition",
-		reflect.TypeOf((*GoogleKmsKeyRingIamMemberCondition)(nil)).Elem(),
+		reflect.TypeFor[GoogleKmsKeyRingIamMemberCondition](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleKmsKeyRingIamMember.GoogleKmsKeyRingIamMemberConditionOutputReference",
-		reflect.TypeOf((*GoogleKmsKeyRingIamMemberConditionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleKmsKeyRingIamMemberConditionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -110,7 +110,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "titleInput", GoGetter: "TitleInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleKmsKeyRingIamMemberConditionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -118,6 +118,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleKmsKeyRingIamMember.GoogleKmsKeyRingIamMemberConfig",
-		reflect.TypeOf((*GoogleKmsKeyRingIamMemberConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleKmsKeyRingIamMemberConfig](),
 	)
 }

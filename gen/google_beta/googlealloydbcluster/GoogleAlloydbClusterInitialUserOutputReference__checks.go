@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleAlloydbClusterInitialUserOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAlloydbClusterInitialUserOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleAlloydbClusterInitialUserOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGoogleAlloydbClusterInitialUserOutputReferenceParameters(terrafo
 
 	return nil
 }
-

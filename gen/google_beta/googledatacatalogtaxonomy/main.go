@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataCatalogTaxonomy.GoogleDataCatalogTaxonomy",
-		reflect.TypeOf((*GoogleDataCatalogTaxonomy)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataCatalogTaxonomy](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "activatedPolicyTypes", GoGetter: "ActivatedPolicyTypes"},
 			_jsii_.MemberProperty{JsiiProperty: "activatedPolicyTypesInput", GoGetter: "ActivatedPolicyTypesInput"},
@@ -75,7 +75,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataCatalogTaxonomy{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -83,15 +83,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataCatalogTaxonomy.GoogleDataCatalogTaxonomyConfig",
-		reflect.TypeOf((*GoogleDataCatalogTaxonomyConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataCatalogTaxonomyConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataCatalogTaxonomy.GoogleDataCatalogTaxonomyTimeouts",
-		reflect.TypeOf((*GoogleDataCatalogTaxonomyTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataCatalogTaxonomyTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataCatalogTaxonomy.GoogleDataCatalogTaxonomyTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleDataCatalogTaxonomyTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataCatalogTaxonomyTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -124,7 +124,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataCatalogTaxonomyTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

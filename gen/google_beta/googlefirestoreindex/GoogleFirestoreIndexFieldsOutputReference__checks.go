@@ -117,7 +117,7 @@ func (j *jsiiProxy_GoogleFirestoreIndexFieldsOutputReference) validateSetArrayCo
 	return nil
 }
 
-func (j *jsiiProxy_GoogleFirestoreIndexFieldsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleFirestoreIndexFieldsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -190,7 +190,7 @@ func (j *jsiiProxy_GoogleFirestoreIndexFieldsOutputReference) validateSetFieldPa
 	return nil
 }
 
-func (j *jsiiProxy_GoogleFirestoreIndexFieldsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleFirestoreIndexFieldsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -257,4 +257,3 @@ func validateNewGoogleFirestoreIndexFieldsOutputReferenceParameters(terraformRes
 
 	return nil
 }
-

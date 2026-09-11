@@ -1,6 +1,5 @@
 package googlegkehubfleet
 
-
 type GoogleGkeHubFleetDefaultClusterConfigBinaryAuthorizationConfig struct {
 	// Mode of operation for binauthz policy evaluation. Possible values: ["DISABLED", "POLICY_BINDINGS"].
 	//
@@ -9,6 +8,5 @@ type GoogleGkeHubFleetDefaultClusterConfigBinaryAuthorizationConfig struct {
 	// policy_bindings block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_gke_hub_fleet#policy_bindings GoogleGkeHubFleet#policy_bindings}
-	PolicyBindings interface{} `field:"optional" json:"policyBindings" yaml:"policyBindings"`
+	PolicyBindings any `field:"optional" json:"policyBindings" yaml:"policyBindings"`
 }
-

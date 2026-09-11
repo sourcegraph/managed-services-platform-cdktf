@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeMachineImageIamBinding.GoogleComputeMachineImageIamBinding",
-		reflect.TypeOf((*GoogleComputeMachineImageIamBinding)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeMachineImageIamBinding](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -70,7 +70,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeMachineImageIamBinding{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -78,11 +78,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleComputeMachineImageIamBinding.GoogleComputeMachineImageIamBindingCondition",
-		reflect.TypeOf((*GoogleComputeMachineImageIamBindingCondition)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeMachineImageIamBindingCondition](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleComputeMachineImageIamBinding.GoogleComputeMachineImageIamBindingConditionOutputReference",
-		reflect.TypeOf((*GoogleComputeMachineImageIamBindingConditionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeMachineImageIamBindingConditionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -113,7 +113,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "titleInput", GoGetter: "TitleInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleComputeMachineImageIamBindingConditionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -121,6 +121,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleComputeMachineImageIamBinding.GoogleComputeMachineImageIamBindingConfig",
-		reflect.TypeOf((*GoogleComputeMachineImageIamBindingConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleComputeMachineImageIamBindingConfig](),
 	)
 }

@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesList) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleDataplexDatascanDataQualitySpecRulesListParameters(terrafo
 
 	return nil
 }
-

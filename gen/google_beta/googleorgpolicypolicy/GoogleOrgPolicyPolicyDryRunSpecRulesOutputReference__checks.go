@@ -128,7 +128,7 @@ func (j *jsiiProxy_GoogleOrgPolicyPolicyDryRunSpecRulesOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_GoogleOrgPolicyPolicyDryRunSpecRulesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleOrgPolicyPolicyDryRunSpecRulesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -209,7 +209,7 @@ func (j *jsiiProxy_GoogleOrgPolicyPolicyDryRunSpecRulesOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_GoogleOrgPolicyPolicyDryRunSpecRulesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleOrgPolicyPolicyDryRunSpecRulesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -276,4 +276,3 @@ func validateNewGoogleOrgPolicyPolicyDryRunSpecRulesOutputReferenceParameters(te
 
 	return nil
 }
-

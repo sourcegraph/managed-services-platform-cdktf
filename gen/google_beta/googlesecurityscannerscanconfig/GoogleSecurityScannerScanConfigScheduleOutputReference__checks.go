@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleSecurityScannerScanConfigScheduleOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSecurityScannerScanConfigScheduleOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleSecurityScannerScanConfigScheduleOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGoogleSecurityScannerScanConfigScheduleOutputReferenceParameters
 
 	return nil
 }
-

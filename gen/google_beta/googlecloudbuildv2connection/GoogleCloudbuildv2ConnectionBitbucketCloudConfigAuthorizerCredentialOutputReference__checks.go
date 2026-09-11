@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleCloudbuildv2ConnectionBitbucketCloudConfigAuthorizerCre
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudbuildv2ConnectionBitbucketCloudConfigAuthorizerCredentialOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleCloudbuildv2ConnectionBitbucketCloudConfigAuthorizerCredentialOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleCloudbuildv2ConnectionBitbucketCloudConfigAuthorizerCreden
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleCloudSchedulerJobAppEngineHttpTargetAppEngineRoutingOut
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudSchedulerJobAppEngineHttpTargetAppEngineRoutingOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleCloudSchedulerJobAppEngineHttpTargetAppEngineRoutingOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewGoogleCloudSchedulerJobAppEngineHttpTargetAppEngineRoutingOutput
 
 	return nil
 }
-

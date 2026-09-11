@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleFirebaseAppHostingTrafficTargetSplitsList) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_GoogleFirebaseAppHostingTrafficTargetSplitsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleFirebaseAppHostingTrafficTargetSplitsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleFirebaseAppHostingTrafficTargetSplitsListParameters(terraf
 
 	return nil
 }
-

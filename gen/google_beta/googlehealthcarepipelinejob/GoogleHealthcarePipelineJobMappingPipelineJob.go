@@ -1,6 +1,5 @@
 package googlehealthcarepipelinejob
 
-
 type GoogleHealthcarePipelineJobMappingPipelineJob struct {
 	// mapping_config block.
 	//
@@ -30,6 +29,5 @@ type GoogleHealthcarePipelineJobMappingPipelineJob struct {
 	// with a reconciliation destination can be created.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_healthcare_pipeline_job#reconciliation_destination GoogleHealthcarePipelineJob#reconciliation_destination}
-	ReconciliationDestination interface{} `field:"optional" json:"reconciliationDestination" yaml:"reconciliationDestination"`
+	ReconciliationDestination any `field:"optional" json:"reconciliationDestination" yaml:"reconciliationDestination"`
 }
-

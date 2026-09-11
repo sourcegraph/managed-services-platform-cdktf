@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleApiGatewayApiConfig.GoogleApiGatewayApiConfigA",
-		reflect.TypeOf((*GoogleApiGatewayApiConfigA)(nil)).Elem(),
+		reflect.TypeFor[GoogleApiGatewayApiConfigA](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -97,7 +97,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleApiGatewayApiConfigA{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -105,19 +105,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleApiGatewayApiConfig.GoogleApiGatewayApiConfigAConfig",
-		reflect.TypeOf((*GoogleApiGatewayApiConfigAConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleApiGatewayApiConfigAConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleApiGatewayApiConfig.GoogleApiGatewayApiConfigGatewayConfig",
-		reflect.TypeOf((*GoogleApiGatewayApiConfigGatewayConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleApiGatewayApiConfigGatewayConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleApiGatewayApiConfig.GoogleApiGatewayApiConfigGatewayConfigBackendConfig",
-		reflect.TypeOf((*GoogleApiGatewayApiConfigGatewayConfigBackendConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleApiGatewayApiConfigGatewayConfigBackendConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleApiGatewayApiConfig.GoogleApiGatewayApiConfigGatewayConfigBackendConfigOutputReference",
-		reflect.TypeOf((*GoogleApiGatewayApiConfigGatewayConfigBackendConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleApiGatewayApiConfigGatewayConfigBackendConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -143,7 +143,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleApiGatewayApiConfigGatewayConfigBackendConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -151,7 +151,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleApiGatewayApiConfig.GoogleApiGatewayApiConfigGatewayConfigOutputReference",
-		reflect.TypeOf((*GoogleApiGatewayApiConfigGatewayConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleApiGatewayApiConfigGatewayConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "backendConfig", GoGetter: "BackendConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "backendConfigInput", GoGetter: "BackendConfigInput"},
@@ -178,7 +178,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleApiGatewayApiConfigGatewayConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -186,15 +186,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleApiGatewayApiConfig.GoogleApiGatewayApiConfigGrpcServices",
-		reflect.TypeOf((*GoogleApiGatewayApiConfigGrpcServices)(nil)).Elem(),
+		reflect.TypeFor[GoogleApiGatewayApiConfigGrpcServices](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleApiGatewayApiConfig.GoogleApiGatewayApiConfigGrpcServicesFileDescriptorSet",
-		reflect.TypeOf((*GoogleApiGatewayApiConfigGrpcServicesFileDescriptorSet)(nil)).Elem(),
+		reflect.TypeFor[GoogleApiGatewayApiConfigGrpcServicesFileDescriptorSet](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleApiGatewayApiConfig.GoogleApiGatewayApiConfigGrpcServicesFileDescriptorSetOutputReference",
-		reflect.TypeOf((*GoogleApiGatewayApiConfigGrpcServicesFileDescriptorSetOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleApiGatewayApiConfigGrpcServicesFileDescriptorSetOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -222,7 +222,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleApiGatewayApiConfigGrpcServicesFileDescriptorSetOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -230,7 +230,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleApiGatewayApiConfig.GoogleApiGatewayApiConfigGrpcServicesList",
-		reflect.TypeOf((*GoogleApiGatewayApiConfigGrpcServicesList)(nil)).Elem(),
+		reflect.TypeFor[GoogleApiGatewayApiConfigGrpcServicesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -244,7 +244,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleApiGatewayApiConfigGrpcServicesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -252,7 +252,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleApiGatewayApiConfig.GoogleApiGatewayApiConfigGrpcServicesOutputReference",
-		reflect.TypeOf((*GoogleApiGatewayApiConfigGrpcServicesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleApiGatewayApiConfigGrpcServicesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -283,7 +283,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleApiGatewayApiConfigGrpcServicesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -291,11 +291,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleApiGatewayApiConfig.GoogleApiGatewayApiConfigGrpcServicesSource",
-		reflect.TypeOf((*GoogleApiGatewayApiConfigGrpcServicesSource)(nil)).Elem(),
+		reflect.TypeFor[GoogleApiGatewayApiConfigGrpcServicesSource](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleApiGatewayApiConfig.GoogleApiGatewayApiConfigGrpcServicesSourceList",
-		reflect.TypeOf((*GoogleApiGatewayApiConfigGrpcServicesSourceList)(nil)).Elem(),
+		reflect.TypeFor[GoogleApiGatewayApiConfigGrpcServicesSourceList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -309,7 +309,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleApiGatewayApiConfigGrpcServicesSourceList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -317,7 +317,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleApiGatewayApiConfig.GoogleApiGatewayApiConfigGrpcServicesSourceOutputReference",
-		reflect.TypeOf((*GoogleApiGatewayApiConfigGrpcServicesSourceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleApiGatewayApiConfigGrpcServicesSourceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -345,7 +345,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleApiGatewayApiConfigGrpcServicesSourceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -353,11 +353,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleApiGatewayApiConfig.GoogleApiGatewayApiConfigManagedServiceConfigs",
-		reflect.TypeOf((*GoogleApiGatewayApiConfigManagedServiceConfigs)(nil)).Elem(),
+		reflect.TypeFor[GoogleApiGatewayApiConfigManagedServiceConfigs](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleApiGatewayApiConfig.GoogleApiGatewayApiConfigManagedServiceConfigsList",
-		reflect.TypeOf((*GoogleApiGatewayApiConfigManagedServiceConfigsList)(nil)).Elem(),
+		reflect.TypeFor[GoogleApiGatewayApiConfigManagedServiceConfigsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -371,7 +371,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleApiGatewayApiConfigManagedServiceConfigsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -379,7 +379,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleApiGatewayApiConfig.GoogleApiGatewayApiConfigManagedServiceConfigsOutputReference",
-		reflect.TypeOf((*GoogleApiGatewayApiConfigManagedServiceConfigsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleApiGatewayApiConfigManagedServiceConfigsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -407,7 +407,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleApiGatewayApiConfigManagedServiceConfigsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -415,15 +415,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleApiGatewayApiConfig.GoogleApiGatewayApiConfigOpenapiDocuments",
-		reflect.TypeOf((*GoogleApiGatewayApiConfigOpenapiDocuments)(nil)).Elem(),
+		reflect.TypeFor[GoogleApiGatewayApiConfigOpenapiDocuments](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleApiGatewayApiConfig.GoogleApiGatewayApiConfigOpenapiDocumentsDocument",
-		reflect.TypeOf((*GoogleApiGatewayApiConfigOpenapiDocumentsDocument)(nil)).Elem(),
+		reflect.TypeFor[GoogleApiGatewayApiConfigOpenapiDocumentsDocument](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleApiGatewayApiConfig.GoogleApiGatewayApiConfigOpenapiDocumentsDocumentOutputReference",
-		reflect.TypeOf((*GoogleApiGatewayApiConfigOpenapiDocumentsDocumentOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleApiGatewayApiConfigOpenapiDocumentsDocumentOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -451,7 +451,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleApiGatewayApiConfigOpenapiDocumentsDocumentOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -459,7 +459,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleApiGatewayApiConfig.GoogleApiGatewayApiConfigOpenapiDocumentsList",
-		reflect.TypeOf((*GoogleApiGatewayApiConfigOpenapiDocumentsList)(nil)).Elem(),
+		reflect.TypeFor[GoogleApiGatewayApiConfigOpenapiDocumentsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -473,7 +473,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleApiGatewayApiConfigOpenapiDocumentsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -481,7 +481,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleApiGatewayApiConfig.GoogleApiGatewayApiConfigOpenapiDocumentsOutputReference",
-		reflect.TypeOf((*GoogleApiGatewayApiConfigOpenapiDocumentsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleApiGatewayApiConfigOpenapiDocumentsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -508,7 +508,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleApiGatewayApiConfigOpenapiDocumentsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -516,11 +516,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleApiGatewayApiConfig.GoogleApiGatewayApiConfigTimeouts",
-		reflect.TypeOf((*GoogleApiGatewayApiConfigTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleApiGatewayApiConfigTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleApiGatewayApiConfig.GoogleApiGatewayApiConfigTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleApiGatewayApiConfigTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleApiGatewayApiConfigTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -553,7 +553,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleApiGatewayApiConfigTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

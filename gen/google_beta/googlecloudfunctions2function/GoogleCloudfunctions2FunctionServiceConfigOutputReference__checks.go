@@ -90,7 +90,7 @@ func (g *jsiiProxy_GoogleCloudfunctions2FunctionServiceConfigOutputReference) va
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCloudfunctions2FunctionServiceConfigOutputReference) validatePutSecretEnvironmentVariablesParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleCloudfunctions2FunctionServiceConfigOutputReference) validatePutSecretEnvironmentVariablesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (g *jsiiProxy_GoogleCloudfunctions2FunctionServiceConfigOutputReference) va
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCloudfunctions2FunctionServiceConfigOutputReference) validatePutSecretVolumesParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleCloudfunctions2FunctionServiceConfigOutputReference) validatePutSecretVolumesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -160,7 +160,7 @@ func (g *jsiiProxy_GoogleCloudfunctions2FunctionServiceConfigOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudfunctions2FunctionServiceConfigOutputReference) validateSetAllTrafficOnLatestRevisionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleCloudfunctions2FunctionServiceConfigOutputReference) validateSetAllTrafficOnLatestRevisionParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (j *jsiiProxy_GoogleCloudfunctions2FunctionServiceConfigOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudfunctions2FunctionServiceConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleCloudfunctions2FunctionServiceConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -384,4 +384,3 @@ func validateNewGoogleCloudfunctions2FunctionServiceConfigOutputReferenceParamet
 
 	return nil
 }
-

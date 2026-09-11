@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleDnsManagedZoneIamBindingConditionOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDnsManagedZoneIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDnsManagedZoneIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewGoogleDnsManagedZoneIamBindingConditionOutputReferenceParameters
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleContactCenterInsightsViewTimeoutsOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContactCenterInsightsViewTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContactCenterInsightsViewTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_GoogleContactCenterInsightsViewTimeoutsOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContactCenterInsightsViewTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContactCenterInsightsViewTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGoogleContactCenterInsightsViewTimeoutsOutputReferenceParameters
 
 	return nil
 }
-

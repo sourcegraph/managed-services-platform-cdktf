@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleSccFolderCustomModuleCustomConfigCustomOutputProperties
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSccFolderCustomModuleCustomConfigCustomOutputPropertiesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleSccFolderCustomModuleCustomConfigCustomOutputPropertiesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleSccFolderCustomModuleCustomConfigCustomOutputPropertiesLis
 
 	return nil
 }
-

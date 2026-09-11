@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleComputeSnapshotSettingsStorageLocationLocationsOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeSnapshotSettingsStorageLocationLocationsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeSnapshotSettingsStorageLocationLocationsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_GoogleComputeSnapshotSettingsStorageLocationLocationsOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeSnapshotSettingsStorageLocationLocationsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeSnapshotSettingsStorageLocationLocationsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGoogleComputeSnapshotSettingsStorageLocationLocationsOutputRefer
 
 	return nil
 }
-

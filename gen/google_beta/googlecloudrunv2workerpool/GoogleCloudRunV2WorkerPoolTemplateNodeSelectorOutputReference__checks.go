@@ -106,7 +106,7 @@ func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateNodeSelectorOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateNodeSelectorOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateNodeSelectorOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleCloudRunV2WorkerPoolTemplateNodeSelectorOutputReferencePar
 
 	return nil
 }
-

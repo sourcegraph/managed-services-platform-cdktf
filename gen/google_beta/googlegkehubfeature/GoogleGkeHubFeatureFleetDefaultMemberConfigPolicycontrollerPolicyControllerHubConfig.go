@@ -1,6 +1,5 @@
 package googlegkehubfeature
 
-
 type GoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubConfig struct {
 	// Configures the mode of the Policy Controller installation Possible values: ["INSTALL_SPEC_UNSPECIFIED", "INSTALL_SPEC_NOT_INSTALLED", "INSTALL_SPEC_ENABLED", "INSTALL_SPEC_SUSPENDED", "INSTALL_SPEC_DETACHED"].
 	//
@@ -19,7 +18,7 @@ type GoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyController
 	// deployment_configs block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_gke_hub_feature#deployment_configs GoogleGkeHubFeature#deployment_configs}
-	DeploymentConfigs interface{} `field:"optional" json:"deploymentConfigs" yaml:"deploymentConfigs"`
+	DeploymentConfigs any `field:"optional" json:"deploymentConfigs" yaml:"deploymentConfigs"`
 	// The set of namespaces that are excluded from Policy Controller checks.
 	//
 	// Namespaces do not need to currently exist on the cluster.
@@ -29,7 +28,7 @@ type GoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyController
 	// Logs all denies and dry run failures.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_gke_hub_feature#log_denies_enabled GoogleGkeHubFeature#log_denies_enabled}
-	LogDeniesEnabled interface{} `field:"optional" json:"logDeniesEnabled" yaml:"logDeniesEnabled"`
+	LogDeniesEnabled any `field:"optional" json:"logDeniesEnabled" yaml:"logDeniesEnabled"`
 	// monitoring block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_gke_hub_feature#monitoring GoogleGkeHubFeature#monitoring}
@@ -37,7 +36,7 @@ type GoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyController
 	// Enables the ability to mutate resources using Policy Controller.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_gke_hub_feature#mutation_enabled GoogleGkeHubFeature#mutation_enabled}
-	MutationEnabled interface{} `field:"optional" json:"mutationEnabled" yaml:"mutationEnabled"`
+	MutationEnabled any `field:"optional" json:"mutationEnabled" yaml:"mutationEnabled"`
 	// policy_content block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_gke_hub_feature#policy_content GoogleGkeHubFeature#policy_content}
@@ -45,6 +44,5 @@ type GoogleGkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyController
 	// Enables the ability to use Constraint Templates that reference to objects other than the object currently being evaluated.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_gke_hub_feature#referential_rules_enabled GoogleGkeHubFeature#referential_rules_enabled}
-	ReferentialRulesEnabled interface{} `field:"optional" json:"referentialRulesEnabled" yaml:"referentialRulesEnabled"`
+	ReferentialRulesEnabled any `field:"optional" json:"referentialRulesEnabled" yaml:"referentialRulesEnabled"`
 }
-

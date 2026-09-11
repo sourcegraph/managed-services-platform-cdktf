@@ -6,9 +6,9 @@ import (
 
 type GoogleContainerAnalysisNoteConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type GoogleContainerAnalysisNoteConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// attestation_authority block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_container_analysis_note#attestation_authority GoogleContainerAnalysisNote#attestation_authority}
@@ -49,7 +49,7 @@ type GoogleContainerAnalysisNoteConfig struct {
 	// related_url block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_container_analysis_note#related_url GoogleContainerAnalysisNote#related_url}
-	RelatedUrl interface{} `field:"optional" json:"relatedUrl" yaml:"relatedUrl"`
+	RelatedUrl any `field:"optional" json:"relatedUrl" yaml:"relatedUrl"`
 	// A one sentence description of the note.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_container_analysis_note#short_description GoogleContainerAnalysisNote#short_description}
@@ -59,4 +59,3 @@ type GoogleContainerAnalysisNoteConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_container_analysis_note#timeouts GoogleContainerAnalysisNote#timeouts}
 	Timeouts *GoogleContainerAnalysisNoteTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

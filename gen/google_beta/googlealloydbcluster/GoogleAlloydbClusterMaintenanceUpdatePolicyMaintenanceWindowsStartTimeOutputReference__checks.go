@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleAlloydbClusterMaintenanceUpdatePolicyMaintenanceWindows
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAlloydbClusterMaintenanceUpdatePolicyMaintenanceWindowsStartTimeOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleAlloydbClusterMaintenanceUpdatePolicyMaintenanceWindowsStartTimeOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -230,4 +230,3 @@ func validateNewGoogleAlloydbClusterMaintenanceUpdatePolicyMaintenanceWindowsSta
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleCloudRunServiceStatusTrafficOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudRunServiceStatusTrafficOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleCloudRunServiceStatusTrafficOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleCloudRunServiceStatusTrafficOutputReferenceParameters(terr
 
 	return nil
 }
-

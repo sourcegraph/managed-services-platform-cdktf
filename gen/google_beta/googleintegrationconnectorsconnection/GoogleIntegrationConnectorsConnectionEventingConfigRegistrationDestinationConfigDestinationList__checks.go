@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleIntegrationConnectorsConnectionEventingConfigRegistrati
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigDestinationList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigDestinationList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleIntegrationConnectorsConnectionEventingConfigRegistrationD
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleComputeBackendServiceNetworkPassThroughLbTrafficPolicyZ
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeBackendServiceNetworkPassThroughLbTrafficPolicyZonalAffinityOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeBackendServiceNetworkPassThroughLbTrafficPolicyZonalAffinityOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGoogleComputeBackendServiceNetworkPassThroughLbTrafficPolicyZona
 
 	return nil
 }
-

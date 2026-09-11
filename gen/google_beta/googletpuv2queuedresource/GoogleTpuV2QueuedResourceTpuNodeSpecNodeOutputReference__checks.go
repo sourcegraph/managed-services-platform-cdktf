@@ -117,7 +117,7 @@ func (j *jsiiProxy_GoogleTpuV2QueuedResourceTpuNodeSpecNodeOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_GoogleTpuV2QueuedResourceTpuNodeSpecNodeOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleTpuV2QueuedResourceTpuNodeSpecNodeOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -233,4 +233,3 @@ func validateNewGoogleTpuV2QueuedResourceTpuNodeSpecNodeOutputReferenceParameter
 
 	return nil
 }
-

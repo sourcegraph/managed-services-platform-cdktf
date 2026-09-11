@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleFolderServiceIdentityTimeoutsOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_GoogleFolderServiceIdentityTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleFolderServiceIdentityTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_GoogleFolderServiceIdentityTimeoutsOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_GoogleFolderServiceIdentityTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleFolderServiceIdentityTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGoogleFolderServiceIdentityTimeoutsOutputReferenceParameters(ter
 
 	return nil
 }
-

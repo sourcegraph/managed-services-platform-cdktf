@@ -106,7 +106,7 @@ func (j *jsiiProxy_GoogleCloudbuildTriggerBuildArtifactsMavenArtifactsOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudbuildTriggerBuildArtifactsMavenArtifactsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleCloudbuildTriggerBuildArtifactsMavenArtifactsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_GoogleCloudbuildTriggerBuildArtifactsMavenArtifactsOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudbuildTriggerBuildArtifactsMavenArtifactsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleCloudbuildTriggerBuildArtifactsMavenArtifactsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -262,4 +262,3 @@ func validateNewGoogleCloudbuildTriggerBuildArtifactsMavenArtifactsOutputReferen
 
 	return nil
 }
-

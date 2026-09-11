@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleDeploymentManagerDeploymentTargetImportsList) validateR
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDeploymentManagerDeploymentTargetImportsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDeploymentManagerDeploymentTargetImportsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleDeploymentManagerDeploymentTargetImportsListParameters(ter
 
 	return nil
 }
-

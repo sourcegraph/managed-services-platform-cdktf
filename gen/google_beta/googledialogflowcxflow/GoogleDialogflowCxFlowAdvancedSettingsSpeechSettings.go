@@ -1,6 +1,5 @@
 package googledialogflowcxflow
 
-
 type GoogleDialogflowCxFlowAdvancedSettingsSpeechSettings struct {
 	// Sensitivity of the speech model that detects the end of speech. Scale from 0 to 100.
 	//
@@ -20,6 +19,5 @@ type GoogleDialogflowCxFlowAdvancedSettingsSpeechSettings struct {
 	// Use timeout based endpointing, interpreting endpointer sensitivity as seconds of timeout value.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dialogflow_cx_flow#use_timeout_based_endpointing GoogleDialogflowCxFlow#use_timeout_based_endpointing}
-	UseTimeoutBasedEndpointing interface{} `field:"optional" json:"useTimeoutBasedEndpointing" yaml:"useTimeoutBasedEndpointing"`
+	UseTimeoutBasedEndpointing any `field:"optional" json:"useTimeoutBasedEndpointing" yaml:"useTimeoutBasedEndpointing"`
 }
-

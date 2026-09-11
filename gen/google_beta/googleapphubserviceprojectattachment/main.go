@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleApphubServiceProjectAttachment.GoogleApphubServiceProjectAttachment",
-		reflect.TypeOf((*GoogleApphubServiceProjectAttachment)(nil)).Elem(),
+		reflect.TypeFor[GoogleApphubServiceProjectAttachment](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -72,7 +72,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "uid", GoGetter: "Uid"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleApphubServiceProjectAttachment{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -80,15 +80,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleApphubServiceProjectAttachment.GoogleApphubServiceProjectAttachmentConfig",
-		reflect.TypeOf((*GoogleApphubServiceProjectAttachmentConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleApphubServiceProjectAttachmentConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleApphubServiceProjectAttachment.GoogleApphubServiceProjectAttachmentTimeouts",
-		reflect.TypeOf((*GoogleApphubServiceProjectAttachmentTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleApphubServiceProjectAttachmentTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleApphubServiceProjectAttachment.GoogleApphubServiceProjectAttachmentTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleApphubServiceProjectAttachmentTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleApphubServiceProjectAttachmentTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -118,7 +118,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleApphubServiceProjectAttachmentTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

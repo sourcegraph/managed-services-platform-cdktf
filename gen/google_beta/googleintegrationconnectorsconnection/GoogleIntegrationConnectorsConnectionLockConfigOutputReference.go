@@ -12,9 +12,9 @@ type GoogleIntegrationConnectorsConnectionLockConfigOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -29,9 +29,9 @@ type GoogleIntegrationConnectorsConnectionLockConfigOutputReference interface {
 	Fqn() *string
 	InternalValue() *GoogleIntegrationConnectorsConnectionLockConfig
 	SetInternalValue(val *GoogleIntegrationConnectorsConnectionLockConfig)
-	Locked() interface{}
-	SetLocked(val interface{})
-	LockedInput() interface{}
+	Locked() any
+	SetLocked(val any)
+	LockedInput() any
 	Reason() *string
 	SetReason(val *string)
 	ReasonInput() *string
@@ -46,7 +46,7 @@ type GoogleIntegrationConnectorsConnectionLockConfigOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -70,7 +70,7 @@ type GoogleIntegrationConnectorsConnectionLockConfigOutputReference interface {
 	ResetReason()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -83,8 +83,8 @@ type jsiiProxy_GoogleIntegrationConnectorsConnectionLockConfigOutputReference st
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionLockConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionLockConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -133,8 +133,8 @@ func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionLockConfigOutputReferenc
 	return returns
 }
 
-func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionLockConfigOutputReference) Locked() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionLockConfigOutputReference) Locked() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"locked",
@@ -143,8 +143,8 @@ func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionLockConfigOutputReferenc
 	return returns
 }
 
-func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionLockConfigOutputReference) LockedInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionLockConfigOutputReference) LockedInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"lockedInput",
@@ -193,7 +193,6 @@ func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionLockConfigOutputReferenc
 	return returns
 }
 
-
 func NewGoogleIntegrationConnectorsConnectionLockConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleIntegrationConnectorsConnectionLockConfigOutputReference {
 	_init_.Initialize()
 
@@ -204,7 +203,7 @@ func NewGoogleIntegrationConnectorsConnectionLockConfigOutputReference(terraform
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionLockConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -216,12 +215,12 @@ func NewGoogleIntegrationConnectorsConnectionLockConfigOutputReference_Override(
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionLockConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionLockConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionLockConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -232,7 +231,7 @@ func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionLockConfigOutputReferenc
 	)
 }
 
-func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionLockConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionLockConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -243,7 +242,7 @@ func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionLockConfigOutputReferenc
 	)
 }
 
-func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionLockConfigOutputReference)SetInternalValue(val *GoogleIntegrationConnectorsConnectionLockConfig) {
+func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionLockConfigOutputReference) SetInternalValue(val *GoogleIntegrationConnectorsConnectionLockConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -254,7 +253,7 @@ func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionLockConfigOutputReferenc
 	)
 }
 
-func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionLockConfigOutputReference)SetLocked(val interface{}) {
+func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionLockConfigOutputReference) SetLocked(val any) {
 	if err := j.validateSetLockedParameters(val); err != nil {
 		panic(err)
 	}
@@ -265,7 +264,7 @@ func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionLockConfigOutputReferenc
 	)
 }
 
-func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionLockConfigOutputReference)SetReason(val *string) {
+func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionLockConfigOutputReference) SetReason(val *string) {
 	if err := j.validateSetReasonParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,7 +275,7 @@ func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionLockConfigOutputReferenc
 	)
 }
 
-func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionLockConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionLockConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -287,7 +286,7 @@ func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionLockConfigOutputReferenc
 	)
 }
 
-func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionLockConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionLockConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -311,16 +310,16 @@ func (g *jsiiProxy_GoogleIntegrationConnectorsConnectionLockConfigOutputReferenc
 	return returns
 }
 
-func (g *jsiiProxy_GoogleIntegrationConnectorsConnectionLockConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleIntegrationConnectorsConnectionLockConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -336,7 +335,7 @@ func (g *jsiiProxy_GoogleIntegrationConnectorsConnectionLockConfigOutputReferenc
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -352,7 +351,7 @@ func (g *jsiiProxy_GoogleIntegrationConnectorsConnectionLockConfigOutputReferenc
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -368,7 +367,7 @@ func (g *jsiiProxy_GoogleIntegrationConnectorsConnectionLockConfigOutputReferenc
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -384,7 +383,7 @@ func (g *jsiiProxy_GoogleIntegrationConnectorsConnectionLockConfigOutputReferenc
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -400,7 +399,7 @@ func (g *jsiiProxy_GoogleIntegrationConnectorsConnectionLockConfigOutputReferenc
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -416,7 +415,7 @@ func (g *jsiiProxy_GoogleIntegrationConnectorsConnectionLockConfigOutputReferenc
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -432,7 +431,7 @@ func (g *jsiiProxy_GoogleIntegrationConnectorsConnectionLockConfigOutputReferenc
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -448,7 +447,7 @@ func (g *jsiiProxy_GoogleIntegrationConnectorsConnectionLockConfigOutputReferenc
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -477,7 +476,7 @@ func (g *jsiiProxy_GoogleIntegrationConnectorsConnectionLockConfigOutputReferenc
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -492,16 +491,16 @@ func (g *jsiiProxy_GoogleIntegrationConnectorsConnectionLockConfigOutputReferenc
 	)
 }
 
-func (g *jsiiProxy_GoogleIntegrationConnectorsConnectionLockConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleIntegrationConnectorsConnectionLockConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -520,4 +519,3 @@ func (g *jsiiProxy_GoogleIntegrationConnectorsConnectionLockConfigOutputReferenc
 
 	return returns
 }
-

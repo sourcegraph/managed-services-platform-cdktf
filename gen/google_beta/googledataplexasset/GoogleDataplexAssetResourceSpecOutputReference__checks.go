@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleDataplexAssetResourceSpecOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataplexAssetResourceSpecOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataplexAssetResourceSpecOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewGoogleDataplexAssetResourceSpecOutputReferenceParameters(terrafo
 
 	return nil
 }
-

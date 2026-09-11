@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleHealthcareWorkspaceSettingsOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_GoogleHealthcareWorkspaceSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleHealthcareWorkspaceSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleHealthcareWorkspaceSettingsOutputReferenceParameters(terra
 
 	return nil
 }
-

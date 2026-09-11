@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleComputeSubnetworkSecondaryIpRangeOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeSubnetworkSecondaryIpRangeOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeSubnetworkSecondaryIpRangeOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_GoogleComputeSubnetworkSecondaryIpRangeOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeSubnetworkSecondaryIpRangeOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeSubnetworkSecondaryIpRangeOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewGoogleComputeSubnetworkSecondaryIpRangeOutputReferenceParameters
 
 	return nil
 }
-

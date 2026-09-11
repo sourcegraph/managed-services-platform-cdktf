@@ -98,7 +98,7 @@ func (g *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesCaOptionsOu
 	return nil
 }
 
-func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesCaOptionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesCaOptionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesCaOptionsOu
 	return nil
 }
 
-func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesCaOptionsOutputReference) validateSetIsCaParameters(val interface{}) error {
+func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesCaOptionsOutputReference) validateSetIsCaParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -199,7 +199,7 @@ func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesCaOptionsOu
 	return nil
 }
 
-func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesCaOptionsOutputReference) validateSetNullCaParameters(val interface{}) error {
+func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesCaOptionsOutputReference) validateSetNullCaParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -235,7 +235,7 @@ func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesCaOptionsOu
 	return nil
 }
 
-func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesCaOptionsOutputReference) validateSetZeroMaxIssuerPathLengthParameters(val interface{}) error {
+func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesCaOptionsOutputReference) validateSetZeroMaxIssuerPathLengthParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -266,4 +266,3 @@ func validateNewGooglePrivatecaCertificateTemplatePredefinedValuesCaOptionsOutpu
 
 	return nil
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleModelArmorTemplate.GoogleModelArmorTemplate",
-		reflect.TypeOf((*GoogleModelArmorTemplate)(nil)).Elem(),
+		reflect.TypeFor[GoogleModelArmorTemplate](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -82,7 +82,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleModelArmorTemplate{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -90,19 +90,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleModelArmorTemplate.GoogleModelArmorTemplateConfig",
-		reflect.TypeOf((*GoogleModelArmorTemplateConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleModelArmorTemplateConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleModelArmorTemplate.GoogleModelArmorTemplateFilterConfig",
-		reflect.TypeOf((*GoogleModelArmorTemplateFilterConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleModelArmorTemplateFilterConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleModelArmorTemplate.GoogleModelArmorTemplateFilterConfigMaliciousUriFilterSettings",
-		reflect.TypeOf((*GoogleModelArmorTemplateFilterConfigMaliciousUriFilterSettings)(nil)).Elem(),
+		reflect.TypeFor[GoogleModelArmorTemplateFilterConfigMaliciousUriFilterSettings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleModelArmorTemplate.GoogleModelArmorTemplateFilterConfigMaliciousUriFilterSettingsOutputReference",
-		reflect.TypeOf((*GoogleModelArmorTemplateFilterConfigMaliciousUriFilterSettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleModelArmorTemplateFilterConfigMaliciousUriFilterSettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -129,7 +129,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleModelArmorTemplateFilterConfigMaliciousUriFilterSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -137,7 +137,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleModelArmorTemplate.GoogleModelArmorTemplateFilterConfigOutputReference",
-		reflect.TypeOf((*GoogleModelArmorTemplateFilterConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleModelArmorTemplateFilterConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -177,7 +177,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleModelArmorTemplateFilterConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -185,11 +185,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleModelArmorTemplate.GoogleModelArmorTemplateFilterConfigPiAndJailbreakFilterSettings",
-		reflect.TypeOf((*GoogleModelArmorTemplateFilterConfigPiAndJailbreakFilterSettings)(nil)).Elem(),
+		reflect.TypeFor[GoogleModelArmorTemplateFilterConfigPiAndJailbreakFilterSettings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleModelArmorTemplate.GoogleModelArmorTemplateFilterConfigPiAndJailbreakFilterSettingsOutputReference",
-		reflect.TypeOf((*GoogleModelArmorTemplateFilterConfigPiAndJailbreakFilterSettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleModelArmorTemplateFilterConfigPiAndJailbreakFilterSettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -219,7 +219,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleModelArmorTemplateFilterConfigPiAndJailbreakFilterSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -227,11 +227,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleModelArmorTemplate.GoogleModelArmorTemplateFilterConfigRaiSettings",
-		reflect.TypeOf((*GoogleModelArmorTemplateFilterConfigRaiSettings)(nil)).Elem(),
+		reflect.TypeFor[GoogleModelArmorTemplateFilterConfigRaiSettings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleModelArmorTemplate.GoogleModelArmorTemplateFilterConfigRaiSettingsOutputReference",
-		reflect.TypeOf((*GoogleModelArmorTemplateFilterConfigRaiSettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleModelArmorTemplateFilterConfigRaiSettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -258,7 +258,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleModelArmorTemplateFilterConfigRaiSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -266,11 +266,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleModelArmorTemplate.GoogleModelArmorTemplateFilterConfigRaiSettingsRaiFilters",
-		reflect.TypeOf((*GoogleModelArmorTemplateFilterConfigRaiSettingsRaiFilters)(nil)).Elem(),
+		reflect.TypeFor[GoogleModelArmorTemplateFilterConfigRaiSettingsRaiFilters](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleModelArmorTemplate.GoogleModelArmorTemplateFilterConfigRaiSettingsRaiFiltersList",
-		reflect.TypeOf((*GoogleModelArmorTemplateFilterConfigRaiSettingsRaiFiltersList)(nil)).Elem(),
+		reflect.TypeFor[GoogleModelArmorTemplateFilterConfigRaiSettingsRaiFiltersList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -284,7 +284,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleModelArmorTemplateFilterConfigRaiSettingsRaiFiltersList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -292,7 +292,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleModelArmorTemplate.GoogleModelArmorTemplateFilterConfigRaiSettingsRaiFiltersOutputReference",
-		reflect.TypeOf((*GoogleModelArmorTemplateFilterConfigRaiSettingsRaiFiltersOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleModelArmorTemplateFilterConfigRaiSettingsRaiFiltersOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -321,7 +321,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleModelArmorTemplateFilterConfigRaiSettingsRaiFiltersOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -329,15 +329,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleModelArmorTemplate.GoogleModelArmorTemplateFilterConfigSdpSettings",
-		reflect.TypeOf((*GoogleModelArmorTemplateFilterConfigSdpSettings)(nil)).Elem(),
+		reflect.TypeFor[GoogleModelArmorTemplateFilterConfigSdpSettings](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleModelArmorTemplate.GoogleModelArmorTemplateFilterConfigSdpSettingsAdvancedConfig",
-		reflect.TypeOf((*GoogleModelArmorTemplateFilterConfigSdpSettingsAdvancedConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleModelArmorTemplateFilterConfigSdpSettingsAdvancedConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleModelArmorTemplate.GoogleModelArmorTemplateFilterConfigSdpSettingsAdvancedConfigOutputReference",
-		reflect.TypeOf((*GoogleModelArmorTemplateFilterConfigSdpSettingsAdvancedConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleModelArmorTemplateFilterConfigSdpSettingsAdvancedConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -367,7 +367,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleModelArmorTemplateFilterConfigSdpSettingsAdvancedConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -375,11 +375,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleModelArmorTemplate.GoogleModelArmorTemplateFilterConfigSdpSettingsBasicConfig",
-		reflect.TypeOf((*GoogleModelArmorTemplateFilterConfigSdpSettingsBasicConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleModelArmorTemplateFilterConfigSdpSettingsBasicConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleModelArmorTemplate.GoogleModelArmorTemplateFilterConfigSdpSettingsBasicConfigOutputReference",
-		reflect.TypeOf((*GoogleModelArmorTemplateFilterConfigSdpSettingsBasicConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleModelArmorTemplateFilterConfigSdpSettingsBasicConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -406,7 +406,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleModelArmorTemplateFilterConfigSdpSettingsBasicConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -414,7 +414,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleModelArmorTemplate.GoogleModelArmorTemplateFilterConfigSdpSettingsOutputReference",
-		reflect.TypeOf((*GoogleModelArmorTemplateFilterConfigSdpSettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleModelArmorTemplateFilterConfigSdpSettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "advancedConfig", GoGetter: "AdvancedConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "advancedConfigInput", GoGetter: "AdvancedConfigInput"},
@@ -446,7 +446,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleModelArmorTemplateFilterConfigSdpSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -454,15 +454,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleModelArmorTemplate.GoogleModelArmorTemplateTemplateMetadata",
-		reflect.TypeOf((*GoogleModelArmorTemplateTemplateMetadata)(nil)).Elem(),
+		reflect.TypeFor[GoogleModelArmorTemplateTemplateMetadata](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleModelArmorTemplate.GoogleModelArmorTemplateTemplateMetadataMultiLanguageDetection",
-		reflect.TypeOf((*GoogleModelArmorTemplateTemplateMetadataMultiLanguageDetection)(nil)).Elem(),
+		reflect.TypeFor[GoogleModelArmorTemplateTemplateMetadataMultiLanguageDetection](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleModelArmorTemplate.GoogleModelArmorTemplateTemplateMetadataMultiLanguageDetectionOutputReference",
-		reflect.TypeOf((*GoogleModelArmorTemplateTemplateMetadataMultiLanguageDetectionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleModelArmorTemplateTemplateMetadataMultiLanguageDetectionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -488,7 +488,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleModelArmorTemplateTemplateMetadataMultiLanguageDetectionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -496,7 +496,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleModelArmorTemplate.GoogleModelArmorTemplateTemplateMetadataOutputReference",
-		reflect.TypeOf((*GoogleModelArmorTemplateTemplateMetadataOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleModelArmorTemplateTemplateMetadataOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -548,7 +548,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleModelArmorTemplateTemplateMetadataOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -556,11 +556,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleModelArmorTemplate.GoogleModelArmorTemplateTimeouts",
-		reflect.TypeOf((*GoogleModelArmorTemplateTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleModelArmorTemplateTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleModelArmorTemplate.GoogleModelArmorTemplateTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleModelArmorTemplateTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleModelArmorTemplateTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -593,7 +593,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleModelArmorTemplateTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

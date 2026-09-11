@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleDnsManagedZonePeeringConfigTargetNetworkOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDnsManagedZonePeeringConfigTargetNetworkOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDnsManagedZonePeeringConfigTargetNetworkOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleDnsManagedZonePeeringConfigTargetNetworkOutputReferencePar
 
 	return nil
 }
-

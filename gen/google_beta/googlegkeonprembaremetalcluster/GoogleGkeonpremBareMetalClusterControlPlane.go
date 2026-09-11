@@ -1,6 +1,5 @@
 package googlegkeonprembaremetalcluster
 
-
 type GoogleGkeonpremBareMetalClusterControlPlane struct {
 	// control_plane_node_pool_config block.
 	//
@@ -9,6 +8,5 @@ type GoogleGkeonpremBareMetalClusterControlPlane struct {
 	// api_server_args block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_gkeonprem_bare_metal_cluster#api_server_args GoogleGkeonpremBareMetalCluster#api_server_args}
-	ApiServerArgs interface{} `field:"optional" json:"apiServerArgs" yaml:"apiServerArgs"`
+	ApiServerArgs any `field:"optional" json:"apiServerArgs" yaml:"apiServerArgs"`
 }
-

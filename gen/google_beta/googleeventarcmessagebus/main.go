@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleEventarcMessageBus.GoogleEventarcMessageBus",
-		reflect.TypeOf((*GoogleEventarcMessageBus)(nil)).Elem(),
+		reflect.TypeFor[GoogleEventarcMessageBus](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -91,7 +91,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "uid", GoGetter: "Uid"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleEventarcMessageBus{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -99,15 +99,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleEventarcMessageBus.GoogleEventarcMessageBusConfig",
-		reflect.TypeOf((*GoogleEventarcMessageBusConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleEventarcMessageBusConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleEventarcMessageBus.GoogleEventarcMessageBusLoggingConfig",
-		reflect.TypeOf((*GoogleEventarcMessageBusLoggingConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleEventarcMessageBusLoggingConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleEventarcMessageBus.GoogleEventarcMessageBusLoggingConfigOutputReference",
-		reflect.TypeOf((*GoogleEventarcMessageBusLoggingConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleEventarcMessageBusLoggingConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -134,7 +134,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleEventarcMessageBusLoggingConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -142,11 +142,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleEventarcMessageBus.GoogleEventarcMessageBusTimeouts",
-		reflect.TypeOf((*GoogleEventarcMessageBusTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleEventarcMessageBusTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleEventarcMessageBus.GoogleEventarcMessageBusTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleEventarcMessageBusTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleEventarcMessageBusTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -179,7 +179,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleEventarcMessageBusTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

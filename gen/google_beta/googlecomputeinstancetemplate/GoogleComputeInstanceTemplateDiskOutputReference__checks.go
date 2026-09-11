@@ -139,7 +139,7 @@ func (j *jsiiProxy_GoogleComputeInstanceTemplateDiskOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceTemplateDiskOutputReference) validateSetAutoDeleteParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeInstanceTemplateDiskOutputReference) validateSetAutoDeleteParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -159,7 +159,7 @@ func (j *jsiiProxy_GoogleComputeInstanceTemplateDiskOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceTemplateDiskOutputReference) validateSetBootParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeInstanceTemplateDiskOutputReference) validateSetBootParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -179,7 +179,7 @@ func (j *jsiiProxy_GoogleComputeInstanceTemplateDiskOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceTemplateDiskOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeInstanceTemplateDiskOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -292,7 +292,7 @@ func (j *jsiiProxy_GoogleComputeInstanceTemplateDiskOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceTemplateDiskOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeInstanceTemplateDiskOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -431,4 +431,3 @@ func validateNewGoogleComputeInstanceTemplateDiskOutputReferenceParameters(terra
 
 	return nil
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleBigqueryRowAccessPolicy.GoogleBigqueryRowAccessPolicy",
-		reflect.TypeOf((*GoogleBigqueryRowAccessPolicy)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigqueryRowAccessPolicy](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -76,7 +76,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleBigqueryRowAccessPolicy{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -84,15 +84,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleBigqueryRowAccessPolicy.GoogleBigqueryRowAccessPolicyConfig",
-		reflect.TypeOf((*GoogleBigqueryRowAccessPolicyConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigqueryRowAccessPolicyConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleBigqueryRowAccessPolicy.GoogleBigqueryRowAccessPolicyTimeouts",
-		reflect.TypeOf((*GoogleBigqueryRowAccessPolicyTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigqueryRowAccessPolicyTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleBigqueryRowAccessPolicy.GoogleBigqueryRowAccessPolicyTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleBigqueryRowAccessPolicyTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleBigqueryRowAccessPolicyTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -125,7 +125,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleBigqueryRowAccessPolicyTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

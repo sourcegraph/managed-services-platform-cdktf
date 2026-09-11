@@ -106,7 +106,7 @@ func (j *jsiiProxy_GoogleContainerAzureClusterAzureServicesAuthenticationOutputR
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerAzureClusterAzureServicesAuthenticationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContainerAzureClusterAzureServicesAuthenticationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGoogleContainerAzureClusterAzureServicesAuthenticationOutputRefe
 
 	return nil
 }
-

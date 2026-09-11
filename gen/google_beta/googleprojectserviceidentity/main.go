@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleProjectServiceIdentity.GoogleProjectServiceIdentity",
-		reflect.TypeOf((*GoogleProjectServiceIdentity)(nil)).Elem(),
+		reflect.TypeFor[GoogleProjectServiceIdentity](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -67,7 +67,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleProjectServiceIdentity{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -75,15 +75,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleProjectServiceIdentity.GoogleProjectServiceIdentityConfig",
-		reflect.TypeOf((*GoogleProjectServiceIdentityConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleProjectServiceIdentityConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleProjectServiceIdentity.GoogleProjectServiceIdentityTimeouts",
-		reflect.TypeOf((*GoogleProjectServiceIdentityTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleProjectServiceIdentityTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleProjectServiceIdentity.GoogleProjectServiceIdentityTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleProjectServiceIdentityTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleProjectServiceIdentityTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -116,7 +116,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleProjectServiceIdentityTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

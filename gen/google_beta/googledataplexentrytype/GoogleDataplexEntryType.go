@@ -15,15 +15,15 @@ type GoogleDataplexEntryType interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -74,13 +74,13 @@ type GoogleDataplexEntryType interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RequiredAspects() GoogleDataplexEntryTypeRequiredAspectsList
-	RequiredAspectsInput() interface{}
+	RequiredAspectsInput() any
 	SystemAttribute() *string
 	SetSystemAttribute(val *string)
 	SystemAttributeInput() *string
@@ -88,11 +88,11 @@ type GoogleDataplexEntryType interface {
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() GoogleDataplexEntryTypeTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	TypeAliases() *[]*string
 	SetTypeAliases(val *[]*string)
 	TypeAliasesInput() *[]*string
@@ -102,9 +102,9 @@ type GoogleDataplexEntryType interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -122,7 +122,7 @@ type GoogleDataplexEntryType interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -134,14 +134,14 @@ type GoogleDataplexEntryType interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutRequiredAspects(value interface{})
+	PutRequiredAspects(value any)
 	PutTimeouts(value *GoogleDataplexEntryTypeTimeouts)
 	ResetDescription()
 	ResetDisplayName()
@@ -158,17 +158,17 @@ type GoogleDataplexEntryType interface {
 	ResetSystemAttribute()
 	ResetTimeouts()
 	ResetTypeAliases()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleDataplexEntryType
@@ -186,8 +186,8 @@ func (j *jsiiProxy_GoogleDataplexEntryType) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDataplexEntryType) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDataplexEntryType) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -196,8 +196,8 @@ func (j *jsiiProxy_GoogleDataplexEntryType) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDataplexEntryType) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleDataplexEntryType) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -206,8 +206,8 @@ func (j *jsiiProxy_GoogleDataplexEntryType) ConstructNodeMetadata() *map[string]
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDataplexEntryType) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDataplexEntryType) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -476,8 +476,8 @@ func (j *jsiiProxy_GoogleDataplexEntryType) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDataplexEntryType) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleDataplexEntryType) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -486,8 +486,8 @@ func (j *jsiiProxy_GoogleDataplexEntryType) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDataplexEntryType) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDataplexEntryType) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -506,8 +506,8 @@ func (j *jsiiProxy_GoogleDataplexEntryType) RequiredAspects() GoogleDataplexEntr
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDataplexEntryType) RequiredAspectsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDataplexEntryType) RequiredAspectsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"requiredAspectsInput",
@@ -556,8 +556,8 @@ func (j *jsiiProxy_GoogleDataplexEntryType) TerraformLabels() cdktf.StringMap {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDataplexEntryType) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleDataplexEntryType) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -586,8 +586,8 @@ func (j *jsiiProxy_GoogleDataplexEntryType) Timeouts() GoogleDataplexEntryTypeTi
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDataplexEntryType) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDataplexEntryType) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -636,7 +636,6 @@ func (j *jsiiProxy_GoogleDataplexEntryType) UpdateTime() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dataplex_entry_type google_dataplex_entry_type} Resource.
 func NewGoogleDataplexEntryType(scope constructs.Construct, id *string, config *GoogleDataplexEntryTypeConfig) GoogleDataplexEntryType {
 	_init_.Initialize()
@@ -648,7 +647,7 @@ func NewGoogleDataplexEntryType(scope constructs.Construct, id *string, config *
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleDataplexEntryType.GoogleDataplexEntryType",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -661,12 +660,12 @@ func NewGoogleDataplexEntryType_Override(g GoogleDataplexEntryType, scope constr
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleDataplexEntryType.GoogleDataplexEntryType",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleDataplexEntryType)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleDataplexEntryType) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -677,7 +676,7 @@ func (j *jsiiProxy_GoogleDataplexEntryType)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleDataplexEntryType)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleDataplexEntryType) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -688,7 +687,7 @@ func (j *jsiiProxy_GoogleDataplexEntryType)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleDataplexEntryType)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleDataplexEntryType) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -696,7 +695,7 @@ func (j *jsiiProxy_GoogleDataplexEntryType)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleDataplexEntryType)SetDescription(val *string) {
+func (j *jsiiProxy_GoogleDataplexEntryType) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -707,7 +706,7 @@ func (j *jsiiProxy_GoogleDataplexEntryType)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleDataplexEntryType)SetDisplayName(val *string) {
+func (j *jsiiProxy_GoogleDataplexEntryType) SetDisplayName(val *string) {
 	if err := j.validateSetDisplayNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -718,7 +717,7 @@ func (j *jsiiProxy_GoogleDataplexEntryType)SetDisplayName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleDataplexEntryType)SetEntryTypeId(val *string) {
+func (j *jsiiProxy_GoogleDataplexEntryType) SetEntryTypeId(val *string) {
 	if err := j.validateSetEntryTypeIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -729,7 +728,7 @@ func (j *jsiiProxy_GoogleDataplexEntryType)SetEntryTypeId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleDataplexEntryType)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleDataplexEntryType) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -737,7 +736,7 @@ func (j *jsiiProxy_GoogleDataplexEntryType)SetForEach(val cdktf.ITerraformIterat
 	)
 }
 
-func (j *jsiiProxy_GoogleDataplexEntryType)SetId(val *string) {
+func (j *jsiiProxy_GoogleDataplexEntryType) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -748,7 +747,7 @@ func (j *jsiiProxy_GoogleDataplexEntryType)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleDataplexEntryType)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_GoogleDataplexEntryType) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -759,7 +758,7 @@ func (j *jsiiProxy_GoogleDataplexEntryType)SetLabels(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleDataplexEntryType)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleDataplexEntryType) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -770,7 +769,7 @@ func (j *jsiiProxy_GoogleDataplexEntryType)SetLifecycle(val *cdktf.TerraformReso
 	)
 }
 
-func (j *jsiiProxy_GoogleDataplexEntryType)SetLocation(val *string) {
+func (j *jsiiProxy_GoogleDataplexEntryType) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -781,7 +780,7 @@ func (j *jsiiProxy_GoogleDataplexEntryType)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleDataplexEntryType)SetPlatform(val *string) {
+func (j *jsiiProxy_GoogleDataplexEntryType) SetPlatform(val *string) {
 	if err := j.validateSetPlatformParameters(val); err != nil {
 		panic(err)
 	}
@@ -792,7 +791,7 @@ func (j *jsiiProxy_GoogleDataplexEntryType)SetPlatform(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleDataplexEntryType)SetProject(val *string) {
+func (j *jsiiProxy_GoogleDataplexEntryType) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -803,7 +802,7 @@ func (j *jsiiProxy_GoogleDataplexEntryType)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleDataplexEntryType)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleDataplexEntryType) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -811,7 +810,7 @@ func (j *jsiiProxy_GoogleDataplexEntryType)SetProvider(val cdktf.TerraformProvid
 	)
 }
 
-func (j *jsiiProxy_GoogleDataplexEntryType)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleDataplexEntryType) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -822,7 +821,7 @@ func (j *jsiiProxy_GoogleDataplexEntryType)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleDataplexEntryType)SetSystemAttribute(val *string) {
+func (j *jsiiProxy_GoogleDataplexEntryType) SetSystemAttribute(val *string) {
 	if err := j.validateSetSystemAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -833,7 +832,7 @@ func (j *jsiiProxy_GoogleDataplexEntryType)SetSystemAttribute(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleDataplexEntryType)SetTypeAliases(val *[]*string) {
+func (j *jsiiProxy_GoogleDataplexEntryType) SetTypeAliases(val *[]*string) {
 	if err := j.validateSetTypeAliasesParameters(val); err != nil {
 		panic(err)
 	}
@@ -856,7 +855,7 @@ func GoogleDataplexEntryType_GenerateConfigForImport(scope constructs.Construct,
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleDataplexEntryType.GoogleDataplexEntryType",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -880,7 +879,7 @@ func GoogleDataplexEntryType_GenerateConfigForImport(scope constructs.Construct,
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleDataplexEntryType_IsConstruct(x interface{}) *bool {
+func GoogleDataplexEntryType_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleDataplexEntryType_IsConstructParameters(x); err != nil {
@@ -891,7 +890,7 @@ func GoogleDataplexEntryType_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleDataplexEntryType.GoogleDataplexEntryType",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -899,7 +898,7 @@ func GoogleDataplexEntryType_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleDataplexEntryType_IsTerraformElement(x interface{}) *bool {
+func GoogleDataplexEntryType_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleDataplexEntryType_IsTerraformElementParameters(x); err != nil {
@@ -910,7 +909,7 @@ func GoogleDataplexEntryType_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleDataplexEntryType.GoogleDataplexEntryType",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -918,7 +917,7 @@ func GoogleDataplexEntryType_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleDataplexEntryType_IsTerraformResource(x interface{}) *bool {
+func GoogleDataplexEntryType_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleDataplexEntryType_IsTerraformResourceParameters(x); err != nil {
@@ -929,7 +928,7 @@ func GoogleDataplexEntryType_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleDataplexEntryType.GoogleDataplexEntryType",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -954,31 +953,31 @@ func (g *jsiiProxy_GoogleDataplexEntryType) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleDataplexEntryType) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleDataplexEntryType) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleDataplexEntryType) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleDataplexEntryType) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -994,7 +993,7 @@ func (g *jsiiProxy_GoogleDataplexEntryType) GetBooleanAttribute(terraformAttribu
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1010,7 +1009,7 @@ func (g *jsiiProxy_GoogleDataplexEntryType) GetBooleanMapAttribute(terraformAttr
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1026,7 +1025,7 @@ func (g *jsiiProxy_GoogleDataplexEntryType) GetListAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1042,7 +1041,7 @@ func (g *jsiiProxy_GoogleDataplexEntryType) GetNumberAttribute(terraformAttribut
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1058,7 +1057,7 @@ func (g *jsiiProxy_GoogleDataplexEntryType) GetNumberListAttribute(terraformAttr
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1074,7 +1073,7 @@ func (g *jsiiProxy_GoogleDataplexEntryType) GetNumberMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1090,7 +1089,7 @@ func (g *jsiiProxy_GoogleDataplexEntryType) GetStringAttribute(terraformAttribut
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1106,15 +1105,15 @@ func (g *jsiiProxy_GoogleDataplexEntryType) GetStringMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDataplexEntryType) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleDataplexEntryType) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1133,7 +1132,7 @@ func (g *jsiiProxy_GoogleDataplexEntryType) ImportFrom(id *string, provider cdkt
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1146,7 +1145,7 @@ func (g *jsiiProxy_GoogleDataplexEntryType) InterpolationForAttribute(terraformA
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1160,18 +1159,18 @@ func (g *jsiiProxy_GoogleDataplexEntryType) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleDataplexEntryType) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleDataplexEntryType) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1182,7 +1181,7 @@ func (g *jsiiProxy_GoogleDataplexEntryType) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1193,18 +1192,18 @@ func (g *jsiiProxy_GoogleDataplexEntryType) OverrideLogicalId(newLogicalId *stri
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (g *jsiiProxy_GoogleDataplexEntryType) PutRequiredAspects(value interface{}) {
+func (g *jsiiProxy_GoogleDataplexEntryType) PutRequiredAspects(value any) {
 	if err := g.validatePutRequiredAspectsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putRequiredAspects",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1215,7 +1214,7 @@ func (g *jsiiProxy_GoogleDataplexEntryType) PutTimeouts(value *GoogleDataplexEnt
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1323,8 +1322,8 @@ func (g *jsiiProxy_GoogleDataplexEntryType) ResetTypeAliases() {
 	)
 }
 
-func (g *jsiiProxy_GoogleDataplexEntryType) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleDataplexEntryType) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1336,8 +1335,8 @@ func (g *jsiiProxy_GoogleDataplexEntryType) SynthesizeAttributes() *map[string]i
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDataplexEntryType) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleDataplexEntryType) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1349,8 +1348,8 @@ func (g *jsiiProxy_GoogleDataplexEntryType) SynthesizeHclAttributes() *map[strin
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDataplexEntryType) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleDataplexEntryType) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1362,8 +1361,8 @@ func (g *jsiiProxy_GoogleDataplexEntryType) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDataplexEntryType) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleDataplexEntryType) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1388,8 +1387,8 @@ func (g *jsiiProxy_GoogleDataplexEntryType) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDataplexEntryType) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleDataplexEntryType) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1400,4 +1399,3 @@ func (g *jsiiProxy_GoogleDataplexEntryType) ToTerraform() interface{} {
 
 	return returns
 }
-

@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleSecurityposturePosturePolicySetsList) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSecurityposturePosturePolicySetsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleSecurityposturePosturePolicySetsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleSecurityposturePosturePolicySetsListParameters(terraformRe
 
 	return nil
 }
-

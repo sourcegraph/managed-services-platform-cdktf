@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleComputeRegionResizeRequest) validateAddMoveTargetParame
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeRegionResizeRequest) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleComputeRegionResizeRequest) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleComputeRegionResizeRequest) validateMoveFromIdParameter
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeRegionResizeRequest) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleComputeRegionResizeRequest) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -242,7 +242,7 @@ func validateGoogleComputeRegionResizeRequest_GenerateConfigForImportParameters(
 	return nil
 }
 
-func validateGoogleComputeRegionResizeRequest_IsConstructParameters(x interface{}) error {
+func validateGoogleComputeRegionResizeRequest_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -250,7 +250,7 @@ func validateGoogleComputeRegionResizeRequest_IsConstructParameters(x interface{
 	return nil
 }
 
-func validateGoogleComputeRegionResizeRequest_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleComputeRegionResizeRequest_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -258,7 +258,7 @@ func validateGoogleComputeRegionResizeRequest_IsTerraformElementParameters(x int
 	return nil
 }
 
-func validateGoogleComputeRegionResizeRequest_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleComputeRegionResizeRequest_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -266,7 +266,7 @@ func validateGoogleComputeRegionResizeRequest_IsTerraformResourceParameters(x in
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRegionResizeRequest) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeRegionResizeRequest) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -299,7 +299,7 @@ func (j *jsiiProxy_GoogleComputeRegionResizeRequest) validateSetConnectionParame
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRegionResizeRequest) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeRegionResizeRequest) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -404,7 +404,7 @@ func (j *jsiiProxy_GoogleComputeRegionResizeRequest) validateSetProjectParameter
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRegionResizeRequest) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleComputeRegionResizeRequest) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -484,4 +484,3 @@ func validateNewGoogleComputeRegionResizeRequestParameters(scope constructs.Cons
 
 	return nil
 }
-

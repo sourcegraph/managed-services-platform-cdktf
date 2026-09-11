@@ -10,14 +10,14 @@ import (
 
 type GoogleBigqueryTableMaterializedViewOutputReference interface {
 	cdktf.ComplexObject
-	AllowNonIncrementalDefinition() interface{}
-	SetAllowNonIncrementalDefinition(val interface{})
-	AllowNonIncrementalDefinitionInput() interface{}
+	AllowNonIncrementalDefinition() any
+	SetAllowNonIncrementalDefinition(val any)
+	AllowNonIncrementalDefinitionInput() any
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -28,9 +28,9 @@ type GoogleBigqueryTableMaterializedViewOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	EnableRefresh() interface{}
-	SetEnableRefresh(val interface{})
-	EnableRefreshInput() interface{}
+	EnableRefresh() any
+	SetEnableRefresh(val any)
+	EnableRefreshInput() any
 	// Experimental.
 	Fqn() *string
 	InternalValue() *GoogleBigqueryTableMaterializedView
@@ -52,7 +52,7 @@ type GoogleBigqueryTableMaterializedViewOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -78,7 +78,7 @@ type GoogleBigqueryTableMaterializedViewOutputReference interface {
 	ResetRefreshIntervalMs()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -91,8 +91,8 @@ type jsiiProxy_GoogleBigqueryTableMaterializedViewOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GoogleBigqueryTableMaterializedViewOutputReference) AllowNonIncrementalDefinition() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleBigqueryTableMaterializedViewOutputReference) AllowNonIncrementalDefinition() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowNonIncrementalDefinition",
@@ -101,8 +101,8 @@ func (j *jsiiProxy_GoogleBigqueryTableMaterializedViewOutputReference) AllowNonI
 	return returns
 }
 
-func (j *jsiiProxy_GoogleBigqueryTableMaterializedViewOutputReference) AllowNonIncrementalDefinitionInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleBigqueryTableMaterializedViewOutputReference) AllowNonIncrementalDefinitionInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowNonIncrementalDefinitionInput",
@@ -111,8 +111,8 @@ func (j *jsiiProxy_GoogleBigqueryTableMaterializedViewOutputReference) AllowNonI
 	return returns
 }
 
-func (j *jsiiProxy_GoogleBigqueryTableMaterializedViewOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleBigqueryTableMaterializedViewOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -141,8 +141,8 @@ func (j *jsiiProxy_GoogleBigqueryTableMaterializedViewOutputReference) CreationS
 	return returns
 }
 
-func (j *jsiiProxy_GoogleBigqueryTableMaterializedViewOutputReference) EnableRefresh() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleBigqueryTableMaterializedViewOutputReference) EnableRefresh() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableRefresh",
@@ -151,8 +151,8 @@ func (j *jsiiProxy_GoogleBigqueryTableMaterializedViewOutputReference) EnableRef
 	return returns
 }
 
-func (j *jsiiProxy_GoogleBigqueryTableMaterializedViewOutputReference) EnableRefreshInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleBigqueryTableMaterializedViewOutputReference) EnableRefreshInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableRefreshInput",
@@ -241,7 +241,6 @@ func (j *jsiiProxy_GoogleBigqueryTableMaterializedViewOutputReference) Terraform
 	return returns
 }
 
-
 func NewGoogleBigqueryTableMaterializedViewOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleBigqueryTableMaterializedViewOutputReference {
 	_init_.Initialize()
 
@@ -252,7 +251,7 @@ func NewGoogleBigqueryTableMaterializedViewOutputReference(terraformResource cdk
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleBigqueryTable.GoogleBigqueryTableMaterializedViewOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -264,12 +263,12 @@ func NewGoogleBigqueryTableMaterializedViewOutputReference_Override(g GoogleBigq
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleBigqueryTable.GoogleBigqueryTableMaterializedViewOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryTableMaterializedViewOutputReference)SetAllowNonIncrementalDefinition(val interface{}) {
+func (j *jsiiProxy_GoogleBigqueryTableMaterializedViewOutputReference) SetAllowNonIncrementalDefinition(val any) {
 	if err := j.validateSetAllowNonIncrementalDefinitionParameters(val); err != nil {
 		panic(err)
 	}
@@ -280,7 +279,7 @@ func (j *jsiiProxy_GoogleBigqueryTableMaterializedViewOutputReference)SetAllowNo
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryTableMaterializedViewOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleBigqueryTableMaterializedViewOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -291,7 +290,7 @@ func (j *jsiiProxy_GoogleBigqueryTableMaterializedViewOutputReference)SetComplex
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryTableMaterializedViewOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleBigqueryTableMaterializedViewOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -302,7 +301,7 @@ func (j *jsiiProxy_GoogleBigqueryTableMaterializedViewOutputReference)SetComplex
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryTableMaterializedViewOutputReference)SetEnableRefresh(val interface{}) {
+func (j *jsiiProxy_GoogleBigqueryTableMaterializedViewOutputReference) SetEnableRefresh(val any) {
 	if err := j.validateSetEnableRefreshParameters(val); err != nil {
 		panic(err)
 	}
@@ -313,7 +312,7 @@ func (j *jsiiProxy_GoogleBigqueryTableMaterializedViewOutputReference)SetEnableR
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryTableMaterializedViewOutputReference)SetInternalValue(val *GoogleBigqueryTableMaterializedView) {
+func (j *jsiiProxy_GoogleBigqueryTableMaterializedViewOutputReference) SetInternalValue(val *GoogleBigqueryTableMaterializedView) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -324,7 +323,7 @@ func (j *jsiiProxy_GoogleBigqueryTableMaterializedViewOutputReference)SetInterna
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryTableMaterializedViewOutputReference)SetQuery(val *string) {
+func (j *jsiiProxy_GoogleBigqueryTableMaterializedViewOutputReference) SetQuery(val *string) {
 	if err := j.validateSetQueryParameters(val); err != nil {
 		panic(err)
 	}
@@ -335,7 +334,7 @@ func (j *jsiiProxy_GoogleBigqueryTableMaterializedViewOutputReference)SetQuery(v
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryTableMaterializedViewOutputReference)SetRefreshIntervalMs(val *float64) {
+func (j *jsiiProxy_GoogleBigqueryTableMaterializedViewOutputReference) SetRefreshIntervalMs(val *float64) {
 	if err := j.validateSetRefreshIntervalMsParameters(val); err != nil {
 		panic(err)
 	}
@@ -346,7 +345,7 @@ func (j *jsiiProxy_GoogleBigqueryTableMaterializedViewOutputReference)SetRefresh
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryTableMaterializedViewOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleBigqueryTableMaterializedViewOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -357,7 +356,7 @@ func (j *jsiiProxy_GoogleBigqueryTableMaterializedViewOutputReference)SetTerrafo
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryTableMaterializedViewOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleBigqueryTableMaterializedViewOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -381,16 +380,16 @@ func (g *jsiiProxy_GoogleBigqueryTableMaterializedViewOutputReference) ComputeFq
 	return returns
 }
 
-func (g *jsiiProxy_GoogleBigqueryTableMaterializedViewOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleBigqueryTableMaterializedViewOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -406,7 +405,7 @@ func (g *jsiiProxy_GoogleBigqueryTableMaterializedViewOutputReference) GetBoolea
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -422,7 +421,7 @@ func (g *jsiiProxy_GoogleBigqueryTableMaterializedViewOutputReference) GetBoolea
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -438,7 +437,7 @@ func (g *jsiiProxy_GoogleBigqueryTableMaterializedViewOutputReference) GetListAt
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -454,7 +453,7 @@ func (g *jsiiProxy_GoogleBigqueryTableMaterializedViewOutputReference) GetNumber
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -470,7 +469,7 @@ func (g *jsiiProxy_GoogleBigqueryTableMaterializedViewOutputReference) GetNumber
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -486,7 +485,7 @@ func (g *jsiiProxy_GoogleBigqueryTableMaterializedViewOutputReference) GetNumber
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -502,7 +501,7 @@ func (g *jsiiProxy_GoogleBigqueryTableMaterializedViewOutputReference) GetString
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -518,7 +517,7 @@ func (g *jsiiProxy_GoogleBigqueryTableMaterializedViewOutputReference) GetString
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -547,7 +546,7 @@ func (g *jsiiProxy_GoogleBigqueryTableMaterializedViewOutputReference) Interpola
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -578,16 +577,16 @@ func (g *jsiiProxy_GoogleBigqueryTableMaterializedViewOutputReference) ResetRefr
 	)
 }
 
-func (g *jsiiProxy_GoogleBigqueryTableMaterializedViewOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleBigqueryTableMaterializedViewOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -606,4 +605,3 @@ func (g *jsiiProxy_GoogleBigqueryTableMaterializedViewOutputReference) ToString(
 
 	return returns
 }
-

@@ -106,7 +106,7 @@ func (j *jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsAzureEventHubsOut
 	return nil
 }
 
-func (j *jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsAzureEventHubsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsAzureEventHubsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -254,4 +254,3 @@ func validateNewGooglePubsubTopicIngestionDataSourceSettingsAzureEventHubsOutput
 
 	return nil
 }
-

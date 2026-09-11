@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleDataPipelinePipelineScheduleInfoOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataPipelinePipelineScheduleInfoOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataPipelinePipelineScheduleInfoOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGoogleDataPipelinePipelineScheduleInfoOutputReferenceParameters(
 
 	return nil
 }
-

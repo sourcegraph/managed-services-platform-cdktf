@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleNetworkManagementVpcFlowLogsConfig.GoogleNetworkManagementVpcFlowLogsConfig",
-		reflect.TypeOf((*GoogleNetworkManagementVpcFlowLogsConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleNetworkManagementVpcFlowLogsConfig](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -102,7 +102,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vpnTunnel", GoGetter: "VpnTunnel"},
 			_jsii_.MemberProperty{JsiiProperty: "vpnTunnelInput", GoGetter: "VpnTunnelInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleNetworkManagementVpcFlowLogsConfig{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -110,15 +110,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleNetworkManagementVpcFlowLogsConfig.GoogleNetworkManagementVpcFlowLogsConfigConfig",
-		reflect.TypeOf((*GoogleNetworkManagementVpcFlowLogsConfigConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleNetworkManagementVpcFlowLogsConfigConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleNetworkManagementVpcFlowLogsConfig.GoogleNetworkManagementVpcFlowLogsConfigTimeouts",
-		reflect.TypeOf((*GoogleNetworkManagementVpcFlowLogsConfigTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleNetworkManagementVpcFlowLogsConfigTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleNetworkManagementVpcFlowLogsConfig.GoogleNetworkManagementVpcFlowLogsConfigTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleNetworkManagementVpcFlowLogsConfigTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleNetworkManagementVpcFlowLogsConfigTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -151,7 +151,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleNetworkManagementVpcFlowLogsConfigTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

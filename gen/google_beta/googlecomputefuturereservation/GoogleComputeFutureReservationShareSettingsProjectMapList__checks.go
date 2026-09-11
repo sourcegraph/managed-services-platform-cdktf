@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleComputeFutureReservationShareSettingsProjectMapList) va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeFutureReservationShareSettingsProjectMapList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeFutureReservationShareSettingsProjectMapList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleComputeFutureReservationShareSettingsProjectMapListParamet
 
 	return nil
 }
-

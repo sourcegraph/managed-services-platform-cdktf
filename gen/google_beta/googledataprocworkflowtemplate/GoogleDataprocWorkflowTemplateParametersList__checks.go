@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleDataprocWorkflowTemplateParametersList) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataprocWorkflowTemplateParametersList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataprocWorkflowTemplateParametersList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleDataprocWorkflowTemplateParametersListParameters(terraform
 
 	return nil
 }
-

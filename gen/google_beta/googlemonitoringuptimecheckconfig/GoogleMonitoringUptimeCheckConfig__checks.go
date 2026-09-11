@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleMonitoringUptimeCheckConfig) validateAddMoveTargetParam
 	return nil
 }
 
-func (g *jsiiProxy_GoogleMonitoringUptimeCheckConfig) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleMonitoringUptimeCheckConfig) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleMonitoringUptimeCheckConfig) validateMoveFromIdParamete
 	return nil
 }
 
-func (g *jsiiProxy_GoogleMonitoringUptimeCheckConfig) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleMonitoringUptimeCheckConfig) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (g *jsiiProxy_GoogleMonitoringUptimeCheckConfig) validateOverrideLogicalIdP
 	return nil
 }
 
-func (g *jsiiProxy_GoogleMonitoringUptimeCheckConfig) validatePutContentMatchersParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleMonitoringUptimeCheckConfig) validatePutContentMatchersParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -317,7 +317,7 @@ func validateGoogleMonitoringUptimeCheckConfig_GenerateConfigForImportParameters
 	return nil
 }
 
-func validateGoogleMonitoringUptimeCheckConfig_IsConstructParameters(x interface{}) error {
+func validateGoogleMonitoringUptimeCheckConfig_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -325,7 +325,7 @@ func validateGoogleMonitoringUptimeCheckConfig_IsConstructParameters(x interface
 	return nil
 }
 
-func validateGoogleMonitoringUptimeCheckConfig_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleMonitoringUptimeCheckConfig_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -333,7 +333,7 @@ func validateGoogleMonitoringUptimeCheckConfig_IsTerraformElementParameters(x in
 	return nil
 }
 
-func validateGoogleMonitoringUptimeCheckConfig_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleMonitoringUptimeCheckConfig_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -349,7 +349,7 @@ func (j *jsiiProxy_GoogleMonitoringUptimeCheckConfig) validateSetCheckerTypePara
 	return nil
 }
 
-func (j *jsiiProxy_GoogleMonitoringUptimeCheckConfig) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleMonitoringUptimeCheckConfig) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -382,7 +382,7 @@ func (j *jsiiProxy_GoogleMonitoringUptimeCheckConfig) validateSetConnectionParam
 	return nil
 }
 
-func (j *jsiiProxy_GoogleMonitoringUptimeCheckConfig) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleMonitoringUptimeCheckConfig) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -463,7 +463,7 @@ func (j *jsiiProxy_GoogleMonitoringUptimeCheckConfig) validateSetLifecycleParame
 	return nil
 }
 
-func (j *jsiiProxy_GoogleMonitoringUptimeCheckConfig) validateSetLogCheckFailuresParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleMonitoringUptimeCheckConfig) validateSetLogCheckFailuresParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -499,7 +499,7 @@ func (j *jsiiProxy_GoogleMonitoringUptimeCheckConfig) validateSetProjectParamete
 	return nil
 }
 
-func (j *jsiiProxy_GoogleMonitoringUptimeCheckConfig) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleMonitoringUptimeCheckConfig) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -587,4 +587,3 @@ func validateNewGoogleMonitoringUptimeCheckConfigParameters(scope constructs.Con
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleContainerAwsClusterControlPlaneAwsServicesAuthenticatio
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerAwsClusterControlPlaneAwsServicesAuthenticationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContainerAwsClusterControlPlaneAwsServicesAuthenticationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGoogleContainerAwsClusterControlPlaneAwsServicesAuthenticationOu
 
 	return nil
 }
-

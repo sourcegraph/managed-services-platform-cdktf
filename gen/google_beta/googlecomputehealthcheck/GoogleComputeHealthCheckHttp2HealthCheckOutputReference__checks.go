@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleComputeHealthCheckHttp2HealthCheckOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeHealthCheckHttp2HealthCheckOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeHealthCheckHttp2HealthCheckOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -254,4 +254,3 @@ func validateNewGoogleComputeHealthCheckHttp2HealthCheckOutputReferenceParameter
 
 	return nil
 }
-

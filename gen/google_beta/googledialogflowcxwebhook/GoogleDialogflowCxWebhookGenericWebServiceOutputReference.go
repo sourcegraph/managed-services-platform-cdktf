@@ -15,9 +15,9 @@ type GoogleDialogflowCxWebhookGenericWebServiceOutputReference interface {
 	AllowedCaCertsInput() *[]*string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -50,7 +50,7 @@ type GoogleDialogflowCxWebhookGenericWebServiceOutputReference interface {
 	SetSecretVersionForUsernamePassword(val *string)
 	SecretVersionForUsernamePasswordInput() *string
 	SecretVersionsForRequestHeaders() GoogleDialogflowCxWebhookGenericWebServiceSecretVersionsForRequestHeadersList
-	SecretVersionsForRequestHeadersInput() interface{}
+	SecretVersionsForRequestHeadersInput() any
 	ServiceAgentAuth() *string
 	SetServiceAgentAuth(val *string)
 	ServiceAgentAuthInput() *string
@@ -71,7 +71,7 @@ type GoogleDialogflowCxWebhookGenericWebServiceOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -93,7 +93,7 @@ type GoogleDialogflowCxWebhookGenericWebServiceOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutOauthConfig(value *GoogleDialogflowCxWebhookGenericWebServiceOauthConfig)
-	PutSecretVersionsForRequestHeaders(value interface{})
+	PutSecretVersionsForRequestHeaders(value any)
 	ResetAllowedCaCerts()
 	ResetHttpMethod()
 	ResetOauthConfig()
@@ -106,7 +106,7 @@ type GoogleDialogflowCxWebhookGenericWebServiceOutputReference interface {
 	ResetWebhookType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -139,8 +139,8 @@ func (j *jsiiProxy_GoogleDialogflowCxWebhookGenericWebServiceOutputReference) Al
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxWebhookGenericWebServiceOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDialogflowCxWebhookGenericWebServiceOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -319,8 +319,8 @@ func (j *jsiiProxy_GoogleDialogflowCxWebhookGenericWebServiceOutputReference) Se
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxWebhookGenericWebServiceOutputReference) SecretVersionsForRequestHeadersInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDialogflowCxWebhookGenericWebServiceOutputReference) SecretVersionsForRequestHeadersInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"secretVersionsForRequestHeadersInput",
@@ -409,7 +409,6 @@ func (j *jsiiProxy_GoogleDialogflowCxWebhookGenericWebServiceOutputReference) We
 	return returns
 }
 
-
 func NewGoogleDialogflowCxWebhookGenericWebServiceOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleDialogflowCxWebhookGenericWebServiceOutputReference {
 	_init_.Initialize()
 
@@ -420,7 +419,7 @@ func NewGoogleDialogflowCxWebhookGenericWebServiceOutputReference(terraformResou
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleDialogflowCxWebhook.GoogleDialogflowCxWebhookGenericWebServiceOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -432,12 +431,12 @@ func NewGoogleDialogflowCxWebhookGenericWebServiceOutputReference_Override(g Goo
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleDialogflowCxWebhook.GoogleDialogflowCxWebhookGenericWebServiceOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxWebhookGenericWebServiceOutputReference)SetAllowedCaCerts(val *[]*string) {
+func (j *jsiiProxy_GoogleDialogflowCxWebhookGenericWebServiceOutputReference) SetAllowedCaCerts(val *[]*string) {
 	if err := j.validateSetAllowedCaCertsParameters(val); err != nil {
 		panic(err)
 	}
@@ -448,7 +447,7 @@ func (j *jsiiProxy_GoogleDialogflowCxWebhookGenericWebServiceOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxWebhookGenericWebServiceOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleDialogflowCxWebhookGenericWebServiceOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -459,7 +458,7 @@ func (j *jsiiProxy_GoogleDialogflowCxWebhookGenericWebServiceOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxWebhookGenericWebServiceOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleDialogflowCxWebhookGenericWebServiceOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -470,7 +469,7 @@ func (j *jsiiProxy_GoogleDialogflowCxWebhookGenericWebServiceOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxWebhookGenericWebServiceOutputReference)SetHttpMethod(val *string) {
+func (j *jsiiProxy_GoogleDialogflowCxWebhookGenericWebServiceOutputReference) SetHttpMethod(val *string) {
 	if err := j.validateSetHttpMethodParameters(val); err != nil {
 		panic(err)
 	}
@@ -481,7 +480,7 @@ func (j *jsiiProxy_GoogleDialogflowCxWebhookGenericWebServiceOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxWebhookGenericWebServiceOutputReference)SetInternalValue(val *GoogleDialogflowCxWebhookGenericWebService) {
+func (j *jsiiProxy_GoogleDialogflowCxWebhookGenericWebServiceOutputReference) SetInternalValue(val *GoogleDialogflowCxWebhookGenericWebService) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -492,7 +491,7 @@ func (j *jsiiProxy_GoogleDialogflowCxWebhookGenericWebServiceOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxWebhookGenericWebServiceOutputReference)SetParameterMapping(val *map[string]*string) {
+func (j *jsiiProxy_GoogleDialogflowCxWebhookGenericWebServiceOutputReference) SetParameterMapping(val *map[string]*string) {
 	if err := j.validateSetParameterMappingParameters(val); err != nil {
 		panic(err)
 	}
@@ -503,7 +502,7 @@ func (j *jsiiProxy_GoogleDialogflowCxWebhookGenericWebServiceOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxWebhookGenericWebServiceOutputReference)SetRequestBody(val *string) {
+func (j *jsiiProxy_GoogleDialogflowCxWebhookGenericWebServiceOutputReference) SetRequestBody(val *string) {
 	if err := j.validateSetRequestBodyParameters(val); err != nil {
 		panic(err)
 	}
@@ -514,7 +513,7 @@ func (j *jsiiProxy_GoogleDialogflowCxWebhookGenericWebServiceOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxWebhookGenericWebServiceOutputReference)SetRequestHeaders(val *map[string]*string) {
+func (j *jsiiProxy_GoogleDialogflowCxWebhookGenericWebServiceOutputReference) SetRequestHeaders(val *map[string]*string) {
 	if err := j.validateSetRequestHeadersParameters(val); err != nil {
 		panic(err)
 	}
@@ -525,7 +524,7 @@ func (j *jsiiProxy_GoogleDialogflowCxWebhookGenericWebServiceOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxWebhookGenericWebServiceOutputReference)SetSecretVersionForUsernamePassword(val *string) {
+func (j *jsiiProxy_GoogleDialogflowCxWebhookGenericWebServiceOutputReference) SetSecretVersionForUsernamePassword(val *string) {
 	if err := j.validateSetSecretVersionForUsernamePasswordParameters(val); err != nil {
 		panic(err)
 	}
@@ -536,7 +535,7 @@ func (j *jsiiProxy_GoogleDialogflowCxWebhookGenericWebServiceOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxWebhookGenericWebServiceOutputReference)SetServiceAgentAuth(val *string) {
+func (j *jsiiProxy_GoogleDialogflowCxWebhookGenericWebServiceOutputReference) SetServiceAgentAuth(val *string) {
 	if err := j.validateSetServiceAgentAuthParameters(val); err != nil {
 		panic(err)
 	}
@@ -547,7 +546,7 @@ func (j *jsiiProxy_GoogleDialogflowCxWebhookGenericWebServiceOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxWebhookGenericWebServiceOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleDialogflowCxWebhookGenericWebServiceOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -558,7 +557,7 @@ func (j *jsiiProxy_GoogleDialogflowCxWebhookGenericWebServiceOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxWebhookGenericWebServiceOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleDialogflowCxWebhookGenericWebServiceOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -569,7 +568,7 @@ func (j *jsiiProxy_GoogleDialogflowCxWebhookGenericWebServiceOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxWebhookGenericWebServiceOutputReference)SetUri(val *string) {
+func (j *jsiiProxy_GoogleDialogflowCxWebhookGenericWebServiceOutputReference) SetUri(val *string) {
 	if err := j.validateSetUriParameters(val); err != nil {
 		panic(err)
 	}
@@ -580,7 +579,7 @@ func (j *jsiiProxy_GoogleDialogflowCxWebhookGenericWebServiceOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxWebhookGenericWebServiceOutputReference)SetWebhookType(val *string) {
+func (j *jsiiProxy_GoogleDialogflowCxWebhookGenericWebServiceOutputReference) SetWebhookType(val *string) {
 	if err := j.validateSetWebhookTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -604,16 +603,16 @@ func (g *jsiiProxy_GoogleDialogflowCxWebhookGenericWebServiceOutputReference) Co
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDialogflowCxWebhookGenericWebServiceOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleDialogflowCxWebhookGenericWebServiceOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -629,7 +628,7 @@ func (g *jsiiProxy_GoogleDialogflowCxWebhookGenericWebServiceOutputReference) Ge
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -645,7 +644,7 @@ func (g *jsiiProxy_GoogleDialogflowCxWebhookGenericWebServiceOutputReference) Ge
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -661,7 +660,7 @@ func (g *jsiiProxy_GoogleDialogflowCxWebhookGenericWebServiceOutputReference) Ge
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -677,7 +676,7 @@ func (g *jsiiProxy_GoogleDialogflowCxWebhookGenericWebServiceOutputReference) Ge
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -693,7 +692,7 @@ func (g *jsiiProxy_GoogleDialogflowCxWebhookGenericWebServiceOutputReference) Ge
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -709,7 +708,7 @@ func (g *jsiiProxy_GoogleDialogflowCxWebhookGenericWebServiceOutputReference) Ge
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -725,7 +724,7 @@ func (g *jsiiProxy_GoogleDialogflowCxWebhookGenericWebServiceOutputReference) Ge
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -741,7 +740,7 @@ func (g *jsiiProxy_GoogleDialogflowCxWebhookGenericWebServiceOutputReference) Ge
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -770,7 +769,7 @@ func (g *jsiiProxy_GoogleDialogflowCxWebhookGenericWebServiceOutputReference) In
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -784,18 +783,18 @@ func (g *jsiiProxy_GoogleDialogflowCxWebhookGenericWebServiceOutputReference) Pu
 	_jsii_.InvokeVoid(
 		g,
 		"putOauthConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (g *jsiiProxy_GoogleDialogflowCxWebhookGenericWebServiceOutputReference) PutSecretVersionsForRequestHeaders(value interface{}) {
+func (g *jsiiProxy_GoogleDialogflowCxWebhookGenericWebServiceOutputReference) PutSecretVersionsForRequestHeaders(value any) {
 	if err := g.validatePutSecretVersionsForRequestHeadersParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putSecretVersionsForRequestHeaders",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -879,16 +878,16 @@ func (g *jsiiProxy_GoogleDialogflowCxWebhookGenericWebServiceOutputReference) Re
 	)
 }
 
-func (g *jsiiProxy_GoogleDialogflowCxWebhookGenericWebServiceOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleDialogflowCxWebhookGenericWebServiceOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -907,4 +906,3 @@ func (g *jsiiProxy_GoogleDialogflowCxWebhookGenericWebServiceOutputReference) To
 
 	return returns
 }
-

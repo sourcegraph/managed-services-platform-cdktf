@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleApigeeTargetServer.GoogleApigeeTargetServer",
-		reflect.TypeOf((*GoogleApigeeTargetServer)(nil)).Elem(),
+		reflect.TypeFor[GoogleApigeeTargetServer](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -81,7 +81,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleApigeeTargetServer{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -89,19 +89,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleApigeeTargetServer.GoogleApigeeTargetServerConfig",
-		reflect.TypeOf((*GoogleApigeeTargetServerConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleApigeeTargetServerConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleApigeeTargetServer.GoogleApigeeTargetServerSSlInfo",
-		reflect.TypeOf((*GoogleApigeeTargetServerSSlInfo)(nil)).Elem(),
+		reflect.TypeFor[GoogleApigeeTargetServerSSlInfo](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleApigeeTargetServer.GoogleApigeeTargetServerSSlInfoCommonName",
-		reflect.TypeOf((*GoogleApigeeTargetServerSSlInfoCommonName)(nil)).Elem(),
+		reflect.TypeFor[GoogleApigeeTargetServerSSlInfoCommonName](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleApigeeTargetServer.GoogleApigeeTargetServerSSlInfoCommonNameOutputReference",
-		reflect.TypeOf((*GoogleApigeeTargetServerSSlInfoCommonNameOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleApigeeTargetServerSSlInfoCommonNameOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -131,7 +131,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "wildcardMatch", GoGetter: "WildcardMatch"},
 			_jsii_.MemberProperty{JsiiProperty: "wildcardMatchInput", GoGetter: "WildcardMatchInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleApigeeTargetServerSSlInfoCommonNameOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -139,7 +139,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleApigeeTargetServer.GoogleApigeeTargetServerSSlInfoOutputReference",
-		reflect.TypeOf((*GoogleApigeeTargetServerSSlInfoOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleApigeeTargetServerSSlInfoOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "ciphers", GoGetter: "Ciphers"},
 			_jsii_.MemberProperty{JsiiProperty: "ciphersInput", GoGetter: "CiphersInput"},
@@ -193,7 +193,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "trustStore", GoGetter: "TrustStore"},
 			_jsii_.MemberProperty{JsiiProperty: "trustStoreInput", GoGetter: "TrustStoreInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleApigeeTargetServerSSlInfoOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -201,11 +201,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleApigeeTargetServer.GoogleApigeeTargetServerTimeouts",
-		reflect.TypeOf((*GoogleApigeeTargetServerTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleApigeeTargetServerTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleApigeeTargetServer.GoogleApigeeTargetServerTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleApigeeTargetServerTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleApigeeTargetServerTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -238,7 +238,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleApigeeTargetServerTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

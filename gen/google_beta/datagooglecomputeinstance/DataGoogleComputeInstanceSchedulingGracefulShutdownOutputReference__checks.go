@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleComputeInstanceSchedulingGracefulShutdownOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleComputeInstanceSchedulingGracefulShutdownOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleComputeInstanceSchedulingGracefulShutdownOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleComputeInstanceSchedulingGracefulShutdownOutputReferen
 
 	return nil
 }
-

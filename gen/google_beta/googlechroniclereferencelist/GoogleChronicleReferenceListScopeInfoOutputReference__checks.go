@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleChronicleReferenceListScopeInfoOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_GoogleChronicleReferenceListScopeInfoOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleChronicleReferenceListScopeInfoOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleChronicleReferenceListScopeInfoOutputReferenceParameters(t
 
 	return nil
 }
-

@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleContainerAttachedCluster) validateAddMoveTargetParamete
 	return nil
 }
 
-func (g *jsiiProxy_GoogleContainerAttachedCluster) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleContainerAttachedCluster) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleContainerAttachedCluster) validateMoveFromIdParameters(
 	return nil
 }
 
-func (g *jsiiProxy_GoogleContainerAttachedCluster) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleContainerAttachedCluster) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -319,7 +319,7 @@ func validateGoogleContainerAttachedCluster_GenerateConfigForImportParameters(sc
 	return nil
 }
 
-func validateGoogleContainerAttachedCluster_IsConstructParameters(x interface{}) error {
+func validateGoogleContainerAttachedCluster_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -327,7 +327,7 @@ func validateGoogleContainerAttachedCluster_IsConstructParameters(x interface{})
 	return nil
 }
 
-func validateGoogleContainerAttachedCluster_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleContainerAttachedCluster_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -335,7 +335,7 @@ func validateGoogleContainerAttachedCluster_IsTerraformElementParameters(x inter
 	return nil
 }
 
-func validateGoogleContainerAttachedCluster_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleContainerAttachedCluster_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -351,7 +351,7 @@ func (j *jsiiProxy_GoogleContainerAttachedCluster) validateSetAnnotationsParamet
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerAttachedCluster) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContainerAttachedCluster) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -384,7 +384,7 @@ func (j *jsiiProxy_GoogleContainerAttachedCluster) validateSetConnectionParamete
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerAttachedCluster) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContainerAttachedCluster) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -513,7 +513,7 @@ func (j *jsiiProxy_GoogleContainerAttachedCluster) validateSetProjectParameters(
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerAttachedCluster) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleContainerAttachedCluster) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -577,4 +577,3 @@ func validateNewGoogleContainerAttachedClusterParameters(scope constructs.Constr
 
 	return nil
 }
-

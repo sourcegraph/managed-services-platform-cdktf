@@ -1,6 +1,5 @@
 package googlecontainerawscluster
 
-
 type GoogleContainerAwsClusterNetworking struct {
 	// All pods in the cluster are assigned an RFC1918 IPv4 address from these ranges.
 	//
@@ -25,6 +24,5 @@ type GoogleContainerAwsClusterNetworking struct {
 	// When set to true, you must also provide one or more security groups that ensure node pools are able to send requests to the control plane on TCP/443 and TCP/8132. Failure to do so may result in unavailable node pools.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_container_aws_cluster#per_node_pool_sg_rules_disabled GoogleContainerAwsCluster#per_node_pool_sg_rules_disabled}
-	PerNodePoolSgRulesDisabled interface{} `field:"optional" json:"perNodePoolSgRulesDisabled" yaml:"perNodePoolSgRulesDisabled"`
+	PerNodePoolSgRulesDisabled any `field:"optional" json:"perNodePoolSgRulesDisabled" yaml:"perNodePoolSgRulesDisabled"`
 }
-

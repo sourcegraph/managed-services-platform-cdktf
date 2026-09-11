@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleComputeGlobalForwardingRuleMetadataFiltersFilterLabelsO
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeGlobalForwardingRuleMetadataFiltersFilterLabelsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeGlobalForwardingRuleMetadataFiltersFilterLabelsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_GoogleComputeGlobalForwardingRuleMetadataFiltersFilterLabelsO
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeGlobalForwardingRuleMetadataFiltersFilterLabelsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeGlobalForwardingRuleMetadataFiltersFilterLabelsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGoogleComputeGlobalForwardingRuleMetadataFiltersFilterLabelsOutp
 
 	return nil
 }
-

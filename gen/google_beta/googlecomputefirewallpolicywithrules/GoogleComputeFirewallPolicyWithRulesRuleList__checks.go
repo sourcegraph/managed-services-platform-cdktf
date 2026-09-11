@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleComputeFirewallPolicyWithRulesRuleList) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeFirewallPolicyWithRulesRuleList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeFirewallPolicyWithRulesRuleList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleComputeFirewallPolicyWithRulesRuleListParameters(terraform
 
 	return nil
 }
-

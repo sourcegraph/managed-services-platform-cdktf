@@ -109,7 +109,7 @@ func (g *jsiiProxy_GoogleDataplexDatascanDataProfileSpecPostScanActionsOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataplexDatascanDataProfileSpecPostScanActionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataplexDatascanDataProfileSpecPostScanActionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -209,4 +209,3 @@ func validateNewGoogleDataplexDatascanDataProfileSpecPostScanActionsOutputRefere
 
 	return nil
 }
-

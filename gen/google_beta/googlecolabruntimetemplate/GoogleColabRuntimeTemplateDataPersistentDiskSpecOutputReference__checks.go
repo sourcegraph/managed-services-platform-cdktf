@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleColabRuntimeTemplateDataPersistentDiskSpecOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_GoogleColabRuntimeTemplateDataPersistentDiskSpecOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleColabRuntimeTemplateDataPersistentDiskSpecOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGoogleColabRuntimeTemplateDataPersistentDiskSpecOutputReferenceP
 
 	return nil
 }
-

@@ -6,9 +6,9 @@ import (
 
 type GoogleNetappVolumeConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type GoogleNetappVolumeConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Capacity of the volume (in GiB).
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_netapp_volume#capacity_gib GoogleNetappVolume#capacity_gib}
@@ -79,7 +79,7 @@ type GoogleNetappVolumeConfig struct {
 	// Flag indicating if the volume is a kerberos volume or not, export policy rules control kerberos security modes (krb5, krb5i, krb5p).
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_netapp_volume#kerberos_enabled GoogleNetappVolume#kerberos_enabled}
-	KerberosEnabled interface{} `field:"optional" json:"kerberosEnabled" yaml:"kerberosEnabled"`
+	KerberosEnabled any `field:"optional" json:"kerberosEnabled" yaml:"kerberosEnabled"`
 	// Labels as key value pairs. Example: '{ "owner": "Bob", "department": "finance", "purpose": "testing" }'.
 	//
 	// **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
@@ -90,14 +90,14 @@ type GoogleNetappVolumeConfig struct {
 	// Optional. Flag indicating if the volume will be a large capacity volume or a regular volume.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_netapp_volume#large_capacity GoogleNetappVolume#large_capacity}
-	LargeCapacity interface{} `field:"optional" json:"largeCapacity" yaml:"largeCapacity"`
+	LargeCapacity any `field:"optional" json:"largeCapacity" yaml:"largeCapacity"`
 	// Optional.
 	//
 	// Flag indicating if the volume will have an IP address per node for volumes supporting multiple IP endpoints.
 	// Only the volume with largeCapacity will be allowed to have multiple endpoints.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_netapp_volume#multiple_endpoints GoogleNetappVolume#multiple_endpoints}
-	MultipleEndpoints interface{} `field:"optional" json:"multipleEndpoints" yaml:"multipleEndpoints"`
+	MultipleEndpoints any `field:"optional" json:"multipleEndpoints" yaml:"multipleEndpoints"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_netapp_volume#project GoogleNetappVolume#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// restore_parameters block.
@@ -122,7 +122,7 @@ type GoogleNetappVolumeConfig struct {
 	// If enabled, a NFS volume will contain a read-only .snapshot directory which provides access to each of the volume's snapshots. Will enable "Previous Versions" support for SMB.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_netapp_volume#snapshot_directory GoogleNetappVolume#snapshot_directory}
-	SnapshotDirectory interface{} `field:"optional" json:"snapshotDirectory" yaml:"snapshotDirectory"`
+	SnapshotDirectory any `field:"optional" json:"snapshotDirectory" yaml:"snapshotDirectory"`
 	// snapshot_policy block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_netapp_volume#snapshot_policy GoogleNetappVolume#snapshot_policy}
@@ -140,4 +140,3 @@ type GoogleNetappVolumeConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_netapp_volume#unix_permissions GoogleNetappVolume#unix_permissions}
 	UnixPermissions *string `field:"optional" json:"unixPermissions" yaml:"unixPermissions"`
 }
-

@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleDiscoveryEngineSitemap) validateAddMoveTargetParameters
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDiscoveryEngineSitemap) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleDiscoveryEngineSitemap) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleDiscoveryEngineSitemap) validateMoveFromIdParameters(id
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDiscoveryEngineSitemap) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleDiscoveryEngineSitemap) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateGoogleDiscoveryEngineSitemap_GenerateConfigForImportParameters(scop
 	return nil
 }
 
-func validateGoogleDiscoveryEngineSitemap_IsConstructParameters(x interface{}) error {
+func validateGoogleDiscoveryEngineSitemap_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateGoogleDiscoveryEngineSitemap_IsConstructParameters(x interface{}) e
 	return nil
 }
 
-func validateGoogleDiscoveryEngineSitemap_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleDiscoveryEngineSitemap_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateGoogleDiscoveryEngineSitemap_IsTerraformElementParameters(x interfa
 	return nil
 }
 
-func validateGoogleDiscoveryEngineSitemap_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleDiscoveryEngineSitemap_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateGoogleDiscoveryEngineSitemap_IsTerraformResourceParameters(x interf
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDiscoveryEngineSitemap) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDiscoveryEngineSitemap) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_GoogleDiscoveryEngineSitemap) validateSetConnectionParameters
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDiscoveryEngineSitemap) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDiscoveryEngineSitemap) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -385,7 +385,7 @@ func (j *jsiiProxy_GoogleDiscoveryEngineSitemap) validateSetProjectParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDiscoveryEngineSitemap) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleDiscoveryEngineSitemap) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -457,4 +457,3 @@ func validateNewGoogleDiscoveryEngineSitemapParameters(scope constructs.Construc
 
 	return nil
 }
-

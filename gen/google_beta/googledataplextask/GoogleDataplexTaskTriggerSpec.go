@@ -1,6 +1,5 @@
 package googledataplextask
 
-
 type GoogleDataplexTaskTriggerSpec struct {
 	// Trigger type of the user-specified Task Possible values: ["ON_DEMAND", "RECURRING"].
 	//
@@ -11,7 +10,7 @@ type GoogleDataplexTaskTriggerSpec struct {
 	// This does not cancel already running tasks. It is intended to temporarily disable RECURRING tasks.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dataplex_task#disabled GoogleDataplexTask#disabled}
-	Disabled interface{} `field:"optional" json:"disabled" yaml:"disabled"`
+	Disabled any `field:"optional" json:"disabled" yaml:"disabled"`
 	// Number of retry attempts before aborting. Set to zero to never attempt to retry a failed task.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dataplex_task#max_retries GoogleDataplexTask#max_retries}
@@ -27,4 +26,3 @@ type GoogleDataplexTaskTriggerSpec struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dataplex_task#start_time GoogleDataplexTask#start_time}
 	StartTime *string `field:"optional" json:"startTime" yaml:"startTime"`
 }
-

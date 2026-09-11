@@ -1,6 +1,5 @@
 package googledocumentaiwarehousedocumentschema
 
-
 type GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsEnumTypeOptions struct {
 	// List of possible enum values.
 	//
@@ -11,6 +10,5 @@ type GoogleDocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptio
 	// The validation check runs by default.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_document_ai_warehouse_document_schema#validation_check_disabled GoogleDocumentAiWarehouseDocumentSchema#validation_check_disabled}
-	ValidationCheckDisabled interface{} `field:"optional" json:"validationCheckDisabled" yaml:"validationCheckDisabled"`
+	ValidationCheckDisabled any `field:"optional" json:"validationCheckDisabled" yaml:"validationCheckDisabled"`
 }
-

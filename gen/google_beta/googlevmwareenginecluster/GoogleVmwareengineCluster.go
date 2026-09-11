@@ -17,15 +17,15 @@ type GoogleVmwareengineCluster interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -52,7 +52,7 @@ type GoogleVmwareengineCluster interface {
 	// The tree node.
 	Node() constructs.Node
 	NodeTypeConfigs() GoogleVmwareengineClusterNodeTypeConfigsList
-	NodeTypeConfigsInput() interface{}
+	NodeTypeConfigsInput() any
 	Parent() *string
 	SetParent(val *string)
 	ParentInput() *string
@@ -61,28 +61,28 @@ type GoogleVmwareengineCluster interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	State() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() GoogleVmwareengineClusterTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	Uid() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -100,7 +100,7 @@ type GoogleVmwareengineCluster interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -112,7 +112,7 @@ type GoogleVmwareengineCluster interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -120,7 +120,7 @@ type GoogleVmwareengineCluster interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutAutoscalingSettings(value *GoogleVmwareengineClusterAutoscalingSettings)
-	PutNodeTypeConfigs(value interface{})
+	PutNodeTypeConfigs(value any)
 	PutTimeouts(value *GoogleVmwareengineClusterTimeouts)
 	ResetAutoscalingSettings()
 	ResetId()
@@ -129,17 +129,17 @@ type GoogleVmwareengineCluster interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleVmwareengineCluster
@@ -177,8 +177,8 @@ func (j *jsiiProxy_GoogleVmwareengineCluster) CdktfStack() cdktf.TerraformStack 
 	return returns
 }
 
-func (j *jsiiProxy_GoogleVmwareengineCluster) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleVmwareengineCluster) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -187,8 +187,8 @@ func (j *jsiiProxy_GoogleVmwareengineCluster) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleVmwareengineCluster) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleVmwareengineCluster) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -197,8 +197,8 @@ func (j *jsiiProxy_GoogleVmwareengineCluster) ConstructNodeMetadata() *map[strin
 	return returns
 }
 
-func (j *jsiiProxy_GoogleVmwareengineCluster) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleVmwareengineCluster) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -327,8 +327,8 @@ func (j *jsiiProxy_GoogleVmwareengineCluster) NodeTypeConfigs() GoogleVmwareengi
 	return returns
 }
 
-func (j *jsiiProxy_GoogleVmwareengineCluster) NodeTypeConfigsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleVmwareengineCluster) NodeTypeConfigsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"nodeTypeConfigsInput",
@@ -367,8 +367,8 @@ func (j *jsiiProxy_GoogleVmwareengineCluster) Provider() cdktf.TerraformProvider
 	return returns
 }
 
-func (j *jsiiProxy_GoogleVmwareengineCluster) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleVmwareengineCluster) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -377,8 +377,8 @@ func (j *jsiiProxy_GoogleVmwareengineCluster) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleVmwareengineCluster) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleVmwareengineCluster) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -407,8 +407,8 @@ func (j *jsiiProxy_GoogleVmwareengineCluster) TerraformGeneratorMetadata() *cdkt
 	return returns
 }
 
-func (j *jsiiProxy_GoogleVmwareengineCluster) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleVmwareengineCluster) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -437,8 +437,8 @@ func (j *jsiiProxy_GoogleVmwareengineCluster) Timeouts() GoogleVmwareengineClust
 	return returns
 }
 
-func (j *jsiiProxy_GoogleVmwareengineCluster) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleVmwareengineCluster) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -457,7 +457,6 @@ func (j *jsiiProxy_GoogleVmwareengineCluster) Uid() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_vmwareengine_cluster google_vmwareengine_cluster} Resource.
 func NewGoogleVmwareengineCluster(scope constructs.Construct, id *string, config *GoogleVmwareengineClusterConfig) GoogleVmwareengineCluster {
 	_init_.Initialize()
@@ -469,7 +468,7 @@ func NewGoogleVmwareengineCluster(scope constructs.Construct, id *string, config
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleVmwareengineCluster.GoogleVmwareengineCluster",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -482,12 +481,12 @@ func NewGoogleVmwareengineCluster_Override(g GoogleVmwareengineCluster, scope co
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleVmwareengineCluster.GoogleVmwareengineCluster",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleVmwareengineCluster)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleVmwareengineCluster) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -498,7 +497,7 @@ func (j *jsiiProxy_GoogleVmwareengineCluster)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleVmwareengineCluster)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleVmwareengineCluster) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -509,7 +508,7 @@ func (j *jsiiProxy_GoogleVmwareengineCluster)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleVmwareengineCluster)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleVmwareengineCluster) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -517,7 +516,7 @@ func (j *jsiiProxy_GoogleVmwareengineCluster)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleVmwareengineCluster)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleVmwareengineCluster) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -525,7 +524,7 @@ func (j *jsiiProxy_GoogleVmwareengineCluster)SetForEach(val cdktf.ITerraformIter
 	)
 }
 
-func (j *jsiiProxy_GoogleVmwareengineCluster)SetId(val *string) {
+func (j *jsiiProxy_GoogleVmwareengineCluster) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -536,7 +535,7 @@ func (j *jsiiProxy_GoogleVmwareengineCluster)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleVmwareengineCluster)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleVmwareengineCluster) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -547,7 +546,7 @@ func (j *jsiiProxy_GoogleVmwareengineCluster)SetLifecycle(val *cdktf.TerraformRe
 	)
 }
 
-func (j *jsiiProxy_GoogleVmwareengineCluster)SetName(val *string) {
+func (j *jsiiProxy_GoogleVmwareengineCluster) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -558,7 +557,7 @@ func (j *jsiiProxy_GoogleVmwareengineCluster)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleVmwareengineCluster)SetParent(val *string) {
+func (j *jsiiProxy_GoogleVmwareengineCluster) SetParent(val *string) {
 	if err := j.validateSetParentParameters(val); err != nil {
 		panic(err)
 	}
@@ -569,7 +568,7 @@ func (j *jsiiProxy_GoogleVmwareengineCluster)SetParent(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleVmwareengineCluster)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleVmwareengineCluster) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -577,7 +576,7 @@ func (j *jsiiProxy_GoogleVmwareengineCluster)SetProvider(val cdktf.TerraformProv
 	)
 }
 
-func (j *jsiiProxy_GoogleVmwareengineCluster)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleVmwareengineCluster) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -600,7 +599,7 @@ func GoogleVmwareengineCluster_GenerateConfigForImport(scope constructs.Construc
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleVmwareengineCluster.GoogleVmwareengineCluster",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -624,7 +623,7 @@ func GoogleVmwareengineCluster_GenerateConfigForImport(scope constructs.Construc
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleVmwareengineCluster_IsConstruct(x interface{}) *bool {
+func GoogleVmwareengineCluster_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleVmwareengineCluster_IsConstructParameters(x); err != nil {
@@ -635,7 +634,7 @@ func GoogleVmwareengineCluster_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleVmwareengineCluster.GoogleVmwareengineCluster",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -643,7 +642,7 @@ func GoogleVmwareengineCluster_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleVmwareengineCluster_IsTerraformElement(x interface{}) *bool {
+func GoogleVmwareengineCluster_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleVmwareengineCluster_IsTerraformElementParameters(x); err != nil {
@@ -654,7 +653,7 @@ func GoogleVmwareengineCluster_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleVmwareengineCluster.GoogleVmwareengineCluster",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -662,7 +661,7 @@ func GoogleVmwareengineCluster_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleVmwareengineCluster_IsTerraformResource(x interface{}) *bool {
+func GoogleVmwareengineCluster_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleVmwareengineCluster_IsTerraformResourceParameters(x); err != nil {
@@ -673,7 +672,7 @@ func GoogleVmwareengineCluster_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleVmwareengineCluster.GoogleVmwareengineCluster",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -698,31 +697,31 @@ func (g *jsiiProxy_GoogleVmwareengineCluster) AddMoveTarget(moveTarget *string) 
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleVmwareengineCluster) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleVmwareengineCluster) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleVmwareengineCluster) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleVmwareengineCluster) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -738,7 +737,7 @@ func (g *jsiiProxy_GoogleVmwareengineCluster) GetBooleanAttribute(terraformAttri
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -754,7 +753,7 @@ func (g *jsiiProxy_GoogleVmwareengineCluster) GetBooleanMapAttribute(terraformAt
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -770,7 +769,7 @@ func (g *jsiiProxy_GoogleVmwareengineCluster) GetListAttribute(terraformAttribut
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -786,7 +785,7 @@ func (g *jsiiProxy_GoogleVmwareengineCluster) GetNumberAttribute(terraformAttrib
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -802,7 +801,7 @@ func (g *jsiiProxy_GoogleVmwareengineCluster) GetNumberListAttribute(terraformAt
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -818,7 +817,7 @@ func (g *jsiiProxy_GoogleVmwareengineCluster) GetNumberMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -834,7 +833,7 @@ func (g *jsiiProxy_GoogleVmwareengineCluster) GetStringAttribute(terraformAttrib
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -850,15 +849,15 @@ func (g *jsiiProxy_GoogleVmwareengineCluster) GetStringMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleVmwareengineCluster) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleVmwareengineCluster) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -877,7 +876,7 @@ func (g *jsiiProxy_GoogleVmwareengineCluster) ImportFrom(id *string, provider cd
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -890,7 +889,7 @@ func (g *jsiiProxy_GoogleVmwareengineCluster) InterpolationForAttribute(terrafor
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -904,18 +903,18 @@ func (g *jsiiProxy_GoogleVmwareengineCluster) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleVmwareengineCluster) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleVmwareengineCluster) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -926,7 +925,7 @@ func (g *jsiiProxy_GoogleVmwareengineCluster) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -937,7 +936,7 @@ func (g *jsiiProxy_GoogleVmwareengineCluster) OverrideLogicalId(newLogicalId *st
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -948,18 +947,18 @@ func (g *jsiiProxy_GoogleVmwareengineCluster) PutAutoscalingSettings(value *Goog
 	_jsii_.InvokeVoid(
 		g,
 		"putAutoscalingSettings",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (g *jsiiProxy_GoogleVmwareengineCluster) PutNodeTypeConfigs(value interface{}) {
+func (g *jsiiProxy_GoogleVmwareengineCluster) PutNodeTypeConfigs(value any) {
 	if err := g.validatePutNodeTypeConfigsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putNodeTypeConfigs",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -970,7 +969,7 @@ func (g *jsiiProxy_GoogleVmwareengineCluster) PutTimeouts(value *GoogleVmwareeng
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1014,8 +1013,8 @@ func (g *jsiiProxy_GoogleVmwareengineCluster) ResetTimeouts() {
 	)
 }
 
-func (g *jsiiProxy_GoogleVmwareengineCluster) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleVmwareengineCluster) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1027,8 +1026,8 @@ func (g *jsiiProxy_GoogleVmwareengineCluster) SynthesizeAttributes() *map[string
 	return returns
 }
 
-func (g *jsiiProxy_GoogleVmwareengineCluster) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleVmwareengineCluster) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1040,8 +1039,8 @@ func (g *jsiiProxy_GoogleVmwareengineCluster) SynthesizeHclAttributes() *map[str
 	return returns
 }
 
-func (g *jsiiProxy_GoogleVmwareengineCluster) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleVmwareengineCluster) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1053,8 +1052,8 @@ func (g *jsiiProxy_GoogleVmwareengineCluster) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleVmwareengineCluster) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleVmwareengineCluster) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1079,8 +1078,8 @@ func (g *jsiiProxy_GoogleVmwareengineCluster) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleVmwareengineCluster) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleVmwareengineCluster) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1091,4 +1090,3 @@ func (g *jsiiProxy_GoogleVmwareengineCluster) ToTerraform() interface{} {
 
 	return returns
 }
-

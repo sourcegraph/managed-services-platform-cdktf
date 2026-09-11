@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleBillingAccountIamBindingConditionOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBillingAccountIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBillingAccountIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewGoogleBillingAccountIamBindingConditionOutputReferenceParameters
 
 	return nil
 }
-

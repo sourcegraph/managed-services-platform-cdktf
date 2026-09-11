@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleNetappBackupVault.GoogleNetappBackupVault",
-		reflect.TypeOf((*GoogleNetappBackupVault)(nil)).Elem(),
+		reflect.TypeFor[GoogleNetappBackupVault](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -90,7 +90,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleNetappBackupVault{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -98,11 +98,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleNetappBackupVault.GoogleNetappBackupVaultBackupRetentionPolicy",
-		reflect.TypeOf((*GoogleNetappBackupVaultBackupRetentionPolicy)(nil)).Elem(),
+		reflect.TypeFor[GoogleNetappBackupVaultBackupRetentionPolicy](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleNetappBackupVault.GoogleNetappBackupVaultBackupRetentionPolicyOutputReference",
-		reflect.TypeOf((*GoogleNetappBackupVaultBackupRetentionPolicyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleNetappBackupVaultBackupRetentionPolicyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "backupMinimumEnforcedRetentionDays", GoGetter: "BackupMinimumEnforcedRetentionDays"},
 			_jsii_.MemberProperty{JsiiProperty: "backupMinimumEnforcedRetentionDaysInput", GoGetter: "BackupMinimumEnforcedRetentionDaysInput"},
@@ -140,7 +140,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "weeklyBackupImmutable", GoGetter: "WeeklyBackupImmutable"},
 			_jsii_.MemberProperty{JsiiProperty: "weeklyBackupImmutableInput", GoGetter: "WeeklyBackupImmutableInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleNetappBackupVaultBackupRetentionPolicyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -148,15 +148,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleNetappBackupVault.GoogleNetappBackupVaultConfig",
-		reflect.TypeOf((*GoogleNetappBackupVaultConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleNetappBackupVaultConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleNetappBackupVault.GoogleNetappBackupVaultTimeouts",
-		reflect.TypeOf((*GoogleNetappBackupVaultTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleNetappBackupVaultTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleNetappBackupVault.GoogleNetappBackupVaultTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleNetappBackupVaultTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleNetappBackupVaultTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -189,7 +189,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleNetappBackupVaultTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

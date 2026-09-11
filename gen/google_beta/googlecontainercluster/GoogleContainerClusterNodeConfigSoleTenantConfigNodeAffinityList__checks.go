@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleContainerClusterNodeConfigSoleTenantConfigNodeAffinityL
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerClusterNodeConfigSoleTenantConfigNodeAffinityList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContainerClusterNodeConfigSoleTenantConfigNodeAffinityList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleContainerClusterNodeConfigSoleTenantConfigNodeAffinityList
 
 	return nil
 }
-

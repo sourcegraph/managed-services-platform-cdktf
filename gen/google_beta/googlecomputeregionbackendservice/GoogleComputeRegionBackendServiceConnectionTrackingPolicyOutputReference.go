@@ -12,9 +12,9 @@ type GoogleComputeRegionBackendServiceConnectionTrackingPolicyOutputReference in
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -28,9 +28,9 @@ type GoogleComputeRegionBackendServiceConnectionTrackingPolicyOutputReference in
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	EnableStrongAffinity() interface{}
-	SetEnableStrongAffinity(val interface{})
-	EnableStrongAffinityInput() interface{}
+	EnableStrongAffinity() any
+	SetEnableStrongAffinity(val any)
+	EnableStrongAffinityInput() any
 	// Experimental.
 	Fqn() *string
 	IdleTimeoutSec() *float64
@@ -52,7 +52,7 @@ type GoogleComputeRegionBackendServiceConnectionTrackingPolicyOutputReference in
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -79,7 +79,7 @@ type GoogleComputeRegionBackendServiceConnectionTrackingPolicyOutputReference in
 	ResetTrackingMode()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -92,8 +92,8 @@ type jsiiProxy_GoogleComputeRegionBackendServiceConnectionTrackingPolicyOutputRe
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GoogleComputeRegionBackendServiceConnectionTrackingPolicyOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeRegionBackendServiceConnectionTrackingPolicyOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -142,8 +142,8 @@ func (j *jsiiProxy_GoogleComputeRegionBackendServiceConnectionTrackingPolicyOutp
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeRegionBackendServiceConnectionTrackingPolicyOutputReference) EnableStrongAffinity() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeRegionBackendServiceConnectionTrackingPolicyOutputReference) EnableStrongAffinity() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableStrongAffinity",
@@ -152,8 +152,8 @@ func (j *jsiiProxy_GoogleComputeRegionBackendServiceConnectionTrackingPolicyOutp
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeRegionBackendServiceConnectionTrackingPolicyOutputReference) EnableStrongAffinityInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeRegionBackendServiceConnectionTrackingPolicyOutputReference) EnableStrongAffinityInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableStrongAffinityInput",
@@ -242,7 +242,6 @@ func (j *jsiiProxy_GoogleComputeRegionBackendServiceConnectionTrackingPolicyOutp
 	return returns
 }
 
-
 func NewGoogleComputeRegionBackendServiceConnectionTrackingPolicyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleComputeRegionBackendServiceConnectionTrackingPolicyOutputReference {
 	_init_.Initialize()
 
@@ -253,7 +252,7 @@ func NewGoogleComputeRegionBackendServiceConnectionTrackingPolicyOutputReference
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleComputeRegionBackendService.GoogleComputeRegionBackendServiceConnectionTrackingPolicyOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -265,12 +264,12 @@ func NewGoogleComputeRegionBackendServiceConnectionTrackingPolicyOutputReference
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleComputeRegionBackendService.GoogleComputeRegionBackendServiceConnectionTrackingPolicyOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeRegionBackendServiceConnectionTrackingPolicyOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleComputeRegionBackendServiceConnectionTrackingPolicyOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -281,7 +280,7 @@ func (j *jsiiProxy_GoogleComputeRegionBackendServiceConnectionTrackingPolicyOutp
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeRegionBackendServiceConnectionTrackingPolicyOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleComputeRegionBackendServiceConnectionTrackingPolicyOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -292,7 +291,7 @@ func (j *jsiiProxy_GoogleComputeRegionBackendServiceConnectionTrackingPolicyOutp
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeRegionBackendServiceConnectionTrackingPolicyOutputReference)SetConnectionPersistenceOnUnhealthyBackends(val *string) {
+func (j *jsiiProxy_GoogleComputeRegionBackendServiceConnectionTrackingPolicyOutputReference) SetConnectionPersistenceOnUnhealthyBackends(val *string) {
 	if err := j.validateSetConnectionPersistenceOnUnhealthyBackendsParameters(val); err != nil {
 		panic(err)
 	}
@@ -303,7 +302,7 @@ func (j *jsiiProxy_GoogleComputeRegionBackendServiceConnectionTrackingPolicyOutp
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeRegionBackendServiceConnectionTrackingPolicyOutputReference)SetEnableStrongAffinity(val interface{}) {
+func (j *jsiiProxy_GoogleComputeRegionBackendServiceConnectionTrackingPolicyOutputReference) SetEnableStrongAffinity(val any) {
 	if err := j.validateSetEnableStrongAffinityParameters(val); err != nil {
 		panic(err)
 	}
@@ -314,7 +313,7 @@ func (j *jsiiProxy_GoogleComputeRegionBackendServiceConnectionTrackingPolicyOutp
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeRegionBackendServiceConnectionTrackingPolicyOutputReference)SetIdleTimeoutSec(val *float64) {
+func (j *jsiiProxy_GoogleComputeRegionBackendServiceConnectionTrackingPolicyOutputReference) SetIdleTimeoutSec(val *float64) {
 	if err := j.validateSetIdleTimeoutSecParameters(val); err != nil {
 		panic(err)
 	}
@@ -325,7 +324,7 @@ func (j *jsiiProxy_GoogleComputeRegionBackendServiceConnectionTrackingPolicyOutp
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeRegionBackendServiceConnectionTrackingPolicyOutputReference)SetInternalValue(val *GoogleComputeRegionBackendServiceConnectionTrackingPolicy) {
+func (j *jsiiProxy_GoogleComputeRegionBackendServiceConnectionTrackingPolicyOutputReference) SetInternalValue(val *GoogleComputeRegionBackendServiceConnectionTrackingPolicy) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -336,7 +335,7 @@ func (j *jsiiProxy_GoogleComputeRegionBackendServiceConnectionTrackingPolicyOutp
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeRegionBackendServiceConnectionTrackingPolicyOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleComputeRegionBackendServiceConnectionTrackingPolicyOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,7 +346,7 @@ func (j *jsiiProxy_GoogleComputeRegionBackendServiceConnectionTrackingPolicyOutp
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeRegionBackendServiceConnectionTrackingPolicyOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleComputeRegionBackendServiceConnectionTrackingPolicyOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -358,7 +357,7 @@ func (j *jsiiProxy_GoogleComputeRegionBackendServiceConnectionTrackingPolicyOutp
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeRegionBackendServiceConnectionTrackingPolicyOutputReference)SetTrackingMode(val *string) {
+func (j *jsiiProxy_GoogleComputeRegionBackendServiceConnectionTrackingPolicyOutputReference) SetTrackingMode(val *string) {
 	if err := j.validateSetTrackingModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -382,16 +381,16 @@ func (g *jsiiProxy_GoogleComputeRegionBackendServiceConnectionTrackingPolicyOutp
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeRegionBackendServiceConnectionTrackingPolicyOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleComputeRegionBackendServiceConnectionTrackingPolicyOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -407,7 +406,7 @@ func (g *jsiiProxy_GoogleComputeRegionBackendServiceConnectionTrackingPolicyOutp
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -423,7 +422,7 @@ func (g *jsiiProxy_GoogleComputeRegionBackendServiceConnectionTrackingPolicyOutp
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -439,7 +438,7 @@ func (g *jsiiProxy_GoogleComputeRegionBackendServiceConnectionTrackingPolicyOutp
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -455,7 +454,7 @@ func (g *jsiiProxy_GoogleComputeRegionBackendServiceConnectionTrackingPolicyOutp
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -471,7 +470,7 @@ func (g *jsiiProxy_GoogleComputeRegionBackendServiceConnectionTrackingPolicyOutp
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -487,7 +486,7 @@ func (g *jsiiProxy_GoogleComputeRegionBackendServiceConnectionTrackingPolicyOutp
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -503,7 +502,7 @@ func (g *jsiiProxy_GoogleComputeRegionBackendServiceConnectionTrackingPolicyOutp
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -519,7 +518,7 @@ func (g *jsiiProxy_GoogleComputeRegionBackendServiceConnectionTrackingPolicyOutp
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -548,7 +547,7 @@ func (g *jsiiProxy_GoogleComputeRegionBackendServiceConnectionTrackingPolicyOutp
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -587,16 +586,16 @@ func (g *jsiiProxy_GoogleComputeRegionBackendServiceConnectionTrackingPolicyOutp
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeRegionBackendServiceConnectionTrackingPolicyOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleComputeRegionBackendServiceConnectionTrackingPolicyOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -615,4 +614,3 @@ func (g *jsiiProxy_GoogleComputeRegionBackendServiceConnectionTrackingPolicyOutp
 
 	return returns
 }
-

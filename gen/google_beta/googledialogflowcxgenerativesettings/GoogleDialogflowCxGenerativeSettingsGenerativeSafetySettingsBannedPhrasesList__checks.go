@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleDialogflowCxGenerativeSettingsGenerativeSafetySettingsB
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxGenerativeSettingsGenerativeSafetySettingsBannedPhrasesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDialogflowCxGenerativeSettingsGenerativeSafetySettingsBannedPhrasesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleDialogflowCxGenerativeSettingsGenerativeSafetySettingsBann
 
 	return nil
 }
-

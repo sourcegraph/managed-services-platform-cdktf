@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleLoggingBillingAccountSinkExclusionsOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_GoogleLoggingBillingAccountSinkExclusionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleLoggingBillingAccountSinkExclusionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_GoogleLoggingBillingAccountSinkExclusionsOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_GoogleLoggingBillingAccountSinkExclusionsOutputReference) validateSetDisabledParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleLoggingBillingAccountSinkExclusionsOutputReference) validateSetDisabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -199,7 +199,7 @@ func (j *jsiiProxy_GoogleLoggingBillingAccountSinkExclusionsOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_GoogleLoggingBillingAccountSinkExclusionsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleLoggingBillingAccountSinkExclusionsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -266,4 +266,3 @@ func validateNewGoogleLoggingBillingAccountSinkExclusionsOutputReferenceParamete
 
 	return nil
 }
-

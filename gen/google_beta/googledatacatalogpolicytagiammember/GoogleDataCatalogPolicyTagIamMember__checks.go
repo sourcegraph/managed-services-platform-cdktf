@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleDataCatalogPolicyTagIamMember) validateAddMoveTargetPar
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDataCatalogPolicyTagIamMember) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleDataCatalogPolicyTagIamMember) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleDataCatalogPolicyTagIamMember) validateMoveFromIdParame
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDataCatalogPolicyTagIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleDataCatalogPolicyTagIamMember) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateGoogleDataCatalogPolicyTagIamMember_GenerateConfigForImportParamete
 	return nil
 }
 
-func validateGoogleDataCatalogPolicyTagIamMember_IsConstructParameters(x interface{}) error {
+func validateGoogleDataCatalogPolicyTagIamMember_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateGoogleDataCatalogPolicyTagIamMember_IsConstructParameters(x interfa
 	return nil
 }
 
-func validateGoogleDataCatalogPolicyTagIamMember_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleDataCatalogPolicyTagIamMember_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateGoogleDataCatalogPolicyTagIamMember_IsTerraformElementParameters(x 
 	return nil
 }
 
-func validateGoogleDataCatalogPolicyTagIamMember_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleDataCatalogPolicyTagIamMember_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateGoogleDataCatalogPolicyTagIamMember_IsTerraformResourceParameters(x
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataCatalogPolicyTagIamMember) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataCatalogPolicyTagIamMember) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_GoogleDataCatalogPolicyTagIamMember) validateSetConnectionPar
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataCatalogPolicyTagIamMember) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataCatalogPolicyTagIamMember) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -377,7 +377,7 @@ func (j *jsiiProxy_GoogleDataCatalogPolicyTagIamMember) validateSetPolicyTagPara
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataCatalogPolicyTagIamMember) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleDataCatalogPolicyTagIamMember) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -449,4 +449,3 @@ func validateNewGoogleDataCatalogPolicyTagIamMemberParameters(scope constructs.C
 
 	return nil
 }
-

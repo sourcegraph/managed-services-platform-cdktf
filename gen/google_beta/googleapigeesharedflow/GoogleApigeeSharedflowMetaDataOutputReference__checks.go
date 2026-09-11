@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleApigeeSharedflowMetaDataOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_GoogleApigeeSharedflowMetaDataOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleApigeeSharedflowMetaDataOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleApigeeSharedflowMetaDataOutputReferenceParameters(terrafor
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleGeminiGeminiGcpEnablementSettingTimeoutsOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGeminiGeminiGcpEnablementSettingTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleGeminiGeminiGcpEnablementSettingTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_GoogleGeminiGeminiGcpEnablementSettingTimeoutsOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGeminiGeminiGcpEnablementSettingTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleGeminiGeminiGcpEnablementSettingTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGoogleGeminiGeminiGcpEnablementSettingTimeoutsOutputReferencePar
 
 	return nil
 }
-

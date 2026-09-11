@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleAppEngineDomainMappingResourceRecordsOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAppEngineDomainMappingResourceRecordsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleAppEngineDomainMappingResourceRecordsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleAppEngineDomainMappingResourceRecordsOutputReferenceParame
 
 	return nil
 }
-

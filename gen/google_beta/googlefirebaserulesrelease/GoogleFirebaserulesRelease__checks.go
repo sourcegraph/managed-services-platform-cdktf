@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleFirebaserulesRelease) validateAddMoveTargetParameters(m
 	return nil
 }
 
-func (g *jsiiProxy_GoogleFirebaserulesRelease) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleFirebaserulesRelease) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleFirebaserulesRelease) validateMoveFromIdParameters(id *
 	return nil
 }
 
-func (g *jsiiProxy_GoogleFirebaserulesRelease) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleFirebaserulesRelease) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateGoogleFirebaserulesRelease_GenerateConfigForImportParameters(scope 
 	return nil
 }
 
-func validateGoogleFirebaserulesRelease_IsConstructParameters(x interface{}) error {
+func validateGoogleFirebaserulesRelease_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateGoogleFirebaserulesRelease_IsConstructParameters(x interface{}) err
 	return nil
 }
 
-func validateGoogleFirebaserulesRelease_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleFirebaserulesRelease_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateGoogleFirebaserulesRelease_IsTerraformElementParameters(x interface
 	return nil
 }
 
-func validateGoogleFirebaserulesRelease_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleFirebaserulesRelease_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateGoogleFirebaserulesRelease_IsTerraformResourceParameters(x interfac
 	return nil
 }
 
-func (j *jsiiProxy_GoogleFirebaserulesRelease) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleFirebaserulesRelease) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_GoogleFirebaserulesRelease) validateSetConnectionParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_GoogleFirebaserulesRelease) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleFirebaserulesRelease) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -377,7 +377,7 @@ func (j *jsiiProxy_GoogleFirebaserulesRelease) validateSetProjectParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleFirebaserulesRelease) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleFirebaserulesRelease) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -449,4 +449,3 @@ func validateNewGoogleFirebaserulesReleaseParameters(scope constructs.Construct,
 
 	return nil
 }
-

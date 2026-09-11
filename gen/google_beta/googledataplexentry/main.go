@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataplexEntry.GoogleDataplexEntry",
-		reflect.TypeOf((*GoogleDataplexEntry)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataplexEntry](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -91,7 +91,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataplexEntry{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -99,15 +99,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataplexEntry.GoogleDataplexEntryAspects",
-		reflect.TypeOf((*GoogleDataplexEntryAspects)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataplexEntryAspects](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataplexEntry.GoogleDataplexEntryAspectsAspect",
-		reflect.TypeOf((*GoogleDataplexEntryAspectsAspect)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataplexEntryAspectsAspect](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataplexEntry.GoogleDataplexEntryAspectsAspectOutputReference",
-		reflect.TypeOf((*GoogleDataplexEntryAspectsAspectOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataplexEntryAspectsAspectOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aspectType", GoGetter: "AspectType"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -137,7 +137,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataplexEntryAspectsAspectOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -145,7 +145,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataplexEntry.GoogleDataplexEntryAspectsList",
-		reflect.TypeOf((*GoogleDataplexEntryAspectsList)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataplexEntryAspectsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -159,7 +159,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataplexEntryAspectsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -167,7 +167,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataplexEntry.GoogleDataplexEntryAspectsOutputReference",
-		reflect.TypeOf((*GoogleDataplexEntryAspectsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataplexEntryAspectsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aspect", GoGetter: "Aspect"},
 			_jsii_.MemberProperty{JsiiProperty: "aspectInput", GoGetter: "AspectInput"},
@@ -196,7 +196,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataplexEntryAspectsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -204,19 +204,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataplexEntry.GoogleDataplexEntryConfig",
-		reflect.TypeOf((*GoogleDataplexEntryConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataplexEntryConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataplexEntry.GoogleDataplexEntryEntrySource",
-		reflect.TypeOf((*GoogleDataplexEntryEntrySource)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataplexEntryEntrySource](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataplexEntry.GoogleDataplexEntryEntrySourceAncestors",
-		reflect.TypeOf((*GoogleDataplexEntryEntrySourceAncestors)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataplexEntryEntrySourceAncestors](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataplexEntry.GoogleDataplexEntryEntrySourceAncestorsList",
-		reflect.TypeOf((*GoogleDataplexEntryEntrySourceAncestorsList)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataplexEntryEntrySourceAncestorsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -230,7 +230,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataplexEntryEntrySourceAncestorsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -238,7 +238,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataplexEntry.GoogleDataplexEntryEntrySourceAncestorsOutputReference",
-		reflect.TypeOf((*GoogleDataplexEntryEntrySourceAncestorsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataplexEntryEntrySourceAncestorsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -268,7 +268,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataplexEntryEntrySourceAncestorsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -276,7 +276,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataplexEntry.GoogleDataplexEntryEntrySourceOutputReference",
-		reflect.TypeOf((*GoogleDataplexEntryEntrySourceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataplexEntryEntrySourceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "ancestors", GoGetter: "Ancestors"},
 			_jsii_.MemberProperty{JsiiProperty: "ancestorsInput", GoGetter: "AncestorsInput"},
@@ -329,7 +329,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTimeInput", GoGetter: "UpdateTimeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataplexEntryEntrySourceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -337,11 +337,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDataplexEntry.GoogleDataplexEntryTimeouts",
-		reflect.TypeOf((*GoogleDataplexEntryTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataplexEntryTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDataplexEntry.GoogleDataplexEntryTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleDataplexEntryTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDataplexEntryTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -374,7 +374,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDataplexEntryTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

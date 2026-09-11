@@ -1,11 +1,10 @@
 package googlecomputeregionnetworkfirewallpolicywithrules
 
-
 type GoogleComputeRegionNetworkFirewallPolicyWithRulesRuleMatch struct {
 	// layer4_config block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_region_network_firewall_policy_with_rules#layer4_config GoogleComputeRegionNetworkFirewallPolicyWithRules#layer4_config}
-	Layer4Config interface{} `field:"required" json:"layer4Config" yaml:"layer4Config"`
+	Layer4Config any `field:"required" json:"layer4Config" yaml:"layer4Config"`
 	// Address groups which should be matched against the traffic destination. Maximum number of destination address groups is 10.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_region_network_firewall_policy_with_rules#dest_address_groups GoogleComputeRegionNetworkFirewallPolicyWithRules#dest_address_groups}
@@ -65,10 +64,9 @@ type GoogleComputeRegionNetworkFirewallPolicyWithRulesRuleMatch struct {
 	// src_secure_tag block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_region_network_firewall_policy_with_rules#src_secure_tag GoogleComputeRegionNetworkFirewallPolicyWithRules#src_secure_tag}
-	SrcSecureTag interface{} `field:"optional" json:"srcSecureTag" yaml:"srcSecureTag"`
+	SrcSecureTag any `field:"optional" json:"srcSecureTag" yaml:"srcSecureTag"`
 	// Names of Network Threat Intelligence lists. The IPs in these lists will be matched against traffic source.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_region_network_firewall_policy_with_rules#src_threat_intelligences GoogleComputeRegionNetworkFirewallPolicyWithRules#src_threat_intelligences}
 	SrcThreatIntelligences *[]*string `field:"optional" json:"srcThreatIntelligences" yaml:"srcThreatIntelligences"`
 }
-

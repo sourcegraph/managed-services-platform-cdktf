@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleDataLossPreventionStoredInfoTypeDictionaryCloudStorageP
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataLossPreventionStoredInfoTypeDictionaryCloudStoragePathOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataLossPreventionStoredInfoTypeDictionaryCloudStoragePathOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleDataLossPreventionStoredInfoTypeDictionaryCloudStoragePath
 
 	return nil
 }
-

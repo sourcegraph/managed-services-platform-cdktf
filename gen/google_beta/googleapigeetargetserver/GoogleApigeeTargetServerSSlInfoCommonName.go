@@ -1,6 +1,5 @@
 package googleapigeetargetserver
 
-
 type GoogleApigeeTargetServerSSlInfoCommonName struct {
 	// The TLS Common Name string of the certificate.
 	//
@@ -9,6 +8,5 @@ type GoogleApigeeTargetServerSSlInfoCommonName struct {
 	// Indicates whether the cert should be matched against as a wildcard cert.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_apigee_target_server#wildcard_match GoogleApigeeTargetServer#wildcard_match}
-	WildcardMatch interface{} `field:"optional" json:"wildcardMatch" yaml:"wildcardMatch"`
+	WildcardMatch any `field:"optional" json:"wildcardMatch" yaml:"wildcardMatch"`
 }
-

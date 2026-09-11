@@ -18,11 +18,11 @@ type DataGoogleCloudbuildTrigger interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -67,7 +67,7 @@ type DataGoogleCloudbuildTrigger interface {
 	SetProvider(val cdktf.TerraformProvider)
 	PubsubConfig() DataGoogleCloudbuildTriggerPubsubConfigList
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RepositoryEventConfig() DataGoogleCloudbuildTriggerRepositoryEventConfigList
 	ServiceAccount() *string
 	SourceToBuild() DataGoogleCloudbuildTriggerSourceToBuildList
@@ -76,7 +76,7 @@ type DataGoogleCloudbuildTrigger interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	TriggerId() *string
@@ -85,9 +85,9 @@ type DataGoogleCloudbuildTrigger interface {
 	TriggerTemplate() DataGoogleCloudbuildTriggerTriggerTemplateList
 	WebhookConfig() DataGoogleCloudbuildTriggerWebhookConfigList
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -114,18 +114,18 @@ type DataGoogleCloudbuildTrigger interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataGoogleCloudbuildTrigger
@@ -173,8 +173,8 @@ func (j *jsiiProxy_DataGoogleCloudbuildTrigger) CdktfStack() cdktf.TerraformStac
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleCloudbuildTrigger) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleCloudbuildTrigger) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -183,8 +183,8 @@ func (j *jsiiProxy_DataGoogleCloudbuildTrigger) ConstructNodeMetadata() *map[str
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleCloudbuildTrigger) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleCloudbuildTrigger) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -443,8 +443,8 @@ func (j *jsiiProxy_DataGoogleCloudbuildTrigger) PubsubConfig() DataGoogleCloudbu
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleCloudbuildTrigger) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleCloudbuildTrigger) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -513,8 +513,8 @@ func (j *jsiiProxy_DataGoogleCloudbuildTrigger) TerraformGeneratorMetadata() *cd
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleCloudbuildTrigger) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleCloudbuildTrigger) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -573,7 +573,6 @@ func (j *jsiiProxy_DataGoogleCloudbuildTrigger) WebhookConfig() DataGoogleCloudb
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/data-sources/google_cloudbuild_trigger google_cloudbuild_trigger} Data Source.
 func NewDataGoogleCloudbuildTrigger(scope constructs.Construct, id *string, config *DataGoogleCloudbuildTriggerConfig) DataGoogleCloudbuildTrigger {
 	_init_.Initialize()
@@ -585,7 +584,7 @@ func NewDataGoogleCloudbuildTrigger(scope constructs.Construct, id *string, conf
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTrigger",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -598,12 +597,12 @@ func NewDataGoogleCloudbuildTrigger_Override(d DataGoogleCloudbuildTrigger, scop
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTrigger",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataGoogleCloudbuildTrigger)SetCount(val interface{}) {
+func (j *jsiiProxy_DataGoogleCloudbuildTrigger) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -614,7 +613,7 @@ func (j *jsiiProxy_DataGoogleCloudbuildTrigger)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleCloudbuildTrigger)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataGoogleCloudbuildTrigger) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -622,7 +621,7 @@ func (j *jsiiProxy_DataGoogleCloudbuildTrigger)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleCloudbuildTrigger)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataGoogleCloudbuildTrigger) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -630,7 +629,7 @@ func (j *jsiiProxy_DataGoogleCloudbuildTrigger)SetForEach(val cdktf.ITerraformIt
 	)
 }
 
-func (j *jsiiProxy_DataGoogleCloudbuildTrigger)SetId(val *string) {
+func (j *jsiiProxy_DataGoogleCloudbuildTrigger) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -641,7 +640,7 @@ func (j *jsiiProxy_DataGoogleCloudbuildTrigger)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleCloudbuildTrigger)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataGoogleCloudbuildTrigger) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -652,7 +651,7 @@ func (j *jsiiProxy_DataGoogleCloudbuildTrigger)SetLifecycle(val *cdktf.Terraform
 	)
 }
 
-func (j *jsiiProxy_DataGoogleCloudbuildTrigger)SetLocation(val *string) {
+func (j *jsiiProxy_DataGoogleCloudbuildTrigger) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -663,7 +662,7 @@ func (j *jsiiProxy_DataGoogleCloudbuildTrigger)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleCloudbuildTrigger)SetProject(val *string) {
+func (j *jsiiProxy_DataGoogleCloudbuildTrigger) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -674,7 +673,7 @@ func (j *jsiiProxy_DataGoogleCloudbuildTrigger)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleCloudbuildTrigger)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataGoogleCloudbuildTrigger) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -682,7 +681,7 @@ func (j *jsiiProxy_DataGoogleCloudbuildTrigger)SetProvider(val cdktf.TerraformPr
 	)
 }
 
-func (j *jsiiProxy_DataGoogleCloudbuildTrigger)SetTriggerId(val *string) {
+func (j *jsiiProxy_DataGoogleCloudbuildTrigger) SetTriggerId(val *string) {
 	if err := j.validateSetTriggerIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -705,7 +704,7 @@ func DataGoogleCloudbuildTrigger_GenerateConfigForImport(scope constructs.Constr
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTrigger",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -729,7 +728,7 @@ func DataGoogleCloudbuildTrigger_GenerateConfigForImport(scope constructs.Constr
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataGoogleCloudbuildTrigger_IsConstruct(x interface{}) *bool {
+func DataGoogleCloudbuildTrigger_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleCloudbuildTrigger_IsConstructParameters(x); err != nil {
@@ -740,7 +739,7 @@ func DataGoogleCloudbuildTrigger_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTrigger",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -748,7 +747,7 @@ func DataGoogleCloudbuildTrigger_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataGoogleCloudbuildTrigger_IsTerraformDataSource(x interface{}) *bool {
+func DataGoogleCloudbuildTrigger_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleCloudbuildTrigger_IsTerraformDataSourceParameters(x); err != nil {
@@ -759,7 +758,7 @@ func DataGoogleCloudbuildTrigger_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTrigger",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -767,7 +766,7 @@ func DataGoogleCloudbuildTrigger_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataGoogleCloudbuildTrigger_IsTerraformElement(x interface{}) *bool {
+func DataGoogleCloudbuildTrigger_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleCloudbuildTrigger_IsTerraformElementParameters(x); err != nil {
@@ -778,7 +777,7 @@ func DataGoogleCloudbuildTrigger_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTrigger",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -796,27 +795,27 @@ func DataGoogleCloudbuildTrigger_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleCloudbuildTrigger) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataGoogleCloudbuildTrigger) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataGoogleCloudbuildTrigger) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataGoogleCloudbuildTrigger) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -832,7 +831,7 @@ func (d *jsiiProxy_DataGoogleCloudbuildTrigger) GetBooleanAttribute(terraformAtt
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -848,7 +847,7 @@ func (d *jsiiProxy_DataGoogleCloudbuildTrigger) GetBooleanMapAttribute(terraform
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -864,7 +863,7 @@ func (d *jsiiProxy_DataGoogleCloudbuildTrigger) GetListAttribute(terraformAttrib
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -880,7 +879,7 @@ func (d *jsiiProxy_DataGoogleCloudbuildTrigger) GetNumberAttribute(terraformAttr
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -896,7 +895,7 @@ func (d *jsiiProxy_DataGoogleCloudbuildTrigger) GetNumberListAttribute(terraform
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -912,7 +911,7 @@ func (d *jsiiProxy_DataGoogleCloudbuildTrigger) GetNumberMapAttribute(terraformA
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -928,7 +927,7 @@ func (d *jsiiProxy_DataGoogleCloudbuildTrigger) GetStringAttribute(terraformAttr
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -944,7 +943,7 @@ func (d *jsiiProxy_DataGoogleCloudbuildTrigger) GetStringMapAttribute(terraformA
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -960,7 +959,7 @@ func (d *jsiiProxy_DataGoogleCloudbuildTrigger) InterpolationForAttribute(terraf
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -974,7 +973,7 @@ func (d *jsiiProxy_DataGoogleCloudbuildTrigger) OverrideLogicalId(newLogicalId *
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1002,8 +1001,8 @@ func (d *jsiiProxy_DataGoogleCloudbuildTrigger) ResetProject() {
 	)
 }
 
-func (d *jsiiProxy_DataGoogleCloudbuildTrigger) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleCloudbuildTrigger) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1015,8 +1014,8 @@ func (d *jsiiProxy_DataGoogleCloudbuildTrigger) SynthesizeAttributes() *map[stri
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleCloudbuildTrigger) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleCloudbuildTrigger) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1028,8 +1027,8 @@ func (d *jsiiProxy_DataGoogleCloudbuildTrigger) SynthesizeHclAttributes() *map[s
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleCloudbuildTrigger) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleCloudbuildTrigger) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1041,8 +1040,8 @@ func (d *jsiiProxy_DataGoogleCloudbuildTrigger) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleCloudbuildTrigger) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleCloudbuildTrigger) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1067,8 +1066,8 @@ func (d *jsiiProxy_DataGoogleCloudbuildTrigger) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleCloudbuildTrigger) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleCloudbuildTrigger) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1079,4 +1078,3 @@ func (d *jsiiProxy_DataGoogleCloudbuildTrigger) ToTerraform() interface{} {
 
 	return returns
 }
-

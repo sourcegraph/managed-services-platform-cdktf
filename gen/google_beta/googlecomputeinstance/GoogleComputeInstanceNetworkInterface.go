@@ -1,15 +1,14 @@
 package googlecomputeinstance
 
-
 type GoogleComputeInstanceNetworkInterface struct {
 	// access_config block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_instance#access_config GoogleComputeInstance#access_config}
-	AccessConfig interface{} `field:"optional" json:"accessConfig" yaml:"accessConfig"`
+	AccessConfig any `field:"optional" json:"accessConfig" yaml:"accessConfig"`
 	// alias_ip_range block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_instance#alias_ip_range GoogleComputeInstance#alias_ip_range}
-	AliasIpRange interface{} `field:"optional" json:"aliasIpRange" yaml:"aliasIpRange"`
+	AliasIpRange any `field:"optional" json:"aliasIpRange" yaml:"aliasIpRange"`
 	// The prefix length of the primary internal IPv6 range.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_instance#internal_ipv6_prefix_length GoogleComputeInstance#internal_ipv6_prefix_length}
@@ -17,7 +16,7 @@ type GoogleComputeInstanceNetworkInterface struct {
 	// ipv6_access_config block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_instance#ipv6_access_config GoogleComputeInstance#ipv6_access_config}
-	Ipv6AccessConfig interface{} `field:"optional" json:"ipv6AccessConfig" yaml:"ipv6AccessConfig"`
+	Ipv6AccessConfig any `field:"optional" json:"ipv6AccessConfig" yaml:"ipv6AccessConfig"`
 	// An IPv6 internal network address for this network interface.
 	//
 	// If not specified, Google Cloud will automatically assign an internal IPv6 address from the instance's subnetwork.
@@ -67,4 +66,3 @@ type GoogleComputeInstanceNetworkInterface struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_instance#subnetwork_project GoogleComputeInstance#subnetwork_project}
 	SubnetworkProject *string `field:"optional" json:"subnetworkProject" yaml:"subnetworkProject"`
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleFirebaseHostingChannel.GoogleFirebaseHostingChannel",
-		reflect.TypeOf((*GoogleFirebaseHostingChannel)(nil)).Elem(),
+		reflect.TypeFor[GoogleFirebaseHostingChannel](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -79,7 +79,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "ttl", GoGetter: "Ttl"},
 			_jsii_.MemberProperty{JsiiProperty: "ttlInput", GoGetter: "TtlInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleFirebaseHostingChannel{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -87,15 +87,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleFirebaseHostingChannel.GoogleFirebaseHostingChannelConfig",
-		reflect.TypeOf((*GoogleFirebaseHostingChannelConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleFirebaseHostingChannelConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleFirebaseHostingChannel.GoogleFirebaseHostingChannelTimeouts",
-		reflect.TypeOf((*GoogleFirebaseHostingChannelTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleFirebaseHostingChannelTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleFirebaseHostingChannel.GoogleFirebaseHostingChannelTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleFirebaseHostingChannelTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleFirebaseHostingChannelTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -128,7 +128,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleFirebaseHostingChannelTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

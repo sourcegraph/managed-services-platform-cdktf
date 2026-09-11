@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleDialogflowCxGenerativeSettingsFallbackSettingsPromptTem
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxGenerativeSettingsFallbackSettingsPromptTemplatesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDialogflowCxGenerativeSettingsFallbackSettingsPromptTemplatesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleDialogflowCxGenerativeSettingsFallbackSettingsPromptTempla
 
 	return nil
 }
-

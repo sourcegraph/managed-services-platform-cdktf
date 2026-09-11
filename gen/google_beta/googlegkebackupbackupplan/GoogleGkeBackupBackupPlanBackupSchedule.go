@@ -1,6 +1,5 @@
 package googlegkebackupbackupplan
 
-
 type GoogleGkeBackupBackupPlanBackupSchedule struct {
 	// A standard cron string that defines a repeating schedule for creating Backups via this BackupPlan.
 	//
@@ -13,10 +12,9 @@ type GoogleGkeBackupBackupPlanBackupSchedule struct {
 	// This flag denotes whether automatic Backup creation is paused for this BackupPlan.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_gke_backup_backup_plan#paused GoogleGkeBackupBackupPlan#paused}
-	Paused interface{} `field:"optional" json:"paused" yaml:"paused"`
+	Paused any `field:"optional" json:"paused" yaml:"paused"`
 	// rpo_config block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_gke_backup_backup_plan#rpo_config GoogleGkeBackupBackupPlan#rpo_config}
 	RpoConfig *GoogleGkeBackupBackupPlanBackupScheduleRpoConfig `field:"optional" json:"rpoConfig" yaml:"rpoConfig"`
 }
-

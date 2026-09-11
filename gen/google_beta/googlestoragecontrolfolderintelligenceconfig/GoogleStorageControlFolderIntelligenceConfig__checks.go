@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleStorageControlFolderIntelligenceConfig) validateAddMove
 	return nil
 }
 
-func (g *jsiiProxy_GoogleStorageControlFolderIntelligenceConfig) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleStorageControlFolderIntelligenceConfig) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleStorageControlFolderIntelligenceConfig) validateMoveFro
 	return nil
 }
 
-func (g *jsiiProxy_GoogleStorageControlFolderIntelligenceConfig) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleStorageControlFolderIntelligenceConfig) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -242,7 +242,7 @@ func validateGoogleStorageControlFolderIntelligenceConfig_GenerateConfigForImpor
 	return nil
 }
 
-func validateGoogleStorageControlFolderIntelligenceConfig_IsConstructParameters(x interface{}) error {
+func validateGoogleStorageControlFolderIntelligenceConfig_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -250,7 +250,7 @@ func validateGoogleStorageControlFolderIntelligenceConfig_IsConstructParameters(
 	return nil
 }
 
-func validateGoogleStorageControlFolderIntelligenceConfig_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleStorageControlFolderIntelligenceConfig_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -258,7 +258,7 @@ func validateGoogleStorageControlFolderIntelligenceConfig_IsTerraformElementPara
 	return nil
 }
 
-func validateGoogleStorageControlFolderIntelligenceConfig_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleStorageControlFolderIntelligenceConfig_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -266,7 +266,7 @@ func validateGoogleStorageControlFolderIntelligenceConfig_IsTerraformResourcePar
 	return nil
 }
 
-func (j *jsiiProxy_GoogleStorageControlFolderIntelligenceConfig) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleStorageControlFolderIntelligenceConfig) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -299,7 +299,7 @@ func (j *jsiiProxy_GoogleStorageControlFolderIntelligenceConfig) validateSetConn
 	return nil
 }
 
-func (j *jsiiProxy_GoogleStorageControlFolderIntelligenceConfig) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleStorageControlFolderIntelligenceConfig) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -388,7 +388,7 @@ func (j *jsiiProxy_GoogleStorageControlFolderIntelligenceConfig) validateSetName
 	return nil
 }
 
-func (j *jsiiProxy_GoogleStorageControlFolderIntelligenceConfig) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleStorageControlFolderIntelligenceConfig) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -452,4 +452,3 @@ func validateNewGoogleStorageControlFolderIntelligenceConfigParameters(scope con
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceServerCaCertOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceServerCaCertOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceServerCaCertOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleSqlDatabaseInstanceServerCaCertOutputReferenceParameters(t
 
 	return nil
 }
-

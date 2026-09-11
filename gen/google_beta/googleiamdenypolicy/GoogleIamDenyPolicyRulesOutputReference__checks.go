@@ -109,7 +109,7 @@ func (g *jsiiProxy_GoogleIamDenyPolicyRulesOutputReference) validateResolveParam
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIamDenyPolicyRulesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleIamDenyPolicyRulesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -182,7 +182,7 @@ func (j *jsiiProxy_GoogleIamDenyPolicyRulesOutputReference) validateSetDescripti
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIamDenyPolicyRulesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleIamDenyPolicyRulesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -241,4 +241,3 @@ func validateNewGoogleIamDenyPolicyRulesOutputReferenceParameters(terraformResou
 
 	return nil
 }
-

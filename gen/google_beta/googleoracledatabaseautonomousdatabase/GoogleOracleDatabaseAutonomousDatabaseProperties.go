@@ -1,6 +1,5 @@
 package googleoracledatabaseautonomousdatabase
 
-
 type GoogleOracleDatabaseAutonomousDatabaseProperties struct {
 	// Possible values:  DB_WORKLOAD_UNSPECIFIED OLTP DW AJD APEX.
 	//
@@ -29,7 +28,7 @@ type GoogleOracleDatabaseAutonomousDatabaseProperties struct {
 	// customer_contacts block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_oracle_database_autonomous_database#customer_contacts GoogleOracleDatabaseAutonomousDatabase#customer_contacts}
-	CustomerContacts interface{} `field:"optional" json:"customerContacts" yaml:"customerContacts"`
+	CustomerContacts any `field:"optional" json:"customerContacts" yaml:"customerContacts"`
 	// The size of the data stored in the database, in gigabytes.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_oracle_database_autonomous_database#data_storage_size_gb GoogleOracleDatabaseAutonomousDatabase#data_storage_size_gb}
@@ -49,11 +48,11 @@ type GoogleOracleDatabaseAutonomousDatabaseProperties struct {
 	// This field indicates if auto scaling is enabled for the Autonomous Database CPU core count.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_oracle_database_autonomous_database#is_auto_scaling_enabled GoogleOracleDatabaseAutonomousDatabase#is_auto_scaling_enabled}
-	IsAutoScalingEnabled interface{} `field:"optional" json:"isAutoScalingEnabled" yaml:"isAutoScalingEnabled"`
+	IsAutoScalingEnabled any `field:"optional" json:"isAutoScalingEnabled" yaml:"isAutoScalingEnabled"`
 	// This field indicates if auto scaling is enabled for the Autonomous Database storage.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_oracle_database_autonomous_database#is_storage_auto_scaling_enabled GoogleOracleDatabaseAutonomousDatabase#is_storage_auto_scaling_enabled}
-	IsStorageAutoScalingEnabled interface{} `field:"optional" json:"isStorageAutoScalingEnabled" yaml:"isStorageAutoScalingEnabled"`
+	IsStorageAutoScalingEnabled any `field:"optional" json:"isStorageAutoScalingEnabled" yaml:"isStorageAutoScalingEnabled"`
 	// The maintenance schedule of the Autonomous Database.   Possible values:  MAINTENANCE_SCHEDULE_TYPE_UNSPECIFIED EARLY REGULAR.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_oracle_database_autonomous_database#maintenance_schedule_type GoogleOracleDatabaseAutonomousDatabase#maintenance_schedule_type}
@@ -61,7 +60,7 @@ type GoogleOracleDatabaseAutonomousDatabaseProperties struct {
 	// This field specifies if the Autonomous Database requires mTLS connections.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_oracle_database_autonomous_database#mtls_connection_required GoogleOracleDatabaseAutonomousDatabase#mtls_connection_required}
-	MtlsConnectionRequired interface{} `field:"optional" json:"mtlsConnectionRequired" yaml:"mtlsConnectionRequired"`
+	MtlsConnectionRequired any `field:"optional" json:"mtlsConnectionRequired" yaml:"mtlsConnectionRequired"`
 	// The national character set for the Autonomous Database. The default is AL16UTF16.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_oracle_database_autonomous_database#n_character_set GoogleOracleDatabaseAutonomousDatabase#n_character_set}
@@ -79,4 +78,3 @@ type GoogleOracleDatabaseAutonomousDatabaseProperties struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_oracle_database_autonomous_database#private_endpoint_label GoogleOracleDatabaseAutonomousDatabase#private_endpoint_label}
 	PrivateEndpointLabel *string `field:"optional" json:"privateEndpointLabel" yaml:"privateEndpointLabel"`
 }
-

@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleContainerAzureNodePoolTimeoutsOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerAzureNodePoolTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContainerAzureNodePoolTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_GoogleContainerAzureNodePoolTimeoutsOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerAzureNodePoolTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContainerAzureNodePoolTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGoogleContainerAzureNodePoolTimeoutsOutputReferenceParameters(te
 
 	return nil
 }
-

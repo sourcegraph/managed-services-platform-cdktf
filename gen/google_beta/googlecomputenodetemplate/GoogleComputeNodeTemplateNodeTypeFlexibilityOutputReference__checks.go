@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleComputeNodeTemplateNodeTypeFlexibilityOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeNodeTemplateNodeTypeFlexibilityOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeNodeTemplateNodeTypeFlexibilityOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGoogleComputeNodeTemplateNodeTypeFlexibilityOutputReferenceParam
 
 	return nil
 }
-

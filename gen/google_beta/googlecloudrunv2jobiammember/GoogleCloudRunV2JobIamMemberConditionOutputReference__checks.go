@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleCloudRunV2JobIamMemberConditionOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudRunV2JobIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleCloudRunV2JobIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewGoogleCloudRunV2JobIamMemberConditionOutputReferenceParameters(t
 
 	return nil
 }
-

@@ -1,6 +1,5 @@
 package googleapigatewayapiconfig
 
-
 type GoogleApiGatewayApiConfigGrpcServices struct {
 	// file_descriptor_set block.
 	//
@@ -9,6 +8,5 @@ type GoogleApiGatewayApiConfigGrpcServices struct {
 	// source block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_api_gateway_api_config#source GoogleApiGatewayApiConfigA#source}
-	Source interface{} `field:"optional" json:"source" yaml:"source"`
+	Source any `field:"optional" json:"source" yaml:"source"`
 }
-

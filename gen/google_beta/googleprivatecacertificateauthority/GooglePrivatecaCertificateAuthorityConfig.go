@@ -6,9 +6,9 @@ import (
 
 type GooglePrivatecaCertificateAuthorityConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type GooglePrivatecaCertificateAuthorityConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The user provided Resource ID for this Certificate Authority.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_privateca_certificate_authority#certificate_authority_id GooglePrivatecaCertificateAuthority#certificate_authority_id}
@@ -46,7 +46,7 @@ type GooglePrivatecaCertificateAuthorityConfig struct {
 	// When the field is set to false, deleting the CertificateAuthority is allowed.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_privateca_certificate_authority#deletion_protection GooglePrivatecaCertificateAuthority#deletion_protection}
-	DeletionProtection interface{} `field:"optional" json:"deletionProtection" yaml:"deletionProtection"`
+	DeletionProtection any `field:"optional" json:"deletionProtection" yaml:"deletionProtection"`
 	// Desired state of the CertificateAuthority.
 	//
 	// Set this field to 'STAGED' to create a 'STAGED' root CA.
@@ -74,7 +74,7 @@ type GooglePrivatecaCertificateAuthorityConfig struct {
 	// Use with care. Defaults to 'false'.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_privateca_certificate_authority#ignore_active_certificates_on_deletion GooglePrivatecaCertificateAuthority#ignore_active_certificates_on_deletion}
-	IgnoreActiveCertificatesOnDeletion interface{} `field:"optional" json:"ignoreActiveCertificatesOnDeletion" yaml:"ignoreActiveCertificatesOnDeletion"`
+	IgnoreActiveCertificatesOnDeletion any `field:"optional" json:"ignoreActiveCertificatesOnDeletion" yaml:"ignoreActiveCertificatesOnDeletion"`
 	// Labels with user-defined metadata.
 	//
 	// An object containing a list of "key": value pairs. Example: { "name": "wrench", "mass":
@@ -108,7 +108,7 @@ type GooglePrivatecaCertificateAuthorityConfig struct {
 	// Use with care. Defaults to 'false'.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_privateca_certificate_authority#skip_grace_period GooglePrivatecaCertificateAuthority#skip_grace_period}
-	SkipGracePeriod interface{} `field:"optional" json:"skipGracePeriod" yaml:"skipGracePeriod"`
+	SkipGracePeriod any `field:"optional" json:"skipGracePeriod" yaml:"skipGracePeriod"`
 	// subordinate_config block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_privateca_certificate_authority#subordinate_config GooglePrivatecaCertificateAuthority#subordinate_config}
@@ -129,4 +129,3 @@ type GooglePrivatecaCertificateAuthorityConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_privateca_certificate_authority#user_defined_access_urls GooglePrivatecaCertificateAuthority#user_defined_access_urls}
 	UserDefinedAccessUrls *GooglePrivatecaCertificateAuthorityUserDefinedAccessUrls `field:"optional" json:"userDefinedAccessUrls" yaml:"userDefinedAccessUrls"`
 }
-

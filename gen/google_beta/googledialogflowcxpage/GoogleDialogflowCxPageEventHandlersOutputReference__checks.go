@@ -109,7 +109,7 @@ func (g *jsiiProxy_GoogleDialogflowCxPageEventHandlersOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxPageEventHandlersOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDialogflowCxPageEventHandlersOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -182,7 +182,7 @@ func (j *jsiiProxy_GoogleDialogflowCxPageEventHandlersOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxPageEventHandlersOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDialogflowCxPageEventHandlersOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -257,4 +257,3 @@ func validateNewGoogleDialogflowCxPageEventHandlersOutputReferenceParameters(ter
 
 	return nil
 }
-

@@ -101,7 +101,7 @@ func (g *jsiiProxy_GoogleContainerClusterClusterAutoscalingOutputReference) vali
 	return nil
 }
 
-func (g *jsiiProxy_GoogleContainerClusterClusterAutoscalingOutputReference) validatePutResourceLimitsParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleContainerClusterClusterAutoscalingOutputReference) validatePutResourceLimitsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -156,7 +156,7 @@ func (j *jsiiProxy_GoogleContainerClusterClusterAutoscalingOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerClusterClusterAutoscalingOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContainerClusterClusterAutoscalingOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -221,7 +221,7 @@ func (j *jsiiProxy_GoogleContainerClusterClusterAutoscalingOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerClusterClusterAutoscalingOutputReference) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContainerClusterClusterAutoscalingOutputReference) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -276,4 +276,3 @@ func validateNewGoogleContainerClusterClusterAutoscalingOutputReferenceParameter
 
 	return nil
 }
-

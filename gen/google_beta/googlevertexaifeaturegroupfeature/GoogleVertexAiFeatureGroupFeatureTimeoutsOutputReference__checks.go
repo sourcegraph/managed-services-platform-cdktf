@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleVertexAiFeatureGroupFeatureTimeoutsOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_GoogleVertexAiFeatureGroupFeatureTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleVertexAiFeatureGroupFeatureTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_GoogleVertexAiFeatureGroupFeatureTimeoutsOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_GoogleVertexAiFeatureGroupFeatureTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleVertexAiFeatureGroupFeatureTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGoogleVertexAiFeatureGroupFeatureTimeoutsOutputReferenceParamete
 
 	return nil
 }
-

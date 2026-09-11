@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleContainerAwsNodePoolConfigSshConfigOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerAwsNodePoolConfigSshConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContainerAwsNodePoolConfigSshConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleContainerAwsNodePoolConfigSshConfigOutputReferenceParamete
 
 	return nil
 }
-

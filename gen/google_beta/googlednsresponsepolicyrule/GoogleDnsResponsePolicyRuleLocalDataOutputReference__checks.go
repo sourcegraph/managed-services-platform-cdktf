@@ -90,7 +90,7 @@ func (g *jsiiProxy_GoogleDnsResponsePolicyRuleLocalDataOutputReference) validate
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDnsResponsePolicyRuleLocalDataOutputReference) validatePutLocalDatasParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleDnsResponsePolicyRuleLocalDataOutputReference) validatePutLocalDatasParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (g *jsiiProxy_GoogleDnsResponsePolicyRuleLocalDataOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDnsResponsePolicyRuleLocalDataOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDnsResponsePolicyRuleLocalDataOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -229,4 +229,3 @@ func validateNewGoogleDnsResponsePolicyRuleLocalDataOutputReferenceParameters(te
 
 	return nil
 }
-

@@ -114,7 +114,7 @@ func (j *jsiiProxy_GoogleContainerClusterUserManagedKeysConfigOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerClusterUserManagedKeysConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContainerClusterUserManagedKeysConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -262,4 +262,3 @@ func validateNewGoogleContainerClusterUserManagedKeysConfigOutputReferenceParame
 
 	return nil
 }
-

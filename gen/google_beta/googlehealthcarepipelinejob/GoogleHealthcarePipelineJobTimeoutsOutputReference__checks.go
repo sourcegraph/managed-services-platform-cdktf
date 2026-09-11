@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleHealthcarePipelineJobTimeoutsOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_GoogleHealthcarePipelineJobTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleHealthcarePipelineJobTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_GoogleHealthcarePipelineJobTimeoutsOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_GoogleHealthcarePipelineJobTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleHealthcarePipelineJobTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGoogleHealthcarePipelineJobTimeoutsOutputReferenceParameters(ter
 
 	return nil
 }
-

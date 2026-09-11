@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleLoggingFolderSinkExclusionsList) validateResolveParamet
 	return nil
 }
 
-func (j *jsiiProxy_GoogleLoggingFolderSinkExclusionsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleLoggingFolderSinkExclusionsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleLoggingFolderSinkExclusionsListParameters(terraformResourc
 
 	return nil
 }
-

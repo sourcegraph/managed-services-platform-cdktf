@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleVmwareengineNetworkPeering) validateAddMoveTargetParame
 	return nil
 }
 
-func (g *jsiiProxy_GoogleVmwareengineNetworkPeering) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleVmwareengineNetworkPeering) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleVmwareengineNetworkPeering) validateMoveFromIdParameter
 	return nil
 }
 
-func (g *jsiiProxy_GoogleVmwareengineNetworkPeering) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleVmwareengineNetworkPeering) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateGoogleVmwareengineNetworkPeering_GenerateConfigForImportParameters(
 	return nil
 }
 
-func validateGoogleVmwareengineNetworkPeering_IsConstructParameters(x interface{}) error {
+func validateGoogleVmwareengineNetworkPeering_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateGoogleVmwareengineNetworkPeering_IsConstructParameters(x interface{
 	return nil
 }
 
-func validateGoogleVmwareengineNetworkPeering_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleVmwareengineNetworkPeering_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateGoogleVmwareengineNetworkPeering_IsTerraformElementParameters(x int
 	return nil
 }
 
-func validateGoogleVmwareengineNetworkPeering_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleVmwareengineNetworkPeering_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateGoogleVmwareengineNetworkPeering_IsTerraformResourceParameters(x in
 	return nil
 }
 
-func (j *jsiiProxy_GoogleVmwareengineNetworkPeering) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleVmwareengineNetworkPeering) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_GoogleVmwareengineNetworkPeering) validateSetConnectionParame
 	return nil
 }
 
-func (j *jsiiProxy_GoogleVmwareengineNetworkPeering) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleVmwareengineNetworkPeering) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -353,7 +353,7 @@ func (j *jsiiProxy_GoogleVmwareengineNetworkPeering) validateSetDescriptionParam
 	return nil
 }
 
-func (j *jsiiProxy_GoogleVmwareengineNetworkPeering) validateSetExportCustomRoutesParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleVmwareengineNetworkPeering) validateSetExportCustomRoutesParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -373,7 +373,7 @@ func (j *jsiiProxy_GoogleVmwareengineNetworkPeering) validateSetExportCustomRout
 	return nil
 }
 
-func (j *jsiiProxy_GoogleVmwareengineNetworkPeering) validateSetExportCustomRoutesWithPublicIpParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleVmwareengineNetworkPeering) validateSetExportCustomRoutesWithPublicIpParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -401,7 +401,7 @@ func (j *jsiiProxy_GoogleVmwareengineNetworkPeering) validateSetIdParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_GoogleVmwareengineNetworkPeering) validateSetImportCustomRoutesParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleVmwareengineNetworkPeering) validateSetImportCustomRoutesParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -421,7 +421,7 @@ func (j *jsiiProxy_GoogleVmwareengineNetworkPeering) validateSetImportCustomRout
 	return nil
 }
 
-func (j *jsiiProxy_GoogleVmwareengineNetworkPeering) validateSetImportCustomRoutesWithPublicIpParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleVmwareengineNetworkPeering) validateSetImportCustomRoutesWithPublicIpParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -481,7 +481,7 @@ func (j *jsiiProxy_GoogleVmwareengineNetworkPeering) validateSetProjectParameter
 	return nil
 }
 
-func (j *jsiiProxy_GoogleVmwareengineNetworkPeering) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleVmwareengineNetworkPeering) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -553,4 +553,3 @@ func validateNewGoogleVmwareengineNetworkPeeringParameters(scope constructs.Cons
 
 	return nil
 }
-

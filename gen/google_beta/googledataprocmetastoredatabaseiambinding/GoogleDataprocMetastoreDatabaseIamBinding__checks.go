@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleDataprocMetastoreDatabaseIamBinding) validateAddMoveTar
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDataprocMetastoreDatabaseIamBinding) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleDataprocMetastoreDatabaseIamBinding) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleDataprocMetastoreDatabaseIamBinding) validateMoveFromId
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDataprocMetastoreDatabaseIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleDataprocMetastoreDatabaseIamBinding) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateGoogleDataprocMetastoreDatabaseIamBinding_GenerateConfigForImportPa
 	return nil
 }
 
-func validateGoogleDataprocMetastoreDatabaseIamBinding_IsConstructParameters(x interface{}) error {
+func validateGoogleDataprocMetastoreDatabaseIamBinding_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateGoogleDataprocMetastoreDatabaseIamBinding_IsConstructParameters(x i
 	return nil
 }
 
-func validateGoogleDataprocMetastoreDatabaseIamBinding_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleDataprocMetastoreDatabaseIamBinding_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateGoogleDataprocMetastoreDatabaseIamBinding_IsTerraformElementParamet
 	return nil
 }
 
-func validateGoogleDataprocMetastoreDatabaseIamBinding_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleDataprocMetastoreDatabaseIamBinding_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateGoogleDataprocMetastoreDatabaseIamBinding_IsTerraformResourceParame
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataprocMetastoreDatabaseIamBinding) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataprocMetastoreDatabaseIamBinding) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_GoogleDataprocMetastoreDatabaseIamBinding) validateSetConnect
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataprocMetastoreDatabaseIamBinding) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataprocMetastoreDatabaseIamBinding) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -393,7 +393,7 @@ func (j *jsiiProxy_GoogleDataprocMetastoreDatabaseIamBinding) validateSetProject
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataprocMetastoreDatabaseIamBinding) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleDataprocMetastoreDatabaseIamBinding) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -473,4 +473,3 @@ func validateNewGoogleDataprocMetastoreDatabaseIamBindingParameters(scope constr
 
 	return nil
 }
-

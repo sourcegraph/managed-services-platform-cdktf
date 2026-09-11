@@ -17,9 +17,9 @@ type GoogleDataprocBatchRuntimeConfigOutputReference interface {
 	CohortInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -55,7 +55,7 @@ type GoogleDataprocBatchRuntimeConfigOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -84,7 +84,7 @@ type GoogleDataprocBatchRuntimeConfigOutputReference interface {
 	ResetVersion()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -137,8 +137,8 @@ func (j *jsiiProxy_GoogleDataprocBatchRuntimeConfigOutputReference) CohortInput(
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDataprocBatchRuntimeConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDataprocBatchRuntimeConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -277,7 +277,6 @@ func (j *jsiiProxy_GoogleDataprocBatchRuntimeConfigOutputReference) VersionInput
 	return returns
 }
 
-
 func NewGoogleDataprocBatchRuntimeConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleDataprocBatchRuntimeConfigOutputReference {
 	_init_.Initialize()
 
@@ -288,7 +287,7 @@ func NewGoogleDataprocBatchRuntimeConfigOutputReference(terraformResource cdktf.
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleDataprocBatch.GoogleDataprocBatchRuntimeConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -300,12 +299,12 @@ func NewGoogleDataprocBatchRuntimeConfigOutputReference_Override(g GoogleDatapro
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleDataprocBatch.GoogleDataprocBatchRuntimeConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleDataprocBatchRuntimeConfigOutputReference)SetCohort(val *string) {
+func (j *jsiiProxy_GoogleDataprocBatchRuntimeConfigOutputReference) SetCohort(val *string) {
 	if err := j.validateSetCohortParameters(val); err != nil {
 		panic(err)
 	}
@@ -316,7 +315,7 @@ func (j *jsiiProxy_GoogleDataprocBatchRuntimeConfigOutputReference)SetCohort(val
 	)
 }
 
-func (j *jsiiProxy_GoogleDataprocBatchRuntimeConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleDataprocBatchRuntimeConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -327,7 +326,7 @@ func (j *jsiiProxy_GoogleDataprocBatchRuntimeConfigOutputReference)SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_GoogleDataprocBatchRuntimeConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleDataprocBatchRuntimeConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -338,7 +337,7 @@ func (j *jsiiProxy_GoogleDataprocBatchRuntimeConfigOutputReference)SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_GoogleDataprocBatchRuntimeConfigOutputReference)SetContainerImage(val *string) {
+func (j *jsiiProxy_GoogleDataprocBatchRuntimeConfigOutputReference) SetContainerImage(val *string) {
 	if err := j.validateSetContainerImageParameters(val); err != nil {
 		panic(err)
 	}
@@ -349,7 +348,7 @@ func (j *jsiiProxy_GoogleDataprocBatchRuntimeConfigOutputReference)SetContainerI
 	)
 }
 
-func (j *jsiiProxy_GoogleDataprocBatchRuntimeConfigOutputReference)SetInternalValue(val *GoogleDataprocBatchRuntimeConfig) {
+func (j *jsiiProxy_GoogleDataprocBatchRuntimeConfigOutputReference) SetInternalValue(val *GoogleDataprocBatchRuntimeConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -360,7 +359,7 @@ func (j *jsiiProxy_GoogleDataprocBatchRuntimeConfigOutputReference)SetInternalVa
 	)
 }
 
-func (j *jsiiProxy_GoogleDataprocBatchRuntimeConfigOutputReference)SetProperties(val *map[string]*string) {
+func (j *jsiiProxy_GoogleDataprocBatchRuntimeConfigOutputReference) SetProperties(val *map[string]*string) {
 	if err := j.validateSetPropertiesParameters(val); err != nil {
 		panic(err)
 	}
@@ -371,7 +370,7 @@ func (j *jsiiProxy_GoogleDataprocBatchRuntimeConfigOutputReference)SetProperties
 	)
 }
 
-func (j *jsiiProxy_GoogleDataprocBatchRuntimeConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleDataprocBatchRuntimeConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -382,7 +381,7 @@ func (j *jsiiProxy_GoogleDataprocBatchRuntimeConfigOutputReference)SetTerraformA
 	)
 }
 
-func (j *jsiiProxy_GoogleDataprocBatchRuntimeConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleDataprocBatchRuntimeConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -393,7 +392,7 @@ func (j *jsiiProxy_GoogleDataprocBatchRuntimeConfigOutputReference)SetTerraformR
 	)
 }
 
-func (j *jsiiProxy_GoogleDataprocBatchRuntimeConfigOutputReference)SetVersion(val *string) {
+func (j *jsiiProxy_GoogleDataprocBatchRuntimeConfigOutputReference) SetVersion(val *string) {
 	if err := j.validateSetVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -417,16 +416,16 @@ func (g *jsiiProxy_GoogleDataprocBatchRuntimeConfigOutputReference) ComputeFqn()
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDataprocBatchRuntimeConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleDataprocBatchRuntimeConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -442,7 +441,7 @@ func (g *jsiiProxy_GoogleDataprocBatchRuntimeConfigOutputReference) GetBooleanAt
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -458,7 +457,7 @@ func (g *jsiiProxy_GoogleDataprocBatchRuntimeConfigOutputReference) GetBooleanMa
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -474,7 +473,7 @@ func (g *jsiiProxy_GoogleDataprocBatchRuntimeConfigOutputReference) GetListAttri
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -490,7 +489,7 @@ func (g *jsiiProxy_GoogleDataprocBatchRuntimeConfigOutputReference) GetNumberAtt
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -506,7 +505,7 @@ func (g *jsiiProxy_GoogleDataprocBatchRuntimeConfigOutputReference) GetNumberLis
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -522,7 +521,7 @@ func (g *jsiiProxy_GoogleDataprocBatchRuntimeConfigOutputReference) GetNumberMap
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -538,7 +537,7 @@ func (g *jsiiProxy_GoogleDataprocBatchRuntimeConfigOutputReference) GetStringAtt
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -554,7 +553,7 @@ func (g *jsiiProxy_GoogleDataprocBatchRuntimeConfigOutputReference) GetStringMap
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -583,7 +582,7 @@ func (g *jsiiProxy_GoogleDataprocBatchRuntimeConfigOutputReference) Interpolatio
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -597,7 +596,7 @@ func (g *jsiiProxy_GoogleDataprocBatchRuntimeConfigOutputReference) PutAutotunin
 	_jsii_.InvokeVoid(
 		g,
 		"putAutotuningConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -641,16 +640,16 @@ func (g *jsiiProxy_GoogleDataprocBatchRuntimeConfigOutputReference) ResetVersion
 	)
 }
 
-func (g *jsiiProxy_GoogleDataprocBatchRuntimeConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleDataprocBatchRuntimeConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -669,4 +668,3 @@ func (g *jsiiProxy_GoogleDataprocBatchRuntimeConfigOutputReference) ToString() *
 
 	return returns
 }
-

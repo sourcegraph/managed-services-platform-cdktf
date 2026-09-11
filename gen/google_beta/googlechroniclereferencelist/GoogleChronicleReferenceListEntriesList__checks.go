@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleChronicleReferenceListEntriesList) validateResolveParam
 	return nil
 }
 
-func (j *jsiiProxy_GoogleChronicleReferenceListEntriesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleChronicleReferenceListEntriesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleChronicleReferenceListEntriesListParameters(terraformResou
 
 	return nil
 }
-

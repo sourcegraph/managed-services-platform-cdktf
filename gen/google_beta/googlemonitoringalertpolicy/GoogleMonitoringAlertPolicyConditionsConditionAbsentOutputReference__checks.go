@@ -90,7 +90,7 @@ func (g *jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionAbsentOutputRef
 	return nil
 }
 
-func (g *jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionAbsentOutputReference) validatePutAggregationsParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionAbsentOutputReference) validatePutAggregationsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -140,7 +140,7 @@ func (g *jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionAbsentOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionAbsentOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionAbsentOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -256,4 +256,3 @@ func validateNewGoogleMonitoringAlertPolicyConditionsConditionAbsentOutputRefere
 
 	return nil
 }
-

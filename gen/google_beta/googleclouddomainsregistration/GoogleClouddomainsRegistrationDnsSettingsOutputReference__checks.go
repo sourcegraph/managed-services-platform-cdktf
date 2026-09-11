@@ -101,7 +101,7 @@ func (g *jsiiProxy_GoogleClouddomainsRegistrationDnsSettingsOutputReference) val
 	return nil
 }
 
-func (g *jsiiProxy_GoogleClouddomainsRegistrationDnsSettingsOutputReference) validatePutGlueRecordsParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleClouddomainsRegistrationDnsSettingsOutputReference) validatePutGlueRecordsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -140,7 +140,7 @@ func (g *jsiiProxy_GoogleClouddomainsRegistrationDnsSettingsOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_GoogleClouddomainsRegistrationDnsSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleClouddomainsRegistrationDnsSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -240,4 +240,3 @@ func validateNewGoogleClouddomainsRegistrationDnsSettingsOutputReferenceParamete
 
 	return nil
 }
-

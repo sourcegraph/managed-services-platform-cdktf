@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleNetworkConnectivitySpokeLinkedRouterApplianceInstancesI
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkConnectivitySpokeLinkedRouterApplianceInstancesInstancesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNetworkConnectivitySpokeLinkedRouterApplianceInstancesInstancesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleNetworkConnectivitySpokeLinkedRouterApplianceInstancesInst
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleCloudAssetFolderFeedConditionOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudAssetFolderFeedConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleCloudAssetFolderFeedConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -230,4 +230,3 @@ func validateNewGoogleCloudAssetFolderFeedConditionOutputReferenceParameters(ter
 
 	return nil
 }
-

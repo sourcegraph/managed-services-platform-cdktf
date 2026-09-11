@@ -106,7 +106,7 @@ func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -251,7 +251,7 @@ func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) validateSetSendAgeIfZeroParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) validateSetSendAgeIfZeroParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -271,7 +271,7 @@ func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) validateSetSendDaysSinceCustomTimeIfZeroParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) validateSetSendDaysSinceCustomTimeIfZeroParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -291,7 +291,7 @@ func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) validateSetSendDaysSinceNoncurrentTimeIfZeroParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) validateSetSendDaysSinceNoncurrentTimeIfZeroParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -311,7 +311,7 @@ func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) validateSetSendNumNewerVersionsIfZeroParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) validateSetSendNumNewerVersionsIfZeroParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -366,4 +366,3 @@ func validateNewGoogleStorageBucketLifecycleRuleConditionOutputReferenceParamete
 
 	return nil
 }
-

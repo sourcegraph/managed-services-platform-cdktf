@@ -11,12 +11,12 @@ import (
 type GoogleApphubWorkloadAttributesOutputReference interface {
 	cdktf.ComplexObject
 	BusinessOwners() GoogleApphubWorkloadAttributesBusinessOwnersList
-	BusinessOwnersInput() interface{}
+	BusinessOwnersInput() any
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -30,7 +30,7 @@ type GoogleApphubWorkloadAttributesOutputReference interface {
 	Criticality() GoogleApphubWorkloadAttributesCriticalityOutputReference
 	CriticalityInput() *GoogleApphubWorkloadAttributesCriticality
 	DeveloperOwners() GoogleApphubWorkloadAttributesDeveloperOwnersList
-	DeveloperOwnersInput() interface{}
+	DeveloperOwnersInput() any
 	Environment() GoogleApphubWorkloadAttributesEnvironmentOutputReference
 	EnvironmentInput() *GoogleApphubWorkloadAttributesEnvironment
 	// Experimental.
@@ -38,7 +38,7 @@ type GoogleApphubWorkloadAttributesOutputReference interface {
 	InternalValue() *GoogleApphubWorkloadAttributes
 	SetInternalValue(val *GoogleApphubWorkloadAttributes)
 	OperatorOwners() GoogleApphubWorkloadAttributesOperatorOwnersList
-	OperatorOwnersInput() interface{}
+	OperatorOwnersInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -50,7 +50,7 @@ type GoogleApphubWorkloadAttributesOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -71,11 +71,11 @@ type GoogleApphubWorkloadAttributesOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutBusinessOwners(value interface{})
+	PutBusinessOwners(value any)
 	PutCriticality(value *GoogleApphubWorkloadAttributesCriticality)
-	PutDeveloperOwners(value interface{})
+	PutDeveloperOwners(value any)
 	PutEnvironment(value *GoogleApphubWorkloadAttributesEnvironment)
-	PutOperatorOwners(value interface{})
+	PutOperatorOwners(value any)
 	ResetBusinessOwners()
 	ResetCriticality()
 	ResetDeveloperOwners()
@@ -83,7 +83,7 @@ type GoogleApphubWorkloadAttributesOutputReference interface {
 	ResetOperatorOwners()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -106,8 +106,8 @@ func (j *jsiiProxy_GoogleApphubWorkloadAttributesOutputReference) BusinessOwners
 	return returns
 }
 
-func (j *jsiiProxy_GoogleApphubWorkloadAttributesOutputReference) BusinessOwnersInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleApphubWorkloadAttributesOutputReference) BusinessOwnersInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"businessOwnersInput",
@@ -116,8 +116,8 @@ func (j *jsiiProxy_GoogleApphubWorkloadAttributesOutputReference) BusinessOwners
 	return returns
 }
 
-func (j *jsiiProxy_GoogleApphubWorkloadAttributesOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleApphubWorkloadAttributesOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -176,8 +176,8 @@ func (j *jsiiProxy_GoogleApphubWorkloadAttributesOutputReference) DeveloperOwner
 	return returns
 }
 
-func (j *jsiiProxy_GoogleApphubWorkloadAttributesOutputReference) DeveloperOwnersInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleApphubWorkloadAttributesOutputReference) DeveloperOwnersInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"developerOwnersInput",
@@ -236,8 +236,8 @@ func (j *jsiiProxy_GoogleApphubWorkloadAttributesOutputReference) OperatorOwners
 	return returns
 }
 
-func (j *jsiiProxy_GoogleApphubWorkloadAttributesOutputReference) OperatorOwnersInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleApphubWorkloadAttributesOutputReference) OperatorOwnersInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"operatorOwnersInput",
@@ -266,7 +266,6 @@ func (j *jsiiProxy_GoogleApphubWorkloadAttributesOutputReference) TerraformResou
 	return returns
 }
 
-
 func NewGoogleApphubWorkloadAttributesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleApphubWorkloadAttributesOutputReference {
 	_init_.Initialize()
 
@@ -277,7 +276,7 @@ func NewGoogleApphubWorkloadAttributesOutputReference(terraformResource cdktf.II
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleApphubWorkload.GoogleApphubWorkloadAttributesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -289,12 +288,12 @@ func NewGoogleApphubWorkloadAttributesOutputReference_Override(g GoogleApphubWor
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleApphubWorkload.GoogleApphubWorkloadAttributesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleApphubWorkloadAttributesOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleApphubWorkloadAttributesOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -305,7 +304,7 @@ func (j *jsiiProxy_GoogleApphubWorkloadAttributesOutputReference)SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_GoogleApphubWorkloadAttributesOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleApphubWorkloadAttributesOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -316,7 +315,7 @@ func (j *jsiiProxy_GoogleApphubWorkloadAttributesOutputReference)SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_GoogleApphubWorkloadAttributesOutputReference)SetInternalValue(val *GoogleApphubWorkloadAttributes) {
+func (j *jsiiProxy_GoogleApphubWorkloadAttributesOutputReference) SetInternalValue(val *GoogleApphubWorkloadAttributes) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -327,7 +326,7 @@ func (j *jsiiProxy_GoogleApphubWorkloadAttributesOutputReference)SetInternalValu
 	)
 }
 
-func (j *jsiiProxy_GoogleApphubWorkloadAttributesOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleApphubWorkloadAttributesOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -338,7 +337,7 @@ func (j *jsiiProxy_GoogleApphubWorkloadAttributesOutputReference)SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_GoogleApphubWorkloadAttributesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleApphubWorkloadAttributesOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -362,16 +361,16 @@ func (g *jsiiProxy_GoogleApphubWorkloadAttributesOutputReference) ComputeFqn() *
 	return returns
 }
 
-func (g *jsiiProxy_GoogleApphubWorkloadAttributesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleApphubWorkloadAttributesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -387,7 +386,7 @@ func (g *jsiiProxy_GoogleApphubWorkloadAttributesOutputReference) GetBooleanAttr
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -403,7 +402,7 @@ func (g *jsiiProxy_GoogleApphubWorkloadAttributesOutputReference) GetBooleanMapA
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -419,7 +418,7 @@ func (g *jsiiProxy_GoogleApphubWorkloadAttributesOutputReference) GetListAttribu
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -435,7 +434,7 @@ func (g *jsiiProxy_GoogleApphubWorkloadAttributesOutputReference) GetNumberAttri
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -451,7 +450,7 @@ func (g *jsiiProxy_GoogleApphubWorkloadAttributesOutputReference) GetNumberListA
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -467,7 +466,7 @@ func (g *jsiiProxy_GoogleApphubWorkloadAttributesOutputReference) GetNumberMapAt
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -483,7 +482,7 @@ func (g *jsiiProxy_GoogleApphubWorkloadAttributesOutputReference) GetStringAttri
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -499,7 +498,7 @@ func (g *jsiiProxy_GoogleApphubWorkloadAttributesOutputReference) GetStringMapAt
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -528,21 +527,21 @@ func (g *jsiiProxy_GoogleApphubWorkloadAttributesOutputReference) InterpolationF
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleApphubWorkloadAttributesOutputReference) PutBusinessOwners(value interface{}) {
+func (g *jsiiProxy_GoogleApphubWorkloadAttributesOutputReference) PutBusinessOwners(value any) {
 	if err := g.validatePutBusinessOwnersParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putBusinessOwners",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -553,18 +552,18 @@ func (g *jsiiProxy_GoogleApphubWorkloadAttributesOutputReference) PutCriticality
 	_jsii_.InvokeVoid(
 		g,
 		"putCriticality",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (g *jsiiProxy_GoogleApphubWorkloadAttributesOutputReference) PutDeveloperOwners(value interface{}) {
+func (g *jsiiProxy_GoogleApphubWorkloadAttributesOutputReference) PutDeveloperOwners(value any) {
 	if err := g.validatePutDeveloperOwnersParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putDeveloperOwners",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -575,18 +574,18 @@ func (g *jsiiProxy_GoogleApphubWorkloadAttributesOutputReference) PutEnvironment
 	_jsii_.InvokeVoid(
 		g,
 		"putEnvironment",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (g *jsiiProxy_GoogleApphubWorkloadAttributesOutputReference) PutOperatorOwners(value interface{}) {
+func (g *jsiiProxy_GoogleApphubWorkloadAttributesOutputReference) PutOperatorOwners(value any) {
 	if err := g.validatePutOperatorOwnersParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putOperatorOwners",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -630,16 +629,16 @@ func (g *jsiiProxy_GoogleApphubWorkloadAttributesOutputReference) ResetOperatorO
 	)
 }
 
-func (g *jsiiProxy_GoogleApphubWorkloadAttributesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleApphubWorkloadAttributesOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -658,4 +657,3 @@ func (g *jsiiProxy_GoogleApphubWorkloadAttributesOutputReference) ToString() *st
 
 	return returns
 }
-

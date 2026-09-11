@@ -13,17 +13,17 @@ type GoogleCloudbuildTriggerBuildStepOutputReference interface {
 	AllowExitCodes() *[]*float64
 	SetAllowExitCodes(val *[]*float64)
 	AllowExitCodesInput() *[]*float64
-	AllowFailure() interface{}
-	SetAllowFailure(val interface{})
-	AllowFailureInput() interface{}
+	AllowFailure() any
+	SetAllowFailure(val any)
+	AllowFailureInput() any
 	Args() *[]*string
 	SetArgs(val *[]*string)
 	ArgsInput() *[]*string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -48,8 +48,8 @@ type GoogleCloudbuildTriggerBuildStepOutputReference interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -74,14 +74,14 @@ type GoogleCloudbuildTriggerBuildStepOutputReference interface {
 	SetTiming(val *string)
 	TimingInput() *string
 	Volumes() GoogleCloudbuildTriggerBuildStepVolumesList
-	VolumesInput() interface{}
+	VolumesInput() any
 	WaitFor() *[]*string
 	SetWaitFor(val *[]*string)
 	WaitForInput() *[]*string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -102,7 +102,7 @@ type GoogleCloudbuildTriggerBuildStepOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutVolumes(value interface{})
+	PutVolumes(value any)
 	ResetAllowExitCodes()
 	ResetAllowFailure()
 	ResetArgs()
@@ -118,7 +118,7 @@ type GoogleCloudbuildTriggerBuildStepOutputReference interface {
 	ResetWaitFor()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -151,8 +151,8 @@ func (j *jsiiProxy_GoogleCloudbuildTriggerBuildStepOutputReference) AllowExitCod
 	return returns
 }
 
-func (j *jsiiProxy_GoogleCloudbuildTriggerBuildStepOutputReference) AllowFailure() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleCloudbuildTriggerBuildStepOutputReference) AllowFailure() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowFailure",
@@ -161,8 +161,8 @@ func (j *jsiiProxy_GoogleCloudbuildTriggerBuildStepOutputReference) AllowFailure
 	return returns
 }
 
-func (j *jsiiProxy_GoogleCloudbuildTriggerBuildStepOutputReference) AllowFailureInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleCloudbuildTriggerBuildStepOutputReference) AllowFailureInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowFailureInput",
@@ -191,8 +191,8 @@ func (j *jsiiProxy_GoogleCloudbuildTriggerBuildStepOutputReference) ArgsInput() 
 	return returns
 }
 
-func (j *jsiiProxy_GoogleCloudbuildTriggerBuildStepOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleCloudbuildTriggerBuildStepOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -311,8 +311,8 @@ func (j *jsiiProxy_GoogleCloudbuildTriggerBuildStepOutputReference) IdInput() *s
 	return returns
 }
 
-func (j *jsiiProxy_GoogleCloudbuildTriggerBuildStepOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleCloudbuildTriggerBuildStepOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -451,8 +451,8 @@ func (j *jsiiProxy_GoogleCloudbuildTriggerBuildStepOutputReference) Volumes() Go
 	return returns
 }
 
-func (j *jsiiProxy_GoogleCloudbuildTriggerBuildStepOutputReference) VolumesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleCloudbuildTriggerBuildStepOutputReference) VolumesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"volumesInput",
@@ -481,7 +481,6 @@ func (j *jsiiProxy_GoogleCloudbuildTriggerBuildStepOutputReference) WaitForInput
 	return returns
 }
 
-
 func NewGoogleCloudbuildTriggerBuildStepOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) GoogleCloudbuildTriggerBuildStepOutputReference {
 	_init_.Initialize()
 
@@ -492,7 +491,7 @@ func NewGoogleCloudbuildTriggerBuildStepOutputReference(terraformResource cdktf.
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleCloudbuildTrigger.GoogleCloudbuildTriggerBuildStepOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -504,12 +503,12 @@ func NewGoogleCloudbuildTriggerBuildStepOutputReference_Override(g GoogleCloudbu
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleCloudbuildTrigger.GoogleCloudbuildTriggerBuildStepOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudbuildTriggerBuildStepOutputReference)SetAllowExitCodes(val *[]*float64) {
+func (j *jsiiProxy_GoogleCloudbuildTriggerBuildStepOutputReference) SetAllowExitCodes(val *[]*float64) {
 	if err := j.validateSetAllowExitCodesParameters(val); err != nil {
 		panic(err)
 	}
@@ -520,7 +519,7 @@ func (j *jsiiProxy_GoogleCloudbuildTriggerBuildStepOutputReference)SetAllowExitC
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudbuildTriggerBuildStepOutputReference)SetAllowFailure(val interface{}) {
+func (j *jsiiProxy_GoogleCloudbuildTriggerBuildStepOutputReference) SetAllowFailure(val any) {
 	if err := j.validateSetAllowFailureParameters(val); err != nil {
 		panic(err)
 	}
@@ -531,7 +530,7 @@ func (j *jsiiProxy_GoogleCloudbuildTriggerBuildStepOutputReference)SetAllowFailu
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudbuildTriggerBuildStepOutputReference)SetArgs(val *[]*string) {
+func (j *jsiiProxy_GoogleCloudbuildTriggerBuildStepOutputReference) SetArgs(val *[]*string) {
 	if err := j.validateSetArgsParameters(val); err != nil {
 		panic(err)
 	}
@@ -542,7 +541,7 @@ func (j *jsiiProxy_GoogleCloudbuildTriggerBuildStepOutputReference)SetArgs(val *
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudbuildTriggerBuildStepOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleCloudbuildTriggerBuildStepOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -553,7 +552,7 @@ func (j *jsiiProxy_GoogleCloudbuildTriggerBuildStepOutputReference)SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudbuildTriggerBuildStepOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleCloudbuildTriggerBuildStepOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -564,7 +563,7 @@ func (j *jsiiProxy_GoogleCloudbuildTriggerBuildStepOutputReference)SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudbuildTriggerBuildStepOutputReference)SetDir(val *string) {
+func (j *jsiiProxy_GoogleCloudbuildTriggerBuildStepOutputReference) SetDir(val *string) {
 	if err := j.validateSetDirParameters(val); err != nil {
 		panic(err)
 	}
@@ -575,7 +574,7 @@ func (j *jsiiProxy_GoogleCloudbuildTriggerBuildStepOutputReference)SetDir(val *s
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudbuildTriggerBuildStepOutputReference)SetEntrypoint(val *string) {
+func (j *jsiiProxy_GoogleCloudbuildTriggerBuildStepOutputReference) SetEntrypoint(val *string) {
 	if err := j.validateSetEntrypointParameters(val); err != nil {
 		panic(err)
 	}
@@ -586,7 +585,7 @@ func (j *jsiiProxy_GoogleCloudbuildTriggerBuildStepOutputReference)SetEntrypoint
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudbuildTriggerBuildStepOutputReference)SetEnv(val *[]*string) {
+func (j *jsiiProxy_GoogleCloudbuildTriggerBuildStepOutputReference) SetEnv(val *[]*string) {
 	if err := j.validateSetEnvParameters(val); err != nil {
 		panic(err)
 	}
@@ -597,7 +596,7 @@ func (j *jsiiProxy_GoogleCloudbuildTriggerBuildStepOutputReference)SetEnv(val *[
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudbuildTriggerBuildStepOutputReference)SetId(val *string) {
+func (j *jsiiProxy_GoogleCloudbuildTriggerBuildStepOutputReference) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -608,7 +607,7 @@ func (j *jsiiProxy_GoogleCloudbuildTriggerBuildStepOutputReference)SetId(val *st
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudbuildTriggerBuildStepOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_GoogleCloudbuildTriggerBuildStepOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -619,7 +618,7 @@ func (j *jsiiProxy_GoogleCloudbuildTriggerBuildStepOutputReference)SetInternalVa
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudbuildTriggerBuildStepOutputReference)SetName(val *string) {
+func (j *jsiiProxy_GoogleCloudbuildTriggerBuildStepOutputReference) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -630,7 +629,7 @@ func (j *jsiiProxy_GoogleCloudbuildTriggerBuildStepOutputReference)SetName(val *
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudbuildTriggerBuildStepOutputReference)SetScript(val *string) {
+func (j *jsiiProxy_GoogleCloudbuildTriggerBuildStepOutputReference) SetScript(val *string) {
 	if err := j.validateSetScriptParameters(val); err != nil {
 		panic(err)
 	}
@@ -641,7 +640,7 @@ func (j *jsiiProxy_GoogleCloudbuildTriggerBuildStepOutputReference)SetScript(val
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudbuildTriggerBuildStepOutputReference)SetSecretEnv(val *[]*string) {
+func (j *jsiiProxy_GoogleCloudbuildTriggerBuildStepOutputReference) SetSecretEnv(val *[]*string) {
 	if err := j.validateSetSecretEnvParameters(val); err != nil {
 		panic(err)
 	}
@@ -652,7 +651,7 @@ func (j *jsiiProxy_GoogleCloudbuildTriggerBuildStepOutputReference)SetSecretEnv(
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudbuildTriggerBuildStepOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleCloudbuildTriggerBuildStepOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -663,7 +662,7 @@ func (j *jsiiProxy_GoogleCloudbuildTriggerBuildStepOutputReference)SetTerraformA
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudbuildTriggerBuildStepOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleCloudbuildTriggerBuildStepOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -674,7 +673,7 @@ func (j *jsiiProxy_GoogleCloudbuildTriggerBuildStepOutputReference)SetTerraformR
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudbuildTriggerBuildStepOutputReference)SetTimeout(val *string) {
+func (j *jsiiProxy_GoogleCloudbuildTriggerBuildStepOutputReference) SetTimeout(val *string) {
 	if err := j.validateSetTimeoutParameters(val); err != nil {
 		panic(err)
 	}
@@ -685,7 +684,7 @@ func (j *jsiiProxy_GoogleCloudbuildTriggerBuildStepOutputReference)SetTimeout(va
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudbuildTriggerBuildStepOutputReference)SetTiming(val *string) {
+func (j *jsiiProxy_GoogleCloudbuildTriggerBuildStepOutputReference) SetTiming(val *string) {
 	if err := j.validateSetTimingParameters(val); err != nil {
 		panic(err)
 	}
@@ -696,7 +695,7 @@ func (j *jsiiProxy_GoogleCloudbuildTriggerBuildStepOutputReference)SetTiming(val
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudbuildTriggerBuildStepOutputReference)SetWaitFor(val *[]*string) {
+func (j *jsiiProxy_GoogleCloudbuildTriggerBuildStepOutputReference) SetWaitFor(val *[]*string) {
 	if err := j.validateSetWaitForParameters(val); err != nil {
 		panic(err)
 	}
@@ -720,16 +719,16 @@ func (g *jsiiProxy_GoogleCloudbuildTriggerBuildStepOutputReference) ComputeFqn()
 	return returns
 }
 
-func (g *jsiiProxy_GoogleCloudbuildTriggerBuildStepOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleCloudbuildTriggerBuildStepOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -745,7 +744,7 @@ func (g *jsiiProxy_GoogleCloudbuildTriggerBuildStepOutputReference) GetBooleanAt
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -761,7 +760,7 @@ func (g *jsiiProxy_GoogleCloudbuildTriggerBuildStepOutputReference) GetBooleanMa
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -777,7 +776,7 @@ func (g *jsiiProxy_GoogleCloudbuildTriggerBuildStepOutputReference) GetListAttri
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -793,7 +792,7 @@ func (g *jsiiProxy_GoogleCloudbuildTriggerBuildStepOutputReference) GetNumberAtt
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -809,7 +808,7 @@ func (g *jsiiProxy_GoogleCloudbuildTriggerBuildStepOutputReference) GetNumberLis
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -825,7 +824,7 @@ func (g *jsiiProxy_GoogleCloudbuildTriggerBuildStepOutputReference) GetNumberMap
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -841,7 +840,7 @@ func (g *jsiiProxy_GoogleCloudbuildTriggerBuildStepOutputReference) GetStringAtt
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -857,7 +856,7 @@ func (g *jsiiProxy_GoogleCloudbuildTriggerBuildStepOutputReference) GetStringMap
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -886,21 +885,21 @@ func (g *jsiiProxy_GoogleCloudbuildTriggerBuildStepOutputReference) Interpolatio
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleCloudbuildTriggerBuildStepOutputReference) PutVolumes(value interface{}) {
+func (g *jsiiProxy_GoogleCloudbuildTriggerBuildStepOutputReference) PutVolumes(value any) {
 	if err := g.validatePutVolumesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putVolumes",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1008,16 +1007,16 @@ func (g *jsiiProxy_GoogleCloudbuildTriggerBuildStepOutputReference) ResetWaitFor
 	)
 }
 
-func (g *jsiiProxy_GoogleCloudbuildTriggerBuildStepOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleCloudbuildTriggerBuildStepOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -1036,4 +1035,3 @@ func (g *jsiiProxy_GoogleCloudbuildTriggerBuildStepOutputReference) ToString() *
 
 	return returns
 }
-

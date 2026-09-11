@@ -1,11 +1,10 @@
 package googledataprocworkflowtemplate
 
-
 type GoogleDataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfig struct {
 	// accelerators block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dataproc_workflow_template#accelerators GoogleDataprocWorkflowTemplate#accelerators}
-	Accelerators interface{} `field:"optional" json:"accelerators" yaml:"accelerators"`
+	Accelerators any `field:"optional" json:"accelerators" yaml:"accelerators"`
 	// disk_config block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dataproc_workflow_template#disk_config GoogleDataprocWorkflowTemplate#disk_config}
@@ -39,4 +38,3 @@ type GoogleDataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfig str
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dataproc_workflow_template#preemptibility GoogleDataprocWorkflowTemplate#preemptibility}
 	Preemptibility *string `field:"optional" json:"preemptibility" yaml:"preemptibility"`
 }
-

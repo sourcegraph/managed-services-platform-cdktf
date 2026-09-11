@@ -109,7 +109,7 @@ func (g *jsiiProxy_GoogleClouddomainsRegistrationContactSettingsTechnicalContact
 	return nil
 }
 
-func (j *jsiiProxy_GoogleClouddomainsRegistrationContactSettingsTechnicalContactOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleClouddomainsRegistrationContactSettingsTechnicalContactOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -233,4 +233,3 @@ func validateNewGoogleClouddomainsRegistrationContactSettingsTechnicalContactOut
 
 	return nil
 }
-

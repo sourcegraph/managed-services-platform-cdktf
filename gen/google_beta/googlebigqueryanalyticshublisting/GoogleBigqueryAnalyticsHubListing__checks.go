@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleBigqueryAnalyticsHubListing) validateAddMoveTargetParam
 	return nil
 }
 
-func (g *jsiiProxy_GoogleBigqueryAnalyticsHubListing) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleBigqueryAnalyticsHubListing) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleBigqueryAnalyticsHubListing) validateMoveFromIdParamete
 	return nil
 }
 
-func (g *jsiiProxy_GoogleBigqueryAnalyticsHubListing) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleBigqueryAnalyticsHubListing) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -286,7 +286,7 @@ func validateGoogleBigqueryAnalyticsHubListing_GenerateConfigForImportParameters
 	return nil
 }
 
-func validateGoogleBigqueryAnalyticsHubListing_IsConstructParameters(x interface{}) error {
+func validateGoogleBigqueryAnalyticsHubListing_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -294,7 +294,7 @@ func validateGoogleBigqueryAnalyticsHubListing_IsConstructParameters(x interface
 	return nil
 }
 
-func validateGoogleBigqueryAnalyticsHubListing_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleBigqueryAnalyticsHubListing_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -302,7 +302,7 @@ func validateGoogleBigqueryAnalyticsHubListing_IsTerraformElementParameters(x in
 	return nil
 }
 
-func validateGoogleBigqueryAnalyticsHubListing_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleBigqueryAnalyticsHubListing_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -318,7 +318,7 @@ func (j *jsiiProxy_GoogleBigqueryAnalyticsHubListing) validateSetCategoriesParam
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigqueryAnalyticsHubListing) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBigqueryAnalyticsHubListing) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -351,7 +351,7 @@ func (j *jsiiProxy_GoogleBigqueryAnalyticsHubListing) validateSetConnectionParam
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigqueryAnalyticsHubListing) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBigqueryAnalyticsHubListing) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -480,7 +480,7 @@ func (j *jsiiProxy_GoogleBigqueryAnalyticsHubListing) validateSetLocationParamet
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigqueryAnalyticsHubListing) validateSetLogLinkedDatasetQueryUserEmailParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBigqueryAnalyticsHubListing) validateSetLogLinkedDatasetQueryUserEmailParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -516,7 +516,7 @@ func (j *jsiiProxy_GoogleBigqueryAnalyticsHubListing) validateSetProjectParamete
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigqueryAnalyticsHubListing) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleBigqueryAnalyticsHubListing) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -588,4 +588,3 @@ func validateNewGoogleBigqueryAnalyticsHubListingParameters(scope constructs.Con
 
 	return nil
 }
-

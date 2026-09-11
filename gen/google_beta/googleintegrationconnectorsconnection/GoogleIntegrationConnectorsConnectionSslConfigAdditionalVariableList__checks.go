@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleIntegrationConnectorsConnectionSslConfigAdditionalVaria
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionSslConfigAdditionalVariableList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionSslConfigAdditionalVariableList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleIntegrationConnectorsConnectionSslConfigAdditionalVariable
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleCloudbuildv2ConnectionGitlabConfigServiceDirectoryConfi
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudbuildv2ConnectionGitlabConfigServiceDirectoryConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleCloudbuildv2ConnectionGitlabConfigServiceDirectoryConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleCloudbuildv2ConnectionGitlabConfigServiceDirectoryConfigOu
 
 	return nil
 }
-

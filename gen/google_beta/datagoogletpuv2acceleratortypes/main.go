@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.dataGoogleTpuV2AcceleratorTypes.DataGoogleTpuV2AcceleratorTypes",
-		reflect.TypeOf((*DataGoogleTpuV2AcceleratorTypes)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleTpuV2AcceleratorTypes](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
@@ -55,7 +55,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zone", GoGetter: "Zone"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneInput", GoGetter: "ZoneInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleTpuV2AcceleratorTypes{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -63,6 +63,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.dataGoogleTpuV2AcceleratorTypes.DataGoogleTpuV2AcceleratorTypesConfig",
-		reflect.TypeOf((*DataGoogleTpuV2AcceleratorTypesConfig)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleTpuV2AcceleratorTypesConfig](),
 	)
 }

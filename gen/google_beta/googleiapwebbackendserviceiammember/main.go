@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleIapWebBackendServiceIamMember.GoogleIapWebBackendServiceIamMember",
-		reflect.TypeOf((*GoogleIapWebBackendServiceIamMember)(nil)).Elem(),
+		reflect.TypeFor[GoogleIapWebBackendServiceIamMember](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -70,7 +70,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "webBackendService", GoGetter: "WebBackendService"},
 			_jsii_.MemberProperty{JsiiProperty: "webBackendServiceInput", GoGetter: "WebBackendServiceInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleIapWebBackendServiceIamMember{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -78,11 +78,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleIapWebBackendServiceIamMember.GoogleIapWebBackendServiceIamMemberCondition",
-		reflect.TypeOf((*GoogleIapWebBackendServiceIamMemberCondition)(nil)).Elem(),
+		reflect.TypeFor[GoogleIapWebBackendServiceIamMemberCondition](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleIapWebBackendServiceIamMember.GoogleIapWebBackendServiceIamMemberConditionOutputReference",
-		reflect.TypeOf((*GoogleIapWebBackendServiceIamMemberConditionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleIapWebBackendServiceIamMemberConditionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -113,7 +113,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "titleInput", GoGetter: "TitleInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleIapWebBackendServiceIamMemberConditionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -121,6 +121,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleIapWebBackendServiceIamMember.GoogleIapWebBackendServiceIamMemberConfig",
-		reflect.TypeOf((*GoogleIapWebBackendServiceIamMemberConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleIapWebBackendServiceIamMemberConfig](),
 	)
 }

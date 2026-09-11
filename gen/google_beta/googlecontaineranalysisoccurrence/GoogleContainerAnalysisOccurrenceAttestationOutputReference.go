@@ -12,9 +12,9 @@ type GoogleContainerAnalysisOccurrenceAttestationOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -33,7 +33,7 @@ type GoogleContainerAnalysisOccurrenceAttestationOutputReference interface {
 	SetSerializedPayload(val *string)
 	SerializedPayloadInput() *string
 	Signatures() GoogleContainerAnalysisOccurrenceAttestationSignaturesList
-	SignaturesInput() interface{}
+	SignaturesInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -45,7 +45,7 @@ type GoogleContainerAnalysisOccurrenceAttestationOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -66,10 +66,10 @@ type GoogleContainerAnalysisOccurrenceAttestationOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutSignatures(value interface{})
+	PutSignatures(value any)
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -82,8 +82,8 @@ type jsiiProxy_GoogleContainerAnalysisOccurrenceAttestationOutputReference struc
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GoogleContainerAnalysisOccurrenceAttestationOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleContainerAnalysisOccurrenceAttestationOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -162,8 +162,8 @@ func (j *jsiiProxy_GoogleContainerAnalysisOccurrenceAttestationOutputReference) 
 	return returns
 }
 
-func (j *jsiiProxy_GoogleContainerAnalysisOccurrenceAttestationOutputReference) SignaturesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleContainerAnalysisOccurrenceAttestationOutputReference) SignaturesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"signaturesInput",
@@ -192,7 +192,6 @@ func (j *jsiiProxy_GoogleContainerAnalysisOccurrenceAttestationOutputReference) 
 	return returns
 }
 
-
 func NewGoogleContainerAnalysisOccurrenceAttestationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleContainerAnalysisOccurrenceAttestationOutputReference {
 	_init_.Initialize()
 
@@ -203,7 +202,7 @@ func NewGoogleContainerAnalysisOccurrenceAttestationOutputReference(terraformRes
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleContainerAnalysisOccurrence.GoogleContainerAnalysisOccurrenceAttestationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -215,12 +214,12 @@ func NewGoogleContainerAnalysisOccurrenceAttestationOutputReference_Override(g G
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleContainerAnalysisOccurrence.GoogleContainerAnalysisOccurrenceAttestationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerAnalysisOccurrenceAttestationOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleContainerAnalysisOccurrenceAttestationOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -231,7 +230,7 @@ func (j *jsiiProxy_GoogleContainerAnalysisOccurrenceAttestationOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerAnalysisOccurrenceAttestationOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleContainerAnalysisOccurrenceAttestationOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -242,7 +241,7 @@ func (j *jsiiProxy_GoogleContainerAnalysisOccurrenceAttestationOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerAnalysisOccurrenceAttestationOutputReference)SetInternalValue(val *GoogleContainerAnalysisOccurrenceAttestation) {
+func (j *jsiiProxy_GoogleContainerAnalysisOccurrenceAttestationOutputReference) SetInternalValue(val *GoogleContainerAnalysisOccurrenceAttestation) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -253,7 +252,7 @@ func (j *jsiiProxy_GoogleContainerAnalysisOccurrenceAttestationOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerAnalysisOccurrenceAttestationOutputReference)SetSerializedPayload(val *string) {
+func (j *jsiiProxy_GoogleContainerAnalysisOccurrenceAttestationOutputReference) SetSerializedPayload(val *string) {
 	if err := j.validateSetSerializedPayloadParameters(val); err != nil {
 		panic(err)
 	}
@@ -264,7 +263,7 @@ func (j *jsiiProxy_GoogleContainerAnalysisOccurrenceAttestationOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerAnalysisOccurrenceAttestationOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleContainerAnalysisOccurrenceAttestationOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -275,7 +274,7 @@ func (j *jsiiProxy_GoogleContainerAnalysisOccurrenceAttestationOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerAnalysisOccurrenceAttestationOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleContainerAnalysisOccurrenceAttestationOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -299,16 +298,16 @@ func (g *jsiiProxy_GoogleContainerAnalysisOccurrenceAttestationOutputReference) 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleContainerAnalysisOccurrenceAttestationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleContainerAnalysisOccurrenceAttestationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -324,7 +323,7 @@ func (g *jsiiProxy_GoogleContainerAnalysisOccurrenceAttestationOutputReference) 
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -340,7 +339,7 @@ func (g *jsiiProxy_GoogleContainerAnalysisOccurrenceAttestationOutputReference) 
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -356,7 +355,7 @@ func (g *jsiiProxy_GoogleContainerAnalysisOccurrenceAttestationOutputReference) 
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -372,7 +371,7 @@ func (g *jsiiProxy_GoogleContainerAnalysisOccurrenceAttestationOutputReference) 
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -388,7 +387,7 @@ func (g *jsiiProxy_GoogleContainerAnalysisOccurrenceAttestationOutputReference) 
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -404,7 +403,7 @@ func (g *jsiiProxy_GoogleContainerAnalysisOccurrenceAttestationOutputReference) 
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -420,7 +419,7 @@ func (g *jsiiProxy_GoogleContainerAnalysisOccurrenceAttestationOutputReference) 
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -436,7 +435,7 @@ func (g *jsiiProxy_GoogleContainerAnalysisOccurrenceAttestationOutputReference) 
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -465,34 +464,34 @@ func (g *jsiiProxy_GoogleContainerAnalysisOccurrenceAttestationOutputReference) 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleContainerAnalysisOccurrenceAttestationOutputReference) PutSignatures(value interface{}) {
+func (g *jsiiProxy_GoogleContainerAnalysisOccurrenceAttestationOutputReference) PutSignatures(value any) {
 	if err := g.validatePutSignaturesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putSignatures",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (g *jsiiProxy_GoogleContainerAnalysisOccurrenceAttestationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleContainerAnalysisOccurrenceAttestationOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -511,4 +510,3 @@ func (g *jsiiProxy_GoogleContainerAnalysisOccurrenceAttestationOutputReference) 
 
 	return returns
 }
-

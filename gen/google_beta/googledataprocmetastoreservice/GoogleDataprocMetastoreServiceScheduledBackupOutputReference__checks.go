@@ -106,7 +106,7 @@ func (j *jsiiProxy_GoogleDataprocMetastoreServiceScheduledBackupOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataprocMetastoreServiceScheduledBackupOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataprocMetastoreServiceScheduledBackupOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_GoogleDataprocMetastoreServiceScheduledBackupOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataprocMetastoreServiceScheduledBackupOutputReference) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataprocMetastoreServiceScheduledBackupOutputReference) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -242,4 +242,3 @@ func validateNewGoogleDataprocMetastoreServiceScheduledBackupOutputReferencePara
 
 	return nil
 }
-

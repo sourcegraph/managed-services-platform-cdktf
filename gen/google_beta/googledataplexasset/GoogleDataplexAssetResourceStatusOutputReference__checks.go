@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleDataplexAssetResourceStatusOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataplexAssetResourceStatusOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataplexAssetResourceStatusOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleDataplexAssetResourceStatusOutputReferenceParameters(terra
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleGkeHubMembershipRbacRoleBindingRoleOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGkeHubMembershipRbacRoleBindingRoleOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleGkeHubMembershipRbacRoleBindingRoleOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleGkeHubMembershipRbacRoleBindingRoleOutputReferenceParamete
 
 	return nil
 }
-

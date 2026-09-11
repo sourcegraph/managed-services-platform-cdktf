@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleComputeRegionUrlMapDefaultUrlRedirectOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRegionUrlMapDefaultUrlRedirectOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeRegionUrlMapDefaultUrlRedirectOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_GoogleComputeRegionUrlMapDefaultUrlRedirectOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRegionUrlMapDefaultUrlRedirectOutputReference) validateSetHttpsRedirectParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeRegionUrlMapDefaultUrlRedirectOutputReference) validateSetHttpsRedirectParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -223,7 +223,7 @@ func (j *jsiiProxy_GoogleComputeRegionUrlMapDefaultUrlRedirectOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRegionUrlMapDefaultUrlRedirectOutputReference) validateSetStripQueryParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeRegionUrlMapDefaultUrlRedirectOutputReference) validateSetStripQueryParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -270,4 +270,3 @@ func validateNewGoogleComputeRegionUrlMapDefaultUrlRedirectOutputReferenceParame
 
 	return nil
 }
-

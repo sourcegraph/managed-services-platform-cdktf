@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleChronicleDataAccessScopeDeniedDataAccessLabelsList) val
 	return nil
 }
 
-func (j *jsiiProxy_GoogleChronicleDataAccessScopeDeniedDataAccessLabelsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleChronicleDataAccessScopeDeniedDataAccessLabelsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleChronicleDataAccessScopeDeniedDataAccessLabelsListParamete
 
 	return nil
 }
-

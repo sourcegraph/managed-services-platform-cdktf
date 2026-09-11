@@ -20,15 +20,15 @@ type GoogleDataplexAssetIamBinding interface {
 	Condition() GoogleDataplexAssetIamBindingConditionOutputReference
 	ConditionInput() *GoogleDataplexAssetIamBindingCondition
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	DataplexZone() *string
 	SetDataplexZone(val *string)
 	DataplexZoneInput() *string
@@ -71,27 +71,27 @@ type GoogleDataplexAssetIamBinding interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Role() *string
 	SetRole(val *string)
 	RoleInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -109,7 +109,7 @@ type GoogleDataplexAssetIamBinding interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -121,7 +121,7 @@ type GoogleDataplexAssetIamBinding interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -136,17 +136,17 @@ type GoogleDataplexAssetIamBinding interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleDataplexAssetIamBinding
@@ -204,8 +204,8 @@ func (j *jsiiProxy_GoogleDataplexAssetIamBinding) ConditionInput() *GoogleDatapl
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDataplexAssetIamBinding) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDataplexAssetIamBinding) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -214,8 +214,8 @@ func (j *jsiiProxy_GoogleDataplexAssetIamBinding) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDataplexAssetIamBinding) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleDataplexAssetIamBinding) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -224,8 +224,8 @@ func (j *jsiiProxy_GoogleDataplexAssetIamBinding) ConstructNodeMetadata() *map[s
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDataplexAssetIamBinding) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDataplexAssetIamBinding) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -434,8 +434,8 @@ func (j *jsiiProxy_GoogleDataplexAssetIamBinding) Provider() cdktf.TerraformProv
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDataplexAssetIamBinding) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleDataplexAssetIamBinding) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -444,8 +444,8 @@ func (j *jsiiProxy_GoogleDataplexAssetIamBinding) Provisioners() *[]interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDataplexAssetIamBinding) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDataplexAssetIamBinding) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -484,8 +484,8 @@ func (j *jsiiProxy_GoogleDataplexAssetIamBinding) TerraformGeneratorMetadata() *
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDataplexAssetIamBinding) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleDataplexAssetIamBinding) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -504,7 +504,6 @@ func (j *jsiiProxy_GoogleDataplexAssetIamBinding) TerraformResourceType() *strin
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dataplex_asset_iam_binding google_dataplex_asset_iam_binding} Resource.
 func NewGoogleDataplexAssetIamBinding(scope constructs.Construct, id *string, config *GoogleDataplexAssetIamBindingConfig) GoogleDataplexAssetIamBinding {
 	_init_.Initialize()
@@ -516,7 +515,7 @@ func NewGoogleDataplexAssetIamBinding(scope constructs.Construct, id *string, co
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleDataplexAssetIamBinding.GoogleDataplexAssetIamBinding",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -529,12 +528,12 @@ func NewGoogleDataplexAssetIamBinding_Override(g GoogleDataplexAssetIamBinding, 
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleDataplexAssetIamBinding.GoogleDataplexAssetIamBinding",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleDataplexAssetIamBinding)SetAsset(val *string) {
+func (j *jsiiProxy_GoogleDataplexAssetIamBinding) SetAsset(val *string) {
 	if err := j.validateSetAssetParameters(val); err != nil {
 		panic(err)
 	}
@@ -545,7 +544,7 @@ func (j *jsiiProxy_GoogleDataplexAssetIamBinding)SetAsset(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleDataplexAssetIamBinding)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleDataplexAssetIamBinding) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -556,7 +555,7 @@ func (j *jsiiProxy_GoogleDataplexAssetIamBinding)SetConnection(val interface{}) 
 	)
 }
 
-func (j *jsiiProxy_GoogleDataplexAssetIamBinding)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleDataplexAssetIamBinding) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -567,7 +566,7 @@ func (j *jsiiProxy_GoogleDataplexAssetIamBinding)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleDataplexAssetIamBinding)SetDataplexZone(val *string) {
+func (j *jsiiProxy_GoogleDataplexAssetIamBinding) SetDataplexZone(val *string) {
 	if err := j.validateSetDataplexZoneParameters(val); err != nil {
 		panic(err)
 	}
@@ -578,7 +577,7 @@ func (j *jsiiProxy_GoogleDataplexAssetIamBinding)SetDataplexZone(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleDataplexAssetIamBinding)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleDataplexAssetIamBinding) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -586,7 +585,7 @@ func (j *jsiiProxy_GoogleDataplexAssetIamBinding)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleDataplexAssetIamBinding)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleDataplexAssetIamBinding) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -594,7 +593,7 @@ func (j *jsiiProxy_GoogleDataplexAssetIamBinding)SetForEach(val cdktf.ITerraform
 	)
 }
 
-func (j *jsiiProxy_GoogleDataplexAssetIamBinding)SetId(val *string) {
+func (j *jsiiProxy_GoogleDataplexAssetIamBinding) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -605,7 +604,7 @@ func (j *jsiiProxy_GoogleDataplexAssetIamBinding)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleDataplexAssetIamBinding)SetLake(val *string) {
+func (j *jsiiProxy_GoogleDataplexAssetIamBinding) SetLake(val *string) {
 	if err := j.validateSetLakeParameters(val); err != nil {
 		panic(err)
 	}
@@ -616,7 +615,7 @@ func (j *jsiiProxy_GoogleDataplexAssetIamBinding)SetLake(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleDataplexAssetIamBinding)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleDataplexAssetIamBinding) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -627,7 +626,7 @@ func (j *jsiiProxy_GoogleDataplexAssetIamBinding)SetLifecycle(val *cdktf.Terrafo
 	)
 }
 
-func (j *jsiiProxy_GoogleDataplexAssetIamBinding)SetLocation(val *string) {
+func (j *jsiiProxy_GoogleDataplexAssetIamBinding) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -638,7 +637,7 @@ func (j *jsiiProxy_GoogleDataplexAssetIamBinding)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleDataplexAssetIamBinding)SetMembers(val *[]*string) {
+func (j *jsiiProxy_GoogleDataplexAssetIamBinding) SetMembers(val *[]*string) {
 	if err := j.validateSetMembersParameters(val); err != nil {
 		panic(err)
 	}
@@ -649,7 +648,7 @@ func (j *jsiiProxy_GoogleDataplexAssetIamBinding)SetMembers(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleDataplexAssetIamBinding)SetProject(val *string) {
+func (j *jsiiProxy_GoogleDataplexAssetIamBinding) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -660,7 +659,7 @@ func (j *jsiiProxy_GoogleDataplexAssetIamBinding)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleDataplexAssetIamBinding)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleDataplexAssetIamBinding) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -668,7 +667,7 @@ func (j *jsiiProxy_GoogleDataplexAssetIamBinding)SetProvider(val cdktf.Terraform
 	)
 }
 
-func (j *jsiiProxy_GoogleDataplexAssetIamBinding)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleDataplexAssetIamBinding) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -679,7 +678,7 @@ func (j *jsiiProxy_GoogleDataplexAssetIamBinding)SetProvisioners(val *[]interfac
 	)
 }
 
-func (j *jsiiProxy_GoogleDataplexAssetIamBinding)SetRole(val *string) {
+func (j *jsiiProxy_GoogleDataplexAssetIamBinding) SetRole(val *string) {
 	if err := j.validateSetRoleParameters(val); err != nil {
 		panic(err)
 	}
@@ -702,7 +701,7 @@ func GoogleDataplexAssetIamBinding_GenerateConfigForImport(scope constructs.Cons
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleDataplexAssetIamBinding.GoogleDataplexAssetIamBinding",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -726,7 +725,7 @@ func GoogleDataplexAssetIamBinding_GenerateConfigForImport(scope constructs.Cons
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleDataplexAssetIamBinding_IsConstruct(x interface{}) *bool {
+func GoogleDataplexAssetIamBinding_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleDataplexAssetIamBinding_IsConstructParameters(x); err != nil {
@@ -737,7 +736,7 @@ func GoogleDataplexAssetIamBinding_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleDataplexAssetIamBinding.GoogleDataplexAssetIamBinding",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -745,7 +744,7 @@ func GoogleDataplexAssetIamBinding_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleDataplexAssetIamBinding_IsTerraformElement(x interface{}) *bool {
+func GoogleDataplexAssetIamBinding_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleDataplexAssetIamBinding_IsTerraformElementParameters(x); err != nil {
@@ -756,7 +755,7 @@ func GoogleDataplexAssetIamBinding_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleDataplexAssetIamBinding.GoogleDataplexAssetIamBinding",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -764,7 +763,7 @@ func GoogleDataplexAssetIamBinding_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleDataplexAssetIamBinding_IsTerraformResource(x interface{}) *bool {
+func GoogleDataplexAssetIamBinding_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleDataplexAssetIamBinding_IsTerraformResourceParameters(x); err != nil {
@@ -775,7 +774,7 @@ func GoogleDataplexAssetIamBinding_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleDataplexAssetIamBinding.GoogleDataplexAssetIamBinding",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -800,31 +799,31 @@ func (g *jsiiProxy_GoogleDataplexAssetIamBinding) AddMoveTarget(moveTarget *stri
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleDataplexAssetIamBinding) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleDataplexAssetIamBinding) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleDataplexAssetIamBinding) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleDataplexAssetIamBinding) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -840,7 +839,7 @@ func (g *jsiiProxy_GoogleDataplexAssetIamBinding) GetBooleanAttribute(terraformA
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -856,7 +855,7 @@ func (g *jsiiProxy_GoogleDataplexAssetIamBinding) GetBooleanMapAttribute(terrafo
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -872,7 +871,7 @@ func (g *jsiiProxy_GoogleDataplexAssetIamBinding) GetListAttribute(terraformAttr
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -888,7 +887,7 @@ func (g *jsiiProxy_GoogleDataplexAssetIamBinding) GetNumberAttribute(terraformAt
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -904,7 +903,7 @@ func (g *jsiiProxy_GoogleDataplexAssetIamBinding) GetNumberListAttribute(terrafo
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -920,7 +919,7 @@ func (g *jsiiProxy_GoogleDataplexAssetIamBinding) GetNumberMapAttribute(terrafor
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -936,7 +935,7 @@ func (g *jsiiProxy_GoogleDataplexAssetIamBinding) GetStringAttribute(terraformAt
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -952,15 +951,15 @@ func (g *jsiiProxy_GoogleDataplexAssetIamBinding) GetStringMapAttribute(terrafor
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDataplexAssetIamBinding) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleDataplexAssetIamBinding) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -979,7 +978,7 @@ func (g *jsiiProxy_GoogleDataplexAssetIamBinding) ImportFrom(id *string, provide
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -992,7 +991,7 @@ func (g *jsiiProxy_GoogleDataplexAssetIamBinding) InterpolationForAttribute(terr
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1006,18 +1005,18 @@ func (g *jsiiProxy_GoogleDataplexAssetIamBinding) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleDataplexAssetIamBinding) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleDataplexAssetIamBinding) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1028,7 +1027,7 @@ func (g *jsiiProxy_GoogleDataplexAssetIamBinding) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1039,7 +1038,7 @@ func (g *jsiiProxy_GoogleDataplexAssetIamBinding) OverrideLogicalId(newLogicalId
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1050,7 +1049,7 @@ func (g *jsiiProxy_GoogleDataplexAssetIamBinding) PutCondition(value *GoogleData
 	_jsii_.InvokeVoid(
 		g,
 		"putCondition",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1094,8 +1093,8 @@ func (g *jsiiProxy_GoogleDataplexAssetIamBinding) ResetProject() {
 	)
 }
 
-func (g *jsiiProxy_GoogleDataplexAssetIamBinding) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleDataplexAssetIamBinding) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1107,8 +1106,8 @@ func (g *jsiiProxy_GoogleDataplexAssetIamBinding) SynthesizeAttributes() *map[st
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDataplexAssetIamBinding) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleDataplexAssetIamBinding) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1120,8 +1119,8 @@ func (g *jsiiProxy_GoogleDataplexAssetIamBinding) SynthesizeHclAttributes() *map
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDataplexAssetIamBinding) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleDataplexAssetIamBinding) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1133,8 +1132,8 @@ func (g *jsiiProxy_GoogleDataplexAssetIamBinding) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDataplexAssetIamBinding) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleDataplexAssetIamBinding) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1159,8 +1158,8 @@ func (g *jsiiProxy_GoogleDataplexAssetIamBinding) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDataplexAssetIamBinding) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleDataplexAssetIamBinding) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1171,4 +1170,3 @@ func (g *jsiiProxy_GoogleDataplexAssetIamBinding) ToTerraform() interface{} {
 
 	return returns
 }
-

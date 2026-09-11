@@ -15,21 +15,21 @@ type GoogleMemorystoreInstanceDesiredUserCreatedEndpoints interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	DesiredUserCreatedEndpoints() GoogleMemorystoreInstanceDesiredUserCreatedEndpointsDesiredUserCreatedEndpointsList
-	DesiredUserCreatedEndpointsInput() interface{}
+	DesiredUserCreatedEndpointsInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -58,29 +58,29 @@ type GoogleMemorystoreInstanceDesiredUserCreatedEndpoints interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Region() *string
 	SetRegion(val *string)
 	RegionInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() GoogleMemorystoreInstanceDesiredUserCreatedEndpointsTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -98,7 +98,7 @@ type GoogleMemorystoreInstanceDesiredUserCreatedEndpoints interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -110,14 +110,14 @@ type GoogleMemorystoreInstanceDesiredUserCreatedEndpoints interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutDesiredUserCreatedEndpoints(value interface{})
+	PutDesiredUserCreatedEndpoints(value any)
 	PutTimeouts(value *GoogleMemorystoreInstanceDesiredUserCreatedEndpointsTimeouts)
 	ResetDesiredUserCreatedEndpoints()
 	ResetId()
@@ -126,17 +126,17 @@ type GoogleMemorystoreInstanceDesiredUserCreatedEndpoints interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleMemorystoreInstanceDesiredUserCreatedEndpoints
@@ -154,8 +154,8 @@ func (j *jsiiProxy_GoogleMemorystoreInstanceDesiredUserCreatedEndpoints) CdktfSt
 	return returns
 }
 
-func (j *jsiiProxy_GoogleMemorystoreInstanceDesiredUserCreatedEndpoints) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleMemorystoreInstanceDesiredUserCreatedEndpoints) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -164,8 +164,8 @@ func (j *jsiiProxy_GoogleMemorystoreInstanceDesiredUserCreatedEndpoints) Connect
 	return returns
 }
 
-func (j *jsiiProxy_GoogleMemorystoreInstanceDesiredUserCreatedEndpoints) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleMemorystoreInstanceDesiredUserCreatedEndpoints) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -174,8 +174,8 @@ func (j *jsiiProxy_GoogleMemorystoreInstanceDesiredUserCreatedEndpoints) Constru
 	return returns
 }
 
-func (j *jsiiProxy_GoogleMemorystoreInstanceDesiredUserCreatedEndpoints) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleMemorystoreInstanceDesiredUserCreatedEndpoints) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -204,8 +204,8 @@ func (j *jsiiProxy_GoogleMemorystoreInstanceDesiredUserCreatedEndpoints) Desired
 	return returns
 }
 
-func (j *jsiiProxy_GoogleMemorystoreInstanceDesiredUserCreatedEndpoints) DesiredUserCreatedEndpointsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleMemorystoreInstanceDesiredUserCreatedEndpoints) DesiredUserCreatedEndpointsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"desiredUserCreatedEndpointsInput",
@@ -334,8 +334,8 @@ func (j *jsiiProxy_GoogleMemorystoreInstanceDesiredUserCreatedEndpoints) Provide
 	return returns
 }
 
-func (j *jsiiProxy_GoogleMemorystoreInstanceDesiredUserCreatedEndpoints) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleMemorystoreInstanceDesiredUserCreatedEndpoints) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -344,8 +344,8 @@ func (j *jsiiProxy_GoogleMemorystoreInstanceDesiredUserCreatedEndpoints) Provisi
 	return returns
 }
 
-func (j *jsiiProxy_GoogleMemorystoreInstanceDesiredUserCreatedEndpoints) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleMemorystoreInstanceDesiredUserCreatedEndpoints) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -384,8 +384,8 @@ func (j *jsiiProxy_GoogleMemorystoreInstanceDesiredUserCreatedEndpoints) Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_GoogleMemorystoreInstanceDesiredUserCreatedEndpoints) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleMemorystoreInstanceDesiredUserCreatedEndpoints) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -414,8 +414,8 @@ func (j *jsiiProxy_GoogleMemorystoreInstanceDesiredUserCreatedEndpoints) Timeout
 	return returns
 }
 
-func (j *jsiiProxy_GoogleMemorystoreInstanceDesiredUserCreatedEndpoints) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleMemorystoreInstanceDesiredUserCreatedEndpoints) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -423,7 +423,6 @@ func (j *jsiiProxy_GoogleMemorystoreInstanceDesiredUserCreatedEndpoints) Timeout
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_memorystore_instance_desired_user_created_endpoints google_memorystore_instance_desired_user_created_endpoints} Resource.
 func NewGoogleMemorystoreInstanceDesiredUserCreatedEndpoints(scope constructs.Construct, id *string, config *GoogleMemorystoreInstanceDesiredUserCreatedEndpointsConfig) GoogleMemorystoreInstanceDesiredUserCreatedEndpoints {
@@ -436,7 +435,7 @@ func NewGoogleMemorystoreInstanceDesiredUserCreatedEndpoints(scope constructs.Co
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleMemorystoreInstanceDesiredUserCreatedEndpoints.GoogleMemorystoreInstanceDesiredUserCreatedEndpoints",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -449,12 +448,12 @@ func NewGoogleMemorystoreInstanceDesiredUserCreatedEndpoints_Override(g GoogleMe
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleMemorystoreInstanceDesiredUserCreatedEndpoints.GoogleMemorystoreInstanceDesiredUserCreatedEndpoints",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleMemorystoreInstanceDesiredUserCreatedEndpoints)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleMemorystoreInstanceDesiredUserCreatedEndpoints) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -465,7 +464,7 @@ func (j *jsiiProxy_GoogleMemorystoreInstanceDesiredUserCreatedEndpoints)SetConne
 	)
 }
 
-func (j *jsiiProxy_GoogleMemorystoreInstanceDesiredUserCreatedEndpoints)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleMemorystoreInstanceDesiredUserCreatedEndpoints) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -476,7 +475,7 @@ func (j *jsiiProxy_GoogleMemorystoreInstanceDesiredUserCreatedEndpoints)SetCount
 	)
 }
 
-func (j *jsiiProxy_GoogleMemorystoreInstanceDesiredUserCreatedEndpoints)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleMemorystoreInstanceDesiredUserCreatedEndpoints) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -484,7 +483,7 @@ func (j *jsiiProxy_GoogleMemorystoreInstanceDesiredUserCreatedEndpoints)SetDepen
 	)
 }
 
-func (j *jsiiProxy_GoogleMemorystoreInstanceDesiredUserCreatedEndpoints)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleMemorystoreInstanceDesiredUserCreatedEndpoints) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -492,7 +491,7 @@ func (j *jsiiProxy_GoogleMemorystoreInstanceDesiredUserCreatedEndpoints)SetForEa
 	)
 }
 
-func (j *jsiiProxy_GoogleMemorystoreInstanceDesiredUserCreatedEndpoints)SetId(val *string) {
+func (j *jsiiProxy_GoogleMemorystoreInstanceDesiredUserCreatedEndpoints) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -503,7 +502,7 @@ func (j *jsiiProxy_GoogleMemorystoreInstanceDesiredUserCreatedEndpoints)SetId(va
 	)
 }
 
-func (j *jsiiProxy_GoogleMemorystoreInstanceDesiredUserCreatedEndpoints)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleMemorystoreInstanceDesiredUserCreatedEndpoints) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -514,7 +513,7 @@ func (j *jsiiProxy_GoogleMemorystoreInstanceDesiredUserCreatedEndpoints)SetLifec
 	)
 }
 
-func (j *jsiiProxy_GoogleMemorystoreInstanceDesiredUserCreatedEndpoints)SetName(val *string) {
+func (j *jsiiProxy_GoogleMemorystoreInstanceDesiredUserCreatedEndpoints) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -525,7 +524,7 @@ func (j *jsiiProxy_GoogleMemorystoreInstanceDesiredUserCreatedEndpoints)SetName(
 	)
 }
 
-func (j *jsiiProxy_GoogleMemorystoreInstanceDesiredUserCreatedEndpoints)SetProject(val *string) {
+func (j *jsiiProxy_GoogleMemorystoreInstanceDesiredUserCreatedEndpoints) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -536,7 +535,7 @@ func (j *jsiiProxy_GoogleMemorystoreInstanceDesiredUserCreatedEndpoints)SetProje
 	)
 }
 
-func (j *jsiiProxy_GoogleMemorystoreInstanceDesiredUserCreatedEndpoints)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleMemorystoreInstanceDesiredUserCreatedEndpoints) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -544,7 +543,7 @@ func (j *jsiiProxy_GoogleMemorystoreInstanceDesiredUserCreatedEndpoints)SetProvi
 	)
 }
 
-func (j *jsiiProxy_GoogleMemorystoreInstanceDesiredUserCreatedEndpoints)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleMemorystoreInstanceDesiredUserCreatedEndpoints) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -555,7 +554,7 @@ func (j *jsiiProxy_GoogleMemorystoreInstanceDesiredUserCreatedEndpoints)SetProvi
 	)
 }
 
-func (j *jsiiProxy_GoogleMemorystoreInstanceDesiredUserCreatedEndpoints)SetRegion(val *string) {
+func (j *jsiiProxy_GoogleMemorystoreInstanceDesiredUserCreatedEndpoints) SetRegion(val *string) {
 	if err := j.validateSetRegionParameters(val); err != nil {
 		panic(err)
 	}
@@ -578,7 +577,7 @@ func GoogleMemorystoreInstanceDesiredUserCreatedEndpoints_GenerateConfigForImpor
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleMemorystoreInstanceDesiredUserCreatedEndpoints.GoogleMemorystoreInstanceDesiredUserCreatedEndpoints",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -602,7 +601,7 @@ func GoogleMemorystoreInstanceDesiredUserCreatedEndpoints_GenerateConfigForImpor
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleMemorystoreInstanceDesiredUserCreatedEndpoints_IsConstruct(x interface{}) *bool {
+func GoogleMemorystoreInstanceDesiredUserCreatedEndpoints_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleMemorystoreInstanceDesiredUserCreatedEndpoints_IsConstructParameters(x); err != nil {
@@ -613,7 +612,7 @@ func GoogleMemorystoreInstanceDesiredUserCreatedEndpoints_IsConstruct(x interfac
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleMemorystoreInstanceDesiredUserCreatedEndpoints.GoogleMemorystoreInstanceDesiredUserCreatedEndpoints",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -621,7 +620,7 @@ func GoogleMemorystoreInstanceDesiredUserCreatedEndpoints_IsConstruct(x interfac
 }
 
 // Experimental.
-func GoogleMemorystoreInstanceDesiredUserCreatedEndpoints_IsTerraformElement(x interface{}) *bool {
+func GoogleMemorystoreInstanceDesiredUserCreatedEndpoints_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleMemorystoreInstanceDesiredUserCreatedEndpoints_IsTerraformElementParameters(x); err != nil {
@@ -632,7 +631,7 @@ func GoogleMemorystoreInstanceDesiredUserCreatedEndpoints_IsTerraformElement(x i
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleMemorystoreInstanceDesiredUserCreatedEndpoints.GoogleMemorystoreInstanceDesiredUserCreatedEndpoints",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -640,7 +639,7 @@ func GoogleMemorystoreInstanceDesiredUserCreatedEndpoints_IsTerraformElement(x i
 }
 
 // Experimental.
-func GoogleMemorystoreInstanceDesiredUserCreatedEndpoints_IsTerraformResource(x interface{}) *bool {
+func GoogleMemorystoreInstanceDesiredUserCreatedEndpoints_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleMemorystoreInstanceDesiredUserCreatedEndpoints_IsTerraformResourceParameters(x); err != nil {
@@ -651,7 +650,7 @@ func GoogleMemorystoreInstanceDesiredUserCreatedEndpoints_IsTerraformResource(x 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleMemorystoreInstanceDesiredUserCreatedEndpoints.GoogleMemorystoreInstanceDesiredUserCreatedEndpoints",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -676,31 +675,31 @@ func (g *jsiiProxy_GoogleMemorystoreInstanceDesiredUserCreatedEndpoints) AddMove
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleMemorystoreInstanceDesiredUserCreatedEndpoints) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleMemorystoreInstanceDesiredUserCreatedEndpoints) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleMemorystoreInstanceDesiredUserCreatedEndpoints) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleMemorystoreInstanceDesiredUserCreatedEndpoints) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -716,7 +715,7 @@ func (g *jsiiProxy_GoogleMemorystoreInstanceDesiredUserCreatedEndpoints) GetBool
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -732,7 +731,7 @@ func (g *jsiiProxy_GoogleMemorystoreInstanceDesiredUserCreatedEndpoints) GetBool
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -748,7 +747,7 @@ func (g *jsiiProxy_GoogleMemorystoreInstanceDesiredUserCreatedEndpoints) GetList
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -764,7 +763,7 @@ func (g *jsiiProxy_GoogleMemorystoreInstanceDesiredUserCreatedEndpoints) GetNumb
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -780,7 +779,7 @@ func (g *jsiiProxy_GoogleMemorystoreInstanceDesiredUserCreatedEndpoints) GetNumb
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -796,7 +795,7 @@ func (g *jsiiProxy_GoogleMemorystoreInstanceDesiredUserCreatedEndpoints) GetNumb
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -812,7 +811,7 @@ func (g *jsiiProxy_GoogleMemorystoreInstanceDesiredUserCreatedEndpoints) GetStri
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -828,15 +827,15 @@ func (g *jsiiProxy_GoogleMemorystoreInstanceDesiredUserCreatedEndpoints) GetStri
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleMemorystoreInstanceDesiredUserCreatedEndpoints) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleMemorystoreInstanceDesiredUserCreatedEndpoints) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -855,7 +854,7 @@ func (g *jsiiProxy_GoogleMemorystoreInstanceDesiredUserCreatedEndpoints) ImportF
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -868,7 +867,7 @@ func (g *jsiiProxy_GoogleMemorystoreInstanceDesiredUserCreatedEndpoints) Interpo
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -882,18 +881,18 @@ func (g *jsiiProxy_GoogleMemorystoreInstanceDesiredUserCreatedEndpoints) MoveFro
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleMemorystoreInstanceDesiredUserCreatedEndpoints) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleMemorystoreInstanceDesiredUserCreatedEndpoints) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -904,7 +903,7 @@ func (g *jsiiProxy_GoogleMemorystoreInstanceDesiredUserCreatedEndpoints) MoveToI
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -915,18 +914,18 @@ func (g *jsiiProxy_GoogleMemorystoreInstanceDesiredUserCreatedEndpoints) Overrid
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (g *jsiiProxy_GoogleMemorystoreInstanceDesiredUserCreatedEndpoints) PutDesiredUserCreatedEndpoints(value interface{}) {
+func (g *jsiiProxy_GoogleMemorystoreInstanceDesiredUserCreatedEndpoints) PutDesiredUserCreatedEndpoints(value any) {
 	if err := g.validatePutDesiredUserCreatedEndpointsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putDesiredUserCreatedEndpoints",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -937,7 +936,7 @@ func (g *jsiiProxy_GoogleMemorystoreInstanceDesiredUserCreatedEndpoints) PutTime
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -981,8 +980,8 @@ func (g *jsiiProxy_GoogleMemorystoreInstanceDesiredUserCreatedEndpoints) ResetTi
 	)
 }
 
-func (g *jsiiProxy_GoogleMemorystoreInstanceDesiredUserCreatedEndpoints) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleMemorystoreInstanceDesiredUserCreatedEndpoints) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -994,8 +993,8 @@ func (g *jsiiProxy_GoogleMemorystoreInstanceDesiredUserCreatedEndpoints) Synthes
 	return returns
 }
 
-func (g *jsiiProxy_GoogleMemorystoreInstanceDesiredUserCreatedEndpoints) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleMemorystoreInstanceDesiredUserCreatedEndpoints) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1007,8 +1006,8 @@ func (g *jsiiProxy_GoogleMemorystoreInstanceDesiredUserCreatedEndpoints) Synthes
 	return returns
 }
 
-func (g *jsiiProxy_GoogleMemorystoreInstanceDesiredUserCreatedEndpoints) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleMemorystoreInstanceDesiredUserCreatedEndpoints) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1020,8 +1019,8 @@ func (g *jsiiProxy_GoogleMemorystoreInstanceDesiredUserCreatedEndpoints) ToHclTe
 	return returns
 }
 
-func (g *jsiiProxy_GoogleMemorystoreInstanceDesiredUserCreatedEndpoints) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleMemorystoreInstanceDesiredUserCreatedEndpoints) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1046,8 +1045,8 @@ func (g *jsiiProxy_GoogleMemorystoreInstanceDesiredUserCreatedEndpoints) ToStrin
 	return returns
 }
 
-func (g *jsiiProxy_GoogleMemorystoreInstanceDesiredUserCreatedEndpoints) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleMemorystoreInstanceDesiredUserCreatedEndpoints) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1058,4 +1057,3 @@ func (g *jsiiProxy_GoogleMemorystoreInstanceDesiredUserCreatedEndpoints) ToTerra
 
 	return returns
 }
-

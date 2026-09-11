@@ -1,6 +1,5 @@
 package googlehealthcarefhirstore
 
-
 type GoogleHealthcareFhirStoreNotificationConfigs struct {
 	// The Cloud Pub/Sub topic that notifications of changes are published on.
 	//
@@ -21,7 +20,7 @@ type GoogleHealthcareFhirStoreNotificationConfigs struct {
 	// it needs to fetch the full resource as a separate operation.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_healthcare_fhir_store#send_full_resource GoogleHealthcareFhirStore#send_full_resource}
-	SendFullResource interface{} `field:"optional" json:"sendFullResource" yaml:"sendFullResource"`
+	SendFullResource any `field:"optional" json:"sendFullResource" yaml:"sendFullResource"`
 	// Whether to send full FHIR resource to this Pub/Sub topic for deleting FHIR resource.
 	//
 	// Note that setting this to
@@ -31,6 +30,5 @@ type GoogleHealthcareFhirStoreNotificationConfigs struct {
 	// resource as a separate operation.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_healthcare_fhir_store#send_previous_resource_on_delete GoogleHealthcareFhirStore#send_previous_resource_on_delete}
-	SendPreviousResourceOnDelete interface{} `field:"optional" json:"sendPreviousResourceOnDelete" yaml:"sendPreviousResourceOnDelete"`
+	SendPreviousResourceOnDelete any `field:"optional" json:"sendPreviousResourceOnDelete" yaml:"sendPreviousResourceOnDelete"`
 }
-

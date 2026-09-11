@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleComputeFutureReservationAggregateReservationReservedRes
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeFutureReservationAggregateReservationReservedResourcesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeFutureReservationAggregateReservationReservedResourcesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleComputeFutureReservationAggregateReservationReservedResour
 
 	return nil
 }
-

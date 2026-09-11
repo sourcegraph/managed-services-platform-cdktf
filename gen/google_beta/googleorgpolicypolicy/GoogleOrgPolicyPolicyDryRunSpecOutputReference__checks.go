@@ -90,7 +90,7 @@ func (g *jsiiProxy_GoogleOrgPolicyPolicyDryRunSpecOutputReference) validateInter
 	return nil
 }
 
-func (g *jsiiProxy_GoogleOrgPolicyPolicyDryRunSpecOutputReference) validatePutRulesParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleOrgPolicyPolicyDryRunSpecOutputReference) validatePutRulesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (g *jsiiProxy_GoogleOrgPolicyPolicyDryRunSpecOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_GoogleOrgPolicyPolicyDryRunSpecOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleOrgPolicyPolicyDryRunSpecOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -194,7 +194,7 @@ func (j *jsiiProxy_GoogleOrgPolicyPolicyDryRunSpecOutputReference) validateSetCo
 	return nil
 }
 
-func (j *jsiiProxy_GoogleOrgPolicyPolicyDryRunSpecOutputReference) validateSetInheritFromParentParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleOrgPolicyPolicyDryRunSpecOutputReference) validateSetInheritFromParentParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -222,7 +222,7 @@ func (j *jsiiProxy_GoogleOrgPolicyPolicyDryRunSpecOutputReference) validateSetIn
 	return nil
 }
 
-func (j *jsiiProxy_GoogleOrgPolicyPolicyDryRunSpecOutputReference) validateSetResetParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleOrgPolicyPolicyDryRunSpecOutputReference) validateSetResetParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -269,4 +269,3 @@ func validateNewGoogleOrgPolicyPolicyDryRunSpecOutputReferenceParameters(terrafo
 
 	return nil
 }
-

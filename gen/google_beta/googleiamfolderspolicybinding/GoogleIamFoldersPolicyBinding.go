@@ -20,15 +20,15 @@ type GoogleIamFoldersPolicyBinding interface {
 	Condition() GoogleIamFoldersPolicyBindingConditionOutputReference
 	ConditionInput() *GoogleIamFoldersPolicyBindingCondition
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -78,30 +78,30 @@ type GoogleIamFoldersPolicyBinding interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Target() GoogleIamFoldersPolicyBindingTargetOutputReference
 	TargetInput() *GoogleIamFoldersPolicyBindingTarget
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() GoogleIamFoldersPolicyBindingTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	Uid() *string
 	UpdateTime() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -119,7 +119,7 @@ type GoogleIamFoldersPolicyBinding interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -131,7 +131,7 @@ type GoogleIamFoldersPolicyBinding interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -150,17 +150,17 @@ type GoogleIamFoldersPolicyBinding interface {
 	ResetOverrideLogicalId()
 	ResetPolicyKind()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleIamFoldersPolicyBinding
@@ -218,8 +218,8 @@ func (j *jsiiProxy_GoogleIamFoldersPolicyBinding) ConditionInput() *GoogleIamFol
 	return returns
 }
 
-func (j *jsiiProxy_GoogleIamFoldersPolicyBinding) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleIamFoldersPolicyBinding) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -228,8 +228,8 @@ func (j *jsiiProxy_GoogleIamFoldersPolicyBinding) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleIamFoldersPolicyBinding) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleIamFoldersPolicyBinding) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -238,8 +238,8 @@ func (j *jsiiProxy_GoogleIamFoldersPolicyBinding) ConstructNodeMetadata() *map[s
 	return returns
 }
 
-func (j *jsiiProxy_GoogleIamFoldersPolicyBinding) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleIamFoldersPolicyBinding) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -508,8 +508,8 @@ func (j *jsiiProxy_GoogleIamFoldersPolicyBinding) Provider() cdktf.TerraformProv
 	return returns
 }
 
-func (j *jsiiProxy_GoogleIamFoldersPolicyBinding) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleIamFoldersPolicyBinding) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -518,8 +518,8 @@ func (j *jsiiProxy_GoogleIamFoldersPolicyBinding) Provisioners() *[]interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_GoogleIamFoldersPolicyBinding) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleIamFoldersPolicyBinding) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -558,8 +558,8 @@ func (j *jsiiProxy_GoogleIamFoldersPolicyBinding) TerraformGeneratorMetadata() *
 	return returns
 }
 
-func (j *jsiiProxy_GoogleIamFoldersPolicyBinding) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleIamFoldersPolicyBinding) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -588,8 +588,8 @@ func (j *jsiiProxy_GoogleIamFoldersPolicyBinding) Timeouts() GoogleIamFoldersPol
 	return returns
 }
 
-func (j *jsiiProxy_GoogleIamFoldersPolicyBinding) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleIamFoldersPolicyBinding) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -618,7 +618,6 @@ func (j *jsiiProxy_GoogleIamFoldersPolicyBinding) UpdateTime() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_iam_folders_policy_binding google_iam_folders_policy_binding} Resource.
 func NewGoogleIamFoldersPolicyBinding(scope constructs.Construct, id *string, config *GoogleIamFoldersPolicyBindingConfig) GoogleIamFoldersPolicyBinding {
 	_init_.Initialize()
@@ -630,7 +629,7 @@ func NewGoogleIamFoldersPolicyBinding(scope constructs.Construct, id *string, co
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleIamFoldersPolicyBinding.GoogleIamFoldersPolicyBinding",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -643,12 +642,12 @@ func NewGoogleIamFoldersPolicyBinding_Override(g GoogleIamFoldersPolicyBinding, 
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleIamFoldersPolicyBinding.GoogleIamFoldersPolicyBinding",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleIamFoldersPolicyBinding)SetAnnotations(val *map[string]*string) {
+func (j *jsiiProxy_GoogleIamFoldersPolicyBinding) SetAnnotations(val *map[string]*string) {
 	if err := j.validateSetAnnotationsParameters(val); err != nil {
 		panic(err)
 	}
@@ -659,7 +658,7 @@ func (j *jsiiProxy_GoogleIamFoldersPolicyBinding)SetAnnotations(val *map[string]
 	)
 }
 
-func (j *jsiiProxy_GoogleIamFoldersPolicyBinding)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleIamFoldersPolicyBinding) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -670,7 +669,7 @@ func (j *jsiiProxy_GoogleIamFoldersPolicyBinding)SetConnection(val interface{}) 
 	)
 }
 
-func (j *jsiiProxy_GoogleIamFoldersPolicyBinding)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleIamFoldersPolicyBinding) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -681,7 +680,7 @@ func (j *jsiiProxy_GoogleIamFoldersPolicyBinding)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleIamFoldersPolicyBinding)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleIamFoldersPolicyBinding) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -689,7 +688,7 @@ func (j *jsiiProxy_GoogleIamFoldersPolicyBinding)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleIamFoldersPolicyBinding)SetDisplayName(val *string) {
+func (j *jsiiProxy_GoogleIamFoldersPolicyBinding) SetDisplayName(val *string) {
 	if err := j.validateSetDisplayNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -700,7 +699,7 @@ func (j *jsiiProxy_GoogleIamFoldersPolicyBinding)SetDisplayName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleIamFoldersPolicyBinding)SetFolder(val *string) {
+func (j *jsiiProxy_GoogleIamFoldersPolicyBinding) SetFolder(val *string) {
 	if err := j.validateSetFolderParameters(val); err != nil {
 		panic(err)
 	}
@@ -711,7 +710,7 @@ func (j *jsiiProxy_GoogleIamFoldersPolicyBinding)SetFolder(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleIamFoldersPolicyBinding)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleIamFoldersPolicyBinding) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -719,7 +718,7 @@ func (j *jsiiProxy_GoogleIamFoldersPolicyBinding)SetForEach(val cdktf.ITerraform
 	)
 }
 
-func (j *jsiiProxy_GoogleIamFoldersPolicyBinding)SetId(val *string) {
+func (j *jsiiProxy_GoogleIamFoldersPolicyBinding) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -730,7 +729,7 @@ func (j *jsiiProxy_GoogleIamFoldersPolicyBinding)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleIamFoldersPolicyBinding)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleIamFoldersPolicyBinding) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -741,7 +740,7 @@ func (j *jsiiProxy_GoogleIamFoldersPolicyBinding)SetLifecycle(val *cdktf.Terrafo
 	)
 }
 
-func (j *jsiiProxy_GoogleIamFoldersPolicyBinding)SetLocation(val *string) {
+func (j *jsiiProxy_GoogleIamFoldersPolicyBinding) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -752,7 +751,7 @@ func (j *jsiiProxy_GoogleIamFoldersPolicyBinding)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleIamFoldersPolicyBinding)SetPolicy(val *string) {
+func (j *jsiiProxy_GoogleIamFoldersPolicyBinding) SetPolicy(val *string) {
 	if err := j.validateSetPolicyParameters(val); err != nil {
 		panic(err)
 	}
@@ -763,7 +762,7 @@ func (j *jsiiProxy_GoogleIamFoldersPolicyBinding)SetPolicy(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleIamFoldersPolicyBinding)SetPolicyBindingId(val *string) {
+func (j *jsiiProxy_GoogleIamFoldersPolicyBinding) SetPolicyBindingId(val *string) {
 	if err := j.validateSetPolicyBindingIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -774,7 +773,7 @@ func (j *jsiiProxy_GoogleIamFoldersPolicyBinding)SetPolicyBindingId(val *string)
 	)
 }
 
-func (j *jsiiProxy_GoogleIamFoldersPolicyBinding)SetPolicyKind(val *string) {
+func (j *jsiiProxy_GoogleIamFoldersPolicyBinding) SetPolicyKind(val *string) {
 	if err := j.validateSetPolicyKindParameters(val); err != nil {
 		panic(err)
 	}
@@ -785,7 +784,7 @@ func (j *jsiiProxy_GoogleIamFoldersPolicyBinding)SetPolicyKind(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleIamFoldersPolicyBinding)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleIamFoldersPolicyBinding) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -793,7 +792,7 @@ func (j *jsiiProxy_GoogleIamFoldersPolicyBinding)SetProvider(val cdktf.Terraform
 	)
 }
 
-func (j *jsiiProxy_GoogleIamFoldersPolicyBinding)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleIamFoldersPolicyBinding) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -816,7 +815,7 @@ func GoogleIamFoldersPolicyBinding_GenerateConfigForImport(scope constructs.Cons
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleIamFoldersPolicyBinding.GoogleIamFoldersPolicyBinding",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -840,7 +839,7 @@ func GoogleIamFoldersPolicyBinding_GenerateConfigForImport(scope constructs.Cons
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleIamFoldersPolicyBinding_IsConstruct(x interface{}) *bool {
+func GoogleIamFoldersPolicyBinding_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleIamFoldersPolicyBinding_IsConstructParameters(x); err != nil {
@@ -851,7 +850,7 @@ func GoogleIamFoldersPolicyBinding_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleIamFoldersPolicyBinding.GoogleIamFoldersPolicyBinding",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -859,7 +858,7 @@ func GoogleIamFoldersPolicyBinding_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleIamFoldersPolicyBinding_IsTerraformElement(x interface{}) *bool {
+func GoogleIamFoldersPolicyBinding_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleIamFoldersPolicyBinding_IsTerraformElementParameters(x); err != nil {
@@ -870,7 +869,7 @@ func GoogleIamFoldersPolicyBinding_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleIamFoldersPolicyBinding.GoogleIamFoldersPolicyBinding",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -878,7 +877,7 @@ func GoogleIamFoldersPolicyBinding_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleIamFoldersPolicyBinding_IsTerraformResource(x interface{}) *bool {
+func GoogleIamFoldersPolicyBinding_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleIamFoldersPolicyBinding_IsTerraformResourceParameters(x); err != nil {
@@ -889,7 +888,7 @@ func GoogleIamFoldersPolicyBinding_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleIamFoldersPolicyBinding.GoogleIamFoldersPolicyBinding",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -914,31 +913,31 @@ func (g *jsiiProxy_GoogleIamFoldersPolicyBinding) AddMoveTarget(moveTarget *stri
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleIamFoldersPolicyBinding) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleIamFoldersPolicyBinding) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleIamFoldersPolicyBinding) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleIamFoldersPolicyBinding) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -954,7 +953,7 @@ func (g *jsiiProxy_GoogleIamFoldersPolicyBinding) GetBooleanAttribute(terraformA
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -970,7 +969,7 @@ func (g *jsiiProxy_GoogleIamFoldersPolicyBinding) GetBooleanMapAttribute(terrafo
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -986,7 +985,7 @@ func (g *jsiiProxy_GoogleIamFoldersPolicyBinding) GetListAttribute(terraformAttr
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1002,7 +1001,7 @@ func (g *jsiiProxy_GoogleIamFoldersPolicyBinding) GetNumberAttribute(terraformAt
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1018,7 +1017,7 @@ func (g *jsiiProxy_GoogleIamFoldersPolicyBinding) GetNumberListAttribute(terrafo
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1034,7 +1033,7 @@ func (g *jsiiProxy_GoogleIamFoldersPolicyBinding) GetNumberMapAttribute(terrafor
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1050,7 +1049,7 @@ func (g *jsiiProxy_GoogleIamFoldersPolicyBinding) GetStringAttribute(terraformAt
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1066,15 +1065,15 @@ func (g *jsiiProxy_GoogleIamFoldersPolicyBinding) GetStringMapAttribute(terrafor
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleIamFoldersPolicyBinding) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleIamFoldersPolicyBinding) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1093,7 +1092,7 @@ func (g *jsiiProxy_GoogleIamFoldersPolicyBinding) ImportFrom(id *string, provide
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1106,7 +1105,7 @@ func (g *jsiiProxy_GoogleIamFoldersPolicyBinding) InterpolationForAttribute(terr
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1120,18 +1119,18 @@ func (g *jsiiProxy_GoogleIamFoldersPolicyBinding) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleIamFoldersPolicyBinding) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleIamFoldersPolicyBinding) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1142,7 +1141,7 @@ func (g *jsiiProxy_GoogleIamFoldersPolicyBinding) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1153,7 +1152,7 @@ func (g *jsiiProxy_GoogleIamFoldersPolicyBinding) OverrideLogicalId(newLogicalId
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1164,7 +1163,7 @@ func (g *jsiiProxy_GoogleIamFoldersPolicyBinding) PutCondition(value *GoogleIamF
 	_jsii_.InvokeVoid(
 		g,
 		"putCondition",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1175,7 +1174,7 @@ func (g *jsiiProxy_GoogleIamFoldersPolicyBinding) PutTarget(value *GoogleIamFold
 	_jsii_.InvokeVoid(
 		g,
 		"putTarget",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1186,7 +1185,7 @@ func (g *jsiiProxy_GoogleIamFoldersPolicyBinding) PutTimeouts(value *GoogleIamFo
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1246,8 +1245,8 @@ func (g *jsiiProxy_GoogleIamFoldersPolicyBinding) ResetTimeouts() {
 	)
 }
 
-func (g *jsiiProxy_GoogleIamFoldersPolicyBinding) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleIamFoldersPolicyBinding) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1259,8 +1258,8 @@ func (g *jsiiProxy_GoogleIamFoldersPolicyBinding) SynthesizeAttributes() *map[st
 	return returns
 }
 
-func (g *jsiiProxy_GoogleIamFoldersPolicyBinding) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleIamFoldersPolicyBinding) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1272,8 +1271,8 @@ func (g *jsiiProxy_GoogleIamFoldersPolicyBinding) SynthesizeHclAttributes() *map
 	return returns
 }
 
-func (g *jsiiProxy_GoogleIamFoldersPolicyBinding) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleIamFoldersPolicyBinding) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1285,8 +1284,8 @@ func (g *jsiiProxy_GoogleIamFoldersPolicyBinding) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleIamFoldersPolicyBinding) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleIamFoldersPolicyBinding) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1311,8 +1310,8 @@ func (g *jsiiProxy_GoogleIamFoldersPolicyBinding) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleIamFoldersPolicyBinding) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleIamFoldersPolicyBinding) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1323,4 +1322,3 @@ func (g *jsiiProxy_GoogleIamFoldersPolicyBinding) ToTerraform() interface{} {
 
 	return returns
 }
-

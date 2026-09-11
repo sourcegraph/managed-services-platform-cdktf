@@ -1,6 +1,5 @@
 package googlevertexaiendpointwithmodelgardendeployment
 
-
 type GoogleVertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpec struct {
 	// URI of the Docker image to be used as the custom container for serving predictions.
 	//
@@ -106,11 +105,11 @@ type GoogleVertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpec str
 	// env block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_vertex_ai_endpoint_with_model_garden_deployment#env GoogleVertexAiEndpointWithModelGardenDeployment#env}
-	Env interface{} `field:"optional" json:"env" yaml:"env"`
+	Env any `field:"optional" json:"env" yaml:"env"`
 	// grpc_ports block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_vertex_ai_endpoint_with_model_garden_deployment#grpc_ports GoogleVertexAiEndpointWithModelGardenDeployment#grpc_ports}
-	GrpcPorts interface{} `field:"optional" json:"grpcPorts" yaml:"grpcPorts"`
+	GrpcPorts any `field:"optional" json:"grpcPorts" yaml:"grpcPorts"`
 	// health_probe block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_vertex_ai_endpoint_with_model_garden_deployment#health_probe GoogleVertexAiEndpointWithModelGardenDeployment#health_probe}
@@ -152,7 +151,7 @@ type GoogleVertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpec str
 	// ports block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_vertex_ai_endpoint_with_model_garden_deployment#ports GoogleVertexAiEndpointWithModelGardenDeployment#ports}
-	Ports interface{} `field:"optional" json:"ports" yaml:"ports"`
+	Ports any `field:"optional" json:"ports" yaml:"ports"`
 	// HTTP path on the container to send prediction requests to.
 	//
 	// Vertex AI
@@ -193,4 +192,3 @@ type GoogleVertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpec str
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_vertex_ai_endpoint_with_model_garden_deployment#startup_probe GoogleVertexAiEndpointWithModelGardenDeployment#startup_probe}
 	StartupProbe *GoogleVertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecStartupProbe `field:"optional" json:"startupProbe" yaml:"startupProbe"`
 }
-

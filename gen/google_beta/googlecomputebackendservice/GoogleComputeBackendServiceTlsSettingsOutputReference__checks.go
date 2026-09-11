@@ -90,7 +90,7 @@ func (g *jsiiProxy_GoogleComputeBackendServiceTlsSettingsOutputReference) valida
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeBackendServiceTlsSettingsOutputReference) validatePutSubjectAltNamesParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleComputeBackendServiceTlsSettingsOutputReference) validatePutSubjectAltNamesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -137,7 +137,7 @@ func (j *jsiiProxy_GoogleComputeBackendServiceTlsSettingsOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeBackendServiceTlsSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeBackendServiceTlsSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -245,4 +245,3 @@ func validateNewGoogleComputeBackendServiceTlsSettingsOutputReferenceParameters(
 
 	return nil
 }
-

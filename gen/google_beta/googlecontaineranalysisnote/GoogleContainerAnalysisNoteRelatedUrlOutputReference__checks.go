@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleContainerAnalysisNoteRelatedUrlOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerAnalysisNoteRelatedUrlOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContainerAnalysisNoteRelatedUrlOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_GoogleContainerAnalysisNoteRelatedUrlOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerAnalysisNoteRelatedUrlOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContainerAnalysisNoteRelatedUrlOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGoogleContainerAnalysisNoteRelatedUrlOutputReferenceParameters(t
 
 	return nil
 }
-

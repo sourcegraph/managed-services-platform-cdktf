@@ -13,29 +13,29 @@ import (
 type GoogleApihubPluginInstance interface {
 	cdktf.TerraformResource
 	Actions() GoogleApihubPluginInstanceActionsList
-	ActionsInput() interface{}
+	ActionsInput() any
 	AuthConfig() GoogleApihubPluginInstanceAuthConfigOutputReference
 	AuthConfigInput() *GoogleApihubPluginInstanceAuthConfig
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	Disable() interface{}
-	SetDisable(val interface{})
-	DisableInput() interface{}
+	Disable() any
+	SetDisable(val any)
+	DisableInput() any
 	DisplayName() *string
 	SetDisplayName(val *string)
 	DisplayNameInput() *string
@@ -75,28 +75,28 @@ type GoogleApihubPluginInstance interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	State() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() GoogleApihubPluginInstanceTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	UpdateTime() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -114,7 +114,7 @@ type GoogleApihubPluginInstance interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -126,14 +126,14 @@ type GoogleApihubPluginInstance interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutActions(value interface{})
+	PutActions(value any)
 	PutAuthConfig(value *GoogleApihubPluginInstanceAuthConfig)
 	PutTimeouts(value *GoogleApihubPluginInstanceTimeouts)
 	ResetActions()
@@ -145,17 +145,17 @@ type GoogleApihubPluginInstance interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleApihubPluginInstance
@@ -173,8 +173,8 @@ func (j *jsiiProxy_GoogleApihubPluginInstance) Actions() GoogleApihubPluginInsta
 	return returns
 }
 
-func (j *jsiiProxy_GoogleApihubPluginInstance) ActionsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleApihubPluginInstance) ActionsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"actionsInput",
@@ -213,8 +213,8 @@ func (j *jsiiProxy_GoogleApihubPluginInstance) CdktfStack() cdktf.TerraformStack
 	return returns
 }
 
-func (j *jsiiProxy_GoogleApihubPluginInstance) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleApihubPluginInstance) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -223,8 +223,8 @@ func (j *jsiiProxy_GoogleApihubPluginInstance) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleApihubPluginInstance) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleApihubPluginInstance) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -233,8 +233,8 @@ func (j *jsiiProxy_GoogleApihubPluginInstance) ConstructNodeMetadata() *map[stri
 	return returns
 }
 
-func (j *jsiiProxy_GoogleApihubPluginInstance) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleApihubPluginInstance) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -263,8 +263,8 @@ func (j *jsiiProxy_GoogleApihubPluginInstance) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleApihubPluginInstance) Disable() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleApihubPluginInstance) Disable() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disable",
@@ -273,8 +273,8 @@ func (j *jsiiProxy_GoogleApihubPluginInstance) Disable() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleApihubPluginInstance) DisableInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleApihubPluginInstance) DisableInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disableInput",
@@ -483,8 +483,8 @@ func (j *jsiiProxy_GoogleApihubPluginInstance) Provider() cdktf.TerraformProvide
 	return returns
 }
 
-func (j *jsiiProxy_GoogleApihubPluginInstance) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleApihubPluginInstance) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -493,8 +493,8 @@ func (j *jsiiProxy_GoogleApihubPluginInstance) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleApihubPluginInstance) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleApihubPluginInstance) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -523,8 +523,8 @@ func (j *jsiiProxy_GoogleApihubPluginInstance) TerraformGeneratorMetadata() *cdk
 	return returns
 }
 
-func (j *jsiiProxy_GoogleApihubPluginInstance) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleApihubPluginInstance) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -553,8 +553,8 @@ func (j *jsiiProxy_GoogleApihubPluginInstance) Timeouts() GoogleApihubPluginInst
 	return returns
 }
 
-func (j *jsiiProxy_GoogleApihubPluginInstance) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleApihubPluginInstance) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -573,7 +573,6 @@ func (j *jsiiProxy_GoogleApihubPluginInstance) UpdateTime() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_apihub_plugin_instance google_apihub_plugin_instance} Resource.
 func NewGoogleApihubPluginInstance(scope constructs.Construct, id *string, config *GoogleApihubPluginInstanceConfig) GoogleApihubPluginInstance {
 	_init_.Initialize()
@@ -585,7 +584,7 @@ func NewGoogleApihubPluginInstance(scope constructs.Construct, id *string, confi
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleApihubPluginInstance.GoogleApihubPluginInstance",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -598,12 +597,12 @@ func NewGoogleApihubPluginInstance_Override(g GoogleApihubPluginInstance, scope 
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleApihubPluginInstance.GoogleApihubPluginInstance",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleApihubPluginInstance)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleApihubPluginInstance) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -614,7 +613,7 @@ func (j *jsiiProxy_GoogleApihubPluginInstance)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleApihubPluginInstance)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleApihubPluginInstance) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -625,7 +624,7 @@ func (j *jsiiProxy_GoogleApihubPluginInstance)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleApihubPluginInstance)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleApihubPluginInstance) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -633,7 +632,7 @@ func (j *jsiiProxy_GoogleApihubPluginInstance)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleApihubPluginInstance)SetDisable(val interface{}) {
+func (j *jsiiProxy_GoogleApihubPluginInstance) SetDisable(val any) {
 	if err := j.validateSetDisableParameters(val); err != nil {
 		panic(err)
 	}
@@ -644,7 +643,7 @@ func (j *jsiiProxy_GoogleApihubPluginInstance)SetDisable(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleApihubPluginInstance)SetDisplayName(val *string) {
+func (j *jsiiProxy_GoogleApihubPluginInstance) SetDisplayName(val *string) {
 	if err := j.validateSetDisplayNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -655,7 +654,7 @@ func (j *jsiiProxy_GoogleApihubPluginInstance)SetDisplayName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleApihubPluginInstance)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleApihubPluginInstance) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -663,7 +662,7 @@ func (j *jsiiProxy_GoogleApihubPluginInstance)SetForEach(val cdktf.ITerraformIte
 	)
 }
 
-func (j *jsiiProxy_GoogleApihubPluginInstance)SetId(val *string) {
+func (j *jsiiProxy_GoogleApihubPluginInstance) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -674,7 +673,7 @@ func (j *jsiiProxy_GoogleApihubPluginInstance)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleApihubPluginInstance)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleApihubPluginInstance) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -685,7 +684,7 @@ func (j *jsiiProxy_GoogleApihubPluginInstance)SetLifecycle(val *cdktf.TerraformR
 	)
 }
 
-func (j *jsiiProxy_GoogleApihubPluginInstance)SetLocation(val *string) {
+func (j *jsiiProxy_GoogleApihubPluginInstance) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -696,7 +695,7 @@ func (j *jsiiProxy_GoogleApihubPluginInstance)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleApihubPluginInstance)SetPlugin(val *string) {
+func (j *jsiiProxy_GoogleApihubPluginInstance) SetPlugin(val *string) {
 	if err := j.validateSetPluginParameters(val); err != nil {
 		panic(err)
 	}
@@ -707,7 +706,7 @@ func (j *jsiiProxy_GoogleApihubPluginInstance)SetPlugin(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleApihubPluginInstance)SetPluginInstanceId(val *string) {
+func (j *jsiiProxy_GoogleApihubPluginInstance) SetPluginInstanceId(val *string) {
 	if err := j.validateSetPluginInstanceIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -718,7 +717,7 @@ func (j *jsiiProxy_GoogleApihubPluginInstance)SetPluginInstanceId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleApihubPluginInstance)SetProject(val *string) {
+func (j *jsiiProxy_GoogleApihubPluginInstance) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -729,7 +728,7 @@ func (j *jsiiProxy_GoogleApihubPluginInstance)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleApihubPluginInstance)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleApihubPluginInstance) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -737,7 +736,7 @@ func (j *jsiiProxy_GoogleApihubPluginInstance)SetProvider(val cdktf.TerraformPro
 	)
 }
 
-func (j *jsiiProxy_GoogleApihubPluginInstance)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleApihubPluginInstance) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -760,7 +759,7 @@ func GoogleApihubPluginInstance_GenerateConfigForImport(scope constructs.Constru
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleApihubPluginInstance.GoogleApihubPluginInstance",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -784,7 +783,7 @@ func GoogleApihubPluginInstance_GenerateConfigForImport(scope constructs.Constru
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleApihubPluginInstance_IsConstruct(x interface{}) *bool {
+func GoogleApihubPluginInstance_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleApihubPluginInstance_IsConstructParameters(x); err != nil {
@@ -795,7 +794,7 @@ func GoogleApihubPluginInstance_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleApihubPluginInstance.GoogleApihubPluginInstance",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -803,7 +802,7 @@ func GoogleApihubPluginInstance_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleApihubPluginInstance_IsTerraformElement(x interface{}) *bool {
+func GoogleApihubPluginInstance_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleApihubPluginInstance_IsTerraformElementParameters(x); err != nil {
@@ -814,7 +813,7 @@ func GoogleApihubPluginInstance_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleApihubPluginInstance.GoogleApihubPluginInstance",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -822,7 +821,7 @@ func GoogleApihubPluginInstance_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleApihubPluginInstance_IsTerraformResource(x interface{}) *bool {
+func GoogleApihubPluginInstance_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleApihubPluginInstance_IsTerraformResourceParameters(x); err != nil {
@@ -833,7 +832,7 @@ func GoogleApihubPluginInstance_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleApihubPluginInstance.GoogleApihubPluginInstance",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -858,31 +857,31 @@ func (g *jsiiProxy_GoogleApihubPluginInstance) AddMoveTarget(moveTarget *string)
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleApihubPluginInstance) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleApihubPluginInstance) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleApihubPluginInstance) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleApihubPluginInstance) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -898,7 +897,7 @@ func (g *jsiiProxy_GoogleApihubPluginInstance) GetBooleanAttribute(terraformAttr
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -914,7 +913,7 @@ func (g *jsiiProxy_GoogleApihubPluginInstance) GetBooleanMapAttribute(terraformA
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -930,7 +929,7 @@ func (g *jsiiProxy_GoogleApihubPluginInstance) GetListAttribute(terraformAttribu
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -946,7 +945,7 @@ func (g *jsiiProxy_GoogleApihubPluginInstance) GetNumberAttribute(terraformAttri
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -962,7 +961,7 @@ func (g *jsiiProxy_GoogleApihubPluginInstance) GetNumberListAttribute(terraformA
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -978,7 +977,7 @@ func (g *jsiiProxy_GoogleApihubPluginInstance) GetNumberMapAttribute(terraformAt
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -994,7 +993,7 @@ func (g *jsiiProxy_GoogleApihubPluginInstance) GetStringAttribute(terraformAttri
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1010,15 +1009,15 @@ func (g *jsiiProxy_GoogleApihubPluginInstance) GetStringMapAttribute(terraformAt
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleApihubPluginInstance) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleApihubPluginInstance) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1037,7 +1036,7 @@ func (g *jsiiProxy_GoogleApihubPluginInstance) ImportFrom(id *string, provider c
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1050,7 +1049,7 @@ func (g *jsiiProxy_GoogleApihubPluginInstance) InterpolationForAttribute(terrafo
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1064,18 +1063,18 @@ func (g *jsiiProxy_GoogleApihubPluginInstance) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleApihubPluginInstance) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleApihubPluginInstance) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1086,7 +1085,7 @@ func (g *jsiiProxy_GoogleApihubPluginInstance) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1097,18 +1096,18 @@ func (g *jsiiProxy_GoogleApihubPluginInstance) OverrideLogicalId(newLogicalId *s
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (g *jsiiProxy_GoogleApihubPluginInstance) PutActions(value interface{}) {
+func (g *jsiiProxy_GoogleApihubPluginInstance) PutActions(value any) {
 	if err := g.validatePutActionsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putActions",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1119,7 +1118,7 @@ func (g *jsiiProxy_GoogleApihubPluginInstance) PutAuthConfig(value *GoogleApihub
 	_jsii_.InvokeVoid(
 		g,
 		"putAuthConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1130,7 +1129,7 @@ func (g *jsiiProxy_GoogleApihubPluginInstance) PutTimeouts(value *GoogleApihubPl
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1190,8 +1189,8 @@ func (g *jsiiProxy_GoogleApihubPluginInstance) ResetTimeouts() {
 	)
 }
 
-func (g *jsiiProxy_GoogleApihubPluginInstance) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleApihubPluginInstance) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1203,8 +1202,8 @@ func (g *jsiiProxy_GoogleApihubPluginInstance) SynthesizeAttributes() *map[strin
 	return returns
 }
 
-func (g *jsiiProxy_GoogleApihubPluginInstance) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleApihubPluginInstance) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1216,8 +1215,8 @@ func (g *jsiiProxy_GoogleApihubPluginInstance) SynthesizeHclAttributes() *map[st
 	return returns
 }
 
-func (g *jsiiProxy_GoogleApihubPluginInstance) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleApihubPluginInstance) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1229,8 +1228,8 @@ func (g *jsiiProxy_GoogleApihubPluginInstance) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleApihubPluginInstance) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleApihubPluginInstance) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1255,8 +1254,8 @@ func (g *jsiiProxy_GoogleApihubPluginInstance) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleApihubPluginInstance) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleApihubPluginInstance) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1267,4 +1266,3 @@ func (g *jsiiProxy_GoogleApihubPluginInstance) ToTerraform() interface{} {
 
 	return returns
 }
-

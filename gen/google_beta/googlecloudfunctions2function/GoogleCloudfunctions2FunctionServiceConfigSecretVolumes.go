@@ -1,6 +1,5 @@
 package googlecloudfunctions2function
 
-
 type GoogleCloudfunctions2FunctionServiceConfigSecretVolumes struct {
 	// The path within the container to mount the secret volume.
 	//
@@ -21,6 +20,5 @@ type GoogleCloudfunctions2FunctionServiceConfigSecretVolumes struct {
 	// versions block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_cloudfunctions2_function#versions GoogleCloudfunctions2Function#versions}
-	Versions interface{} `field:"optional" json:"versions" yaml:"versions"`
+	Versions any `field:"optional" json:"versions" yaml:"versions"`
 }
-

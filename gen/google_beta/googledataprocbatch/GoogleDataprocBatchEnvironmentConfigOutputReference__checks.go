@@ -120,7 +120,7 @@ func (g *jsiiProxy_GoogleDataprocBatchEnvironmentConfigOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataprocBatchEnvironmentConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataprocBatchEnvironmentConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -220,4 +220,3 @@ func validateNewGoogleDataprocBatchEnvironmentConfigOutputReferenceParameters(te
 
 	return nil
 }
-

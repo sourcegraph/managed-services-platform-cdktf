@@ -1,11 +1,10 @@
 package googlecomputefuturereservation
 
-
 type GoogleComputeFutureReservationAggregateReservation struct {
 	// reserved_resources block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_future_reservation#reserved_resources GoogleComputeFutureReservation#reserved_resources}
-	ReservedResources interface{} `field:"required" json:"reservedResources" yaml:"reservedResources"`
+	ReservedResources any `field:"required" json:"reservedResources" yaml:"reservedResources"`
 	// The VM family that all instances scheduled against this reservation must belong to.
 	//
 	// Possible values: ["VM_FAMILY_CLOUD_TPU_DEVICE_CT3", "VM_FAMILY_CLOUD_TPU_LITE_DEVICE_CT5L", "VM_FAMILY_CLOUD_TPU_LITE_POD_SLICE_CT5LP", "VM_FAMILY_CLOUD_TPU_LITE_POD_SLICE_CT6E", "VM_FAMILY_CLOUD_TPU_POD_SLICE_CT3P", "VM_FAMILY_CLOUD_TPU_POD_SLICE_CT4P", "VM_FAMILY_CLOUD_TPU_POD_SLICE_CT5P"]
@@ -17,4 +16,3 @@ type GoogleComputeFutureReservationAggregateReservation struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_future_reservation#workload_type GoogleComputeFutureReservation#workload_type}
 	WorkloadType *string `field:"optional" json:"workloadType" yaml:"workloadType"`
 }
-

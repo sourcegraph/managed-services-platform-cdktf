@@ -114,7 +114,7 @@ func (j *jsiiProxy_GoogleComputeRegionCommitmentResourcesOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRegionCommitmentResourcesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeRegionCommitmentResourcesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_GoogleComputeRegionCommitmentResourcesOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRegionCommitmentResourcesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeRegionCommitmentResourcesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewGoogleComputeRegionCommitmentResourcesOutputReferenceParameters(
 
 	return nil
 }
-

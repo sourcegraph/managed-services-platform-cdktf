@@ -106,7 +106,7 @@ func (j *jsiiProxy_GoogleCertificateManagerCertificateSelfManagedOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCertificateManagerCertificateSelfManagedOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleCertificateManagerCertificateSelfManagedOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -230,4 +230,3 @@ func validateNewGoogleCertificateManagerCertificateSelfManagedOutputReferencePar
 
 	return nil
 }
-

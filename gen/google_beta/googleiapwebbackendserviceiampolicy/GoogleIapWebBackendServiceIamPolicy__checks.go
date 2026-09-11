@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleIapWebBackendServiceIamPolicy) validateAddMoveTargetPar
 	return nil
 }
 
-func (g *jsiiProxy_GoogleIapWebBackendServiceIamPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleIapWebBackendServiceIamPolicy) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleIapWebBackendServiceIamPolicy) validateMoveFromIdParame
 	return nil
 }
 
-func (g *jsiiProxy_GoogleIapWebBackendServiceIamPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleIapWebBackendServiceIamPolicy) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateGoogleIapWebBackendServiceIamPolicy_GenerateConfigForImportParamete
 	return nil
 }
 
-func validateGoogleIapWebBackendServiceIamPolicy_IsConstructParameters(x interface{}) error {
+func validateGoogleIapWebBackendServiceIamPolicy_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateGoogleIapWebBackendServiceIamPolicy_IsConstructParameters(x interfa
 	return nil
 }
 
-func validateGoogleIapWebBackendServiceIamPolicy_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleIapWebBackendServiceIamPolicy_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateGoogleIapWebBackendServiceIamPolicy_IsTerraformElementParameters(x 
 	return nil
 }
 
-func validateGoogleIapWebBackendServiceIamPolicy_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleIapWebBackendServiceIamPolicy_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateGoogleIapWebBackendServiceIamPolicy_IsTerraformResourceParameters(x
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIapWebBackendServiceIamPolicy) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleIapWebBackendServiceIamPolicy) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_GoogleIapWebBackendServiceIamPolicy) validateSetConnectionPar
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIapWebBackendServiceIamPolicy) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleIapWebBackendServiceIamPolicy) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -366,7 +366,7 @@ func (j *jsiiProxy_GoogleIapWebBackendServiceIamPolicy) validateSetProjectParame
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIapWebBackendServiceIamPolicy) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleIapWebBackendServiceIamPolicy) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -438,4 +438,3 @@ func validateNewGoogleIapWebBackendServiceIamPolicyParameters(scope constructs.C
 
 	return nil
 }
-

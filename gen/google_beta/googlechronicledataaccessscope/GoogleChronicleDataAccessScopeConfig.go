@@ -6,9 +6,9 @@ import (
 
 type GoogleChronicleDataAccessScopeConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type GoogleChronicleDataAccessScopeConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Required.
 	//
 	// The user provided scope id which will become the last part of the name
@@ -49,15 +49,15 @@ type GoogleChronicleDataAccessScopeConfig struct {
 	// with labels A and B.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_chronicle_data_access_scope#allow_all GoogleChronicleDataAccessScope#allow_all}
-	AllowAll interface{} `field:"optional" json:"allowAll" yaml:"allowAll"`
+	AllowAll any `field:"optional" json:"allowAll" yaml:"allowAll"`
 	// allowed_data_access_labels block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_chronicle_data_access_scope#allowed_data_access_labels GoogleChronicleDataAccessScope#allowed_data_access_labels}
-	AllowedDataAccessLabels interface{} `field:"optional" json:"allowedDataAccessLabels" yaml:"allowedDataAccessLabels"`
+	AllowedDataAccessLabels any `field:"optional" json:"allowedDataAccessLabels" yaml:"allowedDataAccessLabels"`
 	// denied_data_access_labels block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_chronicle_data_access_scope#denied_data_access_labels GoogleChronicleDataAccessScope#denied_data_access_labels}
-	DeniedDataAccessLabels interface{} `field:"optional" json:"deniedDataAccessLabels" yaml:"deniedDataAccessLabels"`
+	DeniedDataAccessLabels any `field:"optional" json:"deniedDataAccessLabels" yaml:"deniedDataAccessLabels"`
 	// Optional. A description of the data access scope for a human reader.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_chronicle_data_access_scope#description GoogleChronicleDataAccessScope#description}
@@ -74,4 +74,3 @@ type GoogleChronicleDataAccessScopeConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_chronicle_data_access_scope#timeouts GoogleChronicleDataAccessScope#timeouts}
 	Timeouts *GoogleChronicleDataAccessScopeTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

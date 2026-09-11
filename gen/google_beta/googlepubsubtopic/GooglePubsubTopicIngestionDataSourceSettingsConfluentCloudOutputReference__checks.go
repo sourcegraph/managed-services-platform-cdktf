@@ -114,7 +114,7 @@ func (j *jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOut
 	return nil
 }
 
-func (j *jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGooglePubsubTopicIngestionDataSourceSettingsConfluentCloudOutput
 
 	return nil
 }
-

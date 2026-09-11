@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleBeyondcorpApplicationIamMemberConditionOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBeyondcorpApplicationIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBeyondcorpApplicationIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewGoogleBeyondcorpApplicationIamMemberConditionOutputReferencePara
 
 	return nil
 }
-

@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleOrganizationIamAuditConfigAuditLogConfigList) validateR
 	return nil
 }
 
-func (j *jsiiProxy_GoogleOrganizationIamAuditConfigAuditLogConfigList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleOrganizationIamAuditConfigAuditLogConfigList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleOrganizationIamAuditConfigAuditLogConfigListParameters(ter
 
 	return nil
 }
-

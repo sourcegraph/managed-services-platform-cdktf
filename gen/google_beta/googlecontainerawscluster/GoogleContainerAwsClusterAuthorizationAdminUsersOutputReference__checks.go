@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleContainerAwsClusterAuthorizationAdminUsersOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerAwsClusterAuthorizationAdminUsersOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContainerAwsClusterAuthorizationAdminUsersOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_GoogleContainerAwsClusterAuthorizationAdminUsersOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerAwsClusterAuthorizationAdminUsersOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContainerAwsClusterAuthorizationAdminUsersOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewGoogleContainerAwsClusterAuthorizationAdminUsersOutputReferenceP
 
 	return nil
 }
-

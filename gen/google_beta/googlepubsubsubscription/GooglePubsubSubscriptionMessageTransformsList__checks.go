@@ -34,7 +34,7 @@ func (g *jsiiProxy_GooglePubsubSubscriptionMessageTransformsList) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_GooglePubsubSubscriptionMessageTransformsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GooglePubsubSubscriptionMessageTransformsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGooglePubsubSubscriptionMessageTransformsListParameters(terrafor
 
 	return nil
 }
-

@@ -15,9 +15,9 @@ type GoogleFirestoreIndexFieldsOutputReference interface {
 	ArrayConfigInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -33,8 +33,8 @@ type GoogleFirestoreIndexFieldsOutputReference interface {
 	FieldPathInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Order() *string
 	SetOrder(val *string)
 	OrderInput() *string
@@ -51,7 +51,7 @@ type GoogleFirestoreIndexFieldsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -79,7 +79,7 @@ type GoogleFirestoreIndexFieldsOutputReference interface {
 	ResetVectorConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -112,8 +112,8 @@ func (j *jsiiProxy_GoogleFirestoreIndexFieldsOutputReference) ArrayConfigInput()
 	return returns
 }
 
-func (j *jsiiProxy_GoogleFirestoreIndexFieldsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleFirestoreIndexFieldsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -172,8 +172,8 @@ func (j *jsiiProxy_GoogleFirestoreIndexFieldsOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleFirestoreIndexFieldsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleFirestoreIndexFieldsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -242,7 +242,6 @@ func (j *jsiiProxy_GoogleFirestoreIndexFieldsOutputReference) VectorConfigInput(
 	return returns
 }
 
-
 func NewGoogleFirestoreIndexFieldsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) GoogleFirestoreIndexFieldsOutputReference {
 	_init_.Initialize()
 
@@ -253,7 +252,7 @@ func NewGoogleFirestoreIndexFieldsOutputReference(terraformResource cdktf.IInter
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleFirestoreIndex.GoogleFirestoreIndexFieldsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -265,12 +264,12 @@ func NewGoogleFirestoreIndexFieldsOutputReference_Override(g GoogleFirestoreInde
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleFirestoreIndex.GoogleFirestoreIndexFieldsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleFirestoreIndexFieldsOutputReference)SetArrayConfig(val *string) {
+func (j *jsiiProxy_GoogleFirestoreIndexFieldsOutputReference) SetArrayConfig(val *string) {
 	if err := j.validateSetArrayConfigParameters(val); err != nil {
 		panic(err)
 	}
@@ -281,7 +280,7 @@ func (j *jsiiProxy_GoogleFirestoreIndexFieldsOutputReference)SetArrayConfig(val 
 	)
 }
 
-func (j *jsiiProxy_GoogleFirestoreIndexFieldsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleFirestoreIndexFieldsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -292,7 +291,7 @@ func (j *jsiiProxy_GoogleFirestoreIndexFieldsOutputReference)SetComplexObjectInd
 	)
 }
 
-func (j *jsiiProxy_GoogleFirestoreIndexFieldsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleFirestoreIndexFieldsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -303,7 +302,7 @@ func (j *jsiiProxy_GoogleFirestoreIndexFieldsOutputReference)SetComplexObjectIsF
 	)
 }
 
-func (j *jsiiProxy_GoogleFirestoreIndexFieldsOutputReference)SetFieldPath(val *string) {
+func (j *jsiiProxy_GoogleFirestoreIndexFieldsOutputReference) SetFieldPath(val *string) {
 	if err := j.validateSetFieldPathParameters(val); err != nil {
 		panic(err)
 	}
@@ -314,7 +313,7 @@ func (j *jsiiProxy_GoogleFirestoreIndexFieldsOutputReference)SetFieldPath(val *s
 	)
 }
 
-func (j *jsiiProxy_GoogleFirestoreIndexFieldsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_GoogleFirestoreIndexFieldsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -325,7 +324,7 @@ func (j *jsiiProxy_GoogleFirestoreIndexFieldsOutputReference)SetInternalValue(va
 	)
 }
 
-func (j *jsiiProxy_GoogleFirestoreIndexFieldsOutputReference)SetOrder(val *string) {
+func (j *jsiiProxy_GoogleFirestoreIndexFieldsOutputReference) SetOrder(val *string) {
 	if err := j.validateSetOrderParameters(val); err != nil {
 		panic(err)
 	}
@@ -336,7 +335,7 @@ func (j *jsiiProxy_GoogleFirestoreIndexFieldsOutputReference)SetOrder(val *strin
 	)
 }
 
-func (j *jsiiProxy_GoogleFirestoreIndexFieldsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleFirestoreIndexFieldsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,7 +346,7 @@ func (j *jsiiProxy_GoogleFirestoreIndexFieldsOutputReference)SetTerraformAttribu
 	)
 }
 
-func (j *jsiiProxy_GoogleFirestoreIndexFieldsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleFirestoreIndexFieldsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -371,16 +370,16 @@ func (g *jsiiProxy_GoogleFirestoreIndexFieldsOutputReference) ComputeFqn() *stri
 	return returns
 }
 
-func (g *jsiiProxy_GoogleFirestoreIndexFieldsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleFirestoreIndexFieldsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -396,7 +395,7 @@ func (g *jsiiProxy_GoogleFirestoreIndexFieldsOutputReference) GetBooleanAttribut
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -412,7 +411,7 @@ func (g *jsiiProxy_GoogleFirestoreIndexFieldsOutputReference) GetBooleanMapAttri
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -428,7 +427,7 @@ func (g *jsiiProxy_GoogleFirestoreIndexFieldsOutputReference) GetListAttribute(t
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -444,7 +443,7 @@ func (g *jsiiProxy_GoogleFirestoreIndexFieldsOutputReference) GetNumberAttribute
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -460,7 +459,7 @@ func (g *jsiiProxy_GoogleFirestoreIndexFieldsOutputReference) GetNumberListAttri
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -476,7 +475,7 @@ func (g *jsiiProxy_GoogleFirestoreIndexFieldsOutputReference) GetNumberMapAttrib
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -492,7 +491,7 @@ func (g *jsiiProxy_GoogleFirestoreIndexFieldsOutputReference) GetStringAttribute
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -508,7 +507,7 @@ func (g *jsiiProxy_GoogleFirestoreIndexFieldsOutputReference) GetStringMapAttrib
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -537,7 +536,7 @@ func (g *jsiiProxy_GoogleFirestoreIndexFieldsOutputReference) InterpolationForAt
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -551,7 +550,7 @@ func (g *jsiiProxy_GoogleFirestoreIndexFieldsOutputReference) PutVectorConfig(va
 	_jsii_.InvokeVoid(
 		g,
 		"putVectorConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -587,16 +586,16 @@ func (g *jsiiProxy_GoogleFirestoreIndexFieldsOutputReference) ResetVectorConfig(
 	)
 }
 
-func (g *jsiiProxy_GoogleFirestoreIndexFieldsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleFirestoreIndexFieldsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -615,4 +614,3 @@ func (g *jsiiProxy_GoogleFirestoreIndexFieldsOutputReference) ToString() *string
 
 	return returns
 }
-

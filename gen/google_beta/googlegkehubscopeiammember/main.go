@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleGkeHubScopeIamMember.GoogleGkeHubScopeIamMember",
-		reflect.TypeOf((*GoogleGkeHubScopeIamMember)(nil)).Elem(),
+		reflect.TypeFor[GoogleGkeHubScopeIamMember](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -70,7 +70,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleGkeHubScopeIamMember{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -78,11 +78,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleGkeHubScopeIamMember.GoogleGkeHubScopeIamMemberCondition",
-		reflect.TypeOf((*GoogleGkeHubScopeIamMemberCondition)(nil)).Elem(),
+		reflect.TypeFor[GoogleGkeHubScopeIamMemberCondition](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleGkeHubScopeIamMember.GoogleGkeHubScopeIamMemberConditionOutputReference",
-		reflect.TypeOf((*GoogleGkeHubScopeIamMemberConditionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleGkeHubScopeIamMemberConditionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -113,7 +113,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "titleInput", GoGetter: "TitleInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleGkeHubScopeIamMemberConditionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -121,6 +121,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleGkeHubScopeIamMember.GoogleGkeHubScopeIamMemberConfig",
-		reflect.TypeOf((*GoogleGkeHubScopeIamMemberConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleGkeHubScopeIamMemberConfig](),
 	)
 }

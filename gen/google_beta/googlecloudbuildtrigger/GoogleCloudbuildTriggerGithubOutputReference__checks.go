@@ -120,7 +120,7 @@ func (g *jsiiProxy_GoogleCloudbuildTriggerGithubOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudbuildTriggerGithubOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleCloudbuildTriggerGithubOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -244,4 +244,3 @@ func validateNewGoogleCloudbuildTriggerGithubOutputReferenceParameters(terraform
 
 	return nil
 }
-

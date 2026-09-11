@@ -6,9 +6,9 @@ import (
 
 type GoogleOsConfigGuestPoliciesConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type GoogleOsConfigGuestPoliciesConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// assignment block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_os_config_guest_policies#assignment GoogleOsConfigGuestPolicies#assignment}
@@ -48,20 +48,19 @@ type GoogleOsConfigGuestPoliciesConfig struct {
 	// package_repositories block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_os_config_guest_policies#package_repositories GoogleOsConfigGuestPolicies#package_repositories}
-	PackageRepositories interface{} `field:"optional" json:"packageRepositories" yaml:"packageRepositories"`
+	PackageRepositories any `field:"optional" json:"packageRepositories" yaml:"packageRepositories"`
 	// packages block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_os_config_guest_policies#packages GoogleOsConfigGuestPolicies#packages}
-	Packages interface{} `field:"optional" json:"packages" yaml:"packages"`
+	Packages any `field:"optional" json:"packages" yaml:"packages"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_os_config_guest_policies#project GoogleOsConfigGuestPolicies#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// recipes block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_os_config_guest_policies#recipes GoogleOsConfigGuestPolicies#recipes}
-	Recipes interface{} `field:"optional" json:"recipes" yaml:"recipes"`
+	Recipes any `field:"optional" json:"recipes" yaml:"recipes"`
 	// timeouts block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_os_config_guest_policies#timeouts GoogleOsConfigGuestPolicies#timeouts}
 	Timeouts *GoogleOsConfigGuestPoliciesTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

@@ -15,15 +15,15 @@ type GoogleComputeNetworkEndpoints interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -47,7 +47,7 @@ type GoogleComputeNetworkEndpoints interface {
 	SetNetworkEndpointGroup(val *string)
 	NetworkEndpointGroupInput() *string
 	NetworkEndpoints() GoogleComputeNetworkEndpointsNetworkEndpointsList
-	NetworkEndpointsInput() interface{}
+	NetworkEndpointsInput() any
 	// The tree node.
 	Node() constructs.Node
 	Project() *string
@@ -58,19 +58,19 @@ type GoogleComputeNetworkEndpoints interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() GoogleComputeNetworkEndpointsTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	Zone() *string
 	SetZone(val *string)
 	ZoneInput() *string
@@ -78,9 +78,9 @@ type GoogleComputeNetworkEndpoints interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -98,7 +98,7 @@ type GoogleComputeNetworkEndpoints interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -110,14 +110,14 @@ type GoogleComputeNetworkEndpoints interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutNetworkEndpoints(value interface{})
+	PutNetworkEndpoints(value any)
 	PutTimeouts(value *GoogleComputeNetworkEndpointsTimeouts)
 	ResetId()
 	ResetNetworkEndpoints()
@@ -127,17 +127,17 @@ type GoogleComputeNetworkEndpoints interface {
 	ResetProject()
 	ResetTimeouts()
 	ResetZone()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleComputeNetworkEndpoints
@@ -155,8 +155,8 @@ func (j *jsiiProxy_GoogleComputeNetworkEndpoints) CdktfStack() cdktf.TerraformSt
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeNetworkEndpoints) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeNetworkEndpoints) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -165,8 +165,8 @@ func (j *jsiiProxy_GoogleComputeNetworkEndpoints) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeNetworkEndpoints) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleComputeNetworkEndpoints) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -175,8 +175,8 @@ func (j *jsiiProxy_GoogleComputeNetworkEndpoints) ConstructNodeMetadata() *map[s
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeNetworkEndpoints) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeNetworkEndpoints) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -285,8 +285,8 @@ func (j *jsiiProxy_GoogleComputeNetworkEndpoints) NetworkEndpoints() GoogleCompu
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeNetworkEndpoints) NetworkEndpointsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeNetworkEndpoints) NetworkEndpointsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"networkEndpointsInput",
@@ -335,8 +335,8 @@ func (j *jsiiProxy_GoogleComputeNetworkEndpoints) Provider() cdktf.TerraformProv
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeNetworkEndpoints) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleComputeNetworkEndpoints) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -345,8 +345,8 @@ func (j *jsiiProxy_GoogleComputeNetworkEndpoints) Provisioners() *[]interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeNetworkEndpoints) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeNetworkEndpoints) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -365,8 +365,8 @@ func (j *jsiiProxy_GoogleComputeNetworkEndpoints) TerraformGeneratorMetadata() *
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeNetworkEndpoints) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleComputeNetworkEndpoints) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -395,8 +395,8 @@ func (j *jsiiProxy_GoogleComputeNetworkEndpoints) Timeouts() GoogleComputeNetwor
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeNetworkEndpoints) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeNetworkEndpoints) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -425,7 +425,6 @@ func (j *jsiiProxy_GoogleComputeNetworkEndpoints) ZoneInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_network_endpoints google_compute_network_endpoints} Resource.
 func NewGoogleComputeNetworkEndpoints(scope constructs.Construct, id *string, config *GoogleComputeNetworkEndpointsConfig) GoogleComputeNetworkEndpoints {
 	_init_.Initialize()
@@ -437,7 +436,7 @@ func NewGoogleComputeNetworkEndpoints(scope constructs.Construct, id *string, co
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleComputeNetworkEndpoints.GoogleComputeNetworkEndpoints",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -450,12 +449,12 @@ func NewGoogleComputeNetworkEndpoints_Override(g GoogleComputeNetworkEndpoints, 
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleComputeNetworkEndpoints.GoogleComputeNetworkEndpoints",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeNetworkEndpoints)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleComputeNetworkEndpoints) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -466,7 +465,7 @@ func (j *jsiiProxy_GoogleComputeNetworkEndpoints)SetConnection(val interface{}) 
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeNetworkEndpoints)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleComputeNetworkEndpoints) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -477,7 +476,7 @@ func (j *jsiiProxy_GoogleComputeNetworkEndpoints)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeNetworkEndpoints)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleComputeNetworkEndpoints) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -485,7 +484,7 @@ func (j *jsiiProxy_GoogleComputeNetworkEndpoints)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeNetworkEndpoints)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleComputeNetworkEndpoints) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -493,7 +492,7 @@ func (j *jsiiProxy_GoogleComputeNetworkEndpoints)SetForEach(val cdktf.ITerraform
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeNetworkEndpoints)SetId(val *string) {
+func (j *jsiiProxy_GoogleComputeNetworkEndpoints) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -504,7 +503,7 @@ func (j *jsiiProxy_GoogleComputeNetworkEndpoints)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeNetworkEndpoints)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleComputeNetworkEndpoints) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -515,7 +514,7 @@ func (j *jsiiProxy_GoogleComputeNetworkEndpoints)SetLifecycle(val *cdktf.Terrafo
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeNetworkEndpoints)SetNetworkEndpointGroup(val *string) {
+func (j *jsiiProxy_GoogleComputeNetworkEndpoints) SetNetworkEndpointGroup(val *string) {
 	if err := j.validateSetNetworkEndpointGroupParameters(val); err != nil {
 		panic(err)
 	}
@@ -526,7 +525,7 @@ func (j *jsiiProxy_GoogleComputeNetworkEndpoints)SetNetworkEndpointGroup(val *st
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeNetworkEndpoints)SetProject(val *string) {
+func (j *jsiiProxy_GoogleComputeNetworkEndpoints) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -537,7 +536,7 @@ func (j *jsiiProxy_GoogleComputeNetworkEndpoints)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeNetworkEndpoints)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleComputeNetworkEndpoints) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -545,7 +544,7 @@ func (j *jsiiProxy_GoogleComputeNetworkEndpoints)SetProvider(val cdktf.Terraform
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeNetworkEndpoints)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleComputeNetworkEndpoints) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -556,7 +555,7 @@ func (j *jsiiProxy_GoogleComputeNetworkEndpoints)SetProvisioners(val *[]interfac
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeNetworkEndpoints)SetZone(val *string) {
+func (j *jsiiProxy_GoogleComputeNetworkEndpoints) SetZone(val *string) {
 	if err := j.validateSetZoneParameters(val); err != nil {
 		panic(err)
 	}
@@ -579,7 +578,7 @@ func GoogleComputeNetworkEndpoints_GenerateConfigForImport(scope constructs.Cons
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleComputeNetworkEndpoints.GoogleComputeNetworkEndpoints",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -603,7 +602,7 @@ func GoogleComputeNetworkEndpoints_GenerateConfigForImport(scope constructs.Cons
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleComputeNetworkEndpoints_IsConstruct(x interface{}) *bool {
+func GoogleComputeNetworkEndpoints_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleComputeNetworkEndpoints_IsConstructParameters(x); err != nil {
@@ -614,7 +613,7 @@ func GoogleComputeNetworkEndpoints_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleComputeNetworkEndpoints.GoogleComputeNetworkEndpoints",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -622,7 +621,7 @@ func GoogleComputeNetworkEndpoints_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleComputeNetworkEndpoints_IsTerraformElement(x interface{}) *bool {
+func GoogleComputeNetworkEndpoints_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleComputeNetworkEndpoints_IsTerraformElementParameters(x); err != nil {
@@ -633,7 +632,7 @@ func GoogleComputeNetworkEndpoints_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleComputeNetworkEndpoints.GoogleComputeNetworkEndpoints",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -641,7 +640,7 @@ func GoogleComputeNetworkEndpoints_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleComputeNetworkEndpoints_IsTerraformResource(x interface{}) *bool {
+func GoogleComputeNetworkEndpoints_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleComputeNetworkEndpoints_IsTerraformResourceParameters(x); err != nil {
@@ -652,7 +651,7 @@ func GoogleComputeNetworkEndpoints_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleComputeNetworkEndpoints.GoogleComputeNetworkEndpoints",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -677,31 +676,31 @@ func (g *jsiiProxy_GoogleComputeNetworkEndpoints) AddMoveTarget(moveTarget *stri
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeNetworkEndpoints) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleComputeNetworkEndpoints) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeNetworkEndpoints) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleComputeNetworkEndpoints) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -717,7 +716,7 @@ func (g *jsiiProxy_GoogleComputeNetworkEndpoints) GetBooleanAttribute(terraformA
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -733,7 +732,7 @@ func (g *jsiiProxy_GoogleComputeNetworkEndpoints) GetBooleanMapAttribute(terrafo
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -749,7 +748,7 @@ func (g *jsiiProxy_GoogleComputeNetworkEndpoints) GetListAttribute(terraformAttr
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -765,7 +764,7 @@ func (g *jsiiProxy_GoogleComputeNetworkEndpoints) GetNumberAttribute(terraformAt
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -781,7 +780,7 @@ func (g *jsiiProxy_GoogleComputeNetworkEndpoints) GetNumberListAttribute(terrafo
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -797,7 +796,7 @@ func (g *jsiiProxy_GoogleComputeNetworkEndpoints) GetNumberMapAttribute(terrafor
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -813,7 +812,7 @@ func (g *jsiiProxy_GoogleComputeNetworkEndpoints) GetStringAttribute(terraformAt
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -829,15 +828,15 @@ func (g *jsiiProxy_GoogleComputeNetworkEndpoints) GetStringMapAttribute(terrafor
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeNetworkEndpoints) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleComputeNetworkEndpoints) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -856,7 +855,7 @@ func (g *jsiiProxy_GoogleComputeNetworkEndpoints) ImportFrom(id *string, provide
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -869,7 +868,7 @@ func (g *jsiiProxy_GoogleComputeNetworkEndpoints) InterpolationForAttribute(terr
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -883,18 +882,18 @@ func (g *jsiiProxy_GoogleComputeNetworkEndpoints) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeNetworkEndpoints) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleComputeNetworkEndpoints) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -905,7 +904,7 @@ func (g *jsiiProxy_GoogleComputeNetworkEndpoints) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -916,18 +915,18 @@ func (g *jsiiProxy_GoogleComputeNetworkEndpoints) OverrideLogicalId(newLogicalId
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeNetworkEndpoints) PutNetworkEndpoints(value interface{}) {
+func (g *jsiiProxy_GoogleComputeNetworkEndpoints) PutNetworkEndpoints(value any) {
 	if err := g.validatePutNetworkEndpointsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putNetworkEndpoints",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -938,7 +937,7 @@ func (g *jsiiProxy_GoogleComputeNetworkEndpoints) PutTimeouts(value *GoogleCompu
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -990,8 +989,8 @@ func (g *jsiiProxy_GoogleComputeNetworkEndpoints) ResetZone() {
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeNetworkEndpoints) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleComputeNetworkEndpoints) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1003,8 +1002,8 @@ func (g *jsiiProxy_GoogleComputeNetworkEndpoints) SynthesizeAttributes() *map[st
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeNetworkEndpoints) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleComputeNetworkEndpoints) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1016,8 +1015,8 @@ func (g *jsiiProxy_GoogleComputeNetworkEndpoints) SynthesizeHclAttributes() *map
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeNetworkEndpoints) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleComputeNetworkEndpoints) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1029,8 +1028,8 @@ func (g *jsiiProxy_GoogleComputeNetworkEndpoints) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeNetworkEndpoints) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleComputeNetworkEndpoints) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1055,8 +1054,8 @@ func (g *jsiiProxy_GoogleComputeNetworkEndpoints) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeNetworkEndpoints) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleComputeNetworkEndpoints) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1067,4 +1066,3 @@ func (g *jsiiProxy_GoogleComputeNetworkEndpoints) ToTerraform() interface{} {
 
 	return returns
 }
-

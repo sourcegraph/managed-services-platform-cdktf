@@ -90,7 +90,7 @@ func (g *jsiiProxy_GoogleCloudbuildTriggerBuildArtifactsOutputReference) validat
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCloudbuildTriggerBuildArtifactsOutputReference) validatePutMavenArtifactsParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleCloudbuildTriggerBuildArtifactsOutputReference) validatePutMavenArtifactsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (g *jsiiProxy_GoogleCloudbuildTriggerBuildArtifactsOutputReference) validat
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCloudbuildTriggerBuildArtifactsOutputReference) validatePutNpmPackagesParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleCloudbuildTriggerBuildArtifactsOutputReference) validatePutNpmPackagesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -163,7 +163,7 @@ func (g *jsiiProxy_GoogleCloudbuildTriggerBuildArtifactsOutputReference) validat
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCloudbuildTriggerBuildArtifactsOutputReference) validatePutPythonPackagesParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleCloudbuildTriggerBuildArtifactsOutputReference) validatePutPythonPackagesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -202,7 +202,7 @@ func (g *jsiiProxy_GoogleCloudbuildTriggerBuildArtifactsOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudbuildTriggerBuildArtifactsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleCloudbuildTriggerBuildArtifactsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -310,4 +310,3 @@ func validateNewGoogleCloudbuildTriggerBuildArtifactsOutputReferenceParameters(t
 
 	return nil
 }
-

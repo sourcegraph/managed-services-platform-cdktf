@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleGeminiRepositoryGroupIamMember) validateAddMoveTargetPa
 	return nil
 }
 
-func (g *jsiiProxy_GoogleGeminiRepositoryGroupIamMember) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleGeminiRepositoryGroupIamMember) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleGeminiRepositoryGroupIamMember) validateMoveFromIdParam
 	return nil
 }
 
-func (g *jsiiProxy_GoogleGeminiRepositoryGroupIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleGeminiRepositoryGroupIamMember) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateGoogleGeminiRepositoryGroupIamMember_GenerateConfigForImportParamet
 	return nil
 }
 
-func validateGoogleGeminiRepositoryGroupIamMember_IsConstructParameters(x interface{}) error {
+func validateGoogleGeminiRepositoryGroupIamMember_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateGoogleGeminiRepositoryGroupIamMember_IsConstructParameters(x interf
 	return nil
 }
 
-func validateGoogleGeminiRepositoryGroupIamMember_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleGeminiRepositoryGroupIamMember_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateGoogleGeminiRepositoryGroupIamMember_IsTerraformElementParameters(x
 	return nil
 }
 
-func validateGoogleGeminiRepositoryGroupIamMember_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleGeminiRepositoryGroupIamMember_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -263,7 +263,7 @@ func (j *jsiiProxy_GoogleGeminiRepositoryGroupIamMember) validateSetCodeReposito
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGeminiRepositoryGroupIamMember) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleGeminiRepositoryGroupIamMember) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -296,7 +296,7 @@ func (j *jsiiProxy_GoogleGeminiRepositoryGroupIamMember) validateSetConnectionPa
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGeminiRepositoryGroupIamMember) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleGeminiRepositoryGroupIamMember) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -393,7 +393,7 @@ func (j *jsiiProxy_GoogleGeminiRepositoryGroupIamMember) validateSetProjectParam
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGeminiRepositoryGroupIamMember) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleGeminiRepositoryGroupIamMember) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -473,4 +473,3 @@ func validateNewGoogleGeminiRepositoryGroupIamMemberParameters(scope constructs.
 
 	return nil
 }
-

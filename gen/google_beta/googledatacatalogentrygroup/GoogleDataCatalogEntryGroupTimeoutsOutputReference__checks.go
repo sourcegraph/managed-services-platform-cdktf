@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleDataCatalogEntryGroupTimeoutsOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataCatalogEntryGroupTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataCatalogEntryGroupTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_GoogleDataCatalogEntryGroupTimeoutsOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataCatalogEntryGroupTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataCatalogEntryGroupTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGoogleDataCatalogEntryGroupTimeoutsOutputReferenceParameters(ter
 
 	return nil
 }
-

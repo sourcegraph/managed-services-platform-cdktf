@@ -11,14 +11,14 @@ import (
 type GoogleIntegrationConnectorsConnectionEventingConfigOutputReference interface {
 	cdktf.ComplexObject
 	AdditionalVariable() GoogleIntegrationConnectorsConnectionEventingConfigAdditionalVariableList
-	AdditionalVariableInput() interface{}
+	AdditionalVariableInput() any
 	AuthConfig() GoogleIntegrationConnectorsConnectionEventingConfigAuthConfigOutputReference
 	AuthConfigInput() *GoogleIntegrationConnectorsConnectionEventingConfigAuthConfig
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -29,9 +29,9 @@ type GoogleIntegrationConnectorsConnectionEventingConfigOutputReference interfac
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	EnrichmentEnabled() interface{}
-	SetEnrichmentEnabled(val interface{})
-	EnrichmentEnabledInput() interface{}
+	EnrichmentEnabled() any
+	SetEnrichmentEnabled(val any)
+	EnrichmentEnabledInput() any
 	// Experimental.
 	Fqn() *string
 	InternalValue() *GoogleIntegrationConnectorsConnectionEventingConfig
@@ -49,7 +49,7 @@ type GoogleIntegrationConnectorsConnectionEventingConfigOutputReference interfac
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -70,7 +70,7 @@ type GoogleIntegrationConnectorsConnectionEventingConfigOutputReference interfac
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutAdditionalVariable(value interface{})
+	PutAdditionalVariable(value any)
 	PutAuthConfig(value *GoogleIntegrationConnectorsConnectionEventingConfigAuthConfig)
 	PutRegistrationDestinationConfig(value *GoogleIntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfig)
 	ResetAdditionalVariable()
@@ -78,7 +78,7 @@ type GoogleIntegrationConnectorsConnectionEventingConfigOutputReference interfac
 	ResetEnrichmentEnabled()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -101,8 +101,8 @@ func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionEventingConfigOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionEventingConfigOutputReference) AdditionalVariableInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionEventingConfigOutputReference) AdditionalVariableInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"additionalVariableInput",
@@ -131,8 +131,8 @@ func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionEventingConfigOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionEventingConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionEventingConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -161,8 +161,8 @@ func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionEventingConfigOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionEventingConfigOutputReference) EnrichmentEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionEventingConfigOutputReference) EnrichmentEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enrichmentEnabled",
@@ -171,8 +171,8 @@ func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionEventingConfigOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionEventingConfigOutputReference) EnrichmentEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionEventingConfigOutputReference) EnrichmentEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enrichmentEnabledInput",
@@ -241,7 +241,6 @@ func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionEventingConfigOutputRefe
 	return returns
 }
 
-
 func NewGoogleIntegrationConnectorsConnectionEventingConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleIntegrationConnectorsConnectionEventingConfigOutputReference {
 	_init_.Initialize()
 
@@ -252,7 +251,7 @@ func NewGoogleIntegrationConnectorsConnectionEventingConfigOutputReference(terra
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionEventingConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -264,12 +263,12 @@ func NewGoogleIntegrationConnectorsConnectionEventingConfigOutputReference_Overr
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleIntegrationConnectorsConnection.GoogleIntegrationConnectorsConnectionEventingConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionEventingConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionEventingConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -280,7 +279,7 @@ func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionEventingConfigOutputRefe
 	)
 }
 
-func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionEventingConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionEventingConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -291,7 +290,7 @@ func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionEventingConfigOutputRefe
 	)
 }
 
-func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionEventingConfigOutputReference)SetEnrichmentEnabled(val interface{}) {
+func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionEventingConfigOutputReference) SetEnrichmentEnabled(val any) {
 	if err := j.validateSetEnrichmentEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -302,7 +301,7 @@ func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionEventingConfigOutputRefe
 	)
 }
 
-func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionEventingConfigOutputReference)SetInternalValue(val *GoogleIntegrationConnectorsConnectionEventingConfig) {
+func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionEventingConfigOutputReference) SetInternalValue(val *GoogleIntegrationConnectorsConnectionEventingConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -313,7 +312,7 @@ func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionEventingConfigOutputRefe
 	)
 }
 
-func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionEventingConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionEventingConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -324,7 +323,7 @@ func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionEventingConfigOutputRefe
 	)
 }
 
-func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionEventingConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionEventingConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -348,16 +347,16 @@ func (g *jsiiProxy_GoogleIntegrationConnectorsConnectionEventingConfigOutputRefe
 	return returns
 }
 
-func (g *jsiiProxy_GoogleIntegrationConnectorsConnectionEventingConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleIntegrationConnectorsConnectionEventingConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -373,7 +372,7 @@ func (g *jsiiProxy_GoogleIntegrationConnectorsConnectionEventingConfigOutputRefe
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -389,7 +388,7 @@ func (g *jsiiProxy_GoogleIntegrationConnectorsConnectionEventingConfigOutputRefe
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -405,7 +404,7 @@ func (g *jsiiProxy_GoogleIntegrationConnectorsConnectionEventingConfigOutputRefe
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -421,7 +420,7 @@ func (g *jsiiProxy_GoogleIntegrationConnectorsConnectionEventingConfigOutputRefe
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -437,7 +436,7 @@ func (g *jsiiProxy_GoogleIntegrationConnectorsConnectionEventingConfigOutputRefe
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -453,7 +452,7 @@ func (g *jsiiProxy_GoogleIntegrationConnectorsConnectionEventingConfigOutputRefe
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -469,7 +468,7 @@ func (g *jsiiProxy_GoogleIntegrationConnectorsConnectionEventingConfigOutputRefe
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -485,7 +484,7 @@ func (g *jsiiProxy_GoogleIntegrationConnectorsConnectionEventingConfigOutputRefe
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -514,21 +513,21 @@ func (g *jsiiProxy_GoogleIntegrationConnectorsConnectionEventingConfigOutputRefe
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleIntegrationConnectorsConnectionEventingConfigOutputReference) PutAdditionalVariable(value interface{}) {
+func (g *jsiiProxy_GoogleIntegrationConnectorsConnectionEventingConfigOutputReference) PutAdditionalVariable(value any) {
 	if err := g.validatePutAdditionalVariableParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putAdditionalVariable",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -539,7 +538,7 @@ func (g *jsiiProxy_GoogleIntegrationConnectorsConnectionEventingConfigOutputRefe
 	_jsii_.InvokeVoid(
 		g,
 		"putAuthConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -550,7 +549,7 @@ func (g *jsiiProxy_GoogleIntegrationConnectorsConnectionEventingConfigOutputRefe
 	_jsii_.InvokeVoid(
 		g,
 		"putRegistrationDestinationConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -578,16 +577,16 @@ func (g *jsiiProxy_GoogleIntegrationConnectorsConnectionEventingConfigOutputRefe
 	)
 }
 
-func (g *jsiiProxy_GoogleIntegrationConnectorsConnectionEventingConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleIntegrationConnectorsConnectionEventingConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -606,4 +605,3 @@ func (g *jsiiProxy_GoogleIntegrationConnectorsConnectionEventingConfigOutputRefe
 
 	return returns
 }
-

@@ -15,15 +15,15 @@ type GoogleFolderServiceIdentity interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -55,29 +55,29 @@ type GoogleFolderServiceIdentity interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Service() *string
 	SetService(val *string)
 	ServiceInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() GoogleFolderServiceIdentityTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -95,7 +95,7 @@ type GoogleFolderServiceIdentity interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -107,7 +107,7 @@ type GoogleFolderServiceIdentity interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -120,17 +120,17 @@ type GoogleFolderServiceIdentity interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleFolderServiceIdentity
@@ -148,8 +148,8 @@ func (j *jsiiProxy_GoogleFolderServiceIdentity) CdktfStack() cdktf.TerraformStac
 	return returns
 }
 
-func (j *jsiiProxy_GoogleFolderServiceIdentity) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleFolderServiceIdentity) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -158,8 +158,8 @@ func (j *jsiiProxy_GoogleFolderServiceIdentity) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleFolderServiceIdentity) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleFolderServiceIdentity) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -168,8 +168,8 @@ func (j *jsiiProxy_GoogleFolderServiceIdentity) ConstructNodeMetadata() *map[str
 	return returns
 }
 
-func (j *jsiiProxy_GoogleFolderServiceIdentity) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleFolderServiceIdentity) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -308,8 +308,8 @@ func (j *jsiiProxy_GoogleFolderServiceIdentity) Provider() cdktf.TerraformProvid
 	return returns
 }
 
-func (j *jsiiProxy_GoogleFolderServiceIdentity) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleFolderServiceIdentity) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -318,8 +318,8 @@ func (j *jsiiProxy_GoogleFolderServiceIdentity) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleFolderServiceIdentity) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleFolderServiceIdentity) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -358,8 +358,8 @@ func (j *jsiiProxy_GoogleFolderServiceIdentity) TerraformGeneratorMetadata() *cd
 	return returns
 }
 
-func (j *jsiiProxy_GoogleFolderServiceIdentity) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleFolderServiceIdentity) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -388,8 +388,8 @@ func (j *jsiiProxy_GoogleFolderServiceIdentity) Timeouts() GoogleFolderServiceId
 	return returns
 }
 
-func (j *jsiiProxy_GoogleFolderServiceIdentity) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleFolderServiceIdentity) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -397,7 +397,6 @@ func (j *jsiiProxy_GoogleFolderServiceIdentity) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_folder_service_identity google_folder_service_identity} Resource.
 func NewGoogleFolderServiceIdentity(scope constructs.Construct, id *string, config *GoogleFolderServiceIdentityConfig) GoogleFolderServiceIdentity {
@@ -410,7 +409,7 @@ func NewGoogleFolderServiceIdentity(scope constructs.Construct, id *string, conf
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleFolderServiceIdentity.GoogleFolderServiceIdentity",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -423,12 +422,12 @@ func NewGoogleFolderServiceIdentity_Override(g GoogleFolderServiceIdentity, scop
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleFolderServiceIdentity.GoogleFolderServiceIdentity",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleFolderServiceIdentity)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleFolderServiceIdentity) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -439,7 +438,7 @@ func (j *jsiiProxy_GoogleFolderServiceIdentity)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleFolderServiceIdentity)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleFolderServiceIdentity) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -450,7 +449,7 @@ func (j *jsiiProxy_GoogleFolderServiceIdentity)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleFolderServiceIdentity)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleFolderServiceIdentity) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -458,7 +457,7 @@ func (j *jsiiProxy_GoogleFolderServiceIdentity)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleFolderServiceIdentity)SetFolder(val *string) {
+func (j *jsiiProxy_GoogleFolderServiceIdentity) SetFolder(val *string) {
 	if err := j.validateSetFolderParameters(val); err != nil {
 		panic(err)
 	}
@@ -469,7 +468,7 @@ func (j *jsiiProxy_GoogleFolderServiceIdentity)SetFolder(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleFolderServiceIdentity)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleFolderServiceIdentity) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -477,7 +476,7 @@ func (j *jsiiProxy_GoogleFolderServiceIdentity)SetForEach(val cdktf.ITerraformIt
 	)
 }
 
-func (j *jsiiProxy_GoogleFolderServiceIdentity)SetId(val *string) {
+func (j *jsiiProxy_GoogleFolderServiceIdentity) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -488,7 +487,7 @@ func (j *jsiiProxy_GoogleFolderServiceIdentity)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleFolderServiceIdentity)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleFolderServiceIdentity) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -499,7 +498,7 @@ func (j *jsiiProxy_GoogleFolderServiceIdentity)SetLifecycle(val *cdktf.Terraform
 	)
 }
 
-func (j *jsiiProxy_GoogleFolderServiceIdentity)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleFolderServiceIdentity) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -507,7 +506,7 @@ func (j *jsiiProxy_GoogleFolderServiceIdentity)SetProvider(val cdktf.TerraformPr
 	)
 }
 
-func (j *jsiiProxy_GoogleFolderServiceIdentity)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleFolderServiceIdentity) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -518,7 +517,7 @@ func (j *jsiiProxy_GoogleFolderServiceIdentity)SetProvisioners(val *[]interface{
 	)
 }
 
-func (j *jsiiProxy_GoogleFolderServiceIdentity)SetService(val *string) {
+func (j *jsiiProxy_GoogleFolderServiceIdentity) SetService(val *string) {
 	if err := j.validateSetServiceParameters(val); err != nil {
 		panic(err)
 	}
@@ -541,7 +540,7 @@ func GoogleFolderServiceIdentity_GenerateConfigForImport(scope constructs.Constr
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleFolderServiceIdentity.GoogleFolderServiceIdentity",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -565,7 +564,7 @@ func GoogleFolderServiceIdentity_GenerateConfigForImport(scope constructs.Constr
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleFolderServiceIdentity_IsConstruct(x interface{}) *bool {
+func GoogleFolderServiceIdentity_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleFolderServiceIdentity_IsConstructParameters(x); err != nil {
@@ -576,7 +575,7 @@ func GoogleFolderServiceIdentity_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleFolderServiceIdentity.GoogleFolderServiceIdentity",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -584,7 +583,7 @@ func GoogleFolderServiceIdentity_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleFolderServiceIdentity_IsTerraformElement(x interface{}) *bool {
+func GoogleFolderServiceIdentity_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleFolderServiceIdentity_IsTerraformElementParameters(x); err != nil {
@@ -595,7 +594,7 @@ func GoogleFolderServiceIdentity_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleFolderServiceIdentity.GoogleFolderServiceIdentity",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -603,7 +602,7 @@ func GoogleFolderServiceIdentity_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleFolderServiceIdentity_IsTerraformResource(x interface{}) *bool {
+func GoogleFolderServiceIdentity_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleFolderServiceIdentity_IsTerraformResourceParameters(x); err != nil {
@@ -614,7 +613,7 @@ func GoogleFolderServiceIdentity_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleFolderServiceIdentity.GoogleFolderServiceIdentity",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -639,31 +638,31 @@ func (g *jsiiProxy_GoogleFolderServiceIdentity) AddMoveTarget(moveTarget *string
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleFolderServiceIdentity) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleFolderServiceIdentity) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleFolderServiceIdentity) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleFolderServiceIdentity) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -679,7 +678,7 @@ func (g *jsiiProxy_GoogleFolderServiceIdentity) GetBooleanAttribute(terraformAtt
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -695,7 +694,7 @@ func (g *jsiiProxy_GoogleFolderServiceIdentity) GetBooleanMapAttribute(terraform
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -711,7 +710,7 @@ func (g *jsiiProxy_GoogleFolderServiceIdentity) GetListAttribute(terraformAttrib
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -727,7 +726,7 @@ func (g *jsiiProxy_GoogleFolderServiceIdentity) GetNumberAttribute(terraformAttr
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -743,7 +742,7 @@ func (g *jsiiProxy_GoogleFolderServiceIdentity) GetNumberListAttribute(terraform
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -759,7 +758,7 @@ func (g *jsiiProxy_GoogleFolderServiceIdentity) GetNumberMapAttribute(terraformA
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -775,7 +774,7 @@ func (g *jsiiProxy_GoogleFolderServiceIdentity) GetStringAttribute(terraformAttr
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -791,15 +790,15 @@ func (g *jsiiProxy_GoogleFolderServiceIdentity) GetStringMapAttribute(terraformA
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleFolderServiceIdentity) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleFolderServiceIdentity) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -818,7 +817,7 @@ func (g *jsiiProxy_GoogleFolderServiceIdentity) ImportFrom(id *string, provider 
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -831,7 +830,7 @@ func (g *jsiiProxy_GoogleFolderServiceIdentity) InterpolationForAttribute(terraf
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -845,18 +844,18 @@ func (g *jsiiProxy_GoogleFolderServiceIdentity) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleFolderServiceIdentity) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleFolderServiceIdentity) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -867,7 +866,7 @@ func (g *jsiiProxy_GoogleFolderServiceIdentity) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -878,7 +877,7 @@ func (g *jsiiProxy_GoogleFolderServiceIdentity) OverrideLogicalId(newLogicalId *
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -889,7 +888,7 @@ func (g *jsiiProxy_GoogleFolderServiceIdentity) PutTimeouts(value *GoogleFolderS
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -917,8 +916,8 @@ func (g *jsiiProxy_GoogleFolderServiceIdentity) ResetTimeouts() {
 	)
 }
 
-func (g *jsiiProxy_GoogleFolderServiceIdentity) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleFolderServiceIdentity) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -930,8 +929,8 @@ func (g *jsiiProxy_GoogleFolderServiceIdentity) SynthesizeAttributes() *map[stri
 	return returns
 }
 
-func (g *jsiiProxy_GoogleFolderServiceIdentity) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleFolderServiceIdentity) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -943,8 +942,8 @@ func (g *jsiiProxy_GoogleFolderServiceIdentity) SynthesizeHclAttributes() *map[s
 	return returns
 }
 
-func (g *jsiiProxy_GoogleFolderServiceIdentity) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleFolderServiceIdentity) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -956,8 +955,8 @@ func (g *jsiiProxy_GoogleFolderServiceIdentity) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleFolderServiceIdentity) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleFolderServiceIdentity) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -982,8 +981,8 @@ func (g *jsiiProxy_GoogleFolderServiceIdentity) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleFolderServiceIdentity) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleFolderServiceIdentity) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -994,4 +993,3 @@ func (g *jsiiProxy_GoogleFolderServiceIdentity) ToTerraform() interface{} {
 
 	return returns
 }
-

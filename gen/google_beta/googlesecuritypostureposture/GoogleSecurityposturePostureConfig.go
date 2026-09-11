@@ -6,9 +6,9 @@ import (
 
 type GoogleSecurityposturePostureConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type GoogleSecurityposturePostureConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Location of the resource, eg: global.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_securityposture_posture#location GoogleSecurityposturePosture#location}
@@ -30,7 +30,7 @@ type GoogleSecurityposturePostureConfig struct {
 	// policy_sets block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_securityposture_posture#policy_sets GoogleSecurityposturePosture#policy_sets}
-	PolicySets interface{} `field:"required" json:"policySets" yaml:"policySets"`
+	PolicySets any `field:"required" json:"policySets" yaml:"policySets"`
 	// Id of the posture. It is an immutable field.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_securityposture_posture#posture_id GoogleSecurityposturePosture#posture_id}
@@ -56,4 +56,3 @@ type GoogleSecurityposturePostureConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_securityposture_posture#timeouts GoogleSecurityposturePosture#timeouts}
 	Timeouts *GoogleSecurityposturePostureTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleApphubService) validateAddMoveTargetParameters(moveTarg
 	return nil
 }
 
-func (g *jsiiProxy_GoogleApphubService) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleApphubService) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleApphubService) validateMoveFromIdParameters(id *string)
 	return nil
 }
 
-func (g *jsiiProxy_GoogleApphubService) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleApphubService) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -242,7 +242,7 @@ func validateGoogleApphubService_GenerateConfigForImportParameters(scope constru
 	return nil
 }
 
-func validateGoogleApphubService_IsConstructParameters(x interface{}) error {
+func validateGoogleApphubService_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -250,7 +250,7 @@ func validateGoogleApphubService_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateGoogleApphubService_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleApphubService_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -258,7 +258,7 @@ func validateGoogleApphubService_IsTerraformElementParameters(x interface{}) err
 	return nil
 }
 
-func validateGoogleApphubService_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleApphubService_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -274,7 +274,7 @@ func (j *jsiiProxy_GoogleApphubService) validateSetApplicationIdParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_GoogleApphubService) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleApphubService) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -307,7 +307,7 @@ func (j *jsiiProxy_GoogleApphubService) validateSetConnectionParameters(val inte
 	return nil
 }
 
-func (j *jsiiProxy_GoogleApphubService) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleApphubService) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -420,7 +420,7 @@ func (j *jsiiProxy_GoogleApphubService) validateSetProjectParameters(val *string
 	return nil
 }
 
-func (j *jsiiProxy_GoogleApphubService) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleApphubService) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -492,4 +492,3 @@ func validateNewGoogleApphubServiceParameters(scope constructs.Construct, id *st
 
 	return nil
 }
-

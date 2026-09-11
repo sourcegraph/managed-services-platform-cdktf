@@ -15,23 +15,23 @@ type GoogleNetworkSecurityFirewallEndpointAssociation interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	Disabled() interface{}
-	SetDisabled(val interface{})
-	DisabledInput() interface{}
+	Disabled() any
+	SetDisabled(val any)
+	DisabledInput() any
 	EffectiveLabels() cdktf.StringMap
 	FirewallEndpoint() *string
 	SetFirewallEndpoint(val *string)
@@ -73,11 +73,11 @@ type GoogleNetworkSecurityFirewallEndpointAssociation interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Reconciling() cdktf.IResolvable
 	SelfLink() *string
 	State() *string
@@ -85,11 +85,11 @@ type GoogleNetworkSecurityFirewallEndpointAssociation interface {
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() GoogleNetworkSecurityFirewallEndpointAssociationTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	TlsInspectionPolicy() *string
 	SetTlsInspectionPolicy(val *string)
 	TlsInspectionPolicyInput() *string
@@ -98,9 +98,9 @@ type GoogleNetworkSecurityFirewallEndpointAssociation interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -118,7 +118,7 @@ type GoogleNetworkSecurityFirewallEndpointAssociation interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -130,7 +130,7 @@ type GoogleNetworkSecurityFirewallEndpointAssociation interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -147,17 +147,17 @@ type GoogleNetworkSecurityFirewallEndpointAssociation interface {
 	ResetParent()
 	ResetTimeouts()
 	ResetTlsInspectionPolicy()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleNetworkSecurityFirewallEndpointAssociation
@@ -175,8 +175,8 @@ func (j *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation) CdktfStack(
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -185,8 +185,8 @@ func (j *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation) Connection(
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -195,8 +195,8 @@ func (j *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation) ConstructNo
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -225,8 +225,8 @@ func (j *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation) DependsOn()
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation) Disabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation) Disabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disabled",
@@ -235,8 +235,8 @@ func (j *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation) Disabled() 
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation) DisabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation) DisabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disabledInput",
@@ -455,8 +455,8 @@ func (j *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation) Provider() 
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -465,8 +465,8 @@ func (j *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation) Provisioner
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -525,8 +525,8 @@ func (j *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation) TerraformLa
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -555,8 +555,8 @@ func (j *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation) Timeouts() 
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -595,7 +595,6 @@ func (j *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation) UpdateTime(
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_network_security_firewall_endpoint_association google_network_security_firewall_endpoint_association} Resource.
 func NewGoogleNetworkSecurityFirewallEndpointAssociation(scope constructs.Construct, id *string, config *GoogleNetworkSecurityFirewallEndpointAssociationConfig) GoogleNetworkSecurityFirewallEndpointAssociation {
 	_init_.Initialize()
@@ -607,7 +606,7 @@ func NewGoogleNetworkSecurityFirewallEndpointAssociation(scope constructs.Constr
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleNetworkSecurityFirewallEndpointAssociation.GoogleNetworkSecurityFirewallEndpointAssociation",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -620,12 +619,12 @@ func NewGoogleNetworkSecurityFirewallEndpointAssociation_Override(g GoogleNetwor
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleNetworkSecurityFirewallEndpointAssociation.GoogleNetworkSecurityFirewallEndpointAssociation",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -636,7 +635,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation)SetConnectio
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -647,7 +646,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation)SetCount(val
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -655,7 +654,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation)SetDependsOn
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation)SetDisabled(val interface{}) {
+func (j *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation) SetDisabled(val any) {
 	if err := j.validateSetDisabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -666,7 +665,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation)SetDisabled(
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation)SetFirewallEndpoint(val *string) {
+func (j *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation) SetFirewallEndpoint(val *string) {
 	if err := j.validateSetFirewallEndpointParameters(val); err != nil {
 		panic(err)
 	}
@@ -677,7 +676,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation)SetFirewallE
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -685,7 +684,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation)SetForEach(v
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation)SetId(val *string) {
+func (j *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -696,7 +695,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation)SetId(val *s
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -707,7 +706,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation)SetLabels(va
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -718,7 +717,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation)SetLifecycle
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation)SetLocation(val *string) {
+func (j *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -729,7 +728,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation)SetLocation(
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation)SetName(val *string) {
+func (j *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -740,7 +739,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation)SetName(val 
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation)SetNetwork(val *string) {
+func (j *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation) SetNetwork(val *string) {
 	if err := j.validateSetNetworkParameters(val); err != nil {
 		panic(err)
 	}
@@ -751,7 +750,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation)SetNetwork(v
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation)SetParent(val *string) {
+func (j *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation) SetParent(val *string) {
 	if err := j.validateSetParentParameters(val); err != nil {
 		panic(err)
 	}
@@ -762,7 +761,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation)SetParent(va
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -770,7 +769,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation)SetProvider(
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -781,7 +780,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation)SetProvision
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation)SetTlsInspectionPolicy(val *string) {
+func (j *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation) SetTlsInspectionPolicy(val *string) {
 	if err := j.validateSetTlsInspectionPolicyParameters(val); err != nil {
 		panic(err)
 	}
@@ -804,7 +803,7 @@ func GoogleNetworkSecurityFirewallEndpointAssociation_GenerateConfigForImport(sc
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleNetworkSecurityFirewallEndpointAssociation.GoogleNetworkSecurityFirewallEndpointAssociation",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -828,7 +827,7 @@ func GoogleNetworkSecurityFirewallEndpointAssociation_GenerateConfigForImport(sc
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleNetworkSecurityFirewallEndpointAssociation_IsConstruct(x interface{}) *bool {
+func GoogleNetworkSecurityFirewallEndpointAssociation_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleNetworkSecurityFirewallEndpointAssociation_IsConstructParameters(x); err != nil {
@@ -839,7 +838,7 @@ func GoogleNetworkSecurityFirewallEndpointAssociation_IsConstruct(x interface{})
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleNetworkSecurityFirewallEndpointAssociation.GoogleNetworkSecurityFirewallEndpointAssociation",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -847,7 +846,7 @@ func GoogleNetworkSecurityFirewallEndpointAssociation_IsConstruct(x interface{})
 }
 
 // Experimental.
-func GoogleNetworkSecurityFirewallEndpointAssociation_IsTerraformElement(x interface{}) *bool {
+func GoogleNetworkSecurityFirewallEndpointAssociation_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleNetworkSecurityFirewallEndpointAssociation_IsTerraformElementParameters(x); err != nil {
@@ -858,7 +857,7 @@ func GoogleNetworkSecurityFirewallEndpointAssociation_IsTerraformElement(x inter
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleNetworkSecurityFirewallEndpointAssociation.GoogleNetworkSecurityFirewallEndpointAssociation",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -866,7 +865,7 @@ func GoogleNetworkSecurityFirewallEndpointAssociation_IsTerraformElement(x inter
 }
 
 // Experimental.
-func GoogleNetworkSecurityFirewallEndpointAssociation_IsTerraformResource(x interface{}) *bool {
+func GoogleNetworkSecurityFirewallEndpointAssociation_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleNetworkSecurityFirewallEndpointAssociation_IsTerraformResourceParameters(x); err != nil {
@@ -877,7 +876,7 @@ func GoogleNetworkSecurityFirewallEndpointAssociation_IsTerraformResource(x inte
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleNetworkSecurityFirewallEndpointAssociation.GoogleNetworkSecurityFirewallEndpointAssociation",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -902,31 +901,31 @@ func (g *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation) AddMoveTarg
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -942,7 +941,7 @@ func (g *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation) GetBooleanA
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -958,7 +957,7 @@ func (g *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation) GetBooleanM
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -974,7 +973,7 @@ func (g *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation) GetListAttr
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -990,7 +989,7 @@ func (g *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation) GetNumberAt
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1006,7 +1005,7 @@ func (g *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation) GetNumberLi
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1022,7 +1021,7 @@ func (g *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation) GetNumberMa
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1038,7 +1037,7 @@ func (g *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation) GetStringAt
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1054,15 +1053,15 @@ func (g *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation) GetStringMa
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1081,7 +1080,7 @@ func (g *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation) ImportFrom(
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1094,7 +1093,7 @@ func (g *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation) Interpolati
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1108,18 +1107,18 @@ func (g *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation) MoveFromId(
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1130,7 +1129,7 @@ func (g *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation) MoveToId(id
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1141,7 +1140,7 @@ func (g *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation) OverrideLog
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1152,7 +1151,7 @@ func (g *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation) PutTimeouts
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1212,8 +1211,8 @@ func (g *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation) ResetTlsIns
 	)
 }
 
-func (g *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1225,8 +1224,8 @@ func (g *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation) SynthesizeA
 	return returns
 }
 
-func (g *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1238,8 +1237,8 @@ func (g *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation) SynthesizeH
 	return returns
 }
 
-func (g *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1251,8 +1250,8 @@ func (g *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation) ToHclTerraf
 	return returns
 }
 
-func (g *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1277,8 +1276,8 @@ func (g *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation) ToString() 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1289,4 +1288,3 @@ func (g *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation) ToTerraform
 
 	return returns
 }
-

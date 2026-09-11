@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleIapTunnelIamBindingConditionOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIapTunnelIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleIapTunnelIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewGoogleIapTunnelIamBindingConditionOutputReferenceParameters(terr
 
 	return nil
 }
-

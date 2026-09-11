@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleComputeReservation) validateAddMoveTargetParameters(mov
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeReservation) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleComputeReservation) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleComputeReservation) validateMoveFromIdParameters(id *st
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeReservation) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleComputeReservation) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -275,7 +275,7 @@ func validateGoogleComputeReservation_GenerateConfigForImportParameters(scope co
 	return nil
 }
 
-func validateGoogleComputeReservation_IsConstructParameters(x interface{}) error {
+func validateGoogleComputeReservation_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -283,7 +283,7 @@ func validateGoogleComputeReservation_IsConstructParameters(x interface{}) error
 	return nil
 }
 
-func validateGoogleComputeReservation_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleComputeReservation_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -291,7 +291,7 @@ func validateGoogleComputeReservation_IsTerraformElementParameters(x interface{}
 	return nil
 }
 
-func validateGoogleComputeReservation_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleComputeReservation_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -299,7 +299,7 @@ func validateGoogleComputeReservation_IsTerraformResourceParameters(x interface{
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeReservation) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeReservation) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -332,7 +332,7 @@ func (j *jsiiProxy_GoogleComputeReservation) validateSetConnectionParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeReservation) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeReservation) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -405,7 +405,7 @@ func (j *jsiiProxy_GoogleComputeReservation) validateSetDescriptionParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeReservation) validateSetEnableEmergentMaintenanceParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeReservation) validateSetEnableEmergentMaintenanceParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -457,7 +457,7 @@ func (j *jsiiProxy_GoogleComputeReservation) validateSetProjectParameters(val *s
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeReservation) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleComputeReservation) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -503,7 +503,7 @@ func (j *jsiiProxy_GoogleComputeReservation) validateSetProvisionersParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeReservation) validateSetSpecificReservationRequiredParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeReservation) validateSetSpecificReservationRequiredParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -549,4 +549,3 @@ func validateNewGoogleComputeReservationParameters(scope constructs.Construct, i
 
 	return nil
 }
-

@@ -109,7 +109,7 @@ func (g *jsiiProxy_GoogleTpuV2QueuedResourceTpuNodeSpecOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_GoogleTpuV2QueuedResourceTpuNodeSpecOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleTpuV2QueuedResourceTpuNodeSpecOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -174,7 +174,7 @@ func (j *jsiiProxy_GoogleTpuV2QueuedResourceTpuNodeSpecOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_GoogleTpuV2QueuedResourceTpuNodeSpecOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleTpuV2QueuedResourceTpuNodeSpecOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -249,4 +249,3 @@ func validateNewGoogleTpuV2QueuedResourceTpuNodeSpecOutputReferenceParameters(te
 
 	return nil
 }
-

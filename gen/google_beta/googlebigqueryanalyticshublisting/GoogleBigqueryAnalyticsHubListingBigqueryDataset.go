@@ -1,6 +1,5 @@
 package googlebigqueryanalyticshublisting
 
-
 type GoogleBigqueryAnalyticsHubListingBigqueryDataset struct {
 	// Resource name of the dataset source for this listing. e.g. projects/myproject/datasets/123.
 	//
@@ -9,6 +8,5 @@ type GoogleBigqueryAnalyticsHubListingBigqueryDataset struct {
 	// selected_resources block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_bigquery_analytics_hub_listing#selected_resources GoogleBigqueryAnalyticsHubListing#selected_resources}
-	SelectedResources interface{} `field:"optional" json:"selectedResources" yaml:"selectedResources"`
+	SelectedResources any `field:"optional" json:"selectedResources" yaml:"selectedResources"`
 }
-

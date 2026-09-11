@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleBigqueryJobExtractSourceTableOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigqueryJobExtractSourceTableOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleBigqueryJobExtractSourceTableOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewGoogleBigqueryJobExtractSourceTableOutputReferenceParameters(ter
 
 	return nil
 }
-

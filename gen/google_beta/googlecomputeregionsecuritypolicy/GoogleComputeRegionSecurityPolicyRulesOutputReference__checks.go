@@ -150,7 +150,7 @@ func (j *jsiiProxy_GoogleComputeRegionSecurityPolicyRulesOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRegionSecurityPolicyRulesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeRegionSecurityPolicyRulesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -223,7 +223,7 @@ func (j *jsiiProxy_GoogleComputeRegionSecurityPolicyRulesOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRegionSecurityPolicyRulesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeRegionSecurityPolicyRulesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -247,7 +247,7 @@ func (j *jsiiProxy_GoogleComputeRegionSecurityPolicyRulesOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRegionSecurityPolicyRulesOutputReference) validateSetPreviewParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeRegionSecurityPolicyRulesOutputReference) validateSetPreviewParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -310,4 +310,3 @@ func validateNewGoogleComputeRegionSecurityPolicyRulesOutputReferenceParameters(
 
 	return nil
 }
-

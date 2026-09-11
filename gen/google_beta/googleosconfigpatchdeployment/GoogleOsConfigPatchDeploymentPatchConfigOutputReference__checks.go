@@ -175,7 +175,7 @@ func (g *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -248,7 +248,7 @@ func (j *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigOutputReference) validateSetMigInstancesAllowedParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigOutputReference) validateSetMigInstancesAllowedParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -303,4 +303,3 @@ func validateNewGoogleOsConfigPatchDeploymentPatchConfigOutputReferenceParameter
 
 	return nil
 }
-

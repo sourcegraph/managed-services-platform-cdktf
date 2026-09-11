@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleIamOrganizationsPolicyBinding) validateAddMoveTargetPar
 	return nil
 }
 
-func (g *jsiiProxy_GoogleIamOrganizationsPolicyBinding) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleIamOrganizationsPolicyBinding) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleIamOrganizationsPolicyBinding) validateMoveFromIdParame
 	return nil
 }
 
-func (g *jsiiProxy_GoogleIamOrganizationsPolicyBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleIamOrganizationsPolicyBinding) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -253,7 +253,7 @@ func validateGoogleIamOrganizationsPolicyBinding_GenerateConfigForImportParamete
 	return nil
 }
 
-func validateGoogleIamOrganizationsPolicyBinding_IsConstructParameters(x interface{}) error {
+func validateGoogleIamOrganizationsPolicyBinding_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -261,7 +261,7 @@ func validateGoogleIamOrganizationsPolicyBinding_IsConstructParameters(x interfa
 	return nil
 }
 
-func validateGoogleIamOrganizationsPolicyBinding_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleIamOrganizationsPolicyBinding_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -269,7 +269,7 @@ func validateGoogleIamOrganizationsPolicyBinding_IsTerraformElementParameters(x 
 	return nil
 }
 
-func validateGoogleIamOrganizationsPolicyBinding_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleIamOrganizationsPolicyBinding_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -285,7 +285,7 @@ func (j *jsiiProxy_GoogleIamOrganizationsPolicyBinding) validateSetAnnotationsPa
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIamOrganizationsPolicyBinding) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleIamOrganizationsPolicyBinding) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -318,7 +318,7 @@ func (j *jsiiProxy_GoogleIamOrganizationsPolicyBinding) validateSetConnectionPar
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIamOrganizationsPolicyBinding) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleIamOrganizationsPolicyBinding) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -439,7 +439,7 @@ func (j *jsiiProxy_GoogleIamOrganizationsPolicyBinding) validateSetPolicyKindPar
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIamOrganizationsPolicyBinding) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleIamOrganizationsPolicyBinding) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -503,4 +503,3 @@ func validateNewGoogleIamOrganizationsPolicyBindingParameters(scope constructs.C
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleFilestoreInstancePerformanceConfigFixedIopsOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_GoogleFilestoreInstancePerformanceConfigFixedIopsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleFilestoreInstancePerformanceConfigFixedIopsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleFilestoreInstancePerformanceConfigFixedIopsOutputReference
 
 	return nil
 }
-

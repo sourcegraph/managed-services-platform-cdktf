@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleCloudfunctionsFunctionSecretVolumesList) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudfunctionsFunctionSecretVolumesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleCloudfunctionsFunctionSecretVolumesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleCloudfunctionsFunctionSecretVolumesListParameters(terrafor
 
 	return nil
 }
-

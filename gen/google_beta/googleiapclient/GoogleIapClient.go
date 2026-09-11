@@ -19,15 +19,15 @@ type GoogleIapClient interface {
 	CdktfStack() cdktf.TerraformStack
 	ClientId() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -57,27 +57,27 @@ type GoogleIapClient interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Secret() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() GoogleIapClientTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -95,7 +95,7 @@ type GoogleIapClient interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -107,7 +107,7 @@ type GoogleIapClient interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -120,17 +120,17 @@ type GoogleIapClient interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleIapClient
@@ -178,8 +178,8 @@ func (j *jsiiProxy_GoogleIapClient) ClientId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleIapClient) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleIapClient) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -188,8 +188,8 @@ func (j *jsiiProxy_GoogleIapClient) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleIapClient) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleIapClient) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -198,8 +198,8 @@ func (j *jsiiProxy_GoogleIapClient) ConstructNodeMetadata() *map[string]interfac
 	return returns
 }
 
-func (j *jsiiProxy_GoogleIapClient) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleIapClient) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -318,8 +318,8 @@ func (j *jsiiProxy_GoogleIapClient) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleIapClient) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleIapClient) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -328,8 +328,8 @@ func (j *jsiiProxy_GoogleIapClient) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleIapClient) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleIapClient) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -358,8 +358,8 @@ func (j *jsiiProxy_GoogleIapClient) TerraformGeneratorMetadata() *cdktf.Terrafor
 	return returns
 }
 
-func (j *jsiiProxy_GoogleIapClient) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleIapClient) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -388,8 +388,8 @@ func (j *jsiiProxy_GoogleIapClient) Timeouts() GoogleIapClientTimeoutsOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_GoogleIapClient) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleIapClient) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -397,7 +397,6 @@ func (j *jsiiProxy_GoogleIapClient) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_iap_client google_iap_client} Resource.
 func NewGoogleIapClient(scope constructs.Construct, id *string, config *GoogleIapClientConfig) GoogleIapClient {
@@ -410,7 +409,7 @@ func NewGoogleIapClient(scope constructs.Construct, id *string, config *GoogleIa
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleIapClient.GoogleIapClient",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -423,12 +422,12 @@ func NewGoogleIapClient_Override(g GoogleIapClient, scope constructs.Construct, 
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleIapClient.GoogleIapClient",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleIapClient)SetBrand(val *string) {
+func (j *jsiiProxy_GoogleIapClient) SetBrand(val *string) {
 	if err := j.validateSetBrandParameters(val); err != nil {
 		panic(err)
 	}
@@ -439,7 +438,7 @@ func (j *jsiiProxy_GoogleIapClient)SetBrand(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleIapClient)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleIapClient) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -450,7 +449,7 @@ func (j *jsiiProxy_GoogleIapClient)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleIapClient)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleIapClient) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -461,7 +460,7 @@ func (j *jsiiProxy_GoogleIapClient)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleIapClient)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleIapClient) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -469,7 +468,7 @@ func (j *jsiiProxy_GoogleIapClient)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleIapClient)SetDisplayName(val *string) {
+func (j *jsiiProxy_GoogleIapClient) SetDisplayName(val *string) {
 	if err := j.validateSetDisplayNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -480,7 +479,7 @@ func (j *jsiiProxy_GoogleIapClient)SetDisplayName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleIapClient)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleIapClient) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -488,7 +487,7 @@ func (j *jsiiProxy_GoogleIapClient)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_GoogleIapClient)SetId(val *string) {
+func (j *jsiiProxy_GoogleIapClient) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -499,7 +498,7 @@ func (j *jsiiProxy_GoogleIapClient)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleIapClient)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleIapClient) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -510,7 +509,7 @@ func (j *jsiiProxy_GoogleIapClient)SetLifecycle(val *cdktf.TerraformResourceLife
 	)
 }
 
-func (j *jsiiProxy_GoogleIapClient)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleIapClient) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -518,7 +517,7 @@ func (j *jsiiProxy_GoogleIapClient)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_GoogleIapClient)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleIapClient) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -541,7 +540,7 @@ func GoogleIapClient_GenerateConfigForImport(scope constructs.Construct, importT
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleIapClient.GoogleIapClient",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -565,7 +564,7 @@ func GoogleIapClient_GenerateConfigForImport(scope constructs.Construct, importT
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleIapClient_IsConstruct(x interface{}) *bool {
+func GoogleIapClient_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleIapClient_IsConstructParameters(x); err != nil {
@@ -576,7 +575,7 @@ func GoogleIapClient_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleIapClient.GoogleIapClient",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -584,7 +583,7 @@ func GoogleIapClient_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleIapClient_IsTerraformElement(x interface{}) *bool {
+func GoogleIapClient_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleIapClient_IsTerraformElementParameters(x); err != nil {
@@ -595,7 +594,7 @@ func GoogleIapClient_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleIapClient.GoogleIapClient",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -603,7 +602,7 @@ func GoogleIapClient_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleIapClient_IsTerraformResource(x interface{}) *bool {
+func GoogleIapClient_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleIapClient_IsTerraformResourceParameters(x); err != nil {
@@ -614,7 +613,7 @@ func GoogleIapClient_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleIapClient.GoogleIapClient",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -639,31 +638,31 @@ func (g *jsiiProxy_GoogleIapClient) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleIapClient) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleIapClient) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleIapClient) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleIapClient) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -679,7 +678,7 @@ func (g *jsiiProxy_GoogleIapClient) GetBooleanAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -695,7 +694,7 @@ func (g *jsiiProxy_GoogleIapClient) GetBooleanMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -711,7 +710,7 @@ func (g *jsiiProxy_GoogleIapClient) GetListAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -727,7 +726,7 @@ func (g *jsiiProxy_GoogleIapClient) GetNumberAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -743,7 +742,7 @@ func (g *jsiiProxy_GoogleIapClient) GetNumberListAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -759,7 +758,7 @@ func (g *jsiiProxy_GoogleIapClient) GetNumberMapAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -775,7 +774,7 @@ func (g *jsiiProxy_GoogleIapClient) GetStringAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -791,15 +790,15 @@ func (g *jsiiProxy_GoogleIapClient) GetStringMapAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleIapClient) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleIapClient) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -818,7 +817,7 @@ func (g *jsiiProxy_GoogleIapClient) ImportFrom(id *string, provider cdktf.Terraf
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -831,7 +830,7 @@ func (g *jsiiProxy_GoogleIapClient) InterpolationForAttribute(terraformAttribute
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -845,18 +844,18 @@ func (g *jsiiProxy_GoogleIapClient) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleIapClient) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleIapClient) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -867,7 +866,7 @@ func (g *jsiiProxy_GoogleIapClient) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -878,7 +877,7 @@ func (g *jsiiProxy_GoogleIapClient) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -889,7 +888,7 @@ func (g *jsiiProxy_GoogleIapClient) PutTimeouts(value *GoogleIapClientTimeouts) 
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -917,8 +916,8 @@ func (g *jsiiProxy_GoogleIapClient) ResetTimeouts() {
 	)
 }
 
-func (g *jsiiProxy_GoogleIapClient) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleIapClient) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -930,8 +929,8 @@ func (g *jsiiProxy_GoogleIapClient) SynthesizeAttributes() *map[string]interface
 	return returns
 }
 
-func (g *jsiiProxy_GoogleIapClient) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleIapClient) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -943,8 +942,8 @@ func (g *jsiiProxy_GoogleIapClient) SynthesizeHclAttributes() *map[string]interf
 	return returns
 }
 
-func (g *jsiiProxy_GoogleIapClient) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleIapClient) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -956,8 +955,8 @@ func (g *jsiiProxy_GoogleIapClient) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleIapClient) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleIapClient) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -982,8 +981,8 @@ func (g *jsiiProxy_GoogleIapClient) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleIapClient) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleIapClient) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -994,4 +993,3 @@ func (g *jsiiProxy_GoogleIapClient) ToTerraform() interface{} {
 
 	return returns
 }
-

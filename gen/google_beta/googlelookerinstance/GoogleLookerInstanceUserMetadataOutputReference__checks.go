@@ -122,7 +122,7 @@ func (j *jsiiProxy_GoogleLookerInstanceUserMetadataOutputReference) validateSetA
 	return nil
 }
 
-func (j *jsiiProxy_GoogleLookerInstanceUserMetadataOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleLookerInstanceUserMetadataOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewGoogleLookerInstanceUserMetadataOutputReferenceParameters(terraf
 
 	return nil
 }
-

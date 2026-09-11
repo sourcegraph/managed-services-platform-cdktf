@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDeploymentManagerDeployment.GoogleDeploymentManagerDeployment",
-		reflect.TypeOf((*GoogleDeploymentManagerDeployment)(nil)).Elem(),
+		reflect.TypeFor[GoogleDeploymentManagerDeployment](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -87,7 +87,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDeploymentManagerDeployment{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -95,15 +95,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDeploymentManagerDeployment.GoogleDeploymentManagerDeploymentConfig",
-		reflect.TypeOf((*GoogleDeploymentManagerDeploymentConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleDeploymentManagerDeploymentConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDeploymentManagerDeployment.GoogleDeploymentManagerDeploymentLabels",
-		reflect.TypeOf((*GoogleDeploymentManagerDeploymentLabels)(nil)).Elem(),
+		reflect.TypeFor[GoogleDeploymentManagerDeploymentLabels](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDeploymentManagerDeployment.GoogleDeploymentManagerDeploymentLabelsList",
-		reflect.TypeOf((*GoogleDeploymentManagerDeploymentLabelsList)(nil)).Elem(),
+		reflect.TypeFor[GoogleDeploymentManagerDeploymentLabelsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -117,7 +117,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDeploymentManagerDeploymentLabelsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -125,7 +125,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDeploymentManagerDeployment.GoogleDeploymentManagerDeploymentLabelsOutputReference",
-		reflect.TypeOf((*GoogleDeploymentManagerDeploymentLabelsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDeploymentManagerDeploymentLabelsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -155,7 +155,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDeploymentManagerDeploymentLabelsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -163,15 +163,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDeploymentManagerDeployment.GoogleDeploymentManagerDeploymentTarget",
-		reflect.TypeOf((*GoogleDeploymentManagerDeploymentTarget)(nil)).Elem(),
+		reflect.TypeFor[GoogleDeploymentManagerDeploymentTarget](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDeploymentManagerDeployment.GoogleDeploymentManagerDeploymentTargetConfig",
-		reflect.TypeOf((*GoogleDeploymentManagerDeploymentTargetConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleDeploymentManagerDeploymentTargetConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDeploymentManagerDeployment.GoogleDeploymentManagerDeploymentTargetConfigOutputReference",
-		reflect.TypeOf((*GoogleDeploymentManagerDeploymentTargetConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDeploymentManagerDeploymentTargetConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -197,7 +197,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDeploymentManagerDeploymentTargetConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -205,11 +205,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDeploymentManagerDeployment.GoogleDeploymentManagerDeploymentTargetImports",
-		reflect.TypeOf((*GoogleDeploymentManagerDeploymentTargetImports)(nil)).Elem(),
+		reflect.TypeFor[GoogleDeploymentManagerDeploymentTargetImports](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDeploymentManagerDeployment.GoogleDeploymentManagerDeploymentTargetImportsList",
-		reflect.TypeOf((*GoogleDeploymentManagerDeploymentTargetImportsList)(nil)).Elem(),
+		reflect.TypeFor[GoogleDeploymentManagerDeploymentTargetImportsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -223,7 +223,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDeploymentManagerDeploymentTargetImportsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -231,7 +231,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDeploymentManagerDeployment.GoogleDeploymentManagerDeploymentTargetImportsOutputReference",
-		reflect.TypeOf((*GoogleDeploymentManagerDeploymentTargetImportsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDeploymentManagerDeploymentTargetImportsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -261,7 +261,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDeploymentManagerDeploymentTargetImportsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -269,7 +269,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDeploymentManagerDeployment.GoogleDeploymentManagerDeploymentTargetOutputReference",
-		reflect.TypeOf((*GoogleDeploymentManagerDeploymentTargetOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDeploymentManagerDeploymentTargetOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -300,7 +300,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDeploymentManagerDeploymentTargetOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -308,11 +308,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleDeploymentManagerDeployment.GoogleDeploymentManagerDeploymentTimeouts",
-		reflect.TypeOf((*GoogleDeploymentManagerDeploymentTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleDeploymentManagerDeploymentTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleDeploymentManagerDeployment.GoogleDeploymentManagerDeploymentTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleDeploymentManagerDeploymentTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleDeploymentManagerDeploymentTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -345,7 +345,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleDeploymentManagerDeploymentTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

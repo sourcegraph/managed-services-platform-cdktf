@@ -112,7 +112,7 @@ func (g *jsiiProxy_GoogleAppEngineFlexibleAppVersionDeploymentOutputReference) v
 	return nil
 }
 
-func (g *jsiiProxy_GoogleAppEngineFlexibleAppVersionDeploymentOutputReference) validatePutFilesParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleAppEngineFlexibleAppVersionDeploymentOutputReference) validatePutFilesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -162,7 +162,7 @@ func (g *jsiiProxy_GoogleAppEngineFlexibleAppVersionDeploymentOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersionDeploymentOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersionDeploymentOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -262,4 +262,3 @@ func validateNewGoogleAppEngineFlexibleAppVersionDeploymentOutputReferenceParame
 
 	return nil
 }
-

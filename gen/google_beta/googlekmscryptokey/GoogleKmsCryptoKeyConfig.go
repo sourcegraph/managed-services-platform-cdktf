@@ -6,9 +6,9 @@ import (
 
 type GoogleKmsCryptoKeyConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type GoogleKmsCryptoKeyConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The KeyRing that this key belongs to. Format: ''projects/{{project}}/locations/{{location}}/keyRings/{{keyRing}}''.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_kms_crypto_key#key_ring GoogleKmsCryptoKey#key_ring}
@@ -49,7 +49,7 @@ type GoogleKmsCryptoKeyConfig struct {
 	// Whether this key may contain imported versions only.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_kms_crypto_key#import_only GoogleKmsCryptoKey#import_only}
-	ImportOnly interface{} `field:"optional" json:"importOnly" yaml:"importOnly"`
+	ImportOnly any `field:"optional" json:"importOnly" yaml:"importOnly"`
 	// key_access_justifications_policy block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_kms_crypto_key#key_access_justifications_policy GoogleKmsCryptoKey#key_access_justifications_policy}
@@ -79,7 +79,7 @@ type GoogleKmsCryptoKeyConfig struct {
 	// or 'google_kms_key_ring_import_job' resource to import the CryptoKeyVersion.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_kms_crypto_key#skip_initial_version_creation GoogleKmsCryptoKey#skip_initial_version_creation}
-	SkipInitialVersionCreation interface{} `field:"optional" json:"skipInitialVersionCreation" yaml:"skipInitialVersionCreation"`
+	SkipInitialVersionCreation any `field:"optional" json:"skipInitialVersionCreation" yaml:"skipInitialVersionCreation"`
 	// timeouts block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_kms_crypto_key#timeouts GoogleKmsCryptoKey#timeouts}
@@ -89,4 +89,3 @@ type GoogleKmsCryptoKeyConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_kms_crypto_key#version_template GoogleKmsCryptoKey#version_template}
 	VersionTemplate *GoogleKmsCryptoKeyVersionTemplate `field:"optional" json:"versionTemplate" yaml:"versionTemplate"`
 }
-

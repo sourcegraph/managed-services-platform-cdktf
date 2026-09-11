@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleNetworkConnectivitySpokeLinkedVpcNetworkOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkConnectivitySpokeLinkedVpcNetworkOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNetworkConnectivitySpokeLinkedVpcNetworkOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewGoogleNetworkConnectivitySpokeLinkedVpcNetworkOutputReferencePar
 
 	return nil
 }
-

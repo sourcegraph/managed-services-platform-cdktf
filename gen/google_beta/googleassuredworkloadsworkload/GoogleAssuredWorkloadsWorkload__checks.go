@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleAssuredWorkloadsWorkload) validateAddMoveTargetParamete
 	return nil
 }
 
-func (g *jsiiProxy_GoogleAssuredWorkloadsWorkload) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleAssuredWorkloadsWorkload) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleAssuredWorkloadsWorkload) validateMoveFromIdParameters(
 	return nil
 }
 
-func (g *jsiiProxy_GoogleAssuredWorkloadsWorkload) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleAssuredWorkloadsWorkload) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -226,7 +226,7 @@ func (g *jsiiProxy_GoogleAssuredWorkloadsWorkload) validatePutPartnerPermissions
 	return nil
 }
 
-func (g *jsiiProxy_GoogleAssuredWorkloadsWorkload) validatePutResourceSettingsParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleAssuredWorkloadsWorkload) validatePutResourceSettingsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -295,7 +295,7 @@ func validateGoogleAssuredWorkloadsWorkload_GenerateConfigForImportParameters(sc
 	return nil
 }
 
-func validateGoogleAssuredWorkloadsWorkload_IsConstructParameters(x interface{}) error {
+func validateGoogleAssuredWorkloadsWorkload_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -303,7 +303,7 @@ func validateGoogleAssuredWorkloadsWorkload_IsConstructParameters(x interface{})
 	return nil
 }
 
-func validateGoogleAssuredWorkloadsWorkload_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleAssuredWorkloadsWorkload_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -311,7 +311,7 @@ func validateGoogleAssuredWorkloadsWorkload_IsTerraformElementParameters(x inter
 	return nil
 }
 
-func validateGoogleAssuredWorkloadsWorkload_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleAssuredWorkloadsWorkload_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -335,7 +335,7 @@ func (j *jsiiProxy_GoogleAssuredWorkloadsWorkload) validateSetComplianceRegimePa
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAssuredWorkloadsWorkload) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleAssuredWorkloadsWorkload) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -368,7 +368,7 @@ func (j *jsiiProxy_GoogleAssuredWorkloadsWorkload) validateSetConnectionParamete
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAssuredWorkloadsWorkload) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleAssuredWorkloadsWorkload) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -433,7 +433,7 @@ func (j *jsiiProxy_GoogleAssuredWorkloadsWorkload) validateSetDisplayNameParamet
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAssuredWorkloadsWorkload) validateSetEnableSovereignControlsParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleAssuredWorkloadsWorkload) validateSetEnableSovereignControlsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -517,7 +517,7 @@ func (j *jsiiProxy_GoogleAssuredWorkloadsWorkload) validateSetProvisionedResourc
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAssuredWorkloadsWorkload) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleAssuredWorkloadsWorkload) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -563,7 +563,7 @@ func (j *jsiiProxy_GoogleAssuredWorkloadsWorkload) validateSetProvisionersParame
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAssuredWorkloadsWorkload) validateSetViolationNotificationsEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleAssuredWorkloadsWorkload) validateSetViolationNotificationsEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -601,4 +601,3 @@ func validateNewGoogleAssuredWorkloadsWorkloadParameters(scope constructs.Constr
 
 	return nil
 }
-

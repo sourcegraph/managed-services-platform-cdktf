@@ -14,9 +14,9 @@ type GoogleContainerClusterResourceUsageExportConfigOutputReference interface {
 	BigqueryDestinationInput() *GoogleContainerClusterResourceUsageExportConfigBigqueryDestination
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -27,12 +27,12 @@ type GoogleContainerClusterResourceUsageExportConfigOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	EnableNetworkEgressMetering() interface{}
-	SetEnableNetworkEgressMetering(val interface{})
-	EnableNetworkEgressMeteringInput() interface{}
-	EnableResourceConsumptionMetering() interface{}
-	SetEnableResourceConsumptionMetering(val interface{})
-	EnableResourceConsumptionMeteringInput() interface{}
+	EnableNetworkEgressMetering() any
+	SetEnableNetworkEgressMetering(val any)
+	EnableNetworkEgressMeteringInput() any
+	EnableResourceConsumptionMetering() any
+	SetEnableResourceConsumptionMetering(val any)
+	EnableResourceConsumptionMeteringInput() any
 	// Experimental.
 	Fqn() *string
 	InternalValue() *GoogleContainerClusterResourceUsageExportConfig
@@ -48,7 +48,7 @@ type GoogleContainerClusterResourceUsageExportConfigOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -74,7 +74,7 @@ type GoogleContainerClusterResourceUsageExportConfigOutputReference interface {
 	ResetEnableResourceConsumptionMetering()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -107,8 +107,8 @@ func (j *jsiiProxy_GoogleContainerClusterResourceUsageExportConfigOutputReferenc
 	return returns
 }
 
-func (j *jsiiProxy_GoogleContainerClusterResourceUsageExportConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleContainerClusterResourceUsageExportConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -137,8 +137,8 @@ func (j *jsiiProxy_GoogleContainerClusterResourceUsageExportConfigOutputReferenc
 	return returns
 }
 
-func (j *jsiiProxy_GoogleContainerClusterResourceUsageExportConfigOutputReference) EnableNetworkEgressMetering() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleContainerClusterResourceUsageExportConfigOutputReference) EnableNetworkEgressMetering() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableNetworkEgressMetering",
@@ -147,8 +147,8 @@ func (j *jsiiProxy_GoogleContainerClusterResourceUsageExportConfigOutputReferenc
 	return returns
 }
 
-func (j *jsiiProxy_GoogleContainerClusterResourceUsageExportConfigOutputReference) EnableNetworkEgressMeteringInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleContainerClusterResourceUsageExportConfigOutputReference) EnableNetworkEgressMeteringInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableNetworkEgressMeteringInput",
@@ -157,8 +157,8 @@ func (j *jsiiProxy_GoogleContainerClusterResourceUsageExportConfigOutputReferenc
 	return returns
 }
 
-func (j *jsiiProxy_GoogleContainerClusterResourceUsageExportConfigOutputReference) EnableResourceConsumptionMetering() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleContainerClusterResourceUsageExportConfigOutputReference) EnableResourceConsumptionMetering() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableResourceConsumptionMetering",
@@ -167,8 +167,8 @@ func (j *jsiiProxy_GoogleContainerClusterResourceUsageExportConfigOutputReferenc
 	return returns
 }
 
-func (j *jsiiProxy_GoogleContainerClusterResourceUsageExportConfigOutputReference) EnableResourceConsumptionMeteringInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleContainerClusterResourceUsageExportConfigOutputReference) EnableResourceConsumptionMeteringInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableResourceConsumptionMeteringInput",
@@ -217,7 +217,6 @@ func (j *jsiiProxy_GoogleContainerClusterResourceUsageExportConfigOutputReferenc
 	return returns
 }
 
-
 func NewGoogleContainerClusterResourceUsageExportConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleContainerClusterResourceUsageExportConfigOutputReference {
 	_init_.Initialize()
 
@@ -228,7 +227,7 @@ func NewGoogleContainerClusterResourceUsageExportConfigOutputReference(terraform
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleContainerCluster.GoogleContainerClusterResourceUsageExportConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -240,12 +239,12 @@ func NewGoogleContainerClusterResourceUsageExportConfigOutputReference_Override(
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleContainerCluster.GoogleContainerClusterResourceUsageExportConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerClusterResourceUsageExportConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleContainerClusterResourceUsageExportConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -256,7 +255,7 @@ func (j *jsiiProxy_GoogleContainerClusterResourceUsageExportConfigOutputReferenc
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerClusterResourceUsageExportConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleContainerClusterResourceUsageExportConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -267,7 +266,7 @@ func (j *jsiiProxy_GoogleContainerClusterResourceUsageExportConfigOutputReferenc
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerClusterResourceUsageExportConfigOutputReference)SetEnableNetworkEgressMetering(val interface{}) {
+func (j *jsiiProxy_GoogleContainerClusterResourceUsageExportConfigOutputReference) SetEnableNetworkEgressMetering(val any) {
 	if err := j.validateSetEnableNetworkEgressMeteringParameters(val); err != nil {
 		panic(err)
 	}
@@ -278,7 +277,7 @@ func (j *jsiiProxy_GoogleContainerClusterResourceUsageExportConfigOutputReferenc
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerClusterResourceUsageExportConfigOutputReference)SetEnableResourceConsumptionMetering(val interface{}) {
+func (j *jsiiProxy_GoogleContainerClusterResourceUsageExportConfigOutputReference) SetEnableResourceConsumptionMetering(val any) {
 	if err := j.validateSetEnableResourceConsumptionMeteringParameters(val); err != nil {
 		panic(err)
 	}
@@ -289,7 +288,7 @@ func (j *jsiiProxy_GoogleContainerClusterResourceUsageExportConfigOutputReferenc
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerClusterResourceUsageExportConfigOutputReference)SetInternalValue(val *GoogleContainerClusterResourceUsageExportConfig) {
+func (j *jsiiProxy_GoogleContainerClusterResourceUsageExportConfigOutputReference) SetInternalValue(val *GoogleContainerClusterResourceUsageExportConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -300,7 +299,7 @@ func (j *jsiiProxy_GoogleContainerClusterResourceUsageExportConfigOutputReferenc
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerClusterResourceUsageExportConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleContainerClusterResourceUsageExportConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -311,7 +310,7 @@ func (j *jsiiProxy_GoogleContainerClusterResourceUsageExportConfigOutputReferenc
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerClusterResourceUsageExportConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleContainerClusterResourceUsageExportConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -335,16 +334,16 @@ func (g *jsiiProxy_GoogleContainerClusterResourceUsageExportConfigOutputReferenc
 	return returns
 }
 
-func (g *jsiiProxy_GoogleContainerClusterResourceUsageExportConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleContainerClusterResourceUsageExportConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -360,7 +359,7 @@ func (g *jsiiProxy_GoogleContainerClusterResourceUsageExportConfigOutputReferenc
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -376,7 +375,7 @@ func (g *jsiiProxy_GoogleContainerClusterResourceUsageExportConfigOutputReferenc
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -392,7 +391,7 @@ func (g *jsiiProxy_GoogleContainerClusterResourceUsageExportConfigOutputReferenc
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -408,7 +407,7 @@ func (g *jsiiProxy_GoogleContainerClusterResourceUsageExportConfigOutputReferenc
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -424,7 +423,7 @@ func (g *jsiiProxy_GoogleContainerClusterResourceUsageExportConfigOutputReferenc
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -440,7 +439,7 @@ func (g *jsiiProxy_GoogleContainerClusterResourceUsageExportConfigOutputReferenc
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -456,7 +455,7 @@ func (g *jsiiProxy_GoogleContainerClusterResourceUsageExportConfigOutputReferenc
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -472,7 +471,7 @@ func (g *jsiiProxy_GoogleContainerClusterResourceUsageExportConfigOutputReferenc
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -501,7 +500,7 @@ func (g *jsiiProxy_GoogleContainerClusterResourceUsageExportConfigOutputReferenc
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -515,7 +514,7 @@ func (g *jsiiProxy_GoogleContainerClusterResourceUsageExportConfigOutputReferenc
 	_jsii_.InvokeVoid(
 		g,
 		"putBigqueryDestination",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -535,16 +534,16 @@ func (g *jsiiProxy_GoogleContainerClusterResourceUsageExportConfigOutputReferenc
 	)
 }
 
-func (g *jsiiProxy_GoogleContainerClusterResourceUsageExportConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleContainerClusterResourceUsageExportConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -563,4 +562,3 @@ func (g *jsiiProxy_GoogleContainerClusterResourceUsageExportConfigOutputReferenc
 
 	return returns
 }
-

@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleGkeonpremVmwareClusterAuthorizationAdminUsersOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGkeonpremVmwareClusterAuthorizationAdminUsersOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleGkeonpremVmwareClusterAuthorizationAdminUsersOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_GoogleGkeonpremVmwareClusterAuthorizationAdminUsersOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGkeonpremVmwareClusterAuthorizationAdminUsersOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleGkeonpremVmwareClusterAuthorizationAdminUsersOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewGoogleGkeonpremVmwareClusterAuthorizationAdminUsersOutputReferen
 
 	return nil
 }
-

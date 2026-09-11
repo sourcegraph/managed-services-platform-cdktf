@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleDataprocGdcApplicationEnvironment) validateAddMoveTarge
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDataprocGdcApplicationEnvironment) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleDataprocGdcApplicationEnvironment) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleDataprocGdcApplicationEnvironment) validateMoveFromIdPa
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDataprocGdcApplicationEnvironment) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleDataprocGdcApplicationEnvironment) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -242,7 +242,7 @@ func validateGoogleDataprocGdcApplicationEnvironment_GenerateConfigForImportPara
 	return nil
 }
 
-func validateGoogleDataprocGdcApplicationEnvironment_IsConstructParameters(x interface{}) error {
+func validateGoogleDataprocGdcApplicationEnvironment_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -250,7 +250,7 @@ func validateGoogleDataprocGdcApplicationEnvironment_IsConstructParameters(x int
 	return nil
 }
 
-func validateGoogleDataprocGdcApplicationEnvironment_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleDataprocGdcApplicationEnvironment_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -258,7 +258,7 @@ func validateGoogleDataprocGdcApplicationEnvironment_IsTerraformElementParameter
 	return nil
 }
 
-func validateGoogleDataprocGdcApplicationEnvironment_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleDataprocGdcApplicationEnvironment_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -282,7 +282,7 @@ func (j *jsiiProxy_GoogleDataprocGdcApplicationEnvironment) validateSetApplicati
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataprocGdcApplicationEnvironment) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataprocGdcApplicationEnvironment) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -315,7 +315,7 @@ func (j *jsiiProxy_GoogleDataprocGdcApplicationEnvironment) validateSetConnectio
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataprocGdcApplicationEnvironment) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataprocGdcApplicationEnvironment) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -428,7 +428,7 @@ func (j *jsiiProxy_GoogleDataprocGdcApplicationEnvironment) validateSetProjectPa
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataprocGdcApplicationEnvironment) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleDataprocGdcApplicationEnvironment) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -500,4 +500,3 @@ func validateNewGoogleDataprocGdcApplicationEnvironmentParameters(scope construc
 
 	return nil
 }
-

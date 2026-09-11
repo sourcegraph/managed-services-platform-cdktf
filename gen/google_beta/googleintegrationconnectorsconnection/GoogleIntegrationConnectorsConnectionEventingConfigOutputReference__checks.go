@@ -90,7 +90,7 @@ func (g *jsiiProxy_GoogleIntegrationConnectorsConnectionEventingConfigOutputRefe
 	return nil
 }
 
-func (g *jsiiProxy_GoogleIntegrationConnectorsConnectionEventingConfigOutputReference) validatePutAdditionalVariableParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleIntegrationConnectorsConnectionEventingConfigOutputReference) validatePutAdditionalVariableParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -151,7 +151,7 @@ func (g *jsiiProxy_GoogleIntegrationConnectorsConnectionEventingConfigOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionEventingConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionEventingConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -216,7 +216,7 @@ func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionEventingConfigOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionEventingConfigOutputReference) validateSetEnrichmentEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionEventingConfigOutputReference) validateSetEnrichmentEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -271,4 +271,3 @@ func validateNewGoogleIntegrationConnectorsConnectionEventingConfigOutputReferen
 
 	return nil
 }
-

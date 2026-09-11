@@ -12,21 +12,21 @@ import (
 // Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_wire_group google_compute_wire_group}.
 type GoogleComputeWireGroup interface {
 	cdktf.TerraformResource
-	AdminEnabled() interface{}
-	SetAdminEnabled(val interface{})
-	AdminEnabledInput() interface{}
+	AdminEnabled() any
+	SetAdminEnabled(val any)
+	AdminEnabledInput() any
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreationTimestamp() *string
 	CrossSiteNetwork() *string
 	SetCrossSiteNetwork(val *string)
@@ -39,7 +39,7 @@ type GoogleComputeWireGroup interface {
 	SetDescription(val *string)
 	DescriptionInput() *string
 	Endpoints() GoogleComputeWireGroupEndpointsList
-	EndpointsInput() interface{}
+	EndpointsInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -68,19 +68,19 @@ type GoogleComputeWireGroup interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() GoogleComputeWireGroupTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	Topology() GoogleComputeWireGroupTopologyList
 	WireGroupProperties() GoogleComputeWireGroupWireGroupPropertiesOutputReference
 	WireGroupPropertiesInput() *GoogleComputeWireGroupWireGroupProperties
@@ -91,9 +91,9 @@ type GoogleComputeWireGroup interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -111,7 +111,7 @@ type GoogleComputeWireGroup interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -123,14 +123,14 @@ type GoogleComputeWireGroup interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutEndpoints(value interface{})
+	PutEndpoints(value any)
 	PutTimeouts(value *GoogleComputeWireGroupTimeouts)
 	PutWireGroupProperties(value *GoogleComputeWireGroupWireGroupProperties)
 	PutWireProperties(value *GoogleComputeWireGroupWireProperties)
@@ -145,17 +145,17 @@ type GoogleComputeWireGroup interface {
 	ResetTimeouts()
 	ResetWireGroupProperties()
 	ResetWireProperties()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleComputeWireGroup
@@ -163,8 +163,8 @@ type jsiiProxy_GoogleComputeWireGroup struct {
 	internal.Type__cdktfTerraformResource
 }
 
-func (j *jsiiProxy_GoogleComputeWireGroup) AdminEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeWireGroup) AdminEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"adminEnabled",
@@ -173,8 +173,8 @@ func (j *jsiiProxy_GoogleComputeWireGroup) AdminEnabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeWireGroup) AdminEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeWireGroup) AdminEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"adminEnabledInput",
@@ -193,8 +193,8 @@ func (j *jsiiProxy_GoogleComputeWireGroup) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeWireGroup) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeWireGroup) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -203,8 +203,8 @@ func (j *jsiiProxy_GoogleComputeWireGroup) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeWireGroup) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleComputeWireGroup) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -213,8 +213,8 @@ func (j *jsiiProxy_GoogleComputeWireGroup) ConstructNodeMetadata() *map[string]i
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeWireGroup) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeWireGroup) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -293,8 +293,8 @@ func (j *jsiiProxy_GoogleComputeWireGroup) Endpoints() GoogleComputeWireGroupEnd
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeWireGroup) EndpointsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeWireGroup) EndpointsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"endpointsInput",
@@ -423,8 +423,8 @@ func (j *jsiiProxy_GoogleComputeWireGroup) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeWireGroup) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleComputeWireGroup) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -433,8 +433,8 @@ func (j *jsiiProxy_GoogleComputeWireGroup) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeWireGroup) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeWireGroup) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -453,8 +453,8 @@ func (j *jsiiProxy_GoogleComputeWireGroup) TerraformGeneratorMetadata() *cdktf.T
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeWireGroup) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleComputeWireGroup) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -483,8 +483,8 @@ func (j *jsiiProxy_GoogleComputeWireGroup) Timeouts() GoogleComputeWireGroupTime
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeWireGroup) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeWireGroup) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -553,7 +553,6 @@ func (j *jsiiProxy_GoogleComputeWireGroup) Wires() GoogleComputeWireGroupWiresLi
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_wire_group google_compute_wire_group} Resource.
 func NewGoogleComputeWireGroup(scope constructs.Construct, id *string, config *GoogleComputeWireGroupConfig) GoogleComputeWireGroup {
 	_init_.Initialize()
@@ -565,7 +564,7 @@ func NewGoogleComputeWireGroup(scope constructs.Construct, id *string, config *G
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleComputeWireGroup.GoogleComputeWireGroup",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -578,12 +577,12 @@ func NewGoogleComputeWireGroup_Override(g GoogleComputeWireGroup, scope construc
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleComputeWireGroup.GoogleComputeWireGroup",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeWireGroup)SetAdminEnabled(val interface{}) {
+func (j *jsiiProxy_GoogleComputeWireGroup) SetAdminEnabled(val any) {
 	if err := j.validateSetAdminEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -594,7 +593,7 @@ func (j *jsiiProxy_GoogleComputeWireGroup)SetAdminEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeWireGroup)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleComputeWireGroup) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -605,7 +604,7 @@ func (j *jsiiProxy_GoogleComputeWireGroup)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeWireGroup)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleComputeWireGroup) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -616,7 +615,7 @@ func (j *jsiiProxy_GoogleComputeWireGroup)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeWireGroup)SetCrossSiteNetwork(val *string) {
+func (j *jsiiProxy_GoogleComputeWireGroup) SetCrossSiteNetwork(val *string) {
 	if err := j.validateSetCrossSiteNetworkParameters(val); err != nil {
 		panic(err)
 	}
@@ -627,7 +626,7 @@ func (j *jsiiProxy_GoogleComputeWireGroup)SetCrossSiteNetwork(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeWireGroup)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleComputeWireGroup) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -635,7 +634,7 @@ func (j *jsiiProxy_GoogleComputeWireGroup)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeWireGroup)SetDescription(val *string) {
+func (j *jsiiProxy_GoogleComputeWireGroup) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -646,7 +645,7 @@ func (j *jsiiProxy_GoogleComputeWireGroup)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeWireGroup)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleComputeWireGroup) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -654,7 +653,7 @@ func (j *jsiiProxy_GoogleComputeWireGroup)SetForEach(val cdktf.ITerraformIterato
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeWireGroup)SetId(val *string) {
+func (j *jsiiProxy_GoogleComputeWireGroup) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -665,7 +664,7 @@ func (j *jsiiProxy_GoogleComputeWireGroup)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeWireGroup)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleComputeWireGroup) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -676,7 +675,7 @@ func (j *jsiiProxy_GoogleComputeWireGroup)SetLifecycle(val *cdktf.TerraformResou
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeWireGroup)SetName(val *string) {
+func (j *jsiiProxy_GoogleComputeWireGroup) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -687,7 +686,7 @@ func (j *jsiiProxy_GoogleComputeWireGroup)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeWireGroup)SetProject(val *string) {
+func (j *jsiiProxy_GoogleComputeWireGroup) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -698,7 +697,7 @@ func (j *jsiiProxy_GoogleComputeWireGroup)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeWireGroup)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleComputeWireGroup) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -706,7 +705,7 @@ func (j *jsiiProxy_GoogleComputeWireGroup)SetProvider(val cdktf.TerraformProvide
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeWireGroup)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleComputeWireGroup) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -729,7 +728,7 @@ func GoogleComputeWireGroup_GenerateConfigForImport(scope constructs.Construct, 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleComputeWireGroup.GoogleComputeWireGroup",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -753,7 +752,7 @@ func GoogleComputeWireGroup_GenerateConfigForImport(scope constructs.Construct, 
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleComputeWireGroup_IsConstruct(x interface{}) *bool {
+func GoogleComputeWireGroup_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleComputeWireGroup_IsConstructParameters(x); err != nil {
@@ -764,7 +763,7 @@ func GoogleComputeWireGroup_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleComputeWireGroup.GoogleComputeWireGroup",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -772,7 +771,7 @@ func GoogleComputeWireGroup_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleComputeWireGroup_IsTerraformElement(x interface{}) *bool {
+func GoogleComputeWireGroup_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleComputeWireGroup_IsTerraformElementParameters(x); err != nil {
@@ -783,7 +782,7 @@ func GoogleComputeWireGroup_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleComputeWireGroup.GoogleComputeWireGroup",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -791,7 +790,7 @@ func GoogleComputeWireGroup_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleComputeWireGroup_IsTerraformResource(x interface{}) *bool {
+func GoogleComputeWireGroup_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleComputeWireGroup_IsTerraformResourceParameters(x); err != nil {
@@ -802,7 +801,7 @@ func GoogleComputeWireGroup_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleComputeWireGroup.GoogleComputeWireGroup",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -827,31 +826,31 @@ func (g *jsiiProxy_GoogleComputeWireGroup) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeWireGroup) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleComputeWireGroup) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeWireGroup) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleComputeWireGroup) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -867,7 +866,7 @@ func (g *jsiiProxy_GoogleComputeWireGroup) GetBooleanAttribute(terraformAttribut
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -883,7 +882,7 @@ func (g *jsiiProxy_GoogleComputeWireGroup) GetBooleanMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -899,7 +898,7 @@ func (g *jsiiProxy_GoogleComputeWireGroup) GetListAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -915,7 +914,7 @@ func (g *jsiiProxy_GoogleComputeWireGroup) GetNumberAttribute(terraformAttribute
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -931,7 +930,7 @@ func (g *jsiiProxy_GoogleComputeWireGroup) GetNumberListAttribute(terraformAttri
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -947,7 +946,7 @@ func (g *jsiiProxy_GoogleComputeWireGroup) GetNumberMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -963,7 +962,7 @@ func (g *jsiiProxy_GoogleComputeWireGroup) GetStringAttribute(terraformAttribute
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -979,15 +978,15 @@ func (g *jsiiProxy_GoogleComputeWireGroup) GetStringMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeWireGroup) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleComputeWireGroup) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1006,7 +1005,7 @@ func (g *jsiiProxy_GoogleComputeWireGroup) ImportFrom(id *string, provider cdktf
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1019,7 +1018,7 @@ func (g *jsiiProxy_GoogleComputeWireGroup) InterpolationForAttribute(terraformAt
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1033,18 +1032,18 @@ func (g *jsiiProxy_GoogleComputeWireGroup) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeWireGroup) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleComputeWireGroup) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1055,7 +1054,7 @@ func (g *jsiiProxy_GoogleComputeWireGroup) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1066,18 +1065,18 @@ func (g *jsiiProxy_GoogleComputeWireGroup) OverrideLogicalId(newLogicalId *strin
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeWireGroup) PutEndpoints(value interface{}) {
+func (g *jsiiProxy_GoogleComputeWireGroup) PutEndpoints(value any) {
 	if err := g.validatePutEndpointsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putEndpoints",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1088,7 +1087,7 @@ func (g *jsiiProxy_GoogleComputeWireGroup) PutTimeouts(value *GoogleComputeWireG
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1099,7 +1098,7 @@ func (g *jsiiProxy_GoogleComputeWireGroup) PutWireGroupProperties(value *GoogleC
 	_jsii_.InvokeVoid(
 		g,
 		"putWireGroupProperties",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1110,7 +1109,7 @@ func (g *jsiiProxy_GoogleComputeWireGroup) PutWireProperties(value *GoogleComput
 	_jsii_.InvokeVoid(
 		g,
 		"putWireProperties",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1186,8 +1185,8 @@ func (g *jsiiProxy_GoogleComputeWireGroup) ResetWireProperties() {
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeWireGroup) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleComputeWireGroup) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1199,8 +1198,8 @@ func (g *jsiiProxy_GoogleComputeWireGroup) SynthesizeAttributes() *map[string]in
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeWireGroup) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleComputeWireGroup) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1212,8 +1211,8 @@ func (g *jsiiProxy_GoogleComputeWireGroup) SynthesizeHclAttributes() *map[string
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeWireGroup) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleComputeWireGroup) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1225,8 +1224,8 @@ func (g *jsiiProxy_GoogleComputeWireGroup) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeWireGroup) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleComputeWireGroup) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1251,8 +1250,8 @@ func (g *jsiiProxy_GoogleComputeWireGroup) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeWireGroup) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleComputeWireGroup) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1263,4 +1262,3 @@ func (g *jsiiProxy_GoogleComputeWireGroup) ToTerraform() interface{} {
 
 	return returns
 }
-

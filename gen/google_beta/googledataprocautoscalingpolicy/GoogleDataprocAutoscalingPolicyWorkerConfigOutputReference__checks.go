@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleDataprocAutoscalingPolicyWorkerConfigOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataprocAutoscalingPolicyWorkerConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataprocAutoscalingPolicyWorkerConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewGoogleDataprocAutoscalingPolicyWorkerConfigOutputReferenceParame
 
 	return nil
 }
-

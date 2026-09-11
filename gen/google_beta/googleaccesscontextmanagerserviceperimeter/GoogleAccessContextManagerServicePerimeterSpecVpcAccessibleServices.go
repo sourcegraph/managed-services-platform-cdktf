@@ -1,6 +1,5 @@
 package googleaccesscontextmanagerserviceperimeter
 
-
 type GoogleAccessContextManagerServicePerimeterSpecVpcAccessibleServices struct {
 	// The list of APIs usable within the Service Perimeter. Must be empty unless 'enableRestriction' is True.
 	//
@@ -9,6 +8,5 @@ type GoogleAccessContextManagerServicePerimeterSpecVpcAccessibleServices struct 
 	// Whether to restrict API calls within the Service Perimeter to the list of APIs specified in 'allowedServices'.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_access_context_manager_service_perimeter#enable_restriction GoogleAccessContextManagerServicePerimeter#enable_restriction}
-	EnableRestriction interface{} `field:"optional" json:"enableRestriction" yaml:"enableRestriction"`
+	EnableRestriction any `field:"optional" json:"enableRestriction" yaml:"enableRestriction"`
 }
-

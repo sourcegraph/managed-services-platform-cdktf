@@ -109,7 +109,7 @@ func (g *jsiiProxy_GoogleDataprocMetastoreServiceMetadataIntegrationOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataprocMetastoreServiceMetadataIntegrationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataprocMetastoreServiceMetadataIntegrationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -209,4 +209,3 @@ func validateNewGoogleDataprocMetastoreServiceMetadataIntegrationOutputReference
 
 	return nil
 }
-

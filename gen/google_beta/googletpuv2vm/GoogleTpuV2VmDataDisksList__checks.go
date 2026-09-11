@@ -34,7 +34,7 @@ func (g *jsiiProxy_GoogleTpuV2VmDataDisksList) validateResolveParameters(_contex
 	return nil
 }
 
-func (j *jsiiProxy_GoogleTpuV2VmDataDisksList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleTpuV2VmDataDisksList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGoogleTpuV2VmDataDisksListParameters(terraformResource cdktf.IIn
 
 	return nil
 }
-

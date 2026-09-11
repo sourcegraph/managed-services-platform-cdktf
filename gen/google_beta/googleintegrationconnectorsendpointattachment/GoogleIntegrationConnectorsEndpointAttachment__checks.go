@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleIntegrationConnectorsEndpointAttachment) validateAddMov
 	return nil
 }
 
-func (g *jsiiProxy_GoogleIntegrationConnectorsEndpointAttachment) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleIntegrationConnectorsEndpointAttachment) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleIntegrationConnectorsEndpointAttachment) validateMoveFr
 	return nil
 }
 
-func (g *jsiiProxy_GoogleIntegrationConnectorsEndpointAttachment) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleIntegrationConnectorsEndpointAttachment) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateGoogleIntegrationConnectorsEndpointAttachment_GenerateConfigForImpo
 	return nil
 }
 
-func validateGoogleIntegrationConnectorsEndpointAttachment_IsConstructParameters(x interface{}) error {
+func validateGoogleIntegrationConnectorsEndpointAttachment_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateGoogleIntegrationConnectorsEndpointAttachment_IsConstructParameters
 	return nil
 }
 
-func validateGoogleIntegrationConnectorsEndpointAttachment_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleIntegrationConnectorsEndpointAttachment_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateGoogleIntegrationConnectorsEndpointAttachment_IsTerraformElementPar
 	return nil
 }
 
-func validateGoogleIntegrationConnectorsEndpointAttachment_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleIntegrationConnectorsEndpointAttachment_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateGoogleIntegrationConnectorsEndpointAttachment_IsTerraformResourcePa
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIntegrationConnectorsEndpointAttachment) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleIntegrationConnectorsEndpointAttachment) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_GoogleIntegrationConnectorsEndpointAttachment) validateSetCon
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIntegrationConnectorsEndpointAttachment) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleIntegrationConnectorsEndpointAttachment) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -353,7 +353,7 @@ func (j *jsiiProxy_GoogleIntegrationConnectorsEndpointAttachment) validateSetDes
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIntegrationConnectorsEndpointAttachment) validateSetEndpointGlobalAccessParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleIntegrationConnectorsEndpointAttachment) validateSetEndpointGlobalAccessParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -421,7 +421,7 @@ func (j *jsiiProxy_GoogleIntegrationConnectorsEndpointAttachment) validateSetPro
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIntegrationConnectorsEndpointAttachment) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleIntegrationConnectorsEndpointAttachment) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -493,4 +493,3 @@ func validateNewGoogleIntegrationConnectorsEndpointAttachmentParameters(scope co
 
 	return nil
 }
-

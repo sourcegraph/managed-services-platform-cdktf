@@ -12,9 +12,9 @@ type GoogleComputeReservationShareSettingsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -30,7 +30,7 @@ type GoogleComputeReservationShareSettingsOutputReference interface {
 	InternalValue() *GoogleComputeReservationShareSettings
 	SetInternalValue(val *GoogleComputeReservationShareSettings)
 	ProjectMap() GoogleComputeReservationShareSettingsProjectMapList
-	ProjectMapInput() interface{}
+	ProjectMapInput() any
 	Projects() *[]*string
 	SetProjects(val *[]*string)
 	ProjectsInput() *[]*string
@@ -48,7 +48,7 @@ type GoogleComputeReservationShareSettingsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -69,13 +69,13 @@ type GoogleComputeReservationShareSettingsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutProjectMap(value interface{})
+	PutProjectMap(value any)
 	ResetProjectMap()
 	ResetProjects()
 	ResetShareType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,8 +88,8 @@ type jsiiProxy_GoogleComputeReservationShareSettingsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GoogleComputeReservationShareSettingsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeReservationShareSettingsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -148,8 +148,8 @@ func (j *jsiiProxy_GoogleComputeReservationShareSettingsOutputReference) Project
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeReservationShareSettingsOutputReference) ProjectMapInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeReservationShareSettingsOutputReference) ProjectMapInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"projectMapInput",
@@ -218,7 +218,6 @@ func (j *jsiiProxy_GoogleComputeReservationShareSettingsOutputReference) Terrafo
 	return returns
 }
 
-
 func NewGoogleComputeReservationShareSettingsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleComputeReservationShareSettingsOutputReference {
 	_init_.Initialize()
 
@@ -229,7 +228,7 @@ func NewGoogleComputeReservationShareSettingsOutputReference(terraformResource c
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleComputeReservation.GoogleComputeReservationShareSettingsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -241,12 +240,12 @@ func NewGoogleComputeReservationShareSettingsOutputReference_Override(g GoogleCo
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleComputeReservation.GoogleComputeReservationShareSettingsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeReservationShareSettingsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleComputeReservationShareSettingsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -257,7 +256,7 @@ func (j *jsiiProxy_GoogleComputeReservationShareSettingsOutputReference)SetCompl
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeReservationShareSettingsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleComputeReservationShareSettingsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -268,7 +267,7 @@ func (j *jsiiProxy_GoogleComputeReservationShareSettingsOutputReference)SetCompl
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeReservationShareSettingsOutputReference)SetInternalValue(val *GoogleComputeReservationShareSettings) {
+func (j *jsiiProxy_GoogleComputeReservationShareSettingsOutputReference) SetInternalValue(val *GoogleComputeReservationShareSettings) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_GoogleComputeReservationShareSettingsOutputReference)SetInter
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeReservationShareSettingsOutputReference)SetProjects(val *[]*string) {
+func (j *jsiiProxy_GoogleComputeReservationShareSettingsOutputReference) SetProjects(val *[]*string) {
 	if err := j.validateSetProjectsParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_GoogleComputeReservationShareSettingsOutputReference)SetProje
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeReservationShareSettingsOutputReference)SetShareType(val *string) {
+func (j *jsiiProxy_GoogleComputeReservationShareSettingsOutputReference) SetShareType(val *string) {
 	if err := j.validateSetShareTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_GoogleComputeReservationShareSettingsOutputReference)SetShare
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeReservationShareSettingsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleComputeReservationShareSettingsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_GoogleComputeReservationShareSettingsOutputReference)SetTerra
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeReservationShareSettingsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleComputeReservationShareSettingsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -336,16 +335,16 @@ func (g *jsiiProxy_GoogleComputeReservationShareSettingsOutputReference) Compute
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeReservationShareSettingsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleComputeReservationShareSettingsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -361,7 +360,7 @@ func (g *jsiiProxy_GoogleComputeReservationShareSettingsOutputReference) GetBool
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -377,7 +376,7 @@ func (g *jsiiProxy_GoogleComputeReservationShareSettingsOutputReference) GetBool
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -393,7 +392,7 @@ func (g *jsiiProxy_GoogleComputeReservationShareSettingsOutputReference) GetList
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -409,7 +408,7 @@ func (g *jsiiProxy_GoogleComputeReservationShareSettingsOutputReference) GetNumb
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -425,7 +424,7 @@ func (g *jsiiProxy_GoogleComputeReservationShareSettingsOutputReference) GetNumb
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -441,7 +440,7 @@ func (g *jsiiProxy_GoogleComputeReservationShareSettingsOutputReference) GetNumb
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -457,7 +456,7 @@ func (g *jsiiProxy_GoogleComputeReservationShareSettingsOutputReference) GetStri
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -473,7 +472,7 @@ func (g *jsiiProxy_GoogleComputeReservationShareSettingsOutputReference) GetStri
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -502,21 +501,21 @@ func (g *jsiiProxy_GoogleComputeReservationShareSettingsOutputReference) Interpo
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeReservationShareSettingsOutputReference) PutProjectMap(value interface{}) {
+func (g *jsiiProxy_GoogleComputeReservationShareSettingsOutputReference) PutProjectMap(value any) {
 	if err := g.validatePutProjectMapParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putProjectMap",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -544,16 +543,16 @@ func (g *jsiiProxy_GoogleComputeReservationShareSettingsOutputReference) ResetSh
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeReservationShareSettingsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleComputeReservationShareSettingsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -572,4 +571,3 @@ func (g *jsiiProxy_GoogleComputeReservationShareSettingsOutputReference) ToStrin
 
 	return returns
 }
-

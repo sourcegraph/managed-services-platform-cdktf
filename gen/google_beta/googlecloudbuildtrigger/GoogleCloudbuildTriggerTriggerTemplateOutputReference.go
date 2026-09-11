@@ -18,9 +18,9 @@ type GoogleCloudbuildTriggerTriggerTemplateOutputReference interface {
 	CommitShaInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -38,9 +38,9 @@ type GoogleCloudbuildTriggerTriggerTemplateOutputReference interface {
 	Fqn() *string
 	InternalValue() *GoogleCloudbuildTriggerTriggerTemplate
 	SetInternalValue(val *GoogleCloudbuildTriggerTriggerTemplate)
-	InvertRegex() interface{}
-	SetInvertRegex(val interface{})
-	InvertRegexInput() interface{}
+	InvertRegex() any
+	SetInvertRegex(val any)
+	InvertRegexInput() any
 	ProjectId() *string
 	SetProjectId(val *string)
 	ProjectIdInput() *string
@@ -61,7 +61,7 @@ type GoogleCloudbuildTriggerTriggerTemplateOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -91,7 +91,7 @@ type GoogleCloudbuildTriggerTriggerTemplateOutputReference interface {
 	ResetTagName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -144,8 +144,8 @@ func (j *jsiiProxy_GoogleCloudbuildTriggerTriggerTemplateOutputReference) Commit
 	return returns
 }
 
-func (j *jsiiProxy_GoogleCloudbuildTriggerTriggerTemplateOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleCloudbuildTriggerTriggerTemplateOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -214,8 +214,8 @@ func (j *jsiiProxy_GoogleCloudbuildTriggerTriggerTemplateOutputReference) Intern
 	return returns
 }
 
-func (j *jsiiProxy_GoogleCloudbuildTriggerTriggerTemplateOutputReference) InvertRegex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleCloudbuildTriggerTriggerTemplateOutputReference) InvertRegex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"invertRegex",
@@ -224,8 +224,8 @@ func (j *jsiiProxy_GoogleCloudbuildTriggerTriggerTemplateOutputReference) Invert
 	return returns
 }
 
-func (j *jsiiProxy_GoogleCloudbuildTriggerTriggerTemplateOutputReference) InvertRegexInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleCloudbuildTriggerTriggerTemplateOutputReference) InvertRegexInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"invertRegexInput",
@@ -314,7 +314,6 @@ func (j *jsiiProxy_GoogleCloudbuildTriggerTriggerTemplateOutputReference) Terraf
 	return returns
 }
 
-
 func NewGoogleCloudbuildTriggerTriggerTemplateOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleCloudbuildTriggerTriggerTemplateOutputReference {
 	_init_.Initialize()
 
@@ -325,7 +324,7 @@ func NewGoogleCloudbuildTriggerTriggerTemplateOutputReference(terraformResource 
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleCloudbuildTrigger.GoogleCloudbuildTriggerTriggerTemplateOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -337,12 +336,12 @@ func NewGoogleCloudbuildTriggerTriggerTemplateOutputReference_Override(g GoogleC
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleCloudbuildTrigger.GoogleCloudbuildTriggerTriggerTemplateOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudbuildTriggerTriggerTemplateOutputReference)SetBranchName(val *string) {
+func (j *jsiiProxy_GoogleCloudbuildTriggerTriggerTemplateOutputReference) SetBranchName(val *string) {
 	if err := j.validateSetBranchNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -353,7 +352,7 @@ func (j *jsiiProxy_GoogleCloudbuildTriggerTriggerTemplateOutputReference)SetBran
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudbuildTriggerTriggerTemplateOutputReference)SetCommitSha(val *string) {
+func (j *jsiiProxy_GoogleCloudbuildTriggerTriggerTemplateOutputReference) SetCommitSha(val *string) {
 	if err := j.validateSetCommitShaParameters(val); err != nil {
 		panic(err)
 	}
@@ -364,7 +363,7 @@ func (j *jsiiProxy_GoogleCloudbuildTriggerTriggerTemplateOutputReference)SetComm
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudbuildTriggerTriggerTemplateOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleCloudbuildTriggerTriggerTemplateOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -375,7 +374,7 @@ func (j *jsiiProxy_GoogleCloudbuildTriggerTriggerTemplateOutputReference)SetComp
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudbuildTriggerTriggerTemplateOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleCloudbuildTriggerTriggerTemplateOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -386,7 +385,7 @@ func (j *jsiiProxy_GoogleCloudbuildTriggerTriggerTemplateOutputReference)SetComp
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudbuildTriggerTriggerTemplateOutputReference)SetDir(val *string) {
+func (j *jsiiProxy_GoogleCloudbuildTriggerTriggerTemplateOutputReference) SetDir(val *string) {
 	if err := j.validateSetDirParameters(val); err != nil {
 		panic(err)
 	}
@@ -397,7 +396,7 @@ func (j *jsiiProxy_GoogleCloudbuildTriggerTriggerTemplateOutputReference)SetDir(
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudbuildTriggerTriggerTemplateOutputReference)SetInternalValue(val *GoogleCloudbuildTriggerTriggerTemplate) {
+func (j *jsiiProxy_GoogleCloudbuildTriggerTriggerTemplateOutputReference) SetInternalValue(val *GoogleCloudbuildTriggerTriggerTemplate) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -408,7 +407,7 @@ func (j *jsiiProxy_GoogleCloudbuildTriggerTriggerTemplateOutputReference)SetInte
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudbuildTriggerTriggerTemplateOutputReference)SetInvertRegex(val interface{}) {
+func (j *jsiiProxy_GoogleCloudbuildTriggerTriggerTemplateOutputReference) SetInvertRegex(val any) {
 	if err := j.validateSetInvertRegexParameters(val); err != nil {
 		panic(err)
 	}
@@ -419,7 +418,7 @@ func (j *jsiiProxy_GoogleCloudbuildTriggerTriggerTemplateOutputReference)SetInve
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudbuildTriggerTriggerTemplateOutputReference)SetProjectId(val *string) {
+func (j *jsiiProxy_GoogleCloudbuildTriggerTriggerTemplateOutputReference) SetProjectId(val *string) {
 	if err := j.validateSetProjectIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -430,7 +429,7 @@ func (j *jsiiProxy_GoogleCloudbuildTriggerTriggerTemplateOutputReference)SetProj
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudbuildTriggerTriggerTemplateOutputReference)SetRepoName(val *string) {
+func (j *jsiiProxy_GoogleCloudbuildTriggerTriggerTemplateOutputReference) SetRepoName(val *string) {
 	if err := j.validateSetRepoNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -441,7 +440,7 @@ func (j *jsiiProxy_GoogleCloudbuildTriggerTriggerTemplateOutputReference)SetRepo
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudbuildTriggerTriggerTemplateOutputReference)SetTagName(val *string) {
+func (j *jsiiProxy_GoogleCloudbuildTriggerTriggerTemplateOutputReference) SetTagName(val *string) {
 	if err := j.validateSetTagNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -452,7 +451,7 @@ func (j *jsiiProxy_GoogleCloudbuildTriggerTriggerTemplateOutputReference)SetTagN
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudbuildTriggerTriggerTemplateOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleCloudbuildTriggerTriggerTemplateOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -463,7 +462,7 @@ func (j *jsiiProxy_GoogleCloudbuildTriggerTriggerTemplateOutputReference)SetTerr
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudbuildTriggerTriggerTemplateOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleCloudbuildTriggerTriggerTemplateOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -487,16 +486,16 @@ func (g *jsiiProxy_GoogleCloudbuildTriggerTriggerTemplateOutputReference) Comput
 	return returns
 }
 
-func (g *jsiiProxy_GoogleCloudbuildTriggerTriggerTemplateOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleCloudbuildTriggerTriggerTemplateOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -512,7 +511,7 @@ func (g *jsiiProxy_GoogleCloudbuildTriggerTriggerTemplateOutputReference) GetBoo
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -528,7 +527,7 @@ func (g *jsiiProxy_GoogleCloudbuildTriggerTriggerTemplateOutputReference) GetBoo
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -544,7 +543,7 @@ func (g *jsiiProxy_GoogleCloudbuildTriggerTriggerTemplateOutputReference) GetLis
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -560,7 +559,7 @@ func (g *jsiiProxy_GoogleCloudbuildTriggerTriggerTemplateOutputReference) GetNum
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -576,7 +575,7 @@ func (g *jsiiProxy_GoogleCloudbuildTriggerTriggerTemplateOutputReference) GetNum
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -592,7 +591,7 @@ func (g *jsiiProxy_GoogleCloudbuildTriggerTriggerTemplateOutputReference) GetNum
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -608,7 +607,7 @@ func (g *jsiiProxy_GoogleCloudbuildTriggerTriggerTemplateOutputReference) GetStr
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -624,7 +623,7 @@ func (g *jsiiProxy_GoogleCloudbuildTriggerTriggerTemplateOutputReference) GetStr
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -653,7 +652,7 @@ func (g *jsiiProxy_GoogleCloudbuildTriggerTriggerTemplateOutputReference) Interp
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -716,16 +715,16 @@ func (g *jsiiProxy_GoogleCloudbuildTriggerTriggerTemplateOutputReference) ResetT
 	)
 }
 
-func (g *jsiiProxy_GoogleCloudbuildTriggerTriggerTemplateOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleCloudbuildTriggerTriggerTemplateOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -744,4 +743,3 @@ func (g *jsiiProxy_GoogleCloudbuildTriggerTriggerTemplateOutputReference) ToStri
 
 	return returns
 }
-

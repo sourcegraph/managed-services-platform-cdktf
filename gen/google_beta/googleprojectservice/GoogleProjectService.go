@@ -14,29 +14,29 @@ type GoogleProjectService interface {
 	cdktf.TerraformResource
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
-	CheckIfServiceHasUsageOnDestroy() interface{}
-	SetCheckIfServiceHasUsageOnDestroy(val interface{})
-	CheckIfServiceHasUsageOnDestroyInput() interface{}
+	CheckIfServiceHasUsageOnDestroy() any
+	SetCheckIfServiceHasUsageOnDestroy(val any)
+	CheckIfServiceHasUsageOnDestroyInput() any
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	DisableDependentServices() interface{}
-	SetDisableDependentServices(val interface{})
-	DisableDependentServicesInput() interface{}
-	DisableOnDestroy() interface{}
-	SetDisableOnDestroy(val interface{})
-	DisableOnDestroyInput() interface{}
+	DisableDependentServices() any
+	SetDisableDependentServices(val any)
+	DisableDependentServicesInput() any
+	DisableOnDestroy() any
+	SetDisableOnDestroy(val any)
+	DisableOnDestroyInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -62,29 +62,29 @@ type GoogleProjectService interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Service() *string
 	SetService(val *string)
 	ServiceInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() GoogleProjectServiceTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -102,7 +102,7 @@ type GoogleProjectService interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -114,7 +114,7 @@ type GoogleProjectService interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -131,17 +131,17 @@ type GoogleProjectService interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GoogleProjectService
@@ -159,8 +159,8 @@ func (j *jsiiProxy_GoogleProjectService) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleProjectService) CheckIfServiceHasUsageOnDestroy() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleProjectService) CheckIfServiceHasUsageOnDestroy() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"checkIfServiceHasUsageOnDestroy",
@@ -169,8 +169,8 @@ func (j *jsiiProxy_GoogleProjectService) CheckIfServiceHasUsageOnDestroy() inter
 	return returns
 }
 
-func (j *jsiiProxy_GoogleProjectService) CheckIfServiceHasUsageOnDestroyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleProjectService) CheckIfServiceHasUsageOnDestroyInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"checkIfServiceHasUsageOnDestroyInput",
@@ -179,8 +179,8 @@ func (j *jsiiProxy_GoogleProjectService) CheckIfServiceHasUsageOnDestroyInput() 
 	return returns
 }
 
-func (j *jsiiProxy_GoogleProjectService) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleProjectService) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -189,8 +189,8 @@ func (j *jsiiProxy_GoogleProjectService) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleProjectService) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleProjectService) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -199,8 +199,8 @@ func (j *jsiiProxy_GoogleProjectService) ConstructNodeMetadata() *map[string]int
 	return returns
 }
 
-func (j *jsiiProxy_GoogleProjectService) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleProjectService) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -219,8 +219,8 @@ func (j *jsiiProxy_GoogleProjectService) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleProjectService) DisableDependentServices() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleProjectService) DisableDependentServices() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disableDependentServices",
@@ -229,8 +229,8 @@ func (j *jsiiProxy_GoogleProjectService) DisableDependentServices() interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_GoogleProjectService) DisableDependentServicesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleProjectService) DisableDependentServicesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disableDependentServicesInput",
@@ -239,8 +239,8 @@ func (j *jsiiProxy_GoogleProjectService) DisableDependentServicesInput() interfa
 	return returns
 }
 
-func (j *jsiiProxy_GoogleProjectService) DisableOnDestroy() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleProjectService) DisableOnDestroy() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disableOnDestroy",
@@ -249,8 +249,8 @@ func (j *jsiiProxy_GoogleProjectService) DisableOnDestroy() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleProjectService) DisableOnDestroyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleProjectService) DisableOnDestroyInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disableOnDestroyInput",
@@ -359,8 +359,8 @@ func (j *jsiiProxy_GoogleProjectService) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleProjectService) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GoogleProjectService) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -369,8 +369,8 @@ func (j *jsiiProxy_GoogleProjectService) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleProjectService) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleProjectService) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -409,8 +409,8 @@ func (j *jsiiProxy_GoogleProjectService) TerraformGeneratorMetadata() *cdktf.Ter
 	return returns
 }
 
-func (j *jsiiProxy_GoogleProjectService) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GoogleProjectService) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -439,8 +439,8 @@ func (j *jsiiProxy_GoogleProjectService) Timeouts() GoogleProjectServiceTimeouts
 	return returns
 }
 
-func (j *jsiiProxy_GoogleProjectService) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleProjectService) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -448,7 +448,6 @@ func (j *jsiiProxy_GoogleProjectService) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_project_service google_project_service} Resource.
 func NewGoogleProjectService(scope constructs.Construct, id *string, config *GoogleProjectServiceConfig) GoogleProjectService {
@@ -461,7 +460,7 @@ func NewGoogleProjectService(scope constructs.Construct, id *string, config *Goo
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleProjectService.GoogleProjectService",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -474,12 +473,12 @@ func NewGoogleProjectService_Override(g GoogleProjectService, scope constructs.C
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleProjectService.GoogleProjectService",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleProjectService)SetCheckIfServiceHasUsageOnDestroy(val interface{}) {
+func (j *jsiiProxy_GoogleProjectService) SetCheckIfServiceHasUsageOnDestroy(val any) {
 	if err := j.validateSetCheckIfServiceHasUsageOnDestroyParameters(val); err != nil {
 		panic(err)
 	}
@@ -490,7 +489,7 @@ func (j *jsiiProxy_GoogleProjectService)SetCheckIfServiceHasUsageOnDestroy(val i
 	)
 }
 
-func (j *jsiiProxy_GoogleProjectService)SetConnection(val interface{}) {
+func (j *jsiiProxy_GoogleProjectService) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -501,7 +500,7 @@ func (j *jsiiProxy_GoogleProjectService)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleProjectService)SetCount(val interface{}) {
+func (j *jsiiProxy_GoogleProjectService) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -512,7 +511,7 @@ func (j *jsiiProxy_GoogleProjectService)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleProjectService)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GoogleProjectService) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -520,7 +519,7 @@ func (j *jsiiProxy_GoogleProjectService)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleProjectService)SetDisableDependentServices(val interface{}) {
+func (j *jsiiProxy_GoogleProjectService) SetDisableDependentServices(val any) {
 	if err := j.validateSetDisableDependentServicesParameters(val); err != nil {
 		panic(err)
 	}
@@ -531,7 +530,7 @@ func (j *jsiiProxy_GoogleProjectService)SetDisableDependentServices(val interfac
 	)
 }
 
-func (j *jsiiProxy_GoogleProjectService)SetDisableOnDestroy(val interface{}) {
+func (j *jsiiProxy_GoogleProjectService) SetDisableOnDestroy(val any) {
 	if err := j.validateSetDisableOnDestroyParameters(val); err != nil {
 		panic(err)
 	}
@@ -542,7 +541,7 @@ func (j *jsiiProxy_GoogleProjectService)SetDisableOnDestroy(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleProjectService)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GoogleProjectService) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -550,7 +549,7 @@ func (j *jsiiProxy_GoogleProjectService)SetForEach(val cdktf.ITerraformIterator)
 	)
 }
 
-func (j *jsiiProxy_GoogleProjectService)SetId(val *string) {
+func (j *jsiiProxy_GoogleProjectService) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -561,7 +560,7 @@ func (j *jsiiProxy_GoogleProjectService)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleProjectService)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GoogleProjectService) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -572,7 +571,7 @@ func (j *jsiiProxy_GoogleProjectService)SetLifecycle(val *cdktf.TerraformResourc
 	)
 }
 
-func (j *jsiiProxy_GoogleProjectService)SetProject(val *string) {
+func (j *jsiiProxy_GoogleProjectService) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -583,7 +582,7 @@ func (j *jsiiProxy_GoogleProjectService)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleProjectService)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GoogleProjectService) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -591,7 +590,7 @@ func (j *jsiiProxy_GoogleProjectService)SetProvider(val cdktf.TerraformProvider)
 	)
 }
 
-func (j *jsiiProxy_GoogleProjectService)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GoogleProjectService) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -602,7 +601,7 @@ func (j *jsiiProxy_GoogleProjectService)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleProjectService)SetService(val *string) {
+func (j *jsiiProxy_GoogleProjectService) SetService(val *string) {
 	if err := j.validateSetServiceParameters(val); err != nil {
 		panic(err)
 	}
@@ -625,7 +624,7 @@ func GoogleProjectService_GenerateConfigForImport(scope constructs.Construct, im
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleProjectService.GoogleProjectService",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -649,7 +648,7 @@ func GoogleProjectService_GenerateConfigForImport(scope constructs.Construct, im
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GoogleProjectService_IsConstruct(x interface{}) *bool {
+func GoogleProjectService_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleProjectService_IsConstructParameters(x); err != nil {
@@ -660,7 +659,7 @@ func GoogleProjectService_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleProjectService.GoogleProjectService",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -668,7 +667,7 @@ func GoogleProjectService_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleProjectService_IsTerraformElement(x interface{}) *bool {
+func GoogleProjectService_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleProjectService_IsTerraformElementParameters(x); err != nil {
@@ -679,7 +678,7 @@ func GoogleProjectService_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleProjectService.GoogleProjectService",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -687,7 +686,7 @@ func GoogleProjectService_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func GoogleProjectService_IsTerraformResource(x interface{}) *bool {
+func GoogleProjectService_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGoogleProjectService_IsTerraformResourceParameters(x); err != nil {
@@ -698,7 +697,7 @@ func GoogleProjectService_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google_beta.googleProjectService.GoogleProjectService",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -723,31 +722,31 @@ func (g *jsiiProxy_GoogleProjectService) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GoogleProjectService) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GoogleProjectService) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GoogleProjectService) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleProjectService) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -763,7 +762,7 @@ func (g *jsiiProxy_GoogleProjectService) GetBooleanAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -779,7 +778,7 @@ func (g *jsiiProxy_GoogleProjectService) GetBooleanMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -795,7 +794,7 @@ func (g *jsiiProxy_GoogleProjectService) GetListAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -811,7 +810,7 @@ func (g *jsiiProxy_GoogleProjectService) GetNumberAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -827,7 +826,7 @@ func (g *jsiiProxy_GoogleProjectService) GetNumberListAttribute(terraformAttribu
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -843,7 +842,7 @@ func (g *jsiiProxy_GoogleProjectService) GetNumberMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -859,7 +858,7 @@ func (g *jsiiProxy_GoogleProjectService) GetStringAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -875,15 +874,15 @@ func (g *jsiiProxy_GoogleProjectService) GetStringMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleProjectService) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleProjectService) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -902,7 +901,7 @@ func (g *jsiiProxy_GoogleProjectService) ImportFrom(id *string, provider cdktf.T
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -915,7 +914,7 @@ func (g *jsiiProxy_GoogleProjectService) InterpolationForAttribute(terraformAttr
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -929,18 +928,18 @@ func (g *jsiiProxy_GoogleProjectService) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GoogleProjectService) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GoogleProjectService) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -951,7 +950,7 @@ func (g *jsiiProxy_GoogleProjectService) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -962,7 +961,7 @@ func (g *jsiiProxy_GoogleProjectService) OverrideLogicalId(newLogicalId *string)
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -973,7 +972,7 @@ func (g *jsiiProxy_GoogleProjectService) PutTimeouts(value *GoogleProjectService
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1033,8 +1032,8 @@ func (g *jsiiProxy_GoogleProjectService) ResetTimeouts() {
 	)
 }
 
-func (g *jsiiProxy_GoogleProjectService) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleProjectService) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1046,8 +1045,8 @@ func (g *jsiiProxy_GoogleProjectService) SynthesizeAttributes() *map[string]inte
 	return returns
 }
 
-func (g *jsiiProxy_GoogleProjectService) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GoogleProjectService) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1059,8 +1058,8 @@ func (g *jsiiProxy_GoogleProjectService) SynthesizeHclAttributes() *map[string]i
 	return returns
 }
 
-func (g *jsiiProxy_GoogleProjectService) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleProjectService) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1072,8 +1071,8 @@ func (g *jsiiProxy_GoogleProjectService) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleProjectService) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleProjectService) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1098,8 +1097,8 @@ func (g *jsiiProxy_GoogleProjectService) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GoogleProjectService) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GoogleProjectService) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1110,4 +1109,3 @@ func (g *jsiiProxy_GoogleProjectService) ToTerraform() interface{} {
 
 	return returns
 }
-

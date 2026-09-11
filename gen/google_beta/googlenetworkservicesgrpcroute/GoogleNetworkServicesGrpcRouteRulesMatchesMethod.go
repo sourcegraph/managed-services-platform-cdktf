@@ -1,6 +1,5 @@
 package googlenetworkservicesgrpcroute
 
-
 type GoogleNetworkServicesGrpcRouteRulesMatchesMethod struct {
 	// Required. Name of the method to match against.
 	//
@@ -13,6 +12,5 @@ type GoogleNetworkServicesGrpcRouteRulesMatchesMethod struct {
 	// Specifies that matches are case sensitive. The default value is true.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_network_services_grpc_route#case_sensitive GoogleNetworkServicesGrpcRoute#case_sensitive}
-	CaseSensitive interface{} `field:"optional" json:"caseSensitive" yaml:"caseSensitive"`
+	CaseSensitive any `field:"optional" json:"caseSensitive" yaml:"caseSensitive"`
 }
-

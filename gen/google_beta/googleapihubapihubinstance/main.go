@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleApihubApiHubInstance.GoogleApihubApiHubInstance",
-		reflect.TypeOf((*GoogleApihubApiHubInstance)(nil)).Elem(),
+		reflect.TypeFor[GoogleApihubApiHubInstance](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -84,7 +84,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleApihubApiHubInstance{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -92,15 +92,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleApihubApiHubInstance.GoogleApihubApiHubInstanceConfig",
-		reflect.TypeOf((*GoogleApihubApiHubInstanceConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleApihubApiHubInstanceConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleApihubApiHubInstance.GoogleApihubApiHubInstanceConfigA",
-		reflect.TypeOf((*GoogleApihubApiHubInstanceConfigA)(nil)).Elem(),
+		reflect.TypeFor[GoogleApihubApiHubInstanceConfigA](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleApihubApiHubInstance.GoogleApihubApiHubInstanceConfigAOutputReference",
-		reflect.TypeOf((*GoogleApihubApiHubInstanceConfigAOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleApihubApiHubInstanceConfigAOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cmekKeyName", GoGetter: "CmekKeyName"},
 			_jsii_.MemberProperty{JsiiProperty: "cmekKeyNameInput", GoGetter: "CmekKeyNameInput"},
@@ -136,7 +136,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vertexLocation", GoGetter: "VertexLocation"},
 			_jsii_.MemberProperty{JsiiProperty: "vertexLocationInput", GoGetter: "VertexLocationInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleApihubApiHubInstanceConfigAOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -144,11 +144,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleApihubApiHubInstance.GoogleApihubApiHubInstanceTimeouts",
-		reflect.TypeOf((*GoogleApihubApiHubInstanceTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleApihubApiHubInstanceTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleApihubApiHubInstance.GoogleApihubApiHubInstanceTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleApihubApiHubInstanceTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleApihubApiHubInstanceTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -181,7 +181,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleApihubApiHubInstanceTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

@@ -6,9 +6,9 @@ import (
 
 type GoogleComputeBackendServiceConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type GoogleComputeBackendServiceConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Name of the resource.
 	//
 	// Provided by the client when the resource is
@@ -44,7 +44,7 @@ type GoogleComputeBackendServiceConfig struct {
 	// backend block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_backend_service#backend GoogleComputeBackendService#backend}
-	Backend interface{} `field:"optional" json:"backend" yaml:"backend"`
+	Backend any `field:"optional" json:"backend" yaml:"backend"`
 	// cdn_policy block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_backend_service#cdn_policy GoogleComputeBackendService#cdn_policy}
@@ -68,7 +68,7 @@ type GoogleComputeBackendServiceConfig struct {
 	// custom_metrics block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_backend_service#custom_metrics GoogleComputeBackendService#custom_metrics}
-	CustomMetrics interface{} `field:"optional" json:"customMetrics" yaml:"customMetrics"`
+	CustomMetrics any `field:"optional" json:"customMetrics" yaml:"customMetrics"`
 	// Headers that the HTTP/S load balancer should add to proxied requests.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_backend_service#custom_request_headers GoogleComputeBackendService#custom_request_headers}
@@ -92,7 +92,7 @@ type GoogleComputeBackendServiceConfig struct {
 	// If true, enable Cloud CDN for this BackendService.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_backend_service#enable_cdn GoogleComputeBackendService#enable_cdn}
-	EnableCdn interface{} `field:"optional" json:"enableCdn" yaml:"enableCdn"`
+	EnableCdn any `field:"optional" json:"enableCdn" yaml:"enableCdn"`
 	// Specifies the canary migration state. Possible values are PREPARE, TEST_BY_PERCENTAGE, and TEST_ALL_TRAFFIC.
 	//
 	// To begin the migration from EXTERNAL to EXTERNAL_MANAGED, the state must be changed to
@@ -157,7 +157,7 @@ type GoogleComputeBackendServiceConfig struct {
 	// locality_lb_policies block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_backend_service#locality_lb_policies GoogleComputeBackendService#locality_lb_policies}
-	LocalityLbPolicies interface{} `field:"optional" json:"localityLbPolicies" yaml:"localityLbPolicies"`
+	LocalityLbPolicies any `field:"optional" json:"localityLbPolicies" yaml:"localityLbPolicies"`
 	// The load balancing algorithm used within the scope of the locality. The possible values are:.
 	//
 	// * 'ROUND_ROBIN': This is a simple policy in which each healthy backend
@@ -298,4 +298,3 @@ type GoogleComputeBackendServiceConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_backend_service#tls_settings GoogleComputeBackendService#tls_settings}
 	TlsSettings *GoogleComputeBackendServiceTlsSettings `field:"optional" json:"tlsSettings" yaml:"tlsSettings"`
 }
-

@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleAlloydbClusterPscConfigOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAlloydbClusterPscConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleAlloydbClusterPscConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_GoogleAlloydbClusterPscConfigOutputReference) validateSetInte
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAlloydbClusterPscConfigOutputReference) validateSetPscEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleAlloydbClusterPscConfigOutputReference) validateSetPscEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -218,4 +218,3 @@ func validateNewGoogleAlloydbClusterPscConfigOutputReferenceParameters(terraform
 
 	return nil
 }
-

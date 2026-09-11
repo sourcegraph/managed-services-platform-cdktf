@@ -11,12 +11,12 @@ import (
 type GoogleDataplexEntryEntrySourceOutputReference interface {
 	cdktf.ComplexObject
 	Ancestors() GoogleDataplexEntryEntrySourceAncestorsList
-	AncestorsInput() interface{}
+	AncestorsInput() any
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -67,7 +67,7 @@ type GoogleDataplexEntryEntrySourceOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -88,7 +88,7 @@ type GoogleDataplexEntryEntrySourceOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutAncestors(value interface{})
+	PutAncestors(value any)
 	ResetAncestors()
 	ResetCreateTime()
 	ResetDescription()
@@ -100,7 +100,7 @@ type GoogleDataplexEntryEntrySourceOutputReference interface {
 	ResetUpdateTime()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -123,8 +123,8 @@ func (j *jsiiProxy_GoogleDataplexEntryEntrySourceOutputReference) Ancestors() Go
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDataplexEntryEntrySourceOutputReference) AncestorsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDataplexEntryEntrySourceOutputReference) AncestorsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ancestorsInput",
@@ -133,8 +133,8 @@ func (j *jsiiProxy_GoogleDataplexEntryEntrySourceOutputReference) AncestorsInput
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDataplexEntryEntrySourceOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleDataplexEntryEntrySourceOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -373,7 +373,6 @@ func (j *jsiiProxy_GoogleDataplexEntryEntrySourceOutputReference) UpdateTimeInpu
 	return returns
 }
 
-
 func NewGoogleDataplexEntryEntrySourceOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleDataplexEntryEntrySourceOutputReference {
 	_init_.Initialize()
 
@@ -384,7 +383,7 @@ func NewGoogleDataplexEntryEntrySourceOutputReference(terraformResource cdktf.II
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleDataplexEntry.GoogleDataplexEntryEntrySourceOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -396,12 +395,12 @@ func NewGoogleDataplexEntryEntrySourceOutputReference_Override(g GoogleDataplexE
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleDataplexEntry.GoogleDataplexEntryEntrySourceOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleDataplexEntryEntrySourceOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleDataplexEntryEntrySourceOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -412,7 +411,7 @@ func (j *jsiiProxy_GoogleDataplexEntryEntrySourceOutputReference)SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_GoogleDataplexEntryEntrySourceOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleDataplexEntryEntrySourceOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -423,7 +422,7 @@ func (j *jsiiProxy_GoogleDataplexEntryEntrySourceOutputReference)SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_GoogleDataplexEntryEntrySourceOutputReference)SetCreateTime(val *string) {
+func (j *jsiiProxy_GoogleDataplexEntryEntrySourceOutputReference) SetCreateTime(val *string) {
 	if err := j.validateSetCreateTimeParameters(val); err != nil {
 		panic(err)
 	}
@@ -434,7 +433,7 @@ func (j *jsiiProxy_GoogleDataplexEntryEntrySourceOutputReference)SetCreateTime(v
 	)
 }
 
-func (j *jsiiProxy_GoogleDataplexEntryEntrySourceOutputReference)SetDescription(val *string) {
+func (j *jsiiProxy_GoogleDataplexEntryEntrySourceOutputReference) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -445,7 +444,7 @@ func (j *jsiiProxy_GoogleDataplexEntryEntrySourceOutputReference)SetDescription(
 	)
 }
 
-func (j *jsiiProxy_GoogleDataplexEntryEntrySourceOutputReference)SetDisplayName(val *string) {
+func (j *jsiiProxy_GoogleDataplexEntryEntrySourceOutputReference) SetDisplayName(val *string) {
 	if err := j.validateSetDisplayNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -456,7 +455,7 @@ func (j *jsiiProxy_GoogleDataplexEntryEntrySourceOutputReference)SetDisplayName(
 	)
 }
 
-func (j *jsiiProxy_GoogleDataplexEntryEntrySourceOutputReference)SetInternalValue(val *GoogleDataplexEntryEntrySource) {
+func (j *jsiiProxy_GoogleDataplexEntryEntrySourceOutputReference) SetInternalValue(val *GoogleDataplexEntryEntrySource) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -467,7 +466,7 @@ func (j *jsiiProxy_GoogleDataplexEntryEntrySourceOutputReference)SetInternalValu
 	)
 }
 
-func (j *jsiiProxy_GoogleDataplexEntryEntrySourceOutputReference)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_GoogleDataplexEntryEntrySourceOutputReference) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -478,7 +477,7 @@ func (j *jsiiProxy_GoogleDataplexEntryEntrySourceOutputReference)SetLabels(val *
 	)
 }
 
-func (j *jsiiProxy_GoogleDataplexEntryEntrySourceOutputReference)SetPlatform(val *string) {
+func (j *jsiiProxy_GoogleDataplexEntryEntrySourceOutputReference) SetPlatform(val *string) {
 	if err := j.validateSetPlatformParameters(val); err != nil {
 		panic(err)
 	}
@@ -489,7 +488,7 @@ func (j *jsiiProxy_GoogleDataplexEntryEntrySourceOutputReference)SetPlatform(val
 	)
 }
 
-func (j *jsiiProxy_GoogleDataplexEntryEntrySourceOutputReference)SetResource(val *string) {
+func (j *jsiiProxy_GoogleDataplexEntryEntrySourceOutputReference) SetResource(val *string) {
 	if err := j.validateSetResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -500,7 +499,7 @@ func (j *jsiiProxy_GoogleDataplexEntryEntrySourceOutputReference)SetResource(val
 	)
 }
 
-func (j *jsiiProxy_GoogleDataplexEntryEntrySourceOutputReference)SetSystemAttribute(val *string) {
+func (j *jsiiProxy_GoogleDataplexEntryEntrySourceOutputReference) SetSystemAttribute(val *string) {
 	if err := j.validateSetSystemAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -511,7 +510,7 @@ func (j *jsiiProxy_GoogleDataplexEntryEntrySourceOutputReference)SetSystemAttrib
 	)
 }
 
-func (j *jsiiProxy_GoogleDataplexEntryEntrySourceOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleDataplexEntryEntrySourceOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -522,7 +521,7 @@ func (j *jsiiProxy_GoogleDataplexEntryEntrySourceOutputReference)SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_GoogleDataplexEntryEntrySourceOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleDataplexEntryEntrySourceOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -533,7 +532,7 @@ func (j *jsiiProxy_GoogleDataplexEntryEntrySourceOutputReference)SetTerraformRes
 	)
 }
 
-func (j *jsiiProxy_GoogleDataplexEntryEntrySourceOutputReference)SetUpdateTime(val *string) {
+func (j *jsiiProxy_GoogleDataplexEntryEntrySourceOutputReference) SetUpdateTime(val *string) {
 	if err := j.validateSetUpdateTimeParameters(val); err != nil {
 		panic(err)
 	}
@@ -557,16 +556,16 @@ func (g *jsiiProxy_GoogleDataplexEntryEntrySourceOutputReference) ComputeFqn() *
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDataplexEntryEntrySourceOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleDataplexEntryEntrySourceOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -582,7 +581,7 @@ func (g *jsiiProxy_GoogleDataplexEntryEntrySourceOutputReference) GetBooleanAttr
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -598,7 +597,7 @@ func (g *jsiiProxy_GoogleDataplexEntryEntrySourceOutputReference) GetBooleanMapA
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -614,7 +613,7 @@ func (g *jsiiProxy_GoogleDataplexEntryEntrySourceOutputReference) GetListAttribu
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -630,7 +629,7 @@ func (g *jsiiProxy_GoogleDataplexEntryEntrySourceOutputReference) GetNumberAttri
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -646,7 +645,7 @@ func (g *jsiiProxy_GoogleDataplexEntryEntrySourceOutputReference) GetNumberListA
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -662,7 +661,7 @@ func (g *jsiiProxy_GoogleDataplexEntryEntrySourceOutputReference) GetNumberMapAt
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -678,7 +677,7 @@ func (g *jsiiProxy_GoogleDataplexEntryEntrySourceOutputReference) GetStringAttri
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -694,7 +693,7 @@ func (g *jsiiProxy_GoogleDataplexEntryEntrySourceOutputReference) GetStringMapAt
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -723,21 +722,21 @@ func (g *jsiiProxy_GoogleDataplexEntryEntrySourceOutputReference) InterpolationF
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDataplexEntryEntrySourceOutputReference) PutAncestors(value interface{}) {
+func (g *jsiiProxy_GoogleDataplexEntryEntrySourceOutputReference) PutAncestors(value any) {
 	if err := g.validatePutAncestorsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putAncestors",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -813,16 +812,16 @@ func (g *jsiiProxy_GoogleDataplexEntryEntrySourceOutputReference) ResetUpdateTim
 	)
 }
 
-func (g *jsiiProxy_GoogleDataplexEntryEntrySourceOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleDataplexEntryEntrySourceOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -841,4 +840,3 @@ func (g *jsiiProxy_GoogleDataplexEntryEntrySourceOutputReference) ToString() *st
 
 	return returns
 }
-

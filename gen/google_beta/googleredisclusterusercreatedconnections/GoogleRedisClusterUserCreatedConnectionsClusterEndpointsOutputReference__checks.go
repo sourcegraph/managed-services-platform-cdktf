@@ -90,7 +90,7 @@ func (g *jsiiProxy_GoogleRedisClusterUserCreatedConnectionsClusterEndpointsOutpu
 	return nil
 }
 
-func (g *jsiiProxy_GoogleRedisClusterUserCreatedConnectionsClusterEndpointsOutputReference) validatePutConnectionsParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleRedisClusterUserCreatedConnectionsClusterEndpointsOutputReference) validatePutConnectionsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (g *jsiiProxy_GoogleRedisClusterUserCreatedConnectionsClusterEndpointsOutpu
 	return nil
 }
 
-func (j *jsiiProxy_GoogleRedisClusterUserCreatedConnectionsClusterEndpointsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleRedisClusterUserCreatedConnectionsClusterEndpointsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -194,7 +194,7 @@ func (j *jsiiProxy_GoogleRedisClusterUserCreatedConnectionsClusterEndpointsOutpu
 	return nil
 }
 
-func (j *jsiiProxy_GoogleRedisClusterUserCreatedConnectionsClusterEndpointsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleRedisClusterUserCreatedConnectionsClusterEndpointsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -253,4 +253,3 @@ func validateNewGoogleRedisClusterUserCreatedConnectionsClusterEndpointsOutputRe
 
 	return nil
 }
-

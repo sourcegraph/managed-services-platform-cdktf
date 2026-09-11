@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleEdgecontainerClusterMaintenancePolicyMaintenanceExclusi
 	return nil
 }
 
-func (j *jsiiProxy_GoogleEdgecontainerClusterMaintenancePolicyMaintenanceExclusionsWindowOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleEdgecontainerClusterMaintenancePolicyMaintenanceExclusionsWindowOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGoogleEdgecontainerClusterMaintenancePolicyMaintenanceExclusions
 
 	return nil
 }
-

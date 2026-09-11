@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleDataprocBatchRuntimeInfoApproximateUsageOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataprocBatchRuntimeInfoApproximateUsageOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataprocBatchRuntimeInfoApproximateUsageOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleDataprocBatchRuntimeInfoApproximateUsageOutputReferencePar
 
 	return nil
 }
-

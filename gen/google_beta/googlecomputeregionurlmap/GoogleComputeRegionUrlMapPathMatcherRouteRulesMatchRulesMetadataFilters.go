@@ -1,11 +1,10 @@
 package googlecomputeregionurlmap
 
-
 type GoogleComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFilters struct {
 	// filter_labels block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_region_url_map#filter_labels GoogleComputeRegionUrlMap#filter_labels}
-	FilterLabels interface{} `field:"required" json:"filterLabels" yaml:"filterLabels"`
+	FilterLabels any `field:"required" json:"filterLabels" yaml:"filterLabels"`
 	// Specifies how individual filterLabel matches within the list of filterLabels contribute towards the overall metadataFilter match. Supported values are:.
 	//
 	// * MATCH_ANY: At least one of the filterLabels must have a matching label in the
@@ -16,4 +15,3 @@ type GoogleComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFilters str
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_region_url_map#filter_match_criteria GoogleComputeRegionUrlMap#filter_match_criteria}
 	FilterMatchCriteria *string `field:"required" json:"filterMatchCriteria" yaml:"filterMatchCriteria"`
 }
-

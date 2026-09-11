@@ -114,7 +114,7 @@ func (j *jsiiProxy_GoogleDialogflowCxAgentGitIntegrationSettingsGithubSettingsOu
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxAgentGitIntegrationSettingsGithubSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDialogflowCxAgentGitIntegrationSettingsGithubSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGoogleDialogflowCxAgentGitIntegrationSettingsGithubSettingsOutpu
 
 	return nil
 }
-

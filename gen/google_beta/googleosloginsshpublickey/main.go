@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleOsLoginSshPublicKey.GoogleOsLoginSshPublicKey",
-		reflect.TypeOf((*GoogleOsLoginSshPublicKey)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsLoginSshPublicKey](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -71,7 +71,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "user", GoGetter: "User"},
 			_jsii_.MemberProperty{JsiiProperty: "userInput", GoGetter: "UserInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleOsLoginSshPublicKey{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -79,15 +79,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleOsLoginSshPublicKey.GoogleOsLoginSshPublicKeyConfig",
-		reflect.TypeOf((*GoogleOsLoginSshPublicKeyConfig)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsLoginSshPublicKeyConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleOsLoginSshPublicKey.GoogleOsLoginSshPublicKeyTimeouts",
-		reflect.TypeOf((*GoogleOsLoginSshPublicKeyTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsLoginSshPublicKeyTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google_beta.googleOsLoginSshPublicKey.GoogleOsLoginSshPublicKeyTimeoutsOutputReference",
-		reflect.TypeOf((*GoogleOsLoginSshPublicKeyTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GoogleOsLoginSshPublicKeyTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -120,7 +120,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GoogleOsLoginSshPublicKeyTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

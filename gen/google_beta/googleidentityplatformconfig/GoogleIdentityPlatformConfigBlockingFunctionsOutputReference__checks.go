@@ -101,7 +101,7 @@ func (g *jsiiProxy_GoogleIdentityPlatformConfigBlockingFunctionsOutputReference)
 	return nil
 }
 
-func (g *jsiiProxy_GoogleIdentityPlatformConfigBlockingFunctionsOutputReference) validatePutTriggersParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleIdentityPlatformConfigBlockingFunctionsOutputReference) validatePutTriggersParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -140,7 +140,7 @@ func (g *jsiiProxy_GoogleIdentityPlatformConfigBlockingFunctionsOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIdentityPlatformConfigBlockingFunctionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleIdentityPlatformConfigBlockingFunctionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -240,4 +240,3 @@ func validateNewGoogleIdentityPlatformConfigBlockingFunctionsOutputReferencePara
 
 	return nil
 }
-

@@ -1,13 +1,12 @@
 package googlevertexaifeaturestoreentitytype
 
-
 type GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigSnapshotAnalysis struct {
 	// The monitoring schedule for snapshot analysis.
 	//
 	// For EntityType-level config: unset / disabled = true indicates disabled by default for Features under it; otherwise by default enable snapshot analysis monitoring with monitoringInterval for Features under it.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_vertex_ai_featurestore_entitytype#disabled GoogleVertexAiFeaturestoreEntitytype#disabled}
-	Disabled interface{} `field:"optional" json:"disabled" yaml:"disabled"`
+	Disabled any `field:"optional" json:"disabled" yaml:"disabled"`
 	// Configuration of the snapshot analysis based monitoring pipeline running interval. The value is rolled up to full day.
 	//
 	// A duration in seconds with up to nine fractional digits, terminated by 's'. Example: "3.5s".
@@ -28,4 +27,3 @@ type GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigSnapshotAnalysis struct
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_vertex_ai_featurestore_entitytype#staleness_days GoogleVertexAiFeaturestoreEntitytype#staleness_days}
 	StalenessDays *float64 `field:"optional" json:"stalenessDays" yaml:"stalenessDays"`
 }
-

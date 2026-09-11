@@ -15,9 +15,9 @@ type GoogleChronicleDataAccessScopeDeniedDataAccessLabelsOutputReference interfa
 	AssetNamespaceInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -36,8 +36,8 @@ type GoogleChronicleDataAccessScopeDeniedDataAccessLabelsOutputReference interfa
 	Fqn() *string
 	IngestionLabel() GoogleChronicleDataAccessScopeDeniedDataAccessLabelsIngestionLabelOutputReference
 	IngestionLabelInput() *GoogleChronicleDataAccessScopeDeniedDataAccessLabelsIngestionLabel
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	LogType() *string
 	SetLogType(val *string)
 	LogTypeInput() *string
@@ -52,7 +52,7 @@ type GoogleChronicleDataAccessScopeDeniedDataAccessLabelsOutputReference interfa
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -80,7 +80,7 @@ type GoogleChronicleDataAccessScopeDeniedDataAccessLabelsOutputReference interfa
 	ResetLogType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -113,8 +113,8 @@ func (j *jsiiProxy_GoogleChronicleDataAccessScopeDeniedDataAccessLabelsOutputRef
 	return returns
 }
 
-func (j *jsiiProxy_GoogleChronicleDataAccessScopeDeniedDataAccessLabelsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleChronicleDataAccessScopeDeniedDataAccessLabelsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -203,8 +203,8 @@ func (j *jsiiProxy_GoogleChronicleDataAccessScopeDeniedDataAccessLabelsOutputRef
 	return returns
 }
 
-func (j *jsiiProxy_GoogleChronicleDataAccessScopeDeniedDataAccessLabelsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleChronicleDataAccessScopeDeniedDataAccessLabelsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -253,7 +253,6 @@ func (j *jsiiProxy_GoogleChronicleDataAccessScopeDeniedDataAccessLabelsOutputRef
 	return returns
 }
 
-
 func NewGoogleChronicleDataAccessScopeDeniedDataAccessLabelsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) GoogleChronicleDataAccessScopeDeniedDataAccessLabelsOutputReference {
 	_init_.Initialize()
 
@@ -264,7 +263,7 @@ func NewGoogleChronicleDataAccessScopeDeniedDataAccessLabelsOutputReference(terr
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleChronicleDataAccessScope.GoogleChronicleDataAccessScopeDeniedDataAccessLabelsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -276,12 +275,12 @@ func NewGoogleChronicleDataAccessScopeDeniedDataAccessLabelsOutputReference_Over
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleChronicleDataAccessScope.GoogleChronicleDataAccessScopeDeniedDataAccessLabelsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleChronicleDataAccessScopeDeniedDataAccessLabelsOutputReference)SetAssetNamespace(val *string) {
+func (j *jsiiProxy_GoogleChronicleDataAccessScopeDeniedDataAccessLabelsOutputReference) SetAssetNamespace(val *string) {
 	if err := j.validateSetAssetNamespaceParameters(val); err != nil {
 		panic(err)
 	}
@@ -292,7 +291,7 @@ func (j *jsiiProxy_GoogleChronicleDataAccessScopeDeniedDataAccessLabelsOutputRef
 	)
 }
 
-func (j *jsiiProxy_GoogleChronicleDataAccessScopeDeniedDataAccessLabelsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleChronicleDataAccessScopeDeniedDataAccessLabelsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -303,7 +302,7 @@ func (j *jsiiProxy_GoogleChronicleDataAccessScopeDeniedDataAccessLabelsOutputRef
 	)
 }
 
-func (j *jsiiProxy_GoogleChronicleDataAccessScopeDeniedDataAccessLabelsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleChronicleDataAccessScopeDeniedDataAccessLabelsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -314,7 +313,7 @@ func (j *jsiiProxy_GoogleChronicleDataAccessScopeDeniedDataAccessLabelsOutputRef
 	)
 }
 
-func (j *jsiiProxy_GoogleChronicleDataAccessScopeDeniedDataAccessLabelsOutputReference)SetDataAccessLabel(val *string) {
+func (j *jsiiProxy_GoogleChronicleDataAccessScopeDeniedDataAccessLabelsOutputReference) SetDataAccessLabel(val *string) {
 	if err := j.validateSetDataAccessLabelParameters(val); err != nil {
 		panic(err)
 	}
@@ -325,7 +324,7 @@ func (j *jsiiProxy_GoogleChronicleDataAccessScopeDeniedDataAccessLabelsOutputRef
 	)
 }
 
-func (j *jsiiProxy_GoogleChronicleDataAccessScopeDeniedDataAccessLabelsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_GoogleChronicleDataAccessScopeDeniedDataAccessLabelsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -336,7 +335,7 @@ func (j *jsiiProxy_GoogleChronicleDataAccessScopeDeniedDataAccessLabelsOutputRef
 	)
 }
 
-func (j *jsiiProxy_GoogleChronicleDataAccessScopeDeniedDataAccessLabelsOutputReference)SetLogType(val *string) {
+func (j *jsiiProxy_GoogleChronicleDataAccessScopeDeniedDataAccessLabelsOutputReference) SetLogType(val *string) {
 	if err := j.validateSetLogTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,7 +346,7 @@ func (j *jsiiProxy_GoogleChronicleDataAccessScopeDeniedDataAccessLabelsOutputRef
 	)
 }
 
-func (j *jsiiProxy_GoogleChronicleDataAccessScopeDeniedDataAccessLabelsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleChronicleDataAccessScopeDeniedDataAccessLabelsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -358,7 +357,7 @@ func (j *jsiiProxy_GoogleChronicleDataAccessScopeDeniedDataAccessLabelsOutputRef
 	)
 }
 
-func (j *jsiiProxy_GoogleChronicleDataAccessScopeDeniedDataAccessLabelsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleChronicleDataAccessScopeDeniedDataAccessLabelsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -382,16 +381,16 @@ func (g *jsiiProxy_GoogleChronicleDataAccessScopeDeniedDataAccessLabelsOutputRef
 	return returns
 }
 
-func (g *jsiiProxy_GoogleChronicleDataAccessScopeDeniedDataAccessLabelsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleChronicleDataAccessScopeDeniedDataAccessLabelsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -407,7 +406,7 @@ func (g *jsiiProxy_GoogleChronicleDataAccessScopeDeniedDataAccessLabelsOutputRef
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -423,7 +422,7 @@ func (g *jsiiProxy_GoogleChronicleDataAccessScopeDeniedDataAccessLabelsOutputRef
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -439,7 +438,7 @@ func (g *jsiiProxy_GoogleChronicleDataAccessScopeDeniedDataAccessLabelsOutputRef
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -455,7 +454,7 @@ func (g *jsiiProxy_GoogleChronicleDataAccessScopeDeniedDataAccessLabelsOutputRef
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -471,7 +470,7 @@ func (g *jsiiProxy_GoogleChronicleDataAccessScopeDeniedDataAccessLabelsOutputRef
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -487,7 +486,7 @@ func (g *jsiiProxy_GoogleChronicleDataAccessScopeDeniedDataAccessLabelsOutputRef
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -503,7 +502,7 @@ func (g *jsiiProxy_GoogleChronicleDataAccessScopeDeniedDataAccessLabelsOutputRef
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -519,7 +518,7 @@ func (g *jsiiProxy_GoogleChronicleDataAccessScopeDeniedDataAccessLabelsOutputRef
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -548,7 +547,7 @@ func (g *jsiiProxy_GoogleChronicleDataAccessScopeDeniedDataAccessLabelsOutputRef
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -562,7 +561,7 @@ func (g *jsiiProxy_GoogleChronicleDataAccessScopeDeniedDataAccessLabelsOutputRef
 	_jsii_.InvokeVoid(
 		g,
 		"putIngestionLabel",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -598,16 +597,16 @@ func (g *jsiiProxy_GoogleChronicleDataAccessScopeDeniedDataAccessLabelsOutputRef
 	)
 }
 
-func (g *jsiiProxy_GoogleChronicleDataAccessScopeDeniedDataAccessLabelsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleChronicleDataAccessScopeDeniedDataAccessLabelsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -626,4 +625,3 @@ func (g *jsiiProxy_GoogleChronicleDataAccessScopeDeniedDataAccessLabelsOutputRef
 
 	return returns
 }
-

@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleCloudfunctionsFunctionIamBinding) validateAddMoveTarget
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCloudfunctionsFunctionIamBinding) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleCloudfunctionsFunctionIamBinding) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleCloudfunctionsFunctionIamBinding) validateMoveFromIdPar
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCloudfunctionsFunctionIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleCloudfunctionsFunctionIamBinding) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateGoogleCloudfunctionsFunctionIamBinding_GenerateConfigForImportParam
 	return nil
 }
 
-func validateGoogleCloudfunctionsFunctionIamBinding_IsConstructParameters(x interface{}) error {
+func validateGoogleCloudfunctionsFunctionIamBinding_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateGoogleCloudfunctionsFunctionIamBinding_IsConstructParameters(x inte
 	return nil
 }
 
-func validateGoogleCloudfunctionsFunctionIamBinding_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleCloudfunctionsFunctionIamBinding_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateGoogleCloudfunctionsFunctionIamBinding_IsTerraformElementParameters
 	return nil
 }
 
-func validateGoogleCloudfunctionsFunctionIamBinding_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleCloudfunctionsFunctionIamBinding_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -263,7 +263,7 @@ func (j *jsiiProxy_GoogleCloudfunctionsFunctionIamBinding) validateSetCloudFunct
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudfunctionsFunctionIamBinding) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleCloudfunctionsFunctionIamBinding) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -296,7 +296,7 @@ func (j *jsiiProxy_GoogleCloudfunctionsFunctionIamBinding) validateSetConnection
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudfunctionsFunctionIamBinding) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleCloudfunctionsFunctionIamBinding) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -385,7 +385,7 @@ func (j *jsiiProxy_GoogleCloudfunctionsFunctionIamBinding) validateSetProjectPar
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudfunctionsFunctionIamBinding) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleCloudfunctionsFunctionIamBinding) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -465,4 +465,3 @@ func validateNewGoogleCloudfunctionsFunctionIamBindingParameters(scope construct
 
 	return nil
 }
-

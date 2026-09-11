@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleDataprocBatchStateHistoryOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataprocBatchStateHistoryOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataprocBatchStateHistoryOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGoogleDataprocBatchStateHistoryOutputReferenceParameters(terrafo
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (g *jsiiProxy_GoogleDataprocMetastoreTableIamBindingConditionOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataprocMetastoreTableIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleDataprocMetastoreTableIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewGoogleDataprocMetastoreTableIamBindingConditionOutputReferencePa
 
 	return nil
 }
-

@@ -27,16 +27,16 @@ type GoogleSqlDatabaseInstanceSettingsOutputReference interface {
 	CollationInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
 	ConnectionPoolConfig() GoogleSqlDatabaseInstanceSettingsConnectionPoolConfigList
-	ConnectionPoolConfigInput() interface{}
+	ConnectionPoolConfigInput() any
 	ConnectorEnforcement() *string
 	SetConnectorEnforcement(val *string)
 	ConnectorEnforcementInput() *string
@@ -46,7 +46,7 @@ type GoogleSqlDatabaseInstanceSettingsOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	DatabaseFlags() GoogleSqlDatabaseInstanceSettingsDatabaseFlagsList
-	DatabaseFlagsInput() interface{}
+	DatabaseFlagsInput() any
 	DataCacheConfig() GoogleSqlDatabaseInstanceSettingsDataCacheConfigOutputReference
 	DataCacheConfigInput() *GoogleSqlDatabaseInstanceSettingsDataCacheConfig
 	DataDiskProvisionedIops() *float64
@@ -55,14 +55,14 @@ type GoogleSqlDatabaseInstanceSettingsOutputReference interface {
 	DataDiskProvisionedThroughput() *float64
 	SetDataDiskProvisionedThroughput(val *float64)
 	DataDiskProvisionedThroughputInput() *float64
-	DeletionProtectionEnabled() interface{}
-	SetDeletionProtectionEnabled(val interface{})
-	DeletionProtectionEnabledInput() interface{}
+	DeletionProtectionEnabled() any
+	SetDeletionProtectionEnabled(val any)
+	DeletionProtectionEnabledInput() any
 	DenyMaintenancePeriod() GoogleSqlDatabaseInstanceSettingsDenyMaintenancePeriodOutputReference
 	DenyMaintenancePeriodInput() *GoogleSqlDatabaseInstanceSettingsDenyMaintenancePeriod
-	DiskAutoresize() interface{}
-	SetDiskAutoresize(val interface{})
-	DiskAutoresizeInput() interface{}
+	DiskAutoresize() any
+	SetDiskAutoresize(val any)
+	DiskAutoresizeInput() any
 	DiskAutoresizeLimit() *float64
 	SetDiskAutoresizeLimit(val *float64)
 	DiskAutoresizeLimitInput() *float64
@@ -75,12 +75,12 @@ type GoogleSqlDatabaseInstanceSettingsOutputReference interface {
 	Edition() *string
 	SetEdition(val *string)
 	EditionInput() *string
-	EnableDataplexIntegration() interface{}
-	SetEnableDataplexIntegration(val interface{})
-	EnableDataplexIntegrationInput() interface{}
-	EnableGoogleMlIntegration() interface{}
-	SetEnableGoogleMlIntegration(val interface{})
-	EnableGoogleMlIntegrationInput() interface{}
+	EnableDataplexIntegration() any
+	SetEnableDataplexIntegration(val any)
+	EnableDataplexIntegrationInput() any
+	EnableGoogleMlIntegration() any
+	SetEnableGoogleMlIntegration(val any)
+	EnableGoogleMlIntegrationInput() any
 	// Experimental.
 	Fqn() *string
 	InsightsConfig() GoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReference
@@ -98,9 +98,9 @@ type GoogleSqlDatabaseInstanceSettingsOutputReference interface {
 	PricingPlan() *string
 	SetPricingPlan(val *string)
 	PricingPlanInput() *string
-	RetainBackupsOnDelete() interface{}
-	SetRetainBackupsOnDelete(val interface{})
-	RetainBackupsOnDeleteInput() interface{}
+	RetainBackupsOnDelete() any
+	SetRetainBackupsOnDelete(val any)
+	RetainBackupsOnDeleteInput() any
 	SqlServerAuditConfig() GoogleSqlDatabaseInstanceSettingsSqlServerAuditConfigOutputReference
 	SqlServerAuditConfigInput() *GoogleSqlDatabaseInstanceSettingsSqlServerAuditConfig
 	// Experimental.
@@ -124,7 +124,7 @@ type GoogleSqlDatabaseInstanceSettingsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -148,8 +148,8 @@ type GoogleSqlDatabaseInstanceSettingsOutputReference interface {
 	PutActiveDirectoryConfig(value *GoogleSqlDatabaseInstanceSettingsActiveDirectoryConfig)
 	PutAdvancedMachineFeatures(value *GoogleSqlDatabaseInstanceSettingsAdvancedMachineFeatures)
 	PutBackupConfiguration(value *GoogleSqlDatabaseInstanceSettingsBackupConfiguration)
-	PutConnectionPoolConfig(value interface{})
-	PutDatabaseFlags(value interface{})
+	PutConnectionPoolConfig(value any)
+	PutDatabaseFlags(value any)
 	PutDataCacheConfig(value *GoogleSqlDatabaseInstanceSettingsDataCacheConfig)
 	PutDenyMaintenancePeriod(value *GoogleSqlDatabaseInstanceSettingsDenyMaintenancePeriod)
 	PutInsightsConfig(value *GoogleSqlDatabaseInstanceSettingsInsightsConfig)
@@ -191,7 +191,7 @@ type GoogleSqlDatabaseInstanceSettingsOutputReference interface {
 	ResetUserLabels()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -324,8 +324,8 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) CollationIn
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -354,8 +354,8 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) ConnectionP
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) ConnectionPoolConfigInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) ConnectionPoolConfigInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connectionPoolConfigInput",
@@ -404,8 +404,8 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) DatabaseFla
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) DatabaseFlagsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) DatabaseFlagsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"databaseFlagsInput",
@@ -474,8 +474,8 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) DataDiskPro
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) DeletionProtectionEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) DeletionProtectionEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"deletionProtectionEnabled",
@@ -484,8 +484,8 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) DeletionPro
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) DeletionProtectionEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) DeletionProtectionEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"deletionProtectionEnabledInput",
@@ -514,8 +514,8 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) DenyMainten
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) DiskAutoresize() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) DiskAutoresize() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"diskAutoresize",
@@ -524,8 +524,8 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) DiskAutores
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) DiskAutoresizeInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) DiskAutoresizeInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"diskAutoresizeInput",
@@ -614,8 +614,8 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) EditionInpu
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) EnableDataplexIntegration() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) EnableDataplexIntegration() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableDataplexIntegration",
@@ -624,8 +624,8 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) EnableDatap
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) EnableDataplexIntegrationInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) EnableDataplexIntegrationInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableDataplexIntegrationInput",
@@ -634,8 +634,8 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) EnableDatap
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) EnableGoogleMlIntegration() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) EnableGoogleMlIntegration() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableGoogleMlIntegration",
@@ -644,8 +644,8 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) EnableGoogl
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) EnableGoogleMlIntegrationInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) EnableGoogleMlIntegrationInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableGoogleMlIntegrationInput",
@@ -794,8 +794,8 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) PricingPlan
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) RetainBackupsOnDelete() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) RetainBackupsOnDelete() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"retainBackupsOnDelete",
@@ -804,8 +804,8 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) RetainBacku
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) RetainBackupsOnDeleteInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) RetainBackupsOnDeleteInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"retainBackupsOnDeleteInput",
@@ -924,7 +924,6 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) Version() *
 	return returns
 }
 
-
 func NewGoogleSqlDatabaseInstanceSettingsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleSqlDatabaseInstanceSettingsOutputReference {
 	_init_.Initialize()
 
@@ -935,7 +934,7 @@ func NewGoogleSqlDatabaseInstanceSettingsOutputReference(terraformResource cdktf
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceSettingsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -947,12 +946,12 @@ func NewGoogleSqlDatabaseInstanceSettingsOutputReference_Override(g GoogleSqlDat
 
 	_jsii_.Create(
 		"@cdktf/provider-google_beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceSettingsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference)SetActivationPolicy(val *string) {
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) SetActivationPolicy(val *string) {
 	if err := j.validateSetActivationPolicyParameters(val); err != nil {
 		panic(err)
 	}
@@ -963,7 +962,7 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference)SetActivatio
 	)
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference)SetAvailabilityType(val *string) {
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) SetAvailabilityType(val *string) {
 	if err := j.validateSetAvailabilityTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -974,7 +973,7 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference)SetAvailabil
 	)
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference)SetCollation(val *string) {
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) SetCollation(val *string) {
 	if err := j.validateSetCollationParameters(val); err != nil {
 		panic(err)
 	}
@@ -985,7 +984,7 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference)SetCollation
 	)
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -996,7 +995,7 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -1007,7 +1006,7 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference)SetConnectorEnforcement(val *string) {
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) SetConnectorEnforcement(val *string) {
 	if err := j.validateSetConnectorEnforcementParameters(val); err != nil {
 		panic(err)
 	}
@@ -1018,7 +1017,7 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference)SetConnector
 	)
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference)SetDataDiskProvisionedIops(val *float64) {
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) SetDataDiskProvisionedIops(val *float64) {
 	if err := j.validateSetDataDiskProvisionedIopsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1029,7 +1028,7 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference)SetDataDiskP
 	)
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference)SetDataDiskProvisionedThroughput(val *float64) {
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) SetDataDiskProvisionedThroughput(val *float64) {
 	if err := j.validateSetDataDiskProvisionedThroughputParameters(val); err != nil {
 		panic(err)
 	}
@@ -1040,7 +1039,7 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference)SetDataDiskP
 	)
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference)SetDeletionProtectionEnabled(val interface{}) {
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) SetDeletionProtectionEnabled(val any) {
 	if err := j.validateSetDeletionProtectionEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -1051,7 +1050,7 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference)SetDeletionP
 	)
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference)SetDiskAutoresize(val interface{}) {
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) SetDiskAutoresize(val any) {
 	if err := j.validateSetDiskAutoresizeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1062,7 +1061,7 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference)SetDiskAutor
 	)
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference)SetDiskAutoresizeLimit(val *float64) {
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) SetDiskAutoresizeLimit(val *float64) {
 	if err := j.validateSetDiskAutoresizeLimitParameters(val); err != nil {
 		panic(err)
 	}
@@ -1073,7 +1072,7 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference)SetDiskAutor
 	)
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference)SetDiskSize(val *float64) {
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) SetDiskSize(val *float64) {
 	if err := j.validateSetDiskSizeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1084,7 +1083,7 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference)SetDiskSize(
 	)
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference)SetDiskType(val *string) {
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) SetDiskType(val *string) {
 	if err := j.validateSetDiskTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1095,7 +1094,7 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference)SetDiskType(
 	)
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference)SetEdition(val *string) {
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) SetEdition(val *string) {
 	if err := j.validateSetEditionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1106,7 +1105,7 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference)SetEdition(v
 	)
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference)SetEnableDataplexIntegration(val interface{}) {
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) SetEnableDataplexIntegration(val any) {
 	if err := j.validateSetEnableDataplexIntegrationParameters(val); err != nil {
 		panic(err)
 	}
@@ -1117,7 +1116,7 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference)SetEnableDat
 	)
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference)SetEnableGoogleMlIntegration(val interface{}) {
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) SetEnableGoogleMlIntegration(val any) {
 	if err := j.validateSetEnableGoogleMlIntegrationParameters(val); err != nil {
 		panic(err)
 	}
@@ -1128,7 +1127,7 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference)SetEnableGoo
 	)
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference)SetInternalValue(val *GoogleSqlDatabaseInstanceSettings) {
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) SetInternalValue(val *GoogleSqlDatabaseInstanceSettings) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -1139,7 +1138,7 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference)SetInternalV
 	)
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference)SetPricingPlan(val *string) {
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) SetPricingPlan(val *string) {
 	if err := j.validateSetPricingPlanParameters(val); err != nil {
 		panic(err)
 	}
@@ -1150,7 +1149,7 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference)SetPricingPl
 	)
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference)SetRetainBackupsOnDelete(val interface{}) {
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) SetRetainBackupsOnDelete(val any) {
 	if err := j.validateSetRetainBackupsOnDeleteParameters(val); err != nil {
 		panic(err)
 	}
@@ -1161,7 +1160,7 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference)SetRetainBac
 	)
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1172,7 +1171,7 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -1183,7 +1182,7 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference)SetTier(val *string) {
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) SetTier(val *string) {
 	if err := j.validateSetTierParameters(val); err != nil {
 		panic(err)
 	}
@@ -1194,7 +1193,7 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference)SetTier(val 
 	)
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference)SetTimeZone(val *string) {
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) SetTimeZone(val *string) {
 	if err := j.validateSetTimeZoneParameters(val); err != nil {
 		panic(err)
 	}
@@ -1205,7 +1204,7 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference)SetTimeZone(
 	)
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference)SetUserLabels(val *map[string]*string) {
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) SetUserLabels(val *map[string]*string) {
 	if err := j.validateSetUserLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1229,16 +1228,16 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) ComputeFqn(
 	return returns
 }
 
-func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1254,7 +1253,7 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) GetBooleanA
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1270,7 +1269,7 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) GetBooleanM
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1286,7 +1285,7 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) GetListAttr
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1302,7 +1301,7 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) GetNumberAt
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1318,7 +1317,7 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) GetNumberLi
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1334,7 +1333,7 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) GetNumberMa
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1350,7 +1349,7 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) GetStringAt
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1366,7 +1365,7 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) GetStringMa
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1395,7 +1394,7 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) Interpolati
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -1409,7 +1408,7 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) PutActiveDi
 	_jsii_.InvokeVoid(
 		g,
 		"putActiveDirectoryConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1420,7 +1419,7 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) PutAdvanced
 	_jsii_.InvokeVoid(
 		g,
 		"putAdvancedMachineFeatures",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1431,29 +1430,29 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) PutBackupCo
 	_jsii_.InvokeVoid(
 		g,
 		"putBackupConfiguration",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) PutConnectionPoolConfig(value interface{}) {
+func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) PutConnectionPoolConfig(value any) {
 	if err := g.validatePutConnectionPoolConfigParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putConnectionPoolConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) PutDatabaseFlags(value interface{}) {
+func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) PutDatabaseFlags(value any) {
 	if err := g.validatePutDatabaseFlagsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putDatabaseFlags",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1464,7 +1463,7 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) PutDataCach
 	_jsii_.InvokeVoid(
 		g,
 		"putDataCacheConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1475,7 +1474,7 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) PutDenyMain
 	_jsii_.InvokeVoid(
 		g,
 		"putDenyMaintenancePeriod",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1486,7 +1485,7 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) PutInsights
 	_jsii_.InvokeVoid(
 		g,
 		"putInsightsConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1497,7 +1496,7 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) PutIpConfig
 	_jsii_.InvokeVoid(
 		g,
 		"putIpConfiguration",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1508,7 +1507,7 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) PutLocation
 	_jsii_.InvokeVoid(
 		g,
 		"putLocationPreference",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1519,7 +1518,7 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) PutMaintena
 	_jsii_.InvokeVoid(
 		g,
 		"putMaintenanceWindow",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1530,7 +1529,7 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) PutPassword
 	_jsii_.InvokeVoid(
 		g,
 		"putPasswordValidationPolicy",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1541,7 +1540,7 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) PutSqlServe
 	_jsii_.InvokeVoid(
 		g,
 		"putSqlServerAuditConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1793,16 +1792,16 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) ResetUserLa
 	)
 }
 
-func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -1821,4 +1820,3 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) ToString() 
 
 	return returns
 }
-

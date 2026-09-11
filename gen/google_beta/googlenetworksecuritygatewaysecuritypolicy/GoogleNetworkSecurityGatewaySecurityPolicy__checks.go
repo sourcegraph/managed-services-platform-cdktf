@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicy) validateAddMoveTa
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicy) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicy) validateMoveFromI
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicy) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateGoogleNetworkSecurityGatewaySecurityPolicy_GenerateConfigForImportP
 	return nil
 }
 
-func validateGoogleNetworkSecurityGatewaySecurityPolicy_IsConstructParameters(x interface{}) error {
+func validateGoogleNetworkSecurityGatewaySecurityPolicy_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateGoogleNetworkSecurityGatewaySecurityPolicy_IsConstructParameters(x 
 	return nil
 }
 
-func validateGoogleNetworkSecurityGatewaySecurityPolicy_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleNetworkSecurityGatewaySecurityPolicy_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateGoogleNetworkSecurityGatewaySecurityPolicy_IsTerraformElementParame
 	return nil
 }
 
-func validateGoogleNetworkSecurityGatewaySecurityPolicy_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleNetworkSecurityGatewaySecurityPolicy_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateGoogleNetworkSecurityGatewaySecurityPolicy_IsTerraformResourceParam
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicy) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicy) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicy) validateSetConnec
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicy) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicy) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -393,7 +393,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicy) validateSetProjec
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicy) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicy) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -465,4 +465,3 @@ func validateNewGoogleNetworkSecurityGatewaySecurityPolicyParameters(scope const
 
 	return nil
 }
-

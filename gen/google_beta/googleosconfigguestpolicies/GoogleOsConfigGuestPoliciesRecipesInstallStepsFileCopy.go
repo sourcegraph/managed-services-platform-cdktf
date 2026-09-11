@@ -1,6 +1,5 @@
 package googleosconfigguestpolicies
 
-
 type GoogleOsConfigGuestPoliciesRecipesInstallStepsFileCopy struct {
 	// The id of the relevant artifact in the recipe.
 	//
@@ -13,7 +12,7 @@ type GoogleOsConfigGuestPoliciesRecipesInstallStepsFileCopy struct {
 	// Whether to allow this step to overwrite existing files.If this is false and the file already exists the file is not overwritten and the step is considered a success. Defaults to false.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_os_config_guest_policies#overwrite GoogleOsConfigGuestPolicies#overwrite}
-	Overwrite interface{} `field:"optional" json:"overwrite" yaml:"overwrite"`
+	Overwrite any `field:"optional" json:"overwrite" yaml:"overwrite"`
 	// Consists of three octal digits which represent, in order, the permissions of the owner, group, and other users for the file (similarly to the numeric mode used in the linux chmod utility).
 	//
 	// Each digit represents a three bit
@@ -26,4 +25,3 @@ type GoogleOsConfigGuestPoliciesRecipesInstallStepsFileCopy struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_os_config_guest_policies#permissions GoogleOsConfigGuestPolicies#permissions}
 	Permissions *string `field:"optional" json:"permissions" yaml:"permissions"`
 }
-

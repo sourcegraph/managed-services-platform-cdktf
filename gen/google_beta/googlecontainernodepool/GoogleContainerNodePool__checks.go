@@ -19,7 +19,7 @@ func (g *jsiiProxy_GoogleContainerNodePool) validateAddMoveTargetParameters(move
 	return nil
 }
 
-func (g *jsiiProxy_GoogleContainerNodePool) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GoogleContainerNodePool) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GoogleContainerNodePool) validateMoveFromIdParameters(id *str
 	return nil
 }
 
-func (g *jsiiProxy_GoogleContainerNodePool) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GoogleContainerNodePool) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -308,7 +308,7 @@ func validateGoogleContainerNodePool_GenerateConfigForImportParameters(scope con
 	return nil
 }
 
-func validateGoogleContainerNodePool_IsConstructParameters(x interface{}) error {
+func validateGoogleContainerNodePool_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -316,7 +316,7 @@ func validateGoogleContainerNodePool_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
-func validateGoogleContainerNodePool_IsTerraformElementParameters(x interface{}) error {
+func validateGoogleContainerNodePool_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -324,7 +324,7 @@ func validateGoogleContainerNodePool_IsTerraformElementParameters(x interface{})
 	return nil
 }
 
-func validateGoogleContainerNodePool_IsTerraformResourceParameters(x interface{}) error {
+func validateGoogleContainerNodePool_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -340,7 +340,7 @@ func (j *jsiiProxy_GoogleContainerNodePool) validateSetClusterParameters(val *st
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerNodePool) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContainerNodePool) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -373,7 +373,7 @@ func (j *jsiiProxy_GoogleContainerNodePool) validateSetConnectionParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerNodePool) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContainerNodePool) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -510,7 +510,7 @@ func (j *jsiiProxy_GoogleContainerNodePool) validateSetProjectParameters(val *st
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerNodePool) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GoogleContainerNodePool) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -582,4 +582,3 @@ func validateNewGoogleContainerNodePoolParameters(scope constructs.Construct, id
 
 	return nil
 }
-
