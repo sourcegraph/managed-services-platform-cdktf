@@ -20,15 +20,15 @@ type BigqueryAnalyticsHubListing interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	DataExchangeId() *string
 	SetDataExchangeId(val *string)
 	DataExchangeIdInput() *string
@@ -71,9 +71,9 @@ type BigqueryAnalyticsHubListing interface {
 	Location() *string
 	SetLocation(val *string)
 	LocationInput() *string
-	LogLinkedDatasetQueryUserEmail() interface{}
-	SetLogLinkedDatasetQueryUserEmail(val interface{})
-	LogLinkedDatasetQueryUserEmailInput() interface{}
+	LogLinkedDatasetQueryUserEmail() any
+	SetLogLinkedDatasetQueryUserEmail(val any)
+	LogLinkedDatasetQueryUserEmailInput() any
 	Name() *string
 	// The tree node.
 	Node() constructs.Node
@@ -88,15 +88,15 @@ type BigqueryAnalyticsHubListing interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	Publisher() BigqueryAnalyticsHubListingPublisherOutputReference
 	PublisherInput() *BigqueryAnalyticsHubListingPublisher
 	PubsubTopic() BigqueryAnalyticsHubListingPubsubTopicOutputReference
 	PubsubTopicInput() *BigqueryAnalyticsHubListingPubsubTopic
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RequestAccess() *string
 	SetRequestAccess(val *string)
 	RequestAccessInput() *string
@@ -105,18 +105,18 @@ type BigqueryAnalyticsHubListing interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() BigqueryAnalyticsHubListingTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -134,7 +134,7 @@ type BigqueryAnalyticsHubListing interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -146,7 +146,7 @@ type BigqueryAnalyticsHubListing interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -177,17 +177,17 @@ type BigqueryAnalyticsHubListing interface {
 	ResetRequestAccess()
 	ResetRestrictedExportConfig()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for BigqueryAnalyticsHubListing
@@ -245,8 +245,8 @@ func (j *jsiiProxy_BigqueryAnalyticsHubListing) CdktfStack() cdktf.TerraformStac
 	return returns
 }
 
-func (j *jsiiProxy_BigqueryAnalyticsHubListing) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BigqueryAnalyticsHubListing) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -255,8 +255,8 @@ func (j *jsiiProxy_BigqueryAnalyticsHubListing) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_BigqueryAnalyticsHubListing) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_BigqueryAnalyticsHubListing) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -265,8 +265,8 @@ func (j *jsiiProxy_BigqueryAnalyticsHubListing) ConstructNodeMetadata() *map[str
 	return returns
 }
 
-func (j *jsiiProxy_BigqueryAnalyticsHubListing) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BigqueryAnalyticsHubListing) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -505,8 +505,8 @@ func (j *jsiiProxy_BigqueryAnalyticsHubListing) LocationInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_BigqueryAnalyticsHubListing) LogLinkedDatasetQueryUserEmail() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BigqueryAnalyticsHubListing) LogLinkedDatasetQueryUserEmail() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"logLinkedDatasetQueryUserEmail",
@@ -515,8 +515,8 @@ func (j *jsiiProxy_BigqueryAnalyticsHubListing) LogLinkedDatasetQueryUserEmail()
 	return returns
 }
 
-func (j *jsiiProxy_BigqueryAnalyticsHubListing) LogLinkedDatasetQueryUserEmailInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BigqueryAnalyticsHubListing) LogLinkedDatasetQueryUserEmailInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"logLinkedDatasetQueryUserEmailInput",
@@ -595,8 +595,8 @@ func (j *jsiiProxy_BigqueryAnalyticsHubListing) Provider() cdktf.TerraformProvid
 	return returns
 }
 
-func (j *jsiiProxy_BigqueryAnalyticsHubListing) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_BigqueryAnalyticsHubListing) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -645,8 +645,8 @@ func (j *jsiiProxy_BigqueryAnalyticsHubListing) PubsubTopicInput() *BigqueryAnal
 	return returns
 }
 
-func (j *jsiiProxy_BigqueryAnalyticsHubListing) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BigqueryAnalyticsHubListing) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -705,8 +705,8 @@ func (j *jsiiProxy_BigqueryAnalyticsHubListing) TerraformGeneratorMetadata() *cd
 	return returns
 }
 
-func (j *jsiiProxy_BigqueryAnalyticsHubListing) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_BigqueryAnalyticsHubListing) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -735,8 +735,8 @@ func (j *jsiiProxy_BigqueryAnalyticsHubListing) Timeouts() BigqueryAnalyticsHubL
 	return returns
 }
 
-func (j *jsiiProxy_BigqueryAnalyticsHubListing) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BigqueryAnalyticsHubListing) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -744,7 +744,6 @@ func (j *jsiiProxy_BigqueryAnalyticsHubListing) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/bigquery_analytics_hub_listing google_bigquery_analytics_hub_listing} Resource.
 func NewBigqueryAnalyticsHubListing(scope constructs.Construct, id *string, config *BigqueryAnalyticsHubListingConfig) BigqueryAnalyticsHubListing {
@@ -757,7 +756,7 @@ func NewBigqueryAnalyticsHubListing(scope constructs.Construct, id *string, conf
 
 	_jsii_.Create(
 		"@cdktf/provider-google.bigqueryAnalyticsHubListing.BigqueryAnalyticsHubListing",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -770,12 +769,12 @@ func NewBigqueryAnalyticsHubListing_Override(b BigqueryAnalyticsHubListing, scop
 
 	_jsii_.Create(
 		"@cdktf/provider-google.bigqueryAnalyticsHubListing.BigqueryAnalyticsHubListing",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		b,
 	)
 }
 
-func (j *jsiiProxy_BigqueryAnalyticsHubListing)SetCategories(val *[]*string) {
+func (j *jsiiProxy_BigqueryAnalyticsHubListing) SetCategories(val *[]*string) {
 	if err := j.validateSetCategoriesParameters(val); err != nil {
 		panic(err)
 	}
@@ -786,7 +785,7 @@ func (j *jsiiProxy_BigqueryAnalyticsHubListing)SetCategories(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_BigqueryAnalyticsHubListing)SetConnection(val interface{}) {
+func (j *jsiiProxy_BigqueryAnalyticsHubListing) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -797,7 +796,7 @@ func (j *jsiiProxy_BigqueryAnalyticsHubListing)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_BigqueryAnalyticsHubListing)SetCount(val interface{}) {
+func (j *jsiiProxy_BigqueryAnalyticsHubListing) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -808,7 +807,7 @@ func (j *jsiiProxy_BigqueryAnalyticsHubListing)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_BigqueryAnalyticsHubListing)SetDataExchangeId(val *string) {
+func (j *jsiiProxy_BigqueryAnalyticsHubListing) SetDataExchangeId(val *string) {
 	if err := j.validateSetDataExchangeIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -819,7 +818,7 @@ func (j *jsiiProxy_BigqueryAnalyticsHubListing)SetDataExchangeId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BigqueryAnalyticsHubListing)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_BigqueryAnalyticsHubListing) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -827,7 +826,7 @@ func (j *jsiiProxy_BigqueryAnalyticsHubListing)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_BigqueryAnalyticsHubListing)SetDescription(val *string) {
+func (j *jsiiProxy_BigqueryAnalyticsHubListing) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -838,7 +837,7 @@ func (j *jsiiProxy_BigqueryAnalyticsHubListing)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BigqueryAnalyticsHubListing)SetDisplayName(val *string) {
+func (j *jsiiProxy_BigqueryAnalyticsHubListing) SetDisplayName(val *string) {
 	if err := j.validateSetDisplayNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -849,7 +848,7 @@ func (j *jsiiProxy_BigqueryAnalyticsHubListing)SetDisplayName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BigqueryAnalyticsHubListing)SetDocumentation(val *string) {
+func (j *jsiiProxy_BigqueryAnalyticsHubListing) SetDocumentation(val *string) {
 	if err := j.validateSetDocumentationParameters(val); err != nil {
 		panic(err)
 	}
@@ -860,7 +859,7 @@ func (j *jsiiProxy_BigqueryAnalyticsHubListing)SetDocumentation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BigqueryAnalyticsHubListing)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_BigqueryAnalyticsHubListing) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -868,7 +867,7 @@ func (j *jsiiProxy_BigqueryAnalyticsHubListing)SetForEach(val cdktf.ITerraformIt
 	)
 }
 
-func (j *jsiiProxy_BigqueryAnalyticsHubListing)SetIcon(val *string) {
+func (j *jsiiProxy_BigqueryAnalyticsHubListing) SetIcon(val *string) {
 	if err := j.validateSetIconParameters(val); err != nil {
 		panic(err)
 	}
@@ -879,7 +878,7 @@ func (j *jsiiProxy_BigqueryAnalyticsHubListing)SetIcon(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BigqueryAnalyticsHubListing)SetId(val *string) {
+func (j *jsiiProxy_BigqueryAnalyticsHubListing) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -890,7 +889,7 @@ func (j *jsiiProxy_BigqueryAnalyticsHubListing)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BigqueryAnalyticsHubListing)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_BigqueryAnalyticsHubListing) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -901,7 +900,7 @@ func (j *jsiiProxy_BigqueryAnalyticsHubListing)SetLifecycle(val *cdktf.Terraform
 	)
 }
 
-func (j *jsiiProxy_BigqueryAnalyticsHubListing)SetListingId(val *string) {
+func (j *jsiiProxy_BigqueryAnalyticsHubListing) SetListingId(val *string) {
 	if err := j.validateSetListingIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -912,7 +911,7 @@ func (j *jsiiProxy_BigqueryAnalyticsHubListing)SetListingId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BigqueryAnalyticsHubListing)SetLocation(val *string) {
+func (j *jsiiProxy_BigqueryAnalyticsHubListing) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -923,7 +922,7 @@ func (j *jsiiProxy_BigqueryAnalyticsHubListing)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BigqueryAnalyticsHubListing)SetLogLinkedDatasetQueryUserEmail(val interface{}) {
+func (j *jsiiProxy_BigqueryAnalyticsHubListing) SetLogLinkedDatasetQueryUserEmail(val any) {
 	if err := j.validateSetLogLinkedDatasetQueryUserEmailParameters(val); err != nil {
 		panic(err)
 	}
@@ -934,7 +933,7 @@ func (j *jsiiProxy_BigqueryAnalyticsHubListing)SetLogLinkedDatasetQueryUserEmail
 	)
 }
 
-func (j *jsiiProxy_BigqueryAnalyticsHubListing)SetPrimaryContact(val *string) {
+func (j *jsiiProxy_BigqueryAnalyticsHubListing) SetPrimaryContact(val *string) {
 	if err := j.validateSetPrimaryContactParameters(val); err != nil {
 		panic(err)
 	}
@@ -945,7 +944,7 @@ func (j *jsiiProxy_BigqueryAnalyticsHubListing)SetPrimaryContact(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BigqueryAnalyticsHubListing)SetProject(val *string) {
+func (j *jsiiProxy_BigqueryAnalyticsHubListing) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -956,7 +955,7 @@ func (j *jsiiProxy_BigqueryAnalyticsHubListing)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BigqueryAnalyticsHubListing)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_BigqueryAnalyticsHubListing) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -964,7 +963,7 @@ func (j *jsiiProxy_BigqueryAnalyticsHubListing)SetProvider(val cdktf.TerraformPr
 	)
 }
 
-func (j *jsiiProxy_BigqueryAnalyticsHubListing)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_BigqueryAnalyticsHubListing) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -975,7 +974,7 @@ func (j *jsiiProxy_BigqueryAnalyticsHubListing)SetProvisioners(val *[]interface{
 	)
 }
 
-func (j *jsiiProxy_BigqueryAnalyticsHubListing)SetRequestAccess(val *string) {
+func (j *jsiiProxy_BigqueryAnalyticsHubListing) SetRequestAccess(val *string) {
 	if err := j.validateSetRequestAccessParameters(val); err != nil {
 		panic(err)
 	}
@@ -998,7 +997,7 @@ func BigqueryAnalyticsHubListing_GenerateConfigForImport(scope constructs.Constr
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.bigqueryAnalyticsHubListing.BigqueryAnalyticsHubListing",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -1022,7 +1021,7 @@ func BigqueryAnalyticsHubListing_GenerateConfigForImport(scope constructs.Constr
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func BigqueryAnalyticsHubListing_IsConstruct(x interface{}) *bool {
+func BigqueryAnalyticsHubListing_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateBigqueryAnalyticsHubListing_IsConstructParameters(x); err != nil {
@@ -1033,7 +1032,7 @@ func BigqueryAnalyticsHubListing_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.bigqueryAnalyticsHubListing.BigqueryAnalyticsHubListing",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1041,7 +1040,7 @@ func BigqueryAnalyticsHubListing_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func BigqueryAnalyticsHubListing_IsTerraformElement(x interface{}) *bool {
+func BigqueryAnalyticsHubListing_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateBigqueryAnalyticsHubListing_IsTerraformElementParameters(x); err != nil {
@@ -1052,7 +1051,7 @@ func BigqueryAnalyticsHubListing_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.bigqueryAnalyticsHubListing.BigqueryAnalyticsHubListing",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1060,7 +1059,7 @@ func BigqueryAnalyticsHubListing_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func BigqueryAnalyticsHubListing_IsTerraformResource(x interface{}) *bool {
+func BigqueryAnalyticsHubListing_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateBigqueryAnalyticsHubListing_IsTerraformResourceParameters(x); err != nil {
@@ -1071,7 +1070,7 @@ func BigqueryAnalyticsHubListing_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.bigqueryAnalyticsHubListing.BigqueryAnalyticsHubListing",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1096,31 +1095,31 @@ func (b *jsiiProxy_BigqueryAnalyticsHubListing) AddMoveTarget(moveTarget *string
 	_jsii_.InvokeVoid(
 		b,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (b *jsiiProxy_BigqueryAnalyticsHubListing) AddOverride(path *string, value interface{}) {
+func (b *jsiiProxy_BigqueryAnalyticsHubListing) AddOverride(path *string, value any) {
 	if err := b.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		b,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (b *jsiiProxy_BigqueryAnalyticsHubListing) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (b *jsiiProxy_BigqueryAnalyticsHubListing) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := b.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		b,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1136,7 +1135,7 @@ func (b *jsiiProxy_BigqueryAnalyticsHubListing) GetBooleanAttribute(terraformAtt
 	_jsii_.Invoke(
 		b,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1152,7 +1151,7 @@ func (b *jsiiProxy_BigqueryAnalyticsHubListing) GetBooleanMapAttribute(terraform
 	_jsii_.Invoke(
 		b,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1168,7 +1167,7 @@ func (b *jsiiProxy_BigqueryAnalyticsHubListing) GetListAttribute(terraformAttrib
 	_jsii_.Invoke(
 		b,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1184,7 +1183,7 @@ func (b *jsiiProxy_BigqueryAnalyticsHubListing) GetNumberAttribute(terraformAttr
 	_jsii_.Invoke(
 		b,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1200,7 +1199,7 @@ func (b *jsiiProxy_BigqueryAnalyticsHubListing) GetNumberListAttribute(terraform
 	_jsii_.Invoke(
 		b,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1216,7 +1215,7 @@ func (b *jsiiProxy_BigqueryAnalyticsHubListing) GetNumberMapAttribute(terraformA
 	_jsii_.Invoke(
 		b,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1232,7 +1231,7 @@ func (b *jsiiProxy_BigqueryAnalyticsHubListing) GetStringAttribute(terraformAttr
 	_jsii_.Invoke(
 		b,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1248,15 +1247,15 @@ func (b *jsiiProxy_BigqueryAnalyticsHubListing) GetStringMapAttribute(terraformA
 	_jsii_.Invoke(
 		b,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (b *jsiiProxy_BigqueryAnalyticsHubListing) HasResourceMove() interface{} {
-	var returns interface{}
+func (b *jsiiProxy_BigqueryAnalyticsHubListing) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		b,
@@ -1275,7 +1274,7 @@ func (b *jsiiProxy_BigqueryAnalyticsHubListing) ImportFrom(id *string, provider 
 	_jsii_.InvokeVoid(
 		b,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1288,7 +1287,7 @@ func (b *jsiiProxy_BigqueryAnalyticsHubListing) InterpolationForAttribute(terraf
 	_jsii_.Invoke(
 		b,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1302,18 +1301,18 @@ func (b *jsiiProxy_BigqueryAnalyticsHubListing) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		b,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (b *jsiiProxy_BigqueryAnalyticsHubListing) MoveTo(moveTarget *string, index interface{}) {
+func (b *jsiiProxy_BigqueryAnalyticsHubListing) MoveTo(moveTarget *string, index any) {
 	if err := b.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		b,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1324,7 +1323,7 @@ func (b *jsiiProxy_BigqueryAnalyticsHubListing) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		b,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1335,7 +1334,7 @@ func (b *jsiiProxy_BigqueryAnalyticsHubListing) OverrideLogicalId(newLogicalId *
 	_jsii_.InvokeVoid(
 		b,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1346,7 +1345,7 @@ func (b *jsiiProxy_BigqueryAnalyticsHubListing) PutBigqueryDataset(value *Bigque
 	_jsii_.InvokeVoid(
 		b,
 		"putBigqueryDataset",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1357,7 +1356,7 @@ func (b *jsiiProxy_BigqueryAnalyticsHubListing) PutDataProvider(value *BigqueryA
 	_jsii_.InvokeVoid(
 		b,
 		"putDataProvider",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1368,7 +1367,7 @@ func (b *jsiiProxy_BigqueryAnalyticsHubListing) PutPublisher(value *BigqueryAnal
 	_jsii_.InvokeVoid(
 		b,
 		"putPublisher",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1379,7 +1378,7 @@ func (b *jsiiProxy_BigqueryAnalyticsHubListing) PutPubsubTopic(value *BigqueryAn
 	_jsii_.InvokeVoid(
 		b,
 		"putPubsubTopic",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1390,7 +1389,7 @@ func (b *jsiiProxy_BigqueryAnalyticsHubListing) PutRestrictedExportConfig(value 
 	_jsii_.InvokeVoid(
 		b,
 		"putRestrictedExportConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1401,7 +1400,7 @@ func (b *jsiiProxy_BigqueryAnalyticsHubListing) PutTimeouts(value *BigqueryAnaly
 	_jsii_.InvokeVoid(
 		b,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1533,8 +1532,8 @@ func (b *jsiiProxy_BigqueryAnalyticsHubListing) ResetTimeouts() {
 	)
 }
 
-func (b *jsiiProxy_BigqueryAnalyticsHubListing) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (b *jsiiProxy_BigqueryAnalyticsHubListing) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		b,
@@ -1546,8 +1545,8 @@ func (b *jsiiProxy_BigqueryAnalyticsHubListing) SynthesizeAttributes() *map[stri
 	return returns
 }
 
-func (b *jsiiProxy_BigqueryAnalyticsHubListing) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (b *jsiiProxy_BigqueryAnalyticsHubListing) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		b,
@@ -1559,8 +1558,8 @@ func (b *jsiiProxy_BigqueryAnalyticsHubListing) SynthesizeHclAttributes() *map[s
 	return returns
 }
 
-func (b *jsiiProxy_BigqueryAnalyticsHubListing) ToHclTerraform() interface{} {
-	var returns interface{}
+func (b *jsiiProxy_BigqueryAnalyticsHubListing) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		b,
@@ -1572,8 +1571,8 @@ func (b *jsiiProxy_BigqueryAnalyticsHubListing) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (b *jsiiProxy_BigqueryAnalyticsHubListing) ToMetadata() interface{} {
-	var returns interface{}
+func (b *jsiiProxy_BigqueryAnalyticsHubListing) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		b,
@@ -1598,8 +1597,8 @@ func (b *jsiiProxy_BigqueryAnalyticsHubListing) ToString() *string {
 	return returns
 }
 
-func (b *jsiiProxy_BigqueryAnalyticsHubListing) ToTerraform() interface{} {
-	var returns interface{}
+func (b *jsiiProxy_BigqueryAnalyticsHubListing) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		b,
@@ -1610,4 +1609,3 @@ func (b *jsiiProxy_BigqueryAnalyticsHubListing) ToTerraform() interface{} {
 
 	return returns
 }
-

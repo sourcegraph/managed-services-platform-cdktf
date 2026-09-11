@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.beyondcorpApplicationIamPolicy.BeyondcorpApplicationIamPolicy",
-		reflect.TypeOf((*BeyondcorpApplicationIamPolicy)(nil)).Elem(),
+		reflect.TypeFor[BeyondcorpApplicationIamPolicy](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -66,7 +66,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BeyondcorpApplicationIamPolicy{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -74,6 +74,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.beyondcorpApplicationIamPolicy.BeyondcorpApplicationIamPolicyConfig",
-		reflect.TypeOf((*BeyondcorpApplicationIamPolicyConfig)(nil)).Elem(),
+		reflect.TypeFor[BeyondcorpApplicationIamPolicyConfig](),
 	)
 }

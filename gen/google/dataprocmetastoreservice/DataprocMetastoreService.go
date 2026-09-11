@@ -16,22 +16,22 @@ type DataprocMetastoreService interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	DatabaseType() *string
 	SetDatabaseType(val *string)
 	DatabaseTypeInput() *string
-	DeletionProtection() interface{}
-	SetDeletionProtection(val interface{})
-	DeletionProtectionInput() interface{}
+	DeletionProtection() any
+	SetDeletionProtection(val any)
+	DeletionProtectionInput() any
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -86,11 +86,11 @@ type DataprocMetastoreService interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ReleaseChannel() *string
 	SetReleaseChannel(val *string)
 	ReleaseChannelInput() *string
@@ -109,23 +109,23 @@ type DataprocMetastoreService interface {
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Tier() *string
 	SetTier(val *string)
 	TierInput() *string
 	Timeouts() DataprocMetastoreServiceTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	Uid() *string
 	UpdateTime() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -143,7 +143,7 @@ type DataprocMetastoreService interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -155,7 +155,7 @@ type DataprocMetastoreService interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -193,17 +193,17 @@ type DataprocMetastoreService interface {
 	ResetTelemetryConfig()
 	ResetTier()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataprocMetastoreService
@@ -231,8 +231,8 @@ func (j *jsiiProxy_DataprocMetastoreService) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_DataprocMetastoreService) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataprocMetastoreService) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -241,8 +241,8 @@ func (j *jsiiProxy_DataprocMetastoreService) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataprocMetastoreService) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataprocMetastoreService) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -251,8 +251,8 @@ func (j *jsiiProxy_DataprocMetastoreService) ConstructNodeMetadata() *map[string
 	return returns
 }
 
-func (j *jsiiProxy_DataprocMetastoreService) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataprocMetastoreService) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -291,8 +291,8 @@ func (j *jsiiProxy_DataprocMetastoreService) DatabaseTypeInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataprocMetastoreService) DeletionProtection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataprocMetastoreService) DeletionProtection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"deletionProtection",
@@ -301,8 +301,8 @@ func (j *jsiiProxy_DataprocMetastoreService) DeletionProtection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataprocMetastoreService) DeletionProtectionInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataprocMetastoreService) DeletionProtectionInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"deletionProtectionInput",
@@ -631,8 +631,8 @@ func (j *jsiiProxy_DataprocMetastoreService) Provider() cdktf.TerraformProvider 
 	return returns
 }
 
-func (j *jsiiProxy_DataprocMetastoreService) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_DataprocMetastoreService) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -641,8 +641,8 @@ func (j *jsiiProxy_DataprocMetastoreService) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataprocMetastoreService) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataprocMetastoreService) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -791,8 +791,8 @@ func (j *jsiiProxy_DataprocMetastoreService) TerraformLabels() cdktf.StringMap {
 	return returns
 }
 
-func (j *jsiiProxy_DataprocMetastoreService) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataprocMetastoreService) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -841,8 +841,8 @@ func (j *jsiiProxy_DataprocMetastoreService) Timeouts() DataprocMetastoreService
 	return returns
 }
 
-func (j *jsiiProxy_DataprocMetastoreService) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataprocMetastoreService) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -871,7 +871,6 @@ func (j *jsiiProxy_DataprocMetastoreService) UpdateTime() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/dataproc_metastore_service google_dataproc_metastore_service} Resource.
 func NewDataprocMetastoreService(scope constructs.Construct, id *string, config *DataprocMetastoreServiceConfig) DataprocMetastoreService {
 	_init_.Initialize()
@@ -883,7 +882,7 @@ func NewDataprocMetastoreService(scope constructs.Construct, id *string, config 
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataprocMetastoreService.DataprocMetastoreService",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -896,12 +895,12 @@ func NewDataprocMetastoreService_Override(d DataprocMetastoreService, scope cons
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataprocMetastoreService.DataprocMetastoreService",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataprocMetastoreService)SetConnection(val interface{}) {
+func (j *jsiiProxy_DataprocMetastoreService) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -912,7 +911,7 @@ func (j *jsiiProxy_DataprocMetastoreService)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataprocMetastoreService)SetCount(val interface{}) {
+func (j *jsiiProxy_DataprocMetastoreService) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -923,7 +922,7 @@ func (j *jsiiProxy_DataprocMetastoreService)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataprocMetastoreService)SetDatabaseType(val *string) {
+func (j *jsiiProxy_DataprocMetastoreService) SetDatabaseType(val *string) {
 	if err := j.validateSetDatabaseTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -934,7 +933,7 @@ func (j *jsiiProxy_DataprocMetastoreService)SetDatabaseType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataprocMetastoreService)SetDeletionProtection(val interface{}) {
+func (j *jsiiProxy_DataprocMetastoreService) SetDeletionProtection(val any) {
 	if err := j.validateSetDeletionProtectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -945,7 +944,7 @@ func (j *jsiiProxy_DataprocMetastoreService)SetDeletionProtection(val interface{
 	)
 }
 
-func (j *jsiiProxy_DataprocMetastoreService)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataprocMetastoreService) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -953,7 +952,7 @@ func (j *jsiiProxy_DataprocMetastoreService)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataprocMetastoreService)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataprocMetastoreService) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -961,7 +960,7 @@ func (j *jsiiProxy_DataprocMetastoreService)SetForEach(val cdktf.ITerraformItera
 	)
 }
 
-func (j *jsiiProxy_DataprocMetastoreService)SetId(val *string) {
+func (j *jsiiProxy_DataprocMetastoreService) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -972,7 +971,7 @@ func (j *jsiiProxy_DataprocMetastoreService)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataprocMetastoreService)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_DataprocMetastoreService) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -983,7 +982,7 @@ func (j *jsiiProxy_DataprocMetastoreService)SetLabels(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataprocMetastoreService)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataprocMetastoreService) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -994,7 +993,7 @@ func (j *jsiiProxy_DataprocMetastoreService)SetLifecycle(val *cdktf.TerraformRes
 	)
 }
 
-func (j *jsiiProxy_DataprocMetastoreService)SetLocation(val *string) {
+func (j *jsiiProxy_DataprocMetastoreService) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -1005,7 +1004,7 @@ func (j *jsiiProxy_DataprocMetastoreService)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataprocMetastoreService)SetNetwork(val *string) {
+func (j *jsiiProxy_DataprocMetastoreService) SetNetwork(val *string) {
 	if err := j.validateSetNetworkParameters(val); err != nil {
 		panic(err)
 	}
@@ -1016,7 +1015,7 @@ func (j *jsiiProxy_DataprocMetastoreService)SetNetwork(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataprocMetastoreService)SetPort(val *float64) {
+func (j *jsiiProxy_DataprocMetastoreService) SetPort(val *float64) {
 	if err := j.validateSetPortParameters(val); err != nil {
 		panic(err)
 	}
@@ -1027,7 +1026,7 @@ func (j *jsiiProxy_DataprocMetastoreService)SetPort(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DataprocMetastoreService)SetProject(val *string) {
+func (j *jsiiProxy_DataprocMetastoreService) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -1038,7 +1037,7 @@ func (j *jsiiProxy_DataprocMetastoreService)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataprocMetastoreService)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataprocMetastoreService) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1046,7 +1045,7 @@ func (j *jsiiProxy_DataprocMetastoreService)SetProvider(val cdktf.TerraformProvi
 	)
 }
 
-func (j *jsiiProxy_DataprocMetastoreService)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_DataprocMetastoreService) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -1057,7 +1056,7 @@ func (j *jsiiProxy_DataprocMetastoreService)SetProvisioners(val *[]interface{}) 
 	)
 }
 
-func (j *jsiiProxy_DataprocMetastoreService)SetReleaseChannel(val *string) {
+func (j *jsiiProxy_DataprocMetastoreService) SetReleaseChannel(val *string) {
 	if err := j.validateSetReleaseChannelParameters(val); err != nil {
 		panic(err)
 	}
@@ -1068,7 +1067,7 @@ func (j *jsiiProxy_DataprocMetastoreService)SetReleaseChannel(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataprocMetastoreService)SetServiceId(val *string) {
+func (j *jsiiProxy_DataprocMetastoreService) SetServiceId(val *string) {
 	if err := j.validateSetServiceIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1079,7 +1078,7 @@ func (j *jsiiProxy_DataprocMetastoreService)SetServiceId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataprocMetastoreService)SetTier(val *string) {
+func (j *jsiiProxy_DataprocMetastoreService) SetTier(val *string) {
 	if err := j.validateSetTierParameters(val); err != nil {
 		panic(err)
 	}
@@ -1102,7 +1101,7 @@ func DataprocMetastoreService_GenerateConfigForImport(scope constructs.Construct
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataprocMetastoreService.DataprocMetastoreService",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -1126,7 +1125,7 @@ func DataprocMetastoreService_GenerateConfigForImport(scope constructs.Construct
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataprocMetastoreService_IsConstruct(x interface{}) *bool {
+func DataprocMetastoreService_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataprocMetastoreService_IsConstructParameters(x); err != nil {
@@ -1137,7 +1136,7 @@ func DataprocMetastoreService_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataprocMetastoreService.DataprocMetastoreService",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1145,7 +1144,7 @@ func DataprocMetastoreService_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataprocMetastoreService_IsTerraformElement(x interface{}) *bool {
+func DataprocMetastoreService_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataprocMetastoreService_IsTerraformElementParameters(x); err != nil {
@@ -1156,7 +1155,7 @@ func DataprocMetastoreService_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataprocMetastoreService.DataprocMetastoreService",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1164,7 +1163,7 @@ func DataprocMetastoreService_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func DataprocMetastoreService_IsTerraformResource(x interface{}) *bool {
+func DataprocMetastoreService_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataprocMetastoreService_IsTerraformResourceParameters(x); err != nil {
@@ -1175,7 +1174,7 @@ func DataprocMetastoreService_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataprocMetastoreService.DataprocMetastoreService",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1200,31 +1199,31 @@ func (d *jsiiProxy_DataprocMetastoreService) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (d *jsiiProxy_DataprocMetastoreService) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataprocMetastoreService) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataprocMetastoreService) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataprocMetastoreService) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1240,7 +1239,7 @@ func (d *jsiiProxy_DataprocMetastoreService) GetBooleanAttribute(terraformAttrib
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1256,7 +1255,7 @@ func (d *jsiiProxy_DataprocMetastoreService) GetBooleanMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1272,7 +1271,7 @@ func (d *jsiiProxy_DataprocMetastoreService) GetListAttribute(terraformAttribute
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1288,7 +1287,7 @@ func (d *jsiiProxy_DataprocMetastoreService) GetNumberAttribute(terraformAttribu
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1304,7 +1303,7 @@ func (d *jsiiProxy_DataprocMetastoreService) GetNumberListAttribute(terraformAtt
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1320,7 +1319,7 @@ func (d *jsiiProxy_DataprocMetastoreService) GetNumberMapAttribute(terraformAttr
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1336,7 +1335,7 @@ func (d *jsiiProxy_DataprocMetastoreService) GetStringAttribute(terraformAttribu
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1352,15 +1351,15 @@ func (d *jsiiProxy_DataprocMetastoreService) GetStringMapAttribute(terraformAttr
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DataprocMetastoreService) HasResourceMove() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataprocMetastoreService) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1379,7 +1378,7 @@ func (d *jsiiProxy_DataprocMetastoreService) ImportFrom(id *string, provider cdk
 	_jsii_.InvokeVoid(
 		d,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1392,7 +1391,7 @@ func (d *jsiiProxy_DataprocMetastoreService) InterpolationForAttribute(terraform
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1406,18 +1405,18 @@ func (d *jsiiProxy_DataprocMetastoreService) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (d *jsiiProxy_DataprocMetastoreService) MoveTo(moveTarget *string, index interface{}) {
+func (d *jsiiProxy_DataprocMetastoreService) MoveTo(moveTarget *string, index any) {
 	if err := d.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1428,7 +1427,7 @@ func (d *jsiiProxy_DataprocMetastoreService) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1439,7 +1438,7 @@ func (d *jsiiProxy_DataprocMetastoreService) OverrideLogicalId(newLogicalId *str
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1450,7 +1449,7 @@ func (d *jsiiProxy_DataprocMetastoreService) PutEncryptionConfig(value *Dataproc
 	_jsii_.InvokeVoid(
 		d,
 		"putEncryptionConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1461,7 +1460,7 @@ func (d *jsiiProxy_DataprocMetastoreService) PutHiveMetastoreConfig(value *Datap
 	_jsii_.InvokeVoid(
 		d,
 		"putHiveMetastoreConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1472,7 +1471,7 @@ func (d *jsiiProxy_DataprocMetastoreService) PutMaintenanceWindow(value *Datapro
 	_jsii_.InvokeVoid(
 		d,
 		"putMaintenanceWindow",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1483,7 +1482,7 @@ func (d *jsiiProxy_DataprocMetastoreService) PutMetadataIntegration(value *Datap
 	_jsii_.InvokeVoid(
 		d,
 		"putMetadataIntegration",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1494,7 +1493,7 @@ func (d *jsiiProxy_DataprocMetastoreService) PutNetworkConfig(value *DataprocMet
 	_jsii_.InvokeVoid(
 		d,
 		"putNetworkConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1505,7 +1504,7 @@ func (d *jsiiProxy_DataprocMetastoreService) PutScalingConfig(value *DataprocMet
 	_jsii_.InvokeVoid(
 		d,
 		"putScalingConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1516,7 +1515,7 @@ func (d *jsiiProxy_DataprocMetastoreService) PutScheduledBackup(value *DataprocM
 	_jsii_.InvokeVoid(
 		d,
 		"putScheduledBackup",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1527,7 +1526,7 @@ func (d *jsiiProxy_DataprocMetastoreService) PutTelemetryConfig(value *DataprocM
 	_jsii_.InvokeVoid(
 		d,
 		"putTelemetryConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1538,7 +1537,7 @@ func (d *jsiiProxy_DataprocMetastoreService) PutTimeouts(value *DataprocMetastor
 	_jsii_.InvokeVoid(
 		d,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1702,8 +1701,8 @@ func (d *jsiiProxy_DataprocMetastoreService) ResetTimeouts() {
 	)
 }
 
-func (d *jsiiProxy_DataprocMetastoreService) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataprocMetastoreService) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1715,8 +1714,8 @@ func (d *jsiiProxy_DataprocMetastoreService) SynthesizeAttributes() *map[string]
 	return returns
 }
 
-func (d *jsiiProxy_DataprocMetastoreService) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataprocMetastoreService) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1728,8 +1727,8 @@ func (d *jsiiProxy_DataprocMetastoreService) SynthesizeHclAttributes() *map[stri
 	return returns
 }
 
-func (d *jsiiProxy_DataprocMetastoreService) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataprocMetastoreService) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1741,8 +1740,8 @@ func (d *jsiiProxy_DataprocMetastoreService) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataprocMetastoreService) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataprocMetastoreService) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1767,8 +1766,8 @@ func (d *jsiiProxy_DataprocMetastoreService) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataprocMetastoreService) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataprocMetastoreService) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1779,4 +1778,3 @@ func (d *jsiiProxy_DataprocMetastoreService) ToTerraform() interface{} {
 
 	return returns
 }
-

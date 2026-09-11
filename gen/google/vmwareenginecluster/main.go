@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.vmwareengineCluster.VmwareengineCluster",
-		reflect.TypeOf((*VmwareengineCluster)(nil)).Elem(),
+		reflect.TypeFor[VmwareengineCluster](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -75,7 +75,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "uid", GoGetter: "Uid"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VmwareengineCluster{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -83,19 +83,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.vmwareengineCluster.VmwareengineClusterAutoscalingSettings",
-		reflect.TypeOf((*VmwareengineClusterAutoscalingSettings)(nil)).Elem(),
+		reflect.TypeFor[VmwareengineClusterAutoscalingSettings](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.vmwareengineCluster.VmwareengineClusterAutoscalingSettingsAutoscalingPolicies",
-		reflect.TypeOf((*VmwareengineClusterAutoscalingSettingsAutoscalingPolicies)(nil)).Elem(),
+		reflect.TypeFor[VmwareengineClusterAutoscalingSettingsAutoscalingPolicies](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.vmwareengineCluster.VmwareengineClusterAutoscalingSettingsAutoscalingPoliciesConsumedMemoryThresholds",
-		reflect.TypeOf((*VmwareengineClusterAutoscalingSettingsAutoscalingPoliciesConsumedMemoryThresholds)(nil)).Elem(),
+		reflect.TypeFor[VmwareengineClusterAutoscalingSettingsAutoscalingPoliciesConsumedMemoryThresholds](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.vmwareengineCluster.VmwareengineClusterAutoscalingSettingsAutoscalingPoliciesConsumedMemoryThresholdsOutputReference",
-		reflect.TypeOf((*VmwareengineClusterAutoscalingSettingsAutoscalingPoliciesConsumedMemoryThresholdsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[VmwareengineClusterAutoscalingSettingsAutoscalingPoliciesConsumedMemoryThresholdsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -123,7 +123,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VmwareengineClusterAutoscalingSettingsAutoscalingPoliciesConsumedMemoryThresholdsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -131,11 +131,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.vmwareengineCluster.VmwareengineClusterAutoscalingSettingsAutoscalingPoliciesCpuThresholds",
-		reflect.TypeOf((*VmwareengineClusterAutoscalingSettingsAutoscalingPoliciesCpuThresholds)(nil)).Elem(),
+		reflect.TypeFor[VmwareengineClusterAutoscalingSettingsAutoscalingPoliciesCpuThresholds](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.vmwareengineCluster.VmwareengineClusterAutoscalingSettingsAutoscalingPoliciesCpuThresholdsOutputReference",
-		reflect.TypeOf((*VmwareengineClusterAutoscalingSettingsAutoscalingPoliciesCpuThresholdsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[VmwareengineClusterAutoscalingSettingsAutoscalingPoliciesCpuThresholdsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -163,7 +163,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VmwareengineClusterAutoscalingSettingsAutoscalingPoliciesCpuThresholdsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -171,7 +171,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.vmwareengineCluster.VmwareengineClusterAutoscalingSettingsAutoscalingPoliciesList",
-		reflect.TypeOf((*VmwareengineClusterAutoscalingSettingsAutoscalingPoliciesList)(nil)).Elem(),
+		reflect.TypeFor[VmwareengineClusterAutoscalingSettingsAutoscalingPoliciesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -185,7 +185,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VmwareengineClusterAutoscalingSettingsAutoscalingPoliciesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -193,7 +193,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.vmwareengineCluster.VmwareengineClusterAutoscalingSettingsAutoscalingPoliciesOutputReference",
-		reflect.TypeOf((*VmwareengineClusterAutoscalingSettingsAutoscalingPoliciesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[VmwareengineClusterAutoscalingSettingsAutoscalingPoliciesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "autoscalePolicyId", GoGetter: "AutoscalePolicyId"},
 			_jsii_.MemberProperty{JsiiProperty: "autoscalePolicyIdInput", GoGetter: "AutoscalePolicyIdInput"},
@@ -235,7 +235,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VmwareengineClusterAutoscalingSettingsAutoscalingPoliciesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -243,11 +243,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.vmwareengineCluster.VmwareengineClusterAutoscalingSettingsAutoscalingPoliciesStorageThresholds",
-		reflect.TypeOf((*VmwareengineClusterAutoscalingSettingsAutoscalingPoliciesStorageThresholds)(nil)).Elem(),
+		reflect.TypeFor[VmwareengineClusterAutoscalingSettingsAutoscalingPoliciesStorageThresholds](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.vmwareengineCluster.VmwareengineClusterAutoscalingSettingsAutoscalingPoliciesStorageThresholdsOutputReference",
-		reflect.TypeOf((*VmwareengineClusterAutoscalingSettingsAutoscalingPoliciesStorageThresholdsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[VmwareengineClusterAutoscalingSettingsAutoscalingPoliciesStorageThresholdsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -275,7 +275,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VmwareengineClusterAutoscalingSettingsAutoscalingPoliciesStorageThresholdsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -283,7 +283,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.vmwareengineCluster.VmwareengineClusterAutoscalingSettingsOutputReference",
-		reflect.TypeOf((*VmwareengineClusterAutoscalingSettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[VmwareengineClusterAutoscalingSettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "autoscalingPolicies", GoGetter: "AutoscalingPolicies"},
 			_jsii_.MemberProperty{JsiiProperty: "autoscalingPoliciesInput", GoGetter: "AutoscalingPoliciesInput"},
@@ -319,7 +319,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VmwareengineClusterAutoscalingSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -327,15 +327,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.vmwareengineCluster.VmwareengineClusterConfig",
-		reflect.TypeOf((*VmwareengineClusterConfig)(nil)).Elem(),
+		reflect.TypeFor[VmwareengineClusterConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.vmwareengineCluster.VmwareengineClusterNodeTypeConfigs",
-		reflect.TypeOf((*VmwareengineClusterNodeTypeConfigs)(nil)).Elem(),
+		reflect.TypeFor[VmwareengineClusterNodeTypeConfigs](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.vmwareengineCluster.VmwareengineClusterNodeTypeConfigsList",
-		reflect.TypeOf((*VmwareengineClusterNodeTypeConfigsList)(nil)).Elem(),
+		reflect.TypeFor[VmwareengineClusterNodeTypeConfigsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -349,7 +349,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VmwareengineClusterNodeTypeConfigsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -357,7 +357,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.vmwareengineCluster.VmwareengineClusterNodeTypeConfigsOutputReference",
-		reflect.TypeOf((*VmwareengineClusterNodeTypeConfigsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[VmwareengineClusterNodeTypeConfigsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -388,7 +388,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VmwareengineClusterNodeTypeConfigsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -396,11 +396,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.vmwareengineCluster.VmwareengineClusterTimeouts",
-		reflect.TypeOf((*VmwareengineClusterTimeouts)(nil)).Elem(),
+		reflect.TypeFor[VmwareengineClusterTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.vmwareengineCluster.VmwareengineClusterTimeoutsOutputReference",
-		reflect.TypeOf((*VmwareengineClusterTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[VmwareengineClusterTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -433,7 +433,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VmwareengineClusterTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

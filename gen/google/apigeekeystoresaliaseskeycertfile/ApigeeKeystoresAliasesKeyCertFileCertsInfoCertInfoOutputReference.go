@@ -15,9 +15,9 @@ type ApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfoOutputReference interface
 	BasicConstraintsInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -33,8 +33,8 @@ type ApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfoOutputReference interface
 	ExpiryDateInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Issuer() *string
 	SetIssuer(val *string)
 	IssuerInput() *string
@@ -73,7 +73,7 @@ type ApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfoOutputReference interface
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -107,7 +107,7 @@ type ApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfoOutputReference interface
 	ResetVersion()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -140,8 +140,8 @@ func (j *jsiiProxy_ApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfoOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_ApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfoOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfoOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -200,8 +200,8 @@ func (j *jsiiProxy_ApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfoOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_ApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfoOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfoOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -410,7 +410,6 @@ func (j *jsiiProxy_ApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfoOutputRefer
 	return returns
 }
 
-
 func NewApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfoOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfoOutputReference {
 	_init_.Initialize()
 
@@ -421,7 +420,7 @@ func NewApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfoOutputReference(terraf
 
 	_jsii_.Create(
 		"@cdktf/provider-google.apigeeKeystoresAliasesKeyCertFile.ApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfoOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -433,12 +432,12 @@ func NewApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfoOutputReference_Overri
 
 	_jsii_.Create(
 		"@cdktf/provider-google.apigeeKeystoresAliasesKeyCertFile.ApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfoOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)
 }
 
-func (j *jsiiProxy_ApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfoOutputReference)SetBasicConstraints(val *string) {
+func (j *jsiiProxy_ApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfoOutputReference) SetBasicConstraints(val *string) {
 	if err := j.validateSetBasicConstraintsParameters(val); err != nil {
 		panic(err)
 	}
@@ -449,7 +448,7 @@ func (j *jsiiProxy_ApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfoOutputRefer
 	)
 }
 
-func (j *jsiiProxy_ApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfoOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfoOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -460,7 +459,7 @@ func (j *jsiiProxy_ApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfoOutputRefer
 	)
 }
 
-func (j *jsiiProxy_ApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfoOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfoOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -471,7 +470,7 @@ func (j *jsiiProxy_ApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfoOutputRefer
 	)
 }
 
-func (j *jsiiProxy_ApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfoOutputReference)SetExpiryDate(val *string) {
+func (j *jsiiProxy_ApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfoOutputReference) SetExpiryDate(val *string) {
 	if err := j.validateSetExpiryDateParameters(val); err != nil {
 		panic(err)
 	}
@@ -482,7 +481,7 @@ func (j *jsiiProxy_ApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfoOutputRefer
 	)
 }
 
-func (j *jsiiProxy_ApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfoOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfoOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -493,7 +492,7 @@ func (j *jsiiProxy_ApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfoOutputRefer
 	)
 }
 
-func (j *jsiiProxy_ApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfoOutputReference)SetIssuer(val *string) {
+func (j *jsiiProxy_ApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfoOutputReference) SetIssuer(val *string) {
 	if err := j.validateSetIssuerParameters(val); err != nil {
 		panic(err)
 	}
@@ -504,7 +503,7 @@ func (j *jsiiProxy_ApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfoOutputRefer
 	)
 }
 
-func (j *jsiiProxy_ApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfoOutputReference)SetIsValid(val *string) {
+func (j *jsiiProxy_ApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfoOutputReference) SetIsValid(val *string) {
 	if err := j.validateSetIsValidParameters(val); err != nil {
 		panic(err)
 	}
@@ -515,7 +514,7 @@ func (j *jsiiProxy_ApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfoOutputRefer
 	)
 }
 
-func (j *jsiiProxy_ApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfoOutputReference)SetPublicKey(val *string) {
+func (j *jsiiProxy_ApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfoOutputReference) SetPublicKey(val *string) {
 	if err := j.validateSetPublicKeyParameters(val); err != nil {
 		panic(err)
 	}
@@ -526,7 +525,7 @@ func (j *jsiiProxy_ApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfoOutputRefer
 	)
 }
 
-func (j *jsiiProxy_ApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfoOutputReference)SetSerialNumber(val *string) {
+func (j *jsiiProxy_ApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfoOutputReference) SetSerialNumber(val *string) {
 	if err := j.validateSetSerialNumberParameters(val); err != nil {
 		panic(err)
 	}
@@ -537,7 +536,7 @@ func (j *jsiiProxy_ApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfoOutputRefer
 	)
 }
 
-func (j *jsiiProxy_ApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfoOutputReference)SetSigAlgName(val *string) {
+func (j *jsiiProxy_ApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfoOutputReference) SetSigAlgName(val *string) {
 	if err := j.validateSetSigAlgNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -548,7 +547,7 @@ func (j *jsiiProxy_ApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfoOutputRefer
 	)
 }
 
-func (j *jsiiProxy_ApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfoOutputReference)SetSubject(val *string) {
+func (j *jsiiProxy_ApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfoOutputReference) SetSubject(val *string) {
 	if err := j.validateSetSubjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -559,7 +558,7 @@ func (j *jsiiProxy_ApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfoOutputRefer
 	)
 }
 
-func (j *jsiiProxy_ApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfoOutputReference)SetSubjectAlternativeNames(val *[]*string) {
+func (j *jsiiProxy_ApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfoOutputReference) SetSubjectAlternativeNames(val *[]*string) {
 	if err := j.validateSetSubjectAlternativeNamesParameters(val); err != nil {
 		panic(err)
 	}
@@ -570,7 +569,7 @@ func (j *jsiiProxy_ApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfoOutputRefer
 	)
 }
 
-func (j *jsiiProxy_ApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfoOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfoOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -581,7 +580,7 @@ func (j *jsiiProxy_ApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfoOutputRefer
 	)
 }
 
-func (j *jsiiProxy_ApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfoOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfoOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -592,7 +591,7 @@ func (j *jsiiProxy_ApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfoOutputRefer
 	)
 }
 
-func (j *jsiiProxy_ApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfoOutputReference)SetValidFrom(val *string) {
+func (j *jsiiProxy_ApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfoOutputReference) SetValidFrom(val *string) {
 	if err := j.validateSetValidFromParameters(val); err != nil {
 		panic(err)
 	}
@@ -603,7 +602,7 @@ func (j *jsiiProxy_ApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfoOutputRefer
 	)
 }
 
-func (j *jsiiProxy_ApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfoOutputReference)SetVersion(val *float64) {
+func (j *jsiiProxy_ApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfoOutputReference) SetVersion(val *float64) {
 	if err := j.validateSetVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -627,16 +626,16 @@ func (a *jsiiProxy_ApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfoOutputRefer
 	return returns
 }
 
-func (a *jsiiProxy_ApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfoOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_ApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfoOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -652,7 +651,7 @@ func (a *jsiiProxy_ApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfoOutputRefer
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -668,7 +667,7 @@ func (a *jsiiProxy_ApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfoOutputRefer
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -684,7 +683,7 @@ func (a *jsiiProxy_ApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfoOutputRefer
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -700,7 +699,7 @@ func (a *jsiiProxy_ApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfoOutputRefer
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -716,7 +715,7 @@ func (a *jsiiProxy_ApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfoOutputRefer
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -732,7 +731,7 @@ func (a *jsiiProxy_ApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfoOutputRefer
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -748,7 +747,7 @@ func (a *jsiiProxy_ApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfoOutputRefer
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -764,7 +763,7 @@ func (a *jsiiProxy_ApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfoOutputRefer
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -793,7 +792,7 @@ func (a *jsiiProxy_ApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfoOutputRefer
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -888,16 +887,16 @@ func (a *jsiiProxy_ApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfoOutputRefer
 	)
 }
 
-func (a *jsiiProxy_ApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfoOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (a *jsiiProxy_ApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfoOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := a.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -916,4 +915,3 @@ func (a *jsiiProxy_ApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfoOutputRefer
 
 	return returns
 }
-

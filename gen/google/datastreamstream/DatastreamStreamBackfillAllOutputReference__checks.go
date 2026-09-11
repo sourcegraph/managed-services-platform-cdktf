@@ -153,7 +153,7 @@ func (d *jsiiProxy_DatastreamStreamBackfillAllOutputReference) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_DatastreamStreamBackfillAllOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DatastreamStreamBackfillAllOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -253,4 +253,3 @@ func validateNewDatastreamStreamBackfillAllOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

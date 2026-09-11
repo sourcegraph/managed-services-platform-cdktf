@@ -1,6 +1,5 @@
 package computeregionurlmap
 
-
 type ComputeRegionUrlMapPathMatcher struct {
 	// The name to which this PathMatcher is referred by the HostRule.
 	//
@@ -29,10 +28,9 @@ type ComputeRegionUrlMapPathMatcher struct {
 	// path_rule block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/compute_region_url_map#path_rule ComputeRegionUrlMap#path_rule}
-	PathRule interface{} `field:"optional" json:"pathRule" yaml:"pathRule"`
+	PathRule any `field:"optional" json:"pathRule" yaml:"pathRule"`
 	// route_rules block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/compute_region_url_map#route_rules ComputeRegionUrlMap#route_rules}
-	RouteRules interface{} `field:"optional" json:"routeRules" yaml:"routeRules"`
+	RouteRules any `field:"optional" json:"routeRules" yaml:"routeRules"`
 }
-

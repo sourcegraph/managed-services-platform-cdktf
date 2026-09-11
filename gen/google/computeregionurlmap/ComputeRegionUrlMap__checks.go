@@ -19,7 +19,7 @@ func (c *jsiiProxy_ComputeRegionUrlMap) validateAddMoveTargetParameters(moveTarg
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionUrlMap) validateAddOverrideParameters(path *string, value interface{}) error {
+func (c *jsiiProxy_ComputeRegionUrlMap) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (c *jsiiProxy_ComputeRegionUrlMap) validateMoveFromIdParameters(id *string)
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionUrlMap) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (c *jsiiProxy_ComputeRegionUrlMap) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -226,7 +226,7 @@ func (c *jsiiProxy_ComputeRegionUrlMap) validatePutDefaultUrlRedirectParameters(
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionUrlMap) validatePutHostRuleParameters(value interface{}) error {
+func (c *jsiiProxy_ComputeRegionUrlMap) validatePutHostRuleParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -257,7 +257,7 @@ func (c *jsiiProxy_ComputeRegionUrlMap) validatePutHostRuleParameters(value inte
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionUrlMap) validatePutPathMatcherParameters(value interface{}) error {
+func (c *jsiiProxy_ComputeRegionUrlMap) validatePutPathMatcherParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -288,7 +288,7 @@ func (c *jsiiProxy_ComputeRegionUrlMap) validatePutPathMatcherParameters(value i
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionUrlMap) validatePutTestParameters(value interface{}) error {
+func (c *jsiiProxy_ComputeRegionUrlMap) validatePutTestParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -346,7 +346,7 @@ func validateComputeRegionUrlMap_GenerateConfigForImportParameters(scope constru
 	return nil
 }
 
-func validateComputeRegionUrlMap_IsConstructParameters(x interface{}) error {
+func validateComputeRegionUrlMap_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -354,7 +354,7 @@ func validateComputeRegionUrlMap_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateComputeRegionUrlMap_IsTerraformElementParameters(x interface{}) error {
+func validateComputeRegionUrlMap_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -362,7 +362,7 @@ func validateComputeRegionUrlMap_IsTerraformElementParameters(x interface{}) err
 	return nil
 }
 
-func validateComputeRegionUrlMap_IsTerraformResourceParameters(x interface{}) error {
+func validateComputeRegionUrlMap_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -370,7 +370,7 @@ func validateComputeRegionUrlMap_IsTerraformResourceParameters(x interface{}) er
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionUrlMap) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionUrlMap) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -403,7 +403,7 @@ func (j *jsiiProxy_ComputeRegionUrlMap) validateSetConnectionParameters(val inte
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionUrlMap) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionUrlMap) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -508,7 +508,7 @@ func (j *jsiiProxy_ComputeRegionUrlMap) validateSetProjectParameters(val *string
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionUrlMap) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ComputeRegionUrlMap) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -580,4 +580,3 @@ func validateNewComputeRegionUrlMapParameters(scope constructs.Construct, id *st
 
 	return nil
 }
-

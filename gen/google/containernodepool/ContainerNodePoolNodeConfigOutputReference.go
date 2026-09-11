@@ -17,9 +17,9 @@ type ContainerNodePoolNodeConfigOutputReference interface {
 	BootDiskKmsKeyInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -41,22 +41,22 @@ type ContainerNodePoolNodeConfigOutputReference interface {
 	SetDiskType(val *string)
 	DiskTypeInput() *string
 	EffectiveTaints() ContainerNodePoolNodeConfigEffectiveTaintsList
-	EnableConfidentialStorage() interface{}
-	SetEnableConfidentialStorage(val interface{})
-	EnableConfidentialStorageInput() interface{}
+	EnableConfidentialStorage() any
+	SetEnableConfidentialStorage(val any)
+	EnableConfidentialStorageInput() any
 	EphemeralStorageLocalSsdConfig() ContainerNodePoolNodeConfigEphemeralStorageLocalSsdConfigOutputReference
 	EphemeralStorageLocalSsdConfigInput() *ContainerNodePoolNodeConfigEphemeralStorageLocalSsdConfig
 	FastSocket() ContainerNodePoolNodeConfigFastSocketOutputReference
 	FastSocketInput() *ContainerNodePoolNodeConfigFastSocket
-	FlexStart() interface{}
-	SetFlexStart(val interface{})
-	FlexStartInput() interface{}
+	FlexStart() any
+	SetFlexStart(val any)
+	FlexStartInput() any
 	// Experimental.
 	Fqn() *string
 	GcfsConfig() ContainerNodePoolNodeConfigGcfsConfigOutputReference
 	GcfsConfigInput() *ContainerNodePoolNodeConfigGcfsConfig
 	GuestAccelerator() ContainerNodePoolNodeConfigGuestAcceleratorList
-	GuestAcceleratorInput() interface{}
+	GuestAcceleratorInput() any
 	Gvnic() ContainerNodePoolNodeConfigGvnicOutputReference
 	GvnicInput() *ContainerNodePoolNodeConfigGvnic
 	HostMaintenancePolicy() ContainerNodePoolNodeConfigHostMaintenancePolicyOutputReference
@@ -102,9 +102,9 @@ type ContainerNodePoolNodeConfigOutputReference interface {
 	OauthScopes() *[]*string
 	SetOauthScopes(val *[]*string)
 	OauthScopesInput() *[]*string
-	Preemptible() interface{}
-	SetPreemptible(val interface{})
-	PreemptibleInput() interface{}
+	Preemptible() any
+	SetPreemptible(val any)
+	PreemptibleInput() any
 	ReservationAffinity() ContainerNodePoolNodeConfigReservationAffinityOutputReference
 	ReservationAffinityInput() *ContainerNodePoolNodeConfigReservationAffinity
 	ResourceLabels() *map[string]*string
@@ -114,7 +114,7 @@ type ContainerNodePoolNodeConfigOutputReference interface {
 	SetResourceManagerTags(val *map[string]*string)
 	ResourceManagerTagsInput() *map[string]*string
 	SecondaryBootDisks() ContainerNodePoolNodeConfigSecondaryBootDisksList
-	SecondaryBootDisksInput() interface{}
+	SecondaryBootDisksInput() any
 	ServiceAccount() *string
 	SetServiceAccount(val *string)
 	ServiceAccountInput() *string
@@ -122,9 +122,9 @@ type ContainerNodePoolNodeConfigOutputReference interface {
 	ShieldedInstanceConfigInput() *ContainerNodePoolNodeConfigShieldedInstanceConfig
 	SoleTenantConfig() ContainerNodePoolNodeConfigSoleTenantConfigOutputReference
 	SoleTenantConfigInput() *ContainerNodePoolNodeConfigSoleTenantConfig
-	Spot() interface{}
-	SetSpot(val interface{})
-	SpotInput() interface{}
+	Spot() any
+	SetSpot(val any)
+	SpotInput() any
 	StoragePools() *[]*string
 	SetStoragePools(val *[]*string)
 	StoragePoolsInput() *[]*string
@@ -132,7 +132,7 @@ type ContainerNodePoolNodeConfigOutputReference interface {
 	SetTags(val *[]*string)
 	TagsInput() *[]*string
 	Taint() ContainerNodePoolNodeConfigTaintList
-	TaintInput() interface{}
+	TaintInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -148,7 +148,7 @@ type ContainerNodePoolNodeConfigOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -175,17 +175,17 @@ type ContainerNodePoolNodeConfigOutputReference interface {
 	PutEphemeralStorageLocalSsdConfig(value *ContainerNodePoolNodeConfigEphemeralStorageLocalSsdConfig)
 	PutFastSocket(value *ContainerNodePoolNodeConfigFastSocket)
 	PutGcfsConfig(value *ContainerNodePoolNodeConfigGcfsConfig)
-	PutGuestAccelerator(value interface{})
+	PutGuestAccelerator(value any)
 	PutGvnic(value *ContainerNodePoolNodeConfigGvnic)
 	PutHostMaintenancePolicy(value *ContainerNodePoolNodeConfigHostMaintenancePolicy)
 	PutKubeletConfig(value *ContainerNodePoolNodeConfigKubeletConfig)
 	PutLinuxNodeConfig(value *ContainerNodePoolNodeConfigLinuxNodeConfig)
 	PutLocalNvmeSsdBlockConfig(value *ContainerNodePoolNodeConfigLocalNvmeSsdBlockConfig)
 	PutReservationAffinity(value *ContainerNodePoolNodeConfigReservationAffinity)
-	PutSecondaryBootDisks(value interface{})
+	PutSecondaryBootDisks(value any)
 	PutShieldedInstanceConfig(value *ContainerNodePoolNodeConfigShieldedInstanceConfig)
 	PutSoleTenantConfig(value *ContainerNodePoolNodeConfigSoleTenantConfig)
-	PutTaint(value interface{})
+	PutTaint(value any)
 	PutWindowsNodeConfig(value *ContainerNodePoolNodeConfigWindowsNodeConfig)
 	PutWorkloadMetadataConfig(value *ContainerNodePoolNodeConfigWorkloadMetadataConfig)
 	ResetAdvancedMachineFeatures()
@@ -232,7 +232,7 @@ type ContainerNodePoolNodeConfigOutputReference interface {
 	ResetWorkloadMetadataConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -285,8 +285,8 @@ func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) BootDiskKmsKeyInp
 	return returns
 }
 
-func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -405,8 +405,8 @@ func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) EffectiveTaints()
 	return returns
 }
 
-func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) EnableConfidentialStorage() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) EnableConfidentialStorage() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableConfidentialStorage",
@@ -415,8 +415,8 @@ func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) EnableConfidentia
 	return returns
 }
 
-func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) EnableConfidentialStorageInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) EnableConfidentialStorageInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableConfidentialStorageInput",
@@ -465,8 +465,8 @@ func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) FastSocketInput()
 	return returns
 }
 
-func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) FlexStart() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) FlexStart() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"flexStart",
@@ -475,8 +475,8 @@ func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) FlexStart() inter
 	return returns
 }
 
-func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) FlexStartInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) FlexStartInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"flexStartInput",
@@ -525,8 +525,8 @@ func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) GuestAccelerator(
 	return returns
 }
 
-func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) GuestAcceleratorInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) GuestAcceleratorInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"guestAcceleratorInput",
@@ -865,8 +865,8 @@ func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) OauthScopesInput(
 	return returns
 }
 
-func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) Preemptible() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) Preemptible() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"preemptible",
@@ -875,8 +875,8 @@ func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) Preemptible() int
 	return returns
 }
 
-func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) PreemptibleInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) PreemptibleInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"preemptibleInput",
@@ -955,8 +955,8 @@ func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) SecondaryBootDisk
 	return returns
 }
 
-func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) SecondaryBootDisksInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) SecondaryBootDisksInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"secondaryBootDisksInput",
@@ -1025,8 +1025,8 @@ func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) SoleTenantConfigI
 	return returns
 }
 
-func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) Spot() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) Spot() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"spot",
@@ -1035,8 +1035,8 @@ func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) Spot() interface{
 	return returns
 }
 
-func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) SpotInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) SpotInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"spotInput",
@@ -1095,8 +1095,8 @@ func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) Taint() Container
 	return returns
 }
 
-func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) TaintInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) TaintInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"taintInput",
@@ -1165,7 +1165,6 @@ func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) WorkloadMetadataC
 	return returns
 }
 
-
 func NewContainerNodePoolNodeConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ContainerNodePoolNodeConfigOutputReference {
 	_init_.Initialize()
 
@@ -1176,7 +1175,7 @@ func NewContainerNodePoolNodeConfigOutputReference(terraformResource cdktf.IInte
 
 	_jsii_.Create(
 		"@cdktf/provider-google.containerNodePool.ContainerNodePoolNodeConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -1188,12 +1187,12 @@ func NewContainerNodePoolNodeConfigOutputReference_Override(c ContainerNodePoolN
 
 	_jsii_.Create(
 		"@cdktf/provider-google.containerNodePool.ContainerNodePoolNodeConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference)SetBootDiskKmsKey(val *string) {
+func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) SetBootDiskKmsKey(val *string) {
 	if err := j.validateSetBootDiskKmsKeyParameters(val); err != nil {
 		panic(err)
 	}
@@ -1204,7 +1203,7 @@ func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference)SetBootDiskKmsKey(
 	)
 }
 
-func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -1215,7 +1214,7 @@ func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference)SetComplexObjectIn
 	)
 }
 
-func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -1226,7 +1225,7 @@ func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference)SetComplexObjectIs
 	)
 }
 
-func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference)SetDiskSizeGb(val *float64) {
+func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) SetDiskSizeGb(val *float64) {
 	if err := j.validateSetDiskSizeGbParameters(val); err != nil {
 		panic(err)
 	}
@@ -1237,7 +1236,7 @@ func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference)SetDiskSizeGb(val 
 	)
 }
 
-func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference)SetDiskType(val *string) {
+func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) SetDiskType(val *string) {
 	if err := j.validateSetDiskTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1248,7 +1247,7 @@ func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference)SetDiskType(val *s
 	)
 }
 
-func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference)SetEnableConfidentialStorage(val interface{}) {
+func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) SetEnableConfidentialStorage(val any) {
 	if err := j.validateSetEnableConfidentialStorageParameters(val); err != nil {
 		panic(err)
 	}
@@ -1259,7 +1258,7 @@ func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference)SetEnableConfident
 	)
 }
 
-func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference)SetFlexStart(val interface{}) {
+func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) SetFlexStart(val any) {
 	if err := j.validateSetFlexStartParameters(val); err != nil {
 		panic(err)
 	}
@@ -1270,7 +1269,7 @@ func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference)SetFlexStart(val i
 	)
 }
 
-func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference)SetImageType(val *string) {
+func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) SetImageType(val *string) {
 	if err := j.validateSetImageTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1281,7 +1280,7 @@ func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference)SetImageType(val *
 	)
 }
 
-func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference)SetInternalValue(val *ContainerNodePoolNodeConfig) {
+func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) SetInternalValue(val *ContainerNodePoolNodeConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -1292,7 +1291,7 @@ func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference)SetInternalValue(v
 	)
 }
 
-func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1303,7 +1302,7 @@ func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference)SetLabels(val *map
 	)
 }
 
-func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference)SetLocalSsdCount(val *float64) {
+func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) SetLocalSsdCount(val *float64) {
 	if err := j.validateSetLocalSsdCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -1314,7 +1313,7 @@ func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference)SetLocalSsdCount(v
 	)
 }
 
-func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference)SetLocalSsdEncryptionMode(val *string) {
+func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) SetLocalSsdEncryptionMode(val *string) {
 	if err := j.validateSetLocalSsdEncryptionModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1325,7 +1324,7 @@ func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference)SetLocalSsdEncrypt
 	)
 }
 
-func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference)SetLoggingVariant(val *string) {
+func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) SetLoggingVariant(val *string) {
 	if err := j.validateSetLoggingVariantParameters(val); err != nil {
 		panic(err)
 	}
@@ -1336,7 +1335,7 @@ func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference)SetLoggingVariant(
 	)
 }
 
-func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference)SetMachineType(val *string) {
+func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) SetMachineType(val *string) {
 	if err := j.validateSetMachineTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1347,7 +1346,7 @@ func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference)SetMachineType(val
 	)
 }
 
-func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference)SetMaxRunDuration(val *string) {
+func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) SetMaxRunDuration(val *string) {
 	if err := j.validateSetMaxRunDurationParameters(val); err != nil {
 		panic(err)
 	}
@@ -1358,7 +1357,7 @@ func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference)SetMaxRunDuration(
 	)
 }
 
-func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference)SetMetadata(val *map[string]*string) {
+func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) SetMetadata(val *map[string]*string) {
 	if err := j.validateSetMetadataParameters(val); err != nil {
 		panic(err)
 	}
@@ -1369,7 +1368,7 @@ func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference)SetMetadata(val *m
 	)
 }
 
-func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference)SetMinCpuPlatform(val *string) {
+func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) SetMinCpuPlatform(val *string) {
 	if err := j.validateSetMinCpuPlatformParameters(val); err != nil {
 		panic(err)
 	}
@@ -1380,7 +1379,7 @@ func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference)SetMinCpuPlatform(
 	)
 }
 
-func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference)SetNodeGroup(val *string) {
+func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) SetNodeGroup(val *string) {
 	if err := j.validateSetNodeGroupParameters(val); err != nil {
 		panic(err)
 	}
@@ -1391,7 +1390,7 @@ func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference)SetNodeGroup(val *
 	)
 }
 
-func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference)SetOauthScopes(val *[]*string) {
+func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) SetOauthScopes(val *[]*string) {
 	if err := j.validateSetOauthScopesParameters(val); err != nil {
 		panic(err)
 	}
@@ -1402,7 +1401,7 @@ func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference)SetOauthScopes(val
 	)
 }
 
-func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference)SetPreemptible(val interface{}) {
+func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) SetPreemptible(val any) {
 	if err := j.validateSetPreemptibleParameters(val); err != nil {
 		panic(err)
 	}
@@ -1413,7 +1412,7 @@ func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference)SetPreemptible(val
 	)
 }
 
-func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference)SetResourceLabels(val *map[string]*string) {
+func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) SetResourceLabels(val *map[string]*string) {
 	if err := j.validateSetResourceLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1424,7 +1423,7 @@ func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference)SetResourceLabels(
 	)
 }
 
-func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference)SetResourceManagerTags(val *map[string]*string) {
+func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) SetResourceManagerTags(val *map[string]*string) {
 	if err := j.validateSetResourceManagerTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1435,7 +1434,7 @@ func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference)SetResourceManager
 	)
 }
 
-func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference)SetServiceAccount(val *string) {
+func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) SetServiceAccount(val *string) {
 	if err := j.validateSetServiceAccountParameters(val); err != nil {
 		panic(err)
 	}
@@ -1446,7 +1445,7 @@ func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference)SetServiceAccount(
 	)
 }
 
-func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference)SetSpot(val interface{}) {
+func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) SetSpot(val any) {
 	if err := j.validateSetSpotParameters(val); err != nil {
 		panic(err)
 	}
@@ -1457,7 +1456,7 @@ func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference)SetSpot(val interf
 	)
 }
 
-func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference)SetStoragePools(val *[]*string) {
+func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) SetStoragePools(val *[]*string) {
 	if err := j.validateSetStoragePoolsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1468,7 +1467,7 @@ func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference)SetStoragePools(va
 	)
 }
 
-func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference)SetTags(val *[]*string) {
+func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) SetTags(val *[]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1479,7 +1478,7 @@ func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference)SetTags(val *[]*st
 	)
 }
 
-func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1490,7 +1489,7 @@ func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference)SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -1514,16 +1513,16 @@ func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) ComputeFqn() *str
 	return returns
 }
 
-func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1539,7 +1538,7 @@ func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) GetBooleanAttribu
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1555,7 +1554,7 @@ func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) GetBooleanMapAttr
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1571,7 +1570,7 @@ func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) GetListAttribute(
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1587,7 +1586,7 @@ func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) GetNumberAttribut
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1603,7 +1602,7 @@ func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) GetNumberListAttr
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1619,7 +1618,7 @@ func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) GetNumberMapAttri
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1635,7 +1634,7 @@ func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) GetStringAttribut
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1651,7 +1650,7 @@ func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) GetStringMapAttri
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1680,7 +1679,7 @@ func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) InterpolationForA
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -1694,7 +1693,7 @@ func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) PutAdvancedMachin
 	_jsii_.InvokeVoid(
 		c,
 		"putAdvancedMachineFeatures",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1705,7 +1704,7 @@ func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) PutConfidentialNo
 	_jsii_.InvokeVoid(
 		c,
 		"putConfidentialNodes",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1716,7 +1715,7 @@ func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) PutContainerdConf
 	_jsii_.InvokeVoid(
 		c,
 		"putContainerdConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1727,7 +1726,7 @@ func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) PutEphemeralStora
 	_jsii_.InvokeVoid(
 		c,
 		"putEphemeralStorageLocalSsdConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1738,7 +1737,7 @@ func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) PutFastSocket(val
 	_jsii_.InvokeVoid(
 		c,
 		"putFastSocket",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1749,18 +1748,18 @@ func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) PutGcfsConfig(val
 	_jsii_.InvokeVoid(
 		c,
 		"putGcfsConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) PutGuestAccelerator(value interface{}) {
+func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) PutGuestAccelerator(value any) {
 	if err := c.validatePutGuestAcceleratorParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putGuestAccelerator",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1771,7 +1770,7 @@ func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) PutGvnic(value *C
 	_jsii_.InvokeVoid(
 		c,
 		"putGvnic",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1782,7 +1781,7 @@ func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) PutHostMaintenanc
 	_jsii_.InvokeVoid(
 		c,
 		"putHostMaintenancePolicy",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1793,7 +1792,7 @@ func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) PutKubeletConfig(
 	_jsii_.InvokeVoid(
 		c,
 		"putKubeletConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1804,7 +1803,7 @@ func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) PutLinuxNodeConfi
 	_jsii_.InvokeVoid(
 		c,
 		"putLinuxNodeConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1815,7 +1814,7 @@ func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) PutLocalNvmeSsdBl
 	_jsii_.InvokeVoid(
 		c,
 		"putLocalNvmeSsdBlockConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1826,18 +1825,18 @@ func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) PutReservationAff
 	_jsii_.InvokeVoid(
 		c,
 		"putReservationAffinity",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) PutSecondaryBootDisks(value interface{}) {
+func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) PutSecondaryBootDisks(value any) {
 	if err := c.validatePutSecondaryBootDisksParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putSecondaryBootDisks",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1848,7 +1847,7 @@ func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) PutShieldedInstan
 	_jsii_.InvokeVoid(
 		c,
 		"putShieldedInstanceConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1859,18 +1858,18 @@ func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) PutSoleTenantConf
 	_jsii_.InvokeVoid(
 		c,
 		"putSoleTenantConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) PutTaint(value interface{}) {
+func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) PutTaint(value any) {
 	if err := c.validatePutTaintParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putTaint",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1881,7 +1880,7 @@ func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) PutWindowsNodeCon
 	_jsii_.InvokeVoid(
 		c,
 		"putWindowsNodeConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1892,7 +1891,7 @@ func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) PutWorkloadMetada
 	_jsii_.InvokeVoid(
 		c,
 		"putWorkloadMetadataConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -2232,16 +2231,16 @@ func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) ResetWorkloadMeta
 	)
 }
 
-func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -2260,4 +2259,3 @@ func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) ToString() *strin
 
 	return returns
 }
-

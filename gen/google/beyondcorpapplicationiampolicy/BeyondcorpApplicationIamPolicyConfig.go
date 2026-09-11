@@ -6,9 +6,9 @@ import (
 
 type BeyondcorpApplicationIamPolicyConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type BeyondcorpApplicationIamPolicyConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/beyondcorp_application_iam_policy#application_id BeyondcorpApplicationIamPolicy#application_id}.
 	ApplicationId *string `field:"required" json:"applicationId" yaml:"applicationId"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/beyondcorp_application_iam_policy#policy_data BeyondcorpApplicationIamPolicy#policy_data}.
@@ -33,4 +33,3 @@ type BeyondcorpApplicationIamPolicyConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/beyondcorp_application_iam_policy#project BeyondcorpApplicationIamPolicy#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 }
-

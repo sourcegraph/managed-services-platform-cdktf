@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.gkeHubFeatureMembership.GkeHubFeatureMembership",
-		reflect.TypeOf((*GkeHubFeatureMembership)(nil)).Elem(),
+		reflect.TypeFor[GkeHubFeatureMembership](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -84,7 +84,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GkeHubFeatureMembership{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -92,19 +92,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.gkeHubFeatureMembership.GkeHubFeatureMembershipConfig",
-		reflect.TypeOf((*GkeHubFeatureMembershipConfig)(nil)).Elem(),
+		reflect.TypeFor[GkeHubFeatureMembershipConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.gkeHubFeatureMembership.GkeHubFeatureMembershipConfigmanagement",
-		reflect.TypeOf((*GkeHubFeatureMembershipConfigmanagement)(nil)).Elem(),
+		reflect.TypeFor[GkeHubFeatureMembershipConfigmanagement](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.gkeHubFeatureMembership.GkeHubFeatureMembershipConfigmanagementBinauthz",
-		reflect.TypeOf((*GkeHubFeatureMembershipConfigmanagementBinauthz)(nil)).Elem(),
+		reflect.TypeFor[GkeHubFeatureMembershipConfigmanagementBinauthz](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.gkeHubFeatureMembership.GkeHubFeatureMembershipConfigmanagementBinauthzOutputReference",
-		reflect.TypeOf((*GkeHubFeatureMembershipConfigmanagementBinauthzOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GkeHubFeatureMembershipConfigmanagementBinauthzOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -131,7 +131,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GkeHubFeatureMembershipConfigmanagementBinauthzOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -139,19 +139,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.gkeHubFeatureMembership.GkeHubFeatureMembershipConfigmanagementConfigSync",
-		reflect.TypeOf((*GkeHubFeatureMembershipConfigmanagementConfigSync)(nil)).Elem(),
+		reflect.TypeFor[GkeHubFeatureMembershipConfigmanagementConfigSync](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.gkeHubFeatureMembership.GkeHubFeatureMembershipConfigmanagementConfigSyncDeploymentOverrides",
-		reflect.TypeOf((*GkeHubFeatureMembershipConfigmanagementConfigSyncDeploymentOverrides)(nil)).Elem(),
+		reflect.TypeFor[GkeHubFeatureMembershipConfigmanagementConfigSyncDeploymentOverrides](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.gkeHubFeatureMembership.GkeHubFeatureMembershipConfigmanagementConfigSyncDeploymentOverridesContainers",
-		reflect.TypeOf((*GkeHubFeatureMembershipConfigmanagementConfigSyncDeploymentOverridesContainers)(nil)).Elem(),
+		reflect.TypeFor[GkeHubFeatureMembershipConfigmanagementConfigSyncDeploymentOverridesContainers](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.gkeHubFeatureMembership.GkeHubFeatureMembershipConfigmanagementConfigSyncDeploymentOverridesContainersList",
-		reflect.TypeOf((*GkeHubFeatureMembershipConfigmanagementConfigSyncDeploymentOverridesContainersList)(nil)).Elem(),
+		reflect.TypeFor[GkeHubFeatureMembershipConfigmanagementConfigSyncDeploymentOverridesContainersList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -165,7 +165,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GkeHubFeatureMembershipConfigmanagementConfigSyncDeploymentOverridesContainersList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -173,7 +173,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.gkeHubFeatureMembership.GkeHubFeatureMembershipConfigmanagementConfigSyncDeploymentOverridesContainersOutputReference",
-		reflect.TypeOf((*GkeHubFeatureMembershipConfigmanagementConfigSyncDeploymentOverridesContainersOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GkeHubFeatureMembershipConfigmanagementConfigSyncDeploymentOverridesContainersOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -212,7 +212,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GkeHubFeatureMembershipConfigmanagementConfigSyncDeploymentOverridesContainersOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -220,7 +220,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.gkeHubFeatureMembership.GkeHubFeatureMembershipConfigmanagementConfigSyncDeploymentOverridesList",
-		reflect.TypeOf((*GkeHubFeatureMembershipConfigmanagementConfigSyncDeploymentOverridesList)(nil)).Elem(),
+		reflect.TypeFor[GkeHubFeatureMembershipConfigmanagementConfigSyncDeploymentOverridesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -234,7 +234,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GkeHubFeatureMembershipConfigmanagementConfigSyncDeploymentOverridesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -242,7 +242,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.gkeHubFeatureMembership.GkeHubFeatureMembershipConfigmanagementConfigSyncDeploymentOverridesOutputReference",
-		reflect.TypeOf((*GkeHubFeatureMembershipConfigmanagementConfigSyncDeploymentOverridesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GkeHubFeatureMembershipConfigmanagementConfigSyncDeploymentOverridesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -276,7 +276,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GkeHubFeatureMembershipConfigmanagementConfigSyncDeploymentOverridesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -284,11 +284,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.gkeHubFeatureMembership.GkeHubFeatureMembershipConfigmanagementConfigSyncGit",
-		reflect.TypeOf((*GkeHubFeatureMembershipConfigmanagementConfigSyncGit)(nil)).Elem(),
+		reflect.TypeFor[GkeHubFeatureMembershipConfigmanagementConfigSyncGit](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.gkeHubFeatureMembership.GkeHubFeatureMembershipConfigmanagementConfigSyncGitOutputReference",
-		reflect.TypeOf((*GkeHubFeatureMembershipConfigmanagementConfigSyncGitOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GkeHubFeatureMembershipConfigmanagementConfigSyncGitOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -336,7 +336,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GkeHubFeatureMembershipConfigmanagementConfigSyncGitOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -344,11 +344,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.gkeHubFeatureMembership.GkeHubFeatureMembershipConfigmanagementConfigSyncOci",
-		reflect.TypeOf((*GkeHubFeatureMembershipConfigmanagementConfigSyncOci)(nil)).Elem(),
+		reflect.TypeFor[GkeHubFeatureMembershipConfigmanagementConfigSyncOci](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.gkeHubFeatureMembership.GkeHubFeatureMembershipConfigmanagementConfigSyncOciOutputReference",
-		reflect.TypeOf((*GkeHubFeatureMembershipConfigmanagementConfigSyncOciOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GkeHubFeatureMembershipConfigmanagementConfigSyncOciOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -387,7 +387,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GkeHubFeatureMembershipConfigmanagementConfigSyncOciOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -395,7 +395,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.gkeHubFeatureMembership.GkeHubFeatureMembershipConfigmanagementConfigSyncOutputReference",
-		reflect.TypeOf((*GkeHubFeatureMembershipConfigmanagementConfigSyncOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GkeHubFeatureMembershipConfigmanagementConfigSyncOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -446,7 +446,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GkeHubFeatureMembershipConfigmanagementConfigSyncOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -454,11 +454,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.gkeHubFeatureMembership.GkeHubFeatureMembershipConfigmanagementHierarchyController",
-		reflect.TypeOf((*GkeHubFeatureMembershipConfigmanagementHierarchyController)(nil)).Elem(),
+		reflect.TypeFor[GkeHubFeatureMembershipConfigmanagementHierarchyController](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.gkeHubFeatureMembership.GkeHubFeatureMembershipConfigmanagementHierarchyControllerOutputReference",
-		reflect.TypeOf((*GkeHubFeatureMembershipConfigmanagementHierarchyControllerOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GkeHubFeatureMembershipConfigmanagementHierarchyControllerOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -491,7 +491,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GkeHubFeatureMembershipConfigmanagementHierarchyControllerOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -499,7 +499,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.gkeHubFeatureMembership.GkeHubFeatureMembershipConfigmanagementOutputReference",
-		reflect.TypeOf((*GkeHubFeatureMembershipConfigmanagementOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GkeHubFeatureMembershipConfigmanagementOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "binauthz", GoGetter: "Binauthz"},
 			_jsii_.MemberProperty{JsiiProperty: "binauthzInput", GoGetter: "BinauthzInput"},
@@ -545,7 +545,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "version", GoGetter: "Version"},
 			_jsii_.MemberProperty{JsiiProperty: "versionInput", GoGetter: "VersionInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GkeHubFeatureMembershipConfigmanagementOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -553,15 +553,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.gkeHubFeatureMembership.GkeHubFeatureMembershipConfigmanagementPolicyController",
-		reflect.TypeOf((*GkeHubFeatureMembershipConfigmanagementPolicyController)(nil)).Elem(),
+		reflect.TypeFor[GkeHubFeatureMembershipConfigmanagementPolicyController](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.gkeHubFeatureMembership.GkeHubFeatureMembershipConfigmanagementPolicyControllerMonitoring",
-		reflect.TypeOf((*GkeHubFeatureMembershipConfigmanagementPolicyControllerMonitoring)(nil)).Elem(),
+		reflect.TypeFor[GkeHubFeatureMembershipConfigmanagementPolicyControllerMonitoring](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.gkeHubFeatureMembership.GkeHubFeatureMembershipConfigmanagementPolicyControllerMonitoringOutputReference",
-		reflect.TypeOf((*GkeHubFeatureMembershipConfigmanagementPolicyControllerMonitoringOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GkeHubFeatureMembershipConfigmanagementPolicyControllerMonitoringOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "backends", GoGetter: "Backends"},
 			_jsii_.MemberProperty{JsiiProperty: "backendsInput", GoGetter: "BackendsInput"},
@@ -588,7 +588,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GkeHubFeatureMembershipConfigmanagementPolicyControllerMonitoringOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -596,7 +596,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.gkeHubFeatureMembership.GkeHubFeatureMembershipConfigmanagementPolicyControllerOutputReference",
-		reflect.TypeOf((*GkeHubFeatureMembershipConfigmanagementPolicyControllerOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GkeHubFeatureMembershipConfigmanagementPolicyControllerOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "auditIntervalSeconds", GoGetter: "AuditIntervalSeconds"},
 			_jsii_.MemberProperty{JsiiProperty: "auditIntervalSecondsInput", GoGetter: "AuditIntervalSecondsInput"},
@@ -645,7 +645,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GkeHubFeatureMembershipConfigmanagementPolicyControllerOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -653,11 +653,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.gkeHubFeatureMembership.GkeHubFeatureMembershipMesh",
-		reflect.TypeOf((*GkeHubFeatureMembershipMesh)(nil)).Elem(),
+		reflect.TypeFor[GkeHubFeatureMembershipMesh](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.gkeHubFeatureMembership.GkeHubFeatureMembershipMeshOutputReference",
-		reflect.TypeOf((*GkeHubFeatureMembershipMeshOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GkeHubFeatureMembershipMeshOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -687,7 +687,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GkeHubFeatureMembershipMeshOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -695,11 +695,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.gkeHubFeatureMembership.GkeHubFeatureMembershipPolicycontroller",
-		reflect.TypeOf((*GkeHubFeatureMembershipPolicycontroller)(nil)).Elem(),
+		reflect.TypeFor[GkeHubFeatureMembershipPolicycontroller](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.gkeHubFeatureMembership.GkeHubFeatureMembershipPolicycontrollerOutputReference",
-		reflect.TypeOf((*GkeHubFeatureMembershipPolicycontrollerOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GkeHubFeatureMembershipPolicycontrollerOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -729,7 +729,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "version", GoGetter: "Version"},
 			_jsii_.MemberProperty{JsiiProperty: "versionInput", GoGetter: "VersionInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GkeHubFeatureMembershipPolicycontrollerOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -737,23 +737,23 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.gkeHubFeatureMembership.GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfig",
-		reflect.TypeOf((*GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfig)(nil)).Elem(),
+		reflect.TypeFor[GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.gkeHubFeatureMembership.GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigs",
-		reflect.TypeOf((*GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigs)(nil)).Elem(),
+		reflect.TypeFor[GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigs](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.gkeHubFeatureMembership.GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigsContainerResources",
-		reflect.TypeOf((*GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigsContainerResources)(nil)).Elem(),
+		reflect.TypeFor[GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigsContainerResources](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.gkeHubFeatureMembership.GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigsContainerResourcesLimits",
-		reflect.TypeOf((*GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigsContainerResourcesLimits)(nil)).Elem(),
+		reflect.TypeFor[GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigsContainerResourcesLimits](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.gkeHubFeatureMembership.GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigsContainerResourcesLimitsOutputReference",
-		reflect.TypeOf((*GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigsContainerResourcesLimitsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigsContainerResourcesLimitsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -783,7 +783,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigsContainerResourcesLimitsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -791,7 +791,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.gkeHubFeatureMembership.GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigsContainerResourcesOutputReference",
-		reflect.TypeOf((*GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigsContainerResourcesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigsContainerResourcesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -823,7 +823,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigsContainerResourcesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -831,11 +831,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.gkeHubFeatureMembership.GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigsContainerResourcesRequests",
-		reflect.TypeOf((*GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigsContainerResourcesRequests)(nil)).Elem(),
+		reflect.TypeFor[GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigsContainerResourcesRequests](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.gkeHubFeatureMembership.GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigsContainerResourcesRequestsOutputReference",
-		reflect.TypeOf((*GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigsContainerResourcesRequestsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigsContainerResourcesRequestsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -865,7 +865,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigsContainerResourcesRequestsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -873,7 +873,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.gkeHubFeatureMembership.GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigsList",
-		reflect.TypeOf((*GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigsList)(nil)).Elem(),
+		reflect.TypeFor[GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -887,7 +887,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -895,7 +895,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.gkeHubFeatureMembership.GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigsOutputReference",
-		reflect.TypeOf((*GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -935,7 +935,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -943,11 +943,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.gkeHubFeatureMembership.GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigsPodTolerations",
-		reflect.TypeOf((*GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigsPodTolerations)(nil)).Elem(),
+		reflect.TypeFor[GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigsPodTolerations](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.gkeHubFeatureMembership.GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigsPodTolerationsList",
-		reflect.TypeOf((*GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigsPodTolerationsList)(nil)).Elem(),
+		reflect.TypeFor[GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigsPodTolerationsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -961,7 +961,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigsPodTolerationsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -969,7 +969,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.gkeHubFeatureMembership.GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigsPodTolerationsOutputReference",
-		reflect.TypeOf((*GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigsPodTolerationsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigsPodTolerationsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1005,7 +1005,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigsPodTolerationsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1013,11 +1013,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.gkeHubFeatureMembership.GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigMonitoring",
-		reflect.TypeOf((*GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigMonitoring)(nil)).Elem(),
+		reflect.TypeFor[GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigMonitoring](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.gkeHubFeatureMembership.GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigMonitoringOutputReference",
-		reflect.TypeOf((*GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigMonitoringOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigMonitoringOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "backends", GoGetter: "Backends"},
 			_jsii_.MemberProperty{JsiiProperty: "backendsInput", GoGetter: "BackendsInput"},
@@ -1044,7 +1044,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigMonitoringOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1052,7 +1052,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.gkeHubFeatureMembership.GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigOutputReference",
-		reflect.TypeOf((*GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "auditIntervalSeconds", GoGetter: "AuditIntervalSeconds"},
 			_jsii_.MemberProperty{JsiiProperty: "auditIntervalSecondsInput", GoGetter: "AuditIntervalSecondsInput"},
@@ -1109,7 +1109,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1117,15 +1117,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.gkeHubFeatureMembership.GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigPolicyContent",
-		reflect.TypeOf((*GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigPolicyContent)(nil)).Elem(),
+		reflect.TypeFor[GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigPolicyContent](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.gkeHubFeatureMembership.GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigPolicyContentBundles",
-		reflect.TypeOf((*GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigPolicyContentBundles)(nil)).Elem(),
+		reflect.TypeFor[GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigPolicyContentBundles](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.gkeHubFeatureMembership.GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigPolicyContentBundlesList",
-		reflect.TypeOf((*GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigPolicyContentBundlesList)(nil)).Elem(),
+		reflect.TypeFor[GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigPolicyContentBundlesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1139,7 +1139,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigPolicyContentBundlesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1147,7 +1147,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.gkeHubFeatureMembership.GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigPolicyContentBundlesOutputReference",
-		reflect.TypeOf((*GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigPolicyContentBundlesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigPolicyContentBundlesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bundleName", GoGetter: "BundleName"},
 			_jsii_.MemberProperty{JsiiProperty: "bundleNameInput", GoGetter: "BundleNameInput"},
@@ -1176,7 +1176,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigPolicyContentBundlesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1184,7 +1184,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.gkeHubFeatureMembership.GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigPolicyContentOutputReference",
-		reflect.TypeOf((*GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigPolicyContentOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigPolicyContentOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bundles", GoGetter: "Bundles"},
 			_jsii_.MemberProperty{JsiiProperty: "bundlesInput", GoGetter: "BundlesInput"},
@@ -1216,7 +1216,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigPolicyContentOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1224,11 +1224,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.gkeHubFeatureMembership.GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigPolicyContentTemplateLibrary",
-		reflect.TypeOf((*GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigPolicyContentTemplateLibrary)(nil)).Elem(),
+		reflect.TypeFor[GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigPolicyContentTemplateLibrary](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.gkeHubFeatureMembership.GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigPolicyContentTemplateLibraryOutputReference",
-		reflect.TypeOf((*GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigPolicyContentTemplateLibraryOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigPolicyContentTemplateLibraryOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1255,7 +1255,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigPolicyContentTemplateLibraryOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1263,11 +1263,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.gkeHubFeatureMembership.GkeHubFeatureMembershipTimeouts",
-		reflect.TypeOf((*GkeHubFeatureMembershipTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GkeHubFeatureMembershipTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.gkeHubFeatureMembership.GkeHubFeatureMembershipTimeoutsOutputReference",
-		reflect.TypeOf((*GkeHubFeatureMembershipTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GkeHubFeatureMembershipTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1300,7 +1300,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GkeHubFeatureMembershipTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

@@ -1,6 +1,5 @@
 package dialogflowcxwebhook
 
-
 type DialogflowCxWebhookServiceDirectoryGenericWebService struct {
 	// The webhook URI for receiving POST requests. It must use https protocol.
 	//
@@ -54,7 +53,7 @@ type DialogflowCxWebhookServiceDirectoryGenericWebService struct {
 	// secret_versions_for_request_headers block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/dialogflow_cx_webhook#secret_versions_for_request_headers DialogflowCxWebhook#secret_versions_for_request_headers}
-	SecretVersionsForRequestHeaders interface{} `field:"optional" json:"secretVersionsForRequestHeaders" yaml:"secretVersionsForRequestHeaders"`
+	SecretVersionsForRequestHeaders any `field:"optional" json:"secretVersionsForRequestHeaders" yaml:"secretVersionsForRequestHeaders"`
 	// Indicate the auth token type generated from the [Diglogflow service agent](https://cloud.google.com/iam/docs/service-agents#dialogflow-service-agent). The generated token is sent in the Authorization header. Possible values: ["NONE", "ID_TOKEN", "ACCESS_TOKEN"].
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/dialogflow_cx_webhook#service_agent_auth DialogflowCxWebhook#service_agent_auth}
@@ -64,4 +63,3 @@ type DialogflowCxWebhookServiceDirectoryGenericWebService struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/dialogflow_cx_webhook#webhook_type DialogflowCxWebhook#webhook_type}
 	WebhookType *string `field:"optional" json:"webhookType" yaml:"webhookType"`
 }
-

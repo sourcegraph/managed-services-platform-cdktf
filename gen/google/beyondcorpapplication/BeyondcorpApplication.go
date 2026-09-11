@@ -18,15 +18,15 @@ type BeyondcorpApplication interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -36,7 +36,7 @@ type BeyondcorpApplication interface {
 	SetDisplayName(val *string)
 	DisplayNameInput() *string
 	EndpointMatchers() BeyondcorpApplicationEndpointMatchersList
-	EndpointMatchersInput() interface{}
+	EndpointMatchersInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -63,32 +63,32 @@ type BeyondcorpApplication interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	SecurityGatewaysId() *string
 	SetSecurityGatewaysId(val *string)
 	SecurityGatewaysIdInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() BeyondcorpApplicationTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	UpdateTime() *string
 	Upstreams() BeyondcorpApplicationUpstreamsList
-	UpstreamsInput() interface{}
+	UpstreamsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -106,7 +106,7 @@ type BeyondcorpApplication interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -118,16 +118,16 @@ type BeyondcorpApplication interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutEndpointMatchers(value interface{})
+	PutEndpointMatchers(value any)
 	PutTimeouts(value *BeyondcorpApplicationTimeouts)
-	PutUpstreams(value interface{})
+	PutUpstreams(value any)
 	ResetDisplayName()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -136,17 +136,17 @@ type BeyondcorpApplication interface {
 	ResetProject()
 	ResetTimeouts()
 	ResetUpstreams()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for BeyondcorpApplication
@@ -184,8 +184,8 @@ func (j *jsiiProxy_BeyondcorpApplication) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_BeyondcorpApplication) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BeyondcorpApplication) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -194,8 +194,8 @@ func (j *jsiiProxy_BeyondcorpApplication) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_BeyondcorpApplication) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_BeyondcorpApplication) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -204,8 +204,8 @@ func (j *jsiiProxy_BeyondcorpApplication) ConstructNodeMetadata() *map[string]in
 	return returns
 }
 
-func (j *jsiiProxy_BeyondcorpApplication) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BeyondcorpApplication) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -264,8 +264,8 @@ func (j *jsiiProxy_BeyondcorpApplication) EndpointMatchers() BeyondcorpApplicati
 	return returns
 }
 
-func (j *jsiiProxy_BeyondcorpApplication) EndpointMatchersInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BeyondcorpApplication) EndpointMatchersInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"endpointMatchersInput",
@@ -384,8 +384,8 @@ func (j *jsiiProxy_BeyondcorpApplication) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_BeyondcorpApplication) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_BeyondcorpApplication) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -394,8 +394,8 @@ func (j *jsiiProxy_BeyondcorpApplication) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_BeyondcorpApplication) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BeyondcorpApplication) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -434,8 +434,8 @@ func (j *jsiiProxy_BeyondcorpApplication) TerraformGeneratorMetadata() *cdktf.Te
 	return returns
 }
 
-func (j *jsiiProxy_BeyondcorpApplication) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_BeyondcorpApplication) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -464,8 +464,8 @@ func (j *jsiiProxy_BeyondcorpApplication) Timeouts() BeyondcorpApplicationTimeou
 	return returns
 }
 
-func (j *jsiiProxy_BeyondcorpApplication) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BeyondcorpApplication) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -494,8 +494,8 @@ func (j *jsiiProxy_BeyondcorpApplication) Upstreams() BeyondcorpApplicationUpstr
 	return returns
 }
 
-func (j *jsiiProxy_BeyondcorpApplication) UpstreamsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BeyondcorpApplication) UpstreamsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"upstreamsInput",
@@ -503,7 +503,6 @@ func (j *jsiiProxy_BeyondcorpApplication) UpstreamsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/beyondcorp_application google_beyondcorp_application} Resource.
 func NewBeyondcorpApplication(scope constructs.Construct, id *string, config *BeyondcorpApplicationConfig) BeyondcorpApplication {
@@ -516,7 +515,7 @@ func NewBeyondcorpApplication(scope constructs.Construct, id *string, config *Be
 
 	_jsii_.Create(
 		"@cdktf/provider-google.beyondcorpApplication.BeyondcorpApplication",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -529,12 +528,12 @@ func NewBeyondcorpApplication_Override(b BeyondcorpApplication, scope constructs
 
 	_jsii_.Create(
 		"@cdktf/provider-google.beyondcorpApplication.BeyondcorpApplication",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		b,
 	)
 }
 
-func (j *jsiiProxy_BeyondcorpApplication)SetApplicationId(val *string) {
+func (j *jsiiProxy_BeyondcorpApplication) SetApplicationId(val *string) {
 	if err := j.validateSetApplicationIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -545,7 +544,7 @@ func (j *jsiiProxy_BeyondcorpApplication)SetApplicationId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BeyondcorpApplication)SetConnection(val interface{}) {
+func (j *jsiiProxy_BeyondcorpApplication) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -556,7 +555,7 @@ func (j *jsiiProxy_BeyondcorpApplication)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_BeyondcorpApplication)SetCount(val interface{}) {
+func (j *jsiiProxy_BeyondcorpApplication) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -567,7 +566,7 @@ func (j *jsiiProxy_BeyondcorpApplication)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_BeyondcorpApplication)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_BeyondcorpApplication) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -575,7 +574,7 @@ func (j *jsiiProxy_BeyondcorpApplication)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_BeyondcorpApplication)SetDisplayName(val *string) {
+func (j *jsiiProxy_BeyondcorpApplication) SetDisplayName(val *string) {
 	if err := j.validateSetDisplayNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -586,7 +585,7 @@ func (j *jsiiProxy_BeyondcorpApplication)SetDisplayName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BeyondcorpApplication)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_BeyondcorpApplication) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -594,7 +593,7 @@ func (j *jsiiProxy_BeyondcorpApplication)SetForEach(val cdktf.ITerraformIterator
 	)
 }
 
-func (j *jsiiProxy_BeyondcorpApplication)SetId(val *string) {
+func (j *jsiiProxy_BeyondcorpApplication) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -605,7 +604,7 @@ func (j *jsiiProxy_BeyondcorpApplication)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BeyondcorpApplication)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_BeyondcorpApplication) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -616,7 +615,7 @@ func (j *jsiiProxy_BeyondcorpApplication)SetLifecycle(val *cdktf.TerraformResour
 	)
 }
 
-func (j *jsiiProxy_BeyondcorpApplication)SetProject(val *string) {
+func (j *jsiiProxy_BeyondcorpApplication) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -627,7 +626,7 @@ func (j *jsiiProxy_BeyondcorpApplication)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BeyondcorpApplication)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_BeyondcorpApplication) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -635,7 +634,7 @@ func (j *jsiiProxy_BeyondcorpApplication)SetProvider(val cdktf.TerraformProvider
 	)
 }
 
-func (j *jsiiProxy_BeyondcorpApplication)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_BeyondcorpApplication) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -646,7 +645,7 @@ func (j *jsiiProxy_BeyondcorpApplication)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_BeyondcorpApplication)SetSecurityGatewaysId(val *string) {
+func (j *jsiiProxy_BeyondcorpApplication) SetSecurityGatewaysId(val *string) {
 	if err := j.validateSetSecurityGatewaysIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -669,7 +668,7 @@ func BeyondcorpApplication_GenerateConfigForImport(scope constructs.Construct, i
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.beyondcorpApplication.BeyondcorpApplication",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -693,7 +692,7 @@ func BeyondcorpApplication_GenerateConfigForImport(scope constructs.Construct, i
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func BeyondcorpApplication_IsConstruct(x interface{}) *bool {
+func BeyondcorpApplication_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateBeyondcorpApplication_IsConstructParameters(x); err != nil {
@@ -704,7 +703,7 @@ func BeyondcorpApplication_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.beyondcorpApplication.BeyondcorpApplication",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -712,7 +711,7 @@ func BeyondcorpApplication_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func BeyondcorpApplication_IsTerraformElement(x interface{}) *bool {
+func BeyondcorpApplication_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateBeyondcorpApplication_IsTerraformElementParameters(x); err != nil {
@@ -723,7 +722,7 @@ func BeyondcorpApplication_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.beyondcorpApplication.BeyondcorpApplication",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -731,7 +730,7 @@ func BeyondcorpApplication_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func BeyondcorpApplication_IsTerraformResource(x interface{}) *bool {
+func BeyondcorpApplication_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateBeyondcorpApplication_IsTerraformResourceParameters(x); err != nil {
@@ -742,7 +741,7 @@ func BeyondcorpApplication_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.beyondcorpApplication.BeyondcorpApplication",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -767,31 +766,31 @@ func (b *jsiiProxy_BeyondcorpApplication) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		b,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (b *jsiiProxy_BeyondcorpApplication) AddOverride(path *string, value interface{}) {
+func (b *jsiiProxy_BeyondcorpApplication) AddOverride(path *string, value any) {
 	if err := b.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		b,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (b *jsiiProxy_BeyondcorpApplication) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (b *jsiiProxy_BeyondcorpApplication) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := b.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		b,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -807,7 +806,7 @@ func (b *jsiiProxy_BeyondcorpApplication) GetBooleanAttribute(terraformAttribute
 	_jsii_.Invoke(
 		b,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -823,7 +822,7 @@ func (b *jsiiProxy_BeyondcorpApplication) GetBooleanMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		b,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -839,7 +838,7 @@ func (b *jsiiProxy_BeyondcorpApplication) GetListAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		b,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -855,7 +854,7 @@ func (b *jsiiProxy_BeyondcorpApplication) GetNumberAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		b,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -871,7 +870,7 @@ func (b *jsiiProxy_BeyondcorpApplication) GetNumberListAttribute(terraformAttrib
 	_jsii_.Invoke(
 		b,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -887,7 +886,7 @@ func (b *jsiiProxy_BeyondcorpApplication) GetNumberMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		b,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -903,7 +902,7 @@ func (b *jsiiProxy_BeyondcorpApplication) GetStringAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		b,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -919,15 +918,15 @@ func (b *jsiiProxy_BeyondcorpApplication) GetStringMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		b,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (b *jsiiProxy_BeyondcorpApplication) HasResourceMove() interface{} {
-	var returns interface{}
+func (b *jsiiProxy_BeyondcorpApplication) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		b,
@@ -946,7 +945,7 @@ func (b *jsiiProxy_BeyondcorpApplication) ImportFrom(id *string, provider cdktf.
 	_jsii_.InvokeVoid(
 		b,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -959,7 +958,7 @@ func (b *jsiiProxy_BeyondcorpApplication) InterpolationForAttribute(terraformAtt
 	_jsii_.Invoke(
 		b,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -973,18 +972,18 @@ func (b *jsiiProxy_BeyondcorpApplication) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		b,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (b *jsiiProxy_BeyondcorpApplication) MoveTo(moveTarget *string, index interface{}) {
+func (b *jsiiProxy_BeyondcorpApplication) MoveTo(moveTarget *string, index any) {
 	if err := b.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		b,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -995,7 +994,7 @@ func (b *jsiiProxy_BeyondcorpApplication) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		b,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1006,18 +1005,18 @@ func (b *jsiiProxy_BeyondcorpApplication) OverrideLogicalId(newLogicalId *string
 	_jsii_.InvokeVoid(
 		b,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (b *jsiiProxy_BeyondcorpApplication) PutEndpointMatchers(value interface{}) {
+func (b *jsiiProxy_BeyondcorpApplication) PutEndpointMatchers(value any) {
 	if err := b.validatePutEndpointMatchersParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		b,
 		"putEndpointMatchers",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1028,18 +1027,18 @@ func (b *jsiiProxy_BeyondcorpApplication) PutTimeouts(value *BeyondcorpApplicati
 	_jsii_.InvokeVoid(
 		b,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (b *jsiiProxy_BeyondcorpApplication) PutUpstreams(value interface{}) {
+func (b *jsiiProxy_BeyondcorpApplication) PutUpstreams(value any) {
 	if err := b.validatePutUpstreamsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		b,
 		"putUpstreams",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1091,8 +1090,8 @@ func (b *jsiiProxy_BeyondcorpApplication) ResetUpstreams() {
 	)
 }
 
-func (b *jsiiProxy_BeyondcorpApplication) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (b *jsiiProxy_BeyondcorpApplication) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		b,
@@ -1104,8 +1103,8 @@ func (b *jsiiProxy_BeyondcorpApplication) SynthesizeAttributes() *map[string]int
 	return returns
 }
 
-func (b *jsiiProxy_BeyondcorpApplication) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (b *jsiiProxy_BeyondcorpApplication) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		b,
@@ -1117,8 +1116,8 @@ func (b *jsiiProxy_BeyondcorpApplication) SynthesizeHclAttributes() *map[string]
 	return returns
 }
 
-func (b *jsiiProxy_BeyondcorpApplication) ToHclTerraform() interface{} {
-	var returns interface{}
+func (b *jsiiProxy_BeyondcorpApplication) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		b,
@@ -1130,8 +1129,8 @@ func (b *jsiiProxy_BeyondcorpApplication) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (b *jsiiProxy_BeyondcorpApplication) ToMetadata() interface{} {
-	var returns interface{}
+func (b *jsiiProxy_BeyondcorpApplication) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		b,
@@ -1156,8 +1155,8 @@ func (b *jsiiProxy_BeyondcorpApplication) ToString() *string {
 	return returns
 }
 
-func (b *jsiiProxy_BeyondcorpApplication) ToTerraform() interface{} {
-	var returns interface{}
+func (b *jsiiProxy_BeyondcorpApplication) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		b,
@@ -1168,4 +1167,3 @@ func (b *jsiiProxy_BeyondcorpApplication) ToTerraform() interface{} {
 
 	return returns
 }
-

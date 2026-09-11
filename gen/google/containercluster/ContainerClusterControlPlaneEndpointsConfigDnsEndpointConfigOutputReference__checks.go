@@ -98,7 +98,7 @@ func (c *jsiiProxy_ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigO
 	return nil
 }
 
-func (j *jsiiProxy_ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigOutputReference) validateSetAllowExternalTrafficParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigOutputReference) validateSetAllowExternalTrafficParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -118,7 +118,7 @@ func (j *jsiiProxy_ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigO
 	return nil
 }
 
-func (j *jsiiProxy_ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -226,4 +226,3 @@ func validateNewContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigOutp
 
 	return nil
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleLustreInstance.DataGoogleLustreInstance",
-		reflect.TypeOf((*DataGoogleLustreInstance)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleLustreInstance](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "capacityGib", GoGetter: "CapacityGib"},
@@ -71,7 +71,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zone", GoGetter: "Zone"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneInput", GoGetter: "ZoneInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleLustreInstance{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -79,6 +79,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleLustreInstance.DataGoogleLustreInstanceConfig",
-		reflect.TypeOf((*DataGoogleLustreInstanceConfig)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleLustreInstanceConfig](),
 	)
 }

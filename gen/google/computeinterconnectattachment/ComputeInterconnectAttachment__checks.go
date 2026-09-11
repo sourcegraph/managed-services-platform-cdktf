@@ -19,7 +19,7 @@ func (c *jsiiProxy_ComputeInterconnectAttachment) validateAddMoveTargetParameter
 	return nil
 }
 
-func (c *jsiiProxy_ComputeInterconnectAttachment) validateAddOverrideParameters(path *string, value interface{}) error {
+func (c *jsiiProxy_ComputeInterconnectAttachment) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (c *jsiiProxy_ComputeInterconnectAttachment) validateMoveFromIdParameters(i
 	return nil
 }
 
-func (c *jsiiProxy_ComputeInterconnectAttachment) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (c *jsiiProxy_ComputeInterconnectAttachment) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateComputeInterconnectAttachment_GenerateConfigForImportParameters(sco
 	return nil
 }
 
-func validateComputeInterconnectAttachment_IsConstructParameters(x interface{}) error {
+func validateComputeInterconnectAttachment_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateComputeInterconnectAttachment_IsConstructParameters(x interface{}) 
 	return nil
 }
 
-func validateComputeInterconnectAttachment_IsTerraformElementParameters(x interface{}) error {
+func validateComputeInterconnectAttachment_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateComputeInterconnectAttachment_IsTerraformElementParameters(x interf
 	return nil
 }
 
-func validateComputeInterconnectAttachment_IsTerraformResourceParameters(x interface{}) error {
+func validateComputeInterconnectAttachment_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateComputeInterconnectAttachment_IsTerraformResourceParameters(x inter
 	return nil
 }
 
-func (j *jsiiProxy_ComputeInterconnectAttachment) validateSetAdminEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeInterconnectAttachment) validateSetAdminEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -291,7 +291,7 @@ func (j *jsiiProxy_ComputeInterconnectAttachment) validateSetCandidateSubnetsPar
 	return nil
 }
 
-func (j *jsiiProxy_ComputeInterconnectAttachment) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeInterconnectAttachment) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -324,7 +324,7 @@ func (j *jsiiProxy_ComputeInterconnectAttachment) validateSetConnectionParameter
 	return nil
 }
 
-func (j *jsiiProxy_ComputeInterconnectAttachment) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeInterconnectAttachment) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -469,7 +469,7 @@ func (j *jsiiProxy_ComputeInterconnectAttachment) validateSetProjectParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_ComputeInterconnectAttachment) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ComputeInterconnectAttachment) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -581,4 +581,3 @@ func validateNewComputeInterconnectAttachmentParameters(scope constructs.Constru
 
 	return nil
 }
-

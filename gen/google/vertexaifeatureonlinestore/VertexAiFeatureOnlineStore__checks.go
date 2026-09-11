@@ -19,7 +19,7 @@ func (v *jsiiProxy_VertexAiFeatureOnlineStore) validateAddMoveTargetParameters(m
 	return nil
 }
 
-func (v *jsiiProxy_VertexAiFeatureOnlineStore) validateAddOverrideParameters(path *string, value interface{}) error {
+func (v *jsiiProxy_VertexAiFeatureOnlineStore) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (v *jsiiProxy_VertexAiFeatureOnlineStore) validateMoveFromIdParameters(id *
 	return nil
 }
 
-func (v *jsiiProxy_VertexAiFeatureOnlineStore) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (v *jsiiProxy_VertexAiFeatureOnlineStore) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -264,7 +264,7 @@ func validateVertexAiFeatureOnlineStore_GenerateConfigForImportParameters(scope 
 	return nil
 }
 
-func validateVertexAiFeatureOnlineStore_IsConstructParameters(x interface{}) error {
+func validateVertexAiFeatureOnlineStore_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -272,7 +272,7 @@ func validateVertexAiFeatureOnlineStore_IsConstructParameters(x interface{}) err
 	return nil
 }
 
-func validateVertexAiFeatureOnlineStore_IsTerraformElementParameters(x interface{}) error {
+func validateVertexAiFeatureOnlineStore_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -280,7 +280,7 @@ func validateVertexAiFeatureOnlineStore_IsTerraformElementParameters(x interface
 	return nil
 }
 
-func validateVertexAiFeatureOnlineStore_IsTerraformResourceParameters(x interface{}) error {
+func validateVertexAiFeatureOnlineStore_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -288,7 +288,7 @@ func validateVertexAiFeatureOnlineStore_IsTerraformResourceParameters(x interfac
 	return nil
 }
 
-func (j *jsiiProxy_VertexAiFeatureOnlineStore) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_VertexAiFeatureOnlineStore) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -321,7 +321,7 @@ func (j *jsiiProxy_VertexAiFeatureOnlineStore) validateSetConnectionParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_VertexAiFeatureOnlineStore) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_VertexAiFeatureOnlineStore) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -378,7 +378,7 @@ func (j *jsiiProxy_VertexAiFeatureOnlineStore) validateSetCountParameters(val in
 	return nil
 }
 
-func (j *jsiiProxy_VertexAiFeatureOnlineStore) validateSetForceDestroyParameters(val interface{}) error {
+func (j *jsiiProxy_VertexAiFeatureOnlineStore) validateSetForceDestroyParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -438,7 +438,7 @@ func (j *jsiiProxy_VertexAiFeatureOnlineStore) validateSetProjectParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_VertexAiFeatureOnlineStore) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_VertexAiFeatureOnlineStore) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -510,4 +510,3 @@ func validateNewVertexAiFeatureOnlineStoreParameters(scope constructs.Construct,
 
 	return nil
 }
-

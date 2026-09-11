@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.vertexAiFeatureOnlineStore.VertexAiFeatureOnlineStore",
-		reflect.TypeOf((*VertexAiFeatureOnlineStore)(nil)).Elem(),
+		reflect.TypeFor[VertexAiFeatureOnlineStore](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -92,7 +92,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VertexAiFeatureOnlineStore{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -100,15 +100,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.vertexAiFeatureOnlineStore.VertexAiFeatureOnlineStoreBigtable",
-		reflect.TypeOf((*VertexAiFeatureOnlineStoreBigtable)(nil)).Elem(),
+		reflect.TypeFor[VertexAiFeatureOnlineStoreBigtable](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.vertexAiFeatureOnlineStore.VertexAiFeatureOnlineStoreBigtableAutoScaling",
-		reflect.TypeOf((*VertexAiFeatureOnlineStoreBigtableAutoScaling)(nil)).Elem(),
+		reflect.TypeFor[VertexAiFeatureOnlineStoreBigtableAutoScaling](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.vertexAiFeatureOnlineStore.VertexAiFeatureOnlineStoreBigtableAutoScalingOutputReference",
-		reflect.TypeOf((*VertexAiFeatureOnlineStoreBigtableAutoScalingOutputReference)(nil)).Elem(),
+		reflect.TypeFor[VertexAiFeatureOnlineStoreBigtableAutoScalingOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -139,7 +139,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VertexAiFeatureOnlineStoreBigtableAutoScalingOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -147,7 +147,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.vertexAiFeatureOnlineStore.VertexAiFeatureOnlineStoreBigtableOutputReference",
-		reflect.TypeOf((*VertexAiFeatureOnlineStoreBigtableOutputReference)(nil)).Elem(),
+		reflect.TypeFor[VertexAiFeatureOnlineStoreBigtableOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "autoScaling", GoGetter: "AutoScaling"},
 			_jsii_.MemberProperty{JsiiProperty: "autoScalingInput", GoGetter: "AutoScalingInput"},
@@ -174,7 +174,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VertexAiFeatureOnlineStoreBigtableOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -182,15 +182,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.vertexAiFeatureOnlineStore.VertexAiFeatureOnlineStoreConfig",
-		reflect.TypeOf((*VertexAiFeatureOnlineStoreConfig)(nil)).Elem(),
+		reflect.TypeFor[VertexAiFeatureOnlineStoreConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.vertexAiFeatureOnlineStore.VertexAiFeatureOnlineStoreDedicatedServingEndpoint",
-		reflect.TypeOf((*VertexAiFeatureOnlineStoreDedicatedServingEndpoint)(nil)).Elem(),
+		reflect.TypeFor[VertexAiFeatureOnlineStoreDedicatedServingEndpoint](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.vertexAiFeatureOnlineStore.VertexAiFeatureOnlineStoreDedicatedServingEndpointOutputReference",
-		reflect.TypeOf((*VertexAiFeatureOnlineStoreDedicatedServingEndpointOutputReference)(nil)).Elem(),
+		reflect.TypeFor[VertexAiFeatureOnlineStoreDedicatedServingEndpointOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -220,7 +220,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VertexAiFeatureOnlineStoreDedicatedServingEndpointOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -228,11 +228,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.vertexAiFeatureOnlineStore.VertexAiFeatureOnlineStoreDedicatedServingEndpointPrivateServiceConnectConfig",
-		reflect.TypeOf((*VertexAiFeatureOnlineStoreDedicatedServingEndpointPrivateServiceConnectConfig)(nil)).Elem(),
+		reflect.TypeFor[VertexAiFeatureOnlineStoreDedicatedServingEndpointPrivateServiceConnectConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.vertexAiFeatureOnlineStore.VertexAiFeatureOnlineStoreDedicatedServingEndpointPrivateServiceConnectConfigOutputReference",
-		reflect.TypeOf((*VertexAiFeatureOnlineStoreDedicatedServingEndpointPrivateServiceConnectConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[VertexAiFeatureOnlineStoreDedicatedServingEndpointPrivateServiceConnectConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -261,7 +261,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VertexAiFeatureOnlineStoreDedicatedServingEndpointPrivateServiceConnectConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -269,11 +269,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.vertexAiFeatureOnlineStore.VertexAiFeatureOnlineStoreOptimized",
-		reflect.TypeOf((*VertexAiFeatureOnlineStoreOptimized)(nil)).Elem(),
+		reflect.TypeFor[VertexAiFeatureOnlineStoreOptimized](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.vertexAiFeatureOnlineStore.VertexAiFeatureOnlineStoreOptimizedOutputReference",
-		reflect.TypeOf((*VertexAiFeatureOnlineStoreOptimizedOutputReference)(nil)).Elem(),
+		reflect.TypeFor[VertexAiFeatureOnlineStoreOptimizedOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -297,7 +297,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VertexAiFeatureOnlineStoreOptimizedOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -305,11 +305,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.vertexAiFeatureOnlineStore.VertexAiFeatureOnlineStoreTimeouts",
-		reflect.TypeOf((*VertexAiFeatureOnlineStoreTimeouts)(nil)).Elem(),
+		reflect.TypeFor[VertexAiFeatureOnlineStoreTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.vertexAiFeatureOnlineStore.VertexAiFeatureOnlineStoreTimeoutsOutputReference",
-		reflect.TypeOf((*VertexAiFeatureOnlineStoreTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[VertexAiFeatureOnlineStoreTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -342,7 +342,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VertexAiFeatureOnlineStoreTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

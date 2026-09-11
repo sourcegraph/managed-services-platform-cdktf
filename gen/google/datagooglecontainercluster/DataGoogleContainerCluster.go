@@ -23,13 +23,13 @@ type DataGoogleContainerCluster interface {
 	ClusterIpv4Cidr() *string
 	ConfidentialNodes() DataGoogleContainerClusterConfidentialNodesList
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	ControlPlaneEndpointsConfig() DataGoogleContainerClusterControlPlaneEndpointsConfigList
 	CostManagementConfig() DataGoogleContainerClusterCostManagementConfigList
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	DatabaseEncryption() DataGoogleContainerClusterDatabaseEncryptionList
 	DatapathProvider() *string
 	DefaultMaxPodsPerNode() *float64
@@ -120,7 +120,7 @@ type DataGoogleContainerCluster interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ReleaseChannel() DataGoogleContainerClusterReleaseChannelList
 	RemoveDefaultNodePool() cdktf.IResolvable
 	ResourceLabels() cdktf.StringMap
@@ -135,7 +135,7 @@ type DataGoogleContainerCluster interface {
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	TpuIpv4CidrBlock() *string
@@ -143,9 +143,9 @@ type DataGoogleContainerCluster interface {
 	VerticalPodAutoscaling() DataGoogleContainerClusterVerticalPodAutoscalingList
 	WorkloadIdentityConfig() DataGoogleContainerClusterWorkloadIdentityConfigList
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -173,18 +173,18 @@ type DataGoogleContainerCluster interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataGoogleContainerCluster
@@ -282,8 +282,8 @@ func (j *jsiiProxy_DataGoogleContainerCluster) ConfidentialNodes() DataGoogleCon
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleContainerCluster) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleContainerCluster) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -312,8 +312,8 @@ func (j *jsiiProxy_DataGoogleContainerCluster) CostManagementConfig() DataGoogle
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleContainerCluster) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleContainerCluster) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -1022,8 +1022,8 @@ func (j *jsiiProxy_DataGoogleContainerCluster) Provider() cdktf.TerraformProvide
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleContainerCluster) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleContainerCluster) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -1152,8 +1152,8 @@ func (j *jsiiProxy_DataGoogleContainerCluster) TerraformLabels() cdktf.StringMap
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleContainerCluster) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleContainerCluster) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -1212,7 +1212,6 @@ func (j *jsiiProxy_DataGoogleContainerCluster) WorkloadIdentityConfig() DataGoog
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/data-sources/container_cluster google_container_cluster} Data Source.
 func NewDataGoogleContainerCluster(scope constructs.Construct, id *string, config *DataGoogleContainerClusterConfig) DataGoogleContainerCluster {
 	_init_.Initialize()
@@ -1224,7 +1223,7 @@ func NewDataGoogleContainerCluster(scope constructs.Construct, id *string, confi
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleContainerCluster.DataGoogleContainerCluster",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -1237,12 +1236,12 @@ func NewDataGoogleContainerCluster_Override(d DataGoogleContainerCluster, scope 
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleContainerCluster.DataGoogleContainerCluster",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataGoogleContainerCluster)SetCount(val interface{}) {
+func (j *jsiiProxy_DataGoogleContainerCluster) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -1253,7 +1252,7 @@ func (j *jsiiProxy_DataGoogleContainerCluster)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleContainerCluster)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataGoogleContainerCluster) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -1261,7 +1260,7 @@ func (j *jsiiProxy_DataGoogleContainerCluster)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleContainerCluster)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataGoogleContainerCluster) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -1269,7 +1268,7 @@ func (j *jsiiProxy_DataGoogleContainerCluster)SetForEach(val cdktf.ITerraformIte
 	)
 }
 
-func (j *jsiiProxy_DataGoogleContainerCluster)SetId(val *string) {
+func (j *jsiiProxy_DataGoogleContainerCluster) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1280,7 +1279,7 @@ func (j *jsiiProxy_DataGoogleContainerCluster)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleContainerCluster)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataGoogleContainerCluster) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -1291,7 +1290,7 @@ func (j *jsiiProxy_DataGoogleContainerCluster)SetLifecycle(val *cdktf.TerraformR
 	)
 }
 
-func (j *jsiiProxy_DataGoogleContainerCluster)SetLocation(val *string) {
+func (j *jsiiProxy_DataGoogleContainerCluster) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -1302,7 +1301,7 @@ func (j *jsiiProxy_DataGoogleContainerCluster)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleContainerCluster)SetName(val *string) {
+func (j *jsiiProxy_DataGoogleContainerCluster) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -1313,7 +1312,7 @@ func (j *jsiiProxy_DataGoogleContainerCluster)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleContainerCluster)SetProject(val *string) {
+func (j *jsiiProxy_DataGoogleContainerCluster) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -1324,7 +1323,7 @@ func (j *jsiiProxy_DataGoogleContainerCluster)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleContainerCluster)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataGoogleContainerCluster) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1344,7 +1343,7 @@ func DataGoogleContainerCluster_GenerateConfigForImport(scope constructs.Constru
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleContainerCluster.DataGoogleContainerCluster",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -1368,7 +1367,7 @@ func DataGoogleContainerCluster_GenerateConfigForImport(scope constructs.Constru
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataGoogleContainerCluster_IsConstruct(x interface{}) *bool {
+func DataGoogleContainerCluster_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleContainerCluster_IsConstructParameters(x); err != nil {
@@ -1379,7 +1378,7 @@ func DataGoogleContainerCluster_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleContainerCluster.DataGoogleContainerCluster",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1387,7 +1386,7 @@ func DataGoogleContainerCluster_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataGoogleContainerCluster_IsTerraformDataSource(x interface{}) *bool {
+func DataGoogleContainerCluster_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleContainerCluster_IsTerraformDataSourceParameters(x); err != nil {
@@ -1398,7 +1397,7 @@ func DataGoogleContainerCluster_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleContainerCluster.DataGoogleContainerCluster",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1406,7 +1405,7 @@ func DataGoogleContainerCluster_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataGoogleContainerCluster_IsTerraformElement(x interface{}) *bool {
+func DataGoogleContainerCluster_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleContainerCluster_IsTerraformElementParameters(x); err != nil {
@@ -1417,7 +1416,7 @@ func DataGoogleContainerCluster_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleContainerCluster.DataGoogleContainerCluster",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1435,27 +1434,27 @@ func DataGoogleContainerCluster_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleContainerCluster) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataGoogleContainerCluster) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataGoogleContainerCluster) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataGoogleContainerCluster) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1471,7 +1470,7 @@ func (d *jsiiProxy_DataGoogleContainerCluster) GetBooleanAttribute(terraformAttr
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1487,7 +1486,7 @@ func (d *jsiiProxy_DataGoogleContainerCluster) GetBooleanMapAttribute(terraformA
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1503,7 +1502,7 @@ func (d *jsiiProxy_DataGoogleContainerCluster) GetListAttribute(terraformAttribu
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1519,7 +1518,7 @@ func (d *jsiiProxy_DataGoogleContainerCluster) GetNumberAttribute(terraformAttri
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1535,7 +1534,7 @@ func (d *jsiiProxy_DataGoogleContainerCluster) GetNumberListAttribute(terraformA
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1551,7 +1550,7 @@ func (d *jsiiProxy_DataGoogleContainerCluster) GetNumberMapAttribute(terraformAt
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1567,7 +1566,7 @@ func (d *jsiiProxy_DataGoogleContainerCluster) GetStringAttribute(terraformAttri
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1583,7 +1582,7 @@ func (d *jsiiProxy_DataGoogleContainerCluster) GetStringMapAttribute(terraformAt
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1599,7 +1598,7 @@ func (d *jsiiProxy_DataGoogleContainerCluster) InterpolationForAttribute(terrafo
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1613,7 +1612,7 @@ func (d *jsiiProxy_DataGoogleContainerCluster) OverrideLogicalId(newLogicalId *s
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1649,8 +1648,8 @@ func (d *jsiiProxy_DataGoogleContainerCluster) ResetProject() {
 	)
 }
 
-func (d *jsiiProxy_DataGoogleContainerCluster) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleContainerCluster) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1662,8 +1661,8 @@ func (d *jsiiProxy_DataGoogleContainerCluster) SynthesizeAttributes() *map[strin
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleContainerCluster) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleContainerCluster) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1675,8 +1674,8 @@ func (d *jsiiProxy_DataGoogleContainerCluster) SynthesizeHclAttributes() *map[st
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleContainerCluster) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleContainerCluster) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1688,8 +1687,8 @@ func (d *jsiiProxy_DataGoogleContainerCluster) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleContainerCluster) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleContainerCluster) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1714,8 +1713,8 @@ func (d *jsiiProxy_DataGoogleContainerCluster) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleContainerCluster) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleContainerCluster) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1726,4 +1725,3 @@ func (d *jsiiProxy_DataGoogleContainerCluster) ToTerraform() interface{} {
 
 	return returns
 }
-

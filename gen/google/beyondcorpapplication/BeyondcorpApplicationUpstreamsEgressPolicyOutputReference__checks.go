@@ -98,7 +98,7 @@ func (b *jsiiProxy_BeyondcorpApplicationUpstreamsEgressPolicyOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_BeyondcorpApplicationUpstreamsEgressPolicyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BeyondcorpApplicationUpstreamsEgressPolicyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewBeyondcorpApplicationUpstreamsEgressPolicyOutputReferenceParamet
 
 	return nil
 }
-

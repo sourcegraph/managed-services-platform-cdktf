@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamPrivateConnection.DatastreamPrivateConnection",
-		reflect.TypeOf((*DatastreamPrivateConnection)(nil)).Elem(),
+		reflect.TypeFor[DatastreamPrivateConnection](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -88,7 +88,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vpcPeeringConfig", GoGetter: "VpcPeeringConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcPeeringConfigInput", GoGetter: "VpcPeeringConfigInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamPrivateConnection{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -96,15 +96,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.datastreamPrivateConnection.DatastreamPrivateConnectionConfig",
-		reflect.TypeOf((*DatastreamPrivateConnectionConfig)(nil)).Elem(),
+		reflect.TypeFor[DatastreamPrivateConnectionConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.datastreamPrivateConnection.DatastreamPrivateConnectionError",
-		reflect.TypeOf((*DatastreamPrivateConnectionError)(nil)).Elem(),
+		reflect.TypeFor[DatastreamPrivateConnectionError](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamPrivateConnection.DatastreamPrivateConnectionErrorList",
-		reflect.TypeOf((*DatastreamPrivateConnectionErrorList)(nil)).Elem(),
+		reflect.TypeFor[DatastreamPrivateConnectionErrorList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -117,7 +117,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamPrivateConnectionErrorList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -125,7 +125,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamPrivateConnection.DatastreamPrivateConnectionErrorOutputReference",
-		reflect.TypeOf((*DatastreamPrivateConnectionErrorOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DatastreamPrivateConnectionErrorOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -151,7 +151,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamPrivateConnectionErrorOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -159,11 +159,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.datastreamPrivateConnection.DatastreamPrivateConnectionPscInterfaceConfig",
-		reflect.TypeOf((*DatastreamPrivateConnectionPscInterfaceConfig)(nil)).Elem(),
+		reflect.TypeFor[DatastreamPrivateConnectionPscInterfaceConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamPrivateConnection.DatastreamPrivateConnectionPscInterfaceConfigOutputReference",
-		reflect.TypeOf((*DatastreamPrivateConnectionPscInterfaceConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DatastreamPrivateConnectionPscInterfaceConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -189,7 +189,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamPrivateConnectionPscInterfaceConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -197,11 +197,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.datastreamPrivateConnection.DatastreamPrivateConnectionTimeouts",
-		reflect.TypeOf((*DatastreamPrivateConnectionTimeouts)(nil)).Elem(),
+		reflect.TypeFor[DatastreamPrivateConnectionTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamPrivateConnection.DatastreamPrivateConnectionTimeoutsOutputReference",
-		reflect.TypeOf((*DatastreamPrivateConnectionTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DatastreamPrivateConnectionTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -234,7 +234,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamPrivateConnectionTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -242,11 +242,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.datastreamPrivateConnection.DatastreamPrivateConnectionVpcPeeringConfig",
-		reflect.TypeOf((*DatastreamPrivateConnectionVpcPeeringConfig)(nil)).Elem(),
+		reflect.TypeFor[DatastreamPrivateConnectionVpcPeeringConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamPrivateConnection.DatastreamPrivateConnectionVpcPeeringConfigOutputReference",
-		reflect.TypeOf((*DatastreamPrivateConnectionVpcPeeringConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DatastreamPrivateConnectionVpcPeeringConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -274,7 +274,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vpc", GoGetter: "Vpc"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcInput", GoGetter: "VpcInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamPrivateConnectionVpcPeeringConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

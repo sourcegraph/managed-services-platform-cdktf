@@ -1,6 +1,5 @@
 package cloudrunv2service
 
-
 type CloudRunV2ServiceTemplate struct {
 	// Unstructured key value map that may be set by external tools to store and arbitrary metadata.
 	//
@@ -16,7 +15,7 @@ type CloudRunV2ServiceTemplate struct {
 	// containers block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/cloud_run_v2_service#containers CloudRunV2Service#containers}
-	Containers interface{} `field:"optional" json:"containers" yaml:"containers"`
+	Containers any `field:"optional" json:"containers" yaml:"containers"`
 	// A reference to a customer managed encryption key (CMEK) to use to encrypt this container image.
 	//
 	// For more information, go to https://cloud.google.com/run/docs/securing/using-cmek
@@ -30,7 +29,7 @@ type CloudRunV2ServiceTemplate struct {
 	// True if GPU zonal redundancy is disabled on this revision.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/cloud_run_v2_service#gpu_zonal_redundancy_disabled CloudRunV2Service#gpu_zonal_redundancy_disabled}
-	GpuZonalRedundancyDisabled interface{} `field:"optional" json:"gpuZonalRedundancyDisabled" yaml:"gpuZonalRedundancyDisabled"`
+	GpuZonalRedundancyDisabled any `field:"optional" json:"gpuZonalRedundancyDisabled" yaml:"gpuZonalRedundancyDisabled"`
 	// Unstructured key value map that can be used to organize and categorize objects.
 	//
 	// User-provided labels are shared with Google's billing system, so they can be used to filter, or break down billing charges by team, component, environment, state, etc.
@@ -70,7 +69,7 @@ type CloudRunV2ServiceTemplate struct {
 	// Enables session affinity. For more information, go to https://cloud.google.com/run/docs/configuring/session-affinity.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/cloud_run_v2_service#session_affinity CloudRunV2Service#session_affinity}
-	SessionAffinity interface{} `field:"optional" json:"sessionAffinity" yaml:"sessionAffinity"`
+	SessionAffinity any `field:"optional" json:"sessionAffinity" yaml:"sessionAffinity"`
 	// Max allowed time for an instance to respond to a request.
 	//
 	// A duration in seconds with up to nine fractional digits, ending with 's'. Example: "3.5s".
@@ -80,10 +79,9 @@ type CloudRunV2ServiceTemplate struct {
 	// volumes block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/cloud_run_v2_service#volumes CloudRunV2Service#volumes}
-	Volumes interface{} `field:"optional" json:"volumes" yaml:"volumes"`
+	Volumes any `field:"optional" json:"volumes" yaml:"volumes"`
 	// vpc_access block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/cloud_run_v2_service#vpc_access CloudRunV2Service#vpc_access}
 	VpcAccess *CloudRunV2ServiceTemplateVpcAccess `field:"optional" json:"vpcAccess" yaml:"vpcAccess"`
 }
-

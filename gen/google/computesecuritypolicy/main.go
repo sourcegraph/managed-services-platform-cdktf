@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicy",
-		reflect.TypeOf((*ComputeSecurityPolicy)(nil)).Elem(),
+		reflect.TypeFor[ComputeSecurityPolicy](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "adaptiveProtectionConfig", GoGetter: "AdaptiveProtectionConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "adaptiveProtectionConfigInput", GoGetter: "AdaptiveProtectionConfigInput"},
@@ -89,7 +89,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeSecurityPolicy{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -97,15 +97,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyAdaptiveProtectionConfig",
-		reflect.TypeOf((*ComputeSecurityPolicyAdaptiveProtectionConfig)(nil)).Elem(),
+		reflect.TypeFor[ComputeSecurityPolicyAdaptiveProtectionConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyAdaptiveProtectionConfigLayer7DdosDefenseConfig",
-		reflect.TypeOf((*ComputeSecurityPolicyAdaptiveProtectionConfigLayer7DdosDefenseConfig)(nil)).Elem(),
+		reflect.TypeFor[ComputeSecurityPolicyAdaptiveProtectionConfigLayer7DdosDefenseConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyAdaptiveProtectionConfigLayer7DdosDefenseConfigOutputReference",
-		reflect.TypeOf((*ComputeSecurityPolicyAdaptiveProtectionConfigLayer7DdosDefenseConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeSecurityPolicyAdaptiveProtectionConfigLayer7DdosDefenseConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -139,7 +139,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "thresholdConfigsInput", GoGetter: "ThresholdConfigsInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeSecurityPolicyAdaptiveProtectionConfigLayer7DdosDefenseConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -147,11 +147,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyAdaptiveProtectionConfigLayer7DdosDefenseConfigThresholdConfigs",
-		reflect.TypeOf((*ComputeSecurityPolicyAdaptiveProtectionConfigLayer7DdosDefenseConfigThresholdConfigs)(nil)).Elem(),
+		reflect.TypeFor[ComputeSecurityPolicyAdaptiveProtectionConfigLayer7DdosDefenseConfigThresholdConfigs](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyAdaptiveProtectionConfigLayer7DdosDefenseConfigThresholdConfigsList",
-		reflect.TypeOf((*ComputeSecurityPolicyAdaptiveProtectionConfigLayer7DdosDefenseConfigThresholdConfigsList)(nil)).Elem(),
+		reflect.TypeFor[ComputeSecurityPolicyAdaptiveProtectionConfigLayer7DdosDefenseConfigThresholdConfigsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -165,7 +165,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeSecurityPolicyAdaptiveProtectionConfigLayer7DdosDefenseConfigThresholdConfigsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -173,7 +173,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyAdaptiveProtectionConfigLayer7DdosDefenseConfigThresholdConfigsOutputReference",
-		reflect.TypeOf((*ComputeSecurityPolicyAdaptiveProtectionConfigLayer7DdosDefenseConfigThresholdConfigsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeSecurityPolicyAdaptiveProtectionConfigLayer7DdosDefenseConfigThresholdConfigsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "autoDeployConfidenceThreshold", GoGetter: "AutoDeployConfidenceThreshold"},
 			_jsii_.MemberProperty{JsiiProperty: "autoDeployConfidenceThresholdInput", GoGetter: "AutoDeployConfidenceThresholdInput"},
@@ -224,7 +224,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "trafficGranularityConfigs", GoGetter: "TrafficGranularityConfigs"},
 			_jsii_.MemberProperty{JsiiProperty: "trafficGranularityConfigsInput", GoGetter: "TrafficGranularityConfigsInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeSecurityPolicyAdaptiveProtectionConfigLayer7DdosDefenseConfigThresholdConfigsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -232,11 +232,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyAdaptiveProtectionConfigLayer7DdosDefenseConfigThresholdConfigsTrafficGranularityConfigs",
-		reflect.TypeOf((*ComputeSecurityPolicyAdaptiveProtectionConfigLayer7DdosDefenseConfigThresholdConfigsTrafficGranularityConfigs)(nil)).Elem(),
+		reflect.TypeFor[ComputeSecurityPolicyAdaptiveProtectionConfigLayer7DdosDefenseConfigThresholdConfigsTrafficGranularityConfigs](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyAdaptiveProtectionConfigLayer7DdosDefenseConfigThresholdConfigsTrafficGranularityConfigsList",
-		reflect.TypeOf((*ComputeSecurityPolicyAdaptiveProtectionConfigLayer7DdosDefenseConfigThresholdConfigsTrafficGranularityConfigsList)(nil)).Elem(),
+		reflect.TypeFor[ComputeSecurityPolicyAdaptiveProtectionConfigLayer7DdosDefenseConfigThresholdConfigsTrafficGranularityConfigsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -250,7 +250,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeSecurityPolicyAdaptiveProtectionConfigLayer7DdosDefenseConfigThresholdConfigsTrafficGranularityConfigsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -258,7 +258,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyAdaptiveProtectionConfigLayer7DdosDefenseConfigThresholdConfigsTrafficGranularityConfigsOutputReference",
-		reflect.TypeOf((*ComputeSecurityPolicyAdaptiveProtectionConfigLayer7DdosDefenseConfigThresholdConfigsTrafficGranularityConfigsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeSecurityPolicyAdaptiveProtectionConfigLayer7DdosDefenseConfigThresholdConfigsTrafficGranularityConfigsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -290,7 +290,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeSecurityPolicyAdaptiveProtectionConfigLayer7DdosDefenseConfigThresholdConfigsTrafficGranularityConfigsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -298,7 +298,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyAdaptiveProtectionConfigOutputReference",
-		reflect.TypeOf((*ComputeSecurityPolicyAdaptiveProtectionConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeSecurityPolicyAdaptiveProtectionConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -326,7 +326,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeSecurityPolicyAdaptiveProtectionConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -334,15 +334,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyAdvancedOptionsConfig",
-		reflect.TypeOf((*ComputeSecurityPolicyAdvancedOptionsConfig)(nil)).Elem(),
+		reflect.TypeFor[ComputeSecurityPolicyAdvancedOptionsConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyAdvancedOptionsConfigJsonCustomConfig",
-		reflect.TypeOf((*ComputeSecurityPolicyAdvancedOptionsConfigJsonCustomConfig)(nil)).Elem(),
+		reflect.TypeFor[ComputeSecurityPolicyAdvancedOptionsConfigJsonCustomConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyAdvancedOptionsConfigJsonCustomConfigOutputReference",
-		reflect.TypeOf((*ComputeSecurityPolicyAdvancedOptionsConfigJsonCustomConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeSecurityPolicyAdvancedOptionsConfigJsonCustomConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -368,7 +368,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeSecurityPolicyAdvancedOptionsConfigJsonCustomConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -376,7 +376,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyAdvancedOptionsConfigOutputReference",
-		reflect.TypeOf((*ComputeSecurityPolicyAdvancedOptionsConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeSecurityPolicyAdvancedOptionsConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -413,7 +413,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "userIpRequestHeaders", GoGetter: "UserIpRequestHeaders"},
 			_jsii_.MemberProperty{JsiiProperty: "userIpRequestHeadersInput", GoGetter: "UserIpRequestHeadersInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeSecurityPolicyAdvancedOptionsConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -421,15 +421,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyConfig",
-		reflect.TypeOf((*ComputeSecurityPolicyConfig)(nil)).Elem(),
+		reflect.TypeFor[ComputeSecurityPolicyConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyRecaptchaOptionsConfig",
-		reflect.TypeOf((*ComputeSecurityPolicyRecaptchaOptionsConfig)(nil)).Elem(),
+		reflect.TypeFor[ComputeSecurityPolicyRecaptchaOptionsConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyRecaptchaOptionsConfigOutputReference",
-		reflect.TypeOf((*ComputeSecurityPolicyRecaptchaOptionsConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeSecurityPolicyRecaptchaOptionsConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -455,7 +455,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeSecurityPolicyRecaptchaOptionsConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -463,15 +463,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyRule",
-		reflect.TypeOf((*ComputeSecurityPolicyRule)(nil)).Elem(),
+		reflect.TypeFor[ComputeSecurityPolicyRule](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyRuleHeaderAction",
-		reflect.TypeOf((*ComputeSecurityPolicyRuleHeaderAction)(nil)).Elem(),
+		reflect.TypeFor[ComputeSecurityPolicyRuleHeaderAction](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyRuleHeaderActionOutputReference",
-		reflect.TypeOf((*ComputeSecurityPolicyRuleHeaderActionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeSecurityPolicyRuleHeaderActionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -498,7 +498,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeSecurityPolicyRuleHeaderActionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -506,11 +506,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyRuleHeaderActionRequestHeadersToAdds",
-		reflect.TypeOf((*ComputeSecurityPolicyRuleHeaderActionRequestHeadersToAdds)(nil)).Elem(),
+		reflect.TypeFor[ComputeSecurityPolicyRuleHeaderActionRequestHeadersToAdds](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsList",
-		reflect.TypeOf((*ComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsList)(nil)).Elem(),
+		reflect.TypeFor[ComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -524,7 +524,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -532,7 +532,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsOutputReference",
-		reflect.TypeOf((*ComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -561,7 +561,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -569,7 +569,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyRuleList",
-		reflect.TypeOf((*ComputeSecurityPolicyRuleList)(nil)).Elem(),
+		reflect.TypeFor[ComputeSecurityPolicyRuleList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -583,7 +583,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeSecurityPolicyRuleList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -591,15 +591,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyRuleMatch",
-		reflect.TypeOf((*ComputeSecurityPolicyRuleMatch)(nil)).Elem(),
+		reflect.TypeFor[ComputeSecurityPolicyRuleMatch](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyRuleMatchConfig",
-		reflect.TypeOf((*ComputeSecurityPolicyRuleMatchConfig)(nil)).Elem(),
+		reflect.TypeFor[ComputeSecurityPolicyRuleMatchConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyRuleMatchConfigOutputReference",
-		reflect.TypeOf((*ComputeSecurityPolicyRuleMatchConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeSecurityPolicyRuleMatchConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -625,7 +625,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeSecurityPolicyRuleMatchConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -633,15 +633,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyRuleMatchExpr",
-		reflect.TypeOf((*ComputeSecurityPolicyRuleMatchExpr)(nil)).Elem(),
+		reflect.TypeFor[ComputeSecurityPolicyRuleMatchExpr](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyRuleMatchExprOptions",
-		reflect.TypeOf((*ComputeSecurityPolicyRuleMatchExprOptions)(nil)).Elem(),
+		reflect.TypeFor[ComputeSecurityPolicyRuleMatchExprOptions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyRuleMatchExprOptionsOutputReference",
-		reflect.TypeOf((*ComputeSecurityPolicyRuleMatchExprOptionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeSecurityPolicyRuleMatchExprOptionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -668,7 +668,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeSecurityPolicyRuleMatchExprOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -676,11 +676,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyRuleMatchExprOptionsRecaptchaOptions",
-		reflect.TypeOf((*ComputeSecurityPolicyRuleMatchExprOptionsRecaptchaOptions)(nil)).Elem(),
+		reflect.TypeFor[ComputeSecurityPolicyRuleMatchExprOptionsRecaptchaOptions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyRuleMatchExprOptionsRecaptchaOptionsOutputReference",
-		reflect.TypeOf((*ComputeSecurityPolicyRuleMatchExprOptionsRecaptchaOptionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeSecurityPolicyRuleMatchExprOptionsRecaptchaOptionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "actionTokenSiteKeys", GoGetter: "ActionTokenSiteKeys"},
 			_jsii_.MemberProperty{JsiiProperty: "actionTokenSiteKeysInput", GoGetter: "ActionTokenSiteKeysInput"},
@@ -710,7 +710,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeSecurityPolicyRuleMatchExprOptionsRecaptchaOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -718,7 +718,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyRuleMatchExprOutputReference",
-		reflect.TypeOf((*ComputeSecurityPolicyRuleMatchExprOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeSecurityPolicyRuleMatchExprOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -744,7 +744,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeSecurityPolicyRuleMatchExprOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -752,7 +752,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyRuleMatchOutputReference",
-		reflect.TypeOf((*ComputeSecurityPolicyRuleMatchOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeSecurityPolicyRuleMatchOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -791,7 +791,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "versionedExpr", GoGetter: "VersionedExpr"},
 			_jsii_.MemberProperty{JsiiProperty: "versionedExprInput", GoGetter: "VersionedExprInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeSecurityPolicyRuleMatchOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -799,7 +799,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyRuleOutputReference",
-		reflect.TypeOf((*ComputeSecurityPolicyRuleOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeSecurityPolicyRuleOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "action", GoGetter: "Action"},
 			_jsii_.MemberProperty{JsiiProperty: "actionInput", GoGetter: "ActionInput"},
@@ -852,7 +852,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeSecurityPolicyRuleOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -860,15 +860,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyRulePreconfiguredWafConfig",
-		reflect.TypeOf((*ComputeSecurityPolicyRulePreconfiguredWafConfig)(nil)).Elem(),
+		reflect.TypeFor[ComputeSecurityPolicyRulePreconfiguredWafConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusion",
-		reflect.TypeOf((*ComputeSecurityPolicyRulePreconfiguredWafConfigExclusion)(nil)).Elem(),
+		reflect.TypeFor[ComputeSecurityPolicyRulePreconfiguredWafConfigExclusion](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionList",
-		reflect.TypeOf((*ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionList)(nil)).Elem(),
+		reflect.TypeFor[ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -882,7 +882,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -890,7 +890,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionOutputReference",
-		reflect.TypeOf((*ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -935,7 +935,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -943,11 +943,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookie",
-		reflect.TypeOf((*ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookie)(nil)).Elem(),
+		reflect.TypeFor[ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookie](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookieList",
-		reflect.TypeOf((*ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookieList)(nil)).Elem(),
+		reflect.TypeFor[ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookieList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -961,7 +961,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookieList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -969,7 +969,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookieOutputReference",
-		reflect.TypeOf((*ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookieOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookieOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -998,7 +998,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookieOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1006,11 +1006,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeader",
-		reflect.TypeOf((*ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeader)(nil)).Elem(),
+		reflect.TypeFor[ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeader](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeaderList",
-		reflect.TypeOf((*ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeaderList)(nil)).Elem(),
+		reflect.TypeFor[ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeaderList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1024,7 +1024,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeaderList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1032,7 +1032,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeaderOutputReference",
-		reflect.TypeOf((*ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeaderOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeaderOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1061,7 +1061,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeaderOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1069,11 +1069,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParam",
-		reflect.TypeOf((*ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParam)(nil)).Elem(),
+		reflect.TypeFor[ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParam](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParamList",
-		reflect.TypeOf((*ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParamList)(nil)).Elem(),
+		reflect.TypeFor[ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParamList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1087,7 +1087,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParamList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1095,7 +1095,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParamOutputReference",
-		reflect.TypeOf((*ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParamOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParamOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1124,7 +1124,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParamOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1132,11 +1132,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUri",
-		reflect.TypeOf((*ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUri)(nil)).Elem(),
+		reflect.TypeFor[ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUri](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUriList",
-		reflect.TypeOf((*ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUriList)(nil)).Elem(),
+		reflect.TypeFor[ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUriList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1150,7 +1150,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUriList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1158,7 +1158,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUriOutputReference",
-		reflect.TypeOf((*ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUriOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUriOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1187,7 +1187,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUriOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1195,7 +1195,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyRulePreconfiguredWafConfigOutputReference",
-		reflect.TypeOf((*ComputeSecurityPolicyRulePreconfiguredWafConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeSecurityPolicyRulePreconfiguredWafConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1223,7 +1223,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeSecurityPolicyRulePreconfiguredWafConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1231,15 +1231,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyRuleRateLimitOptions",
-		reflect.TypeOf((*ComputeSecurityPolicyRuleRateLimitOptions)(nil)).Elem(),
+		reflect.TypeFor[ComputeSecurityPolicyRuleRateLimitOptions](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyRuleRateLimitOptionsBanThreshold",
-		reflect.TypeOf((*ComputeSecurityPolicyRuleRateLimitOptionsBanThreshold)(nil)).Elem(),
+		reflect.TypeFor[ComputeSecurityPolicyRuleRateLimitOptionsBanThreshold](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyRuleRateLimitOptionsBanThresholdOutputReference",
-		reflect.TypeOf((*ComputeSecurityPolicyRuleRateLimitOptionsBanThresholdOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeSecurityPolicyRuleRateLimitOptionsBanThresholdOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1267,7 +1267,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeSecurityPolicyRuleRateLimitOptionsBanThresholdOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1275,11 +1275,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigs",
-		reflect.TypeOf((*ComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigs)(nil)).Elem(),
+		reflect.TypeFor[ComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigs](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsList",
-		reflect.TypeOf((*ComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsList)(nil)).Elem(),
+		reflect.TypeFor[ComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1293,7 +1293,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1301,7 +1301,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsOutputReference",
-		reflect.TypeOf((*ComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1331,7 +1331,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1339,11 +1339,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyRuleRateLimitOptionsExceedRedirectOptions",
-		reflect.TypeOf((*ComputeSecurityPolicyRuleRateLimitOptionsExceedRedirectOptions)(nil)).Elem(),
+		reflect.TypeFor[ComputeSecurityPolicyRuleRateLimitOptionsExceedRedirectOptions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyRuleRateLimitOptionsExceedRedirectOptionsOutputReference",
-		reflect.TypeOf((*ComputeSecurityPolicyRuleRateLimitOptionsExceedRedirectOptionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeSecurityPolicyRuleRateLimitOptionsExceedRedirectOptionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1372,7 +1372,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeSecurityPolicyRuleRateLimitOptionsExceedRedirectOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1380,7 +1380,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyRuleRateLimitOptionsOutputReference",
-		reflect.TypeOf((*ComputeSecurityPolicyRuleRateLimitOptionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeSecurityPolicyRuleRateLimitOptionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "banDurationSec", GoGetter: "BanDurationSec"},
 			_jsii_.MemberProperty{JsiiProperty: "banDurationSecInput", GoGetter: "BanDurationSecInput"},
@@ -1432,7 +1432,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeSecurityPolicyRuleRateLimitOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1440,11 +1440,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyRuleRateLimitOptionsRateLimitThreshold",
-		reflect.TypeOf((*ComputeSecurityPolicyRuleRateLimitOptionsRateLimitThreshold)(nil)).Elem(),
+		reflect.TypeFor[ComputeSecurityPolicyRuleRateLimitOptionsRateLimitThreshold](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyRuleRateLimitOptionsRateLimitThresholdOutputReference",
-		reflect.TypeOf((*ComputeSecurityPolicyRuleRateLimitOptionsRateLimitThresholdOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeSecurityPolicyRuleRateLimitOptionsRateLimitThresholdOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1472,7 +1472,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeSecurityPolicyRuleRateLimitOptionsRateLimitThresholdOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1480,11 +1480,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyRuleRedirectOptions",
-		reflect.TypeOf((*ComputeSecurityPolicyRuleRedirectOptions)(nil)).Elem(),
+		reflect.TypeFor[ComputeSecurityPolicyRuleRedirectOptions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyRuleRedirectOptionsOutputReference",
-		reflect.TypeOf((*ComputeSecurityPolicyRuleRedirectOptionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeSecurityPolicyRuleRedirectOptionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1513,7 +1513,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeSecurityPolicyRuleRedirectOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1521,11 +1521,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyTimeouts",
-		reflect.TypeOf((*ComputeSecurityPolicyTimeouts)(nil)).Elem(),
+		reflect.TypeFor[ComputeSecurityPolicyTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyTimeoutsOutputReference",
-		reflect.TypeOf((*ComputeSecurityPolicyTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeSecurityPolicyTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1558,7 +1558,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeSecurityPolicyTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

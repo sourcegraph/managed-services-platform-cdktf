@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.vertexAiIndexEndpoint.VertexAiIndexEndpoint",
-		reflect.TypeOf((*VertexAiIndexEndpoint)(nil)).Elem(),
+		reflect.TypeFor[VertexAiIndexEndpoint](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -91,7 +91,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VertexAiIndexEndpoint{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -99,15 +99,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.vertexAiIndexEndpoint.VertexAiIndexEndpointConfig",
-		reflect.TypeOf((*VertexAiIndexEndpointConfig)(nil)).Elem(),
+		reflect.TypeFor[VertexAiIndexEndpointConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.vertexAiIndexEndpoint.VertexAiIndexEndpointPrivateServiceConnectConfig",
-		reflect.TypeOf((*VertexAiIndexEndpointPrivateServiceConnectConfig)(nil)).Elem(),
+		reflect.TypeFor[VertexAiIndexEndpointPrivateServiceConnectConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.vertexAiIndexEndpoint.VertexAiIndexEndpointPrivateServiceConnectConfigOutputReference",
-		reflect.TypeOf((*VertexAiIndexEndpointPrivateServiceConnectConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[VertexAiIndexEndpointPrivateServiceConnectConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -136,7 +136,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VertexAiIndexEndpointPrivateServiceConnectConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -144,11 +144,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.vertexAiIndexEndpoint.VertexAiIndexEndpointTimeouts",
-		reflect.TypeOf((*VertexAiIndexEndpointTimeouts)(nil)).Elem(),
+		reflect.TypeFor[VertexAiIndexEndpointTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.vertexAiIndexEndpoint.VertexAiIndexEndpointTimeoutsOutputReference",
-		reflect.TypeOf((*VertexAiIndexEndpointTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[VertexAiIndexEndpointTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -181,7 +181,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VertexAiIndexEndpointTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

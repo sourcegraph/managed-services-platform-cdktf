@@ -22,15 +22,15 @@ type PubsubSubscription interface {
 	CloudStorageConfig() PubsubSubscriptionCloudStorageConfigOutputReference
 	CloudStorageConfigInput() *PubsubSubscriptionCloudStorageConfig
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	DeadLetterPolicy() PubsubSubscriptionDeadLetterPolicyOutputReference
 	DeadLetterPolicyInput() *PubsubSubscriptionDeadLetterPolicy
 	// Experimental.
@@ -38,12 +38,12 @@ type PubsubSubscription interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	EffectiveLabels() cdktf.StringMap
-	EnableExactlyOnceDelivery() interface{}
-	SetEnableExactlyOnceDelivery(val interface{})
-	EnableExactlyOnceDeliveryInput() interface{}
-	EnableMessageOrdering() interface{}
-	SetEnableMessageOrdering(val interface{})
-	EnableMessageOrderingInput() interface{}
+	EnableExactlyOnceDelivery() any
+	SetEnableExactlyOnceDelivery(val any)
+	EnableExactlyOnceDeliveryInput() any
+	EnableMessageOrdering() any
+	SetEnableMessageOrdering(val any)
+	EnableMessageOrderingInput() any
 	ExpirationPolicy() PubsubSubscriptionExpirationPolicyOutputReference
 	ExpirationPolicyInput() *PubsubSubscriptionExpirationPolicy
 	Filter() *string
@@ -71,7 +71,7 @@ type PubsubSubscription interface {
 	SetMessageRetentionDuration(val *string)
 	MessageRetentionDurationInput() *string
 	MessageTransforms() PubsubSubscriptionMessageTransformsList
-	MessageTransformsInput() interface{}
+	MessageTransformsInput() any
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -85,27 +85,27 @@ type PubsubSubscription interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	PushConfig() PubsubSubscriptionPushConfigOutputReference
 	PushConfigInput() *PubsubSubscriptionPushConfig
 	// Experimental.
-	RawOverrides() interface{}
-	RetainAckedMessages() interface{}
-	SetRetainAckedMessages(val interface{})
-	RetainAckedMessagesInput() interface{}
+	RawOverrides() any
+	RetainAckedMessages() any
+	SetRetainAckedMessages(val any)
+	RetainAckedMessagesInput() any
 	RetryPolicy() PubsubSubscriptionRetryPolicyOutputReference
 	RetryPolicyInput() *PubsubSubscriptionRetryPolicy
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() PubsubSubscriptionTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	Topic() *string
 	SetTopic(val *string)
 	TopicInput() *string
@@ -113,9 +113,9 @@ type PubsubSubscription interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -133,7 +133,7 @@ type PubsubSubscription interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -145,7 +145,7 @@ type PubsubSubscription interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -156,7 +156,7 @@ type PubsubSubscription interface {
 	PutCloudStorageConfig(value *PubsubSubscriptionCloudStorageConfig)
 	PutDeadLetterPolicy(value *PubsubSubscriptionDeadLetterPolicy)
 	PutExpirationPolicy(value *PubsubSubscriptionExpirationPolicy)
-	PutMessageTransforms(value interface{})
+	PutMessageTransforms(value any)
 	PutPushConfig(value *PubsubSubscriptionPushConfig)
 	PutRetryPolicy(value *PubsubSubscriptionRetryPolicy)
 	PutTimeouts(value *PubsubSubscriptionTimeouts)
@@ -180,17 +180,17 @@ type PubsubSubscription interface {
 	ResetRetainAckedMessages()
 	ResetRetryPolicy()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for PubsubSubscription
@@ -268,8 +268,8 @@ func (j *jsiiProxy_PubsubSubscription) CloudStorageConfigInput() *PubsubSubscrip
 	return returns
 }
 
-func (j *jsiiProxy_PubsubSubscription) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PubsubSubscription) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -278,8 +278,8 @@ func (j *jsiiProxy_PubsubSubscription) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_PubsubSubscription) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_PubsubSubscription) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -288,8 +288,8 @@ func (j *jsiiProxy_PubsubSubscription) ConstructNodeMetadata() *map[string]inter
 	return returns
 }
 
-func (j *jsiiProxy_PubsubSubscription) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PubsubSubscription) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -338,8 +338,8 @@ func (j *jsiiProxy_PubsubSubscription) EffectiveLabels() cdktf.StringMap {
 	return returns
 }
 
-func (j *jsiiProxy_PubsubSubscription) EnableExactlyOnceDelivery() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PubsubSubscription) EnableExactlyOnceDelivery() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableExactlyOnceDelivery",
@@ -348,8 +348,8 @@ func (j *jsiiProxy_PubsubSubscription) EnableExactlyOnceDelivery() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_PubsubSubscription) EnableExactlyOnceDeliveryInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PubsubSubscription) EnableExactlyOnceDeliveryInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableExactlyOnceDeliveryInput",
@@ -358,8 +358,8 @@ func (j *jsiiProxy_PubsubSubscription) EnableExactlyOnceDeliveryInput() interfac
 	return returns
 }
 
-func (j *jsiiProxy_PubsubSubscription) EnableMessageOrdering() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PubsubSubscription) EnableMessageOrdering() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableMessageOrdering",
@@ -368,8 +368,8 @@ func (j *jsiiProxy_PubsubSubscription) EnableMessageOrdering() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_PubsubSubscription) EnableMessageOrderingInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PubsubSubscription) EnableMessageOrderingInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableMessageOrderingInput",
@@ -528,8 +528,8 @@ func (j *jsiiProxy_PubsubSubscription) MessageTransforms() PubsubSubscriptionMes
 	return returns
 }
 
-func (j *jsiiProxy_PubsubSubscription) MessageTransformsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PubsubSubscription) MessageTransformsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"messageTransformsInput",
@@ -598,8 +598,8 @@ func (j *jsiiProxy_PubsubSubscription) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_PubsubSubscription) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_PubsubSubscription) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -628,8 +628,8 @@ func (j *jsiiProxy_PubsubSubscription) PushConfigInput() *PubsubSubscriptionPush
 	return returns
 }
 
-func (j *jsiiProxy_PubsubSubscription) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PubsubSubscription) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -638,8 +638,8 @@ func (j *jsiiProxy_PubsubSubscription) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_PubsubSubscription) RetainAckedMessages() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PubsubSubscription) RetainAckedMessages() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"retainAckedMessages",
@@ -648,8 +648,8 @@ func (j *jsiiProxy_PubsubSubscription) RetainAckedMessages() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_PubsubSubscription) RetainAckedMessagesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PubsubSubscription) RetainAckedMessagesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"retainAckedMessagesInput",
@@ -698,8 +698,8 @@ func (j *jsiiProxy_PubsubSubscription) TerraformLabels() cdktf.StringMap {
 	return returns
 }
 
-func (j *jsiiProxy_PubsubSubscription) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_PubsubSubscription) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -728,8 +728,8 @@ func (j *jsiiProxy_PubsubSubscription) Timeouts() PubsubSubscriptionTimeoutsOutp
 	return returns
 }
 
-func (j *jsiiProxy_PubsubSubscription) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PubsubSubscription) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -758,7 +758,6 @@ func (j *jsiiProxy_PubsubSubscription) TopicInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/pubsub_subscription google_pubsub_subscription} Resource.
 func NewPubsubSubscription(scope constructs.Construct, id *string, config *PubsubSubscriptionConfig) PubsubSubscription {
 	_init_.Initialize()
@@ -770,7 +769,7 @@ func NewPubsubSubscription(scope constructs.Construct, id *string, config *Pubsu
 
 	_jsii_.Create(
 		"@cdktf/provider-google.pubsubSubscription.PubsubSubscription",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -783,12 +782,12 @@ func NewPubsubSubscription_Override(p PubsubSubscription, scope constructs.Const
 
 	_jsii_.Create(
 		"@cdktf/provider-google.pubsubSubscription.PubsubSubscription",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		p,
 	)
 }
 
-func (j *jsiiProxy_PubsubSubscription)SetAckDeadlineSeconds(val *float64) {
+func (j *jsiiProxy_PubsubSubscription) SetAckDeadlineSeconds(val *float64) {
 	if err := j.validateSetAckDeadlineSecondsParameters(val); err != nil {
 		panic(err)
 	}
@@ -799,7 +798,7 @@ func (j *jsiiProxy_PubsubSubscription)SetAckDeadlineSeconds(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_PubsubSubscription)SetConnection(val interface{}) {
+func (j *jsiiProxy_PubsubSubscription) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -810,7 +809,7 @@ func (j *jsiiProxy_PubsubSubscription)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PubsubSubscription)SetCount(val interface{}) {
+func (j *jsiiProxy_PubsubSubscription) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -821,7 +820,7 @@ func (j *jsiiProxy_PubsubSubscription)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PubsubSubscription)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_PubsubSubscription) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -829,7 +828,7 @@ func (j *jsiiProxy_PubsubSubscription)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_PubsubSubscription)SetEnableExactlyOnceDelivery(val interface{}) {
+func (j *jsiiProxy_PubsubSubscription) SetEnableExactlyOnceDelivery(val any) {
 	if err := j.validateSetEnableExactlyOnceDeliveryParameters(val); err != nil {
 		panic(err)
 	}
@@ -840,7 +839,7 @@ func (j *jsiiProxy_PubsubSubscription)SetEnableExactlyOnceDelivery(val interface
 	)
 }
 
-func (j *jsiiProxy_PubsubSubscription)SetEnableMessageOrdering(val interface{}) {
+func (j *jsiiProxy_PubsubSubscription) SetEnableMessageOrdering(val any) {
 	if err := j.validateSetEnableMessageOrderingParameters(val); err != nil {
 		panic(err)
 	}
@@ -851,7 +850,7 @@ func (j *jsiiProxy_PubsubSubscription)SetEnableMessageOrdering(val interface{}) 
 	)
 }
 
-func (j *jsiiProxy_PubsubSubscription)SetFilter(val *string) {
+func (j *jsiiProxy_PubsubSubscription) SetFilter(val *string) {
 	if err := j.validateSetFilterParameters(val); err != nil {
 		panic(err)
 	}
@@ -862,7 +861,7 @@ func (j *jsiiProxy_PubsubSubscription)SetFilter(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PubsubSubscription)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_PubsubSubscription) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -870,7 +869,7 @@ func (j *jsiiProxy_PubsubSubscription)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_PubsubSubscription)SetId(val *string) {
+func (j *jsiiProxy_PubsubSubscription) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -881,7 +880,7 @@ func (j *jsiiProxy_PubsubSubscription)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PubsubSubscription)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_PubsubSubscription) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -892,7 +891,7 @@ func (j *jsiiProxy_PubsubSubscription)SetLabels(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_PubsubSubscription)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_PubsubSubscription) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -903,7 +902,7 @@ func (j *jsiiProxy_PubsubSubscription)SetLifecycle(val *cdktf.TerraformResourceL
 	)
 }
 
-func (j *jsiiProxy_PubsubSubscription)SetMessageRetentionDuration(val *string) {
+func (j *jsiiProxy_PubsubSubscription) SetMessageRetentionDuration(val *string) {
 	if err := j.validateSetMessageRetentionDurationParameters(val); err != nil {
 		panic(err)
 	}
@@ -914,7 +913,7 @@ func (j *jsiiProxy_PubsubSubscription)SetMessageRetentionDuration(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PubsubSubscription)SetName(val *string) {
+func (j *jsiiProxy_PubsubSubscription) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -925,7 +924,7 @@ func (j *jsiiProxy_PubsubSubscription)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PubsubSubscription)SetProject(val *string) {
+func (j *jsiiProxy_PubsubSubscription) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -936,7 +935,7 @@ func (j *jsiiProxy_PubsubSubscription)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PubsubSubscription)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_PubsubSubscription) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -944,7 +943,7 @@ func (j *jsiiProxy_PubsubSubscription)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_PubsubSubscription)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_PubsubSubscription) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -955,7 +954,7 @@ func (j *jsiiProxy_PubsubSubscription)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PubsubSubscription)SetRetainAckedMessages(val interface{}) {
+func (j *jsiiProxy_PubsubSubscription) SetRetainAckedMessages(val any) {
 	if err := j.validateSetRetainAckedMessagesParameters(val); err != nil {
 		panic(err)
 	}
@@ -966,7 +965,7 @@ func (j *jsiiProxy_PubsubSubscription)SetRetainAckedMessages(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PubsubSubscription)SetTopic(val *string) {
+func (j *jsiiProxy_PubsubSubscription) SetTopic(val *string) {
 	if err := j.validateSetTopicParameters(val); err != nil {
 		panic(err)
 	}
@@ -989,7 +988,7 @@ func PubsubSubscription_GenerateConfigForImport(scope constructs.Construct, impo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.pubsubSubscription.PubsubSubscription",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -1013,7 +1012,7 @@ func PubsubSubscription_GenerateConfigForImport(scope constructs.Construct, impo
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func PubsubSubscription_IsConstruct(x interface{}) *bool {
+func PubsubSubscription_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validatePubsubSubscription_IsConstructParameters(x); err != nil {
@@ -1024,7 +1023,7 @@ func PubsubSubscription_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.pubsubSubscription.PubsubSubscription",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1032,7 +1031,7 @@ func PubsubSubscription_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func PubsubSubscription_IsTerraformElement(x interface{}) *bool {
+func PubsubSubscription_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validatePubsubSubscription_IsTerraformElementParameters(x); err != nil {
@@ -1043,7 +1042,7 @@ func PubsubSubscription_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.pubsubSubscription.PubsubSubscription",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1051,7 +1050,7 @@ func PubsubSubscription_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func PubsubSubscription_IsTerraformResource(x interface{}) *bool {
+func PubsubSubscription_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validatePubsubSubscription_IsTerraformResourceParameters(x); err != nil {
@@ -1062,7 +1061,7 @@ func PubsubSubscription_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.pubsubSubscription.PubsubSubscription",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1087,31 +1086,31 @@ func (p *jsiiProxy_PubsubSubscription) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (p *jsiiProxy_PubsubSubscription) AddOverride(path *string, value interface{}) {
+func (p *jsiiProxy_PubsubSubscription) AddOverride(path *string, value any) {
 	if err := p.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		p,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (p *jsiiProxy_PubsubSubscription) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (p *jsiiProxy_PubsubSubscription) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1127,7 +1126,7 @@ func (p *jsiiProxy_PubsubSubscription) GetBooleanAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		p,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1143,7 +1142,7 @@ func (p *jsiiProxy_PubsubSubscription) GetBooleanMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		p,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1159,7 +1158,7 @@ func (p *jsiiProxy_PubsubSubscription) GetListAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		p,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1175,7 +1174,7 @@ func (p *jsiiProxy_PubsubSubscription) GetNumberAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		p,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1191,7 +1190,7 @@ func (p *jsiiProxy_PubsubSubscription) GetNumberListAttribute(terraformAttribute
 	_jsii_.Invoke(
 		p,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1207,7 +1206,7 @@ func (p *jsiiProxy_PubsubSubscription) GetNumberMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		p,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1223,7 +1222,7 @@ func (p *jsiiProxy_PubsubSubscription) GetStringAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		p,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1239,15 +1238,15 @@ func (p *jsiiProxy_PubsubSubscription) GetStringMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		p,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (p *jsiiProxy_PubsubSubscription) HasResourceMove() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_PubsubSubscription) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -1266,7 +1265,7 @@ func (p *jsiiProxy_PubsubSubscription) ImportFrom(id *string, provider cdktf.Ter
 	_jsii_.InvokeVoid(
 		p,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1279,7 +1278,7 @@ func (p *jsiiProxy_PubsubSubscription) InterpolationForAttribute(terraformAttrib
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1293,18 +1292,18 @@ func (p *jsiiProxy_PubsubSubscription) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (p *jsiiProxy_PubsubSubscription) MoveTo(moveTarget *string, index interface{}) {
+func (p *jsiiProxy_PubsubSubscription) MoveTo(moveTarget *string, index any) {
 	if err := p.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		p,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1315,7 +1314,7 @@ func (p *jsiiProxy_PubsubSubscription) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1326,7 +1325,7 @@ func (p *jsiiProxy_PubsubSubscription) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1337,7 +1336,7 @@ func (p *jsiiProxy_PubsubSubscription) PutBigqueryConfig(value *PubsubSubscripti
 	_jsii_.InvokeVoid(
 		p,
 		"putBigqueryConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1348,7 +1347,7 @@ func (p *jsiiProxy_PubsubSubscription) PutCloudStorageConfig(value *PubsubSubscr
 	_jsii_.InvokeVoid(
 		p,
 		"putCloudStorageConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1359,7 +1358,7 @@ func (p *jsiiProxy_PubsubSubscription) PutDeadLetterPolicy(value *PubsubSubscrip
 	_jsii_.InvokeVoid(
 		p,
 		"putDeadLetterPolicy",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1370,18 +1369,18 @@ func (p *jsiiProxy_PubsubSubscription) PutExpirationPolicy(value *PubsubSubscrip
 	_jsii_.InvokeVoid(
 		p,
 		"putExpirationPolicy",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (p *jsiiProxy_PubsubSubscription) PutMessageTransforms(value interface{}) {
+func (p *jsiiProxy_PubsubSubscription) PutMessageTransforms(value any) {
 	if err := p.validatePutMessageTransformsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		p,
 		"putMessageTransforms",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1392,7 +1391,7 @@ func (p *jsiiProxy_PubsubSubscription) PutPushConfig(value *PubsubSubscriptionPu
 	_jsii_.InvokeVoid(
 		p,
 		"putPushConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1403,7 +1402,7 @@ func (p *jsiiProxy_PubsubSubscription) PutRetryPolicy(value *PubsubSubscriptionR
 	_jsii_.InvokeVoid(
 		p,
 		"putRetryPolicy",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1414,7 +1413,7 @@ func (p *jsiiProxy_PubsubSubscription) PutTimeouts(value *PubsubSubscriptionTime
 	_jsii_.InvokeVoid(
 		p,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1562,8 +1561,8 @@ func (p *jsiiProxy_PubsubSubscription) ResetTimeouts() {
 	)
 }
 
-func (p *jsiiProxy_PubsubSubscription) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (p *jsiiProxy_PubsubSubscription) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
@@ -1575,8 +1574,8 @@ func (p *jsiiProxy_PubsubSubscription) SynthesizeAttributes() *map[string]interf
 	return returns
 }
 
-func (p *jsiiProxy_PubsubSubscription) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (p *jsiiProxy_PubsubSubscription) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
@@ -1588,8 +1587,8 @@ func (p *jsiiProxy_PubsubSubscription) SynthesizeHclAttributes() *map[string]int
 	return returns
 }
 
-func (p *jsiiProxy_PubsubSubscription) ToHclTerraform() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_PubsubSubscription) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -1601,8 +1600,8 @@ func (p *jsiiProxy_PubsubSubscription) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (p *jsiiProxy_PubsubSubscription) ToMetadata() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_PubsubSubscription) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -1627,8 +1626,8 @@ func (p *jsiiProxy_PubsubSubscription) ToString() *string {
 	return returns
 }
 
-func (p *jsiiProxy_PubsubSubscription) ToTerraform() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_PubsubSubscription) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -1639,4 +1638,3 @@ func (p *jsiiProxy_PubsubSubscription) ToTerraform() interface{} {
 
 	return returns
 }
-

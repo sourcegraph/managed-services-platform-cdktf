@@ -90,7 +90,7 @@ func (n *jsiiProxy_NetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputR
 	return nil
 }
 
-func (n *jsiiProxy_NetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputReference) validatePutInstancesParameters(value interface{}) error {
+func (n *jsiiProxy_NetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputReference) validatePutInstancesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (n *jsiiProxy_NetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputR
 	return nil
 }
 
-func (j *jsiiProxy_NetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -210,7 +210,7 @@ func (j *jsiiProxy_NetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputR
 	return nil
 }
 
-func (j *jsiiProxy_NetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputReference) validateSetSiteToSiteDataTransferParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputReference) validateSetSiteToSiteDataTransferParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -257,4 +257,3 @@ func validateNewNetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputRefe
 
 	return nil
 }
-

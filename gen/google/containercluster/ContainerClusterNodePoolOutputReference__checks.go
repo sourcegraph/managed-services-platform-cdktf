@@ -175,7 +175,7 @@ func (c *jsiiProxy_ContainerClusterNodePoolOutputReference) validateResolveParam
 	return nil
 }
 
-func (j *jsiiProxy_ContainerClusterNodePoolOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerClusterNodePoolOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -248,7 +248,7 @@ func (j *jsiiProxy_ContainerClusterNodePoolOutputReference) validateSetInitialNo
 	return nil
 }
 
-func (j *jsiiProxy_ContainerClusterNodePoolOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerClusterNodePoolOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -355,4 +355,3 @@ func validateNewContainerClusterNodePoolOutputReferenceParameters(terraformResou
 
 	return nil
 }
-

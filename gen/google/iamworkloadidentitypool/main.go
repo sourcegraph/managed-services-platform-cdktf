@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.iamWorkloadIdentityPool.IamWorkloadIdentityPool",
-		reflect.TypeOf((*IamWorkloadIdentityPool)(nil)).Elem(),
+		reflect.TypeFor[IamWorkloadIdentityPool](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -76,7 +76,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "workloadIdentityPoolId", GoGetter: "WorkloadIdentityPoolId"},
 			_jsii_.MemberProperty{JsiiProperty: "workloadIdentityPoolIdInput", GoGetter: "WorkloadIdentityPoolIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IamWorkloadIdentityPool{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -84,15 +84,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.iamWorkloadIdentityPool.IamWorkloadIdentityPoolConfig",
-		reflect.TypeOf((*IamWorkloadIdentityPoolConfig)(nil)).Elem(),
+		reflect.TypeFor[IamWorkloadIdentityPoolConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.iamWorkloadIdentityPool.IamWorkloadIdentityPoolTimeouts",
-		reflect.TypeOf((*IamWorkloadIdentityPoolTimeouts)(nil)).Elem(),
+		reflect.TypeFor[IamWorkloadIdentityPoolTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.iamWorkloadIdentityPool.IamWorkloadIdentityPoolTimeoutsOutputReference",
-		reflect.TypeOf((*IamWorkloadIdentityPoolTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IamWorkloadIdentityPoolTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -125,7 +125,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IamWorkloadIdentityPoolTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

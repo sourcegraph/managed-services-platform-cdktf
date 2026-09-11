@@ -15,15 +15,15 @@ type StorageTransferJob interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreationTime() *string
 	DeletionTime() *string
 	// Experimental.
@@ -68,11 +68,11 @@ type StorageTransferJob interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ReplicationSpec() StorageTransferJobReplicationSpecOutputReference
 	ReplicationSpecInput() *StorageTransferJobReplicationSpec
 	Schedule() StorageTransferJobScheduleOutputReference
@@ -83,7 +83,7 @@ type StorageTransferJob interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	TransferSpec() StorageTransferJobTransferSpecOutputReference
@@ -92,9 +92,9 @@ type StorageTransferJob interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -112,7 +112,7 @@ type StorageTransferJob interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -124,7 +124,7 @@ type StorageTransferJob interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -150,17 +150,17 @@ type StorageTransferJob interface {
 	ResetSchedule()
 	ResetStatus()
 	ResetTransferSpec()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for StorageTransferJob
@@ -178,8 +178,8 @@ func (j *jsiiProxy_StorageTransferJob) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_StorageTransferJob) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_StorageTransferJob) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -188,8 +188,8 @@ func (j *jsiiProxy_StorageTransferJob) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_StorageTransferJob) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_StorageTransferJob) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -198,8 +198,8 @@ func (j *jsiiProxy_StorageTransferJob) ConstructNodeMetadata() *map[string]inter
 	return returns
 }
 
-func (j *jsiiProxy_StorageTransferJob) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_StorageTransferJob) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -448,8 +448,8 @@ func (j *jsiiProxy_StorageTransferJob) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_StorageTransferJob) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_StorageTransferJob) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -458,8 +458,8 @@ func (j *jsiiProxy_StorageTransferJob) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_StorageTransferJob) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_StorageTransferJob) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -538,8 +538,8 @@ func (j *jsiiProxy_StorageTransferJob) TerraformGeneratorMetadata() *cdktf.Terra
 	return returns
 }
 
-func (j *jsiiProxy_StorageTransferJob) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_StorageTransferJob) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -578,7 +578,6 @@ func (j *jsiiProxy_StorageTransferJob) TransferSpecInput() *StorageTransferJobTr
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/storage_transfer_job google_storage_transfer_job} Resource.
 func NewStorageTransferJob(scope constructs.Construct, id *string, config *StorageTransferJobConfig) StorageTransferJob {
 	_init_.Initialize()
@@ -590,7 +589,7 @@ func NewStorageTransferJob(scope constructs.Construct, id *string, config *Stora
 
 	_jsii_.Create(
 		"@cdktf/provider-google.storageTransferJob.StorageTransferJob",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -603,12 +602,12 @@ func NewStorageTransferJob_Override(s StorageTransferJob, scope constructs.Const
 
 	_jsii_.Create(
 		"@cdktf/provider-google.storageTransferJob.StorageTransferJob",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		s,
 	)
 }
 
-func (j *jsiiProxy_StorageTransferJob)SetConnection(val interface{}) {
+func (j *jsiiProxy_StorageTransferJob) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -619,7 +618,7 @@ func (j *jsiiProxy_StorageTransferJob)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_StorageTransferJob)SetCount(val interface{}) {
+func (j *jsiiProxy_StorageTransferJob) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -630,7 +629,7 @@ func (j *jsiiProxy_StorageTransferJob)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_StorageTransferJob)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_StorageTransferJob) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -638,7 +637,7 @@ func (j *jsiiProxy_StorageTransferJob)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_StorageTransferJob)SetDescription(val *string) {
+func (j *jsiiProxy_StorageTransferJob) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -649,7 +648,7 @@ func (j *jsiiProxy_StorageTransferJob)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_StorageTransferJob)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_StorageTransferJob) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -657,7 +656,7 @@ func (j *jsiiProxy_StorageTransferJob)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_StorageTransferJob)SetId(val *string) {
+func (j *jsiiProxy_StorageTransferJob) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -668,7 +667,7 @@ func (j *jsiiProxy_StorageTransferJob)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_StorageTransferJob)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_StorageTransferJob) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -679,7 +678,7 @@ func (j *jsiiProxy_StorageTransferJob)SetLifecycle(val *cdktf.TerraformResourceL
 	)
 }
 
-func (j *jsiiProxy_StorageTransferJob)SetName(val *string) {
+func (j *jsiiProxy_StorageTransferJob) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -690,7 +689,7 @@ func (j *jsiiProxy_StorageTransferJob)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_StorageTransferJob)SetProject(val *string) {
+func (j *jsiiProxy_StorageTransferJob) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -701,7 +700,7 @@ func (j *jsiiProxy_StorageTransferJob)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_StorageTransferJob)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_StorageTransferJob) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -709,7 +708,7 @@ func (j *jsiiProxy_StorageTransferJob)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_StorageTransferJob)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_StorageTransferJob) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -720,7 +719,7 @@ func (j *jsiiProxy_StorageTransferJob)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_StorageTransferJob)SetStatus(val *string) {
+func (j *jsiiProxy_StorageTransferJob) SetStatus(val *string) {
 	if err := j.validateSetStatusParameters(val); err != nil {
 		panic(err)
 	}
@@ -743,7 +742,7 @@ func StorageTransferJob_GenerateConfigForImport(scope constructs.Construct, impo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.storageTransferJob.StorageTransferJob",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -767,7 +766,7 @@ func StorageTransferJob_GenerateConfigForImport(scope constructs.Construct, impo
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func StorageTransferJob_IsConstruct(x interface{}) *bool {
+func StorageTransferJob_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateStorageTransferJob_IsConstructParameters(x); err != nil {
@@ -778,7 +777,7 @@ func StorageTransferJob_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.storageTransferJob.StorageTransferJob",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -786,7 +785,7 @@ func StorageTransferJob_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func StorageTransferJob_IsTerraformElement(x interface{}) *bool {
+func StorageTransferJob_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateStorageTransferJob_IsTerraformElementParameters(x); err != nil {
@@ -797,7 +796,7 @@ func StorageTransferJob_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.storageTransferJob.StorageTransferJob",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -805,7 +804,7 @@ func StorageTransferJob_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func StorageTransferJob_IsTerraformResource(x interface{}) *bool {
+func StorageTransferJob_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateStorageTransferJob_IsTerraformResourceParameters(x); err != nil {
@@ -816,7 +815,7 @@ func StorageTransferJob_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.storageTransferJob.StorageTransferJob",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -841,31 +840,31 @@ func (s *jsiiProxy_StorageTransferJob) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (s *jsiiProxy_StorageTransferJob) AddOverride(path *string, value interface{}) {
+func (s *jsiiProxy_StorageTransferJob) AddOverride(path *string, value any) {
 	if err := s.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (s *jsiiProxy_StorageTransferJob) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_StorageTransferJob) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -881,7 +880,7 @@ func (s *jsiiProxy_StorageTransferJob) GetBooleanAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -897,7 +896,7 @@ func (s *jsiiProxy_StorageTransferJob) GetBooleanMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -913,7 +912,7 @@ func (s *jsiiProxy_StorageTransferJob) GetListAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -929,7 +928,7 @@ func (s *jsiiProxy_StorageTransferJob) GetNumberAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -945,7 +944,7 @@ func (s *jsiiProxy_StorageTransferJob) GetNumberListAttribute(terraformAttribute
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -961,7 +960,7 @@ func (s *jsiiProxy_StorageTransferJob) GetNumberMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -977,7 +976,7 @@ func (s *jsiiProxy_StorageTransferJob) GetStringAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -993,15 +992,15 @@ func (s *jsiiProxy_StorageTransferJob) GetStringMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_StorageTransferJob) HasResourceMove() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_StorageTransferJob) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1020,7 +1019,7 @@ func (s *jsiiProxy_StorageTransferJob) ImportFrom(id *string, provider cdktf.Ter
 	_jsii_.InvokeVoid(
 		s,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1033,7 +1032,7 @@ func (s *jsiiProxy_StorageTransferJob) InterpolationForAttribute(terraformAttrib
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1047,18 +1046,18 @@ func (s *jsiiProxy_StorageTransferJob) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (s *jsiiProxy_StorageTransferJob) MoveTo(moveTarget *string, index interface{}) {
+func (s *jsiiProxy_StorageTransferJob) MoveTo(moveTarget *string, index any) {
 	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1069,7 +1068,7 @@ func (s *jsiiProxy_StorageTransferJob) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1080,7 +1079,7 @@ func (s *jsiiProxy_StorageTransferJob) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1091,7 +1090,7 @@ func (s *jsiiProxy_StorageTransferJob) PutEventStream(value *StorageTransferJobE
 	_jsii_.InvokeVoid(
 		s,
 		"putEventStream",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1102,7 +1101,7 @@ func (s *jsiiProxy_StorageTransferJob) PutLoggingConfig(value *StorageTransferJo
 	_jsii_.InvokeVoid(
 		s,
 		"putLoggingConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1113,7 +1112,7 @@ func (s *jsiiProxy_StorageTransferJob) PutNotificationConfig(value *StorageTrans
 	_jsii_.InvokeVoid(
 		s,
 		"putNotificationConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1124,7 +1123,7 @@ func (s *jsiiProxy_StorageTransferJob) PutReplicationSpec(value *StorageTransfer
 	_jsii_.InvokeVoid(
 		s,
 		"putReplicationSpec",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1135,7 +1134,7 @@ func (s *jsiiProxy_StorageTransferJob) PutSchedule(value *StorageTransferJobSche
 	_jsii_.InvokeVoid(
 		s,
 		"putSchedule",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1146,7 +1145,7 @@ func (s *jsiiProxy_StorageTransferJob) PutTransferSpec(value *StorageTransferJob
 	_jsii_.InvokeVoid(
 		s,
 		"putTransferSpec",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1238,8 +1237,8 @@ func (s *jsiiProxy_StorageTransferJob) ResetTransferSpec() {
 	)
 }
 
-func (s *jsiiProxy_StorageTransferJob) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_StorageTransferJob) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1251,8 +1250,8 @@ func (s *jsiiProxy_StorageTransferJob) SynthesizeAttributes() *map[string]interf
 	return returns
 }
 
-func (s *jsiiProxy_StorageTransferJob) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_StorageTransferJob) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1264,8 +1263,8 @@ func (s *jsiiProxy_StorageTransferJob) SynthesizeHclAttributes() *map[string]int
 	return returns
 }
 
-func (s *jsiiProxy_StorageTransferJob) ToHclTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_StorageTransferJob) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1277,8 +1276,8 @@ func (s *jsiiProxy_StorageTransferJob) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (s *jsiiProxy_StorageTransferJob) ToMetadata() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_StorageTransferJob) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1303,8 +1302,8 @@ func (s *jsiiProxy_StorageTransferJob) ToString() *string {
 	return returns
 }
 
-func (s *jsiiProxy_StorageTransferJob) ToTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_StorageTransferJob) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1315,4 +1314,3 @@ func (s *jsiiProxy_StorageTransferJob) ToTerraform() interface{} {
 
 	return returns
 }
-

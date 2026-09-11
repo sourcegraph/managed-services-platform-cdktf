@@ -1,11 +1,10 @@
 package cloudfunctions2function
 
-
 type Cloudfunctions2FunctionServiceConfig struct {
 	// Whether 100% of traffic is routed to the latest revision. Defaults to true.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/cloudfunctions2_function#all_traffic_on_latest_revision Cloudfunctions2Function#all_traffic_on_latest_revision}
-	AllTrafficOnLatestRevision interface{} `field:"optional" json:"allTrafficOnLatestRevision" yaml:"allTrafficOnLatestRevision"`
+	AllTrafficOnLatestRevision any `field:"optional" json:"allTrafficOnLatestRevision" yaml:"allTrafficOnLatestRevision"`
 	// The number of CPUs used in a single container instance. Default value is calculated from available memory.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/cloudfunctions2_function#available_cpu Cloudfunctions2Function#available_cpu}
@@ -44,11 +43,11 @@ type Cloudfunctions2FunctionServiceConfig struct {
 	// secret_environment_variables block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/cloudfunctions2_function#secret_environment_variables Cloudfunctions2Function#secret_environment_variables}
-	SecretEnvironmentVariables interface{} `field:"optional" json:"secretEnvironmentVariables" yaml:"secretEnvironmentVariables"`
+	SecretEnvironmentVariables any `field:"optional" json:"secretEnvironmentVariables" yaml:"secretEnvironmentVariables"`
 	// secret_volumes block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/cloudfunctions2_function#secret_volumes Cloudfunctions2Function#secret_volumes}
-	SecretVolumes interface{} `field:"optional" json:"secretVolumes" yaml:"secretVolumes"`
+	SecretVolumes any `field:"optional" json:"secretVolumes" yaml:"secretVolumes"`
 	// Name of the service associated with a Function.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/cloudfunctions2_function#service Cloudfunctions2Function#service}
@@ -74,4 +73,3 @@ type Cloudfunctions2FunctionServiceConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/cloudfunctions2_function#vpc_connector_egress_settings Cloudfunctions2Function#vpc_connector_egress_settings}
 	VpcConnectorEgressSettings *string `field:"optional" json:"vpcConnectorEgressSettings" yaml:"vpcConnectorEgressSettings"`
 }
-

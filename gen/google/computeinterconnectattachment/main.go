@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeInterconnectAttachment.ComputeInterconnectAttachment",
-		reflect.TypeOf((*ComputeInterconnectAttachment)(nil)).Elem(),
+		reflect.TypeFor[ComputeInterconnectAttachment](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -127,7 +127,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vlanTag8021Q", GoGetter: "VlanTag8021Q"},
 			_jsii_.MemberProperty{JsiiProperty: "vlanTag8021QInput", GoGetter: "VlanTag8021QInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeInterconnectAttachment{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -135,15 +135,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeInterconnectAttachment.ComputeInterconnectAttachmentConfig",
-		reflect.TypeOf((*ComputeInterconnectAttachmentConfig)(nil)).Elem(),
+		reflect.TypeFor[ComputeInterconnectAttachmentConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeInterconnectAttachment.ComputeInterconnectAttachmentPrivateInterconnectInfo",
-		reflect.TypeOf((*ComputeInterconnectAttachmentPrivateInterconnectInfo)(nil)).Elem(),
+		reflect.TypeFor[ComputeInterconnectAttachmentPrivateInterconnectInfo](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeInterconnectAttachment.ComputeInterconnectAttachmentPrivateInterconnectInfoList",
-		reflect.TypeOf((*ComputeInterconnectAttachmentPrivateInterconnectInfoList)(nil)).Elem(),
+		reflect.TypeFor[ComputeInterconnectAttachmentPrivateInterconnectInfoList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -156,7 +156,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeInterconnectAttachmentPrivateInterconnectInfoList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -164,7 +164,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeInterconnectAttachment.ComputeInterconnectAttachmentPrivateInterconnectInfoOutputReference",
-		reflect.TypeOf((*ComputeInterconnectAttachmentPrivateInterconnectInfoOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeInterconnectAttachmentPrivateInterconnectInfoOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -189,7 +189,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeInterconnectAttachmentPrivateInterconnectInfoOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -197,11 +197,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeInterconnectAttachment.ComputeInterconnectAttachmentTimeouts",
-		reflect.TypeOf((*ComputeInterconnectAttachmentTimeouts)(nil)).Elem(),
+		reflect.TypeFor[ComputeInterconnectAttachmentTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeInterconnectAttachment.ComputeInterconnectAttachmentTimeoutsOutputReference",
-		reflect.TypeOf((*ComputeInterconnectAttachmentTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeInterconnectAttachmentTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -234,7 +234,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeInterconnectAttachmentTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

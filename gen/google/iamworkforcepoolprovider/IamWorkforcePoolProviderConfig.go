@@ -6,9 +6,9 @@ import (
 
 type IamWorkforcePoolProviderConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type IamWorkforcePoolProviderConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The location for the resource.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/iam_workforce_pool_provider#location IamWorkforcePoolProvider#location}
@@ -118,7 +118,7 @@ type IamWorkforcePoolProviderConfig struct {
 	// Whether the provider is disabled. You cannot use a disabled provider to exchange tokens. However, existing tokens still grant access.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/iam_workforce_pool_provider#disabled IamWorkforcePoolProvider#disabled}
-	Disabled interface{} `field:"optional" json:"disabled" yaml:"disabled"`
+	Disabled any `field:"optional" json:"disabled" yaml:"disabled"`
 	// A user-specified display name for the provider. Cannot exceed 32 characters.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/iam_workforce_pool_provider#display_name IamWorkforcePoolProvider#display_name}
@@ -145,4 +145,3 @@ type IamWorkforcePoolProviderConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/iam_workforce_pool_provider#timeouts IamWorkforcePoolProvider#timeouts}
 	Timeouts *IamWorkforcePoolProviderTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

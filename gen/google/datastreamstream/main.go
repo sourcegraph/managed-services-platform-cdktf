@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStream",
-		reflect.TypeOf((*DatastreamStream)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStream](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -99,7 +99,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStream{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -107,19 +107,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamBackfillAll",
-		reflect.TypeOf((*DatastreamStreamBackfillAll)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamBackfillAll](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjects",
-		reflect.TypeOf((*DatastreamStreamBackfillAllMysqlExcludedObjects)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamBackfillAllMysqlExcludedObjects](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabases",
-		reflect.TypeOf((*DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabases)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabases](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesList",
-		reflect.TypeOf((*DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesList)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -133,7 +133,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -141,11 +141,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTables",
-		reflect.TypeOf((*DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTables)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTables](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesList",
-		reflect.TypeOf((*DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesList)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -159,7 +159,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -167,11 +167,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesMysqlColumns",
-		reflect.TypeOf((*DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesMysqlColumns)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesMysqlColumns](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesMysqlColumnsList",
-		reflect.TypeOf((*DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesMysqlColumnsList)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesMysqlColumnsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -185,7 +185,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesMysqlColumnsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -193,7 +193,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference",
-		reflect.TypeOf((*DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "collation", GoGetter: "Collation"},
 			_jsii_.MemberProperty{JsiiProperty: "collationInput", GoGetter: "CollationInput"},
@@ -236,7 +236,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -244,7 +244,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesOutputReference",
-		reflect.TypeOf((*DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -274,7 +274,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -282,7 +282,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesOutputReference",
-		reflect.TypeOf((*DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -312,7 +312,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -320,7 +320,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsOutputReference",
-		reflect.TypeOf((*DatastreamStreamBackfillAllMysqlExcludedObjectsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamBackfillAllMysqlExcludedObjectsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -347,7 +347,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamBackfillAllMysqlExcludedObjectsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -355,15 +355,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjects",
-		reflect.TypeOf((*DatastreamStreamBackfillAllOracleExcludedObjects)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamBackfillAllOracleExcludedObjects](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemas",
-		reflect.TypeOf((*DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemas)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemas](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasList",
-		reflect.TypeOf((*DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasList)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -377,7 +377,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -385,11 +385,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTables",
-		reflect.TypeOf((*DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTables)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTables](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesList",
-		reflect.TypeOf((*DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesList)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -403,7 +403,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -411,11 +411,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOracleColumns",
-		reflect.TypeOf((*DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOracleColumns)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOracleColumns](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOracleColumnsList",
-		reflect.TypeOf((*DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOracleColumnsList)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOracleColumnsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -429,7 +429,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOracleColumnsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -437,7 +437,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOracleColumnsOutputReference",
-		reflect.TypeOf((*DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOracleColumnsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOracleColumnsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "column", GoGetter: "Column"},
 			_jsii_.MemberProperty{JsiiProperty: "columnInput", GoGetter: "ColumnInput"},
@@ -474,7 +474,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOracleColumnsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -482,7 +482,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOutputReference",
-		reflect.TypeOf((*DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -512,7 +512,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -520,7 +520,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOutputReference",
-		reflect.TypeOf((*DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -550,7 +550,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -558,7 +558,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOutputReference",
-		reflect.TypeOf((*DatastreamStreamBackfillAllOracleExcludedObjectsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamBackfillAllOracleExcludedObjectsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -585,7 +585,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamBackfillAllOracleExcludedObjectsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -593,7 +593,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamBackfillAllOutputReference",
-		reflect.TypeOf((*DatastreamStreamBackfillAllOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamBackfillAllOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -637,7 +637,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamBackfillAllOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -645,11 +645,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjects",
-		reflect.TypeOf((*DatastreamStreamBackfillAllPostgresqlExcludedObjects)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamBackfillAllPostgresqlExcludedObjects](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsOutputReference",
-		reflect.TypeOf((*DatastreamStreamBackfillAllPostgresqlExcludedObjectsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamBackfillAllPostgresqlExcludedObjectsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -676,7 +676,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamBackfillAllPostgresqlExcludedObjectsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -684,11 +684,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemas",
-		reflect.TypeOf((*DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemas)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemas](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasList",
-		reflect.TypeOf((*DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasList)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -702,7 +702,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -710,7 +710,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasOutputReference",
-		reflect.TypeOf((*DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -740,7 +740,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -748,11 +748,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTables",
-		reflect.TypeOf((*DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTables)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTables](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesList",
-		reflect.TypeOf((*DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesList)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -766,7 +766,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -774,7 +774,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesOutputReference",
-		reflect.TypeOf((*DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -804,7 +804,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -812,11 +812,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns",
-		reflect.TypeOf((*DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsList",
-		reflect.TypeOf((*DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsList)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -830,7 +830,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -838,7 +838,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsOutputReference",
-		reflect.TypeOf((*DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "column", GoGetter: "Column"},
 			_jsii_.MemberProperty{JsiiProperty: "columnInput", GoGetter: "ColumnInput"},
@@ -880,7 +880,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -888,19 +888,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamBackfillAllSalesforceExcludedObjects",
-		reflect.TypeOf((*DatastreamStreamBackfillAllSalesforceExcludedObjects)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamBackfillAllSalesforceExcludedObjects](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamBackfillAllSalesforceExcludedObjectsObjects",
-		reflect.TypeOf((*DatastreamStreamBackfillAllSalesforceExcludedObjectsObjects)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamBackfillAllSalesforceExcludedObjectsObjects](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsFields",
-		reflect.TypeOf((*DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsFields)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsFields](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsFieldsList",
-		reflect.TypeOf((*DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsFieldsList)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsFieldsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -914,7 +914,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsFieldsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -922,7 +922,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsFieldsOutputReference",
-		reflect.TypeOf((*DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsFieldsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsFieldsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -949,7 +949,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsFieldsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -957,7 +957,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsList",
-		reflect.TypeOf((*DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsList)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -971,7 +971,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -979,7 +979,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsOutputReference",
-		reflect.TypeOf((*DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1010,7 +1010,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1018,7 +1018,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamBackfillAllSalesforceExcludedObjectsOutputReference",
-		reflect.TypeOf((*DatastreamStreamBackfillAllSalesforceExcludedObjectsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamBackfillAllSalesforceExcludedObjectsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1045,7 +1045,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamBackfillAllSalesforceExcludedObjectsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1053,11 +1053,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjects",
-		reflect.TypeOf((*DatastreamStreamBackfillAllSqlServerExcludedObjects)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamBackfillAllSqlServerExcludedObjects](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsOutputReference",
-		reflect.TypeOf((*DatastreamStreamBackfillAllSqlServerExcludedObjectsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamBackfillAllSqlServerExcludedObjectsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1084,7 +1084,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamBackfillAllSqlServerExcludedObjectsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1092,11 +1092,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemas",
-		reflect.TypeOf((*DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemas)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemas](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasList",
-		reflect.TypeOf((*DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasList)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1110,7 +1110,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1118,7 +1118,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasOutputReference",
-		reflect.TypeOf((*DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1148,7 +1148,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1156,15 +1156,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTables",
-		reflect.TypeOf((*DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTables)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTables](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesColumns",
-		reflect.TypeOf((*DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesColumns)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesColumns](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesColumnsList",
-		reflect.TypeOf((*DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesColumnsList)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesColumnsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1178,7 +1178,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesColumnsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1186,7 +1186,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesColumnsOutputReference",
-		reflect.TypeOf((*DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesColumnsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesColumnsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "column", GoGetter: "Column"},
 			_jsii_.MemberProperty{JsiiProperty: "columnInput", GoGetter: "ColumnInput"},
@@ -1222,7 +1222,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesColumnsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1230,7 +1230,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesList",
-		reflect.TypeOf((*DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesList)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1244,7 +1244,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1252,7 +1252,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesOutputReference",
-		reflect.TypeOf((*DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "columns", GoGetter: "Columns"},
 			_jsii_.MemberProperty{JsiiProperty: "columnsInput", GoGetter: "ColumnsInput"},
@@ -1282,7 +1282,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1290,11 +1290,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamBackfillNone",
-		reflect.TypeOf((*DatastreamStreamBackfillNone)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamBackfillNone](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamBackfillNoneOutputReference",
-		reflect.TypeOf((*DatastreamStreamBackfillNoneOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamBackfillNoneOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1318,7 +1318,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamBackfillNoneOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1326,23 +1326,23 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamConfig",
-		reflect.TypeOf((*DatastreamStreamConfig)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamDestinationConfig",
-		reflect.TypeOf((*DatastreamStreamDestinationConfig)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamDestinationConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamDestinationConfigBigqueryDestinationConfig",
-		reflect.TypeOf((*DatastreamStreamDestinationConfigBigqueryDestinationConfig)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamDestinationConfigBigqueryDestinationConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamDestinationConfigBigqueryDestinationConfigAppendOnly",
-		reflect.TypeOf((*DatastreamStreamDestinationConfigBigqueryDestinationConfigAppendOnly)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamDestinationConfigBigqueryDestinationConfigAppendOnly](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamDestinationConfigBigqueryDestinationConfigAppendOnlyOutputReference",
-		reflect.TypeOf((*DatastreamStreamDestinationConfigBigqueryDestinationConfigAppendOnlyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamDestinationConfigBigqueryDestinationConfigAppendOnlyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1366,7 +1366,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamDestinationConfigBigqueryDestinationConfigAppendOnlyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1374,11 +1374,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamDestinationConfigBigqueryDestinationConfigBlmtConfig",
-		reflect.TypeOf((*DatastreamStreamDestinationConfigBigqueryDestinationConfigBlmtConfig)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamDestinationConfigBigqueryDestinationConfigBlmtConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamDestinationConfigBigqueryDestinationConfigBlmtConfigOutputReference",
-		reflect.TypeOf((*DatastreamStreamDestinationConfigBigqueryDestinationConfigBlmtConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamDestinationConfigBigqueryDestinationConfigBlmtConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucket", GoGetter: "Bucket"},
 			_jsii_.MemberProperty{JsiiProperty: "bucketInput", GoGetter: "BucketInput"},
@@ -1413,7 +1413,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamDestinationConfigBigqueryDestinationConfigBlmtConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1421,11 +1421,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamDestinationConfigBigqueryDestinationConfigMerge",
-		reflect.TypeOf((*DatastreamStreamDestinationConfigBigqueryDestinationConfigMerge)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamDestinationConfigBigqueryDestinationConfigMerge](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamDestinationConfigBigqueryDestinationConfigMergeOutputReference",
-		reflect.TypeOf((*DatastreamStreamDestinationConfigBigqueryDestinationConfigMergeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamDestinationConfigBigqueryDestinationConfigMergeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1449,7 +1449,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamDestinationConfigBigqueryDestinationConfigMergeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1457,7 +1457,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamDestinationConfigBigqueryDestinationConfigOutputReference",
-		reflect.TypeOf((*DatastreamStreamDestinationConfigBigqueryDestinationConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamDestinationConfigBigqueryDestinationConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "appendOnly", GoGetter: "AppendOnly"},
 			_jsii_.MemberProperty{JsiiProperty: "appendOnlyInput", GoGetter: "AppendOnlyInput"},
@@ -1504,7 +1504,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamDestinationConfigBigqueryDestinationConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1512,11 +1512,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamDestinationConfigBigqueryDestinationConfigSingleTargetDataset",
-		reflect.TypeOf((*DatastreamStreamDestinationConfigBigqueryDestinationConfigSingleTargetDataset)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamDestinationConfigBigqueryDestinationConfigSingleTargetDataset](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamDestinationConfigBigqueryDestinationConfigSingleTargetDatasetOutputReference",
-		reflect.TypeOf((*DatastreamStreamDestinationConfigBigqueryDestinationConfigSingleTargetDatasetOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamDestinationConfigBigqueryDestinationConfigSingleTargetDatasetOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1542,7 +1542,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamDestinationConfigBigqueryDestinationConfigSingleTargetDatasetOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1550,15 +1550,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasets",
-		reflect.TypeOf((*DatastreamStreamDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasets)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasets](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasetsDatasetTemplate",
-		reflect.TypeOf((*DatastreamStreamDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasetsDatasetTemplate)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasetsDatasetTemplate](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasetsDatasetTemplateOutputReference",
-		reflect.TypeOf((*DatastreamStreamDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasetsDatasetTemplateOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasetsDatasetTemplateOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1590,7 +1590,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasetsDatasetTemplateOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1598,7 +1598,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasetsOutputReference",
-		reflect.TypeOf((*DatastreamStreamDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasetsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasetsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1625,7 +1625,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasetsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1633,15 +1633,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamDestinationConfigGcsDestinationConfig",
-		reflect.TypeOf((*DatastreamStreamDestinationConfigGcsDestinationConfig)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamDestinationConfigGcsDestinationConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamDestinationConfigGcsDestinationConfigAvroFileFormat",
-		reflect.TypeOf((*DatastreamStreamDestinationConfigGcsDestinationConfigAvroFileFormat)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamDestinationConfigGcsDestinationConfigAvroFileFormat](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamDestinationConfigGcsDestinationConfigAvroFileFormatOutputReference",
-		reflect.TypeOf((*DatastreamStreamDestinationConfigGcsDestinationConfigAvroFileFormatOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamDestinationConfigGcsDestinationConfigAvroFileFormatOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1665,7 +1665,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamDestinationConfigGcsDestinationConfigAvroFileFormatOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1673,11 +1673,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamDestinationConfigGcsDestinationConfigJsonFileFormat",
-		reflect.TypeOf((*DatastreamStreamDestinationConfigGcsDestinationConfigJsonFileFormat)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamDestinationConfigGcsDestinationConfigJsonFileFormat](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamDestinationConfigGcsDestinationConfigJsonFileFormatOutputReference",
-		reflect.TypeOf((*DatastreamStreamDestinationConfigGcsDestinationConfigJsonFileFormatOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamDestinationConfigGcsDestinationConfigJsonFileFormatOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1707,7 +1707,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamDestinationConfigGcsDestinationConfigJsonFileFormatOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1715,7 +1715,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamDestinationConfigGcsDestinationConfigOutputReference",
-		reflect.TypeOf((*DatastreamStreamDestinationConfigGcsDestinationConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamDestinationConfigGcsDestinationConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "avroFileFormat", GoGetter: "AvroFileFormat"},
 			_jsii_.MemberProperty{JsiiProperty: "avroFileFormatInput", GoGetter: "AvroFileFormatInput"},
@@ -1756,7 +1756,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamDestinationConfigGcsDestinationConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1764,7 +1764,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamDestinationConfigOutputReference",
-		reflect.TypeOf((*DatastreamStreamDestinationConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamDestinationConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bigqueryDestinationConfig", GoGetter: "BigqueryDestinationConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "bigqueryDestinationConfigInput", GoGetter: "BigqueryDestinationConfigInput"},
@@ -1798,7 +1798,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamDestinationConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1806,19 +1806,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfig",
-		reflect.TypeOf((*DatastreamStreamSourceConfig)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfig",
-		reflect.TypeOf((*DatastreamStreamSourceConfigMysqlSourceConfig)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigMysqlSourceConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigBinaryLogPosition",
-		reflect.TypeOf((*DatastreamStreamSourceConfigMysqlSourceConfigBinaryLogPosition)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigMysqlSourceConfigBinaryLogPosition](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigBinaryLogPositionOutputReference",
-		reflect.TypeOf((*DatastreamStreamSourceConfigMysqlSourceConfigBinaryLogPositionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigMysqlSourceConfigBinaryLogPositionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1842,7 +1842,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigBinaryLogPositionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1850,15 +1850,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjects",
-		reflect.TypeOf((*DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjects)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjects](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabases",
-		reflect.TypeOf((*DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabases)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabases](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesList",
-		reflect.TypeOf((*DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesList)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1872,7 +1872,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1880,11 +1880,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTables",
-		reflect.TypeOf((*DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTables)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTables](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesList",
-		reflect.TypeOf((*DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesList)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1898,7 +1898,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1906,11 +1906,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesMysqlColumns",
-		reflect.TypeOf((*DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesMysqlColumns)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesMysqlColumns](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsList",
-		reflect.TypeOf((*DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsList)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1924,7 +1924,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1932,7 +1932,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference",
-		reflect.TypeOf((*DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "collation", GoGetter: "Collation"},
 			_jsii_.MemberProperty{JsiiProperty: "collationInput", GoGetter: "CollationInput"},
@@ -1975,7 +1975,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1983,7 +1983,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesOutputReference",
-		reflect.TypeOf((*DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2013,7 +2013,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2021,7 +2021,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesOutputReference",
-		reflect.TypeOf((*DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2051,7 +2051,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2059,7 +2059,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsOutputReference",
-		reflect.TypeOf((*DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2086,7 +2086,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2094,11 +2094,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigGtid",
-		reflect.TypeOf((*DatastreamStreamSourceConfigMysqlSourceConfigGtid)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigMysqlSourceConfigGtid](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigGtidOutputReference",
-		reflect.TypeOf((*DatastreamStreamSourceConfigMysqlSourceConfigGtidOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigMysqlSourceConfigGtidOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2122,7 +2122,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigGtidOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2130,15 +2130,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjects",
-		reflect.TypeOf((*DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjects)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjects](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabases",
-		reflect.TypeOf((*DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabases)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabases](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesList",
-		reflect.TypeOf((*DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesList)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2152,7 +2152,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -2160,11 +2160,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTables",
-		reflect.TypeOf((*DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTables)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTables](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesList",
-		reflect.TypeOf((*DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesList)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2178,7 +2178,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -2186,11 +2186,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumns",
-		reflect.TypeOf((*DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumns)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumns](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsList",
-		reflect.TypeOf((*DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsList)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2204,7 +2204,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -2212,7 +2212,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference",
-		reflect.TypeOf((*DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "collation", GoGetter: "Collation"},
 			_jsii_.MemberProperty{JsiiProperty: "collationInput", GoGetter: "CollationInput"},
@@ -2255,7 +2255,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2263,7 +2263,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesOutputReference",
-		reflect.TypeOf((*DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2293,7 +2293,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2301,7 +2301,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesOutputReference",
-		reflect.TypeOf((*DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2331,7 +2331,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2339,7 +2339,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsOutputReference",
-		reflect.TypeOf((*DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2366,7 +2366,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2374,7 +2374,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigOutputReference",
-		reflect.TypeOf((*DatastreamStreamSourceConfigMysqlSourceConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigMysqlSourceConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "binaryLogPosition", GoGetter: "BinaryLogPosition"},
 			_jsii_.MemberProperty{JsiiProperty: "binaryLogPositionInput", GoGetter: "BinaryLogPositionInput"},
@@ -2420,7 +2420,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2428,15 +2428,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfig",
-		reflect.TypeOf((*DatastreamStreamSourceConfigOracleSourceConfig)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigOracleSourceConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigDropLargeObjects",
-		reflect.TypeOf((*DatastreamStreamSourceConfigOracleSourceConfigDropLargeObjects)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigOracleSourceConfigDropLargeObjects](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigDropLargeObjectsOutputReference",
-		reflect.TypeOf((*DatastreamStreamSourceConfigOracleSourceConfigDropLargeObjectsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigOracleSourceConfigDropLargeObjectsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2460,7 +2460,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamSourceConfigOracleSourceConfigDropLargeObjectsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2468,15 +2468,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjects",
-		reflect.TypeOf((*DatastreamStreamSourceConfigOracleSourceConfigExcludeObjects)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigOracleSourceConfigExcludeObjects](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemas",
-		reflect.TypeOf((*DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemas)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemas](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasList",
-		reflect.TypeOf((*DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasList)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2490,7 +2490,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -2498,11 +2498,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTables",
-		reflect.TypeOf((*DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTables)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTables](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesList",
-		reflect.TypeOf((*DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesList)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2516,7 +2516,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -2524,11 +2524,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOracleColumns",
-		reflect.TypeOf((*DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOracleColumns)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOracleColumns](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOracleColumnsList",
-		reflect.TypeOf((*DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOracleColumnsList)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOracleColumnsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2542,7 +2542,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOracleColumnsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -2550,7 +2550,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOracleColumnsOutputReference",
-		reflect.TypeOf((*DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOracleColumnsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOracleColumnsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "column", GoGetter: "Column"},
 			_jsii_.MemberProperty{JsiiProperty: "columnInput", GoGetter: "ColumnInput"},
@@ -2587,7 +2587,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOracleColumnsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2595,7 +2595,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOutputReference",
-		reflect.TypeOf((*DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2625,7 +2625,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2633,7 +2633,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOutputReference",
-		reflect.TypeOf((*DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2663,7 +2663,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2671,7 +2671,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOutputReference",
-		reflect.TypeOf((*DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2698,7 +2698,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2706,15 +2706,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjects",
-		reflect.TypeOf((*DatastreamStreamSourceConfigOracleSourceConfigIncludeObjects)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigOracleSourceConfigIncludeObjects](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemas",
-		reflect.TypeOf((*DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemas)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemas](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasList",
-		reflect.TypeOf((*DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasList)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2728,7 +2728,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -2736,11 +2736,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTables",
-		reflect.TypeOf((*DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTables)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTables](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesList",
-		reflect.TypeOf((*DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesList)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2754,7 +2754,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -2762,11 +2762,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOracleColumns",
-		reflect.TypeOf((*DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOracleColumns)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOracleColumns](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOracleColumnsList",
-		reflect.TypeOf((*DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOracleColumnsList)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOracleColumnsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2780,7 +2780,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOracleColumnsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -2788,7 +2788,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOracleColumnsOutputReference",
-		reflect.TypeOf((*DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOracleColumnsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOracleColumnsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "column", GoGetter: "Column"},
 			_jsii_.MemberProperty{JsiiProperty: "columnInput", GoGetter: "ColumnInput"},
@@ -2825,7 +2825,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOracleColumnsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2833,7 +2833,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOutputReference",
-		reflect.TypeOf((*DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2863,7 +2863,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2871,7 +2871,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOutputReference",
-		reflect.TypeOf((*DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2901,7 +2901,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2909,7 +2909,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOutputReference",
-		reflect.TypeOf((*DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2936,7 +2936,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2944,7 +2944,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigOutputReference",
-		reflect.TypeOf((*DatastreamStreamSourceConfigOracleSourceConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigOracleSourceConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2990,7 +2990,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamSourceConfigOracleSourceConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2998,11 +2998,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigStreamLargeObjects",
-		reflect.TypeOf((*DatastreamStreamSourceConfigOracleSourceConfigStreamLargeObjects)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigOracleSourceConfigStreamLargeObjects](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigStreamLargeObjectsOutputReference",
-		reflect.TypeOf((*DatastreamStreamSourceConfigOracleSourceConfigStreamLargeObjectsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigOracleSourceConfigStreamLargeObjectsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -3026,7 +3026,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamSourceConfigOracleSourceConfigStreamLargeObjectsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3034,7 +3034,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigOutputReference",
-		reflect.TypeOf((*DatastreamStreamSourceConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -3080,7 +3080,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamSourceConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3088,15 +3088,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfig",
-		reflect.TypeOf((*DatastreamStreamSourceConfigPostgresqlSourceConfig)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigPostgresqlSourceConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjects",
-		reflect.TypeOf((*DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjects)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjects](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsOutputReference",
-		reflect.TypeOf((*DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -3123,7 +3123,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3131,11 +3131,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemas",
-		reflect.TypeOf((*DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemas)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemas](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasList",
-		reflect.TypeOf((*DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasList)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3149,7 +3149,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -3157,7 +3157,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasOutputReference",
-		reflect.TypeOf((*DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -3187,7 +3187,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3195,11 +3195,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTables",
-		reflect.TypeOf((*DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTables)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTables](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesList",
-		reflect.TypeOf((*DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesList)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3213,7 +3213,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -3221,7 +3221,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesOutputReference",
-		reflect.TypeOf((*DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -3251,7 +3251,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3259,11 +3259,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns",
-		reflect.TypeOf((*DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsList",
-		reflect.TypeOf((*DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsList)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3277,7 +3277,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -3285,7 +3285,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsOutputReference",
-		reflect.TypeOf((*DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "column", GoGetter: "Column"},
 			_jsii_.MemberProperty{JsiiProperty: "columnInput", GoGetter: "ColumnInput"},
@@ -3327,7 +3327,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3335,11 +3335,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjects",
-		reflect.TypeOf((*DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjects)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjects](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsOutputReference",
-		reflect.TypeOf((*DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -3366,7 +3366,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3374,11 +3374,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemas",
-		reflect.TypeOf((*DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemas)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemas](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasList",
-		reflect.TypeOf((*DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasList)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3392,7 +3392,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -3400,7 +3400,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasOutputReference",
-		reflect.TypeOf((*DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -3430,7 +3430,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3438,11 +3438,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTables",
-		reflect.TypeOf((*DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTables)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTables](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesList",
-		reflect.TypeOf((*DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesList)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3456,7 +3456,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -3464,7 +3464,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesOutputReference",
-		reflect.TypeOf((*DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -3494,7 +3494,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3502,11 +3502,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns",
-		reflect.TypeOf((*DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsList",
-		reflect.TypeOf((*DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsList)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3520,7 +3520,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -3528,7 +3528,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsOutputReference",
-		reflect.TypeOf((*DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "column", GoGetter: "Column"},
 			_jsii_.MemberProperty{JsiiProperty: "columnInput", GoGetter: "ColumnInput"},
@@ -3570,7 +3570,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3578,7 +3578,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigOutputReference",
-		reflect.TypeOf((*DatastreamStreamSourceConfigPostgresqlSourceConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigPostgresqlSourceConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -3617,7 +3617,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamSourceConfigPostgresqlSourceConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3625,23 +3625,23 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfig",
-		reflect.TypeOf((*DatastreamStreamSourceConfigSalesforceSourceConfig)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigSalesforceSourceConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjects",
-		reflect.TypeOf((*DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjects)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjects](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjects",
-		reflect.TypeOf((*DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjects)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjects](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjectsFields",
-		reflect.TypeOf((*DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjectsFields)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjectsFields](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjectsFieldsList",
-		reflect.TypeOf((*DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjectsFieldsList)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjectsFieldsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3655,7 +3655,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjectsFieldsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -3663,7 +3663,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjectsFieldsOutputReference",
-		reflect.TypeOf((*DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjectsFieldsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjectsFieldsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -3690,7 +3690,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjectsFieldsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3698,7 +3698,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjectsList",
-		reflect.TypeOf((*DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjectsList)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjectsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3712,7 +3712,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjectsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -3720,7 +3720,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjectsOutputReference",
-		reflect.TypeOf((*DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjectsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjectsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -3751,7 +3751,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjectsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3759,7 +3759,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsOutputReference",
-		reflect.TypeOf((*DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -3786,7 +3786,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3794,19 +3794,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjects",
-		reflect.TypeOf((*DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjects)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjects](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjects",
-		reflect.TypeOf((*DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjects)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjects](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjectsFields",
-		reflect.TypeOf((*DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjectsFields)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjectsFields](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjectsFieldsList",
-		reflect.TypeOf((*DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjectsFieldsList)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjectsFieldsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3820,7 +3820,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjectsFieldsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -3828,7 +3828,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjectsFieldsOutputReference",
-		reflect.TypeOf((*DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjectsFieldsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjectsFieldsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -3855,7 +3855,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjectsFieldsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3863,7 +3863,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjectsList",
-		reflect.TypeOf((*DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjectsList)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjectsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3877,7 +3877,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjectsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -3885,7 +3885,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjectsOutputReference",
-		reflect.TypeOf((*DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjectsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjectsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -3916,7 +3916,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjectsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3924,7 +3924,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsOutputReference",
-		reflect.TypeOf((*DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -3951,7 +3951,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3959,7 +3959,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigOutputReference",
-		reflect.TypeOf((*DatastreamStreamSourceConfigSalesforceSourceConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigSalesforceSourceConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -3993,7 +3993,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamSourceConfigSalesforceSourceConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4001,15 +4001,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfig",
-		reflect.TypeOf((*DatastreamStreamSourceConfigSqlServerSourceConfig)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigSqlServerSourceConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigChangeTables",
-		reflect.TypeOf((*DatastreamStreamSourceConfigSqlServerSourceConfigChangeTables)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigSqlServerSourceConfigChangeTables](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigChangeTablesOutputReference",
-		reflect.TypeOf((*DatastreamStreamSourceConfigSqlServerSourceConfigChangeTablesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigSqlServerSourceConfigChangeTablesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -4033,7 +4033,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamSourceConfigSqlServerSourceConfigChangeTablesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4041,11 +4041,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjects",
-		reflect.TypeOf((*DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjects)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjects](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsOutputReference",
-		reflect.TypeOf((*DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -4072,7 +4072,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4080,11 +4080,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemas",
-		reflect.TypeOf((*DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemas)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemas](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasList",
-		reflect.TypeOf((*DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasList)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4098,7 +4098,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -4106,7 +4106,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasOutputReference",
-		reflect.TypeOf((*DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -4136,7 +4136,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4144,15 +4144,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTables",
-		reflect.TypeOf((*DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTables)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTables](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesColumns",
-		reflect.TypeOf((*DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesColumns)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesColumns](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesColumnsList",
-		reflect.TypeOf((*DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesColumnsList)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesColumnsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4166,7 +4166,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesColumnsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -4174,7 +4174,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesColumnsOutputReference",
-		reflect.TypeOf((*DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesColumnsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesColumnsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "column", GoGetter: "Column"},
 			_jsii_.MemberProperty{JsiiProperty: "columnInput", GoGetter: "ColumnInput"},
@@ -4210,7 +4210,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesColumnsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4218,7 +4218,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesList",
-		reflect.TypeOf((*DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesList)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4232,7 +4232,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -4240,7 +4240,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesOutputReference",
-		reflect.TypeOf((*DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "columns", GoGetter: "Columns"},
 			_jsii_.MemberProperty{JsiiProperty: "columnsInput", GoGetter: "ColumnsInput"},
@@ -4270,7 +4270,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4278,11 +4278,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjects",
-		reflect.TypeOf((*DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjects)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjects](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsOutputReference",
-		reflect.TypeOf((*DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -4309,7 +4309,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4317,11 +4317,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemas",
-		reflect.TypeOf((*DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemas)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemas](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasList",
-		reflect.TypeOf((*DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasList)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4335,7 +4335,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -4343,7 +4343,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasOutputReference",
-		reflect.TypeOf((*DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -4373,7 +4373,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4381,15 +4381,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTables",
-		reflect.TypeOf((*DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTables)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTables](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesColumns",
-		reflect.TypeOf((*DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesColumns)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesColumns](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesColumnsList",
-		reflect.TypeOf((*DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesColumnsList)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesColumnsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4403,7 +4403,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesColumnsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -4411,7 +4411,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesColumnsOutputReference",
-		reflect.TypeOf((*DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesColumnsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesColumnsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "column", GoGetter: "Column"},
 			_jsii_.MemberProperty{JsiiProperty: "columnInput", GoGetter: "ColumnInput"},
@@ -4447,7 +4447,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesColumnsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4455,7 +4455,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesList",
-		reflect.TypeOf((*DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesList)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4469,7 +4469,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -4477,7 +4477,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesOutputReference",
-		reflect.TypeOf((*DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "columns", GoGetter: "Columns"},
 			_jsii_.MemberProperty{JsiiProperty: "columnsInput", GoGetter: "ColumnsInput"},
@@ -4507,7 +4507,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4515,7 +4515,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigOutputReference",
-		reflect.TypeOf((*DatastreamStreamSourceConfigSqlServerSourceConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigSqlServerSourceConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "changeTables", GoGetter: "ChangeTables"},
 			_jsii_.MemberProperty{JsiiProperty: "changeTablesInput", GoGetter: "ChangeTablesInput"},
@@ -4561,7 +4561,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "transactionLogs", GoGetter: "TransactionLogs"},
 			_jsii_.MemberProperty{JsiiProperty: "transactionLogsInput", GoGetter: "TransactionLogsInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamSourceConfigSqlServerSourceConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4569,11 +4569,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigTransactionLogs",
-		reflect.TypeOf((*DatastreamStreamSourceConfigSqlServerSourceConfigTransactionLogs)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigSqlServerSourceConfigTransactionLogs](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigTransactionLogsOutputReference",
-		reflect.TypeOf((*DatastreamStreamSourceConfigSqlServerSourceConfigTransactionLogsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamSourceConfigSqlServerSourceConfigTransactionLogsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -4597,7 +4597,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamSourceConfigSqlServerSourceConfigTransactionLogsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4605,11 +4605,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamTimeouts",
-		reflect.TypeOf((*DatastreamStreamTimeouts)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamTimeoutsOutputReference",
-		reflect.TypeOf((*DatastreamStreamTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DatastreamStreamTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -4642,7 +4642,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamStreamTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

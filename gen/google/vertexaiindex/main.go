@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.vertexAiIndex.VertexAiIndex",
-		reflect.TypeOf((*VertexAiIndex)(nil)).Elem(),
+		reflect.TypeFor[VertexAiIndex](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -90,7 +90,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VertexAiIndex{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -98,15 +98,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.vertexAiIndex.VertexAiIndexConfig",
-		reflect.TypeOf((*VertexAiIndexConfig)(nil)).Elem(),
+		reflect.TypeFor[VertexAiIndexConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.vertexAiIndex.VertexAiIndexDeployedIndexes",
-		reflect.TypeOf((*VertexAiIndexDeployedIndexes)(nil)).Elem(),
+		reflect.TypeFor[VertexAiIndexDeployedIndexes](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.vertexAiIndex.VertexAiIndexDeployedIndexesList",
-		reflect.TypeOf((*VertexAiIndexDeployedIndexesList)(nil)).Elem(),
+		reflect.TypeFor[VertexAiIndexDeployedIndexesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -119,7 +119,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VertexAiIndexDeployedIndexesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -127,7 +127,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.vertexAiIndex.VertexAiIndexDeployedIndexesOutputReference",
-		reflect.TypeOf((*VertexAiIndexDeployedIndexesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[VertexAiIndexDeployedIndexesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -153,7 +153,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VertexAiIndexDeployedIndexesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -161,11 +161,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.vertexAiIndex.VertexAiIndexIndexStats",
-		reflect.TypeOf((*VertexAiIndexIndexStats)(nil)).Elem(),
+		reflect.TypeFor[VertexAiIndexIndexStats](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.vertexAiIndex.VertexAiIndexIndexStatsList",
-		reflect.TypeOf((*VertexAiIndexIndexStatsList)(nil)).Elem(),
+		reflect.TypeFor[VertexAiIndexIndexStatsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -178,7 +178,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VertexAiIndexIndexStatsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -186,7 +186,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.vertexAiIndex.VertexAiIndexIndexStatsOutputReference",
-		reflect.TypeOf((*VertexAiIndexIndexStatsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[VertexAiIndexIndexStatsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -212,7 +212,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "vectorsCount", GoGetter: "VectorsCount"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VertexAiIndexIndexStatsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -220,23 +220,23 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.vertexAiIndex.VertexAiIndexMetadata",
-		reflect.TypeOf((*VertexAiIndexMetadata)(nil)).Elem(),
+		reflect.TypeFor[VertexAiIndexMetadata](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.vertexAiIndex.VertexAiIndexMetadataConfig",
-		reflect.TypeOf((*VertexAiIndexMetadataConfig)(nil)).Elem(),
+		reflect.TypeFor[VertexAiIndexMetadataConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.vertexAiIndex.VertexAiIndexMetadataConfigAlgorithmConfig",
-		reflect.TypeOf((*VertexAiIndexMetadataConfigAlgorithmConfig)(nil)).Elem(),
+		reflect.TypeFor[VertexAiIndexMetadataConfigAlgorithmConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.vertexAiIndex.VertexAiIndexMetadataConfigAlgorithmConfigBruteForceConfig",
-		reflect.TypeOf((*VertexAiIndexMetadataConfigAlgorithmConfigBruteForceConfig)(nil)).Elem(),
+		reflect.TypeFor[VertexAiIndexMetadataConfigAlgorithmConfigBruteForceConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.vertexAiIndex.VertexAiIndexMetadataConfigAlgorithmConfigBruteForceConfigOutputReference",
-		reflect.TypeOf((*VertexAiIndexMetadataConfigAlgorithmConfigBruteForceConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[VertexAiIndexMetadataConfigAlgorithmConfigBruteForceConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -260,7 +260,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VertexAiIndexMetadataConfigAlgorithmConfigBruteForceConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -268,7 +268,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.vertexAiIndex.VertexAiIndexMetadataConfigAlgorithmConfigOutputReference",
-		reflect.TypeOf((*VertexAiIndexMetadataConfigAlgorithmConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[VertexAiIndexMetadataConfigAlgorithmConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bruteForceConfig", GoGetter: "BruteForceConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "bruteForceConfigInput", GoGetter: "BruteForceConfigInput"},
@@ -300,7 +300,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "treeAhConfig", GoGetter: "TreeAhConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "treeAhConfigInput", GoGetter: "TreeAhConfigInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VertexAiIndexMetadataConfigAlgorithmConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -308,11 +308,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.vertexAiIndex.VertexAiIndexMetadataConfigAlgorithmConfigTreeAhConfig",
-		reflect.TypeOf((*VertexAiIndexMetadataConfigAlgorithmConfigTreeAhConfig)(nil)).Elem(),
+		reflect.TypeFor[VertexAiIndexMetadataConfigAlgorithmConfigTreeAhConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.vertexAiIndex.VertexAiIndexMetadataConfigAlgorithmConfigTreeAhConfigOutputReference",
-		reflect.TypeOf((*VertexAiIndexMetadataConfigAlgorithmConfigTreeAhConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[VertexAiIndexMetadataConfigAlgorithmConfigTreeAhConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -342,7 +342,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VertexAiIndexMetadataConfigAlgorithmConfigTreeAhConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -350,7 +350,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.vertexAiIndex.VertexAiIndexMetadataConfigOutputReference",
-		reflect.TypeOf((*VertexAiIndexMetadataConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[VertexAiIndexMetadataConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "algorithmConfig", GoGetter: "AlgorithmConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "algorithmConfigInput", GoGetter: "AlgorithmConfigInput"},
@@ -392,7 +392,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VertexAiIndexMetadataConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -400,7 +400,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.vertexAiIndex.VertexAiIndexMetadataOutputReference",
-		reflect.TypeOf((*VertexAiIndexMetadataOutputReference)(nil)).Elem(),
+		reflect.TypeFor[VertexAiIndexMetadataOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -434,7 +434,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VertexAiIndexMetadataOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -442,11 +442,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.vertexAiIndex.VertexAiIndexTimeouts",
-		reflect.TypeOf((*VertexAiIndexTimeouts)(nil)).Elem(),
+		reflect.TypeFor[VertexAiIndexTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.vertexAiIndex.VertexAiIndexTimeoutsOutputReference",
-		reflect.TypeOf((*VertexAiIndexTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[VertexAiIndexTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -479,7 +479,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VertexAiIndexTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

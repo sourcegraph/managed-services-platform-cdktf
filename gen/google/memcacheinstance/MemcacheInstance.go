@@ -18,15 +18,15 @@ type MemcacheInstance interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -83,11 +83,11 @@ type MemcacheInstance interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Region() *string
 	SetRegion(val *string)
 	RegionInput() *string
@@ -98,11 +98,11 @@ type MemcacheInstance interface {
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() MemcacheInstanceTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	Zones() *[]*string
 	SetZones(val *[]*string)
 	ZonesInput() *[]*string
@@ -110,9 +110,9 @@ type MemcacheInstance interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -130,7 +130,7 @@ type MemcacheInstance interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -142,7 +142,7 @@ type MemcacheInstance interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -168,17 +168,17 @@ type MemcacheInstance interface {
 	ResetReservedIpRangeId()
 	ResetTimeouts()
 	ResetZones()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for MemcacheInstance
@@ -216,8 +216,8 @@ func (j *jsiiProxy_MemcacheInstance) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_MemcacheInstance) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MemcacheInstance) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -226,8 +226,8 @@ func (j *jsiiProxy_MemcacheInstance) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_MemcacheInstance) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_MemcacheInstance) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -236,8 +236,8 @@ func (j *jsiiProxy_MemcacheInstance) ConstructNodeMetadata() *map[string]interfa
 	return returns
 }
 
-func (j *jsiiProxy_MemcacheInstance) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MemcacheInstance) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -576,8 +576,8 @@ func (j *jsiiProxy_MemcacheInstance) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_MemcacheInstance) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_MemcacheInstance) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -586,8 +586,8 @@ func (j *jsiiProxy_MemcacheInstance) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_MemcacheInstance) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MemcacheInstance) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -656,8 +656,8 @@ func (j *jsiiProxy_MemcacheInstance) TerraformLabels() cdktf.StringMap {
 	return returns
 }
 
-func (j *jsiiProxy_MemcacheInstance) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_MemcacheInstance) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -686,8 +686,8 @@ func (j *jsiiProxy_MemcacheInstance) Timeouts() MemcacheInstanceTimeoutsOutputRe
 	return returns
 }
 
-func (j *jsiiProxy_MemcacheInstance) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MemcacheInstance) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -716,7 +716,6 @@ func (j *jsiiProxy_MemcacheInstance) ZonesInput() *[]*string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/memcache_instance google_memcache_instance} Resource.
 func NewMemcacheInstance(scope constructs.Construct, id *string, config *MemcacheInstanceConfig) MemcacheInstance {
 	_init_.Initialize()
@@ -728,7 +727,7 @@ func NewMemcacheInstance(scope constructs.Construct, id *string, config *Memcach
 
 	_jsii_.Create(
 		"@cdktf/provider-google.memcacheInstance.MemcacheInstance",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -741,12 +740,12 @@ func NewMemcacheInstance_Override(m MemcacheInstance, scope constructs.Construct
 
 	_jsii_.Create(
 		"@cdktf/provider-google.memcacheInstance.MemcacheInstance",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		m,
 	)
 }
 
-func (j *jsiiProxy_MemcacheInstance)SetAuthorizedNetwork(val *string) {
+func (j *jsiiProxy_MemcacheInstance) SetAuthorizedNetwork(val *string) {
 	if err := j.validateSetAuthorizedNetworkParameters(val); err != nil {
 		panic(err)
 	}
@@ -757,7 +756,7 @@ func (j *jsiiProxy_MemcacheInstance)SetAuthorizedNetwork(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MemcacheInstance)SetConnection(val interface{}) {
+func (j *jsiiProxy_MemcacheInstance) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -768,7 +767,7 @@ func (j *jsiiProxy_MemcacheInstance)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MemcacheInstance)SetCount(val interface{}) {
+func (j *jsiiProxy_MemcacheInstance) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -779,7 +778,7 @@ func (j *jsiiProxy_MemcacheInstance)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MemcacheInstance)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_MemcacheInstance) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -787,7 +786,7 @@ func (j *jsiiProxy_MemcacheInstance)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_MemcacheInstance)SetDisplayName(val *string) {
+func (j *jsiiProxy_MemcacheInstance) SetDisplayName(val *string) {
 	if err := j.validateSetDisplayNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -798,7 +797,7 @@ func (j *jsiiProxy_MemcacheInstance)SetDisplayName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MemcacheInstance)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_MemcacheInstance) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -806,7 +805,7 @@ func (j *jsiiProxy_MemcacheInstance)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_MemcacheInstance)SetId(val *string) {
+func (j *jsiiProxy_MemcacheInstance) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -817,7 +816,7 @@ func (j *jsiiProxy_MemcacheInstance)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MemcacheInstance)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_MemcacheInstance) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -828,7 +827,7 @@ func (j *jsiiProxy_MemcacheInstance)SetLabels(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_MemcacheInstance)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_MemcacheInstance) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -839,7 +838,7 @@ func (j *jsiiProxy_MemcacheInstance)SetLifecycle(val *cdktf.TerraformResourceLif
 	)
 }
 
-func (j *jsiiProxy_MemcacheInstance)SetMemcacheVersion(val *string) {
+func (j *jsiiProxy_MemcacheInstance) SetMemcacheVersion(val *string) {
 	if err := j.validateSetMemcacheVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -850,7 +849,7 @@ func (j *jsiiProxy_MemcacheInstance)SetMemcacheVersion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MemcacheInstance)SetName(val *string) {
+func (j *jsiiProxy_MemcacheInstance) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -861,7 +860,7 @@ func (j *jsiiProxy_MemcacheInstance)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MemcacheInstance)SetNodeCount(val *float64) {
+func (j *jsiiProxy_MemcacheInstance) SetNodeCount(val *float64) {
 	if err := j.validateSetNodeCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -872,7 +871,7 @@ func (j *jsiiProxy_MemcacheInstance)SetNodeCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_MemcacheInstance)SetProject(val *string) {
+func (j *jsiiProxy_MemcacheInstance) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -883,7 +882,7 @@ func (j *jsiiProxy_MemcacheInstance)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MemcacheInstance)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_MemcacheInstance) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -891,7 +890,7 @@ func (j *jsiiProxy_MemcacheInstance)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_MemcacheInstance)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_MemcacheInstance) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -902,7 +901,7 @@ func (j *jsiiProxy_MemcacheInstance)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MemcacheInstance)SetRegion(val *string) {
+func (j *jsiiProxy_MemcacheInstance) SetRegion(val *string) {
 	if err := j.validateSetRegionParameters(val); err != nil {
 		panic(err)
 	}
@@ -913,7 +912,7 @@ func (j *jsiiProxy_MemcacheInstance)SetRegion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MemcacheInstance)SetReservedIpRangeId(val *[]*string) {
+func (j *jsiiProxy_MemcacheInstance) SetReservedIpRangeId(val *[]*string) {
 	if err := j.validateSetReservedIpRangeIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -924,7 +923,7 @@ func (j *jsiiProxy_MemcacheInstance)SetReservedIpRangeId(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_MemcacheInstance)SetZones(val *[]*string) {
+func (j *jsiiProxy_MemcacheInstance) SetZones(val *[]*string) {
 	if err := j.validateSetZonesParameters(val); err != nil {
 		panic(err)
 	}
@@ -947,7 +946,7 @@ func MemcacheInstance_GenerateConfigForImport(scope constructs.Construct, import
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.memcacheInstance.MemcacheInstance",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -971,7 +970,7 @@ func MemcacheInstance_GenerateConfigForImport(scope constructs.Construct, import
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func MemcacheInstance_IsConstruct(x interface{}) *bool {
+func MemcacheInstance_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateMemcacheInstance_IsConstructParameters(x); err != nil {
@@ -982,7 +981,7 @@ func MemcacheInstance_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.memcacheInstance.MemcacheInstance",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -990,7 +989,7 @@ func MemcacheInstance_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func MemcacheInstance_IsTerraformElement(x interface{}) *bool {
+func MemcacheInstance_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateMemcacheInstance_IsTerraformElementParameters(x); err != nil {
@@ -1001,7 +1000,7 @@ func MemcacheInstance_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.memcacheInstance.MemcacheInstance",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1009,7 +1008,7 @@ func MemcacheInstance_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func MemcacheInstance_IsTerraformResource(x interface{}) *bool {
+func MemcacheInstance_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateMemcacheInstance_IsTerraformResourceParameters(x); err != nil {
@@ -1020,7 +1019,7 @@ func MemcacheInstance_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.memcacheInstance.MemcacheInstance",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1045,31 +1044,31 @@ func (m *jsiiProxy_MemcacheInstance) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		m,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (m *jsiiProxy_MemcacheInstance) AddOverride(path *string, value interface{}) {
+func (m *jsiiProxy_MemcacheInstance) AddOverride(path *string, value any) {
 	if err := m.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		m,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (m *jsiiProxy_MemcacheInstance) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (m *jsiiProxy_MemcacheInstance) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1085,7 +1084,7 @@ func (m *jsiiProxy_MemcacheInstance) GetBooleanAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		m,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1101,7 +1100,7 @@ func (m *jsiiProxy_MemcacheInstance) GetBooleanMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		m,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1117,7 +1116,7 @@ func (m *jsiiProxy_MemcacheInstance) GetListAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		m,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1133,7 +1132,7 @@ func (m *jsiiProxy_MemcacheInstance) GetNumberAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		m,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1149,7 +1148,7 @@ func (m *jsiiProxy_MemcacheInstance) GetNumberListAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		m,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1165,7 +1164,7 @@ func (m *jsiiProxy_MemcacheInstance) GetNumberMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		m,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1181,7 +1180,7 @@ func (m *jsiiProxy_MemcacheInstance) GetStringAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		m,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1197,15 +1196,15 @@ func (m *jsiiProxy_MemcacheInstance) GetStringMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		m,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (m *jsiiProxy_MemcacheInstance) HasResourceMove() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_MemcacheInstance) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -1224,7 +1223,7 @@ func (m *jsiiProxy_MemcacheInstance) ImportFrom(id *string, provider cdktf.Terra
 	_jsii_.InvokeVoid(
 		m,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1237,7 +1236,7 @@ func (m *jsiiProxy_MemcacheInstance) InterpolationForAttribute(terraformAttribut
 	_jsii_.Invoke(
 		m,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1251,18 +1250,18 @@ func (m *jsiiProxy_MemcacheInstance) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		m,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (m *jsiiProxy_MemcacheInstance) MoveTo(moveTarget *string, index interface{}) {
+func (m *jsiiProxy_MemcacheInstance) MoveTo(moveTarget *string, index any) {
 	if err := m.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		m,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1273,7 +1272,7 @@ func (m *jsiiProxy_MemcacheInstance) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		m,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1284,7 +1283,7 @@ func (m *jsiiProxy_MemcacheInstance) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		m,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1295,7 +1294,7 @@ func (m *jsiiProxy_MemcacheInstance) PutMaintenancePolicy(value *MemcacheInstanc
 	_jsii_.InvokeVoid(
 		m,
 		"putMaintenancePolicy",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1306,7 +1305,7 @@ func (m *jsiiProxy_MemcacheInstance) PutMemcacheParameters(value *MemcacheInstan
 	_jsii_.InvokeVoid(
 		m,
 		"putMemcacheParameters",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1317,7 +1316,7 @@ func (m *jsiiProxy_MemcacheInstance) PutNodeConfig(value *MemcacheInstanceNodeCo
 	_jsii_.InvokeVoid(
 		m,
 		"putNodeConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1328,7 +1327,7 @@ func (m *jsiiProxy_MemcacheInstance) PutTimeouts(value *MemcacheInstanceTimeouts
 	_jsii_.InvokeVoid(
 		m,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1436,8 +1435,8 @@ func (m *jsiiProxy_MemcacheInstance) ResetZones() {
 	)
 }
 
-func (m *jsiiProxy_MemcacheInstance) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (m *jsiiProxy_MemcacheInstance) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
@@ -1449,8 +1448,8 @@ func (m *jsiiProxy_MemcacheInstance) SynthesizeAttributes() *map[string]interfac
 	return returns
 }
 
-func (m *jsiiProxy_MemcacheInstance) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (m *jsiiProxy_MemcacheInstance) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
@@ -1462,8 +1461,8 @@ func (m *jsiiProxy_MemcacheInstance) SynthesizeHclAttributes() *map[string]inter
 	return returns
 }
 
-func (m *jsiiProxy_MemcacheInstance) ToHclTerraform() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_MemcacheInstance) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -1475,8 +1474,8 @@ func (m *jsiiProxy_MemcacheInstance) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (m *jsiiProxy_MemcacheInstance) ToMetadata() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_MemcacheInstance) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -1501,8 +1500,8 @@ func (m *jsiiProxy_MemcacheInstance) ToString() *string {
 	return returns
 }
 
-func (m *jsiiProxy_MemcacheInstance) ToTerraform() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_MemcacheInstance) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -1513,4 +1512,3 @@ func (m *jsiiProxy_MemcacheInstance) ToTerraform() interface{} {
 
 	return returns
 }
-

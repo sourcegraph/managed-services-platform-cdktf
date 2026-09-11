@@ -1,6 +1,5 @@
 package osconfigpatchdeployment
 
-
 type OsConfigPatchDeploymentPatchConfig struct {
 	// apt block.
 	//
@@ -13,7 +12,7 @@ type OsConfigPatchDeploymentPatchConfig struct {
 	// Allows the patch job to run on Managed instance groups (MIGs).
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/os_config_patch_deployment#mig_instances_allowed OsConfigPatchDeployment#mig_instances_allowed}
-	MigInstancesAllowed interface{} `field:"optional" json:"migInstancesAllowed" yaml:"migInstancesAllowed"`
+	MigInstancesAllowed any `field:"optional" json:"migInstancesAllowed" yaml:"migInstancesAllowed"`
 	// post_step block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/os_config_patch_deployment#post_step OsConfigPatchDeployment#post_step}
@@ -39,4 +38,3 @@ type OsConfigPatchDeploymentPatchConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/os_config_patch_deployment#zypper OsConfigPatchDeployment#zypper}
 	Zypper *OsConfigPatchDeploymentPatchConfigZypper `field:"optional" json:"zypper" yaml:"zypper"`
 }
-

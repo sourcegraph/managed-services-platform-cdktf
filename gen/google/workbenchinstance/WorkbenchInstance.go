@@ -15,15 +15,15 @@ type WorkbenchInstance interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	Creator() *string
 	// Experimental.
@@ -33,13 +33,13 @@ type WorkbenchInstance interface {
 	DesiredState() *string
 	SetDesiredState(val *string)
 	DesiredStateInput() *string
-	DisableProxyAccess() interface{}
-	SetDisableProxyAccess(val interface{})
-	DisableProxyAccessInput() interface{}
+	DisableProxyAccess() any
+	SetDisableProxyAccess(val any)
+	DisableProxyAccessInput() any
 	EffectiveLabels() cdktf.StringMap
-	EnableThirdPartyIdentity() interface{}
-	SetEnableThirdPartyIdentity(val interface{})
-	EnableThirdPartyIdentityInput() interface{}
+	EnableThirdPartyIdentity() any
+	SetEnableThirdPartyIdentity(val any)
+	EnableThirdPartyIdentityInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -84,31 +84,31 @@ type WorkbenchInstance interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	ProxyUri() *string
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	State() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() WorkbenchInstanceTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	UpdateTime() *string
 	UpgradeHistory() WorkbenchInstanceUpgradeHistoryList
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -126,7 +126,7 @@ type WorkbenchInstance interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -138,7 +138,7 @@ type WorkbenchInstance interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -160,17 +160,17 @@ type WorkbenchInstance interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for WorkbenchInstance
@@ -188,8 +188,8 @@ func (j *jsiiProxy_WorkbenchInstance) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_WorkbenchInstance) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkbenchInstance) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -198,8 +198,8 @@ func (j *jsiiProxy_WorkbenchInstance) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_WorkbenchInstance) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_WorkbenchInstance) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -208,8 +208,8 @@ func (j *jsiiProxy_WorkbenchInstance) ConstructNodeMetadata() *map[string]interf
 	return returns
 }
 
-func (j *jsiiProxy_WorkbenchInstance) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkbenchInstance) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -268,8 +268,8 @@ func (j *jsiiProxy_WorkbenchInstance) DesiredStateInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_WorkbenchInstance) DisableProxyAccess() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkbenchInstance) DisableProxyAccess() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disableProxyAccess",
@@ -278,8 +278,8 @@ func (j *jsiiProxy_WorkbenchInstance) DisableProxyAccess() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_WorkbenchInstance) DisableProxyAccessInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkbenchInstance) DisableProxyAccessInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disableProxyAccessInput",
@@ -298,8 +298,8 @@ func (j *jsiiProxy_WorkbenchInstance) EffectiveLabels() cdktf.StringMap {
 	return returns
 }
 
-func (j *jsiiProxy_WorkbenchInstance) EnableThirdPartyIdentity() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkbenchInstance) EnableThirdPartyIdentity() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableThirdPartyIdentity",
@@ -308,8 +308,8 @@ func (j *jsiiProxy_WorkbenchInstance) EnableThirdPartyIdentity() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_WorkbenchInstance) EnableThirdPartyIdentityInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkbenchInstance) EnableThirdPartyIdentityInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableThirdPartyIdentityInput",
@@ -558,8 +558,8 @@ func (j *jsiiProxy_WorkbenchInstance) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_WorkbenchInstance) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_WorkbenchInstance) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -578,8 +578,8 @@ func (j *jsiiProxy_WorkbenchInstance) ProxyUri() *string {
 	return returns
 }
 
-func (j *jsiiProxy_WorkbenchInstance) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkbenchInstance) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -618,8 +618,8 @@ func (j *jsiiProxy_WorkbenchInstance) TerraformLabels() cdktf.StringMap {
 	return returns
 }
 
-func (j *jsiiProxy_WorkbenchInstance) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_WorkbenchInstance) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -648,8 +648,8 @@ func (j *jsiiProxy_WorkbenchInstance) Timeouts() WorkbenchInstanceTimeoutsOutput
 	return returns
 }
 
-func (j *jsiiProxy_WorkbenchInstance) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkbenchInstance) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -678,7 +678,6 @@ func (j *jsiiProxy_WorkbenchInstance) UpgradeHistory() WorkbenchInstanceUpgradeH
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/workbench_instance google_workbench_instance} Resource.
 func NewWorkbenchInstance(scope constructs.Construct, id *string, config *WorkbenchInstanceConfig) WorkbenchInstance {
 	_init_.Initialize()
@@ -690,7 +689,7 @@ func NewWorkbenchInstance(scope constructs.Construct, id *string, config *Workbe
 
 	_jsii_.Create(
 		"@cdktf/provider-google.workbenchInstance.WorkbenchInstance",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -703,12 +702,12 @@ func NewWorkbenchInstance_Override(w WorkbenchInstance, scope constructs.Constru
 
 	_jsii_.Create(
 		"@cdktf/provider-google.workbenchInstance.WorkbenchInstance",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		w,
 	)
 }
 
-func (j *jsiiProxy_WorkbenchInstance)SetConnection(val interface{}) {
+func (j *jsiiProxy_WorkbenchInstance) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -719,7 +718,7 @@ func (j *jsiiProxy_WorkbenchInstance)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_WorkbenchInstance)SetCount(val interface{}) {
+func (j *jsiiProxy_WorkbenchInstance) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -730,7 +729,7 @@ func (j *jsiiProxy_WorkbenchInstance)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_WorkbenchInstance)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_WorkbenchInstance) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -738,7 +737,7 @@ func (j *jsiiProxy_WorkbenchInstance)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_WorkbenchInstance)SetDesiredState(val *string) {
+func (j *jsiiProxy_WorkbenchInstance) SetDesiredState(val *string) {
 	if err := j.validateSetDesiredStateParameters(val); err != nil {
 		panic(err)
 	}
@@ -749,7 +748,7 @@ func (j *jsiiProxy_WorkbenchInstance)SetDesiredState(val *string) {
 	)
 }
 
-func (j *jsiiProxy_WorkbenchInstance)SetDisableProxyAccess(val interface{}) {
+func (j *jsiiProxy_WorkbenchInstance) SetDisableProxyAccess(val any) {
 	if err := j.validateSetDisableProxyAccessParameters(val); err != nil {
 		panic(err)
 	}
@@ -760,7 +759,7 @@ func (j *jsiiProxy_WorkbenchInstance)SetDisableProxyAccess(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_WorkbenchInstance)SetEnableThirdPartyIdentity(val interface{}) {
+func (j *jsiiProxy_WorkbenchInstance) SetEnableThirdPartyIdentity(val any) {
 	if err := j.validateSetEnableThirdPartyIdentityParameters(val); err != nil {
 		panic(err)
 	}
@@ -771,7 +770,7 @@ func (j *jsiiProxy_WorkbenchInstance)SetEnableThirdPartyIdentity(val interface{}
 	)
 }
 
-func (j *jsiiProxy_WorkbenchInstance)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_WorkbenchInstance) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -779,7 +778,7 @@ func (j *jsiiProxy_WorkbenchInstance)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_WorkbenchInstance)SetId(val *string) {
+func (j *jsiiProxy_WorkbenchInstance) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -790,7 +789,7 @@ func (j *jsiiProxy_WorkbenchInstance)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_WorkbenchInstance)SetInstanceId(val *string) {
+func (j *jsiiProxy_WorkbenchInstance) SetInstanceId(val *string) {
 	if err := j.validateSetInstanceIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -801,7 +800,7 @@ func (j *jsiiProxy_WorkbenchInstance)SetInstanceId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_WorkbenchInstance)SetInstanceOwners(val *[]*string) {
+func (j *jsiiProxy_WorkbenchInstance) SetInstanceOwners(val *[]*string) {
 	if err := j.validateSetInstanceOwnersParameters(val); err != nil {
 		panic(err)
 	}
@@ -812,7 +811,7 @@ func (j *jsiiProxy_WorkbenchInstance)SetInstanceOwners(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_WorkbenchInstance)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_WorkbenchInstance) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -823,7 +822,7 @@ func (j *jsiiProxy_WorkbenchInstance)SetLabels(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_WorkbenchInstance)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_WorkbenchInstance) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -834,7 +833,7 @@ func (j *jsiiProxy_WorkbenchInstance)SetLifecycle(val *cdktf.TerraformResourceLi
 	)
 }
 
-func (j *jsiiProxy_WorkbenchInstance)SetLocation(val *string) {
+func (j *jsiiProxy_WorkbenchInstance) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -845,7 +844,7 @@ func (j *jsiiProxy_WorkbenchInstance)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_WorkbenchInstance)SetName(val *string) {
+func (j *jsiiProxy_WorkbenchInstance) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -856,7 +855,7 @@ func (j *jsiiProxy_WorkbenchInstance)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_WorkbenchInstance)SetProject(val *string) {
+func (j *jsiiProxy_WorkbenchInstance) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -867,7 +866,7 @@ func (j *jsiiProxy_WorkbenchInstance)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_WorkbenchInstance)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_WorkbenchInstance) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -875,7 +874,7 @@ func (j *jsiiProxy_WorkbenchInstance)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_WorkbenchInstance)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_WorkbenchInstance) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -898,7 +897,7 @@ func WorkbenchInstance_GenerateConfigForImport(scope constructs.Construct, impor
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.workbenchInstance.WorkbenchInstance",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -922,7 +921,7 @@ func WorkbenchInstance_GenerateConfigForImport(scope constructs.Construct, impor
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func WorkbenchInstance_IsConstruct(x interface{}) *bool {
+func WorkbenchInstance_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateWorkbenchInstance_IsConstructParameters(x); err != nil {
@@ -933,7 +932,7 @@ func WorkbenchInstance_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.workbenchInstance.WorkbenchInstance",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -941,7 +940,7 @@ func WorkbenchInstance_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func WorkbenchInstance_IsTerraformElement(x interface{}) *bool {
+func WorkbenchInstance_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateWorkbenchInstance_IsTerraformElementParameters(x); err != nil {
@@ -952,7 +951,7 @@ func WorkbenchInstance_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.workbenchInstance.WorkbenchInstance",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -960,7 +959,7 @@ func WorkbenchInstance_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func WorkbenchInstance_IsTerraformResource(x interface{}) *bool {
+func WorkbenchInstance_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateWorkbenchInstance_IsTerraformResourceParameters(x); err != nil {
@@ -971,7 +970,7 @@ func WorkbenchInstance_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.workbenchInstance.WorkbenchInstance",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -996,31 +995,31 @@ func (w *jsiiProxy_WorkbenchInstance) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		w,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (w *jsiiProxy_WorkbenchInstance) AddOverride(path *string, value interface{}) {
+func (w *jsiiProxy_WorkbenchInstance) AddOverride(path *string, value any) {
 	if err := w.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		w,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (w *jsiiProxy_WorkbenchInstance) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (w *jsiiProxy_WorkbenchInstance) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := w.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		w,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1036,7 +1035,7 @@ func (w *jsiiProxy_WorkbenchInstance) GetBooleanAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		w,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1052,7 +1051,7 @@ func (w *jsiiProxy_WorkbenchInstance) GetBooleanMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		w,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1068,7 +1067,7 @@ func (w *jsiiProxy_WorkbenchInstance) GetListAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		w,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1084,7 +1083,7 @@ func (w *jsiiProxy_WorkbenchInstance) GetNumberAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		w,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1100,7 +1099,7 @@ func (w *jsiiProxy_WorkbenchInstance) GetNumberListAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		w,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1116,7 +1115,7 @@ func (w *jsiiProxy_WorkbenchInstance) GetNumberMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		w,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1132,7 +1131,7 @@ func (w *jsiiProxy_WorkbenchInstance) GetStringAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		w,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1148,15 +1147,15 @@ func (w *jsiiProxy_WorkbenchInstance) GetStringMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		w,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (w *jsiiProxy_WorkbenchInstance) HasResourceMove() interface{} {
-	var returns interface{}
+func (w *jsiiProxy_WorkbenchInstance) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		w,
@@ -1175,7 +1174,7 @@ func (w *jsiiProxy_WorkbenchInstance) ImportFrom(id *string, provider cdktf.Terr
 	_jsii_.InvokeVoid(
 		w,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1188,7 +1187,7 @@ func (w *jsiiProxy_WorkbenchInstance) InterpolationForAttribute(terraformAttribu
 	_jsii_.Invoke(
 		w,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1202,18 +1201,18 @@ func (w *jsiiProxy_WorkbenchInstance) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		w,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (w *jsiiProxy_WorkbenchInstance) MoveTo(moveTarget *string, index interface{}) {
+func (w *jsiiProxy_WorkbenchInstance) MoveTo(moveTarget *string, index any) {
 	if err := w.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		w,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1224,7 +1223,7 @@ func (w *jsiiProxy_WorkbenchInstance) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		w,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1235,7 +1234,7 @@ func (w *jsiiProxy_WorkbenchInstance) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		w,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1246,7 +1245,7 @@ func (w *jsiiProxy_WorkbenchInstance) PutGceSetup(value *WorkbenchInstanceGceSet
 	_jsii_.InvokeVoid(
 		w,
 		"putGceSetup",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1257,7 +1256,7 @@ func (w *jsiiProxy_WorkbenchInstance) PutTimeouts(value *WorkbenchInstanceTimeou
 	_jsii_.InvokeVoid(
 		w,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1349,8 +1348,8 @@ func (w *jsiiProxy_WorkbenchInstance) ResetTimeouts() {
 	)
 }
 
-func (w *jsiiProxy_WorkbenchInstance) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (w *jsiiProxy_WorkbenchInstance) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		w,
@@ -1362,8 +1361,8 @@ func (w *jsiiProxy_WorkbenchInstance) SynthesizeAttributes() *map[string]interfa
 	return returns
 }
 
-func (w *jsiiProxy_WorkbenchInstance) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (w *jsiiProxy_WorkbenchInstance) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		w,
@@ -1375,8 +1374,8 @@ func (w *jsiiProxy_WorkbenchInstance) SynthesizeHclAttributes() *map[string]inte
 	return returns
 }
 
-func (w *jsiiProxy_WorkbenchInstance) ToHclTerraform() interface{} {
-	var returns interface{}
+func (w *jsiiProxy_WorkbenchInstance) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		w,
@@ -1388,8 +1387,8 @@ func (w *jsiiProxy_WorkbenchInstance) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (w *jsiiProxy_WorkbenchInstance) ToMetadata() interface{} {
-	var returns interface{}
+func (w *jsiiProxy_WorkbenchInstance) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		w,
@@ -1414,8 +1413,8 @@ func (w *jsiiProxy_WorkbenchInstance) ToString() *string {
 	return returns
 }
 
-func (w *jsiiProxy_WorkbenchInstance) ToTerraform() interface{} {
-	var returns interface{}
+func (w *jsiiProxy_WorkbenchInstance) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		w,
@@ -1426,4 +1425,3 @@ func (w *jsiiProxy_WorkbenchInstance) ToTerraform() interface{} {
 
 	return returns
 }
-

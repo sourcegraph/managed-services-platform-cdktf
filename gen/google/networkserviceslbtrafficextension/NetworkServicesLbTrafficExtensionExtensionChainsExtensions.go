@@ -1,6 +1,5 @@
 package networkserviceslbtrafficextension
 
-
 type NetworkServicesLbTrafficExtensionExtensionChainsExtensions struct {
 	// The name for this extension.
 	//
@@ -28,7 +27,7 @@ type NetworkServicesLbTrafficExtensionExtensionChainsExtensions struct {
 	// configuring a custom error response in the load balancer.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/network_services_lb_traffic_extension#fail_open NetworkServicesLbTrafficExtension#fail_open}
-	FailOpen interface{} `field:"optional" json:"failOpen" yaml:"failOpen"`
+	FailOpen any `field:"optional" json:"failOpen" yaml:"failOpen"`
 	// List of the HTTP headers to forward to the extension (from the client or backend).
 	//
 	// If omitted, all headers are sent. Each element is a string indicating the header name.
@@ -59,4 +58,3 @@ type NetworkServicesLbTrafficExtensionExtensionChainsExtensions struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/network_services_lb_traffic_extension#timeout NetworkServicesLbTrafficExtension#timeout}
 	Timeout *string `field:"optional" json:"timeout" yaml:"timeout"`
 }
-

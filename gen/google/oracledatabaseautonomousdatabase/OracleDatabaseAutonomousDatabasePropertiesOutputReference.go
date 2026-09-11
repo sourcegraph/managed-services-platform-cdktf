@@ -24,9 +24,9 @@ type OracleDatabaseAutonomousDatabasePropertiesOutputReference interface {
 	CharacterSetInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -43,7 +43,7 @@ type OracleDatabaseAutonomousDatabasePropertiesOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	CustomerContacts() OracleDatabaseAutonomousDatabasePropertiesCustomerContactsList
-	CustomerContactsInput() interface{}
+	CustomerContactsInput() any
 	DatabaseManagementState() *string
 	DataSafeState() *string
 	DataStorageSizeGb() *float64
@@ -66,13 +66,13 @@ type OracleDatabaseAutonomousDatabasePropertiesOutputReference interface {
 	Fqn() *string
 	InternalValue() *OracleDatabaseAutonomousDatabaseProperties
 	SetInternalValue(val *OracleDatabaseAutonomousDatabaseProperties)
-	IsAutoScalingEnabled() interface{}
-	SetIsAutoScalingEnabled(val interface{})
-	IsAutoScalingEnabledInput() interface{}
+	IsAutoScalingEnabled() any
+	SetIsAutoScalingEnabled(val any)
+	IsAutoScalingEnabledInput() any
 	IsLocalDataGuardEnabled() cdktf.IResolvable
-	IsStorageAutoScalingEnabled() interface{}
-	SetIsStorageAutoScalingEnabled(val interface{})
-	IsStorageAutoScalingEnabledInput() interface{}
+	IsStorageAutoScalingEnabled() any
+	SetIsStorageAutoScalingEnabled(val any)
+	IsStorageAutoScalingEnabledInput() any
 	LicenseType() *string
 	SetLicenseType(val *string)
 	LicenseTypeInput() *string
@@ -87,9 +87,9 @@ type OracleDatabaseAutonomousDatabasePropertiesOutputReference interface {
 	MaintenanceScheduleTypeInput() *string
 	MemoryPerOracleComputeUnitGbs() *float64
 	MemoryTableGbs() *float64
-	MtlsConnectionRequired() interface{}
-	SetMtlsConnectionRequired(val interface{})
-	MtlsConnectionRequiredInput() interface{}
+	MtlsConnectionRequired() any
+	SetMtlsConnectionRequired(val any)
+	MtlsConnectionRequiredInput() any
 	NCharacterSet() *string
 	SetNCharacterSet(val *string)
 	NCharacterSetInput() *string
@@ -129,7 +129,7 @@ type OracleDatabaseAutonomousDatabasePropertiesOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -150,7 +150,7 @@ type OracleDatabaseAutonomousDatabasePropertiesOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutCustomerContacts(value interface{})
+	PutCustomerContacts(value any)
 	ResetBackupRetentionPeriodDays()
 	ResetCharacterSet()
 	ResetComputeCount()
@@ -169,7 +169,7 @@ type OracleDatabaseAutonomousDatabasePropertiesOutputReference interface {
 	ResetPrivateEndpointLabel()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -282,8 +282,8 @@ func (j *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference) Ch
 	return returns
 }
 
-func (j *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -362,8 +362,8 @@ func (j *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference) Cu
 	return returns
 }
 
-func (j *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference) CustomerContactsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference) CustomerContactsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"customerContactsInput",
@@ -522,8 +522,8 @@ func (j *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference) In
 	return returns
 }
 
-func (j *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference) IsAutoScalingEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference) IsAutoScalingEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"isAutoScalingEnabled",
@@ -532,8 +532,8 @@ func (j *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference) Is
 	return returns
 }
 
-func (j *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference) IsAutoScalingEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference) IsAutoScalingEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"isAutoScalingEnabledInput",
@@ -552,8 +552,8 @@ func (j *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference) Is
 	return returns
 }
 
-func (j *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference) IsStorageAutoScalingEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference) IsStorageAutoScalingEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"isStorageAutoScalingEnabled",
@@ -562,8 +562,8 @@ func (j *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference) Is
 	return returns
 }
 
-func (j *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference) IsStorageAutoScalingEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference) IsStorageAutoScalingEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"isStorageAutoScalingEnabledInput",
@@ -692,8 +692,8 @@ func (j *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference) Me
 	return returns
 }
 
-func (j *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference) MtlsConnectionRequired() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference) MtlsConnectionRequired() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"mtlsConnectionRequired",
@@ -702,8 +702,8 @@ func (j *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference) Mt
 	return returns
 }
 
-func (j *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference) MtlsConnectionRequiredInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference) MtlsConnectionRequiredInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"mtlsConnectionRequiredInput",
@@ -972,7 +972,6 @@ func (j *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference) Us
 	return returns
 }
 
-
 func NewOracleDatabaseAutonomousDatabasePropertiesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) OracleDatabaseAutonomousDatabasePropertiesOutputReference {
 	_init_.Initialize()
 
@@ -983,7 +982,7 @@ func NewOracleDatabaseAutonomousDatabasePropertiesOutputReference(terraformResou
 
 	_jsii_.Create(
 		"@cdktf/provider-google.oracleDatabaseAutonomousDatabase.OracleDatabaseAutonomousDatabasePropertiesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -995,12 +994,12 @@ func NewOracleDatabaseAutonomousDatabasePropertiesOutputReference_Override(o Ora
 
 	_jsii_.Create(
 		"@cdktf/provider-google.oracleDatabaseAutonomousDatabase.OracleDatabaseAutonomousDatabasePropertiesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		o,
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference)SetBackupRetentionPeriodDays(val *float64) {
+func (j *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference) SetBackupRetentionPeriodDays(val *float64) {
 	if err := j.validateSetBackupRetentionPeriodDaysParameters(val); err != nil {
 		panic(err)
 	}
@@ -1011,7 +1010,7 @@ func (j *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference)SetCharacterSet(val *string) {
+func (j *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference) SetCharacterSet(val *string) {
 	if err := j.validateSetCharacterSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -1022,7 +1021,7 @@ func (j *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -1033,7 +1032,7 @@ func (j *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -1044,7 +1043,7 @@ func (j *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference)SetComputeCount(val *float64) {
+func (j *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference) SetComputeCount(val *float64) {
 	if err := j.validateSetComputeCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -1055,7 +1054,7 @@ func (j *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference)SetDataStorageSizeGb(val *float64) {
+func (j *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference) SetDataStorageSizeGb(val *float64) {
 	if err := j.validateSetDataStorageSizeGbParameters(val); err != nil {
 		panic(err)
 	}
@@ -1066,7 +1065,7 @@ func (j *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference)SetDataStorageSizeTb(val *float64) {
+func (j *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference) SetDataStorageSizeTb(val *float64) {
 	if err := j.validateSetDataStorageSizeTbParameters(val); err != nil {
 		panic(err)
 	}
@@ -1077,7 +1076,7 @@ func (j *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference)SetDbEdition(val *string) {
+func (j *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference) SetDbEdition(val *string) {
 	if err := j.validateSetDbEditionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1088,7 +1087,7 @@ func (j *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference)SetDbVersion(val *string) {
+func (j *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference) SetDbVersion(val *string) {
 	if err := j.validateSetDbVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1099,7 +1098,7 @@ func (j *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference)SetDbWorkload(val *string) {
+func (j *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference) SetDbWorkload(val *string) {
 	if err := j.validateSetDbWorkloadParameters(val); err != nil {
 		panic(err)
 	}
@@ -1110,7 +1109,7 @@ func (j *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference)SetInternalValue(val *OracleDatabaseAutonomousDatabaseProperties) {
+func (j *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference) SetInternalValue(val *OracleDatabaseAutonomousDatabaseProperties) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -1121,7 +1120,7 @@ func (j *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference)SetIsAutoScalingEnabled(val interface{}) {
+func (j *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference) SetIsAutoScalingEnabled(val any) {
 	if err := j.validateSetIsAutoScalingEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -1132,7 +1131,7 @@ func (j *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference)SetIsStorageAutoScalingEnabled(val interface{}) {
+func (j *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference) SetIsStorageAutoScalingEnabled(val any) {
 	if err := j.validateSetIsStorageAutoScalingEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -1143,7 +1142,7 @@ func (j *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference)SetLicenseType(val *string) {
+func (j *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference) SetLicenseType(val *string) {
 	if err := j.validateSetLicenseTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1154,7 +1153,7 @@ func (j *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference)SetMaintenanceScheduleType(val *string) {
+func (j *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference) SetMaintenanceScheduleType(val *string) {
 	if err := j.validateSetMaintenanceScheduleTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1165,7 +1164,7 @@ func (j *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference)SetMtlsConnectionRequired(val interface{}) {
+func (j *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference) SetMtlsConnectionRequired(val any) {
 	if err := j.validateSetMtlsConnectionRequiredParameters(val); err != nil {
 		panic(err)
 	}
@@ -1176,7 +1175,7 @@ func (j *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference)SetNCharacterSet(val *string) {
+func (j *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference) SetNCharacterSet(val *string) {
 	if err := j.validateSetNCharacterSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -1187,7 +1186,7 @@ func (j *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference)SetOperationsInsightsState(val *string) {
+func (j *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference) SetOperationsInsightsState(val *string) {
 	if err := j.validateSetOperationsInsightsStateParameters(val); err != nil {
 		panic(err)
 	}
@@ -1198,7 +1197,7 @@ func (j *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference)SetPrivateEndpointIp(val *string) {
+func (j *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference) SetPrivateEndpointIp(val *string) {
 	if err := j.validateSetPrivateEndpointIpParameters(val); err != nil {
 		panic(err)
 	}
@@ -1209,7 +1208,7 @@ func (j *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference)SetPrivateEndpointLabel(val *string) {
+func (j *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference) SetPrivateEndpointLabel(val *string) {
 	if err := j.validateSetPrivateEndpointLabelParameters(val); err != nil {
 		panic(err)
 	}
@@ -1220,7 +1219,7 @@ func (j *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1231,7 +1230,7 @@ func (j *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -1255,16 +1254,16 @@ func (o *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference) Co
 	return returns
 }
 
-func (o *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (o *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := o.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		o,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1280,7 +1279,7 @@ func (o *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference) Ge
 	_jsii_.Invoke(
 		o,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1296,7 +1295,7 @@ func (o *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference) Ge
 	_jsii_.Invoke(
 		o,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1312,7 +1311,7 @@ func (o *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference) Ge
 	_jsii_.Invoke(
 		o,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1328,7 +1327,7 @@ func (o *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference) Ge
 	_jsii_.Invoke(
 		o,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1344,7 +1343,7 @@ func (o *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference) Ge
 	_jsii_.Invoke(
 		o,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1360,7 +1359,7 @@ func (o *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference) Ge
 	_jsii_.Invoke(
 		o,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1376,7 +1375,7 @@ func (o *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference) Ge
 	_jsii_.Invoke(
 		o,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1392,7 +1391,7 @@ func (o *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference) Ge
 	_jsii_.Invoke(
 		o,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1421,21 +1420,21 @@ func (o *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference) In
 	_jsii_.Invoke(
 		o,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (o *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference) PutCustomerContacts(value interface{}) {
+func (o *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference) PutCustomerContacts(value any) {
 	if err := o.validatePutCustomerContactsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		o,
 		"putCustomerContacts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1567,16 +1566,16 @@ func (o *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference) Re
 	)
 }
 
-func (o *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (o *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := o.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		o,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -1595,4 +1594,3 @@ func (o *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesOutputReference) To
 
 	return returns
 }
-

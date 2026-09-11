@@ -114,7 +114,7 @@ func (j *jsiiProxy_NetappVolumeExportPolicyRulesOutputReference) validateSetAllo
 	return nil
 }
 
-func (j *jsiiProxy_NetappVolumeExportPolicyRulesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NetappVolumeExportPolicyRulesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -187,7 +187,7 @@ func (j *jsiiProxy_NetappVolumeExportPolicyRulesOutputReference) validateSetHasR
 	return nil
 }
 
-func (j *jsiiProxy_NetappVolumeExportPolicyRulesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_NetappVolumeExportPolicyRulesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -211,7 +211,7 @@ func (j *jsiiProxy_NetappVolumeExportPolicyRulesOutputReference) validateSetInte
 	return nil
 }
 
-func (j *jsiiProxy_NetappVolumeExportPolicyRulesOutputReference) validateSetKerberos5IReadOnlyParameters(val interface{}) error {
+func (j *jsiiProxy_NetappVolumeExportPolicyRulesOutputReference) validateSetKerberos5IReadOnlyParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func (j *jsiiProxy_NetappVolumeExportPolicyRulesOutputReference) validateSetKerb
 	return nil
 }
 
-func (j *jsiiProxy_NetappVolumeExportPolicyRulesOutputReference) validateSetKerberos5IReadWriteParameters(val interface{}) error {
+func (j *jsiiProxy_NetappVolumeExportPolicyRulesOutputReference) validateSetKerberos5IReadWriteParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -251,7 +251,7 @@ func (j *jsiiProxy_NetappVolumeExportPolicyRulesOutputReference) validateSetKerb
 	return nil
 }
 
-func (j *jsiiProxy_NetappVolumeExportPolicyRulesOutputReference) validateSetKerberos5PReadOnlyParameters(val interface{}) error {
+func (j *jsiiProxy_NetappVolumeExportPolicyRulesOutputReference) validateSetKerberos5PReadOnlyParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -271,7 +271,7 @@ func (j *jsiiProxy_NetappVolumeExportPolicyRulesOutputReference) validateSetKerb
 	return nil
 }
 
-func (j *jsiiProxy_NetappVolumeExportPolicyRulesOutputReference) validateSetKerberos5PReadWriteParameters(val interface{}) error {
+func (j *jsiiProxy_NetappVolumeExportPolicyRulesOutputReference) validateSetKerberos5PReadWriteParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -291,7 +291,7 @@ func (j *jsiiProxy_NetappVolumeExportPolicyRulesOutputReference) validateSetKerb
 	return nil
 }
 
-func (j *jsiiProxy_NetappVolumeExportPolicyRulesOutputReference) validateSetKerberos5ReadOnlyParameters(val interface{}) error {
+func (j *jsiiProxy_NetappVolumeExportPolicyRulesOutputReference) validateSetKerberos5ReadOnlyParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -311,7 +311,7 @@ func (j *jsiiProxy_NetappVolumeExportPolicyRulesOutputReference) validateSetKerb
 	return nil
 }
 
-func (j *jsiiProxy_NetappVolumeExportPolicyRulesOutputReference) validateSetKerberos5ReadWriteParameters(val interface{}) error {
+func (j *jsiiProxy_NetappVolumeExportPolicyRulesOutputReference) validateSetKerberos5ReadWriteParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -331,7 +331,7 @@ func (j *jsiiProxy_NetappVolumeExportPolicyRulesOutputReference) validateSetKerb
 	return nil
 }
 
-func (j *jsiiProxy_NetappVolumeExportPolicyRulesOutputReference) validateSetNfsv3Parameters(val interface{}) error {
+func (j *jsiiProxy_NetappVolumeExportPolicyRulesOutputReference) validateSetNfsv3Parameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -351,7 +351,7 @@ func (j *jsiiProxy_NetappVolumeExportPolicyRulesOutputReference) validateSetNfsv
 	return nil
 }
 
-func (j *jsiiProxy_NetappVolumeExportPolicyRulesOutputReference) validateSetNfsv4Parameters(val interface{}) error {
+func (j *jsiiProxy_NetappVolumeExportPolicyRulesOutputReference) validateSetNfsv4Parameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -406,4 +406,3 @@ func validateNewNetappVolumeExportPolicyRulesOutputReferenceParameters(terraform
 
 	return nil
 }
-

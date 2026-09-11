@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeImage.ComputeImage",
-		reflect.TypeOf((*ComputeImage)(nil)).Elem(),
+		reflect.TypeFor[ComputeImage](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -126,7 +126,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeImage{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -134,15 +134,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeImage.ComputeImageConfig",
-		reflect.TypeOf((*ComputeImageConfig)(nil)).Elem(),
+		reflect.TypeFor[ComputeImageConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeImage.ComputeImageGuestOsFeatures",
-		reflect.TypeOf((*ComputeImageGuestOsFeatures)(nil)).Elem(),
+		reflect.TypeFor[ComputeImageGuestOsFeatures](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeImage.ComputeImageGuestOsFeaturesList",
-		reflect.TypeOf((*ComputeImageGuestOsFeaturesList)(nil)).Elem(),
+		reflect.TypeFor[ComputeImageGuestOsFeaturesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -156,7 +156,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeImageGuestOsFeaturesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -164,7 +164,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeImage.ComputeImageGuestOsFeaturesOutputReference",
-		reflect.TypeOf((*ComputeImageGuestOsFeaturesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeImageGuestOsFeaturesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -190,7 +190,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeImageGuestOsFeaturesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -198,11 +198,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeImage.ComputeImageImageEncryptionKey",
-		reflect.TypeOf((*ComputeImageImageEncryptionKey)(nil)).Elem(),
+		reflect.TypeFor[ComputeImageImageEncryptionKey](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeImage.ComputeImageImageEncryptionKeyOutputReference",
-		reflect.TypeOf((*ComputeImageImageEncryptionKeyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeImageImageEncryptionKeyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -238,7 +238,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeImageImageEncryptionKeyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -246,11 +246,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeImage.ComputeImageRawDisk",
-		reflect.TypeOf((*ComputeImageRawDisk)(nil)).Elem(),
+		reflect.TypeFor[ComputeImageRawDisk](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeImage.ComputeImageRawDiskOutputReference",
-		reflect.TypeOf((*ComputeImageRawDiskOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeImageRawDiskOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -282,7 +282,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeImageRawDiskOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -290,15 +290,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeImage.ComputeImageShieldedInstanceInitialState",
-		reflect.TypeOf((*ComputeImageShieldedInstanceInitialState)(nil)).Elem(),
+		reflect.TypeFor[ComputeImageShieldedInstanceInitialState](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeImage.ComputeImageShieldedInstanceInitialStateDbs",
-		reflect.TypeOf((*ComputeImageShieldedInstanceInitialStateDbs)(nil)).Elem(),
+		reflect.TypeFor[ComputeImageShieldedInstanceInitialStateDbs](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeImage.ComputeImageShieldedInstanceInitialStateDbsList",
-		reflect.TypeOf((*ComputeImageShieldedInstanceInitialStateDbsList)(nil)).Elem(),
+		reflect.TypeFor[ComputeImageShieldedInstanceInitialStateDbsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -312,7 +312,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeImageShieldedInstanceInitialStateDbsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -320,7 +320,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeImage.ComputeImageShieldedInstanceInitialStateDbsOutputReference",
-		reflect.TypeOf((*ComputeImageShieldedInstanceInitialStateDbsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeImageShieldedInstanceInitialStateDbsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -349,7 +349,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeImageShieldedInstanceInitialStateDbsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -357,11 +357,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeImage.ComputeImageShieldedInstanceInitialStateDbxs",
-		reflect.TypeOf((*ComputeImageShieldedInstanceInitialStateDbxs)(nil)).Elem(),
+		reflect.TypeFor[ComputeImageShieldedInstanceInitialStateDbxs](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeImage.ComputeImageShieldedInstanceInitialStateDbxsList",
-		reflect.TypeOf((*ComputeImageShieldedInstanceInitialStateDbxsList)(nil)).Elem(),
+		reflect.TypeFor[ComputeImageShieldedInstanceInitialStateDbxsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -375,7 +375,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeImageShieldedInstanceInitialStateDbxsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -383,7 +383,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeImage.ComputeImageShieldedInstanceInitialStateDbxsOutputReference",
-		reflect.TypeOf((*ComputeImageShieldedInstanceInitialStateDbxsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeImageShieldedInstanceInitialStateDbxsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -412,7 +412,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeImageShieldedInstanceInitialStateDbxsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -420,11 +420,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeImage.ComputeImageShieldedInstanceInitialStateKeks",
-		reflect.TypeOf((*ComputeImageShieldedInstanceInitialStateKeks)(nil)).Elem(),
+		reflect.TypeFor[ComputeImageShieldedInstanceInitialStateKeks](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeImage.ComputeImageShieldedInstanceInitialStateKeksList",
-		reflect.TypeOf((*ComputeImageShieldedInstanceInitialStateKeksList)(nil)).Elem(),
+		reflect.TypeFor[ComputeImageShieldedInstanceInitialStateKeksList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -438,7 +438,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeImageShieldedInstanceInitialStateKeksList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -446,7 +446,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeImage.ComputeImageShieldedInstanceInitialStateKeksOutputReference",
-		reflect.TypeOf((*ComputeImageShieldedInstanceInitialStateKeksOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeImageShieldedInstanceInitialStateKeksOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -475,7 +475,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeImageShieldedInstanceInitialStateKeksOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -483,7 +483,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeImage.ComputeImageShieldedInstanceInitialStateOutputReference",
-		reflect.TypeOf((*ComputeImageShieldedInstanceInitialStateOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeImageShieldedInstanceInitialStateOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -523,7 +523,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeImageShieldedInstanceInitialStateOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -531,11 +531,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeImage.ComputeImageShieldedInstanceInitialStatePk",
-		reflect.TypeOf((*ComputeImageShieldedInstanceInitialStatePk)(nil)).Elem(),
+		reflect.TypeFor[ComputeImageShieldedInstanceInitialStatePk](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeImage.ComputeImageShieldedInstanceInitialStatePkOutputReference",
-		reflect.TypeOf((*ComputeImageShieldedInstanceInitialStatePkOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeImageShieldedInstanceInitialStatePkOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -564,7 +564,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeImageShieldedInstanceInitialStatePkOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -572,11 +572,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeImage.ComputeImageSourceDiskEncryptionKey",
-		reflect.TypeOf((*ComputeImageSourceDiskEncryptionKey)(nil)).Elem(),
+		reflect.TypeFor[ComputeImageSourceDiskEncryptionKey](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeImage.ComputeImageSourceDiskEncryptionKeyOutputReference",
-		reflect.TypeOf((*ComputeImageSourceDiskEncryptionKeyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeImageSourceDiskEncryptionKeyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -612,7 +612,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeImageSourceDiskEncryptionKeyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -620,11 +620,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeImage.ComputeImageSourceImageEncryptionKey",
-		reflect.TypeOf((*ComputeImageSourceImageEncryptionKey)(nil)).Elem(),
+		reflect.TypeFor[ComputeImageSourceImageEncryptionKey](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeImage.ComputeImageSourceImageEncryptionKeyOutputReference",
-		reflect.TypeOf((*ComputeImageSourceImageEncryptionKeyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeImageSourceImageEncryptionKeyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -660,7 +660,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeImageSourceImageEncryptionKeyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -668,11 +668,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeImage.ComputeImageSourceSnapshotEncryptionKey",
-		reflect.TypeOf((*ComputeImageSourceSnapshotEncryptionKey)(nil)).Elem(),
+		reflect.TypeFor[ComputeImageSourceSnapshotEncryptionKey](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeImage.ComputeImageSourceSnapshotEncryptionKeyOutputReference",
-		reflect.TypeOf((*ComputeImageSourceSnapshotEncryptionKeyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeImageSourceSnapshotEncryptionKeyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -708,7 +708,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeImageSourceSnapshotEncryptionKeyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -716,11 +716,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeImage.ComputeImageTimeouts",
-		reflect.TypeOf((*ComputeImageTimeouts)(nil)).Elem(),
+		reflect.TypeFor[ComputeImageTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeImage.ComputeImageTimeoutsOutputReference",
-		reflect.TypeOf((*ComputeImageTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeImageTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -753,7 +753,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeImageTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

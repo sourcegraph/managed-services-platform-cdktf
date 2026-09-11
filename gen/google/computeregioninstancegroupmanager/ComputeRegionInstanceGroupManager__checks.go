@@ -19,7 +19,7 @@ func (c *jsiiProxy_ComputeRegionInstanceGroupManager) validateAddMoveTargetParam
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionInstanceGroupManager) validateAddOverrideParameters(path *string, value interface{}) error {
+func (c *jsiiProxy_ComputeRegionInstanceGroupManager) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (c *jsiiProxy_ComputeRegionInstanceGroupManager) validateMoveFromIdParamete
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionInstanceGroupManager) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (c *jsiiProxy_ComputeRegionInstanceGroupManager) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -248,7 +248,7 @@ func (c *jsiiProxy_ComputeRegionInstanceGroupManager) validatePutInstanceLifecyc
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionInstanceGroupManager) validatePutNamedPortParameters(value interface{}) error {
+func (c *jsiiProxy_ComputeRegionInstanceGroupManager) validatePutNamedPortParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -290,7 +290,7 @@ func (c *jsiiProxy_ComputeRegionInstanceGroupManager) validatePutStandbyPolicyPa
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionInstanceGroupManager) validatePutStatefulDiskParameters(value interface{}) error {
+func (c *jsiiProxy_ComputeRegionInstanceGroupManager) validatePutStatefulDiskParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -321,7 +321,7 @@ func (c *jsiiProxy_ComputeRegionInstanceGroupManager) validatePutStatefulDiskPar
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionInstanceGroupManager) validatePutStatefulExternalIpParameters(value interface{}) error {
+func (c *jsiiProxy_ComputeRegionInstanceGroupManager) validatePutStatefulExternalIpParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -352,7 +352,7 @@ func (c *jsiiProxy_ComputeRegionInstanceGroupManager) validatePutStatefulExterna
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionInstanceGroupManager) validatePutStatefulInternalIpParameters(value interface{}) error {
+func (c *jsiiProxy_ComputeRegionInstanceGroupManager) validatePutStatefulInternalIpParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -405,7 +405,7 @@ func (c *jsiiProxy_ComputeRegionInstanceGroupManager) validatePutUpdatePolicyPar
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionInstanceGroupManager) validatePutVersionParameters(value interface{}) error {
+func (c *jsiiProxy_ComputeRegionInstanceGroupManager) validatePutVersionParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -452,7 +452,7 @@ func validateComputeRegionInstanceGroupManager_GenerateConfigForImportParameters
 	return nil
 }
 
-func validateComputeRegionInstanceGroupManager_IsConstructParameters(x interface{}) error {
+func validateComputeRegionInstanceGroupManager_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -460,7 +460,7 @@ func validateComputeRegionInstanceGroupManager_IsConstructParameters(x interface
 	return nil
 }
 
-func validateComputeRegionInstanceGroupManager_IsTerraformElementParameters(x interface{}) error {
+func validateComputeRegionInstanceGroupManager_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -468,7 +468,7 @@ func validateComputeRegionInstanceGroupManager_IsTerraformElementParameters(x in
 	return nil
 }
 
-func validateComputeRegionInstanceGroupManager_IsTerraformResourceParameters(x interface{}) error {
+func validateComputeRegionInstanceGroupManager_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -484,7 +484,7 @@ func (j *jsiiProxy_ComputeRegionInstanceGroupManager) validateSetBaseInstanceNam
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionInstanceGroupManager) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionInstanceGroupManager) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -517,7 +517,7 @@ func (j *jsiiProxy_ComputeRegionInstanceGroupManager) validateSetConnectionParam
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionInstanceGroupManager) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionInstanceGroupManager) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -638,7 +638,7 @@ func (j *jsiiProxy_ComputeRegionInstanceGroupManager) validateSetProjectParamete
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionInstanceGroupManager) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ComputeRegionInstanceGroupManager) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -724,7 +724,7 @@ func (j *jsiiProxy_ComputeRegionInstanceGroupManager) validateSetTargetSuspended
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionInstanceGroupManager) validateSetWaitForInstancesParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionInstanceGroupManager) validateSetWaitForInstancesParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -770,4 +770,3 @@ func validateNewComputeRegionInstanceGroupManagerParameters(scope constructs.Con
 
 	return nil
 }
-

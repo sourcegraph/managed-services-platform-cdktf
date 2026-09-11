@@ -15,9 +15,9 @@ type NetappVolumeHybridReplicationParametersOutputReference interface {
 	ClusterLocationInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -64,7 +64,7 @@ type NetappVolumeHybridReplicationParametersOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -95,7 +95,7 @@ type NetappVolumeHybridReplicationParametersOutputReference interface {
 	ResetReplication()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -128,8 +128,8 @@ func (j *jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference) Clust
 	return returns
 }
 
-func (j *jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -338,7 +338,6 @@ func (j *jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference) Terra
 	return returns
 }
 
-
 func NewNetappVolumeHybridReplicationParametersOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) NetappVolumeHybridReplicationParametersOutputReference {
 	_init_.Initialize()
 
@@ -349,7 +348,7 @@ func NewNetappVolumeHybridReplicationParametersOutputReference(terraformResource
 
 	_jsii_.Create(
 		"@cdktf/provider-google.netappVolume.NetappVolumeHybridReplicationParametersOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -361,12 +360,12 @@ func NewNetappVolumeHybridReplicationParametersOutputReference_Override(n Netapp
 
 	_jsii_.Create(
 		"@cdktf/provider-google.netappVolume.NetappVolumeHybridReplicationParametersOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		n,
 	)
 }
 
-func (j *jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference)SetClusterLocation(val *string) {
+func (j *jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference) SetClusterLocation(val *string) {
 	if err := j.validateSetClusterLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -377,7 +376,7 @@ func (j *jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference)SetClu
 	)
 }
 
-func (j *jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -388,7 +387,7 @@ func (j *jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference)SetCom
 	)
 }
 
-func (j *jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -399,7 +398,7 @@ func (j *jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference)SetCom
 	)
 }
 
-func (j *jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference)SetDescription(val *string) {
+func (j *jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -410,7 +409,7 @@ func (j *jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference)SetDes
 	)
 }
 
-func (j *jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference)SetInternalValue(val *NetappVolumeHybridReplicationParameters) {
+func (j *jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference) SetInternalValue(val *NetappVolumeHybridReplicationParameters) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -421,7 +420,7 @@ func (j *jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference)SetInt
 	)
 }
 
-func (j *jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -432,7 +431,7 @@ func (j *jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference)SetLab
 	)
 }
 
-func (j *jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference)SetPeerClusterName(val *string) {
+func (j *jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference) SetPeerClusterName(val *string) {
 	if err := j.validateSetPeerClusterNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -443,7 +442,7 @@ func (j *jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference)SetPee
 	)
 }
 
-func (j *jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference)SetPeerIpAddresses(val *string) {
+func (j *jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference) SetPeerIpAddresses(val *string) {
 	if err := j.validateSetPeerIpAddressesParameters(val); err != nil {
 		panic(err)
 	}
@@ -454,7 +453,7 @@ func (j *jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference)SetPee
 	)
 }
 
-func (j *jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference)SetPeerSvmName(val *string) {
+func (j *jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference) SetPeerSvmName(val *string) {
 	if err := j.validateSetPeerSvmNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -465,7 +464,7 @@ func (j *jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference)SetPee
 	)
 }
 
-func (j *jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference)SetPeerVolumeName(val *string) {
+func (j *jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference) SetPeerVolumeName(val *string) {
 	if err := j.validateSetPeerVolumeNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -476,7 +475,7 @@ func (j *jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference)SetPee
 	)
 }
 
-func (j *jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference)SetReplication(val *string) {
+func (j *jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference) SetReplication(val *string) {
 	if err := j.validateSetReplicationParameters(val); err != nil {
 		panic(err)
 	}
@@ -487,7 +486,7 @@ func (j *jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference)SetRep
 	)
 }
 
-func (j *jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -498,7 +497,7 @@ func (j *jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference)SetTer
 	)
 }
 
-func (j *jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -522,16 +521,16 @@ func (n *jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference) Compu
 	return returns
 }
 
-func (n *jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (n *jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := n.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -547,7 +546,7 @@ func (n *jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference) GetBo
 	_jsii_.Invoke(
 		n,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -563,7 +562,7 @@ func (n *jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference) GetBo
 	_jsii_.Invoke(
 		n,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -579,7 +578,7 @@ func (n *jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference) GetLi
 	_jsii_.Invoke(
 		n,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -595,7 +594,7 @@ func (n *jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference) GetNu
 	_jsii_.Invoke(
 		n,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -611,7 +610,7 @@ func (n *jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference) GetNu
 	_jsii_.Invoke(
 		n,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -627,7 +626,7 @@ func (n *jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference) GetNu
 	_jsii_.Invoke(
 		n,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -643,7 +642,7 @@ func (n *jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference) GetSt
 	_jsii_.Invoke(
 		n,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -659,7 +658,7 @@ func (n *jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference) GetSt
 	_jsii_.Invoke(
 		n,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -688,7 +687,7 @@ func (n *jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference) Inter
 	_jsii_.Invoke(
 		n,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -759,16 +758,16 @@ func (n *jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference) Reset
 	)
 }
 
-func (n *jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (n *jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := n.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		n,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -787,4 +786,3 @@ func (n *jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference) ToStr
 
 	return returns
 }
-

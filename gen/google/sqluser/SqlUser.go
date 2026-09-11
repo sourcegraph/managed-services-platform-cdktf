@@ -15,15 +15,15 @@ type SqlUser interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	DeletionPolicy() *string
 	SetDeletionPolicy(val *string)
 	DeletionPolicyInput() *string
@@ -76,20 +76,20 @@ type SqlUser interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	SqlServerUserDetails() SqlUserSqlServerUserDetailsList
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() SqlUserTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	Type() *string
 	SetType(val *string)
 	TypeInput() *string
@@ -97,9 +97,9 @@ type SqlUser interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -117,7 +117,7 @@ type SqlUser interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -129,7 +129,7 @@ type SqlUser interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -151,17 +151,17 @@ type SqlUser interface {
 	ResetProject()
 	ResetTimeouts()
 	ResetType()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for SqlUser
@@ -179,8 +179,8 @@ func (j *jsiiProxy_SqlUser) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_SqlUser) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SqlUser) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -189,8 +189,8 @@ func (j *jsiiProxy_SqlUser) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SqlUser) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_SqlUser) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -199,8 +199,8 @@ func (j *jsiiProxy_SqlUser) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SqlUser) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SqlUser) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -479,8 +479,8 @@ func (j *jsiiProxy_SqlUser) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_SqlUser) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_SqlUser) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -489,8 +489,8 @@ func (j *jsiiProxy_SqlUser) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SqlUser) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SqlUser) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -519,8 +519,8 @@ func (j *jsiiProxy_SqlUser) TerraformGeneratorMetadata() *cdktf.TerraformProvide
 	return returns
 }
 
-func (j *jsiiProxy_SqlUser) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_SqlUser) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -549,8 +549,8 @@ func (j *jsiiProxy_SqlUser) Timeouts() SqlUserTimeoutsOutputReference {
 	return returns
 }
 
-func (j *jsiiProxy_SqlUser) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SqlUser) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -579,7 +579,6 @@ func (j *jsiiProxy_SqlUser) TypeInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/sql_user google_sql_user} Resource.
 func NewSqlUser(scope constructs.Construct, id *string, config *SqlUserConfig) SqlUser {
 	_init_.Initialize()
@@ -591,7 +590,7 @@ func NewSqlUser(scope constructs.Construct, id *string, config *SqlUserConfig) S
 
 	_jsii_.Create(
 		"@cdktf/provider-google.sqlUser.SqlUser",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -604,12 +603,12 @@ func NewSqlUser_Override(s SqlUser, scope constructs.Construct, id *string, conf
 
 	_jsii_.Create(
 		"@cdktf/provider-google.sqlUser.SqlUser",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		s,
 	)
 }
 
-func (j *jsiiProxy_SqlUser)SetConnection(val interface{}) {
+func (j *jsiiProxy_SqlUser) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -620,7 +619,7 @@ func (j *jsiiProxy_SqlUser)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SqlUser)SetCount(val interface{}) {
+func (j *jsiiProxy_SqlUser) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -631,7 +630,7 @@ func (j *jsiiProxy_SqlUser)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SqlUser)SetDeletionPolicy(val *string) {
+func (j *jsiiProxy_SqlUser) SetDeletionPolicy(val *string) {
 	if err := j.validateSetDeletionPolicyParameters(val); err != nil {
 		panic(err)
 	}
@@ -642,7 +641,7 @@ func (j *jsiiProxy_SqlUser)SetDeletionPolicy(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SqlUser)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_SqlUser) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -650,7 +649,7 @@ func (j *jsiiProxy_SqlUser)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_SqlUser)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_SqlUser) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -658,7 +657,7 @@ func (j *jsiiProxy_SqlUser)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_SqlUser)SetHost(val *string) {
+func (j *jsiiProxy_SqlUser) SetHost(val *string) {
 	if err := j.validateSetHostParameters(val); err != nil {
 		panic(err)
 	}
@@ -669,7 +668,7 @@ func (j *jsiiProxy_SqlUser)SetHost(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SqlUser)SetId(val *string) {
+func (j *jsiiProxy_SqlUser) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -680,7 +679,7 @@ func (j *jsiiProxy_SqlUser)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SqlUser)SetInstance(val *string) {
+func (j *jsiiProxy_SqlUser) SetInstance(val *string) {
 	if err := j.validateSetInstanceParameters(val); err != nil {
 		panic(err)
 	}
@@ -691,7 +690,7 @@ func (j *jsiiProxy_SqlUser)SetInstance(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SqlUser)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_SqlUser) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -702,7 +701,7 @@ func (j *jsiiProxy_SqlUser)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	)
 }
 
-func (j *jsiiProxy_SqlUser)SetName(val *string) {
+func (j *jsiiProxy_SqlUser) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -713,7 +712,7 @@ func (j *jsiiProxy_SqlUser)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SqlUser)SetPassword(val *string) {
+func (j *jsiiProxy_SqlUser) SetPassword(val *string) {
 	if err := j.validateSetPasswordParameters(val); err != nil {
 		panic(err)
 	}
@@ -724,7 +723,7 @@ func (j *jsiiProxy_SqlUser)SetPassword(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SqlUser)SetPasswordWo(val *string) {
+func (j *jsiiProxy_SqlUser) SetPasswordWo(val *string) {
 	if err := j.validateSetPasswordWoParameters(val); err != nil {
 		panic(err)
 	}
@@ -735,7 +734,7 @@ func (j *jsiiProxy_SqlUser)SetPasswordWo(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SqlUser)SetPasswordWoVersion(val *float64) {
+func (j *jsiiProxy_SqlUser) SetPasswordWoVersion(val *float64) {
 	if err := j.validateSetPasswordWoVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -746,7 +745,7 @@ func (j *jsiiProxy_SqlUser)SetPasswordWoVersion(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_SqlUser)SetProject(val *string) {
+func (j *jsiiProxy_SqlUser) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -757,7 +756,7 @@ func (j *jsiiProxy_SqlUser)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SqlUser)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_SqlUser) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -765,7 +764,7 @@ func (j *jsiiProxy_SqlUser)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_SqlUser)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_SqlUser) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -776,7 +775,7 @@ func (j *jsiiProxy_SqlUser)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SqlUser)SetType(val *string) {
+func (j *jsiiProxy_SqlUser) SetType(val *string) {
 	if err := j.validateSetTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -799,7 +798,7 @@ func SqlUser_GenerateConfigForImport(scope constructs.Construct, importToId *str
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.sqlUser.SqlUser",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -823,7 +822,7 @@ func SqlUser_GenerateConfigForImport(scope constructs.Construct, importToId *str
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func SqlUser_IsConstruct(x interface{}) *bool {
+func SqlUser_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSqlUser_IsConstructParameters(x); err != nil {
@@ -834,7 +833,7 @@ func SqlUser_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.sqlUser.SqlUser",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -842,7 +841,7 @@ func SqlUser_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func SqlUser_IsTerraformElement(x interface{}) *bool {
+func SqlUser_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSqlUser_IsTerraformElementParameters(x); err != nil {
@@ -853,7 +852,7 @@ func SqlUser_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.sqlUser.SqlUser",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -861,7 +860,7 @@ func SqlUser_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func SqlUser_IsTerraformResource(x interface{}) *bool {
+func SqlUser_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSqlUser_IsTerraformResourceParameters(x); err != nil {
@@ -872,7 +871,7 @@ func SqlUser_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.sqlUser.SqlUser",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -897,31 +896,31 @@ func (s *jsiiProxy_SqlUser) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (s *jsiiProxy_SqlUser) AddOverride(path *string, value interface{}) {
+func (s *jsiiProxy_SqlUser) AddOverride(path *string, value any) {
 	if err := s.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (s *jsiiProxy_SqlUser) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_SqlUser) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -937,7 +936,7 @@ func (s *jsiiProxy_SqlUser) GetBooleanAttribute(terraformAttribute *string) cdkt
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -953,7 +952,7 @@ func (s *jsiiProxy_SqlUser) GetBooleanMapAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -969,7 +968,7 @@ func (s *jsiiProxy_SqlUser) GetListAttribute(terraformAttribute *string) *[]*str
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -985,7 +984,7 @@ func (s *jsiiProxy_SqlUser) GetNumberAttribute(terraformAttribute *string) *floa
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1001,7 +1000,7 @@ func (s *jsiiProxy_SqlUser) GetNumberListAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1017,7 +1016,7 @@ func (s *jsiiProxy_SqlUser) GetNumberMapAttribute(terraformAttribute *string) *m
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1033,7 +1032,7 @@ func (s *jsiiProxy_SqlUser) GetStringAttribute(terraformAttribute *string) *stri
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1049,15 +1048,15 @@ func (s *jsiiProxy_SqlUser) GetStringMapAttribute(terraformAttribute *string) *m
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_SqlUser) HasResourceMove() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SqlUser) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1076,7 +1075,7 @@ func (s *jsiiProxy_SqlUser) ImportFrom(id *string, provider cdktf.TerraformProvi
 	_jsii_.InvokeVoid(
 		s,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1089,7 +1088,7 @@ func (s *jsiiProxy_SqlUser) InterpolationForAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1103,18 +1102,18 @@ func (s *jsiiProxy_SqlUser) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (s *jsiiProxy_SqlUser) MoveTo(moveTarget *string, index interface{}) {
+func (s *jsiiProxy_SqlUser) MoveTo(moveTarget *string, index any) {
 	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1125,7 +1124,7 @@ func (s *jsiiProxy_SqlUser) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1136,7 +1135,7 @@ func (s *jsiiProxy_SqlUser) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1147,7 +1146,7 @@ func (s *jsiiProxy_SqlUser) PutPasswordPolicy(value *SqlUserPasswordPolicy) {
 	_jsii_.InvokeVoid(
 		s,
 		"putPasswordPolicy",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1158,7 +1157,7 @@ func (s *jsiiProxy_SqlUser) PutTimeouts(value *SqlUserTimeouts) {
 	_jsii_.InvokeVoid(
 		s,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1250,8 +1249,8 @@ func (s *jsiiProxy_SqlUser) ResetType() {
 	)
 }
 
-func (s *jsiiProxy_SqlUser) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_SqlUser) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1263,8 +1262,8 @@ func (s *jsiiProxy_SqlUser) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (s *jsiiProxy_SqlUser) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_SqlUser) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1276,8 +1275,8 @@ func (s *jsiiProxy_SqlUser) SynthesizeHclAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (s *jsiiProxy_SqlUser) ToHclTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SqlUser) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1289,8 +1288,8 @@ func (s *jsiiProxy_SqlUser) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (s *jsiiProxy_SqlUser) ToMetadata() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SqlUser) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1315,8 +1314,8 @@ func (s *jsiiProxy_SqlUser) ToString() *string {
 	return returns
 }
 
-func (s *jsiiProxy_SqlUser) ToTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SqlUser) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1327,4 +1326,3 @@ func (s *jsiiProxy_SqlUser) ToTerraform() interface{} {
 
 	return returns
 }
-

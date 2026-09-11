@@ -27,17 +27,17 @@ type GkeonpremVmwareCluster interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	ControlPlaneNode() GkeonpremVmwareClusterControlPlaneNodeOutputReference
 	ControlPlaneNodeInput() *GkeonpremVmwareClusterControlPlaneNode
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	DataplaneV2() GkeonpremVmwareClusterDataplaneV2OutputReference
 	DataplaneV2Input() *GkeonpremVmwareClusterDataplaneV2
@@ -49,16 +49,16 @@ type GkeonpremVmwareCluster interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
-	DisableBundledIngress() interface{}
-	SetDisableBundledIngress(val interface{})
-	DisableBundledIngressInput() interface{}
+	DisableBundledIngress() any
+	SetDisableBundledIngress(val any)
+	DisableBundledIngressInput() any
 	EffectiveAnnotations() cdktf.StringMap
-	EnableAdvancedCluster() interface{}
-	SetEnableAdvancedCluster(val interface{})
-	EnableAdvancedClusterInput() interface{}
-	EnableControlPlaneV2() interface{}
-	SetEnableControlPlaneV2(val interface{})
-	EnableControlPlaneV2Input() interface{}
+	EnableAdvancedCluster() any
+	SetEnableAdvancedCluster(val any)
+	EnableAdvancedClusterInput() any
+	EnableControlPlaneV2() any
+	SetEnableControlPlaneV2(val any)
+	EnableControlPlaneV2Input() any
 	Endpoint() *string
 	Etag() *string
 	Fleet() GkeonpremVmwareClusterFleetList
@@ -101,11 +101,11 @@ type GkeonpremVmwareCluster interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Reconciling() cdktf.IResolvable
 	State() *string
 	Status() GkeonpremVmwareClusterStatusList
@@ -114,11 +114,11 @@ type GkeonpremVmwareCluster interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() GkeonpremVmwareClusterTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	Uid() *string
 	UpdateTime() *string
 	UpgradePolicy() GkeonpremVmwareClusterUpgradePolicyOutputReference
@@ -126,16 +126,16 @@ type GkeonpremVmwareCluster interface {
 	ValidationCheck() GkeonpremVmwareClusterValidationCheckList
 	Vcenter() GkeonpremVmwareClusterVcenterOutputReference
 	VcenterInput() *GkeonpremVmwareClusterVcenter
-	VmTrackingEnabled() interface{}
-	SetVmTrackingEnabled(val interface{})
-	VmTrackingEnabledInput() interface{}
+	VmTrackingEnabled() any
+	SetVmTrackingEnabled(val any)
+	VmTrackingEnabledInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -153,7 +153,7 @@ type GkeonpremVmwareCluster interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -165,7 +165,7 @@ type GkeonpremVmwareCluster interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -204,17 +204,17 @@ type GkeonpremVmwareCluster interface {
 	ResetUpgradePolicy()
 	ResetVcenter()
 	ResetVmTrackingEnabled()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GkeonpremVmwareCluster
@@ -332,8 +332,8 @@ func (j *jsiiProxy_GkeonpremVmwareCluster) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_GkeonpremVmwareCluster) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GkeonpremVmwareCluster) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -342,8 +342,8 @@ func (j *jsiiProxy_GkeonpremVmwareCluster) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GkeonpremVmwareCluster) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GkeonpremVmwareCluster) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -372,8 +372,8 @@ func (j *jsiiProxy_GkeonpremVmwareCluster) ControlPlaneNodeInput() *GkeonpremVmw
 	return returns
 }
 
-func (j *jsiiProxy_GkeonpremVmwareCluster) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GkeonpremVmwareCluster) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -452,8 +452,8 @@ func (j *jsiiProxy_GkeonpremVmwareCluster) DescriptionInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_GkeonpremVmwareCluster) DisableBundledIngress() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GkeonpremVmwareCluster) DisableBundledIngress() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disableBundledIngress",
@@ -462,8 +462,8 @@ func (j *jsiiProxy_GkeonpremVmwareCluster) DisableBundledIngress() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GkeonpremVmwareCluster) DisableBundledIngressInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GkeonpremVmwareCluster) DisableBundledIngressInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disableBundledIngressInput",
@@ -482,8 +482,8 @@ func (j *jsiiProxy_GkeonpremVmwareCluster) EffectiveAnnotations() cdktf.StringMa
 	return returns
 }
 
-func (j *jsiiProxy_GkeonpremVmwareCluster) EnableAdvancedCluster() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GkeonpremVmwareCluster) EnableAdvancedCluster() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableAdvancedCluster",
@@ -492,8 +492,8 @@ func (j *jsiiProxy_GkeonpremVmwareCluster) EnableAdvancedCluster() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GkeonpremVmwareCluster) EnableAdvancedClusterInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GkeonpremVmwareCluster) EnableAdvancedClusterInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableAdvancedClusterInput",
@@ -502,8 +502,8 @@ func (j *jsiiProxy_GkeonpremVmwareCluster) EnableAdvancedClusterInput() interfac
 	return returns
 }
 
-func (j *jsiiProxy_GkeonpremVmwareCluster) EnableControlPlaneV2() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GkeonpremVmwareCluster) EnableControlPlaneV2() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableControlPlaneV2",
@@ -512,8 +512,8 @@ func (j *jsiiProxy_GkeonpremVmwareCluster) EnableControlPlaneV2() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GkeonpremVmwareCluster) EnableControlPlaneV2Input() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GkeonpremVmwareCluster) EnableControlPlaneV2Input() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableControlPlaneV2Input",
@@ -762,8 +762,8 @@ func (j *jsiiProxy_GkeonpremVmwareCluster) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_GkeonpremVmwareCluster) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GkeonpremVmwareCluster) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -772,8 +772,8 @@ func (j *jsiiProxy_GkeonpremVmwareCluster) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GkeonpremVmwareCluster) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GkeonpremVmwareCluster) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -842,8 +842,8 @@ func (j *jsiiProxy_GkeonpremVmwareCluster) TerraformGeneratorMetadata() *cdktf.T
 	return returns
 }
 
-func (j *jsiiProxy_GkeonpremVmwareCluster) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GkeonpremVmwareCluster) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -872,8 +872,8 @@ func (j *jsiiProxy_GkeonpremVmwareCluster) Timeouts() GkeonpremVmwareClusterTime
 	return returns
 }
 
-func (j *jsiiProxy_GkeonpremVmwareCluster) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GkeonpremVmwareCluster) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -952,8 +952,8 @@ func (j *jsiiProxy_GkeonpremVmwareCluster) VcenterInput() *GkeonpremVmwareCluste
 	return returns
 }
 
-func (j *jsiiProxy_GkeonpremVmwareCluster) VmTrackingEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GkeonpremVmwareCluster) VmTrackingEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"vmTrackingEnabled",
@@ -962,8 +962,8 @@ func (j *jsiiProxy_GkeonpremVmwareCluster) VmTrackingEnabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GkeonpremVmwareCluster) VmTrackingEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GkeonpremVmwareCluster) VmTrackingEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"vmTrackingEnabledInput",
@@ -971,7 +971,6 @@ func (j *jsiiProxy_GkeonpremVmwareCluster) VmTrackingEnabledInput() interface{} 
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/gkeonprem_vmware_cluster google_gkeonprem_vmware_cluster} Resource.
 func NewGkeonpremVmwareCluster(scope constructs.Construct, id *string, config *GkeonpremVmwareClusterConfig) GkeonpremVmwareCluster {
@@ -984,7 +983,7 @@ func NewGkeonpremVmwareCluster(scope constructs.Construct, id *string, config *G
 
 	_jsii_.Create(
 		"@cdktf/provider-google.gkeonpremVmwareCluster.GkeonpremVmwareCluster",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -997,12 +996,12 @@ func NewGkeonpremVmwareCluster_Override(g GkeonpremVmwareCluster, scope construc
 
 	_jsii_.Create(
 		"@cdktf/provider-google.gkeonpremVmwareCluster.GkeonpremVmwareCluster",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GkeonpremVmwareCluster)SetAdminClusterMembership(val *string) {
+func (j *jsiiProxy_GkeonpremVmwareCluster) SetAdminClusterMembership(val *string) {
 	if err := j.validateSetAdminClusterMembershipParameters(val); err != nil {
 		panic(err)
 	}
@@ -1013,7 +1012,7 @@ func (j *jsiiProxy_GkeonpremVmwareCluster)SetAdminClusterMembership(val *string)
 	)
 }
 
-func (j *jsiiProxy_GkeonpremVmwareCluster)SetAnnotations(val *map[string]*string) {
+func (j *jsiiProxy_GkeonpremVmwareCluster) SetAnnotations(val *map[string]*string) {
 	if err := j.validateSetAnnotationsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1024,7 +1023,7 @@ func (j *jsiiProxy_GkeonpremVmwareCluster)SetAnnotations(val *map[string]*string
 	)
 }
 
-func (j *jsiiProxy_GkeonpremVmwareCluster)SetConnection(val interface{}) {
+func (j *jsiiProxy_GkeonpremVmwareCluster) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1035,7 +1034,7 @@ func (j *jsiiProxy_GkeonpremVmwareCluster)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GkeonpremVmwareCluster)SetCount(val interface{}) {
+func (j *jsiiProxy_GkeonpremVmwareCluster) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -1046,7 +1045,7 @@ func (j *jsiiProxy_GkeonpremVmwareCluster)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GkeonpremVmwareCluster)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GkeonpremVmwareCluster) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -1054,7 +1053,7 @@ func (j *jsiiProxy_GkeonpremVmwareCluster)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GkeonpremVmwareCluster)SetDescription(val *string) {
+func (j *jsiiProxy_GkeonpremVmwareCluster) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1065,7 +1064,7 @@ func (j *jsiiProxy_GkeonpremVmwareCluster)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GkeonpremVmwareCluster)SetDisableBundledIngress(val interface{}) {
+func (j *jsiiProxy_GkeonpremVmwareCluster) SetDisableBundledIngress(val any) {
 	if err := j.validateSetDisableBundledIngressParameters(val); err != nil {
 		panic(err)
 	}
@@ -1076,7 +1075,7 @@ func (j *jsiiProxy_GkeonpremVmwareCluster)SetDisableBundledIngress(val interface
 	)
 }
 
-func (j *jsiiProxy_GkeonpremVmwareCluster)SetEnableAdvancedCluster(val interface{}) {
+func (j *jsiiProxy_GkeonpremVmwareCluster) SetEnableAdvancedCluster(val any) {
 	if err := j.validateSetEnableAdvancedClusterParameters(val); err != nil {
 		panic(err)
 	}
@@ -1087,7 +1086,7 @@ func (j *jsiiProxy_GkeonpremVmwareCluster)SetEnableAdvancedCluster(val interface
 	)
 }
 
-func (j *jsiiProxy_GkeonpremVmwareCluster)SetEnableControlPlaneV2(val interface{}) {
+func (j *jsiiProxy_GkeonpremVmwareCluster) SetEnableControlPlaneV2(val any) {
 	if err := j.validateSetEnableControlPlaneV2Parameters(val); err != nil {
 		panic(err)
 	}
@@ -1098,7 +1097,7 @@ func (j *jsiiProxy_GkeonpremVmwareCluster)SetEnableControlPlaneV2(val interface{
 	)
 }
 
-func (j *jsiiProxy_GkeonpremVmwareCluster)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GkeonpremVmwareCluster) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -1106,7 +1105,7 @@ func (j *jsiiProxy_GkeonpremVmwareCluster)SetForEach(val cdktf.ITerraformIterato
 	)
 }
 
-func (j *jsiiProxy_GkeonpremVmwareCluster)SetId(val *string) {
+func (j *jsiiProxy_GkeonpremVmwareCluster) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1117,7 +1116,7 @@ func (j *jsiiProxy_GkeonpremVmwareCluster)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GkeonpremVmwareCluster)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GkeonpremVmwareCluster) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -1128,7 +1127,7 @@ func (j *jsiiProxy_GkeonpremVmwareCluster)SetLifecycle(val *cdktf.TerraformResou
 	)
 }
 
-func (j *jsiiProxy_GkeonpremVmwareCluster)SetLocation(val *string) {
+func (j *jsiiProxy_GkeonpremVmwareCluster) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -1139,7 +1138,7 @@ func (j *jsiiProxy_GkeonpremVmwareCluster)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GkeonpremVmwareCluster)SetName(val *string) {
+func (j *jsiiProxy_GkeonpremVmwareCluster) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -1150,7 +1149,7 @@ func (j *jsiiProxy_GkeonpremVmwareCluster)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GkeonpremVmwareCluster)SetOnPremVersion(val *string) {
+func (j *jsiiProxy_GkeonpremVmwareCluster) SetOnPremVersion(val *string) {
 	if err := j.validateSetOnPremVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1161,7 +1160,7 @@ func (j *jsiiProxy_GkeonpremVmwareCluster)SetOnPremVersion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GkeonpremVmwareCluster)SetProject(val *string) {
+func (j *jsiiProxy_GkeonpremVmwareCluster) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -1172,7 +1171,7 @@ func (j *jsiiProxy_GkeonpremVmwareCluster)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GkeonpremVmwareCluster)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GkeonpremVmwareCluster) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1180,7 +1179,7 @@ func (j *jsiiProxy_GkeonpremVmwareCluster)SetProvider(val cdktf.TerraformProvide
 	)
 }
 
-func (j *jsiiProxy_GkeonpremVmwareCluster)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GkeonpremVmwareCluster) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -1191,7 +1190,7 @@ func (j *jsiiProxy_GkeonpremVmwareCluster)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GkeonpremVmwareCluster)SetVmTrackingEnabled(val interface{}) {
+func (j *jsiiProxy_GkeonpremVmwareCluster) SetVmTrackingEnabled(val any) {
 	if err := j.validateSetVmTrackingEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -1214,7 +1213,7 @@ func GkeonpremVmwareCluster_GenerateConfigForImport(scope constructs.Construct, 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.gkeonpremVmwareCluster.GkeonpremVmwareCluster",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -1238,7 +1237,7 @@ func GkeonpremVmwareCluster_GenerateConfigForImport(scope constructs.Construct, 
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GkeonpremVmwareCluster_IsConstruct(x interface{}) *bool {
+func GkeonpremVmwareCluster_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGkeonpremVmwareCluster_IsConstructParameters(x); err != nil {
@@ -1249,7 +1248,7 @@ func GkeonpremVmwareCluster_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.gkeonpremVmwareCluster.GkeonpremVmwareCluster",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1257,7 +1256,7 @@ func GkeonpremVmwareCluster_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GkeonpremVmwareCluster_IsTerraformElement(x interface{}) *bool {
+func GkeonpremVmwareCluster_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGkeonpremVmwareCluster_IsTerraformElementParameters(x); err != nil {
@@ -1268,7 +1267,7 @@ func GkeonpremVmwareCluster_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.gkeonpremVmwareCluster.GkeonpremVmwareCluster",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1276,7 +1275,7 @@ func GkeonpremVmwareCluster_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func GkeonpremVmwareCluster_IsTerraformResource(x interface{}) *bool {
+func GkeonpremVmwareCluster_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGkeonpremVmwareCluster_IsTerraformResourceParameters(x); err != nil {
@@ -1287,7 +1286,7 @@ func GkeonpremVmwareCluster_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.gkeonpremVmwareCluster.GkeonpremVmwareCluster",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1312,31 +1311,31 @@ func (g *jsiiProxy_GkeonpremVmwareCluster) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GkeonpremVmwareCluster) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GkeonpremVmwareCluster) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GkeonpremVmwareCluster) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GkeonpremVmwareCluster) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1352,7 +1351,7 @@ func (g *jsiiProxy_GkeonpremVmwareCluster) GetBooleanAttribute(terraformAttribut
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1368,7 +1367,7 @@ func (g *jsiiProxy_GkeonpremVmwareCluster) GetBooleanMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1384,7 +1383,7 @@ func (g *jsiiProxy_GkeonpremVmwareCluster) GetListAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1400,7 +1399,7 @@ func (g *jsiiProxy_GkeonpremVmwareCluster) GetNumberAttribute(terraformAttribute
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1416,7 +1415,7 @@ func (g *jsiiProxy_GkeonpremVmwareCluster) GetNumberListAttribute(terraformAttri
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1432,7 +1431,7 @@ func (g *jsiiProxy_GkeonpremVmwareCluster) GetNumberMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1448,7 +1447,7 @@ func (g *jsiiProxy_GkeonpremVmwareCluster) GetStringAttribute(terraformAttribute
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1464,15 +1463,15 @@ func (g *jsiiProxy_GkeonpremVmwareCluster) GetStringMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GkeonpremVmwareCluster) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GkeonpremVmwareCluster) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1491,7 +1490,7 @@ func (g *jsiiProxy_GkeonpremVmwareCluster) ImportFrom(id *string, provider cdktf
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1504,7 +1503,7 @@ func (g *jsiiProxy_GkeonpremVmwareCluster) InterpolationForAttribute(terraformAt
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1518,18 +1517,18 @@ func (g *jsiiProxy_GkeonpremVmwareCluster) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GkeonpremVmwareCluster) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GkeonpremVmwareCluster) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1540,7 +1539,7 @@ func (g *jsiiProxy_GkeonpremVmwareCluster) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1551,7 +1550,7 @@ func (g *jsiiProxy_GkeonpremVmwareCluster) OverrideLogicalId(newLogicalId *strin
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1562,7 +1561,7 @@ func (g *jsiiProxy_GkeonpremVmwareCluster) PutAntiAffinityGroups(value *Gkeonpre
 	_jsii_.InvokeVoid(
 		g,
 		"putAntiAffinityGroups",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1573,7 +1572,7 @@ func (g *jsiiProxy_GkeonpremVmwareCluster) PutAuthorization(value *GkeonpremVmwa
 	_jsii_.InvokeVoid(
 		g,
 		"putAuthorization",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1584,7 +1583,7 @@ func (g *jsiiProxy_GkeonpremVmwareCluster) PutAutoRepairConfig(value *GkeonpremV
 	_jsii_.InvokeVoid(
 		g,
 		"putAutoRepairConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1595,7 +1594,7 @@ func (g *jsiiProxy_GkeonpremVmwareCluster) PutControlPlaneNode(value *GkeonpremV
 	_jsii_.InvokeVoid(
 		g,
 		"putControlPlaneNode",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1606,7 +1605,7 @@ func (g *jsiiProxy_GkeonpremVmwareCluster) PutDataplaneV2(value *GkeonpremVmware
 	_jsii_.InvokeVoid(
 		g,
 		"putDataplaneV2",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1617,7 +1616,7 @@ func (g *jsiiProxy_GkeonpremVmwareCluster) PutLoadBalancer(value *GkeonpremVmwar
 	_jsii_.InvokeVoid(
 		g,
 		"putLoadBalancer",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1628,7 +1627,7 @@ func (g *jsiiProxy_GkeonpremVmwareCluster) PutNetworkConfig(value *GkeonpremVmwa
 	_jsii_.InvokeVoid(
 		g,
 		"putNetworkConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1639,7 +1638,7 @@ func (g *jsiiProxy_GkeonpremVmwareCluster) PutStorage(value *GkeonpremVmwareClus
 	_jsii_.InvokeVoid(
 		g,
 		"putStorage",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1650,7 +1649,7 @@ func (g *jsiiProxy_GkeonpremVmwareCluster) PutTimeouts(value *GkeonpremVmwareClu
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1661,7 +1660,7 @@ func (g *jsiiProxy_GkeonpremVmwareCluster) PutUpgradePolicy(value *GkeonpremVmwa
 	_jsii_.InvokeVoid(
 		g,
 		"putUpgradePolicy",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1672,7 +1671,7 @@ func (g *jsiiProxy_GkeonpremVmwareCluster) PutVcenter(value *GkeonpremVmwareClus
 	_jsii_.InvokeVoid(
 		g,
 		"putVcenter",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1828,8 +1827,8 @@ func (g *jsiiProxy_GkeonpremVmwareCluster) ResetVmTrackingEnabled() {
 	)
 }
 
-func (g *jsiiProxy_GkeonpremVmwareCluster) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GkeonpremVmwareCluster) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1841,8 +1840,8 @@ func (g *jsiiProxy_GkeonpremVmwareCluster) SynthesizeAttributes() *map[string]in
 	return returns
 }
 
-func (g *jsiiProxy_GkeonpremVmwareCluster) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GkeonpremVmwareCluster) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1854,8 +1853,8 @@ func (g *jsiiProxy_GkeonpremVmwareCluster) SynthesizeHclAttributes() *map[string
 	return returns
 }
 
-func (g *jsiiProxy_GkeonpremVmwareCluster) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GkeonpremVmwareCluster) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1867,8 +1866,8 @@ func (g *jsiiProxy_GkeonpremVmwareCluster) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (g *jsiiProxy_GkeonpremVmwareCluster) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GkeonpremVmwareCluster) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1893,8 +1892,8 @@ func (g *jsiiProxy_GkeonpremVmwareCluster) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GkeonpremVmwareCluster) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GkeonpremVmwareCluster) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1905,4 +1904,3 @@ func (g *jsiiProxy_GkeonpremVmwareCluster) ToTerraform() interface{} {
 
 	return returns
 }
-

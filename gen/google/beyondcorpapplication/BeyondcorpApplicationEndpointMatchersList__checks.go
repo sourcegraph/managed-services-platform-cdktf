@@ -34,7 +34,7 @@ func (b *jsiiProxy_BeyondcorpApplicationEndpointMatchersList) validateResolvePar
 	return nil
 }
 
-func (j *jsiiProxy_BeyondcorpApplicationEndpointMatchersList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_BeyondcorpApplicationEndpointMatchersList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewBeyondcorpApplicationEndpointMatchersListParameters(terraformRes
 
 	return nil
 }
-

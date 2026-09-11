@@ -15,9 +15,9 @@ type RedisInstance interface {
 	AlternativeLocationId() *string
 	SetAlternativeLocationId(val *string)
 	AlternativeLocationIdInput() *string
-	AuthEnabled() interface{}
-	SetAuthEnabled(val interface{})
-	AuthEnabledInput() interface{}
+	AuthEnabled() any
+	SetAuthEnabled(val any)
+	AuthEnabledInput() any
 	AuthorizedNetwork() *string
 	SetAuthorizedNetwork(val *string)
 	AuthorizedNetworkInput() *string
@@ -25,18 +25,18 @@ type RedisInstance interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	ConnectMode() *string
 	SetConnectMode(val *string)
 	ConnectModeInput() *string
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	CurrentLocationId() *string
 	CustomerManagedKey() *string
@@ -100,11 +100,11 @@ type RedisInstance interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ReadEndpoint() *string
 	ReadEndpointPort() *float64
 	ReadReplicasMode() *string
@@ -133,14 +133,14 @@ type RedisInstance interface {
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Tier() *string
 	SetTier(val *string)
 	TierInput() *string
 	Timeouts() RedisInstanceTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	TransitEncryptionMode() *string
 	SetTransitEncryptionMode(val *string)
 	TransitEncryptionModeInput() *string
@@ -148,9 +148,9 @@ type RedisInstance interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -168,7 +168,7 @@ type RedisInstance interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -180,7 +180,7 @@ type RedisInstance interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -216,17 +216,17 @@ type RedisInstance interface {
 	ResetTier()
 	ResetTimeouts()
 	ResetTransitEncryptionMode()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for RedisInstance
@@ -254,8 +254,8 @@ func (j *jsiiProxy_RedisInstance) AlternativeLocationIdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_RedisInstance) AuthEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RedisInstance) AuthEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"authEnabled",
@@ -264,8 +264,8 @@ func (j *jsiiProxy_RedisInstance) AuthEnabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_RedisInstance) AuthEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RedisInstance) AuthEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"authEnabledInput",
@@ -314,8 +314,8 @@ func (j *jsiiProxy_RedisInstance) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_RedisInstance) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RedisInstance) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -344,8 +344,8 @@ func (j *jsiiProxy_RedisInstance) ConnectModeInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_RedisInstance) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_RedisInstance) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -354,8 +354,8 @@ func (j *jsiiProxy_RedisInstance) ConstructNodeMetadata() *map[string]interface{
 	return returns
 }
 
-func (j *jsiiProxy_RedisInstance) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RedisInstance) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -744,8 +744,8 @@ func (j *jsiiProxy_RedisInstance) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_RedisInstance) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_RedisInstance) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -754,8 +754,8 @@ func (j *jsiiProxy_RedisInstance) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_RedisInstance) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RedisInstance) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -954,8 +954,8 @@ func (j *jsiiProxy_RedisInstance) TerraformLabels() cdktf.StringMap {
 	return returns
 }
 
-func (j *jsiiProxy_RedisInstance) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_RedisInstance) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -1004,8 +1004,8 @@ func (j *jsiiProxy_RedisInstance) Timeouts() RedisInstanceTimeoutsOutputReferenc
 	return returns
 }
 
-func (j *jsiiProxy_RedisInstance) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RedisInstance) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -1034,7 +1034,6 @@ func (j *jsiiProxy_RedisInstance) TransitEncryptionModeInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/redis_instance google_redis_instance} Resource.
 func NewRedisInstance(scope constructs.Construct, id *string, config *RedisInstanceConfig) RedisInstance {
 	_init_.Initialize()
@@ -1046,7 +1045,7 @@ func NewRedisInstance(scope constructs.Construct, id *string, config *RedisInsta
 
 	_jsii_.Create(
 		"@cdktf/provider-google.redisInstance.RedisInstance",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -1059,12 +1058,12 @@ func NewRedisInstance_Override(r RedisInstance, scope constructs.Construct, id *
 
 	_jsii_.Create(
 		"@cdktf/provider-google.redisInstance.RedisInstance",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		r,
 	)
 }
 
-func (j *jsiiProxy_RedisInstance)SetAlternativeLocationId(val *string) {
+func (j *jsiiProxy_RedisInstance) SetAlternativeLocationId(val *string) {
 	if err := j.validateSetAlternativeLocationIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1075,7 +1074,7 @@ func (j *jsiiProxy_RedisInstance)SetAlternativeLocationId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RedisInstance)SetAuthEnabled(val interface{}) {
+func (j *jsiiProxy_RedisInstance) SetAuthEnabled(val any) {
 	if err := j.validateSetAuthEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -1086,7 +1085,7 @@ func (j *jsiiProxy_RedisInstance)SetAuthEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_RedisInstance)SetAuthorizedNetwork(val *string) {
+func (j *jsiiProxy_RedisInstance) SetAuthorizedNetwork(val *string) {
 	if err := j.validateSetAuthorizedNetworkParameters(val); err != nil {
 		panic(err)
 	}
@@ -1097,7 +1096,7 @@ func (j *jsiiProxy_RedisInstance)SetAuthorizedNetwork(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RedisInstance)SetConnection(val interface{}) {
+func (j *jsiiProxy_RedisInstance) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1108,7 +1107,7 @@ func (j *jsiiProxy_RedisInstance)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_RedisInstance)SetConnectMode(val *string) {
+func (j *jsiiProxy_RedisInstance) SetConnectMode(val *string) {
 	if err := j.validateSetConnectModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1119,7 +1118,7 @@ func (j *jsiiProxy_RedisInstance)SetConnectMode(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RedisInstance)SetCount(val interface{}) {
+func (j *jsiiProxy_RedisInstance) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -1130,7 +1129,7 @@ func (j *jsiiProxy_RedisInstance)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_RedisInstance)SetCustomerManagedKey(val *string) {
+func (j *jsiiProxy_RedisInstance) SetCustomerManagedKey(val *string) {
 	if err := j.validateSetCustomerManagedKeyParameters(val); err != nil {
 		panic(err)
 	}
@@ -1141,7 +1140,7 @@ func (j *jsiiProxy_RedisInstance)SetCustomerManagedKey(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RedisInstance)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_RedisInstance) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -1149,7 +1148,7 @@ func (j *jsiiProxy_RedisInstance)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_RedisInstance)SetDisplayName(val *string) {
+func (j *jsiiProxy_RedisInstance) SetDisplayName(val *string) {
 	if err := j.validateSetDisplayNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -1160,7 +1159,7 @@ func (j *jsiiProxy_RedisInstance)SetDisplayName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RedisInstance)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_RedisInstance) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -1168,7 +1167,7 @@ func (j *jsiiProxy_RedisInstance)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_RedisInstance)SetId(val *string) {
+func (j *jsiiProxy_RedisInstance) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1179,7 +1178,7 @@ func (j *jsiiProxy_RedisInstance)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RedisInstance)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_RedisInstance) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1190,7 +1189,7 @@ func (j *jsiiProxy_RedisInstance)SetLabels(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_RedisInstance)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_RedisInstance) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -1201,7 +1200,7 @@ func (j *jsiiProxy_RedisInstance)SetLifecycle(val *cdktf.TerraformResourceLifecy
 	)
 }
 
-func (j *jsiiProxy_RedisInstance)SetLocationId(val *string) {
+func (j *jsiiProxy_RedisInstance) SetLocationId(val *string) {
 	if err := j.validateSetLocationIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1212,7 +1211,7 @@ func (j *jsiiProxy_RedisInstance)SetLocationId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RedisInstance)SetMaintenanceVersion(val *string) {
+func (j *jsiiProxy_RedisInstance) SetMaintenanceVersion(val *string) {
 	if err := j.validateSetMaintenanceVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1223,7 +1222,7 @@ func (j *jsiiProxy_RedisInstance)SetMaintenanceVersion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RedisInstance)SetMemorySizeGb(val *float64) {
+func (j *jsiiProxy_RedisInstance) SetMemorySizeGb(val *float64) {
 	if err := j.validateSetMemorySizeGbParameters(val); err != nil {
 		panic(err)
 	}
@@ -1234,7 +1233,7 @@ func (j *jsiiProxy_RedisInstance)SetMemorySizeGb(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_RedisInstance)SetName(val *string) {
+func (j *jsiiProxy_RedisInstance) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -1245,7 +1244,7 @@ func (j *jsiiProxy_RedisInstance)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RedisInstance)SetProject(val *string) {
+func (j *jsiiProxy_RedisInstance) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -1256,7 +1255,7 @@ func (j *jsiiProxy_RedisInstance)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RedisInstance)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_RedisInstance) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1264,7 +1263,7 @@ func (j *jsiiProxy_RedisInstance)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_RedisInstance)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_RedisInstance) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -1275,7 +1274,7 @@ func (j *jsiiProxy_RedisInstance)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_RedisInstance)SetReadReplicasMode(val *string) {
+func (j *jsiiProxy_RedisInstance) SetReadReplicasMode(val *string) {
 	if err := j.validateSetReadReplicasModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1286,7 +1285,7 @@ func (j *jsiiProxy_RedisInstance)SetReadReplicasMode(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RedisInstance)SetRedisConfigs(val *map[string]*string) {
+func (j *jsiiProxy_RedisInstance) SetRedisConfigs(val *map[string]*string) {
 	if err := j.validateSetRedisConfigsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1297,7 +1296,7 @@ func (j *jsiiProxy_RedisInstance)SetRedisConfigs(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_RedisInstance)SetRedisVersion(val *string) {
+func (j *jsiiProxy_RedisInstance) SetRedisVersion(val *string) {
 	if err := j.validateSetRedisVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1308,7 +1307,7 @@ func (j *jsiiProxy_RedisInstance)SetRedisVersion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RedisInstance)SetRegion(val *string) {
+func (j *jsiiProxy_RedisInstance) SetRegion(val *string) {
 	if err := j.validateSetRegionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1319,7 +1318,7 @@ func (j *jsiiProxy_RedisInstance)SetRegion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RedisInstance)SetReplicaCount(val *float64) {
+func (j *jsiiProxy_RedisInstance) SetReplicaCount(val *float64) {
 	if err := j.validateSetReplicaCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -1330,7 +1329,7 @@ func (j *jsiiProxy_RedisInstance)SetReplicaCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_RedisInstance)SetReservedIpRange(val *string) {
+func (j *jsiiProxy_RedisInstance) SetReservedIpRange(val *string) {
 	if err := j.validateSetReservedIpRangeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1341,7 +1340,7 @@ func (j *jsiiProxy_RedisInstance)SetReservedIpRange(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RedisInstance)SetSecondaryIpRange(val *string) {
+func (j *jsiiProxy_RedisInstance) SetSecondaryIpRange(val *string) {
 	if err := j.validateSetSecondaryIpRangeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1352,7 +1351,7 @@ func (j *jsiiProxy_RedisInstance)SetSecondaryIpRange(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RedisInstance)SetTier(val *string) {
+func (j *jsiiProxy_RedisInstance) SetTier(val *string) {
 	if err := j.validateSetTierParameters(val); err != nil {
 		panic(err)
 	}
@@ -1363,7 +1362,7 @@ func (j *jsiiProxy_RedisInstance)SetTier(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RedisInstance)SetTransitEncryptionMode(val *string) {
+func (j *jsiiProxy_RedisInstance) SetTransitEncryptionMode(val *string) {
 	if err := j.validateSetTransitEncryptionModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1386,7 +1385,7 @@ func RedisInstance_GenerateConfigForImport(scope constructs.Construct, importToI
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.redisInstance.RedisInstance",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -1410,7 +1409,7 @@ func RedisInstance_GenerateConfigForImport(scope constructs.Construct, importToI
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func RedisInstance_IsConstruct(x interface{}) *bool {
+func RedisInstance_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateRedisInstance_IsConstructParameters(x); err != nil {
@@ -1421,7 +1420,7 @@ func RedisInstance_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.redisInstance.RedisInstance",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1429,7 +1428,7 @@ func RedisInstance_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func RedisInstance_IsTerraformElement(x interface{}) *bool {
+func RedisInstance_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateRedisInstance_IsTerraformElementParameters(x); err != nil {
@@ -1440,7 +1439,7 @@ func RedisInstance_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.redisInstance.RedisInstance",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1448,7 +1447,7 @@ func RedisInstance_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func RedisInstance_IsTerraformResource(x interface{}) *bool {
+func RedisInstance_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateRedisInstance_IsTerraformResourceParameters(x); err != nil {
@@ -1459,7 +1458,7 @@ func RedisInstance_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.redisInstance.RedisInstance",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1484,31 +1483,31 @@ func (r *jsiiProxy_RedisInstance) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		r,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (r *jsiiProxy_RedisInstance) AddOverride(path *string, value interface{}) {
+func (r *jsiiProxy_RedisInstance) AddOverride(path *string, value any) {
 	if err := r.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		r,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (r *jsiiProxy_RedisInstance) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (r *jsiiProxy_RedisInstance) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := r.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1524,7 +1523,7 @@ func (r *jsiiProxy_RedisInstance) GetBooleanAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		r,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1540,7 +1539,7 @@ func (r *jsiiProxy_RedisInstance) GetBooleanMapAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		r,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1556,7 +1555,7 @@ func (r *jsiiProxy_RedisInstance) GetListAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		r,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1572,7 +1571,7 @@ func (r *jsiiProxy_RedisInstance) GetNumberAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		r,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1588,7 +1587,7 @@ func (r *jsiiProxy_RedisInstance) GetNumberListAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		r,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1604,7 +1603,7 @@ func (r *jsiiProxy_RedisInstance) GetNumberMapAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		r,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1620,7 +1619,7 @@ func (r *jsiiProxy_RedisInstance) GetStringAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		r,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1636,15 +1635,15 @@ func (r *jsiiProxy_RedisInstance) GetStringMapAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		r,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (r *jsiiProxy_RedisInstance) HasResourceMove() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_RedisInstance) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -1663,7 +1662,7 @@ func (r *jsiiProxy_RedisInstance) ImportFrom(id *string, provider cdktf.Terrafor
 	_jsii_.InvokeVoid(
 		r,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1676,7 +1675,7 @@ func (r *jsiiProxy_RedisInstance) InterpolationForAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		r,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1690,18 +1689,18 @@ func (r *jsiiProxy_RedisInstance) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		r,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (r *jsiiProxy_RedisInstance) MoveTo(moveTarget *string, index interface{}) {
+func (r *jsiiProxy_RedisInstance) MoveTo(moveTarget *string, index any) {
 	if err := r.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		r,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1712,7 +1711,7 @@ func (r *jsiiProxy_RedisInstance) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		r,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1723,7 +1722,7 @@ func (r *jsiiProxy_RedisInstance) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		r,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1734,7 +1733,7 @@ func (r *jsiiProxy_RedisInstance) PutMaintenancePolicy(value *RedisInstanceMaint
 	_jsii_.InvokeVoid(
 		r,
 		"putMaintenancePolicy",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1745,7 +1744,7 @@ func (r *jsiiProxy_RedisInstance) PutPersistenceConfig(value *RedisInstancePersi
 	_jsii_.InvokeVoid(
 		r,
 		"putPersistenceConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1756,7 +1755,7 @@ func (r *jsiiProxy_RedisInstance) PutTimeouts(value *RedisInstanceTimeouts) {
 	_jsii_.InvokeVoid(
 		r,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1952,8 +1951,8 @@ func (r *jsiiProxy_RedisInstance) ResetTransitEncryptionMode() {
 	)
 }
 
-func (r *jsiiProxy_RedisInstance) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (r *jsiiProxy_RedisInstance) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
@@ -1965,8 +1964,8 @@ func (r *jsiiProxy_RedisInstance) SynthesizeAttributes() *map[string]interface{}
 	return returns
 }
 
-func (r *jsiiProxy_RedisInstance) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (r *jsiiProxy_RedisInstance) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
@@ -1978,8 +1977,8 @@ func (r *jsiiProxy_RedisInstance) SynthesizeHclAttributes() *map[string]interfac
 	return returns
 }
 
-func (r *jsiiProxy_RedisInstance) ToHclTerraform() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_RedisInstance) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -1991,8 +1990,8 @@ func (r *jsiiProxy_RedisInstance) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (r *jsiiProxy_RedisInstance) ToMetadata() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_RedisInstance) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -2017,8 +2016,8 @@ func (r *jsiiProxy_RedisInstance) ToString() *string {
 	return returns
 }
 
-func (r *jsiiProxy_RedisInstance) ToTerraform() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_RedisInstance) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -2029,4 +2028,3 @@ func (r *jsiiProxy_RedisInstance) ToTerraform() interface{} {
 
 	return returns
 }
-

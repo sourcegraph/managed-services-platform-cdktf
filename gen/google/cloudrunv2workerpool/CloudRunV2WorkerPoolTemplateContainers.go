@@ -1,6 +1,5 @@
 package cloudrunv2workerpool
 
-
 type CloudRunV2WorkerPoolTemplateContainers struct {
 	// URL of the Container image in Google Container Registry or Google Artifact Registry. More info: https://kubernetes.io/docs/concepts/containers/images.
 	//
@@ -27,7 +26,7 @@ type CloudRunV2WorkerPoolTemplateContainers struct {
 	// env block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/cloud_run_v2_worker_pool#env CloudRunV2WorkerPool#env}
-	Env interface{} `field:"optional" json:"env" yaml:"env"`
+	Env any `field:"optional" json:"env" yaml:"env"`
 	// Name of the container specified as a DNS_LABEL.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/cloud_run_v2_worker_pool#name CloudRunV2WorkerPool#name}
@@ -39,7 +38,7 @@ type CloudRunV2WorkerPoolTemplateContainers struct {
 	// volume_mounts block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/cloud_run_v2_worker_pool#volume_mounts CloudRunV2WorkerPool#volume_mounts}
-	VolumeMounts interface{} `field:"optional" json:"volumeMounts" yaml:"volumeMounts"`
+	VolumeMounts any `field:"optional" json:"volumeMounts" yaml:"volumeMounts"`
 	// Container's working directory.
 	//
 	// If not specified, the container runtime's default will be used, which might be configured in the container image.
@@ -47,4 +46,3 @@ type CloudRunV2WorkerPoolTemplateContainers struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/cloud_run_v2_worker_pool#working_dir CloudRunV2WorkerPool#working_dir}
 	WorkingDir *string `field:"optional" json:"workingDir" yaml:"workingDir"`
 }
-

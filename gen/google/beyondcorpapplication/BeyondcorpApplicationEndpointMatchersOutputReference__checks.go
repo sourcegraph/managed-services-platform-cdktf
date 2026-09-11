@@ -98,7 +98,7 @@ func (b *jsiiProxy_BeyondcorpApplicationEndpointMatchersOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_BeyondcorpApplicationEndpointMatchersOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BeyondcorpApplicationEndpointMatchersOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_BeyondcorpApplicationEndpointMatchersOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_BeyondcorpApplicationEndpointMatchersOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_BeyondcorpApplicationEndpointMatchersOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewBeyondcorpApplicationEndpointMatchersOutputReferenceParameters(t
 
 	return nil
 }
-

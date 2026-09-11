@@ -90,7 +90,7 @@ func (c *jsiiProxy_ComputeInstanceFromTemplateNetworkInterfaceOutputReference) v
 	return nil
 }
 
-func (c *jsiiProxy_ComputeInstanceFromTemplateNetworkInterfaceOutputReference) validatePutAccessConfigParameters(value interface{}) error {
+func (c *jsiiProxy_ComputeInstanceFromTemplateNetworkInterfaceOutputReference) validatePutAccessConfigParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (c *jsiiProxy_ComputeInstanceFromTemplateNetworkInterfaceOutputReference) v
 	return nil
 }
 
-func (c *jsiiProxy_ComputeInstanceFromTemplateNetworkInterfaceOutputReference) validatePutAliasIpRangeParameters(value interface{}) error {
+func (c *jsiiProxy_ComputeInstanceFromTemplateNetworkInterfaceOutputReference) validatePutAliasIpRangeParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -152,7 +152,7 @@ func (c *jsiiProxy_ComputeInstanceFromTemplateNetworkInterfaceOutputReference) v
 	return nil
 }
 
-func (c *jsiiProxy_ComputeInstanceFromTemplateNetworkInterfaceOutputReference) validatePutIpv6AccessConfigParameters(value interface{}) error {
+func (c *jsiiProxy_ComputeInstanceFromTemplateNetworkInterfaceOutputReference) validatePutIpv6AccessConfigParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -191,7 +191,7 @@ func (c *jsiiProxy_ComputeInstanceFromTemplateNetworkInterfaceOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_ComputeInstanceFromTemplateNetworkInterfaceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeInstanceFromTemplateNetworkInterfaceOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -264,7 +264,7 @@ func (j *jsiiProxy_ComputeInstanceFromTemplateNetworkInterfaceOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_ComputeInstanceFromTemplateNetworkInterfaceOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeInstanceFromTemplateNetworkInterfaceOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -395,4 +395,3 @@ func validateNewComputeInstanceFromTemplateNetworkInterfaceOutputReferenceParame
 
 	return nil
 }
-

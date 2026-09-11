@@ -15,11 +15,11 @@ type DataGoogleVmwareenginePrivateCloud interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	DeletionDelayHours() *float64
 	// Experimental.
 	DependsOn() *[]*string
@@ -61,22 +61,22 @@ type DataGoogleVmwareenginePrivateCloud interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	SendDeletionDelayHoursIfZero() cdktf.IResolvable
 	State() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Type() *string
 	Uid() *string
 	Vcenter() DataGoogleVmwareenginePrivateCloudVcenterList
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -103,18 +103,18 @@ type DataGoogleVmwareenginePrivateCloud interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataGoogleVmwareenginePrivateCloud
@@ -132,8 +132,8 @@ func (j *jsiiProxy_DataGoogleVmwareenginePrivateCloud) CdktfStack() cdktf.Terraf
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleVmwareenginePrivateCloud) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleVmwareenginePrivateCloud) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -142,8 +142,8 @@ func (j *jsiiProxy_DataGoogleVmwareenginePrivateCloud) ConstructNodeMetadata() *
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleVmwareenginePrivateCloud) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleVmwareenginePrivateCloud) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -362,8 +362,8 @@ func (j *jsiiProxy_DataGoogleVmwareenginePrivateCloud) Provider() cdktf.Terrafor
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleVmwareenginePrivateCloud) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleVmwareenginePrivateCloud) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -402,8 +402,8 @@ func (j *jsiiProxy_DataGoogleVmwareenginePrivateCloud) TerraformGeneratorMetadat
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleVmwareenginePrivateCloud) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleVmwareenginePrivateCloud) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -452,7 +452,6 @@ func (j *jsiiProxy_DataGoogleVmwareenginePrivateCloud) Vcenter() DataGoogleVmwar
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/data-sources/vmwareengine_private_cloud google_vmwareengine_private_cloud} Data Source.
 func NewDataGoogleVmwareenginePrivateCloud(scope constructs.Construct, id *string, config *DataGoogleVmwareenginePrivateCloudConfig) DataGoogleVmwareenginePrivateCloud {
 	_init_.Initialize()
@@ -464,7 +463,7 @@ func NewDataGoogleVmwareenginePrivateCloud(scope constructs.Construct, id *strin
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleVmwareenginePrivateCloud.DataGoogleVmwareenginePrivateCloud",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -477,12 +476,12 @@ func NewDataGoogleVmwareenginePrivateCloud_Override(d DataGoogleVmwareenginePriv
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleVmwareenginePrivateCloud.DataGoogleVmwareenginePrivateCloud",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataGoogleVmwareenginePrivateCloud)SetCount(val interface{}) {
+func (j *jsiiProxy_DataGoogleVmwareenginePrivateCloud) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -493,7 +492,7 @@ func (j *jsiiProxy_DataGoogleVmwareenginePrivateCloud)SetCount(val interface{}) 
 	)
 }
 
-func (j *jsiiProxy_DataGoogleVmwareenginePrivateCloud)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataGoogleVmwareenginePrivateCloud) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -501,7 +500,7 @@ func (j *jsiiProxy_DataGoogleVmwareenginePrivateCloud)SetDependsOn(val *[]*strin
 	)
 }
 
-func (j *jsiiProxy_DataGoogleVmwareenginePrivateCloud)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataGoogleVmwareenginePrivateCloud) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -509,7 +508,7 @@ func (j *jsiiProxy_DataGoogleVmwareenginePrivateCloud)SetForEach(val cdktf.ITerr
 	)
 }
 
-func (j *jsiiProxy_DataGoogleVmwareenginePrivateCloud)SetId(val *string) {
+func (j *jsiiProxy_DataGoogleVmwareenginePrivateCloud) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -520,7 +519,7 @@ func (j *jsiiProxy_DataGoogleVmwareenginePrivateCloud)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleVmwareenginePrivateCloud)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataGoogleVmwareenginePrivateCloud) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -531,7 +530,7 @@ func (j *jsiiProxy_DataGoogleVmwareenginePrivateCloud)SetLifecycle(val *cdktf.Te
 	)
 }
 
-func (j *jsiiProxy_DataGoogleVmwareenginePrivateCloud)SetLocation(val *string) {
+func (j *jsiiProxy_DataGoogleVmwareenginePrivateCloud) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -542,7 +541,7 @@ func (j *jsiiProxy_DataGoogleVmwareenginePrivateCloud)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleVmwareenginePrivateCloud)SetName(val *string) {
+func (j *jsiiProxy_DataGoogleVmwareenginePrivateCloud) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -553,7 +552,7 @@ func (j *jsiiProxy_DataGoogleVmwareenginePrivateCloud)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleVmwareenginePrivateCloud)SetProject(val *string) {
+func (j *jsiiProxy_DataGoogleVmwareenginePrivateCloud) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -564,7 +563,7 @@ func (j *jsiiProxy_DataGoogleVmwareenginePrivateCloud)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleVmwareenginePrivateCloud)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataGoogleVmwareenginePrivateCloud) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -584,7 +583,7 @@ func DataGoogleVmwareenginePrivateCloud_GenerateConfigForImport(scope constructs
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleVmwareenginePrivateCloud.DataGoogleVmwareenginePrivateCloud",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -608,7 +607,7 @@ func DataGoogleVmwareenginePrivateCloud_GenerateConfigForImport(scope constructs
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataGoogleVmwareenginePrivateCloud_IsConstruct(x interface{}) *bool {
+func DataGoogleVmwareenginePrivateCloud_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleVmwareenginePrivateCloud_IsConstructParameters(x); err != nil {
@@ -619,7 +618,7 @@ func DataGoogleVmwareenginePrivateCloud_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleVmwareenginePrivateCloud.DataGoogleVmwareenginePrivateCloud",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -627,7 +626,7 @@ func DataGoogleVmwareenginePrivateCloud_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataGoogleVmwareenginePrivateCloud_IsTerraformDataSource(x interface{}) *bool {
+func DataGoogleVmwareenginePrivateCloud_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleVmwareenginePrivateCloud_IsTerraformDataSourceParameters(x); err != nil {
@@ -638,7 +637,7 @@ func DataGoogleVmwareenginePrivateCloud_IsTerraformDataSource(x interface{}) *bo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleVmwareenginePrivateCloud.DataGoogleVmwareenginePrivateCloud",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -646,7 +645,7 @@ func DataGoogleVmwareenginePrivateCloud_IsTerraformDataSource(x interface{}) *bo
 }
 
 // Experimental.
-func DataGoogleVmwareenginePrivateCloud_IsTerraformElement(x interface{}) *bool {
+func DataGoogleVmwareenginePrivateCloud_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleVmwareenginePrivateCloud_IsTerraformElementParameters(x); err != nil {
@@ -657,7 +656,7 @@ func DataGoogleVmwareenginePrivateCloud_IsTerraformElement(x interface{}) *bool 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleVmwareenginePrivateCloud.DataGoogleVmwareenginePrivateCloud",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -675,27 +674,27 @@ func DataGoogleVmwareenginePrivateCloud_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleVmwareenginePrivateCloud) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataGoogleVmwareenginePrivateCloud) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataGoogleVmwareenginePrivateCloud) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataGoogleVmwareenginePrivateCloud) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -711,7 +710,7 @@ func (d *jsiiProxy_DataGoogleVmwareenginePrivateCloud) GetBooleanAttribute(terra
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -727,7 +726,7 @@ func (d *jsiiProxy_DataGoogleVmwareenginePrivateCloud) GetBooleanMapAttribute(te
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -743,7 +742,7 @@ func (d *jsiiProxy_DataGoogleVmwareenginePrivateCloud) GetListAttribute(terrafor
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -759,7 +758,7 @@ func (d *jsiiProxy_DataGoogleVmwareenginePrivateCloud) GetNumberAttribute(terraf
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -775,7 +774,7 @@ func (d *jsiiProxy_DataGoogleVmwareenginePrivateCloud) GetNumberListAttribute(te
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -791,7 +790,7 @@ func (d *jsiiProxy_DataGoogleVmwareenginePrivateCloud) GetNumberMapAttribute(ter
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -807,7 +806,7 @@ func (d *jsiiProxy_DataGoogleVmwareenginePrivateCloud) GetStringAttribute(terraf
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -823,7 +822,7 @@ func (d *jsiiProxy_DataGoogleVmwareenginePrivateCloud) GetStringMapAttribute(ter
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -839,7 +838,7 @@ func (d *jsiiProxy_DataGoogleVmwareenginePrivateCloud) InterpolationForAttribute
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -853,7 +852,7 @@ func (d *jsiiProxy_DataGoogleVmwareenginePrivateCloud) OverrideLogicalId(newLogi
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -881,8 +880,8 @@ func (d *jsiiProxy_DataGoogleVmwareenginePrivateCloud) ResetProject() {
 	)
 }
 
-func (d *jsiiProxy_DataGoogleVmwareenginePrivateCloud) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleVmwareenginePrivateCloud) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -894,8 +893,8 @@ func (d *jsiiProxy_DataGoogleVmwareenginePrivateCloud) SynthesizeAttributes() *m
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleVmwareenginePrivateCloud) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleVmwareenginePrivateCloud) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -907,8 +906,8 @@ func (d *jsiiProxy_DataGoogleVmwareenginePrivateCloud) SynthesizeHclAttributes()
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleVmwareenginePrivateCloud) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleVmwareenginePrivateCloud) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -920,8 +919,8 @@ func (d *jsiiProxy_DataGoogleVmwareenginePrivateCloud) ToHclTerraform() interfac
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleVmwareenginePrivateCloud) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleVmwareenginePrivateCloud) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -946,8 +945,8 @@ func (d *jsiiProxy_DataGoogleVmwareenginePrivateCloud) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleVmwareenginePrivateCloud) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleVmwareenginePrivateCloud) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -958,4 +957,3 @@ func (d *jsiiProxy_DataGoogleVmwareenginePrivateCloud) ToTerraform() interface{}
 
 	return returns
 }
-

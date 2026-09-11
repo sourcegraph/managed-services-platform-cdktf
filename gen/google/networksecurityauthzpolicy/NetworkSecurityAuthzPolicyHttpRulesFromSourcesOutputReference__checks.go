@@ -90,7 +90,7 @@ func (n *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesFromSourcesOutputReference
 	return nil
 }
 
-func (n *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesFromSourcesOutputReference) validatePutPrincipalsParameters(value interface{}) error {
+func (n *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesFromSourcesOutputReference) validatePutPrincipalsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (n *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesFromSourcesOutputReference
 	return nil
 }
 
-func (n *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesFromSourcesOutputReference) validatePutResourcesParameters(value interface{}) error {
+func (n *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesFromSourcesOutputReference) validatePutResourcesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -160,7 +160,7 @@ func (n *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesFromSourcesOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesFromSourcesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesFromSourcesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -225,7 +225,7 @@ func (j *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesFromSourcesOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesFromSourcesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesFromSourcesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -284,4 +284,3 @@ func validateNewNetworkSecurityAuthzPolicyHttpRulesFromSourcesOutputReferencePar
 
 	return nil
 }
-

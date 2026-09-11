@@ -19,7 +19,7 @@ func (b *jsiiProxy_BeyondcorpApplicationIamPolicy) validateAddMoveTargetParamete
 	return nil
 }
 
-func (b *jsiiProxy_BeyondcorpApplicationIamPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
+func (b *jsiiProxy_BeyondcorpApplicationIamPolicy) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (b *jsiiProxy_BeyondcorpApplicationIamPolicy) validateMoveFromIdParameters(
 	return nil
 }
 
-func (b *jsiiProxy_BeyondcorpApplicationIamPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (b *jsiiProxy_BeyondcorpApplicationIamPolicy) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateBeyondcorpApplicationIamPolicy_GenerateConfigForImportParameters(sc
 	return nil
 }
 
-func validateBeyondcorpApplicationIamPolicy_IsConstructParameters(x interface{}) error {
+func validateBeyondcorpApplicationIamPolicy_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateBeyondcorpApplicationIamPolicy_IsConstructParameters(x interface{})
 	return nil
 }
 
-func validateBeyondcorpApplicationIamPolicy_IsTerraformElementParameters(x interface{}) error {
+func validateBeyondcorpApplicationIamPolicy_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateBeyondcorpApplicationIamPolicy_IsTerraformElementParameters(x inter
 	return nil
 }
 
-func validateBeyondcorpApplicationIamPolicy_IsTerraformResourceParameters(x interface{}) error {
+func validateBeyondcorpApplicationIamPolicy_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -252,7 +252,7 @@ func (j *jsiiProxy_BeyondcorpApplicationIamPolicy) validateSetApplicationIdParam
 	return nil
 }
 
-func (j *jsiiProxy_BeyondcorpApplicationIamPolicy) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_BeyondcorpApplicationIamPolicy) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -285,7 +285,7 @@ func (j *jsiiProxy_BeyondcorpApplicationIamPolicy) validateSetConnectionParamete
 	return nil
 }
 
-func (j *jsiiProxy_BeyondcorpApplicationIamPolicy) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_BeyondcorpApplicationIamPolicy) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -374,7 +374,7 @@ func (j *jsiiProxy_BeyondcorpApplicationIamPolicy) validateSetProjectParameters(
 	return nil
 }
 
-func (j *jsiiProxy_BeyondcorpApplicationIamPolicy) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_BeyondcorpApplicationIamPolicy) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -446,4 +446,3 @@ func validateNewBeyondcorpApplicationIamPolicyParameters(scope constructs.Constr
 
 	return nil
 }
-

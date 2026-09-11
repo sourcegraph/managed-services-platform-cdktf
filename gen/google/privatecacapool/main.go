@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.privatecaCaPool.PrivatecaCaPool",
-		reflect.TypeOf((*PrivatecaCaPool)(nil)).Elem(),
+		reflect.TypeFor[PrivatecaCaPool](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -82,7 +82,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PrivatecaCaPool{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -90,19 +90,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.privatecaCaPool.PrivatecaCaPoolConfig",
-		reflect.TypeOf((*PrivatecaCaPoolConfig)(nil)).Elem(),
+		reflect.TypeFor[PrivatecaCaPoolConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.privatecaCaPool.PrivatecaCaPoolIssuancePolicy",
-		reflect.TypeOf((*PrivatecaCaPoolIssuancePolicy)(nil)).Elem(),
+		reflect.TypeFor[PrivatecaCaPoolIssuancePolicy](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.privatecaCaPool.PrivatecaCaPoolIssuancePolicyAllowedIssuanceModes",
-		reflect.TypeOf((*PrivatecaCaPoolIssuancePolicyAllowedIssuanceModes)(nil)).Elem(),
+		reflect.TypeFor[PrivatecaCaPoolIssuancePolicyAllowedIssuanceModes](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.privatecaCaPool.PrivatecaCaPoolIssuancePolicyAllowedIssuanceModesOutputReference",
-		reflect.TypeOf((*PrivatecaCaPoolIssuancePolicyAllowedIssuanceModesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[PrivatecaCaPoolIssuancePolicyAllowedIssuanceModesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowConfigBasedIssuance", GoGetter: "AllowConfigBasedIssuance"},
 			_jsii_.MemberProperty{JsiiProperty: "allowConfigBasedIssuanceInput", GoGetter: "AllowConfigBasedIssuanceInput"},
@@ -130,7 +130,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PrivatecaCaPoolIssuancePolicyAllowedIssuanceModesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -138,15 +138,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.privatecaCaPool.PrivatecaCaPoolIssuancePolicyAllowedKeyTypes",
-		reflect.TypeOf((*PrivatecaCaPoolIssuancePolicyAllowedKeyTypes)(nil)).Elem(),
+		reflect.TypeFor[PrivatecaCaPoolIssuancePolicyAllowedKeyTypes](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.privatecaCaPool.PrivatecaCaPoolIssuancePolicyAllowedKeyTypesEllipticCurve",
-		reflect.TypeOf((*PrivatecaCaPoolIssuancePolicyAllowedKeyTypesEllipticCurve)(nil)).Elem(),
+		reflect.TypeFor[PrivatecaCaPoolIssuancePolicyAllowedKeyTypesEllipticCurve](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.privatecaCaPool.PrivatecaCaPoolIssuancePolicyAllowedKeyTypesEllipticCurveOutputReference",
-		reflect.TypeOf((*PrivatecaCaPoolIssuancePolicyAllowedKeyTypesEllipticCurveOutputReference)(nil)).Elem(),
+		reflect.TypeFor[PrivatecaCaPoolIssuancePolicyAllowedKeyTypesEllipticCurveOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -172,7 +172,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PrivatecaCaPoolIssuancePolicyAllowedKeyTypesEllipticCurveOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -180,7 +180,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.privatecaCaPool.PrivatecaCaPoolIssuancePolicyAllowedKeyTypesList",
-		reflect.TypeOf((*PrivatecaCaPoolIssuancePolicyAllowedKeyTypesList)(nil)).Elem(),
+		reflect.TypeFor[PrivatecaCaPoolIssuancePolicyAllowedKeyTypesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -194,7 +194,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PrivatecaCaPoolIssuancePolicyAllowedKeyTypesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -202,7 +202,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.privatecaCaPool.PrivatecaCaPoolIssuancePolicyAllowedKeyTypesOutputReference",
-		reflect.TypeOf((*PrivatecaCaPoolIssuancePolicyAllowedKeyTypesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[PrivatecaCaPoolIssuancePolicyAllowedKeyTypesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -234,7 +234,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PrivatecaCaPoolIssuancePolicyAllowedKeyTypesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -242,11 +242,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.privatecaCaPool.PrivatecaCaPoolIssuancePolicyAllowedKeyTypesRsa",
-		reflect.TypeOf((*PrivatecaCaPoolIssuancePolicyAllowedKeyTypesRsa)(nil)).Elem(),
+		reflect.TypeFor[PrivatecaCaPoolIssuancePolicyAllowedKeyTypesRsa](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.privatecaCaPool.PrivatecaCaPoolIssuancePolicyAllowedKeyTypesRsaOutputReference",
-		reflect.TypeOf((*PrivatecaCaPoolIssuancePolicyAllowedKeyTypesRsaOutputReference)(nil)).Elem(),
+		reflect.TypeFor[PrivatecaCaPoolIssuancePolicyAllowedKeyTypesRsaOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -276,7 +276,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PrivatecaCaPoolIssuancePolicyAllowedKeyTypesRsaOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -284,15 +284,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.privatecaCaPool.PrivatecaCaPoolIssuancePolicyBaselineValues",
-		reflect.TypeOf((*PrivatecaCaPoolIssuancePolicyBaselineValues)(nil)).Elem(),
+		reflect.TypeFor[PrivatecaCaPoolIssuancePolicyBaselineValues](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.privatecaCaPool.PrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensions",
-		reflect.TypeOf((*PrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensions)(nil)).Elem(),
+		reflect.TypeFor[PrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.privatecaCaPool.PrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensionsList",
-		reflect.TypeOf((*PrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensionsList)(nil)).Elem(),
+		reflect.TypeFor[PrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensionsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -306,7 +306,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensionsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -314,11 +314,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.privatecaCaPool.PrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensionsObjectId",
-		reflect.TypeOf((*PrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensionsObjectId)(nil)).Elem(),
+		reflect.TypeFor[PrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensionsObjectId](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.privatecaCaPool.PrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensionsObjectIdOutputReference",
-		reflect.TypeOf((*PrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensionsObjectIdOutputReference)(nil)).Elem(),
+		reflect.TypeFor[PrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensionsObjectIdOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -344,7 +344,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensionsObjectIdOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -352,7 +352,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.privatecaCaPool.PrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensionsOutputReference",
-		reflect.TypeOf((*PrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[PrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -383,7 +383,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -391,11 +391,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.privatecaCaPool.PrivatecaCaPoolIssuancePolicyBaselineValuesCaOptions",
-		reflect.TypeOf((*PrivatecaCaPoolIssuancePolicyBaselineValuesCaOptions)(nil)).Elem(),
+		reflect.TypeFor[PrivatecaCaPoolIssuancePolicyBaselineValuesCaOptions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.privatecaCaPool.PrivatecaCaPoolIssuancePolicyBaselineValuesCaOptionsOutputReference",
-		reflect.TypeOf((*PrivatecaCaPoolIssuancePolicyBaselineValuesCaOptionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[PrivatecaCaPoolIssuancePolicyBaselineValuesCaOptionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -431,7 +431,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zeroMaxIssuerPathLength", GoGetter: "ZeroMaxIssuerPathLength"},
 			_jsii_.MemberProperty{JsiiProperty: "zeroMaxIssuerPathLengthInput", GoGetter: "ZeroMaxIssuerPathLengthInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PrivatecaCaPoolIssuancePolicyBaselineValuesCaOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -439,15 +439,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.privatecaCaPool.PrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsage",
-		reflect.TypeOf((*PrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsage)(nil)).Elem(),
+		reflect.TypeFor[PrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsage](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.privatecaCaPool.PrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageBaseKeyUsage",
-		reflect.TypeOf((*PrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageBaseKeyUsage)(nil)).Elem(),
+		reflect.TypeFor[PrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageBaseKeyUsage](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.privatecaCaPool.PrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageBaseKeyUsageOutputReference",
-		reflect.TypeOf((*PrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageBaseKeyUsageOutputReference)(nil)).Elem(),
+		reflect.TypeFor[PrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageBaseKeyUsageOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "certSign", GoGetter: "CertSign"},
 			_jsii_.MemberProperty{JsiiProperty: "certSignInput", GoGetter: "CertSignInput"},
@@ -498,7 +498,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageBaseKeyUsageOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -506,11 +506,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.privatecaCaPool.PrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageExtendedKeyUsage",
-		reflect.TypeOf((*PrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageExtendedKeyUsage)(nil)).Elem(),
+		reflect.TypeFor[PrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageExtendedKeyUsage](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.privatecaCaPool.PrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageExtendedKeyUsageOutputReference",
-		reflect.TypeOf((*PrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageExtendedKeyUsageOutputReference)(nil)).Elem(),
+		reflect.TypeFor[PrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageExtendedKeyUsageOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "clientAuth", GoGetter: "ClientAuth"},
 			_jsii_.MemberProperty{JsiiProperty: "clientAuthInput", GoGetter: "ClientAuthInput"},
@@ -552,7 +552,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "timeStampingInput", GoGetter: "TimeStampingInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageExtendedKeyUsageOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -560,7 +560,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.privatecaCaPool.PrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageOutputReference",
-		reflect.TypeOf((*PrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageOutputReference)(nil)).Elem(),
+		reflect.TypeFor[PrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "baseKeyUsage", GoGetter: "BaseKeyUsage"},
 			_jsii_.MemberProperty{JsiiProperty: "baseKeyUsageInput", GoGetter: "BaseKeyUsageInput"},
@@ -594,7 +594,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "unknownExtendedKeyUsages", GoGetter: "UnknownExtendedKeyUsages"},
 			_jsii_.MemberProperty{JsiiProperty: "unknownExtendedKeyUsagesInput", GoGetter: "UnknownExtendedKeyUsagesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -602,11 +602,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.privatecaCaPool.PrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageUnknownExtendedKeyUsages",
-		reflect.TypeOf((*PrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageUnknownExtendedKeyUsages)(nil)).Elem(),
+		reflect.TypeFor[PrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageUnknownExtendedKeyUsages](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.privatecaCaPool.PrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageUnknownExtendedKeyUsagesList",
-		reflect.TypeOf((*PrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageUnknownExtendedKeyUsagesList)(nil)).Elem(),
+		reflect.TypeFor[PrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageUnknownExtendedKeyUsagesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -620,7 +620,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageUnknownExtendedKeyUsagesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -628,7 +628,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.privatecaCaPool.PrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageUnknownExtendedKeyUsagesOutputReference",
-		reflect.TypeOf((*PrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageUnknownExtendedKeyUsagesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[PrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageUnknownExtendedKeyUsagesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -654,7 +654,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageUnknownExtendedKeyUsagesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -662,11 +662,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.privatecaCaPool.PrivatecaCaPoolIssuancePolicyBaselineValuesNameConstraints",
-		reflect.TypeOf((*PrivatecaCaPoolIssuancePolicyBaselineValuesNameConstraints)(nil)).Elem(),
+		reflect.TypeFor[PrivatecaCaPoolIssuancePolicyBaselineValuesNameConstraints](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.privatecaCaPool.PrivatecaCaPoolIssuancePolicyBaselineValuesNameConstraintsOutputReference",
-		reflect.TypeOf((*PrivatecaCaPoolIssuancePolicyBaselineValuesNameConstraintsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[PrivatecaCaPoolIssuancePolicyBaselineValuesNameConstraintsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -716,7 +716,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PrivatecaCaPoolIssuancePolicyBaselineValuesNameConstraintsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -724,7 +724,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.privatecaCaPool.PrivatecaCaPoolIssuancePolicyBaselineValuesOutputReference",
-		reflect.TypeOf((*PrivatecaCaPoolIssuancePolicyBaselineValuesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[PrivatecaCaPoolIssuancePolicyBaselineValuesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "additionalExtensions", GoGetter: "AdditionalExtensions"},
 			_jsii_.MemberProperty{JsiiProperty: "additionalExtensionsInput", GoGetter: "AdditionalExtensionsInput"},
@@ -769,7 +769,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PrivatecaCaPoolIssuancePolicyBaselineValuesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -777,11 +777,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.privatecaCaPool.PrivatecaCaPoolIssuancePolicyBaselineValuesPolicyIds",
-		reflect.TypeOf((*PrivatecaCaPoolIssuancePolicyBaselineValuesPolicyIds)(nil)).Elem(),
+		reflect.TypeFor[PrivatecaCaPoolIssuancePolicyBaselineValuesPolicyIds](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.privatecaCaPool.PrivatecaCaPoolIssuancePolicyBaselineValuesPolicyIdsList",
-		reflect.TypeOf((*PrivatecaCaPoolIssuancePolicyBaselineValuesPolicyIdsList)(nil)).Elem(),
+		reflect.TypeFor[PrivatecaCaPoolIssuancePolicyBaselineValuesPolicyIdsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -795,7 +795,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PrivatecaCaPoolIssuancePolicyBaselineValuesPolicyIdsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -803,7 +803,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.privatecaCaPool.PrivatecaCaPoolIssuancePolicyBaselineValuesPolicyIdsOutputReference",
-		reflect.TypeOf((*PrivatecaCaPoolIssuancePolicyBaselineValuesPolicyIdsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[PrivatecaCaPoolIssuancePolicyBaselineValuesPolicyIdsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -829,7 +829,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PrivatecaCaPoolIssuancePolicyBaselineValuesPolicyIdsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -837,15 +837,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.privatecaCaPool.PrivatecaCaPoolIssuancePolicyIdentityConstraints",
-		reflect.TypeOf((*PrivatecaCaPoolIssuancePolicyIdentityConstraints)(nil)).Elem(),
+		reflect.TypeFor[PrivatecaCaPoolIssuancePolicyIdentityConstraints](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.privatecaCaPool.PrivatecaCaPoolIssuancePolicyIdentityConstraintsCelExpression",
-		reflect.TypeOf((*PrivatecaCaPoolIssuancePolicyIdentityConstraintsCelExpression)(nil)).Elem(),
+		reflect.TypeFor[PrivatecaCaPoolIssuancePolicyIdentityConstraintsCelExpression](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.privatecaCaPool.PrivatecaCaPoolIssuancePolicyIdentityConstraintsCelExpressionOutputReference",
-		reflect.TypeOf((*PrivatecaCaPoolIssuancePolicyIdentityConstraintsCelExpressionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[PrivatecaCaPoolIssuancePolicyIdentityConstraintsCelExpressionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -880,7 +880,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "titleInput", GoGetter: "TitleInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PrivatecaCaPoolIssuancePolicyIdentityConstraintsCelExpressionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -888,7 +888,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.privatecaCaPool.PrivatecaCaPoolIssuancePolicyIdentityConstraintsOutputReference",
-		reflect.TypeOf((*PrivatecaCaPoolIssuancePolicyIdentityConstraintsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[PrivatecaCaPoolIssuancePolicyIdentityConstraintsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowSubjectAltNamesPassthrough", GoGetter: "AllowSubjectAltNamesPassthrough"},
 			_jsii_.MemberProperty{JsiiProperty: "allowSubjectAltNamesPassthroughInput", GoGetter: "AllowSubjectAltNamesPassthroughInput"},
@@ -920,7 +920,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PrivatecaCaPoolIssuancePolicyIdentityConstraintsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -928,7 +928,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.privatecaCaPool.PrivatecaCaPoolIssuancePolicyOutputReference",
-		reflect.TypeOf((*PrivatecaCaPoolIssuancePolicyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[PrivatecaCaPoolIssuancePolicyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowedIssuanceModes", GoGetter: "AllowedIssuanceModes"},
 			_jsii_.MemberProperty{JsiiProperty: "allowedIssuanceModesInput", GoGetter: "AllowedIssuanceModesInput"},
@@ -974,7 +974,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PrivatecaCaPoolIssuancePolicyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -982,11 +982,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.privatecaCaPool.PrivatecaCaPoolPublishingOptions",
-		reflect.TypeOf((*PrivatecaCaPoolPublishingOptions)(nil)).Elem(),
+		reflect.TypeFor[PrivatecaCaPoolPublishingOptions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.privatecaCaPool.PrivatecaCaPoolPublishingOptionsOutputReference",
-		reflect.TypeOf((*PrivatecaCaPoolPublishingOptionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[PrivatecaCaPoolPublishingOptionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1017,7 +1017,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PrivatecaCaPoolPublishingOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1025,11 +1025,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.privatecaCaPool.PrivatecaCaPoolTimeouts",
-		reflect.TypeOf((*PrivatecaCaPoolTimeouts)(nil)).Elem(),
+		reflect.TypeFor[PrivatecaCaPoolTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.privatecaCaPool.PrivatecaCaPoolTimeoutsOutputReference",
-		reflect.TypeOf((*PrivatecaCaPoolTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[PrivatecaCaPoolTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1062,7 +1062,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_PrivatecaCaPoolTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

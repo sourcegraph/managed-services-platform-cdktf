@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocMetastoreService.DataprocMetastoreService",
-		reflect.TypeOf((*DataprocMetastoreService)(nil)).Elem(),
+		reflect.TypeFor[DataprocMetastoreService](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -131,7 +131,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "uid", GoGetter: "Uid"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocMetastoreService{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -139,15 +139,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocMetastoreService.DataprocMetastoreServiceConfig",
-		reflect.TypeOf((*DataprocMetastoreServiceConfig)(nil)).Elem(),
+		reflect.TypeFor[DataprocMetastoreServiceConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocMetastoreService.DataprocMetastoreServiceEncryptionConfig",
-		reflect.TypeOf((*DataprocMetastoreServiceEncryptionConfig)(nil)).Elem(),
+		reflect.TypeFor[DataprocMetastoreServiceEncryptionConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocMetastoreService.DataprocMetastoreServiceEncryptionConfigOutputReference",
-		reflect.TypeOf((*DataprocMetastoreServiceEncryptionConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocMetastoreServiceEncryptionConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -173,7 +173,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocMetastoreServiceEncryptionConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -181,15 +181,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocMetastoreService.DataprocMetastoreServiceHiveMetastoreConfig",
-		reflect.TypeOf((*DataprocMetastoreServiceHiveMetastoreConfig)(nil)).Elem(),
+		reflect.TypeFor[DataprocMetastoreServiceHiveMetastoreConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocMetastoreService.DataprocMetastoreServiceHiveMetastoreConfigAuxiliaryVersions",
-		reflect.TypeOf((*DataprocMetastoreServiceHiveMetastoreConfigAuxiliaryVersions)(nil)).Elem(),
+		reflect.TypeFor[DataprocMetastoreServiceHiveMetastoreConfigAuxiliaryVersions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocMetastoreService.DataprocMetastoreServiceHiveMetastoreConfigAuxiliaryVersionsList",
-		reflect.TypeOf((*DataprocMetastoreServiceHiveMetastoreConfigAuxiliaryVersionsList)(nil)).Elem(),
+		reflect.TypeFor[DataprocMetastoreServiceHiveMetastoreConfigAuxiliaryVersionsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -203,7 +203,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocMetastoreServiceHiveMetastoreConfigAuxiliaryVersionsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -211,7 +211,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocMetastoreService.DataprocMetastoreServiceHiveMetastoreConfigAuxiliaryVersionsOutputReference",
-		reflect.TypeOf((*DataprocMetastoreServiceHiveMetastoreConfigAuxiliaryVersionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocMetastoreServiceHiveMetastoreConfigAuxiliaryVersionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -242,7 +242,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "version", GoGetter: "Version"},
 			_jsii_.MemberProperty{JsiiProperty: "versionInput", GoGetter: "VersionInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocMetastoreServiceHiveMetastoreConfigAuxiliaryVersionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -250,15 +250,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocMetastoreService.DataprocMetastoreServiceHiveMetastoreConfigKerberosConfig",
-		reflect.TypeOf((*DataprocMetastoreServiceHiveMetastoreConfigKerberosConfig)(nil)).Elem(),
+		reflect.TypeFor[DataprocMetastoreServiceHiveMetastoreConfigKerberosConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocMetastoreService.DataprocMetastoreServiceHiveMetastoreConfigKerberosConfigKeytab",
-		reflect.TypeOf((*DataprocMetastoreServiceHiveMetastoreConfigKerberosConfigKeytab)(nil)).Elem(),
+		reflect.TypeFor[DataprocMetastoreServiceHiveMetastoreConfigKerberosConfigKeytab](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocMetastoreService.DataprocMetastoreServiceHiveMetastoreConfigKerberosConfigKeytabOutputReference",
-		reflect.TypeOf((*DataprocMetastoreServiceHiveMetastoreConfigKerberosConfigKeytabOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocMetastoreServiceHiveMetastoreConfigKerberosConfigKeytabOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cloudSecret", GoGetter: "CloudSecret"},
 			_jsii_.MemberProperty{JsiiProperty: "cloudSecretInput", GoGetter: "CloudSecretInput"},
@@ -284,7 +284,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocMetastoreServiceHiveMetastoreConfigKerberosConfigKeytabOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -292,7 +292,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocMetastoreService.DataprocMetastoreServiceHiveMetastoreConfigKerberosConfigOutputReference",
-		reflect.TypeOf((*DataprocMetastoreServiceHiveMetastoreConfigKerberosConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocMetastoreServiceHiveMetastoreConfigKerberosConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -323,7 +323,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocMetastoreServiceHiveMetastoreConfigKerberosConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -331,7 +331,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocMetastoreService.DataprocMetastoreServiceHiveMetastoreConfigOutputReference",
-		reflect.TypeOf((*DataprocMetastoreServiceHiveMetastoreConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocMetastoreServiceHiveMetastoreConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "auxiliaryVersions", GoGetter: "AuxiliaryVersions"},
 			_jsii_.MemberProperty{JsiiProperty: "auxiliaryVersionsInput", GoGetter: "AuxiliaryVersionsInput"},
@@ -371,7 +371,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "version", GoGetter: "Version"},
 			_jsii_.MemberProperty{JsiiProperty: "versionInput", GoGetter: "VersionInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocMetastoreServiceHiveMetastoreConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -379,11 +379,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocMetastoreService.DataprocMetastoreServiceMaintenanceWindow",
-		reflect.TypeOf((*DataprocMetastoreServiceMaintenanceWindow)(nil)).Elem(),
+		reflect.TypeFor[DataprocMetastoreServiceMaintenanceWindow](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocMetastoreService.DataprocMetastoreServiceMaintenanceWindowOutputReference",
-		reflect.TypeOf((*DataprocMetastoreServiceMaintenanceWindowOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocMetastoreServiceMaintenanceWindowOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -411,7 +411,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocMetastoreServiceMaintenanceWindowOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -419,15 +419,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocMetastoreService.DataprocMetastoreServiceMetadataIntegration",
-		reflect.TypeOf((*DataprocMetastoreServiceMetadataIntegration)(nil)).Elem(),
+		reflect.TypeFor[DataprocMetastoreServiceMetadataIntegration](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocMetastoreService.DataprocMetastoreServiceMetadataIntegrationDataCatalogConfig",
-		reflect.TypeOf((*DataprocMetastoreServiceMetadataIntegrationDataCatalogConfig)(nil)).Elem(),
+		reflect.TypeFor[DataprocMetastoreServiceMetadataIntegrationDataCatalogConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocMetastoreService.DataprocMetastoreServiceMetadataIntegrationDataCatalogConfigOutputReference",
-		reflect.TypeOf((*DataprocMetastoreServiceMetadataIntegrationDataCatalogConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocMetastoreServiceMetadataIntegrationDataCatalogConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -453,7 +453,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocMetastoreServiceMetadataIntegrationDataCatalogConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -461,7 +461,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocMetastoreService.DataprocMetastoreServiceMetadataIntegrationOutputReference",
-		reflect.TypeOf((*DataprocMetastoreServiceMetadataIntegrationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocMetastoreServiceMetadataIntegrationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -488,7 +488,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocMetastoreServiceMetadataIntegrationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -496,15 +496,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocMetastoreService.DataprocMetastoreServiceNetworkConfig",
-		reflect.TypeOf((*DataprocMetastoreServiceNetworkConfig)(nil)).Elem(),
+		reflect.TypeFor[DataprocMetastoreServiceNetworkConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocMetastoreService.DataprocMetastoreServiceNetworkConfigConsumers",
-		reflect.TypeOf((*DataprocMetastoreServiceNetworkConfigConsumers)(nil)).Elem(),
+		reflect.TypeFor[DataprocMetastoreServiceNetworkConfigConsumers](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocMetastoreService.DataprocMetastoreServiceNetworkConfigConsumersList",
-		reflect.TypeOf((*DataprocMetastoreServiceNetworkConfigConsumersList)(nil)).Elem(),
+		reflect.TypeFor[DataprocMetastoreServiceNetworkConfigConsumersList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -518,7 +518,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocMetastoreServiceNetworkConfigConsumersList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -526,7 +526,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocMetastoreService.DataprocMetastoreServiceNetworkConfigConsumersOutputReference",
-		reflect.TypeOf((*DataprocMetastoreServiceNetworkConfigConsumersOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocMetastoreServiceNetworkConfigConsumersOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -553,7 +553,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocMetastoreServiceNetworkConfigConsumersOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -561,7 +561,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocMetastoreService.DataprocMetastoreServiceNetworkConfigOutputReference",
-		reflect.TypeOf((*DataprocMetastoreServiceNetworkConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocMetastoreServiceNetworkConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -588,7 +588,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocMetastoreServiceNetworkConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -596,19 +596,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocMetastoreService.DataprocMetastoreServiceScalingConfig",
-		reflect.TypeOf((*DataprocMetastoreServiceScalingConfig)(nil)).Elem(),
+		reflect.TypeFor[DataprocMetastoreServiceScalingConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocMetastoreService.DataprocMetastoreServiceScalingConfigAutoscalingConfig",
-		reflect.TypeOf((*DataprocMetastoreServiceScalingConfigAutoscalingConfig)(nil)).Elem(),
+		reflect.TypeFor[DataprocMetastoreServiceScalingConfigAutoscalingConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocMetastoreService.DataprocMetastoreServiceScalingConfigAutoscalingConfigLimitConfig",
-		reflect.TypeOf((*DataprocMetastoreServiceScalingConfigAutoscalingConfigLimitConfig)(nil)).Elem(),
+		reflect.TypeFor[DataprocMetastoreServiceScalingConfigAutoscalingConfigLimitConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocMetastoreService.DataprocMetastoreServiceScalingConfigAutoscalingConfigLimitConfigOutputReference",
-		reflect.TypeOf((*DataprocMetastoreServiceScalingConfigAutoscalingConfigLimitConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocMetastoreServiceScalingConfigAutoscalingConfigLimitConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -638,7 +638,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocMetastoreServiceScalingConfigAutoscalingConfigLimitConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -646,7 +646,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocMetastoreService.DataprocMetastoreServiceScalingConfigAutoscalingConfigOutputReference",
-		reflect.TypeOf((*DataprocMetastoreServiceScalingConfigAutoscalingConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocMetastoreServiceScalingConfigAutoscalingConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "autoscalingEnabled", GoGetter: "AutoscalingEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "autoscalingEnabledInput", GoGetter: "AutoscalingEnabledInput"},
@@ -678,7 +678,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocMetastoreServiceScalingConfigAutoscalingConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -686,7 +686,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocMetastoreService.DataprocMetastoreServiceScalingConfigOutputReference",
-		reflect.TypeOf((*DataprocMetastoreServiceScalingConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocMetastoreServiceScalingConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "autoscalingConfig", GoGetter: "AutoscalingConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "autoscalingConfigInput", GoGetter: "AutoscalingConfigInput"},
@@ -720,7 +720,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocMetastoreServiceScalingConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -728,11 +728,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocMetastoreService.DataprocMetastoreServiceScheduledBackup",
-		reflect.TypeOf((*DataprocMetastoreServiceScheduledBackup)(nil)).Elem(),
+		reflect.TypeFor[DataprocMetastoreServiceScheduledBackup](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocMetastoreService.DataprocMetastoreServiceScheduledBackupOutputReference",
-		reflect.TypeOf((*DataprocMetastoreServiceScheduledBackupOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocMetastoreServiceScheduledBackupOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "backupLocation", GoGetter: "BackupLocation"},
 			_jsii_.MemberProperty{JsiiProperty: "backupLocationInput", GoGetter: "BackupLocationInput"},
@@ -767,7 +767,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "timeZoneInput", GoGetter: "TimeZoneInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocMetastoreServiceScheduledBackupOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -775,11 +775,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocMetastoreService.DataprocMetastoreServiceTelemetryConfig",
-		reflect.TypeOf((*DataprocMetastoreServiceTelemetryConfig)(nil)).Elem(),
+		reflect.TypeFor[DataprocMetastoreServiceTelemetryConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocMetastoreService.DataprocMetastoreServiceTelemetryConfigOutputReference",
-		reflect.TypeOf((*DataprocMetastoreServiceTelemetryConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocMetastoreServiceTelemetryConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -806,7 +806,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocMetastoreServiceTelemetryConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -814,11 +814,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocMetastoreService.DataprocMetastoreServiceTimeouts",
-		reflect.TypeOf((*DataprocMetastoreServiceTimeouts)(nil)).Elem(),
+		reflect.TypeFor[DataprocMetastoreServiceTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocMetastoreService.DataprocMetastoreServiceTimeoutsOutputReference",
-		reflect.TypeOf((*DataprocMetastoreServiceTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocMetastoreServiceTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -851,7 +851,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocMetastoreServiceTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

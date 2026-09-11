@@ -13,20 +13,20 @@ import (
 type DataFusionInstance interface {
 	cdktf.TerraformResource
 	Accelerators() DataFusionInstanceAcceleratorsList
-	AcceleratorsInput() interface{}
+	AcceleratorsInput() any
 	ApiEndpoint() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	CryptoKeyConfig() DataFusionInstanceCryptoKeyConfigOutputReference
 	CryptoKeyConfigInput() *DataFusionInstanceCryptoKeyConfig
@@ -44,15 +44,15 @@ type DataFusionInstance interface {
 	SetDisplayName(val *string)
 	DisplayNameInput() *string
 	EffectiveLabels() cdktf.StringMap
-	EnableRbac() interface{}
-	SetEnableRbac(val interface{})
-	EnableRbacInput() interface{}
-	EnableStackdriverLogging() interface{}
-	SetEnableStackdriverLogging(val interface{})
-	EnableStackdriverLoggingInput() interface{}
-	EnableStackdriverMonitoring() interface{}
-	SetEnableStackdriverMonitoring(val interface{})
-	EnableStackdriverMonitoringInput() interface{}
+	EnableRbac() any
+	SetEnableRbac(val any)
+	EnableRbacInput() any
+	EnableStackdriverLogging() any
+	SetEnableStackdriverLogging(val any)
+	EnableStackdriverLoggingInput() any
+	EnableStackdriverMonitoring() any
+	SetEnableStackdriverMonitoring(val any)
+	EnableStackdriverMonitoringInput() any
 	EventPublishConfig() DataFusionInstanceEventPublishConfigOutputReference
 	EventPublishConfigInput() *DataFusionInstanceEventPublishConfig
 	// Experimental.
@@ -85,9 +85,9 @@ type DataFusionInstance interface {
 	SetOptions(val *map[string]*string)
 	OptionsInput() *map[string]*string
 	P4ServiceAccount() *string
-	PrivateInstance() interface{}
-	SetPrivateInstance(val interface{})
-	PrivateInstanceInput() interface{}
+	PrivateInstance() any
+	SetPrivateInstance(val any)
+	PrivateInstanceInput() any
 	Project() *string
 	SetProject(val *string)
 	ProjectInput() *string
@@ -96,11 +96,11 @@ type DataFusionInstance interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Region() *string
 	SetRegion(val *string)
 	RegionInput() *string
@@ -115,11 +115,11 @@ type DataFusionInstance interface {
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() DataFusionInstanceTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	Type() *string
 	SetType(val *string)
 	TypeInput() *string
@@ -134,9 +134,9 @@ type DataFusionInstance interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -154,7 +154,7 @@ type DataFusionInstance interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -166,14 +166,14 @@ type DataFusionInstance interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutAccelerators(value interface{})
+	PutAccelerators(value any)
 	PutCryptoKeyConfig(value *DataFusionInstanceCryptoKeyConfig)
 	PutEventPublishConfig(value *DataFusionInstanceEventPublishConfig)
 	PutNetworkConfig(value *DataFusionInstanceNetworkConfig)
@@ -201,17 +201,17 @@ type DataFusionInstance interface {
 	ResetTimeouts()
 	ResetVersion()
 	ResetZone()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataFusionInstance
@@ -229,8 +229,8 @@ func (j *jsiiProxy_DataFusionInstance) Accelerators() DataFusionInstanceAccelera
 	return returns
 }
 
-func (j *jsiiProxy_DataFusionInstance) AcceleratorsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataFusionInstance) AcceleratorsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"acceleratorsInput",
@@ -259,8 +259,8 @@ func (j *jsiiProxy_DataFusionInstance) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_DataFusionInstance) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataFusionInstance) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -269,8 +269,8 @@ func (j *jsiiProxy_DataFusionInstance) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataFusionInstance) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataFusionInstance) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -279,8 +279,8 @@ func (j *jsiiProxy_DataFusionInstance) ConstructNodeMetadata() *map[string]inter
 	return returns
 }
 
-func (j *jsiiProxy_DataFusionInstance) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataFusionInstance) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -399,8 +399,8 @@ func (j *jsiiProxy_DataFusionInstance) EffectiveLabels() cdktf.StringMap {
 	return returns
 }
 
-func (j *jsiiProxy_DataFusionInstance) EnableRbac() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataFusionInstance) EnableRbac() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableRbac",
@@ -409,8 +409,8 @@ func (j *jsiiProxy_DataFusionInstance) EnableRbac() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataFusionInstance) EnableRbacInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataFusionInstance) EnableRbacInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableRbacInput",
@@ -419,8 +419,8 @@ func (j *jsiiProxy_DataFusionInstance) EnableRbacInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataFusionInstance) EnableStackdriverLogging() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataFusionInstance) EnableStackdriverLogging() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableStackdriverLogging",
@@ -429,8 +429,8 @@ func (j *jsiiProxy_DataFusionInstance) EnableStackdriverLogging() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataFusionInstance) EnableStackdriverLoggingInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataFusionInstance) EnableStackdriverLoggingInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableStackdriverLoggingInput",
@@ -439,8 +439,8 @@ func (j *jsiiProxy_DataFusionInstance) EnableStackdriverLoggingInput() interface
 	return returns
 }
 
-func (j *jsiiProxy_DataFusionInstance) EnableStackdriverMonitoring() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataFusionInstance) EnableStackdriverMonitoring() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableStackdriverMonitoring",
@@ -449,8 +449,8 @@ func (j *jsiiProxy_DataFusionInstance) EnableStackdriverMonitoring() interface{}
 	return returns
 }
 
-func (j *jsiiProxy_DataFusionInstance) EnableStackdriverMonitoringInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataFusionInstance) EnableStackdriverMonitoringInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableStackdriverMonitoringInput",
@@ -649,8 +649,8 @@ func (j *jsiiProxy_DataFusionInstance) P4ServiceAccount() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataFusionInstance) PrivateInstance() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataFusionInstance) PrivateInstance() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"privateInstance",
@@ -659,8 +659,8 @@ func (j *jsiiProxy_DataFusionInstance) PrivateInstance() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataFusionInstance) PrivateInstanceInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataFusionInstance) PrivateInstanceInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"privateInstanceInput",
@@ -699,8 +699,8 @@ func (j *jsiiProxy_DataFusionInstance) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_DataFusionInstance) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_DataFusionInstance) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -709,8 +709,8 @@ func (j *jsiiProxy_DataFusionInstance) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataFusionInstance) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataFusionInstance) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -819,8 +819,8 @@ func (j *jsiiProxy_DataFusionInstance) TerraformLabels() cdktf.StringMap {
 	return returns
 }
 
-func (j *jsiiProxy_DataFusionInstance) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataFusionInstance) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -849,8 +849,8 @@ func (j *jsiiProxy_DataFusionInstance) Timeouts() DataFusionInstanceTimeoutsOutp
 	return returns
 }
 
-func (j *jsiiProxy_DataFusionInstance) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataFusionInstance) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -929,7 +929,6 @@ func (j *jsiiProxy_DataFusionInstance) ZoneInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/data_fusion_instance google_data_fusion_instance} Resource.
 func NewDataFusionInstance(scope constructs.Construct, id *string, config *DataFusionInstanceConfig) DataFusionInstance {
 	_init_.Initialize()
@@ -941,7 +940,7 @@ func NewDataFusionInstance(scope constructs.Construct, id *string, config *DataF
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataFusionInstance.DataFusionInstance",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -954,12 +953,12 @@ func NewDataFusionInstance_Override(d DataFusionInstance, scope constructs.Const
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataFusionInstance.DataFusionInstance",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataFusionInstance)SetConnection(val interface{}) {
+func (j *jsiiProxy_DataFusionInstance) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -970,7 +969,7 @@ func (j *jsiiProxy_DataFusionInstance)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataFusionInstance)SetCount(val interface{}) {
+func (j *jsiiProxy_DataFusionInstance) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -981,7 +980,7 @@ func (j *jsiiProxy_DataFusionInstance)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataFusionInstance)SetDataprocServiceAccount(val *string) {
+func (j *jsiiProxy_DataFusionInstance) SetDataprocServiceAccount(val *string) {
 	if err := j.validateSetDataprocServiceAccountParameters(val); err != nil {
 		panic(err)
 	}
@@ -992,7 +991,7 @@ func (j *jsiiProxy_DataFusionInstance)SetDataprocServiceAccount(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataFusionInstance)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataFusionInstance) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -1000,7 +999,7 @@ func (j *jsiiProxy_DataFusionInstance)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataFusionInstance)SetDescription(val *string) {
+func (j *jsiiProxy_DataFusionInstance) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1011,7 +1010,7 @@ func (j *jsiiProxy_DataFusionInstance)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataFusionInstance)SetDisplayName(val *string) {
+func (j *jsiiProxy_DataFusionInstance) SetDisplayName(val *string) {
 	if err := j.validateSetDisplayNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -1022,7 +1021,7 @@ func (j *jsiiProxy_DataFusionInstance)SetDisplayName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataFusionInstance)SetEnableRbac(val interface{}) {
+func (j *jsiiProxy_DataFusionInstance) SetEnableRbac(val any) {
 	if err := j.validateSetEnableRbacParameters(val); err != nil {
 		panic(err)
 	}
@@ -1033,7 +1032,7 @@ func (j *jsiiProxy_DataFusionInstance)SetEnableRbac(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataFusionInstance)SetEnableStackdriverLogging(val interface{}) {
+func (j *jsiiProxy_DataFusionInstance) SetEnableStackdriverLogging(val any) {
 	if err := j.validateSetEnableStackdriverLoggingParameters(val); err != nil {
 		panic(err)
 	}
@@ -1044,7 +1043,7 @@ func (j *jsiiProxy_DataFusionInstance)SetEnableStackdriverLogging(val interface{
 	)
 }
 
-func (j *jsiiProxy_DataFusionInstance)SetEnableStackdriverMonitoring(val interface{}) {
+func (j *jsiiProxy_DataFusionInstance) SetEnableStackdriverMonitoring(val any) {
 	if err := j.validateSetEnableStackdriverMonitoringParameters(val); err != nil {
 		panic(err)
 	}
@@ -1055,7 +1054,7 @@ func (j *jsiiProxy_DataFusionInstance)SetEnableStackdriverMonitoring(val interfa
 	)
 }
 
-func (j *jsiiProxy_DataFusionInstance)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataFusionInstance) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -1063,7 +1062,7 @@ func (j *jsiiProxy_DataFusionInstance)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_DataFusionInstance)SetId(val *string) {
+func (j *jsiiProxy_DataFusionInstance) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1074,7 +1073,7 @@ func (j *jsiiProxy_DataFusionInstance)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataFusionInstance)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_DataFusionInstance) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1085,7 +1084,7 @@ func (j *jsiiProxy_DataFusionInstance)SetLabels(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataFusionInstance)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataFusionInstance) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -1096,7 +1095,7 @@ func (j *jsiiProxy_DataFusionInstance)SetLifecycle(val *cdktf.TerraformResourceL
 	)
 }
 
-func (j *jsiiProxy_DataFusionInstance)SetName(val *string) {
+func (j *jsiiProxy_DataFusionInstance) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -1107,7 +1106,7 @@ func (j *jsiiProxy_DataFusionInstance)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataFusionInstance)SetOptions(val *map[string]*string) {
+func (j *jsiiProxy_DataFusionInstance) SetOptions(val *map[string]*string) {
 	if err := j.validateSetOptionsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1118,7 +1117,7 @@ func (j *jsiiProxy_DataFusionInstance)SetOptions(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataFusionInstance)SetPrivateInstance(val interface{}) {
+func (j *jsiiProxy_DataFusionInstance) SetPrivateInstance(val any) {
 	if err := j.validateSetPrivateInstanceParameters(val); err != nil {
 		panic(err)
 	}
@@ -1129,7 +1128,7 @@ func (j *jsiiProxy_DataFusionInstance)SetPrivateInstance(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataFusionInstance)SetProject(val *string) {
+func (j *jsiiProxy_DataFusionInstance) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -1140,7 +1139,7 @@ func (j *jsiiProxy_DataFusionInstance)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataFusionInstance)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataFusionInstance) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1148,7 +1147,7 @@ func (j *jsiiProxy_DataFusionInstance)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_DataFusionInstance)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_DataFusionInstance) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -1159,7 +1158,7 @@ func (j *jsiiProxy_DataFusionInstance)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataFusionInstance)SetRegion(val *string) {
+func (j *jsiiProxy_DataFusionInstance) SetRegion(val *string) {
 	if err := j.validateSetRegionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1170,7 +1169,7 @@ func (j *jsiiProxy_DataFusionInstance)SetRegion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataFusionInstance)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_DataFusionInstance) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1181,7 +1180,7 @@ func (j *jsiiProxy_DataFusionInstance)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataFusionInstance)SetType(val *string) {
+func (j *jsiiProxy_DataFusionInstance) SetType(val *string) {
 	if err := j.validateSetTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1192,7 +1191,7 @@ func (j *jsiiProxy_DataFusionInstance)SetType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataFusionInstance)SetVersion(val *string) {
+func (j *jsiiProxy_DataFusionInstance) SetVersion(val *string) {
 	if err := j.validateSetVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1203,7 +1202,7 @@ func (j *jsiiProxy_DataFusionInstance)SetVersion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataFusionInstance)SetZone(val *string) {
+func (j *jsiiProxy_DataFusionInstance) SetZone(val *string) {
 	if err := j.validateSetZoneParameters(val); err != nil {
 		panic(err)
 	}
@@ -1226,7 +1225,7 @@ func DataFusionInstance_GenerateConfigForImport(scope constructs.Construct, impo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataFusionInstance.DataFusionInstance",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -1250,7 +1249,7 @@ func DataFusionInstance_GenerateConfigForImport(scope constructs.Construct, impo
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataFusionInstance_IsConstruct(x interface{}) *bool {
+func DataFusionInstance_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataFusionInstance_IsConstructParameters(x); err != nil {
@@ -1261,7 +1260,7 @@ func DataFusionInstance_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataFusionInstance.DataFusionInstance",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1269,7 +1268,7 @@ func DataFusionInstance_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataFusionInstance_IsTerraformElement(x interface{}) *bool {
+func DataFusionInstance_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataFusionInstance_IsTerraformElementParameters(x); err != nil {
@@ -1280,7 +1279,7 @@ func DataFusionInstance_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataFusionInstance.DataFusionInstance",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1288,7 +1287,7 @@ func DataFusionInstance_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func DataFusionInstance_IsTerraformResource(x interface{}) *bool {
+func DataFusionInstance_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataFusionInstance_IsTerraformResourceParameters(x); err != nil {
@@ -1299,7 +1298,7 @@ func DataFusionInstance_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataFusionInstance.DataFusionInstance",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1324,31 +1323,31 @@ func (d *jsiiProxy_DataFusionInstance) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (d *jsiiProxy_DataFusionInstance) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataFusionInstance) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataFusionInstance) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataFusionInstance) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1364,7 +1363,7 @@ func (d *jsiiProxy_DataFusionInstance) GetBooleanAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1380,7 +1379,7 @@ func (d *jsiiProxy_DataFusionInstance) GetBooleanMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1396,7 +1395,7 @@ func (d *jsiiProxy_DataFusionInstance) GetListAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1412,7 +1411,7 @@ func (d *jsiiProxy_DataFusionInstance) GetNumberAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1428,7 +1427,7 @@ func (d *jsiiProxy_DataFusionInstance) GetNumberListAttribute(terraformAttribute
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1444,7 +1443,7 @@ func (d *jsiiProxy_DataFusionInstance) GetNumberMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1460,7 +1459,7 @@ func (d *jsiiProxy_DataFusionInstance) GetStringAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1476,15 +1475,15 @@ func (d *jsiiProxy_DataFusionInstance) GetStringMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DataFusionInstance) HasResourceMove() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataFusionInstance) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1503,7 +1502,7 @@ func (d *jsiiProxy_DataFusionInstance) ImportFrom(id *string, provider cdktf.Ter
 	_jsii_.InvokeVoid(
 		d,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1516,7 +1515,7 @@ func (d *jsiiProxy_DataFusionInstance) InterpolationForAttribute(terraformAttrib
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1530,18 +1529,18 @@ func (d *jsiiProxy_DataFusionInstance) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (d *jsiiProxy_DataFusionInstance) MoveTo(moveTarget *string, index interface{}) {
+func (d *jsiiProxy_DataFusionInstance) MoveTo(moveTarget *string, index any) {
 	if err := d.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1552,7 +1551,7 @@ func (d *jsiiProxy_DataFusionInstance) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1563,18 +1562,18 @@ func (d *jsiiProxy_DataFusionInstance) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (d *jsiiProxy_DataFusionInstance) PutAccelerators(value interface{}) {
+func (d *jsiiProxy_DataFusionInstance) PutAccelerators(value any) {
 	if err := d.validatePutAcceleratorsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putAccelerators",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1585,7 +1584,7 @@ func (d *jsiiProxy_DataFusionInstance) PutCryptoKeyConfig(value *DataFusionInsta
 	_jsii_.InvokeVoid(
 		d,
 		"putCryptoKeyConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1596,7 +1595,7 @@ func (d *jsiiProxy_DataFusionInstance) PutEventPublishConfig(value *DataFusionIn
 	_jsii_.InvokeVoid(
 		d,
 		"putEventPublishConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1607,7 +1606,7 @@ func (d *jsiiProxy_DataFusionInstance) PutNetworkConfig(value *DataFusionInstanc
 	_jsii_.InvokeVoid(
 		d,
 		"putNetworkConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1618,7 +1617,7 @@ func (d *jsiiProxy_DataFusionInstance) PutTimeouts(value *DataFusionInstanceTime
 	_jsii_.InvokeVoid(
 		d,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1790,8 +1789,8 @@ func (d *jsiiProxy_DataFusionInstance) ResetZone() {
 	)
 }
 
-func (d *jsiiProxy_DataFusionInstance) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataFusionInstance) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1803,8 +1802,8 @@ func (d *jsiiProxy_DataFusionInstance) SynthesizeAttributes() *map[string]interf
 	return returns
 }
 
-func (d *jsiiProxy_DataFusionInstance) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataFusionInstance) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1816,8 +1815,8 @@ func (d *jsiiProxy_DataFusionInstance) SynthesizeHclAttributes() *map[string]int
 	return returns
 }
 
-func (d *jsiiProxy_DataFusionInstance) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataFusionInstance) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1829,8 +1828,8 @@ func (d *jsiiProxy_DataFusionInstance) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataFusionInstance) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataFusionInstance) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1855,8 +1854,8 @@ func (d *jsiiProxy_DataFusionInstance) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataFusionInstance) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataFusionInstance) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1867,4 +1866,3 @@ func (d *jsiiProxy_DataFusionInstance) ToTerraform() interface{} {
 
 	return returns
 }
-
