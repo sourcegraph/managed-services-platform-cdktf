@@ -33,6 +33,9 @@ type GoogleStorageTransferJobTransferSpecAwsS3DataSourceOutputReference interfac
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	CredentialsSecret() *string
+	SetCredentialsSecret(val *string)
+	CredentialsSecretInput() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() *GoogleStorageTransferJobTransferSpecAwsS3DataSource
@@ -81,6 +84,7 @@ type GoogleStorageTransferJobTransferSpecAwsS3DataSourceOutputReference interfac
 	PutAwsAccessKey(value *GoogleStorageTransferJobTransferSpecAwsS3DataSourceAwsAccessKey)
 	ResetAwsAccessKey()
 	ResetCloudfrontDomain()
+	ResetCredentialsSecret()
 	ResetManagedPrivateNetwork()
 	ResetPath()
 	ResetRoleArn()
@@ -184,6 +188,26 @@ func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecAwsS3DataSourceOutputRefe
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecAwsS3DataSourceOutputReference) CredentialsSecret() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"credentialsSecret",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecAwsS3DataSourceOutputReference) CredentialsSecretInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"credentialsSecretInput",
 		&returns,
 	)
 	return returns
@@ -357,6 +381,17 @@ func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecAwsS3DataSourceOutputRefe
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecAwsS3DataSourceOutputReference)SetCredentialsSecret(val *string) {
+	if err := j.validateSetCredentialsSecretParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"credentialsSecret",
 		val,
 	)
 }
@@ -636,6 +671,14 @@ func (g *jsiiProxy_GoogleStorageTransferJobTransferSpecAwsS3DataSourceOutputRefe
 	_jsii_.InvokeVoid(
 		g,
 		"resetCloudfrontDomain",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleStorageTransferJobTransferSpecAwsS3DataSourceOutputReference) ResetCredentialsSecret() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetCredentialsSecret",
 		nil, // no parameters
 	)
 }

@@ -64,6 +64,10 @@ func (j *jsiiProxy_CloudRunV2ServiceScalingOutputReference) validateSetManualIns
 	return nil
 }
 
+func (j *jsiiProxy_CloudRunV2ServiceScalingOutputReference) validateSetMaxInstanceCountParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudRunV2ServiceScalingOutputReference) validateSetMinInstanceCountParameters(val *float64) error {
 	return nil
 }

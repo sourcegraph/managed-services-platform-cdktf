@@ -43,11 +43,15 @@ type CloudRunV2WorkerPoolTemplateContainersOutputReference interface {
 	ImageInput() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	LivenessProbe() CloudRunV2WorkerPoolTemplateContainersLivenessProbeOutputReference
+	LivenessProbeInput() *CloudRunV2WorkerPoolTemplateContainersLivenessProbe
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
 	Resources() CloudRunV2WorkerPoolTemplateContainersResourcesOutputReference
 	ResourcesInput() *CloudRunV2WorkerPoolTemplateContainersResources
+	StartupProbe() CloudRunV2WorkerPoolTemplateContainersStartupProbeOutputReference
+	StartupProbeInput() *CloudRunV2WorkerPoolTemplateContainersStartupProbe
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -86,14 +90,18 @@ type CloudRunV2WorkerPoolTemplateContainersOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutEnv(value interface{})
+	PutLivenessProbe(value *CloudRunV2WorkerPoolTemplateContainersLivenessProbe)
 	PutResources(value *CloudRunV2WorkerPoolTemplateContainersResources)
+	PutStartupProbe(value *CloudRunV2WorkerPoolTemplateContainersStartupProbe)
 	PutVolumeMounts(value interface{})
 	ResetArgs()
 	ResetCommand()
 	ResetDependsOn()
 	ResetEnv()
+	ResetLivenessProbe()
 	ResetName()
 	ResetResources()
+	ResetStartupProbe()
 	ResetVolumeMounts()
 	ResetWorkingDir()
 	// Produce the Token's value at resolution time.
@@ -261,6 +269,26 @@ func (j *jsiiProxy_CloudRunV2WorkerPoolTemplateContainersOutputReference) Intern
 	return returns
 }
 
+func (j *jsiiProxy_CloudRunV2WorkerPoolTemplateContainersOutputReference) LivenessProbe() CloudRunV2WorkerPoolTemplateContainersLivenessProbeOutputReference {
+	var returns CloudRunV2WorkerPoolTemplateContainersLivenessProbeOutputReference
+	_jsii_.Get(
+		j,
+		"livenessProbe",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudRunV2WorkerPoolTemplateContainersOutputReference) LivenessProbeInput() *CloudRunV2WorkerPoolTemplateContainersLivenessProbe {
+	var returns *CloudRunV2WorkerPoolTemplateContainersLivenessProbe
+	_jsii_.Get(
+		j,
+		"livenessProbeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CloudRunV2WorkerPoolTemplateContainersOutputReference) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -296,6 +324,26 @@ func (j *jsiiProxy_CloudRunV2WorkerPoolTemplateContainersOutputReference) Resour
 	_jsii_.Get(
 		j,
 		"resourcesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudRunV2WorkerPoolTemplateContainersOutputReference) StartupProbe() CloudRunV2WorkerPoolTemplateContainersStartupProbeOutputReference {
+	var returns CloudRunV2WorkerPoolTemplateContainersStartupProbeOutputReference
+	_jsii_.Get(
+		j,
+		"startupProbe",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudRunV2WorkerPoolTemplateContainersOutputReference) StartupProbeInput() *CloudRunV2WorkerPoolTemplateContainersStartupProbe {
+	var returns *CloudRunV2WorkerPoolTemplateContainersStartupProbe
+	_jsii_.Get(
+		j,
+		"startupProbeInput",
 		&returns,
 	)
 	return returns
@@ -707,6 +755,17 @@ func (c *jsiiProxy_CloudRunV2WorkerPoolTemplateContainersOutputReference) PutEnv
 	)
 }
 
+func (c *jsiiProxy_CloudRunV2WorkerPoolTemplateContainersOutputReference) PutLivenessProbe(value *CloudRunV2WorkerPoolTemplateContainersLivenessProbe) {
+	if err := c.validatePutLivenessProbeParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putLivenessProbe",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_CloudRunV2WorkerPoolTemplateContainersOutputReference) PutResources(value *CloudRunV2WorkerPoolTemplateContainersResources) {
 	if err := c.validatePutResourcesParameters(value); err != nil {
 		panic(err)
@@ -714,6 +773,17 @@ func (c *jsiiProxy_CloudRunV2WorkerPoolTemplateContainersOutputReference) PutRes
 	_jsii_.InvokeVoid(
 		c,
 		"putResources",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_CloudRunV2WorkerPoolTemplateContainersOutputReference) PutStartupProbe(value *CloudRunV2WorkerPoolTemplateContainersStartupProbe) {
+	if err := c.validatePutStartupProbeParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putStartupProbe",
 		[]interface{}{value},
 	)
 }
@@ -761,6 +831,14 @@ func (c *jsiiProxy_CloudRunV2WorkerPoolTemplateContainersOutputReference) ResetE
 	)
 }
 
+func (c *jsiiProxy_CloudRunV2WorkerPoolTemplateContainersOutputReference) ResetLivenessProbe() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetLivenessProbe",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_CloudRunV2WorkerPoolTemplateContainersOutputReference) ResetName() {
 	_jsii_.InvokeVoid(
 		c,
@@ -773,6 +851,14 @@ func (c *jsiiProxy_CloudRunV2WorkerPoolTemplateContainersOutputReference) ResetR
 	_jsii_.InvokeVoid(
 		c,
 		"resetResources",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudRunV2WorkerPoolTemplateContainersOutputReference) ResetStartupProbe() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetStartupProbe",
 		nil, // no parameters
 	)
 }

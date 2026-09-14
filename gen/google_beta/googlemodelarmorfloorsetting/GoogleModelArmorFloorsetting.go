@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googlemodelarmorfloorsetting/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_model_armor_floorsetting google_model_armor_floorsetting}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_model_armor_floorsetting google_model_armor_floorsetting}.
 type GoogleModelArmorFloorsetting interface {
 	cdktf.TerraformResource
 	AiPlatformFloorSetting() GoogleModelArmorFloorsettingAiPlatformFloorSettingOutputReference
@@ -46,6 +46,8 @@ type GoogleModelArmorFloorsetting interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	GoogleMcpServerFloorSetting() GoogleModelArmorFloorsettingGoogleMcpServerFloorSettingOutputReference
+	GoogleMcpServerFloorSettingInput() *GoogleModelArmorFloorsettingGoogleMcpServerFloorSetting
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -130,10 +132,12 @@ type GoogleModelArmorFloorsetting interface {
 	PutAiPlatformFloorSetting(value *GoogleModelArmorFloorsettingAiPlatformFloorSetting)
 	PutFilterConfig(value *GoogleModelArmorFloorsettingFilterConfig)
 	PutFloorSettingMetadata(value *GoogleModelArmorFloorsettingFloorSettingMetadata)
+	PutGoogleMcpServerFloorSetting(value *GoogleModelArmorFloorsettingGoogleMcpServerFloorSetting)
 	PutTimeouts(value *GoogleModelArmorFloorsettingTimeouts)
 	ResetAiPlatformFloorSetting()
 	ResetEnableFloorSettingEnforcement()
 	ResetFloorSettingMetadata()
+	ResetGoogleMcpServerFloorSetting()
 	ResetId()
 	ResetIntegratedServices()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -323,6 +327,26 @@ func (j *jsiiProxy_GoogleModelArmorFloorsetting) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleModelArmorFloorsetting) GoogleMcpServerFloorSetting() GoogleModelArmorFloorsettingGoogleMcpServerFloorSettingOutputReference {
+	var returns GoogleModelArmorFloorsettingGoogleMcpServerFloorSettingOutputReference
+	_jsii_.Get(
+		j,
+		"googleMcpServerFloorSetting",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleModelArmorFloorsetting) GoogleMcpServerFloorSettingInput() *GoogleModelArmorFloorsettingGoogleMcpServerFloorSetting {
+	var returns *GoogleModelArmorFloorsettingGoogleMcpServerFloorSetting
+	_jsii_.Get(
+		j,
+		"googleMcpServerFloorSettingInput",
 		&returns,
 	)
 	return returns
@@ -529,7 +553,7 @@ func (j *jsiiProxy_GoogleModelArmorFloorsetting) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_model_armor_floorsetting google_model_armor_floorsetting} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_model_armor_floorsetting google_model_armor_floorsetting} Resource.
 func NewGoogleModelArmorFloorsetting(scope constructs.Construct, id *string, config *GoogleModelArmorFloorsettingConfig) GoogleModelArmorFloorsetting {
 	_init_.Initialize()
 
@@ -547,7 +571,7 @@ func NewGoogleModelArmorFloorsetting(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_model_armor_floorsetting google_model_armor_floorsetting} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_model_armor_floorsetting google_model_armor_floorsetting} Resource.
 func NewGoogleModelArmorFloorsetting_Override(g GoogleModelArmorFloorsetting, scope constructs.Construct, id *string, config *GoogleModelArmorFloorsettingConfig) {
 	_init_.Initialize()
 
@@ -1067,6 +1091,17 @@ func (g *jsiiProxy_GoogleModelArmorFloorsetting) PutFloorSettingMetadata(value *
 	)
 }
 
+func (g *jsiiProxy_GoogleModelArmorFloorsetting) PutGoogleMcpServerFloorSetting(value *GoogleModelArmorFloorsettingGoogleMcpServerFloorSetting) {
+	if err := g.validatePutGoogleMcpServerFloorSettingParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putGoogleMcpServerFloorSetting",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleModelArmorFloorsetting) PutTimeouts(value *GoogleModelArmorFloorsettingTimeouts) {
 	if err := g.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1098,6 +1133,14 @@ func (g *jsiiProxy_GoogleModelArmorFloorsetting) ResetFloorSettingMetadata() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetFloorSettingMetadata",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleModelArmorFloorsetting) ResetGoogleMcpServerFloorSetting() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetGoogleMcpServerFloorSetting",
 		nil, // no parameters
 	)
 }

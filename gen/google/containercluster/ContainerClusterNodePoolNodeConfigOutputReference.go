@@ -115,6 +115,8 @@ type ContainerClusterNodePoolNodeConfigOutputReference interface {
 	ResourceManagerTags() *map[string]*string
 	SetResourceManagerTags(val *map[string]*string)
 	ResourceManagerTagsInput() *map[string]*string
+	SandboxConfig() ContainerClusterNodePoolNodeConfigSandboxConfigOutputReference
+	SandboxConfigInput() *ContainerClusterNodePoolNodeConfigSandboxConfig
 	SecondaryBootDisks() ContainerClusterNodePoolNodeConfigSecondaryBootDisksList
 	SecondaryBootDisksInput() interface{}
 	ServiceAccount() *string
@@ -185,6 +187,7 @@ type ContainerClusterNodePoolNodeConfigOutputReference interface {
 	PutLinuxNodeConfig(value *ContainerClusterNodePoolNodeConfigLinuxNodeConfig)
 	PutLocalNvmeSsdBlockConfig(value *ContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfig)
 	PutReservationAffinity(value *ContainerClusterNodePoolNodeConfigReservationAffinity)
+	PutSandboxConfig(value *ContainerClusterNodePoolNodeConfigSandboxConfig)
 	PutSecondaryBootDisks(value interface{})
 	PutShieldedInstanceConfig(value *ContainerClusterNodePoolNodeConfigShieldedInstanceConfig)
 	PutSoleTenantConfig(value *ContainerClusterNodePoolNodeConfigSoleTenantConfig)
@@ -224,6 +227,7 @@ type ContainerClusterNodePoolNodeConfigOutputReference interface {
 	ResetReservationAffinity()
 	ResetResourceLabels()
 	ResetResourceManagerTags()
+	ResetSandboxConfig()
 	ResetSecondaryBootDisks()
 	ResetServiceAccount()
 	ResetShieldedInstanceConfig()
@@ -964,6 +968,26 @@ func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) ResourceMa
 	_jsii_.Get(
 		j,
 		"resourceManagerTagsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) SandboxConfig() ContainerClusterNodePoolNodeConfigSandboxConfigOutputReference {
+	var returns ContainerClusterNodePoolNodeConfigSandboxConfigOutputReference
+	_jsii_.Get(
+		j,
+		"sandboxConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) SandboxConfigInput() *ContainerClusterNodePoolNodeConfigSandboxConfig {
+	var returns *ContainerClusterNodePoolNodeConfigSandboxConfig
+	_jsii_.Get(
+		j,
+		"sandboxConfigInput",
 		&returns,
 	)
 	return returns
@@ -1865,6 +1889,17 @@ func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) PutReserva
 	)
 }
 
+func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) PutSandboxConfig(value *ContainerClusterNodePoolNodeConfigSandboxConfig) {
+	if err := c.validatePutSandboxConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putSandboxConfig",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) PutSecondaryBootDisks(value interface{}) {
 	if err := c.validatePutSecondaryBootDisksParameters(value); err != nil {
 		panic(err)
@@ -2191,6 +2226,14 @@ func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) ResetResou
 	_jsii_.InvokeVoid(
 		c,
 		"resetResourceManagerTags",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) ResetSandboxConfig() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetSandboxConfig",
 		nil, // no parameters
 	)
 }

@@ -38,6 +38,7 @@ type DataGoogleIamWorkloadIdentityPoolInlineTrustConfigAdditionalTrustBundlesOut
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
 	TrustAnchors() DataGoogleIamWorkloadIdentityPoolInlineTrustConfigAdditionalTrustBundlesTrustAnchorsList
+	TrustDefaultSharedCa() cdktf.IResolvable
 	TrustDomain() *string
 	// Experimental.
 	ComputeFqn() *string
@@ -153,6 +154,16 @@ func (j *jsiiProxy_DataGoogleIamWorkloadIdentityPoolInlineTrustConfigAdditionalT
 	_jsii_.Get(
 		j,
 		"trustAnchors",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleIamWorkloadIdentityPoolInlineTrustConfigAdditionalTrustBundlesOutputReference) TrustDefaultSharedCa() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"trustDefaultSharedCa",
 		&returns,
 	)
 	return returns

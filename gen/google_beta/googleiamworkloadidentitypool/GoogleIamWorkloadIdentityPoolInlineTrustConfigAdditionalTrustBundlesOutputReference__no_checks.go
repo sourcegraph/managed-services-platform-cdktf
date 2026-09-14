@@ -72,6 +72,10 @@ func (j *jsiiProxy_GoogleIamWorkloadIdentityPoolInlineTrustConfigAdditionalTrust
 	return nil
 }
 
+func (j *jsiiProxy_GoogleIamWorkloadIdentityPoolInlineTrustConfigAdditionalTrustBundlesOutputReference) validateSetTrustDefaultSharedCaParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleIamWorkloadIdentityPoolInlineTrustConfigAdditionalTrustBundlesOutputReference) validateSetTrustDomainParameters(val *string) error {
 	return nil
 }

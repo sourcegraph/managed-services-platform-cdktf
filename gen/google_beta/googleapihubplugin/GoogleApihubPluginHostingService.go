@@ -7,7 +7,7 @@ type GoogleApihubPluginHostingService struct {
 	// This information is only required for
 	// user defined plugins.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_apihub_plugin#service_uri GoogleApihubPlugin#service_uri}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_apihub_plugin#service_uri GoogleApihubPlugin#service_uri}
 	ServiceUri *string `field:"optional" json:"serviceUri" yaml:"serviceUri"`
 }
 

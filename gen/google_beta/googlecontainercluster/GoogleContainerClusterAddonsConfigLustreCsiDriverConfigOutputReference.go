@@ -25,6 +25,9 @@ type GoogleContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference inte
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DisableMultiNic() interface{}
+	SetDisableMultiNic(val interface{})
+	DisableMultiNicInput() interface{}
 	Enabled() interface{}
 	SetEnabled(val interface{})
 	EnabledInput() interface{}
@@ -67,6 +70,7 @@ type GoogleContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference inte
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetDisableMultiNic()
 	ResetEnableLegacyLustrePort()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -108,6 +112,26 @@ func (j *jsiiProxy_GoogleContainerClusterAddonsConfigLustreCsiDriverConfigOutput
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference) DisableMultiNic() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableMultiNic",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference) DisableMultiNicInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableMultiNicInput",
 		&returns,
 	)
 	return returns
@@ -239,6 +263,17 @@ func (j *jsiiProxy_GoogleContainerClusterAddonsConfigLustreCsiDriverConfigOutput
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference)SetDisableMultiNic(val interface{}) {
+	if err := j.validateSetDisableMultiNicParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"disableMultiNic",
 		val,
 	)
 }
@@ -482,6 +517,14 @@ func (g *jsiiProxy_GoogleContainerClusterAddonsConfigLustreCsiDriverConfigOutput
 	)
 
 	return returns
+}
+
+func (g *jsiiProxy_GoogleContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference) ResetDisableMultiNic() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDisableMultiNic",
+		nil, // no parameters
+	)
 }
 
 func (g *jsiiProxy_GoogleContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference) ResetEnableLegacyLustrePort() {

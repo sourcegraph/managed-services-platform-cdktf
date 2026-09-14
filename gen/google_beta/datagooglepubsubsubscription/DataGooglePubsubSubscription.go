@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/datagooglepubsubsubscription/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/data-sources/google_pubsub_subscription google_pubsub_subscription}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/data-sources/google_pubsub_subscription google_pubsub_subscription}.
 type DataGooglePubsubSubscription interface {
 	cdktf.TerraformDataSource
 	AckDeadlineSeconds() *float64
@@ -68,6 +68,7 @@ type DataGooglePubsubSubscription interface {
 	RawOverrides() interface{}
 	RetainAckedMessages() cdktf.IResolvable
 	RetryPolicy() DataGooglePubsubSubscriptionRetryPolicyList
+	Tags() cdktf.StringMap
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
@@ -445,6 +446,16 @@ func (j *jsiiProxy_DataGooglePubsubSubscription) RetryPolicy() DataGooglePubsubS
 	return returns
 }
 
+func (j *jsiiProxy_DataGooglePubsubSubscription) Tags() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"tags",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGooglePubsubSubscription) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -496,7 +507,7 @@ func (j *jsiiProxy_DataGooglePubsubSubscription) Topic() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/data-sources/google_pubsub_subscription google_pubsub_subscription} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/data-sources/google_pubsub_subscription google_pubsub_subscription} Data Source.
 func NewDataGooglePubsubSubscription(scope constructs.Construct, id *string, config *DataGooglePubsubSubscriptionConfig) DataGooglePubsubSubscription {
 	_init_.Initialize()
 
@@ -514,7 +525,7 @@ func NewDataGooglePubsubSubscription(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/data-sources/google_pubsub_subscription google_pubsub_subscription} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/data-sources/google_pubsub_subscription google_pubsub_subscription} Data Source.
 func NewDataGooglePubsubSubscription_Override(d DataGooglePubsubSubscription, scope constructs.Construct, id *string, config *DataGooglePubsubSubscriptionConfig) {
 	_init_.Initialize()
 

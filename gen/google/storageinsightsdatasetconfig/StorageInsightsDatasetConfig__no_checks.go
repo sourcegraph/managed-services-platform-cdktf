@@ -120,6 +120,10 @@ func validateStorageInsightsDatasetConfig_IsTerraformResourceParameters(x interf
 	return nil
 }
 
+func (j *jsiiProxy_StorageInsightsDatasetConfig) validateSetActivityDataRetentionPeriodDaysParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_StorageInsightsDatasetConfig) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

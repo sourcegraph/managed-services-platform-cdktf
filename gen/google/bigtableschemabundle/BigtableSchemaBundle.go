@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google/bigtableschemabundle/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigtable_schema_bundle google_bigtable_schema_bundle}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigtable_schema_bundle google_bigtable_schema_bundle}.
 type BigtableSchemaBundle interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -28,6 +28,7 @@ type BigtableSchemaBundle interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Etag() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -198,6 +199,16 @@ func (j *jsiiProxy_BigtableSchemaBundle) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigtableSchemaBundle) Etag() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"etag",
 		&returns,
 	)
 	return returns
@@ -484,7 +495,7 @@ func (j *jsiiProxy_BigtableSchemaBundle) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigtable_schema_bundle google_bigtable_schema_bundle} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigtable_schema_bundle google_bigtable_schema_bundle} Resource.
 func NewBigtableSchemaBundle(scope constructs.Construct, id *string, config *BigtableSchemaBundleConfig) BigtableSchemaBundle {
 	_init_.Initialize()
 
@@ -502,7 +513,7 @@ func NewBigtableSchemaBundle(scope constructs.Construct, id *string, config *Big
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigtable_schema_bundle google_bigtable_schema_bundle} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigtable_schema_bundle google_bigtable_schema_bundle} Resource.
 func NewBigtableSchemaBundle_Override(b BigtableSchemaBundle, scope constructs.Construct, id *string, config *BigtableSchemaBundleConfig) {
 	_init_.Initialize()
 

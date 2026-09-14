@@ -51,6 +51,8 @@ type DialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference interfa
 	SecretVersionForUsernamePasswordInput() *string
 	SecretVersionsForRequestHeaders() DialogflowCxWebhookServiceDirectoryGenericWebServiceSecretVersionsForRequestHeadersList
 	SecretVersionsForRequestHeadersInput() interface{}
+	ServiceAccountAuthConfig() DialogflowCxWebhookServiceDirectoryGenericWebServiceServiceAccountAuthConfigOutputReference
+	ServiceAccountAuthConfigInput() *DialogflowCxWebhookServiceDirectoryGenericWebServiceServiceAccountAuthConfig
 	ServiceAgentAuth() *string
 	SetServiceAgentAuth(val *string)
 	ServiceAgentAuthInput() *string
@@ -94,6 +96,7 @@ type DialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference interfa
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutOauthConfig(value *DialogflowCxWebhookServiceDirectoryGenericWebServiceOauthConfig)
 	PutSecretVersionsForRequestHeaders(value interface{})
+	PutServiceAccountAuthConfig(value *DialogflowCxWebhookServiceDirectoryGenericWebServiceServiceAccountAuthConfig)
 	ResetAllowedCaCerts()
 	ResetHttpMethod()
 	ResetOauthConfig()
@@ -102,6 +105,7 @@ type DialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference interfa
 	ResetRequestHeaders()
 	ResetSecretVersionForUsernamePassword()
 	ResetSecretVersionsForRequestHeaders()
+	ResetServiceAccountAuthConfig()
 	ResetServiceAgentAuth()
 	ResetWebhookType()
 	// Produce the Token's value at resolution time.
@@ -324,6 +328,26 @@ func (j *jsiiProxy_DialogflowCxWebhookServiceDirectoryGenericWebServiceOutputRef
 	_jsii_.Get(
 		j,
 		"secretVersionsForRequestHeadersInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference) ServiceAccountAuthConfig() DialogflowCxWebhookServiceDirectoryGenericWebServiceServiceAccountAuthConfigOutputReference {
+	var returns DialogflowCxWebhookServiceDirectoryGenericWebServiceServiceAccountAuthConfigOutputReference
+	_jsii_.Get(
+		j,
+		"serviceAccountAuthConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference) ServiceAccountAuthConfigInput() *DialogflowCxWebhookServiceDirectoryGenericWebServiceServiceAccountAuthConfig {
+	var returns *DialogflowCxWebhookServiceDirectoryGenericWebServiceServiceAccountAuthConfig
+	_jsii_.Get(
+		j,
+		"serviceAccountAuthConfigInput",
 		&returns,
 	)
 	return returns
@@ -799,6 +823,17 @@ func (d *jsiiProxy_DialogflowCxWebhookServiceDirectoryGenericWebServiceOutputRef
 	)
 }
 
+func (d *jsiiProxy_DialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference) PutServiceAccountAuthConfig(value *DialogflowCxWebhookServiceDirectoryGenericWebServiceServiceAccountAuthConfig) {
+	if err := d.validatePutServiceAccountAuthConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putServiceAccountAuthConfig",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference) ResetAllowedCaCerts() {
 	_jsii_.InvokeVoid(
 		d,
@@ -859,6 +894,14 @@ func (d *jsiiProxy_DialogflowCxWebhookServiceDirectoryGenericWebServiceOutputRef
 	_jsii_.InvokeVoid(
 		d,
 		"resetSecretVersionsForRequestHeaders",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference) ResetServiceAccountAuthConfig() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetServiceAccountAuthConfig",
 		nil, // no parameters
 	)
 }

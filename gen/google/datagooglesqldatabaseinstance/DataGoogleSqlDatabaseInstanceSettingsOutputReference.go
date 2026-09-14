@@ -13,6 +13,7 @@ type DataGoogleSqlDatabaseInstanceSettingsOutputReference interface {
 	ActivationPolicy() *string
 	ActiveDirectoryConfig() DataGoogleSqlDatabaseInstanceSettingsActiveDirectoryConfigList
 	AdvancedMachineFeatures() DataGoogleSqlDatabaseInstanceSettingsAdvancedMachineFeaturesList
+	AutoUpgradeEnabled() cdktf.IResolvable
 	AvailabilityType() *string
 	BackupConfiguration() DataGoogleSqlDatabaseInstanceSettingsBackupConfigurationList
 	Collation() *string
@@ -33,6 +34,7 @@ type DataGoogleSqlDatabaseInstanceSettingsOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DataApiAccess() *string
 	DatabaseFlags() DataGoogleSqlDatabaseInstanceSettingsDatabaseFlagsList
 	DataCacheConfig() DataGoogleSqlDatabaseInstanceSettingsDataCacheConfigList
 	DeletionProtectionEnabled() cdktf.IResolvable
@@ -45,6 +47,8 @@ type DataGoogleSqlDatabaseInstanceSettingsOutputReference interface {
 	EffectiveAvailabilityType() *string
 	EnableDataplexIntegration() cdktf.IResolvable
 	EnableGoogleMlIntegration() cdktf.IResolvable
+	EntraidConfig() DataGoogleSqlDatabaseInstanceSettingsEntraidConfigList
+	FinalBackupConfig() DataGoogleSqlDatabaseInstanceSettingsFinalBackupConfigList
 	// Experimental.
 	Fqn() *string
 	InsightsConfig() DataGoogleSqlDatabaseInstanceSettingsInsightsConfigList
@@ -55,6 +59,7 @@ type DataGoogleSqlDatabaseInstanceSettingsOutputReference interface {
 	MaintenanceWindow() DataGoogleSqlDatabaseInstanceSettingsMaintenanceWindowList
 	PasswordValidationPolicy() DataGoogleSqlDatabaseInstanceSettingsPasswordValidationPolicyList
 	PricingPlan() *string
+	ReadPoolAutoScaleConfig() DataGoogleSqlDatabaseInstanceSettingsReadPoolAutoScaleConfigList
 	RetainBackupsOnDelete() cdktf.IResolvable
 	SqlServerAuditConfig() DataGoogleSqlDatabaseInstanceSettingsSqlServerAuditConfigList
 	// Experimental.
@@ -138,6 +143,16 @@ func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceSettingsOutputReference) Advance
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceSettingsOutputReference) AutoUpgradeEnabled() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"autoUpgradeEnabled",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceSettingsOutputReference) AvailabilityType() *string {
 	var returns *string
 	_jsii_.Get(
@@ -213,6 +228,16 @@ func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceSettingsOutputReference) Creatio
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceSettingsOutputReference) DataApiAccess() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dataApiAccess",
 		&returns,
 	)
 	return returns
@@ -338,6 +363,26 @@ func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceSettingsOutputReference) EnableG
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceSettingsOutputReference) EntraidConfig() DataGoogleSqlDatabaseInstanceSettingsEntraidConfigList {
+	var returns DataGoogleSqlDatabaseInstanceSettingsEntraidConfigList
+	_jsii_.Get(
+		j,
+		"entraidConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceSettingsOutputReference) FinalBackupConfig() DataGoogleSqlDatabaseInstanceSettingsFinalBackupConfigList {
+	var returns DataGoogleSqlDatabaseInstanceSettingsFinalBackupConfigList
+	_jsii_.Get(
+		j,
+		"finalBackupConfig",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceSettingsOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -413,6 +458,16 @@ func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceSettingsOutputReference) Pricing
 	_jsii_.Get(
 		j,
 		"pricingPlan",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceSettingsOutputReference) ReadPoolAutoScaleConfig() DataGoogleSqlDatabaseInstanceSettingsReadPoolAutoScaleConfigList {
+	var returns DataGoogleSqlDatabaseInstanceSettingsReadPoolAutoScaleConfigList
+	_jsii_.Get(
+		j,
+		"readPoolAutoScaleConfig",
 		&returns,
 	)
 	return returns

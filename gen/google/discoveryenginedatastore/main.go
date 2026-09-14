@@ -71,6 +71,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAdvancedSiteSearchConfig", GoMethod: "ResetAdvancedSiteSearchConfig"},
+			_jsii_.MemberMethod{JsiiMethod: "resetContentConfig", GoMethod: "ResetContentConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCreateAdvancedSiteSearch", GoMethod: "ResetCreateAdvancedSiteSearch"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDocumentProcessingConfig", GoMethod: "ResetDocumentProcessingConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},

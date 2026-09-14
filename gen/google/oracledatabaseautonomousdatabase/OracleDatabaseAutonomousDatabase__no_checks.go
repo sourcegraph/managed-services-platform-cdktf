@@ -76,6 +76,10 @@ func (o *jsiiProxy_OracleDatabaseAutonomousDatabase) validatePutPropertiesParame
 	return nil
 }
 
+func (o *jsiiProxy_OracleDatabaseAutonomousDatabase) validatePutSourceConfigParameters(value *OracleDatabaseAutonomousDatabaseSourceConfig) error {
+	return nil
+}
+
 func (o *jsiiProxy_OracleDatabaseAutonomousDatabase) validatePutTimeoutsParameters(value *OracleDatabaseAutonomousDatabaseTimeouts) error {
 	return nil
 }

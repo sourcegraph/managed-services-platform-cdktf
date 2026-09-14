@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googlecomputeinterconnect/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_compute_interconnect google_compute_interconnect}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_compute_interconnect google_compute_interconnect}.
 type GoogleComputeInterconnect interface {
 	cdktf.TerraformResource
 	AaiEnabled() interface{}
@@ -93,6 +93,8 @@ type GoogleComputeInterconnect interface {
 	// The tree node.
 	Node() constructs.Node
 	OperationalStatus() *string
+	Params() GoogleComputeInterconnectParamsOutputReference
+	ParamsInput() *GoogleComputeInterconnectParams
 	PeerIpAddress() *string
 	Project() *string
 	SetProject(val *string)
@@ -174,6 +176,7 @@ type GoogleComputeInterconnect interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutApplicationAwareInterconnect(value *GoogleComputeInterconnectApplicationAwareInterconnect)
 	PutMacsec(value *GoogleComputeInterconnectMacsec)
+	PutParams(value *GoogleComputeInterconnectParams)
 	PutTimeouts(value *GoogleComputeInterconnectTimeouts)
 	ResetAaiEnabled()
 	ResetAdminEnabled()
@@ -188,6 +191,7 @@ type GoogleComputeInterconnect interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetParams()
 	ResetProject()
 	ResetRemoteLocation()
 	ResetRequestedFeatures()
@@ -700,6 +704,26 @@ func (j *jsiiProxy_GoogleComputeInterconnect) OperationalStatus() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeInterconnect) Params() GoogleComputeInterconnectParamsOutputReference {
+	var returns GoogleComputeInterconnectParamsOutputReference
+	_jsii_.Get(
+		j,
+		"params",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInterconnect) ParamsInput() *GoogleComputeInterconnectParams {
+	var returns *GoogleComputeInterconnectParams
+	_jsii_.Get(
+		j,
+		"paramsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeInterconnect) PeerIpAddress() *string {
 	var returns *string
 	_jsii_.Get(
@@ -921,7 +945,7 @@ func (j *jsiiProxy_GoogleComputeInterconnect) WireGroups() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_compute_interconnect google_compute_interconnect} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_compute_interconnect google_compute_interconnect} Resource.
 func NewGoogleComputeInterconnect(scope constructs.Construct, id *string, config *GoogleComputeInterconnectConfig) GoogleComputeInterconnect {
 	_init_.Initialize()
 
@@ -939,7 +963,7 @@ func NewGoogleComputeInterconnect(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_compute_interconnect google_compute_interconnect} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_compute_interconnect google_compute_interconnect} Resource.
 func NewGoogleComputeInterconnect_Override(g GoogleComputeInterconnect, scope constructs.Construct, id *string, config *GoogleComputeInterconnectConfig) {
 	_init_.Initialize()
 
@@ -1569,6 +1593,17 @@ func (g *jsiiProxy_GoogleComputeInterconnect) PutMacsec(value *GoogleComputeInte
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeInterconnect) PutParams(value *GoogleComputeInterconnectParams) {
+	if err := g.validatePutParamsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putParams",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeInterconnect) PutTimeouts(value *GoogleComputeInterconnectTimeouts) {
 	if err := g.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1664,6 +1699,14 @@ func (g *jsiiProxy_GoogleComputeInterconnect) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeInterconnect) ResetParams() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetParams",
 		nil, // no parameters
 	)
 }

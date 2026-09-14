@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google/oracledatabaseodbnetwork/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/oracle_database_odb_network google_oracle_database_odb_network}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/oracle_database_odb_network google_oracle_database_odb_network}.
 type OracleDatabaseOdbNetwork interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -42,6 +42,9 @@ type OracleDatabaseOdbNetwork interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	GcpOracleZone() *string
+	SetGcpOracleZone(val *string)
+	GcpOracleZoneInput() *string
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -132,6 +135,7 @@ type OracleDatabaseOdbNetwork interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *OracleDatabaseOdbNetworkTimeouts)
 	ResetDeletionProtection()
+	ResetGcpOracleZone()
 	ResetId()
 	ResetLabels()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -282,6 +286,26 @@ func (j *jsiiProxy_OracleDatabaseOdbNetwork) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OracleDatabaseOdbNetwork) GcpOracleZone() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"gcpOracleZone",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OracleDatabaseOdbNetwork) GcpOracleZoneInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"gcpOracleZoneInput",
 		&returns,
 	)
 	return returns
@@ -538,7 +562,7 @@ func (j *jsiiProxy_OracleDatabaseOdbNetwork) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/oracle_database_odb_network google_oracle_database_odb_network} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/oracle_database_odb_network google_oracle_database_odb_network} Resource.
 func NewOracleDatabaseOdbNetwork(scope constructs.Construct, id *string, config *OracleDatabaseOdbNetworkConfig) OracleDatabaseOdbNetwork {
 	_init_.Initialize()
 
@@ -556,7 +580,7 @@ func NewOracleDatabaseOdbNetwork(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/oracle_database_odb_network google_oracle_database_odb_network} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/oracle_database_odb_network google_oracle_database_odb_network} Resource.
 func NewOracleDatabaseOdbNetwork_Override(o OracleDatabaseOdbNetwork, scope constructs.Construct, id *string, config *OracleDatabaseOdbNetworkConfig) {
 	_init_.Initialize()
 
@@ -612,6 +636,17 @@ func (j *jsiiProxy_OracleDatabaseOdbNetwork)SetForEach(val cdktf.ITerraformItera
 	_jsii_.Set(
 		j,
 		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OracleDatabaseOdbNetwork)SetGcpOracleZone(val *string) {
+	if err := j.validateSetGcpOracleZoneParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"gcpOracleZone",
 		val,
 	)
 }
@@ -1080,6 +1115,14 @@ func (o *jsiiProxy_OracleDatabaseOdbNetwork) ResetDeletionProtection() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetDeletionProtection",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OracleDatabaseOdbNetwork) ResetGcpOracleZone() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetGcpOracleZone",
 		nil, // no parameters
 	)
 }

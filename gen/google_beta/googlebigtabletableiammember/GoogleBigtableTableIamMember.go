@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googlebigtabletableiammember/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_bigtable_table_iam_member google_bigtable_table_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_bigtable_table_iam_member google_bigtable_table_iam_member}.
 type GoogleBigtableTableIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -42,9 +42,6 @@ type GoogleBigtableTableIamMember interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
-	Instance() *string
-	SetInstance(val *string)
-	InstanceInput() *string
 	InstanceName() *string
 	SetInstanceName(val *string)
 	InstanceNameInput() *string
@@ -128,8 +125,6 @@ type GoogleBigtableTableIamMember interface {
 	PutCondition(value *GoogleBigtableTableIamMemberCondition)
 	ResetCondition()
 	ResetId()
-	ResetInstance()
-	ResetInstanceName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -277,26 +272,6 @@ func (j *jsiiProxy_GoogleBigtableTableIamMember) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_GoogleBigtableTableIamMember) Instance() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"instance",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_GoogleBigtableTableIamMember) InstanceInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"instanceInput",
 		&returns,
 	)
 	return returns
@@ -483,7 +458,7 @@ func (j *jsiiProxy_GoogleBigtableTableIamMember) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_bigtable_table_iam_member google_bigtable_table_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_bigtable_table_iam_member google_bigtable_table_iam_member} Resource.
 func NewGoogleBigtableTableIamMember(scope constructs.Construct, id *string, config *GoogleBigtableTableIamMemberConfig) GoogleBigtableTableIamMember {
 	_init_.Initialize()
 
@@ -501,7 +476,7 @@ func NewGoogleBigtableTableIamMember(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_bigtable_table_iam_member google_bigtable_table_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_bigtable_table_iam_member google_bigtable_table_iam_member} Resource.
 func NewGoogleBigtableTableIamMember_Override(g GoogleBigtableTableIamMember, scope constructs.Construct, id *string, config *GoogleBigtableTableIamMemberConfig) {
 	_init_.Initialize()
 
@@ -557,17 +532,6 @@ func (j *jsiiProxy_GoogleBigtableTableIamMember)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
-		val,
-	)
-}
-
-func (j *jsiiProxy_GoogleBigtableTableIamMember)SetInstance(val *string) {
-	if err := j.validateSetInstanceParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"instance",
 		val,
 	)
 }
@@ -1033,22 +997,6 @@ func (g *jsiiProxy_GoogleBigtableTableIamMember) ResetId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetId",
-		nil, // no parameters
-	)
-}
-
-func (g *jsiiProxy_GoogleBigtableTableIamMember) ResetInstance() {
-	_jsii_.InvokeVoid(
-		g,
-		"resetInstance",
-		nil, // no parameters
-	)
-}
-
-func (g *jsiiProxy_GoogleBigtableTableIamMember) ResetInstanceName() {
-	_jsii_.InvokeVoid(
-		g,
-		"resetInstanceName",
 		nil, // no parameters
 	)
 }

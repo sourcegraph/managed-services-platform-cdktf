@@ -52,6 +52,14 @@ func (c *jsiiProxy_ContainerClusterIpAllocationPolicyOutputReference) validatePu
 	return nil
 }
 
+func (c *jsiiProxy_ContainerClusterIpAllocationPolicyOutputReference) validatePutAutoIpamConfigParameters(value *ContainerClusterIpAllocationPolicyAutoIpamConfig) error {
+	return nil
+}
+
+func (c *jsiiProxy_ContainerClusterIpAllocationPolicyOutputReference) validatePutNetworkTierConfigParameters(value *ContainerClusterIpAllocationPolicyNetworkTierConfig) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerClusterIpAllocationPolicyOutputReference) validatePutPodCidrOverprovisionConfigParameters(value *ContainerClusterIpAllocationPolicyPodCidrOverprovisionConfig) error {
 	return nil
 }

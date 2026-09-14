@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googledeveloperconnectinsightsconfig/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_developer_connect_insights_config google_developer_connect_insights_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_developer_connect_insights_config google_developer_connect_insights_config}.
 type GoogleDeveloperConnectInsightsConfig interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -83,6 +83,8 @@ type GoogleDeveloperConnectInsightsConfig interface {
 	Reconciling() cdktf.IResolvable
 	RuntimeConfigs() GoogleDeveloperConnectInsightsConfigRuntimeConfigsList
 	State() *string
+	TargetProjects() GoogleDeveloperConnectInsightsConfigTargetProjectsOutputReference
+	TargetProjectsInput() *GoogleDeveloperConnectInsightsConfigTargetProjects
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
@@ -137,8 +139,10 @@ type GoogleDeveloperConnectInsightsConfig interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutArtifactConfigs(value interface{})
+	PutTargetProjects(value *GoogleDeveloperConnectInsightsConfigTargetProjects)
 	PutTimeouts(value *GoogleDeveloperConnectInsightsConfigTimeouts)
 	ResetAnnotations()
+	ResetAppHubApplication()
 	ResetArtifactConfigs()
 	ResetId()
 	ResetLabels()
@@ -146,6 +150,7 @@ type GoogleDeveloperConnectInsightsConfig interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
+	ResetTargetProjects()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -535,6 +540,26 @@ func (j *jsiiProxy_GoogleDeveloperConnectInsightsConfig) State() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleDeveloperConnectInsightsConfig) TargetProjects() GoogleDeveloperConnectInsightsConfigTargetProjectsOutputReference {
+	var returns GoogleDeveloperConnectInsightsConfigTargetProjectsOutputReference
+	_jsii_.Get(
+		j,
+		"targetProjects",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDeveloperConnectInsightsConfig) TargetProjectsInput() *GoogleDeveloperConnectInsightsConfigTargetProjects {
+	var returns *GoogleDeveloperConnectInsightsConfigTargetProjects
+	_jsii_.Get(
+		j,
+		"targetProjectsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleDeveloperConnectInsightsConfig) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -606,7 +631,7 @@ func (j *jsiiProxy_GoogleDeveloperConnectInsightsConfig) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_developer_connect_insights_config google_developer_connect_insights_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_developer_connect_insights_config google_developer_connect_insights_config} Resource.
 func NewGoogleDeveloperConnectInsightsConfig(scope constructs.Construct, id *string, config *GoogleDeveloperConnectInsightsConfigConfig) GoogleDeveloperConnectInsightsConfig {
 	_init_.Initialize()
 
@@ -624,7 +649,7 @@ func NewGoogleDeveloperConnectInsightsConfig(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_developer_connect_insights_config google_developer_connect_insights_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_developer_connect_insights_config google_developer_connect_insights_config} Resource.
 func NewGoogleDeveloperConnectInsightsConfig_Override(g GoogleDeveloperConnectInsightsConfig, scope constructs.Construct, id *string, config *GoogleDeveloperConnectInsightsConfigConfig) {
 	_init_.Initialize()
 
@@ -1144,6 +1169,17 @@ func (g *jsiiProxy_GoogleDeveloperConnectInsightsConfig) PutArtifactConfigs(valu
 	)
 }
 
+func (g *jsiiProxy_GoogleDeveloperConnectInsightsConfig) PutTargetProjects(value *GoogleDeveloperConnectInsightsConfigTargetProjects) {
+	if err := g.validatePutTargetProjectsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putTargetProjects",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleDeveloperConnectInsightsConfig) PutTimeouts(value *GoogleDeveloperConnectInsightsConfigTimeouts) {
 	if err := g.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1159,6 +1195,14 @@ func (g *jsiiProxy_GoogleDeveloperConnectInsightsConfig) ResetAnnotations() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetAnnotations",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDeveloperConnectInsightsConfig) ResetAppHubApplication() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAppHubApplication",
 		nil, // no parameters
 	)
 }
@@ -1199,6 +1243,14 @@ func (g *jsiiProxy_GoogleDeveloperConnectInsightsConfig) ResetProject() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDeveloperConnectInsightsConfig) ResetTargetProjects() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetTargetProjects",
 		nil, // no parameters
 	)
 }

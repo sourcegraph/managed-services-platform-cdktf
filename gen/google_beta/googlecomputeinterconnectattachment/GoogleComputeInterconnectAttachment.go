@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googlecomputeinterconnectattachment/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_compute_interconnect_attachment google_compute_interconnect_attachment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_compute_interconnect_attachment google_compute_interconnect_attachment}.
 type GoogleComputeInterconnectAttachment interface {
 	cdktf.TerraformResource
 	AdminEnabled() interface{}
@@ -83,6 +83,8 @@ type GoogleComputeInterconnectAttachment interface {
 	IpsecInternalAddresses() *[]*string
 	SetIpsecInternalAddresses(val *[]*string)
 	IpsecInternalAddressesInput() *[]*string
+	L2Forwarding() GoogleComputeInterconnectAttachmentL2ForwardingOutputReference
+	L2ForwardingInput() *GoogleComputeInterconnectAttachmentL2Forwarding
 	LabelFingerprint() *string
 	Labels() *map[string]*string
 	SetLabels(val *map[string]*string)
@@ -100,6 +102,8 @@ type GoogleComputeInterconnectAttachment interface {
 	// The tree node.
 	Node() constructs.Node
 	PairingKey() *string
+	Params() GoogleComputeInterconnectAttachmentParamsOutputReference
+	ParamsInput() *GoogleComputeInterconnectAttachmentParams
 	PartnerAsn() *string
 	PrivateInterconnectInfo() GoogleComputeInterconnectAttachmentPrivateInterconnectInfoList
 	Project() *string
@@ -187,6 +191,8 @@ type GoogleComputeInterconnectAttachment interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutL2Forwarding(value *GoogleComputeInterconnectAttachmentL2Forwarding)
+	PutParams(value *GoogleComputeInterconnectAttachmentParams)
 	PutTimeouts(value *GoogleComputeInterconnectAttachmentTimeouts)
 	ResetAdminEnabled()
 	ResetBandwidth()
@@ -201,13 +207,16 @@ type GoogleComputeInterconnectAttachment interface {
 	ResetId()
 	ResetInterconnect()
 	ResetIpsecInternalAddresses()
+	ResetL2Forwarding()
 	ResetLabels()
 	ResetMtu()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetParams()
 	ResetProject()
 	ResetRegion()
+	ResetRouter()
 	ResetStackType()
 	ResetSubnetLength()
 	ResetTimeouts()
@@ -651,6 +660,26 @@ func (j *jsiiProxy_GoogleComputeInterconnectAttachment) IpsecInternalAddressesIn
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeInterconnectAttachment) L2Forwarding() GoogleComputeInterconnectAttachmentL2ForwardingOutputReference {
+	var returns GoogleComputeInterconnectAttachmentL2ForwardingOutputReference
+	_jsii_.Get(
+		j,
+		"l2Forwarding",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInterconnectAttachment) L2ForwardingInput() *GoogleComputeInterconnectAttachmentL2Forwarding {
+	var returns *GoogleComputeInterconnectAttachmentL2Forwarding
+	_jsii_.Get(
+		j,
+		"l2ForwardingInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeInterconnectAttachment) LabelFingerprint() *string {
 	var returns *string
 	_jsii_.Get(
@@ -746,6 +775,26 @@ func (j *jsiiProxy_GoogleComputeInterconnectAttachment) PairingKey() *string {
 	_jsii_.Get(
 		j,
 		"pairingKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInterconnectAttachment) Params() GoogleComputeInterconnectAttachmentParamsOutputReference {
+	var returns GoogleComputeInterconnectAttachmentParamsOutputReference
+	_jsii_.Get(
+		j,
+		"params",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInterconnectAttachment) ParamsInput() *GoogleComputeInterconnectAttachmentParams {
+	var returns *GoogleComputeInterconnectAttachmentParams
+	_jsii_.Get(
+		j,
+		"paramsInput",
 		&returns,
 	)
 	return returns
@@ -1022,7 +1071,7 @@ func (j *jsiiProxy_GoogleComputeInterconnectAttachment) VlanTag8021QInput() *flo
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_compute_interconnect_attachment google_compute_interconnect_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_compute_interconnect_attachment google_compute_interconnect_attachment} Resource.
 func NewGoogleComputeInterconnectAttachment(scope constructs.Construct, id *string, config *GoogleComputeInterconnectAttachmentConfig) GoogleComputeInterconnectAttachment {
 	_init_.Initialize()
 
@@ -1040,7 +1089,7 @@ func NewGoogleComputeInterconnectAttachment(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_compute_interconnect_attachment google_compute_interconnect_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_compute_interconnect_attachment google_compute_interconnect_attachment} Resource.
 func NewGoogleComputeInterconnectAttachment_Override(g GoogleComputeInterconnectAttachment, scope constructs.Construct, id *string, config *GoogleComputeInterconnectAttachmentConfig) {
 	_init_.Initialize()
 
@@ -1725,6 +1774,28 @@ func (g *jsiiProxy_GoogleComputeInterconnectAttachment) OverrideLogicalId(newLog
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeInterconnectAttachment) PutL2Forwarding(value *GoogleComputeInterconnectAttachmentL2Forwarding) {
+	if err := g.validatePutL2ForwardingParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putL2Forwarding",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeInterconnectAttachment) PutParams(value *GoogleComputeInterconnectAttachmentParams) {
+	if err := g.validatePutParamsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putParams",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeInterconnectAttachment) PutTimeouts(value *GoogleComputeInterconnectAttachmentTimeouts) {
 	if err := g.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1840,6 +1911,14 @@ func (g *jsiiProxy_GoogleComputeInterconnectAttachment) ResetIpsecInternalAddres
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeInterconnectAttachment) ResetL2Forwarding() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetL2Forwarding",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeInterconnectAttachment) ResetLabels() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1864,6 +1943,14 @@ func (g *jsiiProxy_GoogleComputeInterconnectAttachment) ResetOverrideLogicalId()
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeInterconnectAttachment) ResetParams() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetParams",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeInterconnectAttachment) ResetProject() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1876,6 +1963,14 @@ func (g *jsiiProxy_GoogleComputeInterconnectAttachment) ResetRegion() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetRegion",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeInterconnectAttachment) ResetRouter() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetRouter",
 		nil, // no parameters
 	)
 }

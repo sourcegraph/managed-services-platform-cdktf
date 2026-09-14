@@ -132,6 +132,10 @@ func (j *jsiiProxy_GoogleComputeRouter) validateSetNameParameters(val *string) e
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeRouter) validateSetNccGatewayParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeRouter) validateSetNetworkParameters(val *string) error {
 	return nil
 }

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/datagoogleartifactregistrypackage/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/data-sources/google_artifact_registry_package google_artifact_registry_package}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/data-sources/google_artifact_registry_package google_artifact_registry_package}.
 type DataGoogleArtifactRegistryPackage interface {
 	cdktf.TerraformDataSource
 	Annotations() cdktf.StringMap
@@ -399,7 +399,7 @@ func (j *jsiiProxy_DataGoogleArtifactRegistryPackage) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/data-sources/google_artifact_registry_package google_artifact_registry_package} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/data-sources/google_artifact_registry_package google_artifact_registry_package} Data Source.
 func NewDataGoogleArtifactRegistryPackage(scope constructs.Construct, id *string, config *DataGoogleArtifactRegistryPackageConfig) DataGoogleArtifactRegistryPackage {
 	_init_.Initialize()
 
@@ -417,7 +417,7 @@ func NewDataGoogleArtifactRegistryPackage(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/data-sources/google_artifact_registry_package google_artifact_registry_package} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/data-sources/google_artifact_registry_package google_artifact_registry_package} Data Source.
 func NewDataGoogleArtifactRegistryPackage_Override(d DataGoogleArtifactRegistryPackage, scope constructs.Construct, id *string, config *DataGoogleArtifactRegistryPackageConfig) {
 	_init_.Initialize()
 

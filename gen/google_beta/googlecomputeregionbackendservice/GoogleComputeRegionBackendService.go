@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googlecomputeregionbackendservice/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_compute_region_backend_service google_compute_region_backend_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_compute_region_backend_service google_compute_region_backend_service}.
 type GoogleComputeRegionBackendService interface {
 	cdktf.TerraformResource
 	AffinityCookieTtlSec() *float64
@@ -98,10 +98,14 @@ type GoogleComputeRegionBackendService interface {
 	Network() *string
 	SetNetwork(val *string)
 	NetworkInput() *string
+	NetworkPassThroughLbTrafficPolicy() GoogleComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyOutputReference
+	NetworkPassThroughLbTrafficPolicyInput() *GoogleComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicy
 	// The tree node.
 	Node() constructs.Node
 	OutlierDetection() GoogleComputeRegionBackendServiceOutlierDetectionOutputReference
 	OutlierDetectionInput() *GoogleComputeRegionBackendServiceOutlierDetection
+	Params() GoogleComputeRegionBackendServiceParamsOutputReference
+	ParamsInput() *GoogleComputeRegionBackendServiceParams
 	PortName() *string
 	SetPortName(val *string)
 	PortNameInput() *string
@@ -146,6 +150,8 @@ type GoogleComputeRegionBackendService interface {
 	SetTimeoutSec(val *float64)
 	TimeoutSecInput() *float64
 	TimeoutsInput() interface{}
+	TlsSettings() GoogleComputeRegionBackendServiceTlsSettingsOutputReference
+	TlsSettingsInput() *GoogleComputeRegionBackendServiceTlsSettings
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -200,10 +206,13 @@ type GoogleComputeRegionBackendService interface {
 	PutHaPolicy(value *GoogleComputeRegionBackendServiceHaPolicy)
 	PutIap(value *GoogleComputeRegionBackendServiceIap)
 	PutLogConfig(value *GoogleComputeRegionBackendServiceLogConfig)
+	PutNetworkPassThroughLbTrafficPolicy(value *GoogleComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicy)
 	PutOutlierDetection(value *GoogleComputeRegionBackendServiceOutlierDetection)
+	PutParams(value *GoogleComputeRegionBackendServiceParams)
 	PutStrongSessionAffinityCookie(value *GoogleComputeRegionBackendServiceStrongSessionAffinityCookie)
 	PutSubsetting(value *GoogleComputeRegionBackendServiceSubsetting)
 	PutTimeouts(value *GoogleComputeRegionBackendServiceTimeouts)
+	PutTlsSettings(value *GoogleComputeRegionBackendServiceTlsSettings)
 	ResetAffinityCookieTtlSec()
 	ResetBackend()
 	ResetCdnPolicy()
@@ -225,10 +234,12 @@ type GoogleComputeRegionBackendService interface {
 	ResetLocalityLbPolicy()
 	ResetLogConfig()
 	ResetNetwork()
+	ResetNetworkPassThroughLbTrafficPolicy()
 	ResetOutlierDetection()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetParams()
 	ResetPortName()
 	ResetProject()
 	ResetProtocol()
@@ -239,6 +250,7 @@ type GoogleComputeRegionBackendService interface {
 	ResetSubsetting()
 	ResetTimeouts()
 	ResetTimeoutSec()
+	ResetTlsSettings()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -817,6 +829,26 @@ func (j *jsiiProxy_GoogleComputeRegionBackendService) NetworkInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeRegionBackendService) NetworkPassThroughLbTrafficPolicy() GoogleComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyOutputReference {
+	var returns GoogleComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyOutputReference
+	_jsii_.Get(
+		j,
+		"networkPassThroughLbTrafficPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionBackendService) NetworkPassThroughLbTrafficPolicyInput() *GoogleComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicy {
+	var returns *GoogleComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicy
+	_jsii_.Get(
+		j,
+		"networkPassThroughLbTrafficPolicyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeRegionBackendService) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -842,6 +874,26 @@ func (j *jsiiProxy_GoogleComputeRegionBackendService) OutlierDetectionInput() *G
 	_jsii_.Get(
 		j,
 		"outlierDetectionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionBackendService) Params() GoogleComputeRegionBackendServiceParamsOutputReference {
+	var returns GoogleComputeRegionBackendServiceParamsOutputReference
+	_jsii_.Get(
+		j,
+		"params",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionBackendService) ParamsInput() *GoogleComputeRegionBackendServiceParams {
+	var returns *GoogleComputeRegionBackendServiceParams
+	_jsii_.Get(
+		j,
+		"paramsInput",
 		&returns,
 	)
 	return returns
@@ -1117,8 +1169,28 @@ func (j *jsiiProxy_GoogleComputeRegionBackendService) TimeoutsInput() interface{
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeRegionBackendService) TlsSettings() GoogleComputeRegionBackendServiceTlsSettingsOutputReference {
+	var returns GoogleComputeRegionBackendServiceTlsSettingsOutputReference
+	_jsii_.Get(
+		j,
+		"tlsSettings",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_compute_region_backend_service google_compute_region_backend_service} Resource.
+func (j *jsiiProxy_GoogleComputeRegionBackendService) TlsSettingsInput() *GoogleComputeRegionBackendServiceTlsSettings {
+	var returns *GoogleComputeRegionBackendServiceTlsSettings
+	_jsii_.Get(
+		j,
+		"tlsSettingsInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_compute_region_backend_service google_compute_region_backend_service} Resource.
 func NewGoogleComputeRegionBackendService(scope constructs.Construct, id *string, config *GoogleComputeRegionBackendServiceConfig) GoogleComputeRegionBackendService {
 	_init_.Initialize()
 
@@ -1136,7 +1208,7 @@ func NewGoogleComputeRegionBackendService(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_compute_region_backend_service google_compute_region_backend_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_compute_region_backend_service google_compute_region_backend_service} Resource.
 func NewGoogleComputeRegionBackendService_Override(g GoogleComputeRegionBackendService, scope constructs.Construct, id *string, config *GoogleComputeRegionBackendServiceConfig) {
 	_init_.Initialize()
 
@@ -1887,6 +1959,17 @@ func (g *jsiiProxy_GoogleComputeRegionBackendService) PutLogConfig(value *Google
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeRegionBackendService) PutNetworkPassThroughLbTrafficPolicy(value *GoogleComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicy) {
+	if err := g.validatePutNetworkPassThroughLbTrafficPolicyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putNetworkPassThroughLbTrafficPolicy",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeRegionBackendService) PutOutlierDetection(value *GoogleComputeRegionBackendServiceOutlierDetection) {
 	if err := g.validatePutOutlierDetectionParameters(value); err != nil {
 		panic(err)
@@ -1894,6 +1977,17 @@ func (g *jsiiProxy_GoogleComputeRegionBackendService) PutOutlierDetection(value 
 	_jsii_.InvokeVoid(
 		g,
 		"putOutlierDetection",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionBackendService) PutParams(value *GoogleComputeRegionBackendServiceParams) {
+	if err := g.validatePutParamsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putParams",
 		[]interface{}{value},
 	)
 }
@@ -1927,6 +2021,17 @@ func (g *jsiiProxy_GoogleComputeRegionBackendService) PutTimeouts(value *GoogleC
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionBackendService) PutTlsSettings(value *GoogleComputeRegionBackendServiceTlsSettings) {
+	if err := g.validatePutTlsSettingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putTlsSettings",
 		[]interface{}{value},
 	)
 }
@@ -2099,6 +2204,14 @@ func (g *jsiiProxy_GoogleComputeRegionBackendService) ResetNetwork() {
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeRegionBackendService) ResetNetworkPassThroughLbTrafficPolicy() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetNetworkPassThroughLbTrafficPolicy",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeRegionBackendService) ResetOutlierDetection() {
 	_jsii_.InvokeVoid(
 		g,
@@ -2111,6 +2224,14 @@ func (g *jsiiProxy_GoogleComputeRegionBackendService) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionBackendService) ResetParams() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetParams",
 		nil, // no parameters
 	)
 }
@@ -2191,6 +2312,14 @@ func (g *jsiiProxy_GoogleComputeRegionBackendService) ResetTimeoutSec() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetTimeoutSec",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionBackendService) ResetTlsSettings() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetTlsSettings",
 		nil, // no parameters
 	)
 }

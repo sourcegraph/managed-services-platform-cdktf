@@ -11,6 +11,8 @@ func init() {
 		"@cdktf/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfig",
 		reflect.TypeOf((*StorageInsightsDatasetConfig)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "activityDataRetentionPeriodDays", GoGetter: "ActivityDataRetentionPeriodDays"},
+			_jsii_.MemberProperty{JsiiProperty: "activityDataRetentionPeriodDaysInput", GoGetter: "ActivityDataRetentionPeriodDaysInput"},
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
@@ -82,6 +84,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putSourceProjects", GoMethod: "PutSourceProjects"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "resetActivityDataRetentionPeriodDays", GoMethod: "ResetActivityDataRetentionPeriodDays"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
 			_jsii_.MemberMethod{JsiiMethod: "resetExcludeCloudStorageBuckets", GoMethod: "ResetExcludeCloudStorageBuckets"},
 			_jsii_.MemberMethod{JsiiMethod: "resetExcludeCloudStorageLocations", GoMethod: "ResetExcludeCloudStorageLocations"},

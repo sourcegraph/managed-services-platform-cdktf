@@ -20,6 +20,9 @@ type CloudRunV2WorkerPoolTemplateVpcAccessOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	Connector() *string
+	SetConnector(val *string)
+	ConnectorInput() *string
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -67,6 +70,7 @@ type CloudRunV2WorkerPoolTemplateVpcAccessOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutNetworkInterfaces(value interface{})
+	ResetConnector()
 	ResetEgress()
 	ResetNetworkInterfaces()
 	// Produce the Token's value at resolution time.
@@ -99,6 +103,26 @@ func (j *jsiiProxy_CloudRunV2WorkerPoolTemplateVpcAccessOutputReference) Complex
 	_jsii_.Get(
 		j,
 		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudRunV2WorkerPoolTemplateVpcAccessOutputReference) Connector() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"connector",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudRunV2WorkerPoolTemplateVpcAccessOutputReference) ConnectorInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"connectorInput",
 		&returns,
 	)
 	return returns
@@ -240,6 +264,17 @@ func (j *jsiiProxy_CloudRunV2WorkerPoolTemplateVpcAccessOutputReference)SetCompl
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudRunV2WorkerPoolTemplateVpcAccessOutputReference)SetConnector(val *string) {
+	if err := j.validateSetConnectorParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"connector",
 		val,
 	)
 }
@@ -482,6 +517,14 @@ func (c *jsiiProxy_CloudRunV2WorkerPoolTemplateVpcAccessOutputReference) PutNetw
 		c,
 		"putNetworkInterfaces",
 		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_CloudRunV2WorkerPoolTemplateVpcAccessOutputReference) ResetConnector() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetConnector",
+		nil, // no parameters
 	)
 }
 

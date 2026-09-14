@@ -9,9 +9,10 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google/computereservation/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_reservation google_compute_reservation}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_reservation google_compute_reservation}.
 type ComputeReservation interface {
 	cdktf.TerraformResource
+	BlockNames() *[]*string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	Commitment() *string
@@ -47,12 +48,12 @@ type ComputeReservation interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
+	Kind() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	LinkedCommitments() *[]*string
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -71,8 +72,11 @@ type ComputeReservation interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	ReservationBlockCount() *float64
 	ReservationSharingPolicy() ComputeReservationReservationSharingPolicyOutputReference
 	ReservationSharingPolicyInput() *ComputeReservationReservationSharingPolicy
+	ResourceStatus() ComputeReservationResourceStatusList
+	SatisfiesPzs() cdktf.IResolvable
 	SelfLink() *string
 	ShareSettings() ComputeReservationShareSettingsOutputReference
 	ShareSettingsInput() *ComputeReservationShareSettings
@@ -144,7 +148,6 @@ type ComputeReservation interface {
 	ResetDeleteAfterDuration()
 	ResetDeleteAtTime()
 	ResetDescription()
-	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -169,6 +172,16 @@ type ComputeReservation interface {
 // The jsii proxy struct for ComputeReservation
 type jsiiProxy_ComputeReservation struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_ComputeReservation) BlockNames() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"blockNames",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_ComputeReservation) CdktfStack() cdktf.TerraformStack {
@@ -341,11 +354,11 @@ func (j *jsiiProxy_ComputeReservation) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeReservation) IdInput() *string {
+func (j *jsiiProxy_ComputeReservation) Kind() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"idInput",
+		"kind",
 		&returns,
 	)
 	return returns
@@ -356,6 +369,16 @@ func (j *jsiiProxy_ComputeReservation) Lifecycle() *cdktf.TerraformResourceLifec
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeReservation) LinkedCommitments() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"linkedCommitments",
 		&returns,
 	)
 	return returns
@@ -441,6 +464,16 @@ func (j *jsiiProxy_ComputeReservation) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_ComputeReservation) ReservationBlockCount() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"reservationBlockCount",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeReservation) ReservationSharingPolicy() ComputeReservationReservationSharingPolicyOutputReference {
 	var returns ComputeReservationReservationSharingPolicyOutputReference
 	_jsii_.Get(
@@ -456,6 +489,26 @@ func (j *jsiiProxy_ComputeReservation) ReservationSharingPolicyInput() *ComputeR
 	_jsii_.Get(
 		j,
 		"reservationSharingPolicyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeReservation) ResourceStatus() ComputeReservationResourceStatusList {
+	var returns ComputeReservationResourceStatusList
+	_jsii_.Get(
+		j,
+		"resourceStatus",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeReservation) SatisfiesPzs() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"satisfiesPzs",
 		&returns,
 	)
 	return returns
@@ -612,7 +665,7 @@ func (j *jsiiProxy_ComputeReservation) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_reservation google_compute_reservation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_reservation google_compute_reservation} Resource.
 func NewComputeReservation(scope constructs.Construct, id *string, config *ComputeReservationConfig) ComputeReservation {
 	_init_.Initialize()
 
@@ -630,7 +683,7 @@ func NewComputeReservation(scope constructs.Construct, id *string, config *Compu
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_reservation google_compute_reservation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_reservation google_compute_reservation} Resource.
 func NewComputeReservation_Override(c ComputeReservation, scope constructs.Construct, id *string, config *ComputeReservationConfig) {
 	_init_.Initialize()
 
@@ -697,17 +750,6 @@ func (j *jsiiProxy_ComputeReservation)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ComputeReservation)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -1214,14 +1256,6 @@ func (c *jsiiProxy_ComputeReservation) ResetDescription() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetDescription",
-		nil, // no parameters
-	)
-}
-
-func (c *jsiiProxy_ComputeReservation) ResetId() {
-	_jsii_.InvokeVoid(
-		c,
-		"resetId",
 		nil, // no parameters
 	)
 }

@@ -120,6 +120,10 @@ func validateGoogleStorageInsightsDatasetConfig_IsTerraformResourceParameters(x 
 	return nil
 }
 
+func (j *jsiiProxy_GoogleStorageInsightsDatasetConfig) validateSetActivityDataRetentionPeriodDaysParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleStorageInsightsDatasetConfig) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

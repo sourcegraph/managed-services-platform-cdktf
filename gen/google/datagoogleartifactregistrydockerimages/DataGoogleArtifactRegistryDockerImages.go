@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google/datagoogleartifactregistrydockerimages/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/artifact_registry_docker_images google_artifact_registry_docker_images}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/artifact_registry_docker_images google_artifact_registry_docker_images}.
 type DataGoogleArtifactRegistryDockerImages interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -343,7 +343,7 @@ func (j *jsiiProxy_DataGoogleArtifactRegistryDockerImages) TerraformResourceType
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/artifact_registry_docker_images google_artifact_registry_docker_images} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/artifact_registry_docker_images google_artifact_registry_docker_images} Data Source.
 func NewDataGoogleArtifactRegistryDockerImages(scope constructs.Construct, id *string, config *DataGoogleArtifactRegistryDockerImagesConfig) DataGoogleArtifactRegistryDockerImages {
 	_init_.Initialize()
 
@@ -361,7 +361,7 @@ func NewDataGoogleArtifactRegistryDockerImages(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/artifact_registry_docker_images google_artifact_registry_docker_images} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/artifact_registry_docker_images google_artifact_registry_docker_images} Data Source.
 func NewDataGoogleArtifactRegistryDockerImages_Override(d DataGoogleArtifactRegistryDockerImages, scope constructs.Construct, id *string, config *DataGoogleArtifactRegistryDockerImagesConfig) {
 	_init_.Initialize()
 

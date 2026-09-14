@@ -25,6 +25,7 @@ type DataGoogleComputeRegionBackendServiceDynamicForwardingOutputReference inter
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	ForwardProxy() DataGoogleComputeRegionBackendServiceDynamicForwardingForwardProxyList
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DataGoogleComputeRegionBackendServiceDynamicForwarding
@@ -102,6 +103,16 @@ func (j *jsiiProxy_DataGoogleComputeRegionBackendServiceDynamicForwardingOutputR
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeRegionBackendServiceDynamicForwardingOutputReference) ForwardProxy() DataGoogleComputeRegionBackendServiceDynamicForwardingForwardProxyList {
+	var returns DataGoogleComputeRegionBackendServiceDynamicForwardingForwardProxyList
+	_jsii_.Get(
+		j,
+		"forwardProxy",
 		&returns,
 	)
 	return returns

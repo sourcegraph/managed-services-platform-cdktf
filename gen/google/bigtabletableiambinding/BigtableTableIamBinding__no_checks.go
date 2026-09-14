@@ -104,10 +104,6 @@ func (j *jsiiProxy_BigtableTableIamBinding) validateSetIdParameters(val *string)
 	return nil
 }
 
-func (j *jsiiProxy_BigtableTableIamBinding) validateSetInstanceParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_BigtableTableIamBinding) validateSetInstanceNameParameters(val *string) error {
 	return nil
 }

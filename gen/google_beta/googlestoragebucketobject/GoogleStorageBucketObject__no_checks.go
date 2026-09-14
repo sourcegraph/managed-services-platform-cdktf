@@ -72,6 +72,10 @@ func (g *jsiiProxy_GoogleStorageBucketObject) validateOverrideLogicalIdParameter
 	return nil
 }
 
+func (g *jsiiProxy_GoogleStorageBucketObject) validatePutContextsParameters(value *GoogleStorageBucketObjectContexts) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleStorageBucketObject) validatePutCustomerEncryptionParameters(value *GoogleStorageBucketObjectCustomerEncryption) error {
 	return nil
 }

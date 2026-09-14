@@ -44,7 +44,19 @@ func (c *jsiiProxy_ContainerNodePoolNodeConfigLinuxNodeConfigOutputReference) va
 	return nil
 }
 
+func (c *jsiiProxy_ContainerNodePoolNodeConfigLinuxNodeConfigOutputReference) validatePutAccurateTimeConfigParameters(value *ContainerNodePoolNodeConfigLinuxNodeConfigAccurateTimeConfig) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerNodePoolNodeConfigLinuxNodeConfigOutputReference) validatePutHugepagesConfigParameters(value *ContainerNodePoolNodeConfigLinuxNodeConfigHugepagesConfig) error {
+	return nil
+}
+
+func (c *jsiiProxy_ContainerNodePoolNodeConfigLinuxNodeConfigOutputReference) validatePutNodeKernelModuleLoadingParameters(value *ContainerNodePoolNodeConfigLinuxNodeConfigNodeKernelModuleLoading) error {
+	return nil
+}
+
+func (c *jsiiProxy_ContainerNodePoolNodeConfigLinuxNodeConfigOutputReference) validatePutSwapConfigParameters(value *ContainerNodePoolNodeConfigLinuxNodeConfigSwapConfig) error {
 	return nil
 }
 

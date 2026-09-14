@@ -10,6 +10,7 @@ import (
 
 type DataGooglePubsubTopicMessageTransformsOutputReference interface {
 	cdktf.ComplexObject
+	AiInference() DataGooglePubsubTopicMessageTransformsAiInferenceList
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -76,6 +77,16 @@ type DataGooglePubsubTopicMessageTransformsOutputReference interface {
 // The jsii proxy struct for DataGooglePubsubTopicMessageTransformsOutputReference
 type jsiiProxy_DataGooglePubsubTopicMessageTransformsOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_DataGooglePubsubTopicMessageTransformsOutputReference) AiInference() DataGooglePubsubTopicMessageTransformsAiInferenceList {
+	var returns DataGooglePubsubTopicMessageTransformsAiInferenceList
+	_jsii_.Get(
+		j,
+		"aiInference",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataGooglePubsubTopicMessageTransformsOutputReference) ComplexObjectIndex() interface{} {

@@ -179,6 +179,14 @@ func (j *jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference) valid
 	return nil
 }
 
+func (j *jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference) validateSetHybridReplicationTypeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference) validateSetInternalValueParameters(val *NetappVolumeHybridReplicationParameters) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
@@ -195,6 +203,14 @@ func (j *jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference) valid
 	return nil
 }
 
+func (j *jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference) validateSetLargeVolumeConstituentCountParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference) validateSetPeerClusterNameParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -203,7 +219,7 @@ func (j *jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference) validateSetPeerIpAddressesParameters(val *string) error {
+func (j *jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference) validateSetPeerIpAddressesParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -228,6 +244,14 @@ func (j *jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference) valid
 }
 
 func (j *jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference) validateSetReplicationParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference) validateSetReplicationScheduleParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

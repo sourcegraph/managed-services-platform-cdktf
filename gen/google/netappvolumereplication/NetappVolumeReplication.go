@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google/netappvolumereplication/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume_replication google_netapp_volume_replication}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume_replication google_netapp_volume_replication}.
 type NetappVolumeReplication interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -53,6 +53,7 @@ type NetappVolumeReplication interface {
 	Healthy() cdktf.IResolvable
 	HybridPeeringDetails() NetappVolumeReplicationHybridPeeringDetailsList
 	HybridReplicationType() *string
+	HybridReplicationUserCommands() NetappVolumeReplicationHybridReplicationUserCommandsList
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -402,6 +403,16 @@ func (j *jsiiProxy_NetappVolumeReplication) HybridReplicationType() *string {
 	_jsii_.Get(
 		j,
 		"hybridReplicationType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetappVolumeReplication) HybridReplicationUserCommands() NetappVolumeReplicationHybridReplicationUserCommandsList {
+	var returns NetappVolumeReplicationHybridReplicationUserCommandsList
+	_jsii_.Get(
+		j,
+		"hybridReplicationUserCommands",
 		&returns,
 	)
 	return returns
@@ -758,7 +769,7 @@ func (j *jsiiProxy_NetappVolumeReplication) WaitForMirrorInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume_replication google_netapp_volume_replication} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume_replication google_netapp_volume_replication} Resource.
 func NewNetappVolumeReplication(scope constructs.Construct, id *string, config *NetappVolumeReplicationConfig) NetappVolumeReplication {
 	_init_.Initialize()
 
@@ -776,7 +787,7 @@ func NewNetappVolumeReplication(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume_replication google_netapp_volume_replication} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume_replication google_netapp_volume_replication} Resource.
 func NewNetappVolumeReplication_Override(n NetappVolumeReplication, scope constructs.Construct, id *string, config *NetappVolumeReplicationConfig) {
 	_init_.Initialize()
 

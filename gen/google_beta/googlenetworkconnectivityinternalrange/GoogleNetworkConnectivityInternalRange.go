@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googlenetworkconnectivityinternalrange/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_network_connectivity_internal_range google_network_connectivity_internal_range}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_network_connectivity_internal_range google_network_connectivity_internal_range}.
 type GoogleNetworkConnectivityInternalRange interface {
 	cdktf.TerraformResource
 	AllocationOptions() GoogleNetworkConnectivityInternalRangeAllocationOptionsOutputReference
@@ -720,7 +720,7 @@ func (j *jsiiProxy_GoogleNetworkConnectivityInternalRange) Users() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_network_connectivity_internal_range google_network_connectivity_internal_range} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_network_connectivity_internal_range google_network_connectivity_internal_range} Resource.
 func NewGoogleNetworkConnectivityInternalRange(scope constructs.Construct, id *string, config *GoogleNetworkConnectivityInternalRangeConfig) GoogleNetworkConnectivityInternalRange {
 	_init_.Initialize()
 
@@ -738,7 +738,7 @@ func NewGoogleNetworkConnectivityInternalRange(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_network_connectivity_internal_range google_network_connectivity_internal_range} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_network_connectivity_internal_range google_network_connectivity_internal_range} Resource.
 func NewGoogleNetworkConnectivityInternalRange_Override(g GoogleNetworkConnectivityInternalRange, scope constructs.Construct, id *string, config *GoogleNetworkConnectivityInternalRangeConfig) {
 	_init_.Initialize()
 

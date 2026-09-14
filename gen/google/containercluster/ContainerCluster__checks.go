@@ -237,6 +237,17 @@ func (c *jsiiProxy_ContainerCluster) validatePutAuthenticatorGroupsConfigParamet
 	return nil
 }
 
+func (c *jsiiProxy_ContainerCluster) validatePutAutopilotClusterPolicyConfigParameters(value *ContainerClusterAutopilotClusterPolicyConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (c *jsiiProxy_ContainerCluster) validatePutBinaryAuthorizationParameters(value *ContainerClusterBinaryAuthorization) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -752,6 +763,14 @@ func (j *jsiiProxy_ContainerCluster) validateSetAllowNetAdminParameters(val inte
 		if !_jsii_.IsAnonymousProxy(val) {
 			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
 		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ContainerCluster) validateSetAutopilotPrivilegedAdmissionParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

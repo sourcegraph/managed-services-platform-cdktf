@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google/iamworkforcepooliambinding/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iam_workforce_pool_iam_binding google_iam_workforce_pool_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iam_workforce_pool_iam_binding google_iam_workforce_pool_iam_binding}.
 type IamWorkforcePoolIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -435,7 +435,7 @@ func (j *jsiiProxy_IamWorkforcePoolIamBinding) WorkforcePoolIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iam_workforce_pool_iam_binding google_iam_workforce_pool_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iam_workforce_pool_iam_binding google_iam_workforce_pool_iam_binding} Resource.
 func NewIamWorkforcePoolIamBinding(scope constructs.Construct, id *string, config *IamWorkforcePoolIamBindingConfig) IamWorkforcePoolIamBinding {
 	_init_.Initialize()
 
@@ -453,7 +453,7 @@ func NewIamWorkforcePoolIamBinding(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iam_workforce_pool_iam_binding google_iam_workforce_pool_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iam_workforce_pool_iam_binding google_iam_workforce_pool_iam_binding} Resource.
 func NewIamWorkforcePoolIamBinding_Override(i IamWorkforcePoolIamBinding, scope constructs.Construct, id *string, config *IamWorkforcePoolIamBindingConfig) {
 	_init_.Initialize()
 

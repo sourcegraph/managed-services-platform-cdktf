@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google/datagoogleoracledatabaseautonomousdatabase/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/oracle_database_autonomous_database google_oracle_database_autonomous_database}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/oracle_database_autonomous_database google_oracle_database_autonomous_database}.
 type DataGoogleOracleDatabaseAutonomousDatabase interface {
 	cdktf.TerraformDataSource
 	AdminPassword() *string
@@ -32,6 +32,7 @@ type DataGoogleOracleDatabaseAutonomousDatabase interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	DisasterRecoverySupportedLocations() *[]*string
 	DisplayName() *string
 	EffectiveLabels() cdktf.StringMap
 	EntitlementId() *string
@@ -60,6 +61,7 @@ type DataGoogleOracleDatabaseAutonomousDatabase interface {
 	Node() constructs.Node
 	OdbNetwork() *string
 	OdbSubnet() *string
+	PeerAutonomousDatabases() *[]*string
 	Project() *string
 	SetProject(val *string)
 	ProjectInput() *string
@@ -70,6 +72,7 @@ type DataGoogleOracleDatabaseAutonomousDatabase interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	SourceConfig() DataGoogleOracleDatabaseAutonomousDatabaseSourceConfigList
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
@@ -231,6 +234,16 @@ func (j *jsiiProxy_DataGoogleOracleDatabaseAutonomousDatabase) DependsOn() *[]*s
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleOracleDatabaseAutonomousDatabase) DisasterRecoverySupportedLocations() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"disasterRecoverySupportedLocations",
 		&returns,
 	)
 	return returns
@@ -406,6 +419,16 @@ func (j *jsiiProxy_DataGoogleOracleDatabaseAutonomousDatabase) OdbSubnet() *stri
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleOracleDatabaseAutonomousDatabase) PeerAutonomousDatabases() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"peerAutonomousDatabases",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleOracleDatabaseAutonomousDatabase) Project() *string {
 	var returns *string
 	_jsii_.Get(
@@ -456,6 +479,16 @@ func (j *jsiiProxy_DataGoogleOracleDatabaseAutonomousDatabase) RawOverrides() in
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleOracleDatabaseAutonomousDatabase) SourceConfig() DataGoogleOracleDatabaseAutonomousDatabaseSourceConfigList {
+	var returns DataGoogleOracleDatabaseAutonomousDatabaseSourceConfigList
+	_jsii_.Get(
+		j,
+		"sourceConfig",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleOracleDatabaseAutonomousDatabase) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -497,7 +530,7 @@ func (j *jsiiProxy_DataGoogleOracleDatabaseAutonomousDatabase) TerraformResource
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/oracle_database_autonomous_database google_oracle_database_autonomous_database} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/oracle_database_autonomous_database google_oracle_database_autonomous_database} Data Source.
 func NewDataGoogleOracleDatabaseAutonomousDatabase(scope constructs.Construct, id *string, config *DataGoogleOracleDatabaseAutonomousDatabaseConfig) DataGoogleOracleDatabaseAutonomousDatabase {
 	_init_.Initialize()
 
@@ -515,7 +548,7 @@ func NewDataGoogleOracleDatabaseAutonomousDatabase(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/oracle_database_autonomous_database google_oracle_database_autonomous_database} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/oracle_database_autonomous_database google_oracle_database_autonomous_database} Data Source.
 func NewDataGoogleOracleDatabaseAutonomousDatabase_Override(d DataGoogleOracleDatabaseAutonomousDatabase, scope constructs.Construct, id *string, config *DataGoogleOracleDatabaseAutonomousDatabaseConfig) {
 	_init_.Initialize()
 

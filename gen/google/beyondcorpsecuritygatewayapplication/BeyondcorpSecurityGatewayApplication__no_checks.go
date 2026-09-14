@@ -132,6 +132,10 @@ func (j *jsiiProxy_BeyondcorpSecurityGatewayApplication) validateSetProvisioners
 	return nil
 }
 
+func (j *jsiiProxy_BeyondcorpSecurityGatewayApplication) validateSetSchemaParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_BeyondcorpSecurityGatewayApplication) validateSetSecurityGatewayIdParameters(val *string) error {
 	return nil
 }

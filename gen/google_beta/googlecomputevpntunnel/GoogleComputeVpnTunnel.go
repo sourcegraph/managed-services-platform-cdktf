@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googlecomputevpntunnel/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_compute_vpn_tunnel google_compute_vpn_tunnel}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_compute_vpn_tunnel google_compute_vpn_tunnel}.
 type GoogleComputeVpnTunnel interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -66,6 +66,8 @@ type GoogleComputeVpnTunnel interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	Params() GoogleComputeVpnTunnelParamsOutputReference
+	ParamsInput() *GoogleComputeVpnTunnelParams
 	PeerExternalGateway() *string
 	SetPeerExternalGateway(val *string)
 	PeerExternalGatewayInput() *string
@@ -105,6 +107,12 @@ type GoogleComputeVpnTunnel interface {
 	SetSharedSecret(val *string)
 	SharedSecretHash() *string
 	SharedSecretInput() *string
+	SharedSecretWo() *string
+	SetSharedSecretWo(val *string)
+	SharedSecretWoInput() *string
+	SharedSecretWoVersion() *string
+	SetSharedSecretWoVersion(val *string)
+	SharedSecretWoVersionInput() *string
 	TargetVpnGateway() *string
 	SetTargetVpnGateway(val *string)
 	TargetVpnGatewayInput() *string
@@ -168,6 +176,7 @@ type GoogleComputeVpnTunnel interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutCipherSuite(value *GoogleComputeVpnTunnelCipherSuite)
+	PutParams(value *GoogleComputeVpnTunnelParams)
 	PutTimeouts(value *GoogleComputeVpnTunnelTimeouts)
 	ResetCipherSuite()
 	ResetDescription()
@@ -178,6 +187,7 @@ type GoogleComputeVpnTunnel interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetParams()
 	ResetPeerExternalGateway()
 	ResetPeerExternalGatewayInterface()
 	ResetPeerGcpGateway()
@@ -186,6 +196,9 @@ type GoogleComputeVpnTunnel interface {
 	ResetRegion()
 	ResetRemoteTrafficSelector()
 	ResetRouter()
+	ResetSharedSecret()
+	ResetSharedSecretWo()
+	ResetSharedSecretWoVersion()
 	ResetTargetVpnGateway()
 	ResetTimeouts()
 	ResetVpnGateway()
@@ -488,6 +501,26 @@ func (j *jsiiProxy_GoogleComputeVpnTunnel) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeVpnTunnel) Params() GoogleComputeVpnTunnelParamsOutputReference {
+	var returns GoogleComputeVpnTunnelParamsOutputReference
+	_jsii_.Get(
+		j,
+		"params",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeVpnTunnel) ParamsInput() *GoogleComputeVpnTunnelParams {
+	var returns *GoogleComputeVpnTunnelParams
+	_jsii_.Get(
+		j,
+		"paramsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeVpnTunnel) PeerExternalGateway() *string {
 	var returns *string
 	_jsii_.Get(
@@ -718,6 +751,46 @@ func (j *jsiiProxy_GoogleComputeVpnTunnel) SharedSecretInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeVpnTunnel) SharedSecretWo() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sharedSecretWo",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeVpnTunnel) SharedSecretWoInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sharedSecretWoInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeVpnTunnel) SharedSecretWoVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sharedSecretWoVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeVpnTunnel) SharedSecretWoVersionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sharedSecretWoVersionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeVpnTunnel) TargetVpnGateway() *string {
 	var returns *string
 	_jsii_.Get(
@@ -849,7 +922,7 @@ func (j *jsiiProxy_GoogleComputeVpnTunnel) VpnGatewayInterfaceInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_compute_vpn_tunnel google_compute_vpn_tunnel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_compute_vpn_tunnel google_compute_vpn_tunnel} Resource.
 func NewGoogleComputeVpnTunnel(scope constructs.Construct, id *string, config *GoogleComputeVpnTunnelConfig) GoogleComputeVpnTunnel {
 	_init_.Initialize()
 
@@ -867,7 +940,7 @@ func NewGoogleComputeVpnTunnel(scope constructs.Construct, id *string, config *G
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_compute_vpn_tunnel google_compute_vpn_tunnel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_compute_vpn_tunnel google_compute_vpn_tunnel} Resource.
 func NewGoogleComputeVpnTunnel_Override(g GoogleComputeVpnTunnel, scope constructs.Construct, id *string, config *GoogleComputeVpnTunnelConfig) {
 	_init_.Initialize()
 
@@ -1107,6 +1180,28 @@ func (j *jsiiProxy_GoogleComputeVpnTunnel)SetSharedSecret(val *string) {
 	_jsii_.Set(
 		j,
 		"sharedSecret",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeVpnTunnel)SetSharedSecretWo(val *string) {
+	if err := j.validateSetSharedSecretWoParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sharedSecretWo",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeVpnTunnel)SetSharedSecretWoVersion(val *string) {
+	if err := j.validateSetSharedSecretWoVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sharedSecretWoVersion",
 		val,
 	)
 }
@@ -1508,6 +1603,17 @@ func (g *jsiiProxy_GoogleComputeVpnTunnel) PutCipherSuite(value *GoogleComputeVp
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeVpnTunnel) PutParams(value *GoogleComputeVpnTunnelParams) {
+	if err := g.validatePutParamsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putParams",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeVpnTunnel) PutTimeouts(value *GoogleComputeVpnTunnelTimeouts) {
 	if err := g.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1575,6 +1681,14 @@ func (g *jsiiProxy_GoogleComputeVpnTunnel) ResetOverrideLogicalId() {
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeVpnTunnel) ResetParams() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetParams",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeVpnTunnel) ResetPeerExternalGateway() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1635,6 +1749,30 @@ func (g *jsiiProxy_GoogleComputeVpnTunnel) ResetRouter() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetRouter",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeVpnTunnel) ResetSharedSecret() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSharedSecret",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeVpnTunnel) ResetSharedSecretWo() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSharedSecretWo",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeVpnTunnel) ResetSharedSecretWoVersion() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSharedSecretWoVersion",
 		nil, // no parameters
 	)
 }

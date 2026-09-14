@@ -76,11 +76,19 @@ func (d *jsiiProxy_DataplexDatascanDataQualitySpecRulesOutputReference) validate
 	return nil
 }
 
+func (d *jsiiProxy_DataplexDatascanDataQualitySpecRulesOutputReference) validatePutTemplateReferenceParameters(value *DataplexDatascanDataQualitySpecRulesTemplateReference) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataplexDatascanDataQualitySpecRulesOutputReference) validatePutUniquenessExpectationParameters(value *DataplexDatascanDataQualitySpecRulesUniquenessExpectation) error {
 	return nil
 }
 
 func (d *jsiiProxy_DataplexDatascanDataQualitySpecRulesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataplexDatascanDataQualitySpecRulesOutputReference) validateSetAttributesParameters(val *map[string]*string) error {
 	return nil
 }
 

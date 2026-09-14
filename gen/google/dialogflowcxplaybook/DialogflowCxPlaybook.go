@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google/dialogflowcxplaybook/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_playbook google_dialogflow_cx_playbook}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_playbook google_dialogflow_cx_playbook}.
 type DialogflowCxPlaybook interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -563,7 +563,7 @@ func (j *jsiiProxy_DialogflowCxPlaybook) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_playbook google_dialogflow_cx_playbook} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_playbook google_dialogflow_cx_playbook} Resource.
 func NewDialogflowCxPlaybook(scope constructs.Construct, id *string, config *DialogflowCxPlaybookConfig) DialogflowCxPlaybook {
 	_init_.Initialize()
 
@@ -581,7 +581,7 @@ func NewDialogflowCxPlaybook(scope constructs.Construct, id *string, config *Dia
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_playbook google_dialogflow_cx_playbook} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_playbook google_dialogflow_cx_playbook} Resource.
 func NewDialogflowCxPlaybook_Override(d DialogflowCxPlaybook, scope constructs.Construct, id *string, config *DialogflowCxPlaybookConfig) {
 	_init_.Initialize()
 

@@ -76,6 +76,10 @@ func (d *jsiiProxy_DeveloperConnectInsightsConfig) validatePutArtifactConfigsPar
 	return nil
 }
 
+func (d *jsiiProxy_DeveloperConnectInsightsConfig) validatePutTargetProjectsParameters(value *DeveloperConnectInsightsConfigTargetProjects) error {
+	return nil
+}
+
 func (d *jsiiProxy_DeveloperConnectInsightsConfig) validatePutTimeoutsParameters(value *DeveloperConnectInsightsConfigTimeouts) error {
 	return nil
 }

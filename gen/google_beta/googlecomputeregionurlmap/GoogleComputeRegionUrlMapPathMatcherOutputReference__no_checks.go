@@ -52,6 +52,10 @@ func (g *jsiiProxy_GoogleComputeRegionUrlMapPathMatcherOutputReference) validate
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeRegionUrlMapPathMatcherOutputReference) validatePutHeaderActionParameters(value *GoogleComputeRegionUrlMapPathMatcherHeaderAction) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeRegionUrlMapPathMatcherOutputReference) validatePutPathRuleParameters(value interface{}) error {
 	return nil
 }
