@@ -68,6 +68,10 @@ func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateContainersVolumeMountsOutpu
 	return nil
 }
 
+func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateContainersVolumeMountsOutputReference) validateSetSubPathParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateContainersVolumeMountsOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

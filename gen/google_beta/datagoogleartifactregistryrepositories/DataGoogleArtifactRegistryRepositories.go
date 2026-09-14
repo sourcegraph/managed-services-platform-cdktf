@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/datagoogleartifactregistryrepositories/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/data-sources/google_artifact_registry_repositories google_artifact_registry_repositories}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/data-sources/google_artifact_registry_repositories google_artifact_registry_repositories}.
 type DataGoogleArtifactRegistryRepositories interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -344,7 +344,7 @@ func (j *jsiiProxy_DataGoogleArtifactRegistryRepositories) TerraformResourceType
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/data-sources/google_artifact_registry_repositories google_artifact_registry_repositories} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/data-sources/google_artifact_registry_repositories google_artifact_registry_repositories} Data Source.
 func NewDataGoogleArtifactRegistryRepositories(scope constructs.Construct, id *string, config *DataGoogleArtifactRegistryRepositoriesConfig) DataGoogleArtifactRegistryRepositories {
 	_init_.Initialize()
 
@@ -362,7 +362,7 @@ func NewDataGoogleArtifactRegistryRepositories(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/data-sources/google_artifact_registry_repositories google_artifact_registry_repositories} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/data-sources/google_artifact_registry_repositories google_artifact_registry_repositories} Data Source.
 func NewDataGoogleArtifactRegistryRepositories_Override(d DataGoogleArtifactRegistryRepositories, scope constructs.Construct, id *string, config *DataGoogleArtifactRegistryRepositoriesConfig) {
 	_init_.Initialize()
 

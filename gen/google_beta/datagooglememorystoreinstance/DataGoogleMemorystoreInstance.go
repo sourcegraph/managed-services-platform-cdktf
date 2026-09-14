@@ -9,12 +9,12 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/datagooglememorystoreinstance/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/data-sources/google_memorystore_instance google_memorystore_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/data-sources/google_memorystore_instance google_memorystore_instance}.
 type DataGoogleMemorystoreInstance interface {
 	cdktf.TerraformDataSource
-	AllowFewerZonesDeployment() cdktf.IResolvable
 	AuthorizationMode() *string
 	AutomatedBackupConfig() DataGoogleMemorystoreInstanceAutomatedBackupConfigList
+	AvailableMaintenanceVersions() *[]*string
 	BackupCollection() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
@@ -35,6 +35,7 @@ type DataGoogleMemorystoreInstance interface {
 	DesiredPscAutoConnections() DataGoogleMemorystoreInstanceDesiredPscAutoConnectionsList
 	DiscoveryEndpoints() DataGoogleMemorystoreInstanceDiscoveryEndpointsList
 	EffectiveLabels() cdktf.StringMap
+	EffectiveMaintenanceVersion() *string
 	Endpoints() DataGoogleMemorystoreInstanceEndpointsList
 	EngineConfigs() cdktf.StringMap
 	EngineVersion() *string
@@ -64,6 +65,7 @@ type DataGoogleMemorystoreInstance interface {
 	LocationInput() *string
 	MaintenancePolicy() DataGoogleMemorystoreInstanceMaintenancePolicyList
 	MaintenanceSchedule() DataGoogleMemorystoreInstanceMaintenanceScheduleList
+	MaintenanceVersion() *string
 	ManagedBackupSource() DataGoogleMemorystoreInstanceManagedBackupSourceList
 	ManagedServerCa() DataGoogleMemorystoreInstanceManagedServerCaList
 	Mode() *string
@@ -85,6 +87,8 @@ type DataGoogleMemorystoreInstance interface {
 	// Experimental.
 	RawOverrides() interface{}
 	ReplicaCount() *float64
+	ServerCaMode() *string
+	ServerCaPool() *string
 	ShardCount() *float64
 	State() *string
 	StateInfo() DataGoogleMemorystoreInstanceStateInfoList
@@ -149,16 +153,6 @@ type jsiiProxy_DataGoogleMemorystoreInstance struct {
 	internal.Type__cdktfTerraformDataSource
 }
 
-func (j *jsiiProxy_DataGoogleMemorystoreInstance) AllowFewerZonesDeployment() cdktf.IResolvable {
-	var returns cdktf.IResolvable
-	_jsii_.Get(
-		j,
-		"allowFewerZonesDeployment",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataGoogleMemorystoreInstance) AuthorizationMode() *string {
 	var returns *string
 	_jsii_.Get(
@@ -174,6 +168,16 @@ func (j *jsiiProxy_DataGoogleMemorystoreInstance) AutomatedBackupConfig() DataGo
 	_jsii_.Get(
 		j,
 		"automatedBackupConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleMemorystoreInstance) AvailableMaintenanceVersions() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"availableMaintenanceVersions",
 		&returns,
 	)
 	return returns
@@ -294,6 +298,16 @@ func (j *jsiiProxy_DataGoogleMemorystoreInstance) EffectiveLabels() cdktf.String
 	_jsii_.Get(
 		j,
 		"effectiveLabels",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleMemorystoreInstance) EffectiveMaintenanceVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"effectiveMaintenanceVersion",
 		&returns,
 	)
 	return returns
@@ -479,6 +493,16 @@ func (j *jsiiProxy_DataGoogleMemorystoreInstance) MaintenanceSchedule() DataGoog
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleMemorystoreInstance) MaintenanceVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"maintenanceVersion",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleMemorystoreInstance) ManagedBackupSource() DataGoogleMemorystoreInstanceManagedBackupSourceList {
 	var returns DataGoogleMemorystoreInstanceManagedBackupSourceList
 	_jsii_.Get(
@@ -629,6 +653,26 @@ func (j *jsiiProxy_DataGoogleMemorystoreInstance) ReplicaCount() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleMemorystoreInstance) ServerCaMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serverCaMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleMemorystoreInstance) ServerCaPool() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serverCaPool",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleMemorystoreInstance) ShardCount() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -740,7 +784,7 @@ func (j *jsiiProxy_DataGoogleMemorystoreInstance) ZoneDistributionConfig() DataG
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/data-sources/google_memorystore_instance google_memorystore_instance} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/data-sources/google_memorystore_instance google_memorystore_instance} Data Source.
 func NewDataGoogleMemorystoreInstance(scope constructs.Construct, id *string, config *DataGoogleMemorystoreInstanceConfig) DataGoogleMemorystoreInstance {
 	_init_.Initialize()
 
@@ -758,7 +802,7 @@ func NewDataGoogleMemorystoreInstance(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/data-sources/google_memorystore_instance google_memorystore_instance} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/data-sources/google_memorystore_instance google_memorystore_instance} Data Source.
 func NewDataGoogleMemorystoreInstance_Override(d DataGoogleMemorystoreInstance, scope constructs.Construct, id *string, config *DataGoogleMemorystoreInstanceConfig) {
 	_init_.Initialize()
 

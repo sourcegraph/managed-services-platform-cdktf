@@ -14,6 +14,8 @@ type ContainerClusterIpAllocationPolicyOutputReference interface {
 	AdditionalIpRangesConfigInput() interface{}
 	AdditionalPodRangesConfig() ContainerClusterIpAllocationPolicyAdditionalPodRangesConfigOutputReference
 	AdditionalPodRangesConfigInput() *ContainerClusterIpAllocationPolicyAdditionalPodRangesConfig
+	AutoIpamConfig() ContainerClusterIpAllocationPolicyAutoIpamConfigOutputReference
+	AutoIpamConfigInput() *ContainerClusterIpAllocationPolicyAutoIpamConfig
 	ClusterIpv4CidrBlock() *string
 	SetClusterIpv4CidrBlock(val *string)
 	ClusterIpv4CidrBlockInput() *string
@@ -39,6 +41,8 @@ type ContainerClusterIpAllocationPolicyOutputReference interface {
 	Fqn() *string
 	InternalValue() *ContainerClusterIpAllocationPolicy
 	SetInternalValue(val *ContainerClusterIpAllocationPolicy)
+	NetworkTierConfig() ContainerClusterIpAllocationPolicyNetworkTierConfigOutputReference
+	NetworkTierConfigInput() *ContainerClusterIpAllocationPolicyNetworkTierConfig
 	PodCidrOverprovisionConfig() ContainerClusterIpAllocationPolicyPodCidrOverprovisionConfigOutputReference
 	PodCidrOverprovisionConfigInput() *ContainerClusterIpAllocationPolicyPodCidrOverprovisionConfig
 	ServicesIpv4CidrBlock() *string
@@ -84,11 +88,15 @@ type ContainerClusterIpAllocationPolicyOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutAdditionalIpRangesConfig(value interface{})
 	PutAdditionalPodRangesConfig(value *ContainerClusterIpAllocationPolicyAdditionalPodRangesConfig)
+	PutAutoIpamConfig(value *ContainerClusterIpAllocationPolicyAutoIpamConfig)
+	PutNetworkTierConfig(value *ContainerClusterIpAllocationPolicyNetworkTierConfig)
 	PutPodCidrOverprovisionConfig(value *ContainerClusterIpAllocationPolicyPodCidrOverprovisionConfig)
 	ResetAdditionalIpRangesConfig()
 	ResetAdditionalPodRangesConfig()
+	ResetAutoIpamConfig()
 	ResetClusterIpv4CidrBlock()
 	ResetClusterSecondaryRangeName()
+	ResetNetworkTierConfig()
 	ResetPodCidrOverprovisionConfig()
 	ResetServicesIpv4CidrBlock()
 	ResetServicesSecondaryRangeName()
@@ -143,6 +151,26 @@ func (j *jsiiProxy_ContainerClusterIpAllocationPolicyOutputReference) Additional
 	_jsii_.Get(
 		j,
 		"additionalPodRangesConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterIpAllocationPolicyOutputReference) AutoIpamConfig() ContainerClusterIpAllocationPolicyAutoIpamConfigOutputReference {
+	var returns ContainerClusterIpAllocationPolicyAutoIpamConfigOutputReference
+	_jsii_.Get(
+		j,
+		"autoIpamConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterIpAllocationPolicyOutputReference) AutoIpamConfigInput() *ContainerClusterIpAllocationPolicyAutoIpamConfig {
+	var returns *ContainerClusterIpAllocationPolicyAutoIpamConfig
+	_jsii_.Get(
+		j,
+		"autoIpamConfigInput",
 		&returns,
 	)
 	return returns
@@ -233,6 +261,26 @@ func (j *jsiiProxy_ContainerClusterIpAllocationPolicyOutputReference) InternalVa
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterIpAllocationPolicyOutputReference) NetworkTierConfig() ContainerClusterIpAllocationPolicyNetworkTierConfigOutputReference {
+	var returns ContainerClusterIpAllocationPolicyNetworkTierConfigOutputReference
+	_jsii_.Get(
+		j,
+		"networkTierConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterIpAllocationPolicyOutputReference) NetworkTierConfigInput() *ContainerClusterIpAllocationPolicyNetworkTierConfig {
+	var returns *ContainerClusterIpAllocationPolicyNetworkTierConfig
+	_jsii_.Get(
+		j,
+		"networkTierConfigInput",
 		&returns,
 	)
 	return returns
@@ -684,6 +732,28 @@ func (c *jsiiProxy_ContainerClusterIpAllocationPolicyOutputReference) PutAdditio
 	)
 }
 
+func (c *jsiiProxy_ContainerClusterIpAllocationPolicyOutputReference) PutAutoIpamConfig(value *ContainerClusterIpAllocationPolicyAutoIpamConfig) {
+	if err := c.validatePutAutoIpamConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putAutoIpamConfig",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_ContainerClusterIpAllocationPolicyOutputReference) PutNetworkTierConfig(value *ContainerClusterIpAllocationPolicyNetworkTierConfig) {
+	if err := c.validatePutNetworkTierConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putNetworkTierConfig",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ContainerClusterIpAllocationPolicyOutputReference) PutPodCidrOverprovisionConfig(value *ContainerClusterIpAllocationPolicyPodCidrOverprovisionConfig) {
 	if err := c.validatePutPodCidrOverprovisionConfigParameters(value); err != nil {
 		panic(err)
@@ -711,6 +781,14 @@ func (c *jsiiProxy_ContainerClusterIpAllocationPolicyOutputReference) ResetAddit
 	)
 }
 
+func (c *jsiiProxy_ContainerClusterIpAllocationPolicyOutputReference) ResetAutoIpamConfig() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetAutoIpamConfig",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_ContainerClusterIpAllocationPolicyOutputReference) ResetClusterIpv4CidrBlock() {
 	_jsii_.InvokeVoid(
 		c,
@@ -723,6 +801,14 @@ func (c *jsiiProxy_ContainerClusterIpAllocationPolicyOutputReference) ResetClust
 	_jsii_.InvokeVoid(
 		c,
 		"resetClusterSecondaryRangeName",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerClusterIpAllocationPolicyOutputReference) ResetNetworkTierConfig() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetNetworkTierConfig",
 		nil, // no parameters
 	)
 }

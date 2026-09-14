@@ -207,6 +207,28 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) validatePut
 	return nil
 }
 
+func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) validatePutEntraidConfigParameters(value *GoogleSqlDatabaseInstanceSettingsEntraidConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) validatePutFinalBackupConfigParameters(value *GoogleSqlDatabaseInstanceSettingsFinalBackupConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) validatePutInsightsConfigParameters(value *GoogleSqlDatabaseInstanceSettingsInsightsConfig) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -262,6 +284,17 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) validatePut
 	return nil
 }
 
+func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) validatePutReadPoolAutoScaleConfigParameters(value *GoogleSqlDatabaseInstanceSettingsReadPoolAutoScaleConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) validatePutSqlServerAuditConfigParameters(value *GoogleSqlDatabaseInstanceSettingsSqlServerAuditConfig) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -284,6 +317,26 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) validateRes
 func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) validateSetActivationPolicyParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) validateSetAutoUpgradeEnabledParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
 	}
 
 	return nil
@@ -371,6 +424,14 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) validateSet
 }
 
 func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) validateSetConnectorEnforcementParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) validateSetDataApiAccessParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

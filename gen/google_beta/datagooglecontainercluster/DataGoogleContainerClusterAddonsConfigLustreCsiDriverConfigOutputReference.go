@@ -25,6 +25,7 @@ type DataGoogleContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference 
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DisableMultiNic() cdktf.IResolvable
 	Enabled() cdktf.IResolvable
 	EnableLegacyLustrePort() cdktf.IResolvable
 	// Experimental.
@@ -103,6 +104,16 @@ func (j *jsiiProxy_DataGoogleContainerClusterAddonsConfigLustreCsiDriverConfigOu
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference) DisableMultiNic() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"disableMultiNic",
 		&returns,
 	)
 	return returns

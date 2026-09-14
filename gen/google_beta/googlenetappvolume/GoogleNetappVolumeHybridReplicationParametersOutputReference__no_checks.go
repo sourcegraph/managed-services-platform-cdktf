@@ -64,6 +64,10 @@ func (j *jsiiProxy_GoogleNetappVolumeHybridReplicationParametersOutputReference)
 	return nil
 }
 
+func (j *jsiiProxy_GoogleNetappVolumeHybridReplicationParametersOutputReference) validateSetHybridReplicationTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleNetappVolumeHybridReplicationParametersOutputReference) validateSetInternalValueParameters(val *GoogleNetappVolumeHybridReplicationParameters) error {
 	return nil
 }
@@ -72,11 +76,15 @@ func (j *jsiiProxy_GoogleNetappVolumeHybridReplicationParametersOutputReference)
 	return nil
 }
 
+func (j *jsiiProxy_GoogleNetappVolumeHybridReplicationParametersOutputReference) validateSetLargeVolumeConstituentCountParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleNetappVolumeHybridReplicationParametersOutputReference) validateSetPeerClusterNameParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetappVolumeHybridReplicationParametersOutputReference) validateSetPeerIpAddressesParameters(val *string) error {
+func (j *jsiiProxy_GoogleNetappVolumeHybridReplicationParametersOutputReference) validateSetPeerIpAddressesParameters(val *[]*string) error {
 	return nil
 }
 
@@ -89,6 +97,10 @@ func (j *jsiiProxy_GoogleNetappVolumeHybridReplicationParametersOutputReference)
 }
 
 func (j *jsiiProxy_GoogleNetappVolumeHybridReplicationParametersOutputReference) validateSetReplicationParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleNetappVolumeHybridReplicationParametersOutputReference) validateSetReplicationScheduleParameters(val *string) error {
 	return nil
 }
 

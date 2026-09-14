@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google/datagoogleartifactregistrytag/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/artifact_registry_tag google_artifact_registry_tag}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/artifact_registry_tag google_artifact_registry_tag}.
 type DataGoogleArtifactRegistryTag interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -400,7 +400,7 @@ func (j *jsiiProxy_DataGoogleArtifactRegistryTag) Version() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/artifact_registry_tag google_artifact_registry_tag} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/artifact_registry_tag google_artifact_registry_tag} Data Source.
 func NewDataGoogleArtifactRegistryTag(scope constructs.Construct, id *string, config *DataGoogleArtifactRegistryTagConfig) DataGoogleArtifactRegistryTag {
 	_init_.Initialize()
 
@@ -418,7 +418,7 @@ func NewDataGoogleArtifactRegistryTag(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/artifact_registry_tag google_artifact_registry_tag} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/artifact_registry_tag google_artifact_registry_tag} Data Source.
 func NewDataGoogleArtifactRegistryTag_Override(d DataGoogleArtifactRegistryTag, scope constructs.Construct, id *string, config *DataGoogleArtifactRegistryTagConfig) {
 	_init_.Initialize()
 

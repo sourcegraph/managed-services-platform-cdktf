@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googlebackupdrserviceconfig/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_backup_dr_service_config google_backup_dr_service_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_backup_dr_service_config google_backup_dr_service_config}.
 type GoogleBackupDrServiceConfig interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -401,7 +401,7 @@ func (j *jsiiProxy_GoogleBackupDrServiceConfig) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_backup_dr_service_config google_backup_dr_service_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_backup_dr_service_config google_backup_dr_service_config} Resource.
 func NewGoogleBackupDrServiceConfig(scope constructs.Construct, id *string, config *GoogleBackupDrServiceConfigConfig) GoogleBackupDrServiceConfig {
 	_init_.Initialize()
 
@@ -419,7 +419,7 @@ func NewGoogleBackupDrServiceConfig(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_backup_dr_service_config google_backup_dr_service_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_backup_dr_service_config google_backup_dr_service_config} Resource.
 func NewGoogleBackupDrServiceConfig_Override(g GoogleBackupDrServiceConfig, scope constructs.Construct, id *string, config *GoogleBackupDrServiceConfigConfig) {
 	_init_.Initialize()
 

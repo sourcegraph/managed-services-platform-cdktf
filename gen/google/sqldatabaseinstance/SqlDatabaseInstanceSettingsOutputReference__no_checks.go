@@ -72,6 +72,14 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) validatePutDenyMa
 	return nil
 }
 
+func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) validatePutEntraidConfigParameters(value *SqlDatabaseInstanceSettingsEntraidConfig) error {
+	return nil
+}
+
+func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) validatePutFinalBackupConfigParameters(value *SqlDatabaseInstanceSettingsFinalBackupConfig) error {
+	return nil
+}
+
 func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) validatePutInsightsConfigParameters(value *SqlDatabaseInstanceSettingsInsightsConfig) error {
 	return nil
 }
@@ -92,6 +100,10 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) validatePutPasswo
 	return nil
 }
 
+func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) validatePutReadPoolAutoScaleConfigParameters(value *SqlDatabaseInstanceSettingsReadPoolAutoScaleConfig) error {
+	return nil
+}
+
 func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) validatePutSqlServerAuditConfigParameters(value *SqlDatabaseInstanceSettingsSqlServerAuditConfig) error {
 	return nil
 }
@@ -101,6 +113,10 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) validateResolvePa
 }
 
 func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) validateSetActivationPolicyParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) validateSetAutoUpgradeEnabledParameters(val interface{}) error {
 	return nil
 }
 
@@ -121,6 +137,10 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) validateSetComple
 }
 
 func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) validateSetConnectorEnforcementParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) validateSetDataApiAccessParameters(val *string) error {
 	return nil
 }
 

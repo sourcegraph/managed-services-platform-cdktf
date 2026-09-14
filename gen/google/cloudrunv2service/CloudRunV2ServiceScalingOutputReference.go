@@ -32,6 +32,9 @@ type CloudRunV2ServiceScalingOutputReference interface {
 	ManualInstanceCount() *float64
 	SetManualInstanceCount(val *float64)
 	ManualInstanceCountInput() *float64
+	MaxInstanceCount() *float64
+	SetMaxInstanceCount(val *float64)
+	MaxInstanceCountInput() *float64
 	MinInstanceCount() *float64
 	SetMinInstanceCount(val *float64)
 	MinInstanceCountInput() *float64
@@ -71,6 +74,7 @@ type CloudRunV2ServiceScalingOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetManualInstanceCount()
+	ResetMaxInstanceCount()
 	ResetMinInstanceCount()
 	ResetScalingMode()
 	// Produce the Token's value at resolution time.
@@ -153,6 +157,26 @@ func (j *jsiiProxy_CloudRunV2ServiceScalingOutputReference) ManualInstanceCountI
 	_jsii_.Get(
 		j,
 		"manualInstanceCountInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudRunV2ServiceScalingOutputReference) MaxInstanceCount() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxInstanceCount",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudRunV2ServiceScalingOutputReference) MaxInstanceCountInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxInstanceCountInput",
 		&returns,
 	)
 	return returns
@@ -286,6 +310,17 @@ func (j *jsiiProxy_CloudRunV2ServiceScalingOutputReference)SetManualInstanceCoun
 	_jsii_.Set(
 		j,
 		"manualInstanceCount",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudRunV2ServiceScalingOutputReference)SetMaxInstanceCount(val *float64) {
+	if err := j.validateSetMaxInstanceCountParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"maxInstanceCount",
 		val,
 	)
 }
@@ -524,6 +559,14 @@ func (c *jsiiProxy_CloudRunV2ServiceScalingOutputReference) ResetManualInstanceC
 	_jsii_.InvokeVoid(
 		c,
 		"resetManualInstanceCount",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudRunV2ServiceScalingOutputReference) ResetMaxInstanceCount() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetMaxInstanceCount",
 		nil, // no parameters
 	)
 }

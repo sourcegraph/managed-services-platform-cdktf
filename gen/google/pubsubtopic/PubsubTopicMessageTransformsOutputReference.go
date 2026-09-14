@@ -10,6 +10,8 @@ import (
 
 type PubsubTopicMessageTransformsOutputReference interface {
 	cdktf.ComplexObject
+	AiInference() PubsubTopicMessageTransformsAiInferenceOutputReference
+	AiInferenceInput() *PubsubTopicMessageTransformsAiInference
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -66,7 +68,9 @@ type PubsubTopicMessageTransformsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutAiInference(value *PubsubTopicMessageTransformsAiInference)
 	PutJavascriptUdf(value *PubsubTopicMessageTransformsJavascriptUdf)
+	ResetAiInference()
 	ResetDisabled()
 	ResetJavascriptUdf()
 	// Produce the Token's value at resolution time.
@@ -82,6 +86,26 @@ type PubsubTopicMessageTransformsOutputReference interface {
 // The jsii proxy struct for PubsubTopicMessageTransformsOutputReference
 type jsiiProxy_PubsubTopicMessageTransformsOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_PubsubTopicMessageTransformsOutputReference) AiInference() PubsubTopicMessageTransformsAiInferenceOutputReference {
+	var returns PubsubTopicMessageTransformsAiInferenceOutputReference
+	_jsii_.Get(
+		j,
+		"aiInference",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PubsubTopicMessageTransformsOutputReference) AiInferenceInput() *PubsubTopicMessageTransformsAiInference {
+	var returns *PubsubTopicMessageTransformsAiInference
+	_jsii_.Get(
+		j,
+		"aiInferenceInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_PubsubTopicMessageTransformsOutputReference) ComplexObjectIndex() interface{} {
@@ -474,6 +498,17 @@ func (p *jsiiProxy_PubsubTopicMessageTransformsOutputReference) InterpolationFor
 	return returns
 }
 
+func (p *jsiiProxy_PubsubTopicMessageTransformsOutputReference) PutAiInference(value *PubsubTopicMessageTransformsAiInference) {
+	if err := p.validatePutAiInferenceParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putAiInference",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_PubsubTopicMessageTransformsOutputReference) PutJavascriptUdf(value *PubsubTopicMessageTransformsJavascriptUdf) {
 	if err := p.validatePutJavascriptUdfParameters(value); err != nil {
 		panic(err)
@@ -482,6 +517,14 @@ func (p *jsiiProxy_PubsubTopicMessageTransformsOutputReference) PutJavascriptUdf
 		p,
 		"putJavascriptUdf",
 		[]interface{}{value},
+	)
+}
+
+func (p *jsiiProxy_PubsubTopicMessageTransformsOutputReference) ResetAiInference() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetAiInference",
+		nil, // no parameters
 	)
 }
 

@@ -101,7 +101,29 @@ func (b *jsiiProxy_BeyondcorpSecurityGatewayApplicationUpstreamsOutputReference)
 	return nil
 }
 
+func (b *jsiiProxy_BeyondcorpSecurityGatewayApplicationUpstreamsOutputReference) validatePutExternalParameters(value *BeyondcorpSecurityGatewayApplicationUpstreamsExternal) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (b *jsiiProxy_BeyondcorpSecurityGatewayApplicationUpstreamsOutputReference) validatePutNetworkParameters(value *BeyondcorpSecurityGatewayApplicationUpstreamsNetwork) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (b *jsiiProxy_BeyondcorpSecurityGatewayApplicationUpstreamsOutputReference) validatePutProxyProtocolParameters(value *BeyondcorpSecurityGatewayApplicationUpstreamsProxyProtocol) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}

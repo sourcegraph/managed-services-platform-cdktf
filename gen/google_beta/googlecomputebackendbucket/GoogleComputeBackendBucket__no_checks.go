@@ -76,6 +76,10 @@ func (g *jsiiProxy_GoogleComputeBackendBucket) validatePutCdnPolicyParameters(va
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeBackendBucket) validatePutParamsParameters(value *GoogleComputeBackendBucketParams) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeBackendBucket) validatePutTimeoutsParameters(value *GoogleComputeBackendBucketTimeouts) error {
 	return nil
 }

@@ -6,7 +6,7 @@ type WorkbenchInstanceGceSetupReservationAffinity struct {
 	//
 	// Possible values: ["RESERVATION_NONE", "RESERVATION_ANY", "RESERVATION_SPECIFIC"]
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/workbench_instance#consume_reservation_type WorkbenchInstance#consume_reservation_type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/workbench_instance#consume_reservation_type WorkbenchInstance#consume_reservation_type}
 	ConsumeReservationType *string `field:"optional" json:"consumeReservationType" yaml:"consumeReservationType"`
 	// Corresponds to the label key of a reservation resource.
 	//
@@ -14,7 +14,7 @@ type WorkbenchInstanceGceSetupReservationAffinity struct {
 	// RESERVATION_SPECIFIC by name, use compute.googleapis.com/reservation-name
 	// as the key and specify the name of your reservation as its value.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/workbench_instance#key WorkbenchInstance#key}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/workbench_instance#key WorkbenchInstance#key}
 	Key *string `field:"optional" json:"key" yaml:"key"`
 	// Corresponds to the label values of a reservation resource.
 	//
@@ -23,7 +23,7 @@ type WorkbenchInstanceGceSetupReservationAffinity struct {
 	// "projects/different-project/reservations/some-reservation-name"
 	// to target a shared reservation in the same zone but in a different project.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/workbench_instance#values WorkbenchInstance#values}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/workbench_instance#values WorkbenchInstance#values}
 	Values *[]*string `field:"optional" json:"values" yaml:"values"`
 }
 

@@ -72,6 +72,14 @@ func (g *jsiiProxy_GoogleComputeInterconnectAttachment) validateOverrideLogicalI
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeInterconnectAttachment) validatePutL2ForwardingParameters(value *GoogleComputeInterconnectAttachmentL2Forwarding) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeInterconnectAttachment) validatePutParamsParameters(value *GoogleComputeInterconnectAttachmentParams) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeInterconnectAttachment) validatePutTimeoutsParameters(value *GoogleComputeInterconnectAttachmentTimeouts) error {
 	return nil
 }

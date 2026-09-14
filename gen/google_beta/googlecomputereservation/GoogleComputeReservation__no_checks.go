@@ -128,10 +128,6 @@ func (j *jsiiProxy_GoogleComputeReservation) validateSetEnableEmergentMaintenanc
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeReservation) validateSetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_GoogleComputeReservation) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

@@ -437,6 +437,8 @@ func init() {
 		"@cdktf/provider-google_beta.googleComputeWireGroup.GoogleComputeWireGroupWirePropertiesOutputReference",
 		reflect.TypeOf((*GoogleComputeWireGroupWirePropertiesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "bandwidthAllocation", GoGetter: "BandwidthAllocation"},
+			_jsii_.MemberProperty{JsiiProperty: "bandwidthAllocationInput", GoGetter: "BandwidthAllocationInput"},
 			_jsii_.MemberProperty{JsiiProperty: "bandwidthUnmetered", GoGetter: "BandwidthUnmetered"},
 			_jsii_.MemberProperty{JsiiProperty: "bandwidthUnmeteredInput", GoGetter: "BandwidthUnmeteredInput"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

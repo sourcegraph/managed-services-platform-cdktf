@@ -48,7 +48,15 @@ func (g *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateContainersOutputReference) 
 	return nil
 }
 
+func (g *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateContainersOutputReference) validatePutLivenessProbeParameters(value *GoogleCloudRunV2WorkerPoolTemplateContainersLivenessProbe) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateContainersOutputReference) validatePutResourcesParameters(value *GoogleCloudRunV2WorkerPoolTemplateContainersResources) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateContainersOutputReference) validatePutStartupProbeParameters(value *GoogleCloudRunV2WorkerPoolTemplateContainersStartupProbe) error {
 	return nil
 }
 

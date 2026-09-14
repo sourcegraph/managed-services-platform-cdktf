@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googlevertexaiendpointwithmodelgardendeployment/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_vertex_ai_endpoint_with_model_garden_deployment google_vertex_ai_endpoint_with_model_garden_deployment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_vertex_ai_endpoint_with_model_garden_deployment google_vertex_ai_endpoint_with_model_garden_deployment}.
 type GoogleVertexAiEndpointWithModelGardenDeployment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -531,7 +531,7 @@ func (j *jsiiProxy_GoogleVertexAiEndpointWithModelGardenDeployment) TimeoutsInpu
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_vertex_ai_endpoint_with_model_garden_deployment google_vertex_ai_endpoint_with_model_garden_deployment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_vertex_ai_endpoint_with_model_garden_deployment google_vertex_ai_endpoint_with_model_garden_deployment} Resource.
 func NewGoogleVertexAiEndpointWithModelGardenDeployment(scope constructs.Construct, id *string, config *GoogleVertexAiEndpointWithModelGardenDeploymentConfig) GoogleVertexAiEndpointWithModelGardenDeployment {
 	_init_.Initialize()
 
@@ -549,7 +549,7 @@ func NewGoogleVertexAiEndpointWithModelGardenDeployment(scope constructs.Constru
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_vertex_ai_endpoint_with_model_garden_deployment google_vertex_ai_endpoint_with_model_garden_deployment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_vertex_ai_endpoint_with_model_garden_deployment google_vertex_ai_endpoint_with_model_garden_deployment} Resource.
 func NewGoogleVertexAiEndpointWithModelGardenDeployment_Override(g GoogleVertexAiEndpointWithModelGardenDeployment, scope constructs.Construct, id *string, config *GoogleVertexAiEndpointWithModelGardenDeploymentConfig) {
 	_init_.Initialize()
 

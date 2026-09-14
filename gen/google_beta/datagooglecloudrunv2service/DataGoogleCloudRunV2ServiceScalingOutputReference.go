@@ -30,6 +30,7 @@ type DataGoogleCloudRunV2ServiceScalingOutputReference interface {
 	InternalValue() *DataGoogleCloudRunV2ServiceScaling
 	SetInternalValue(val *DataGoogleCloudRunV2ServiceScaling)
 	ManualInstanceCount() *float64
+	MaxInstanceCount() *float64
 	MinInstanceCount() *float64
 	ScalingMode() *string
 	// Experimental.
@@ -134,6 +135,16 @@ func (j *jsiiProxy_DataGoogleCloudRunV2ServiceScalingOutputReference) ManualInst
 	_jsii_.Get(
 		j,
 		"manualInstanceCount",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleCloudRunV2ServiceScalingOutputReference) MaxInstanceCount() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxInstanceCount",
 		&returns,
 	)
 	return returns

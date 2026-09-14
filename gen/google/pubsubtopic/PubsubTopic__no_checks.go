@@ -148,6 +148,10 @@ func (j *jsiiProxy_PubsubTopic) validateSetProvisionersParameters(val *[]interfa
 	return nil
 }
 
+func (j *jsiiProxy_PubsubTopic) validateSetTagsParameters(val *map[string]*string) error {
+	return nil
+}
+
 func validateNewPubsubTopicParameters(scope constructs.Construct, id *string, config *PubsubTopicConfig) error {
 	return nil
 }

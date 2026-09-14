@@ -10,7 +10,7 @@ type GoogleEventarcPipelineDestinationsNetworkConfig struct {
 	// Required for HTTP endpoint destinations. Must not be specified for
 	// Workflows, MessageBus, or Topic destinations.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_eventarc_pipeline#network_attachment GoogleEventarcPipeline#network_attachment}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_eventarc_pipeline#network_attachment GoogleEventarcPipeline#network_attachment}
 	NetworkAttachment *string `field:"optional" json:"networkAttachment" yaml:"networkAttachment"`
 }
 

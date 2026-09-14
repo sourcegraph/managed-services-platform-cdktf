@@ -64,6 +64,10 @@ func (j *jsiiProxy_ContainerClusterIpAllocationPolicyAdditionalIpRangesConfigOut
 	return nil
 }
 
+func (j *jsiiProxy_ContainerClusterIpAllocationPolicyAdditionalIpRangesConfigOutputReference) validateSetStatusParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ContainerClusterIpAllocationPolicyAdditionalIpRangesConfigOutputReference) validateSetSubnetworkParameters(val *string) error {
 	return nil
 }

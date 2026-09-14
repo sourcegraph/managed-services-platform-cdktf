@@ -6,7 +6,7 @@ type GoogleDataplexEntryAspectsAspect struct {
 	//
 	// The maximum size of the field is 120KB (encoded as UTF-8).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_dataplex_entry#data GoogleDataplexEntry#data}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_dataplex_entry#data GoogleDataplexEntry#data}
 	Data *string `field:"required" json:"data" yaml:"data"`
 }
 

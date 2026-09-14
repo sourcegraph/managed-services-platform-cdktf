@@ -67,7 +67,6 @@ type GoogleBeyondcorpSecurityGatewayApplicationEndpointMatchersOutputReference i
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetPorts()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -482,14 +481,6 @@ func (g *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplicationEndpointMatchersOut
 	)
 
 	return returns
-}
-
-func (g *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplicationEndpointMatchersOutputReference) ResetPorts() {
-	_jsii_.InvokeVoid(
-		g,
-		"resetPorts",
-		nil, // no parameters
-	)
 }
 
 func (g *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplicationEndpointMatchersOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

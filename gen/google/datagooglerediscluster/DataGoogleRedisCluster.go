@@ -9,12 +9,12 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google/datagooglerediscluster/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/redis_cluster google_redis_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/redis_cluster google_redis_cluster}.
 type DataGoogleRedisCluster interface {
 	cdktf.TerraformDataSource
-	AllowFewerZonesDeployment() cdktf.IResolvable
 	AuthorizationMode() *string
 	AutomatedBackupConfig() DataGoogleRedisClusterAutomatedBackupConfigList
+	AvailableMaintenanceVersions() *[]*string
 	BackupCollection() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
@@ -32,6 +32,8 @@ type DataGoogleRedisCluster interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	DiscoveryEndpoints() DataGoogleRedisClusterDiscoveryEndpointsList
+	EffectiveLabels() cdktf.StringMap
+	EffectiveMaintenanceVersion() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -45,12 +47,14 @@ type DataGoogleRedisCluster interface {
 	SetId(val *string)
 	IdInput() *string
 	KmsKey() *string
+	Labels() cdktf.StringMap
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	MaintenancePolicy() DataGoogleRedisClusterMaintenancePolicyList
 	MaintenanceSchedule() DataGoogleRedisClusterMaintenanceScheduleList
+	MaintenanceVersion() *string
 	ManagedBackupSource() DataGoogleRedisClusterManagedBackupSourceList
 	ManagedServerCa() DataGoogleRedisClusterManagedServerCaList
 	Name() *string
@@ -78,12 +82,15 @@ type DataGoogleRedisCluster interface {
 	SetRegion(val *string)
 	RegionInput() *string
 	ReplicaCount() *float64
+	ServerCaMode() *string
+	ServerCaPool() *string
 	ShardCount() *float64
 	SizeGb() *float64
 	State() *string
 	StateInfo() DataGoogleRedisClusterStateInfoList
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -141,16 +148,6 @@ type jsiiProxy_DataGoogleRedisCluster struct {
 	internal.Type__cdktfTerraformDataSource
 }
 
-func (j *jsiiProxy_DataGoogleRedisCluster) AllowFewerZonesDeployment() cdktf.IResolvable {
-	var returns cdktf.IResolvable
-	_jsii_.Get(
-		j,
-		"allowFewerZonesDeployment",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataGoogleRedisCluster) AuthorizationMode() *string {
 	var returns *string
 	_jsii_.Get(
@@ -166,6 +163,16 @@ func (j *jsiiProxy_DataGoogleRedisCluster) AutomatedBackupConfig() DataGoogleRed
 	_jsii_.Get(
 		j,
 		"automatedBackupConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleRedisCluster) AvailableMaintenanceVersions() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"availableMaintenanceVersions",
 		&returns,
 	)
 	return returns
@@ -261,6 +268,26 @@ func (j *jsiiProxy_DataGoogleRedisCluster) DiscoveryEndpoints() DataGoogleRedisC
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleRedisCluster) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleRedisCluster) EffectiveMaintenanceVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"effectiveMaintenanceVersion",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleRedisCluster) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
@@ -331,6 +358,16 @@ func (j *jsiiProxy_DataGoogleRedisCluster) KmsKey() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleRedisCluster) Labels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"labels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleRedisCluster) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -356,6 +393,16 @@ func (j *jsiiProxy_DataGoogleRedisCluster) MaintenanceSchedule() DataGoogleRedis
 	_jsii_.Get(
 		j,
 		"maintenanceSchedule",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleRedisCluster) MaintenanceVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"maintenanceVersion",
 		&returns,
 	)
 	return returns
@@ -551,6 +598,26 @@ func (j *jsiiProxy_DataGoogleRedisCluster) ReplicaCount() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleRedisCluster) ServerCaMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serverCaMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleRedisCluster) ServerCaPool() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serverCaPool",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleRedisCluster) ShardCount() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -596,6 +663,16 @@ func (j *jsiiProxy_DataGoogleRedisCluster) TerraformGeneratorMetadata() *cdktf.T
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleRedisCluster) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
 		&returns,
 	)
 	return returns
@@ -652,7 +729,7 @@ func (j *jsiiProxy_DataGoogleRedisCluster) ZoneDistributionConfig() DataGoogleRe
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/redis_cluster google_redis_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/redis_cluster google_redis_cluster} Data Source.
 func NewDataGoogleRedisCluster(scope constructs.Construct, id *string, config *DataGoogleRedisClusterConfig) DataGoogleRedisCluster {
 	_init_.Initialize()
 
@@ -670,7 +747,7 @@ func NewDataGoogleRedisCluster(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/redis_cluster google_redis_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/redis_cluster google_redis_cluster} Data Source.
 func NewDataGoogleRedisCluster_Override(d DataGoogleRedisCluster, scope constructs.Construct, id *string, config *DataGoogleRedisClusterConfig) {
 	_init_.Initialize()
 

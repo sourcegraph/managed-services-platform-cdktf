@@ -10,6 +10,7 @@ import (
 
 type GoogleComputeReservationSpecificReservationOutputReference interface {
 	cdktf.ComplexObject
+	AssuredCount() *float64
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -86,6 +87,16 @@ type GoogleComputeReservationSpecificReservationOutputReference interface {
 // The jsii proxy struct for GoogleComputeReservationSpecificReservationOutputReference
 type jsiiProxy_GoogleComputeReservationSpecificReservationOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_GoogleComputeReservationSpecificReservationOutputReference) AssuredCount() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"assuredCount",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_GoogleComputeReservationSpecificReservationOutputReference) ComplexObjectIndex() interface{} {

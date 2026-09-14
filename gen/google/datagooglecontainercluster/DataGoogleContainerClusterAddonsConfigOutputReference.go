@@ -42,6 +42,7 @@ type DataGoogleContainerClusterAddonsConfigOutputReference interface {
 	NetworkPolicyConfig() DataGoogleContainerClusterAddonsConfigNetworkPolicyConfigList
 	ParallelstoreCsiDriverConfig() DataGoogleContainerClusterAddonsConfigParallelstoreCsiDriverConfigList
 	RayOperatorConfig() DataGoogleContainerClusterAddonsConfigRayOperatorConfigList
+	SliceControllerConfig() DataGoogleContainerClusterAddonsConfigSliceControllerConfigList
 	StatefulHaConfig() DataGoogleContainerClusterAddonsConfigStatefulHaConfigList
 	// Experimental.
 	TerraformAttribute() *string
@@ -265,6 +266,16 @@ func (j *jsiiProxy_DataGoogleContainerClusterAddonsConfigOutputReference) RayOpe
 	_jsii_.Get(
 		j,
 		"rayOperatorConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterAddonsConfigOutputReference) SliceControllerConfig() DataGoogleContainerClusterAddonsConfigSliceControllerConfigList {
+	var returns DataGoogleContainerClusterAddonsConfigSliceControllerConfigList
+	_jsii_.Get(
+		j,
+		"sliceControllerConfig",
 		&returns,
 	)
 	return returns

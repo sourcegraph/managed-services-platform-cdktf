@@ -10,6 +10,8 @@ import (
 
 type GooglePubsubTopicMessageTransformsOutputReference interface {
 	cdktf.ComplexObject
+	AiInference() GooglePubsubTopicMessageTransformsAiInferenceOutputReference
+	AiInferenceInput() *GooglePubsubTopicMessageTransformsAiInference
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -66,7 +68,9 @@ type GooglePubsubTopicMessageTransformsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutAiInference(value *GooglePubsubTopicMessageTransformsAiInference)
 	PutJavascriptUdf(value *GooglePubsubTopicMessageTransformsJavascriptUdf)
+	ResetAiInference()
 	ResetDisabled()
 	ResetJavascriptUdf()
 	// Produce the Token's value at resolution time.
@@ -82,6 +86,26 @@ type GooglePubsubTopicMessageTransformsOutputReference interface {
 // The jsii proxy struct for GooglePubsubTopicMessageTransformsOutputReference
 type jsiiProxy_GooglePubsubTopicMessageTransformsOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_GooglePubsubTopicMessageTransformsOutputReference) AiInference() GooglePubsubTopicMessageTransformsAiInferenceOutputReference {
+	var returns GooglePubsubTopicMessageTransformsAiInferenceOutputReference
+	_jsii_.Get(
+		j,
+		"aiInference",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GooglePubsubTopicMessageTransformsOutputReference) AiInferenceInput() *GooglePubsubTopicMessageTransformsAiInference {
+	var returns *GooglePubsubTopicMessageTransformsAiInference
+	_jsii_.Get(
+		j,
+		"aiInferenceInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_GooglePubsubTopicMessageTransformsOutputReference) ComplexObjectIndex() interface{} {
@@ -474,6 +498,17 @@ func (g *jsiiProxy_GooglePubsubTopicMessageTransformsOutputReference) Interpolat
 	return returns
 }
 
+func (g *jsiiProxy_GooglePubsubTopicMessageTransformsOutputReference) PutAiInference(value *GooglePubsubTopicMessageTransformsAiInference) {
+	if err := g.validatePutAiInferenceParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putAiInference",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GooglePubsubTopicMessageTransformsOutputReference) PutJavascriptUdf(value *GooglePubsubTopicMessageTransformsJavascriptUdf) {
 	if err := g.validatePutJavascriptUdfParameters(value); err != nil {
 		panic(err)
@@ -482,6 +517,14 @@ func (g *jsiiProxy_GooglePubsubTopicMessageTransformsOutputReference) PutJavascr
 		g,
 		"putJavascriptUdf",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GooglePubsubTopicMessageTransformsOutputReference) ResetAiInference() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAiInference",
+		nil, // no parameters
 	)
 }
 

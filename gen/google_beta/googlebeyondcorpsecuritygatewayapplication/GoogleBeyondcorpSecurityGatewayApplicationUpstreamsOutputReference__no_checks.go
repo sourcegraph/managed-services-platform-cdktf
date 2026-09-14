@@ -48,7 +48,15 @@ func (g *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplicationUpstreamsOutputRefe
 	return nil
 }
 
+func (g *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplicationUpstreamsOutputReference) validatePutExternalParameters(value *GoogleBeyondcorpSecurityGatewayApplicationUpstreamsExternal) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplicationUpstreamsOutputReference) validatePutNetworkParameters(value *GoogleBeyondcorpSecurityGatewayApplicationUpstreamsNetwork) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplicationUpstreamsOutputReference) validatePutProxyProtocolParameters(value *GoogleBeyondcorpSecurityGatewayApplicationUpstreamsProxyProtocol) error {
 	return nil
 }
 

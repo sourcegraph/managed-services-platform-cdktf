@@ -300,6 +300,14 @@ func (j *jsiiProxy_DataprocClusterClusterConfigOutputReference) validateSetClust
 	return nil
 }
 
+func (j *jsiiProxy_DataprocClusterClusterConfigOutputReference) validateSetClusterTypeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataprocClusterClusterConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	switch val.(type) {
 	case *string:
@@ -358,6 +366,14 @@ func (j *jsiiProxy_DataprocClusterClusterConfigOutputReference) validateSetCompl
 }
 
 func (j *jsiiProxy_DataprocClusterClusterConfigOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DataprocClusterClusterConfigOutputReference) validateSetEngineParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

@@ -612,6 +612,14 @@ func (j *jsiiProxy_GooglePubsubSubscription) validateSetRetainAckedMessagesParam
 	return nil
 }
 
+func (j *jsiiProxy_GooglePubsubSubscription) validateSetTagsParameters(val *map[string]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GooglePubsubSubscription) validateSetTopicParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

@@ -37,6 +37,8 @@ type ComputeRegionUrlMapPathMatcherOutputReference interface {
 	DescriptionInput() *string
 	// Experimental.
 	Fqn() *string
+	HeaderAction() ComputeRegionUrlMapPathMatcherHeaderActionOutputReference
+	HeaderActionInput() *ComputeRegionUrlMapPathMatcherHeaderAction
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
 	Name() *string
@@ -80,12 +82,14 @@ type ComputeRegionUrlMapPathMatcherOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutDefaultRouteAction(value *ComputeRegionUrlMapPathMatcherDefaultRouteAction)
 	PutDefaultUrlRedirect(value *ComputeRegionUrlMapPathMatcherDefaultUrlRedirect)
+	PutHeaderAction(value *ComputeRegionUrlMapPathMatcherHeaderAction)
 	PutPathRule(value interface{})
 	PutRouteRules(value interface{})
 	ResetDefaultRouteAction()
 	ResetDefaultService()
 	ResetDefaultUrlRedirect()
 	ResetDescription()
+	ResetHeaderAction()
 	ResetPathRule()
 	ResetRouteRules()
 	// Produce the Token's value at resolution time.
@@ -218,6 +222,26 @@ func (j *jsiiProxy_ComputeRegionUrlMapPathMatcherOutputReference) Fqn() *string 
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRegionUrlMapPathMatcherOutputReference) HeaderAction() ComputeRegionUrlMapPathMatcherHeaderActionOutputReference {
+	var returns ComputeRegionUrlMapPathMatcherHeaderActionOutputReference
+	_jsii_.Get(
+		j,
+		"headerAction",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRegionUrlMapPathMatcherOutputReference) HeaderActionInput() *ComputeRegionUrlMapPathMatcherHeaderAction {
+	var returns *ComputeRegionUrlMapPathMatcherHeaderAction
+	_jsii_.Get(
+		j,
+		"headerActionInput",
 		&returns,
 	)
 	return returns
@@ -637,6 +661,17 @@ func (c *jsiiProxy_ComputeRegionUrlMapPathMatcherOutputReference) PutDefaultUrlR
 	)
 }
 
+func (c *jsiiProxy_ComputeRegionUrlMapPathMatcherOutputReference) PutHeaderAction(value *ComputeRegionUrlMapPathMatcherHeaderAction) {
+	if err := c.validatePutHeaderActionParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putHeaderAction",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ComputeRegionUrlMapPathMatcherOutputReference) PutPathRule(value interface{}) {
 	if err := c.validatePutPathRuleParameters(value); err != nil {
 		panic(err)
@@ -687,6 +722,14 @@ func (c *jsiiProxy_ComputeRegionUrlMapPathMatcherOutputReference) ResetDescripti
 	_jsii_.InvokeVoid(
 		c,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeRegionUrlMapPathMatcherOutputReference) ResetHeaderAction() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetHeaderAction",
 		nil, // no parameters
 	)
 }

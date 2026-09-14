@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googlediscoveryenginedatastore/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_discovery_engine_data_store google_discovery_engine_data_store}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_discovery_engine_data_store google_discovery_engine_data_store}.
 type GoogleDiscoveryEngineDataStore interface {
 	cdktf.TerraformResource
 	AdvancedSiteSearchConfig() GoogleDiscoveryEngineDataStoreAdvancedSiteSearchConfigOutputReference
@@ -147,6 +147,7 @@ type GoogleDiscoveryEngineDataStore interface {
 	PutDocumentProcessingConfig(value *GoogleDiscoveryEngineDataStoreDocumentProcessingConfig)
 	PutTimeouts(value *GoogleDiscoveryEngineDataStoreTimeouts)
 	ResetAdvancedSiteSearchConfig()
+	ResetContentConfig()
 	ResetCreateAdvancedSiteSearch()
 	ResetDocumentProcessingConfig()
 	ResetId()
@@ -647,7 +648,7 @@ func (j *jsiiProxy_GoogleDiscoveryEngineDataStore) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_discovery_engine_data_store google_discovery_engine_data_store} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_discovery_engine_data_store google_discovery_engine_data_store} Resource.
 func NewGoogleDiscoveryEngineDataStore(scope constructs.Construct, id *string, config *GoogleDiscoveryEngineDataStoreConfig) GoogleDiscoveryEngineDataStore {
 	_init_.Initialize()
 
@@ -665,7 +666,7 @@ func NewGoogleDiscoveryEngineDataStore(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_discovery_engine_data_store google_discovery_engine_data_store} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_discovery_engine_data_store google_discovery_engine_data_store} Resource.
 func NewGoogleDiscoveryEngineDataStore_Override(g GoogleDiscoveryEngineDataStore, scope constructs.Construct, id *string, config *GoogleDiscoveryEngineDataStoreConfig) {
 	_init_.Initialize()
 
@@ -1255,6 +1256,14 @@ func (g *jsiiProxy_GoogleDiscoveryEngineDataStore) ResetAdvancedSiteSearchConfig
 	_jsii_.InvokeVoid(
 		g,
 		"resetAdvancedSiteSearchConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDiscoveryEngineDataStore) ResetContentConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetContentConfig",
 		nil, // no parameters
 	)
 }

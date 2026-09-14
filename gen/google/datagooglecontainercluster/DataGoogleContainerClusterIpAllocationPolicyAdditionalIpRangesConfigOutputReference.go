@@ -30,6 +30,7 @@ type DataGoogleContainerClusterIpAllocationPolicyAdditionalIpRangesConfigOutputR
 	InternalValue() *DataGoogleContainerClusterIpAllocationPolicyAdditionalIpRangesConfig
 	SetInternalValue(val *DataGoogleContainerClusterIpAllocationPolicyAdditionalIpRangesConfig)
 	PodIpv4RangeNames() *[]*string
+	Status() *string
 	Subnetwork() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -133,6 +134,16 @@ func (j *jsiiProxy_DataGoogleContainerClusterIpAllocationPolicyAdditionalIpRange
 	_jsii_.Get(
 		j,
 		"podIpv4RangeNames",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterIpAllocationPolicyAdditionalIpRangesConfigOutputReference) Status() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"status",
 		&returns,
 	)
 	return returns

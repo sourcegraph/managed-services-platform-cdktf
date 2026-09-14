@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/datagoogleredisinstance/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/data-sources/google_redis_instance google_redis_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/data-sources/google_redis_instance google_redis_instance}.
 type DataGoogleRedisInstance interface {
 	cdktf.TerraformDataSource
 	AlternativeLocationId() *string
@@ -28,6 +28,7 @@ type DataGoogleRedisInstance interface {
 	CreateTime() *string
 	CurrentLocationId() *string
 	CustomerManagedKey() *string
+	DeletionProtection() cdktf.IResolvable
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -251,6 +252,16 @@ func (j *jsiiProxy_DataGoogleRedisInstance) CustomerManagedKey() *string {
 	_jsii_.Get(
 		j,
 		"customerManagedKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleRedisInstance) DeletionProtection() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"deletionProtection",
 		&returns,
 	)
 	return returns
@@ -707,7 +718,7 @@ func (j *jsiiProxy_DataGoogleRedisInstance) TransitEncryptionMode() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/data-sources/google_redis_instance google_redis_instance} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/data-sources/google_redis_instance google_redis_instance} Data Source.
 func NewDataGoogleRedisInstance(scope constructs.Construct, id *string, config *DataGoogleRedisInstanceConfig) DataGoogleRedisInstance {
 	_init_.Initialize()
 
@@ -725,7 +736,7 @@ func NewDataGoogleRedisInstance(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/data-sources/google_redis_instance google_redis_instance} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/data-sources/google_redis_instance google_redis_instance} Data Source.
 func NewDataGoogleRedisInstance_Override(d DataGoogleRedisInstance, scope constructs.Construct, id *string, config *DataGoogleRedisInstanceConfig) {
 	_init_.Initialize()
 

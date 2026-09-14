@@ -104,6 +104,10 @@ func (j *jsiiProxy_OracleDatabaseOdbNetwork) validateSetDeletionProtectionParame
 	return nil
 }
 
+func (j *jsiiProxy_OracleDatabaseOdbNetwork) validateSetGcpOracleZoneParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_OracleDatabaseOdbNetwork) validateSetIdParameters(val *string) error {
 	return nil
 }

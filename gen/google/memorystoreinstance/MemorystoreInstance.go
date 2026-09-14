@@ -9,17 +9,15 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google/memorystoreinstance/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/memorystore_instance google_memorystore_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/memorystore_instance google_memorystore_instance}.
 type MemorystoreInstance interface {
 	cdktf.TerraformResource
-	AllowFewerZonesDeployment() interface{}
-	SetAllowFewerZonesDeployment(val interface{})
-	AllowFewerZonesDeploymentInput() interface{}
 	AuthorizationMode() *string
 	SetAuthorizationMode(val *string)
 	AuthorizationModeInput() *string
 	AutomatedBackupConfig() MemorystoreInstanceAutomatedBackupConfigOutputReference
 	AutomatedBackupConfigInput() *MemorystoreInstanceAutomatedBackupConfig
+	AvailableMaintenanceVersions() *[]*string
 	BackupCollection() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
@@ -49,6 +47,7 @@ type MemorystoreInstance interface {
 	DesiredPscAutoConnectionsInput() interface{}
 	DiscoveryEndpoints() MemorystoreInstanceDiscoveryEndpointsList
 	EffectiveLabels() cdktf.StringMap
+	EffectiveMaintenanceVersion() *string
 	Endpoints() MemorystoreInstanceEndpointsList
 	EngineConfigs() *map[string]*string
 	SetEngineConfigs(val *map[string]*string)
@@ -88,6 +87,9 @@ type MemorystoreInstance interface {
 	MaintenancePolicy() MemorystoreInstanceMaintenancePolicyOutputReference
 	MaintenancePolicyInput() *MemorystoreInstanceMaintenancePolicy
 	MaintenanceSchedule() MemorystoreInstanceMaintenanceScheduleList
+	MaintenanceVersion() *string
+	SetMaintenanceVersion(val *string)
+	MaintenanceVersionInput() *string
 	ManagedBackupSource() MemorystoreInstanceManagedBackupSourceOutputReference
 	ManagedBackupSourceInput() *MemorystoreInstanceManagedBackupSource
 	ManagedServerCa() MemorystoreInstanceManagedServerCaList
@@ -121,6 +123,12 @@ type MemorystoreInstance interface {
 	ReplicaCount() *float64
 	SetReplicaCount(val *float64)
 	ReplicaCountInput() *float64
+	ServerCaMode() *string
+	SetServerCaMode(val *string)
+	ServerCaModeInput() *string
+	ServerCaPool() *string
+	SetServerCaPool(val *string)
+	ServerCaPoolInput() *string
 	ShardCount() *float64
 	SetShardCount(val *float64)
 	ShardCountInput() *float64
@@ -195,7 +203,6 @@ type MemorystoreInstance interface {
 	PutPersistenceConfig(value *MemorystoreInstancePersistenceConfig)
 	PutTimeouts(value *MemorystoreInstanceTimeouts)
 	PutZoneDistributionConfig(value *MemorystoreInstanceZoneDistributionConfig)
-	ResetAllowFewerZonesDeployment()
 	ResetAuthorizationMode()
 	ResetAutomatedBackupConfig()
 	ResetCrossInstanceReplicationConfig()
@@ -209,6 +216,7 @@ type MemorystoreInstance interface {
 	ResetKmsKey()
 	ResetLabels()
 	ResetMaintenancePolicy()
+	ResetMaintenanceVersion()
 	ResetManagedBackupSource()
 	ResetMode()
 	ResetNodeType()
@@ -218,6 +226,8 @@ type MemorystoreInstance interface {
 	ResetPersistenceConfig()
 	ResetProject()
 	ResetReplicaCount()
+	ResetServerCaMode()
+	ResetServerCaPool()
 	ResetTimeouts()
 	ResetTransitEncryptionMode()
 	ResetZoneDistributionConfig()
@@ -237,26 +247,6 @@ type MemorystoreInstance interface {
 // The jsii proxy struct for MemorystoreInstance
 type jsiiProxy_MemorystoreInstance struct {
 	internal.Type__cdktfTerraformResource
-}
-
-func (j *jsiiProxy_MemorystoreInstance) AllowFewerZonesDeployment() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"allowFewerZonesDeployment",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_MemorystoreInstance) AllowFewerZonesDeploymentInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"allowFewerZonesDeploymentInput",
-		&returns,
-	)
-	return returns
 }
 
 func (j *jsiiProxy_MemorystoreInstance) AuthorizationMode() *string {
@@ -294,6 +284,16 @@ func (j *jsiiProxy_MemorystoreInstance) AutomatedBackupConfigInput() *Memorystor
 	_jsii_.Get(
 		j,
 		"automatedBackupConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MemorystoreInstance) AvailableMaintenanceVersions() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"availableMaintenanceVersions",
 		&returns,
 	)
 	return returns
@@ -464,6 +464,16 @@ func (j *jsiiProxy_MemorystoreInstance) EffectiveLabels() cdktf.StringMap {
 	_jsii_.Get(
 		j,
 		"effectiveLabels",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MemorystoreInstance) EffectiveMaintenanceVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"effectiveMaintenanceVersion",
 		&returns,
 	)
 	return returns
@@ -709,6 +719,26 @@ func (j *jsiiProxy_MemorystoreInstance) MaintenanceSchedule() MemorystoreInstanc
 	return returns
 }
 
+func (j *jsiiProxy_MemorystoreInstance) MaintenanceVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"maintenanceVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MemorystoreInstance) MaintenanceVersionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"maintenanceVersionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MemorystoreInstance) ManagedBackupSource() MemorystoreInstanceManagedBackupSourceOutputReference {
 	var returns MemorystoreInstanceManagedBackupSourceOutputReference
 	_jsii_.Get(
@@ -919,6 +949,46 @@ func (j *jsiiProxy_MemorystoreInstance) ReplicaCountInput() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_MemorystoreInstance) ServerCaMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serverCaMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MemorystoreInstance) ServerCaModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serverCaModeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MemorystoreInstance) ServerCaPool() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serverCaPool",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MemorystoreInstance) ServerCaPoolInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serverCaPoolInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MemorystoreInstance) ShardCount() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -1080,7 +1150,7 @@ func (j *jsiiProxy_MemorystoreInstance) ZoneDistributionConfigInput() *Memorysto
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/memorystore_instance google_memorystore_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/memorystore_instance google_memorystore_instance} Resource.
 func NewMemorystoreInstance(scope constructs.Construct, id *string, config *MemorystoreInstanceConfig) MemorystoreInstance {
 	_init_.Initialize()
 
@@ -1098,7 +1168,7 @@ func NewMemorystoreInstance(scope constructs.Construct, id *string, config *Memo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/memorystore_instance google_memorystore_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/memorystore_instance google_memorystore_instance} Resource.
 func NewMemorystoreInstance_Override(m MemorystoreInstance, scope constructs.Construct, id *string, config *MemorystoreInstanceConfig) {
 	_init_.Initialize()
 
@@ -1106,17 +1176,6 @@ func NewMemorystoreInstance_Override(m MemorystoreInstance, scope constructs.Con
 		"@cdktf/provider-google.memorystoreInstance.MemorystoreInstance",
 		[]interface{}{scope, id, config},
 		m,
-	)
-}
-
-func (j *jsiiProxy_MemorystoreInstance)SetAllowFewerZonesDeployment(val interface{}) {
-	if err := j.validateSetAllowFewerZonesDeploymentParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"allowFewerZonesDeployment",
-		val,
 	)
 }
 
@@ -1268,6 +1327,17 @@ func (j *jsiiProxy_MemorystoreInstance)SetLocation(val *string) {
 	)
 }
 
+func (j *jsiiProxy_MemorystoreInstance)SetMaintenanceVersion(val *string) {
+	if err := j.validateSetMaintenanceVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"maintenanceVersion",
+		val,
+	)
+}
+
 func (j *jsiiProxy_MemorystoreInstance)SetMode(val *string) {
 	if err := j.validateSetModeParameters(val); err != nil {
 		panic(err)
@@ -1327,6 +1397,28 @@ func (j *jsiiProxy_MemorystoreInstance)SetReplicaCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"replicaCount",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MemorystoreInstance)SetServerCaMode(val *string) {
+	if err := j.validateSetServerCaModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"serverCaMode",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MemorystoreInstance)SetServerCaPool(val *string) {
+	if err := j.validateSetServerCaPoolParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"serverCaPool",
 		val,
 	)
 }
@@ -1816,14 +1908,6 @@ func (m *jsiiProxy_MemorystoreInstance) PutZoneDistributionConfig(value *Memorys
 	)
 }
 
-func (m *jsiiProxy_MemorystoreInstance) ResetAllowFewerZonesDeployment() {
-	_jsii_.InvokeVoid(
-		m,
-		"resetAllowFewerZonesDeployment",
-		nil, // no parameters
-	)
-}
-
 func (m *jsiiProxy_MemorystoreInstance) ResetAuthorizationMode() {
 	_jsii_.InvokeVoid(
 		m,
@@ -1928,6 +2012,14 @@ func (m *jsiiProxy_MemorystoreInstance) ResetMaintenancePolicy() {
 	)
 }
 
+func (m *jsiiProxy_MemorystoreInstance) ResetMaintenanceVersion() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetMaintenanceVersion",
+		nil, // no parameters
+	)
+}
+
 func (m *jsiiProxy_MemorystoreInstance) ResetManagedBackupSource() {
 	_jsii_.InvokeVoid(
 		m,
@@ -1980,6 +2072,22 @@ func (m *jsiiProxy_MemorystoreInstance) ResetReplicaCount() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetReplicaCount",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MemorystoreInstance) ResetServerCaMode() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetServerCaMode",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MemorystoreInstance) ResetServerCaPool() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetServerCaPool",
 		nil, // no parameters
 	)
 }

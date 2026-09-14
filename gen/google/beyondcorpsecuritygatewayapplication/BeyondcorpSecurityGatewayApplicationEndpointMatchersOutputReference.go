@@ -67,7 +67,6 @@ type BeyondcorpSecurityGatewayApplicationEndpointMatchersOutputReference interfa
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetPorts()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -482,14 +481,6 @@ func (b *jsiiProxy_BeyondcorpSecurityGatewayApplicationEndpointMatchersOutputRef
 	)
 
 	return returns
-}
-
-func (b *jsiiProxy_BeyondcorpSecurityGatewayApplicationEndpointMatchersOutputReference) ResetPorts() {
-	_jsii_.InvokeVoid(
-		b,
-		"resetPorts",
-		nil, // no parameters
-	)
 }
 
 func (b *jsiiProxy_BeyondcorpSecurityGatewayApplicationEndpointMatchersOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

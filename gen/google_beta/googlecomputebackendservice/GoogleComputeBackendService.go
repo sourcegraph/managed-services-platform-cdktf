@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googlecomputebackendservice/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_compute_backend_service google_compute_backend_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_compute_backend_service google_compute_backend_service}.
 type GoogleComputeBackendService interface {
 	cdktf.TerraformResource
 	AffinityCookieTtlSec() *float64
@@ -117,6 +117,8 @@ type GoogleComputeBackendService interface {
 	Node() constructs.Node
 	OutlierDetection() GoogleComputeBackendServiceOutlierDetectionOutputReference
 	OutlierDetectionInput() *GoogleComputeBackendServiceOutlierDetection
+	Params() GoogleComputeBackendServiceParamsOutputReference
+	ParamsInput() *GoogleComputeBackendServiceParams
 	PortName() *string
 	SetPortName(val *string)
 	PortNameInput() *string
@@ -218,6 +220,7 @@ type GoogleComputeBackendService interface {
 	PutMaxStreamDuration(value *GoogleComputeBackendServiceMaxStreamDuration)
 	PutNetworkPassThroughLbTrafficPolicy(value *GoogleComputeBackendServiceNetworkPassThroughLbTrafficPolicy)
 	PutOutlierDetection(value *GoogleComputeBackendServiceOutlierDetection)
+	PutParams(value *GoogleComputeBackendServiceParams)
 	PutSecuritySettings(value *GoogleComputeBackendServiceSecuritySettings)
 	PutStrongSessionAffinityCookie(value *GoogleComputeBackendServiceStrongSessionAffinityCookie)
 	PutTimeouts(value *GoogleComputeBackendServiceTimeouts)
@@ -252,6 +255,7 @@ type GoogleComputeBackendService interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetParams()
 	ResetPortName()
 	ResetProject()
 	ResetProtocol()
@@ -971,6 +975,26 @@ func (j *jsiiProxy_GoogleComputeBackendService) OutlierDetectionInput() *GoogleC
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeBackendService) Params() GoogleComputeBackendServiceParamsOutputReference {
+	var returns GoogleComputeBackendServiceParamsOutputReference
+	_jsii_.Get(
+		j,
+		"params",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeBackendService) ParamsInput() *GoogleComputeBackendServiceParams {
+	var returns *GoogleComputeBackendServiceParams
+	_jsii_.Get(
+		j,
+		"paramsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeBackendService) PortName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1262,7 +1286,7 @@ func (j *jsiiProxy_GoogleComputeBackendService) TlsSettingsInput() *GoogleComput
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_compute_backend_service google_compute_backend_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_compute_backend_service google_compute_backend_service} Resource.
 func NewGoogleComputeBackendService(scope constructs.Construct, id *string, config *GoogleComputeBackendServiceConfig) GoogleComputeBackendService {
 	_init_.Initialize()
 
@@ -1280,7 +1304,7 @@ func NewGoogleComputeBackendService(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_compute_backend_service google_compute_backend_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_compute_backend_service google_compute_backend_service} Resource.
 func NewGoogleComputeBackendService_Override(g GoogleComputeBackendService, scope constructs.Construct, id *string, config *GoogleComputeBackendServiceConfig) {
 	_init_.Initialize()
 
@@ -2097,6 +2121,17 @@ func (g *jsiiProxy_GoogleComputeBackendService) PutOutlierDetection(value *Googl
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeBackendService) PutParams(value *GoogleComputeBackendServiceParams) {
+	if err := g.validatePutParamsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putParams",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeBackendService) PutSecuritySettings(value *GoogleComputeBackendServiceSecuritySettings) {
 	if err := g.validatePutSecuritySettingsParameters(value); err != nil {
 		panic(err)
@@ -2361,6 +2396,14 @@ func (g *jsiiProxy_GoogleComputeBackendService) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeBackendService) ResetParams() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetParams",
 		nil, // no parameters
 	)
 }

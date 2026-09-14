@@ -312,16 +312,19 @@ func init() {
 		"@cdktf/provider-google.storageBucket.StorageBucketEncryption",
 		reflect.TypeOf((*StorageBucketEncryption)(nil)).Elem(),
 	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-google.storageBucket.StorageBucketEncryptionCustomerManagedEncryptionEnforcementConfig",
+		reflect.TypeOf((*StorageBucketEncryptionCustomerManagedEncryptionEnforcementConfig)(nil)).Elem(),
+	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.storageBucket.StorageBucketEncryptionOutputReference",
-		reflect.TypeOf((*StorageBucketEncryptionOutputReference)(nil)).Elem(),
+		"@cdktf/provider-google.storageBucket.StorageBucketEncryptionCustomerManagedEncryptionEnforcementConfigOutputReference",
+		reflect.TypeOf((*StorageBucketEncryptionCustomerManagedEncryptionEnforcementConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "defaultKmsKeyName", GoGetter: "DefaultKmsKeyName"},
-			_jsii_.MemberProperty{JsiiProperty: "defaultKmsKeyNameInput", GoGetter: "DefaultKmsKeyNameInput"},
+			_jsii_.MemberProperty{JsiiProperty: "effectiveTime", GoGetter: "EffectiveTime"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
 			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
@@ -335,6 +338,133 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "restrictionMode", GoGetter: "RestrictionMode"},
+			_jsii_.MemberProperty{JsiiProperty: "restrictionModeInput", GoGetter: "RestrictionModeInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_StorageBucketEncryptionCustomerManagedEncryptionEnforcementConfigOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-google.storageBucket.StorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfig",
+		reflect.TypeOf((*StorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfig)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google.storageBucket.StorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfigOutputReference",
+		reflect.TypeOf((*StorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfigOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "effectiveTime", GoGetter: "EffectiveTime"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "restrictionMode", GoGetter: "RestrictionMode"},
+			_jsii_.MemberProperty{JsiiProperty: "restrictionModeInput", GoGetter: "RestrictionModeInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_StorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfigOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-google.storageBucket.StorageBucketEncryptionGoogleManagedEncryptionEnforcementConfig",
+		reflect.TypeOf((*StorageBucketEncryptionGoogleManagedEncryptionEnforcementConfig)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google.storageBucket.StorageBucketEncryptionGoogleManagedEncryptionEnforcementConfigOutputReference",
+		reflect.TypeOf((*StorageBucketEncryptionGoogleManagedEncryptionEnforcementConfigOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "effectiveTime", GoGetter: "EffectiveTime"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "restrictionMode", GoGetter: "RestrictionMode"},
+			_jsii_.MemberProperty{JsiiProperty: "restrictionModeInput", GoGetter: "RestrictionModeInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_StorageBucketEncryptionGoogleManagedEncryptionEnforcementConfigOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google.storageBucket.StorageBucketEncryptionOutputReference",
+		reflect.TypeOf((*StorageBucketEncryptionOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "customerManagedEncryptionEnforcementConfig", GoGetter: "CustomerManagedEncryptionEnforcementConfig"},
+			_jsii_.MemberProperty{JsiiProperty: "customerManagedEncryptionEnforcementConfigInput", GoGetter: "CustomerManagedEncryptionEnforcementConfigInput"},
+			_jsii_.MemberProperty{JsiiProperty: "customerSuppliedEncryptionEnforcementConfig", GoGetter: "CustomerSuppliedEncryptionEnforcementConfig"},
+			_jsii_.MemberProperty{JsiiProperty: "customerSuppliedEncryptionEnforcementConfigInput", GoGetter: "CustomerSuppliedEncryptionEnforcementConfigInput"},
+			_jsii_.MemberProperty{JsiiProperty: "defaultKmsKeyName", GoGetter: "DefaultKmsKeyName"},
+			_jsii_.MemberProperty{JsiiProperty: "defaultKmsKeyNameInput", GoGetter: "DefaultKmsKeyNameInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "googleManagedEncryptionEnforcementConfig", GoGetter: "GoogleManagedEncryptionEnforcementConfig"},
+			_jsii_.MemberProperty{JsiiProperty: "googleManagedEncryptionEnforcementConfigInput", GoGetter: "GoogleManagedEncryptionEnforcementConfigInput"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "putCustomerManagedEncryptionEnforcementConfig", GoMethod: "PutCustomerManagedEncryptionEnforcementConfig"},
+			_jsii_.MemberMethod{JsiiMethod: "putCustomerSuppliedEncryptionEnforcementConfig", GoMethod: "PutCustomerSuppliedEncryptionEnforcementConfig"},
+			_jsii_.MemberMethod{JsiiMethod: "putGoogleManagedEncryptionEnforcementConfig", GoMethod: "PutGoogleManagedEncryptionEnforcementConfig"},
+			_jsii_.MemberMethod{JsiiMethod: "resetCustomerManagedEncryptionEnforcementConfig", GoMethod: "ResetCustomerManagedEncryptionEnforcementConfig"},
+			_jsii_.MemberMethod{JsiiMethod: "resetCustomerSuppliedEncryptionEnforcementConfig", GoMethod: "ResetCustomerSuppliedEncryptionEnforcementConfig"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDefaultKmsKeyName", GoMethod: "ResetDefaultKmsKeyName"},
+			_jsii_.MemberMethod{JsiiMethod: "resetGoogleManagedEncryptionEnforcementConfig", GoMethod: "ResetGoogleManagedEncryptionEnforcementConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},

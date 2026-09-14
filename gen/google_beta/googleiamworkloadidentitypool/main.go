@@ -13,6 +13,8 @@ func init() {
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
+			_jsii_.MemberProperty{JsiiProperty: "attestationRules", GoGetter: "AttestationRules"},
+			_jsii_.MemberProperty{JsiiProperty: "attestationRulesInput", GoGetter: "AttestationRulesInput"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
 			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},
 			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
@@ -58,10 +60,12 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "projectInput", GoGetter: "ProjectInput"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
+			_jsii_.MemberMethod{JsiiMethod: "putAttestationRules", GoMethod: "PutAttestationRules"},
 			_jsii_.MemberMethod{JsiiMethod: "putInlineCertificateIssuanceConfig", GoMethod: "PutInlineCertificateIssuanceConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putInlineTrustConfig", GoMethod: "PutInlineTrustConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAttestationRules", GoMethod: "ResetAttestationRules"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDisabled", GoMethod: "ResetDisabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDisplayName", GoMethod: "ResetDisplayName"},
@@ -90,6 +94,66 @@ func init() {
 		func() interface{} {
 			j := jsiiProxy_GoogleIamWorkloadIdentityPool{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-google_beta.googleIamWorkloadIdentityPool.GoogleIamWorkloadIdentityPoolAttestationRules",
+		reflect.TypeOf((*GoogleIamWorkloadIdentityPoolAttestationRules)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google_beta.googleIamWorkloadIdentityPool.GoogleIamWorkloadIdentityPoolAttestationRulesList",
+		reflect.TypeOf((*GoogleIamWorkloadIdentityPoolAttestationRulesList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_GoogleIamWorkloadIdentityPoolAttestationRulesList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google_beta.googleIamWorkloadIdentityPool.GoogleIamWorkloadIdentityPoolAttestationRulesOutputReference",
+		reflect.TypeOf((*GoogleIamWorkloadIdentityPoolAttestationRulesOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "googleCloudResource", GoGetter: "GoogleCloudResource"},
+			_jsii_.MemberProperty{JsiiProperty: "googleCloudResourceInput", GoGetter: "GoogleCloudResourceInput"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_GoogleIamWorkloadIdentityPoolAttestationRulesOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},
 	)
@@ -128,15 +192,19 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "keyAlgorithmInput", GoGetter: "KeyAlgorithmInput"},
 			_jsii_.MemberProperty{JsiiProperty: "lifetime", GoGetter: "Lifetime"},
 			_jsii_.MemberProperty{JsiiProperty: "lifetimeInput", GoGetter: "LifetimeInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetCaPools", GoMethod: "ResetCaPools"},
 			_jsii_.MemberMethod{JsiiMethod: "resetKeyAlgorithm", GoMethod: "ResetKeyAlgorithm"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLifetime", GoMethod: "ResetLifetime"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRotationWindowPercentage", GoMethod: "ResetRotationWindowPercentage"},
+			_jsii_.MemberMethod{JsiiMethod: "resetUseDefaultSharedCa", GoMethod: "ResetUseDefaultSharedCa"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "rotationWindowPercentage", GoGetter: "RotationWindowPercentage"},
 			_jsii_.MemberProperty{JsiiProperty: "rotationWindowPercentageInput", GoGetter: "RotationWindowPercentageInput"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "useDefaultSharedCa", GoGetter: "UseDefaultSharedCa"},
+			_jsii_.MemberProperty{JsiiProperty: "useDefaultSharedCaInput", GoGetter: "UseDefaultSharedCaInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleIamWorkloadIdentityPoolInlineCertificateIssuanceConfigOutputReference{}
@@ -196,12 +264,15 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "putTrustAnchors", GoMethod: "PutTrustAnchors"},
+			_jsii_.MemberMethod{JsiiMethod: "resetTrustDefaultSharedCa", GoMethod: "ResetTrustDefaultSharedCa"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "trustAnchors", GoGetter: "TrustAnchors"},
 			_jsii_.MemberProperty{JsiiProperty: "trustAnchorsInput", GoGetter: "TrustAnchorsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "trustDefaultSharedCa", GoGetter: "TrustDefaultSharedCa"},
+			_jsii_.MemberProperty{JsiiProperty: "trustDefaultSharedCaInput", GoGetter: "TrustDefaultSharedCaInput"},
 			_jsii_.MemberProperty{JsiiProperty: "trustDomain", GoGetter: "TrustDomain"},
 			_jsii_.MemberProperty{JsiiProperty: "trustDomainInput", GoGetter: "TrustDomainInput"},
 		},

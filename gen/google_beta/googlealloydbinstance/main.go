@@ -25,6 +25,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "cluster", GoGetter: "Cluster"},
 			_jsii_.MemberProperty{JsiiProperty: "clusterInput", GoGetter: "ClusterInput"},
 			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},
+			_jsii_.MemberProperty{JsiiProperty: "connectionPoolConfig", GoGetter: "ConnectionPoolConfig"},
+			_jsii_.MemberProperty{JsiiProperty: "connectionPoolConfigInput", GoGetter: "ConnectionPoolConfigInput"},
 			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
 			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
 			_jsii_.MemberProperty{JsiiProperty: "createTime", GoGetter: "CreateTime"},
@@ -81,6 +83,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "pscInstanceConfigInput", GoGetter: "PscInstanceConfigInput"},
 			_jsii_.MemberProperty{JsiiProperty: "publicIpAddress", GoGetter: "PublicIpAddress"},
 			_jsii_.MemberMethod{JsiiMethod: "putClientConnectionConfig", GoMethod: "PutClientConnectionConfig"},
+			_jsii_.MemberMethod{JsiiMethod: "putConnectionPoolConfig", GoMethod: "PutConnectionPoolConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putMachineConfig", GoMethod: "PutMachineConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putNetworkConfig", GoMethod: "PutNetworkConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putObservabilityConfig", GoMethod: "PutObservabilityConfig"},
@@ -98,6 +101,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetAnnotations", GoMethod: "ResetAnnotations"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAvailabilityType", GoMethod: "ResetAvailabilityType"},
 			_jsii_.MemberMethod{JsiiMethod: "resetClientConnectionConfig", GoMethod: "ResetClientConnectionConfig"},
+			_jsii_.MemberMethod{JsiiMethod: "resetConnectionPoolConfig", GoMethod: "ResetConnectionPoolConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDatabaseFlags", GoMethod: "ResetDatabaseFlags"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDisplayName", GoMethod: "ResetDisplayName"},
 			_jsii_.MemberMethod{JsiiMethod: "resetGceZone", GoMethod: "ResetGceZone"},
@@ -218,6 +222,48 @@ func init() {
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleAlloydbInstance.GoogleAlloydbInstanceConfig",
 		reflect.TypeOf((*GoogleAlloydbInstanceConfig)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-google_beta.googleAlloydbInstance.GoogleAlloydbInstanceConnectionPoolConfig",
+		reflect.TypeOf((*GoogleAlloydbInstanceConnectionPoolConfig)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google_beta.googleAlloydbInstance.GoogleAlloydbInstanceConnectionPoolConfigOutputReference",
+		reflect.TypeOf((*GoogleAlloydbInstanceConnectionPoolConfigOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "enabled", GoGetter: "Enabled"},
+			_jsii_.MemberProperty{JsiiProperty: "enabledInput", GoGetter: "EnabledInput"},
+			_jsii_.MemberProperty{JsiiProperty: "flags", GoGetter: "Flags"},
+			_jsii_.MemberProperty{JsiiProperty: "flagsInput", GoGetter: "FlagsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "poolerCount", GoGetter: "PoolerCount"},
+			_jsii_.MemberMethod{JsiiMethod: "resetFlags", GoMethod: "ResetFlags"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_GoogleAlloydbInstanceConnectionPoolConfigOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google_beta.googleAlloydbInstance.GoogleAlloydbInstanceMachineConfig",
@@ -415,6 +461,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetQueryPlansPerMinute", GoMethod: "ResetQueryPlansPerMinute"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRecordApplicationTags", GoMethod: "ResetRecordApplicationTags"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTrackActiveQueries", GoMethod: "ResetTrackActiveQueries"},
+			_jsii_.MemberMethod{JsiiMethod: "resetTrackClientAddress", GoMethod: "ResetTrackClientAddress"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTrackWaitEvents", GoMethod: "ResetTrackWaitEvents"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTrackWaitEventTypes", GoMethod: "ResetTrackWaitEventTypes"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
@@ -423,6 +470,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "trackActiveQueries", GoGetter: "TrackActiveQueries"},
 			_jsii_.MemberProperty{JsiiProperty: "trackActiveQueriesInput", GoGetter: "TrackActiveQueriesInput"},
+			_jsii_.MemberProperty{JsiiProperty: "trackClientAddress", GoGetter: "TrackClientAddress"},
+			_jsii_.MemberProperty{JsiiProperty: "trackClientAddressInput", GoGetter: "TrackClientAddressInput"},
 			_jsii_.MemberProperty{JsiiProperty: "trackWaitEvents", GoGetter: "TrackWaitEvents"},
 			_jsii_.MemberProperty{JsiiProperty: "trackWaitEventsInput", GoGetter: "TrackWaitEventsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "trackWaitEventTypes", GoGetter: "TrackWaitEventTypes"},

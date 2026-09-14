@@ -49,6 +49,9 @@ type GoogleIamWorkloadIdentityPoolInlineCertificateIssuanceConfigOutputReference
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	UseDefaultSharedCa() interface{}
+	SetUseDefaultSharedCa(val interface{})
+	UseDefaultSharedCaInput() interface{}
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -73,9 +76,11 @@ type GoogleIamWorkloadIdentityPoolInlineCertificateIssuanceConfigOutputReference
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetCaPools()
 	ResetKeyAlgorithm()
 	ResetLifetime()
 	ResetRotationWindowPercentage()
+	ResetUseDefaultSharedCa()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -241,6 +246,26 @@ func (j *jsiiProxy_GoogleIamWorkloadIdentityPoolInlineCertificateIssuanceConfigO
 	return returns
 }
 
+func (j *jsiiProxy_GoogleIamWorkloadIdentityPoolInlineCertificateIssuanceConfigOutputReference) UseDefaultSharedCa() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"useDefaultSharedCa",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleIamWorkloadIdentityPoolInlineCertificateIssuanceConfigOutputReference) UseDefaultSharedCaInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"useDefaultSharedCaInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewGoogleIamWorkloadIdentityPoolInlineCertificateIssuanceConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleIamWorkloadIdentityPoolInlineCertificateIssuanceConfigOutputReference {
 	_init_.Initialize()
@@ -364,6 +389,17 @@ func (j *jsiiProxy_GoogleIamWorkloadIdentityPoolInlineCertificateIssuanceConfigO
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleIamWorkloadIdentityPoolInlineCertificateIssuanceConfigOutputReference)SetUseDefaultSharedCa(val interface{}) {
+	if err := j.validateSetUseDefaultSharedCaParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"useDefaultSharedCa",
 		val,
 	)
 }
@@ -554,6 +590,14 @@ func (g *jsiiProxy_GoogleIamWorkloadIdentityPoolInlineCertificateIssuanceConfigO
 	return returns
 }
 
+func (g *jsiiProxy_GoogleIamWorkloadIdentityPoolInlineCertificateIssuanceConfigOutputReference) ResetCaPools() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetCaPools",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleIamWorkloadIdentityPoolInlineCertificateIssuanceConfigOutputReference) ResetKeyAlgorithm() {
 	_jsii_.InvokeVoid(
 		g,
@@ -574,6 +618,14 @@ func (g *jsiiProxy_GoogleIamWorkloadIdentityPoolInlineCertificateIssuanceConfigO
 	_jsii_.InvokeVoid(
 		g,
 		"resetRotationWindowPercentage",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleIamWorkloadIdentityPoolInlineCertificateIssuanceConfigOutputReference) ResetUseDefaultSharedCa() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetUseDefaultSharedCa",
 		nil, // no parameters
 	)
 }

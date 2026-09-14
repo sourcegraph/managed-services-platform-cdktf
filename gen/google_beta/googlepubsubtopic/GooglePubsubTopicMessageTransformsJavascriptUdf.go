@@ -19,7 +19,7 @@ type GooglePubsubTopicMessageTransformsJavascriptUdf struct {
 	Code *string `field:"required" json:"code" yaml:"code"`
 	// Name of the JavaScript function that should be applied to Pub/Sub messages.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_pubsub_topic#function_name GooglePubsubTopic#function_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_pubsub_topic#function_name GooglePubsubTopic#function_name}
 	FunctionName *string `field:"required" json:"functionName" yaml:"functionName"`
 }
 

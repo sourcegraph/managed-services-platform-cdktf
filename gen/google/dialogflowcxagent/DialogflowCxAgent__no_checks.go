@@ -76,11 +76,23 @@ func (d *jsiiProxy_DialogflowCxAgent) validatePutAdvancedSettingsParameters(valu
 	return nil
 }
 
+func (d *jsiiProxy_DialogflowCxAgent) validatePutAnswerFeedbackSettingsParameters(value *DialogflowCxAgentAnswerFeedbackSettings) error {
+	return nil
+}
+
+func (d *jsiiProxy_DialogflowCxAgent) validatePutClientCertificateSettingsParameters(value *DialogflowCxAgentClientCertificateSettings) error {
+	return nil
+}
+
 func (d *jsiiProxy_DialogflowCxAgent) validatePutGenAppBuilderSettingsParameters(value *DialogflowCxAgentGenAppBuilderSettings) error {
 	return nil
 }
 
 func (d *jsiiProxy_DialogflowCxAgent) validatePutGitIntegrationSettingsParameters(value *DialogflowCxAgentGitIntegrationSettings) error {
+	return nil
+}
+
+func (d *jsiiProxy_DialogflowCxAgent) validatePutPersonalizationSettingsParameters(value *DialogflowCxAgentPersonalizationSettings) error {
 	return nil
 }
 
@@ -140,6 +152,10 @@ func (j *jsiiProxy_DialogflowCxAgent) validateSetDisplayNameParameters(val *stri
 	return nil
 }
 
+func (j *jsiiProxy_DialogflowCxAgent) validateSetEnableMultiLanguageTrainingParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DialogflowCxAgent) validateSetEnableSpellCorrectionParameters(val interface{}) error {
 	return nil
 }
@@ -160,6 +176,10 @@ func (j *jsiiProxy_DialogflowCxAgent) validateSetLocationParameters(val *string)
 	return nil
 }
 
+func (j *jsiiProxy_DialogflowCxAgent) validateSetLockedParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DialogflowCxAgent) validateSetProjectParameters(val *string) error {
 	return nil
 }
@@ -169,6 +189,10 @@ func (j *jsiiProxy_DialogflowCxAgent) validateSetProvisionersParameters(val *[]i
 }
 
 func (j *jsiiProxy_DialogflowCxAgent) validateSetSecuritySettingsParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DialogflowCxAgent) validateSetStartPlaybookParameters(val *string) error {
 	return nil
 }
 

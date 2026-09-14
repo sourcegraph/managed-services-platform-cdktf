@@ -31,6 +31,7 @@ type DataGoogleBigqueryTableExternalDataConfigurationOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	CsvOptions() DataGoogleBigqueryTableExternalDataConfigurationCsvOptionsList
+	DecimalTargetTypes() *[]*string
 	FileSetSpecType() *string
 	// Experimental.
 	Fqn() *string
@@ -181,6 +182,16 @@ func (j *jsiiProxy_DataGoogleBigqueryTableExternalDataConfigurationOutputReferen
 	_jsii_.Get(
 		j,
 		"csvOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleBigqueryTableExternalDataConfigurationOutputReference) DecimalTargetTypes() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"decimalTargetTypes",
 		&returns,
 	)
 	return returns

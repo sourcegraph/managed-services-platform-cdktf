@@ -388,6 +388,14 @@ func (j *jsiiProxy_NetappBackupVault) validateSetIdParameters(val *string) error
 	return nil
 }
 
+func (j *jsiiProxy_NetappBackupVault) validateSetKmsConfigParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_NetappBackupVault) validateSetLabelsParameters(val *map[string]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

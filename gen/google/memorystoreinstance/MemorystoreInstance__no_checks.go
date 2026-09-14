@@ -128,10 +128,6 @@ func validateMemorystoreInstance_IsTerraformResourceParameters(x interface{}) er
 	return nil
 }
 
-func (j *jsiiProxy_MemorystoreInstance) validateSetAllowFewerZonesDeploymentParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_MemorystoreInstance) validateSetAuthorizationModeParameters(val *string) error {
 	return nil
 }
@@ -180,6 +176,10 @@ func (j *jsiiProxy_MemorystoreInstance) validateSetLocationParameters(val *strin
 	return nil
 }
 
+func (j *jsiiProxy_MemorystoreInstance) validateSetMaintenanceVersionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_MemorystoreInstance) validateSetModeParameters(val *string) error {
 	return nil
 }
@@ -197,6 +197,14 @@ func (j *jsiiProxy_MemorystoreInstance) validateSetProvisionersParameters(val *[
 }
 
 func (j *jsiiProxy_MemorystoreInstance) validateSetReplicaCountParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_MemorystoreInstance) validateSetServerCaModeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_MemorystoreInstance) validateSetServerCaPoolParameters(val *string) error {
 	return nil
 }
 

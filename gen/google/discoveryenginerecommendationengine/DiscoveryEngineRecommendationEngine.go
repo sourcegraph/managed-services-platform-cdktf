@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google/discoveryenginerecommendationengine/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/discovery_engine_recommendation_engine google_discovery_engine_recommendation_engine}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/discovery_engine_recommendation_engine google_discovery_engine_recommendation_engine}.
 type DiscoveryEngineRecommendationEngine interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -552,7 +552,7 @@ func (j *jsiiProxy_DiscoveryEngineRecommendationEngine) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/discovery_engine_recommendation_engine google_discovery_engine_recommendation_engine} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/discovery_engine_recommendation_engine google_discovery_engine_recommendation_engine} Resource.
 func NewDiscoveryEngineRecommendationEngine(scope constructs.Construct, id *string, config *DiscoveryEngineRecommendationEngineConfig) DiscoveryEngineRecommendationEngine {
 	_init_.Initialize()
 
@@ -570,7 +570,7 @@ func NewDiscoveryEngineRecommendationEngine(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/discovery_engine_recommendation_engine google_discovery_engine_recommendation_engine} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/discovery_engine_recommendation_engine google_discovery_engine_recommendation_engine} Resource.
 func NewDiscoveryEngineRecommendationEngine_Override(d DiscoveryEngineRecommendationEngine, scope constructs.Construct, id *string, config *DiscoveryEngineRecommendationEngineConfig) {
 	_init_.Initialize()
 

@@ -44,6 +44,10 @@ func (g *jsiiProxy_GooglePubsubSubscriptionMessageTransformsOutputReference) val
 	return nil
 }
 
+func (g *jsiiProxy_GooglePubsubSubscriptionMessageTransformsOutputReference) validatePutAiInferenceParameters(value *GooglePubsubSubscriptionMessageTransformsAiInference) error {
+	return nil
+}
+
 func (g *jsiiProxy_GooglePubsubSubscriptionMessageTransformsOutputReference) validatePutJavascriptUdfParameters(value *GooglePubsubSubscriptionMessageTransformsJavascriptUdf) error {
 	return nil
 }

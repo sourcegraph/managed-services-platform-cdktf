@@ -39,6 +39,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "md5AuthenticationKeys", GoGetter: "Md5AuthenticationKeys"},
 			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
 			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
+			_jsii_.MemberProperty{JsiiProperty: "nccGateway", GoGetter: "NccGateway"},
 			_jsii_.MemberProperty{JsiiProperty: "network", GoGetter: "Network"},
 			_jsii_.MemberProperty{JsiiProperty: "networkInput", GoGetter: "NetworkInput"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},

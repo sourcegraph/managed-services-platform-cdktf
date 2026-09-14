@@ -72,6 +72,10 @@ func (b *jsiiProxy_BackupDrBackupVault) validateOverrideLogicalIdParameters(newL
 	return nil
 }
 
+func (b *jsiiProxy_BackupDrBackupVault) validatePutEncryptionConfigParameters(value *BackupDrBackupVaultEncryptionConfig) error {
+	return nil
+}
+
 func (b *jsiiProxy_BackupDrBackupVault) validatePutTimeoutsParameters(value *BackupDrBackupVaultTimeouts) error {
 	return nil
 }

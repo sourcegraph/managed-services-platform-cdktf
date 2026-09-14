@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google/cloudtasksqueue/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_tasks_queue google_cloud_tasks_queue}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_tasks_queue google_cloud_tasks_queue}.
 type CloudTasksQueue interface {
 	cdktf.TerraformResource
 	AppEngineRoutingOverride() CloudTasksQueueAppEngineRoutingOverrideOutputReference
@@ -30,6 +30,9 @@ type CloudTasksQueue interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	DesiredState() *string
+	SetDesiredState(val *string)
+	DesiredStateInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -74,6 +77,7 @@ type CloudTasksQueue interface {
 	RetryConfigInput() *CloudTasksQueueRetryConfig
 	StackdriverLoggingConfig() CloudTasksQueueStackdriverLoggingConfigOutputReference
 	StackdriverLoggingConfigInput() *CloudTasksQueueStackdriverLoggingConfig
+	State() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -132,6 +136,7 @@ type CloudTasksQueue interface {
 	PutStackdriverLoggingConfig(value *CloudTasksQueueStackdriverLoggingConfig)
 	PutTimeouts(value *CloudTasksQueueTimeouts)
 	ResetAppEngineRoutingOverride()
+	ResetDesiredState()
 	ResetHttpTarget()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -225,6 +230,26 @@ func (j *jsiiProxy_CloudTasksQueue) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudTasksQueue) DesiredState() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"desiredState",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudTasksQueue) DesiredStateInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"desiredStateInput",
 		&returns,
 	)
 	return returns
@@ -470,6 +495,16 @@ func (j *jsiiProxy_CloudTasksQueue) StackdriverLoggingConfigInput() *CloudTasksQ
 	return returns
 }
 
+func (j *jsiiProxy_CloudTasksQueue) State() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"state",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CloudTasksQueue) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -521,7 +556,7 @@ func (j *jsiiProxy_CloudTasksQueue) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_tasks_queue google_cloud_tasks_queue} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_tasks_queue google_cloud_tasks_queue} Resource.
 func NewCloudTasksQueue(scope constructs.Construct, id *string, config *CloudTasksQueueConfig) CloudTasksQueue {
 	_init_.Initialize()
 
@@ -539,7 +574,7 @@ func NewCloudTasksQueue(scope constructs.Construct, id *string, config *CloudTas
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_tasks_queue google_cloud_tasks_queue} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_tasks_queue google_cloud_tasks_queue} Resource.
 func NewCloudTasksQueue_Override(c CloudTasksQueue, scope constructs.Construct, id *string, config *CloudTasksQueueConfig) {
 	_init_.Initialize()
 
@@ -576,6 +611,17 @@ func (j *jsiiProxy_CloudTasksQueue)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudTasksQueue)SetDesiredState(val *string) {
+	if err := j.validateSetDesiredStateParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"desiredState",
 		val,
 	)
 }
@@ -1085,6 +1131,14 @@ func (c *jsiiProxy_CloudTasksQueue) ResetAppEngineRoutingOverride() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetAppEngineRoutingOverride",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudTasksQueue) ResetDesiredState() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetDesiredState",
 		nil, // no parameters
 	)
 }
