@@ -88,6 +88,10 @@ func (g *jsiiProxy_GoogleContainerClusterAddonsConfigOutputReference) validatePu
 	return nil
 }
 
+func (g *jsiiProxy_GoogleContainerClusterAddonsConfigOutputReference) validatePutLustreCsiDriverConfigParameters(value *GoogleContainerClusterAddonsConfigLustreCsiDriverConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerClusterAddonsConfigOutputReference) validatePutNetworkPolicyConfigParameters(value *GoogleContainerClusterAddonsConfigNetworkPolicyConfig) error {
 	return nil
 }

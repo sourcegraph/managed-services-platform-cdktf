@@ -156,6 +156,10 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstance) validateSetNameParameters(val *str
 	return nil
 }
 
+func (j *jsiiProxy_GoogleSqlDatabaseInstance) validateSetNodeCountParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleSqlDatabaseInstance) validateSetProjectParameters(val *string) error {
 	return nil
 }

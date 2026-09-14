@@ -112,6 +112,10 @@ func (j *jsiiProxy_GoogleComputeStoragePool) validateSetDescriptionParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeStoragePool) validateSetLabelsParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeStoragePool) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

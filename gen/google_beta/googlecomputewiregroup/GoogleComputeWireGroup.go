@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googlecomputewiregroup/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_wire_group google_compute_wire_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_compute_wire_group google_compute_wire_group}.
 type GoogleComputeWireGroup interface {
 	cdktf.TerraformResource
 	AdminEnabled() interface{}
@@ -554,7 +554,7 @@ func (j *jsiiProxy_GoogleComputeWireGroup) Wires() GoogleComputeWireGroupWiresLi
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_wire_group google_compute_wire_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_compute_wire_group google_compute_wire_group} Resource.
 func NewGoogleComputeWireGroup(scope constructs.Construct, id *string, config *GoogleComputeWireGroupConfig) GoogleComputeWireGroup {
 	_init_.Initialize()
 
@@ -572,7 +572,7 @@ func NewGoogleComputeWireGroup(scope constructs.Construct, id *string, config *G
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_wire_group google_compute_wire_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_compute_wire_group google_compute_wire_group} Resource.
 func NewGoogleComputeWireGroup_Override(g GoogleComputeWireGroup, scope constructs.Construct, id *string, config *GoogleComputeWireGroupConfig) {
 	_init_.Initialize()
 

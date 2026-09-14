@@ -15,6 +15,9 @@ type DataprocClusterClusterConfigOutputReference interface {
 	AuxiliaryNodeGroups() DataprocClusterClusterConfigAuxiliaryNodeGroupsList
 	AuxiliaryNodeGroupsInput() interface{}
 	Bucket() *string
+	ClusterTier() *string
+	SetClusterTier(val *string)
+	ClusterTierInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -112,6 +115,7 @@ type DataprocClusterClusterConfigOutputReference interface {
 	PutWorkerConfig(value *DataprocClusterClusterConfigWorkerConfig)
 	ResetAutoscalingConfig()
 	ResetAuxiliaryNodeGroups()
+	ResetClusterTier()
 	ResetDataprocMetricConfig()
 	ResetEncryptionConfig()
 	ResetEndpointConfig()
@@ -186,6 +190,26 @@ func (j *jsiiProxy_DataprocClusterClusterConfigOutputReference) Bucket() *string
 	_jsii_.Get(
 		j,
 		"bucket",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataprocClusterClusterConfigOutputReference) ClusterTier() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clusterTier",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataprocClusterClusterConfigOutputReference) ClusterTierInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clusterTierInput",
 		&returns,
 	)
 	return returns
@@ -566,6 +590,17 @@ func NewDataprocClusterClusterConfigOutputReference_Override(d DataprocClusterCl
 		"@cdktf/provider-google.dataprocCluster.DataprocClusterClusterConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
+	)
+}
+
+func (j *jsiiProxy_DataprocClusterClusterConfigOutputReference)SetClusterTier(val *string) {
+	if err := j.validateSetClusterTierParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"clusterTier",
+		val,
 	)
 }
 
@@ -998,6 +1033,14 @@ func (d *jsiiProxy_DataprocClusterClusterConfigOutputReference) ResetAuxiliaryNo
 	_jsii_.InvokeVoid(
 		d,
 		"resetAuxiliaryNodeGroups",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataprocClusterClusterConfigOutputReference) ResetClusterTier() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetClusterTier",
 		nil, // no parameters
 	)
 }

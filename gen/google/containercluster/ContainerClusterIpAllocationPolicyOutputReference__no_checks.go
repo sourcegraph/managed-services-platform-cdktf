@@ -44,6 +44,10 @@ func (c *jsiiProxy_ContainerClusterIpAllocationPolicyOutputReference) validateIn
 	return nil
 }
 
+func (c *jsiiProxy_ContainerClusterIpAllocationPolicyOutputReference) validatePutAdditionalIpRangesConfigParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerClusterIpAllocationPolicyOutputReference) validatePutAdditionalPodRangesConfigParameters(value *ContainerClusterIpAllocationPolicyAdditionalPodRangesConfig) error {
 	return nil
 }

@@ -9,9 +9,12 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google/memorystoreinstance/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/memorystore_instance google_memorystore_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/memorystore_instance google_memorystore_instance}.
 type MemorystoreInstance interface {
 	cdktf.TerraformResource
+	AllowFewerZonesDeployment() interface{}
+	SetAllowFewerZonesDeployment(val interface{})
+	AllowFewerZonesDeploymentInput() interface{}
 	AuthorizationMode() *string
 	SetAuthorizationMode(val *string)
 	AuthorizationModeInput() *string
@@ -192,6 +195,7 @@ type MemorystoreInstance interface {
 	PutPersistenceConfig(value *MemorystoreInstancePersistenceConfig)
 	PutTimeouts(value *MemorystoreInstanceTimeouts)
 	PutZoneDistributionConfig(value *MemorystoreInstanceZoneDistributionConfig)
+	ResetAllowFewerZonesDeployment()
 	ResetAuthorizationMode()
 	ResetAutomatedBackupConfig()
 	ResetCrossInstanceReplicationConfig()
@@ -233,6 +237,26 @@ type MemorystoreInstance interface {
 // The jsii proxy struct for MemorystoreInstance
 type jsiiProxy_MemorystoreInstance struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_MemorystoreInstance) AllowFewerZonesDeployment() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowFewerZonesDeployment",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MemorystoreInstance) AllowFewerZonesDeploymentInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowFewerZonesDeploymentInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_MemorystoreInstance) AuthorizationMode() *string {
@@ -1056,7 +1080,7 @@ func (j *jsiiProxy_MemorystoreInstance) ZoneDistributionConfigInput() *Memorysto
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/memorystore_instance google_memorystore_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/memorystore_instance google_memorystore_instance} Resource.
 func NewMemorystoreInstance(scope constructs.Construct, id *string, config *MemorystoreInstanceConfig) MemorystoreInstance {
 	_init_.Initialize()
 
@@ -1074,7 +1098,7 @@ func NewMemorystoreInstance(scope constructs.Construct, id *string, config *Memo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/memorystore_instance google_memorystore_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/memorystore_instance google_memorystore_instance} Resource.
 func NewMemorystoreInstance_Override(m MemorystoreInstance, scope constructs.Construct, id *string, config *MemorystoreInstanceConfig) {
 	_init_.Initialize()
 
@@ -1082,6 +1106,17 @@ func NewMemorystoreInstance_Override(m MemorystoreInstance, scope constructs.Con
 		"@cdktf/provider-google.memorystoreInstance.MemorystoreInstance",
 		[]interface{}{scope, id, config},
 		m,
+	)
+}
+
+func (j *jsiiProxy_MemorystoreInstance)SetAllowFewerZonesDeployment(val interface{}) {
+	if err := j.validateSetAllowFewerZonesDeploymentParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"allowFewerZonesDeployment",
+		val,
 	)
 }
 
@@ -1778,6 +1813,14 @@ func (m *jsiiProxy_MemorystoreInstance) PutZoneDistributionConfig(value *Memorys
 		m,
 		"putZoneDistributionConfig",
 		[]interface{}{value},
+	)
+}
+
+func (m *jsiiProxy_MemorystoreInstance) ResetAllowFewerZonesDeployment() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetAllowFewerZonesDeployment",
+		nil, // no parameters
 	)
 }
 

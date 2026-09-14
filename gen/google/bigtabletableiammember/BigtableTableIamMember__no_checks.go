@@ -108,6 +108,10 @@ func (j *jsiiProxy_BigtableTableIamMember) validateSetInstanceParameters(val *st
 	return nil
 }
 
+func (j *jsiiProxy_BigtableTableIamMember) validateSetInstanceNameParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_BigtableTableIamMember) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

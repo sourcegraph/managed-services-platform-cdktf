@@ -38,6 +38,7 @@ type DataGoogleContainerClusterAddonsConfigOutputReference interface {
 	HttpLoadBalancing() DataGoogleContainerClusterAddonsConfigHttpLoadBalancingList
 	InternalValue() *DataGoogleContainerClusterAddonsConfig
 	SetInternalValue(val *DataGoogleContainerClusterAddonsConfig)
+	LustreCsiDriverConfig() DataGoogleContainerClusterAddonsConfigLustreCsiDriverConfigList
 	NetworkPolicyConfig() DataGoogleContainerClusterAddonsConfigNetworkPolicyConfigList
 	ParallelstoreCsiDriverConfig() DataGoogleContainerClusterAddonsConfigParallelstoreCsiDriverConfigList
 	RayOperatorConfig() DataGoogleContainerClusterAddonsConfigRayOperatorConfigList
@@ -224,6 +225,16 @@ func (j *jsiiProxy_DataGoogleContainerClusterAddonsConfigOutputReference) Intern
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterAddonsConfigOutputReference) LustreCsiDriverConfig() DataGoogleContainerClusterAddonsConfigLustreCsiDriverConfigList {
+	var returns DataGoogleContainerClusterAddonsConfigLustreCsiDriverConfigList
+	_jsii_.Get(
+		j,
+		"lustreCsiDriverConfig",
 		&returns,
 	)
 	return returns

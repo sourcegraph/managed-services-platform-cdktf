@@ -35,6 +35,9 @@ type CloudRunV2JobTemplateTemplateOutputReference interface {
 	ExecutionEnvironmentInput() *string
 	// Experimental.
 	Fqn() *string
+	GpuZonalRedundancyDisabled() interface{}
+	SetGpuZonalRedundancyDisabled(val interface{})
+	GpuZonalRedundancyDisabledInput() interface{}
 	InternalValue() *CloudRunV2JobTemplateTemplate
 	SetInternalValue(val *CloudRunV2JobTemplateTemplate)
 	MaxRetries() *float64
@@ -91,6 +94,7 @@ type CloudRunV2JobTemplateTemplateOutputReference interface {
 	ResetContainers()
 	ResetEncryptionKey()
 	ResetExecutionEnvironment()
+	ResetGpuZonalRedundancyDisabled()
 	ResetMaxRetries()
 	ResetNodeSelector()
 	ResetServiceAccount()
@@ -207,6 +211,26 @@ func (j *jsiiProxy_CloudRunV2JobTemplateTemplateOutputReference) Fqn() *string {
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudRunV2JobTemplateTemplateOutputReference) GpuZonalRedundancyDisabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"gpuZonalRedundancyDisabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudRunV2JobTemplateTemplateOutputReference) GpuZonalRedundancyDisabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"gpuZonalRedundancyDisabledInput",
 		&returns,
 	)
 	return returns
@@ -430,6 +454,17 @@ func (j *jsiiProxy_CloudRunV2JobTemplateTemplateOutputReference)SetExecutionEnvi
 	_jsii_.Set(
 		j,
 		"executionEnvironment",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudRunV2JobTemplateTemplateOutputReference)SetGpuZonalRedundancyDisabled(val interface{}) {
+	if err := j.validateSetGpuZonalRedundancyDisabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"gpuZonalRedundancyDisabled",
 		val,
 	)
 }
@@ -750,6 +785,14 @@ func (c *jsiiProxy_CloudRunV2JobTemplateTemplateOutputReference) ResetExecutionE
 	_jsii_.InvokeVoid(
 		c,
 		"resetExecutionEnvironment",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudRunV2JobTemplateTemplateOutputReference) ResetGpuZonalRedundancyDisabled() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetGpuZonalRedundancyDisabled",
 		nil, // no parameters
 	)
 }

@@ -20,7 +20,7 @@ type GoogleVertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpec str
 	// prediction](https://cloud.google.com/vertex-ai/docs/predictions/pre-built-containers)
 	// in this field.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_vertex_ai_endpoint_with_model_garden_deployment#image_uri GoogleVertexAiEndpointWithModelGardenDeployment#image_uri}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_vertex_ai_endpoint_with_model_garden_deployment#image_uri GoogleVertexAiEndpointWithModelGardenDeployment#image_uri}
 	ImageUri *string `field:"required" json:"imageUri" yaml:"imageUri"`
 	// Specifies arguments for the command that runs when the container starts.
 	//
@@ -58,7 +58,7 @@ type GoogleVertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpec str
 	// [v1 core
 	// API](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.23/#container-v1-core).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_vertex_ai_endpoint_with_model_garden_deployment#args GoogleVertexAiEndpointWithModelGardenDeployment#args}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_vertex_ai_endpoint_with_model_garden_deployment#args GoogleVertexAiEndpointWithModelGardenDeployment#args}
 	Args *[]*string `field:"optional" json:"args" yaml:"args"`
 	// Specifies the command that runs when the container starts.
 	//
@@ -97,23 +97,23 @@ type GoogleVertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpec str
 	// [v1 core
 	// API](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.23/#container-v1-core).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_vertex_ai_endpoint_with_model_garden_deployment#command GoogleVertexAiEndpointWithModelGardenDeployment#command}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_vertex_ai_endpoint_with_model_garden_deployment#command GoogleVertexAiEndpointWithModelGardenDeployment#command}
 	Command *[]*string `field:"optional" json:"command" yaml:"command"`
 	// Deployment timeout. Limit for deployment timeout is 2 hours.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_vertex_ai_endpoint_with_model_garden_deployment#deployment_timeout GoogleVertexAiEndpointWithModelGardenDeployment#deployment_timeout}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_vertex_ai_endpoint_with_model_garden_deployment#deployment_timeout GoogleVertexAiEndpointWithModelGardenDeployment#deployment_timeout}
 	DeploymentTimeout *string `field:"optional" json:"deploymentTimeout" yaml:"deploymentTimeout"`
 	// env block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_vertex_ai_endpoint_with_model_garden_deployment#env GoogleVertexAiEndpointWithModelGardenDeployment#env}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_vertex_ai_endpoint_with_model_garden_deployment#env GoogleVertexAiEndpointWithModelGardenDeployment#env}
 	Env interface{} `field:"optional" json:"env" yaml:"env"`
 	// grpc_ports block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_vertex_ai_endpoint_with_model_garden_deployment#grpc_ports GoogleVertexAiEndpointWithModelGardenDeployment#grpc_ports}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_vertex_ai_endpoint_with_model_garden_deployment#grpc_ports GoogleVertexAiEndpointWithModelGardenDeployment#grpc_ports}
 	GrpcPorts interface{} `field:"optional" json:"grpcPorts" yaml:"grpcPorts"`
 	// health_probe block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_vertex_ai_endpoint_with_model_garden_deployment#health_probe GoogleVertexAiEndpointWithModelGardenDeployment#health_probe}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_vertex_ai_endpoint_with_model_garden_deployment#health_probe GoogleVertexAiEndpointWithModelGardenDeployment#health_probe}
 	HealthProbe *GoogleVertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecHealthProbe `field:"optional" json:"healthProbe" yaml:"healthProbe"`
 	// HTTP path on the container to send health checks to.
 	//
@@ -143,15 +143,15 @@ type GoogleVertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpec str
 	// ['AIP_DEPLOYED_MODEL_ID' environment
 	// variable](https://cloud.google.com/vertex-ai/docs/predictions/custom-container-requirements#aip-variables).)
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_vertex_ai_endpoint_with_model_garden_deployment#health_route GoogleVertexAiEndpointWithModelGardenDeployment#health_route}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_vertex_ai_endpoint_with_model_garden_deployment#health_route GoogleVertexAiEndpointWithModelGardenDeployment#health_route}
 	HealthRoute *string `field:"optional" json:"healthRoute" yaml:"healthRoute"`
 	// liveness_probe block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_vertex_ai_endpoint_with_model_garden_deployment#liveness_probe GoogleVertexAiEndpointWithModelGardenDeployment#liveness_probe}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_vertex_ai_endpoint_with_model_garden_deployment#liveness_probe GoogleVertexAiEndpointWithModelGardenDeployment#liveness_probe}
 	LivenessProbe *GoogleVertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecLivenessProbe `field:"optional" json:"livenessProbe" yaml:"livenessProbe"`
 	// ports block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_vertex_ai_endpoint_with_model_garden_deployment#ports GoogleVertexAiEndpointWithModelGardenDeployment#ports}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_vertex_ai_endpoint_with_model_garden_deployment#ports GoogleVertexAiEndpointWithModelGardenDeployment#ports}
 	Ports interface{} `field:"optional" json:"ports" yaml:"ports"`
 	// HTTP path on the container to send prediction requests to.
 	//
@@ -182,15 +182,15 @@ type GoogleVertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpec str
 	// as the ['AIP_DEPLOYED_MODEL_ID' environment
 	// variable](https://cloud.google.com/vertex-ai/docs/predictions/custom-container-requirements#aip-variables).)
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_vertex_ai_endpoint_with_model_garden_deployment#predict_route GoogleVertexAiEndpointWithModelGardenDeployment#predict_route}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_vertex_ai_endpoint_with_model_garden_deployment#predict_route GoogleVertexAiEndpointWithModelGardenDeployment#predict_route}
 	PredictRoute *string `field:"optional" json:"predictRoute" yaml:"predictRoute"`
 	// The amount of the VM memory to reserve as the shared memory for the model in megabytes.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_vertex_ai_endpoint_with_model_garden_deployment#shared_memory_size_mb GoogleVertexAiEndpointWithModelGardenDeployment#shared_memory_size_mb}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_vertex_ai_endpoint_with_model_garden_deployment#shared_memory_size_mb GoogleVertexAiEndpointWithModelGardenDeployment#shared_memory_size_mb}
 	SharedMemorySizeMb *string `field:"optional" json:"sharedMemorySizeMb" yaml:"sharedMemorySizeMb"`
 	// startup_probe block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_vertex_ai_endpoint_with_model_garden_deployment#startup_probe GoogleVertexAiEndpointWithModelGardenDeployment#startup_probe}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_vertex_ai_endpoint_with_model_garden_deployment#startup_probe GoogleVertexAiEndpointWithModelGardenDeployment#startup_probe}
 	StartupProbe *GoogleVertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecStartupProbe `field:"optional" json:"startupProbe" yaml:"startupProbe"`
 }
 

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google/vertexaiendpointwithmodelgardendeployment/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment google_vertex_ai_endpoint_with_model_garden_deployment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment google_vertex_ai_endpoint_with_model_garden_deployment}.
 type VertexAiEndpointWithModelGardenDeployment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -30,6 +30,8 @@ type VertexAiEndpointWithModelGardenDeployment interface {
 	SetDependsOn(val *[]*string)
 	DeployConfig() VertexAiEndpointWithModelGardenDeploymentDeployConfigOutputReference
 	DeployConfigInput() *VertexAiEndpointWithModelGardenDeploymentDeployConfig
+	DeployedModelDisplayName() *string
+	DeployedModelId() *string
 	Endpoint() *string
 	EndpointConfig() VertexAiEndpointWithModelGardenDeploymentEndpointConfigOutputReference
 	EndpointConfigInput() *VertexAiEndpointWithModelGardenDeploymentEndpointConfig
@@ -223,6 +225,26 @@ func (j *jsiiProxy_VertexAiEndpointWithModelGardenDeployment) DeployConfigInput(
 	_jsii_.Get(
 		j,
 		"deployConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VertexAiEndpointWithModelGardenDeployment) DeployedModelDisplayName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deployedModelDisplayName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VertexAiEndpointWithModelGardenDeployment) DeployedModelId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deployedModelId",
 		&returns,
 	)
 	return returns
@@ -509,7 +531,7 @@ func (j *jsiiProxy_VertexAiEndpointWithModelGardenDeployment) TimeoutsInput() in
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment google_vertex_ai_endpoint_with_model_garden_deployment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment google_vertex_ai_endpoint_with_model_garden_deployment} Resource.
 func NewVertexAiEndpointWithModelGardenDeployment(scope constructs.Construct, id *string, config *VertexAiEndpointWithModelGardenDeploymentConfig) VertexAiEndpointWithModelGardenDeployment {
 	_init_.Initialize()
 
@@ -527,7 +549,7 @@ func NewVertexAiEndpointWithModelGardenDeployment(scope constructs.Construct, id
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment google_vertex_ai_endpoint_with_model_garden_deployment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment google_vertex_ai_endpoint_with_model_garden_deployment} Resource.
 func NewVertexAiEndpointWithModelGardenDeployment_Override(v VertexAiEndpointWithModelGardenDeployment, scope constructs.Construct, id *string, config *VertexAiEndpointWithModelGardenDeploymentConfig) {
 	_init_.Initialize()
 

@@ -96,6 +96,10 @@ func (c *jsiiProxy_ComputeRegionBackendService) validatePutFailoverPolicyParamet
 	return nil
 }
 
+func (c *jsiiProxy_ComputeRegionBackendService) validatePutHaPolicyParameters(value *ComputeRegionBackendServiceHaPolicy) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeRegionBackendService) validatePutIapParameters(value *ComputeRegionBackendServiceIap) error {
 	return nil
 }

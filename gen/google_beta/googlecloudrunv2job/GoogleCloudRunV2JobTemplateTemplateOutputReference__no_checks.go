@@ -80,6 +80,10 @@ func (j *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateOutputReference) validateS
 	return nil
 }
 
+func (j *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateOutputReference) validateSetGpuZonalRedundancyDisabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateOutputReference) validateSetInternalValueParameters(val *GoogleCloudRunV2JobTemplateTemplate) error {
 	return nil
 }

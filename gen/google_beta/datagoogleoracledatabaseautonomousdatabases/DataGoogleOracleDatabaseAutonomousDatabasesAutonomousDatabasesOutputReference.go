@@ -42,6 +42,8 @@ type DataGoogleOracleDatabaseAutonomousDatabasesAutonomousDatabasesOutputReferen
 	Location() *string
 	Name() *string
 	Network() *string
+	OdbNetwork() *string
+	OdbSubnet() *string
 	Project() *string
 	Properties() DataGoogleOracleDatabaseAutonomousDatabasesAutonomousDatabasesPropertiesList
 	// Experimental.
@@ -267,6 +269,26 @@ func (j *jsiiProxy_DataGoogleOracleDatabaseAutonomousDatabasesAutonomousDatabase
 	_jsii_.Get(
 		j,
 		"network",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleOracleDatabaseAutonomousDatabasesAutonomousDatabasesOutputReference) OdbNetwork() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"odbNetwork",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleOracleDatabaseAutonomousDatabasesAutonomousDatabasesOutputReference) OdbSubnet() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"odbSubnet",
 		&returns,
 	)
 	return returns

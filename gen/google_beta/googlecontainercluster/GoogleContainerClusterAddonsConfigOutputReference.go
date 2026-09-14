@@ -51,6 +51,8 @@ type GoogleContainerClusterAddonsConfigOutputReference interface {
 	IstioConfigInput() *GoogleContainerClusterAddonsConfigIstioConfig
 	KalmConfig() GoogleContainerClusterAddonsConfigKalmConfigOutputReference
 	KalmConfigInput() *GoogleContainerClusterAddonsConfigKalmConfig
+	LustreCsiDriverConfig() GoogleContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference
+	LustreCsiDriverConfigInput() *GoogleContainerClusterAddonsConfigLustreCsiDriverConfig
 	NetworkPolicyConfig() GoogleContainerClusterAddonsConfigNetworkPolicyConfigOutputReference
 	NetworkPolicyConfigInput() *GoogleContainerClusterAddonsConfigNetworkPolicyConfig
 	ParallelstoreCsiDriverConfig() GoogleContainerClusterAddonsConfigParallelstoreCsiDriverConfigOutputReference
@@ -102,6 +104,7 @@ type GoogleContainerClusterAddonsConfigOutputReference interface {
 	PutHttpLoadBalancing(value *GoogleContainerClusterAddonsConfigHttpLoadBalancing)
 	PutIstioConfig(value *GoogleContainerClusterAddonsConfigIstioConfig)
 	PutKalmConfig(value *GoogleContainerClusterAddonsConfigKalmConfig)
+	PutLustreCsiDriverConfig(value *GoogleContainerClusterAddonsConfigLustreCsiDriverConfig)
 	PutNetworkPolicyConfig(value *GoogleContainerClusterAddonsConfigNetworkPolicyConfig)
 	PutParallelstoreCsiDriverConfig(value *GoogleContainerClusterAddonsConfigParallelstoreCsiDriverConfig)
 	PutRayOperatorConfig(value interface{})
@@ -117,6 +120,7 @@ type GoogleContainerClusterAddonsConfigOutputReference interface {
 	ResetHttpLoadBalancing()
 	ResetIstioConfig()
 	ResetKalmConfig()
+	ResetLustreCsiDriverConfig()
 	ResetNetworkPolicyConfig()
 	ResetParallelstoreCsiDriverConfig()
 	ResetRayOperatorConfig()
@@ -401,6 +405,26 @@ func (j *jsiiProxy_GoogleContainerClusterAddonsConfigOutputReference) KalmConfig
 	_jsii_.Get(
 		j,
 		"kalmConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterAddonsConfigOutputReference) LustreCsiDriverConfig() GoogleContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference {
+	var returns GoogleContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference
+	_jsii_.Get(
+		j,
+		"lustreCsiDriverConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterAddonsConfigOutputReference) LustreCsiDriverConfigInput() *GoogleContainerClusterAddonsConfigLustreCsiDriverConfig {
+	var returns *GoogleContainerClusterAddonsConfigLustreCsiDriverConfig
+	_jsii_.Get(
+		j,
+		"lustreCsiDriverConfigInput",
 		&returns,
 	)
 	return returns
@@ -896,6 +920,17 @@ func (g *jsiiProxy_GoogleContainerClusterAddonsConfigOutputReference) PutKalmCon
 	)
 }
 
+func (g *jsiiProxy_GoogleContainerClusterAddonsConfigOutputReference) PutLustreCsiDriverConfig(value *GoogleContainerClusterAddonsConfigLustreCsiDriverConfig) {
+	if err := g.validatePutLustreCsiDriverConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putLustreCsiDriverConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleContainerClusterAddonsConfigOutputReference) PutNetworkPolicyConfig(value *GoogleContainerClusterAddonsConfigNetworkPolicyConfig) {
 	if err := g.validatePutNetworkPolicyConfigParameters(value); err != nil {
 		panic(err)
@@ -1024,6 +1059,14 @@ func (g *jsiiProxy_GoogleContainerClusterAddonsConfigOutputReference) ResetKalmC
 	_jsii_.InvokeVoid(
 		g,
 		"resetKalmConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerClusterAddonsConfigOutputReference) ResetLustreCsiDriverConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetLustreCsiDriverConfig",
 		nil, // no parameters
 	)
 }

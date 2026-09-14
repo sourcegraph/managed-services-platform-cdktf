@@ -31,6 +31,10 @@ type DataGoogleContainerClusterNodeConfigKubeletConfigOutputReference interface 
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	EvictionMaxPodGracePeriodSeconds() *float64
+	EvictionMinimumReclaim() DataGoogleContainerClusterNodeConfigKubeletConfigEvictionMinimumReclaimList
+	EvictionSoft() DataGoogleContainerClusterNodeConfigKubeletConfigEvictionSoftList
+	EvictionSoftGracePeriod() DataGoogleContainerClusterNodeConfigKubeletConfigEvictionSoftGracePeriodList
 	// Experimental.
 	Fqn() *string
 	ImageGcHighThresholdPercent() *float64
@@ -40,7 +44,9 @@ type DataGoogleContainerClusterNodeConfigKubeletConfigOutputReference interface 
 	InsecureKubeletReadonlyPortEnabled() *string
 	InternalValue() *DataGoogleContainerClusterNodeConfigKubeletConfig
 	SetInternalValue(val *DataGoogleContainerClusterNodeConfigKubeletConfig)
+	MaxParallelImagePulls() *float64
 	PodPidsLimit() *float64
+	SingleProcessOomKill() cdktf.IResolvable
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -178,6 +184,46 @@ func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigKubeletConfigOutputRefere
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigKubeletConfigOutputReference) EvictionMaxPodGracePeriodSeconds() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"evictionMaxPodGracePeriodSeconds",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigKubeletConfigOutputReference) EvictionMinimumReclaim() DataGoogleContainerClusterNodeConfigKubeletConfigEvictionMinimumReclaimList {
+	var returns DataGoogleContainerClusterNodeConfigKubeletConfigEvictionMinimumReclaimList
+	_jsii_.Get(
+		j,
+		"evictionMinimumReclaim",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigKubeletConfigOutputReference) EvictionSoft() DataGoogleContainerClusterNodeConfigKubeletConfigEvictionSoftList {
+	var returns DataGoogleContainerClusterNodeConfigKubeletConfigEvictionSoftList
+	_jsii_.Get(
+		j,
+		"evictionSoft",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigKubeletConfigOutputReference) EvictionSoftGracePeriod() DataGoogleContainerClusterNodeConfigKubeletConfigEvictionSoftGracePeriodList {
+	var returns DataGoogleContainerClusterNodeConfigKubeletConfigEvictionSoftGracePeriodList
+	_jsii_.Get(
+		j,
+		"evictionSoftGracePeriod",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigKubeletConfigOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -248,11 +294,31 @@ func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigKubeletConfigOutputRefere
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigKubeletConfigOutputReference) MaxParallelImagePulls() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxParallelImagePulls",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigKubeletConfigOutputReference) PodPidsLimit() *float64 {
 	var returns *float64
 	_jsii_.Get(
 		j,
 		"podPidsLimit",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigKubeletConfigOutputReference) SingleProcessOomKill() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"singleProcessOomKill",
 		&returns,
 	)
 	return returns

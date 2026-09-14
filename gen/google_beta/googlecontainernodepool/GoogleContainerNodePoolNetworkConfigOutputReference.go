@@ -49,6 +49,7 @@ type GoogleContainerNodePoolNetworkConfigOutputReference interface {
 	PodRange() *string
 	SetPodRange(val *string)
 	PodRangeInput() *string
+	Subnetwork() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -313,6 +314,16 @@ func (j *jsiiProxy_GoogleContainerNodePoolNetworkConfigOutputReference) PodRange
 	_jsii_.Get(
 		j,
 		"podRangeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerNodePoolNetworkConfigOutputReference) Subnetwork() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"subnetwork",
 		&returns,
 	)
 	return returns

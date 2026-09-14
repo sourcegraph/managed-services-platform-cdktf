@@ -128,6 +128,10 @@ func validateMemorystoreInstance_IsTerraformResourceParameters(x interface{}) er
 	return nil
 }
 
+func (j *jsiiProxy_MemorystoreInstance) validateSetAllowFewerZonesDeploymentParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MemorystoreInstance) validateSetAuthorizationModeParameters(val *string) error {
 	return nil
 }

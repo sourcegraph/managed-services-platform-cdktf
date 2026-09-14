@@ -148,6 +148,14 @@ func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) validateSetNetworkPar
 	return nil
 }
 
+func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) validateSetOdbNetworkParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) validateSetOdbSubnetParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) validateSetProjectParameters(val *string) error {
 	return nil
 }

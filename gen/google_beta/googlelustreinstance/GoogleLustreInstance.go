@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googlelustreinstance/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_lustre_instance google_lustre_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_lustre_instance google_lustre_instance}.
 type GoogleLustreInstance interface {
 	cdktf.TerraformResource
 	CapacityGib() *string
@@ -642,7 +642,7 @@ func (j *jsiiProxy_GoogleLustreInstance) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_lustre_instance google_lustre_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_lustre_instance google_lustre_instance} Resource.
 func NewGoogleLustreInstance(scope constructs.Construct, id *string, config *GoogleLustreInstanceConfig) GoogleLustreInstance {
 	_init_.Initialize()
 
@@ -660,7 +660,7 @@ func NewGoogleLustreInstance(scope constructs.Construct, id *string, config *Goo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_lustre_instance google_lustre_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_lustre_instance google_lustre_instance} Resource.
 func NewGoogleLustreInstance_Override(g GoogleLustreInstance, scope constructs.Construct, id *string, config *GoogleLustreInstanceConfig) {
 	_init_.Initialize()
 
