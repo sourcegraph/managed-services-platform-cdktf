@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googlecomputestoragepool/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_storage_pool google_compute_storage_pool}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_compute_storage_pool google_compute_storage_pool}.
 type GoogleComputeStoragePool interface {
 	cdktf.TerraformResource
 	CapacityProvisioningType() *string
@@ -38,6 +38,7 @@ type GoogleComputeStoragePool interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	EffectiveLabels() cdktf.StringMap
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -49,6 +50,9 @@ type GoogleComputeStoragePool interface {
 	Id() *string
 	Kind() *string
 	LabelFingerprint() *string
+	Labels() *map[string]*string
+	SetLabels(val *map[string]*string)
+	LabelsInput() *map[string]*string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -90,6 +94,7 @@ type GoogleComputeStoragePool interface {
 	StoragePoolTypeInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -146,6 +151,7 @@ type GoogleComputeStoragePool interface {
 	ResetCapacityProvisioningType()
 	ResetDeletionProtection()
 	ResetDescription()
+	ResetLabels()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -292,6 +298,16 @@ func (j *jsiiProxy_GoogleComputeStoragePool) DescriptionInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeStoragePool) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeStoragePool) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
@@ -347,6 +363,26 @@ func (j *jsiiProxy_GoogleComputeStoragePool) LabelFingerprint() *string {
 	_jsii_.Get(
 		j,
 		"labelFingerprint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeStoragePool) Labels() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"labels",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeStoragePool) LabelsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"labelsInput",
 		&returns,
 	)
 	return returns
@@ -572,6 +608,16 @@ func (j *jsiiProxy_GoogleComputeStoragePool) TerraformGeneratorMetadata() *cdktf
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeStoragePool) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeStoragePool) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -633,7 +679,7 @@ func (j *jsiiProxy_GoogleComputeStoragePool) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_storage_pool google_compute_storage_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_compute_storage_pool google_compute_storage_pool} Resource.
 func NewGoogleComputeStoragePool(scope constructs.Construct, id *string, config *GoogleComputeStoragePoolConfig) GoogleComputeStoragePool {
 	_init_.Initialize()
 
@@ -651,7 +697,7 @@ func NewGoogleComputeStoragePool(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_storage_pool google_compute_storage_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_compute_storage_pool google_compute_storage_pool} Resource.
 func NewGoogleComputeStoragePool_Override(g GoogleComputeStoragePool, scope constructs.Construct, id *string, config *GoogleComputeStoragePoolConfig) {
 	_init_.Initialize()
 
@@ -729,6 +775,17 @@ func (j *jsiiProxy_GoogleComputeStoragePool)SetForEach(val cdktf.ITerraformItera
 	_jsii_.Set(
 		j,
 		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeStoragePool)SetLabels(val *map[string]*string) {
+	if err := j.validateSetLabelsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"labels",
 		val,
 	)
 }
@@ -1235,6 +1292,14 @@ func (g *jsiiProxy_GoogleComputeStoragePool) ResetDescription() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeStoragePool) ResetLabels() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetLabels",
 		nil, // no parameters
 	)
 }

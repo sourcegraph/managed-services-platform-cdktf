@@ -15,6 +15,9 @@ type GoogleStorageTransferJobTransferSpecAwsS3DataSourceOutputReference interfac
 	BucketName() *string
 	SetBucketName(val *string)
 	BucketNameInput() *string
+	CloudfrontDomain() *string
+	SetCloudfrontDomain(val *string)
+	CloudfrontDomainInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -77,6 +80,7 @@ type GoogleStorageTransferJobTransferSpecAwsS3DataSourceOutputReference interfac
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutAwsAccessKey(value *GoogleStorageTransferJobTransferSpecAwsS3DataSourceAwsAccessKey)
 	ResetAwsAccessKey()
+	ResetCloudfrontDomain()
 	ResetManagedPrivateNetwork()
 	ResetPath()
 	ResetRoleArn()
@@ -130,6 +134,26 @@ func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecAwsS3DataSourceOutputRefe
 	_jsii_.Get(
 		j,
 		"bucketNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecAwsS3DataSourceOutputReference) CloudfrontDomain() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cloudfrontDomain",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecAwsS3DataSourceOutputReference) CloudfrontDomainInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cloudfrontDomainInput",
 		&returns,
 	)
 	return returns
@@ -300,6 +324,17 @@ func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecAwsS3DataSourceOutputRefe
 	_jsii_.Set(
 		j,
 		"bucketName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecAwsS3DataSourceOutputReference)SetCloudfrontDomain(val *string) {
+	if err := j.validateSetCloudfrontDomainParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"cloudfrontDomain",
 		val,
 	)
 }
@@ -593,6 +628,14 @@ func (g *jsiiProxy_GoogleStorageTransferJobTransferSpecAwsS3DataSourceOutputRefe
 	_jsii_.InvokeVoid(
 		g,
 		"resetAwsAccessKey",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleStorageTransferJobTransferSpecAwsS3DataSourceOutputReference) ResetCloudfrontDomain() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetCloudfrontDomain",
 		nil, // no parameters
 	)
 }

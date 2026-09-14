@@ -4,15 +4,23 @@ package googlecontainercluster
 type GoogleContainerClusterNodeConfigLinuxNodeConfig struct {
 	// cgroupMode specifies the cgroup mode to be used on the node.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_container_cluster#cgroup_mode GoogleContainerCluster#cgroup_mode}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_container_cluster#cgroup_mode GoogleContainerCluster#cgroup_mode}
 	CgroupMode *string `field:"optional" json:"cgroupMode" yaml:"cgroupMode"`
 	// hugepages_config block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_container_cluster#hugepages_config GoogleContainerCluster#hugepages_config}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_container_cluster#hugepages_config GoogleContainerCluster#hugepages_config}
 	HugepagesConfig *GoogleContainerClusterNodeConfigLinuxNodeConfigHugepagesConfig `field:"optional" json:"hugepagesConfig" yaml:"hugepagesConfig"`
 	// The Linux kernel parameters to be applied to the nodes and all pods running on the nodes.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_container_cluster#sysctls GoogleContainerCluster#sysctls}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_container_cluster#sysctls GoogleContainerCluster#sysctls}
 	Sysctls *map[string]*string `field:"optional" json:"sysctls" yaml:"sysctls"`
+	// The Linux kernel transparent hugepage defrag setting.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_container_cluster#transparent_hugepage_defrag GoogleContainerCluster#transparent_hugepage_defrag}
+	TransparentHugepageDefrag *string `field:"optional" json:"transparentHugepageDefrag" yaml:"transparentHugepageDefrag"`
+	// The Linux kernel transparent hugepage setting.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_container_cluster#transparent_hugepage_enabled GoogleContainerCluster#transparent_hugepage_enabled}
+	TransparentHugepageEnabled *string `field:"optional" json:"transparentHugepageEnabled" yaml:"transparentHugepageEnabled"`
 }
 

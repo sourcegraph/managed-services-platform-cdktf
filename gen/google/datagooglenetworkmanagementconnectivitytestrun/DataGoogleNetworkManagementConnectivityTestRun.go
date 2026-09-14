@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google/datagooglenetworkmanagementconnectivitytestrun/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/data-sources/network_management_connectivity_test_run google_network_management_connectivity_test_run}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/network_management_connectivity_test_run google_network_management_connectivity_test_run}.
 type DataGoogleNetworkManagementConnectivityTestRun interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -320,7 +320,7 @@ func (j *jsiiProxy_DataGoogleNetworkManagementConnectivityTestRun) TerraformReso
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/data-sources/network_management_connectivity_test_run google_network_management_connectivity_test_run} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/network_management_connectivity_test_run google_network_management_connectivity_test_run} Data Source.
 func NewDataGoogleNetworkManagementConnectivityTestRun(scope constructs.Construct, id *string, config *DataGoogleNetworkManagementConnectivityTestRunConfig) DataGoogleNetworkManagementConnectivityTestRun {
 	_init_.Initialize()
 
@@ -338,7 +338,7 @@ func NewDataGoogleNetworkManagementConnectivityTestRun(scope constructs.Construc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/data-sources/network_management_connectivity_test_run google_network_management_connectivity_test_run} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/network_management_connectivity_test_run google_network_management_connectivity_test_run} Data Source.
 func NewDataGoogleNetworkManagementConnectivityTestRun_Override(d DataGoogleNetworkManagementConnectivityTestRun, scope constructs.Construct, id *string, config *DataGoogleNetworkManagementConnectivityTestRunConfig) {
 	_init_.Initialize()
 

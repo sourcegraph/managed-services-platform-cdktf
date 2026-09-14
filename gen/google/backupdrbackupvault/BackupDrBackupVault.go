@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google/backupdrbackupvault/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/backup_dr_backup_vault google_backup_dr_backup_vault}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/backup_dr_backup_vault google_backup_dr_backup_vault}.
 type BackupDrBackupVault interface {
 	cdktf.TerraformResource
 	AccessRestriction() *string
@@ -25,6 +25,9 @@ type BackupDrBackupVault interface {
 	BackupMinimumEnforcedRetentionDuration() *string
 	SetBackupMinimumEnforcedRetentionDuration(val *string)
 	BackupMinimumEnforcedRetentionDurationInput() *string
+	BackupRetentionInheritance() *string
+	SetBackupRetentionInheritance(val *string)
+	BackupRetentionInheritanceInput() *string
 	BackupVaultId() *string
 	SetBackupVaultId(val *string)
 	BackupVaultIdInput() *string
@@ -165,6 +168,7 @@ type BackupDrBackupVault interface {
 	ResetAccessRestriction()
 	ResetAllowMissing()
 	ResetAnnotations()
+	ResetBackupRetentionInheritance()
 	ResetDescription()
 	ResetEffectiveTime()
 	ResetForceDelete()
@@ -281,6 +285,26 @@ func (j *jsiiProxy_BackupDrBackupVault) BackupMinimumEnforcedRetentionDurationIn
 	_jsii_.Get(
 		j,
 		"backupMinimumEnforcedRetentionDurationInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BackupDrBackupVault) BackupRetentionInheritance() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"backupRetentionInheritance",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BackupDrBackupVault) BackupRetentionInheritanceInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"backupRetentionInheritanceInput",
 		&returns,
 	)
 	return returns
@@ -807,7 +831,7 @@ func (j *jsiiProxy_BackupDrBackupVault) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/backup_dr_backup_vault google_backup_dr_backup_vault} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/backup_dr_backup_vault google_backup_dr_backup_vault} Resource.
 func NewBackupDrBackupVault(scope constructs.Construct, id *string, config *BackupDrBackupVaultConfig) BackupDrBackupVault {
 	_init_.Initialize()
 
@@ -825,7 +849,7 @@ func NewBackupDrBackupVault(scope constructs.Construct, id *string, config *Back
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/backup_dr_backup_vault google_backup_dr_backup_vault} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/backup_dr_backup_vault google_backup_dr_backup_vault} Resource.
 func NewBackupDrBackupVault_Override(b BackupDrBackupVault, scope constructs.Construct, id *string, config *BackupDrBackupVaultConfig) {
 	_init_.Initialize()
 
@@ -876,6 +900,17 @@ func (j *jsiiProxy_BackupDrBackupVault)SetBackupMinimumEnforcedRetentionDuration
 	_jsii_.Set(
 		j,
 		"backupMinimumEnforcedRetentionDuration",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BackupDrBackupVault)SetBackupRetentionInheritance(val *string) {
+	if err := j.validateSetBackupRetentionInheritanceParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"backupRetentionInheritance",
 		val,
 	)
 }
@@ -1453,6 +1488,14 @@ func (b *jsiiProxy_BackupDrBackupVault) ResetAnnotations() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetAnnotations",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BackupDrBackupVault) ResetBackupRetentionInheritance() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetBackupRetentionInheritance",
 		nil, // no parameters
 	)
 }

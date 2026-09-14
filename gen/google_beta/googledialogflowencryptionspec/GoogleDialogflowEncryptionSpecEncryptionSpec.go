@@ -8,7 +8,7 @@ type GoogleDialogflowEncryptionSpecEncryptionSpec struct {
 	// Only the key in the same location as this resource is allowed to be used for encryption.
 	// Format: projects/{project}/locations/{location}/keyRings/{keyRing}/cryptoKeys/{key}
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dialogflow_encryption_spec#kms_key GoogleDialogflowEncryptionSpec#kms_key}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_dialogflow_encryption_spec#kms_key GoogleDialogflowEncryptionSpec#kms_key}
 	KmsKey *string `field:"required" json:"kmsKey" yaml:"kmsKey"`
 }
 

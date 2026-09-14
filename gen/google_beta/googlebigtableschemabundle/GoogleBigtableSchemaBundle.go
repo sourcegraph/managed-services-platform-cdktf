@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googlebigtableschemabundle/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_bigtable_schema_bundle google_bigtable_schema_bundle}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_bigtable_schema_bundle google_bigtable_schema_bundle}.
 type GoogleBigtableSchemaBundle interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -484,7 +484,7 @@ func (j *jsiiProxy_GoogleBigtableSchemaBundle) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_bigtable_schema_bundle google_bigtable_schema_bundle} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_bigtable_schema_bundle google_bigtable_schema_bundle} Resource.
 func NewGoogleBigtableSchemaBundle(scope constructs.Construct, id *string, config *GoogleBigtableSchemaBundleConfig) GoogleBigtableSchemaBundle {
 	_init_.Initialize()
 
@@ -502,7 +502,7 @@ func NewGoogleBigtableSchemaBundle(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_bigtable_schema_bundle google_bigtable_schema_bundle} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_bigtable_schema_bundle google_bigtable_schema_bundle} Resource.
 func NewGoogleBigtableSchemaBundle_Override(g GoogleBigtableSchemaBundle, scope constructs.Construct, id *string, config *GoogleBigtableSchemaBundleConfig) {
 	_init_.Initialize()
 

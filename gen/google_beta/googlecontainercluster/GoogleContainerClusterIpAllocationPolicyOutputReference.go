@@ -10,6 +10,8 @@ import (
 
 type GoogleContainerClusterIpAllocationPolicyOutputReference interface {
 	cdktf.ComplexObject
+	AdditionalIpRangesConfig() GoogleContainerClusterIpAllocationPolicyAdditionalIpRangesConfigList
+	AdditionalIpRangesConfigInput() interface{}
 	AdditionalPodRangesConfig() GoogleContainerClusterIpAllocationPolicyAdditionalPodRangesConfigOutputReference
 	AdditionalPodRangesConfigInput() *GoogleContainerClusterIpAllocationPolicyAdditionalPodRangesConfig
 	ClusterIpv4CidrBlock() *string
@@ -80,8 +82,10 @@ type GoogleContainerClusterIpAllocationPolicyOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutAdditionalIpRangesConfig(value interface{})
 	PutAdditionalPodRangesConfig(value *GoogleContainerClusterIpAllocationPolicyAdditionalPodRangesConfig)
 	PutPodCidrOverprovisionConfig(value *GoogleContainerClusterIpAllocationPolicyPodCidrOverprovisionConfig)
+	ResetAdditionalIpRangesConfig()
 	ResetAdditionalPodRangesConfig()
 	ResetClusterIpv4CidrBlock()
 	ResetClusterSecondaryRangeName()
@@ -102,6 +106,26 @@ type GoogleContainerClusterIpAllocationPolicyOutputReference interface {
 // The jsii proxy struct for GoogleContainerClusterIpAllocationPolicyOutputReference
 type jsiiProxy_GoogleContainerClusterIpAllocationPolicyOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_GoogleContainerClusterIpAllocationPolicyOutputReference) AdditionalIpRangesConfig() GoogleContainerClusterIpAllocationPolicyAdditionalIpRangesConfigList {
+	var returns GoogleContainerClusterIpAllocationPolicyAdditionalIpRangesConfigList
+	_jsii_.Get(
+		j,
+		"additionalIpRangesConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterIpAllocationPolicyOutputReference) AdditionalIpRangesConfigInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"additionalIpRangesConfigInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_GoogleContainerClusterIpAllocationPolicyOutputReference) AdditionalPodRangesConfig() GoogleContainerClusterIpAllocationPolicyAdditionalPodRangesConfigOutputReference {
@@ -638,6 +662,17 @@ func (g *jsiiProxy_GoogleContainerClusterIpAllocationPolicyOutputReference) Inte
 	return returns
 }
 
+func (g *jsiiProxy_GoogleContainerClusterIpAllocationPolicyOutputReference) PutAdditionalIpRangesConfig(value interface{}) {
+	if err := g.validatePutAdditionalIpRangesConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putAdditionalIpRangesConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleContainerClusterIpAllocationPolicyOutputReference) PutAdditionalPodRangesConfig(value *GoogleContainerClusterIpAllocationPolicyAdditionalPodRangesConfig) {
 	if err := g.validatePutAdditionalPodRangesConfigParameters(value); err != nil {
 		panic(err)
@@ -657,6 +692,14 @@ func (g *jsiiProxy_GoogleContainerClusterIpAllocationPolicyOutputReference) PutP
 		g,
 		"putPodCidrOverprovisionConfig",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerClusterIpAllocationPolicyOutputReference) ResetAdditionalIpRangesConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAdditionalIpRangesConfig",
+		nil, // no parameters
 	)
 }
 

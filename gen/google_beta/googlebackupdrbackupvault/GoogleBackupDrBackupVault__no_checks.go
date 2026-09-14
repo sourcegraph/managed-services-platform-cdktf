@@ -108,6 +108,10 @@ func (j *jsiiProxy_GoogleBackupDrBackupVault) validateSetBackupMinimumEnforcedRe
 	return nil
 }
 
+func (j *jsiiProxy_GoogleBackupDrBackupVault) validateSetBackupRetentionInheritanceParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleBackupDrBackupVault) validateSetBackupVaultIdParameters(val *string) error {
 	return nil
 }

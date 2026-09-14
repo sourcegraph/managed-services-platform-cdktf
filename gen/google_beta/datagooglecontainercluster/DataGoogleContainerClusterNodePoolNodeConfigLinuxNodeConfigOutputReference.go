@@ -40,6 +40,8 @@ type DataGoogleContainerClusterNodePoolNodeConfigLinuxNodeConfigOutputReference 
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TransparentHugepageDefrag() *string
+	TransparentHugepageEnabled() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -174,6 +176,26 @@ func (j *jsiiProxy_DataGoogleContainerClusterNodePoolNodeConfigLinuxNodeConfigOu
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterNodePoolNodeConfigLinuxNodeConfigOutputReference) TransparentHugepageDefrag() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"transparentHugepageDefrag",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterNodePoolNodeConfigLinuxNodeConfigOutputReference) TransparentHugepageEnabled() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"transparentHugepageEnabled",
 		&returns,
 	)
 	return returns

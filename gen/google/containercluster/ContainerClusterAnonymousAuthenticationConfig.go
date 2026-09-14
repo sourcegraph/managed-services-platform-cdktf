@@ -8,7 +8,7 @@ type ContainerClusterAnonymousAuthenticationConfig struct {
 	// * ENABLED: Authentication of anonymous users is enabled for all endpoints.
 	// * LIMITED: Anonymous access is only allowed for health check endpoints.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/container_cluster#mode ContainerCluster#mode}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/container_cluster#mode ContainerCluster#mode}
 	Mode *string `field:"required" json:"mode" yaml:"mode"`
 }
 

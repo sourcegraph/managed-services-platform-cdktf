@@ -104,6 +104,10 @@ func (g *jsiiProxy_GoogleDataprocClusterClusterConfigOutputReference) validateRe
 	return nil
 }
 
+func (j *jsiiProxy_GoogleDataprocClusterClusterConfigOutputReference) validateSetClusterTierParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDataprocClusterClusterConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }

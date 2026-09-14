@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/datagooglecomputenetworkattachment/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/data-sources/google_compute_network_attachment google_compute_network_attachment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/data-sources/google_compute_network_attachment google_compute_network_attachment}.
 type DataGoogleComputeNetworkAttachment interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -451,7 +451,7 @@ func (j *jsiiProxy_DataGoogleComputeNetworkAttachment) TerraformResourceType() *
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/data-sources/google_compute_network_attachment google_compute_network_attachment} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/data-sources/google_compute_network_attachment google_compute_network_attachment} Data Source.
 func NewDataGoogleComputeNetworkAttachment(scope constructs.Construct, id *string, config *DataGoogleComputeNetworkAttachmentConfig) DataGoogleComputeNetworkAttachment {
 	_init_.Initialize()
 
@@ -469,7 +469,7 @@ func NewDataGoogleComputeNetworkAttachment(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/data-sources/google_compute_network_attachment google_compute_network_attachment} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/data-sources/google_compute_network_attachment google_compute_network_attachment} Data Source.
 func NewDataGoogleComputeNetworkAttachment_Override(d DataGoogleComputeNetworkAttachment, scope constructs.Construct, id *string, config *DataGoogleComputeNetworkAttachmentConfig) {
 	_init_.Initialize()
 

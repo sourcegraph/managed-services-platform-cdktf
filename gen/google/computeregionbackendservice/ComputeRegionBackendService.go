@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google/computeregionbackendservice/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/compute_region_backend_service google_compute_region_backend_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service google_compute_region_backend_service}.
 type ComputeRegionBackendService interface {
 	cdktf.TerraformResource
 	AffinityCookieTtlSec() *float64
@@ -63,6 +63,8 @@ type ComputeRegionBackendService interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	GeneratedId() *float64
+	HaPolicy() ComputeRegionBackendServiceHaPolicyOutputReference
+	HaPolicyInput() *ComputeRegionBackendServiceHaPolicy
 	HealthChecks() *[]*string
 	SetHealthChecks(val *[]*string)
 	HealthChecksInput() *[]*string
@@ -184,6 +186,7 @@ type ComputeRegionBackendService interface {
 	PutConsistentHash(value *ComputeRegionBackendServiceConsistentHash)
 	PutCustomMetrics(value interface{})
 	PutFailoverPolicy(value *ComputeRegionBackendServiceFailoverPolicy)
+	PutHaPolicy(value *ComputeRegionBackendServiceHaPolicy)
 	PutIap(value *ComputeRegionBackendServiceIap)
 	PutLogConfig(value *ComputeRegionBackendServiceLogConfig)
 	PutOutlierDetection(value *ComputeRegionBackendServiceOutlierDetection)
@@ -199,6 +202,7 @@ type ComputeRegionBackendService interface {
 	ResetDescription()
 	ResetEnableCdn()
 	ResetFailoverPolicy()
+	ResetHaPolicy()
 	ResetHealthChecks()
 	ResetIap()
 	ResetId()
@@ -542,6 +546,26 @@ func (j *jsiiProxy_ComputeRegionBackendService) GeneratedId() *float64 {
 	_jsii_.Get(
 		j,
 		"generatedId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRegionBackendService) HaPolicy() ComputeRegionBackendServiceHaPolicyOutputReference {
+	var returns ComputeRegionBackendServiceHaPolicyOutputReference
+	_jsii_.Get(
+		j,
+		"haPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRegionBackendService) HaPolicyInput() *ComputeRegionBackendServiceHaPolicy {
+	var returns *ComputeRegionBackendServiceHaPolicy
+	_jsii_.Get(
+		j,
+		"haPolicyInput",
 		&returns,
 	)
 	return returns
@@ -998,7 +1022,7 @@ func (j *jsiiProxy_ComputeRegionBackendService) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/compute_region_backend_service google_compute_region_backend_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service google_compute_region_backend_service} Resource.
 func NewComputeRegionBackendService(scope constructs.Construct, id *string, config *ComputeRegionBackendServiceConfig) ComputeRegionBackendService {
 	_init_.Initialize()
 
@@ -1016,7 +1040,7 @@ func NewComputeRegionBackendService(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/compute_region_backend_service google_compute_region_backend_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service google_compute_region_backend_service} Resource.
 func NewComputeRegionBackendService_Override(c ComputeRegionBackendService, scope constructs.Construct, id *string, config *ComputeRegionBackendServiceConfig) {
 	_init_.Initialize()
 
@@ -1701,6 +1725,17 @@ func (c *jsiiProxy_ComputeRegionBackendService) PutFailoverPolicy(value *Compute
 	)
 }
 
+func (c *jsiiProxy_ComputeRegionBackendService) PutHaPolicy(value *ComputeRegionBackendServiceHaPolicy) {
+	if err := c.validatePutHaPolicyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putHaPolicy",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ComputeRegionBackendService) PutIap(value *ComputeRegionBackendServiceIap) {
 	if err := c.validatePutIapParameters(value); err != nil {
 		panic(err)
@@ -1832,6 +1867,14 @@ func (c *jsiiProxy_ComputeRegionBackendService) ResetFailoverPolicy() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetFailoverPolicy",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeRegionBackendService) ResetHaPolicy() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetHaPolicy",
 		nil, // no parameters
 	)
 }

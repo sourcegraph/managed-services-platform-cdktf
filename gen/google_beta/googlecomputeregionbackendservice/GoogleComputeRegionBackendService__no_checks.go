@@ -104,6 +104,10 @@ func (g *jsiiProxy_GoogleComputeRegionBackendService) validatePutFailoverPolicyP
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeRegionBackendService) validatePutHaPolicyParameters(value *GoogleComputeRegionBackendServiceHaPolicy) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeRegionBackendService) validatePutIapParameters(value *GoogleComputeRegionBackendServiceIap) error {
 	return nil
 }

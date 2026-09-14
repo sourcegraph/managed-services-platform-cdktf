@@ -214,6 +214,22 @@ func (j *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigLinuxNodeConfigOutput
 	return nil
 }
 
+func (j *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigLinuxNodeConfigOutputReference) validateSetTransparentHugepageDefragParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigLinuxNodeConfigOutputReference) validateSetTransparentHugepageEnabledParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewGoogleContainerClusterNodePoolNodeConfigLinuxNodeConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")

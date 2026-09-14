@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/datagooglebigquerytable/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/data-sources/google_bigquery_table google_bigquery_table}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/data-sources/google_bigquery_table google_bigquery_table}.
 type DataGoogleBigqueryTable interface {
 	cdktf.TerraformDataSource
 	BiglakeConfiguration() DataGoogleBigqueryTableBiglakeConfigurationList
@@ -47,6 +47,7 @@ type DataGoogleBigqueryTable interface {
 	FriendlyName() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	GeneratedSchemaColumns() *string
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -351,6 +352,16 @@ func (j *jsiiProxy_DataGoogleBigqueryTable) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleBigqueryTable) GeneratedSchemaColumns() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"generatedSchemaColumns",
 		&returns,
 	)
 	return returns
@@ -717,7 +728,7 @@ func (j *jsiiProxy_DataGoogleBigqueryTable) View() DataGoogleBigqueryTableViewLi
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/data-sources/google_bigquery_table google_bigquery_table} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/data-sources/google_bigquery_table google_bigquery_table} Data Source.
 func NewDataGoogleBigqueryTable(scope constructs.Construct, id *string, config *DataGoogleBigqueryTableConfig) DataGoogleBigqueryTable {
 	_init_.Initialize()
 
@@ -735,7 +746,7 @@ func NewDataGoogleBigqueryTable(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/data-sources/google_bigquery_table google_bigquery_table} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/data-sources/google_bigquery_table google_bigquery_table} Data Source.
 func NewDataGoogleBigqueryTable_Override(d DataGoogleBigqueryTable, scope constructs.Construct, id *string, config *DataGoogleBigqueryTableConfig) {
 	_init_.Initialize()
 

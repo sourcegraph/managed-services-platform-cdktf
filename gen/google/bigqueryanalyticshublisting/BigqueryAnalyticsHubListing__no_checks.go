@@ -112,6 +112,10 @@ func validateBigqueryAnalyticsHubListing_IsTerraformResourceParameters(x interfa
 	return nil
 }
 
+func (j *jsiiProxy_BigqueryAnalyticsHubListing) validateSetAllowOnlyMetadataSharingParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BigqueryAnalyticsHubListing) validateSetCategoriesParameters(val *[]*string) error {
 	return nil
 }
@@ -128,7 +132,15 @@ func (j *jsiiProxy_BigqueryAnalyticsHubListing) validateSetDataExchangeIdParamet
 	return nil
 }
 
+func (j *jsiiProxy_BigqueryAnalyticsHubListing) validateSetDeleteCommercialParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BigqueryAnalyticsHubListing) validateSetDescriptionParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_BigqueryAnalyticsHubListing) validateSetDiscoveryTypeParameters(val *string) error {
 	return nil
 }
 

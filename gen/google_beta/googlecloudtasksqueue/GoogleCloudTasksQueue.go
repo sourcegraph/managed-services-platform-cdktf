@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googlecloudtasksqueue/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_cloud_tasks_queue google_cloud_tasks_queue}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_cloud_tasks_queue google_cloud_tasks_queue}.
 type GoogleCloudTasksQueue interface {
 	cdktf.TerraformResource
 	AppEngineRoutingOverride() GoogleCloudTasksQueueAppEngineRoutingOverrideOutputReference
@@ -134,7 +134,6 @@ type GoogleCloudTasksQueue interface {
 	ResetAppEngineRoutingOverride()
 	ResetHttpTarget()
 	ResetId()
-	ResetName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -522,7 +521,7 @@ func (j *jsiiProxy_GoogleCloudTasksQueue) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_cloud_tasks_queue google_cloud_tasks_queue} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_cloud_tasks_queue google_cloud_tasks_queue} Resource.
 func NewGoogleCloudTasksQueue(scope constructs.Construct, id *string, config *GoogleCloudTasksQueueConfig) GoogleCloudTasksQueue {
 	_init_.Initialize()
 
@@ -540,7 +539,7 @@ func NewGoogleCloudTasksQueue(scope constructs.Construct, id *string, config *Go
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_cloud_tasks_queue google_cloud_tasks_queue} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_cloud_tasks_queue google_cloud_tasks_queue} Resource.
 func NewGoogleCloudTasksQueue_Override(g GoogleCloudTasksQueue, scope constructs.Construct, id *string, config *GoogleCloudTasksQueueConfig) {
 	_init_.Initialize()
 
@@ -1102,14 +1101,6 @@ func (g *jsiiProxy_GoogleCloudTasksQueue) ResetId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetId",
-		nil, // no parameters
-	)
-}
-
-func (g *jsiiProxy_GoogleCloudTasksQueue) ResetName() {
-	_jsii_.InvokeVoid(
-		g,
-		"resetName",
 		nil, // no parameters
 	)
 }

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/datagooglebigtabletableiampolicy/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/data-sources/google_bigtable_table_iam_policy google_bigtable_table_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/data-sources/google_bigtable_table_iam_policy google_bigtable_table_iam_policy}.
 type DataGoogleBigtableTableIamPolicy interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -39,6 +39,9 @@ type DataGoogleBigtableTableIamPolicy interface {
 	Instance() *string
 	SetInstance(val *string)
 	InstanceInput() *string
+	InstanceName() *string
+	SetInstanceName(val *string)
+	InstanceNameInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -90,6 +93,8 @@ type DataGoogleBigtableTableIamPolicy interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetId()
+	ResetInstance()
+	ResetInstanceName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -233,6 +238,26 @@ func (j *jsiiProxy_DataGoogleBigtableTableIamPolicy) InstanceInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleBigtableTableIamPolicy) InstanceName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"instanceName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleBigtableTableIamPolicy) InstanceNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"instanceNameInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleBigtableTableIamPolicy) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -354,7 +379,7 @@ func (j *jsiiProxy_DataGoogleBigtableTableIamPolicy) TerraformResourceType() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/data-sources/google_bigtable_table_iam_policy google_bigtable_table_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/data-sources/google_bigtable_table_iam_policy google_bigtable_table_iam_policy} Data Source.
 func NewDataGoogleBigtableTableIamPolicy(scope constructs.Construct, id *string, config *DataGoogleBigtableTableIamPolicyConfig) DataGoogleBigtableTableIamPolicy {
 	_init_.Initialize()
 
@@ -372,7 +397,7 @@ func NewDataGoogleBigtableTableIamPolicy(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/data-sources/google_bigtable_table_iam_policy google_bigtable_table_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/data-sources/google_bigtable_table_iam_policy google_bigtable_table_iam_policy} Data Source.
 func NewDataGoogleBigtableTableIamPolicy_Override(d DataGoogleBigtableTableIamPolicy, scope constructs.Construct, id *string, config *DataGoogleBigtableTableIamPolicyConfig) {
 	_init_.Initialize()
 
@@ -428,6 +453,17 @@ func (j *jsiiProxy_DataGoogleBigtableTableIamPolicy)SetInstance(val *string) {
 	_jsii_.Set(
 		j,
 		"instance",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataGoogleBigtableTableIamPolicy)SetInstanceName(val *string) {
+	if err := j.validateSetInstanceNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"instanceName",
 		val,
 	)
 }
@@ -762,6 +798,22 @@ func (d *jsiiProxy_DataGoogleBigtableTableIamPolicy) ResetId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataGoogleBigtableTableIamPolicy) ResetInstance() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetInstance",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataGoogleBigtableTableIamPolicy) ResetInstanceName() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetInstanceName",
 		nil, // no parameters
 	)
 }

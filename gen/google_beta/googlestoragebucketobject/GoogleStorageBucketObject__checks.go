@@ -423,6 +423,14 @@ func (j *jsiiProxy_GoogleStorageBucketObject) validateSetCountParameters(val int
 	return nil
 }
 
+func (j *jsiiProxy_GoogleStorageBucketObject) validateSetDeletionPolicyParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleStorageBucketObject) validateSetDetectMd5HashParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
