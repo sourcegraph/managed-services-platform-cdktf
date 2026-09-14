@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataSentryAllOrganizationMembersMembersOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_DataSentryAllOrganizationMembersMembersOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataSentryAllOrganizationMembersMembersOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataSentryAllOrganizationMembersMembersOutputReferenceParameters
 
 	return nil
 }
-

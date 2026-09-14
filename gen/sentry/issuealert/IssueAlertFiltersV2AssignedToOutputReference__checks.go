@@ -98,7 +98,7 @@ func (i *jsiiProxy_IssueAlertFiltersV2AssignedToOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_IssueAlertFiltersV2AssignedToOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IssueAlertFiltersV2AssignedToOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_IssueAlertFiltersV2AssignedToOutputReference) validateSetComp
 	return nil
 }
 
-func (j *jsiiProxy_IssueAlertFiltersV2AssignedToOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_IssueAlertFiltersV2AssignedToOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewIssueAlertFiltersV2AssignedToOutputReferenceParameters(terraform
 
 	return nil
 }
-

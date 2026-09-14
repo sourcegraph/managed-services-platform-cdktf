@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-sentry.dataSentryAllKeys.DataSentryAllKeys",
-		reflect.TypeOf((*DataSentryAllKeys)(nil)).Elem(),
+		reflect.TypeFor[DataSentryAllKeys](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
@@ -53,7 +53,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataSentryAllKeys{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -61,19 +61,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-sentry.dataSentryAllKeys.DataSentryAllKeysConfig",
-		reflect.TypeOf((*DataSentryAllKeysConfig)(nil)).Elem(),
+		reflect.TypeFor[DataSentryAllKeysConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-sentry.dataSentryAllKeys.DataSentryAllKeysKeys",
-		reflect.TypeOf((*DataSentryAllKeysKeys)(nil)).Elem(),
+		reflect.TypeFor[DataSentryAllKeysKeys](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-sentry.dataSentryAllKeys.DataSentryAllKeysKeysJavascriptLoaderScript",
-		reflect.TypeOf((*DataSentryAllKeysKeysJavascriptLoaderScript)(nil)).Elem(),
+		reflect.TypeFor[DataSentryAllKeysKeysJavascriptLoaderScript](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-sentry.dataSentryAllKeys.DataSentryAllKeysKeysJavascriptLoaderScriptOutputReference",
-		reflect.TypeOf((*DataSentryAllKeysKeysJavascriptLoaderScriptOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataSentryAllKeysKeysJavascriptLoaderScriptOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "browserSdkVersion", GoGetter: "BrowserSdkVersion"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -101,7 +101,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataSentryAllKeysKeysJavascriptLoaderScriptOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -109,7 +109,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-sentry.dataSentryAllKeys.DataSentryAllKeysKeysList",
-		reflect.TypeOf((*DataSentryAllKeysKeysList)(nil)).Elem(),
+		reflect.TypeFor[DataSentryAllKeysKeysList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -122,7 +122,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataSentryAllKeysKeysList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -130,7 +130,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-sentry.dataSentryAllKeys.DataSentryAllKeysKeysOutputReference",
-		reflect.TypeOf((*DataSentryAllKeysKeysOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataSentryAllKeysKeysOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -168,7 +168,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataSentryAllKeysKeysOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

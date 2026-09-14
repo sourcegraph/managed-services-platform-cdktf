@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-sentry.integrationOpsgenie.IntegrationOpsgenie",
-		reflect.TypeOf((*IntegrationOpsgenie)(nil)).Elem(),
+		reflect.TypeFor[IntegrationOpsgenie](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -62,7 +62,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IntegrationOpsgenie{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -70,6 +70,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-sentry.integrationOpsgenie.IntegrationOpsgenieConfig",
-		reflect.TypeOf((*IntegrationOpsgenieConfig)(nil)).Elem(),
+		reflect.TypeFor[IntegrationOpsgenieConfig](),
 	)
 }

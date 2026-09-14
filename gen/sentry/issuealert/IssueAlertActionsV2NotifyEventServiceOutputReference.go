@@ -12,9 +12,9 @@ type IssueAlertActionsV2NotifyEventServiceOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -27,8 +27,8 @@ type IssueAlertActionsV2NotifyEventServiceOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Name() *string
 	Service() *string
 	SetService(val *string)
@@ -44,7 +44,7 @@ type IssueAlertActionsV2NotifyEventServiceOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -67,7 +67,7 @@ type IssueAlertActionsV2NotifyEventServiceOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -80,8 +80,8 @@ type jsiiProxy_IssueAlertActionsV2NotifyEventServiceOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_IssueAlertActionsV2NotifyEventServiceOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IssueAlertActionsV2NotifyEventServiceOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -120,8 +120,8 @@ func (j *jsiiProxy_IssueAlertActionsV2NotifyEventServiceOutputReference) Fqn() *
 	return returns
 }
 
-func (j *jsiiProxy_IssueAlertActionsV2NotifyEventServiceOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IssueAlertActionsV2NotifyEventServiceOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -180,7 +180,6 @@ func (j *jsiiProxy_IssueAlertActionsV2NotifyEventServiceOutputReference) Terrafo
 	return returns
 }
 
-
 func NewIssueAlertActionsV2NotifyEventServiceOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) IssueAlertActionsV2NotifyEventServiceOutputReference {
 	_init_.Initialize()
 
@@ -191,7 +190,7 @@ func NewIssueAlertActionsV2NotifyEventServiceOutputReference(terraformResource c
 
 	_jsii_.Create(
 		"@cdktf/provider-sentry.issueAlert.IssueAlertActionsV2NotifyEventServiceOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -203,12 +202,12 @@ func NewIssueAlertActionsV2NotifyEventServiceOutputReference_Override(i IssueAle
 
 	_jsii_.Create(
 		"@cdktf/provider-sentry.issueAlert.IssueAlertActionsV2NotifyEventServiceOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		i,
 	)
 }
 
-func (j *jsiiProxy_IssueAlertActionsV2NotifyEventServiceOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_IssueAlertActionsV2NotifyEventServiceOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -219,7 +218,7 @@ func (j *jsiiProxy_IssueAlertActionsV2NotifyEventServiceOutputReference)SetCompl
 	)
 }
 
-func (j *jsiiProxy_IssueAlertActionsV2NotifyEventServiceOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_IssueAlertActionsV2NotifyEventServiceOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -230,7 +229,7 @@ func (j *jsiiProxy_IssueAlertActionsV2NotifyEventServiceOutputReference)SetCompl
 	)
 }
 
-func (j *jsiiProxy_IssueAlertActionsV2NotifyEventServiceOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_IssueAlertActionsV2NotifyEventServiceOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -241,7 +240,7 @@ func (j *jsiiProxy_IssueAlertActionsV2NotifyEventServiceOutputReference)SetInter
 	)
 }
 
-func (j *jsiiProxy_IssueAlertActionsV2NotifyEventServiceOutputReference)SetService(val *string) {
+func (j *jsiiProxy_IssueAlertActionsV2NotifyEventServiceOutputReference) SetService(val *string) {
 	if err := j.validateSetServiceParameters(val); err != nil {
 		panic(err)
 	}
@@ -252,7 +251,7 @@ func (j *jsiiProxy_IssueAlertActionsV2NotifyEventServiceOutputReference)SetServi
 	)
 }
 
-func (j *jsiiProxy_IssueAlertActionsV2NotifyEventServiceOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_IssueAlertActionsV2NotifyEventServiceOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -263,7 +262,7 @@ func (j *jsiiProxy_IssueAlertActionsV2NotifyEventServiceOutputReference)SetTerra
 	)
 }
 
-func (j *jsiiProxy_IssueAlertActionsV2NotifyEventServiceOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_IssueAlertActionsV2NotifyEventServiceOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -287,16 +286,16 @@ func (i *jsiiProxy_IssueAlertActionsV2NotifyEventServiceOutputReference) Compute
 	return returns
 }
 
-func (i *jsiiProxy_IssueAlertActionsV2NotifyEventServiceOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (i *jsiiProxy_IssueAlertActionsV2NotifyEventServiceOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := i.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -312,7 +311,7 @@ func (i *jsiiProxy_IssueAlertActionsV2NotifyEventServiceOutputReference) GetBool
 	_jsii_.Invoke(
 		i,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -328,7 +327,7 @@ func (i *jsiiProxy_IssueAlertActionsV2NotifyEventServiceOutputReference) GetBool
 	_jsii_.Invoke(
 		i,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -344,7 +343,7 @@ func (i *jsiiProxy_IssueAlertActionsV2NotifyEventServiceOutputReference) GetList
 	_jsii_.Invoke(
 		i,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -360,7 +359,7 @@ func (i *jsiiProxy_IssueAlertActionsV2NotifyEventServiceOutputReference) GetNumb
 	_jsii_.Invoke(
 		i,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -376,7 +375,7 @@ func (i *jsiiProxy_IssueAlertActionsV2NotifyEventServiceOutputReference) GetNumb
 	_jsii_.Invoke(
 		i,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -392,7 +391,7 @@ func (i *jsiiProxy_IssueAlertActionsV2NotifyEventServiceOutputReference) GetNumb
 	_jsii_.Invoke(
 		i,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -408,7 +407,7 @@ func (i *jsiiProxy_IssueAlertActionsV2NotifyEventServiceOutputReference) GetStri
 	_jsii_.Invoke(
 		i,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -424,7 +423,7 @@ func (i *jsiiProxy_IssueAlertActionsV2NotifyEventServiceOutputReference) GetStri
 	_jsii_.Invoke(
 		i,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -453,23 +452,23 @@ func (i *jsiiProxy_IssueAlertActionsV2NotifyEventServiceOutputReference) Interpo
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (i *jsiiProxy_IssueAlertActionsV2NotifyEventServiceOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (i *jsiiProxy_IssueAlertActionsV2NotifyEventServiceOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := i.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		i,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -488,4 +487,3 @@ func (i *jsiiProxy_IssueAlertActionsV2NotifyEventServiceOutputReference) ToStrin
 
 	return returns
 }
-

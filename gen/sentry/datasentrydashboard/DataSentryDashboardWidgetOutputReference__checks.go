@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataSentryDashboardWidgetOutputReference) validateResolvePara
 	return nil
 }
 
-func (j *jsiiProxy_DataSentryDashboardWidgetOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataSentryDashboardWidgetOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataSentryDashboardWidgetOutputReferenceParameters(terraformReso
 
 	return nil
 }
-

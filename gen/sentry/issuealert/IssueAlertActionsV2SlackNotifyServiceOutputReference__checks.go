@@ -106,7 +106,7 @@ func (j *jsiiProxy_IssueAlertActionsV2SlackNotifyServiceOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_IssueAlertActionsV2SlackNotifyServiceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IssueAlertActionsV2SlackNotifyServiceOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_IssueAlertActionsV2SlackNotifyServiceOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_IssueAlertActionsV2SlackNotifyServiceOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_IssueAlertActionsV2SlackNotifyServiceOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewIssueAlertActionsV2SlackNotifyServiceOutputReferenceParameters(t
 
 	return nil
 }
-

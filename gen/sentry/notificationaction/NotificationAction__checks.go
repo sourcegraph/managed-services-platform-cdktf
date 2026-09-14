@@ -19,7 +19,7 @@ func (n *jsiiProxy_NotificationAction) validateAddMoveTargetParameters(moveTarge
 	return nil
 }
 
-func (n *jsiiProxy_NotificationAction) validateAddOverrideParameters(path *string, value interface{}) error {
+func (n *jsiiProxy_NotificationAction) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (n *jsiiProxy_NotificationAction) validateMoveFromIdParameters(id *string) 
 	return nil
 }
 
-func (n *jsiiProxy_NotificationAction) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (n *jsiiProxy_NotificationAction) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateNotificationAction_GenerateConfigForImportParameters(scope construc
 	return nil
 }
 
-func validateNotificationAction_IsConstructParameters(x interface{}) error {
+func validateNotificationAction_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateNotificationAction_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateNotificationAction_IsTerraformElementParameters(x interface{}) error {
+func validateNotificationAction_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateNotificationAction_IsTerraformElementParameters(x interface{}) erro
 	return nil
 }
 
-func validateNotificationAction_IsTerraformResourceParameters(x interface{}) error {
+func validateNotificationAction_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateNotificationAction_IsTerraformResourceParameters(x interface{}) err
 	return nil
 }
 
-func (j *jsiiProxy_NotificationAction) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_NotificationAction) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_NotificationAction) validateSetConnectionParameters(val inter
 	return nil
 }
 
-func (j *jsiiProxy_NotificationAction) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_NotificationAction) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -366,7 +366,7 @@ func (j *jsiiProxy_NotificationAction) validateSetProjectsParameters(val *[]*str
 	return nil
 }
 
-func (j *jsiiProxy_NotificationAction) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_NotificationAction) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -462,4 +462,3 @@ func validateNewNotificationActionParameters(scope constructs.Construct, id *str
 
 	return nil
 }
-

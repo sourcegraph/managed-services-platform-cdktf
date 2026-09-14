@@ -98,7 +98,7 @@ func (m *jsiiProxy_MetricAlertTriggerActionOutputReference) validateResolveParam
 	return nil
 }
 
-func (j *jsiiProxy_MetricAlertTriggerActionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MetricAlertTriggerActionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_MetricAlertTriggerActionOutputReference) validateSetIntegrati
 	return nil
 }
 
-func (j *jsiiProxy_MetricAlertTriggerActionOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_MetricAlertTriggerActionOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -262,4 +262,3 @@ func validateNewMetricAlertTriggerActionOutputReferenceParameters(terraformResou
 
 	return nil
 }
-

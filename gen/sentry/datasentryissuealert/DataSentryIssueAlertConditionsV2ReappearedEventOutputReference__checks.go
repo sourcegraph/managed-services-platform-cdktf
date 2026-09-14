@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataSentryIssueAlertConditionsV2ReappearedEventOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_DataSentryIssueAlertConditionsV2ReappearedEventOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataSentryIssueAlertConditionsV2ReappearedEventOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewDataSentryIssueAlertConditionsV2ReappearedEventOutputReferencePa
 
 	return nil
 }
-

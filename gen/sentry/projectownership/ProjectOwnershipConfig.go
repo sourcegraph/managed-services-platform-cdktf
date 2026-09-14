@@ -6,9 +6,9 @@ import (
 
 type ProjectOwnershipConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type ProjectOwnershipConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The auto-assignment mode.
 	//
 	// The options are: `none` - No auto-assignment, `all` - Assign all issues, `unhandled` - Assign unhandled issues.
@@ -28,11 +28,11 @@ type ProjectOwnershipConfig struct {
 	// Whether to automatically sync codeowners.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs/resources/project_ownership#codeowners_auto_sync ProjectOwnership#codeowners_auto_sync}
-	CodeownersAutoSync interface{} `field:"required" json:"codeownersAutoSync" yaml:"codeownersAutoSync"`
+	CodeownersAutoSync any `field:"required" json:"codeownersAutoSync" yaml:"codeownersAutoSync"`
 	// Whether to fall through to the default ownership rules.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs/resources/project_ownership#fallthrough ProjectOwnership#fallthrough}
-	Fallthrough interface{} `field:"required" json:"fallthrough" yaml:"fallthrough"`
+	Fallthrough any `field:"required" json:"fallthrough" yaml:"fallthrough"`
 	// The organization of this resource.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs/resources/project_ownership#organization ProjectOwnership#organization}
@@ -46,4 +46,3 @@ type ProjectOwnershipConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs/resources/project_ownership#raw ProjectOwnership#raw}
 	Raw *string `field:"required" json:"raw" yaml:"raw"`
 }
-

@@ -15,11 +15,11 @@ type DataSentryTeam interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -54,20 +54,20 @@ type DataSentryTeam interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Slug() *string
 	SetSlug(val *string)
 	SlugInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -93,18 +93,18 @@ type DataSentryTeam interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataSentryTeam
@@ -122,8 +122,8 @@ func (j *jsiiProxy_DataSentryTeam) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_DataSentryTeam) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataSentryTeam) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -132,8 +132,8 @@ func (j *jsiiProxy_DataSentryTeam) ConstructNodeMetadata() *map[string]interface
 	return returns
 }
 
-func (j *jsiiProxy_DataSentryTeam) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataSentryTeam) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -302,8 +302,8 @@ func (j *jsiiProxy_DataSentryTeam) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_DataSentryTeam) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataSentryTeam) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -342,8 +342,8 @@ func (j *jsiiProxy_DataSentryTeam) TerraformGeneratorMetadata() *cdktf.Terraform
 	return returns
 }
 
-func (j *jsiiProxy_DataSentryTeam) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataSentryTeam) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -362,7 +362,6 @@ func (j *jsiiProxy_DataSentryTeam) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs/data-sources/team sentry_team} Data Source.
 func NewDataSentryTeam(scope constructs.Construct, id *string, config *DataSentryTeamConfig) DataSentryTeam {
 	_init_.Initialize()
@@ -374,7 +373,7 @@ func NewDataSentryTeam(scope constructs.Construct, id *string, config *DataSentr
 
 	_jsii_.Create(
 		"@cdktf/provider-sentry.dataSentryTeam.DataSentryTeam",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -387,12 +386,12 @@ func NewDataSentryTeam_Override(d DataSentryTeam, scope constructs.Construct, id
 
 	_jsii_.Create(
 		"@cdktf/provider-sentry.dataSentryTeam.DataSentryTeam",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataSentryTeam)SetCount(val interface{}) {
+func (j *jsiiProxy_DataSentryTeam) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -403,7 +402,7 @@ func (j *jsiiProxy_DataSentryTeam)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataSentryTeam)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataSentryTeam) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -411,7 +410,7 @@ func (j *jsiiProxy_DataSentryTeam)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataSentryTeam)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataSentryTeam) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -419,7 +418,7 @@ func (j *jsiiProxy_DataSentryTeam)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_DataSentryTeam)SetId(val *string) {
+func (j *jsiiProxy_DataSentryTeam) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -430,7 +429,7 @@ func (j *jsiiProxy_DataSentryTeam)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataSentryTeam)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataSentryTeam) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -441,7 +440,7 @@ func (j *jsiiProxy_DataSentryTeam)SetLifecycle(val *cdktf.TerraformResourceLifec
 	)
 }
 
-func (j *jsiiProxy_DataSentryTeam)SetOrganization(val *string) {
+func (j *jsiiProxy_DataSentryTeam) SetOrganization(val *string) {
 	if err := j.validateSetOrganizationParameters(val); err != nil {
 		panic(err)
 	}
@@ -452,7 +451,7 @@ func (j *jsiiProxy_DataSentryTeam)SetOrganization(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataSentryTeam)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataSentryTeam) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -460,7 +459,7 @@ func (j *jsiiProxy_DataSentryTeam)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_DataSentryTeam)SetSlug(val *string) {
+func (j *jsiiProxy_DataSentryTeam) SetSlug(val *string) {
 	if err := j.validateSetSlugParameters(val); err != nil {
 		panic(err)
 	}
@@ -483,7 +482,7 @@ func DataSentryTeam_GenerateConfigForImport(scope constructs.Construct, importTo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-sentry.dataSentryTeam.DataSentryTeam",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -507,7 +506,7 @@ func DataSentryTeam_GenerateConfigForImport(scope constructs.Construct, importTo
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataSentryTeam_IsConstruct(x interface{}) *bool {
+func DataSentryTeam_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataSentryTeam_IsConstructParameters(x); err != nil {
@@ -518,7 +517,7 @@ func DataSentryTeam_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-sentry.dataSentryTeam.DataSentryTeam",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -526,7 +525,7 @@ func DataSentryTeam_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataSentryTeam_IsTerraformDataSource(x interface{}) *bool {
+func DataSentryTeam_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataSentryTeam_IsTerraformDataSourceParameters(x); err != nil {
@@ -537,7 +536,7 @@ func DataSentryTeam_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-sentry.dataSentryTeam.DataSentryTeam",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -545,7 +544,7 @@ func DataSentryTeam_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataSentryTeam_IsTerraformElement(x interface{}) *bool {
+func DataSentryTeam_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataSentryTeam_IsTerraformElementParameters(x); err != nil {
@@ -556,7 +555,7 @@ func DataSentryTeam_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-sentry.dataSentryTeam.DataSentryTeam",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -574,27 +573,27 @@ func DataSentryTeam_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataSentryTeam) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataSentryTeam) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataSentryTeam) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataSentryTeam) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -610,7 +609,7 @@ func (d *jsiiProxy_DataSentryTeam) GetBooleanAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -626,7 +625,7 @@ func (d *jsiiProxy_DataSentryTeam) GetBooleanMapAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -642,7 +641,7 @@ func (d *jsiiProxy_DataSentryTeam) GetListAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -658,7 +657,7 @@ func (d *jsiiProxy_DataSentryTeam) GetNumberAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -674,7 +673,7 @@ func (d *jsiiProxy_DataSentryTeam) GetNumberListAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -690,7 +689,7 @@ func (d *jsiiProxy_DataSentryTeam) GetNumberMapAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -706,7 +705,7 @@ func (d *jsiiProxy_DataSentryTeam) GetStringAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -722,7 +721,7 @@ func (d *jsiiProxy_DataSentryTeam) GetStringMapAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -738,7 +737,7 @@ func (d *jsiiProxy_DataSentryTeam) InterpolationForAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -752,7 +751,7 @@ func (d *jsiiProxy_DataSentryTeam) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -772,8 +771,8 @@ func (d *jsiiProxy_DataSentryTeam) ResetOverrideLogicalId() {
 	)
 }
 
-func (d *jsiiProxy_DataSentryTeam) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataSentryTeam) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -785,8 +784,8 @@ func (d *jsiiProxy_DataSentryTeam) SynthesizeAttributes() *map[string]interface{
 	return returns
 }
 
-func (d *jsiiProxy_DataSentryTeam) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataSentryTeam) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -798,8 +797,8 @@ func (d *jsiiProxy_DataSentryTeam) SynthesizeHclAttributes() *map[string]interfa
 	return returns
 }
 
-func (d *jsiiProxy_DataSentryTeam) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataSentryTeam) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -811,8 +810,8 @@ func (d *jsiiProxy_DataSentryTeam) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataSentryTeam) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataSentryTeam) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -837,8 +836,8 @@ func (d *jsiiProxy_DataSentryTeam) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataSentryTeam) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataSentryTeam) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -849,4 +848,3 @@ func (d *jsiiProxy_DataSentryTeam) ToTerraform() interface{} {
 
 	return returns
 }
-

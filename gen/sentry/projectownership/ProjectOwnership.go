@@ -17,26 +17,26 @@ type ProjectOwnership interface {
 	AutoAssignmentInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
-	CodeownersAutoSync() interface{}
-	SetCodeownersAutoSync(val interface{})
-	CodeownersAutoSyncInput() interface{}
+	CodeownersAutoSync() any
+	SetCodeownersAutoSync(val any)
+	CodeownersAutoSyncInput() any
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	Fallthrough() interface{}
-	SetFallthrough(val interface{})
-	FallthroughInput() interface{}
+	Fallthrough() any
+	SetFallthrough(val any)
+	FallthroughInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -62,27 +62,27 @@ type ProjectOwnership interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	Raw() *string
 	SetRaw(val *string)
 	RawInput() *string
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -100,7 +100,7 @@ type ProjectOwnership interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -112,7 +112,7 @@ type ProjectOwnership interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -122,17 +122,17 @@ type ProjectOwnership interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ProjectOwnership
@@ -170,8 +170,8 @@ func (j *jsiiProxy_ProjectOwnership) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_ProjectOwnership) CodeownersAutoSync() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ProjectOwnership) CodeownersAutoSync() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"codeownersAutoSync",
@@ -180,8 +180,8 @@ func (j *jsiiProxy_ProjectOwnership) CodeownersAutoSync() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ProjectOwnership) CodeownersAutoSyncInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ProjectOwnership) CodeownersAutoSyncInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"codeownersAutoSyncInput",
@@ -190,8 +190,8 @@ func (j *jsiiProxy_ProjectOwnership) CodeownersAutoSyncInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ProjectOwnership) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ProjectOwnership) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -200,8 +200,8 @@ func (j *jsiiProxy_ProjectOwnership) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ProjectOwnership) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ProjectOwnership) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -210,8 +210,8 @@ func (j *jsiiProxy_ProjectOwnership) ConstructNodeMetadata() *map[string]interfa
 	return returns
 }
 
-func (j *jsiiProxy_ProjectOwnership) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ProjectOwnership) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -230,8 +230,8 @@ func (j *jsiiProxy_ProjectOwnership) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_ProjectOwnership) Fallthrough() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ProjectOwnership) Fallthrough() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"fallthrough",
@@ -240,8 +240,8 @@ func (j *jsiiProxy_ProjectOwnership) Fallthrough() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ProjectOwnership) FallthroughInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ProjectOwnership) FallthroughInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"fallthroughInput",
@@ -350,8 +350,8 @@ func (j *jsiiProxy_ProjectOwnership) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_ProjectOwnership) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ProjectOwnership) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -380,8 +380,8 @@ func (j *jsiiProxy_ProjectOwnership) RawInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ProjectOwnership) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ProjectOwnership) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -400,8 +400,8 @@ func (j *jsiiProxy_ProjectOwnership) TerraformGeneratorMetadata() *cdktf.Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_ProjectOwnership) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ProjectOwnership) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -420,7 +420,6 @@ func (j *jsiiProxy_ProjectOwnership) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs/resources/project_ownership sentry_project_ownership} Resource.
 func NewProjectOwnership(scope constructs.Construct, id *string, config *ProjectOwnershipConfig) ProjectOwnership {
 	_init_.Initialize()
@@ -432,7 +431,7 @@ func NewProjectOwnership(scope constructs.Construct, id *string, config *Project
 
 	_jsii_.Create(
 		"@cdktf/provider-sentry.projectOwnership.ProjectOwnership",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -445,12 +444,12 @@ func NewProjectOwnership_Override(p ProjectOwnership, scope constructs.Construct
 
 	_jsii_.Create(
 		"@cdktf/provider-sentry.projectOwnership.ProjectOwnership",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		p,
 	)
 }
 
-func (j *jsiiProxy_ProjectOwnership)SetAutoAssignment(val *string) {
+func (j *jsiiProxy_ProjectOwnership) SetAutoAssignment(val *string) {
 	if err := j.validateSetAutoAssignmentParameters(val); err != nil {
 		panic(err)
 	}
@@ -461,7 +460,7 @@ func (j *jsiiProxy_ProjectOwnership)SetAutoAssignment(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ProjectOwnership)SetCodeownersAutoSync(val interface{}) {
+func (j *jsiiProxy_ProjectOwnership) SetCodeownersAutoSync(val any) {
 	if err := j.validateSetCodeownersAutoSyncParameters(val); err != nil {
 		panic(err)
 	}
@@ -472,7 +471,7 @@ func (j *jsiiProxy_ProjectOwnership)SetCodeownersAutoSync(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ProjectOwnership)SetConnection(val interface{}) {
+func (j *jsiiProxy_ProjectOwnership) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -483,7 +482,7 @@ func (j *jsiiProxy_ProjectOwnership)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ProjectOwnership)SetCount(val interface{}) {
+func (j *jsiiProxy_ProjectOwnership) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -494,7 +493,7 @@ func (j *jsiiProxy_ProjectOwnership)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ProjectOwnership)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ProjectOwnership) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -502,7 +501,7 @@ func (j *jsiiProxy_ProjectOwnership)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ProjectOwnership)SetFallthrough(val interface{}) {
+func (j *jsiiProxy_ProjectOwnership) SetFallthrough(val any) {
 	if err := j.validateSetFallthroughParameters(val); err != nil {
 		panic(err)
 	}
@@ -513,7 +512,7 @@ func (j *jsiiProxy_ProjectOwnership)SetFallthrough(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ProjectOwnership)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ProjectOwnership) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -521,7 +520,7 @@ func (j *jsiiProxy_ProjectOwnership)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_ProjectOwnership)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ProjectOwnership) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -532,7 +531,7 @@ func (j *jsiiProxy_ProjectOwnership)SetLifecycle(val *cdktf.TerraformResourceLif
 	)
 }
 
-func (j *jsiiProxy_ProjectOwnership)SetOrganization(val *string) {
+func (j *jsiiProxy_ProjectOwnership) SetOrganization(val *string) {
 	if err := j.validateSetOrganizationParameters(val); err != nil {
 		panic(err)
 	}
@@ -543,7 +542,7 @@ func (j *jsiiProxy_ProjectOwnership)SetOrganization(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ProjectOwnership)SetProject(val *string) {
+func (j *jsiiProxy_ProjectOwnership) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -554,7 +553,7 @@ func (j *jsiiProxy_ProjectOwnership)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ProjectOwnership)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ProjectOwnership) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -562,7 +561,7 @@ func (j *jsiiProxy_ProjectOwnership)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_ProjectOwnership)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ProjectOwnership) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -573,7 +572,7 @@ func (j *jsiiProxy_ProjectOwnership)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ProjectOwnership)SetRaw(val *string) {
+func (j *jsiiProxy_ProjectOwnership) SetRaw(val *string) {
 	if err := j.validateSetRawParameters(val); err != nil {
 		panic(err)
 	}
@@ -596,7 +595,7 @@ func ProjectOwnership_GenerateConfigForImport(scope constructs.Construct, import
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-sentry.projectOwnership.ProjectOwnership",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -620,7 +619,7 @@ func ProjectOwnership_GenerateConfigForImport(scope constructs.Construct, import
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ProjectOwnership_IsConstruct(x interface{}) *bool {
+func ProjectOwnership_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateProjectOwnership_IsConstructParameters(x); err != nil {
@@ -631,7 +630,7 @@ func ProjectOwnership_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-sentry.projectOwnership.ProjectOwnership",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -639,7 +638,7 @@ func ProjectOwnership_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ProjectOwnership_IsTerraformElement(x interface{}) *bool {
+func ProjectOwnership_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateProjectOwnership_IsTerraformElementParameters(x); err != nil {
@@ -650,7 +649,7 @@ func ProjectOwnership_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-sentry.projectOwnership.ProjectOwnership",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -658,7 +657,7 @@ func ProjectOwnership_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func ProjectOwnership_IsTerraformResource(x interface{}) *bool {
+func ProjectOwnership_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateProjectOwnership_IsTerraformResourceParameters(x); err != nil {
@@ -669,7 +668,7 @@ func ProjectOwnership_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-sentry.projectOwnership.ProjectOwnership",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -694,31 +693,31 @@ func (p *jsiiProxy_ProjectOwnership) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (p *jsiiProxy_ProjectOwnership) AddOverride(path *string, value interface{}) {
+func (p *jsiiProxy_ProjectOwnership) AddOverride(path *string, value any) {
 	if err := p.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		p,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (p *jsiiProxy_ProjectOwnership) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (p *jsiiProxy_ProjectOwnership) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -734,7 +733,7 @@ func (p *jsiiProxy_ProjectOwnership) GetBooleanAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		p,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -750,7 +749,7 @@ func (p *jsiiProxy_ProjectOwnership) GetBooleanMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		p,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -766,7 +765,7 @@ func (p *jsiiProxy_ProjectOwnership) GetListAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		p,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -782,7 +781,7 @@ func (p *jsiiProxy_ProjectOwnership) GetNumberAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		p,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -798,7 +797,7 @@ func (p *jsiiProxy_ProjectOwnership) GetNumberListAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		p,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -814,7 +813,7 @@ func (p *jsiiProxy_ProjectOwnership) GetNumberMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		p,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -830,7 +829,7 @@ func (p *jsiiProxy_ProjectOwnership) GetStringAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		p,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -846,15 +845,15 @@ func (p *jsiiProxy_ProjectOwnership) GetStringMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		p,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (p *jsiiProxy_ProjectOwnership) HasResourceMove() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_ProjectOwnership) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -873,7 +872,7 @@ func (p *jsiiProxy_ProjectOwnership) ImportFrom(id *string, provider cdktf.Terra
 	_jsii_.InvokeVoid(
 		p,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -886,7 +885,7 @@ func (p *jsiiProxy_ProjectOwnership) InterpolationForAttribute(terraformAttribut
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -900,18 +899,18 @@ func (p *jsiiProxy_ProjectOwnership) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (p *jsiiProxy_ProjectOwnership) MoveTo(moveTarget *string, index interface{}) {
+func (p *jsiiProxy_ProjectOwnership) MoveTo(moveTarget *string, index any) {
 	if err := p.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		p,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -922,7 +921,7 @@ func (p *jsiiProxy_ProjectOwnership) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -933,7 +932,7 @@ func (p *jsiiProxy_ProjectOwnership) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -945,8 +944,8 @@ func (p *jsiiProxy_ProjectOwnership) ResetOverrideLogicalId() {
 	)
 }
 
-func (p *jsiiProxy_ProjectOwnership) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (p *jsiiProxy_ProjectOwnership) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
@@ -958,8 +957,8 @@ func (p *jsiiProxy_ProjectOwnership) SynthesizeAttributes() *map[string]interfac
 	return returns
 }
 
-func (p *jsiiProxy_ProjectOwnership) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (p *jsiiProxy_ProjectOwnership) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
@@ -971,8 +970,8 @@ func (p *jsiiProxy_ProjectOwnership) SynthesizeHclAttributes() *map[string]inter
 	return returns
 }
 
-func (p *jsiiProxy_ProjectOwnership) ToHclTerraform() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_ProjectOwnership) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -984,8 +983,8 @@ func (p *jsiiProxy_ProjectOwnership) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (p *jsiiProxy_ProjectOwnership) ToMetadata() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_ProjectOwnership) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -1010,8 +1009,8 @@ func (p *jsiiProxy_ProjectOwnership) ToString() *string {
 	return returns
 }
 
-func (p *jsiiProxy_ProjectOwnership) ToTerraform() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_ProjectOwnership) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -1022,4 +1021,3 @@ func (p *jsiiProxy_ProjectOwnership) ToTerraform() interface{} {
 
 	return returns
 }
-

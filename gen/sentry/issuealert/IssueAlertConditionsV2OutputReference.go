@@ -12,9 +12,9 @@ type IssueAlertConditionsV2OutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -26,25 +26,25 @@ type IssueAlertConditionsV2OutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	EventFrequency() IssueAlertConditionsV2EventFrequencyOutputReference
-	EventFrequencyInput() interface{}
+	EventFrequencyInput() any
 	EventFrequencyPercent() IssueAlertConditionsV2EventFrequencyPercentOutputReference
-	EventFrequencyPercentInput() interface{}
+	EventFrequencyPercentInput() any
 	EventUniqueUserFrequency() IssueAlertConditionsV2EventUniqueUserFrequencyOutputReference
-	EventUniqueUserFrequencyInput() interface{}
+	EventUniqueUserFrequencyInput() any
 	ExistingHighPriorityIssue() IssueAlertConditionsV2ExistingHighPriorityIssueOutputReference
-	ExistingHighPriorityIssueInput() interface{}
+	ExistingHighPriorityIssueInput() any
 	FirstSeenEvent() IssueAlertConditionsV2FirstSeenEventOutputReference
-	FirstSeenEventInput() interface{}
+	FirstSeenEventInput() any
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	NewHighPriorityIssue() IssueAlertConditionsV2NewHighPriorityIssueOutputReference
-	NewHighPriorityIssueInput() interface{}
+	NewHighPriorityIssueInput() any
 	ReappearedEvent() IssueAlertConditionsV2ReappearedEventOutputReference
-	ReappearedEventInput() interface{}
+	ReappearedEventInput() any
 	RegressionEvent() IssueAlertConditionsV2RegressionEventOutputReference
-	RegressionEventInput() interface{}
+	RegressionEventInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -56,7 +56,7 @@ type IssueAlertConditionsV2OutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -95,7 +95,7 @@ type IssueAlertConditionsV2OutputReference interface {
 	ResetRegressionEvent()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -108,8 +108,8 @@ type jsiiProxy_IssueAlertConditionsV2OutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_IssueAlertConditionsV2OutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IssueAlertConditionsV2OutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -148,8 +148,8 @@ func (j *jsiiProxy_IssueAlertConditionsV2OutputReference) EventFrequency() Issue
 	return returns
 }
 
-func (j *jsiiProxy_IssueAlertConditionsV2OutputReference) EventFrequencyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IssueAlertConditionsV2OutputReference) EventFrequencyInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"eventFrequencyInput",
@@ -168,8 +168,8 @@ func (j *jsiiProxy_IssueAlertConditionsV2OutputReference) EventFrequencyPercent(
 	return returns
 }
 
-func (j *jsiiProxy_IssueAlertConditionsV2OutputReference) EventFrequencyPercentInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IssueAlertConditionsV2OutputReference) EventFrequencyPercentInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"eventFrequencyPercentInput",
@@ -188,8 +188,8 @@ func (j *jsiiProxy_IssueAlertConditionsV2OutputReference) EventUniqueUserFrequen
 	return returns
 }
 
-func (j *jsiiProxy_IssueAlertConditionsV2OutputReference) EventUniqueUserFrequencyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IssueAlertConditionsV2OutputReference) EventUniqueUserFrequencyInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"eventUniqueUserFrequencyInput",
@@ -208,8 +208,8 @@ func (j *jsiiProxy_IssueAlertConditionsV2OutputReference) ExistingHighPriorityIs
 	return returns
 }
 
-func (j *jsiiProxy_IssueAlertConditionsV2OutputReference) ExistingHighPriorityIssueInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IssueAlertConditionsV2OutputReference) ExistingHighPriorityIssueInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"existingHighPriorityIssueInput",
@@ -228,8 +228,8 @@ func (j *jsiiProxy_IssueAlertConditionsV2OutputReference) FirstSeenEvent() Issue
 	return returns
 }
 
-func (j *jsiiProxy_IssueAlertConditionsV2OutputReference) FirstSeenEventInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IssueAlertConditionsV2OutputReference) FirstSeenEventInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"firstSeenEventInput",
@@ -248,8 +248,8 @@ func (j *jsiiProxy_IssueAlertConditionsV2OutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_IssueAlertConditionsV2OutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IssueAlertConditionsV2OutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -268,8 +268,8 @@ func (j *jsiiProxy_IssueAlertConditionsV2OutputReference) NewHighPriorityIssue()
 	return returns
 }
 
-func (j *jsiiProxy_IssueAlertConditionsV2OutputReference) NewHighPriorityIssueInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IssueAlertConditionsV2OutputReference) NewHighPriorityIssueInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"newHighPriorityIssueInput",
@@ -288,8 +288,8 @@ func (j *jsiiProxy_IssueAlertConditionsV2OutputReference) ReappearedEvent() Issu
 	return returns
 }
 
-func (j *jsiiProxy_IssueAlertConditionsV2OutputReference) ReappearedEventInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IssueAlertConditionsV2OutputReference) ReappearedEventInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"reappearedEventInput",
@@ -308,8 +308,8 @@ func (j *jsiiProxy_IssueAlertConditionsV2OutputReference) RegressionEvent() Issu
 	return returns
 }
 
-func (j *jsiiProxy_IssueAlertConditionsV2OutputReference) RegressionEventInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IssueAlertConditionsV2OutputReference) RegressionEventInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"regressionEventInput",
@@ -338,7 +338,6 @@ func (j *jsiiProxy_IssueAlertConditionsV2OutputReference) TerraformResource() cd
 	return returns
 }
 
-
 func NewIssueAlertConditionsV2OutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) IssueAlertConditionsV2OutputReference {
 	_init_.Initialize()
 
@@ -349,7 +348,7 @@ func NewIssueAlertConditionsV2OutputReference(terraformResource cdktf.IInterpola
 
 	_jsii_.Create(
 		"@cdktf/provider-sentry.issueAlert.IssueAlertConditionsV2OutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -361,12 +360,12 @@ func NewIssueAlertConditionsV2OutputReference_Override(i IssueAlertConditionsV2O
 
 	_jsii_.Create(
 		"@cdktf/provider-sentry.issueAlert.IssueAlertConditionsV2OutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		i,
 	)
 }
 
-func (j *jsiiProxy_IssueAlertConditionsV2OutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_IssueAlertConditionsV2OutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -377,7 +376,7 @@ func (j *jsiiProxy_IssueAlertConditionsV2OutputReference)SetComplexObjectIndex(v
 	)
 }
 
-func (j *jsiiProxy_IssueAlertConditionsV2OutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_IssueAlertConditionsV2OutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -388,7 +387,7 @@ func (j *jsiiProxy_IssueAlertConditionsV2OutputReference)SetComplexObjectIsFromS
 	)
 }
 
-func (j *jsiiProxy_IssueAlertConditionsV2OutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_IssueAlertConditionsV2OutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -399,7 +398,7 @@ func (j *jsiiProxy_IssueAlertConditionsV2OutputReference)SetInternalValue(val in
 	)
 }
 
-func (j *jsiiProxy_IssueAlertConditionsV2OutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_IssueAlertConditionsV2OutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -410,7 +409,7 @@ func (j *jsiiProxy_IssueAlertConditionsV2OutputReference)SetTerraformAttribute(v
 	)
 }
 
-func (j *jsiiProxy_IssueAlertConditionsV2OutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_IssueAlertConditionsV2OutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -434,16 +433,16 @@ func (i *jsiiProxy_IssueAlertConditionsV2OutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (i *jsiiProxy_IssueAlertConditionsV2OutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (i *jsiiProxy_IssueAlertConditionsV2OutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := i.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -459,7 +458,7 @@ func (i *jsiiProxy_IssueAlertConditionsV2OutputReference) GetBooleanAttribute(te
 	_jsii_.Invoke(
 		i,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -475,7 +474,7 @@ func (i *jsiiProxy_IssueAlertConditionsV2OutputReference) GetBooleanMapAttribute
 	_jsii_.Invoke(
 		i,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -491,7 +490,7 @@ func (i *jsiiProxy_IssueAlertConditionsV2OutputReference) GetListAttribute(terra
 	_jsii_.Invoke(
 		i,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -507,7 +506,7 @@ func (i *jsiiProxy_IssueAlertConditionsV2OutputReference) GetNumberAttribute(ter
 	_jsii_.Invoke(
 		i,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -523,7 +522,7 @@ func (i *jsiiProxy_IssueAlertConditionsV2OutputReference) GetNumberListAttribute
 	_jsii_.Invoke(
 		i,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -539,7 +538,7 @@ func (i *jsiiProxy_IssueAlertConditionsV2OutputReference) GetNumberMapAttribute(
 	_jsii_.Invoke(
 		i,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -555,7 +554,7 @@ func (i *jsiiProxy_IssueAlertConditionsV2OutputReference) GetStringAttribute(ter
 	_jsii_.Invoke(
 		i,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -571,7 +570,7 @@ func (i *jsiiProxy_IssueAlertConditionsV2OutputReference) GetStringMapAttribute(
 	_jsii_.Invoke(
 		i,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -600,7 +599,7 @@ func (i *jsiiProxy_IssueAlertConditionsV2OutputReference) InterpolationForAttrib
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -614,7 +613,7 @@ func (i *jsiiProxy_IssueAlertConditionsV2OutputReference) PutEventFrequency(valu
 	_jsii_.InvokeVoid(
 		i,
 		"putEventFrequency",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -625,7 +624,7 @@ func (i *jsiiProxy_IssueAlertConditionsV2OutputReference) PutEventFrequencyPerce
 	_jsii_.InvokeVoid(
 		i,
 		"putEventFrequencyPercent",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -636,7 +635,7 @@ func (i *jsiiProxy_IssueAlertConditionsV2OutputReference) PutEventUniqueUserFreq
 	_jsii_.InvokeVoid(
 		i,
 		"putEventUniqueUserFrequency",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -647,7 +646,7 @@ func (i *jsiiProxy_IssueAlertConditionsV2OutputReference) PutExistingHighPriorit
 	_jsii_.InvokeVoid(
 		i,
 		"putExistingHighPriorityIssue",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -658,7 +657,7 @@ func (i *jsiiProxy_IssueAlertConditionsV2OutputReference) PutFirstSeenEvent(valu
 	_jsii_.InvokeVoid(
 		i,
 		"putFirstSeenEvent",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -669,7 +668,7 @@ func (i *jsiiProxy_IssueAlertConditionsV2OutputReference) PutNewHighPriorityIssu
 	_jsii_.InvokeVoid(
 		i,
 		"putNewHighPriorityIssue",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -680,7 +679,7 @@ func (i *jsiiProxy_IssueAlertConditionsV2OutputReference) PutReappearedEvent(val
 	_jsii_.InvokeVoid(
 		i,
 		"putReappearedEvent",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -691,7 +690,7 @@ func (i *jsiiProxy_IssueAlertConditionsV2OutputReference) PutRegressionEvent(val
 	_jsii_.InvokeVoid(
 		i,
 		"putRegressionEvent",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -759,16 +758,16 @@ func (i *jsiiProxy_IssueAlertConditionsV2OutputReference) ResetRegressionEvent()
 	)
 }
 
-func (i *jsiiProxy_IssueAlertConditionsV2OutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (i *jsiiProxy_IssueAlertConditionsV2OutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := i.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		i,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -787,4 +786,3 @@ func (i *jsiiProxy_IssueAlertConditionsV2OutputReference) ToString() *string {
 
 	return returns
 }
-

@@ -15,15 +15,15 @@ type Dashboard interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -52,29 +52,29 @@ type Dashboard interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Title() *string
 	SetTitle(val *string)
 	TitleInput() *string
 	Widget() DashboardWidgetList
-	WidgetInput() interface{}
+	WidgetInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -92,7 +92,7 @@ type Dashboard interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -104,29 +104,29 @@ type Dashboard interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutWidget(value interface{})
+	PutWidget(value any)
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetWidget()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for Dashboard
@@ -144,8 +144,8 @@ func (j *jsiiProxy_Dashboard) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_Dashboard) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Dashboard) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -154,8 +154,8 @@ func (j *jsiiProxy_Dashboard) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Dashboard) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Dashboard) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -164,8 +164,8 @@ func (j *jsiiProxy_Dashboard) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Dashboard) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Dashboard) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -284,8 +284,8 @@ func (j *jsiiProxy_Dashboard) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_Dashboard) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_Dashboard) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -294,8 +294,8 @@ func (j *jsiiProxy_Dashboard) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Dashboard) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Dashboard) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -314,8 +314,8 @@ func (j *jsiiProxy_Dashboard) TerraformGeneratorMetadata() *cdktf.TerraformProvi
 	return returns
 }
 
-func (j *jsiiProxy_Dashboard) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Dashboard) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -364,8 +364,8 @@ func (j *jsiiProxy_Dashboard) Widget() DashboardWidgetList {
 	return returns
 }
 
-func (j *jsiiProxy_Dashboard) WidgetInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Dashboard) WidgetInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"widgetInput",
@@ -373,7 +373,6 @@ func (j *jsiiProxy_Dashboard) WidgetInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs/resources/dashboard sentry_dashboard} Resource.
 func NewDashboard(scope constructs.Construct, id *string, config *DashboardConfig) Dashboard {
@@ -386,7 +385,7 @@ func NewDashboard(scope constructs.Construct, id *string, config *DashboardConfi
 
 	_jsii_.Create(
 		"@cdktf/provider-sentry.dashboard.Dashboard",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -399,12 +398,12 @@ func NewDashboard_Override(d Dashboard, scope constructs.Construct, id *string, 
 
 	_jsii_.Create(
 		"@cdktf/provider-sentry.dashboard.Dashboard",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_Dashboard)SetConnection(val interface{}) {
+func (j *jsiiProxy_Dashboard) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -415,7 +414,7 @@ func (j *jsiiProxy_Dashboard)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Dashboard)SetCount(val interface{}) {
+func (j *jsiiProxy_Dashboard) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -426,7 +425,7 @@ func (j *jsiiProxy_Dashboard)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Dashboard)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_Dashboard) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -434,7 +433,7 @@ func (j *jsiiProxy_Dashboard)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Dashboard)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_Dashboard) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -442,7 +441,7 @@ func (j *jsiiProxy_Dashboard)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_Dashboard)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_Dashboard) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -453,7 +452,7 @@ func (j *jsiiProxy_Dashboard)SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	)
 }
 
-func (j *jsiiProxy_Dashboard)SetOrganization(val *string) {
+func (j *jsiiProxy_Dashboard) SetOrganization(val *string) {
 	if err := j.validateSetOrganizationParameters(val); err != nil {
 		panic(err)
 	}
@@ -464,7 +463,7 @@ func (j *jsiiProxy_Dashboard)SetOrganization(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Dashboard)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_Dashboard) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -472,7 +471,7 @@ func (j *jsiiProxy_Dashboard)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_Dashboard)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_Dashboard) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -483,7 +482,7 @@ func (j *jsiiProxy_Dashboard)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Dashboard)SetTitle(val *string) {
+func (j *jsiiProxy_Dashboard) SetTitle(val *string) {
 	if err := j.validateSetTitleParameters(val); err != nil {
 		panic(err)
 	}
@@ -506,7 +505,7 @@ func Dashboard_GenerateConfigForImport(scope constructs.Construct, importToId *s
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-sentry.dashboard.Dashboard",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -530,7 +529,7 @@ func Dashboard_GenerateConfigForImport(scope constructs.Construct, importToId *s
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func Dashboard_IsConstruct(x interface{}) *bool {
+func Dashboard_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDashboard_IsConstructParameters(x); err != nil {
@@ -541,7 +540,7 @@ func Dashboard_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-sentry.dashboard.Dashboard",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -549,7 +548,7 @@ func Dashboard_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func Dashboard_IsTerraformElement(x interface{}) *bool {
+func Dashboard_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDashboard_IsTerraformElementParameters(x); err != nil {
@@ -560,7 +559,7 @@ func Dashboard_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-sentry.dashboard.Dashboard",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -568,7 +567,7 @@ func Dashboard_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func Dashboard_IsTerraformResource(x interface{}) *bool {
+func Dashboard_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDashboard_IsTerraformResourceParameters(x); err != nil {
@@ -579,7 +578,7 @@ func Dashboard_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-sentry.dashboard.Dashboard",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -604,31 +603,31 @@ func (d *jsiiProxy_Dashboard) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (d *jsiiProxy_Dashboard) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_Dashboard) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_Dashboard) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_Dashboard) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -644,7 +643,7 @@ func (d *jsiiProxy_Dashboard) GetBooleanAttribute(terraformAttribute *string) cd
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -660,7 +659,7 @@ func (d *jsiiProxy_Dashboard) GetBooleanMapAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -676,7 +675,7 @@ func (d *jsiiProxy_Dashboard) GetListAttribute(terraformAttribute *string) *[]*s
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -692,7 +691,7 @@ func (d *jsiiProxy_Dashboard) GetNumberAttribute(terraformAttribute *string) *fl
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -708,7 +707,7 @@ func (d *jsiiProxy_Dashboard) GetNumberListAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -724,7 +723,7 @@ func (d *jsiiProxy_Dashboard) GetNumberMapAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -740,7 +739,7 @@ func (d *jsiiProxy_Dashboard) GetStringAttribute(terraformAttribute *string) *st
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -756,15 +755,15 @@ func (d *jsiiProxy_Dashboard) GetStringMapAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_Dashboard) HasResourceMove() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_Dashboard) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -783,7 +782,7 @@ func (d *jsiiProxy_Dashboard) ImportFrom(id *string, provider cdktf.TerraformPro
 	_jsii_.InvokeVoid(
 		d,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -796,7 +795,7 @@ func (d *jsiiProxy_Dashboard) InterpolationForAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -810,18 +809,18 @@ func (d *jsiiProxy_Dashboard) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (d *jsiiProxy_Dashboard) MoveTo(moveTarget *string, index interface{}) {
+func (d *jsiiProxy_Dashboard) MoveTo(moveTarget *string, index any) {
 	if err := d.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -832,7 +831,7 @@ func (d *jsiiProxy_Dashboard) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -843,18 +842,18 @@ func (d *jsiiProxy_Dashboard) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (d *jsiiProxy_Dashboard) PutWidget(value interface{}) {
+func (d *jsiiProxy_Dashboard) PutWidget(value any) {
 	if err := d.validatePutWidgetParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putWidget",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -874,8 +873,8 @@ func (d *jsiiProxy_Dashboard) ResetWidget() {
 	)
 }
 
-func (d *jsiiProxy_Dashboard) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_Dashboard) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -887,8 +886,8 @@ func (d *jsiiProxy_Dashboard) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_Dashboard) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_Dashboard) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -900,8 +899,8 @@ func (d *jsiiProxy_Dashboard) SynthesizeHclAttributes() *map[string]interface{} 
 	return returns
 }
 
-func (d *jsiiProxy_Dashboard) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_Dashboard) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -913,8 +912,8 @@ func (d *jsiiProxy_Dashboard) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_Dashboard) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_Dashboard) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -939,8 +938,8 @@ func (d *jsiiProxy_Dashboard) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_Dashboard) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_Dashboard) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -951,4 +950,3 @@ func (d *jsiiProxy_Dashboard) ToTerraform() interface{} {
 
 	return returns
 }
-

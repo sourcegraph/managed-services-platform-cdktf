@@ -11,15 +11,15 @@ import (
 type MetricAlertTriggerOutputReference interface {
 	cdktf.ComplexObject
 	Action() MetricAlertTriggerActionList
-	ActionInput() interface{}
+	ActionInput() any
 	AlertThreshold() *float64
 	SetAlertThreshold(val *float64)
 	AlertThresholdInput() *float64
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -33,8 +33,8 @@ type MetricAlertTriggerOutputReference interface {
 	// Experimental.
 	Fqn() *string
 	Id() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Label() *string
 	SetLabel(val *string)
 	LabelInput() *string
@@ -55,7 +55,7 @@ type MetricAlertTriggerOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -76,11 +76,11 @@ type MetricAlertTriggerOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutAction(value interface{})
+	PutAction(value any)
 	ResetResolveThreshold()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -103,8 +103,8 @@ func (j *jsiiProxy_MetricAlertTriggerOutputReference) Action() MetricAlertTrigge
 	return returns
 }
 
-func (j *jsiiProxy_MetricAlertTriggerOutputReference) ActionInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MetricAlertTriggerOutputReference) ActionInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"actionInput",
@@ -133,8 +133,8 @@ func (j *jsiiProxy_MetricAlertTriggerOutputReference) AlertThresholdInput() *flo
 	return returns
 }
 
-func (j *jsiiProxy_MetricAlertTriggerOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MetricAlertTriggerOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -183,8 +183,8 @@ func (j *jsiiProxy_MetricAlertTriggerOutputReference) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_MetricAlertTriggerOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MetricAlertTriggerOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -273,7 +273,6 @@ func (j *jsiiProxy_MetricAlertTriggerOutputReference) ThresholdTypeInput() *floa
 	return returns
 }
 
-
 func NewMetricAlertTriggerOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) MetricAlertTriggerOutputReference {
 	_init_.Initialize()
 
@@ -284,7 +283,7 @@ func NewMetricAlertTriggerOutputReference(terraformResource cdktf.IInterpolating
 
 	_jsii_.Create(
 		"@cdktf/provider-sentry.metricAlert.MetricAlertTriggerOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -296,12 +295,12 @@ func NewMetricAlertTriggerOutputReference_Override(m MetricAlertTriggerOutputRef
 
 	_jsii_.Create(
 		"@cdktf/provider-sentry.metricAlert.MetricAlertTriggerOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		m,
 	)
 }
 
-func (j *jsiiProxy_MetricAlertTriggerOutputReference)SetAlertThreshold(val *float64) {
+func (j *jsiiProxy_MetricAlertTriggerOutputReference) SetAlertThreshold(val *float64) {
 	if err := j.validateSetAlertThresholdParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_MetricAlertTriggerOutputReference)SetAlertThreshold(val *floa
 	)
 }
 
-func (j *jsiiProxy_MetricAlertTriggerOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_MetricAlertTriggerOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_MetricAlertTriggerOutputReference)SetComplexObjectIndex(val i
 	)
 }
 
-func (j *jsiiProxy_MetricAlertTriggerOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_MetricAlertTriggerOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -334,7 +333,7 @@ func (j *jsiiProxy_MetricAlertTriggerOutputReference)SetComplexObjectIsFromSet(v
 	)
 }
 
-func (j *jsiiProxy_MetricAlertTriggerOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_MetricAlertTriggerOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -345,7 +344,7 @@ func (j *jsiiProxy_MetricAlertTriggerOutputReference)SetInternalValue(val interf
 	)
 }
 
-func (j *jsiiProxy_MetricAlertTriggerOutputReference)SetLabel(val *string) {
+func (j *jsiiProxy_MetricAlertTriggerOutputReference) SetLabel(val *string) {
 	if err := j.validateSetLabelParameters(val); err != nil {
 		panic(err)
 	}
@@ -356,7 +355,7 @@ func (j *jsiiProxy_MetricAlertTriggerOutputReference)SetLabel(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MetricAlertTriggerOutputReference)SetResolveThreshold(val *float64) {
+func (j *jsiiProxy_MetricAlertTriggerOutputReference) SetResolveThreshold(val *float64) {
 	if err := j.validateSetResolveThresholdParameters(val); err != nil {
 		panic(err)
 	}
@@ -367,7 +366,7 @@ func (j *jsiiProxy_MetricAlertTriggerOutputReference)SetResolveThreshold(val *fl
 	)
 }
 
-func (j *jsiiProxy_MetricAlertTriggerOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_MetricAlertTriggerOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -378,7 +377,7 @@ func (j *jsiiProxy_MetricAlertTriggerOutputReference)SetTerraformAttribute(val *
 	)
 }
 
-func (j *jsiiProxy_MetricAlertTriggerOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MetricAlertTriggerOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -389,7 +388,7 @@ func (j *jsiiProxy_MetricAlertTriggerOutputReference)SetTerraformResource(val cd
 	)
 }
 
-func (j *jsiiProxy_MetricAlertTriggerOutputReference)SetThresholdType(val *float64) {
+func (j *jsiiProxy_MetricAlertTriggerOutputReference) SetThresholdType(val *float64) {
 	if err := j.validateSetThresholdTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -413,16 +412,16 @@ func (m *jsiiProxy_MetricAlertTriggerOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (m *jsiiProxy_MetricAlertTriggerOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (m *jsiiProxy_MetricAlertTriggerOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -438,7 +437,7 @@ func (m *jsiiProxy_MetricAlertTriggerOutputReference) GetBooleanAttribute(terraf
 	_jsii_.Invoke(
 		m,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -454,7 +453,7 @@ func (m *jsiiProxy_MetricAlertTriggerOutputReference) GetBooleanMapAttribute(ter
 	_jsii_.Invoke(
 		m,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -470,7 +469,7 @@ func (m *jsiiProxy_MetricAlertTriggerOutputReference) GetListAttribute(terraform
 	_jsii_.Invoke(
 		m,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -486,7 +485,7 @@ func (m *jsiiProxy_MetricAlertTriggerOutputReference) GetNumberAttribute(terrafo
 	_jsii_.Invoke(
 		m,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -502,7 +501,7 @@ func (m *jsiiProxy_MetricAlertTriggerOutputReference) GetNumberListAttribute(ter
 	_jsii_.Invoke(
 		m,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -518,7 +517,7 @@ func (m *jsiiProxy_MetricAlertTriggerOutputReference) GetNumberMapAttribute(terr
 	_jsii_.Invoke(
 		m,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -534,7 +533,7 @@ func (m *jsiiProxy_MetricAlertTriggerOutputReference) GetStringAttribute(terrafo
 	_jsii_.Invoke(
 		m,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -550,7 +549,7 @@ func (m *jsiiProxy_MetricAlertTriggerOutputReference) GetStringMapAttribute(terr
 	_jsii_.Invoke(
 		m,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -579,21 +578,21 @@ func (m *jsiiProxy_MetricAlertTriggerOutputReference) InterpolationForAttribute(
 	_jsii_.Invoke(
 		m,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (m *jsiiProxy_MetricAlertTriggerOutputReference) PutAction(value interface{}) {
+func (m *jsiiProxy_MetricAlertTriggerOutputReference) PutAction(value any) {
 	if err := m.validatePutActionParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		m,
 		"putAction",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -605,16 +604,16 @@ func (m *jsiiProxy_MetricAlertTriggerOutputReference) ResetResolveThreshold() {
 	)
 }
 
-func (m *jsiiProxy_MetricAlertTriggerOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (m *jsiiProxy_MetricAlertTriggerOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := m.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		m,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -633,4 +632,3 @@ func (m *jsiiProxy_MetricAlertTriggerOutputReference) ToString() *string {
 
 	return returns
 }
-

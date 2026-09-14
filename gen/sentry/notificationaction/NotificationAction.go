@@ -15,15 +15,15 @@ type NotificationAction interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -57,11 +57,11 @@ type NotificationAction interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ServiceType() *string
 	SetServiceType(val *string)
 	ServiceTypeInput() *string
@@ -74,7 +74,7 @@ type NotificationAction interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	TriggerType() *string
@@ -84,9 +84,9 @@ type NotificationAction interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -104,7 +104,7 @@ type NotificationAction interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -116,7 +116,7 @@ type NotificationAction interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -129,17 +129,17 @@ type NotificationAction interface {
 	ResetOverrideLogicalId()
 	ResetTargetDisplay()
 	ResetTargetIdentifier()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for NotificationAction
@@ -157,8 +157,8 @@ func (j *jsiiProxy_NotificationAction) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_NotificationAction) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NotificationAction) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -167,8 +167,8 @@ func (j *jsiiProxy_NotificationAction) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_NotificationAction) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_NotificationAction) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -177,8 +177,8 @@ func (j *jsiiProxy_NotificationAction) ConstructNodeMetadata() *map[string]inter
 	return returns
 }
 
-func (j *jsiiProxy_NotificationAction) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NotificationAction) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -327,8 +327,8 @@ func (j *jsiiProxy_NotificationAction) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_NotificationAction) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_NotificationAction) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -337,8 +337,8 @@ func (j *jsiiProxy_NotificationAction) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_NotificationAction) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NotificationAction) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -417,8 +417,8 @@ func (j *jsiiProxy_NotificationAction) TerraformGeneratorMetadata() *cdktf.Terra
 	return returns
 }
 
-func (j *jsiiProxy_NotificationAction) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_NotificationAction) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -457,7 +457,6 @@ func (j *jsiiProxy_NotificationAction) TriggerTypeInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs/resources/notification_action sentry_notification_action} Resource.
 func NewNotificationAction(scope constructs.Construct, id *string, config *NotificationActionConfig) NotificationAction {
 	_init_.Initialize()
@@ -469,7 +468,7 @@ func NewNotificationAction(scope constructs.Construct, id *string, config *Notif
 
 	_jsii_.Create(
 		"@cdktf/provider-sentry.notificationAction.NotificationAction",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -482,12 +481,12 @@ func NewNotificationAction_Override(n NotificationAction, scope constructs.Const
 
 	_jsii_.Create(
 		"@cdktf/provider-sentry.notificationAction.NotificationAction",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		n,
 	)
 }
 
-func (j *jsiiProxy_NotificationAction)SetConnection(val interface{}) {
+func (j *jsiiProxy_NotificationAction) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -498,7 +497,7 @@ func (j *jsiiProxy_NotificationAction)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_NotificationAction)SetCount(val interface{}) {
+func (j *jsiiProxy_NotificationAction) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -509,7 +508,7 @@ func (j *jsiiProxy_NotificationAction)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_NotificationAction)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_NotificationAction) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -517,7 +516,7 @@ func (j *jsiiProxy_NotificationAction)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_NotificationAction)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_NotificationAction) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -525,7 +524,7 @@ func (j *jsiiProxy_NotificationAction)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_NotificationAction)SetIntegrationId(val *string) {
+func (j *jsiiProxy_NotificationAction) SetIntegrationId(val *string) {
 	if err := j.validateSetIntegrationIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -536,7 +535,7 @@ func (j *jsiiProxy_NotificationAction)SetIntegrationId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NotificationAction)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_NotificationAction) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -547,7 +546,7 @@ func (j *jsiiProxy_NotificationAction)SetLifecycle(val *cdktf.TerraformResourceL
 	)
 }
 
-func (j *jsiiProxy_NotificationAction)SetOrganization(val *string) {
+func (j *jsiiProxy_NotificationAction) SetOrganization(val *string) {
 	if err := j.validateSetOrganizationParameters(val); err != nil {
 		panic(err)
 	}
@@ -558,7 +557,7 @@ func (j *jsiiProxy_NotificationAction)SetOrganization(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NotificationAction)SetProjects(val *[]*string) {
+func (j *jsiiProxy_NotificationAction) SetProjects(val *[]*string) {
 	if err := j.validateSetProjectsParameters(val); err != nil {
 		panic(err)
 	}
@@ -569,7 +568,7 @@ func (j *jsiiProxy_NotificationAction)SetProjects(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_NotificationAction)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_NotificationAction) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -577,7 +576,7 @@ func (j *jsiiProxy_NotificationAction)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_NotificationAction)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_NotificationAction) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -588,7 +587,7 @@ func (j *jsiiProxy_NotificationAction)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_NotificationAction)SetServiceType(val *string) {
+func (j *jsiiProxy_NotificationAction) SetServiceType(val *string) {
 	if err := j.validateSetServiceTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -599,7 +598,7 @@ func (j *jsiiProxy_NotificationAction)SetServiceType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NotificationAction)SetTargetDisplay(val *string) {
+func (j *jsiiProxy_NotificationAction) SetTargetDisplay(val *string) {
 	if err := j.validateSetTargetDisplayParameters(val); err != nil {
 		panic(err)
 	}
@@ -610,7 +609,7 @@ func (j *jsiiProxy_NotificationAction)SetTargetDisplay(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NotificationAction)SetTargetIdentifier(val *string) {
+func (j *jsiiProxy_NotificationAction) SetTargetIdentifier(val *string) {
 	if err := j.validateSetTargetIdentifierParameters(val); err != nil {
 		panic(err)
 	}
@@ -621,7 +620,7 @@ func (j *jsiiProxy_NotificationAction)SetTargetIdentifier(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NotificationAction)SetTriggerType(val *string) {
+func (j *jsiiProxy_NotificationAction) SetTriggerType(val *string) {
 	if err := j.validateSetTriggerTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -644,7 +643,7 @@ func NotificationAction_GenerateConfigForImport(scope constructs.Construct, impo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-sentry.notificationAction.NotificationAction",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -668,7 +667,7 @@ func NotificationAction_GenerateConfigForImport(scope constructs.Construct, impo
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func NotificationAction_IsConstruct(x interface{}) *bool {
+func NotificationAction_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateNotificationAction_IsConstructParameters(x); err != nil {
@@ -679,7 +678,7 @@ func NotificationAction_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-sentry.notificationAction.NotificationAction",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -687,7 +686,7 @@ func NotificationAction_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func NotificationAction_IsTerraformElement(x interface{}) *bool {
+func NotificationAction_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateNotificationAction_IsTerraformElementParameters(x); err != nil {
@@ -698,7 +697,7 @@ func NotificationAction_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-sentry.notificationAction.NotificationAction",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -706,7 +705,7 @@ func NotificationAction_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func NotificationAction_IsTerraformResource(x interface{}) *bool {
+func NotificationAction_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateNotificationAction_IsTerraformResourceParameters(x); err != nil {
@@ -717,7 +716,7 @@ func NotificationAction_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-sentry.notificationAction.NotificationAction",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -742,31 +741,31 @@ func (n *jsiiProxy_NotificationAction) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		n,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (n *jsiiProxy_NotificationAction) AddOverride(path *string, value interface{}) {
+func (n *jsiiProxy_NotificationAction) AddOverride(path *string, value any) {
 	if err := n.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		n,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (n *jsiiProxy_NotificationAction) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (n *jsiiProxy_NotificationAction) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := n.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -782,7 +781,7 @@ func (n *jsiiProxy_NotificationAction) GetBooleanAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		n,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -798,7 +797,7 @@ func (n *jsiiProxy_NotificationAction) GetBooleanMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		n,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -814,7 +813,7 @@ func (n *jsiiProxy_NotificationAction) GetListAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		n,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -830,7 +829,7 @@ func (n *jsiiProxy_NotificationAction) GetNumberAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		n,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -846,7 +845,7 @@ func (n *jsiiProxy_NotificationAction) GetNumberListAttribute(terraformAttribute
 	_jsii_.Invoke(
 		n,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -862,7 +861,7 @@ func (n *jsiiProxy_NotificationAction) GetNumberMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		n,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -878,7 +877,7 @@ func (n *jsiiProxy_NotificationAction) GetStringAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		n,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -894,15 +893,15 @@ func (n *jsiiProxy_NotificationAction) GetStringMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		n,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (n *jsiiProxy_NotificationAction) HasResourceMove() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NotificationAction) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -921,7 +920,7 @@ func (n *jsiiProxy_NotificationAction) ImportFrom(id *string, provider cdktf.Ter
 	_jsii_.InvokeVoid(
 		n,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -934,7 +933,7 @@ func (n *jsiiProxy_NotificationAction) InterpolationForAttribute(terraformAttrib
 	_jsii_.Invoke(
 		n,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -948,18 +947,18 @@ func (n *jsiiProxy_NotificationAction) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		n,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (n *jsiiProxy_NotificationAction) MoveTo(moveTarget *string, index interface{}) {
+func (n *jsiiProxy_NotificationAction) MoveTo(moveTarget *string, index any) {
 	if err := n.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		n,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -970,7 +969,7 @@ func (n *jsiiProxy_NotificationAction) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		n,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -981,7 +980,7 @@ func (n *jsiiProxy_NotificationAction) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		n,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1017,8 +1016,8 @@ func (n *jsiiProxy_NotificationAction) ResetTargetIdentifier() {
 	)
 }
 
-func (n *jsiiProxy_NotificationAction) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (n *jsiiProxy_NotificationAction) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
@@ -1030,8 +1029,8 @@ func (n *jsiiProxy_NotificationAction) SynthesizeAttributes() *map[string]interf
 	return returns
 }
 
-func (n *jsiiProxy_NotificationAction) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (n *jsiiProxy_NotificationAction) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
@@ -1043,8 +1042,8 @@ func (n *jsiiProxy_NotificationAction) SynthesizeHclAttributes() *map[string]int
 	return returns
 }
 
-func (n *jsiiProxy_NotificationAction) ToHclTerraform() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NotificationAction) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1056,8 +1055,8 @@ func (n *jsiiProxy_NotificationAction) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (n *jsiiProxy_NotificationAction) ToMetadata() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NotificationAction) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1082,8 +1081,8 @@ func (n *jsiiProxy_NotificationAction) ToString() *string {
 	return returns
 }
 
-func (n *jsiiProxy_NotificationAction) ToTerraform() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NotificationAction) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1094,4 +1093,3 @@ func (n *jsiiProxy_NotificationAction) ToTerraform() interface{} {
 
 	return returns
 }
-

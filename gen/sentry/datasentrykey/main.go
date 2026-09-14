@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-sentry.dataSentryKey.DataSentryKey",
-		reflect.TypeOf((*DataSentryKey)(nil)).Elem(),
+		reflect.TypeFor[DataSentryKey](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
@@ -68,7 +68,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataSentryKey{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -76,15 +76,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-sentry.dataSentryKey.DataSentryKeyConfig",
-		reflect.TypeOf((*DataSentryKeyConfig)(nil)).Elem(),
+		reflect.TypeFor[DataSentryKeyConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-sentry.dataSentryKey.DataSentryKeyJavascriptLoaderScript",
-		reflect.TypeOf((*DataSentryKeyJavascriptLoaderScript)(nil)).Elem(),
+		reflect.TypeFor[DataSentryKeyJavascriptLoaderScript](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-sentry.dataSentryKey.DataSentryKeyJavascriptLoaderScriptOutputReference",
-		reflect.TypeOf((*DataSentryKeyJavascriptLoaderScriptOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataSentryKeyJavascriptLoaderScriptOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "browserSdkVersion", GoGetter: "BrowserSdkVersion"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -112,7 +112,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataSentryKeyJavascriptLoaderScriptOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

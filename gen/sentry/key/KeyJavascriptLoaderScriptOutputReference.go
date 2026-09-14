@@ -15,9 +15,9 @@ type KeyJavascriptLoaderScriptOutputReference interface {
 	BrowserSdkVersionInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -28,19 +28,19 @@ type KeyJavascriptLoaderScriptOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	DebugEnabled() interface{}
-	SetDebugEnabled(val interface{})
-	DebugEnabledInput() interface{}
+	DebugEnabled() any
+	SetDebugEnabled(val any)
+	DebugEnabledInput() any
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
-	PerformanceMonitoringEnabled() interface{}
-	SetPerformanceMonitoringEnabled(val interface{})
-	PerformanceMonitoringEnabledInput() interface{}
-	SessionReplayEnabled() interface{}
-	SetSessionReplayEnabled(val interface{})
-	SessionReplayEnabledInput() interface{}
+	InternalValue() any
+	SetInternalValue(val any)
+	PerformanceMonitoringEnabled() any
+	SetPerformanceMonitoringEnabled(val any)
+	PerformanceMonitoringEnabledInput() any
+	SessionReplayEnabled() any
+	SetSessionReplayEnabled(val any)
+	SessionReplayEnabledInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -52,7 +52,7 @@ type KeyJavascriptLoaderScriptOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -79,7 +79,7 @@ type KeyJavascriptLoaderScriptOutputReference interface {
 	ResetSessionReplayEnabled()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -112,8 +112,8 @@ func (j *jsiiProxy_KeyJavascriptLoaderScriptOutputReference) BrowserSdkVersionIn
 	return returns
 }
 
-func (j *jsiiProxy_KeyJavascriptLoaderScriptOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_KeyJavascriptLoaderScriptOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -142,8 +142,8 @@ func (j *jsiiProxy_KeyJavascriptLoaderScriptOutputReference) CreationStack() *[]
 	return returns
 }
 
-func (j *jsiiProxy_KeyJavascriptLoaderScriptOutputReference) DebugEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_KeyJavascriptLoaderScriptOutputReference) DebugEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"debugEnabled",
@@ -152,8 +152,8 @@ func (j *jsiiProxy_KeyJavascriptLoaderScriptOutputReference) DebugEnabled() inte
 	return returns
 }
 
-func (j *jsiiProxy_KeyJavascriptLoaderScriptOutputReference) DebugEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_KeyJavascriptLoaderScriptOutputReference) DebugEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"debugEnabledInput",
@@ -172,8 +172,8 @@ func (j *jsiiProxy_KeyJavascriptLoaderScriptOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_KeyJavascriptLoaderScriptOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_KeyJavascriptLoaderScriptOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -182,8 +182,8 @@ func (j *jsiiProxy_KeyJavascriptLoaderScriptOutputReference) InternalValue() int
 	return returns
 }
 
-func (j *jsiiProxy_KeyJavascriptLoaderScriptOutputReference) PerformanceMonitoringEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_KeyJavascriptLoaderScriptOutputReference) PerformanceMonitoringEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"performanceMonitoringEnabled",
@@ -192,8 +192,8 @@ func (j *jsiiProxy_KeyJavascriptLoaderScriptOutputReference) PerformanceMonitori
 	return returns
 }
 
-func (j *jsiiProxy_KeyJavascriptLoaderScriptOutputReference) PerformanceMonitoringEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_KeyJavascriptLoaderScriptOutputReference) PerformanceMonitoringEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"performanceMonitoringEnabledInput",
@@ -202,8 +202,8 @@ func (j *jsiiProxy_KeyJavascriptLoaderScriptOutputReference) PerformanceMonitori
 	return returns
 }
 
-func (j *jsiiProxy_KeyJavascriptLoaderScriptOutputReference) SessionReplayEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_KeyJavascriptLoaderScriptOutputReference) SessionReplayEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"sessionReplayEnabled",
@@ -212,8 +212,8 @@ func (j *jsiiProxy_KeyJavascriptLoaderScriptOutputReference) SessionReplayEnable
 	return returns
 }
 
-func (j *jsiiProxy_KeyJavascriptLoaderScriptOutputReference) SessionReplayEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_KeyJavascriptLoaderScriptOutputReference) SessionReplayEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"sessionReplayEnabledInput",
@@ -242,7 +242,6 @@ func (j *jsiiProxy_KeyJavascriptLoaderScriptOutputReference) TerraformResource()
 	return returns
 }
 
-
 func NewKeyJavascriptLoaderScriptOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) KeyJavascriptLoaderScriptOutputReference {
 	_init_.Initialize()
 
@@ -253,7 +252,7 @@ func NewKeyJavascriptLoaderScriptOutputReference(terraformResource cdktf.IInterp
 
 	_jsii_.Create(
 		"@cdktf/provider-sentry.key.KeyJavascriptLoaderScriptOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -265,12 +264,12 @@ func NewKeyJavascriptLoaderScriptOutputReference_Override(k KeyJavascriptLoaderS
 
 	_jsii_.Create(
 		"@cdktf/provider-sentry.key.KeyJavascriptLoaderScriptOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		k,
 	)
 }
 
-func (j *jsiiProxy_KeyJavascriptLoaderScriptOutputReference)SetBrowserSdkVersion(val *string) {
+func (j *jsiiProxy_KeyJavascriptLoaderScriptOutputReference) SetBrowserSdkVersion(val *string) {
 	if err := j.validateSetBrowserSdkVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -281,7 +280,7 @@ func (j *jsiiProxy_KeyJavascriptLoaderScriptOutputReference)SetBrowserSdkVersion
 	)
 }
 
-func (j *jsiiProxy_KeyJavascriptLoaderScriptOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_KeyJavascriptLoaderScriptOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -292,7 +291,7 @@ func (j *jsiiProxy_KeyJavascriptLoaderScriptOutputReference)SetComplexObjectInde
 	)
 }
 
-func (j *jsiiProxy_KeyJavascriptLoaderScriptOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_KeyJavascriptLoaderScriptOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -303,7 +302,7 @@ func (j *jsiiProxy_KeyJavascriptLoaderScriptOutputReference)SetComplexObjectIsFr
 	)
 }
 
-func (j *jsiiProxy_KeyJavascriptLoaderScriptOutputReference)SetDebugEnabled(val interface{}) {
+func (j *jsiiProxy_KeyJavascriptLoaderScriptOutputReference) SetDebugEnabled(val any) {
 	if err := j.validateSetDebugEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -314,7 +313,7 @@ func (j *jsiiProxy_KeyJavascriptLoaderScriptOutputReference)SetDebugEnabled(val 
 	)
 }
 
-func (j *jsiiProxy_KeyJavascriptLoaderScriptOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_KeyJavascriptLoaderScriptOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -325,7 +324,7 @@ func (j *jsiiProxy_KeyJavascriptLoaderScriptOutputReference)SetInternalValue(val
 	)
 }
 
-func (j *jsiiProxy_KeyJavascriptLoaderScriptOutputReference)SetPerformanceMonitoringEnabled(val interface{}) {
+func (j *jsiiProxy_KeyJavascriptLoaderScriptOutputReference) SetPerformanceMonitoringEnabled(val any) {
 	if err := j.validateSetPerformanceMonitoringEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -336,7 +335,7 @@ func (j *jsiiProxy_KeyJavascriptLoaderScriptOutputReference)SetPerformanceMonito
 	)
 }
 
-func (j *jsiiProxy_KeyJavascriptLoaderScriptOutputReference)SetSessionReplayEnabled(val interface{}) {
+func (j *jsiiProxy_KeyJavascriptLoaderScriptOutputReference) SetSessionReplayEnabled(val any) {
 	if err := j.validateSetSessionReplayEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,7 +346,7 @@ func (j *jsiiProxy_KeyJavascriptLoaderScriptOutputReference)SetSessionReplayEnab
 	)
 }
 
-func (j *jsiiProxy_KeyJavascriptLoaderScriptOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_KeyJavascriptLoaderScriptOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -358,7 +357,7 @@ func (j *jsiiProxy_KeyJavascriptLoaderScriptOutputReference)SetTerraformAttribut
 	)
 }
 
-func (j *jsiiProxy_KeyJavascriptLoaderScriptOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_KeyJavascriptLoaderScriptOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -382,16 +381,16 @@ func (k *jsiiProxy_KeyJavascriptLoaderScriptOutputReference) ComputeFqn() *strin
 	return returns
 }
 
-func (k *jsiiProxy_KeyJavascriptLoaderScriptOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (k *jsiiProxy_KeyJavascriptLoaderScriptOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := k.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		k,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -407,7 +406,7 @@ func (k *jsiiProxy_KeyJavascriptLoaderScriptOutputReference) GetBooleanAttribute
 	_jsii_.Invoke(
 		k,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -423,7 +422,7 @@ func (k *jsiiProxy_KeyJavascriptLoaderScriptOutputReference) GetBooleanMapAttrib
 	_jsii_.Invoke(
 		k,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -439,7 +438,7 @@ func (k *jsiiProxy_KeyJavascriptLoaderScriptOutputReference) GetListAttribute(te
 	_jsii_.Invoke(
 		k,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -455,7 +454,7 @@ func (k *jsiiProxy_KeyJavascriptLoaderScriptOutputReference) GetNumberAttribute(
 	_jsii_.Invoke(
 		k,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -471,7 +470,7 @@ func (k *jsiiProxy_KeyJavascriptLoaderScriptOutputReference) GetNumberListAttrib
 	_jsii_.Invoke(
 		k,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -487,7 +486,7 @@ func (k *jsiiProxy_KeyJavascriptLoaderScriptOutputReference) GetNumberMapAttribu
 	_jsii_.Invoke(
 		k,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -503,7 +502,7 @@ func (k *jsiiProxy_KeyJavascriptLoaderScriptOutputReference) GetStringAttribute(
 	_jsii_.Invoke(
 		k,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -519,7 +518,7 @@ func (k *jsiiProxy_KeyJavascriptLoaderScriptOutputReference) GetStringMapAttribu
 	_jsii_.Invoke(
 		k,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -548,7 +547,7 @@ func (k *jsiiProxy_KeyJavascriptLoaderScriptOutputReference) InterpolationForAtt
 	_jsii_.Invoke(
 		k,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -587,16 +586,16 @@ func (k *jsiiProxy_KeyJavascriptLoaderScriptOutputReference) ResetSessionReplayE
 	)
 }
 
-func (k *jsiiProxy_KeyJavascriptLoaderScriptOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (k *jsiiProxy_KeyJavascriptLoaderScriptOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := k.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		k,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -615,4 +614,3 @@ func (k *jsiiProxy_KeyJavascriptLoaderScriptOutputReference) ToString() *string 
 
 	return returns
 }
-

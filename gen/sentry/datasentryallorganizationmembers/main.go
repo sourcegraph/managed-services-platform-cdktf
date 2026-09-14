@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-sentry.dataSentryAllOrganizationMembers.DataSentryAllOrganizationMembers",
-		reflect.TypeOf((*DataSentryAllOrganizationMembers)(nil)).Elem(),
+		reflect.TypeFor[DataSentryAllOrganizationMembers](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
@@ -48,7 +48,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataSentryAllOrganizationMembers{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -56,15 +56,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-sentry.dataSentryAllOrganizationMembers.DataSentryAllOrganizationMembersConfig",
-		reflect.TypeOf((*DataSentryAllOrganizationMembersConfig)(nil)).Elem(),
+		reflect.TypeFor[DataSentryAllOrganizationMembersConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-sentry.dataSentryAllOrganizationMembers.DataSentryAllOrganizationMembersMembers",
-		reflect.TypeOf((*DataSentryAllOrganizationMembersMembers)(nil)).Elem(),
+		reflect.TypeFor[DataSentryAllOrganizationMembersMembers](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-sentry.dataSentryAllOrganizationMembers.DataSentryAllOrganizationMembersMembersList",
-		reflect.TypeOf((*DataSentryAllOrganizationMembersMembersList)(nil)).Elem(),
+		reflect.TypeFor[DataSentryAllOrganizationMembersMembersList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -77,7 +77,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataSentryAllOrganizationMembersMembersList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -85,7 +85,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-sentry.dataSentryAllOrganizationMembers.DataSentryAllOrganizationMembersMembersOutputReference",
-		reflect.TypeOf((*DataSentryAllOrganizationMembersMembersOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataSentryAllOrganizationMembersMembersOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -112,7 +112,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataSentryAllOrganizationMembersMembersOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

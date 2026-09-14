@@ -15,9 +15,9 @@ type ProjectClientSecurityOutputReference interface {
 	AllowedDomainsInput() *[]*string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -30,11 +30,11 @@ type ProjectClientSecurityOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
-	ScrapeJavascript() interface{}
-	SetScrapeJavascript(val interface{})
-	ScrapeJavascriptInput() interface{}
+	InternalValue() any
+	SetInternalValue(val any)
+	ScrapeJavascript() any
+	SetScrapeJavascript(val any)
+	ScrapeJavascriptInput() any
 	SecurityToken() *string
 	SetSecurityToken(val *string)
 	SecurityTokenHeader() *string
@@ -49,13 +49,13 @@ type ProjectClientSecurityOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
-	VerifyTlsSsl() interface{}
-	SetVerifyTlsSsl(val interface{})
-	VerifyTlsSslInput() interface{}
+	VerifyTlsSsl() any
+	SetVerifyTlsSsl(val any)
+	VerifyTlsSslInput() any
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -83,7 +83,7 @@ type ProjectClientSecurityOutputReference interface {
 	ResetVerifyTlsSsl()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -116,8 +116,8 @@ func (j *jsiiProxy_ProjectClientSecurityOutputReference) AllowedDomainsInput() *
 	return returns
 }
 
-func (j *jsiiProxy_ProjectClientSecurityOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ProjectClientSecurityOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -156,8 +156,8 @@ func (j *jsiiProxy_ProjectClientSecurityOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ProjectClientSecurityOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ProjectClientSecurityOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -166,8 +166,8 @@ func (j *jsiiProxy_ProjectClientSecurityOutputReference) InternalValue() interfa
 	return returns
 }
 
-func (j *jsiiProxy_ProjectClientSecurityOutputReference) ScrapeJavascript() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ProjectClientSecurityOutputReference) ScrapeJavascript() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"scrapeJavascript",
@@ -176,8 +176,8 @@ func (j *jsiiProxy_ProjectClientSecurityOutputReference) ScrapeJavascript() inte
 	return returns
 }
 
-func (j *jsiiProxy_ProjectClientSecurityOutputReference) ScrapeJavascriptInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ProjectClientSecurityOutputReference) ScrapeJavascriptInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"scrapeJavascriptInput",
@@ -246,8 +246,8 @@ func (j *jsiiProxy_ProjectClientSecurityOutputReference) TerraformResource() cdk
 	return returns
 }
 
-func (j *jsiiProxy_ProjectClientSecurityOutputReference) VerifyTlsSsl() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ProjectClientSecurityOutputReference) VerifyTlsSsl() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"verifyTlsSsl",
@@ -256,8 +256,8 @@ func (j *jsiiProxy_ProjectClientSecurityOutputReference) VerifyTlsSsl() interfac
 	return returns
 }
 
-func (j *jsiiProxy_ProjectClientSecurityOutputReference) VerifyTlsSslInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ProjectClientSecurityOutputReference) VerifyTlsSslInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"verifyTlsSslInput",
@@ -265,7 +265,6 @@ func (j *jsiiProxy_ProjectClientSecurityOutputReference) VerifyTlsSslInput() int
 	)
 	return returns
 }
-
 
 func NewProjectClientSecurityOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ProjectClientSecurityOutputReference {
 	_init_.Initialize()
@@ -277,7 +276,7 @@ func NewProjectClientSecurityOutputReference(terraformResource cdktf.IInterpolat
 
 	_jsii_.Create(
 		"@cdktf/provider-sentry.project.ProjectClientSecurityOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -289,12 +288,12 @@ func NewProjectClientSecurityOutputReference_Override(p ProjectClientSecurityOut
 
 	_jsii_.Create(
 		"@cdktf/provider-sentry.project.ProjectClientSecurityOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		p,
 	)
 }
 
-func (j *jsiiProxy_ProjectClientSecurityOutputReference)SetAllowedDomains(val *[]*string) {
+func (j *jsiiProxy_ProjectClientSecurityOutputReference) SetAllowedDomains(val *[]*string) {
 	if err := j.validateSetAllowedDomainsParameters(val); err != nil {
 		panic(err)
 	}
@@ -305,7 +304,7 @@ func (j *jsiiProxy_ProjectClientSecurityOutputReference)SetAllowedDomains(val *[
 	)
 }
 
-func (j *jsiiProxy_ProjectClientSecurityOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ProjectClientSecurityOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -316,7 +315,7 @@ func (j *jsiiProxy_ProjectClientSecurityOutputReference)SetComplexObjectIndex(va
 	)
 }
 
-func (j *jsiiProxy_ProjectClientSecurityOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ProjectClientSecurityOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -327,7 +326,7 @@ func (j *jsiiProxy_ProjectClientSecurityOutputReference)SetComplexObjectIsFromSe
 	)
 }
 
-func (j *jsiiProxy_ProjectClientSecurityOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ProjectClientSecurityOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -338,7 +337,7 @@ func (j *jsiiProxy_ProjectClientSecurityOutputReference)SetInternalValue(val int
 	)
 }
 
-func (j *jsiiProxy_ProjectClientSecurityOutputReference)SetScrapeJavascript(val interface{}) {
+func (j *jsiiProxy_ProjectClientSecurityOutputReference) SetScrapeJavascript(val any) {
 	if err := j.validateSetScrapeJavascriptParameters(val); err != nil {
 		panic(err)
 	}
@@ -349,7 +348,7 @@ func (j *jsiiProxy_ProjectClientSecurityOutputReference)SetScrapeJavascript(val 
 	)
 }
 
-func (j *jsiiProxy_ProjectClientSecurityOutputReference)SetSecurityToken(val *string) {
+func (j *jsiiProxy_ProjectClientSecurityOutputReference) SetSecurityToken(val *string) {
 	if err := j.validateSetSecurityTokenParameters(val); err != nil {
 		panic(err)
 	}
@@ -360,7 +359,7 @@ func (j *jsiiProxy_ProjectClientSecurityOutputReference)SetSecurityToken(val *st
 	)
 }
 
-func (j *jsiiProxy_ProjectClientSecurityOutputReference)SetSecurityTokenHeader(val *string) {
+func (j *jsiiProxy_ProjectClientSecurityOutputReference) SetSecurityTokenHeader(val *string) {
 	if err := j.validateSetSecurityTokenHeaderParameters(val); err != nil {
 		panic(err)
 	}
@@ -371,7 +370,7 @@ func (j *jsiiProxy_ProjectClientSecurityOutputReference)SetSecurityTokenHeader(v
 	)
 }
 
-func (j *jsiiProxy_ProjectClientSecurityOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ProjectClientSecurityOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -382,7 +381,7 @@ func (j *jsiiProxy_ProjectClientSecurityOutputReference)SetTerraformAttribute(va
 	)
 }
 
-func (j *jsiiProxy_ProjectClientSecurityOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ProjectClientSecurityOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -393,7 +392,7 @@ func (j *jsiiProxy_ProjectClientSecurityOutputReference)SetTerraformResource(val
 	)
 }
 
-func (j *jsiiProxy_ProjectClientSecurityOutputReference)SetVerifyTlsSsl(val interface{}) {
+func (j *jsiiProxy_ProjectClientSecurityOutputReference) SetVerifyTlsSsl(val any) {
 	if err := j.validateSetVerifyTlsSslParameters(val); err != nil {
 		panic(err)
 	}
@@ -417,16 +416,16 @@ func (p *jsiiProxy_ProjectClientSecurityOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (p *jsiiProxy_ProjectClientSecurityOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (p *jsiiProxy_ProjectClientSecurityOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -442,7 +441,7 @@ func (p *jsiiProxy_ProjectClientSecurityOutputReference) GetBooleanAttribute(ter
 	_jsii_.Invoke(
 		p,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -458,7 +457,7 @@ func (p *jsiiProxy_ProjectClientSecurityOutputReference) GetBooleanMapAttribute(
 	_jsii_.Invoke(
 		p,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -474,7 +473,7 @@ func (p *jsiiProxy_ProjectClientSecurityOutputReference) GetListAttribute(terraf
 	_jsii_.Invoke(
 		p,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -490,7 +489,7 @@ func (p *jsiiProxy_ProjectClientSecurityOutputReference) GetNumberAttribute(terr
 	_jsii_.Invoke(
 		p,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -506,7 +505,7 @@ func (p *jsiiProxy_ProjectClientSecurityOutputReference) GetNumberListAttribute(
 	_jsii_.Invoke(
 		p,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -522,7 +521,7 @@ func (p *jsiiProxy_ProjectClientSecurityOutputReference) GetNumberMapAttribute(t
 	_jsii_.Invoke(
 		p,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -538,7 +537,7 @@ func (p *jsiiProxy_ProjectClientSecurityOutputReference) GetStringAttribute(terr
 	_jsii_.Invoke(
 		p,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -554,7 +553,7 @@ func (p *jsiiProxy_ProjectClientSecurityOutputReference) GetStringMapAttribute(t
 	_jsii_.Invoke(
 		p,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -583,7 +582,7 @@ func (p *jsiiProxy_ProjectClientSecurityOutputReference) InterpolationForAttribu
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -630,16 +629,16 @@ func (p *jsiiProxy_ProjectClientSecurityOutputReference) ResetVerifyTlsSsl() {
 	)
 }
 
-func (p *jsiiProxy_ProjectClientSecurityOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (p *jsiiProxy_ProjectClientSecurityOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := p.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -658,4 +657,3 @@ func (p *jsiiProxy_ProjectClientSecurityOutputReference) ToString() *string {
 
 	return returns
 }
-

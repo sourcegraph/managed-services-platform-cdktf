@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-sentry.notificationAction.NotificationAction",
-		reflect.TypeOf((*NotificationAction)(nil)).Elem(),
+		reflect.TypeFor[NotificationAction](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -71,7 +71,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "triggerType", GoGetter: "TriggerType"},
 			_jsii_.MemberProperty{JsiiProperty: "triggerTypeInput", GoGetter: "TriggerTypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NotificationAction{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -79,6 +79,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-sentry.notificationAction.NotificationActionConfig",
-		reflect.TypeOf((*NotificationActionConfig)(nil)).Elem(),
+		reflect.TypeFor[NotificationActionConfig](),
 	)
 }

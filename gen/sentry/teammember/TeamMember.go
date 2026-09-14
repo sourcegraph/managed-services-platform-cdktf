@@ -15,15 +15,15 @@ type TeamMember interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -55,11 +55,11 @@ type TeamMember interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Role() *string
 	SetRole(val *string)
 	RoleInput() *string
@@ -69,16 +69,16 @@ type TeamMember interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -96,7 +96,7 @@ type TeamMember interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -108,7 +108,7 @@ type TeamMember interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -119,17 +119,17 @@ type TeamMember interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRole()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for TeamMember
@@ -147,8 +147,8 @@ func (j *jsiiProxy_TeamMember) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_TeamMember) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TeamMember) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -157,8 +157,8 @@ func (j *jsiiProxy_TeamMember) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_TeamMember) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_TeamMember) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -167,8 +167,8 @@ func (j *jsiiProxy_TeamMember) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_TeamMember) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TeamMember) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -307,8 +307,8 @@ func (j *jsiiProxy_TeamMember) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_TeamMember) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_TeamMember) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -317,8 +317,8 @@ func (j *jsiiProxy_TeamMember) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_TeamMember) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TeamMember) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -377,8 +377,8 @@ func (j *jsiiProxy_TeamMember) TerraformGeneratorMetadata() *cdktf.TerraformProv
 	return returns
 }
 
-func (j *jsiiProxy_TeamMember) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_TeamMember) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -397,7 +397,6 @@ func (j *jsiiProxy_TeamMember) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs/resources/team_member sentry_team_member} Resource.
 func NewTeamMember(scope constructs.Construct, id *string, config *TeamMemberConfig) TeamMember {
 	_init_.Initialize()
@@ -409,7 +408,7 @@ func NewTeamMember(scope constructs.Construct, id *string, config *TeamMemberCon
 
 	_jsii_.Create(
 		"@cdktf/provider-sentry.teamMember.TeamMember",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -422,12 +421,12 @@ func NewTeamMember_Override(t TeamMember, scope constructs.Construct, id *string
 
 	_jsii_.Create(
 		"@cdktf/provider-sentry.teamMember.TeamMember",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		t,
 	)
 }
 
-func (j *jsiiProxy_TeamMember)SetConnection(val interface{}) {
+func (j *jsiiProxy_TeamMember) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -438,7 +437,7 @@ func (j *jsiiProxy_TeamMember)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_TeamMember)SetCount(val interface{}) {
+func (j *jsiiProxy_TeamMember) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -449,7 +448,7 @@ func (j *jsiiProxy_TeamMember)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_TeamMember)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_TeamMember) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -457,7 +456,7 @@ func (j *jsiiProxy_TeamMember)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_TeamMember)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_TeamMember) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -465,7 +464,7 @@ func (j *jsiiProxy_TeamMember)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_TeamMember)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_TeamMember) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -476,7 +475,7 @@ func (j *jsiiProxy_TeamMember)SetLifecycle(val *cdktf.TerraformResourceLifecycle
 	)
 }
 
-func (j *jsiiProxy_TeamMember)SetMemberId(val *string) {
+func (j *jsiiProxy_TeamMember) SetMemberId(val *string) {
 	if err := j.validateSetMemberIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -487,7 +486,7 @@ func (j *jsiiProxy_TeamMember)SetMemberId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_TeamMember)SetOrganization(val *string) {
+func (j *jsiiProxy_TeamMember) SetOrganization(val *string) {
 	if err := j.validateSetOrganizationParameters(val); err != nil {
 		panic(err)
 	}
@@ -498,7 +497,7 @@ func (j *jsiiProxy_TeamMember)SetOrganization(val *string) {
 	)
 }
 
-func (j *jsiiProxy_TeamMember)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_TeamMember) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -506,7 +505,7 @@ func (j *jsiiProxy_TeamMember)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_TeamMember)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_TeamMember) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -517,7 +516,7 @@ func (j *jsiiProxy_TeamMember)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_TeamMember)SetRole(val *string) {
+func (j *jsiiProxy_TeamMember) SetRole(val *string) {
 	if err := j.validateSetRoleParameters(val); err != nil {
 		panic(err)
 	}
@@ -528,7 +527,7 @@ func (j *jsiiProxy_TeamMember)SetRole(val *string) {
 	)
 }
 
-func (j *jsiiProxy_TeamMember)SetTeam(val *string) {
+func (j *jsiiProxy_TeamMember) SetTeam(val *string) {
 	if err := j.validateSetTeamParameters(val); err != nil {
 		panic(err)
 	}
@@ -551,7 +550,7 @@ func TeamMember_GenerateConfigForImport(scope constructs.Construct, importToId *
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-sentry.teamMember.TeamMember",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -575,7 +574,7 @@ func TeamMember_GenerateConfigForImport(scope constructs.Construct, importToId *
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func TeamMember_IsConstruct(x interface{}) *bool {
+func TeamMember_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateTeamMember_IsConstructParameters(x); err != nil {
@@ -586,7 +585,7 @@ func TeamMember_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-sentry.teamMember.TeamMember",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -594,7 +593,7 @@ func TeamMember_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func TeamMember_IsTerraformElement(x interface{}) *bool {
+func TeamMember_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateTeamMember_IsTerraformElementParameters(x); err != nil {
@@ -605,7 +604,7 @@ func TeamMember_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-sentry.teamMember.TeamMember",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -613,7 +612,7 @@ func TeamMember_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func TeamMember_IsTerraformResource(x interface{}) *bool {
+func TeamMember_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateTeamMember_IsTerraformResourceParameters(x); err != nil {
@@ -624,7 +623,7 @@ func TeamMember_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-sentry.teamMember.TeamMember",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -649,31 +648,31 @@ func (t *jsiiProxy_TeamMember) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		t,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (t *jsiiProxy_TeamMember) AddOverride(path *string, value interface{}) {
+func (t *jsiiProxy_TeamMember) AddOverride(path *string, value any) {
 	if err := t.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		t,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (t *jsiiProxy_TeamMember) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (t *jsiiProxy_TeamMember) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := t.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		t,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -689,7 +688,7 @@ func (t *jsiiProxy_TeamMember) GetBooleanAttribute(terraformAttribute *string) c
 	_jsii_.Invoke(
 		t,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -705,7 +704,7 @@ func (t *jsiiProxy_TeamMember) GetBooleanMapAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		t,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -721,7 +720,7 @@ func (t *jsiiProxy_TeamMember) GetListAttribute(terraformAttribute *string) *[]*
 	_jsii_.Invoke(
 		t,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -737,7 +736,7 @@ func (t *jsiiProxy_TeamMember) GetNumberAttribute(terraformAttribute *string) *f
 	_jsii_.Invoke(
 		t,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -753,7 +752,7 @@ func (t *jsiiProxy_TeamMember) GetNumberListAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		t,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -769,7 +768,7 @@ func (t *jsiiProxy_TeamMember) GetNumberMapAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		t,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -785,7 +784,7 @@ func (t *jsiiProxy_TeamMember) GetStringAttribute(terraformAttribute *string) *s
 	_jsii_.Invoke(
 		t,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -801,15 +800,15 @@ func (t *jsiiProxy_TeamMember) GetStringMapAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		t,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (t *jsiiProxy_TeamMember) HasResourceMove() interface{} {
-	var returns interface{}
+func (t *jsiiProxy_TeamMember) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		t,
@@ -828,7 +827,7 @@ func (t *jsiiProxy_TeamMember) ImportFrom(id *string, provider cdktf.TerraformPr
 	_jsii_.InvokeVoid(
 		t,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -841,7 +840,7 @@ func (t *jsiiProxy_TeamMember) InterpolationForAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		t,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -855,18 +854,18 @@ func (t *jsiiProxy_TeamMember) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		t,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (t *jsiiProxy_TeamMember) MoveTo(moveTarget *string, index interface{}) {
+func (t *jsiiProxy_TeamMember) MoveTo(moveTarget *string, index any) {
 	if err := t.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		t,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -877,7 +876,7 @@ func (t *jsiiProxy_TeamMember) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		t,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -888,7 +887,7 @@ func (t *jsiiProxy_TeamMember) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		t,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -908,8 +907,8 @@ func (t *jsiiProxy_TeamMember) ResetRole() {
 	)
 }
 
-func (t *jsiiProxy_TeamMember) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (t *jsiiProxy_TeamMember) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		t,
@@ -921,8 +920,8 @@ func (t *jsiiProxy_TeamMember) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (t *jsiiProxy_TeamMember) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (t *jsiiProxy_TeamMember) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		t,
@@ -934,8 +933,8 @@ func (t *jsiiProxy_TeamMember) SynthesizeHclAttributes() *map[string]interface{}
 	return returns
 }
 
-func (t *jsiiProxy_TeamMember) ToHclTerraform() interface{} {
-	var returns interface{}
+func (t *jsiiProxy_TeamMember) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		t,
@@ -947,8 +946,8 @@ func (t *jsiiProxy_TeamMember) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (t *jsiiProxy_TeamMember) ToMetadata() interface{} {
-	var returns interface{}
+func (t *jsiiProxy_TeamMember) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		t,
@@ -973,8 +972,8 @@ func (t *jsiiProxy_TeamMember) ToString() *string {
 	return returns
 }
 
-func (t *jsiiProxy_TeamMember) ToTerraform() interface{} {
-	var returns interface{}
+func (t *jsiiProxy_TeamMember) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		t,
@@ -985,4 +984,3 @@ func (t *jsiiProxy_TeamMember) ToTerraform() interface{} {
 
 	return returns
 }
-

@@ -11,12 +11,12 @@ import (
 type IssueAlertActionsV2OutputReference interface {
 	cdktf.ComplexObject
 	AzureDevopsCreateTicket() IssueAlertActionsV2AzureDevopsCreateTicketOutputReference
-	AzureDevopsCreateTicketInput() interface{}
+	AzureDevopsCreateTicketInput() any
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -28,35 +28,35 @@ type IssueAlertActionsV2OutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	DiscordNotifyService() IssueAlertActionsV2DiscordNotifyServiceOutputReference
-	DiscordNotifyServiceInput() interface{}
+	DiscordNotifyServiceInput() any
 	// Experimental.
 	Fqn() *string
 	GithubCreateTicket() IssueAlertActionsV2GithubCreateTicketOutputReference
-	GithubCreateTicketInput() interface{}
+	GithubCreateTicketInput() any
 	GithubEnterpriseCreateTicket() IssueAlertActionsV2GithubEnterpriseCreateTicketOutputReference
-	GithubEnterpriseCreateTicketInput() interface{}
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	GithubEnterpriseCreateTicketInput() any
+	InternalValue() any
+	SetInternalValue(val any)
 	JiraCreateTicket() IssueAlertActionsV2JiraCreateTicketOutputReference
-	JiraCreateTicketInput() interface{}
+	JiraCreateTicketInput() any
 	JiraServerCreateTicket() IssueAlertActionsV2JiraServerCreateTicketOutputReference
-	JiraServerCreateTicketInput() interface{}
+	JiraServerCreateTicketInput() any
 	MsteamsNotifyService() IssueAlertActionsV2MsteamsNotifyServiceOutputReference
-	MsteamsNotifyServiceInput() interface{}
+	MsteamsNotifyServiceInput() any
 	NotifyEmail() IssueAlertActionsV2NotifyEmailOutputReference
-	NotifyEmailInput() interface{}
+	NotifyEmailInput() any
 	NotifyEvent() IssueAlertActionsV2NotifyEventOutputReference
-	NotifyEventInput() interface{}
+	NotifyEventInput() any
 	NotifyEventSentryApp() IssueAlertActionsV2NotifyEventSentryAppOutputReference
-	NotifyEventSentryAppInput() interface{}
+	NotifyEventSentryAppInput() any
 	NotifyEventService() IssueAlertActionsV2NotifyEventServiceOutputReference
-	NotifyEventServiceInput() interface{}
+	NotifyEventServiceInput() any
 	OpsgenieNotifyTeam() IssueAlertActionsV2OpsgenieNotifyTeamOutputReference
-	OpsgenieNotifyTeamInput() interface{}
+	OpsgenieNotifyTeamInput() any
 	PagerdutyNotifyService() IssueAlertActionsV2PagerdutyNotifyServiceOutputReference
-	PagerdutyNotifyServiceInput() interface{}
+	PagerdutyNotifyServiceInput() any
 	SlackNotifyService() IssueAlertActionsV2SlackNotifyServiceOutputReference
-	SlackNotifyServiceInput() interface{}
+	SlackNotifyServiceInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -68,7 +68,7 @@ type IssueAlertActionsV2OutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -119,7 +119,7 @@ type IssueAlertActionsV2OutputReference interface {
 	ResetSlackNotifyService()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -142,8 +142,8 @@ func (j *jsiiProxy_IssueAlertActionsV2OutputReference) AzureDevopsCreateTicket()
 	return returns
 }
 
-func (j *jsiiProxy_IssueAlertActionsV2OutputReference) AzureDevopsCreateTicketInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IssueAlertActionsV2OutputReference) AzureDevopsCreateTicketInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"azureDevopsCreateTicketInput",
@@ -152,8 +152,8 @@ func (j *jsiiProxy_IssueAlertActionsV2OutputReference) AzureDevopsCreateTicketIn
 	return returns
 }
 
-func (j *jsiiProxy_IssueAlertActionsV2OutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IssueAlertActionsV2OutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -192,8 +192,8 @@ func (j *jsiiProxy_IssueAlertActionsV2OutputReference) DiscordNotifyService() Is
 	return returns
 }
 
-func (j *jsiiProxy_IssueAlertActionsV2OutputReference) DiscordNotifyServiceInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IssueAlertActionsV2OutputReference) DiscordNotifyServiceInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"discordNotifyServiceInput",
@@ -222,8 +222,8 @@ func (j *jsiiProxy_IssueAlertActionsV2OutputReference) GithubCreateTicket() Issu
 	return returns
 }
 
-func (j *jsiiProxy_IssueAlertActionsV2OutputReference) GithubCreateTicketInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IssueAlertActionsV2OutputReference) GithubCreateTicketInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"githubCreateTicketInput",
@@ -242,8 +242,8 @@ func (j *jsiiProxy_IssueAlertActionsV2OutputReference) GithubEnterpriseCreateTic
 	return returns
 }
 
-func (j *jsiiProxy_IssueAlertActionsV2OutputReference) GithubEnterpriseCreateTicketInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IssueAlertActionsV2OutputReference) GithubEnterpriseCreateTicketInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"githubEnterpriseCreateTicketInput",
@@ -252,8 +252,8 @@ func (j *jsiiProxy_IssueAlertActionsV2OutputReference) GithubEnterpriseCreateTic
 	return returns
 }
 
-func (j *jsiiProxy_IssueAlertActionsV2OutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IssueAlertActionsV2OutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -272,8 +272,8 @@ func (j *jsiiProxy_IssueAlertActionsV2OutputReference) JiraCreateTicket() IssueA
 	return returns
 }
 
-func (j *jsiiProxy_IssueAlertActionsV2OutputReference) JiraCreateTicketInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IssueAlertActionsV2OutputReference) JiraCreateTicketInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"jiraCreateTicketInput",
@@ -292,8 +292,8 @@ func (j *jsiiProxy_IssueAlertActionsV2OutputReference) JiraServerCreateTicket() 
 	return returns
 }
 
-func (j *jsiiProxy_IssueAlertActionsV2OutputReference) JiraServerCreateTicketInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IssueAlertActionsV2OutputReference) JiraServerCreateTicketInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"jiraServerCreateTicketInput",
@@ -312,8 +312,8 @@ func (j *jsiiProxy_IssueAlertActionsV2OutputReference) MsteamsNotifyService() Is
 	return returns
 }
 
-func (j *jsiiProxy_IssueAlertActionsV2OutputReference) MsteamsNotifyServiceInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IssueAlertActionsV2OutputReference) MsteamsNotifyServiceInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"msteamsNotifyServiceInput",
@@ -332,8 +332,8 @@ func (j *jsiiProxy_IssueAlertActionsV2OutputReference) NotifyEmail() IssueAlertA
 	return returns
 }
 
-func (j *jsiiProxy_IssueAlertActionsV2OutputReference) NotifyEmailInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IssueAlertActionsV2OutputReference) NotifyEmailInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"notifyEmailInput",
@@ -352,8 +352,8 @@ func (j *jsiiProxy_IssueAlertActionsV2OutputReference) NotifyEvent() IssueAlertA
 	return returns
 }
 
-func (j *jsiiProxy_IssueAlertActionsV2OutputReference) NotifyEventInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IssueAlertActionsV2OutputReference) NotifyEventInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"notifyEventInput",
@@ -372,8 +372,8 @@ func (j *jsiiProxy_IssueAlertActionsV2OutputReference) NotifyEventSentryApp() Is
 	return returns
 }
 
-func (j *jsiiProxy_IssueAlertActionsV2OutputReference) NotifyEventSentryAppInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IssueAlertActionsV2OutputReference) NotifyEventSentryAppInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"notifyEventSentryAppInput",
@@ -392,8 +392,8 @@ func (j *jsiiProxy_IssueAlertActionsV2OutputReference) NotifyEventService() Issu
 	return returns
 }
 
-func (j *jsiiProxy_IssueAlertActionsV2OutputReference) NotifyEventServiceInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IssueAlertActionsV2OutputReference) NotifyEventServiceInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"notifyEventServiceInput",
@@ -412,8 +412,8 @@ func (j *jsiiProxy_IssueAlertActionsV2OutputReference) OpsgenieNotifyTeam() Issu
 	return returns
 }
 
-func (j *jsiiProxy_IssueAlertActionsV2OutputReference) OpsgenieNotifyTeamInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IssueAlertActionsV2OutputReference) OpsgenieNotifyTeamInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"opsgenieNotifyTeamInput",
@@ -432,8 +432,8 @@ func (j *jsiiProxy_IssueAlertActionsV2OutputReference) PagerdutyNotifyService() 
 	return returns
 }
 
-func (j *jsiiProxy_IssueAlertActionsV2OutputReference) PagerdutyNotifyServiceInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IssueAlertActionsV2OutputReference) PagerdutyNotifyServiceInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"pagerdutyNotifyServiceInput",
@@ -452,8 +452,8 @@ func (j *jsiiProxy_IssueAlertActionsV2OutputReference) SlackNotifyService() Issu
 	return returns
 }
 
-func (j *jsiiProxy_IssueAlertActionsV2OutputReference) SlackNotifyServiceInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IssueAlertActionsV2OutputReference) SlackNotifyServiceInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"slackNotifyServiceInput",
@@ -482,7 +482,6 @@ func (j *jsiiProxy_IssueAlertActionsV2OutputReference) TerraformResource() cdktf
 	return returns
 }
 
-
 func NewIssueAlertActionsV2OutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) IssueAlertActionsV2OutputReference {
 	_init_.Initialize()
 
@@ -493,7 +492,7 @@ func NewIssueAlertActionsV2OutputReference(terraformResource cdktf.IInterpolatin
 
 	_jsii_.Create(
 		"@cdktf/provider-sentry.issueAlert.IssueAlertActionsV2OutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -505,12 +504,12 @@ func NewIssueAlertActionsV2OutputReference_Override(i IssueAlertActionsV2OutputR
 
 	_jsii_.Create(
 		"@cdktf/provider-sentry.issueAlert.IssueAlertActionsV2OutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		i,
 	)
 }
 
-func (j *jsiiProxy_IssueAlertActionsV2OutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_IssueAlertActionsV2OutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -521,7 +520,7 @@ func (j *jsiiProxy_IssueAlertActionsV2OutputReference)SetComplexObjectIndex(val 
 	)
 }
 
-func (j *jsiiProxy_IssueAlertActionsV2OutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_IssueAlertActionsV2OutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -532,7 +531,7 @@ func (j *jsiiProxy_IssueAlertActionsV2OutputReference)SetComplexObjectIsFromSet(
 	)
 }
 
-func (j *jsiiProxy_IssueAlertActionsV2OutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_IssueAlertActionsV2OutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -543,7 +542,7 @@ func (j *jsiiProxy_IssueAlertActionsV2OutputReference)SetInternalValue(val inter
 	)
 }
 
-func (j *jsiiProxy_IssueAlertActionsV2OutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_IssueAlertActionsV2OutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -554,7 +553,7 @@ func (j *jsiiProxy_IssueAlertActionsV2OutputReference)SetTerraformAttribute(val 
 	)
 }
 
-func (j *jsiiProxy_IssueAlertActionsV2OutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_IssueAlertActionsV2OutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -578,16 +577,16 @@ func (i *jsiiProxy_IssueAlertActionsV2OutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (i *jsiiProxy_IssueAlertActionsV2OutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (i *jsiiProxy_IssueAlertActionsV2OutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := i.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -603,7 +602,7 @@ func (i *jsiiProxy_IssueAlertActionsV2OutputReference) GetBooleanAttribute(terra
 	_jsii_.Invoke(
 		i,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -619,7 +618,7 @@ func (i *jsiiProxy_IssueAlertActionsV2OutputReference) GetBooleanMapAttribute(te
 	_jsii_.Invoke(
 		i,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -635,7 +634,7 @@ func (i *jsiiProxy_IssueAlertActionsV2OutputReference) GetListAttribute(terrafor
 	_jsii_.Invoke(
 		i,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -651,7 +650,7 @@ func (i *jsiiProxy_IssueAlertActionsV2OutputReference) GetNumberAttribute(terraf
 	_jsii_.Invoke(
 		i,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -667,7 +666,7 @@ func (i *jsiiProxy_IssueAlertActionsV2OutputReference) GetNumberListAttribute(te
 	_jsii_.Invoke(
 		i,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -683,7 +682,7 @@ func (i *jsiiProxy_IssueAlertActionsV2OutputReference) GetNumberMapAttribute(ter
 	_jsii_.Invoke(
 		i,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -699,7 +698,7 @@ func (i *jsiiProxy_IssueAlertActionsV2OutputReference) GetStringAttribute(terraf
 	_jsii_.Invoke(
 		i,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -715,7 +714,7 @@ func (i *jsiiProxy_IssueAlertActionsV2OutputReference) GetStringMapAttribute(ter
 	_jsii_.Invoke(
 		i,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -744,7 +743,7 @@ func (i *jsiiProxy_IssueAlertActionsV2OutputReference) InterpolationForAttribute
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -758,7 +757,7 @@ func (i *jsiiProxy_IssueAlertActionsV2OutputReference) PutAzureDevopsCreateTicke
 	_jsii_.InvokeVoid(
 		i,
 		"putAzureDevopsCreateTicket",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -769,7 +768,7 @@ func (i *jsiiProxy_IssueAlertActionsV2OutputReference) PutDiscordNotifyService(v
 	_jsii_.InvokeVoid(
 		i,
 		"putDiscordNotifyService",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -780,7 +779,7 @@ func (i *jsiiProxy_IssueAlertActionsV2OutputReference) PutGithubCreateTicket(val
 	_jsii_.InvokeVoid(
 		i,
 		"putGithubCreateTicket",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -791,7 +790,7 @@ func (i *jsiiProxy_IssueAlertActionsV2OutputReference) PutGithubEnterpriseCreate
 	_jsii_.InvokeVoid(
 		i,
 		"putGithubEnterpriseCreateTicket",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -802,7 +801,7 @@ func (i *jsiiProxy_IssueAlertActionsV2OutputReference) PutJiraCreateTicket(value
 	_jsii_.InvokeVoid(
 		i,
 		"putJiraCreateTicket",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -813,7 +812,7 @@ func (i *jsiiProxy_IssueAlertActionsV2OutputReference) PutJiraServerCreateTicket
 	_jsii_.InvokeVoid(
 		i,
 		"putJiraServerCreateTicket",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -824,7 +823,7 @@ func (i *jsiiProxy_IssueAlertActionsV2OutputReference) PutMsteamsNotifyService(v
 	_jsii_.InvokeVoid(
 		i,
 		"putMsteamsNotifyService",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -835,7 +834,7 @@ func (i *jsiiProxy_IssueAlertActionsV2OutputReference) PutNotifyEmail(value *Iss
 	_jsii_.InvokeVoid(
 		i,
 		"putNotifyEmail",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -846,7 +845,7 @@ func (i *jsiiProxy_IssueAlertActionsV2OutputReference) PutNotifyEvent(value *Iss
 	_jsii_.InvokeVoid(
 		i,
 		"putNotifyEvent",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -857,7 +856,7 @@ func (i *jsiiProxy_IssueAlertActionsV2OutputReference) PutNotifyEventSentryApp(v
 	_jsii_.InvokeVoid(
 		i,
 		"putNotifyEventSentryApp",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -868,7 +867,7 @@ func (i *jsiiProxy_IssueAlertActionsV2OutputReference) PutNotifyEventService(val
 	_jsii_.InvokeVoid(
 		i,
 		"putNotifyEventService",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -879,7 +878,7 @@ func (i *jsiiProxy_IssueAlertActionsV2OutputReference) PutOpsgenieNotifyTeam(val
 	_jsii_.InvokeVoid(
 		i,
 		"putOpsgenieNotifyTeam",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -890,7 +889,7 @@ func (i *jsiiProxy_IssueAlertActionsV2OutputReference) PutPagerdutyNotifyService
 	_jsii_.InvokeVoid(
 		i,
 		"putPagerdutyNotifyService",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -901,7 +900,7 @@ func (i *jsiiProxy_IssueAlertActionsV2OutputReference) PutSlackNotifyService(val
 	_jsii_.InvokeVoid(
 		i,
 		"putSlackNotifyService",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1017,16 +1016,16 @@ func (i *jsiiProxy_IssueAlertActionsV2OutputReference) ResetSlackNotifyService()
 	)
 }
 
-func (i *jsiiProxy_IssueAlertActionsV2OutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (i *jsiiProxy_IssueAlertActionsV2OutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := i.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		i,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -1045,4 +1044,3 @@ func (i *jsiiProxy_IssueAlertActionsV2OutputReference) ToString() *string {
 
 	return returns
 }
-

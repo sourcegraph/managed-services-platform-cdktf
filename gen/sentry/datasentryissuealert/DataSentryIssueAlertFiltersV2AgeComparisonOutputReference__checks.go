@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataSentryIssueAlertFiltersV2AgeComparisonOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_DataSentryIssueAlertFiltersV2AgeComparisonOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataSentryIssueAlertFiltersV2AgeComparisonOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewDataSentryIssueAlertFiltersV2AgeComparisonOutputReferenceParamet
 
 	return nil
 }
-

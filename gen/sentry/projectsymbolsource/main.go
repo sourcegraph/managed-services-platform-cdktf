@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-sentry.projectSymbolSource.ProjectSymbolSource",
-		reflect.TypeOf((*ProjectSymbolSource)(nil)).Elem(),
+		reflect.TypeFor[ProjectSymbolSource](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessKey", GoGetter: "AccessKey"},
 			_jsii_.MemberProperty{JsiiProperty: "accessKeyInput", GoGetter: "AccessKeyInput"},
@@ -105,7 +105,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "username", GoGetter: "Username"},
 			_jsii_.MemberProperty{JsiiProperty: "usernameInput", GoGetter: "UsernameInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ProjectSymbolSource{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -113,15 +113,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-sentry.projectSymbolSource.ProjectSymbolSourceConfig",
-		reflect.TypeOf((*ProjectSymbolSourceConfig)(nil)).Elem(),
+		reflect.TypeFor[ProjectSymbolSourceConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-sentry.projectSymbolSource.ProjectSymbolSourceLayout",
-		reflect.TypeOf((*ProjectSymbolSourceLayout)(nil)).Elem(),
+		reflect.TypeFor[ProjectSymbolSourceLayout](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-sentry.projectSymbolSource.ProjectSymbolSourceLayoutOutputReference",
-		reflect.TypeOf((*ProjectSymbolSourceLayoutOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ProjectSymbolSourceLayoutOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "casing", GoGetter: "Casing"},
 			_jsii_.MemberProperty{JsiiProperty: "casingInput", GoGetter: "CasingInput"},
@@ -149,7 +149,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ProjectSymbolSourceLayoutOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

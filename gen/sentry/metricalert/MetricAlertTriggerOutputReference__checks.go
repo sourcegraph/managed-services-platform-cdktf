@@ -90,7 +90,7 @@ func (m *jsiiProxy_MetricAlertTriggerOutputReference) validateInterpolationForAt
 	return nil
 }
 
-func (m *jsiiProxy_MetricAlertTriggerOutputReference) validatePutActionParameters(value interface{}) error {
+func (m *jsiiProxy_MetricAlertTriggerOutputReference) validatePutActionParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -137,7 +137,7 @@ func (j *jsiiProxy_MetricAlertTriggerOutputReference) validateSetAlertThresholdP
 	return nil
 }
 
-func (j *jsiiProxy_MetricAlertTriggerOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MetricAlertTriggerOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -202,7 +202,7 @@ func (j *jsiiProxy_MetricAlertTriggerOutputReference) validateSetComplexObjectIs
 	return nil
 }
 
-func (j *jsiiProxy_MetricAlertTriggerOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_MetricAlertTriggerOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -285,4 +285,3 @@ func validateNewMetricAlertTriggerOutputReferenceParameters(terraformResource cd
 
 	return nil
 }
-
