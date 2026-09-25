@@ -15,6 +15,9 @@ type GoogleDataprocClusterClusterConfigOutputReference interface {
 	AuxiliaryNodeGroups() GoogleDataprocClusterClusterConfigAuxiliaryNodeGroupsList
 	AuxiliaryNodeGroupsInput() interface{}
 	Bucket() *string
+	ClusterTier() *string
+	SetClusterTier(val *string)
+	ClusterTierInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -112,6 +115,7 @@ type GoogleDataprocClusterClusterConfigOutputReference interface {
 	PutWorkerConfig(value *GoogleDataprocClusterClusterConfigWorkerConfig)
 	ResetAutoscalingConfig()
 	ResetAuxiliaryNodeGroups()
+	ResetClusterTier()
 	ResetDataprocMetricConfig()
 	ResetEncryptionConfig()
 	ResetEndpointConfig()
@@ -186,6 +190,26 @@ func (j *jsiiProxy_GoogleDataprocClusterClusterConfigOutputReference) Bucket() *
 	_jsii_.Get(
 		j,
 		"bucket",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataprocClusterClusterConfigOutputReference) ClusterTier() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clusterTier",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataprocClusterClusterConfigOutputReference) ClusterTierInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clusterTierInput",
 		&returns,
 	)
 	return returns
@@ -566,6 +590,17 @@ func NewGoogleDataprocClusterClusterConfigOutputReference_Override(g GoogleDatap
 		"@cdktf/provider-google_beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
+	)
+}
+
+func (j *jsiiProxy_GoogleDataprocClusterClusterConfigOutputReference)SetClusterTier(val *string) {
+	if err := j.validateSetClusterTierParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"clusterTier",
+		val,
 	)
 }
 
@@ -998,6 +1033,14 @@ func (g *jsiiProxy_GoogleDataprocClusterClusterConfigOutputReference) ResetAuxil
 	_jsii_.InvokeVoid(
 		g,
 		"resetAuxiliaryNodeGroups",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDataprocClusterClusterConfigOutputReference) ResetClusterTier() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetClusterTier",
 		nil, // no parameters
 	)
 }

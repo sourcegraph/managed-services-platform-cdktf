@@ -45,6 +45,12 @@ type GoogleContainerClusterNodeConfigLinuxNodeConfigOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TransparentHugepageDefrag() *string
+	SetTransparentHugepageDefrag(val *string)
+	TransparentHugepageDefragInput() *string
+	TransparentHugepageEnabled() *string
+	SetTransparentHugepageEnabled(val *string)
+	TransparentHugepageEnabledInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -73,6 +79,8 @@ type GoogleContainerClusterNodeConfigLinuxNodeConfigOutputReference interface {
 	ResetCgroupMode()
 	ResetHugepagesConfig()
 	ResetSysctls()
+	ResetTransparentHugepageDefrag()
+	ResetTransparentHugepageEnabled()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -218,6 +226,46 @@ func (j *jsiiProxy_GoogleContainerClusterNodeConfigLinuxNodeConfigOutputReferenc
 	return returns
 }
 
+func (j *jsiiProxy_GoogleContainerClusterNodeConfigLinuxNodeConfigOutputReference) TransparentHugepageDefrag() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"transparentHugepageDefrag",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodeConfigLinuxNodeConfigOutputReference) TransparentHugepageDefragInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"transparentHugepageDefragInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodeConfigLinuxNodeConfigOutputReference) TransparentHugepageEnabled() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"transparentHugepageEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodeConfigLinuxNodeConfigOutputReference) TransparentHugepageEnabledInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"transparentHugepageEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewGoogleContainerClusterNodeConfigLinuxNodeConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleContainerClusterNodeConfigLinuxNodeConfigOutputReference {
 	_init_.Initialize()
@@ -319,6 +367,28 @@ func (j *jsiiProxy_GoogleContainerClusterNodeConfigLinuxNodeConfigOutputReferenc
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodeConfigLinuxNodeConfigOutputReference)SetTransparentHugepageDefrag(val *string) {
+	if err := j.validateSetTransparentHugepageDefragParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"transparentHugepageDefrag",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodeConfigLinuxNodeConfigOutputReference)SetTransparentHugepageEnabled(val *string) {
+	if err := j.validateSetTransparentHugepageEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"transparentHugepageEnabled",
 		val,
 	)
 }
@@ -540,6 +610,22 @@ func (g *jsiiProxy_GoogleContainerClusterNodeConfigLinuxNodeConfigOutputReferenc
 	_jsii_.InvokeVoid(
 		g,
 		"resetSysctls",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerClusterNodeConfigLinuxNodeConfigOutputReference) ResetTransparentHugepageDefrag() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetTransparentHugepageDefrag",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerClusterNodeConfigLinuxNodeConfigOutputReference) ResetTransparentHugepageEnabled() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetTransparentHugepageEnabled",
 		nil, // no parameters
 	)
 }

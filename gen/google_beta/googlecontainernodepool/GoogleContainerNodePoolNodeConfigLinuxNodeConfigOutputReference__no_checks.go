@@ -80,6 +80,14 @@ func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigLinuxNodeConfigOutputReferen
 	return nil
 }
 
+func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigLinuxNodeConfigOutputReference) validateSetTransparentHugepageDefragParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigLinuxNodeConfigOutputReference) validateSetTransparentHugepageEnabledParameters(val *string) error {
+	return nil
+}
+
 func validateNewGoogleContainerNodePoolNodeConfigLinuxNodeConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }

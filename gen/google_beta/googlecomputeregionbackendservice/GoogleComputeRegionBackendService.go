@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googlecomputeregionbackendservice/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_region_backend_service google_compute_region_backend_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_compute_region_backend_service google_compute_region_backend_service}.
 type GoogleComputeRegionBackendService interface {
 	cdktf.TerraformResource
 	AffinityCookieTtlSec() *float64
@@ -67,6 +67,8 @@ type GoogleComputeRegionBackendService interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	GeneratedId() *float64
+	HaPolicy() GoogleComputeRegionBackendServiceHaPolicyOutputReference
+	HaPolicyInput() *GoogleComputeRegionBackendServiceHaPolicy
 	HealthChecks() *[]*string
 	SetHealthChecks(val *[]*string)
 	HealthChecksInput() *[]*string
@@ -195,6 +197,7 @@ type GoogleComputeRegionBackendService interface {
 	PutCustomMetrics(value interface{})
 	PutDynamicForwarding(value *GoogleComputeRegionBackendServiceDynamicForwarding)
 	PutFailoverPolicy(value *GoogleComputeRegionBackendServiceFailoverPolicy)
+	PutHaPolicy(value *GoogleComputeRegionBackendServiceHaPolicy)
 	PutIap(value *GoogleComputeRegionBackendServiceIap)
 	PutLogConfig(value *GoogleComputeRegionBackendServiceLogConfig)
 	PutOutlierDetection(value *GoogleComputeRegionBackendServiceOutlierDetection)
@@ -213,6 +216,7 @@ type GoogleComputeRegionBackendService interface {
 	ResetDynamicForwarding()
 	ResetEnableCdn()
 	ResetFailoverPolicy()
+	ResetHaPolicy()
 	ResetHealthChecks()
 	ResetIap()
 	ResetId()
@@ -598,6 +602,26 @@ func (j *jsiiProxy_GoogleComputeRegionBackendService) GeneratedId() *float64 {
 	_jsii_.Get(
 		j,
 		"generatedId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionBackendService) HaPolicy() GoogleComputeRegionBackendServiceHaPolicyOutputReference {
+	var returns GoogleComputeRegionBackendServiceHaPolicyOutputReference
+	_jsii_.Get(
+		j,
+		"haPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionBackendService) HaPolicyInput() *GoogleComputeRegionBackendServiceHaPolicy {
+	var returns *GoogleComputeRegionBackendServiceHaPolicy
+	_jsii_.Get(
+		j,
+		"haPolicyInput",
 		&returns,
 	)
 	return returns
@@ -1094,7 +1118,7 @@ func (j *jsiiProxy_GoogleComputeRegionBackendService) TimeoutsInput() interface{
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_region_backend_service google_compute_region_backend_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_compute_region_backend_service google_compute_region_backend_service} Resource.
 func NewGoogleComputeRegionBackendService(scope constructs.Construct, id *string, config *GoogleComputeRegionBackendServiceConfig) GoogleComputeRegionBackendService {
 	_init_.Initialize()
 
@@ -1112,7 +1136,7 @@ func NewGoogleComputeRegionBackendService(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_region_backend_service google_compute_region_backend_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_compute_region_backend_service google_compute_region_backend_service} Resource.
 func NewGoogleComputeRegionBackendService_Override(g GoogleComputeRegionBackendService, scope constructs.Construct, id *string, config *GoogleComputeRegionBackendServiceConfig) {
 	_init_.Initialize()
 
@@ -1830,6 +1854,17 @@ func (g *jsiiProxy_GoogleComputeRegionBackendService) PutFailoverPolicy(value *G
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeRegionBackendService) PutHaPolicy(value *GoogleComputeRegionBackendServiceHaPolicy) {
+	if err := g.validatePutHaPolicyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putHaPolicy",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeRegionBackendService) PutIap(value *GoogleComputeRegionBackendServiceIap) {
 	if err := g.validatePutIapParameters(value); err != nil {
 		panic(err)
@@ -1988,6 +2023,14 @@ func (g *jsiiProxy_GoogleComputeRegionBackendService) ResetFailoverPolicy() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetFailoverPolicy",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionBackendService) ResetHaPolicy() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetHaPolicy",
 		nil, // no parameters
 	)
 }

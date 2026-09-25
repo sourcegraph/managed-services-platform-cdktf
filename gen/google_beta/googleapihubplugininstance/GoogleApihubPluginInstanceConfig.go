@@ -21,15 +21,15 @@ type GoogleApihubPluginInstanceConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The display name for this plugin instance. Max length is 255 characters.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_apihub_plugin_instance#display_name GoogleApihubPluginInstance#display_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_apihub_plugin_instance#display_name GoogleApihubPluginInstance#display_name}
 	DisplayName *string `field:"required" json:"displayName" yaml:"displayName"`
 	// Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_apihub_plugin_instance#location GoogleApihubPluginInstance#location}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_apihub_plugin_instance#location GoogleApihubPluginInstance#location}
 	Location *string `field:"required" json:"location" yaml:"location"`
 	// Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_apihub_plugin_instance#plugin GoogleApihubPluginInstance#plugin}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_apihub_plugin_instance#plugin GoogleApihubPluginInstance#plugin}
 	Plugin *string `field:"required" json:"plugin" yaml:"plugin"`
 	// The ID to use for the plugin instance, which will become the final component of the plugin instance's resource name.
 	//
@@ -43,30 +43,30 @@ type GoogleApihubPluginInstanceConfig struct {
 	// This value should be 4-63 characters, and valid characters
 	// are /a-z[0-9]-_/.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_apihub_plugin_instance#plugin_instance_id GoogleApihubPluginInstance#plugin_instance_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_apihub_plugin_instance#plugin_instance_id GoogleApihubPluginInstance#plugin_instance_id}
 	PluginInstanceId *string `field:"required" json:"pluginInstanceId" yaml:"pluginInstanceId"`
 	// actions block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_apihub_plugin_instance#actions GoogleApihubPluginInstance#actions}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_apihub_plugin_instance#actions GoogleApihubPluginInstance#actions}
 	Actions interface{} `field:"optional" json:"actions" yaml:"actions"`
 	// auth_config block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_apihub_plugin_instance#auth_config GoogleApihubPluginInstance#auth_config}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_apihub_plugin_instance#auth_config GoogleApihubPluginInstance#auth_config}
 	AuthConfig *GoogleApihubPluginInstanceAuthConfig `field:"optional" json:"authConfig" yaml:"authConfig"`
 	// The display name for this plugin instance. Max length is 255 characters.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_apihub_plugin_instance#disable GoogleApihubPluginInstance#disable}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_apihub_plugin_instance#disable GoogleApihubPluginInstance#disable}
 	Disable interface{} `field:"optional" json:"disable" yaml:"disable"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_apihub_plugin_instance#id GoogleApihubPluginInstance#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_apihub_plugin_instance#id GoogleApihubPluginInstance#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_apihub_plugin_instance#project GoogleApihubPluginInstance#project}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_apihub_plugin_instance#project GoogleApihubPluginInstance#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_apihub_plugin_instance#timeouts GoogleApihubPluginInstance#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_apihub_plugin_instance#timeouts GoogleApihubPluginInstance#timeouts}
 	Timeouts *GoogleApihubPluginInstanceTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

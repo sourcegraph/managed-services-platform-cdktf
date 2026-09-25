@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google/oracledatabaseautonomousdatabase/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/oracle_database_autonomous_database google_oracle_database_autonomous_database}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/oracle_database_autonomous_database google_oracle_database_autonomous_database}.
 type OracleDatabaseAutonomousDatabase interface {
 	cdktf.TerraformResource
 	AdminPassword() *string
@@ -76,6 +76,12 @@ type OracleDatabaseAutonomousDatabase interface {
 	NetworkInput() *string
 	// The tree node.
 	Node() constructs.Node
+	OdbNetwork() *string
+	SetOdbNetwork(val *string)
+	OdbNetworkInput() *string
+	OdbSubnet() *string
+	SetOdbSubnet(val *string)
+	OdbSubnetInput() *string
 	Project() *string
 	SetProject(val *string)
 	ProjectInput() *string
@@ -146,10 +152,14 @@ type OracleDatabaseAutonomousDatabase interface {
 	PutProperties(value *OracleDatabaseAutonomousDatabaseProperties)
 	PutTimeouts(value *OracleDatabaseAutonomousDatabaseTimeouts)
 	ResetAdminPassword()
+	ResetCidr()
 	ResetDeletionProtection()
 	ResetDisplayName()
 	ResetId()
 	ResetLabels()
+	ResetNetwork()
+	ResetOdbNetwork()
+	ResetOdbSubnet()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -513,6 +523,46 @@ func (j *jsiiProxy_OracleDatabaseAutonomousDatabase) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_OracleDatabaseAutonomousDatabase) OdbNetwork() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"odbNetwork",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OracleDatabaseAutonomousDatabase) OdbNetworkInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"odbNetworkInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OracleDatabaseAutonomousDatabase) OdbSubnet() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"odbSubnet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OracleDatabaseAutonomousDatabase) OdbSubnetInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"odbSubnetInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_OracleDatabaseAutonomousDatabase) Project() *string {
 	var returns *string
 	_jsii_.Get(
@@ -644,7 +694,7 @@ func (j *jsiiProxy_OracleDatabaseAutonomousDatabase) TimeoutsInput() interface{}
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/oracle_database_autonomous_database google_oracle_database_autonomous_database} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/oracle_database_autonomous_database google_oracle_database_autonomous_database} Resource.
 func NewOracleDatabaseAutonomousDatabase(scope constructs.Construct, id *string, config *OracleDatabaseAutonomousDatabaseConfig) OracleDatabaseAutonomousDatabase {
 	_init_.Initialize()
 
@@ -662,7 +712,7 @@ func NewOracleDatabaseAutonomousDatabase(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/oracle_database_autonomous_database google_oracle_database_autonomous_database} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/oracle_database_autonomous_database google_oracle_database_autonomous_database} Resource.
 func NewOracleDatabaseAutonomousDatabase_Override(o OracleDatabaseAutonomousDatabase, scope constructs.Construct, id *string, config *OracleDatabaseAutonomousDatabaseConfig) {
 	_init_.Initialize()
 
@@ -828,6 +878,28 @@ func (j *jsiiProxy_OracleDatabaseAutonomousDatabase)SetNetwork(val *string) {
 	_jsii_.Set(
 		j,
 		"network",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OracleDatabaseAutonomousDatabase)SetOdbNetwork(val *string) {
+	if err := j.validateSetOdbNetworkParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"odbNetwork",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OracleDatabaseAutonomousDatabase)SetOdbSubnet(val *string) {
+	if err := j.validateSetOdbSubnetParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"odbSubnet",
 		val,
 	)
 }
@@ -1245,6 +1317,14 @@ func (o *jsiiProxy_OracleDatabaseAutonomousDatabase) ResetAdminPassword() {
 	)
 }
 
+func (o *jsiiProxy_OracleDatabaseAutonomousDatabase) ResetCidr() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetCidr",
+		nil, // no parameters
+	)
+}
+
 func (o *jsiiProxy_OracleDatabaseAutonomousDatabase) ResetDeletionProtection() {
 	_jsii_.InvokeVoid(
 		o,
@@ -1273,6 +1353,30 @@ func (o *jsiiProxy_OracleDatabaseAutonomousDatabase) ResetLabels() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetLabels",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OracleDatabaseAutonomousDatabase) ResetNetwork() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetNetwork",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OracleDatabaseAutonomousDatabase) ResetOdbNetwork() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetOdbNetwork",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OracleDatabaseAutonomousDatabase) ResetOdbSubnet() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetOdbSubnet",
 		nil, // no parameters
 	)
 }

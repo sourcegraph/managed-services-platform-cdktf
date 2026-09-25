@@ -9,9 +9,12 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googlememorystoreinstance/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_memorystore_instance google_memorystore_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_memorystore_instance google_memorystore_instance}.
 type GoogleMemorystoreInstance interface {
 	cdktf.TerraformResource
+	AllowFewerZonesDeployment() interface{}
+	SetAllowFewerZonesDeployment(val interface{})
+	AllowFewerZonesDeploymentInput() interface{}
 	AuthorizationMode() *string
 	SetAuthorizationMode(val *string)
 	AuthorizationModeInput() *string
@@ -192,6 +195,7 @@ type GoogleMemorystoreInstance interface {
 	PutPersistenceConfig(value *GoogleMemorystoreInstancePersistenceConfig)
 	PutTimeouts(value *GoogleMemorystoreInstanceTimeouts)
 	PutZoneDistributionConfig(value *GoogleMemorystoreInstanceZoneDistributionConfig)
+	ResetAllowFewerZonesDeployment()
 	ResetAuthorizationMode()
 	ResetAutomatedBackupConfig()
 	ResetCrossInstanceReplicationConfig()
@@ -233,6 +237,26 @@ type GoogleMemorystoreInstance interface {
 // The jsii proxy struct for GoogleMemorystoreInstance
 type jsiiProxy_GoogleMemorystoreInstance struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_GoogleMemorystoreInstance) AllowFewerZonesDeployment() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowFewerZonesDeployment",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleMemorystoreInstance) AllowFewerZonesDeploymentInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowFewerZonesDeploymentInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_GoogleMemorystoreInstance) AuthorizationMode() *string {
@@ -1056,7 +1080,7 @@ func (j *jsiiProxy_GoogleMemorystoreInstance) ZoneDistributionConfigInput() *Goo
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_memorystore_instance google_memorystore_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_memorystore_instance google_memorystore_instance} Resource.
 func NewGoogleMemorystoreInstance(scope constructs.Construct, id *string, config *GoogleMemorystoreInstanceConfig) GoogleMemorystoreInstance {
 	_init_.Initialize()
 
@@ -1074,7 +1098,7 @@ func NewGoogleMemorystoreInstance(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_memorystore_instance google_memorystore_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_memorystore_instance google_memorystore_instance} Resource.
 func NewGoogleMemorystoreInstance_Override(g GoogleMemorystoreInstance, scope constructs.Construct, id *string, config *GoogleMemorystoreInstanceConfig) {
 	_init_.Initialize()
 
@@ -1082,6 +1106,17 @@ func NewGoogleMemorystoreInstance_Override(g GoogleMemorystoreInstance, scope co
 		"@cdktf/provider-google_beta.googleMemorystoreInstance.GoogleMemorystoreInstance",
 		[]interface{}{scope, id, config},
 		g,
+	)
+}
+
+func (j *jsiiProxy_GoogleMemorystoreInstance)SetAllowFewerZonesDeployment(val interface{}) {
+	if err := j.validateSetAllowFewerZonesDeploymentParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"allowFewerZonesDeployment",
+		val,
 	)
 }
 
@@ -1778,6 +1813,14 @@ func (g *jsiiProxy_GoogleMemorystoreInstance) PutZoneDistributionConfig(value *G
 		g,
 		"putZoneDistributionConfig",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleMemorystoreInstance) ResetAllowFewerZonesDeployment() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAllowFewerZonesDeployment",
+		nil, // no parameters
 	)
 }
 

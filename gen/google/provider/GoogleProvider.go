@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google/provider/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs google}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs google}.
 type GoogleProvider interface {
 	cdktf.TerraformProvider
 	AccessApprovalCustomEndpoint() *string
@@ -119,9 +119,6 @@ type GoogleProvider interface {
 	Cloudbuildv2CustomEndpoint() *string
 	SetCloudbuildv2CustomEndpoint(val *string)
 	Cloudbuildv2CustomEndpointInput() *string
-	CloudBuildWorkerPoolCustomEndpoint() *string
-	SetCloudBuildWorkerPoolCustomEndpoint(val *string)
-	CloudBuildWorkerPoolCustomEndpointInput() *string
 	ClouddeployCustomEndpoint() *string
 	SetClouddeployCustomEndpoint(val *string)
 	ClouddeployCustomEndpointInput() *string
@@ -302,9 +299,6 @@ type GoogleProvider interface {
 	GkeHubCustomEndpoint() *string
 	SetGkeHubCustomEndpoint(val *string)
 	GkeHubCustomEndpointInput() *string
-	GkehubFeatureCustomEndpoint() *string
-	SetGkehubFeatureCustomEndpoint(val *string)
-	GkehubFeatureCustomEndpointInput() *string
 	GkeonpremCustomEndpoint() *string
 	SetGkeonpremCustomEndpoint(val *string)
 	GkeonpremCustomEndpointInput() *string
@@ -615,7 +609,6 @@ type GoogleProvider interface {
 	ResetCloudBillingCustomEndpoint()
 	ResetCloudBuildCustomEndpoint()
 	ResetCloudbuildv2CustomEndpoint()
-	ResetCloudBuildWorkerPoolCustomEndpoint()
 	ResetClouddeployCustomEndpoint()
 	ResetClouddomainsCustomEndpoint()
 	ResetCloudfunctions2CustomEndpoint()
@@ -674,7 +667,6 @@ type GoogleProvider interface {
 	ResetGkeBackupCustomEndpoint()
 	ResetGkeHub2CustomEndpoint()
 	ResetGkeHubCustomEndpoint()
-	ResetGkehubFeatureCustomEndpoint()
 	ResetGkeonpremCustomEndpoint()
 	ResetHealthcareCustomEndpoint()
 	ResetIam2CustomEndpoint()
@@ -1487,26 +1479,6 @@ func (j *jsiiProxy_GoogleProvider) Cloudbuildv2CustomEndpointInput() *string {
 	_jsii_.Get(
 		j,
 		"cloudbuildv2CustomEndpointInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_GoogleProvider) CloudBuildWorkerPoolCustomEndpoint() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"cloudBuildWorkerPoolCustomEndpoint",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_GoogleProvider) CloudBuildWorkerPoolCustomEndpointInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"cloudBuildWorkerPoolCustomEndpointInput",
 		&returns,
 	)
 	return returns
@@ -2697,26 +2669,6 @@ func (j *jsiiProxy_GoogleProvider) GkeHubCustomEndpointInput() *string {
 	_jsii_.Get(
 		j,
 		"gkeHubCustomEndpointInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_GoogleProvider) GkehubFeatureCustomEndpoint() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"gkehubFeatureCustomEndpoint",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_GoogleProvider) GkehubFeatureCustomEndpointInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"gkehubFeatureCustomEndpointInput",
 		&returns,
 	)
 	return returns
@@ -4503,7 +4455,7 @@ func (j *jsiiProxy_GoogleProvider) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs google} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs google} Resource.
 func NewGoogleProvider(scope constructs.Construct, id *string, config *GoogleProviderConfig) GoogleProvider {
 	_init_.Initialize()
 
@@ -4521,7 +4473,7 @@ func NewGoogleProvider(scope constructs.Construct, id *string, config *GooglePro
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs google} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs google} Resource.
 func NewGoogleProvider_Override(g GoogleProvider, scope constructs.Construct, id *string, config *GoogleProviderConfig) {
 	_init_.Initialize()
 
@@ -4814,14 +4766,6 @@ func (j *jsiiProxy_GoogleProvider)SetCloudbuildv2CustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
 		"cloudbuildv2CustomEndpoint",
-		val,
-	)
-}
-
-func (j *jsiiProxy_GoogleProvider)SetCloudBuildWorkerPoolCustomEndpoint(val *string) {
-	_jsii_.Set(
-		j,
-		"cloudBuildWorkerPoolCustomEndpoint",
 		val,
 	)
 }
@@ -5289,14 +5233,6 @@ func (j *jsiiProxy_GoogleProvider)SetGkeHubCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
 		"gkeHubCustomEndpoint",
-		val,
-	)
-}
-
-func (j *jsiiProxy_GoogleProvider)SetGkehubFeatureCustomEndpoint(val *string) {
-	_jsii_.Set(
-		j,
-		"gkehubFeatureCustomEndpoint",
 		val,
 	)
 }
@@ -6397,14 +6333,6 @@ func (g *jsiiProxy_GoogleProvider) ResetCloudbuildv2CustomEndpoint() {
 	)
 }
 
-func (g *jsiiProxy_GoogleProvider) ResetCloudBuildWorkerPoolCustomEndpoint() {
-	_jsii_.InvokeVoid(
-		g,
-		"resetCloudBuildWorkerPoolCustomEndpoint",
-		nil, // no parameters
-	)
-}
-
 func (g *jsiiProxy_GoogleProvider) ResetClouddeployCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
@@ -6865,14 +6793,6 @@ func (g *jsiiProxy_GoogleProvider) ResetGkeHubCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetGkeHubCustomEndpoint",
-		nil, // no parameters
-	)
-}
-
-func (g *jsiiProxy_GoogleProvider) ResetGkehubFeatureCustomEndpoint() {
-	_jsii_.InvokeVoid(
-		g,
-		"resetGkehubFeatureCustomEndpoint",
 		nil, // no parameters
 	)
 }

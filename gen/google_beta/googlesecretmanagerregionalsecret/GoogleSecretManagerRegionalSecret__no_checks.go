@@ -152,6 +152,10 @@ func (j *jsiiProxy_GoogleSecretManagerRegionalSecret) validateSetSecretIdParamet
 	return nil
 }
 
+func (j *jsiiProxy_GoogleSecretManagerRegionalSecret) validateSetTagsParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleSecretManagerRegionalSecret) validateSetTtlParameters(val *string) error {
 	return nil
 }

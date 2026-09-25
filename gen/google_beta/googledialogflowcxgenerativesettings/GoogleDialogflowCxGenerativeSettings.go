@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googledialogflowcxgenerativesettings/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dialogflow_cx_generative_settings google_dialogflow_cx_generative_settings}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_dialogflow_cx_generative_settings google_dialogflow_cx_generative_settings}.
 type GoogleDialogflowCxGenerativeSettings interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -485,7 +485,7 @@ func (j *jsiiProxy_GoogleDialogflowCxGenerativeSettings) TimeoutsInput() interfa
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dialogflow_cx_generative_settings google_dialogflow_cx_generative_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_dialogflow_cx_generative_settings google_dialogflow_cx_generative_settings} Resource.
 func NewGoogleDialogflowCxGenerativeSettings(scope constructs.Construct, id *string, config *GoogleDialogflowCxGenerativeSettingsConfig) GoogleDialogflowCxGenerativeSettings {
 	_init_.Initialize()
 
@@ -503,7 +503,7 @@ func NewGoogleDialogflowCxGenerativeSettings(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dialogflow_cx_generative_settings google_dialogflow_cx_generative_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_dialogflow_cx_generative_settings google_dialogflow_cx_generative_settings} Resource.
 func NewGoogleDialogflowCxGenerativeSettings_Override(g GoogleDialogflowCxGenerativeSettings, scope constructs.Construct, id *string, config *GoogleDialogflowCxGenerativeSettingsConfig) {
 	_init_.Initialize()
 

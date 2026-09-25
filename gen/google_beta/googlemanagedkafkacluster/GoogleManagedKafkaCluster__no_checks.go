@@ -88,6 +88,10 @@ func (g *jsiiProxy_GoogleManagedKafkaCluster) validatePutTimeoutsParameters(valu
 	return nil
 }
 
+func (g *jsiiProxy_GoogleManagedKafkaCluster) validatePutTlsConfigParameters(value *GoogleManagedKafkaClusterTlsConfig) error {
+	return nil
+}
+
 func validateGoogleManagedKafkaCluster_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

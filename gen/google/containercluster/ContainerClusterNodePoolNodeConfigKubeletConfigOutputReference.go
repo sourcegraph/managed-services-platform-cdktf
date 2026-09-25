@@ -43,6 +43,15 @@ type ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	EvictionMaxPodGracePeriodSeconds() *float64
+	SetEvictionMaxPodGracePeriodSeconds(val *float64)
+	EvictionMaxPodGracePeriodSecondsInput() *float64
+	EvictionMinimumReclaim() ContainerClusterNodePoolNodeConfigKubeletConfigEvictionMinimumReclaimOutputReference
+	EvictionMinimumReclaimInput() *ContainerClusterNodePoolNodeConfigKubeletConfigEvictionMinimumReclaim
+	EvictionSoft() ContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftOutputReference
+	EvictionSoftGracePeriod() ContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftGracePeriodOutputReference
+	EvictionSoftGracePeriodInput() *ContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftGracePeriod
+	EvictionSoftInput() *ContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoft
 	// Experimental.
 	Fqn() *string
 	ImageGcHighThresholdPercent() *float64
@@ -62,9 +71,15 @@ type ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference interface {
 	InsecureKubeletReadonlyPortEnabledInput() *string
 	InternalValue() *ContainerClusterNodePoolNodeConfigKubeletConfig
 	SetInternalValue(val *ContainerClusterNodePoolNodeConfigKubeletConfig)
+	MaxParallelImagePulls() *float64
+	SetMaxParallelImagePulls(val *float64)
+	MaxParallelImagePullsInput() *float64
 	PodPidsLimit() *float64
 	SetPodPidsLimit(val *float64)
 	PodPidsLimitInput() *float64
+	SingleProcessOomKill() interface{}
+	SetSingleProcessOomKill(val interface{})
+	SingleProcessOomKillInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -97,18 +112,27 @@ type ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutEvictionMinimumReclaim(value *ContainerClusterNodePoolNodeConfigKubeletConfigEvictionMinimumReclaim)
+	PutEvictionSoft(value *ContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoft)
+	PutEvictionSoftGracePeriod(value *ContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftGracePeriod)
 	ResetAllowedUnsafeSysctls()
 	ResetContainerLogMaxFiles()
 	ResetContainerLogMaxSize()
 	ResetCpuCfsQuota()
 	ResetCpuCfsQuotaPeriod()
 	ResetCpuManagerPolicy()
+	ResetEvictionMaxPodGracePeriodSeconds()
+	ResetEvictionMinimumReclaim()
+	ResetEvictionSoft()
+	ResetEvictionSoftGracePeriod()
 	ResetImageGcHighThresholdPercent()
 	ResetImageGcLowThresholdPercent()
 	ResetImageMaximumGcAge()
 	ResetImageMinimumGcAge()
 	ResetInsecureKubeletReadonlyPortEnabled()
+	ResetMaxParallelImagePulls()
 	ResetPodPidsLimit()
+	ResetSingleProcessOomKill()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -274,6 +298,86 @@ func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigOutputReferenc
 	return returns
 }
 
+func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference) EvictionMaxPodGracePeriodSeconds() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"evictionMaxPodGracePeriodSeconds",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference) EvictionMaxPodGracePeriodSecondsInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"evictionMaxPodGracePeriodSecondsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference) EvictionMinimumReclaim() ContainerClusterNodePoolNodeConfigKubeletConfigEvictionMinimumReclaimOutputReference {
+	var returns ContainerClusterNodePoolNodeConfigKubeletConfigEvictionMinimumReclaimOutputReference
+	_jsii_.Get(
+		j,
+		"evictionMinimumReclaim",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference) EvictionMinimumReclaimInput() *ContainerClusterNodePoolNodeConfigKubeletConfigEvictionMinimumReclaim {
+	var returns *ContainerClusterNodePoolNodeConfigKubeletConfigEvictionMinimumReclaim
+	_jsii_.Get(
+		j,
+		"evictionMinimumReclaimInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference) EvictionSoft() ContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftOutputReference {
+	var returns ContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftOutputReference
+	_jsii_.Get(
+		j,
+		"evictionSoft",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference) EvictionSoftGracePeriod() ContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftGracePeriodOutputReference {
+	var returns ContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftGracePeriodOutputReference
+	_jsii_.Get(
+		j,
+		"evictionSoftGracePeriod",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference) EvictionSoftGracePeriodInput() *ContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftGracePeriod {
+	var returns *ContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftGracePeriod
+	_jsii_.Get(
+		j,
+		"evictionSoftGracePeriodInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference) EvictionSoftInput() *ContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoft {
+	var returns *ContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoft
+	_jsii_.Get(
+		j,
+		"evictionSoftInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -394,6 +498,26 @@ func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigOutputReferenc
 	return returns
 }
 
+func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference) MaxParallelImagePulls() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxParallelImagePulls",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference) MaxParallelImagePullsInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxParallelImagePullsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference) PodPidsLimit() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -409,6 +533,26 @@ func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigOutputReferenc
 	_jsii_.Get(
 		j,
 		"podPidsLimitInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference) SingleProcessOomKill() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"singleProcessOomKill",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference) SingleProcessOomKillInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"singleProcessOomKillInput",
 		&returns,
 	)
 	return returns
@@ -550,6 +694,17 @@ func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigOutputReferenc
 	)
 }
 
+func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference)SetEvictionMaxPodGracePeriodSeconds(val *float64) {
+	if err := j.validateSetEvictionMaxPodGracePeriodSecondsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"evictionMaxPodGracePeriodSeconds",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference)SetImageGcHighThresholdPercent(val *float64) {
 	if err := j.validateSetImageGcHighThresholdPercentParameters(val); err != nil {
 		panic(err)
@@ -616,6 +771,17 @@ func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigOutputReferenc
 	)
 }
 
+func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference)SetMaxParallelImagePulls(val *float64) {
+	if err := j.validateSetMaxParallelImagePullsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"maxParallelImagePulls",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference)SetPodPidsLimit(val *float64) {
 	if err := j.validateSetPodPidsLimitParameters(val); err != nil {
 		panic(err)
@@ -623,6 +789,17 @@ func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigOutputReferenc
 	_jsii_.Set(
 		j,
 		"podPidsLimit",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference)SetSingleProcessOomKill(val interface{}) {
+	if err := j.validateSetSingleProcessOomKillParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"singleProcessOomKill",
 		val,
 	)
 }
@@ -835,6 +1012,39 @@ func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigOutputReferenc
 	return returns
 }
 
+func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference) PutEvictionMinimumReclaim(value *ContainerClusterNodePoolNodeConfigKubeletConfigEvictionMinimumReclaim) {
+	if err := c.validatePutEvictionMinimumReclaimParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putEvictionMinimumReclaim",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference) PutEvictionSoft(value *ContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoft) {
+	if err := c.validatePutEvictionSoftParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putEvictionSoft",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference) PutEvictionSoftGracePeriod(value *ContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftGracePeriod) {
+	if err := c.validatePutEvictionSoftGracePeriodParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putEvictionSoftGracePeriod",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference) ResetAllowedUnsafeSysctls() {
 	_jsii_.InvokeVoid(
 		c,
@@ -883,6 +1093,38 @@ func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigOutputReferenc
 	)
 }
 
+func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference) ResetEvictionMaxPodGracePeriodSeconds() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetEvictionMaxPodGracePeriodSeconds",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference) ResetEvictionMinimumReclaim() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetEvictionMinimumReclaim",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference) ResetEvictionSoft() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetEvictionSoft",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference) ResetEvictionSoftGracePeriod() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetEvictionSoftGracePeriod",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference) ResetImageGcHighThresholdPercent() {
 	_jsii_.InvokeVoid(
 		c,
@@ -923,10 +1165,26 @@ func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigOutputReferenc
 	)
 }
 
+func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference) ResetMaxParallelImagePulls() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetMaxParallelImagePulls",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference) ResetPodPidsLimit() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetPodPidsLimit",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference) ResetSingleProcessOomKill() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetSingleProcessOomKill",
 		nil, // no parameters
 	)
 }

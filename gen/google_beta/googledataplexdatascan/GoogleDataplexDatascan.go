@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googledataplexdatascan/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dataplex_datascan google_dataplex_datascan}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_dataplex_datascan google_dataplex_datascan}.
 type GoogleDataplexDatascan interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -690,7 +690,7 @@ func (j *jsiiProxy_GoogleDataplexDatascan) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dataplex_datascan google_dataplex_datascan} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_dataplex_datascan google_dataplex_datascan} Resource.
 func NewGoogleDataplexDatascan(scope constructs.Construct, id *string, config *GoogleDataplexDatascanConfig) GoogleDataplexDatascan {
 	_init_.Initialize()
 
@@ -708,7 +708,7 @@ func NewGoogleDataplexDatascan(scope constructs.Construct, id *string, config *G
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dataplex_datascan google_dataplex_datascan} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_dataplex_datascan google_dataplex_datascan} Resource.
 func NewGoogleDataplexDatascan_Override(g GoogleDataplexDatascan, scope constructs.Construct, id *string, config *GoogleDataplexDatascanConfig) {
 	_init_.Initialize()
 

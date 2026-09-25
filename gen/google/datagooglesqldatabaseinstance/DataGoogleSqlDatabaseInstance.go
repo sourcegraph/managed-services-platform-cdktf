@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google/datagooglesqldatabaseinstance/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/data-sources/sql_database_instance google_sql_database_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/sql_database_instance google_sql_database_instance}.
 type DataGoogleSqlDatabaseInstance interface {
 	cdktf.TerraformDataSource
 	AvailableMaintenanceVersions() *[]*string
@@ -57,6 +57,7 @@ type DataGoogleSqlDatabaseInstance interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	NodeCount() *float64
 	PrivateIpAddress() *string
 	Project() *string
 	SetProject(val *string)
@@ -394,6 +395,16 @@ func (j *jsiiProxy_DataGoogleSqlDatabaseInstance) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleSqlDatabaseInstance) NodeCount() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"nodeCount",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleSqlDatabaseInstance) PrivateIpAddress() *string {
 	var returns *string
 	_jsii_.Get(
@@ -595,7 +606,7 @@ func (j *jsiiProxy_DataGoogleSqlDatabaseInstance) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/data-sources/sql_database_instance google_sql_database_instance} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/sql_database_instance google_sql_database_instance} Data Source.
 func NewDataGoogleSqlDatabaseInstance(scope constructs.Construct, id *string, config *DataGoogleSqlDatabaseInstanceConfig) DataGoogleSqlDatabaseInstance {
 	_init_.Initialize()
 
@@ -613,7 +624,7 @@ func NewDataGoogleSqlDatabaseInstance(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/data-sources/sql_database_instance google_sql_database_instance} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/sql_database_instance google_sql_database_instance} Data Source.
 func NewDataGoogleSqlDatabaseInstance_Override(d DataGoogleSqlDatabaseInstance, scope constructs.Construct, id *string, config *DataGoogleSqlDatabaseInstanceConfig) {
 	_init_.Initialize()
 

@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googlebackupdrbackupplan/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_backup_dr_backup_plan google_backup_dr_backup_plan}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_backup_dr_backup_plan google_backup_dr_backup_plan}.
 type GoogleBackupDrBackupPlan interface {
 	cdktf.TerraformResource
 	BackupPlanId() *string
@@ -59,6 +59,9 @@ type GoogleBackupDrBackupPlan interface {
 	Location() *string
 	SetLocation(val *string)
 	LocationInput() *string
+	LogRetentionDays() *float64
+	SetLogRetentionDays(val *float64)
+	LogRetentionDaysInput() *float64
 	Name() *string
 	// The tree node.
 	Node() constructs.Node
@@ -135,6 +138,7 @@ type GoogleBackupDrBackupPlan interface {
 	PutTimeouts(value *GoogleBackupDrBackupPlanTimeouts)
 	ResetDescription()
 	ResetId()
+	ResetLogRetentionDays()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -388,6 +392,26 @@ func (j *jsiiProxy_GoogleBackupDrBackupPlan) LocationInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleBackupDrBackupPlan) LogRetentionDays() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"logRetentionDays",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBackupDrBackupPlan) LogRetentionDaysInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"logRetentionDaysInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleBackupDrBackupPlan) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -549,7 +573,7 @@ func (j *jsiiProxy_GoogleBackupDrBackupPlan) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_backup_dr_backup_plan google_backup_dr_backup_plan} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_backup_dr_backup_plan google_backup_dr_backup_plan} Resource.
 func NewGoogleBackupDrBackupPlan(scope constructs.Construct, id *string, config *GoogleBackupDrBackupPlanConfig) GoogleBackupDrBackupPlan {
 	_init_.Initialize()
 
@@ -567,7 +591,7 @@ func NewGoogleBackupDrBackupPlan(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_backup_dr_backup_plan google_backup_dr_backup_plan} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_backup_dr_backup_plan google_backup_dr_backup_plan} Resource.
 func NewGoogleBackupDrBackupPlan_Override(g GoogleBackupDrBackupPlan, scope constructs.Construct, id *string, config *GoogleBackupDrBackupPlanConfig) {
 	_init_.Initialize()
 
@@ -678,6 +702,17 @@ func (j *jsiiProxy_GoogleBackupDrBackupPlan)SetLocation(val *string) {
 	_jsii_.Set(
 		j,
 		"location",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleBackupDrBackupPlan)SetLogRetentionDays(val *float64) {
+	if err := j.validateSetLogRetentionDaysParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"logRetentionDays",
 		val,
 	)
 }
@@ -1110,6 +1145,14 @@ func (g *jsiiProxy_GoogleBackupDrBackupPlan) ResetId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleBackupDrBackupPlan) ResetLogRetentionDays() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetLogRetentionDays",
 		nil, // no parameters
 	)
 }
