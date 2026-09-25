@@ -36,6 +36,12 @@ type MetricAlertTriggerActionOutputReference interface {
 	IntegrationIdInput() *float64
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	Priority() *string
+	SetPriority(val *string)
+	PriorityInput() *string
+	SentryAppId() *float64
+	SetSentryAppId(val *float64)
+	SentryAppIdInput() *float64
 	TargetIdentifier() *string
 	SetTargetIdentifier(val *string)
 	TargetIdentifierInput() *string
@@ -79,6 +85,8 @@ type MetricAlertTriggerActionOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetInputChannelId()
 	ResetIntegrationId()
+	ResetPriority()
+	ResetSentryAppId()
 	ResetTargetIdentifier()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -190,6 +198,46 @@ func (j *jsiiProxy_MetricAlertTriggerActionOutputReference) InternalValue() inte
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MetricAlertTriggerActionOutputReference) Priority() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"priority",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MetricAlertTriggerActionOutputReference) PriorityInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"priorityInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MetricAlertTriggerActionOutputReference) SentryAppId() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"sentryAppId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MetricAlertTriggerActionOutputReference) SentryAppIdInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"sentryAppIdInput",
 		&returns,
 	)
 	return returns
@@ -354,6 +402,28 @@ func (j *jsiiProxy_MetricAlertTriggerActionOutputReference)SetInternalValue(val 
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MetricAlertTriggerActionOutputReference)SetPriority(val *string) {
+	if err := j.validateSetPriorityParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"priority",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MetricAlertTriggerActionOutputReference)SetSentryAppId(val *float64) {
+	if err := j.validateSetSentryAppIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sentryAppId",
 		val,
 	)
 }
@@ -611,6 +681,22 @@ func (m *jsiiProxy_MetricAlertTriggerActionOutputReference) ResetIntegrationId()
 	_jsii_.InvokeVoid(
 		m,
 		"resetIntegrationId",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MetricAlertTriggerActionOutputReference) ResetPriority() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetPriority",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MetricAlertTriggerActionOutputReference) ResetSentryAppId() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetSentryAppId",
 		nil, // no parameters
 	)
 }

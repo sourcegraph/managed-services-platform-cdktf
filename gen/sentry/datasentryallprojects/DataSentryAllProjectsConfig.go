@@ -19,9 +19,9 @@ type DataSentryAllProjectsConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// The organization the resource belongs to.
+	// The organization slug or internal ID to list projects for.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs/data-sources/all_projects#organization DataSentryAllProjects#organization}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.15.7/docs/data-sources/all_projects#organization DataSentryAllProjects#organization}
 	Organization *string `field:"required" json:"organization" yaml:"organization"`
 }
 

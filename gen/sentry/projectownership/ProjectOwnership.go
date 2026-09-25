@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/sentry/projectownership/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs/resources/project_ownership sentry_project_ownership}.
+// Represents a {@link https://registry.terraform.io/providers/jianyuan/sentry/0.15.7/docs/resources/project_ownership sentry_project_ownership}.
 type ProjectOwnership interface {
 	cdktf.TerraformResource
 	AutoAssignment() *string
@@ -421,7 +421,7 @@ func (j *jsiiProxy_ProjectOwnership) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs/resources/project_ownership sentry_project_ownership} Resource.
+// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.15.7/docs/resources/project_ownership sentry_project_ownership} Resource.
 func NewProjectOwnership(scope constructs.Construct, id *string, config *ProjectOwnershipConfig) ProjectOwnership {
 	_init_.Initialize()
 
@@ -439,7 +439,7 @@ func NewProjectOwnership(scope constructs.Construct, id *string, config *Project
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs/resources/project_ownership sentry_project_ownership} Resource.
+// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.15.7/docs/resources/project_ownership sentry_project_ownership} Resource.
 func NewProjectOwnership_Override(p ProjectOwnership, scope constructs.Construct, id *string, config *ProjectOwnershipConfig) {
 	_init_.Initialize()
 

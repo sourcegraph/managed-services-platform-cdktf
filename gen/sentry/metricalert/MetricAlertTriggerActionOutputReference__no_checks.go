@@ -68,6 +68,14 @@ func (j *jsiiProxy_MetricAlertTriggerActionOutputReference) validateSetInternalV
 	return nil
 }
 
+func (j *jsiiProxy_MetricAlertTriggerActionOutputReference) validateSetPriorityParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_MetricAlertTriggerActionOutputReference) validateSetSentryAppIdParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_MetricAlertTriggerActionOutputReference) validateSetTargetIdentifierParameters(val *string) error {
 	return nil
 }

@@ -19,9 +19,9 @@ type DataSentryOrganizationConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// The organization the resource belongs to.
+	// The unique URL slug for the organization.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs/data-sources/organization#slug DataSentryOrganization#slug}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.15.7/docs/data-sources/organization#slug DataSentryOrganization#slug}
 	Slug *string `field:"required" json:"slug" yaml:"slug"`
 }
 

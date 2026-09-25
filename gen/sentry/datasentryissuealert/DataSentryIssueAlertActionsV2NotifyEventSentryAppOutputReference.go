@@ -32,6 +32,7 @@ type DataSentryIssueAlertActionsV2NotifyEventSentryAppOutputReference interface 
 	Name() *string
 	SentryAppInstallationUuid() *string
 	Settings() cdktf.StringMap
+	SettingsLabels() cdktf.StringMap
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -154,6 +155,16 @@ func (j *jsiiProxy_DataSentryIssueAlertActionsV2NotifyEventSentryAppOutputRefere
 	_jsii_.Get(
 		j,
 		"settings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataSentryIssueAlertActionsV2NotifyEventSentryAppOutputReference) SettingsLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"settingsLabels",
 		&returns,
 	)
 	return returns

@@ -36,6 +36,7 @@ type DataSentryAllProjectsProjectsOutputReference interface {
 	Name() *string
 	Platform() *string
 	Slug() *string
+	Teams() DataSentryAllProjectsProjectsTeamsList
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -198,6 +199,16 @@ func (j *jsiiProxy_DataSentryAllProjectsProjectsOutputReference) Slug() *string 
 	_jsii_.Get(
 		j,
 		"slug",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataSentryAllProjectsProjectsOutputReference) Teams() DataSentryAllProjectsProjectsTeamsList {
+	var returns DataSentryAllProjectsProjectsTeamsList
+	_jsii_.Get(
+		j,
+		"teams",
 		&returns,
 	)
 	return returns

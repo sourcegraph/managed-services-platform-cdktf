@@ -13,6 +13,8 @@ type IssueAlertActionsV2SlackNotifyServiceOutputReference interface {
 	Channel() *string
 	SetChannel(val *string)
 	ChannelId() *string
+	SetChannelId(val *string)
+	ChannelIdInput() *string
 	ChannelInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
@@ -75,6 +77,7 @@ type IssueAlertActionsV2SlackNotifyServiceOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetChannelId()
 	ResetNotes()
 	ResetTags()
 	// Produce the Token's value at resolution time.
@@ -107,6 +110,16 @@ func (j *jsiiProxy_IssueAlertActionsV2SlackNotifyServiceOutputReference) Channel
 	_jsii_.Get(
 		j,
 		"channelId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IssueAlertActionsV2SlackNotifyServiceOutputReference) ChannelIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"channelIdInput",
 		&returns,
 	)
 	return returns
@@ -297,6 +310,17 @@ func (j *jsiiProxy_IssueAlertActionsV2SlackNotifyServiceOutputReference)SetChann
 	_jsii_.Set(
 		j,
 		"channel",
+		val,
+	)
+}
+
+func (j *jsiiProxy_IssueAlertActionsV2SlackNotifyServiceOutputReference)SetChannelId(val *string) {
+	if err := j.validateSetChannelIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"channelId",
 		val,
 	)
 }
@@ -573,6 +597,14 @@ func (i *jsiiProxy_IssueAlertActionsV2SlackNotifyServiceOutputReference) Interpo
 	)
 
 	return returns
+}
+
+func (i *jsiiProxy_IssueAlertActionsV2SlackNotifyServiceOutputReference) ResetChannelId() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetChannelId",
+		nil, // no parameters
+	)
 }
 
 func (i *jsiiProxy_IssueAlertActionsV2SlackNotifyServiceOutputReference) ResetNotes() {

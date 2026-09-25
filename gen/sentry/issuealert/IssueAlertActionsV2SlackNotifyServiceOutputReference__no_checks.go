@@ -52,6 +52,10 @@ func (j *jsiiProxy_IssueAlertActionsV2SlackNotifyServiceOutputReference) validat
 	return nil
 }
 
+func (j *jsiiProxy_IssueAlertActionsV2SlackNotifyServiceOutputReference) validateSetChannelIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_IssueAlertActionsV2SlackNotifyServiceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }
