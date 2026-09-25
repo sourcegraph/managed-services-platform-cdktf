@@ -1,6 +1,5 @@
 package registrymodule
 
-
 type RegistryModuleVcsRepo struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/registry_module#display_identifier RegistryModule#display_identifier}.
 	DisplayIdentifier *string `field:"required" json:"displayIdentifier" yaml:"displayIdentifier"`
@@ -13,6 +12,5 @@ type RegistryModuleVcsRepo struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/registry_module#oauth_token_id RegistryModule#oauth_token_id}.
 	OauthTokenId *string `field:"optional" json:"oauthTokenId" yaml:"oauthTokenId"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/registry_module#tags RegistryModule#tags}.
-	Tags interface{} `field:"optional" json:"tags" yaml:"tags"`
+	Tags any `field:"optional" json:"tags" yaml:"tags"`
 }
-

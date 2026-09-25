@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModule",
-		reflect.TypeOf((*DataTfeRegistryModule)(nil)).Elem(),
+		reflect.TypeFor[DataTfeRegistryModule](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
@@ -81,7 +81,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "versionStatuses", GoGetter: "VersionStatuses"},
 			_jsii_.MemberProperty{JsiiProperty: "versionStatusesInput", GoGetter: "VersionStatusesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataTfeRegistryModule{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -89,15 +89,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleConfig",
-		reflect.TypeOf((*DataTfeRegistryModuleConfig)(nil)).Elem(),
+		reflect.TypeFor[DataTfeRegistryModuleConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModulePermissions",
-		reflect.TypeOf((*DataTfeRegistryModulePermissions)(nil)).Elem(),
+		reflect.TypeFor[DataTfeRegistryModulePermissions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModulePermissionsList",
-		reflect.TypeOf((*DataTfeRegistryModulePermissionsList)(nil)).Elem(),
+		reflect.TypeFor[DataTfeRegistryModulePermissionsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -111,7 +111,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataTfeRegistryModulePermissionsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -119,7 +119,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModulePermissionsOutputReference",
-		reflect.TypeOf((*DataTfeRegistryModulePermissionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataTfeRegistryModulePermissionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "canDelete", GoGetter: "CanDelete"},
 			_jsii_.MemberProperty{JsiiProperty: "canResync", GoGetter: "CanResync"},
@@ -146,7 +146,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataTfeRegistryModulePermissionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -154,11 +154,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleTestConfig",
-		reflect.TypeOf((*DataTfeRegistryModuleTestConfig)(nil)).Elem(),
+		reflect.TypeFor[DataTfeRegistryModuleTestConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleTestConfigList",
-		reflect.TypeOf((*DataTfeRegistryModuleTestConfigList)(nil)).Elem(),
+		reflect.TypeFor[DataTfeRegistryModuleTestConfigList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -172,7 +172,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataTfeRegistryModuleTestConfigList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -180,7 +180,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleTestConfigOutputReference",
-		reflect.TypeOf((*DataTfeRegistryModuleTestConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataTfeRegistryModuleTestConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -205,7 +205,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "testsEnabled", GoGetter: "TestsEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataTfeRegistryModuleTestConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -213,11 +213,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleVcsRepo",
-		reflect.TypeOf((*DataTfeRegistryModuleVcsRepo)(nil)).Elem(),
+		reflect.TypeFor[DataTfeRegistryModuleVcsRepo](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleVcsRepoList",
-		reflect.TypeOf((*DataTfeRegistryModuleVcsRepoList)(nil)).Elem(),
+		reflect.TypeFor[DataTfeRegistryModuleVcsRepoList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -231,7 +231,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataTfeRegistryModuleVcsRepoList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -239,7 +239,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleVcsRepoOutputReference",
-		reflect.TypeOf((*DataTfeRegistryModuleVcsRepoOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataTfeRegistryModuleVcsRepoOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "branch", GoGetter: "Branch"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -274,7 +274,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "webhookUrl", GoGetter: "WebhookUrl"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataTfeRegistryModuleVcsRepoOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -282,11 +282,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleVersionStatuses",
-		reflect.TypeOf((*DataTfeRegistryModuleVersionStatuses)(nil)).Elem(),
+		reflect.TypeFor[DataTfeRegistryModuleVersionStatuses](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleVersionStatusesList",
-		reflect.TypeOf((*DataTfeRegistryModuleVersionStatusesList)(nil)).Elem(),
+		reflect.TypeFor[DataTfeRegistryModuleVersionStatusesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -300,7 +300,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataTfeRegistryModuleVersionStatusesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -308,7 +308,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-tfe.dataTfeRegistryModule.DataTfeRegistryModuleVersionStatusesOutputReference",
-		reflect.TypeOf((*DataTfeRegistryModuleVersionStatusesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataTfeRegistryModuleVersionStatusesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -335,7 +335,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "version", GoGetter: "Version"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataTfeRegistryModuleVersionStatusesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

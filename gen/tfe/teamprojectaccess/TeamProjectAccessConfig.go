@@ -6,9 +6,9 @@ import (
 
 type TeamProjectAccessConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type TeamProjectAccessConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/team_project_access#access TeamProjectAccess#access}.
 	Access *string `field:"required" json:"access" yaml:"access"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/team_project_access#project_id TeamProjectAccess#project_id}.
@@ -33,10 +33,9 @@ type TeamProjectAccessConfig struct {
 	// project_access block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/team_project_access#project_access TeamProjectAccess#project_access}
-	ProjectAccess interface{} `field:"optional" json:"projectAccess" yaml:"projectAccess"`
+	ProjectAccess any `field:"optional" json:"projectAccess" yaml:"projectAccess"`
 	// workspace_access block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/team_project_access#workspace_access TeamProjectAccess#workspace_access}
-	WorkspaceAccess interface{} `field:"optional" json:"workspaceAccess" yaml:"workspaceAccess"`
+	WorkspaceAccess any `field:"optional" json:"workspaceAccess" yaml:"workspaceAccess"`
 }
-

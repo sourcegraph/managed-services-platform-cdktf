@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-tfe.noCodeModule.NoCodeModule",
-		reflect.TypeOf((*NoCodeModule)(nil)).Elem(),
+		reflect.TypeFor[NoCodeModule](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -71,7 +71,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "versionPin", GoGetter: "VersionPin"},
 			_jsii_.MemberProperty{JsiiProperty: "versionPinInput", GoGetter: "VersionPinInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NoCodeModule{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -79,15 +79,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-tfe.noCodeModule.NoCodeModuleConfig",
-		reflect.TypeOf((*NoCodeModuleConfig)(nil)).Elem(),
+		reflect.TypeFor[NoCodeModuleConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-tfe.noCodeModule.NoCodeModuleVariableOptions",
-		reflect.TypeOf((*NoCodeModuleVariableOptions)(nil)).Elem(),
+		reflect.TypeFor[NoCodeModuleVariableOptions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-tfe.noCodeModule.NoCodeModuleVariableOptionsList",
-		reflect.TypeOf((*NoCodeModuleVariableOptionsList)(nil)).Elem(),
+		reflect.TypeFor[NoCodeModuleVariableOptionsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -101,7 +101,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NoCodeModuleVariableOptionsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -109,7 +109,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-tfe.noCodeModule.NoCodeModuleVariableOptionsOutputReference",
-		reflect.TypeOf((*NoCodeModuleVariableOptionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NoCodeModuleVariableOptionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -139,7 +139,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NoCodeModuleVariableOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

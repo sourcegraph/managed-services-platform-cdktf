@@ -12,34 +12,34 @@ import (
 // Represents a {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/sentinel_version tfe_sentinel_version}.
 type SentinelVersion interface {
 	cdktf.TerraformResource
-	Beta() interface{}
-	SetBeta(val interface{})
-	BetaInput() interface{}
+	Beta() any
+	SetBeta(val any)
+	BetaInput() any
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	Deprecated() interface{}
-	SetDeprecated(val interface{})
-	DeprecatedInput() interface{}
+	Deprecated() any
+	SetDeprecated(val any)
+	DeprecatedInput() any
 	DeprecatedReason() *string
 	SetDeprecatedReason(val *string)
 	DeprecatedReasonInput() *string
-	Enabled() interface{}
-	SetEnabled(val interface{})
-	EnabledInput() interface{}
+	Enabled() any
+	SetEnabled(val any)
+	EnabledInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -57,26 +57,26 @@ type SentinelVersion interface {
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
-	Official() interface{}
-	SetOfficial(val interface{})
-	OfficialInput() interface{}
+	Official() any
+	SetOfficial(val any)
+	OfficialInput() any
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Sha() *string
 	SetSha(val *string)
 	ShaInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Url() *string
@@ -89,9 +89,9 @@ type SentinelVersion interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -109,7 +109,7 @@ type SentinelVersion interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -121,7 +121,7 @@ type SentinelVersion interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -137,17 +137,17 @@ type SentinelVersion interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for SentinelVersion
@@ -155,8 +155,8 @@ type jsiiProxy_SentinelVersion struct {
 	internal.Type__cdktfTerraformResource
 }
 
-func (j *jsiiProxy_SentinelVersion) Beta() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SentinelVersion) Beta() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"beta",
@@ -165,8 +165,8 @@ func (j *jsiiProxy_SentinelVersion) Beta() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SentinelVersion) BetaInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SentinelVersion) BetaInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"betaInput",
@@ -185,8 +185,8 @@ func (j *jsiiProxy_SentinelVersion) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_SentinelVersion) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SentinelVersion) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -195,8 +195,8 @@ func (j *jsiiProxy_SentinelVersion) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SentinelVersion) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_SentinelVersion) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -205,8 +205,8 @@ func (j *jsiiProxy_SentinelVersion) ConstructNodeMetadata() *map[string]interfac
 	return returns
 }
 
-func (j *jsiiProxy_SentinelVersion) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SentinelVersion) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -225,8 +225,8 @@ func (j *jsiiProxy_SentinelVersion) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_SentinelVersion) Deprecated() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SentinelVersion) Deprecated() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"deprecated",
@@ -235,8 +235,8 @@ func (j *jsiiProxy_SentinelVersion) Deprecated() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SentinelVersion) DeprecatedInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SentinelVersion) DeprecatedInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"deprecatedInput",
@@ -265,8 +265,8 @@ func (j *jsiiProxy_SentinelVersion) DeprecatedReasonInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_SentinelVersion) Enabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SentinelVersion) Enabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabled",
@@ -275,8 +275,8 @@ func (j *jsiiProxy_SentinelVersion) Enabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SentinelVersion) EnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SentinelVersion) EnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabledInput",
@@ -355,8 +355,8 @@ func (j *jsiiProxy_SentinelVersion) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_SentinelVersion) Official() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SentinelVersion) Official() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"official",
@@ -365,8 +365,8 @@ func (j *jsiiProxy_SentinelVersion) Official() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SentinelVersion) OfficialInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SentinelVersion) OfficialInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"officialInput",
@@ -385,8 +385,8 @@ func (j *jsiiProxy_SentinelVersion) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_SentinelVersion) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_SentinelVersion) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -395,8 +395,8 @@ func (j *jsiiProxy_SentinelVersion) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SentinelVersion) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SentinelVersion) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -435,8 +435,8 @@ func (j *jsiiProxy_SentinelVersion) TerraformGeneratorMetadata() *cdktf.Terrafor
 	return returns
 }
 
-func (j *jsiiProxy_SentinelVersion) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_SentinelVersion) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -495,7 +495,6 @@ func (j *jsiiProxy_SentinelVersion) VersionInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/sentinel_version tfe_sentinel_version} Resource.
 func NewSentinelVersion(scope constructs.Construct, id *string, config *SentinelVersionConfig) SentinelVersion {
 	_init_.Initialize()
@@ -507,7 +506,7 @@ func NewSentinelVersion(scope constructs.Construct, id *string, config *Sentinel
 
 	_jsii_.Create(
 		"@cdktf/provider-tfe.sentinelVersion.SentinelVersion",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -520,12 +519,12 @@ func NewSentinelVersion_Override(s SentinelVersion, scope constructs.Construct, 
 
 	_jsii_.Create(
 		"@cdktf/provider-tfe.sentinelVersion.SentinelVersion",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		s,
 	)
 }
 
-func (j *jsiiProxy_SentinelVersion)SetBeta(val interface{}) {
+func (j *jsiiProxy_SentinelVersion) SetBeta(val any) {
 	if err := j.validateSetBetaParameters(val); err != nil {
 		panic(err)
 	}
@@ -536,7 +535,7 @@ func (j *jsiiProxy_SentinelVersion)SetBeta(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SentinelVersion)SetConnection(val interface{}) {
+func (j *jsiiProxy_SentinelVersion) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -547,7 +546,7 @@ func (j *jsiiProxy_SentinelVersion)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SentinelVersion)SetCount(val interface{}) {
+func (j *jsiiProxy_SentinelVersion) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -558,7 +557,7 @@ func (j *jsiiProxy_SentinelVersion)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SentinelVersion)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_SentinelVersion) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -566,7 +565,7 @@ func (j *jsiiProxy_SentinelVersion)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_SentinelVersion)SetDeprecated(val interface{}) {
+func (j *jsiiProxy_SentinelVersion) SetDeprecated(val any) {
 	if err := j.validateSetDeprecatedParameters(val); err != nil {
 		panic(err)
 	}
@@ -577,7 +576,7 @@ func (j *jsiiProxy_SentinelVersion)SetDeprecated(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SentinelVersion)SetDeprecatedReason(val *string) {
+func (j *jsiiProxy_SentinelVersion) SetDeprecatedReason(val *string) {
 	if err := j.validateSetDeprecatedReasonParameters(val); err != nil {
 		panic(err)
 	}
@@ -588,7 +587,7 @@ func (j *jsiiProxy_SentinelVersion)SetDeprecatedReason(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SentinelVersion)SetEnabled(val interface{}) {
+func (j *jsiiProxy_SentinelVersion) SetEnabled(val any) {
 	if err := j.validateSetEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -599,7 +598,7 @@ func (j *jsiiProxy_SentinelVersion)SetEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SentinelVersion)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_SentinelVersion) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -607,7 +606,7 @@ func (j *jsiiProxy_SentinelVersion)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_SentinelVersion)SetId(val *string) {
+func (j *jsiiProxy_SentinelVersion) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -618,7 +617,7 @@ func (j *jsiiProxy_SentinelVersion)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SentinelVersion)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_SentinelVersion) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -629,7 +628,7 @@ func (j *jsiiProxy_SentinelVersion)SetLifecycle(val *cdktf.TerraformResourceLife
 	)
 }
 
-func (j *jsiiProxy_SentinelVersion)SetOfficial(val interface{}) {
+func (j *jsiiProxy_SentinelVersion) SetOfficial(val any) {
 	if err := j.validateSetOfficialParameters(val); err != nil {
 		panic(err)
 	}
@@ -640,7 +639,7 @@ func (j *jsiiProxy_SentinelVersion)SetOfficial(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SentinelVersion)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_SentinelVersion) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -648,7 +647,7 @@ func (j *jsiiProxy_SentinelVersion)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_SentinelVersion)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_SentinelVersion) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -659,7 +658,7 @@ func (j *jsiiProxy_SentinelVersion)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SentinelVersion)SetSha(val *string) {
+func (j *jsiiProxy_SentinelVersion) SetSha(val *string) {
 	if err := j.validateSetShaParameters(val); err != nil {
 		panic(err)
 	}
@@ -670,7 +669,7 @@ func (j *jsiiProxy_SentinelVersion)SetSha(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SentinelVersion)SetUrl(val *string) {
+func (j *jsiiProxy_SentinelVersion) SetUrl(val *string) {
 	if err := j.validateSetUrlParameters(val); err != nil {
 		panic(err)
 	}
@@ -681,7 +680,7 @@ func (j *jsiiProxy_SentinelVersion)SetUrl(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SentinelVersion)SetVersion(val *string) {
+func (j *jsiiProxy_SentinelVersion) SetVersion(val *string) {
 	if err := j.validateSetVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -704,7 +703,7 @@ func SentinelVersion_GenerateConfigForImport(scope constructs.Construct, importT
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-tfe.sentinelVersion.SentinelVersion",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -728,7 +727,7 @@ func SentinelVersion_GenerateConfigForImport(scope constructs.Construct, importT
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func SentinelVersion_IsConstruct(x interface{}) *bool {
+func SentinelVersion_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSentinelVersion_IsConstructParameters(x); err != nil {
@@ -739,7 +738,7 @@ func SentinelVersion_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-tfe.sentinelVersion.SentinelVersion",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -747,7 +746,7 @@ func SentinelVersion_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func SentinelVersion_IsTerraformElement(x interface{}) *bool {
+func SentinelVersion_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSentinelVersion_IsTerraformElementParameters(x); err != nil {
@@ -758,7 +757,7 @@ func SentinelVersion_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-tfe.sentinelVersion.SentinelVersion",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -766,7 +765,7 @@ func SentinelVersion_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func SentinelVersion_IsTerraformResource(x interface{}) *bool {
+func SentinelVersion_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSentinelVersion_IsTerraformResourceParameters(x); err != nil {
@@ -777,7 +776,7 @@ func SentinelVersion_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-tfe.sentinelVersion.SentinelVersion",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -802,31 +801,31 @@ func (s *jsiiProxy_SentinelVersion) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (s *jsiiProxy_SentinelVersion) AddOverride(path *string, value interface{}) {
+func (s *jsiiProxy_SentinelVersion) AddOverride(path *string, value any) {
 	if err := s.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (s *jsiiProxy_SentinelVersion) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_SentinelVersion) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -842,7 +841,7 @@ func (s *jsiiProxy_SentinelVersion) GetBooleanAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -858,7 +857,7 @@ func (s *jsiiProxy_SentinelVersion) GetBooleanMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -874,7 +873,7 @@ func (s *jsiiProxy_SentinelVersion) GetListAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -890,7 +889,7 @@ func (s *jsiiProxy_SentinelVersion) GetNumberAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -906,7 +905,7 @@ func (s *jsiiProxy_SentinelVersion) GetNumberListAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -922,7 +921,7 @@ func (s *jsiiProxy_SentinelVersion) GetNumberMapAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -938,7 +937,7 @@ func (s *jsiiProxy_SentinelVersion) GetStringAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -954,15 +953,15 @@ func (s *jsiiProxy_SentinelVersion) GetStringMapAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_SentinelVersion) HasResourceMove() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SentinelVersion) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -981,7 +980,7 @@ func (s *jsiiProxy_SentinelVersion) ImportFrom(id *string, provider cdktf.Terraf
 	_jsii_.InvokeVoid(
 		s,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -994,7 +993,7 @@ func (s *jsiiProxy_SentinelVersion) InterpolationForAttribute(terraformAttribute
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1008,18 +1007,18 @@ func (s *jsiiProxy_SentinelVersion) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (s *jsiiProxy_SentinelVersion) MoveTo(moveTarget *string, index interface{}) {
+func (s *jsiiProxy_SentinelVersion) MoveTo(moveTarget *string, index any) {
 	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1030,7 +1029,7 @@ func (s *jsiiProxy_SentinelVersion) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1041,7 +1040,7 @@ func (s *jsiiProxy_SentinelVersion) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1101,8 +1100,8 @@ func (s *jsiiProxy_SentinelVersion) ResetOverrideLogicalId() {
 	)
 }
 
-func (s *jsiiProxy_SentinelVersion) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_SentinelVersion) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1114,8 +1113,8 @@ func (s *jsiiProxy_SentinelVersion) SynthesizeAttributes() *map[string]interface
 	return returns
 }
 
-func (s *jsiiProxy_SentinelVersion) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_SentinelVersion) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1127,8 +1126,8 @@ func (s *jsiiProxy_SentinelVersion) SynthesizeHclAttributes() *map[string]interf
 	return returns
 }
 
-func (s *jsiiProxy_SentinelVersion) ToHclTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SentinelVersion) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1140,8 +1139,8 @@ func (s *jsiiProxy_SentinelVersion) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (s *jsiiProxy_SentinelVersion) ToMetadata() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SentinelVersion) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1166,8 +1165,8 @@ func (s *jsiiProxy_SentinelVersion) ToString() *string {
 	return returns
 }
 
-func (s *jsiiProxy_SentinelVersion) ToTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SentinelVersion) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1178,4 +1177,3 @@ func (s *jsiiProxy_SentinelVersion) ToTerraform() interface{} {
 
 	return returns
 }
-

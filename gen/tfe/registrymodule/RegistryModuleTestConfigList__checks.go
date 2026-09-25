@@ -34,7 +34,7 @@ func (r *jsiiProxy_RegistryModuleTestConfigList) validateResolveParameters(_cont
 	return nil
 }
 
-func (j *jsiiProxy_RegistryModuleTestConfigList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_RegistryModuleTestConfigList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewRegistryModuleTestConfigListParameters(terraformResource cdktf.I
 
 	return nil
 }
-

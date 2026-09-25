@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-tfe.dataTfeOrganization.DataTfeOrganization",
-		reflect.TypeOf((*DataTfeOrganization)(nil)).Elem(),
+		reflect.TypeFor[DataTfeOrganization](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "aggregatedCommitStatusEnabled", GoGetter: "AggregatedCommitStatusEnabled"},
@@ -62,7 +62,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "twoFactorConformant", GoGetter: "TwoFactorConformant"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataTfeOrganization{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -70,6 +70,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-tfe.dataTfeOrganization.DataTfeOrganizationConfig",
-		reflect.TypeOf((*DataTfeOrganizationConfig)(nil)).Elem(),
+		reflect.TypeFor[DataTfeOrganizationConfig](),
 	)
 }

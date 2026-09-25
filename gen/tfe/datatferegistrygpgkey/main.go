@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-tfe.dataTfeRegistryGpgKey.DataTfeRegistryGpgKey",
-		reflect.TypeOf((*DataTfeRegistryGpgKey)(nil)).Elem(),
+		reflect.TypeFor[DataTfeRegistryGpgKey](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "asciiArmor", GoGetter: "AsciiArmor"},
@@ -53,7 +53,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "updatedAt", GoGetter: "UpdatedAt"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataTfeRegistryGpgKey{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -61,6 +61,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-tfe.dataTfeRegistryGpgKey.DataTfeRegistryGpgKeyConfig",
-		reflect.TypeOf((*DataTfeRegistryGpgKeyConfig)(nil)).Elem(),
+		reflect.TypeFor[DataTfeRegistryGpgKeyConfig](),
 	)
 }

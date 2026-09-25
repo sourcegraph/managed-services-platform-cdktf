@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-tfe.dataTfeWorkspaceIds.DataTfeWorkspaceIds",
-		reflect.TypeOf((*DataTfeWorkspaceIds)(nil)).Elem(),
+		reflect.TypeFor[DataTfeWorkspaceIds](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
@@ -66,7 +66,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataTfeWorkspaceIds{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -74,15 +74,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-tfe.dataTfeWorkspaceIds.DataTfeWorkspaceIdsConfig",
-		reflect.TypeOf((*DataTfeWorkspaceIdsConfig)(nil)).Elem(),
+		reflect.TypeFor[DataTfeWorkspaceIdsConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-tfe.dataTfeWorkspaceIds.DataTfeWorkspaceIdsTagFilters",
-		reflect.TypeOf((*DataTfeWorkspaceIdsTagFilters)(nil)).Elem(),
+		reflect.TypeFor[DataTfeWorkspaceIdsTagFilters](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-tfe.dataTfeWorkspaceIds.DataTfeWorkspaceIdsTagFiltersOutputReference",
-		reflect.TypeOf((*DataTfeWorkspaceIdsTagFiltersOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataTfeWorkspaceIdsTagFiltersOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -112,7 +112,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataTfeWorkspaceIdsTagFiltersOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

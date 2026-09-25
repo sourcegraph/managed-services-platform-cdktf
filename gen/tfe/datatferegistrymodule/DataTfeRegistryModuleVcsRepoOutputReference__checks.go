@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataTfeRegistryModuleVcsRepoOutputReference) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_DataTfeRegistryModuleVcsRepoOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataTfeRegistryModuleVcsRepoOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_DataTfeRegistryModuleVcsRepoOutputReference) validateSetCompl
 	return nil
 }
 
-func (j *jsiiProxy_DataTfeRegistryModuleVcsRepoOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataTfeRegistryModuleVcsRepoOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -222,4 +222,3 @@ func validateNewDataTfeRegistryModuleVcsRepoOutputReferenceParameters(terraformR
 
 	return nil
 }
-
