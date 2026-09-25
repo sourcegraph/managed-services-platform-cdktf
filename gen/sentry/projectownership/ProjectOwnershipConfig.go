@@ -21,29 +21,29 @@ type ProjectOwnershipConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The auto-assignment mode.
 	//
-	// The options are: `none` - No auto-assignment, `all` - Assign all issues, `unhandled` - Assign unhandled issues.
+	// The options are: `Auto Assign to Issue Owner`, `Auto Assign to Suspect Commits`, and `Turn off Auto-Assignment`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs/resources/project_ownership#auto_assignment ProjectOwnership#auto_assignment}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.15.7/docs/resources/project_ownership#auto_assignment ProjectOwnership#auto_assignment}
 	AutoAssignment *string `field:"required" json:"autoAssignment" yaml:"autoAssignment"`
 	// Whether to automatically sync codeowners.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs/resources/project_ownership#codeowners_auto_sync ProjectOwnership#codeowners_auto_sync}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.15.7/docs/resources/project_ownership#codeowners_auto_sync ProjectOwnership#codeowners_auto_sync}
 	CodeownersAutoSync interface{} `field:"required" json:"codeownersAutoSync" yaml:"codeownersAutoSync"`
 	// Whether to fall through to the default ownership rules.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs/resources/project_ownership#fallthrough ProjectOwnership#fallthrough}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.15.7/docs/resources/project_ownership#fallthrough ProjectOwnership#fallthrough}
 	Fallthrough interface{} `field:"required" json:"fallthrough" yaml:"fallthrough"`
 	// The organization of this resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs/resources/project_ownership#organization ProjectOwnership#organization}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.15.7/docs/resources/project_ownership#organization ProjectOwnership#organization}
 	Organization *string `field:"required" json:"organization" yaml:"organization"`
 	// The project of this resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs/resources/project_ownership#project ProjectOwnership#project}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.15.7/docs/resources/project_ownership#project ProjectOwnership#project}
 	Project *string `field:"required" json:"project" yaml:"project"`
 	// Raw input for ownership configuration.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs/resources/project_ownership#raw ProjectOwnership#raw}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/jianyuan/sentry/0.15.7/docs/resources/project_ownership#raw ProjectOwnership#raw}
 	Raw *string `field:"required" json:"raw" yaml:"raw"`
 }
 

@@ -128,6 +128,10 @@ func (j *jsiiProxy_Project) validateSetGroupingEnhancementsParameters(val *strin
 	return nil
 }
 
+func (j *jsiiProxy_Project) validateSetHighlightTagsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Project) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

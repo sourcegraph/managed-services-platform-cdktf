@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/sentry/datasentryproject/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs/data-sources/project sentry_project}.
+// Represents a {@link https://registry.terraform.io/providers/jianyuan/sentry/0.15.7/docs/data-sources/project sentry_project}.
 type DataSentryProject interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -58,6 +58,8 @@ type DataSentryProject interface {
 	Slug() *string
 	SetSlug(val *string)
 	SlugInput() *string
+	SubjectTemplate() *string
+	Teams() DataSentryProjectTeamsList
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -341,6 +343,26 @@ func (j *jsiiProxy_DataSentryProject) SlugInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataSentryProject) SubjectTemplate() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"subjectTemplate",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataSentryProject) Teams() DataSentryProjectTeamsList {
+	var returns DataSentryProjectTeamsList
+	_jsii_.Get(
+		j,
+		"teams",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataSentryProject) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -372,7 +394,7 @@ func (j *jsiiProxy_DataSentryProject) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs/data-sources/project sentry_project} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.15.7/docs/data-sources/project sentry_project} Data Source.
 func NewDataSentryProject(scope constructs.Construct, id *string, config *DataSentryProjectConfig) DataSentryProject {
 	_init_.Initialize()
 
@@ -390,7 +412,7 @@ func NewDataSentryProject(scope constructs.Construct, id *string, config *DataSe
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs/data-sources/project sentry_project} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.15.7/docs/data-sources/project sentry_project} Data Source.
 func NewDataSentryProject_Override(d DataSentryProject, scope constructs.Construct, id *string, config *DataSentryProjectConfig) {
 	_init_.Initialize()
 

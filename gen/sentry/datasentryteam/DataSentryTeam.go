@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/sentry/datasentryteam/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs/data-sources/team sentry_team}.
+// Represents a {@link https://registry.terraform.io/providers/jianyuan/sentry/0.15.7/docs/data-sources/team sentry_team}.
 type DataSentryTeam interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -34,8 +34,6 @@ type DataSentryTeam interface {
 	FriendlyUniqueId() *string
 	HasAccess() cdktf.IResolvable
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	InternalId() *string
 	IsMember() cdktf.IResolvable
 	IsPending() cdktf.IResolvable
@@ -89,7 +87,6 @@ type DataSentryTeam interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -197,16 +194,6 @@ func (j *jsiiProxy_DataSentryTeam) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataSentryTeam) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
 		&returns,
 	)
 	return returns
@@ -363,7 +350,7 @@ func (j *jsiiProxy_DataSentryTeam) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs/data-sources/team sentry_team} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.15.7/docs/data-sources/team sentry_team} Data Source.
 func NewDataSentryTeam(scope constructs.Construct, id *string, config *DataSentryTeamConfig) DataSentryTeam {
 	_init_.Initialize()
 
@@ -381,7 +368,7 @@ func NewDataSentryTeam(scope constructs.Construct, id *string, config *DataSentr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs/data-sources/team sentry_team} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.15.7/docs/data-sources/team sentry_team} Data Source.
 func NewDataSentryTeam_Override(d DataSentryTeam, scope constructs.Construct, id *string, config *DataSentryTeamConfig) {
 	_init_.Initialize()
 
@@ -415,17 +402,6 @@ func (j *jsiiProxy_DataSentryTeam)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataSentryTeam)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -753,14 +729,6 @@ func (d *jsiiProxy_DataSentryTeam) OverrideLogicalId(newLogicalId *string) {
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
-	)
-}
-
-func (d *jsiiProxy_DataSentryTeam) ResetId() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetId",
-		nil, // no parameters
 	)
 }
 

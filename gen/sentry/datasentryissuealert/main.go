@@ -481,6 +481,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "sentryAppInstallationUuid", GoGetter: "SentryAppInstallationUuid"},
 			_jsii_.MemberProperty{JsiiProperty: "settings", GoGetter: "Settings"},
+			_jsii_.MemberProperty{JsiiProperty: "settingsLabels", GoGetter: "SettingsLabels"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},

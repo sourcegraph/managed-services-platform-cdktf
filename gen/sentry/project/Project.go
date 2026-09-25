@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/sentry/project/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs/resources/project sentry_project}.
+// Represents a {@link https://registry.terraform.io/providers/jianyuan/sentry/0.15.7/docs/resources/project sentry_project}.
 type Project interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -59,6 +59,9 @@ type Project interface {
 	GroupingEnhancements() *string
 	SetGroupingEnhancements(val *string)
 	GroupingEnhancementsInput() *string
+	HighlightTags() *[]*string
+	SetHighlightTags(val *[]*string)
+	HighlightTagsInput() *[]*string
 	Id() *string
 	InternalId() *string
 	// Experimental.
@@ -154,10 +157,10 @@ type Project interface {
 	ResetFilters()
 	ResetFingerprintingRules()
 	ResetGroupingEnhancements()
+	ResetHighlightTags()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetPlatform()
 	ResetResolveAge()
 	ResetSlug()
 	SynthesizeAttributes() *map[string]interface{}
@@ -428,6 +431,26 @@ func (j *jsiiProxy_Project) GroupingEnhancementsInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Project) HighlightTags() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"highlightTags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Project) HighlightTagsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"highlightTagsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Project) Id() *string {
 	var returns *string
 	_jsii_.Get(
@@ -649,7 +672,7 @@ func (j *jsiiProxy_Project) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs/resources/project sentry_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.15.7/docs/resources/project sentry_project} Resource.
 func NewProject(scope constructs.Construct, id *string, config *ProjectConfig) Project {
 	_init_.Initialize()
 
@@ -667,7 +690,7 @@ func NewProject(scope constructs.Construct, id *string, config *ProjectConfig) P
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs/resources/project sentry_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.15.7/docs/resources/project sentry_project} Resource.
 func NewProject_Override(p Project, scope constructs.Construct, id *string, config *ProjectConfig) {
 	_init_.Initialize()
 
@@ -778,6 +801,17 @@ func (j *jsiiProxy_Project)SetGroupingEnhancements(val *string) {
 	_jsii_.Set(
 		j,
 		"groupingEnhancements",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Project)SetHighlightTags(val *[]*string) {
+	if err := j.validateSetHighlightTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"highlightTags",
 		val,
 	)
 }
@@ -1317,18 +1351,18 @@ func (p *jsiiProxy_Project) ResetGroupingEnhancements() {
 	)
 }
 
-func (p *jsiiProxy_Project) ResetOverrideLogicalId() {
+func (p *jsiiProxy_Project) ResetHighlightTags() {
 	_jsii_.InvokeVoid(
 		p,
-		"resetOverrideLogicalId",
+		"resetHighlightTags",
 		nil, // no parameters
 	)
 }
 
-func (p *jsiiProxy_Project) ResetPlatform() {
+func (p *jsiiProxy_Project) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		p,
-		"resetPlatform",
+		"resetOverrideLogicalId",
 		nil, // no parameters
 	)
 }

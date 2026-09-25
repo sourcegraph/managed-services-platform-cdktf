@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/sentry/datasentryorganizationmember/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs/data-sources/organization_member sentry_organization_member}.
+// Represents a {@link https://registry.terraform.io/providers/jianyuan/sentry/0.15.7/docs/data-sources/organization_member sentry_organization_member}.
 type DataSentryOrganizationMember interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -36,6 +36,7 @@ type DataSentryOrganizationMember interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
+	InternalId() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -205,6 +206,16 @@ func (j *jsiiProxy_DataSentryOrganizationMember) Id() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataSentryOrganizationMember) InternalId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"internalId",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataSentryOrganizationMember) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -306,7 +317,7 @@ func (j *jsiiProxy_DataSentryOrganizationMember) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs/data-sources/organization_member sentry_organization_member} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.15.7/docs/data-sources/organization_member sentry_organization_member} Data Source.
 func NewDataSentryOrganizationMember(scope constructs.Construct, id *string, config *DataSentryOrganizationMemberConfig) DataSentryOrganizationMember {
 	_init_.Initialize()
 
@@ -324,7 +335,7 @@ func NewDataSentryOrganizationMember(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.14.5/docs/data-sources/organization_member sentry_organization_member} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/jianyuan/sentry/0.15.7/docs/data-sources/organization_member sentry_organization_member} Data Source.
 func NewDataSentryOrganizationMember_Override(d DataSentryOrganizationMember, scope constructs.Construct, id *string, config *DataSentryOrganizationMemberConfig) {
 	_init_.Initialize()
 

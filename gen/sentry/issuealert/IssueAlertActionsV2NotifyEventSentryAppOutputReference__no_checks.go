@@ -68,6 +68,10 @@ func (j *jsiiProxy_IssueAlertActionsV2NotifyEventSentryAppOutputReference) valid
 	return nil
 }
 
+func (j *jsiiProxy_IssueAlertActionsV2NotifyEventSentryAppOutputReference) validateSetSettingsLabelsParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_IssueAlertActionsV2NotifyEventSentryAppOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

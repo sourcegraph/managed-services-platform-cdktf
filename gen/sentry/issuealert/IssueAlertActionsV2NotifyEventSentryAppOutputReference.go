@@ -36,6 +36,9 @@ type IssueAlertActionsV2NotifyEventSentryAppOutputReference interface {
 	Settings() *map[string]*string
 	SetSettings(val *map[string]*string)
 	SettingsInput() *map[string]*string
+	SettingsLabels() *map[string]*string
+	SetSettingsLabels(val *map[string]*string)
+	SettingsLabelsInput() *map[string]*string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -69,6 +72,7 @@ type IssueAlertActionsV2NotifyEventSentryAppOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetSettings()
+	ResetSettingsLabels()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -184,6 +188,26 @@ func (j *jsiiProxy_IssueAlertActionsV2NotifyEventSentryAppOutputReference) Setti
 	return returns
 }
 
+func (j *jsiiProxy_IssueAlertActionsV2NotifyEventSentryAppOutputReference) SettingsLabels() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"settingsLabels",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IssueAlertActionsV2NotifyEventSentryAppOutputReference) SettingsLabelsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"settingsLabelsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_IssueAlertActionsV2NotifyEventSentryAppOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -283,6 +307,17 @@ func (j *jsiiProxy_IssueAlertActionsV2NotifyEventSentryAppOutputReference)SetSet
 	_jsii_.Set(
 		j,
 		"settings",
+		val,
+	)
+}
+
+func (j *jsiiProxy_IssueAlertActionsV2NotifyEventSentryAppOutputReference)SetSettingsLabels(val *map[string]*string) {
+	if err := j.validateSetSettingsLabelsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"settingsLabels",
 		val,
 	)
 }
@@ -499,6 +534,14 @@ func (i *jsiiProxy_IssueAlertActionsV2NotifyEventSentryAppOutputReference) Reset
 	_jsii_.InvokeVoid(
 		i,
 		"resetSettings",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_IssueAlertActionsV2NotifyEventSentryAppOutputReference) ResetSettingsLabels() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetSettingsLabels",
 		nil, // no parameters
 	)
 }
