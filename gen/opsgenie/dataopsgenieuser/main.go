@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-opsgenie.dataOpsgenieUser.DataOpsgenieUser",
-		reflect.TypeOf((*DataOpsgenieUser)(nil)).Elem(),
+		reflect.TypeFor[DataOpsgenieUser](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
@@ -62,7 +62,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "username", GoGetter: "Username"},
 			_jsii_.MemberProperty{JsiiProperty: "usernameInput", GoGetter: "UsernameInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataOpsgenieUser{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -70,6 +70,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-opsgenie.dataOpsgenieUser.DataOpsgenieUserConfig",
-		reflect.TypeOf((*DataOpsgenieUserConfig)(nil)).Elem(),
+		reflect.TypeFor[DataOpsgenieUserConfig](),
 	)
 }

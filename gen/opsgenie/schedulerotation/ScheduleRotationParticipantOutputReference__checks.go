@@ -98,7 +98,7 @@ func (s *jsiiProxy_ScheduleRotationParticipantOutputReference) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_ScheduleRotationParticipantOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ScheduleRotationParticipantOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_ScheduleRotationParticipantOutputReference) validateSetIdPara
 	return nil
 }
 
-func (j *jsiiProxy_ScheduleRotationParticipantOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ScheduleRotationParticipantOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewScheduleRotationParticipantOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

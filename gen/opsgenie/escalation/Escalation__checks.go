@@ -19,7 +19,7 @@ func (e *jsiiProxy_Escalation) validateAddMoveTargetParameters(moveTarget *strin
 	return nil
 }
 
-func (e *jsiiProxy_Escalation) validateAddOverrideParameters(path *string, value interface{}) error {
+func (e *jsiiProxy_Escalation) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (e *jsiiProxy_Escalation) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_Escalation) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (e *jsiiProxy_Escalation) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (e *jsiiProxy_Escalation) validateOverrideLogicalIdParameters(newLogicalId 
 	return nil
 }
 
-func (e *jsiiProxy_Escalation) validatePutRepeatParameters(value interface{}) error {
+func (e *jsiiProxy_Escalation) validatePutRepeatParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -235,7 +235,7 @@ func (e *jsiiProxy_Escalation) validatePutRepeatParameters(value interface{}) er
 	return nil
 }
 
-func (e *jsiiProxy_Escalation) validatePutRulesParameters(value interface{}) error {
+func (e *jsiiProxy_Escalation) validatePutRulesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -282,7 +282,7 @@ func validateEscalation_GenerateConfigForImportParameters(scope constructs.Const
 	return nil
 }
 
-func validateEscalation_IsConstructParameters(x interface{}) error {
+func validateEscalation_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -290,7 +290,7 @@ func validateEscalation_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateEscalation_IsTerraformElementParameters(x interface{}) error {
+func validateEscalation_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -298,7 +298,7 @@ func validateEscalation_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateEscalation_IsTerraformResourceParameters(x interface{}) error {
+func validateEscalation_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -306,7 +306,7 @@ func validateEscalation_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_Escalation) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_Escalation) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -339,7 +339,7 @@ func (j *jsiiProxy_Escalation) validateSetConnectionParameters(val interface{}) 
 	return nil
 }
 
-func (j *jsiiProxy_Escalation) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_Escalation) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -436,7 +436,7 @@ func (j *jsiiProxy_Escalation) validateSetOwnerTeamIdParameters(val *string) err
 	return nil
 }
 
-func (j *jsiiProxy_Escalation) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_Escalation) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -500,4 +500,3 @@ func validateNewEscalationParameters(scope constructs.Construct, id *string, con
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (n *jsiiProxy_NotificationRuleTimeRestrictionRestrictionOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_NotificationRuleTimeRestrictionRestrictionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NotificationRuleTimeRestrictionRestrictionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -230,4 +230,3 @@ func validateNewNotificationRuleTimeRestrictionRestrictionOutputReferenceParamet
 
 	return nil
 }
-

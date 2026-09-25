@@ -90,7 +90,7 @@ func (t *jsiiProxy_TeamRoutingRuleCriteriaOutputReference) validateInterpolation
 	return nil
 }
 
-func (t *jsiiProxy_TeamRoutingRuleCriteriaOutputReference) validatePutConditionsParameters(value interface{}) error {
+func (t *jsiiProxy_TeamRoutingRuleCriteriaOutputReference) validatePutConditionsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (t *jsiiProxy_TeamRoutingRuleCriteriaOutputReference) validateResolveParame
 	return nil
 }
 
-func (j *jsiiProxy_TeamRoutingRuleCriteriaOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_TeamRoutingRuleCriteriaOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -194,7 +194,7 @@ func (j *jsiiProxy_TeamRoutingRuleCriteriaOutputReference) validateSetComplexObj
 	return nil
 }
 
-func (j *jsiiProxy_TeamRoutingRuleCriteriaOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_TeamRoutingRuleCriteriaOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -261,4 +261,3 @@ func validateNewTeamRoutingRuleCriteriaOutputReferenceParameters(terraformResour
 
 	return nil
 }
-

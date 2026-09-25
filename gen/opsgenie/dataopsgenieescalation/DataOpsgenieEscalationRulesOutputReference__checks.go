@@ -90,7 +90,7 @@ func (d *jsiiProxy_DataOpsgenieEscalationRulesOutputReference) validateInterpola
 	return nil
 }
 
-func (d *jsiiProxy_DataOpsgenieEscalationRulesOutputReference) validatePutRecipientParameters(value interface{}) error {
+func (d *jsiiProxy_DataOpsgenieEscalationRulesOutputReference) validatePutRecipientParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (d *jsiiProxy_DataOpsgenieEscalationRulesOutputReference) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_DataOpsgenieEscalationRulesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataOpsgenieEscalationRulesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -210,7 +210,7 @@ func (j *jsiiProxy_DataOpsgenieEscalationRulesOutputReference) validateSetDelayP
 	return nil
 }
 
-func (j *jsiiProxy_DataOpsgenieEscalationRulesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataOpsgenieEscalationRulesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -277,4 +277,3 @@ func validateNewDataOpsgenieEscalationRulesOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

@@ -12,9 +12,9 @@ type NotificationPolicyAutoRestartActionOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -26,7 +26,7 @@ type NotificationPolicyAutoRestartActionOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	Duration() NotificationPolicyAutoRestartActionDurationList
-	DurationInput() interface{}
+	DurationInput() any
 	// Experimental.
 	Fqn() *string
 	InternalValue() *NotificationPolicyAutoRestartAction
@@ -45,7 +45,7 @@ type NotificationPolicyAutoRestartActionOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -66,10 +66,10 @@ type NotificationPolicyAutoRestartActionOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutDuration(value interface{})
+	PutDuration(value any)
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -82,8 +82,8 @@ type jsiiProxy_NotificationPolicyAutoRestartActionOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_NotificationPolicyAutoRestartActionOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NotificationPolicyAutoRestartActionOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -122,8 +122,8 @@ func (j *jsiiProxy_NotificationPolicyAutoRestartActionOutputReference) Duration(
 	return returns
 }
 
-func (j *jsiiProxy_NotificationPolicyAutoRestartActionOutputReference) DurationInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NotificationPolicyAutoRestartActionOutputReference) DurationInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"durationInput",
@@ -192,7 +192,6 @@ func (j *jsiiProxy_NotificationPolicyAutoRestartActionOutputReference) Terraform
 	return returns
 }
 
-
 func NewNotificationPolicyAutoRestartActionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) NotificationPolicyAutoRestartActionOutputReference {
 	_init_.Initialize()
 
@@ -203,7 +202,7 @@ func NewNotificationPolicyAutoRestartActionOutputReference(terraformResource cdk
 
 	_jsii_.Create(
 		"@cdktf/provider-opsgenie.notificationPolicy.NotificationPolicyAutoRestartActionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -215,12 +214,12 @@ func NewNotificationPolicyAutoRestartActionOutputReference_Override(n Notificati
 
 	_jsii_.Create(
 		"@cdktf/provider-opsgenie.notificationPolicy.NotificationPolicyAutoRestartActionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		n,
 	)
 }
 
-func (j *jsiiProxy_NotificationPolicyAutoRestartActionOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_NotificationPolicyAutoRestartActionOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -231,7 +230,7 @@ func (j *jsiiProxy_NotificationPolicyAutoRestartActionOutputReference)SetComplex
 	)
 }
 
-func (j *jsiiProxy_NotificationPolicyAutoRestartActionOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_NotificationPolicyAutoRestartActionOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -242,7 +241,7 @@ func (j *jsiiProxy_NotificationPolicyAutoRestartActionOutputReference)SetComplex
 	)
 }
 
-func (j *jsiiProxy_NotificationPolicyAutoRestartActionOutputReference)SetInternalValue(val *NotificationPolicyAutoRestartAction) {
+func (j *jsiiProxy_NotificationPolicyAutoRestartActionOutputReference) SetInternalValue(val *NotificationPolicyAutoRestartAction) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -253,7 +252,7 @@ func (j *jsiiProxy_NotificationPolicyAutoRestartActionOutputReference)SetInterna
 	)
 }
 
-func (j *jsiiProxy_NotificationPolicyAutoRestartActionOutputReference)SetMaxRepeatCount(val *float64) {
+func (j *jsiiProxy_NotificationPolicyAutoRestartActionOutputReference) SetMaxRepeatCount(val *float64) {
 	if err := j.validateSetMaxRepeatCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -264,7 +263,7 @@ func (j *jsiiProxy_NotificationPolicyAutoRestartActionOutputReference)SetMaxRepe
 	)
 }
 
-func (j *jsiiProxy_NotificationPolicyAutoRestartActionOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_NotificationPolicyAutoRestartActionOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -275,7 +274,7 @@ func (j *jsiiProxy_NotificationPolicyAutoRestartActionOutputReference)SetTerrafo
 	)
 }
 
-func (j *jsiiProxy_NotificationPolicyAutoRestartActionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_NotificationPolicyAutoRestartActionOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -299,16 +298,16 @@ func (n *jsiiProxy_NotificationPolicyAutoRestartActionOutputReference) ComputeFq
 	return returns
 }
 
-func (n *jsiiProxy_NotificationPolicyAutoRestartActionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (n *jsiiProxy_NotificationPolicyAutoRestartActionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := n.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -324,7 +323,7 @@ func (n *jsiiProxy_NotificationPolicyAutoRestartActionOutputReference) GetBoolea
 	_jsii_.Invoke(
 		n,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -340,7 +339,7 @@ func (n *jsiiProxy_NotificationPolicyAutoRestartActionOutputReference) GetBoolea
 	_jsii_.Invoke(
 		n,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -356,7 +355,7 @@ func (n *jsiiProxy_NotificationPolicyAutoRestartActionOutputReference) GetListAt
 	_jsii_.Invoke(
 		n,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -372,7 +371,7 @@ func (n *jsiiProxy_NotificationPolicyAutoRestartActionOutputReference) GetNumber
 	_jsii_.Invoke(
 		n,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -388,7 +387,7 @@ func (n *jsiiProxy_NotificationPolicyAutoRestartActionOutputReference) GetNumber
 	_jsii_.Invoke(
 		n,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -404,7 +403,7 @@ func (n *jsiiProxy_NotificationPolicyAutoRestartActionOutputReference) GetNumber
 	_jsii_.Invoke(
 		n,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -420,7 +419,7 @@ func (n *jsiiProxy_NotificationPolicyAutoRestartActionOutputReference) GetString
 	_jsii_.Invoke(
 		n,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -436,7 +435,7 @@ func (n *jsiiProxy_NotificationPolicyAutoRestartActionOutputReference) GetString
 	_jsii_.Invoke(
 		n,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -465,34 +464,34 @@ func (n *jsiiProxy_NotificationPolicyAutoRestartActionOutputReference) Interpola
 	_jsii_.Invoke(
 		n,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (n *jsiiProxy_NotificationPolicyAutoRestartActionOutputReference) PutDuration(value interface{}) {
+func (n *jsiiProxy_NotificationPolicyAutoRestartActionOutputReference) PutDuration(value any) {
 	if err := n.validatePutDurationParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		n,
 		"putDuration",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (n *jsiiProxy_NotificationPolicyAutoRestartActionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (n *jsiiProxy_NotificationPolicyAutoRestartActionOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := n.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		n,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -511,4 +510,3 @@ func (n *jsiiProxy_NotificationPolicyAutoRestartActionOutputReference) ToString(
 
 	return returns
 }
-

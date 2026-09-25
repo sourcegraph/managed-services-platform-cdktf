@@ -19,7 +19,7 @@ func (e *jsiiProxy_EmailIntegration) validateAddMoveTargetParameters(moveTarget 
 	return nil
 }
 
-func (e *jsiiProxy_EmailIntegration) validateAddOverrideParameters(path *string, value interface{}) error {
+func (e *jsiiProxy_EmailIntegration) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (e *jsiiProxy_EmailIntegration) validateMoveFromIdParameters(id *string) er
 	return nil
 }
 
-func (e *jsiiProxy_EmailIntegration) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (e *jsiiProxy_EmailIntegration) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (e *jsiiProxy_EmailIntegration) validateOverrideLogicalIdParameters(newLogi
 	return nil
 }
 
-func (e *jsiiProxy_EmailIntegration) validatePutRespondersParameters(value interface{}) error {
+func (e *jsiiProxy_EmailIntegration) validatePutRespondersParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -251,7 +251,7 @@ func validateEmailIntegration_GenerateConfigForImportParameters(scope constructs
 	return nil
 }
 
-func validateEmailIntegration_IsConstructParameters(x interface{}) error {
+func validateEmailIntegration_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -259,7 +259,7 @@ func validateEmailIntegration_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateEmailIntegration_IsTerraformElementParameters(x interface{}) error {
+func validateEmailIntegration_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -267,7 +267,7 @@ func validateEmailIntegration_IsTerraformElementParameters(x interface{}) error 
 	return nil
 }
 
-func validateEmailIntegration_IsTerraformResourceParameters(x interface{}) error {
+func validateEmailIntegration_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -275,7 +275,7 @@ func validateEmailIntegration_IsTerraformResourceParameters(x interface{}) error
 	return nil
 }
 
-func (j *jsiiProxy_EmailIntegration) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_EmailIntegration) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -308,7 +308,7 @@ func (j *jsiiProxy_EmailIntegration) validateSetConnectionParameters(val interfa
 	return nil
 }
 
-func (j *jsiiProxy_EmailIntegration) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_EmailIntegration) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -373,7 +373,7 @@ func (j *jsiiProxy_EmailIntegration) validateSetEmailUsernameParameters(val *str
 	return nil
 }
 
-func (j *jsiiProxy_EmailIntegration) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_EmailIntegration) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -401,7 +401,7 @@ func (j *jsiiProxy_EmailIntegration) validateSetIdParameters(val *string) error 
 	return nil
 }
 
-func (j *jsiiProxy_EmailIntegration) validateSetIgnoreRespondersFromPayloadParameters(val interface{}) error {
+func (j *jsiiProxy_EmailIntegration) validateSetIgnoreRespondersFromPayloadParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -445,7 +445,7 @@ func (j *jsiiProxy_EmailIntegration) validateSetOwnerTeamIdParameters(val *strin
 	return nil
 }
 
-func (j *jsiiProxy_EmailIntegration) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_EmailIntegration) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -491,7 +491,7 @@ func (j *jsiiProxy_EmailIntegration) validateSetProvisionersParameters(val *[]in
 	return nil
 }
 
-func (j *jsiiProxy_EmailIntegration) validateSetSuppressNotificationsParameters(val interface{}) error {
+func (j *jsiiProxy_EmailIntegration) validateSetSuppressNotificationsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -529,4 +529,3 @@ func validateNewEmailIntegrationParameters(scope constructs.Construct, id *strin
 
 	return nil
 }
-

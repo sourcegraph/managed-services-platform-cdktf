@@ -6,9 +6,9 @@ import (
 
 type CustomRoleConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type CustomRoleConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/resources/custom_role#role_name CustomRole#role_name}.
 	RoleName *string `field:"required" json:"roleName" yaml:"roleName"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/resources/custom_role#disallowed_rights CustomRole#disallowed_rights}.
@@ -33,4 +33,3 @@ type CustomRoleConfig struct {
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 }
-

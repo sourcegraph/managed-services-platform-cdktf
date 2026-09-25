@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-opsgenie.notificationRule.NotificationRule",
-		reflect.TypeOf((*NotificationRule)(nil)).Elem(),
+		reflect.TypeFor[NotificationRule](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "actionType", GoGetter: "ActionType"},
 			_jsii_.MemberProperty{JsiiProperty: "actionTypeInput", GoGetter: "ActionTypeInput"},
@@ -91,7 +91,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "username", GoGetter: "Username"},
 			_jsii_.MemberProperty{JsiiProperty: "usernameInput", GoGetter: "UsernameInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NotificationRule{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -99,19 +99,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-opsgenie.notificationRule.NotificationRuleConfig",
-		reflect.TypeOf((*NotificationRuleConfig)(nil)).Elem(),
+		reflect.TypeFor[NotificationRuleConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-opsgenie.notificationRule.NotificationRuleCriteria",
-		reflect.TypeOf((*NotificationRuleCriteria)(nil)).Elem(),
+		reflect.TypeFor[NotificationRuleCriteria](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-opsgenie.notificationRule.NotificationRuleCriteriaConditions",
-		reflect.TypeOf((*NotificationRuleCriteriaConditions)(nil)).Elem(),
+		reflect.TypeFor[NotificationRuleCriteriaConditions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-opsgenie.notificationRule.NotificationRuleCriteriaConditionsList",
-		reflect.TypeOf((*NotificationRuleCriteriaConditionsList)(nil)).Elem(),
+		reflect.TypeFor[NotificationRuleCriteriaConditionsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -125,7 +125,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NotificationRuleCriteriaConditionsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -133,7 +133,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-opsgenie.notificationRule.NotificationRuleCriteriaConditionsOutputReference",
-		reflect.TypeOf((*NotificationRuleCriteriaConditionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NotificationRuleCriteriaConditionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -173,7 +173,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NotificationRuleCriteriaConditionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -181,7 +181,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-opsgenie.notificationRule.NotificationRuleCriteriaList",
-		reflect.TypeOf((*NotificationRuleCriteriaList)(nil)).Elem(),
+		reflect.TypeFor[NotificationRuleCriteriaList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -195,7 +195,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NotificationRuleCriteriaList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -203,7 +203,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-opsgenie.notificationRule.NotificationRuleCriteriaOutputReference",
-		reflect.TypeOf((*NotificationRuleCriteriaOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NotificationRuleCriteriaOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -233,7 +233,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NotificationRuleCriteriaOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -241,11 +241,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-opsgenie.notificationRule.NotificationRuleRepeat",
-		reflect.TypeOf((*NotificationRuleRepeat)(nil)).Elem(),
+		reflect.TypeFor[NotificationRuleRepeat](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-opsgenie.notificationRule.NotificationRuleRepeatList",
-		reflect.TypeOf((*NotificationRuleRepeatList)(nil)).Elem(),
+		reflect.TypeFor[NotificationRuleRepeatList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -259,7 +259,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NotificationRuleRepeatList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -267,7 +267,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-opsgenie.notificationRule.NotificationRuleRepeatOutputReference",
-		reflect.TypeOf((*NotificationRuleRepeatOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NotificationRuleRepeatOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -296,7 +296,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NotificationRuleRepeatOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -304,11 +304,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-opsgenie.notificationRule.NotificationRuleSchedules",
-		reflect.TypeOf((*NotificationRuleSchedules)(nil)).Elem(),
+		reflect.TypeFor[NotificationRuleSchedules](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-opsgenie.notificationRule.NotificationRuleSchedulesList",
-		reflect.TypeOf((*NotificationRuleSchedulesList)(nil)).Elem(),
+		reflect.TypeFor[NotificationRuleSchedulesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -322,7 +322,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NotificationRuleSchedulesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -330,7 +330,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-opsgenie.notificationRule.NotificationRuleSchedulesOutputReference",
-		reflect.TypeOf((*NotificationRuleSchedulesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NotificationRuleSchedulesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -358,7 +358,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NotificationRuleSchedulesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -366,15 +366,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-opsgenie.notificationRule.NotificationRuleSteps",
-		reflect.TypeOf((*NotificationRuleSteps)(nil)).Elem(),
+		reflect.TypeFor[NotificationRuleSteps](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-opsgenie.notificationRule.NotificationRuleStepsContact",
-		reflect.TypeOf((*NotificationRuleStepsContact)(nil)).Elem(),
+		reflect.TypeFor[NotificationRuleStepsContact](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-opsgenie.notificationRule.NotificationRuleStepsContactList",
-		reflect.TypeOf((*NotificationRuleStepsContactList)(nil)).Elem(),
+		reflect.TypeFor[NotificationRuleStepsContactList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -388,7 +388,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NotificationRuleStepsContactList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -396,7 +396,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-opsgenie.notificationRule.NotificationRuleStepsContactOutputReference",
-		reflect.TypeOf((*NotificationRuleStepsContactOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NotificationRuleStepsContactOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -424,7 +424,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "toInput", GoGetter: "ToInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NotificationRuleStepsContactOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -432,7 +432,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-opsgenie.notificationRule.NotificationRuleStepsList",
-		reflect.TypeOf((*NotificationRuleStepsList)(nil)).Elem(),
+		reflect.TypeFor[NotificationRuleStepsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -446,7 +446,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NotificationRuleStepsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -454,7 +454,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-opsgenie.notificationRule.NotificationRuleStepsOutputReference",
-		reflect.TypeOf((*NotificationRuleStepsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NotificationRuleStepsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -487,7 +487,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NotificationRuleStepsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -495,11 +495,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-opsgenie.notificationRule.NotificationRuleTimeRestriction",
-		reflect.TypeOf((*NotificationRuleTimeRestriction)(nil)).Elem(),
+		reflect.TypeFor[NotificationRuleTimeRestriction](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-opsgenie.notificationRule.NotificationRuleTimeRestrictionOutputReference",
-		reflect.TypeOf((*NotificationRuleTimeRestrictionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NotificationRuleTimeRestrictionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -533,7 +533,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NotificationRuleTimeRestrictionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -541,11 +541,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-opsgenie.notificationRule.NotificationRuleTimeRestrictionRestriction",
-		reflect.TypeOf((*NotificationRuleTimeRestrictionRestriction)(nil)).Elem(),
+		reflect.TypeFor[NotificationRuleTimeRestrictionRestriction](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-opsgenie.notificationRule.NotificationRuleTimeRestrictionRestrictionOutputReference",
-		reflect.TypeOf((*NotificationRuleTimeRestrictionRestrictionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NotificationRuleTimeRestrictionRestrictionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -577,7 +577,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NotificationRuleTimeRestrictionRestrictionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -585,11 +585,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-opsgenie.notificationRule.NotificationRuleTimeRestrictionRestrictions",
-		reflect.TypeOf((*NotificationRuleTimeRestrictionRestrictions)(nil)).Elem(),
+		reflect.TypeFor[NotificationRuleTimeRestrictionRestrictions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-opsgenie.notificationRule.NotificationRuleTimeRestrictionRestrictionsList",
-		reflect.TypeOf((*NotificationRuleTimeRestrictionRestrictionsList)(nil)).Elem(),
+		reflect.TypeFor[NotificationRuleTimeRestrictionRestrictionsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -603,7 +603,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NotificationRuleTimeRestrictionRestrictionsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -611,7 +611,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-opsgenie.notificationRule.NotificationRuleTimeRestrictionRestrictionsOutputReference",
-		reflect.TypeOf((*NotificationRuleTimeRestrictionRestrictionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NotificationRuleTimeRestrictionRestrictionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -647,7 +647,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NotificationRuleTimeRestrictionRestrictionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

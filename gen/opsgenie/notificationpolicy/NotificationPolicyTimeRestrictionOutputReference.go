@@ -12,9 +12,9 @@ type NotificationPolicyTimeRestrictionOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -32,7 +32,7 @@ type NotificationPolicyTimeRestrictionOutputReference interface {
 	Restriction() NotificationPolicyTimeRestrictionRestrictionOutputReference
 	RestrictionInput() *NotificationPolicyTimeRestrictionRestriction
 	Restrictions() NotificationPolicyTimeRestrictionRestrictionsList
-	RestrictionsInput() interface{}
+	RestrictionsInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -47,7 +47,7 @@ type NotificationPolicyTimeRestrictionOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -69,12 +69,12 @@ type NotificationPolicyTimeRestrictionOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutRestriction(value *NotificationPolicyTimeRestrictionRestriction)
-	PutRestrictions(value interface{})
+	PutRestrictions(value any)
 	ResetRestriction()
 	ResetRestrictions()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -87,8 +87,8 @@ type jsiiProxy_NotificationPolicyTimeRestrictionOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_NotificationPolicyTimeRestrictionOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NotificationPolicyTimeRestrictionOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -167,8 +167,8 @@ func (j *jsiiProxy_NotificationPolicyTimeRestrictionOutputReference) Restriction
 	return returns
 }
 
-func (j *jsiiProxy_NotificationPolicyTimeRestrictionOutputReference) RestrictionsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NotificationPolicyTimeRestrictionOutputReference) RestrictionsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"restrictionsInput",
@@ -217,7 +217,6 @@ func (j *jsiiProxy_NotificationPolicyTimeRestrictionOutputReference) TypeInput()
 	return returns
 }
 
-
 func NewNotificationPolicyTimeRestrictionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) NotificationPolicyTimeRestrictionOutputReference {
 	_init_.Initialize()
 
@@ -228,7 +227,7 @@ func NewNotificationPolicyTimeRestrictionOutputReference(terraformResource cdktf
 
 	_jsii_.Create(
 		"@cdktf/provider-opsgenie.notificationPolicy.NotificationPolicyTimeRestrictionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -240,12 +239,12 @@ func NewNotificationPolicyTimeRestrictionOutputReference_Override(n Notification
 
 	_jsii_.Create(
 		"@cdktf/provider-opsgenie.notificationPolicy.NotificationPolicyTimeRestrictionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		n,
 	)
 }
 
-func (j *jsiiProxy_NotificationPolicyTimeRestrictionOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_NotificationPolicyTimeRestrictionOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -256,7 +255,7 @@ func (j *jsiiProxy_NotificationPolicyTimeRestrictionOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_NotificationPolicyTimeRestrictionOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_NotificationPolicyTimeRestrictionOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -267,7 +266,7 @@ func (j *jsiiProxy_NotificationPolicyTimeRestrictionOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_NotificationPolicyTimeRestrictionOutputReference)SetInternalValue(val *NotificationPolicyTimeRestriction) {
+func (j *jsiiProxy_NotificationPolicyTimeRestrictionOutputReference) SetInternalValue(val *NotificationPolicyTimeRestriction) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -278,7 +277,7 @@ func (j *jsiiProxy_NotificationPolicyTimeRestrictionOutputReference)SetInternalV
 	)
 }
 
-func (j *jsiiProxy_NotificationPolicyTimeRestrictionOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_NotificationPolicyTimeRestrictionOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -289,7 +288,7 @@ func (j *jsiiProxy_NotificationPolicyTimeRestrictionOutputReference)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_NotificationPolicyTimeRestrictionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_NotificationPolicyTimeRestrictionOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -300,7 +299,7 @@ func (j *jsiiProxy_NotificationPolicyTimeRestrictionOutputReference)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_NotificationPolicyTimeRestrictionOutputReference)SetType(val *string) {
+func (j *jsiiProxy_NotificationPolicyTimeRestrictionOutputReference) SetType(val *string) {
 	if err := j.validateSetTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -324,16 +323,16 @@ func (n *jsiiProxy_NotificationPolicyTimeRestrictionOutputReference) ComputeFqn(
 	return returns
 }
 
-func (n *jsiiProxy_NotificationPolicyTimeRestrictionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (n *jsiiProxy_NotificationPolicyTimeRestrictionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := n.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -349,7 +348,7 @@ func (n *jsiiProxy_NotificationPolicyTimeRestrictionOutputReference) GetBooleanA
 	_jsii_.Invoke(
 		n,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -365,7 +364,7 @@ func (n *jsiiProxy_NotificationPolicyTimeRestrictionOutputReference) GetBooleanM
 	_jsii_.Invoke(
 		n,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -381,7 +380,7 @@ func (n *jsiiProxy_NotificationPolicyTimeRestrictionOutputReference) GetListAttr
 	_jsii_.Invoke(
 		n,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -397,7 +396,7 @@ func (n *jsiiProxy_NotificationPolicyTimeRestrictionOutputReference) GetNumberAt
 	_jsii_.Invoke(
 		n,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -413,7 +412,7 @@ func (n *jsiiProxy_NotificationPolicyTimeRestrictionOutputReference) GetNumberLi
 	_jsii_.Invoke(
 		n,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -429,7 +428,7 @@ func (n *jsiiProxy_NotificationPolicyTimeRestrictionOutputReference) GetNumberMa
 	_jsii_.Invoke(
 		n,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -445,7 +444,7 @@ func (n *jsiiProxy_NotificationPolicyTimeRestrictionOutputReference) GetStringAt
 	_jsii_.Invoke(
 		n,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -461,7 +460,7 @@ func (n *jsiiProxy_NotificationPolicyTimeRestrictionOutputReference) GetStringMa
 	_jsii_.Invoke(
 		n,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -490,7 +489,7 @@ func (n *jsiiProxy_NotificationPolicyTimeRestrictionOutputReference) Interpolati
 	_jsii_.Invoke(
 		n,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -504,18 +503,18 @@ func (n *jsiiProxy_NotificationPolicyTimeRestrictionOutputReference) PutRestrict
 	_jsii_.InvokeVoid(
 		n,
 		"putRestriction",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (n *jsiiProxy_NotificationPolicyTimeRestrictionOutputReference) PutRestrictions(value interface{}) {
+func (n *jsiiProxy_NotificationPolicyTimeRestrictionOutputReference) PutRestrictions(value any) {
 	if err := n.validatePutRestrictionsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		n,
 		"putRestrictions",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -535,16 +534,16 @@ func (n *jsiiProxy_NotificationPolicyTimeRestrictionOutputReference) ResetRestri
 	)
 }
 
-func (n *jsiiProxy_NotificationPolicyTimeRestrictionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (n *jsiiProxy_NotificationPolicyTimeRestrictionOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := n.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		n,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -563,4 +562,3 @@ func (n *jsiiProxy_NotificationPolicyTimeRestrictionOutputReference) ToString() 
 
 	return returns
 }
-

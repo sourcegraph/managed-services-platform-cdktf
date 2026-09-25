@@ -12,9 +12,9 @@ type NotificationRuleRepeatOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -25,13 +25,13 @@ type NotificationRuleRepeatOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	Enabled() interface{}
-	SetEnabled(val interface{})
-	EnabledInput() interface{}
+	Enabled() any
+	SetEnabled(val any)
+	EnabledInput() any
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	LoopAfter() *float64
 	SetLoopAfter(val *float64)
 	LoopAfterInput() *float64
@@ -46,7 +46,7 @@ type NotificationRuleRepeatOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -70,7 +70,7 @@ type NotificationRuleRepeatOutputReference interface {
 	ResetEnabled()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -83,8 +83,8 @@ type jsiiProxy_NotificationRuleRepeatOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_NotificationRuleRepeatOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NotificationRuleRepeatOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -113,8 +113,8 @@ func (j *jsiiProxy_NotificationRuleRepeatOutputReference) CreationStack() *[]*st
 	return returns
 }
 
-func (j *jsiiProxy_NotificationRuleRepeatOutputReference) Enabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NotificationRuleRepeatOutputReference) Enabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabled",
@@ -123,8 +123,8 @@ func (j *jsiiProxy_NotificationRuleRepeatOutputReference) Enabled() interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_NotificationRuleRepeatOutputReference) EnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NotificationRuleRepeatOutputReference) EnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabledInput",
@@ -143,8 +143,8 @@ func (j *jsiiProxy_NotificationRuleRepeatOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_NotificationRuleRepeatOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NotificationRuleRepeatOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -193,7 +193,6 @@ func (j *jsiiProxy_NotificationRuleRepeatOutputReference) TerraformResource() cd
 	return returns
 }
 
-
 func NewNotificationRuleRepeatOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) NotificationRuleRepeatOutputReference {
 	_init_.Initialize()
 
@@ -204,7 +203,7 @@ func NewNotificationRuleRepeatOutputReference(terraformResource cdktf.IInterpola
 
 	_jsii_.Create(
 		"@cdktf/provider-opsgenie.notificationRule.NotificationRuleRepeatOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -216,12 +215,12 @@ func NewNotificationRuleRepeatOutputReference_Override(n NotificationRuleRepeatO
 
 	_jsii_.Create(
 		"@cdktf/provider-opsgenie.notificationRule.NotificationRuleRepeatOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		n,
 	)
 }
 
-func (j *jsiiProxy_NotificationRuleRepeatOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_NotificationRuleRepeatOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -232,7 +231,7 @@ func (j *jsiiProxy_NotificationRuleRepeatOutputReference)SetComplexObjectIndex(v
 	)
 }
 
-func (j *jsiiProxy_NotificationRuleRepeatOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_NotificationRuleRepeatOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -243,7 +242,7 @@ func (j *jsiiProxy_NotificationRuleRepeatOutputReference)SetComplexObjectIsFromS
 	)
 }
 
-func (j *jsiiProxy_NotificationRuleRepeatOutputReference)SetEnabled(val interface{}) {
+func (j *jsiiProxy_NotificationRuleRepeatOutputReference) SetEnabled(val any) {
 	if err := j.validateSetEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -254,7 +253,7 @@ func (j *jsiiProxy_NotificationRuleRepeatOutputReference)SetEnabled(val interfac
 	)
 }
 
-func (j *jsiiProxy_NotificationRuleRepeatOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_NotificationRuleRepeatOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -265,7 +264,7 @@ func (j *jsiiProxy_NotificationRuleRepeatOutputReference)SetInternalValue(val in
 	)
 }
 
-func (j *jsiiProxy_NotificationRuleRepeatOutputReference)SetLoopAfter(val *float64) {
+func (j *jsiiProxy_NotificationRuleRepeatOutputReference) SetLoopAfter(val *float64) {
 	if err := j.validateSetLoopAfterParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,7 +275,7 @@ func (j *jsiiProxy_NotificationRuleRepeatOutputReference)SetLoopAfter(val *float
 	)
 }
 
-func (j *jsiiProxy_NotificationRuleRepeatOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_NotificationRuleRepeatOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -287,7 +286,7 @@ func (j *jsiiProxy_NotificationRuleRepeatOutputReference)SetTerraformAttribute(v
 	)
 }
 
-func (j *jsiiProxy_NotificationRuleRepeatOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_NotificationRuleRepeatOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -311,16 +310,16 @@ func (n *jsiiProxy_NotificationRuleRepeatOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (n *jsiiProxy_NotificationRuleRepeatOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (n *jsiiProxy_NotificationRuleRepeatOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := n.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -336,7 +335,7 @@ func (n *jsiiProxy_NotificationRuleRepeatOutputReference) GetBooleanAttribute(te
 	_jsii_.Invoke(
 		n,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -352,7 +351,7 @@ func (n *jsiiProxy_NotificationRuleRepeatOutputReference) GetBooleanMapAttribute
 	_jsii_.Invoke(
 		n,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -368,7 +367,7 @@ func (n *jsiiProxy_NotificationRuleRepeatOutputReference) GetListAttribute(terra
 	_jsii_.Invoke(
 		n,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -384,7 +383,7 @@ func (n *jsiiProxy_NotificationRuleRepeatOutputReference) GetNumberAttribute(ter
 	_jsii_.Invoke(
 		n,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -400,7 +399,7 @@ func (n *jsiiProxy_NotificationRuleRepeatOutputReference) GetNumberListAttribute
 	_jsii_.Invoke(
 		n,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -416,7 +415,7 @@ func (n *jsiiProxy_NotificationRuleRepeatOutputReference) GetNumberMapAttribute(
 	_jsii_.Invoke(
 		n,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -432,7 +431,7 @@ func (n *jsiiProxy_NotificationRuleRepeatOutputReference) GetStringAttribute(ter
 	_jsii_.Invoke(
 		n,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -448,7 +447,7 @@ func (n *jsiiProxy_NotificationRuleRepeatOutputReference) GetStringMapAttribute(
 	_jsii_.Invoke(
 		n,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -477,7 +476,7 @@ func (n *jsiiProxy_NotificationRuleRepeatOutputReference) InterpolationForAttrib
 	_jsii_.Invoke(
 		n,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -492,16 +491,16 @@ func (n *jsiiProxy_NotificationRuleRepeatOutputReference) ResetEnabled() {
 	)
 }
 
-func (n *jsiiProxy_NotificationRuleRepeatOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (n *jsiiProxy_NotificationRuleRepeatOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := n.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		n,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -520,4 +519,3 @@ func (n *jsiiProxy_NotificationRuleRepeatOutputReference) ToString() *string {
 
 	return returns
 }
-

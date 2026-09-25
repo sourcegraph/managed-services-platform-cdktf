@@ -34,7 +34,7 @@ func (i *jsiiProxy_IntegrationActionAddNoteList) validateResolveParameters(_cont
 	return nil
 }
 
-func (j *jsiiProxy_IntegrationActionAddNoteList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_IntegrationActionAddNoteList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewIntegrationActionAddNoteListParameters(terraformResource cdktf.I
 
 	return nil
 }
-

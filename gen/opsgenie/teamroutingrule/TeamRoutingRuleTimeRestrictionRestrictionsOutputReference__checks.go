@@ -98,7 +98,7 @@ func (t *jsiiProxy_TeamRoutingRuleTimeRestrictionRestrictionsOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_TeamRoutingRuleTimeRestrictionRestrictionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_TeamRoutingRuleTimeRestrictionRestrictionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -187,7 +187,7 @@ func (j *jsiiProxy_TeamRoutingRuleTimeRestrictionRestrictionsOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_TeamRoutingRuleTimeRestrictionRestrictionsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_TeamRoutingRuleTimeRestrictionRestrictionsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -270,4 +270,3 @@ func validateNewTeamRoutingRuleTimeRestrictionRestrictionsOutputReferenceParamet
 
 	return nil
 }
-

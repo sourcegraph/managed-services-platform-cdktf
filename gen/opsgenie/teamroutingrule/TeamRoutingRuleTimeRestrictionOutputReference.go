@@ -12,9 +12,9 @@ type TeamRoutingRuleTimeRestrictionOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -32,7 +32,7 @@ type TeamRoutingRuleTimeRestrictionOutputReference interface {
 	Restriction() TeamRoutingRuleTimeRestrictionRestrictionOutputReference
 	RestrictionInput() *TeamRoutingRuleTimeRestrictionRestriction
 	Restrictions() TeamRoutingRuleTimeRestrictionRestrictionsList
-	RestrictionsInput() interface{}
+	RestrictionsInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -47,7 +47,7 @@ type TeamRoutingRuleTimeRestrictionOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -69,12 +69,12 @@ type TeamRoutingRuleTimeRestrictionOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutRestriction(value *TeamRoutingRuleTimeRestrictionRestriction)
-	PutRestrictions(value interface{})
+	PutRestrictions(value any)
 	ResetRestriction()
 	ResetRestrictions()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -87,8 +87,8 @@ type jsiiProxy_TeamRoutingRuleTimeRestrictionOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_TeamRoutingRuleTimeRestrictionOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TeamRoutingRuleTimeRestrictionOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -167,8 +167,8 @@ func (j *jsiiProxy_TeamRoutingRuleTimeRestrictionOutputReference) Restrictions()
 	return returns
 }
 
-func (j *jsiiProxy_TeamRoutingRuleTimeRestrictionOutputReference) RestrictionsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TeamRoutingRuleTimeRestrictionOutputReference) RestrictionsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"restrictionsInput",
@@ -217,7 +217,6 @@ func (j *jsiiProxy_TeamRoutingRuleTimeRestrictionOutputReference) TypeInput() *s
 	return returns
 }
 
-
 func NewTeamRoutingRuleTimeRestrictionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) TeamRoutingRuleTimeRestrictionOutputReference {
 	_init_.Initialize()
 
@@ -228,7 +227,7 @@ func NewTeamRoutingRuleTimeRestrictionOutputReference(terraformResource cdktf.II
 
 	_jsii_.Create(
 		"@cdktf/provider-opsgenie.teamRoutingRule.TeamRoutingRuleTimeRestrictionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -240,12 +239,12 @@ func NewTeamRoutingRuleTimeRestrictionOutputReference_Override(t TeamRoutingRule
 
 	_jsii_.Create(
 		"@cdktf/provider-opsgenie.teamRoutingRule.TeamRoutingRuleTimeRestrictionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		t,
 	)
 }
 
-func (j *jsiiProxy_TeamRoutingRuleTimeRestrictionOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_TeamRoutingRuleTimeRestrictionOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -256,7 +255,7 @@ func (j *jsiiProxy_TeamRoutingRuleTimeRestrictionOutputReference)SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_TeamRoutingRuleTimeRestrictionOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_TeamRoutingRuleTimeRestrictionOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -267,7 +266,7 @@ func (j *jsiiProxy_TeamRoutingRuleTimeRestrictionOutputReference)SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_TeamRoutingRuleTimeRestrictionOutputReference)SetInternalValue(val *TeamRoutingRuleTimeRestriction) {
+func (j *jsiiProxy_TeamRoutingRuleTimeRestrictionOutputReference) SetInternalValue(val *TeamRoutingRuleTimeRestriction) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -278,7 +277,7 @@ func (j *jsiiProxy_TeamRoutingRuleTimeRestrictionOutputReference)SetInternalValu
 	)
 }
 
-func (j *jsiiProxy_TeamRoutingRuleTimeRestrictionOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_TeamRoutingRuleTimeRestrictionOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -289,7 +288,7 @@ func (j *jsiiProxy_TeamRoutingRuleTimeRestrictionOutputReference)SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_TeamRoutingRuleTimeRestrictionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_TeamRoutingRuleTimeRestrictionOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -300,7 +299,7 @@ func (j *jsiiProxy_TeamRoutingRuleTimeRestrictionOutputReference)SetTerraformRes
 	)
 }
 
-func (j *jsiiProxy_TeamRoutingRuleTimeRestrictionOutputReference)SetType(val *string) {
+func (j *jsiiProxy_TeamRoutingRuleTimeRestrictionOutputReference) SetType(val *string) {
 	if err := j.validateSetTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -324,16 +323,16 @@ func (t *jsiiProxy_TeamRoutingRuleTimeRestrictionOutputReference) ComputeFqn() *
 	return returns
 }
 
-func (t *jsiiProxy_TeamRoutingRuleTimeRestrictionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (t *jsiiProxy_TeamRoutingRuleTimeRestrictionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := t.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		t,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -349,7 +348,7 @@ func (t *jsiiProxy_TeamRoutingRuleTimeRestrictionOutputReference) GetBooleanAttr
 	_jsii_.Invoke(
 		t,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -365,7 +364,7 @@ func (t *jsiiProxy_TeamRoutingRuleTimeRestrictionOutputReference) GetBooleanMapA
 	_jsii_.Invoke(
 		t,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -381,7 +380,7 @@ func (t *jsiiProxy_TeamRoutingRuleTimeRestrictionOutputReference) GetListAttribu
 	_jsii_.Invoke(
 		t,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -397,7 +396,7 @@ func (t *jsiiProxy_TeamRoutingRuleTimeRestrictionOutputReference) GetNumberAttri
 	_jsii_.Invoke(
 		t,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -413,7 +412,7 @@ func (t *jsiiProxy_TeamRoutingRuleTimeRestrictionOutputReference) GetNumberListA
 	_jsii_.Invoke(
 		t,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -429,7 +428,7 @@ func (t *jsiiProxy_TeamRoutingRuleTimeRestrictionOutputReference) GetNumberMapAt
 	_jsii_.Invoke(
 		t,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -445,7 +444,7 @@ func (t *jsiiProxy_TeamRoutingRuleTimeRestrictionOutputReference) GetStringAttri
 	_jsii_.Invoke(
 		t,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -461,7 +460,7 @@ func (t *jsiiProxy_TeamRoutingRuleTimeRestrictionOutputReference) GetStringMapAt
 	_jsii_.Invoke(
 		t,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -490,7 +489,7 @@ func (t *jsiiProxy_TeamRoutingRuleTimeRestrictionOutputReference) InterpolationF
 	_jsii_.Invoke(
 		t,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -504,18 +503,18 @@ func (t *jsiiProxy_TeamRoutingRuleTimeRestrictionOutputReference) PutRestriction
 	_jsii_.InvokeVoid(
 		t,
 		"putRestriction",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (t *jsiiProxy_TeamRoutingRuleTimeRestrictionOutputReference) PutRestrictions(value interface{}) {
+func (t *jsiiProxy_TeamRoutingRuleTimeRestrictionOutputReference) PutRestrictions(value any) {
 	if err := t.validatePutRestrictionsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		t,
 		"putRestrictions",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -535,16 +534,16 @@ func (t *jsiiProxy_TeamRoutingRuleTimeRestrictionOutputReference) ResetRestricti
 	)
 }
 
-func (t *jsiiProxy_TeamRoutingRuleTimeRestrictionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (t *jsiiProxy_TeamRoutingRuleTimeRestrictionOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := t.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		t,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -563,4 +562,3 @@ func (t *jsiiProxy_TeamRoutingRuleTimeRestrictionOutputReference) ToString() *st
 
 	return returns
 }
-

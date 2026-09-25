@@ -15,15 +15,15 @@ type ServiceIncidentRule interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -40,7 +40,7 @@ type ServiceIncidentRule interface {
 	SetId(val *string)
 	IdInput() *string
 	IncidentRule() ServiceIncidentRuleIncidentRuleList
-	IncidentRuleInput() interface{}
+	IncidentRuleInput() any
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -52,27 +52,27 @@ type ServiceIncidentRule interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ServiceId() *string
 	SetServiceId(val *string)
 	ServiceIdInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -90,7 +90,7 @@ type ServiceIncidentRule interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -102,29 +102,29 @@ type ServiceIncidentRule interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutIncidentRule(value interface{})
+	PutIncidentRule(value any)
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ServiceIncidentRule
@@ -142,8 +142,8 @@ func (j *jsiiProxy_ServiceIncidentRule) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_ServiceIncidentRule) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ServiceIncidentRule) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -152,8 +152,8 @@ func (j *jsiiProxy_ServiceIncidentRule) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ServiceIncidentRule) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ServiceIncidentRule) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -162,8 +162,8 @@ func (j *jsiiProxy_ServiceIncidentRule) ConstructNodeMetadata() *map[string]inte
 	return returns
 }
 
-func (j *jsiiProxy_ServiceIncidentRule) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ServiceIncidentRule) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -242,8 +242,8 @@ func (j *jsiiProxy_ServiceIncidentRule) IncidentRule() ServiceIncidentRuleIncide
 	return returns
 }
 
-func (j *jsiiProxy_ServiceIncidentRule) IncidentRuleInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ServiceIncidentRule) IncidentRuleInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"incidentRuleInput",
@@ -282,8 +282,8 @@ func (j *jsiiProxy_ServiceIncidentRule) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_ServiceIncidentRule) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ServiceIncidentRule) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -292,8 +292,8 @@ func (j *jsiiProxy_ServiceIncidentRule) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ServiceIncidentRule) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ServiceIncidentRule) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -332,8 +332,8 @@ func (j *jsiiProxy_ServiceIncidentRule) TerraformGeneratorMetadata() *cdktf.Terr
 	return returns
 }
 
-func (j *jsiiProxy_ServiceIncidentRule) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ServiceIncidentRule) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -352,7 +352,6 @@ func (j *jsiiProxy_ServiceIncidentRule) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/resources/service_incident_rule opsgenie_service_incident_rule} Resource.
 func NewServiceIncidentRule(scope constructs.Construct, id *string, config *ServiceIncidentRuleConfig) ServiceIncidentRule {
 	_init_.Initialize()
@@ -364,7 +363,7 @@ func NewServiceIncidentRule(scope constructs.Construct, id *string, config *Serv
 
 	_jsii_.Create(
 		"@cdktf/provider-opsgenie.serviceIncidentRule.ServiceIncidentRule",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -377,12 +376,12 @@ func NewServiceIncidentRule_Override(s ServiceIncidentRule, scope constructs.Con
 
 	_jsii_.Create(
 		"@cdktf/provider-opsgenie.serviceIncidentRule.ServiceIncidentRule",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		s,
 	)
 }
 
-func (j *jsiiProxy_ServiceIncidentRule)SetConnection(val interface{}) {
+func (j *jsiiProxy_ServiceIncidentRule) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -393,7 +392,7 @@ func (j *jsiiProxy_ServiceIncidentRule)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ServiceIncidentRule)SetCount(val interface{}) {
+func (j *jsiiProxy_ServiceIncidentRule) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -404,7 +403,7 @@ func (j *jsiiProxy_ServiceIncidentRule)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ServiceIncidentRule)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ServiceIncidentRule) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -412,7 +411,7 @@ func (j *jsiiProxy_ServiceIncidentRule)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ServiceIncidentRule)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ServiceIncidentRule) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -420,7 +419,7 @@ func (j *jsiiProxy_ServiceIncidentRule)SetForEach(val cdktf.ITerraformIterator) 
 	)
 }
 
-func (j *jsiiProxy_ServiceIncidentRule)SetId(val *string) {
+func (j *jsiiProxy_ServiceIncidentRule) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -431,7 +430,7 @@ func (j *jsiiProxy_ServiceIncidentRule)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ServiceIncidentRule)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ServiceIncidentRule) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -442,7 +441,7 @@ func (j *jsiiProxy_ServiceIncidentRule)SetLifecycle(val *cdktf.TerraformResource
 	)
 }
 
-func (j *jsiiProxy_ServiceIncidentRule)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ServiceIncidentRule) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -450,7 +449,7 @@ func (j *jsiiProxy_ServiceIncidentRule)SetProvider(val cdktf.TerraformProvider) 
 	)
 }
 
-func (j *jsiiProxy_ServiceIncidentRule)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ServiceIncidentRule) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -461,7 +460,7 @@ func (j *jsiiProxy_ServiceIncidentRule)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ServiceIncidentRule)SetServiceId(val *string) {
+func (j *jsiiProxy_ServiceIncidentRule) SetServiceId(val *string) {
 	if err := j.validateSetServiceIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -484,7 +483,7 @@ func ServiceIncidentRule_GenerateConfigForImport(scope constructs.Construct, imp
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-opsgenie.serviceIncidentRule.ServiceIncidentRule",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -508,7 +507,7 @@ func ServiceIncidentRule_GenerateConfigForImport(scope constructs.Construct, imp
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ServiceIncidentRule_IsConstruct(x interface{}) *bool {
+func ServiceIncidentRule_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateServiceIncidentRule_IsConstructParameters(x); err != nil {
@@ -519,7 +518,7 @@ func ServiceIncidentRule_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-opsgenie.serviceIncidentRule.ServiceIncidentRule",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -527,7 +526,7 @@ func ServiceIncidentRule_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ServiceIncidentRule_IsTerraformElement(x interface{}) *bool {
+func ServiceIncidentRule_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateServiceIncidentRule_IsTerraformElementParameters(x); err != nil {
@@ -538,7 +537,7 @@ func ServiceIncidentRule_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-opsgenie.serviceIncidentRule.ServiceIncidentRule",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -546,7 +545,7 @@ func ServiceIncidentRule_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func ServiceIncidentRule_IsTerraformResource(x interface{}) *bool {
+func ServiceIncidentRule_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateServiceIncidentRule_IsTerraformResourceParameters(x); err != nil {
@@ -557,7 +556,7 @@ func ServiceIncidentRule_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-opsgenie.serviceIncidentRule.ServiceIncidentRule",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -582,31 +581,31 @@ func (s *jsiiProxy_ServiceIncidentRule) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (s *jsiiProxy_ServiceIncidentRule) AddOverride(path *string, value interface{}) {
+func (s *jsiiProxy_ServiceIncidentRule) AddOverride(path *string, value any) {
 	if err := s.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (s *jsiiProxy_ServiceIncidentRule) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_ServiceIncidentRule) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -622,7 +621,7 @@ func (s *jsiiProxy_ServiceIncidentRule) GetBooleanAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -638,7 +637,7 @@ func (s *jsiiProxy_ServiceIncidentRule) GetBooleanMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -654,7 +653,7 @@ func (s *jsiiProxy_ServiceIncidentRule) GetListAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -670,7 +669,7 @@ func (s *jsiiProxy_ServiceIncidentRule) GetNumberAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -686,7 +685,7 @@ func (s *jsiiProxy_ServiceIncidentRule) GetNumberListAttribute(terraformAttribut
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -702,7 +701,7 @@ func (s *jsiiProxy_ServiceIncidentRule) GetNumberMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -718,7 +717,7 @@ func (s *jsiiProxy_ServiceIncidentRule) GetStringAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -734,15 +733,15 @@ func (s *jsiiProxy_ServiceIncidentRule) GetStringMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_ServiceIncidentRule) HasResourceMove() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_ServiceIncidentRule) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -761,7 +760,7 @@ func (s *jsiiProxy_ServiceIncidentRule) ImportFrom(id *string, provider cdktf.Te
 	_jsii_.InvokeVoid(
 		s,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -774,7 +773,7 @@ func (s *jsiiProxy_ServiceIncidentRule) InterpolationForAttribute(terraformAttri
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -788,18 +787,18 @@ func (s *jsiiProxy_ServiceIncidentRule) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (s *jsiiProxy_ServiceIncidentRule) MoveTo(moveTarget *string, index interface{}) {
+func (s *jsiiProxy_ServiceIncidentRule) MoveTo(moveTarget *string, index any) {
 	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -810,7 +809,7 @@ func (s *jsiiProxy_ServiceIncidentRule) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -821,18 +820,18 @@ func (s *jsiiProxy_ServiceIncidentRule) OverrideLogicalId(newLogicalId *string) 
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (s *jsiiProxy_ServiceIncidentRule) PutIncidentRule(value interface{}) {
+func (s *jsiiProxy_ServiceIncidentRule) PutIncidentRule(value any) {
 	if err := s.validatePutIncidentRuleParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"putIncidentRule",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -852,8 +851,8 @@ func (s *jsiiProxy_ServiceIncidentRule) ResetOverrideLogicalId() {
 	)
 }
 
-func (s *jsiiProxy_ServiceIncidentRule) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_ServiceIncidentRule) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -865,8 +864,8 @@ func (s *jsiiProxy_ServiceIncidentRule) SynthesizeAttributes() *map[string]inter
 	return returns
 }
 
-func (s *jsiiProxy_ServiceIncidentRule) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_ServiceIncidentRule) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -878,8 +877,8 @@ func (s *jsiiProxy_ServiceIncidentRule) SynthesizeHclAttributes() *map[string]in
 	return returns
 }
 
-func (s *jsiiProxy_ServiceIncidentRule) ToHclTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_ServiceIncidentRule) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -891,8 +890,8 @@ func (s *jsiiProxy_ServiceIncidentRule) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (s *jsiiProxy_ServiceIncidentRule) ToMetadata() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_ServiceIncidentRule) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -917,8 +916,8 @@ func (s *jsiiProxy_ServiceIncidentRule) ToString() *string {
 	return returns
 }
 
-func (s *jsiiProxy_ServiceIncidentRule) ToTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_ServiceIncidentRule) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -929,4 +928,3 @@ func (s *jsiiProxy_ServiceIncidentRule) ToTerraform() interface{} {
 
 	return returns
 }
-
