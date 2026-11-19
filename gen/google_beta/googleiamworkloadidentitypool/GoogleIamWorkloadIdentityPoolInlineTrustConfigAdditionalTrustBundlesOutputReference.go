@@ -39,6 +39,9 @@ type GoogleIamWorkloadIdentityPoolInlineTrustConfigAdditionalTrustBundlesOutputR
 	SetTerraformResource(val cdktf.IInterpolatingParent)
 	TrustAnchors() GoogleIamWorkloadIdentityPoolInlineTrustConfigAdditionalTrustBundlesTrustAnchorsList
 	TrustAnchorsInput() interface{}
+	TrustDefaultSharedCa() interface{}
+	SetTrustDefaultSharedCa(val interface{})
+	TrustDefaultSharedCaInput() interface{}
 	TrustDomain() *string
 	SetTrustDomain(val *string)
 	TrustDomainInput() *string
@@ -67,6 +70,7 @@ type GoogleIamWorkloadIdentityPoolInlineTrustConfigAdditionalTrustBundlesOutputR
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutTrustAnchors(value interface{})
+	ResetTrustDefaultSharedCa()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -172,6 +176,26 @@ func (j *jsiiProxy_GoogleIamWorkloadIdentityPoolInlineTrustConfigAdditionalTrust
 	return returns
 }
 
+func (j *jsiiProxy_GoogleIamWorkloadIdentityPoolInlineTrustConfigAdditionalTrustBundlesOutputReference) TrustDefaultSharedCa() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"trustDefaultSharedCa",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleIamWorkloadIdentityPoolInlineTrustConfigAdditionalTrustBundlesOutputReference) TrustDefaultSharedCaInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"trustDefaultSharedCaInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleIamWorkloadIdentityPoolInlineTrustConfigAdditionalTrustBundlesOutputReference) TrustDomain() *string {
 	var returns *string
 	_jsii_.Get(
@@ -271,6 +295,17 @@ func (j *jsiiProxy_GoogleIamWorkloadIdentityPoolInlineTrustConfigAdditionalTrust
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleIamWorkloadIdentityPoolInlineTrustConfigAdditionalTrustBundlesOutputReference)SetTrustDefaultSharedCa(val interface{}) {
+	if err := j.validateSetTrustDefaultSharedCaParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"trustDefaultSharedCa",
 		val,
 	)
 }
@@ -480,6 +515,14 @@ func (g *jsiiProxy_GoogleIamWorkloadIdentityPoolInlineTrustConfigAdditionalTrust
 		g,
 		"putTrustAnchors",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleIamWorkloadIdentityPoolInlineTrustConfigAdditionalTrustBundlesOutputReference) ResetTrustDefaultSharedCa() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetTrustDefaultSharedCa",
+		nil, // no parameters
 	)
 }
 

@@ -226,6 +226,17 @@ func (d *jsiiProxy_DataplexDatascan) validatePutDataDiscoverySpecParameters(valu
 	return nil
 }
 
+func (d *jsiiProxy_DataplexDatascan) validatePutDataDocumentationSpecParameters(value *DataplexDatascanDataDocumentationSpec) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (d *jsiiProxy_DataplexDatascan) validatePutDataProfileSpecParameters(value *DataplexDatascanDataProfileSpec) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -238,6 +249,17 @@ func (d *jsiiProxy_DataplexDatascan) validatePutDataProfileSpecParameters(value 
 }
 
 func (d *jsiiProxy_DataplexDatascan) validatePutDataQualitySpecParameters(value *DataplexDatascanDataQualitySpec) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (d *jsiiProxy_DataplexDatascan) validatePutExecutionIdentityParameters(value *DataplexDatascanExecutionIdentity) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}

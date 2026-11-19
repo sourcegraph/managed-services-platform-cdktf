@@ -56,6 +56,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
 			_jsii_.MemberProperty{JsiiProperty: "newMessageEventNotificationConfig", GoGetter: "NewMessageEventNotificationConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "newMessageEventNotificationConfigInput", GoGetter: "NewMessageEventNotificationConfigInput"},
+			_jsii_.MemberProperty{JsiiProperty: "newRecognitionResultNotificationConfig", GoGetter: "NewRecognitionResultNotificationConfig"},
+			_jsii_.MemberProperty{JsiiProperty: "newRecognitionResultNotificationConfigInput", GoGetter: "NewRecognitionResultNotificationConfigInput"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
 			_jsii_.MemberProperty{JsiiProperty: "notificationConfig", GoGetter: "NotificationConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "notificationConfigInput", GoGetter: "NotificationConfigInput"},
@@ -69,6 +71,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putHumanAgentHandoffConfig", GoMethod: "PutHumanAgentHandoffConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putLoggingConfig", GoMethod: "PutLoggingConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putNewMessageEventNotificationConfig", GoMethod: "PutNewMessageEventNotificationConfig"},
+			_jsii_.MemberMethod{JsiiMethod: "putNewRecognitionResultNotificationConfig", GoMethod: "PutNewRecognitionResultNotificationConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putNotificationConfig", GoMethod: "PutNotificationConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putSttConfig", GoMethod: "PutSttConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
@@ -81,6 +84,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetLanguageCode", GoMethod: "ResetLanguageCode"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLoggingConfig", GoMethod: "ResetLoggingConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetNewMessageEventNotificationConfig", GoMethod: "ResetNewMessageEventNotificationConfig"},
+			_jsii_.MemberMethod{JsiiMethod: "resetNewRecognitionResultNotificationConfig", GoMethod: "ResetNewRecognitionResultNotificationConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetNotificationConfig", GoMethod: "ResetNotificationConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetProject", GoMethod: "ResetProject"},
@@ -89,6 +93,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTimeZone", GoMethod: "ResetTimeZone"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTtsConfig", GoMethod: "ResetTtsConfig"},
+			_jsii_.MemberMethod{JsiiMethod: "resetUseBidiStreaming", GoMethod: "ResetUseBidiStreaming"},
 			_jsii_.MemberProperty{JsiiProperty: "securitySettings", GoGetter: "SecuritySettings"},
 			_jsii_.MemberProperty{JsiiProperty: "securitySettingsInput", GoGetter: "SecuritySettingsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "sttConfig", GoGetter: "SttConfig"},
@@ -108,6 +113,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "ttsConfig", GoGetter: "TtsConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "ttsConfigInput", GoGetter: "TtsConfigInput"},
+			_jsii_.MemberProperty{JsiiProperty: "useBidiStreaming", GoGetter: "UseBidiStreaming"},
+			_jsii_.MemberProperty{JsiiProperty: "useBidiStreamingInput", GoGetter: "UseBidiStreamingInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleDialogflowConversationProfile{}
@@ -1581,6 +1588,48 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleDialogflowConversationProfileNewMessageEventNotificationConfigOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-google_beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileNewRecognitionResultNotificationConfig",
+		reflect.TypeOf((*GoogleDialogflowConversationProfileNewRecognitionResultNotificationConfig)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google_beta.googleDialogflowConversationProfile.GoogleDialogflowConversationProfileNewRecognitionResultNotificationConfigOutputReference",
+		reflect.TypeOf((*GoogleDialogflowConversationProfileNewRecognitionResultNotificationConfigOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "messageFormat", GoGetter: "MessageFormat"},
+			_jsii_.MemberProperty{JsiiProperty: "messageFormatInput", GoGetter: "MessageFormatInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMessageFormat", GoMethod: "ResetMessageFormat"},
+			_jsii_.MemberMethod{JsiiMethod: "resetTopic", GoMethod: "ResetTopic"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberProperty{JsiiProperty: "topic", GoGetter: "Topic"},
+			_jsii_.MemberProperty{JsiiProperty: "topicInput", GoGetter: "TopicInput"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_GoogleDialogflowConversationProfileNewRecognitionResultNotificationConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

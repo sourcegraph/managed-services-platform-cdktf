@@ -33,17 +33,23 @@ type NetappVolumeHybridReplicationParametersOutputReference interface {
 	DescriptionInput() *string
 	// Experimental.
 	Fqn() *string
+	HybridReplicationType() *string
+	SetHybridReplicationType(val *string)
+	HybridReplicationTypeInput() *string
 	InternalValue() *NetappVolumeHybridReplicationParameters
 	SetInternalValue(val *NetappVolumeHybridReplicationParameters)
 	Labels() *map[string]*string
 	SetLabels(val *map[string]*string)
 	LabelsInput() *map[string]*string
+	LargeVolumeConstituentCount() *float64
+	SetLargeVolumeConstituentCount(val *float64)
+	LargeVolumeConstituentCountInput() *float64
 	PeerClusterName() *string
 	SetPeerClusterName(val *string)
 	PeerClusterNameInput() *string
-	PeerIpAddresses() *string
-	SetPeerIpAddresses(val *string)
-	PeerIpAddressesInput() *string
+	PeerIpAddresses() *[]*string
+	SetPeerIpAddresses(val *[]*string)
+	PeerIpAddressesInput() *[]*string
 	PeerSvmName() *string
 	SetPeerSvmName(val *string)
 	PeerSvmNameInput() *string
@@ -53,6 +59,9 @@ type NetappVolumeHybridReplicationParametersOutputReference interface {
 	Replication() *string
 	SetReplication(val *string)
 	ReplicationInput() *string
+	ReplicationSchedule() *string
+	SetReplicationSchedule(val *string)
+	ReplicationScheduleInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -87,12 +96,15 @@ type NetappVolumeHybridReplicationParametersOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetClusterLocation()
 	ResetDescription()
+	ResetHybridReplicationType()
 	ResetLabels()
+	ResetLargeVolumeConstituentCount()
 	ResetPeerClusterName()
 	ResetPeerIpAddresses()
 	ResetPeerSvmName()
 	ResetPeerVolumeName()
 	ResetReplication()
+	ResetReplicationSchedule()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -188,6 +200,26 @@ func (j *jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference) Fqn()
 	return returns
 }
 
+func (j *jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference) HybridReplicationType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"hybridReplicationType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference) HybridReplicationTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"hybridReplicationTypeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference) InternalValue() *NetappVolumeHybridReplicationParameters {
 	var returns *NetappVolumeHybridReplicationParameters
 	_jsii_.Get(
@@ -218,6 +250,26 @@ func (j *jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference) Label
 	return returns
 }
 
+func (j *jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference) LargeVolumeConstituentCount() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"largeVolumeConstituentCount",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference) LargeVolumeConstituentCountInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"largeVolumeConstituentCountInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference) PeerClusterName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -238,8 +290,8 @@ func (j *jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference) PeerC
 	return returns
 }
 
-func (j *jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference) PeerIpAddresses() *string {
-	var returns *string
+func (j *jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference) PeerIpAddresses() *[]*string {
+	var returns *[]*string
 	_jsii_.Get(
 		j,
 		"peerIpAddresses",
@@ -248,8 +300,8 @@ func (j *jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference) PeerI
 	return returns
 }
 
-func (j *jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference) PeerIpAddressesInput() *string {
-	var returns *string
+func (j *jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference) PeerIpAddressesInput() *[]*string {
+	var returns *[]*string
 	_jsii_.Get(
 		j,
 		"peerIpAddressesInput",
@@ -313,6 +365,26 @@ func (j *jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference) Repli
 	_jsii_.Get(
 		j,
 		"replicationInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference) ReplicationSchedule() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"replicationSchedule",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference) ReplicationScheduleInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"replicationScheduleInput",
 		&returns,
 	)
 	return returns
@@ -410,6 +482,17 @@ func (j *jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference)SetDes
 	)
 }
 
+func (j *jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference)SetHybridReplicationType(val *string) {
+	if err := j.validateSetHybridReplicationTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"hybridReplicationType",
+		val,
+	)
+}
+
 func (j *jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference)SetInternalValue(val *NetappVolumeHybridReplicationParameters) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -432,6 +515,17 @@ func (j *jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference)SetLab
 	)
 }
 
+func (j *jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference)SetLargeVolumeConstituentCount(val *float64) {
+	if err := j.validateSetLargeVolumeConstituentCountParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"largeVolumeConstituentCount",
+		val,
+	)
+}
+
 func (j *jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference)SetPeerClusterName(val *string) {
 	if err := j.validateSetPeerClusterNameParameters(val); err != nil {
 		panic(err)
@@ -443,7 +537,7 @@ func (j *jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference)SetPee
 	)
 }
 
-func (j *jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference)SetPeerIpAddresses(val *string) {
+func (j *jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference)SetPeerIpAddresses(val *[]*string) {
 	if err := j.validateSetPeerIpAddressesParameters(val); err != nil {
 		panic(err)
 	}
@@ -483,6 +577,17 @@ func (j *jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference)SetRep
 	_jsii_.Set(
 		j,
 		"replication",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference)SetReplicationSchedule(val *string) {
+	if err := j.validateSetReplicationScheduleParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"replicationSchedule",
 		val,
 	)
 }
@@ -711,10 +816,26 @@ func (n *jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference) Reset
 	)
 }
 
+func (n *jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference) ResetHybridReplicationType() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetHybridReplicationType",
+		nil, // no parameters
+	)
+}
+
 func (n *jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference) ResetLabels() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetLabels",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference) ResetLargeVolumeConstituentCount() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetLargeVolumeConstituentCount",
 		nil, // no parameters
 	)
 }
@@ -755,6 +876,14 @@ func (n *jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference) Reset
 	_jsii_.InvokeVoid(
 		n,
 		"resetReplication",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference) ResetReplicationSchedule() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetReplicationSchedule",
 		nil, // no parameters
 	)
 }

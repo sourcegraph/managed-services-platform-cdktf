@@ -89,6 +89,9 @@ type ComputeRegionInstanceTemplateDiskOutputReference interface {
 	SourceSnapshotEncryptionKey() ComputeRegionInstanceTemplateDiskSourceSnapshotEncryptionKeyOutputReference
 	SourceSnapshotEncryptionKeyInput() *ComputeRegionInstanceTemplateDiskSourceSnapshotEncryptionKey
 	SourceSnapshotInput() *string
+	StoragePool() *string
+	SetStoragePool(val *string)
+	StoragePoolInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -148,6 +151,7 @@ type ComputeRegionInstanceTemplateDiskOutputReference interface {
 	ResetSourceImageEncryptionKey()
 	ResetSourceSnapshot()
 	ResetSourceSnapshotEncryptionKey()
+	ResetStoragePool()
 	ResetType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -634,6 +638,26 @@ func (j *jsiiProxy_ComputeRegionInstanceTemplateDiskOutputReference) SourceSnaps
 	return returns
 }
 
+func (j *jsiiProxy_ComputeRegionInstanceTemplateDiskOutputReference) StoragePool() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storagePool",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRegionInstanceTemplateDiskOutputReference) StoragePoolInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storagePoolInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeRegionInstanceTemplateDiskOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -929,6 +953,17 @@ func (j *jsiiProxy_ComputeRegionInstanceTemplateDiskOutputReference)SetSourceSna
 	_jsii_.Set(
 		j,
 		"sourceSnapshot",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeRegionInstanceTemplateDiskOutputReference)SetStoragePool(val *string) {
+	if err := j.validateSetStoragePoolParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"storagePool",
 		val,
 	)
 }
@@ -1349,6 +1384,14 @@ func (c *jsiiProxy_ComputeRegionInstanceTemplateDiskOutputReference) ResetSource
 	_jsii_.InvokeVoid(
 		c,
 		"resetSourceSnapshotEncryptionKey",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeRegionInstanceTemplateDiskOutputReference) ResetStoragePool() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetStoragePool",
 		nil, // no parameters
 	)
 }

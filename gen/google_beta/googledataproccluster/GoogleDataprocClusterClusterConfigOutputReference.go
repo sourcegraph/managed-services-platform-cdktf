@@ -18,6 +18,9 @@ type GoogleDataprocClusterClusterConfigOutputReference interface {
 	ClusterTier() *string
 	SetClusterTier(val *string)
 	ClusterTierInput() *string
+	ClusterType() *string
+	SetClusterType(val *string)
+	ClusterTypeInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -39,6 +42,9 @@ type GoogleDataprocClusterClusterConfigOutputReference interface {
 	EncryptionConfigInput() *GoogleDataprocClusterClusterConfigEncryptionConfig
 	EndpointConfig() GoogleDataprocClusterClusterConfigEndpointConfigOutputReference
 	EndpointConfigInput() *GoogleDataprocClusterClusterConfigEndpointConfig
+	Engine() *string
+	SetEngine(val *string)
+	EngineInput() *string
 	// Experimental.
 	Fqn() *string
 	GceClusterConfig() GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference
@@ -116,9 +122,11 @@ type GoogleDataprocClusterClusterConfigOutputReference interface {
 	ResetAutoscalingConfig()
 	ResetAuxiliaryNodeGroups()
 	ResetClusterTier()
+	ResetClusterType()
 	ResetDataprocMetricConfig()
 	ResetEncryptionConfig()
 	ResetEndpointConfig()
+	ResetEngine()
 	ResetGceClusterConfig()
 	ResetInitializationAction()
 	ResetLifecycleConfig()
@@ -215,6 +223,26 @@ func (j *jsiiProxy_GoogleDataprocClusterClusterConfigOutputReference) ClusterTie
 	return returns
 }
 
+func (j *jsiiProxy_GoogleDataprocClusterClusterConfigOutputReference) ClusterType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clusterType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataprocClusterClusterConfigOutputReference) ClusterTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clusterTypeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleDataprocClusterClusterConfigOutputReference) ComplexObjectIndex() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -300,6 +328,26 @@ func (j *jsiiProxy_GoogleDataprocClusterClusterConfigOutputReference) EndpointCo
 	_jsii_.Get(
 		j,
 		"endpointConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataprocClusterClusterConfigOutputReference) Engine() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"engine",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataprocClusterClusterConfigOutputReference) EngineInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"engineInput",
 		&returns,
 	)
 	return returns
@@ -604,6 +652,17 @@ func (j *jsiiProxy_GoogleDataprocClusterClusterConfigOutputReference)SetClusterT
 	)
 }
 
+func (j *jsiiProxy_GoogleDataprocClusterClusterConfigOutputReference)SetClusterType(val *string) {
+	if err := j.validateSetClusterTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"clusterType",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleDataprocClusterClusterConfigOutputReference)SetComplexObjectIndex(val interface{}) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
@@ -622,6 +681,17 @@ func (j *jsiiProxy_GoogleDataprocClusterClusterConfigOutputReference)SetComplexO
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleDataprocClusterClusterConfigOutputReference)SetEngine(val *string) {
+	if err := j.validateSetEngineParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"engine",
 		val,
 	)
 }
@@ -1045,6 +1115,14 @@ func (g *jsiiProxy_GoogleDataprocClusterClusterConfigOutputReference) ResetClust
 	)
 }
 
+func (g *jsiiProxy_GoogleDataprocClusterClusterConfigOutputReference) ResetClusterType() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetClusterType",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleDataprocClusterClusterConfigOutputReference) ResetDataprocMetricConfig() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1065,6 +1143,14 @@ func (g *jsiiProxy_GoogleDataprocClusterClusterConfigOutputReference) ResetEndpo
 	_jsii_.InvokeVoid(
 		g,
 		"resetEndpointConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDataprocClusterClusterConfigOutputReference) ResetEngine() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetEngine",
 		nil, // no parameters
 	)
 }

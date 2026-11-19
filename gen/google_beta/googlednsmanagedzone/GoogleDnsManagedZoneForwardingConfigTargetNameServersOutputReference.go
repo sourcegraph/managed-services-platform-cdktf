@@ -38,6 +38,9 @@ type GoogleDnsManagedZoneForwardingConfigTargetNameServersOutputReference interf
 	Ipv4Address() *string
 	SetIpv4Address(val *string)
 	Ipv4AddressInput() *string
+	Ipv6Address() *string
+	SetIpv6Address(val *string)
+	Ipv6AddressInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -73,6 +76,7 @@ type GoogleDnsManagedZoneForwardingConfigTargetNameServersOutputReference interf
 	ResetDomainName()
 	ResetForwardingPath()
 	ResetIpv4Address()
+	ResetIpv6Address()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -198,6 +202,26 @@ func (j *jsiiProxy_GoogleDnsManagedZoneForwardingConfigTargetNameServersOutputRe
 	return returns
 }
 
+func (j *jsiiProxy_GoogleDnsManagedZoneForwardingConfigTargetNameServersOutputReference) Ipv6Address() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipv6Address",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDnsManagedZoneForwardingConfigTargetNameServersOutputReference) Ipv6AddressInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipv6AddressInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleDnsManagedZoneForwardingConfigTargetNameServersOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -308,6 +332,17 @@ func (j *jsiiProxy_GoogleDnsManagedZoneForwardingConfigTargetNameServersOutputRe
 	_jsii_.Set(
 		j,
 		"ipv4Address",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleDnsManagedZoneForwardingConfigTargetNameServersOutputReference)SetIpv6Address(val *string) {
+	if err := j.validateSetIpv6AddressParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ipv6Address",
 		val,
 	)
 }
@@ -540,6 +575,14 @@ func (g *jsiiProxy_GoogleDnsManagedZoneForwardingConfigTargetNameServersOutputRe
 	_jsii_.InvokeVoid(
 		g,
 		"resetIpv4Address",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDnsManagedZoneForwardingConfigTargetNameServersOutputReference) ResetIpv6Address() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetIpv6Address",
 		nil, // no parameters
 	)
 }

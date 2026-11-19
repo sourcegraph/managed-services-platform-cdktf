@@ -52,6 +52,10 @@ func (c *jsiiProxy_ComputeRegionUrlMapPathMatcherOutputReference) validatePutDef
 	return nil
 }
 
+func (c *jsiiProxy_ComputeRegionUrlMapPathMatcherOutputReference) validatePutHeaderActionParameters(value *ComputeRegionUrlMapPathMatcherHeaderAction) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeRegionUrlMapPathMatcherOutputReference) validatePutPathRuleParameters(value interface{}) error {
 	return nil
 }

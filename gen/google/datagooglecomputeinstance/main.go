@@ -906,6 +906,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "igmpQuery", GoGetter: "IgmpQuery"},
 			_jsii_.MemberProperty{JsiiProperty: "internalIpv6PrefixLength", GoGetter: "InternalIpv6PrefixLength"},
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
@@ -918,6 +919,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "networkAttachment", GoGetter: "NetworkAttachment"},
 			_jsii_.MemberProperty{JsiiProperty: "networkIp", GoGetter: "NetworkIp"},
 			_jsii_.MemberProperty{JsiiProperty: "nicType", GoGetter: "NicType"},
+			_jsii_.MemberProperty{JsiiProperty: "parentNicName", GoGetter: "ParentNicName"},
 			_jsii_.MemberProperty{JsiiProperty: "queueCount", GoGetter: "QueueCount"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "stackType", GoGetter: "StackType"},
@@ -926,6 +928,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "vlan", GoGetter: "Vlan"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataGoogleComputeInstanceNetworkInterfaceOutputReference{}

@@ -84,6 +84,10 @@ func (g *jsiiProxy_GoogleModelArmorFloorsetting) validatePutFloorSettingMetadata
 	return nil
 }
 
+func (g *jsiiProxy_GoogleModelArmorFloorsetting) validatePutGoogleMcpServerFloorSettingParameters(value *GoogleModelArmorFloorsettingGoogleMcpServerFloorSetting) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleModelArmorFloorsetting) validatePutTimeoutsParameters(value *GoogleModelArmorFloorsettingTimeouts) error {
 	return nil
 }

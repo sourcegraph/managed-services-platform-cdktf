@@ -100,6 +100,10 @@ func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) validatePutReserv
 	return nil
 }
 
+func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) validatePutSandboxConfigParameters(value *ContainerNodePoolNodeConfigSandboxConfig) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) validatePutSecondaryBootDisksParameters(value interface{}) error {
 	return nil
 }

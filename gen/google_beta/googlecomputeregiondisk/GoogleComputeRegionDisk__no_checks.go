@@ -132,6 +132,10 @@ func (j *jsiiProxy_GoogleComputeRegionDisk) validateSetDescriptionParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeRegionDisk) validateSetEraseWindowsVssSignatureParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeRegionDisk) validateSetIdParameters(val *string) error {
 	return nil
 }

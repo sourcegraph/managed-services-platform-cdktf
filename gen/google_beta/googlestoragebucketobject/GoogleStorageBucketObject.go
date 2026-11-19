@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googlestoragebucketobject/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_storage_bucket_object google_storage_bucket_object}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_storage_bucket_object google_storage_bucket_object}.
 type GoogleStorageBucketObject interface {
 	cdktf.TerraformResource
 	Bucket() *string
@@ -41,6 +41,8 @@ type GoogleStorageBucketObject interface {
 	ContentType() *string
 	SetContentType(val *string)
 	ContentTypeInput() *string
+	Contexts() GoogleStorageBucketObjectContextsOutputReference
+	ContextsInput() *GoogleStorageBucketObjectContexts
 	// Experimental.
 	Count() interface{}
 	// Experimental.
@@ -171,6 +173,7 @@ type GoogleStorageBucketObject interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutContexts(value *GoogleStorageBucketObjectContexts)
 	PutCustomerEncryption(value *GoogleStorageBucketObjectCustomerEncryption)
 	PutRetention(value *GoogleStorageBucketObjectRetention)
 	PutTimeouts(value *GoogleStorageBucketObjectTimeouts)
@@ -180,6 +183,7 @@ type GoogleStorageBucketObject interface {
 	ResetContentEncoding()
 	ResetContentLanguage()
 	ResetContentType()
+	ResetContexts()
 	ResetCustomerEncryption()
 	ResetDeletionPolicy()
 	ResetDetectMd5Hash()
@@ -380,6 +384,26 @@ func (j *jsiiProxy_GoogleStorageBucketObject) ContentTypeInput() *string {
 	_jsii_.Get(
 		j,
 		"contentTypeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleStorageBucketObject) Contexts() GoogleStorageBucketObjectContextsOutputReference {
+	var returns GoogleStorageBucketObjectContextsOutputReference
+	_jsii_.Get(
+		j,
+		"contexts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleStorageBucketObject) ContextsInput() *GoogleStorageBucketObjectContexts {
+	var returns *GoogleStorageBucketObjectContexts
+	_jsii_.Get(
+		j,
+		"contextsInput",
 		&returns,
 	)
 	return returns
@@ -886,7 +910,7 @@ func (j *jsiiProxy_GoogleStorageBucketObject) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_storage_bucket_object google_storage_bucket_object} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_storage_bucket_object google_storage_bucket_object} Resource.
 func NewGoogleStorageBucketObject(scope constructs.Construct, id *string, config *GoogleStorageBucketObjectConfig) GoogleStorageBucketObject {
 	_init_.Initialize()
 
@@ -904,7 +928,7 @@ func NewGoogleStorageBucketObject(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_storage_bucket_object google_storage_bucket_object} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_storage_bucket_object google_storage_bucket_object} Resource.
 func NewGoogleStorageBucketObject_Override(g GoogleStorageBucketObject, scope constructs.Construct, id *string, config *GoogleStorageBucketObjectConfig) {
 	_init_.Initialize()
 
@@ -1545,6 +1569,17 @@ func (g *jsiiProxy_GoogleStorageBucketObject) OverrideLogicalId(newLogicalId *st
 	)
 }
 
+func (g *jsiiProxy_GoogleStorageBucketObject) PutContexts(value *GoogleStorageBucketObjectContexts) {
+	if err := g.validatePutContextsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putContexts",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleStorageBucketObject) PutCustomerEncryption(value *GoogleStorageBucketObjectCustomerEncryption) {
 	if err := g.validatePutCustomerEncryptionParameters(value); err != nil {
 		panic(err)
@@ -1622,6 +1657,14 @@ func (g *jsiiProxy_GoogleStorageBucketObject) ResetContentType() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetContentType",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleStorageBucketObject) ResetContexts() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetContexts",
 		nil, // no parameters
 	)
 }

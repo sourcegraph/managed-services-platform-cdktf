@@ -237,6 +237,17 @@ func (m *jsiiProxy_ModelArmorFloorsetting) validatePutFloorSettingMetadataParame
 	return nil
 }
 
+func (m *jsiiProxy_ModelArmorFloorsetting) validatePutGoogleMcpServerFloorSettingParameters(value *ModelArmorFloorsettingGoogleMcpServerFloorSetting) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (m *jsiiProxy_ModelArmorFloorsetting) validatePutTimeoutsParameters(value *ModelArmorFloorsettingTimeouts) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

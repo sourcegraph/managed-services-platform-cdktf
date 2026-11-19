@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google/datagooglebigquerydatasets/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/bigquery_datasets google_bigquery_datasets}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/bigquery_datasets google_bigquery_datasets}.
 type DataGoogleBigqueryDatasets interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -297,7 +297,7 @@ func (j *jsiiProxy_DataGoogleBigqueryDatasets) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/bigquery_datasets google_bigquery_datasets} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/bigquery_datasets google_bigquery_datasets} Data Source.
 func NewDataGoogleBigqueryDatasets(scope constructs.Construct, id *string, config *DataGoogleBigqueryDatasetsConfig) DataGoogleBigqueryDatasets {
 	_init_.Initialize()
 
@@ -315,7 +315,7 @@ func NewDataGoogleBigqueryDatasets(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/bigquery_datasets google_bigquery_datasets} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/bigquery_datasets google_bigquery_datasets} Data Source.
 func NewDataGoogleBigqueryDatasets_Override(d DataGoogleBigqueryDatasets, scope constructs.Construct, id *string, config *DataGoogleBigqueryDatasetsConfig) {
 	_init_.Initialize()
 

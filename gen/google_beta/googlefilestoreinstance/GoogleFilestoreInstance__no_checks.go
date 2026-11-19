@@ -132,6 +132,10 @@ func (j *jsiiProxy_GoogleFilestoreInstance) validateSetDescriptionParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_GoogleFilestoreInstance) validateSetDesiredReplicaStateParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleFilestoreInstance) validateSetIdParameters(val *string) error {
 	return nil
 }

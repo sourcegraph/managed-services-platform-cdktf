@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googlediscoveryenginecmekconfig/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_discovery_engine_cmek_config google_discovery_engine_cmek_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_discovery_engine_cmek_config google_discovery_engine_cmek_config}.
 type GoogleDiscoveryEngineCmekConfig interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -131,7 +131,6 @@ type GoogleDiscoveryEngineCmekConfig interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutSingleRegionKeys(value interface{})
 	PutTimeouts(value *GoogleDiscoveryEngineCmekConfigTimeouts)
-	ResetCmekConfigId()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -539,7 +538,7 @@ func (j *jsiiProxy_GoogleDiscoveryEngineCmekConfig) TimeoutsInput() interface{} 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_discovery_engine_cmek_config google_discovery_engine_cmek_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_discovery_engine_cmek_config google_discovery_engine_cmek_config} Resource.
 func NewGoogleDiscoveryEngineCmekConfig(scope constructs.Construct, id *string, config *GoogleDiscoveryEngineCmekConfigConfig) GoogleDiscoveryEngineCmekConfig {
 	_init_.Initialize()
 
@@ -557,7 +556,7 @@ func NewGoogleDiscoveryEngineCmekConfig(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_discovery_engine_cmek_config google_discovery_engine_cmek_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_discovery_engine_cmek_config google_discovery_engine_cmek_config} Resource.
 func NewGoogleDiscoveryEngineCmekConfig_Override(g GoogleDiscoveryEngineCmekConfig, scope constructs.Construct, id *string, config *GoogleDiscoveryEngineCmekConfigConfig) {
 	_init_.Initialize()
 
@@ -1074,14 +1073,6 @@ func (g *jsiiProxy_GoogleDiscoveryEngineCmekConfig) PutTimeouts(value *GoogleDis
 		g,
 		"putTimeouts",
 		[]interface{}{value},
-	)
-}
-
-func (g *jsiiProxy_GoogleDiscoveryEngineCmekConfig) ResetCmekConfigId() {
-	_jsii_.InvokeVoid(
-		g,
-		"resetCmekConfigId",
-		nil, // no parameters
 	)
 }
 

@@ -56,6 +56,10 @@ func (j *jsiiProxy_GoogleContainerClusterAddonsConfigLustreCsiDriverConfigOutput
 	return nil
 }
 
+func (j *jsiiProxy_GoogleContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference) validateSetDisableMultiNicParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference) validateSetEnabledParameters(val interface{}) error {
 	return nil
 }

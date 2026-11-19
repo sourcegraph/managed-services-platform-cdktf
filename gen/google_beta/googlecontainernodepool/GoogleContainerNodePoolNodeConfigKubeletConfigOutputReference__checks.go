@@ -123,6 +123,28 @@ func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigKubeletConfigOutputReference
 	return nil
 }
 
+func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigKubeletConfigOutputReference) validatePutMemoryManagerParameters(value *GoogleContainerNodePoolNodeConfigKubeletConfigMemoryManager) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigKubeletConfigOutputReference) validatePutTopologyManagerParameters(value *GoogleContainerNodePoolNodeConfigKubeletConfigTopologyManager) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigKubeletConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	if _context == nil {
 		return fmt.Errorf("parameter _context is required, but nil was provided")

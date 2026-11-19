@@ -354,6 +354,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "sourceImageEncryptionKey", GoGetter: "SourceImageEncryptionKey"},
 			_jsii_.MemberProperty{JsiiProperty: "sourceSnapshot", GoGetter: "SourceSnapshot"},
 			_jsii_.MemberProperty{JsiiProperty: "sourceSnapshotEncryptionKey", GoGetter: "SourceSnapshotEncryptionKey"},
+			_jsii_.MemberProperty{JsiiProperty: "storagePool", GoGetter: "StoragePool"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
@@ -772,6 +773,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "igmpQuery", GoGetter: "IgmpQuery"},
 			_jsii_.MemberProperty{JsiiProperty: "internalIpv6PrefixLength", GoGetter: "InternalIpv6PrefixLength"},
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
@@ -781,8 +783,10 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "ipv6Address", GoGetter: "Ipv6Address"},
 			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
 			_jsii_.MemberProperty{JsiiProperty: "network", GoGetter: "Network"},
+			_jsii_.MemberProperty{JsiiProperty: "networkAttachment", GoGetter: "NetworkAttachment"},
 			_jsii_.MemberProperty{JsiiProperty: "networkIp", GoGetter: "NetworkIp"},
 			_jsii_.MemberProperty{JsiiProperty: "nicType", GoGetter: "NicType"},
+			_jsii_.MemberProperty{JsiiProperty: "parentNicName", GoGetter: "ParentNicName"},
 			_jsii_.MemberProperty{JsiiProperty: "queueCount", GoGetter: "QueueCount"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "stackType", GoGetter: "StackType"},
@@ -791,6 +795,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "vlan", GoGetter: "Vlan"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataGoogleComputeRegionInstanceTemplateNetworkInterfaceOutputReference{}
@@ -1387,8 +1392,10 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "onHostMaintenance", GoGetter: "OnHostMaintenance"},
 			_jsii_.MemberProperty{JsiiProperty: "onInstanceStopAction", GoGetter: "OnInstanceStopAction"},
 			_jsii_.MemberProperty{JsiiProperty: "preemptible", GoGetter: "Preemptible"},
+			_jsii_.MemberProperty{JsiiProperty: "preemptionNoticeDuration", GoGetter: "PreemptionNoticeDuration"},
 			_jsii_.MemberProperty{JsiiProperty: "provisioningModel", GoGetter: "ProvisioningModel"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "skipGuestOsShutdown", GoGetter: "SkipGuestOsShutdown"},
 			_jsii_.MemberProperty{JsiiProperty: "terminationTime", GoGetter: "TerminationTime"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
@@ -1396,6 +1403,65 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataGoogleComputeRegionInstanceTemplateSchedulingOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-google_beta.dataGoogleComputeRegionInstanceTemplate.DataGoogleComputeRegionInstanceTemplateSchedulingPreemptionNoticeDuration",
+		reflect.TypeOf((*DataGoogleComputeRegionInstanceTemplateSchedulingPreemptionNoticeDuration)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google_beta.dataGoogleComputeRegionInstanceTemplate.DataGoogleComputeRegionInstanceTemplateSchedulingPreemptionNoticeDurationList",
+		reflect.TypeOf((*DataGoogleComputeRegionInstanceTemplateSchedulingPreemptionNoticeDurationList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_DataGoogleComputeRegionInstanceTemplateSchedulingPreemptionNoticeDurationList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google_beta.dataGoogleComputeRegionInstanceTemplate.DataGoogleComputeRegionInstanceTemplateSchedulingPreemptionNoticeDurationOutputReference",
+		reflect.TypeOf((*DataGoogleComputeRegionInstanceTemplateSchedulingPreemptionNoticeDurationOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "nanos", GoGetter: "Nanos"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "seconds", GoGetter: "Seconds"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_DataGoogleComputeRegionInstanceTemplateSchedulingPreemptionNoticeDurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

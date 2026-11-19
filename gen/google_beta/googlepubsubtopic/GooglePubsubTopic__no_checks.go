@@ -148,6 +148,10 @@ func (j *jsiiProxy_GooglePubsubTopic) validateSetProvisionersParameters(val *[]i
 	return nil
 }
 
+func (j *jsiiProxy_GooglePubsubTopic) validateSetTagsParameters(val *map[string]*string) error {
+	return nil
+}
+
 func validateNewGooglePubsubTopicParameters(scope constructs.Construct, id *string, config *GooglePubsubTopicConfig) error {
 	return nil
 }

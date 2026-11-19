@@ -72,6 +72,10 @@ func (m *jsiiProxy_ManagedKafkaCluster) validateOverrideLogicalIdParameters(newL
 	return nil
 }
 
+func (m *jsiiProxy_ManagedKafkaCluster) validatePutBrokerCapacityConfigParameters(value *ManagedKafkaClusterBrokerCapacityConfig) error {
+	return nil
+}
+
 func (m *jsiiProxy_ManagedKafkaCluster) validatePutCapacityConfigParameters(value *ManagedKafkaClusterCapacityConfig) error {
 	return nil
 }

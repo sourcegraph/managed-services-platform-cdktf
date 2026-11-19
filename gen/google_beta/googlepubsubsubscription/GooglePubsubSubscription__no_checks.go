@@ -176,6 +176,10 @@ func (j *jsiiProxy_GooglePubsubSubscription) validateSetRetainAckedMessagesParam
 	return nil
 }
 
+func (j *jsiiProxy_GooglePubsubSubscription) validateSetTagsParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GooglePubsubSubscription) validateSetTopicParameters(val *string) error {
 	return nil
 }

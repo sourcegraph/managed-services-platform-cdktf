@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/datagooglecomputeregiondisk/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/data-sources/google_compute_region_disk google_compute_region_disk}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/data-sources/google_compute_region_disk google_compute_region_disk}.
 type DataGoogleComputeRegionDisk interface {
 	cdktf.TerraformDataSource
 	AccessMode() *string
@@ -33,6 +33,7 @@ type DataGoogleComputeRegionDisk interface {
 	DiskEncryptionKey() DataGoogleComputeRegionDiskDiskEncryptionKeyList
 	DiskId() *string
 	EffectiveLabels() cdktf.StringMap
+	EraseWindowsVssSignature() cdktf.IResolvable
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -267,6 +268,16 @@ func (j *jsiiProxy_DataGoogleComputeRegionDisk) EffectiveLabels() cdktf.StringMa
 	_jsii_.Get(
 		j,
 		"effectiveLabels",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeRegionDisk) EraseWindowsVssSignature() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"eraseWindowsVssSignature",
 		&returns,
 	)
 	return returns
@@ -663,7 +674,7 @@ func (j *jsiiProxy_DataGoogleComputeRegionDisk) Users() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/data-sources/google_compute_region_disk google_compute_region_disk} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/data-sources/google_compute_region_disk google_compute_region_disk} Data Source.
 func NewDataGoogleComputeRegionDisk(scope constructs.Construct, id *string, config *DataGoogleComputeRegionDiskConfig) DataGoogleComputeRegionDisk {
 	_init_.Initialize()
 
@@ -681,7 +692,7 @@ func NewDataGoogleComputeRegionDisk(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/data-sources/google_compute_region_disk google_compute_region_disk} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/data-sources/google_compute_region_disk google_compute_region_disk} Data Source.
 func NewDataGoogleComputeRegionDisk_Override(d DataGoogleComputeRegionDisk, scope constructs.Construct, id *string, config *DataGoogleComputeRegionDiskConfig) {
 	_init_.Initialize()
 

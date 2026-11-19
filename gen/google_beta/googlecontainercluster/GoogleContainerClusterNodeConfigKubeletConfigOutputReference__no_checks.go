@@ -56,6 +56,14 @@ func (g *jsiiProxy_GoogleContainerClusterNodeConfigKubeletConfigOutputReference)
 	return nil
 }
 
+func (g *jsiiProxy_GoogleContainerClusterNodeConfigKubeletConfigOutputReference) validatePutMemoryManagerParameters(value *GoogleContainerClusterNodeConfigKubeletConfigMemoryManager) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleContainerClusterNodeConfigKubeletConfigOutputReference) validatePutTopologyManagerParameters(value *GoogleContainerClusterNodeConfigKubeletConfigTopologyManager) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerClusterNodeConfigKubeletConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

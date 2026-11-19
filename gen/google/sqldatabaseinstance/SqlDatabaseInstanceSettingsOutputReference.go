@@ -17,6 +17,9 @@ type SqlDatabaseInstanceSettingsOutputReference interface {
 	ActiveDirectoryConfigInput() *SqlDatabaseInstanceSettingsActiveDirectoryConfig
 	AdvancedMachineFeatures() SqlDatabaseInstanceSettingsAdvancedMachineFeaturesOutputReference
 	AdvancedMachineFeaturesInput() *SqlDatabaseInstanceSettingsAdvancedMachineFeatures
+	AutoUpgradeEnabled() interface{}
+	SetAutoUpgradeEnabled(val interface{})
+	AutoUpgradeEnabledInput() interface{}
 	AvailabilityType() *string
 	SetAvailabilityType(val *string)
 	AvailabilityTypeInput() *string
@@ -45,6 +48,9 @@ type SqlDatabaseInstanceSettingsOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DataApiAccess() *string
+	SetDataApiAccess(val *string)
+	DataApiAccessInput() *string
 	DatabaseFlags() SqlDatabaseInstanceSettingsDatabaseFlagsList
 	DatabaseFlagsInput() interface{}
 	DataCacheConfig() SqlDatabaseInstanceSettingsDataCacheConfigOutputReference
@@ -76,6 +82,10 @@ type SqlDatabaseInstanceSettingsOutputReference interface {
 	EnableGoogleMlIntegration() interface{}
 	SetEnableGoogleMlIntegration(val interface{})
 	EnableGoogleMlIntegrationInput() interface{}
+	EntraidConfig() SqlDatabaseInstanceSettingsEntraidConfigOutputReference
+	EntraidConfigInput() *SqlDatabaseInstanceSettingsEntraidConfig
+	FinalBackupConfig() SqlDatabaseInstanceSettingsFinalBackupConfigOutputReference
+	FinalBackupConfigInput() *SqlDatabaseInstanceSettingsFinalBackupConfig
 	// Experimental.
 	Fqn() *string
 	InsightsConfig() SqlDatabaseInstanceSettingsInsightsConfigOutputReference
@@ -93,6 +103,8 @@ type SqlDatabaseInstanceSettingsOutputReference interface {
 	PricingPlan() *string
 	SetPricingPlan(val *string)
 	PricingPlanInput() *string
+	ReadPoolAutoScaleConfig() SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference
+	ReadPoolAutoScaleConfigInput() *SqlDatabaseInstanceSettingsReadPoolAutoScaleConfig
 	RetainBackupsOnDelete() interface{}
 	SetRetainBackupsOnDelete(val interface{})
 	RetainBackupsOnDeleteInput() interface{}
@@ -147,20 +159,25 @@ type SqlDatabaseInstanceSettingsOutputReference interface {
 	PutDatabaseFlags(value interface{})
 	PutDataCacheConfig(value *SqlDatabaseInstanceSettingsDataCacheConfig)
 	PutDenyMaintenancePeriod(value *SqlDatabaseInstanceSettingsDenyMaintenancePeriod)
+	PutEntraidConfig(value *SqlDatabaseInstanceSettingsEntraidConfig)
+	PutFinalBackupConfig(value *SqlDatabaseInstanceSettingsFinalBackupConfig)
 	PutInsightsConfig(value *SqlDatabaseInstanceSettingsInsightsConfig)
 	PutIpConfiguration(value *SqlDatabaseInstanceSettingsIpConfiguration)
 	PutLocationPreference(value *SqlDatabaseInstanceSettingsLocationPreference)
 	PutMaintenanceWindow(value *SqlDatabaseInstanceSettingsMaintenanceWindow)
 	PutPasswordValidationPolicy(value *SqlDatabaseInstanceSettingsPasswordValidationPolicy)
+	PutReadPoolAutoScaleConfig(value *SqlDatabaseInstanceSettingsReadPoolAutoScaleConfig)
 	PutSqlServerAuditConfig(value *SqlDatabaseInstanceSettingsSqlServerAuditConfig)
 	ResetActivationPolicy()
 	ResetActiveDirectoryConfig()
 	ResetAdvancedMachineFeatures()
+	ResetAutoUpgradeEnabled()
 	ResetAvailabilityType()
 	ResetBackupConfiguration()
 	ResetCollation()
 	ResetConnectionPoolConfig()
 	ResetConnectorEnforcement()
+	ResetDataApiAccess()
 	ResetDatabaseFlags()
 	ResetDataCacheConfig()
 	ResetDeletionProtectionEnabled()
@@ -172,12 +189,15 @@ type SqlDatabaseInstanceSettingsOutputReference interface {
 	ResetEdition()
 	ResetEnableDataplexIntegration()
 	ResetEnableGoogleMlIntegration()
+	ResetEntraidConfig()
+	ResetFinalBackupConfig()
 	ResetInsightsConfig()
 	ResetIpConfiguration()
 	ResetLocationPreference()
 	ResetMaintenanceWindow()
 	ResetPasswordValidationPolicy()
 	ResetPricingPlan()
+	ResetReadPoolAutoScaleConfig()
 	ResetRetainBackupsOnDelete()
 	ResetSqlServerAuditConfig()
 	ResetTimeZone()
@@ -252,6 +272,26 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) AdvancedMachineFe
 	_jsii_.Get(
 		j,
 		"advancedMachineFeaturesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) AutoUpgradeEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"autoUpgradeEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) AutoUpgradeEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"autoUpgradeEnabledInput",
 		&returns,
 	)
 	return returns
@@ -382,6 +422,26 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) CreationStack() *
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) DataApiAccess() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dataApiAccess",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) DataApiAccessInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dataApiAccessInput",
 		&returns,
 	)
 	return returns
@@ -617,6 +677,46 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) EnableGoogleMlInt
 	return returns
 }
 
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) EntraidConfig() SqlDatabaseInstanceSettingsEntraidConfigOutputReference {
+	var returns SqlDatabaseInstanceSettingsEntraidConfigOutputReference
+	_jsii_.Get(
+		j,
+		"entraidConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) EntraidConfigInput() *SqlDatabaseInstanceSettingsEntraidConfig {
+	var returns *SqlDatabaseInstanceSettingsEntraidConfig
+	_jsii_.Get(
+		j,
+		"entraidConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) FinalBackupConfig() SqlDatabaseInstanceSettingsFinalBackupConfigOutputReference {
+	var returns SqlDatabaseInstanceSettingsFinalBackupConfigOutputReference
+	_jsii_.Get(
+		j,
+		"finalBackupConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) FinalBackupConfigInput() *SqlDatabaseInstanceSettingsFinalBackupConfig {
+	var returns *SqlDatabaseInstanceSettingsFinalBackupConfig
+	_jsii_.Get(
+		j,
+		"finalBackupConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -752,6 +852,26 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) PricingPlanInput(
 	_jsii_.Get(
 		j,
 		"pricingPlanInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) ReadPoolAutoScaleConfig() SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference {
+	var returns SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference
+	_jsii_.Get(
+		j,
+		"readPoolAutoScaleConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) ReadPoolAutoScaleConfigInput() *SqlDatabaseInstanceSettingsReadPoolAutoScaleConfig {
+	var returns *SqlDatabaseInstanceSettingsReadPoolAutoScaleConfig
+	_jsii_.Get(
+		j,
+		"readPoolAutoScaleConfigInput",
 		&returns,
 	)
 	return returns
@@ -926,6 +1046,17 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference)SetActivationPolic
 	)
 }
 
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference)SetAutoUpgradeEnabled(val interface{}) {
+	if err := j.validateSetAutoUpgradeEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"autoUpgradeEnabled",
+		val,
+	)
+}
+
 func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference)SetAvailabilityType(val *string) {
 	if err := j.validateSetAvailabilityTypeParameters(val); err != nil {
 		panic(err)
@@ -977,6 +1108,17 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference)SetConnectorEnforc
 	_jsii_.Set(
 		j,
 		"connectorEnforcement",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference)SetDataApiAccess(val *string) {
+	if err := j.validateSetDataApiAccessParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"dataApiAccess",
 		val,
 	)
 }
@@ -1420,6 +1562,28 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) PutDenyMaintenanc
 	)
 }
 
+func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) PutEntraidConfig(value *SqlDatabaseInstanceSettingsEntraidConfig) {
+	if err := s.validatePutEntraidConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putEntraidConfig",
+		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) PutFinalBackupConfig(value *SqlDatabaseInstanceSettingsFinalBackupConfig) {
+	if err := s.validatePutFinalBackupConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putFinalBackupConfig",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) PutInsightsConfig(value *SqlDatabaseInstanceSettingsInsightsConfig) {
 	if err := s.validatePutInsightsConfigParameters(value); err != nil {
 		panic(err)
@@ -1475,6 +1639,17 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) PutPasswordValida
 	)
 }
 
+func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) PutReadPoolAutoScaleConfig(value *SqlDatabaseInstanceSettingsReadPoolAutoScaleConfig) {
+	if err := s.validatePutReadPoolAutoScaleConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putReadPoolAutoScaleConfig",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) PutSqlServerAuditConfig(value *SqlDatabaseInstanceSettingsSqlServerAuditConfig) {
 	if err := s.validatePutSqlServerAuditConfigParameters(value); err != nil {
 		panic(err)
@@ -1506,6 +1681,14 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) ResetAdvancedMach
 	_jsii_.InvokeVoid(
 		s,
 		"resetAdvancedMachineFeatures",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) ResetAutoUpgradeEnabled() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetAutoUpgradeEnabled",
 		nil, // no parameters
 	)
 }
@@ -1546,6 +1729,14 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) ResetConnectorEnf
 	_jsii_.InvokeVoid(
 		s,
 		"resetConnectorEnforcement",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) ResetDataApiAccess() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetDataApiAccess",
 		nil, // no parameters
 	)
 }
@@ -1638,6 +1829,22 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) ResetEnableGoogle
 	)
 }
 
+func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) ResetEntraidConfig() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetEntraidConfig",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) ResetFinalBackupConfig() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetFinalBackupConfig",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) ResetInsightsConfig() {
 	_jsii_.InvokeVoid(
 		s,
@@ -1682,6 +1889,14 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) ResetPricingPlan(
 	_jsii_.InvokeVoid(
 		s,
 		"resetPricingPlan",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) ResetReadPoolAutoScaleConfig() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetReadPoolAutoScaleConfig",
 		nil, // no parameters
 	)
 }

@@ -52,6 +52,14 @@ func (g *jsiiProxy_GoogleContainerClusterIpAllocationPolicyOutputReference) vali
 	return nil
 }
 
+func (g *jsiiProxy_GoogleContainerClusterIpAllocationPolicyOutputReference) validatePutAutoIpamConfigParameters(value *GoogleContainerClusterIpAllocationPolicyAutoIpamConfig) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleContainerClusterIpAllocationPolicyOutputReference) validatePutNetworkTierConfigParameters(value *GoogleContainerClusterIpAllocationPolicyNetworkTierConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerClusterIpAllocationPolicyOutputReference) validatePutPodCidrOverprovisionConfigParameters(value *GoogleContainerClusterIpAllocationPolicyPodCidrOverprovisionConfig) error {
 	return nil
 }

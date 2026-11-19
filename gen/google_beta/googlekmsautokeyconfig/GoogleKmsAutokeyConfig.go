@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googlekmsautokeyconfig/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_kms_autokey_config google_kms_autokey_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_kms_autokey_config google_kms_autokey_config}.
 type GoogleKmsAutokeyConfig interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -46,6 +46,9 @@ type GoogleKmsAutokeyConfig interface {
 	KeyProject() *string
 	SetKeyProject(val *string)
 	KeyProjectInput() *string
+	KeyProjectResolutionMode() *string
+	SetKeyProjectResolutionMode(val *string)
+	KeyProjectResolutionModeInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -116,6 +119,7 @@ type GoogleKmsAutokeyConfig interface {
 	PutTimeouts(value *GoogleKmsAutokeyConfigTimeouts)
 	ResetId()
 	ResetKeyProject()
+	ResetKeyProjectResolutionMode()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -288,6 +292,26 @@ func (j *jsiiProxy_GoogleKmsAutokeyConfig) KeyProjectInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleKmsAutokeyConfig) KeyProjectResolutionMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"keyProjectResolutionMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleKmsAutokeyConfig) KeyProjectResolutionModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"keyProjectResolutionModeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleKmsAutokeyConfig) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -389,7 +413,7 @@ func (j *jsiiProxy_GoogleKmsAutokeyConfig) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_kms_autokey_config google_kms_autokey_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_kms_autokey_config google_kms_autokey_config} Resource.
 func NewGoogleKmsAutokeyConfig(scope constructs.Construct, id *string, config *GoogleKmsAutokeyConfigConfig) GoogleKmsAutokeyConfig {
 	_init_.Initialize()
 
@@ -407,7 +431,7 @@ func NewGoogleKmsAutokeyConfig(scope constructs.Construct, id *string, config *G
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_kms_autokey_config google_kms_autokey_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_kms_autokey_config google_kms_autokey_config} Resource.
 func NewGoogleKmsAutokeyConfig_Override(g GoogleKmsAutokeyConfig, scope constructs.Construct, id *string, config *GoogleKmsAutokeyConfigConfig) {
 	_init_.Initialize()
 
@@ -485,6 +509,17 @@ func (j *jsiiProxy_GoogleKmsAutokeyConfig)SetKeyProject(val *string) {
 	_jsii_.Set(
 		j,
 		"keyProject",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleKmsAutokeyConfig)SetKeyProjectResolutionMode(val *string) {
+	if err := j.validateSetKeyProjectResolutionModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"keyProjectResolutionMode",
 		val,
 	)
 }
@@ -895,6 +930,14 @@ func (g *jsiiProxy_GoogleKmsAutokeyConfig) ResetKeyProject() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetKeyProject",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleKmsAutokeyConfig) ResetKeyProjectResolutionMode() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetKeyProjectResolutionMode",
 		nil, // no parameters
 	)
 }

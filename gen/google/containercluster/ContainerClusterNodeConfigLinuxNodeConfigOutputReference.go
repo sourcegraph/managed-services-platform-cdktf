@@ -10,6 +10,8 @@ import (
 
 type ContainerClusterNodeConfigLinuxNodeConfigOutputReference interface {
 	cdktf.ComplexObject
+	AccurateTimeConfig() ContainerClusterNodeConfigLinuxNodeConfigAccurateTimeConfigOutputReference
+	AccurateTimeConfigInput() *ContainerClusterNodeConfigLinuxNodeConfigAccurateTimeConfig
 	CgroupMode() *string
 	SetCgroupMode(val *string)
 	CgroupModeInput() *string
@@ -34,6 +36,10 @@ type ContainerClusterNodeConfigLinuxNodeConfigOutputReference interface {
 	HugepagesConfigInput() *ContainerClusterNodeConfigLinuxNodeConfigHugepagesConfig
 	InternalValue() *ContainerClusterNodeConfigLinuxNodeConfig
 	SetInternalValue(val *ContainerClusterNodeConfigLinuxNodeConfig)
+	NodeKernelModuleLoading() ContainerClusterNodeConfigLinuxNodeConfigNodeKernelModuleLoadingOutputReference
+	NodeKernelModuleLoadingInput() *ContainerClusterNodeConfigLinuxNodeConfigNodeKernelModuleLoading
+	SwapConfig() ContainerClusterNodeConfigLinuxNodeConfigSwapConfigOutputReference
+	SwapConfigInput() *ContainerClusterNodeConfigLinuxNodeConfigSwapConfig
 	Sysctls() *map[string]*string
 	SetSysctls(val *map[string]*string)
 	SysctlsInput() *map[string]*string
@@ -75,9 +81,15 @@ type ContainerClusterNodeConfigLinuxNodeConfigOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutAccurateTimeConfig(value *ContainerClusterNodeConfigLinuxNodeConfigAccurateTimeConfig)
 	PutHugepagesConfig(value *ContainerClusterNodeConfigLinuxNodeConfigHugepagesConfig)
+	PutNodeKernelModuleLoading(value *ContainerClusterNodeConfigLinuxNodeConfigNodeKernelModuleLoading)
+	PutSwapConfig(value *ContainerClusterNodeConfigLinuxNodeConfigSwapConfig)
+	ResetAccurateTimeConfig()
 	ResetCgroupMode()
 	ResetHugepagesConfig()
+	ResetNodeKernelModuleLoading()
+	ResetSwapConfig()
 	ResetSysctls()
 	ResetTransparentHugepageDefrag()
 	ResetTransparentHugepageEnabled()
@@ -94,6 +106,26 @@ type ContainerClusterNodeConfigLinuxNodeConfigOutputReference interface {
 // The jsii proxy struct for ContainerClusterNodeConfigLinuxNodeConfigOutputReference
 type jsiiProxy_ContainerClusterNodeConfigLinuxNodeConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_ContainerClusterNodeConfigLinuxNodeConfigOutputReference) AccurateTimeConfig() ContainerClusterNodeConfigLinuxNodeConfigAccurateTimeConfigOutputReference {
+	var returns ContainerClusterNodeConfigLinuxNodeConfigAccurateTimeConfigOutputReference
+	_jsii_.Get(
+		j,
+		"accurateTimeConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterNodeConfigLinuxNodeConfigOutputReference) AccurateTimeConfigInput() *ContainerClusterNodeConfigLinuxNodeConfigAccurateTimeConfig {
+	var returns *ContainerClusterNodeConfigLinuxNodeConfigAccurateTimeConfig
+	_jsii_.Get(
+		j,
+		"accurateTimeConfigInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_ContainerClusterNodeConfigLinuxNodeConfigOutputReference) CgroupMode() *string {
@@ -181,6 +213,46 @@ func (j *jsiiProxy_ContainerClusterNodeConfigLinuxNodeConfigOutputReference) Int
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterNodeConfigLinuxNodeConfigOutputReference) NodeKernelModuleLoading() ContainerClusterNodeConfigLinuxNodeConfigNodeKernelModuleLoadingOutputReference {
+	var returns ContainerClusterNodeConfigLinuxNodeConfigNodeKernelModuleLoadingOutputReference
+	_jsii_.Get(
+		j,
+		"nodeKernelModuleLoading",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterNodeConfigLinuxNodeConfigOutputReference) NodeKernelModuleLoadingInput() *ContainerClusterNodeConfigLinuxNodeConfigNodeKernelModuleLoading {
+	var returns *ContainerClusterNodeConfigLinuxNodeConfigNodeKernelModuleLoading
+	_jsii_.Get(
+		j,
+		"nodeKernelModuleLoadingInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterNodeConfigLinuxNodeConfigOutputReference) SwapConfig() ContainerClusterNodeConfigLinuxNodeConfigSwapConfigOutputReference {
+	var returns ContainerClusterNodeConfigLinuxNodeConfigSwapConfigOutputReference
+	_jsii_.Get(
+		j,
+		"swapConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterNodeConfigLinuxNodeConfigOutputReference) SwapConfigInput() *ContainerClusterNodeConfigLinuxNodeConfigSwapConfig {
+	var returns *ContainerClusterNodeConfigLinuxNodeConfigSwapConfig
+	_jsii_.Get(
+		j,
+		"swapConfigInput",
 		&returns,
 	)
 	return returns
@@ -579,6 +651,17 @@ func (c *jsiiProxy_ContainerClusterNodeConfigLinuxNodeConfigOutputReference) Int
 	return returns
 }
 
+func (c *jsiiProxy_ContainerClusterNodeConfigLinuxNodeConfigOutputReference) PutAccurateTimeConfig(value *ContainerClusterNodeConfigLinuxNodeConfigAccurateTimeConfig) {
+	if err := c.validatePutAccurateTimeConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putAccurateTimeConfig",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ContainerClusterNodeConfigLinuxNodeConfigOutputReference) PutHugepagesConfig(value *ContainerClusterNodeConfigLinuxNodeConfigHugepagesConfig) {
 	if err := c.validatePutHugepagesConfigParameters(value); err != nil {
 		panic(err)
@@ -587,6 +670,36 @@ func (c *jsiiProxy_ContainerClusterNodeConfigLinuxNodeConfigOutputReference) Put
 		c,
 		"putHugepagesConfig",
 		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_ContainerClusterNodeConfigLinuxNodeConfigOutputReference) PutNodeKernelModuleLoading(value *ContainerClusterNodeConfigLinuxNodeConfigNodeKernelModuleLoading) {
+	if err := c.validatePutNodeKernelModuleLoadingParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putNodeKernelModuleLoading",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_ContainerClusterNodeConfigLinuxNodeConfigOutputReference) PutSwapConfig(value *ContainerClusterNodeConfigLinuxNodeConfigSwapConfig) {
+	if err := c.validatePutSwapConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putSwapConfig",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_ContainerClusterNodeConfigLinuxNodeConfigOutputReference) ResetAccurateTimeConfig() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetAccurateTimeConfig",
+		nil, // no parameters
 	)
 }
 
@@ -602,6 +715,22 @@ func (c *jsiiProxy_ContainerClusterNodeConfigLinuxNodeConfigOutputReference) Res
 	_jsii_.InvokeVoid(
 		c,
 		"resetHugepagesConfig",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerClusterNodeConfigLinuxNodeConfigOutputReference) ResetNodeKernelModuleLoading() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetNodeKernelModuleLoading",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerClusterNodeConfigLinuxNodeConfigOutputReference) ResetSwapConfig() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetSwapConfig",
 		nil, // no parameters
 	)
 }

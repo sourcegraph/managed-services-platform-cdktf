@@ -72,6 +72,10 @@ func (g *jsiiProxy_GoogleIamWorkloadIdentityPool) validateOverrideLogicalIdParam
 	return nil
 }
 
+func (g *jsiiProxy_GoogleIamWorkloadIdentityPool) validatePutAttestationRulesParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleIamWorkloadIdentityPool) validatePutInlineCertificateIssuanceConfigParameters(value *GoogleIamWorkloadIdentityPoolInlineCertificateIssuanceConfig) error {
 	return nil
 }

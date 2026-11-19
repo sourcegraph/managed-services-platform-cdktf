@@ -35,6 +35,9 @@ type CloudRunV2WorkerPoolTemplateContainersVolumeMountsOutputReference interface
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
+	SubPath() *string
+	SetSubPath(val *string)
+	SubPathInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -67,6 +70,7 @@ type CloudRunV2WorkerPoolTemplateContainersVolumeMountsOutputReference interface
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetSubPath()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -172,6 +176,26 @@ func (j *jsiiProxy_CloudRunV2WorkerPoolTemplateContainersVolumeMountsOutputRefer
 	return returns
 }
 
+func (j *jsiiProxy_CloudRunV2WorkerPoolTemplateContainersVolumeMountsOutputReference) SubPath() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"subPath",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudRunV2WorkerPoolTemplateContainersVolumeMountsOutputReference) SubPathInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"subPathInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CloudRunV2WorkerPoolTemplateContainersVolumeMountsOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -271,6 +295,17 @@ func (j *jsiiProxy_CloudRunV2WorkerPoolTemplateContainersVolumeMountsOutputRefer
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudRunV2WorkerPoolTemplateContainersVolumeMountsOutputReference)SetSubPath(val *string) {
+	if err := j.validateSetSubPathParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"subPath",
 		val,
 	)
 }
@@ -481,6 +516,14 @@ func (c *jsiiProxy_CloudRunV2WorkerPoolTemplateContainersVolumeMountsOutputRefer
 	)
 
 	return returns
+}
+
+func (c *jsiiProxy_CloudRunV2WorkerPoolTemplateContainersVolumeMountsOutputReference) ResetSubPath() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetSubPath",
+		nil, // no parameters
+	)
 }
 
 func (c *jsiiProxy_CloudRunV2WorkerPoolTemplateContainersVolumeMountsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

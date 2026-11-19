@@ -43,11 +43,15 @@ type GoogleCloudRunV2WorkerPoolTemplateContainersOutputReference interface {
 	ImageInput() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	LivenessProbe() GoogleCloudRunV2WorkerPoolTemplateContainersLivenessProbeOutputReference
+	LivenessProbeInput() *GoogleCloudRunV2WorkerPoolTemplateContainersLivenessProbe
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
 	Resources() GoogleCloudRunV2WorkerPoolTemplateContainersResourcesOutputReference
 	ResourcesInput() *GoogleCloudRunV2WorkerPoolTemplateContainersResources
+	StartupProbe() GoogleCloudRunV2WorkerPoolTemplateContainersStartupProbeOutputReference
+	StartupProbeInput() *GoogleCloudRunV2WorkerPoolTemplateContainersStartupProbe
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -86,14 +90,18 @@ type GoogleCloudRunV2WorkerPoolTemplateContainersOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutEnv(value interface{})
+	PutLivenessProbe(value *GoogleCloudRunV2WorkerPoolTemplateContainersLivenessProbe)
 	PutResources(value *GoogleCloudRunV2WorkerPoolTemplateContainersResources)
+	PutStartupProbe(value *GoogleCloudRunV2WorkerPoolTemplateContainersStartupProbe)
 	PutVolumeMounts(value interface{})
 	ResetArgs()
 	ResetCommand()
 	ResetDependsOn()
 	ResetEnv()
+	ResetLivenessProbe()
 	ResetName()
 	ResetResources()
+	ResetStartupProbe()
 	ResetVolumeMounts()
 	ResetWorkingDir()
 	// Produce the Token's value at resolution time.
@@ -261,6 +269,26 @@ func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateContainersOutputReference) 
 	return returns
 }
 
+func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateContainersOutputReference) LivenessProbe() GoogleCloudRunV2WorkerPoolTemplateContainersLivenessProbeOutputReference {
+	var returns GoogleCloudRunV2WorkerPoolTemplateContainersLivenessProbeOutputReference
+	_jsii_.Get(
+		j,
+		"livenessProbe",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateContainersOutputReference) LivenessProbeInput() *GoogleCloudRunV2WorkerPoolTemplateContainersLivenessProbe {
+	var returns *GoogleCloudRunV2WorkerPoolTemplateContainersLivenessProbe
+	_jsii_.Get(
+		j,
+		"livenessProbeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateContainersOutputReference) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -296,6 +324,26 @@ func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateContainersOutputReference) 
 	_jsii_.Get(
 		j,
 		"resourcesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateContainersOutputReference) StartupProbe() GoogleCloudRunV2WorkerPoolTemplateContainersStartupProbeOutputReference {
+	var returns GoogleCloudRunV2WorkerPoolTemplateContainersStartupProbeOutputReference
+	_jsii_.Get(
+		j,
+		"startupProbe",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateContainersOutputReference) StartupProbeInput() *GoogleCloudRunV2WorkerPoolTemplateContainersStartupProbe {
+	var returns *GoogleCloudRunV2WorkerPoolTemplateContainersStartupProbe
+	_jsii_.Get(
+		j,
+		"startupProbeInput",
 		&returns,
 	)
 	return returns
@@ -707,6 +755,17 @@ func (g *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateContainersOutputReference) 
 	)
 }
 
+func (g *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateContainersOutputReference) PutLivenessProbe(value *GoogleCloudRunV2WorkerPoolTemplateContainersLivenessProbe) {
+	if err := g.validatePutLivenessProbeParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putLivenessProbe",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateContainersOutputReference) PutResources(value *GoogleCloudRunV2WorkerPoolTemplateContainersResources) {
 	if err := g.validatePutResourcesParameters(value); err != nil {
 		panic(err)
@@ -714,6 +773,17 @@ func (g *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateContainersOutputReference) 
 	_jsii_.InvokeVoid(
 		g,
 		"putResources",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateContainersOutputReference) PutStartupProbe(value *GoogleCloudRunV2WorkerPoolTemplateContainersStartupProbe) {
+	if err := g.validatePutStartupProbeParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putStartupProbe",
 		[]interface{}{value},
 	)
 }
@@ -761,6 +831,14 @@ func (g *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateContainersOutputReference) 
 	)
 }
 
+func (g *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateContainersOutputReference) ResetLivenessProbe() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetLivenessProbe",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateContainersOutputReference) ResetName() {
 	_jsii_.InvokeVoid(
 		g,
@@ -773,6 +851,14 @@ func (g *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateContainersOutputReference) 
 	_jsii_.InvokeVoid(
 		g,
 		"resetResources",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateContainersOutputReference) ResetStartupProbe() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetStartupProbe",
 		nil, // no parameters
 	)
 }

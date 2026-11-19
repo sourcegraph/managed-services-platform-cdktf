@@ -100,10 +100,6 @@ func (j *jsiiProxy_GoogleBigtableTableIamPolicy) validateSetIdParameters(val *st
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigtableTableIamPolicy) validateSetInstanceParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_GoogleBigtableTableIamPolicy) validateSetInstanceNameParameters(val *string) error {
 	return nil
 }

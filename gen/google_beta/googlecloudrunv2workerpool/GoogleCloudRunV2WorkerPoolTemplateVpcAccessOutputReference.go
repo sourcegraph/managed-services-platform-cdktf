@@ -20,6 +20,9 @@ type GoogleCloudRunV2WorkerPoolTemplateVpcAccessOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	Connector() *string
+	SetConnector(val *string)
+	ConnectorInput() *string
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -67,6 +70,7 @@ type GoogleCloudRunV2WorkerPoolTemplateVpcAccessOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutNetworkInterfaces(value interface{})
+	ResetConnector()
 	ResetEgress()
 	ResetNetworkInterfaces()
 	// Produce the Token's value at resolution time.
@@ -99,6 +103,26 @@ func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateVpcAccessOutputReference) C
 	_jsii_.Get(
 		j,
 		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateVpcAccessOutputReference) Connector() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"connector",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateVpcAccessOutputReference) ConnectorInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"connectorInput",
 		&returns,
 	)
 	return returns
@@ -240,6 +264,17 @@ func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateVpcAccessOutputReference)Se
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateVpcAccessOutputReference)SetConnector(val *string) {
+	if err := j.validateSetConnectorParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"connector",
 		val,
 	)
 }
@@ -482,6 +517,14 @@ func (g *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateVpcAccessOutputReference) P
 		g,
 		"putNetworkInterfaces",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateVpcAccessOutputReference) ResetConnector() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetConnector",
+		nil, // no parameters
 	)
 }
 

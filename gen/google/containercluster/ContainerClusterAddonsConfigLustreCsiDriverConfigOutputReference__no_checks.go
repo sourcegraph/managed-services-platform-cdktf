@@ -56,6 +56,10 @@ func (j *jsiiProxy_ContainerClusterAddonsConfigLustreCsiDriverConfigOutputRefere
 	return nil
 }
 
+func (j *jsiiProxy_ContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference) validateSetDisableMultiNicParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference) validateSetEnabledParameters(val interface{}) error {
 	return nil
 }

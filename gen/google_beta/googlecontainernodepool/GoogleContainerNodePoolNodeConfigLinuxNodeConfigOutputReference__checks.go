@@ -90,7 +90,40 @@ func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigLinuxNodeConfigOutputReferen
 	return nil
 }
 
+func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigLinuxNodeConfigOutputReference) validatePutAccurateTimeConfigParameters(value *GoogleContainerNodePoolNodeConfigLinuxNodeConfigAccurateTimeConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigLinuxNodeConfigOutputReference) validatePutHugepagesConfigParameters(value *GoogleContainerNodePoolNodeConfigLinuxNodeConfigHugepagesConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigLinuxNodeConfigOutputReference) validatePutNodeKernelModuleLoadingParameters(value *GoogleContainerNodePoolNodeConfigLinuxNodeConfigNodeKernelModuleLoading) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigLinuxNodeConfigOutputReference) validatePutSwapConfigParameters(value *GoogleContainerNodePoolNodeConfigLinuxNodeConfigSwapConfig) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}

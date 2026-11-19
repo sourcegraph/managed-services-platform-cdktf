@@ -9,7 +9,7 @@ type GoogleDatastreamPrivateConnectionPscInterfaceConfig struct {
 	// Add Datastream project to the attachment accepted list:
 	// 'gcloud compute network-attachments update [NA URI] --region=[NA region] --producer-accept-list=[TP from prev command]'
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_datastream_private_connection#network_attachment GoogleDatastreamPrivateConnection#network_attachment}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_datastream_private_connection#network_attachment GoogleDatastreamPrivateConnection#network_attachment}
 	NetworkAttachment *string `field:"required" json:"networkAttachment" yaml:"networkAttachment"`
 }
 

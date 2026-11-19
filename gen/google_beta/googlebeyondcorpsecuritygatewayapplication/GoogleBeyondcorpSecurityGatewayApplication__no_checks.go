@@ -132,6 +132,10 @@ func (j *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication) validateSetProvis
 	return nil
 }
 
+func (j *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication) validateSetSchemaParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplication) validateSetSecurityGatewayIdParameters(val *string) error {
 	return nil
 }

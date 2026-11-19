@@ -108,6 +108,10 @@ func (g *jsiiProxy_GkeonpremVmwareAdminCluster) validatePutPrivateRegistryConfig
 	return nil
 }
 
+func (g *jsiiProxy_GkeonpremVmwareAdminCluster) validatePutProxyParameters(value *GkeonpremVmwareAdminClusterProxy) error {
+	return nil
+}
+
 func (g *jsiiProxy_GkeonpremVmwareAdminCluster) validatePutTimeoutsParameters(value *GkeonpremVmwareAdminClusterTimeouts) error {
 	return nil
 }

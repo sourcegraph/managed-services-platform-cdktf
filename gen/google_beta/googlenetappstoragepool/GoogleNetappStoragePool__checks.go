@@ -497,6 +497,14 @@ func (j *jsiiProxy_GoogleNetappStoragePool) validateSetLocationParameters(val *s
 	return nil
 }
 
+func (j *jsiiProxy_GoogleNetappStoragePool) validateSetModeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleNetappStoragePool) validateSetNameParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -567,7 +575,31 @@ func (j *jsiiProxy_GoogleNetappStoragePool) validateSetProvisionersParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_GoogleNetappStoragePool) validateSetQosTypeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleNetappStoragePool) validateSetReplicaZoneParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleNetappStoragePool) validateSetScaleTierParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleNetappStoragePool) validateSetScaleTypeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -592,6 +624,14 @@ func (j *jsiiProxy_GoogleNetappStoragePool) validateSetTotalIopsParameters(val *
 }
 
 func (j *jsiiProxy_GoogleNetappStoragePool) validateSetTotalThroughputMibpsParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleNetappStoragePool) validateSetTypeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

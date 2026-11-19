@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google/alloydbinstance/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance google_alloydb_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance google_alloydb_instance}.
 type AlloydbInstance interface {
 	cdktf.TerraformResource
 	ActivationPolicy() *string
@@ -32,6 +32,8 @@ type AlloydbInstance interface {
 	Connection() interface{}
 	// Experimental.
 	SetConnection(val interface{})
+	ConnectionPoolConfig() AlloydbInstanceConnectionPoolConfigOutputReference
+	ConnectionPoolConfigInput() *AlloydbInstanceConnectionPoolConfig
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -161,6 +163,7 @@ type AlloydbInstance interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutClientConnectionConfig(value *AlloydbInstanceClientConnectionConfig)
+	PutConnectionPoolConfig(value *AlloydbInstanceConnectionPoolConfig)
 	PutMachineConfig(value *AlloydbInstanceMachineConfig)
 	PutNetworkConfig(value *AlloydbInstanceNetworkConfig)
 	PutPscInstanceConfig(value *AlloydbInstancePscInstanceConfig)
@@ -171,6 +174,7 @@ type AlloydbInstance interface {
 	ResetAnnotations()
 	ResetAvailabilityType()
 	ResetClientConnectionConfig()
+	ResetConnectionPoolConfig()
 	ResetDatabaseFlags()
 	ResetDisplayName()
 	ResetGceZone()
@@ -318,6 +322,26 @@ func (j *jsiiProxy_AlloydbInstance) Connection() interface{} {
 	_jsii_.Get(
 		j,
 		"connection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlloydbInstance) ConnectionPoolConfig() AlloydbInstanceConnectionPoolConfigOutputReference {
+	var returns AlloydbInstanceConnectionPoolConfigOutputReference
+	_jsii_.Get(
+		j,
+		"connectionPoolConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlloydbInstance) ConnectionPoolConfigInput() *AlloydbInstanceConnectionPoolConfig {
+	var returns *AlloydbInstanceConnectionPoolConfig
+	_jsii_.Get(
+		j,
+		"connectionPoolConfigInput",
 		&returns,
 	)
 	return returns
@@ -844,7 +868,7 @@ func (j *jsiiProxy_AlloydbInstance) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance google_alloydb_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance google_alloydb_instance} Resource.
 func NewAlloydbInstance(scope constructs.Construct, id *string, config *AlloydbInstanceConfig) AlloydbInstance {
 	_init_.Initialize()
 
@@ -862,7 +886,7 @@ func NewAlloydbInstance(scope constructs.Construct, id *string, config *AlloydbI
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance google_alloydb_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance google_alloydb_instance} Resource.
 func NewAlloydbInstance_Override(a AlloydbInstance, scope constructs.Construct, id *string, config *AlloydbInstanceConfig) {
 	_init_.Initialize()
 
@@ -1426,6 +1450,17 @@ func (a *jsiiProxy_AlloydbInstance) PutClientConnectionConfig(value *AlloydbInst
 	)
 }
 
+func (a *jsiiProxy_AlloydbInstance) PutConnectionPoolConfig(value *AlloydbInstanceConnectionPoolConfig) {
+	if err := a.validatePutConnectionPoolConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putConnectionPoolConfig",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AlloydbInstance) PutMachineConfig(value *AlloydbInstanceMachineConfig) {
 	if err := a.validatePutMachineConfigParameters(value); err != nil {
 		panic(err)
@@ -1520,6 +1555,14 @@ func (a *jsiiProxy_AlloydbInstance) ResetClientConnectionConfig() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetClientConnectionConfig",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AlloydbInstance) ResetConnectionPoolConfig() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetConnectionPoolConfig",
 		nil, // no parameters
 	)
 }

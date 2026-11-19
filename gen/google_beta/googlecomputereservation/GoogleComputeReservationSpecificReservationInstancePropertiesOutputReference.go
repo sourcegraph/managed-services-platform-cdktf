@@ -33,6 +33,7 @@ type GoogleComputeReservationSpecificReservationInstancePropertiesOutputReferenc
 	SetInternalValue(val *GoogleComputeReservationSpecificReservationInstanceProperties)
 	LocalSsds() GoogleComputeReservationSpecificReservationInstancePropertiesLocalSsdsList
 	LocalSsdsInput() interface{}
+	LocationHint() *string
 	MachineType() *string
 	SetMachineType(val *string)
 	MachineTypeInput() *string
@@ -180,6 +181,16 @@ func (j *jsiiProxy_GoogleComputeReservationSpecificReservationInstanceProperties
 	_jsii_.Get(
 		j,
 		"localSsdsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeReservationSpecificReservationInstancePropertiesOutputReference) LocationHint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"locationHint",
 		&returns,
 	)
 	return returns

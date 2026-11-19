@@ -235,6 +235,17 @@ func (g *jsiiProxy_GoogleDeveloperConnectInsightsConfig) validatePutArtifactConf
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDeveloperConnectInsightsConfig) validatePutTargetProjectsParameters(value *GoogleDeveloperConnectInsightsConfigTargetProjects) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDeveloperConnectInsightsConfig) validatePutTimeoutsParameters(value *GoogleDeveloperConnectInsightsConfigTimeouts) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

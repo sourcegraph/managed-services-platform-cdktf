@@ -84,6 +84,10 @@ func (c *jsiiProxy_ContainerCluster) validatePutAuthenticatorGroupsConfigParamet
 	return nil
 }
 
+func (c *jsiiProxy_ContainerCluster) validatePutAutopilotClusterPolicyConfigParameters(value *ContainerClusterAutopilotClusterPolicyConfig) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerCluster) validatePutBinaryAuthorizationParameters(value *ContainerClusterBinaryAuthorization) error {
 	return nil
 }
@@ -261,6 +265,10 @@ func validateContainerCluster_IsTerraformResourceParameters(x interface{}) error
 }
 
 func (j *jsiiProxy_ContainerCluster) validateSetAllowNetAdminParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ContainerCluster) validateSetAutopilotPrivilegedAdmissionParameters(val *[]*string) error {
 	return nil
 }
 

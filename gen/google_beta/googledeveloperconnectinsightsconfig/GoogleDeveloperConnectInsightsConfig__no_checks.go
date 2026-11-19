@@ -76,6 +76,10 @@ func (g *jsiiProxy_GoogleDeveloperConnectInsightsConfig) validatePutArtifactConf
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDeveloperConnectInsightsConfig) validatePutTargetProjectsParameters(value *GoogleDeveloperConnectInsightsConfigTargetProjects) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDeveloperConnectInsightsConfig) validatePutTimeoutsParameters(value *GoogleDeveloperConnectInsightsConfigTimeouts) error {
 	return nil
 }

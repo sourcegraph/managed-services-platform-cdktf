@@ -72,6 +72,10 @@ func (s *jsiiProxy_StorageBucketObject) validateOverrideLogicalIdParameters(newL
 	return nil
 }
 
+func (s *jsiiProxy_StorageBucketObject) validatePutContextsParameters(value *StorageBucketObjectContexts) error {
+	return nil
+}
+
 func (s *jsiiProxy_StorageBucketObject) validatePutCustomerEncryptionParameters(value *StorageBucketObjectCustomerEncryption) error {
 	return nil
 }

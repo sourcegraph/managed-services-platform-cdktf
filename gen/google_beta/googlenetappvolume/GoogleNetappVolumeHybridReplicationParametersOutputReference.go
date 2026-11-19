@@ -33,17 +33,23 @@ type GoogleNetappVolumeHybridReplicationParametersOutputReference interface {
 	DescriptionInput() *string
 	// Experimental.
 	Fqn() *string
+	HybridReplicationType() *string
+	SetHybridReplicationType(val *string)
+	HybridReplicationTypeInput() *string
 	InternalValue() *GoogleNetappVolumeHybridReplicationParameters
 	SetInternalValue(val *GoogleNetappVolumeHybridReplicationParameters)
 	Labels() *map[string]*string
 	SetLabels(val *map[string]*string)
 	LabelsInput() *map[string]*string
+	LargeVolumeConstituentCount() *float64
+	SetLargeVolumeConstituentCount(val *float64)
+	LargeVolumeConstituentCountInput() *float64
 	PeerClusterName() *string
 	SetPeerClusterName(val *string)
 	PeerClusterNameInput() *string
-	PeerIpAddresses() *string
-	SetPeerIpAddresses(val *string)
-	PeerIpAddressesInput() *string
+	PeerIpAddresses() *[]*string
+	SetPeerIpAddresses(val *[]*string)
+	PeerIpAddressesInput() *[]*string
 	PeerSvmName() *string
 	SetPeerSvmName(val *string)
 	PeerSvmNameInput() *string
@@ -53,6 +59,9 @@ type GoogleNetappVolumeHybridReplicationParametersOutputReference interface {
 	Replication() *string
 	SetReplication(val *string)
 	ReplicationInput() *string
+	ReplicationSchedule() *string
+	SetReplicationSchedule(val *string)
+	ReplicationScheduleInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -87,12 +96,15 @@ type GoogleNetappVolumeHybridReplicationParametersOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetClusterLocation()
 	ResetDescription()
+	ResetHybridReplicationType()
 	ResetLabels()
+	ResetLargeVolumeConstituentCount()
 	ResetPeerClusterName()
 	ResetPeerIpAddresses()
 	ResetPeerSvmName()
 	ResetPeerVolumeName()
 	ResetReplication()
+	ResetReplicationSchedule()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -188,6 +200,26 @@ func (j *jsiiProxy_GoogleNetappVolumeHybridReplicationParametersOutputReference)
 	return returns
 }
 
+func (j *jsiiProxy_GoogleNetappVolumeHybridReplicationParametersOutputReference) HybridReplicationType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"hybridReplicationType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetappVolumeHybridReplicationParametersOutputReference) HybridReplicationTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"hybridReplicationTypeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleNetappVolumeHybridReplicationParametersOutputReference) InternalValue() *GoogleNetappVolumeHybridReplicationParameters {
 	var returns *GoogleNetappVolumeHybridReplicationParameters
 	_jsii_.Get(
@@ -218,6 +250,26 @@ func (j *jsiiProxy_GoogleNetappVolumeHybridReplicationParametersOutputReference)
 	return returns
 }
 
+func (j *jsiiProxy_GoogleNetappVolumeHybridReplicationParametersOutputReference) LargeVolumeConstituentCount() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"largeVolumeConstituentCount",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetappVolumeHybridReplicationParametersOutputReference) LargeVolumeConstituentCountInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"largeVolumeConstituentCountInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleNetappVolumeHybridReplicationParametersOutputReference) PeerClusterName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -238,8 +290,8 @@ func (j *jsiiProxy_GoogleNetappVolumeHybridReplicationParametersOutputReference)
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetappVolumeHybridReplicationParametersOutputReference) PeerIpAddresses() *string {
-	var returns *string
+func (j *jsiiProxy_GoogleNetappVolumeHybridReplicationParametersOutputReference) PeerIpAddresses() *[]*string {
+	var returns *[]*string
 	_jsii_.Get(
 		j,
 		"peerIpAddresses",
@@ -248,8 +300,8 @@ func (j *jsiiProxy_GoogleNetappVolumeHybridReplicationParametersOutputReference)
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetappVolumeHybridReplicationParametersOutputReference) PeerIpAddressesInput() *string {
-	var returns *string
+func (j *jsiiProxy_GoogleNetappVolumeHybridReplicationParametersOutputReference) PeerIpAddressesInput() *[]*string {
+	var returns *[]*string
 	_jsii_.Get(
 		j,
 		"peerIpAddressesInput",
@@ -313,6 +365,26 @@ func (j *jsiiProxy_GoogleNetappVolumeHybridReplicationParametersOutputReference)
 	_jsii_.Get(
 		j,
 		"replicationInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetappVolumeHybridReplicationParametersOutputReference) ReplicationSchedule() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"replicationSchedule",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetappVolumeHybridReplicationParametersOutputReference) ReplicationScheduleInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"replicationScheduleInput",
 		&returns,
 	)
 	return returns
@@ -410,6 +482,17 @@ func (j *jsiiProxy_GoogleNetappVolumeHybridReplicationParametersOutputReference)
 	)
 }
 
+func (j *jsiiProxy_GoogleNetappVolumeHybridReplicationParametersOutputReference)SetHybridReplicationType(val *string) {
+	if err := j.validateSetHybridReplicationTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"hybridReplicationType",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleNetappVolumeHybridReplicationParametersOutputReference)SetInternalValue(val *GoogleNetappVolumeHybridReplicationParameters) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -432,6 +515,17 @@ func (j *jsiiProxy_GoogleNetappVolumeHybridReplicationParametersOutputReference)
 	)
 }
 
+func (j *jsiiProxy_GoogleNetappVolumeHybridReplicationParametersOutputReference)SetLargeVolumeConstituentCount(val *float64) {
+	if err := j.validateSetLargeVolumeConstituentCountParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"largeVolumeConstituentCount",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleNetappVolumeHybridReplicationParametersOutputReference)SetPeerClusterName(val *string) {
 	if err := j.validateSetPeerClusterNameParameters(val); err != nil {
 		panic(err)
@@ -443,7 +537,7 @@ func (j *jsiiProxy_GoogleNetappVolumeHybridReplicationParametersOutputReference)
 	)
 }
 
-func (j *jsiiProxy_GoogleNetappVolumeHybridReplicationParametersOutputReference)SetPeerIpAddresses(val *string) {
+func (j *jsiiProxy_GoogleNetappVolumeHybridReplicationParametersOutputReference)SetPeerIpAddresses(val *[]*string) {
 	if err := j.validateSetPeerIpAddressesParameters(val); err != nil {
 		panic(err)
 	}
@@ -483,6 +577,17 @@ func (j *jsiiProxy_GoogleNetappVolumeHybridReplicationParametersOutputReference)
 	_jsii_.Set(
 		j,
 		"replication",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleNetappVolumeHybridReplicationParametersOutputReference)SetReplicationSchedule(val *string) {
+	if err := j.validateSetReplicationScheduleParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"replicationSchedule",
 		val,
 	)
 }
@@ -711,10 +816,26 @@ func (g *jsiiProxy_GoogleNetappVolumeHybridReplicationParametersOutputReference)
 	)
 }
 
+func (g *jsiiProxy_GoogleNetappVolumeHybridReplicationParametersOutputReference) ResetHybridReplicationType() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetHybridReplicationType",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleNetappVolumeHybridReplicationParametersOutputReference) ResetLabels() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetLabels",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleNetappVolumeHybridReplicationParametersOutputReference) ResetLargeVolumeConstituentCount() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetLargeVolumeConstituentCount",
 		nil, // no parameters
 	)
 }
@@ -755,6 +876,14 @@ func (g *jsiiProxy_GoogleNetappVolumeHybridReplicationParametersOutputReference)
 	_jsii_.InvokeVoid(
 		g,
 		"resetReplication",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleNetappVolumeHybridReplicationParametersOutputReference) ResetReplicationSchedule() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetReplicationSchedule",
 		nil, // no parameters
 	)
 }

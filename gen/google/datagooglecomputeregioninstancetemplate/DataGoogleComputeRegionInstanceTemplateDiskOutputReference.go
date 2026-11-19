@@ -50,6 +50,7 @@ type DataGoogleComputeRegionInstanceTemplateDiskOutputReference interface {
 	SourceImageEncryptionKey() DataGoogleComputeRegionInstanceTemplateDiskSourceImageEncryptionKeyList
 	SourceSnapshot() *string
 	SourceSnapshotEncryptionKey() DataGoogleComputeRegionInstanceTemplateDiskSourceSnapshotEncryptionKeyList
+	StoragePool() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -353,6 +354,16 @@ func (j *jsiiProxy_DataGoogleComputeRegionInstanceTemplateDiskOutputReference) S
 	_jsii_.Get(
 		j,
 		"sourceSnapshotEncryptionKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeRegionInstanceTemplateDiskOutputReference) StoragePool() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storagePool",
 		&returns,
 	)
 	return returns

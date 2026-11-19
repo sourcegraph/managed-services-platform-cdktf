@@ -11,6 +11,7 @@ import (
 type ComputeInterconnectAttachmentGroupLogicalStructureRegionsMetrosFacilitiesZonesOutputReference interface {
 	cdktf.ComplexObject
 	Attachment() *[]*string
+	Attachments() *[]*string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -83,6 +84,16 @@ func (j *jsiiProxy_ComputeInterconnectAttachmentGroupLogicalStructureRegionsMetr
 	_jsii_.Get(
 		j,
 		"attachment",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeInterconnectAttachmentGroupLogicalStructureRegionsMetrosFacilitiesZonesOutputReference) Attachments() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"attachments",
 		&returns,
 	)
 	return returns

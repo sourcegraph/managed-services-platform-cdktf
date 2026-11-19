@@ -80,6 +80,10 @@ func (g *jsiiProxy_GoogleComputeInterconnect) validatePutMacsecParameters(value 
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeInterconnect) validatePutParamsParameters(value *GoogleComputeInterconnectParams) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeInterconnect) validatePutTimeoutsParameters(value *GoogleComputeInterconnectTimeouts) error {
 	return nil
 }

@@ -76,6 +76,10 @@ func (g *jsiiProxy_GoogleComputeVpnTunnel) validatePutCipherSuiteParameters(valu
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeVpnTunnel) validatePutParamsParameters(value *GoogleComputeVpnTunnelParams) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeVpnTunnel) validatePutTimeoutsParameters(value *GoogleComputeVpnTunnelTimeouts) error {
 	return nil
 }
@@ -169,6 +173,14 @@ func (j *jsiiProxy_GoogleComputeVpnTunnel) validateSetRouterParameters(val *stri
 }
 
 func (j *jsiiProxy_GoogleComputeVpnTunnel) validateSetSharedSecretParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeVpnTunnel) validateSetSharedSecretWoParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeVpnTunnel) validateSetSharedSecretWoVersionParameters(val *string) error {
 	return nil
 }
 

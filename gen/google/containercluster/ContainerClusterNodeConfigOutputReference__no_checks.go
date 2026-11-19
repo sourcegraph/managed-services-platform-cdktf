@@ -100,6 +100,10 @@ func (c *jsiiProxy_ContainerClusterNodeConfigOutputReference) validatePutReserva
 	return nil
 }
 
+func (c *jsiiProxy_ContainerClusterNodeConfigOutputReference) validatePutSandboxConfigParameters(value *ContainerClusterNodeConfigSandboxConfig) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerClusterNodeConfigOutputReference) validatePutSecondaryBootDisksParameters(value interface{}) error {
 	return nil
 }

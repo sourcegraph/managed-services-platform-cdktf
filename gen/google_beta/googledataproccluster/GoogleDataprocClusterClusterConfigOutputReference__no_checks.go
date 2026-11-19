@@ -108,11 +108,19 @@ func (j *jsiiProxy_GoogleDataprocClusterClusterConfigOutputReference) validateSe
 	return nil
 }
 
+func (j *jsiiProxy_GoogleDataprocClusterClusterConfigOutputReference) validateSetClusterTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDataprocClusterClusterConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }
 
 func (j *jsiiProxy_GoogleDataprocClusterClusterConfigOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleDataprocClusterClusterConfigOutputReference) validateSetEngineParameters(val *string) error {
 	return nil
 }
 

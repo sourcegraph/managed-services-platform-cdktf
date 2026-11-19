@@ -72,6 +72,10 @@ func (g *jsiiProxy_GoogleDialogflowCxTool) validateOverrideLogicalIdParameters(n
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDialogflowCxTool) validatePutConnectorSpecParameters(value *GoogleDialogflowCxToolConnectorSpec) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDialogflowCxTool) validatePutDataStoreSpecParameters(value *GoogleDialogflowCxToolDataStoreSpec) error {
 	return nil
 }

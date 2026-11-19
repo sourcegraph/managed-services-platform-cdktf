@@ -64,6 +64,10 @@ func (j *jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference) valid
 	return nil
 }
 
+func (j *jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference) validateSetHybridReplicationTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference) validateSetInternalValueParameters(val *NetappVolumeHybridReplicationParameters) error {
 	return nil
 }
@@ -72,11 +76,15 @@ func (j *jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference) valid
 	return nil
 }
 
+func (j *jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference) validateSetLargeVolumeConstituentCountParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference) validateSetPeerClusterNameParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference) validateSetPeerIpAddressesParameters(val *string) error {
+func (j *jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference) validateSetPeerIpAddressesParameters(val *[]*string) error {
 	return nil
 }
 
@@ -89,6 +97,10 @@ func (j *jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference) valid
 }
 
 func (j *jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference) validateSetReplicationParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference) validateSetReplicationScheduleParameters(val *string) error {
 	return nil
 }
 

@@ -56,6 +56,14 @@ func (c *jsiiProxy_ContainerNodePoolNodeConfigKubeletConfigOutputReference) vali
 	return nil
 }
 
+func (c *jsiiProxy_ContainerNodePoolNodeConfigKubeletConfigOutputReference) validatePutMemoryManagerParameters(value *ContainerNodePoolNodeConfigKubeletConfigMemoryManager) error {
+	return nil
+}
+
+func (c *jsiiProxy_ContainerNodePoolNodeConfigKubeletConfigOutputReference) validatePutTopologyManagerParameters(value *ContainerNodePoolNodeConfigKubeletConfigTopologyManager) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerNodePoolNodeConfigKubeletConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

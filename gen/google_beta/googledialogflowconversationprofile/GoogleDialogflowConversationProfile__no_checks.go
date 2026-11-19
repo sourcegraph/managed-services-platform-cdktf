@@ -92,6 +92,10 @@ func (g *jsiiProxy_GoogleDialogflowConversationProfile) validatePutNewMessageEve
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDialogflowConversationProfile) validatePutNewRecognitionResultNotificationConfigParameters(value *GoogleDialogflowConversationProfileNewRecognitionResultNotificationConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDialogflowConversationProfile) validatePutNotificationConfigParameters(value *GoogleDialogflowConversationProfileNotificationConfig) error {
 	return nil
 }
@@ -165,6 +169,10 @@ func (j *jsiiProxy_GoogleDialogflowConversationProfile) validateSetSecuritySetti
 }
 
 func (j *jsiiProxy_GoogleDialogflowConversationProfile) validateSetTimeZoneParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleDialogflowConversationProfile) validateSetUseBidiStreamingParameters(val interface{}) error {
 	return nil
 }
 

@@ -27,12 +27,16 @@ type GoogleBeyondcorpSecurityGatewayApplicationUpstreamsOutputReference interfac
 	CreationStack() *[]*string
 	EgressPolicy() GoogleBeyondcorpSecurityGatewayApplicationUpstreamsEgressPolicyOutputReference
 	EgressPolicyInput() *GoogleBeyondcorpSecurityGatewayApplicationUpstreamsEgressPolicy
+	External() GoogleBeyondcorpSecurityGatewayApplicationUpstreamsExternalOutputReference
+	ExternalInput() *GoogleBeyondcorpSecurityGatewayApplicationUpstreamsExternal
 	// Experimental.
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
 	Network() GoogleBeyondcorpSecurityGatewayApplicationUpstreamsNetworkOutputReference
 	NetworkInput() *GoogleBeyondcorpSecurityGatewayApplicationUpstreamsNetwork
+	ProxyProtocol() GoogleBeyondcorpSecurityGatewayApplicationUpstreamsProxyProtocolOutputReference
+	ProxyProtocolInput() *GoogleBeyondcorpSecurityGatewayApplicationUpstreamsProxyProtocol
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -66,9 +70,13 @@ type GoogleBeyondcorpSecurityGatewayApplicationUpstreamsOutputReference interfac
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutEgressPolicy(value *GoogleBeyondcorpSecurityGatewayApplicationUpstreamsEgressPolicy)
+	PutExternal(value *GoogleBeyondcorpSecurityGatewayApplicationUpstreamsExternal)
 	PutNetwork(value *GoogleBeyondcorpSecurityGatewayApplicationUpstreamsNetwork)
+	PutProxyProtocol(value *GoogleBeyondcorpSecurityGatewayApplicationUpstreamsProxyProtocol)
 	ResetEgressPolicy()
+	ResetExternal()
 	ResetNetwork()
+	ResetProxyProtocol()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -134,6 +142,26 @@ func (j *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplicationUpstreamsOutputRefe
 	return returns
 }
 
+func (j *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplicationUpstreamsOutputReference) External() GoogleBeyondcorpSecurityGatewayApplicationUpstreamsExternalOutputReference {
+	var returns GoogleBeyondcorpSecurityGatewayApplicationUpstreamsExternalOutputReference
+	_jsii_.Get(
+		j,
+		"external",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplicationUpstreamsOutputReference) ExternalInput() *GoogleBeyondcorpSecurityGatewayApplicationUpstreamsExternal {
+	var returns *GoogleBeyondcorpSecurityGatewayApplicationUpstreamsExternal
+	_jsii_.Get(
+		j,
+		"externalInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplicationUpstreamsOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -169,6 +197,26 @@ func (j *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplicationUpstreamsOutputRefe
 	_jsii_.Get(
 		j,
 		"networkInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplicationUpstreamsOutputReference) ProxyProtocol() GoogleBeyondcorpSecurityGatewayApplicationUpstreamsProxyProtocolOutputReference {
+	var returns GoogleBeyondcorpSecurityGatewayApplicationUpstreamsProxyProtocolOutputReference
+	_jsii_.Get(
+		j,
+		"proxyProtocol",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplicationUpstreamsOutputReference) ProxyProtocolInput() *GoogleBeyondcorpSecurityGatewayApplicationUpstreamsProxyProtocol {
+	var returns *GoogleBeyondcorpSecurityGatewayApplicationUpstreamsProxyProtocol
+	_jsii_.Get(
+		j,
+		"proxyProtocolInput",
 		&returns,
 	)
 	return returns
@@ -474,6 +522,17 @@ func (g *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplicationUpstreamsOutputRefe
 	)
 }
 
+func (g *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplicationUpstreamsOutputReference) PutExternal(value *GoogleBeyondcorpSecurityGatewayApplicationUpstreamsExternal) {
+	if err := g.validatePutExternalParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putExternal",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplicationUpstreamsOutputReference) PutNetwork(value *GoogleBeyondcorpSecurityGatewayApplicationUpstreamsNetwork) {
 	if err := g.validatePutNetworkParameters(value); err != nil {
 		panic(err)
@@ -481,6 +540,17 @@ func (g *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplicationUpstreamsOutputRefe
 	_jsii_.InvokeVoid(
 		g,
 		"putNetwork",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplicationUpstreamsOutputReference) PutProxyProtocol(value *GoogleBeyondcorpSecurityGatewayApplicationUpstreamsProxyProtocol) {
+	if err := g.validatePutProxyProtocolParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putProxyProtocol",
 		[]interface{}{value},
 	)
 }
@@ -493,10 +563,26 @@ func (g *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplicationUpstreamsOutputRefe
 	)
 }
 
+func (g *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplicationUpstreamsOutputReference) ResetExternal() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetExternal",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplicationUpstreamsOutputReference) ResetNetwork() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetNetwork",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplicationUpstreamsOutputReference) ResetProxyProtocol() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetProxyProtocol",
 		nil, // no parameters
 	)
 }

@@ -48,6 +48,10 @@ func (g *jsiiProxy_GoogleComputeWireGroupWirePropertiesOutputReference) validate
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeWireGroupWirePropertiesOutputReference) validateSetBandwidthAllocationParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeWireGroupWirePropertiesOutputReference) validateSetBandwidthUnmeteredParameters(val *float64) error {
 	return nil
 }

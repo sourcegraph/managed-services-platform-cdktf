@@ -76,6 +76,10 @@ func (g *jsiiProxy_GoogleAlloydbInstance) validatePutClientConnectionConfigParam
 	return nil
 }
 
+func (g *jsiiProxy_GoogleAlloydbInstance) validatePutConnectionPoolConfigParameters(value *GoogleAlloydbInstanceConnectionPoolConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleAlloydbInstance) validatePutMachineConfigParameters(value *GoogleAlloydbInstanceMachineConfig) error {
 	return nil
 }

@@ -41,6 +41,7 @@ type DataGoogleGkeHubFeatureSpecOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	Workloadidentity() DataGoogleGkeHubFeatureSpecWorkloadidentityList
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -185,6 +186,16 @@ func (j *jsiiProxy_DataGoogleGkeHubFeatureSpecOutputReference) TerraformResource
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleGkeHubFeatureSpecOutputReference) Workloadidentity() DataGoogleGkeHubFeatureSpecWorkloadidentityList {
+	var returns DataGoogleGkeHubFeatureSpecWorkloadidentityList
+	_jsii_.Get(
+		j,
+		"workloadidentity",
 		&returns,
 	)
 	return returns

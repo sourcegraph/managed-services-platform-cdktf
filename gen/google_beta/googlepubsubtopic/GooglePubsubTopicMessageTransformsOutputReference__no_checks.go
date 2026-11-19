@@ -44,6 +44,10 @@ func (g *jsiiProxy_GooglePubsubTopicMessageTransformsOutputReference) validateIn
 	return nil
 }
 
+func (g *jsiiProxy_GooglePubsubTopicMessageTransformsOutputReference) validatePutAiInferenceParameters(value *GooglePubsubTopicMessageTransformsAiInference) error {
+	return nil
+}
+
 func (g *jsiiProxy_GooglePubsubTopicMessageTransformsOutputReference) validatePutJavascriptUdfParameters(value *GooglePubsubTopicMessageTransformsJavascriptUdf) error {
 	return nil
 }

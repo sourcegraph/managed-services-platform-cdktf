@@ -152,6 +152,10 @@ func (j *jsiiProxy_GoogleNetappStoragePool) validateSetLocationParameters(val *s
 	return nil
 }
 
+func (j *jsiiProxy_GoogleNetappStoragePool) validateSetModeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleNetappStoragePool) validateSetNameParameters(val *string) error {
 	return nil
 }
@@ -168,7 +172,19 @@ func (j *jsiiProxy_GoogleNetappStoragePool) validateSetProvisionersParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_GoogleNetappStoragePool) validateSetQosTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleNetappStoragePool) validateSetReplicaZoneParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleNetappStoragePool) validateSetScaleTierParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleNetappStoragePool) validateSetScaleTypeParameters(val *string) error {
 	return nil
 }
 
@@ -181,6 +197,10 @@ func (j *jsiiProxy_GoogleNetappStoragePool) validateSetTotalIopsParameters(val *
 }
 
 func (j *jsiiProxy_GoogleNetappStoragePool) validateSetTotalThroughputMibpsParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleNetappStoragePool) validateSetTypeParameters(val *string) error {
 	return nil
 }
 

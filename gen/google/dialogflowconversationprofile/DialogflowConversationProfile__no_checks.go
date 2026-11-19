@@ -92,6 +92,10 @@ func (d *jsiiProxy_DialogflowConversationProfile) validatePutNewMessageEventNoti
 	return nil
 }
 
+func (d *jsiiProxy_DialogflowConversationProfile) validatePutNewRecognitionResultNotificationConfigParameters(value *DialogflowConversationProfileNewRecognitionResultNotificationConfig) error {
+	return nil
+}
+
 func (d *jsiiProxy_DialogflowConversationProfile) validatePutNotificationConfigParameters(value *DialogflowConversationProfileNotificationConfig) error {
 	return nil
 }
