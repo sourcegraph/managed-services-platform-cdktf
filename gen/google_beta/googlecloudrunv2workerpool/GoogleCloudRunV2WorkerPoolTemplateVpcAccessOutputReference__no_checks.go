@@ -60,6 +60,10 @@ func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateVpcAccessOutputReference) v
 	return nil
 }
 
+func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateVpcAccessOutputReference) validateSetConnectorParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateVpcAccessOutputReference) validateSetEgressParameters(val *string) error {
 	return nil
 }

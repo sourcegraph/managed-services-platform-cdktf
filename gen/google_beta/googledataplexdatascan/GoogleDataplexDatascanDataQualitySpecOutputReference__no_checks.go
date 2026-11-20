@@ -68,6 +68,14 @@ func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecOutputReference) validat
 	return nil
 }
 
+func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecOutputReference) validateSetEnableCatalogBasedRulesParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecOutputReference) validateSetFilterParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecOutputReference) validateSetInternalValueParameters(val *GoogleDataplexDatascanDataQualitySpec) error {
 	return nil
 }

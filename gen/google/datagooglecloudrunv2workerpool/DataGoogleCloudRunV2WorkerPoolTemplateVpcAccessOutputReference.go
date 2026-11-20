@@ -20,6 +20,7 @@ type DataGoogleCloudRunV2WorkerPoolTemplateVpcAccessOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	Connector() *string
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -93,6 +94,16 @@ func (j *jsiiProxy_DataGoogleCloudRunV2WorkerPoolTemplateVpcAccessOutputReferenc
 	_jsii_.Get(
 		j,
 		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleCloudRunV2WorkerPoolTemplateVpcAccessOutputReference) Connector() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"connector",
 		&returns,
 	)
 	return returns

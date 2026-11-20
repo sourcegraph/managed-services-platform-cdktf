@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google/dialogflowconversationprofile/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_conversation_profile google_dialogflow_conversation_profile}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_conversation_profile google_dialogflow_conversation_profile}.
 type DialogflowConversationProfile interface {
 	cdktf.TerraformResource
 	AutomatedAgentConfig() DialogflowConversationProfileAutomatedAgentConfigOutputReference
@@ -63,6 +63,8 @@ type DialogflowConversationProfile interface {
 	Name() *string
 	NewMessageEventNotificationConfig() DialogflowConversationProfileNewMessageEventNotificationConfigOutputReference
 	NewMessageEventNotificationConfigInput() *DialogflowConversationProfileNewMessageEventNotificationConfig
+	NewRecognitionResultNotificationConfig() DialogflowConversationProfileNewRecognitionResultNotificationConfigOutputReference
+	NewRecognitionResultNotificationConfigInput() *DialogflowConversationProfileNewRecognitionResultNotificationConfig
 	// The tree node.
 	Node() constructs.Node
 	NotificationConfig() DialogflowConversationProfileNotificationConfigOutputReference
@@ -146,6 +148,7 @@ type DialogflowConversationProfile interface {
 	PutHumanAgentHandoffConfig(value *DialogflowConversationProfileHumanAgentHandoffConfig)
 	PutLoggingConfig(value *DialogflowConversationProfileLoggingConfig)
 	PutNewMessageEventNotificationConfig(value *DialogflowConversationProfileNewMessageEventNotificationConfig)
+	PutNewRecognitionResultNotificationConfig(value *DialogflowConversationProfileNewRecognitionResultNotificationConfig)
 	PutNotificationConfig(value *DialogflowConversationProfileNotificationConfig)
 	PutSttConfig(value *DialogflowConversationProfileSttConfig)
 	PutTimeouts(value *DialogflowConversationProfileTimeouts)
@@ -157,6 +160,7 @@ type DialogflowConversationProfile interface {
 	ResetLanguageCode()
 	ResetLoggingConfig()
 	ResetNewMessageEventNotificationConfig()
+	ResetNewRecognitionResultNotificationConfig()
 	ResetNotificationConfig()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -465,6 +469,26 @@ func (j *jsiiProxy_DialogflowConversationProfile) NewMessageEventNotificationCon
 	return returns
 }
 
+func (j *jsiiProxy_DialogflowConversationProfile) NewRecognitionResultNotificationConfig() DialogflowConversationProfileNewRecognitionResultNotificationConfigOutputReference {
+	var returns DialogflowConversationProfileNewRecognitionResultNotificationConfigOutputReference
+	_jsii_.Get(
+		j,
+		"newRecognitionResultNotificationConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DialogflowConversationProfile) NewRecognitionResultNotificationConfigInput() *DialogflowConversationProfileNewRecognitionResultNotificationConfig {
+	var returns *DialogflowConversationProfileNewRecognitionResultNotificationConfig
+	_jsii_.Get(
+		j,
+		"newRecognitionResultNotificationConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DialogflowConversationProfile) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -676,7 +700,7 @@ func (j *jsiiProxy_DialogflowConversationProfile) TtsConfigInput() *DialogflowCo
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_conversation_profile google_dialogflow_conversation_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_conversation_profile google_dialogflow_conversation_profile} Resource.
 func NewDialogflowConversationProfile(scope constructs.Construct, id *string, config *DialogflowConversationProfileConfig) DialogflowConversationProfile {
 	_init_.Initialize()
 
@@ -694,7 +718,7 @@ func NewDialogflowConversationProfile(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_conversation_profile google_dialogflow_conversation_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_conversation_profile google_dialogflow_conversation_profile} Resource.
 func NewDialogflowConversationProfile_Override(d DialogflowConversationProfile, scope constructs.Construct, id *string, config *DialogflowConversationProfileConfig) {
 	_init_.Initialize()
 
@@ -1258,6 +1282,17 @@ func (d *jsiiProxy_DialogflowConversationProfile) PutNewMessageEventNotification
 	)
 }
 
+func (d *jsiiProxy_DialogflowConversationProfile) PutNewRecognitionResultNotificationConfig(value *DialogflowConversationProfileNewRecognitionResultNotificationConfig) {
+	if err := d.validatePutNewRecognitionResultNotificationConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putNewRecognitionResultNotificationConfig",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DialogflowConversationProfile) PutNotificationConfig(value *DialogflowConversationProfileNotificationConfig) {
 	if err := d.validatePutNotificationConfigParameters(value); err != nil {
 		panic(err)
@@ -1354,6 +1389,14 @@ func (d *jsiiProxy_DialogflowConversationProfile) ResetNewMessageEventNotificati
 	_jsii_.InvokeVoid(
 		d,
 		"resetNewMessageEventNotificationConfig",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DialogflowConversationProfile) ResetNewRecognitionResultNotificationConfig() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetNewRecognitionResultNotificationConfig",
 		nil, // no parameters
 	)
 }

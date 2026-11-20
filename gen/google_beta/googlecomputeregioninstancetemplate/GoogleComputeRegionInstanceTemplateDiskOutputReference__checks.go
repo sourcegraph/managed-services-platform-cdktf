@@ -388,6 +388,14 @@ func (j *jsiiProxy_GoogleComputeRegionInstanceTemplateDiskOutputReference) valid
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeRegionInstanceTemplateDiskOutputReference) validateSetStoragePoolParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeRegionInstanceTemplateDiskOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

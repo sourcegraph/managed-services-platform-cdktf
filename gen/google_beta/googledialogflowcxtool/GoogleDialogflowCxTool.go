@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googledialogflowcxtool/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_dialogflow_cx_tool google_dialogflow_cx_tool}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_dialogflow_cx_tool google_dialogflow_cx_tool}.
 type GoogleDialogflowCxTool interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -18,6 +18,8 @@ type GoogleDialogflowCxTool interface {
 	Connection() interface{}
 	// Experimental.
 	SetConnection(val interface{})
+	ConnectorSpec() GoogleDialogflowCxToolConnectorSpecOutputReference
+	ConnectorSpecInput() *GoogleDialogflowCxToolConnectorSpec
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -123,10 +125,12 @@ type GoogleDialogflowCxTool interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutConnectorSpec(value *GoogleDialogflowCxToolConnectorSpec)
 	PutDataStoreSpec(value *GoogleDialogflowCxToolDataStoreSpec)
 	PutFunctionSpec(value *GoogleDialogflowCxToolFunctionSpec)
 	PutOpenApiSpec(value *GoogleDialogflowCxToolOpenApiSpec)
 	PutTimeouts(value *GoogleDialogflowCxToolTimeouts)
+	ResetConnectorSpec()
 	ResetDataStoreSpec()
 	ResetFunctionSpec()
 	ResetId()
@@ -169,6 +173,26 @@ func (j *jsiiProxy_GoogleDialogflowCxTool) Connection() interface{} {
 	_jsii_.Get(
 		j,
 		"connection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDialogflowCxTool) ConnectorSpec() GoogleDialogflowCxToolConnectorSpecOutputReference {
+	var returns GoogleDialogflowCxToolConnectorSpecOutputReference
+	_jsii_.Get(
+		j,
+		"connectorSpec",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDialogflowCxTool) ConnectorSpecInput() *GoogleDialogflowCxToolConnectorSpec {
+	var returns *GoogleDialogflowCxToolConnectorSpec
+	_jsii_.Get(
+		j,
+		"connectorSpecInput",
 		&returns,
 	)
 	return returns
@@ -495,7 +519,7 @@ func (j *jsiiProxy_GoogleDialogflowCxTool) ToolType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_dialogflow_cx_tool google_dialogflow_cx_tool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_dialogflow_cx_tool google_dialogflow_cx_tool} Resource.
 func NewGoogleDialogflowCxTool(scope constructs.Construct, id *string, config *GoogleDialogflowCxToolConfig) GoogleDialogflowCxTool {
 	_init_.Initialize()
 
@@ -513,7 +537,7 @@ func NewGoogleDialogflowCxTool(scope constructs.Construct, id *string, config *G
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_dialogflow_cx_tool google_dialogflow_cx_tool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_dialogflow_cx_tool google_dialogflow_cx_tool} Resource.
 func NewGoogleDialogflowCxTool_Override(g GoogleDialogflowCxTool, scope constructs.Construct, id *string, config *GoogleDialogflowCxToolConfig) {
 	_init_.Initialize()
 
@@ -989,6 +1013,17 @@ func (g *jsiiProxy_GoogleDialogflowCxTool) OverrideLogicalId(newLogicalId *strin
 	)
 }
 
+func (g *jsiiProxy_GoogleDialogflowCxTool) PutConnectorSpec(value *GoogleDialogflowCxToolConnectorSpec) {
+	if err := g.validatePutConnectorSpecParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putConnectorSpec",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleDialogflowCxTool) PutDataStoreSpec(value *GoogleDialogflowCxToolDataStoreSpec) {
 	if err := g.validatePutDataStoreSpecParameters(value); err != nil {
 		panic(err)
@@ -1030,6 +1065,14 @@ func (g *jsiiProxy_GoogleDialogflowCxTool) PutTimeouts(value *GoogleDialogflowCx
 		g,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleDialogflowCxTool) ResetConnectorSpec() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetConnectorSpec",
+		nil, // no parameters
 	)
 }
 

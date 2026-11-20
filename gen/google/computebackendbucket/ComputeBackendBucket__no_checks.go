@@ -76,6 +76,10 @@ func (c *jsiiProxy_ComputeBackendBucket) validatePutCdnPolicyParameters(value *C
 	return nil
 }
 
+func (c *jsiiProxy_ComputeBackendBucket) validatePutParamsParameters(value *ComputeBackendBucketParams) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeBackendBucket) validatePutTimeoutsParameters(value *ComputeBackendBucketTimeouts) error {
 	return nil
 }

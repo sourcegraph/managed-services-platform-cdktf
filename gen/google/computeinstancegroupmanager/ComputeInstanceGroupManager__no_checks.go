@@ -108,6 +108,10 @@ func (c *jsiiProxy_ComputeInstanceGroupManager) validatePutStatefulInternalIpPar
 	return nil
 }
 
+func (c *jsiiProxy_ComputeInstanceGroupManager) validatePutTargetSizePolicyParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeInstanceGroupManager) validatePutTimeoutsParameters(value *ComputeInstanceGroupManagerTimeouts) error {
 	return nil
 }

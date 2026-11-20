@@ -16,11 +16,11 @@ type GoogleComputeRegionBackendServiceHaPolicy struct {
 	//              forwarding rule IP address with that VM, and both new and in-flight packets
 	//              are quickly delivered to that VM. Possible values: ["DISABLED", "GARP_RA"]
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_compute_region_backend_service#fast_ip_move GoogleComputeRegionBackendService#fast_ip_move}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_compute_region_backend_service#fast_ip_move GoogleComputeRegionBackendService#fast_ip_move}
 	FastIpMove *string `field:"optional" json:"fastIpMove" yaml:"fastIpMove"`
 	// leader block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_compute_region_backend_service#leader GoogleComputeRegionBackendService#leader}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_compute_region_backend_service#leader GoogleComputeRegionBackendService#leader}
 	Leader *GoogleComputeRegionBackendServiceHaPolicyLeader `field:"optional" json:"leader" yaml:"leader"`
 }
 

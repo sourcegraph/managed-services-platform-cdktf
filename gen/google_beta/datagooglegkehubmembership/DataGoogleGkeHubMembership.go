@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/datagooglegkehubmembership/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/data-sources/google_gke_hub_membership google_gke_hub_membership}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/data-sources/google_gke_hub_membership google_gke_hub_membership}.
 type DataGoogleGkeHubMembership interface {
 	cdktf.TerraformDataSource
 	Authority() DataGoogleGkeHubMembershipAuthorityList
@@ -25,7 +25,6 @@ type DataGoogleGkeHubMembership interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	Description() *string
 	EffectiveLabels() cdktf.StringMap
 	Endpoint() DataGoogleGkeHubMembershipEndpointList
 	// Experimental.
@@ -163,16 +162,6 @@ func (j *jsiiProxy_DataGoogleGkeHubMembership) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataGoogleGkeHubMembership) Description() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"description",
 		&returns,
 	)
 	return returns
@@ -409,7 +398,7 @@ func (j *jsiiProxy_DataGoogleGkeHubMembership) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/data-sources/google_gke_hub_membership google_gke_hub_membership} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/data-sources/google_gke_hub_membership google_gke_hub_membership} Data Source.
 func NewDataGoogleGkeHubMembership(scope constructs.Construct, id *string, config *DataGoogleGkeHubMembershipConfig) DataGoogleGkeHubMembership {
 	_init_.Initialize()
 
@@ -427,7 +416,7 @@ func NewDataGoogleGkeHubMembership(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/data-sources/google_gke_hub_membership google_gke_hub_membership} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/data-sources/google_gke_hub_membership google_gke_hub_membership} Data Source.
 func NewDataGoogleGkeHubMembership_Override(d DataGoogleGkeHubMembership, scope constructs.Construct, id *string, config *DataGoogleGkeHubMembershipConfig) {
 	_init_.Initialize()
 

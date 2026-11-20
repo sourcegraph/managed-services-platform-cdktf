@@ -41,6 +41,7 @@ type DataGoogleIamWorkloadIdentityPoolInlineCertificateIssuanceConfigOutputRefer
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	UseDefaultSharedCa() cdktf.IResolvable
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -185,6 +186,16 @@ func (j *jsiiProxy_DataGoogleIamWorkloadIdentityPoolInlineCertificateIssuanceCon
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleIamWorkloadIdentityPoolInlineCertificateIssuanceConfigOutputReference) UseDefaultSharedCa() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"useDefaultSharedCa",
 		&returns,
 	)
 	return returns

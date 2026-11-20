@@ -32,6 +32,9 @@ type GoogleContainerClusterIpAllocationPolicyAdditionalIpRangesConfigOutputRefer
 	PodIpv4RangeNames() *[]*string
 	SetPodIpv4RangeNames(val *[]*string)
 	PodIpv4RangeNamesInput() *[]*string
+	Status() *string
+	SetStatus(val *string)
+	StatusInput() *string
 	Subnetwork() *string
 	SetSubnetwork(val *string)
 	SubnetworkInput() *string
@@ -68,6 +71,7 @@ type GoogleContainerClusterIpAllocationPolicyAdditionalIpRangesConfigOutputRefer
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetPodIpv4RangeNames()
+	ResetStatus()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -148,6 +152,26 @@ func (j *jsiiProxy_GoogleContainerClusterIpAllocationPolicyAdditionalIpRangesCon
 	_jsii_.Get(
 		j,
 		"podIpv4RangeNamesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterIpAllocationPolicyAdditionalIpRangesConfigOutputReference) Status() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"status",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterIpAllocationPolicyAdditionalIpRangesConfigOutputReference) StatusInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"statusInput",
 		&returns,
 	)
 	return returns
@@ -261,6 +285,17 @@ func (j *jsiiProxy_GoogleContainerClusterIpAllocationPolicyAdditionalIpRangesCon
 	_jsii_.Set(
 		j,
 		"podIpv4RangeNames",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleContainerClusterIpAllocationPolicyAdditionalIpRangesConfigOutputReference)SetStatus(val *string) {
+	if err := j.validateSetStatusParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"status",
 		val,
 	)
 }
@@ -488,6 +523,14 @@ func (g *jsiiProxy_GoogleContainerClusterIpAllocationPolicyAdditionalIpRangesCon
 	_jsii_.InvokeVoid(
 		g,
 		"resetPodIpv4RangeNames",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerClusterIpAllocationPolicyAdditionalIpRangesConfigOutputReference) ResetStatus() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetStatus",
 		nil, // no parameters
 	)
 }

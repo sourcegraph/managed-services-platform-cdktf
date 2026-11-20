@@ -332,6 +332,14 @@ func validateGoogleStorageInsightsDatasetConfig_IsTerraformResourceParameters(x 
 	return nil
 }
 
+func (j *jsiiProxy_GoogleStorageInsightsDatasetConfig) validateSetActivityDataRetentionPeriodDaysParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleStorageInsightsDatasetConfig) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:

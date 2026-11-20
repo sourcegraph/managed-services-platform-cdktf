@@ -9,10 +9,13 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google/sqldatabaseinstance/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance google_sql_database_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance google_sql_database_instance}.
 type SqlDatabaseInstance interface {
 	cdktf.TerraformResource
 	AvailableMaintenanceVersions() *[]*string
+	BackupdrBackup() *string
+	SetBackupdrBackup(val *string)
+	BackupdrBackupInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	Clone() SqlDatabaseInstanceCloneOutputReference
@@ -43,6 +46,9 @@ type SqlDatabaseInstance interface {
 	EncryptionKeyName() *string
 	SetEncryptionKeyName(val *string)
 	EncryptionKeyNameInput() *string
+	FinalBackupDescription() *string
+	SetFinalBackupDescription(val *string)
+	FinalBackupDescriptionInput() *string
 	FirstIpAddress() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
@@ -77,6 +83,8 @@ type SqlDatabaseInstance interface {
 	NodeCount() *float64
 	SetNodeCount(val *float64)
 	NodeCountInput() *float64
+	PointInTimeRestoreContext() SqlDatabaseInstancePointInTimeRestoreContextOutputReference
+	PointInTimeRestoreContextInput() *SqlDatabaseInstancePointInTimeRestoreContext
 	PrivateIpAddress() *string
 	Project() *string
 	SetProject(val *string)
@@ -108,6 +116,12 @@ type SqlDatabaseInstance interface {
 	RootPassword() *string
 	SetRootPassword(val *string)
 	RootPasswordInput() *string
+	RootPasswordWo() *string
+	SetRootPasswordWo(val *string)
+	RootPasswordWoInput() *string
+	RootPasswordWoVersion() *string
+	SetRootPasswordWoVersion(val *string)
+	RootPasswordWoVersionInput() *string
 	SelfLink() *string
 	ServerCaCert() SqlDatabaseInstanceServerCaCertList
 	ServiceAccountEmailAddress() *string
@@ -165,14 +179,17 @@ type SqlDatabaseInstance interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutClone(value *SqlDatabaseInstanceClone)
+	PutPointInTimeRestoreContext(value *SqlDatabaseInstancePointInTimeRestoreContext)
 	PutReplicaConfiguration(value *SqlDatabaseInstanceReplicaConfiguration)
 	PutReplicationCluster(value *SqlDatabaseInstanceReplicationCluster)
 	PutRestoreBackupContext(value *SqlDatabaseInstanceRestoreBackupContext)
 	PutSettings(value *SqlDatabaseInstanceSettings)
 	PutTimeouts(value *SqlDatabaseInstanceTimeouts)
+	ResetBackupdrBackup()
 	ResetClone()
 	ResetDeletionProtection()
 	ResetEncryptionKeyName()
+	ResetFinalBackupDescription()
 	ResetId()
 	ResetInstanceType()
 	ResetMaintenanceVersion()
@@ -182,6 +199,7 @@ type SqlDatabaseInstance interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPointInTimeRestoreContext()
 	ResetProject()
 	ResetRegion()
 	ResetReplicaConfiguration()
@@ -189,6 +207,8 @@ type SqlDatabaseInstance interface {
 	ResetReplicationCluster()
 	ResetRestoreBackupContext()
 	ResetRootPassword()
+	ResetRootPasswordWo()
+	ResetRootPasswordWoVersion()
 	ResetSettings()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -214,6 +234,26 @@ func (j *jsiiProxy_SqlDatabaseInstance) AvailableMaintenanceVersions() *[]*strin
 	_jsii_.Get(
 		j,
 		"availableMaintenanceVersions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlDatabaseInstance) BackupdrBackup() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"backupdrBackup",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlDatabaseInstance) BackupdrBackupInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"backupdrBackupInput",
 		&returns,
 	)
 	return returns
@@ -374,6 +414,26 @@ func (j *jsiiProxy_SqlDatabaseInstance) EncryptionKeyNameInput() *string {
 	_jsii_.Get(
 		j,
 		"encryptionKeyNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlDatabaseInstance) FinalBackupDescription() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"finalBackupDescription",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlDatabaseInstance) FinalBackupDescriptionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"finalBackupDescriptionInput",
 		&returns,
 	)
 	return returns
@@ -564,6 +624,26 @@ func (j *jsiiProxy_SqlDatabaseInstance) NodeCountInput() *float64 {
 	_jsii_.Get(
 		j,
 		"nodeCountInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlDatabaseInstance) PointInTimeRestoreContext() SqlDatabaseInstancePointInTimeRestoreContextOutputReference {
+	var returns SqlDatabaseInstancePointInTimeRestoreContextOutputReference
+	_jsii_.Get(
+		j,
+		"pointInTimeRestoreContext",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlDatabaseInstance) PointInTimeRestoreContextInput() *SqlDatabaseInstancePointInTimeRestoreContext {
+	var returns *SqlDatabaseInstancePointInTimeRestoreContext
+	_jsii_.Get(
+		j,
+		"pointInTimeRestoreContextInput",
 		&returns,
 	)
 	return returns
@@ -769,6 +849,46 @@ func (j *jsiiProxy_SqlDatabaseInstance) RootPasswordInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_SqlDatabaseInstance) RootPasswordWo() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"rootPasswordWo",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlDatabaseInstance) RootPasswordWoInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"rootPasswordWoInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlDatabaseInstance) RootPasswordWoVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"rootPasswordWoVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlDatabaseInstance) RootPasswordWoVersionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"rootPasswordWoVersionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SqlDatabaseInstance) SelfLink() *string {
 	var returns *string
 	_jsii_.Get(
@@ -870,7 +990,7 @@ func (j *jsiiProxy_SqlDatabaseInstance) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance google_sql_database_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance google_sql_database_instance} Resource.
 func NewSqlDatabaseInstance(scope constructs.Construct, id *string, config *SqlDatabaseInstanceConfig) SqlDatabaseInstance {
 	_init_.Initialize()
 
@@ -888,7 +1008,7 @@ func NewSqlDatabaseInstance(scope constructs.Construct, id *string, config *SqlD
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance google_sql_database_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance google_sql_database_instance} Resource.
 func NewSqlDatabaseInstance_Override(s SqlDatabaseInstance, scope constructs.Construct, id *string, config *SqlDatabaseInstanceConfig) {
 	_init_.Initialize()
 
@@ -896,6 +1016,17 @@ func NewSqlDatabaseInstance_Override(s SqlDatabaseInstance, scope constructs.Con
 		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstance",
 		[]interface{}{scope, id, config},
 		s,
+	)
+}
+
+func (j *jsiiProxy_SqlDatabaseInstance)SetBackupdrBackup(val *string) {
+	if err := j.validateSetBackupdrBackupParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"backupdrBackup",
+		val,
 	)
 }
 
@@ -958,6 +1089,17 @@ func (j *jsiiProxy_SqlDatabaseInstance)SetEncryptionKeyName(val *string) {
 	_jsii_.Set(
 		j,
 		"encryptionKeyName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SqlDatabaseInstance)SetFinalBackupDescription(val *string) {
+	if err := j.validateSetFinalBackupDescriptionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"finalBackupDescription",
 		val,
 	)
 }
@@ -1106,6 +1248,28 @@ func (j *jsiiProxy_SqlDatabaseInstance)SetRootPassword(val *string) {
 	_jsii_.Set(
 		j,
 		"rootPassword",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SqlDatabaseInstance)SetRootPasswordWo(val *string) {
+	if err := j.validateSetRootPasswordWoParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"rootPasswordWo",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SqlDatabaseInstance)SetRootPasswordWoVersion(val *string) {
+	if err := j.validateSetRootPasswordWoVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"rootPasswordWoVersion",
 		val,
 	)
 }
@@ -1474,6 +1638,17 @@ func (s *jsiiProxy_SqlDatabaseInstance) PutClone(value *SqlDatabaseInstanceClone
 	)
 }
 
+func (s *jsiiProxy_SqlDatabaseInstance) PutPointInTimeRestoreContext(value *SqlDatabaseInstancePointInTimeRestoreContext) {
+	if err := s.validatePutPointInTimeRestoreContextParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putPointInTimeRestoreContext",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SqlDatabaseInstance) PutReplicaConfiguration(value *SqlDatabaseInstanceReplicaConfiguration) {
 	if err := s.validatePutReplicaConfigurationParameters(value); err != nil {
 		panic(err)
@@ -1529,6 +1704,14 @@ func (s *jsiiProxy_SqlDatabaseInstance) PutTimeouts(value *SqlDatabaseInstanceTi
 	)
 }
 
+func (s *jsiiProxy_SqlDatabaseInstance) ResetBackupdrBackup() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetBackupdrBackup",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_SqlDatabaseInstance) ResetClone() {
 	_jsii_.InvokeVoid(
 		s,
@@ -1549,6 +1732,14 @@ func (s *jsiiProxy_SqlDatabaseInstance) ResetEncryptionKeyName() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetEncryptionKeyName",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SqlDatabaseInstance) ResetFinalBackupDescription() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetFinalBackupDescription",
 		nil, // no parameters
 	)
 }
@@ -1609,6 +1800,14 @@ func (s *jsiiProxy_SqlDatabaseInstance) ResetOverrideLogicalId() {
 	)
 }
 
+func (s *jsiiProxy_SqlDatabaseInstance) ResetPointInTimeRestoreContext() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetPointInTimeRestoreContext",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_SqlDatabaseInstance) ResetProject() {
 	_jsii_.InvokeVoid(
 		s,
@@ -1661,6 +1860,22 @@ func (s *jsiiProxy_SqlDatabaseInstance) ResetRootPassword() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetRootPassword",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SqlDatabaseInstance) ResetRootPasswordWo() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRootPasswordWo",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SqlDatabaseInstance) ResetRootPasswordWoVersion() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRootPasswordWoVersion",
 		nil, // no parameters
 	)
 }

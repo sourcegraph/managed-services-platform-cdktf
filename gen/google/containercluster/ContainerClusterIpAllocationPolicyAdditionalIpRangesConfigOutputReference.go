@@ -32,6 +32,9 @@ type ContainerClusterIpAllocationPolicyAdditionalIpRangesConfigOutputReference i
 	PodIpv4RangeNames() *[]*string
 	SetPodIpv4RangeNames(val *[]*string)
 	PodIpv4RangeNamesInput() *[]*string
+	Status() *string
+	SetStatus(val *string)
+	StatusInput() *string
 	Subnetwork() *string
 	SetSubnetwork(val *string)
 	SubnetworkInput() *string
@@ -68,6 +71,7 @@ type ContainerClusterIpAllocationPolicyAdditionalIpRangesConfigOutputReference i
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetPodIpv4RangeNames()
+	ResetStatus()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -148,6 +152,26 @@ func (j *jsiiProxy_ContainerClusterIpAllocationPolicyAdditionalIpRangesConfigOut
 	_jsii_.Get(
 		j,
 		"podIpv4RangeNamesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterIpAllocationPolicyAdditionalIpRangesConfigOutputReference) Status() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"status",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterIpAllocationPolicyAdditionalIpRangesConfigOutputReference) StatusInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"statusInput",
 		&returns,
 	)
 	return returns
@@ -261,6 +285,17 @@ func (j *jsiiProxy_ContainerClusterIpAllocationPolicyAdditionalIpRangesConfigOut
 	_jsii_.Set(
 		j,
 		"podIpv4RangeNames",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ContainerClusterIpAllocationPolicyAdditionalIpRangesConfigOutputReference)SetStatus(val *string) {
+	if err := j.validateSetStatusParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"status",
 		val,
 	)
 }
@@ -488,6 +523,14 @@ func (c *jsiiProxy_ContainerClusterIpAllocationPolicyAdditionalIpRangesConfigOut
 	_jsii_.InvokeVoid(
 		c,
 		"resetPodIpv4RangeNames",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerClusterIpAllocationPolicyAdditionalIpRangesConfigOutputReference) ResetStatus() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetStatus",
 		nil, // no parameters
 	)
 }

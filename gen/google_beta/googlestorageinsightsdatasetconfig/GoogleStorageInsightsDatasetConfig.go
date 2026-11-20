@@ -9,9 +9,12 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googlestorageinsightsdatasetconfig/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_storage_insights_dataset_config google_storage_insights_dataset_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_storage_insights_dataset_config google_storage_insights_dataset_config}.
 type GoogleStorageInsightsDatasetConfig interface {
 	cdktf.TerraformResource
+	ActivityDataRetentionPeriodDays() *float64
+	SetActivityDataRetentionPeriodDays(val *float64)
+	ActivityDataRetentionPeriodDaysInput() *float64
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -161,6 +164,7 @@ type GoogleStorageInsightsDatasetConfig interface {
 	PutSourceFolders(value *GoogleStorageInsightsDatasetConfigSourceFolders)
 	PutSourceProjects(value *GoogleStorageInsightsDatasetConfigSourceProjects)
 	PutTimeouts(value *GoogleStorageInsightsDatasetConfigTimeouts)
+	ResetActivityDataRetentionPeriodDays()
 	ResetDescription()
 	ResetExcludeCloudStorageBuckets()
 	ResetExcludeCloudStorageLocations()
@@ -194,6 +198,26 @@ type GoogleStorageInsightsDatasetConfig interface {
 // The jsii proxy struct for GoogleStorageInsightsDatasetConfig
 type jsiiProxy_GoogleStorageInsightsDatasetConfig struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_GoogleStorageInsightsDatasetConfig) ActivityDataRetentionPeriodDays() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"activityDataRetentionPeriodDays",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleStorageInsightsDatasetConfig) ActivityDataRetentionPeriodDaysInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"activityDataRetentionPeriodDaysInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_GoogleStorageInsightsDatasetConfig) CdktfStack() cdktf.TerraformStack {
@@ -777,7 +801,7 @@ func (j *jsiiProxy_GoogleStorageInsightsDatasetConfig) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_storage_insights_dataset_config google_storage_insights_dataset_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_storage_insights_dataset_config google_storage_insights_dataset_config} Resource.
 func NewGoogleStorageInsightsDatasetConfig(scope constructs.Construct, id *string, config *GoogleStorageInsightsDatasetConfigConfig) GoogleStorageInsightsDatasetConfig {
 	_init_.Initialize()
 
@@ -795,7 +819,7 @@ func NewGoogleStorageInsightsDatasetConfig(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_storage_insights_dataset_config google_storage_insights_dataset_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_storage_insights_dataset_config google_storage_insights_dataset_config} Resource.
 func NewGoogleStorageInsightsDatasetConfig_Override(g GoogleStorageInsightsDatasetConfig, scope constructs.Construct, id *string, config *GoogleStorageInsightsDatasetConfigConfig) {
 	_init_.Initialize()
 
@@ -803,6 +827,17 @@ func NewGoogleStorageInsightsDatasetConfig_Override(g GoogleStorageInsightsDatas
 		"@cdktf/provider-google_beta.googleStorageInsightsDatasetConfig.GoogleStorageInsightsDatasetConfig",
 		[]interface{}{scope, id, config},
 		g,
+	)
+}
+
+func (j *jsiiProxy_GoogleStorageInsightsDatasetConfig)SetActivityDataRetentionPeriodDays(val *float64) {
+	if err := j.validateSetActivityDataRetentionPeriodDaysParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"activityDataRetentionPeriodDays",
+		val,
 	)
 }
 
@@ -1422,6 +1457,14 @@ func (g *jsiiProxy_GoogleStorageInsightsDatasetConfig) PutTimeouts(value *Google
 		g,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleStorageInsightsDatasetConfig) ResetActivityDataRetentionPeriodDays() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetActivityDataRetentionPeriodDays",
+		nil, // no parameters
 	)
 }
 

@@ -120,6 +120,10 @@ func (g *jsiiProxy_GoogleComputeBackendService) validatePutOutlierDetectionParam
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeBackendService) validatePutParamsParameters(value *GoogleComputeBackendServiceParams) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeBackendService) validatePutSecuritySettingsParameters(value *GoogleComputeBackendServiceSecuritySettings) error {
 	return nil
 }

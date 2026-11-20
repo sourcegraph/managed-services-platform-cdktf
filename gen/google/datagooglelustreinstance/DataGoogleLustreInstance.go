@@ -9,9 +9,10 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google/datagooglelustreinstance/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/lustre_instance google_lustre_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/lustre_instance google_lustre_instance}.
 type DataGoogleLustreInstance interface {
 	cdktf.TerraformDataSource
+	AccessRulesOptions() DataGoogleLustreInstanceAccessRulesOptionsList
 	CapacityGib() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
@@ -27,6 +28,7 @@ type DataGoogleLustreInstance interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	Description() *string
+	DynamicTierOptions() DataGoogleLustreInstanceDynamicTierOptionsList
 	EffectiveLabels() cdktf.StringMap
 	Filesystem() *string
 	// Experimental.
@@ -44,18 +46,21 @@ type DataGoogleLustreInstance interface {
 	InstanceId() *string
 	SetInstanceId(val *string)
 	InstanceIdInput() *string
+	KmsKey() *string
 	Labels() cdktf.StringMap
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	Location() *string
+	MaintenancePolicy() DataGoogleLustreInstanceMaintenancePolicyList
 	MountPoint() *string
 	Name() *string
 	Network() *string
 	// The tree node.
 	Node() constructs.Node
 	PerUnitStorageThroughput() *string
+	PlacementPolicy() *string
 	Project() *string
 	SetProject(val *string)
 	ProjectInput() *string
@@ -66,6 +71,7 @@ type DataGoogleLustreInstance interface {
 	// Experimental.
 	RawOverrides() interface{}
 	State() *string
+	StateReason() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
@@ -73,6 +79,8 @@ type DataGoogleLustreInstance interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Uid() *string
+	UpcomingMaintenanceSchedule() DataGoogleLustreInstanceUpcomingMaintenanceScheduleList
 	UpdateTime() *string
 	Zone() *string
 	SetZone(val *string)
@@ -125,6 +133,16 @@ type DataGoogleLustreInstance interface {
 // The jsii proxy struct for DataGoogleLustreInstance
 type jsiiProxy_DataGoogleLustreInstance struct {
 	internal.Type__cdktfTerraformDataSource
+}
+
+func (j *jsiiProxy_DataGoogleLustreInstance) AccessRulesOptions() DataGoogleLustreInstanceAccessRulesOptionsList {
+	var returns DataGoogleLustreInstanceAccessRulesOptionsList
+	_jsii_.Get(
+		j,
+		"accessRulesOptions",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataGoogleLustreInstance) CapacityGib() *string {
@@ -192,6 +210,16 @@ func (j *jsiiProxy_DataGoogleLustreInstance) Description() *string {
 	_jsii_.Get(
 		j,
 		"description",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleLustreInstance) DynamicTierOptions() DataGoogleLustreInstanceDynamicTierOptionsList {
+	var returns DataGoogleLustreInstanceDynamicTierOptionsList
+	_jsii_.Get(
+		j,
+		"dynamicTierOptions",
 		&returns,
 	)
 	return returns
@@ -297,6 +325,16 @@ func (j *jsiiProxy_DataGoogleLustreInstance) InstanceIdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleLustreInstance) KmsKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"kmsKey",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleLustreInstance) Labels() cdktf.StringMap {
 	var returns cdktf.StringMap
 	_jsii_.Get(
@@ -322,6 +360,16 @@ func (j *jsiiProxy_DataGoogleLustreInstance) Location() *string {
 	_jsii_.Get(
 		j,
 		"location",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleLustreInstance) MaintenancePolicy() DataGoogleLustreInstanceMaintenancePolicyList {
+	var returns DataGoogleLustreInstanceMaintenancePolicyList
+	_jsii_.Get(
+		j,
+		"maintenancePolicy",
 		&returns,
 	)
 	return returns
@@ -377,6 +425,16 @@ func (j *jsiiProxy_DataGoogleLustreInstance) PerUnitStorageThroughput() *string 
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleLustreInstance) PlacementPolicy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"placementPolicy",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleLustreInstance) Project() *string {
 	var returns *string
 	_jsii_.Get(
@@ -427,6 +485,16 @@ func (j *jsiiProxy_DataGoogleLustreInstance) State() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleLustreInstance) StateReason() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"stateReason",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleLustreInstance) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -467,6 +535,26 @@ func (j *jsiiProxy_DataGoogleLustreInstance) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleLustreInstance) Uid() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"uid",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleLustreInstance) UpcomingMaintenanceSchedule() DataGoogleLustreInstanceUpcomingMaintenanceScheduleList {
+	var returns DataGoogleLustreInstanceUpcomingMaintenanceScheduleList
+	_jsii_.Get(
+		j,
+		"upcomingMaintenanceSchedule",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleLustreInstance) UpdateTime() *string {
 	var returns *string
 	_jsii_.Get(
@@ -498,7 +586,7 @@ func (j *jsiiProxy_DataGoogleLustreInstance) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/lustre_instance google_lustre_instance} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/lustre_instance google_lustre_instance} Data Source.
 func NewDataGoogleLustreInstance(scope constructs.Construct, id *string, config *DataGoogleLustreInstanceConfig) DataGoogleLustreInstance {
 	_init_.Initialize()
 
@@ -516,7 +604,7 @@ func NewDataGoogleLustreInstance(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/lustre_instance google_lustre_instance} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/lustre_instance google_lustre_instance} Data Source.
 func NewDataGoogleLustreInstance_Override(d DataGoogleLustreInstance, scope constructs.Construct, id *string, config *DataGoogleLustreInstanceConfig) {
 	_init_.Initialize()
 

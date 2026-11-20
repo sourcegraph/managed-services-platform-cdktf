@@ -64,6 +64,10 @@ func (j *jsiiProxy_GoogleCloudRunV2ServiceScalingOutputReference) validateSetMan
 	return nil
 }
 
+func (j *jsiiProxy_GoogleCloudRunV2ServiceScalingOutputReference) validateSetMaxInstanceCountParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleCloudRunV2ServiceScalingOutputReference) validateSetMinInstanceCountParameters(val *float64) error {
 	return nil
 }

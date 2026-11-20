@@ -10,6 +10,7 @@ import (
 
 type DataGooglePubsubSubscriptionMessageTransformsOutputReference interface {
 	cdktf.ComplexObject
+	AiInference() DataGooglePubsubSubscriptionMessageTransformsAiInferenceList
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -76,6 +77,16 @@ type DataGooglePubsubSubscriptionMessageTransformsOutputReference interface {
 // The jsii proxy struct for DataGooglePubsubSubscriptionMessageTransformsOutputReference
 type jsiiProxy_DataGooglePubsubSubscriptionMessageTransformsOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_DataGooglePubsubSubscriptionMessageTransformsOutputReference) AiInference() DataGooglePubsubSubscriptionMessageTransformsAiInferenceList {
+	var returns DataGooglePubsubSubscriptionMessageTransformsAiInferenceList
+	_jsii_.Get(
+		j,
+		"aiInference",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataGooglePubsubSubscriptionMessageTransformsOutputReference) ComplexObjectIndex() interface{} {

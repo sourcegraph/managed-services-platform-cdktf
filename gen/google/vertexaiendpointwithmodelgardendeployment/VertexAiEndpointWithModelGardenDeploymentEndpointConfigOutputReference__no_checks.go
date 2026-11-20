@@ -44,6 +44,10 @@ func (v *jsiiProxy_VertexAiEndpointWithModelGardenDeploymentEndpointConfigOutput
 	return nil
 }
 
+func (v *jsiiProxy_VertexAiEndpointWithModelGardenDeploymentEndpointConfigOutputReference) validatePutPrivateServiceConnectConfigParameters(value *VertexAiEndpointWithModelGardenDeploymentEndpointConfigPrivateServiceConnectConfig) error {
+	return nil
+}
+
 func (v *jsiiProxy_VertexAiEndpointWithModelGardenDeploymentEndpointConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

@@ -120,6 +120,10 @@ func (j *jsiiProxy_ComputeNetwork) validateSetCountParameters(val interface{}) e
 	return nil
 }
 
+func (j *jsiiProxy_ComputeNetwork) validateSetDeleteBgpAlwaysCompareMedParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeNetwork) validateSetDeleteDefaultRoutesOnCreateParameters(val interface{}) error {
 	return nil
 }

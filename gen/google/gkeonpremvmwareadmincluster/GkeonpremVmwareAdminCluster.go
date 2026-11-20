@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google/gkeonpremvmwareadmincluster/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/gkeonprem_vmware_admin_cluster google_gkeonprem_vmware_admin_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/gkeonprem_vmware_admin_cluster google_gkeonprem_vmware_admin_cluster}.
 type GkeonpremVmwareAdminCluster interface {
 	cdktf.TerraformResource
 	AddonNode() GkeonpremVmwareAdminClusterAddonNodeOutputReference
@@ -104,6 +104,8 @@ type GkeonpremVmwareAdminCluster interface {
 	Provisioners() *[]interface{}
 	// Experimental.
 	SetProvisioners(val *[]interface{})
+	Proxy() GkeonpremVmwareAdminClusterProxyOutputReference
+	ProxyInput() *GkeonpremVmwareAdminClusterProxy
 	// Experimental.
 	RawOverrides() interface{}
 	Reconciling() cdktf.IResolvable
@@ -173,6 +175,7 @@ type GkeonpremVmwareAdminCluster interface {
 	PutNetworkConfig(value *GkeonpremVmwareAdminClusterNetworkConfig)
 	PutPlatformConfig(value *GkeonpremVmwareAdminClusterPlatformConfig)
 	PutPrivateRegistryConfig(value *GkeonpremVmwareAdminClusterPrivateRegistryConfig)
+	PutProxy(value *GkeonpremVmwareAdminClusterProxy)
 	PutTimeouts(value *GkeonpremVmwareAdminClusterTimeouts)
 	PutVcenter(value *GkeonpremVmwareAdminClusterVcenter)
 	ResetAddonNode()
@@ -194,6 +197,7 @@ type GkeonpremVmwareAdminCluster interface {
 	ResetPlatformConfig()
 	ResetPrivateRegistryConfig()
 	ResetProject()
+	ResetProxy()
 	ResetTimeouts()
 	ResetVcenter()
 	SynthesizeAttributes() *map[string]interface{}
@@ -774,6 +778,26 @@ func (j *jsiiProxy_GkeonpremVmwareAdminCluster) Provisioners() *[]interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_GkeonpremVmwareAdminCluster) Proxy() GkeonpremVmwareAdminClusterProxyOutputReference {
+	var returns GkeonpremVmwareAdminClusterProxyOutputReference
+	_jsii_.Get(
+		j,
+		"proxy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GkeonpremVmwareAdminCluster) ProxyInput() *GkeonpremVmwareAdminClusterProxy {
+	var returns *GkeonpremVmwareAdminClusterProxy
+	_jsii_.Get(
+		j,
+		"proxyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GkeonpremVmwareAdminCluster) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -905,7 +929,7 @@ func (j *jsiiProxy_GkeonpremVmwareAdminCluster) VcenterInput() *GkeonpremVmwareA
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/gkeonprem_vmware_admin_cluster google_gkeonprem_vmware_admin_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/gkeonprem_vmware_admin_cluster google_gkeonprem_vmware_admin_cluster} Resource.
 func NewGkeonpremVmwareAdminCluster(scope constructs.Construct, id *string, config *GkeonpremVmwareAdminClusterConfig) GkeonpremVmwareAdminCluster {
 	_init_.Initialize()
 
@@ -923,7 +947,7 @@ func NewGkeonpremVmwareAdminCluster(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/gkeonprem_vmware_admin_cluster google_gkeonprem_vmware_admin_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/gkeonprem_vmware_admin_cluster google_gkeonprem_vmware_admin_cluster} Resource.
 func NewGkeonpremVmwareAdminCluster_Override(g GkeonpremVmwareAdminCluster, scope constructs.Construct, id *string, config *GkeonpremVmwareAdminClusterConfig) {
 	_init_.Initialize()
 
@@ -1564,6 +1588,17 @@ func (g *jsiiProxy_GkeonpremVmwareAdminCluster) PutPrivateRegistryConfig(value *
 	)
 }
 
+func (g *jsiiProxy_GkeonpremVmwareAdminCluster) PutProxy(value *GkeonpremVmwareAdminClusterProxy) {
+	if err := g.validatePutProxyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putProxy",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GkeonpremVmwareAdminCluster) PutTimeouts(value *GkeonpremVmwareAdminClusterTimeouts) {
 	if err := g.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1718,6 +1753,14 @@ func (g *jsiiProxy_GkeonpremVmwareAdminCluster) ResetProject() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GkeonpremVmwareAdminCluster) ResetProxy() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetProxy",
 		nil, // no parameters
 	)
 }

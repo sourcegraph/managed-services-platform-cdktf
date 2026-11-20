@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google/computenetwork/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_network google_compute_network}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_network google_compute_network}.
 type ComputeNetwork interface {
 	cdktf.TerraformResource
 	AutoCreateSubnetworks() interface{}
@@ -36,6 +36,9 @@ type ComputeNetwork interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	DeleteBgpAlwaysCompareMed() interface{}
+	SetDeleteBgpAlwaysCompareMed(val interface{})
+	DeleteBgpAlwaysCompareMedInput() interface{}
 	DeleteDefaultRoutesOnCreate() interface{}
 	SetDeleteDefaultRoutesOnCreate(val interface{})
 	DeleteDefaultRoutesOnCreateInput() interface{}
@@ -160,6 +163,7 @@ type ComputeNetwork interface {
 	ResetBgpAlwaysCompareMed()
 	ResetBgpBestPathSelectionMode()
 	ResetBgpInterRegionCost()
+	ResetDeleteBgpAlwaysCompareMed()
 	ResetDeleteDefaultRoutesOnCreate()
 	ResetDescription()
 	ResetEnableUlaInternalIpv6()
@@ -308,6 +312,26 @@ func (j *jsiiProxy_ComputeNetwork) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeNetwork) DeleteBgpAlwaysCompareMed() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deleteBgpAlwaysCompareMed",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeNetwork) DeleteBgpAlwaysCompareMedInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deleteBgpAlwaysCompareMedInput",
 		&returns,
 	)
 	return returns
@@ -734,7 +758,7 @@ func (j *jsiiProxy_ComputeNetwork) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_network google_compute_network} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_network google_compute_network} Resource.
 func NewComputeNetwork(scope constructs.Construct, id *string, config *ComputeNetworkConfig) ComputeNetwork {
 	_init_.Initialize()
 
@@ -752,7 +776,7 @@ func NewComputeNetwork(scope constructs.Construct, id *string, config *ComputeNe
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_network google_compute_network} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_network google_compute_network} Resource.
 func NewComputeNetwork_Override(c ComputeNetwork, scope constructs.Construct, id *string, config *ComputeNetworkConfig) {
 	_init_.Initialize()
 
@@ -825,6 +849,17 @@ func (j *jsiiProxy_ComputeNetwork)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeNetwork)SetDeleteBgpAlwaysCompareMed(val interface{}) {
+	if err := j.validateSetDeleteBgpAlwaysCompareMedParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deleteBgpAlwaysCompareMed",
 		val,
 	)
 }
@@ -1399,6 +1434,14 @@ func (c *jsiiProxy_ComputeNetwork) ResetBgpInterRegionCost() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetBgpInterRegionCost",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeNetwork) ResetDeleteBgpAlwaysCompareMed() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetDeleteBgpAlwaysCompareMed",
 		nil, // no parameters
 	)
 }

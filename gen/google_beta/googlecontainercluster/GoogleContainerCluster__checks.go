@@ -237,6 +237,17 @@ func (g *jsiiProxy_GoogleContainerCluster) validatePutAuthenticatorGroupsConfigP
 	return nil
 }
 
+func (g *jsiiProxy_GoogleContainerCluster) validatePutAutopilotClusterPolicyConfigParameters(value *GoogleContainerClusterAutopilotClusterPolicyConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerCluster) validatePutBinaryAuthorizationParameters(value *GoogleContainerClusterBinaryAuthorization) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -425,6 +436,28 @@ func (g *jsiiProxy_GoogleContainerCluster) validatePutLoggingConfigParameters(va
 }
 
 func (g *jsiiProxy_GoogleContainerCluster) validatePutMaintenancePolicyParameters(value *GoogleContainerClusterMaintenancePolicy) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) validatePutManagedMachineLearningDiagnosticsConfigParameters(value *GoogleContainerClusterManagedMachineLearningDiagnosticsConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) validatePutManagedOpentelemetryConfigParameters(value *GoogleContainerClusterManagedOpentelemetryConfig) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -664,6 +697,17 @@ func (g *jsiiProxy_GoogleContainerCluster) validatePutSecretManagerConfigParamet
 	return nil
 }
 
+func (g *jsiiProxy_GoogleContainerCluster) validatePutSecretSyncConfigParameters(value *GoogleContainerClusterSecretSyncConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerCluster) validatePutSecurityPostureConfigParameters(value *GoogleContainerClusterSecurityPostureConfig) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -807,6 +851,14 @@ func (j *jsiiProxy_GoogleContainerCluster) validateSetAllowNetAdminParameters(va
 		if !_jsii_.IsAnonymousProxy(val) {
 			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
 		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) validateSetAutopilotPrivilegedAdmissionParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

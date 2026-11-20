@@ -4,7 +4,7 @@ package googlevertexaiendpointwithmodelgardendeployment
 type GoogleVertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecEnv struct {
 	// Name of the environment variable. Must be a valid C identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_vertex_ai_endpoint_with_model_garden_deployment#name GoogleVertexAiEndpointWithModelGardenDeployment#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_vertex_ai_endpoint_with_model_garden_deployment#name GoogleVertexAiEndpointWithModelGardenDeployment#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// Variables that reference a $(VAR_NAME) are expanded using the previous defined environment variables in the container and any service environment variables.
 	//
@@ -14,7 +14,7 @@ type GoogleVertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecEnv 
 	// references will never be expanded, regardless of whether the variable
 	// exists or not.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_vertex_ai_endpoint_with_model_garden_deployment#value GoogleVertexAiEndpointWithModelGardenDeployment#value}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_vertex_ai_endpoint_with_model_garden_deployment#value GoogleVertexAiEndpointWithModelGardenDeployment#value}
 	Value *string `field:"required" json:"value" yaml:"value"`
 }
 

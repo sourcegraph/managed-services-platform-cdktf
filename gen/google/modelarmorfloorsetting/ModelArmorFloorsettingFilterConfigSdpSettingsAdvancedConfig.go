@@ -13,7 +13,7 @@ type ModelArmorFloorsettingFilterConfigSdpSettingsAdvancedConfig struct {
 	// e.g.
 	// 'projects/{project}/locations/{location}/deidentifyTemplates/{deidentify_template}'
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/model_armor_floorsetting#deidentify_template ModelArmorFloorsetting#deidentify_template}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/model_armor_floorsetting#deidentify_template ModelArmorFloorsetting#deidentify_template}
 	DeidentifyTemplate *string `field:"optional" json:"deidentifyTemplate" yaml:"deidentifyTemplate"`
 	// Sensitive Data Protection inspect template resource name.
 	//
@@ -25,7 +25,7 @@ type ModelArmorFloorsettingFilterConfigSdpSettingsAdvancedConfig struct {
 	// e.g:-
 	// 'projects/{project}/locations/{location}/inspectTemplates/{inspect_template}'
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/model_armor_floorsetting#inspect_template ModelArmorFloorsetting#inspect_template}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/model_armor_floorsetting#inspect_template ModelArmorFloorsetting#inspect_template}
 	InspectTemplate *string `field:"optional" json:"inspectTemplate" yaml:"inspectTemplate"`
 }
 

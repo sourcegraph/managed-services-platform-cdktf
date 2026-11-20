@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google/computebackendservice/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service google_compute_backend_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service google_compute_backend_service}.
 type ComputeBackendService interface {
 	cdktf.TerraformResource
 	AffinityCookieTtlSec() *float64
@@ -113,6 +113,8 @@ type ComputeBackendService interface {
 	Node() constructs.Node
 	OutlierDetection() ComputeBackendServiceOutlierDetectionOutputReference
 	OutlierDetectionInput() *ComputeBackendServiceOutlierDetection
+	Params() ComputeBackendServiceParamsOutputReference
+	ParamsInput() *ComputeBackendServiceParams
 	PortName() *string
 	SetPortName(val *string)
 	PortNameInput() *string
@@ -212,6 +214,7 @@ type ComputeBackendService interface {
 	PutLogConfig(value *ComputeBackendServiceLogConfig)
 	PutMaxStreamDuration(value *ComputeBackendServiceMaxStreamDuration)
 	PutOutlierDetection(value *ComputeBackendServiceOutlierDetection)
+	PutParams(value *ComputeBackendServiceParams)
 	PutSecuritySettings(value *ComputeBackendServiceSecuritySettings)
 	PutStrongSessionAffinityCookie(value *ComputeBackendServiceStrongSessionAffinityCookie)
 	PutTimeouts(value *ComputeBackendServiceTimeouts)
@@ -244,6 +247,7 @@ type ComputeBackendService interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetParams()
 	ResetPortName()
 	ResetProject()
 	ResetProtocol()
@@ -923,6 +927,26 @@ func (j *jsiiProxy_ComputeBackendService) OutlierDetectionInput() *ComputeBacken
 	return returns
 }
 
+func (j *jsiiProxy_ComputeBackendService) Params() ComputeBackendServiceParamsOutputReference {
+	var returns ComputeBackendServiceParamsOutputReference
+	_jsii_.Get(
+		j,
+		"params",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeBackendService) ParamsInput() *ComputeBackendServiceParams {
+	var returns *ComputeBackendServiceParams
+	_jsii_.Get(
+		j,
+		"paramsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeBackendService) PortName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1214,7 +1238,7 @@ func (j *jsiiProxy_ComputeBackendService) TlsSettingsInput() *ComputeBackendServ
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service google_compute_backend_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service google_compute_backend_service} Resource.
 func NewComputeBackendService(scope constructs.Construct, id *string, config *ComputeBackendServiceConfig) ComputeBackendService {
 	_init_.Initialize()
 
@@ -1232,7 +1256,7 @@ func NewComputeBackendService(scope constructs.Construct, id *string, config *Co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service google_compute_backend_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service google_compute_backend_service} Resource.
 func NewComputeBackendService_Override(c ComputeBackendService, scope constructs.Construct, id *string, config *ComputeBackendServiceConfig) {
 	_init_.Initialize()
 
@@ -2027,6 +2051,17 @@ func (c *jsiiProxy_ComputeBackendService) PutOutlierDetection(value *ComputeBack
 	)
 }
 
+func (c *jsiiProxy_ComputeBackendService) PutParams(value *ComputeBackendServiceParams) {
+	if err := c.validatePutParamsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putParams",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ComputeBackendService) PutSecuritySettings(value *ComputeBackendServiceSecuritySettings) {
 	if err := c.validatePutSecuritySettingsParameters(value); err != nil {
 		panic(err)
@@ -2275,6 +2310,14 @@ func (c *jsiiProxy_ComputeBackendService) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeBackendService) ResetParams() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetParams",
 		nil, // no parameters
 	)
 }

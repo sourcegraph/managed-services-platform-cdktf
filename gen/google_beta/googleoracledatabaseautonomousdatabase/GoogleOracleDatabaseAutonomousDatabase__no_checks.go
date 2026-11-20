@@ -76,6 +76,10 @@ func (g *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) validatePutProperties
 	return nil
 }
 
+func (g *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) validatePutSourceConfigParameters(value *GoogleOracleDatabaseAutonomousDatabaseSourceConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) validatePutTimeoutsParameters(value *GoogleOracleDatabaseAutonomousDatabaseTimeouts) error {
 	return nil
 }

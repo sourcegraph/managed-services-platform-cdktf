@@ -48,7 +48,15 @@ func (b *jsiiProxy_BeyondcorpSecurityGatewayApplicationUpstreamsOutputReference)
 	return nil
 }
 
+func (b *jsiiProxy_BeyondcorpSecurityGatewayApplicationUpstreamsOutputReference) validatePutExternalParameters(value *BeyondcorpSecurityGatewayApplicationUpstreamsExternal) error {
+	return nil
+}
+
 func (b *jsiiProxy_BeyondcorpSecurityGatewayApplicationUpstreamsOutputReference) validatePutNetworkParameters(value *BeyondcorpSecurityGatewayApplicationUpstreamsNetwork) error {
+	return nil
+}
+
+func (b *jsiiProxy_BeyondcorpSecurityGatewayApplicationUpstreamsOutputReference) validatePutProxyProtocolParameters(value *BeyondcorpSecurityGatewayApplicationUpstreamsProxyProtocol) error {
 	return nil
 }
 

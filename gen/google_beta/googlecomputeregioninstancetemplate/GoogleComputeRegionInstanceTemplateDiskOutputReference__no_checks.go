@@ -144,6 +144,10 @@ func (j *jsiiProxy_GoogleComputeRegionInstanceTemplateDiskOutputReference) valid
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeRegionInstanceTemplateDiskOutputReference) validateSetStoragePoolParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeRegionInstanceTemplateDiskOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

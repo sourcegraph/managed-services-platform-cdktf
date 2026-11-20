@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google/computestoragepool/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_storage_pool google_compute_storage_pool}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_storage_pool google_compute_storage_pool}.
 type ComputeStoragePool interface {
 	cdktf.TerraformResource
 	CapacityProvisioningType() *string
@@ -62,6 +62,8 @@ type ComputeStoragePool interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	Params() ComputeStoragePoolParamsOutputReference
+	ParamsInput() *ComputeStoragePoolParams
 	PerformanceProvisioningType() *string
 	SetPerformanceProvisioningType(val *string)
 	PerformanceProvisioningTypeInput() *string
@@ -147,6 +149,7 @@ type ComputeStoragePool interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutParams(value *ComputeStoragePoolParams)
 	PutTimeouts(value *ComputeStoragePoolTimeouts)
 	ResetCapacityProvisioningType()
 	ResetDeletionProtection()
@@ -155,6 +158,7 @@ type ComputeStoragePool interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetParams()
 	ResetPerformanceProvisioningType()
 	ResetPoolProvisionedIops()
 	ResetProject()
@@ -428,6 +432,26 @@ func (j *jsiiProxy_ComputeStoragePool) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_ComputeStoragePool) Params() ComputeStoragePoolParamsOutputReference {
+	var returns ComputeStoragePoolParamsOutputReference
+	_jsii_.Get(
+		j,
+		"params",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeStoragePool) ParamsInput() *ComputeStoragePoolParams {
+	var returns *ComputeStoragePoolParams
+	_jsii_.Get(
+		j,
+		"paramsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeStoragePool) PerformanceProvisioningType() *string {
 	var returns *string
 	_jsii_.Get(
@@ -679,7 +703,7 @@ func (j *jsiiProxy_ComputeStoragePool) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_storage_pool google_compute_storage_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_storage_pool google_compute_storage_pool} Resource.
 func NewComputeStoragePool(scope constructs.Construct, id *string, config *ComputeStoragePoolConfig) ComputeStoragePool {
 	_init_.Initialize()
 
@@ -697,7 +721,7 @@ func NewComputeStoragePool(scope constructs.Construct, id *string, config *Compu
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_storage_pool google_compute_storage_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_storage_pool google_compute_storage_pool} Resource.
 func NewComputeStoragePool_Override(c ComputeStoragePool, scope constructs.Construct, id *string, config *ComputeStoragePoolConfig) {
 	_init_.Initialize()
 
@@ -1261,6 +1285,17 @@ func (c *jsiiProxy_ComputeStoragePool) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (c *jsiiProxy_ComputeStoragePool) PutParams(value *ComputeStoragePoolParams) {
+	if err := c.validatePutParamsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putParams",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ComputeStoragePool) PutTimeouts(value *ComputeStoragePoolTimeouts) {
 	if err := c.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1308,6 +1343,14 @@ func (c *jsiiProxy_ComputeStoragePool) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeStoragePool) ResetParams() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetParams",
 		nil, // no parameters
 	)
 }

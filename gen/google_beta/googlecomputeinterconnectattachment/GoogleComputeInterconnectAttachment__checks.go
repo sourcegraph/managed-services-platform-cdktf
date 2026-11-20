@@ -204,6 +204,28 @@ func (g *jsiiProxy_GoogleComputeInterconnectAttachment) validateOverrideLogicalI
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeInterconnectAttachment) validatePutL2ForwardingParameters(value *GoogleComputeInterconnectAttachmentL2Forwarding) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeInterconnectAttachment) validatePutParamsParameters(value *GoogleComputeInterconnectAttachmentParams) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeInterconnectAttachment) validatePutTimeoutsParameters(value *GoogleComputeInterconnectAttachmentTimeouts) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

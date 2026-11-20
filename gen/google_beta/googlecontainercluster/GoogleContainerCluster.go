@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googlecontainercluster/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_container_cluster google_container_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_container_cluster google_container_cluster}.
 type GoogleContainerCluster interface {
 	cdktf.TerraformResource
 	AddonsConfig() GoogleContainerClusterAddonsConfigOutputReference
@@ -21,6 +21,11 @@ type GoogleContainerCluster interface {
 	AnonymousAuthenticationConfigInput() *GoogleContainerClusterAnonymousAuthenticationConfig
 	AuthenticatorGroupsConfig() GoogleContainerClusterAuthenticatorGroupsConfigOutputReference
 	AuthenticatorGroupsConfigInput() *GoogleContainerClusterAuthenticatorGroupsConfig
+	AutopilotClusterPolicyConfig() GoogleContainerClusterAutopilotClusterPolicyConfigOutputReference
+	AutopilotClusterPolicyConfigInput() *GoogleContainerClusterAutopilotClusterPolicyConfig
+	AutopilotPrivilegedAdmission() *[]*string
+	SetAutopilotPrivilegedAdmission(val *[]*string)
+	AutopilotPrivilegedAdmissionInput() *[]*string
 	BinaryAuthorization() GoogleContainerClusterBinaryAuthorizationOutputReference
 	BinaryAuthorizationInput() *GoogleContainerClusterBinaryAuthorization
 	// Experimental.
@@ -151,6 +156,10 @@ type GoogleContainerCluster interface {
 	LoggingServiceInput() *string
 	MaintenancePolicy() GoogleContainerClusterMaintenancePolicyOutputReference
 	MaintenancePolicyInput() *GoogleContainerClusterMaintenancePolicy
+	ManagedMachineLearningDiagnosticsConfig() GoogleContainerClusterManagedMachineLearningDiagnosticsConfigOutputReference
+	ManagedMachineLearningDiagnosticsConfigInput() *GoogleContainerClusterManagedMachineLearningDiagnosticsConfig
+	ManagedOpentelemetryConfig() GoogleContainerClusterManagedOpentelemetryConfigOutputReference
+	ManagedOpentelemetryConfigInput() *GoogleContainerClusterManagedOpentelemetryConfig
 	MasterAuth() GoogleContainerClusterMasterAuthOutputReference
 	MasterAuthInput() *GoogleContainerClusterMasterAuth
 	MasterAuthorizedNetworksConfig() GoogleContainerClusterMasterAuthorizedNetworksConfigOutputReference
@@ -236,6 +245,8 @@ type GoogleContainerCluster interface {
 	ResourceUsageExportConfigInput() *GoogleContainerClusterResourceUsageExportConfig
 	SecretManagerConfig() GoogleContainerClusterSecretManagerConfigOutputReference
 	SecretManagerConfigInput() *GoogleContainerClusterSecretManagerConfig
+	SecretSyncConfig() GoogleContainerClusterSecretSyncConfigOutputReference
+	SecretSyncConfigInput() *GoogleContainerClusterSecretSyncConfig
 	SecurityPostureConfig() GoogleContainerClusterSecurityPostureConfigOutputReference
 	SecurityPostureConfigInput() *GoogleContainerClusterSecurityPostureConfig
 	SelfLink() *string
@@ -311,6 +322,7 @@ type GoogleContainerCluster interface {
 	PutAddonsConfig(value *GoogleContainerClusterAddonsConfig)
 	PutAnonymousAuthenticationConfig(value *GoogleContainerClusterAnonymousAuthenticationConfig)
 	PutAuthenticatorGroupsConfig(value *GoogleContainerClusterAuthenticatorGroupsConfig)
+	PutAutopilotClusterPolicyConfig(value *GoogleContainerClusterAutopilotClusterPolicyConfig)
 	PutBinaryAuthorization(value *GoogleContainerClusterBinaryAuthorization)
 	PutClusterAutoscaling(value *GoogleContainerClusterClusterAutoscaling)
 	PutClusterTelemetry(value *GoogleContainerClusterClusterTelemetry)
@@ -329,6 +341,8 @@ type GoogleContainerCluster interface {
 	PutIpAllocationPolicy(value *GoogleContainerClusterIpAllocationPolicy)
 	PutLoggingConfig(value *GoogleContainerClusterLoggingConfig)
 	PutMaintenancePolicy(value *GoogleContainerClusterMaintenancePolicy)
+	PutManagedMachineLearningDiagnosticsConfig(value *GoogleContainerClusterManagedMachineLearningDiagnosticsConfig)
+	PutManagedOpentelemetryConfig(value *GoogleContainerClusterManagedOpentelemetryConfig)
 	PutMasterAuth(value *GoogleContainerClusterMasterAuth)
 	PutMasterAuthorizedNetworksConfig(value *GoogleContainerClusterMasterAuthorizedNetworksConfig)
 	PutMeshCertificates(value *GoogleContainerClusterMeshCertificates)
@@ -348,6 +362,7 @@ type GoogleContainerCluster interface {
 	PutReleaseChannel(value *GoogleContainerClusterReleaseChannel)
 	PutResourceUsageExportConfig(value *GoogleContainerClusterResourceUsageExportConfig)
 	PutSecretManagerConfig(value *GoogleContainerClusterSecretManagerConfig)
+	PutSecretSyncConfig(value *GoogleContainerClusterSecretSyncConfig)
 	PutSecurityPostureConfig(value *GoogleContainerClusterSecurityPostureConfig)
 	PutServiceExternalIpsConfig(value *GoogleContainerClusterServiceExternalIpsConfig)
 	PutTimeouts(value *GoogleContainerClusterTimeouts)
@@ -360,6 +375,8 @@ type GoogleContainerCluster interface {
 	ResetAllowNetAdmin()
 	ResetAnonymousAuthenticationConfig()
 	ResetAuthenticatorGroupsConfig()
+	ResetAutopilotClusterPolicyConfig()
+	ResetAutopilotPrivilegedAdmission()
 	ResetBinaryAuthorization()
 	ResetClusterAutoscaling()
 	ResetClusterIpv4Cidr()
@@ -399,6 +416,8 @@ type GoogleContainerCluster interface {
 	ResetLoggingConfig()
 	ResetLoggingService()
 	ResetMaintenancePolicy()
+	ResetManagedMachineLearningDiagnosticsConfig()
+	ResetManagedOpentelemetryConfig()
 	ResetMasterAuth()
 	ResetMasterAuthorizedNetworksConfig()
 	ResetMeshCertificates()
@@ -431,6 +450,7 @@ type GoogleContainerCluster interface {
 	ResetResourceLabels()
 	ResetResourceUsageExportConfig()
 	ResetSecretManagerConfig()
+	ResetSecretSyncConfig()
 	ResetSecurityPostureConfig()
 	ResetServiceExternalIpsConfig()
 	ResetSubnetwork()
@@ -533,6 +553,46 @@ func (j *jsiiProxy_GoogleContainerCluster) AuthenticatorGroupsConfigInput() *Goo
 	_jsii_.Get(
 		j,
 		"authenticatorGroupsConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) AutopilotClusterPolicyConfig() GoogleContainerClusterAutopilotClusterPolicyConfigOutputReference {
+	var returns GoogleContainerClusterAutopilotClusterPolicyConfigOutputReference
+	_jsii_.Get(
+		j,
+		"autopilotClusterPolicyConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) AutopilotClusterPolicyConfigInput() *GoogleContainerClusterAutopilotClusterPolicyConfig {
+	var returns *GoogleContainerClusterAutopilotClusterPolicyConfig
+	_jsii_.Get(
+		j,
+		"autopilotClusterPolicyConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) AutopilotPrivilegedAdmission() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"autopilotPrivilegedAdmission",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) AutopilotPrivilegedAdmissionInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"autopilotPrivilegedAdmissionInput",
 		&returns,
 	)
 	return returns
@@ -1438,6 +1498,46 @@ func (j *jsiiProxy_GoogleContainerCluster) MaintenancePolicyInput() *GoogleConta
 	return returns
 }
 
+func (j *jsiiProxy_GoogleContainerCluster) ManagedMachineLearningDiagnosticsConfig() GoogleContainerClusterManagedMachineLearningDiagnosticsConfigOutputReference {
+	var returns GoogleContainerClusterManagedMachineLearningDiagnosticsConfigOutputReference
+	_jsii_.Get(
+		j,
+		"managedMachineLearningDiagnosticsConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) ManagedMachineLearningDiagnosticsConfigInput() *GoogleContainerClusterManagedMachineLearningDiagnosticsConfig {
+	var returns *GoogleContainerClusterManagedMachineLearningDiagnosticsConfig
+	_jsii_.Get(
+		j,
+		"managedMachineLearningDiagnosticsConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) ManagedOpentelemetryConfig() GoogleContainerClusterManagedOpentelemetryConfigOutputReference {
+	var returns GoogleContainerClusterManagedOpentelemetryConfigOutputReference
+	_jsii_.Get(
+		j,
+		"managedOpentelemetryConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) ManagedOpentelemetryConfigInput() *GoogleContainerClusterManagedOpentelemetryConfig {
+	var returns *GoogleContainerClusterManagedOpentelemetryConfig
+	_jsii_.Get(
+		j,
+		"managedOpentelemetryConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleContainerCluster) MasterAuth() GoogleContainerClusterMasterAuthOutputReference {
 	var returns GoogleContainerClusterMasterAuthOutputReference
 	_jsii_.Get(
@@ -2098,6 +2198,26 @@ func (j *jsiiProxy_GoogleContainerCluster) SecretManagerConfigInput() *GoogleCon
 	return returns
 }
 
+func (j *jsiiProxy_GoogleContainerCluster) SecretSyncConfig() GoogleContainerClusterSecretSyncConfigOutputReference {
+	var returns GoogleContainerClusterSecretSyncConfigOutputReference
+	_jsii_.Get(
+		j,
+		"secretSyncConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) SecretSyncConfigInput() *GoogleContainerClusterSecretSyncConfig {
+	var returns *GoogleContainerClusterSecretSyncConfig
+	_jsii_.Get(
+		j,
+		"secretSyncConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleContainerCluster) SecurityPostureConfig() GoogleContainerClusterSecurityPostureConfigOutputReference {
 	var returns GoogleContainerClusterSecurityPostureConfigOutputReference
 	_jsii_.Get(
@@ -2349,7 +2469,7 @@ func (j *jsiiProxy_GoogleContainerCluster) WorkloadIdentityConfigInput() *Google
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_container_cluster google_container_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_container_cluster google_container_cluster} Resource.
 func NewGoogleContainerCluster(scope constructs.Construct, id *string, config *GoogleContainerClusterConfig) GoogleContainerCluster {
 	_init_.Initialize()
 
@@ -2367,7 +2487,7 @@ func NewGoogleContainerCluster(scope constructs.Construct, id *string, config *G
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_container_cluster google_container_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_container_cluster google_container_cluster} Resource.
 func NewGoogleContainerCluster_Override(g GoogleContainerCluster, scope constructs.Construct, id *string, config *GoogleContainerClusterConfig) {
 	_init_.Initialize()
 
@@ -2385,6 +2505,17 @@ func (j *jsiiProxy_GoogleContainerCluster)SetAllowNetAdmin(val interface{}) {
 	_jsii_.Set(
 		j,
 		"allowNetAdmin",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleContainerCluster)SetAutopilotPrivilegedAdmission(val *[]*string) {
+	if err := j.validateSetAutopilotPrivilegedAdmissionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"autopilotPrivilegedAdmission",
 		val,
 	)
 }
@@ -3206,6 +3337,17 @@ func (g *jsiiProxy_GoogleContainerCluster) PutAuthenticatorGroupsConfig(value *G
 	)
 }
 
+func (g *jsiiProxy_GoogleContainerCluster) PutAutopilotClusterPolicyConfig(value *GoogleContainerClusterAutopilotClusterPolicyConfig) {
+	if err := g.validatePutAutopilotClusterPolicyConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putAutopilotClusterPolicyConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleContainerCluster) PutBinaryAuthorization(value *GoogleContainerClusterBinaryAuthorization) {
 	if err := g.validatePutBinaryAuthorizationParameters(value); err != nil {
 		panic(err)
@@ -3400,6 +3542,28 @@ func (g *jsiiProxy_GoogleContainerCluster) PutMaintenancePolicy(value *GoogleCon
 	_jsii_.InvokeVoid(
 		g,
 		"putMaintenancePolicy",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) PutManagedMachineLearningDiagnosticsConfig(value *GoogleContainerClusterManagedMachineLearningDiagnosticsConfig) {
+	if err := g.validatePutManagedMachineLearningDiagnosticsConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putManagedMachineLearningDiagnosticsConfig",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) PutManagedOpentelemetryConfig(value *GoogleContainerClusterManagedOpentelemetryConfig) {
+	if err := g.validatePutManagedOpentelemetryConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putManagedOpentelemetryConfig",
 		[]interface{}{value},
 	)
 }
@@ -3613,6 +3777,17 @@ func (g *jsiiProxy_GoogleContainerCluster) PutSecretManagerConfig(value *GoogleC
 	)
 }
 
+func (g *jsiiProxy_GoogleContainerCluster) PutSecretSyncConfig(value *GoogleContainerClusterSecretSyncConfig) {
+	if err := g.validatePutSecretSyncConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putSecretSyncConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleContainerCluster) PutSecurityPostureConfig(value *GoogleContainerClusterSecurityPostureConfig) {
 	if err := g.validatePutSecurityPostureConfigParameters(value); err != nil {
 		panic(err)
@@ -3729,6 +3904,22 @@ func (g *jsiiProxy_GoogleContainerCluster) ResetAuthenticatorGroupsConfig() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetAuthenticatorGroupsConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) ResetAutopilotClusterPolicyConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAutopilotClusterPolicyConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) ResetAutopilotPrivilegedAdmission() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAutopilotPrivilegedAdmission",
 		nil, // no parameters
 	)
 }
@@ -4045,6 +4236,22 @@ func (g *jsiiProxy_GoogleContainerCluster) ResetMaintenancePolicy() {
 	)
 }
 
+func (g *jsiiProxy_GoogleContainerCluster) ResetManagedMachineLearningDiagnosticsConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetManagedMachineLearningDiagnosticsConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) ResetManagedOpentelemetryConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetManagedOpentelemetryConfig",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleContainerCluster) ResetMasterAuth() {
 	_jsii_.InvokeVoid(
 		g,
@@ -4281,6 +4488,14 @@ func (g *jsiiProxy_GoogleContainerCluster) ResetSecretManagerConfig() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetSecretManagerConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) ResetSecretSyncConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSecretSyncConfig",
 		nil, // no parameters
 	)
 }

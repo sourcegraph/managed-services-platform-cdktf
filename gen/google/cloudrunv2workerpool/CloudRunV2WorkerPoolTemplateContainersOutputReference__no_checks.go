@@ -48,7 +48,15 @@ func (c *jsiiProxy_CloudRunV2WorkerPoolTemplateContainersOutputReference) valida
 	return nil
 }
 
+func (c *jsiiProxy_CloudRunV2WorkerPoolTemplateContainersOutputReference) validatePutLivenessProbeParameters(value *CloudRunV2WorkerPoolTemplateContainersLivenessProbe) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudRunV2WorkerPoolTemplateContainersOutputReference) validatePutResourcesParameters(value *CloudRunV2WorkerPoolTemplateContainersResources) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudRunV2WorkerPoolTemplateContainersOutputReference) validatePutStartupProbeParameters(value *CloudRunV2WorkerPoolTemplateContainersStartupProbe) error {
 	return nil
 }
 

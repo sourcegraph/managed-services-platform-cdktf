@@ -68,6 +68,14 @@ func (j *jsiiProxy_DataplexDatascanDataQualitySpecOutputReference) validateSetCo
 	return nil
 }
 
+func (j *jsiiProxy_DataplexDatascanDataQualitySpecOutputReference) validateSetEnableCatalogBasedRulesParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataplexDatascanDataQualitySpecOutputReference) validateSetFilterParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataplexDatascanDataQualitySpecOutputReference) validateSetInternalValueParameters(val *DataplexDatascanDataQualitySpec) error {
 	return nil
 }

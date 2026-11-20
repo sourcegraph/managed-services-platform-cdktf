@@ -45,6 +45,7 @@ type DataGoogleContainerClusterNodeConfigKubeletConfigOutputReference interface 
 	InternalValue() *DataGoogleContainerClusterNodeConfigKubeletConfig
 	SetInternalValue(val *DataGoogleContainerClusterNodeConfigKubeletConfig)
 	MaxParallelImagePulls() *float64
+	MemoryManager() DataGoogleContainerClusterNodeConfigKubeletConfigMemoryManagerList
 	PodPidsLimit() *float64
 	SingleProcessOomKill() cdktf.IResolvable
 	// Experimental.
@@ -55,6 +56,7 @@ type DataGoogleContainerClusterNodeConfigKubeletConfigOutputReference interface 
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TopologyManager() DataGoogleContainerClusterNodeConfigKubeletConfigTopologyManagerList
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -304,6 +306,16 @@ func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigKubeletConfigOutputRefere
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigKubeletConfigOutputReference) MemoryManager() DataGoogleContainerClusterNodeConfigKubeletConfigMemoryManagerList {
+	var returns DataGoogleContainerClusterNodeConfigKubeletConfigMemoryManagerList
+	_jsii_.Get(
+		j,
+		"memoryManager",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigKubeletConfigOutputReference) PodPidsLimit() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -339,6 +351,16 @@ func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigKubeletConfigOutputRefere
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigKubeletConfigOutputReference) TopologyManager() DataGoogleContainerClusterNodeConfigKubeletConfigTopologyManagerList {
+	var returns DataGoogleContainerClusterNodeConfigKubeletConfigTopologyManagerList
+	_jsii_.Get(
+		j,
+		"topologyManager",
 		&returns,
 	)
 	return returns

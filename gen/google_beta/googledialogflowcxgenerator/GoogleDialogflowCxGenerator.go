@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googledialogflowcxgenerator/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_dialogflow_cx_generator google_dialogflow_cx_generator}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_dialogflow_cx_generator google_dialogflow_cx_generator}.
 type GoogleDialogflowCxGenerator interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -508,7 +508,7 @@ func (j *jsiiProxy_GoogleDialogflowCxGenerator) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_dialogflow_cx_generator google_dialogflow_cx_generator} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_dialogflow_cx_generator google_dialogflow_cx_generator} Resource.
 func NewGoogleDialogflowCxGenerator(scope constructs.Construct, id *string, config *GoogleDialogflowCxGeneratorConfig) GoogleDialogflowCxGenerator {
 	_init_.Initialize()
 
@@ -526,7 +526,7 @@ func NewGoogleDialogflowCxGenerator(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_dialogflow_cx_generator google_dialogflow_cx_generator} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_dialogflow_cx_generator google_dialogflow_cx_generator} Resource.
 func NewGoogleDialogflowCxGenerator_Override(g GoogleDialogflowCxGenerator, scope constructs.Construct, id *string, config *GoogleDialogflowCxGeneratorConfig) {
 	_init_.Initialize()
 

@@ -72,6 +72,10 @@ func (j *jsiiProxy_GoogleDnsManagedZoneForwardingConfigTargetNameServersOutputRe
 	return nil
 }
 
+func (j *jsiiProxy_GoogleDnsManagedZoneForwardingConfigTargetNameServersOutputReference) validateSetIpv6AddressParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDnsManagedZoneForwardingConfigTargetNameServersOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

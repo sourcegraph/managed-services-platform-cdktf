@@ -387,6 +387,14 @@ func (j *jsiiProxy_DatastreamPrivateConnection) validateSetCreateWithoutValidati
 	return nil
 }
 
+func (j *jsiiProxy_DatastreamPrivateConnection) validateSetDeletionPolicyParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DatastreamPrivateConnection) validateSetDisplayNameParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

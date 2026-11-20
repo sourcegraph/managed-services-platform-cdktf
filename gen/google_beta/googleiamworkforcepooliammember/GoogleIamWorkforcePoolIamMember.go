@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googleiamworkforcepooliammember/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_iam_workforce_pool_iam_member google_iam_workforce_pool_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_iam_workforce_pool_iam_member google_iam_workforce_pool_iam_member}.
 type GoogleIamWorkforcePoolIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -435,7 +435,7 @@ func (j *jsiiProxy_GoogleIamWorkforcePoolIamMember) WorkforcePoolIdInput() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_iam_workforce_pool_iam_member google_iam_workforce_pool_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_iam_workforce_pool_iam_member google_iam_workforce_pool_iam_member} Resource.
 func NewGoogleIamWorkforcePoolIamMember(scope constructs.Construct, id *string, config *GoogleIamWorkforcePoolIamMemberConfig) GoogleIamWorkforcePoolIamMember {
 	_init_.Initialize()
 
@@ -453,7 +453,7 @@ func NewGoogleIamWorkforcePoolIamMember(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_iam_workforce_pool_iam_member google_iam_workforce_pool_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_iam_workforce_pool_iam_member google_iam_workforce_pool_iam_member} Resource.
 func NewGoogleIamWorkforcePoolIamMember_Override(g GoogleIamWorkforcePoolIamMember, scope constructs.Construct, id *string, config *GoogleIamWorkforcePoolIamMemberConfig) {
 	_init_.Initialize()
 

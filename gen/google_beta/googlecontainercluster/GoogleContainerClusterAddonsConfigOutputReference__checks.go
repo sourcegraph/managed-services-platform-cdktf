@@ -244,6 +244,17 @@ func (g *jsiiProxy_GoogleContainerClusterAddonsConfigOutputReference) validatePu
 	return nil
 }
 
+func (g *jsiiProxy_GoogleContainerClusterAddonsConfigOutputReference) validatePutPodSnapshotConfigParameters(value *GoogleContainerClusterAddonsConfigPodSnapshotConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerClusterAddonsConfigOutputReference) validatePutRayOperatorConfigParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -270,6 +281,17 @@ func (g *jsiiProxy_GoogleContainerClusterAddonsConfigOutputReference) validatePu
 		if !_jsii_.IsAnonymousProxy(value) {
 			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*GoogleContainerClusterAddonsConfigRayOperatorConfig; received %#v (a %T)", value, value)
 		}
+	}
+
+	return nil
+}
+
+func (g *jsiiProxy_GoogleContainerClusterAddonsConfigOutputReference) validatePutSliceControllerConfigParameters(value *GoogleContainerClusterAddonsConfigSliceControllerConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
 	}
 
 	return nil

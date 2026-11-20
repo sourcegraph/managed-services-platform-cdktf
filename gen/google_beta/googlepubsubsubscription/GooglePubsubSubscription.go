@@ -9,7 +9,7 @@ import (
 	"github.com/sourcegraph/managed-services-platform-cdktf/gen/google_beta/googlepubsubsubscription/internal"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_pubsub_subscription google_pubsub_subscription}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_pubsub_subscription google_pubsub_subscription}.
 type GooglePubsubSubscription interface {
 	cdktf.TerraformResource
 	AckDeadlineSeconds() *float64
@@ -97,6 +97,9 @@ type GooglePubsubSubscription interface {
 	RetainAckedMessagesInput() interface{}
 	RetryPolicy() GooglePubsubSubscriptionRetryPolicyOutputReference
 	RetryPolicyInput() *GooglePubsubSubscriptionRetryPolicy
+	Tags() *map[string]*string
+	SetTags(val *map[string]*string)
+	TagsInput() *map[string]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
@@ -179,6 +182,7 @@ type GooglePubsubSubscription interface {
 	ResetPushConfig()
 	ResetRetainAckedMessages()
 	ResetRetryPolicy()
+	ResetTags()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -678,6 +682,26 @@ func (j *jsiiProxy_GooglePubsubSubscription) RetryPolicyInput() *GooglePubsubSub
 	return returns
 }
 
+func (j *jsiiProxy_GooglePubsubSubscription) Tags() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GooglePubsubSubscription) TagsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GooglePubsubSubscription) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -759,7 +783,7 @@ func (j *jsiiProxy_GooglePubsubSubscription) TopicInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_pubsub_subscription google_pubsub_subscription} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_pubsub_subscription google_pubsub_subscription} Resource.
 func NewGooglePubsubSubscription(scope constructs.Construct, id *string, config *GooglePubsubSubscriptionConfig) GooglePubsubSubscription {
 	_init_.Initialize()
 
@@ -777,7 +801,7 @@ func NewGooglePubsubSubscription(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_pubsub_subscription google_pubsub_subscription} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.31.0/docs/resources/google_pubsub_subscription google_pubsub_subscription} Resource.
 func NewGooglePubsubSubscription_Override(g GooglePubsubSubscription, scope constructs.Construct, id *string, config *GooglePubsubSubscriptionConfig) {
 	_init_.Initialize()
 
@@ -962,6 +986,17 @@ func (j *jsiiProxy_GooglePubsubSubscription)SetRetainAckedMessages(val interface
 	_jsii_.Set(
 		j,
 		"retainAckedMessages",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GooglePubsubSubscription)SetTags(val *map[string]*string) {
+	if err := j.validateSetTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tags",
 		val,
 	)
 }
@@ -1550,6 +1585,14 @@ func (g *jsiiProxy_GooglePubsubSubscription) ResetRetryPolicy() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetRetryPolicy",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GooglePubsubSubscription) ResetTags() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetTags",
 		nil, // no parameters
 	)
 }

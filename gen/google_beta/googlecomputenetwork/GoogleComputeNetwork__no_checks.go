@@ -120,6 +120,10 @@ func (j *jsiiProxy_GoogleComputeNetwork) validateSetCountParameters(val interfac
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeNetwork) validateSetDeleteBgpAlwaysCompareMedParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeNetwork) validateSetDeleteDefaultRoutesOnCreateParameters(val interface{}) error {
 	return nil
 }
