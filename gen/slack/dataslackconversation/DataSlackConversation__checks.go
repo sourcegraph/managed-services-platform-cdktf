@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataSlackConversation) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataSlackConversation) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataSlackConversation_GenerateConfigForImportParameters(scope const
 	return nil
 }
 
-func validateDataSlackConversation_IsConstructParameters(x interface{}) error {
+func validateDataSlackConversation_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataSlackConversation_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateDataSlackConversation_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataSlackConversation_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataSlackConversation_IsTerraformDataSourceParameters(x interface{}
 	return nil
 }
 
-func validateDataSlackConversation_IsTerraformElementParameters(x interface{}) error {
+func validateDataSlackConversation_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -159,7 +159,7 @@ func (j *jsiiProxy_DataSlackConversation) validateSetChannelIdParameters(val *st
 	return nil
 }
 
-func (j *jsiiProxy_DataSlackConversation) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataSlackConversation) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -224,7 +224,7 @@ func (j *jsiiProxy_DataSlackConversation) validateSetIdParameters(val *string) e
 	return nil
 }
 
-func (j *jsiiProxy_DataSlackConversation) validateSetIsPrivateParameters(val interface{}) error {
+func (j *jsiiProxy_DataSlackConversation) validateSetIsPrivateParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -275,4 +275,3 @@ func validateNewDataSlackConversationParameters(scope constructs.Construct, id *
 
 	return nil
 }
-

@@ -16,11 +16,11 @@ type DataSlackUsergroup interface {
 	CdktfStack() cdktf.TerraformStack
 	Channels() *[]*string
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -52,11 +52,11 @@ type DataSlackUsergroup interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	UsergroupId() *string
@@ -64,9 +64,9 @@ type DataSlackUsergroup interface {
 	UsergroupIdInput() *string
 	Users() *[]*string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -94,18 +94,18 @@ type DataSlackUsergroup interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetUsergroupId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataSlackUsergroup
@@ -133,8 +133,8 @@ func (j *jsiiProxy_DataSlackUsergroup) Channels() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_DataSlackUsergroup) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataSlackUsergroup) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -143,8 +143,8 @@ func (j *jsiiProxy_DataSlackUsergroup) ConstructNodeMetadata() *map[string]inter
 	return returns
 }
 
-func (j *jsiiProxy_DataSlackUsergroup) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataSlackUsergroup) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -283,8 +283,8 @@ func (j *jsiiProxy_DataSlackUsergroup) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_DataSlackUsergroup) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataSlackUsergroup) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -303,8 +303,8 @@ func (j *jsiiProxy_DataSlackUsergroup) TerraformGeneratorMetadata() *cdktf.Terra
 	return returns
 }
 
-func (j *jsiiProxy_DataSlackUsergroup) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataSlackUsergroup) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -353,7 +353,6 @@ func (j *jsiiProxy_DataSlackUsergroup) Users() *[]*string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/pablovarela/slack/1.2.2/docs/data-sources/usergroup slack_usergroup} Data Source.
 func NewDataSlackUsergroup(scope constructs.Construct, id *string, config *DataSlackUsergroupConfig) DataSlackUsergroup {
 	_init_.Initialize()
@@ -365,7 +364,7 @@ func NewDataSlackUsergroup(scope constructs.Construct, id *string, config *DataS
 
 	_jsii_.Create(
 		"@cdktf/provider-slack.dataSlackUsergroup.DataSlackUsergroup",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -378,12 +377,12 @@ func NewDataSlackUsergroup_Override(d DataSlackUsergroup, scope constructs.Const
 
 	_jsii_.Create(
 		"@cdktf/provider-slack.dataSlackUsergroup.DataSlackUsergroup",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataSlackUsergroup)SetCount(val interface{}) {
+func (j *jsiiProxy_DataSlackUsergroup) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -394,7 +393,7 @@ func (j *jsiiProxy_DataSlackUsergroup)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataSlackUsergroup)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataSlackUsergroup) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -402,7 +401,7 @@ func (j *jsiiProxy_DataSlackUsergroup)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataSlackUsergroup)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataSlackUsergroup) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -410,7 +409,7 @@ func (j *jsiiProxy_DataSlackUsergroup)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_DataSlackUsergroup)SetId(val *string) {
+func (j *jsiiProxy_DataSlackUsergroup) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -421,7 +420,7 @@ func (j *jsiiProxy_DataSlackUsergroup)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataSlackUsergroup)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataSlackUsergroup) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -432,7 +431,7 @@ func (j *jsiiProxy_DataSlackUsergroup)SetLifecycle(val *cdktf.TerraformResourceL
 	)
 }
 
-func (j *jsiiProxy_DataSlackUsergroup)SetName(val *string) {
+func (j *jsiiProxy_DataSlackUsergroup) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -443,7 +442,7 @@ func (j *jsiiProxy_DataSlackUsergroup)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataSlackUsergroup)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataSlackUsergroup) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -451,7 +450,7 @@ func (j *jsiiProxy_DataSlackUsergroup)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_DataSlackUsergroup)SetUsergroupId(val *string) {
+func (j *jsiiProxy_DataSlackUsergroup) SetUsergroupId(val *string) {
 	if err := j.validateSetUsergroupIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -474,7 +473,7 @@ func DataSlackUsergroup_GenerateConfigForImport(scope constructs.Construct, impo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-slack.dataSlackUsergroup.DataSlackUsergroup",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -498,7 +497,7 @@ func DataSlackUsergroup_GenerateConfigForImport(scope constructs.Construct, impo
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataSlackUsergroup_IsConstruct(x interface{}) *bool {
+func DataSlackUsergroup_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataSlackUsergroup_IsConstructParameters(x); err != nil {
@@ -509,7 +508,7 @@ func DataSlackUsergroup_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-slack.dataSlackUsergroup.DataSlackUsergroup",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -517,7 +516,7 @@ func DataSlackUsergroup_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataSlackUsergroup_IsTerraformDataSource(x interface{}) *bool {
+func DataSlackUsergroup_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataSlackUsergroup_IsTerraformDataSourceParameters(x); err != nil {
@@ -528,7 +527,7 @@ func DataSlackUsergroup_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-slack.dataSlackUsergroup.DataSlackUsergroup",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -536,7 +535,7 @@ func DataSlackUsergroup_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataSlackUsergroup_IsTerraformElement(x interface{}) *bool {
+func DataSlackUsergroup_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataSlackUsergroup_IsTerraformElementParameters(x); err != nil {
@@ -547,7 +546,7 @@ func DataSlackUsergroup_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-slack.dataSlackUsergroup.DataSlackUsergroup",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -565,27 +564,27 @@ func DataSlackUsergroup_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataSlackUsergroup) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataSlackUsergroup) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataSlackUsergroup) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataSlackUsergroup) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -601,7 +600,7 @@ func (d *jsiiProxy_DataSlackUsergroup) GetBooleanAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -617,7 +616,7 @@ func (d *jsiiProxy_DataSlackUsergroup) GetBooleanMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -633,7 +632,7 @@ func (d *jsiiProxy_DataSlackUsergroup) GetListAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -649,7 +648,7 @@ func (d *jsiiProxy_DataSlackUsergroup) GetNumberAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -665,7 +664,7 @@ func (d *jsiiProxy_DataSlackUsergroup) GetNumberListAttribute(terraformAttribute
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -681,7 +680,7 @@ func (d *jsiiProxy_DataSlackUsergroup) GetNumberMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -697,7 +696,7 @@ func (d *jsiiProxy_DataSlackUsergroup) GetStringAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -713,7 +712,7 @@ func (d *jsiiProxy_DataSlackUsergroup) GetStringMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -729,7 +728,7 @@ func (d *jsiiProxy_DataSlackUsergroup) InterpolationForAttribute(terraformAttrib
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -743,7 +742,7 @@ func (d *jsiiProxy_DataSlackUsergroup) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -779,8 +778,8 @@ func (d *jsiiProxy_DataSlackUsergroup) ResetUsergroupId() {
 	)
 }
 
-func (d *jsiiProxy_DataSlackUsergroup) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataSlackUsergroup) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -792,8 +791,8 @@ func (d *jsiiProxy_DataSlackUsergroup) SynthesizeAttributes() *map[string]interf
 	return returns
 }
 
-func (d *jsiiProxy_DataSlackUsergroup) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataSlackUsergroup) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -805,8 +804,8 @@ func (d *jsiiProxy_DataSlackUsergroup) SynthesizeHclAttributes() *map[string]int
 	return returns
 }
 
-func (d *jsiiProxy_DataSlackUsergroup) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataSlackUsergroup) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -818,8 +817,8 @@ func (d *jsiiProxy_DataSlackUsergroup) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataSlackUsergroup) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataSlackUsergroup) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -844,8 +843,8 @@ func (d *jsiiProxy_DataSlackUsergroup) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataSlackUsergroup) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataSlackUsergroup) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -856,4 +855,3 @@ func (d *jsiiProxy_DataSlackUsergroup) ToTerraform() interface{} {
 
 	return returns
 }
-

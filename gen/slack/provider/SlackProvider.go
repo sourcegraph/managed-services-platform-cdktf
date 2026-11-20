@@ -18,17 +18,17 @@ type SlackProvider interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
 	// Experimental.
-	MetaAttributes() *map[string]interface{}
+	MetaAttributes() *map[string]any
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -39,7 +39,7 @@ type SlackProvider interface {
 	SetToken(val *string)
 	TokenInput() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -47,17 +47,17 @@ type SlackProvider interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for SlackProvider
@@ -95,8 +95,8 @@ func (j *jsiiProxy_SlackProvider) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_SlackProvider) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_SlackProvider) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -125,8 +125,8 @@ func (j *jsiiProxy_SlackProvider) FriendlyUniqueId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_SlackProvider) MetaAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_SlackProvider) MetaAttributes() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"metaAttributes",
@@ -145,8 +145,8 @@ func (j *jsiiProxy_SlackProvider) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_SlackProvider) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SlackProvider) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -205,7 +205,6 @@ func (j *jsiiProxy_SlackProvider) TokenInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/pablovarela/slack/1.2.2/docs slack} Resource.
 func NewSlackProvider(scope constructs.Construct, id *string, config *SlackProviderConfig) SlackProvider {
 	_init_.Initialize()
@@ -217,7 +216,7 @@ func NewSlackProvider(scope constructs.Construct, id *string, config *SlackProvi
 
 	_jsii_.Create(
 		"@cdktf/provider-slack.provider.SlackProvider",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -230,12 +229,12 @@ func NewSlackProvider_Override(s SlackProvider, scope constructs.Construct, id *
 
 	_jsii_.Create(
 		"@cdktf/provider-slack.provider.SlackProvider",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		s,
 	)
 }
 
-func (j *jsiiProxy_SlackProvider)SetAlias(val *string) {
+func (j *jsiiProxy_SlackProvider) SetAlias(val *string) {
 	_jsii_.Set(
 		j,
 		"alias",
@@ -243,7 +242,7 @@ func (j *jsiiProxy_SlackProvider)SetAlias(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SlackProvider)SetToken(val *string) {
+func (j *jsiiProxy_SlackProvider) SetToken(val *string) {
 	_jsii_.Set(
 		j,
 		"token",
@@ -263,7 +262,7 @@ func SlackProvider_GenerateConfigForImport(scope constructs.Construct, importToI
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-slack.provider.SlackProvider",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -287,7 +286,7 @@ func SlackProvider_GenerateConfigForImport(scope constructs.Construct, importToI
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func SlackProvider_IsConstruct(x interface{}) *bool {
+func SlackProvider_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSlackProvider_IsConstructParameters(x); err != nil {
@@ -298,7 +297,7 @@ func SlackProvider_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-slack.provider.SlackProvider",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -306,7 +305,7 @@ func SlackProvider_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func SlackProvider_IsTerraformElement(x interface{}) *bool {
+func SlackProvider_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSlackProvider_IsTerraformElementParameters(x); err != nil {
@@ -317,7 +316,7 @@ func SlackProvider_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-slack.provider.SlackProvider",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -325,7 +324,7 @@ func SlackProvider_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func SlackProvider_IsTerraformProvider(x interface{}) *bool {
+func SlackProvider_IsTerraformProvider(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSlackProvider_IsTerraformProviderParameters(x); err != nil {
@@ -336,7 +335,7 @@ func SlackProvider_IsTerraformProvider(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-slack.provider.SlackProvider",
 		"isTerraformProvider",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -354,14 +353,14 @@ func SlackProvider_TfResourceType() *string {
 	return returns
 }
 
-func (s *jsiiProxy_SlackProvider) AddOverride(path *string, value interface{}) {
+func (s *jsiiProxy_SlackProvider) AddOverride(path *string, value any) {
 	if err := s.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
@@ -372,7 +371,7 @@ func (s *jsiiProxy_SlackProvider) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -392,8 +391,8 @@ func (s *jsiiProxy_SlackProvider) ResetOverrideLogicalId() {
 	)
 }
 
-func (s *jsiiProxy_SlackProvider) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_SlackProvider) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -405,8 +404,8 @@ func (s *jsiiProxy_SlackProvider) SynthesizeAttributes() *map[string]interface{}
 	return returns
 }
 
-func (s *jsiiProxy_SlackProvider) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_SlackProvider) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -418,8 +417,8 @@ func (s *jsiiProxy_SlackProvider) SynthesizeHclAttributes() *map[string]interfac
 	return returns
 }
 
-func (s *jsiiProxy_SlackProvider) ToHclTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SlackProvider) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -431,8 +430,8 @@ func (s *jsiiProxy_SlackProvider) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (s *jsiiProxy_SlackProvider) ToMetadata() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SlackProvider) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -457,8 +456,8 @@ func (s *jsiiProxy_SlackProvider) ToString() *string {
 	return returns
 }
 
-func (s *jsiiProxy_SlackProvider) ToTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SlackProvider) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -469,4 +468,3 @@ func (s *jsiiProxy_SlackProvider) ToTerraform() interface{} {
 
 	return returns
 }
-

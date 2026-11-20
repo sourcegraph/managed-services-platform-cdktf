@@ -18,21 +18,21 @@ type Conversation interface {
 	ActionOnUpdatePermanentMembers() *string
 	SetActionOnUpdatePermanentMembers(val *string)
 	ActionOnUpdatePermanentMembersInput() *string
-	AdoptExistingChannel() interface{}
-	SetAdoptExistingChannel(val interface{})
-	AdoptExistingChannelInput() interface{}
+	AdoptExistingChannel() any
+	SetAdoptExistingChannel(val any)
+	AdoptExistingChannelInput() any
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	Created() *float64
 	Creator() *string
 	// Experimental.
@@ -50,15 +50,15 @@ type Conversation interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
-	IsArchived() interface{}
-	SetIsArchived(val interface{})
-	IsArchivedInput() interface{}
+	IsArchived() any
+	SetIsArchived(val any)
+	IsArchivedInput() any
 	IsExtShared() cdktf.IResolvable
 	IsGeneral() cdktf.IResolvable
 	IsOrgShared() cdktf.IResolvable
-	IsPrivate() interface{}
-	SetIsPrivate(val interface{})
-	IsPrivateInput() interface{}
+	IsPrivate() any
+	SetIsPrivate(val any)
+	IsPrivateInput() any
 	IsShared() cdktf.IResolvable
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
@@ -77,18 +77,18 @@ type Conversation interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	Purpose() *string
 	SetPurpose(val *string)
 	PurposeInput() *string
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Topic() *string
@@ -98,9 +98,9 @@ type Conversation interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -118,7 +118,7 @@ type Conversation interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -130,7 +130,7 @@ type Conversation interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -148,17 +148,17 @@ type Conversation interface {
 	ResetPermanentMembers()
 	ResetPurpose()
 	ResetTopic()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for Conversation
@@ -206,8 +206,8 @@ func (j *jsiiProxy_Conversation) ActionOnUpdatePermanentMembersInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Conversation) AdoptExistingChannel() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Conversation) AdoptExistingChannel() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"adoptExistingChannel",
@@ -216,8 +216,8 @@ func (j *jsiiProxy_Conversation) AdoptExistingChannel() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Conversation) AdoptExistingChannelInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Conversation) AdoptExistingChannelInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"adoptExistingChannelInput",
@@ -236,8 +236,8 @@ func (j *jsiiProxy_Conversation) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_Conversation) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Conversation) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -246,8 +246,8 @@ func (j *jsiiProxy_Conversation) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Conversation) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Conversation) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -256,8 +256,8 @@ func (j *jsiiProxy_Conversation) ConstructNodeMetadata() *map[string]interface{}
 	return returns
 }
 
-func (j *jsiiProxy_Conversation) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Conversation) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -346,8 +346,8 @@ func (j *jsiiProxy_Conversation) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Conversation) IsArchived() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Conversation) IsArchived() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"isArchived",
@@ -356,8 +356,8 @@ func (j *jsiiProxy_Conversation) IsArchived() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Conversation) IsArchivedInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Conversation) IsArchivedInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"isArchivedInput",
@@ -396,8 +396,8 @@ func (j *jsiiProxy_Conversation) IsOrgShared() cdktf.IResolvable {
 	return returns
 }
 
-func (j *jsiiProxy_Conversation) IsPrivate() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Conversation) IsPrivate() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"isPrivate",
@@ -406,8 +406,8 @@ func (j *jsiiProxy_Conversation) IsPrivate() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Conversation) IsPrivateInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Conversation) IsPrivateInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"isPrivateInput",
@@ -496,8 +496,8 @@ func (j *jsiiProxy_Conversation) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_Conversation) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_Conversation) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -526,8 +526,8 @@ func (j *jsiiProxy_Conversation) PurposeInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Conversation) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Conversation) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -546,8 +546,8 @@ func (j *jsiiProxy_Conversation) TerraformGeneratorMetadata() *cdktf.TerraformPr
 	return returns
 }
 
-func (j *jsiiProxy_Conversation) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Conversation) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -586,7 +586,6 @@ func (j *jsiiProxy_Conversation) TopicInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/pablovarela/slack/1.2.2/docs/resources/conversation slack_conversation} Resource.
 func NewConversation(scope constructs.Construct, id *string, config *ConversationConfig) Conversation {
 	_init_.Initialize()
@@ -598,7 +597,7 @@ func NewConversation(scope constructs.Construct, id *string, config *Conversatio
 
 	_jsii_.Create(
 		"@cdktf/provider-slack.conversation.Conversation",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -611,12 +610,12 @@ func NewConversation_Override(c Conversation, scope constructs.Construct, id *st
 
 	_jsii_.Create(
 		"@cdktf/provider-slack.conversation.Conversation",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		c,
 	)
 }
 
-func (j *jsiiProxy_Conversation)SetActionOnDestroy(val *string) {
+func (j *jsiiProxy_Conversation) SetActionOnDestroy(val *string) {
 	if err := j.validateSetActionOnDestroyParameters(val); err != nil {
 		panic(err)
 	}
@@ -627,7 +626,7 @@ func (j *jsiiProxy_Conversation)SetActionOnDestroy(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Conversation)SetActionOnUpdatePermanentMembers(val *string) {
+func (j *jsiiProxy_Conversation) SetActionOnUpdatePermanentMembers(val *string) {
 	if err := j.validateSetActionOnUpdatePermanentMembersParameters(val); err != nil {
 		panic(err)
 	}
@@ -638,7 +637,7 @@ func (j *jsiiProxy_Conversation)SetActionOnUpdatePermanentMembers(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Conversation)SetAdoptExistingChannel(val interface{}) {
+func (j *jsiiProxy_Conversation) SetAdoptExistingChannel(val any) {
 	if err := j.validateSetAdoptExistingChannelParameters(val); err != nil {
 		panic(err)
 	}
@@ -649,7 +648,7 @@ func (j *jsiiProxy_Conversation)SetAdoptExistingChannel(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Conversation)SetConnection(val interface{}) {
+func (j *jsiiProxy_Conversation) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -660,7 +659,7 @@ func (j *jsiiProxy_Conversation)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Conversation)SetCount(val interface{}) {
+func (j *jsiiProxy_Conversation) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -671,7 +670,7 @@ func (j *jsiiProxy_Conversation)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Conversation)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_Conversation) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -679,7 +678,7 @@ func (j *jsiiProxy_Conversation)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Conversation)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_Conversation) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -687,7 +686,7 @@ func (j *jsiiProxy_Conversation)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_Conversation)SetId(val *string) {
+func (j *jsiiProxy_Conversation) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -698,7 +697,7 @@ func (j *jsiiProxy_Conversation)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Conversation)SetIsArchived(val interface{}) {
+func (j *jsiiProxy_Conversation) SetIsArchived(val any) {
 	if err := j.validateSetIsArchivedParameters(val); err != nil {
 		panic(err)
 	}
@@ -709,7 +708,7 @@ func (j *jsiiProxy_Conversation)SetIsArchived(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Conversation)SetIsPrivate(val interface{}) {
+func (j *jsiiProxy_Conversation) SetIsPrivate(val any) {
 	if err := j.validateSetIsPrivateParameters(val); err != nil {
 		panic(err)
 	}
@@ -720,7 +719,7 @@ func (j *jsiiProxy_Conversation)SetIsPrivate(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Conversation)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_Conversation) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -731,7 +730,7 @@ func (j *jsiiProxy_Conversation)SetLifecycle(val *cdktf.TerraformResourceLifecyc
 	)
 }
 
-func (j *jsiiProxy_Conversation)SetName(val *string) {
+func (j *jsiiProxy_Conversation) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -742,7 +741,7 @@ func (j *jsiiProxy_Conversation)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Conversation)SetPermanentMembers(val *[]*string) {
+func (j *jsiiProxy_Conversation) SetPermanentMembers(val *[]*string) {
 	if err := j.validateSetPermanentMembersParameters(val); err != nil {
 		panic(err)
 	}
@@ -753,7 +752,7 @@ func (j *jsiiProxy_Conversation)SetPermanentMembers(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Conversation)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_Conversation) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -761,7 +760,7 @@ func (j *jsiiProxy_Conversation)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_Conversation)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_Conversation) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -772,7 +771,7 @@ func (j *jsiiProxy_Conversation)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Conversation)SetPurpose(val *string) {
+func (j *jsiiProxy_Conversation) SetPurpose(val *string) {
 	if err := j.validateSetPurposeParameters(val); err != nil {
 		panic(err)
 	}
@@ -783,7 +782,7 @@ func (j *jsiiProxy_Conversation)SetPurpose(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Conversation)SetTopic(val *string) {
+func (j *jsiiProxy_Conversation) SetTopic(val *string) {
 	if err := j.validateSetTopicParameters(val); err != nil {
 		panic(err)
 	}
@@ -806,7 +805,7 @@ func Conversation_GenerateConfigForImport(scope constructs.Construct, importToId
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-slack.conversation.Conversation",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -830,7 +829,7 @@ func Conversation_GenerateConfigForImport(scope constructs.Construct, importToId
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func Conversation_IsConstruct(x interface{}) *bool {
+func Conversation_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateConversation_IsConstructParameters(x); err != nil {
@@ -841,7 +840,7 @@ func Conversation_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-slack.conversation.Conversation",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -849,7 +848,7 @@ func Conversation_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func Conversation_IsTerraformElement(x interface{}) *bool {
+func Conversation_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateConversation_IsTerraformElementParameters(x); err != nil {
@@ -860,7 +859,7 @@ func Conversation_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-slack.conversation.Conversation",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -868,7 +867,7 @@ func Conversation_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func Conversation_IsTerraformResource(x interface{}) *bool {
+func Conversation_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateConversation_IsTerraformResourceParameters(x); err != nil {
@@ -879,7 +878,7 @@ func Conversation_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-slack.conversation.Conversation",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -904,31 +903,31 @@ func (c *jsiiProxy_Conversation) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (c *jsiiProxy_Conversation) AddOverride(path *string, value interface{}) {
+func (c *jsiiProxy_Conversation) AddOverride(path *string, value any) {
 	if err := c.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (c *jsiiProxy_Conversation) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_Conversation) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -944,7 +943,7 @@ func (c *jsiiProxy_Conversation) GetBooleanAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -960,7 +959,7 @@ func (c *jsiiProxy_Conversation) GetBooleanMapAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -976,7 +975,7 @@ func (c *jsiiProxy_Conversation) GetListAttribute(terraformAttribute *string) *[
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -992,7 +991,7 @@ func (c *jsiiProxy_Conversation) GetNumberAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1008,7 +1007,7 @@ func (c *jsiiProxy_Conversation) GetNumberListAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1024,7 +1023,7 @@ func (c *jsiiProxy_Conversation) GetNumberMapAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1040,7 +1039,7 @@ func (c *jsiiProxy_Conversation) GetStringAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1056,15 +1055,15 @@ func (c *jsiiProxy_Conversation) GetStringMapAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_Conversation) HasResourceMove() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_Conversation) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1083,7 +1082,7 @@ func (c *jsiiProxy_Conversation) ImportFrom(id *string, provider cdktf.Terraform
 	_jsii_.InvokeVoid(
 		c,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1096,7 +1095,7 @@ func (c *jsiiProxy_Conversation) InterpolationForAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1110,18 +1109,18 @@ func (c *jsiiProxy_Conversation) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (c *jsiiProxy_Conversation) MoveTo(moveTarget *string, index interface{}) {
+func (c *jsiiProxy_Conversation) MoveTo(moveTarget *string, index any) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1132,7 +1131,7 @@ func (c *jsiiProxy_Conversation) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1143,7 +1142,7 @@ func (c *jsiiProxy_Conversation) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1219,8 +1218,8 @@ func (c *jsiiProxy_Conversation) ResetTopic() {
 	)
 }
 
-func (c *jsiiProxy_Conversation) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_Conversation) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1232,8 +1231,8 @@ func (c *jsiiProxy_Conversation) SynthesizeAttributes() *map[string]interface{} 
 	return returns
 }
 
-func (c *jsiiProxy_Conversation) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_Conversation) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1245,8 +1244,8 @@ func (c *jsiiProxy_Conversation) SynthesizeHclAttributes() *map[string]interface
 	return returns
 }
 
-func (c *jsiiProxy_Conversation) ToHclTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_Conversation) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1258,8 +1257,8 @@ func (c *jsiiProxy_Conversation) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (c *jsiiProxy_Conversation) ToMetadata() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_Conversation) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1284,8 +1283,8 @@ func (c *jsiiProxy_Conversation) ToString() *string {
 	return returns
 }
 
-func (c *jsiiProxy_Conversation) ToTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_Conversation) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1296,4 +1295,3 @@ func (c *jsiiProxy_Conversation) ToTerraform() interface{} {
 
 	return returns
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-slack.dataSlackUsergroup.DataSlackUsergroup",
-		reflect.TypeOf((*DataSlackUsergroup)(nil)).Elem(),
+		reflect.TypeFor[DataSlackUsergroup](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
@@ -58,7 +58,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "usergroupIdInput", GoGetter: "UsergroupIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "users", GoGetter: "Users"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataSlackUsergroup{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -66,6 +66,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-slack.dataSlackUsergroup.DataSlackUsergroupConfig",
-		reflect.TypeOf((*DataSlackUsergroupConfig)(nil)).Elem(),
+		reflect.TypeFor[DataSlackUsergroupConfig](),
 	)
 }
