@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-postgresql.roleAttribute.RoleAttribute",
-		reflect.TypeOf((*RoleAttribute)(nil)).Elem(),
+		reflect.TypeFor[RoleAttribute](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -106,7 +106,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "validUntil", GoGetter: "ValidUntil"},
 			_jsii_.MemberProperty{JsiiProperty: "validUntilInput", GoGetter: "ValidUntilInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_RoleAttribute{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -114,6 +114,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-postgresql.roleAttribute.RoleAttributeConfig",
-		reflect.TypeOf((*RoleAttributeConfig)(nil)).Elem(),
+		reflect.TypeFor[RoleAttributeConfig](),
 	)
 }
