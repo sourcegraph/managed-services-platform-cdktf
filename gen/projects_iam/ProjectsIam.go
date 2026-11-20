@@ -18,10 +18,10 @@ type ProjectsIam interface {
 	SetBindings(val *map[string]*[]*string)
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
-	ConditionalBindings() interface{}
-	SetConditionalBindings(val interface{})
+	ConditionalBindings() any
+	SetConditionalBindings(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -43,9 +43,9 @@ type ProjectsIam interface {
 	SetProjects(val *[]*string)
 	ProjectsOutput() *string
 	// Experimental.
-	Providers() *[]interface{}
+	Providers() *[]any
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RolesOutput() *string
 	// Experimental.
 	SkipAssetCreationFromLocalModules() *bool
@@ -54,9 +54,9 @@ type ProjectsIam interface {
 	// Experimental.
 	Version() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	AddProvider(provider interface{})
+	AddProvider(provider any)
 	// Experimental.
 	GetString(output *string) *string
 	// Experimental.
@@ -67,16 +67,16 @@ type ProjectsIam interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ProjectsIam
@@ -104,8 +104,8 @@ func (j *jsiiProxy_ProjectsIam) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_ProjectsIam) ConditionalBindings() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ProjectsIam) ConditionalBindings() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"conditionalBindings",
@@ -114,8 +114,8 @@ func (j *jsiiProxy_ProjectsIam) ConditionalBindings() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ProjectsIam) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ProjectsIam) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -214,8 +214,8 @@ func (j *jsiiProxy_ProjectsIam) ProjectsOutput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ProjectsIam) Providers() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ProjectsIam) Providers() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"providers",
@@ -224,8 +224,8 @@ func (j *jsiiProxy_ProjectsIam) Providers() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ProjectsIam) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ProjectsIam) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -274,7 +274,6 @@ func (j *jsiiProxy_ProjectsIam) Version() *string {
 	return returns
 }
 
-
 func NewProjectsIam(scope constructs.Construct, id *string, config *ProjectsIamConfig) ProjectsIam {
 	_init_.Initialize()
 
@@ -285,7 +284,7 @@ func NewProjectsIam(scope constructs.Construct, id *string, config *ProjectsIamC
 
 	_jsii_.Create(
 		"@cdktf/provider-projects_iam.ProjectsIam",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -297,12 +296,12 @@ func NewProjectsIam_Override(p ProjectsIam, scope constructs.Construct, id *stri
 
 	_jsii_.Create(
 		"@cdktf/provider-projects_iam.ProjectsIam",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		p,
 	)
 }
 
-func (j *jsiiProxy_ProjectsIam)SetBindings(val *map[string]*[]*string) {
+func (j *jsiiProxy_ProjectsIam) SetBindings(val *map[string]*[]*string) {
 	_jsii_.Set(
 		j,
 		"bindings",
@@ -310,7 +309,7 @@ func (j *jsiiProxy_ProjectsIam)SetBindings(val *map[string]*[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ProjectsIam)SetConditionalBindings(val interface{}) {
+func (j *jsiiProxy_ProjectsIam) SetConditionalBindings(val any) {
 	if err := j.validateSetConditionalBindingsParameters(val); err != nil {
 		panic(err)
 	}
@@ -321,7 +320,7 @@ func (j *jsiiProxy_ProjectsIam)SetConditionalBindings(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ProjectsIam)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ProjectsIam) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -329,7 +328,7 @@ func (j *jsiiProxy_ProjectsIam)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ProjectsIam)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ProjectsIam) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -337,7 +336,7 @@ func (j *jsiiProxy_ProjectsIam)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_ProjectsIam)SetMode(val *string) {
+func (j *jsiiProxy_ProjectsIam) SetMode(val *string) {
 	_jsii_.Set(
 		j,
 		"mode",
@@ -345,7 +344,7 @@ func (j *jsiiProxy_ProjectsIam)SetMode(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ProjectsIam)SetProjects(val *[]*string) {
+func (j *jsiiProxy_ProjectsIam) SetProjects(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"projects",
@@ -370,7 +369,7 @@ func (j *jsiiProxy_ProjectsIam)SetProjects(val *[]*string) {
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ProjectsIam_IsConstruct(x interface{}) *bool {
+func ProjectsIam_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateProjectsIam_IsConstructParameters(x); err != nil {
@@ -381,7 +380,7 @@ func ProjectsIam_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-projects_iam.ProjectsIam",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -389,7 +388,7 @@ func ProjectsIam_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ProjectsIam_IsTerraformElement(x interface{}) *bool {
+func ProjectsIam_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateProjectsIam_IsTerraformElementParameters(x); err != nil {
@@ -400,32 +399,32 @@ func ProjectsIam_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-projects_iam.ProjectsIam",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
 	return returns
 }
 
-func (p *jsiiProxy_ProjectsIam) AddOverride(path *string, value interface{}) {
+func (p *jsiiProxy_ProjectsIam) AddOverride(path *string, value any) {
 	if err := p.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		p,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (p *jsiiProxy_ProjectsIam) AddProvider(provider interface{}) {
+func (p *jsiiProxy_ProjectsIam) AddProvider(provider any) {
 	if err := p.validateAddProviderParameters(provider); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		p,
 		"addProvider",
-		[]interface{}{provider},
+		[]any{provider},
 	)
 }
 
@@ -438,7 +437,7 @@ func (p *jsiiProxy_ProjectsIam) GetString(output *string) *string {
 	_jsii_.Invoke(
 		p,
 		"getString",
-		[]interface{}{output},
+		[]any{output},
 		&returns,
 	)
 
@@ -454,7 +453,7 @@ func (p *jsiiProxy_ProjectsIam) InterpolationForOutput(moduleOutput *string) cdk
 	_jsii_.Invoke(
 		p,
 		"interpolationForOutput",
-		[]interface{}{moduleOutput},
+		[]any{moduleOutput},
 		&returns,
 	)
 
@@ -468,7 +467,7 @@ func (p *jsiiProxy_ProjectsIam) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -480,8 +479,8 @@ func (p *jsiiProxy_ProjectsIam) ResetOverrideLogicalId() {
 	)
 }
 
-func (p *jsiiProxy_ProjectsIam) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (p *jsiiProxy_ProjectsIam) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
@@ -493,8 +492,8 @@ func (p *jsiiProxy_ProjectsIam) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (p *jsiiProxy_ProjectsIam) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (p *jsiiProxy_ProjectsIam) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
@@ -506,8 +505,8 @@ func (p *jsiiProxy_ProjectsIam) SynthesizeHclAttributes() *map[string]interface{
 	return returns
 }
 
-func (p *jsiiProxy_ProjectsIam) ToHclTerraform() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_ProjectsIam) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -519,8 +518,8 @@ func (p *jsiiProxy_ProjectsIam) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (p *jsiiProxy_ProjectsIam) ToMetadata() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_ProjectsIam) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -545,8 +544,8 @@ func (p *jsiiProxy_ProjectsIam) ToString() *string {
 	return returns
 }
 
-func (p *jsiiProxy_ProjectsIam) ToTerraform() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_ProjectsIam) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -557,4 +556,3 @@ func (p *jsiiProxy_ProjectsIam) ToTerraform() interface{} {
 
 	return returns
 }
-

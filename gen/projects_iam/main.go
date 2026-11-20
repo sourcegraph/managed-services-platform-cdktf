@@ -10,7 +10,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-projects_iam.ProjectsIam",
-		reflect.TypeOf((*ProjectsIam)(nil)).Elem(),
+		reflect.TypeFor[ProjectsIam](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberMethod{JsiiMethod: "addProvider", GoMethod: "AddProvider"},
@@ -44,7 +44,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "version", GoGetter: "Version"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ProjectsIam{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformModule)
 			return &j
@@ -52,6 +52,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-projects_iam.ProjectsIamConfig",
-		reflect.TypeOf((*ProjectsIamConfig)(nil)).Elem(),
+		reflect.TypeFor[ProjectsIamConfig](),
 	)
 }

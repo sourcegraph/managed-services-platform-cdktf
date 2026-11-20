@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (p *jsiiProxy_ProjectsIam) validateAddOverrideParameters(path *string, value interface{}) error {
+func (p *jsiiProxy_ProjectsIam) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -23,7 +23,7 @@ func (p *jsiiProxy_ProjectsIam) validateAddOverrideParameters(path *string, valu
 	return nil
 }
 
-func (p *jsiiProxy_ProjectsIam) validateAddProviderParameters(provider interface{}) error {
+func (p *jsiiProxy_ProjectsIam) validateAddProviderParameters(provider any) error {
 	if provider == nil {
 		return fmt.Errorf("parameter provider is required, but nil was provided")
 	}
@@ -74,7 +74,7 @@ func (p *jsiiProxy_ProjectsIam) validateOverrideLogicalIdParameters(newLogicalId
 	return nil
 }
 
-func validateProjectsIam_IsConstructParameters(x interface{}) error {
+func validateProjectsIam_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -82,7 +82,7 @@ func validateProjectsIam_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateProjectsIam_IsTerraformElementParameters(x interface{}) error {
+func validateProjectsIam_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -90,7 +90,7 @@ func validateProjectsIam_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_ProjectsIam) validateSetConditionalBindingsParameters(val interface{}) error {
+func (j *jsiiProxy_ProjectsIam) validateSetConditionalBindingsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -113,4 +113,3 @@ func validateNewProjectsIamParameters(scope constructs.Construct, id *string, co
 
 	return nil
 }
-
