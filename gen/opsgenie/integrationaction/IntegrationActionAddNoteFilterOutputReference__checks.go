@@ -90,7 +90,7 @@ func (i *jsiiProxy_IntegrationActionAddNoteFilterOutputReference) validateInterp
 	return nil
 }
 
-func (i *jsiiProxy_IntegrationActionAddNoteFilterOutputReference) validatePutConditionsParameters(value interface{}) error {
+func (i *jsiiProxy_IntegrationActionAddNoteFilterOutputReference) validatePutConditionsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (i *jsiiProxy_IntegrationActionAddNoteFilterOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_IntegrationActionAddNoteFilterOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IntegrationActionAddNoteFilterOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -194,7 +194,7 @@ func (j *jsiiProxy_IntegrationActionAddNoteFilterOutputReference) validateSetCom
 	return nil
 }
 
-func (j *jsiiProxy_IntegrationActionAddNoteFilterOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_IntegrationActionAddNoteFilterOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -261,4 +261,3 @@ func validateNewIntegrationActionAddNoteFilterOutputReferenceParameters(terrafor
 
 	return nil
 }
-

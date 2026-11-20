@@ -12,9 +12,9 @@ type NotificationPolicyDelayActionOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -29,7 +29,7 @@ type NotificationPolicyDelayActionOutputReference interface {
 	SetDelayOption(val *string)
 	DelayOptionInput() *string
 	Duration() NotificationPolicyDelayActionDurationList
-	DurationInput() interface{}
+	DurationInput() any
 	// Experimental.
 	Fqn() *string
 	InternalValue() *NotificationPolicyDelayAction
@@ -51,7 +51,7 @@ type NotificationPolicyDelayActionOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -72,13 +72,13 @@ type NotificationPolicyDelayActionOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutDuration(value interface{})
+	PutDuration(value any)
 	ResetDuration()
 	ResetUntilHour()
 	ResetUntilMinute()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -91,8 +91,8 @@ type jsiiProxy_NotificationPolicyDelayActionOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_NotificationPolicyDelayActionOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NotificationPolicyDelayActionOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -151,8 +151,8 @@ func (j *jsiiProxy_NotificationPolicyDelayActionOutputReference) Duration() Noti
 	return returns
 }
 
-func (j *jsiiProxy_NotificationPolicyDelayActionOutputReference) DurationInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NotificationPolicyDelayActionOutputReference) DurationInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"durationInput",
@@ -241,7 +241,6 @@ func (j *jsiiProxy_NotificationPolicyDelayActionOutputReference) UntilMinuteInpu
 	return returns
 }
 
-
 func NewNotificationPolicyDelayActionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) NotificationPolicyDelayActionOutputReference {
 	_init_.Initialize()
 
@@ -252,7 +251,7 @@ func NewNotificationPolicyDelayActionOutputReference(terraformResource cdktf.IIn
 
 	_jsii_.Create(
 		"@cdktf/provider-opsgenie.notificationPolicy.NotificationPolicyDelayActionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -264,12 +263,12 @@ func NewNotificationPolicyDelayActionOutputReference_Override(n NotificationPoli
 
 	_jsii_.Create(
 		"@cdktf/provider-opsgenie.notificationPolicy.NotificationPolicyDelayActionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		n,
 	)
 }
 
-func (j *jsiiProxy_NotificationPolicyDelayActionOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_NotificationPolicyDelayActionOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -280,7 +279,7 @@ func (j *jsiiProxy_NotificationPolicyDelayActionOutputReference)SetComplexObject
 	)
 }
 
-func (j *jsiiProxy_NotificationPolicyDelayActionOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_NotificationPolicyDelayActionOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -291,7 +290,7 @@ func (j *jsiiProxy_NotificationPolicyDelayActionOutputReference)SetComplexObject
 	)
 }
 
-func (j *jsiiProxy_NotificationPolicyDelayActionOutputReference)SetDelayOption(val *string) {
+func (j *jsiiProxy_NotificationPolicyDelayActionOutputReference) SetDelayOption(val *string) {
 	if err := j.validateSetDelayOptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -302,7 +301,7 @@ func (j *jsiiProxy_NotificationPolicyDelayActionOutputReference)SetDelayOption(v
 	)
 }
 
-func (j *jsiiProxy_NotificationPolicyDelayActionOutputReference)SetInternalValue(val *NotificationPolicyDelayAction) {
+func (j *jsiiProxy_NotificationPolicyDelayActionOutputReference) SetInternalValue(val *NotificationPolicyDelayAction) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -313,7 +312,7 @@ func (j *jsiiProxy_NotificationPolicyDelayActionOutputReference)SetInternalValue
 	)
 }
 
-func (j *jsiiProxy_NotificationPolicyDelayActionOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_NotificationPolicyDelayActionOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -324,7 +323,7 @@ func (j *jsiiProxy_NotificationPolicyDelayActionOutputReference)SetTerraformAttr
 	)
 }
 
-func (j *jsiiProxy_NotificationPolicyDelayActionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_NotificationPolicyDelayActionOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -335,7 +334,7 @@ func (j *jsiiProxy_NotificationPolicyDelayActionOutputReference)SetTerraformReso
 	)
 }
 
-func (j *jsiiProxy_NotificationPolicyDelayActionOutputReference)SetUntilHour(val *float64) {
+func (j *jsiiProxy_NotificationPolicyDelayActionOutputReference) SetUntilHour(val *float64) {
 	if err := j.validateSetUntilHourParameters(val); err != nil {
 		panic(err)
 	}
@@ -346,7 +345,7 @@ func (j *jsiiProxy_NotificationPolicyDelayActionOutputReference)SetUntilHour(val
 	)
 }
 
-func (j *jsiiProxy_NotificationPolicyDelayActionOutputReference)SetUntilMinute(val *float64) {
+func (j *jsiiProxy_NotificationPolicyDelayActionOutputReference) SetUntilMinute(val *float64) {
 	if err := j.validateSetUntilMinuteParameters(val); err != nil {
 		panic(err)
 	}
@@ -370,16 +369,16 @@ func (n *jsiiProxy_NotificationPolicyDelayActionOutputReference) ComputeFqn() *s
 	return returns
 }
 
-func (n *jsiiProxy_NotificationPolicyDelayActionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (n *jsiiProxy_NotificationPolicyDelayActionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := n.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -395,7 +394,7 @@ func (n *jsiiProxy_NotificationPolicyDelayActionOutputReference) GetBooleanAttri
 	_jsii_.Invoke(
 		n,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -411,7 +410,7 @@ func (n *jsiiProxy_NotificationPolicyDelayActionOutputReference) GetBooleanMapAt
 	_jsii_.Invoke(
 		n,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -427,7 +426,7 @@ func (n *jsiiProxy_NotificationPolicyDelayActionOutputReference) GetListAttribut
 	_jsii_.Invoke(
 		n,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -443,7 +442,7 @@ func (n *jsiiProxy_NotificationPolicyDelayActionOutputReference) GetNumberAttrib
 	_jsii_.Invoke(
 		n,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -459,7 +458,7 @@ func (n *jsiiProxy_NotificationPolicyDelayActionOutputReference) GetNumberListAt
 	_jsii_.Invoke(
 		n,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -475,7 +474,7 @@ func (n *jsiiProxy_NotificationPolicyDelayActionOutputReference) GetNumberMapAtt
 	_jsii_.Invoke(
 		n,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -491,7 +490,7 @@ func (n *jsiiProxy_NotificationPolicyDelayActionOutputReference) GetStringAttrib
 	_jsii_.Invoke(
 		n,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -507,7 +506,7 @@ func (n *jsiiProxy_NotificationPolicyDelayActionOutputReference) GetStringMapAtt
 	_jsii_.Invoke(
 		n,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -536,21 +535,21 @@ func (n *jsiiProxy_NotificationPolicyDelayActionOutputReference) InterpolationFo
 	_jsii_.Invoke(
 		n,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (n *jsiiProxy_NotificationPolicyDelayActionOutputReference) PutDuration(value interface{}) {
+func (n *jsiiProxy_NotificationPolicyDelayActionOutputReference) PutDuration(value any) {
 	if err := n.validatePutDurationParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		n,
 		"putDuration",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -578,16 +577,16 @@ func (n *jsiiProxy_NotificationPolicyDelayActionOutputReference) ResetUntilMinut
 	)
 }
 
-func (n *jsiiProxy_NotificationPolicyDelayActionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (n *jsiiProxy_NotificationPolicyDelayActionOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := n.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		n,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -606,4 +605,3 @@ func (n *jsiiProxy_NotificationPolicyDelayActionOutputReference) ToString() *str
 
 	return returns
 }
-

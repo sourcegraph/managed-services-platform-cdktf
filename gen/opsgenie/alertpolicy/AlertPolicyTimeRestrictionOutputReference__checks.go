@@ -101,7 +101,7 @@ func (a *jsiiProxy_AlertPolicyTimeRestrictionOutputReference) validatePutRestric
 	return nil
 }
 
-func (a *jsiiProxy_AlertPolicyTimeRestrictionOutputReference) validatePutRestrictionsParameters(value interface{}) error {
+func (a *jsiiProxy_AlertPolicyTimeRestrictionOutputReference) validatePutRestrictionsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -140,7 +140,7 @@ func (a *jsiiProxy_AlertPolicyTimeRestrictionOutputReference) validateResolvePar
 	return nil
 }
 
-func (j *jsiiProxy_AlertPolicyTimeRestrictionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AlertPolicyTimeRestrictionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -248,4 +248,3 @@ func validateNewAlertPolicyTimeRestrictionOutputReferenceParameters(terraformRes
 
 	return nil
 }
-

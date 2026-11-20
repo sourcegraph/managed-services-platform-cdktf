@@ -34,7 +34,7 @@ func (i *jsiiProxy_IntegrationActionCreateFilterConditionsList) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_IntegrationActionCreateFilterConditionsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_IntegrationActionCreateFilterConditionsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewIntegrationActionCreateFilterConditionsListParameters(terraformR
 
 	return nil
 }
-

@@ -34,7 +34,7 @@ func (n *jsiiProxy_NotificationPolicyTimeRestrictionRestrictionsList) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_NotificationPolicyTimeRestrictionRestrictionsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_NotificationPolicyTimeRestrictionRestrictionsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewNotificationPolicyTimeRestrictionRestrictionsListParameters(terr
 
 	return nil
 }
-

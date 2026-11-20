@@ -34,7 +34,7 @@ func (i *jsiiProxy_IntegrationActionCloseList) validateResolveParameters(_contex
 	return nil
 }
 
-func (j *jsiiProxy_IntegrationActionCloseList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_IntegrationActionCloseList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewIntegrationActionCloseListParameters(terraformResource cdktf.IIn
 
 	return nil
 }
-

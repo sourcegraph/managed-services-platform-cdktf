@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataOpsgenieTeamMemberOutputReference) validateResolveParamet
 	return nil
 }
 
-func (j *jsiiProxy_DataOpsgenieTeamMemberOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataOpsgenieTeamMemberOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_DataOpsgenieTeamMemberOutputReference) validateSetIdParameter
 	return nil
 }
 
-func (j *jsiiProxy_DataOpsgenieTeamMemberOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataOpsgenieTeamMemberOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewDataOpsgenieTeamMemberOutputReferenceParameters(terraformResourc
 
 	return nil
 }
-

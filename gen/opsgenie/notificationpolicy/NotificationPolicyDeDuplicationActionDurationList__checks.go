@@ -34,7 +34,7 @@ func (n *jsiiProxy_NotificationPolicyDeDuplicationActionDurationList) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_NotificationPolicyDeDuplicationActionDurationList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_NotificationPolicyDeDuplicationActionDurationList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewNotificationPolicyDeDuplicationActionDurationListParameters(terr
 
 	return nil
 }
-

@@ -1,6 +1,5 @@
 package notificationpolicy
 
-
 type NotificationPolicyFilterConditions struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/resources/notification_policy#field NotificationPolicy#field}.
 	Field *string `field:"required" json:"field" yaml:"field"`
@@ -17,10 +16,9 @@ type NotificationPolicyFilterConditions struct {
 	// Indicates behaviour of the given operation. Default value is false.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/resources/notification_policy#not NotificationPolicy#not}
-	Not interface{} `field:"optional" json:"not" yaml:"not"`
+	Not any `field:"optional" json:"not" yaml:"not"`
 	// Order of the condition in conditions list.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/resources/notification_policy#order NotificationPolicy#order}
 	Order *float64 `field:"optional" json:"order" yaml:"order"`
 }
-

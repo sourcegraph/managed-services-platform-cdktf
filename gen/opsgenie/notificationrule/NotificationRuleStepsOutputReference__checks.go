@@ -90,7 +90,7 @@ func (n *jsiiProxy_NotificationRuleStepsOutputReference) validateInterpolationFo
 	return nil
 }
 
-func (n *jsiiProxy_NotificationRuleStepsOutputReference) validatePutContactParameters(value interface{}) error {
+func (n *jsiiProxy_NotificationRuleStepsOutputReference) validatePutContactParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (n *jsiiProxy_NotificationRuleStepsOutputReference) validateResolveParamete
 	return nil
 }
 
-func (j *jsiiProxy_NotificationRuleStepsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NotificationRuleStepsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -194,7 +194,7 @@ func (j *jsiiProxy_NotificationRuleStepsOutputReference) validateSetComplexObjec
 	return nil
 }
 
-func (j *jsiiProxy_NotificationRuleStepsOutputReference) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_NotificationRuleStepsOutputReference) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -214,7 +214,7 @@ func (j *jsiiProxy_NotificationRuleStepsOutputReference) validateSetEnabledParam
 	return nil
 }
 
-func (j *jsiiProxy_NotificationRuleStepsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_NotificationRuleStepsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -281,4 +281,3 @@ func validateNewNotificationRuleStepsOutputReferenceParameters(terraformResource
 
 	return nil
 }
-

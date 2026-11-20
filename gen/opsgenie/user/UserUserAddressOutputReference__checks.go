@@ -106,7 +106,7 @@ func (j *jsiiProxy_UserUserAddressOutputReference) validateSetCityParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_UserUserAddressOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_UserUserAddressOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_UserUserAddressOutputReference) validateSetCountryParameters(
 	return nil
 }
 
-func (j *jsiiProxy_UserUserAddressOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_UserUserAddressOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -262,4 +262,3 @@ func validateNewUserUserAddressOutputReferenceParameters(terraformResource cdktf
 
 	return nil
 }
-

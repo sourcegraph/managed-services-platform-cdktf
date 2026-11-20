@@ -12,16 +12,16 @@ type IntegrationActionAcknowledgeFilterOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
 	Conditions() IntegrationActionAcknowledgeFilterConditionsList
-	ConditionsInput() interface{}
+	ConditionsInput() any
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -29,8 +29,8 @@ type IntegrationActionAcknowledgeFilterOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -45,7 +45,7 @@ type IntegrationActionAcknowledgeFilterOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -66,11 +66,11 @@ type IntegrationActionAcknowledgeFilterOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutConditions(value interface{})
+	PutConditions(value any)
 	ResetConditions()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -83,8 +83,8 @@ type jsiiProxy_IntegrationActionAcknowledgeFilterOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_IntegrationActionAcknowledgeFilterOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IntegrationActionAcknowledgeFilterOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -113,8 +113,8 @@ func (j *jsiiProxy_IntegrationActionAcknowledgeFilterOutputReference) Conditions
 	return returns
 }
 
-func (j *jsiiProxy_IntegrationActionAcknowledgeFilterOutputReference) ConditionsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IntegrationActionAcknowledgeFilterOutputReference) ConditionsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"conditionsInput",
@@ -143,8 +143,8 @@ func (j *jsiiProxy_IntegrationActionAcknowledgeFilterOutputReference) Fqn() *str
 	return returns
 }
 
-func (j *jsiiProxy_IntegrationActionAcknowledgeFilterOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IntegrationActionAcknowledgeFilterOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -193,7 +193,6 @@ func (j *jsiiProxy_IntegrationActionAcknowledgeFilterOutputReference) TypeInput(
 	return returns
 }
 
-
 func NewIntegrationActionAcknowledgeFilterOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) IntegrationActionAcknowledgeFilterOutputReference {
 	_init_.Initialize()
 
@@ -204,7 +203,7 @@ func NewIntegrationActionAcknowledgeFilterOutputReference(terraformResource cdkt
 
 	_jsii_.Create(
 		"@cdktf/provider-opsgenie.integrationAction.IntegrationActionAcknowledgeFilterOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -216,12 +215,12 @@ func NewIntegrationActionAcknowledgeFilterOutputReference_Override(i Integration
 
 	_jsii_.Create(
 		"@cdktf/provider-opsgenie.integrationAction.IntegrationActionAcknowledgeFilterOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		i,
 	)
 }
 
-func (j *jsiiProxy_IntegrationActionAcknowledgeFilterOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_IntegrationActionAcknowledgeFilterOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -232,7 +231,7 @@ func (j *jsiiProxy_IntegrationActionAcknowledgeFilterOutputReference)SetComplexO
 	)
 }
 
-func (j *jsiiProxy_IntegrationActionAcknowledgeFilterOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_IntegrationActionAcknowledgeFilterOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -243,7 +242,7 @@ func (j *jsiiProxy_IntegrationActionAcknowledgeFilterOutputReference)SetComplexO
 	)
 }
 
-func (j *jsiiProxy_IntegrationActionAcknowledgeFilterOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_IntegrationActionAcknowledgeFilterOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -254,7 +253,7 @@ func (j *jsiiProxy_IntegrationActionAcknowledgeFilterOutputReference)SetInternal
 	)
 }
 
-func (j *jsiiProxy_IntegrationActionAcknowledgeFilterOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_IntegrationActionAcknowledgeFilterOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -265,7 +264,7 @@ func (j *jsiiProxy_IntegrationActionAcknowledgeFilterOutputReference)SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_IntegrationActionAcknowledgeFilterOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_IntegrationActionAcknowledgeFilterOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,7 +275,7 @@ func (j *jsiiProxy_IntegrationActionAcknowledgeFilterOutputReference)SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_IntegrationActionAcknowledgeFilterOutputReference)SetType(val *string) {
+func (j *jsiiProxy_IntegrationActionAcknowledgeFilterOutputReference) SetType(val *string) {
 	if err := j.validateSetTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -300,16 +299,16 @@ func (i *jsiiProxy_IntegrationActionAcknowledgeFilterOutputReference) ComputeFqn
 	return returns
 }
 
-func (i *jsiiProxy_IntegrationActionAcknowledgeFilterOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (i *jsiiProxy_IntegrationActionAcknowledgeFilterOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := i.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -325,7 +324,7 @@ func (i *jsiiProxy_IntegrationActionAcknowledgeFilterOutputReference) GetBoolean
 	_jsii_.Invoke(
 		i,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -341,7 +340,7 @@ func (i *jsiiProxy_IntegrationActionAcknowledgeFilterOutputReference) GetBoolean
 	_jsii_.Invoke(
 		i,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -357,7 +356,7 @@ func (i *jsiiProxy_IntegrationActionAcknowledgeFilterOutputReference) GetListAtt
 	_jsii_.Invoke(
 		i,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -373,7 +372,7 @@ func (i *jsiiProxy_IntegrationActionAcknowledgeFilterOutputReference) GetNumberA
 	_jsii_.Invoke(
 		i,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -389,7 +388,7 @@ func (i *jsiiProxy_IntegrationActionAcknowledgeFilterOutputReference) GetNumberL
 	_jsii_.Invoke(
 		i,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -405,7 +404,7 @@ func (i *jsiiProxy_IntegrationActionAcknowledgeFilterOutputReference) GetNumberM
 	_jsii_.Invoke(
 		i,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -421,7 +420,7 @@ func (i *jsiiProxy_IntegrationActionAcknowledgeFilterOutputReference) GetStringA
 	_jsii_.Invoke(
 		i,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -437,7 +436,7 @@ func (i *jsiiProxy_IntegrationActionAcknowledgeFilterOutputReference) GetStringM
 	_jsii_.Invoke(
 		i,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -466,21 +465,21 @@ func (i *jsiiProxy_IntegrationActionAcknowledgeFilterOutputReference) Interpolat
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (i *jsiiProxy_IntegrationActionAcknowledgeFilterOutputReference) PutConditions(value interface{}) {
+func (i *jsiiProxy_IntegrationActionAcknowledgeFilterOutputReference) PutConditions(value any) {
 	if err := i.validatePutConditionsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		i,
 		"putConditions",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -492,16 +491,16 @@ func (i *jsiiProxy_IntegrationActionAcknowledgeFilterOutputReference) ResetCondi
 	)
 }
 
-func (i *jsiiProxy_IntegrationActionAcknowledgeFilterOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (i *jsiiProxy_IntegrationActionAcknowledgeFilterOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := i.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		i,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -520,4 +519,3 @@ func (i *jsiiProxy_IntegrationActionAcknowledgeFilterOutputReference) ToString()
 
 	return returns
 }
-

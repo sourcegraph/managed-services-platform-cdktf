@@ -98,7 +98,7 @@ func (a *jsiiProxy_AlertPolicyTimeRestrictionRestrictionsOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_AlertPolicyTimeRestrictionRestrictionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AlertPolicyTimeRestrictionRestrictionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -187,7 +187,7 @@ func (j *jsiiProxy_AlertPolicyTimeRestrictionRestrictionsOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_AlertPolicyTimeRestrictionRestrictionsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AlertPolicyTimeRestrictionRestrictionsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -270,4 +270,3 @@ func validateNewAlertPolicyTimeRestrictionRestrictionsOutputReferenceParameters(
 
 	return nil
 }
-

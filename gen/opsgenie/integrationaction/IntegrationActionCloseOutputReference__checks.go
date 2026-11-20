@@ -90,7 +90,7 @@ func (i *jsiiProxy_IntegrationActionCloseOutputReference) validateInterpolationF
 	return nil
 }
 
-func (i *jsiiProxy_IntegrationActionCloseOutputReference) validatePutFilterParameters(value interface{}) error {
+func (i *jsiiProxy_IntegrationActionCloseOutputReference) validatePutFilterParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -137,7 +137,7 @@ func (j *jsiiProxy_IntegrationActionCloseOutputReference) validateSetAliasParame
 	return nil
 }
 
-func (j *jsiiProxy_IntegrationActionCloseOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IntegrationActionCloseOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -202,7 +202,7 @@ func (j *jsiiProxy_IntegrationActionCloseOutputReference) validateSetComplexObje
 	return nil
 }
 
-func (j *jsiiProxy_IntegrationActionCloseOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_IntegrationActionCloseOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -301,4 +301,3 @@ func validateNewIntegrationActionCloseOutputReferenceParameters(terraformResourc
 
 	return nil
 }
-

@@ -34,7 +34,7 @@ func (n *jsiiProxy_NotificationPolicyFilterConditionsList) validateResolveParame
 	return nil
 }
 
-func (j *jsiiProxy_NotificationPolicyFilterConditionsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_NotificationPolicyFilterConditionsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewNotificationPolicyFilterConditionsListParameters(terraformResour
 
 	return nil
 }
-

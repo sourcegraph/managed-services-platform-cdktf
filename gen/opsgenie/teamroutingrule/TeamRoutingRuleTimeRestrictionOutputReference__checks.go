@@ -101,7 +101,7 @@ func (t *jsiiProxy_TeamRoutingRuleTimeRestrictionOutputReference) validatePutRes
 	return nil
 }
 
-func (t *jsiiProxy_TeamRoutingRuleTimeRestrictionOutputReference) validatePutRestrictionsParameters(value interface{}) error {
+func (t *jsiiProxy_TeamRoutingRuleTimeRestrictionOutputReference) validatePutRestrictionsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -140,7 +140,7 @@ func (t *jsiiProxy_TeamRoutingRuleTimeRestrictionOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_TeamRoutingRuleTimeRestrictionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_TeamRoutingRuleTimeRestrictionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -248,4 +248,3 @@ func validateNewTeamRoutingRuleTimeRestrictionOutputReferenceParameters(terrafor
 
 	return nil
 }
-

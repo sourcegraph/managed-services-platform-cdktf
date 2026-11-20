@@ -98,7 +98,7 @@ func (a *jsiiProxy_AlertPolicyFilterConditionsOutputReference) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_AlertPolicyFilterConditionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AlertPolicyFilterConditionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_AlertPolicyFilterConditionsOutputReference) validateSetFieldP
 	return nil
 }
 
-func (j *jsiiProxy_AlertPolicyFilterConditionsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AlertPolicyFilterConditionsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -211,7 +211,7 @@ func (j *jsiiProxy_AlertPolicyFilterConditionsOutputReference) validateSetKeyPar
 	return nil
 }
 
-func (j *jsiiProxy_AlertPolicyFilterConditionsOutputReference) validateSetNotParameters(val interface{}) error {
+func (j *jsiiProxy_AlertPolicyFilterConditionsOutputReference) validateSetNotParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -282,4 +282,3 @@ func validateNewAlertPolicyFilterConditionsOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

@@ -24,15 +24,15 @@ type Heartbeat interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -40,9 +40,9 @@ type Heartbeat interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
-	Enabled() interface{}
-	SetEnabled(val interface{})
-	EnabledInput() interface{}
+	Enabled() any
+	SetEnabled(val any)
+	EnabledInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -77,24 +77,24 @@ type Heartbeat interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -112,7 +112,7 @@ type Heartbeat interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -124,7 +124,7 @@ type Heartbeat interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -140,17 +140,17 @@ type Heartbeat interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetOwnerTeamId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for Heartbeat
@@ -228,8 +228,8 @@ func (j *jsiiProxy_Heartbeat) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_Heartbeat) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Heartbeat) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -238,8 +238,8 @@ func (j *jsiiProxy_Heartbeat) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Heartbeat) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Heartbeat) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -248,8 +248,8 @@ func (j *jsiiProxy_Heartbeat) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Heartbeat) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Heartbeat) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -288,8 +288,8 @@ func (j *jsiiProxy_Heartbeat) DescriptionInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Heartbeat) Enabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Heartbeat) Enabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabled",
@@ -298,8 +298,8 @@ func (j *jsiiProxy_Heartbeat) Enabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Heartbeat) EnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Heartbeat) EnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabledInput",
@@ -468,8 +468,8 @@ func (j *jsiiProxy_Heartbeat) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_Heartbeat) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_Heartbeat) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -478,8 +478,8 @@ func (j *jsiiProxy_Heartbeat) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Heartbeat) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Heartbeat) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -498,8 +498,8 @@ func (j *jsiiProxy_Heartbeat) TerraformGeneratorMetadata() *cdktf.TerraformProvi
 	return returns
 }
 
-func (j *jsiiProxy_Heartbeat) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Heartbeat) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -518,7 +518,6 @@ func (j *jsiiProxy_Heartbeat) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/resources/heartbeat opsgenie_heartbeat} Resource.
 func NewHeartbeat(scope constructs.Construct, id *string, config *HeartbeatConfig) Heartbeat {
 	_init_.Initialize()
@@ -530,7 +529,7 @@ func NewHeartbeat(scope constructs.Construct, id *string, config *HeartbeatConfi
 
 	_jsii_.Create(
 		"@cdktf/provider-opsgenie.heartbeat.Heartbeat",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -543,12 +542,12 @@ func NewHeartbeat_Override(h Heartbeat, scope constructs.Construct, id *string, 
 
 	_jsii_.Create(
 		"@cdktf/provider-opsgenie.heartbeat.Heartbeat",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		h,
 	)
 }
 
-func (j *jsiiProxy_Heartbeat)SetAlertMessage(val *string) {
+func (j *jsiiProxy_Heartbeat) SetAlertMessage(val *string) {
 	if err := j.validateSetAlertMessageParameters(val); err != nil {
 		panic(err)
 	}
@@ -559,7 +558,7 @@ func (j *jsiiProxy_Heartbeat)SetAlertMessage(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Heartbeat)SetAlertPriority(val *string) {
+func (j *jsiiProxy_Heartbeat) SetAlertPriority(val *string) {
 	if err := j.validateSetAlertPriorityParameters(val); err != nil {
 		panic(err)
 	}
@@ -570,7 +569,7 @@ func (j *jsiiProxy_Heartbeat)SetAlertPriority(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Heartbeat)SetAlertTags(val *[]*string) {
+func (j *jsiiProxy_Heartbeat) SetAlertTags(val *[]*string) {
 	if err := j.validateSetAlertTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -581,7 +580,7 @@ func (j *jsiiProxy_Heartbeat)SetAlertTags(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Heartbeat)SetConnection(val interface{}) {
+func (j *jsiiProxy_Heartbeat) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -592,7 +591,7 @@ func (j *jsiiProxy_Heartbeat)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Heartbeat)SetCount(val interface{}) {
+func (j *jsiiProxy_Heartbeat) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -603,7 +602,7 @@ func (j *jsiiProxy_Heartbeat)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Heartbeat)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_Heartbeat) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -611,7 +610,7 @@ func (j *jsiiProxy_Heartbeat)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Heartbeat)SetDescription(val *string) {
+func (j *jsiiProxy_Heartbeat) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -622,7 +621,7 @@ func (j *jsiiProxy_Heartbeat)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Heartbeat)SetEnabled(val interface{}) {
+func (j *jsiiProxy_Heartbeat) SetEnabled(val any) {
 	if err := j.validateSetEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -633,7 +632,7 @@ func (j *jsiiProxy_Heartbeat)SetEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Heartbeat)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_Heartbeat) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -641,7 +640,7 @@ func (j *jsiiProxy_Heartbeat)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_Heartbeat)SetId(val *string) {
+func (j *jsiiProxy_Heartbeat) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -652,7 +651,7 @@ func (j *jsiiProxy_Heartbeat)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Heartbeat)SetInterval(val *float64) {
+func (j *jsiiProxy_Heartbeat) SetInterval(val *float64) {
 	if err := j.validateSetIntervalParameters(val); err != nil {
 		panic(err)
 	}
@@ -663,7 +662,7 @@ func (j *jsiiProxy_Heartbeat)SetInterval(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_Heartbeat)SetIntervalUnit(val *string) {
+func (j *jsiiProxy_Heartbeat) SetIntervalUnit(val *string) {
 	if err := j.validateSetIntervalUnitParameters(val); err != nil {
 		panic(err)
 	}
@@ -674,7 +673,7 @@ func (j *jsiiProxy_Heartbeat)SetIntervalUnit(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Heartbeat)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_Heartbeat) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -685,7 +684,7 @@ func (j *jsiiProxy_Heartbeat)SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	)
 }
 
-func (j *jsiiProxy_Heartbeat)SetName(val *string) {
+func (j *jsiiProxy_Heartbeat) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -696,7 +695,7 @@ func (j *jsiiProxy_Heartbeat)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Heartbeat)SetOwnerTeamId(val *string) {
+func (j *jsiiProxy_Heartbeat) SetOwnerTeamId(val *string) {
 	if err := j.validateSetOwnerTeamIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -707,7 +706,7 @@ func (j *jsiiProxy_Heartbeat)SetOwnerTeamId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Heartbeat)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_Heartbeat) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -715,7 +714,7 @@ func (j *jsiiProxy_Heartbeat)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_Heartbeat)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_Heartbeat) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -738,7 +737,7 @@ func Heartbeat_GenerateConfigForImport(scope constructs.Construct, importToId *s
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-opsgenie.heartbeat.Heartbeat",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -762,7 +761,7 @@ func Heartbeat_GenerateConfigForImport(scope constructs.Construct, importToId *s
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func Heartbeat_IsConstruct(x interface{}) *bool {
+func Heartbeat_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateHeartbeat_IsConstructParameters(x); err != nil {
@@ -773,7 +772,7 @@ func Heartbeat_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-opsgenie.heartbeat.Heartbeat",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -781,7 +780,7 @@ func Heartbeat_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func Heartbeat_IsTerraformElement(x interface{}) *bool {
+func Heartbeat_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateHeartbeat_IsTerraformElementParameters(x); err != nil {
@@ -792,7 +791,7 @@ func Heartbeat_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-opsgenie.heartbeat.Heartbeat",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -800,7 +799,7 @@ func Heartbeat_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func Heartbeat_IsTerraformResource(x interface{}) *bool {
+func Heartbeat_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateHeartbeat_IsTerraformResourceParameters(x); err != nil {
@@ -811,7 +810,7 @@ func Heartbeat_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-opsgenie.heartbeat.Heartbeat",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -836,31 +835,31 @@ func (h *jsiiProxy_Heartbeat) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		h,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (h *jsiiProxy_Heartbeat) AddOverride(path *string, value interface{}) {
+func (h *jsiiProxy_Heartbeat) AddOverride(path *string, value any) {
 	if err := h.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		h,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (h *jsiiProxy_Heartbeat) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (h *jsiiProxy_Heartbeat) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := h.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		h,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -876,7 +875,7 @@ func (h *jsiiProxy_Heartbeat) GetBooleanAttribute(terraformAttribute *string) cd
 	_jsii_.Invoke(
 		h,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -892,7 +891,7 @@ func (h *jsiiProxy_Heartbeat) GetBooleanMapAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		h,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -908,7 +907,7 @@ func (h *jsiiProxy_Heartbeat) GetListAttribute(terraformAttribute *string) *[]*s
 	_jsii_.Invoke(
 		h,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -924,7 +923,7 @@ func (h *jsiiProxy_Heartbeat) GetNumberAttribute(terraformAttribute *string) *fl
 	_jsii_.Invoke(
 		h,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -940,7 +939,7 @@ func (h *jsiiProxy_Heartbeat) GetNumberListAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		h,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -956,7 +955,7 @@ func (h *jsiiProxy_Heartbeat) GetNumberMapAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		h,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -972,7 +971,7 @@ func (h *jsiiProxy_Heartbeat) GetStringAttribute(terraformAttribute *string) *st
 	_jsii_.Invoke(
 		h,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -988,15 +987,15 @@ func (h *jsiiProxy_Heartbeat) GetStringMapAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		h,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (h *jsiiProxy_Heartbeat) HasResourceMove() interface{} {
-	var returns interface{}
+func (h *jsiiProxy_Heartbeat) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		h,
@@ -1015,7 +1014,7 @@ func (h *jsiiProxy_Heartbeat) ImportFrom(id *string, provider cdktf.TerraformPro
 	_jsii_.InvokeVoid(
 		h,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1028,7 +1027,7 @@ func (h *jsiiProxy_Heartbeat) InterpolationForAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		h,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1042,18 +1041,18 @@ func (h *jsiiProxy_Heartbeat) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		h,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (h *jsiiProxy_Heartbeat) MoveTo(moveTarget *string, index interface{}) {
+func (h *jsiiProxy_Heartbeat) MoveTo(moveTarget *string, index any) {
 	if err := h.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		h,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1064,7 +1063,7 @@ func (h *jsiiProxy_Heartbeat) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		h,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1075,7 +1074,7 @@ func (h *jsiiProxy_Heartbeat) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		h,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1135,8 +1134,8 @@ func (h *jsiiProxy_Heartbeat) ResetOwnerTeamId() {
 	)
 }
 
-func (h *jsiiProxy_Heartbeat) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (h *jsiiProxy_Heartbeat) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		h,
@@ -1148,8 +1147,8 @@ func (h *jsiiProxy_Heartbeat) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (h *jsiiProxy_Heartbeat) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (h *jsiiProxy_Heartbeat) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		h,
@@ -1161,8 +1160,8 @@ func (h *jsiiProxy_Heartbeat) SynthesizeHclAttributes() *map[string]interface{} 
 	return returns
 }
 
-func (h *jsiiProxy_Heartbeat) ToHclTerraform() interface{} {
-	var returns interface{}
+func (h *jsiiProxy_Heartbeat) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		h,
@@ -1174,8 +1173,8 @@ func (h *jsiiProxy_Heartbeat) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (h *jsiiProxy_Heartbeat) ToMetadata() interface{} {
-	var returns interface{}
+func (h *jsiiProxy_Heartbeat) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		h,
@@ -1200,8 +1199,8 @@ func (h *jsiiProxy_Heartbeat) ToString() *string {
 	return returns
 }
 
-func (h *jsiiProxy_Heartbeat) ToTerraform() interface{} {
-	var returns interface{}
+func (h *jsiiProxy_Heartbeat) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		h,
@@ -1212,4 +1211,3 @@ func (h *jsiiProxy_Heartbeat) ToTerraform() interface{} {
 
 	return returns
 }
-

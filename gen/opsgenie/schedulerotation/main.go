@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-opsgenie.scheduleRotation.ScheduleRotation",
-		reflect.TypeOf((*ScheduleRotation)(nil)).Elem(),
+		reflect.TypeFor[ScheduleRotation](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -78,7 +78,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ScheduleRotation{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -86,15 +86,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-opsgenie.scheduleRotation.ScheduleRotationConfig",
-		reflect.TypeOf((*ScheduleRotationConfig)(nil)).Elem(),
+		reflect.TypeFor[ScheduleRotationConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-opsgenie.scheduleRotation.ScheduleRotationParticipant",
-		reflect.TypeOf((*ScheduleRotationParticipant)(nil)).Elem(),
+		reflect.TypeFor[ScheduleRotationParticipant](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-opsgenie.scheduleRotation.ScheduleRotationParticipantList",
-		reflect.TypeOf((*ScheduleRotationParticipantList)(nil)).Elem(),
+		reflect.TypeFor[ScheduleRotationParticipantList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -108,7 +108,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ScheduleRotationParticipantList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -116,7 +116,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-opsgenie.scheduleRotation.ScheduleRotationParticipantOutputReference",
-		reflect.TypeOf((*ScheduleRotationParticipantOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ScheduleRotationParticipantOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -145,7 +145,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ScheduleRotationParticipantOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -153,11 +153,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-opsgenie.scheduleRotation.ScheduleRotationTimeRestriction",
-		reflect.TypeOf((*ScheduleRotationTimeRestriction)(nil)).Elem(),
+		reflect.TypeFor[ScheduleRotationTimeRestriction](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-opsgenie.scheduleRotation.ScheduleRotationTimeRestrictionOutputReference",
-		reflect.TypeOf((*ScheduleRotationTimeRestrictionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ScheduleRotationTimeRestrictionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -191,7 +191,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ScheduleRotationTimeRestrictionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -199,11 +199,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-opsgenie.scheduleRotation.ScheduleRotationTimeRestrictionRestriction",
-		reflect.TypeOf((*ScheduleRotationTimeRestrictionRestriction)(nil)).Elem(),
+		reflect.TypeFor[ScheduleRotationTimeRestrictionRestriction](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-opsgenie.scheduleRotation.ScheduleRotationTimeRestrictionRestrictionOutputReference",
-		reflect.TypeOf((*ScheduleRotationTimeRestrictionRestrictionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ScheduleRotationTimeRestrictionRestrictionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -235,7 +235,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ScheduleRotationTimeRestrictionRestrictionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -243,11 +243,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-opsgenie.scheduleRotation.ScheduleRotationTimeRestrictionRestrictions",
-		reflect.TypeOf((*ScheduleRotationTimeRestrictionRestrictions)(nil)).Elem(),
+		reflect.TypeFor[ScheduleRotationTimeRestrictionRestrictions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-opsgenie.scheduleRotation.ScheduleRotationTimeRestrictionRestrictionsList",
-		reflect.TypeOf((*ScheduleRotationTimeRestrictionRestrictionsList)(nil)).Elem(),
+		reflect.TypeFor[ScheduleRotationTimeRestrictionRestrictionsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -261,7 +261,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ScheduleRotationTimeRestrictionRestrictionsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -269,7 +269,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-opsgenie.scheduleRotation.ScheduleRotationTimeRestrictionRestrictionsOutputReference",
-		reflect.TypeOf((*ScheduleRotationTimeRestrictionRestrictionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ScheduleRotationTimeRestrictionRestrictionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -305,7 +305,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ScheduleRotationTimeRestrictionRestrictionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

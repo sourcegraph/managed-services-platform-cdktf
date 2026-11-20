@@ -15,9 +15,9 @@ type UserUserAddressOutputReference interface {
 	CityInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -33,8 +33,8 @@ type UserUserAddressOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Line() *string
 	SetLine(val *string)
 	LineInput() *string
@@ -55,7 +55,7 @@ type UserUserAddressOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -78,7 +78,7 @@ type UserUserAddressOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -111,8 +111,8 @@ func (j *jsiiProxy_UserUserAddressOutputReference) CityInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_UserUserAddressOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_UserUserAddressOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -171,8 +171,8 @@ func (j *jsiiProxy_UserUserAddressOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_UserUserAddressOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_UserUserAddressOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -261,7 +261,6 @@ func (j *jsiiProxy_UserUserAddressOutputReference) ZipcodeInput() *string {
 	return returns
 }
 
-
 func NewUserUserAddressOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) UserUserAddressOutputReference {
 	_init_.Initialize()
 
@@ -272,7 +271,7 @@ func NewUserUserAddressOutputReference(terraformResource cdktf.IInterpolatingPar
 
 	_jsii_.Create(
 		"@cdktf/provider-opsgenie.user.UserUserAddressOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -284,12 +283,12 @@ func NewUserUserAddressOutputReference_Override(u UserUserAddressOutputReference
 
 	_jsii_.Create(
 		"@cdktf/provider-opsgenie.user.UserUserAddressOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		u,
 	)
 }
 
-func (j *jsiiProxy_UserUserAddressOutputReference)SetCity(val *string) {
+func (j *jsiiProxy_UserUserAddressOutputReference) SetCity(val *string) {
 	if err := j.validateSetCityParameters(val); err != nil {
 		panic(err)
 	}
@@ -300,7 +299,7 @@ func (j *jsiiProxy_UserUserAddressOutputReference)SetCity(val *string) {
 	)
 }
 
-func (j *jsiiProxy_UserUserAddressOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_UserUserAddressOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -311,7 +310,7 @@ func (j *jsiiProxy_UserUserAddressOutputReference)SetComplexObjectIndex(val inte
 	)
 }
 
-func (j *jsiiProxy_UserUserAddressOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_UserUserAddressOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -322,7 +321,7 @@ func (j *jsiiProxy_UserUserAddressOutputReference)SetComplexObjectIsFromSet(val 
 	)
 }
 
-func (j *jsiiProxy_UserUserAddressOutputReference)SetCountry(val *string) {
+func (j *jsiiProxy_UserUserAddressOutputReference) SetCountry(val *string) {
 	if err := j.validateSetCountryParameters(val); err != nil {
 		panic(err)
 	}
@@ -333,7 +332,7 @@ func (j *jsiiProxy_UserUserAddressOutputReference)SetCountry(val *string) {
 	)
 }
 
-func (j *jsiiProxy_UserUserAddressOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_UserUserAddressOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -344,7 +343,7 @@ func (j *jsiiProxy_UserUserAddressOutputReference)SetInternalValue(val interface
 	)
 }
 
-func (j *jsiiProxy_UserUserAddressOutputReference)SetLine(val *string) {
+func (j *jsiiProxy_UserUserAddressOutputReference) SetLine(val *string) {
 	if err := j.validateSetLineParameters(val); err != nil {
 		panic(err)
 	}
@@ -355,7 +354,7 @@ func (j *jsiiProxy_UserUserAddressOutputReference)SetLine(val *string) {
 	)
 }
 
-func (j *jsiiProxy_UserUserAddressOutputReference)SetState(val *string) {
+func (j *jsiiProxy_UserUserAddressOutputReference) SetState(val *string) {
 	if err := j.validateSetStateParameters(val); err != nil {
 		panic(err)
 	}
@@ -366,7 +365,7 @@ func (j *jsiiProxy_UserUserAddressOutputReference)SetState(val *string) {
 	)
 }
 
-func (j *jsiiProxy_UserUserAddressOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_UserUserAddressOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -377,7 +376,7 @@ func (j *jsiiProxy_UserUserAddressOutputReference)SetTerraformAttribute(val *str
 	)
 }
 
-func (j *jsiiProxy_UserUserAddressOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_UserUserAddressOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -388,7 +387,7 @@ func (j *jsiiProxy_UserUserAddressOutputReference)SetTerraformResource(val cdktf
 	)
 }
 
-func (j *jsiiProxy_UserUserAddressOutputReference)SetZipcode(val *string) {
+func (j *jsiiProxy_UserUserAddressOutputReference) SetZipcode(val *string) {
 	if err := j.validateSetZipcodeParameters(val); err != nil {
 		panic(err)
 	}
@@ -412,16 +411,16 @@ func (u *jsiiProxy_UserUserAddressOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (u *jsiiProxy_UserUserAddressOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (u *jsiiProxy_UserUserAddressOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := u.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		u,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -437,7 +436,7 @@ func (u *jsiiProxy_UserUserAddressOutputReference) GetBooleanAttribute(terraform
 	_jsii_.Invoke(
 		u,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -453,7 +452,7 @@ func (u *jsiiProxy_UserUserAddressOutputReference) GetBooleanMapAttribute(terraf
 	_jsii_.Invoke(
 		u,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -469,7 +468,7 @@ func (u *jsiiProxy_UserUserAddressOutputReference) GetListAttribute(terraformAtt
 	_jsii_.Invoke(
 		u,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -485,7 +484,7 @@ func (u *jsiiProxy_UserUserAddressOutputReference) GetNumberAttribute(terraformA
 	_jsii_.Invoke(
 		u,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -501,7 +500,7 @@ func (u *jsiiProxy_UserUserAddressOutputReference) GetNumberListAttribute(terraf
 	_jsii_.Invoke(
 		u,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -517,7 +516,7 @@ func (u *jsiiProxy_UserUserAddressOutputReference) GetNumberMapAttribute(terrafo
 	_jsii_.Invoke(
 		u,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -533,7 +532,7 @@ func (u *jsiiProxy_UserUserAddressOutputReference) GetStringAttribute(terraformA
 	_jsii_.Invoke(
 		u,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -549,7 +548,7 @@ func (u *jsiiProxy_UserUserAddressOutputReference) GetStringMapAttribute(terrafo
 	_jsii_.Invoke(
 		u,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -578,23 +577,23 @@ func (u *jsiiProxy_UserUserAddressOutputReference) InterpolationForAttribute(pro
 	_jsii_.Invoke(
 		u,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (u *jsiiProxy_UserUserAddressOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (u *jsiiProxy_UserUserAddressOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := u.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		u,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -613,4 +612,3 @@ func (u *jsiiProxy_UserUserAddressOutputReference) ToString() *string {
 
 	return returns
 }
-

@@ -17,8 +17,8 @@ type IntegrationActionCloseFilterConditionsList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type IntegrationActionCloseFilterConditionsList interface {
 	Get(index *float64) IntegrationActionCloseFilterConditionsOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_IntegrationActionCloseFilterConditionsList) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_IntegrationActionCloseFilterConditionsList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IntegrationActionCloseFilterConditionsList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_IntegrationActionCloseFilterConditionsList) WrapsSet() *bool 
 	return returns
 }
 
-
 func NewIntegrationActionCloseFilterConditionsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) IntegrationActionCloseFilterConditionsList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewIntegrationActionCloseFilterConditionsList(terraformResource cdktf.IInte
 
 	_jsii_.Create(
 		"@cdktf/provider-opsgenie.integrationAction.IntegrationActionCloseFilterConditionsList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewIntegrationActionCloseFilterConditionsList_Override(i IntegrationActionC
 
 	_jsii_.Create(
 		"@cdktf/provider-opsgenie.integrationAction.IntegrationActionCloseFilterConditionsList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		i,
 	)
 }
 
-func (j *jsiiProxy_IntegrationActionCloseFilterConditionsList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_IntegrationActionCloseFilterConditionsList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_IntegrationActionCloseFilterConditionsList)SetInternalValue(v
 	)
 }
 
-func (j *jsiiProxy_IntegrationActionCloseFilterConditionsList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_IntegrationActionCloseFilterConditionsList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_IntegrationActionCloseFilterConditionsList)SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_IntegrationActionCloseFilterConditionsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_IntegrationActionCloseFilterConditionsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_IntegrationActionCloseFilterConditionsList)SetTerraformResour
 	)
 }
 
-func (j *jsiiProxy_IntegrationActionCloseFilterConditionsList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_IntegrationActionCloseFilterConditionsList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (i *jsiiProxy_IntegrationActionCloseFilterConditionsList) AllWithMapKey(map
 	_jsii_.Invoke(
 		i,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (i *jsiiProxy_IntegrationActionCloseFilterConditionsList) Get(index *float6
 	_jsii_.Invoke(
 		i,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (i *jsiiProxy_IntegrationActionCloseFilterConditionsList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (i *jsiiProxy_IntegrationActionCloseFilterConditionsList) Resolve(_context cdktf.IResolveContext) any {
 	if err := i.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		i,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (i *jsiiProxy_IntegrationActionCloseFilterConditionsList) ToString() *strin
 
 	return returns
 }
-

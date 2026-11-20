@@ -98,7 +98,7 @@ func (n *jsiiProxy_NotificationPolicyAutoCloseActionDurationOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_NotificationPolicyAutoCloseActionDurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NotificationPolicyAutoCloseActionDurationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_NotificationPolicyAutoCloseActionDurationOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_NotificationPolicyAutoCloseActionDurationOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_NotificationPolicyAutoCloseActionDurationOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewNotificationPolicyAutoCloseActionDurationOutputReferenceParamete
 
 	return nil
 }
-

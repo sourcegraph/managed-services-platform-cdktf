@@ -19,7 +19,7 @@ func (a *jsiiProxy_ApiIntegration) validateAddMoveTargetParameters(moveTarget *s
 	return nil
 }
 
-func (a *jsiiProxy_ApiIntegration) validateAddOverrideParameters(path *string, value interface{}) error {
+func (a *jsiiProxy_ApiIntegration) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (a *jsiiProxy_ApiIntegration) validateMoveFromIdParameters(id *string) erro
 	return nil
 }
 
-func (a *jsiiProxy_ApiIntegration) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (a *jsiiProxy_ApiIntegration) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (a *jsiiProxy_ApiIntegration) validateOverrideLogicalIdParameters(newLogica
 	return nil
 }
 
-func (a *jsiiProxy_ApiIntegration) validatePutRespondersParameters(value interface{}) error {
+func (a *jsiiProxy_ApiIntegration) validatePutRespondersParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -251,7 +251,7 @@ func validateApiIntegration_GenerateConfigForImportParameters(scope constructs.C
 	return nil
 }
 
-func validateApiIntegration_IsConstructParameters(x interface{}) error {
+func validateApiIntegration_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -259,7 +259,7 @@ func validateApiIntegration_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateApiIntegration_IsTerraformElementParameters(x interface{}) error {
+func validateApiIntegration_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -267,7 +267,7 @@ func validateApiIntegration_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateApiIntegration_IsTerraformResourceParameters(x interface{}) error {
+func validateApiIntegration_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -275,7 +275,7 @@ func validateApiIntegration_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_ApiIntegration) validateSetAllowConfigurationAccessParameters(val interface{}) error {
+func (j *jsiiProxy_ApiIntegration) validateSetAllowConfigurationAccessParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -295,7 +295,7 @@ func (j *jsiiProxy_ApiIntegration) validateSetAllowConfigurationAccessParameters
 	return nil
 }
 
-func (j *jsiiProxy_ApiIntegration) validateSetAllowWriteAccessParameters(val interface{}) error {
+func (j *jsiiProxy_ApiIntegration) validateSetAllowWriteAccessParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -315,7 +315,7 @@ func (j *jsiiProxy_ApiIntegration) validateSetAllowWriteAccessParameters(val int
 	return nil
 }
 
-func (j *jsiiProxy_ApiIntegration) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ApiIntegration) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -348,7 +348,7 @@ func (j *jsiiProxy_ApiIntegration) validateSetConnectionParameters(val interface
 	return nil
 }
 
-func (j *jsiiProxy_ApiIntegration) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ApiIntegration) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -405,7 +405,7 @@ func (j *jsiiProxy_ApiIntegration) validateSetCountParameters(val interface{}) e
 	return nil
 }
 
-func (j *jsiiProxy_ApiIntegration) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_ApiIntegration) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -441,7 +441,7 @@ func (j *jsiiProxy_ApiIntegration) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_ApiIntegration) validateSetIgnoreRespondersFromPayloadParameters(val interface{}) error {
+func (j *jsiiProxy_ApiIntegration) validateSetIgnoreRespondersFromPayloadParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -485,7 +485,7 @@ func (j *jsiiProxy_ApiIntegration) validateSetOwnerTeamIdParameters(val *string)
 	return nil
 }
 
-func (j *jsiiProxy_ApiIntegration) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ApiIntegration) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -531,7 +531,7 @@ func (j *jsiiProxy_ApiIntegration) validateSetProvisionersParameters(val *[]inte
 	return nil
 }
 
-func (j *jsiiProxy_ApiIntegration) validateSetSuppressNotificationsParameters(val interface{}) error {
+func (j *jsiiProxy_ApiIntegration) validateSetSuppressNotificationsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -585,4 +585,3 @@ func validateNewApiIntegrationParameters(scope constructs.Construct, id *string,
 
 	return nil
 }
-

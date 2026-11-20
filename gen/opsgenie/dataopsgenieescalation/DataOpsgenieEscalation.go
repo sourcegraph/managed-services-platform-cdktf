@@ -15,11 +15,11 @@ type DataOpsgenieEscalation interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -55,21 +55,21 @@ type DataOpsgenieEscalation interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Repeat() DataOpsgenieEscalationRepeatList
-	RepeatInput() interface{}
+	RepeatInput() any
 	Rules() DataOpsgenieEscalationRulesList
-	RulesInput() interface{}
+	RulesInput() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -91,8 +91,8 @@ type DataOpsgenieEscalation interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutRepeat(value interface{})
-	PutRules(value interface{})
+	PutRepeat(value any)
+	PutRules(value any)
 	ResetDescription()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -101,18 +101,18 @@ type DataOpsgenieEscalation interface {
 	ResetOwnerTeamId()
 	ResetRepeat()
 	ResetRules()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataOpsgenieEscalation
@@ -130,8 +130,8 @@ func (j *jsiiProxy_DataOpsgenieEscalation) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_DataOpsgenieEscalation) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataOpsgenieEscalation) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -140,8 +140,8 @@ func (j *jsiiProxy_DataOpsgenieEscalation) ConstructNodeMetadata() *map[string]i
 	return returns
 }
 
-func (j *jsiiProxy_DataOpsgenieEscalation) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataOpsgenieEscalation) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -300,8 +300,8 @@ func (j *jsiiProxy_DataOpsgenieEscalation) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_DataOpsgenieEscalation) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataOpsgenieEscalation) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -320,8 +320,8 @@ func (j *jsiiProxy_DataOpsgenieEscalation) Repeat() DataOpsgenieEscalationRepeat
 	return returns
 }
 
-func (j *jsiiProxy_DataOpsgenieEscalation) RepeatInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataOpsgenieEscalation) RepeatInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"repeatInput",
@@ -340,8 +340,8 @@ func (j *jsiiProxy_DataOpsgenieEscalation) Rules() DataOpsgenieEscalationRulesLi
 	return returns
 }
 
-func (j *jsiiProxy_DataOpsgenieEscalation) RulesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataOpsgenieEscalation) RulesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rulesInput",
@@ -360,8 +360,8 @@ func (j *jsiiProxy_DataOpsgenieEscalation) TerraformGeneratorMetadata() *cdktf.T
 	return returns
 }
 
-func (j *jsiiProxy_DataOpsgenieEscalation) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataOpsgenieEscalation) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -380,7 +380,6 @@ func (j *jsiiProxy_DataOpsgenieEscalation) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/data-sources/escalation opsgenie_escalation} Data Source.
 func NewDataOpsgenieEscalation(scope constructs.Construct, id *string, config *DataOpsgenieEscalationConfig) DataOpsgenieEscalation {
 	_init_.Initialize()
@@ -392,7 +391,7 @@ func NewDataOpsgenieEscalation(scope constructs.Construct, id *string, config *D
 
 	_jsii_.Create(
 		"@cdktf/provider-opsgenie.dataOpsgenieEscalation.DataOpsgenieEscalation",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -405,12 +404,12 @@ func NewDataOpsgenieEscalation_Override(d DataOpsgenieEscalation, scope construc
 
 	_jsii_.Create(
 		"@cdktf/provider-opsgenie.dataOpsgenieEscalation.DataOpsgenieEscalation",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataOpsgenieEscalation)SetCount(val interface{}) {
+func (j *jsiiProxy_DataOpsgenieEscalation) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -421,7 +420,7 @@ func (j *jsiiProxy_DataOpsgenieEscalation)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataOpsgenieEscalation)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataOpsgenieEscalation) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -429,7 +428,7 @@ func (j *jsiiProxy_DataOpsgenieEscalation)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataOpsgenieEscalation)SetDescription(val *string) {
+func (j *jsiiProxy_DataOpsgenieEscalation) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -440,7 +439,7 @@ func (j *jsiiProxy_DataOpsgenieEscalation)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataOpsgenieEscalation)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataOpsgenieEscalation) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -448,7 +447,7 @@ func (j *jsiiProxy_DataOpsgenieEscalation)SetForEach(val cdktf.ITerraformIterato
 	)
 }
 
-func (j *jsiiProxy_DataOpsgenieEscalation)SetId(val *string) {
+func (j *jsiiProxy_DataOpsgenieEscalation) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -459,7 +458,7 @@ func (j *jsiiProxy_DataOpsgenieEscalation)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataOpsgenieEscalation)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataOpsgenieEscalation) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -470,7 +469,7 @@ func (j *jsiiProxy_DataOpsgenieEscalation)SetLifecycle(val *cdktf.TerraformResou
 	)
 }
 
-func (j *jsiiProxy_DataOpsgenieEscalation)SetName(val *string) {
+func (j *jsiiProxy_DataOpsgenieEscalation) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -481,7 +480,7 @@ func (j *jsiiProxy_DataOpsgenieEscalation)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataOpsgenieEscalation)SetOwnerTeamId(val *string) {
+func (j *jsiiProxy_DataOpsgenieEscalation) SetOwnerTeamId(val *string) {
 	if err := j.validateSetOwnerTeamIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -492,7 +491,7 @@ func (j *jsiiProxy_DataOpsgenieEscalation)SetOwnerTeamId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataOpsgenieEscalation)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataOpsgenieEscalation) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -512,7 +511,7 @@ func DataOpsgenieEscalation_GenerateConfigForImport(scope constructs.Construct, 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-opsgenie.dataOpsgenieEscalation.DataOpsgenieEscalation",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -536,7 +535,7 @@ func DataOpsgenieEscalation_GenerateConfigForImport(scope constructs.Construct, 
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataOpsgenieEscalation_IsConstruct(x interface{}) *bool {
+func DataOpsgenieEscalation_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataOpsgenieEscalation_IsConstructParameters(x); err != nil {
@@ -547,7 +546,7 @@ func DataOpsgenieEscalation_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-opsgenie.dataOpsgenieEscalation.DataOpsgenieEscalation",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -555,7 +554,7 @@ func DataOpsgenieEscalation_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataOpsgenieEscalation_IsTerraformDataSource(x interface{}) *bool {
+func DataOpsgenieEscalation_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataOpsgenieEscalation_IsTerraformDataSourceParameters(x); err != nil {
@@ -566,7 +565,7 @@ func DataOpsgenieEscalation_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-opsgenie.dataOpsgenieEscalation.DataOpsgenieEscalation",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -574,7 +573,7 @@ func DataOpsgenieEscalation_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataOpsgenieEscalation_IsTerraformElement(x interface{}) *bool {
+func DataOpsgenieEscalation_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataOpsgenieEscalation_IsTerraformElementParameters(x); err != nil {
@@ -585,7 +584,7 @@ func DataOpsgenieEscalation_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-opsgenie.dataOpsgenieEscalation.DataOpsgenieEscalation",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -603,27 +602,27 @@ func DataOpsgenieEscalation_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataOpsgenieEscalation) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataOpsgenieEscalation) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataOpsgenieEscalation) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataOpsgenieEscalation) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -639,7 +638,7 @@ func (d *jsiiProxy_DataOpsgenieEscalation) GetBooleanAttribute(terraformAttribut
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -655,7 +654,7 @@ func (d *jsiiProxy_DataOpsgenieEscalation) GetBooleanMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -671,7 +670,7 @@ func (d *jsiiProxy_DataOpsgenieEscalation) GetListAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -687,7 +686,7 @@ func (d *jsiiProxy_DataOpsgenieEscalation) GetNumberAttribute(terraformAttribute
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -703,7 +702,7 @@ func (d *jsiiProxy_DataOpsgenieEscalation) GetNumberListAttribute(terraformAttri
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -719,7 +718,7 @@ func (d *jsiiProxy_DataOpsgenieEscalation) GetNumberMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -735,7 +734,7 @@ func (d *jsiiProxy_DataOpsgenieEscalation) GetStringAttribute(terraformAttribute
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -751,7 +750,7 @@ func (d *jsiiProxy_DataOpsgenieEscalation) GetStringMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -767,7 +766,7 @@ func (d *jsiiProxy_DataOpsgenieEscalation) InterpolationForAttribute(terraformAt
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -781,29 +780,29 @@ func (d *jsiiProxy_DataOpsgenieEscalation) OverrideLogicalId(newLogicalId *strin
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (d *jsiiProxy_DataOpsgenieEscalation) PutRepeat(value interface{}) {
+func (d *jsiiProxy_DataOpsgenieEscalation) PutRepeat(value any) {
 	if err := d.validatePutRepeatParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putRepeat",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (d *jsiiProxy_DataOpsgenieEscalation) PutRules(value interface{}) {
+func (d *jsiiProxy_DataOpsgenieEscalation) PutRules(value any) {
 	if err := d.validatePutRulesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putRules",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -855,8 +854,8 @@ func (d *jsiiProxy_DataOpsgenieEscalation) ResetRules() {
 	)
 }
 
-func (d *jsiiProxy_DataOpsgenieEscalation) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataOpsgenieEscalation) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -868,8 +867,8 @@ func (d *jsiiProxy_DataOpsgenieEscalation) SynthesizeAttributes() *map[string]in
 	return returns
 }
 
-func (d *jsiiProxy_DataOpsgenieEscalation) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataOpsgenieEscalation) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -881,8 +880,8 @@ func (d *jsiiProxy_DataOpsgenieEscalation) SynthesizeHclAttributes() *map[string
 	return returns
 }
 
-func (d *jsiiProxy_DataOpsgenieEscalation) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataOpsgenieEscalation) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -894,8 +893,8 @@ func (d *jsiiProxy_DataOpsgenieEscalation) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataOpsgenieEscalation) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataOpsgenieEscalation) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -920,8 +919,8 @@ func (d *jsiiProxy_DataOpsgenieEscalation) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataOpsgenieEscalation) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataOpsgenieEscalation) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -932,4 +931,3 @@ func (d *jsiiProxy_DataOpsgenieEscalation) ToTerraform() interface{} {
 
 	return returns
 }
-

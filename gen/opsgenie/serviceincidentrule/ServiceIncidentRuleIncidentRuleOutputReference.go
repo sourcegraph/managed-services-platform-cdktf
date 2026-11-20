@@ -12,9 +12,9 @@ type ServiceIncidentRuleIncidentRuleOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -24,7 +24,7 @@ type ServiceIncidentRuleIncidentRuleOutputReference interface {
 	SetConditionMatchType(val *string)
 	ConditionMatchTypeInput() *string
 	Conditions() ServiceIncidentRuleIncidentRuleConditionsList
-	ConditionsInput() interface{}
+	ConditionsInput() any
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -33,9 +33,9 @@ type ServiceIncidentRuleIncidentRuleOutputReference interface {
 	// Experimental.
 	Fqn() *string
 	IncidentProperties() ServiceIncidentRuleIncidentRuleIncidentPropertiesList
-	IncidentPropertiesInput() interface{}
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	IncidentPropertiesInput() any
+	InternalValue() any
+	SetInternalValue(val any)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -47,7 +47,7 @@ type ServiceIncidentRuleIncidentRuleOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -68,13 +68,13 @@ type ServiceIncidentRuleIncidentRuleOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutConditions(value interface{})
-	PutIncidentProperties(value interface{})
+	PutConditions(value any)
+	PutIncidentProperties(value any)
 	ResetConditionMatchType()
 	ResetConditions()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -87,8 +87,8 @@ type jsiiProxy_ServiceIncidentRuleIncidentRuleOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ServiceIncidentRuleIncidentRuleOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ServiceIncidentRuleIncidentRuleOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -137,8 +137,8 @@ func (j *jsiiProxy_ServiceIncidentRuleIncidentRuleOutputReference) Conditions() 
 	return returns
 }
 
-func (j *jsiiProxy_ServiceIncidentRuleIncidentRuleOutputReference) ConditionsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ServiceIncidentRuleIncidentRuleOutputReference) ConditionsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"conditionsInput",
@@ -177,8 +177,8 @@ func (j *jsiiProxy_ServiceIncidentRuleIncidentRuleOutputReference) IncidentPrope
 	return returns
 }
 
-func (j *jsiiProxy_ServiceIncidentRuleIncidentRuleOutputReference) IncidentPropertiesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ServiceIncidentRuleIncidentRuleOutputReference) IncidentPropertiesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"incidentPropertiesInput",
@@ -187,8 +187,8 @@ func (j *jsiiProxy_ServiceIncidentRuleIncidentRuleOutputReference) IncidentPrope
 	return returns
 }
 
-func (j *jsiiProxy_ServiceIncidentRuleIncidentRuleOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ServiceIncidentRuleIncidentRuleOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -217,7 +217,6 @@ func (j *jsiiProxy_ServiceIncidentRuleIncidentRuleOutputReference) TerraformReso
 	return returns
 }
 
-
 func NewServiceIncidentRuleIncidentRuleOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ServiceIncidentRuleIncidentRuleOutputReference {
 	_init_.Initialize()
 
@@ -228,7 +227,7 @@ func NewServiceIncidentRuleIncidentRuleOutputReference(terraformResource cdktf.I
 
 	_jsii_.Create(
 		"@cdktf/provider-opsgenie.serviceIncidentRule.ServiceIncidentRuleIncidentRuleOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -240,12 +239,12 @@ func NewServiceIncidentRuleIncidentRuleOutputReference_Override(s ServiceInciden
 
 	_jsii_.Create(
 		"@cdktf/provider-opsgenie.serviceIncidentRule.ServiceIncidentRuleIncidentRuleOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)
 }
 
-func (j *jsiiProxy_ServiceIncidentRuleIncidentRuleOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ServiceIncidentRuleIncidentRuleOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -256,7 +255,7 @@ func (j *jsiiProxy_ServiceIncidentRuleIncidentRuleOutputReference)SetComplexObje
 	)
 }
 
-func (j *jsiiProxy_ServiceIncidentRuleIncidentRuleOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ServiceIncidentRuleIncidentRuleOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -267,7 +266,7 @@ func (j *jsiiProxy_ServiceIncidentRuleIncidentRuleOutputReference)SetComplexObje
 	)
 }
 
-func (j *jsiiProxy_ServiceIncidentRuleIncidentRuleOutputReference)SetConditionMatchType(val *string) {
+func (j *jsiiProxy_ServiceIncidentRuleIncidentRuleOutputReference) SetConditionMatchType(val *string) {
 	if err := j.validateSetConditionMatchTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -278,7 +277,7 @@ func (j *jsiiProxy_ServiceIncidentRuleIncidentRuleOutputReference)SetConditionMa
 	)
 }
 
-func (j *jsiiProxy_ServiceIncidentRuleIncidentRuleOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ServiceIncidentRuleIncidentRuleOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -289,7 +288,7 @@ func (j *jsiiProxy_ServiceIncidentRuleIncidentRuleOutputReference)SetInternalVal
 	)
 }
 
-func (j *jsiiProxy_ServiceIncidentRuleIncidentRuleOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ServiceIncidentRuleIncidentRuleOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -300,7 +299,7 @@ func (j *jsiiProxy_ServiceIncidentRuleIncidentRuleOutputReference)SetTerraformAt
 	)
 }
 
-func (j *jsiiProxy_ServiceIncidentRuleIncidentRuleOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ServiceIncidentRuleIncidentRuleOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -324,16 +323,16 @@ func (s *jsiiProxy_ServiceIncidentRuleIncidentRuleOutputReference) ComputeFqn() 
 	return returns
 }
 
-func (s *jsiiProxy_ServiceIncidentRuleIncidentRuleOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_ServiceIncidentRuleIncidentRuleOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -349,7 +348,7 @@ func (s *jsiiProxy_ServiceIncidentRuleIncidentRuleOutputReference) GetBooleanAtt
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -365,7 +364,7 @@ func (s *jsiiProxy_ServiceIncidentRuleIncidentRuleOutputReference) GetBooleanMap
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -381,7 +380,7 @@ func (s *jsiiProxy_ServiceIncidentRuleIncidentRuleOutputReference) GetListAttrib
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -397,7 +396,7 @@ func (s *jsiiProxy_ServiceIncidentRuleIncidentRuleOutputReference) GetNumberAttr
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -413,7 +412,7 @@ func (s *jsiiProxy_ServiceIncidentRuleIncidentRuleOutputReference) GetNumberList
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -429,7 +428,7 @@ func (s *jsiiProxy_ServiceIncidentRuleIncidentRuleOutputReference) GetNumberMapA
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -445,7 +444,7 @@ func (s *jsiiProxy_ServiceIncidentRuleIncidentRuleOutputReference) GetStringAttr
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -461,7 +460,7 @@ func (s *jsiiProxy_ServiceIncidentRuleIncidentRuleOutputReference) GetStringMapA
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -490,32 +489,32 @@ func (s *jsiiProxy_ServiceIncidentRuleIncidentRuleOutputReference) Interpolation
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_ServiceIncidentRuleIncidentRuleOutputReference) PutConditions(value interface{}) {
+func (s *jsiiProxy_ServiceIncidentRuleIncidentRuleOutputReference) PutConditions(value any) {
 	if err := s.validatePutConditionsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"putConditions",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (s *jsiiProxy_ServiceIncidentRuleIncidentRuleOutputReference) PutIncidentProperties(value interface{}) {
+func (s *jsiiProxy_ServiceIncidentRuleIncidentRuleOutputReference) PutIncidentProperties(value any) {
 	if err := s.validatePutIncidentPropertiesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"putIncidentProperties",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -535,16 +534,16 @@ func (s *jsiiProxy_ServiceIncidentRuleIncidentRuleOutputReference) ResetConditio
 	)
 }
 
-func (s *jsiiProxy_ServiceIncidentRuleIncidentRuleOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_ServiceIncidentRuleIncidentRuleOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := s.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -563,4 +562,3 @@ func (s *jsiiProxy_ServiceIncidentRuleIncidentRuleOutputReference) ToString() *s
 
 	return returns
 }
-

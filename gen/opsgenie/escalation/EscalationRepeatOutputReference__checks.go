@@ -98,7 +98,7 @@ func (e *jsiiProxy_EscalationRepeatOutputReference) validateResolveParameters(_c
 	return nil
 }
 
-func (j *jsiiProxy_EscalationRepeatOutputReference) validateSetCloseAlertAfterAllParameters(val interface{}) error {
+func (j *jsiiProxy_EscalationRepeatOutputReference) validateSetCloseAlertAfterAllParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -118,7 +118,7 @@ func (j *jsiiProxy_EscalationRepeatOutputReference) validateSetCloseAlertAfterAl
 	return nil
 }
 
-func (j *jsiiProxy_EscalationRepeatOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EscalationRepeatOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -191,7 +191,7 @@ func (j *jsiiProxy_EscalationRepeatOutputReference) validateSetCountParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_EscalationRepeatOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_EscalationRepeatOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -215,7 +215,7 @@ func (j *jsiiProxy_EscalationRepeatOutputReference) validateSetInternalValuePara
 	return nil
 }
 
-func (j *jsiiProxy_EscalationRepeatOutputReference) validateSetResetRecipientStatesParameters(val interface{}) error {
+func (j *jsiiProxy_EscalationRepeatOutputReference) validateSetResetRecipientStatesParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -278,4 +278,3 @@ func validateNewEscalationRepeatOutputReferenceParameters(terraformResource cdkt
 
 	return nil
 }
-

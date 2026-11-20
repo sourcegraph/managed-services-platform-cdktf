@@ -15,17 +15,17 @@ type TeamRoutingRule interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	Criteria() TeamRoutingRuleCriteriaList
-	CriteriaInput() interface{}
+	CriteriaInput() any
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -41,9 +41,9 @@ type TeamRoutingRule interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
-	IsDefault() interface{}
-	SetIsDefault(val interface{})
-	IsDefaultInput() interface{}
+	IsDefault() any
+	SetIsDefault(val any)
+	IsDefaultInput() any
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -54,7 +54,7 @@ type TeamRoutingRule interface {
 	// The tree node.
 	Node() constructs.Node
 	Notify() TeamRoutingRuleNotifyList
-	NotifyInput() interface{}
+	NotifyInput() any
 	Order() *float64
 	SetOrder(val *float64)
 	OrderInput() *float64
@@ -63,18 +63,18 @@ type TeamRoutingRule interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	TeamId() *string
 	SetTeamId(val *string)
 	TeamIdInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	TimeRestriction() TeamRoutingRuleTimeRestrictionOutputReference
@@ -86,9 +86,9 @@ type TeamRoutingRule interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -106,7 +106,7 @@ type TeamRoutingRule interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -118,15 +118,15 @@ type TeamRoutingRule interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutCriteria(value interface{})
-	PutNotify(value interface{})
+	PutCriteria(value any)
+	PutNotify(value any)
 	PutTimeRestriction(value *TeamRoutingRuleTimeRestriction)
 	ResetCriteria()
 	ResetId()
@@ -138,17 +138,17 @@ type TeamRoutingRule interface {
 	ResetOverrideLogicalId()
 	ResetTimeRestriction()
 	ResetTimezone()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for TeamRoutingRule
@@ -166,8 +166,8 @@ func (j *jsiiProxy_TeamRoutingRule) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_TeamRoutingRule) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TeamRoutingRule) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -176,8 +176,8 @@ func (j *jsiiProxy_TeamRoutingRule) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_TeamRoutingRule) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_TeamRoutingRule) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -186,8 +186,8 @@ func (j *jsiiProxy_TeamRoutingRule) ConstructNodeMetadata() *map[string]interfac
 	return returns
 }
 
-func (j *jsiiProxy_TeamRoutingRule) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TeamRoutingRule) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -206,8 +206,8 @@ func (j *jsiiProxy_TeamRoutingRule) Criteria() TeamRoutingRuleCriteriaList {
 	return returns
 }
 
-func (j *jsiiProxy_TeamRoutingRule) CriteriaInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TeamRoutingRule) CriteriaInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"criteriaInput",
@@ -276,8 +276,8 @@ func (j *jsiiProxy_TeamRoutingRule) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_TeamRoutingRule) IsDefault() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TeamRoutingRule) IsDefault() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"isDefault",
@@ -286,8 +286,8 @@ func (j *jsiiProxy_TeamRoutingRule) IsDefault() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_TeamRoutingRule) IsDefaultInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TeamRoutingRule) IsDefaultInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"isDefaultInput",
@@ -346,8 +346,8 @@ func (j *jsiiProxy_TeamRoutingRule) Notify() TeamRoutingRuleNotifyList {
 	return returns
 }
 
-func (j *jsiiProxy_TeamRoutingRule) NotifyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TeamRoutingRule) NotifyInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"notifyInput",
@@ -386,8 +386,8 @@ func (j *jsiiProxy_TeamRoutingRule) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_TeamRoutingRule) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_TeamRoutingRule) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -396,8 +396,8 @@ func (j *jsiiProxy_TeamRoutingRule) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_TeamRoutingRule) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TeamRoutingRule) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -436,8 +436,8 @@ func (j *jsiiProxy_TeamRoutingRule) TerraformGeneratorMetadata() *cdktf.Terrafor
 	return returns
 }
 
-func (j *jsiiProxy_TeamRoutingRule) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_TeamRoutingRule) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -496,7 +496,6 @@ func (j *jsiiProxy_TeamRoutingRule) TimezoneInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/resources/team_routing_rule opsgenie_team_routing_rule} Resource.
 func NewTeamRoutingRule(scope constructs.Construct, id *string, config *TeamRoutingRuleConfig) TeamRoutingRule {
 	_init_.Initialize()
@@ -508,7 +507,7 @@ func NewTeamRoutingRule(scope constructs.Construct, id *string, config *TeamRout
 
 	_jsii_.Create(
 		"@cdktf/provider-opsgenie.teamRoutingRule.TeamRoutingRule",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -521,12 +520,12 @@ func NewTeamRoutingRule_Override(t TeamRoutingRule, scope constructs.Construct, 
 
 	_jsii_.Create(
 		"@cdktf/provider-opsgenie.teamRoutingRule.TeamRoutingRule",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		t,
 	)
 }
 
-func (j *jsiiProxy_TeamRoutingRule)SetConnection(val interface{}) {
+func (j *jsiiProxy_TeamRoutingRule) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -537,7 +536,7 @@ func (j *jsiiProxy_TeamRoutingRule)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_TeamRoutingRule)SetCount(val interface{}) {
+func (j *jsiiProxy_TeamRoutingRule) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -548,7 +547,7 @@ func (j *jsiiProxy_TeamRoutingRule)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_TeamRoutingRule)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_TeamRoutingRule) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -556,7 +555,7 @@ func (j *jsiiProxy_TeamRoutingRule)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_TeamRoutingRule)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_TeamRoutingRule) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -564,7 +563,7 @@ func (j *jsiiProxy_TeamRoutingRule)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_TeamRoutingRule)SetId(val *string) {
+func (j *jsiiProxy_TeamRoutingRule) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -575,7 +574,7 @@ func (j *jsiiProxy_TeamRoutingRule)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_TeamRoutingRule)SetIsDefault(val interface{}) {
+func (j *jsiiProxy_TeamRoutingRule) SetIsDefault(val any) {
 	if err := j.validateSetIsDefaultParameters(val); err != nil {
 		panic(err)
 	}
@@ -586,7 +585,7 @@ func (j *jsiiProxy_TeamRoutingRule)SetIsDefault(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_TeamRoutingRule)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_TeamRoutingRule) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -597,7 +596,7 @@ func (j *jsiiProxy_TeamRoutingRule)SetLifecycle(val *cdktf.TerraformResourceLife
 	)
 }
 
-func (j *jsiiProxy_TeamRoutingRule)SetName(val *string) {
+func (j *jsiiProxy_TeamRoutingRule) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -608,7 +607,7 @@ func (j *jsiiProxy_TeamRoutingRule)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_TeamRoutingRule)SetOrder(val *float64) {
+func (j *jsiiProxy_TeamRoutingRule) SetOrder(val *float64) {
 	if err := j.validateSetOrderParameters(val); err != nil {
 		panic(err)
 	}
@@ -619,7 +618,7 @@ func (j *jsiiProxy_TeamRoutingRule)SetOrder(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_TeamRoutingRule)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_TeamRoutingRule) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -627,7 +626,7 @@ func (j *jsiiProxy_TeamRoutingRule)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_TeamRoutingRule)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_TeamRoutingRule) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -638,7 +637,7 @@ func (j *jsiiProxy_TeamRoutingRule)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_TeamRoutingRule)SetTeamId(val *string) {
+func (j *jsiiProxy_TeamRoutingRule) SetTeamId(val *string) {
 	if err := j.validateSetTeamIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -649,7 +648,7 @@ func (j *jsiiProxy_TeamRoutingRule)SetTeamId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_TeamRoutingRule)SetTimezone(val *string) {
+func (j *jsiiProxy_TeamRoutingRule) SetTimezone(val *string) {
 	if err := j.validateSetTimezoneParameters(val); err != nil {
 		panic(err)
 	}
@@ -672,7 +671,7 @@ func TeamRoutingRule_GenerateConfigForImport(scope constructs.Construct, importT
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-opsgenie.teamRoutingRule.TeamRoutingRule",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -696,7 +695,7 @@ func TeamRoutingRule_GenerateConfigForImport(scope constructs.Construct, importT
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func TeamRoutingRule_IsConstruct(x interface{}) *bool {
+func TeamRoutingRule_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateTeamRoutingRule_IsConstructParameters(x); err != nil {
@@ -707,7 +706,7 @@ func TeamRoutingRule_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-opsgenie.teamRoutingRule.TeamRoutingRule",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -715,7 +714,7 @@ func TeamRoutingRule_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func TeamRoutingRule_IsTerraformElement(x interface{}) *bool {
+func TeamRoutingRule_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateTeamRoutingRule_IsTerraformElementParameters(x); err != nil {
@@ -726,7 +725,7 @@ func TeamRoutingRule_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-opsgenie.teamRoutingRule.TeamRoutingRule",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -734,7 +733,7 @@ func TeamRoutingRule_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func TeamRoutingRule_IsTerraformResource(x interface{}) *bool {
+func TeamRoutingRule_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateTeamRoutingRule_IsTerraformResourceParameters(x); err != nil {
@@ -745,7 +744,7 @@ func TeamRoutingRule_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-opsgenie.teamRoutingRule.TeamRoutingRule",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -770,31 +769,31 @@ func (t *jsiiProxy_TeamRoutingRule) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		t,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (t *jsiiProxy_TeamRoutingRule) AddOverride(path *string, value interface{}) {
+func (t *jsiiProxy_TeamRoutingRule) AddOverride(path *string, value any) {
 	if err := t.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		t,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (t *jsiiProxy_TeamRoutingRule) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (t *jsiiProxy_TeamRoutingRule) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := t.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		t,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -810,7 +809,7 @@ func (t *jsiiProxy_TeamRoutingRule) GetBooleanAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		t,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -826,7 +825,7 @@ func (t *jsiiProxy_TeamRoutingRule) GetBooleanMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		t,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -842,7 +841,7 @@ func (t *jsiiProxy_TeamRoutingRule) GetListAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		t,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -858,7 +857,7 @@ func (t *jsiiProxy_TeamRoutingRule) GetNumberAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		t,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -874,7 +873,7 @@ func (t *jsiiProxy_TeamRoutingRule) GetNumberListAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		t,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -890,7 +889,7 @@ func (t *jsiiProxy_TeamRoutingRule) GetNumberMapAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		t,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -906,7 +905,7 @@ func (t *jsiiProxy_TeamRoutingRule) GetStringAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		t,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -922,15 +921,15 @@ func (t *jsiiProxy_TeamRoutingRule) GetStringMapAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		t,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (t *jsiiProxy_TeamRoutingRule) HasResourceMove() interface{} {
-	var returns interface{}
+func (t *jsiiProxy_TeamRoutingRule) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		t,
@@ -949,7 +948,7 @@ func (t *jsiiProxy_TeamRoutingRule) ImportFrom(id *string, provider cdktf.Terraf
 	_jsii_.InvokeVoid(
 		t,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -962,7 +961,7 @@ func (t *jsiiProxy_TeamRoutingRule) InterpolationForAttribute(terraformAttribute
 	_jsii_.Invoke(
 		t,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -976,18 +975,18 @@ func (t *jsiiProxy_TeamRoutingRule) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		t,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (t *jsiiProxy_TeamRoutingRule) MoveTo(moveTarget *string, index interface{}) {
+func (t *jsiiProxy_TeamRoutingRule) MoveTo(moveTarget *string, index any) {
 	if err := t.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		t,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -998,7 +997,7 @@ func (t *jsiiProxy_TeamRoutingRule) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		t,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1009,29 +1008,29 @@ func (t *jsiiProxy_TeamRoutingRule) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		t,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (t *jsiiProxy_TeamRoutingRule) PutCriteria(value interface{}) {
+func (t *jsiiProxy_TeamRoutingRule) PutCriteria(value any) {
 	if err := t.validatePutCriteriaParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		t,
 		"putCriteria",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (t *jsiiProxy_TeamRoutingRule) PutNotify(value interface{}) {
+func (t *jsiiProxy_TeamRoutingRule) PutNotify(value any) {
 	if err := t.validatePutNotifyParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		t,
 		"putNotify",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1042,7 +1041,7 @@ func (t *jsiiProxy_TeamRoutingRule) PutTimeRestriction(value *TeamRoutingRuleTim
 	_jsii_.InvokeVoid(
 		t,
 		"putTimeRestriction",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1110,8 +1109,8 @@ func (t *jsiiProxy_TeamRoutingRule) ResetTimezone() {
 	)
 }
 
-func (t *jsiiProxy_TeamRoutingRule) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (t *jsiiProxy_TeamRoutingRule) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		t,
@@ -1123,8 +1122,8 @@ func (t *jsiiProxy_TeamRoutingRule) SynthesizeAttributes() *map[string]interface
 	return returns
 }
 
-func (t *jsiiProxy_TeamRoutingRule) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (t *jsiiProxy_TeamRoutingRule) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		t,
@@ -1136,8 +1135,8 @@ func (t *jsiiProxy_TeamRoutingRule) SynthesizeHclAttributes() *map[string]interf
 	return returns
 }
 
-func (t *jsiiProxy_TeamRoutingRule) ToHclTerraform() interface{} {
-	var returns interface{}
+func (t *jsiiProxy_TeamRoutingRule) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		t,
@@ -1149,8 +1148,8 @@ func (t *jsiiProxy_TeamRoutingRule) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (t *jsiiProxy_TeamRoutingRule) ToMetadata() interface{} {
-	var returns interface{}
+func (t *jsiiProxy_TeamRoutingRule) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		t,
@@ -1175,8 +1174,8 @@ func (t *jsiiProxy_TeamRoutingRule) ToString() *string {
 	return returns
 }
 
-func (t *jsiiProxy_TeamRoutingRule) ToTerraform() interface{} {
-	var returns interface{}
+func (t *jsiiProxy_TeamRoutingRule) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		t,
@@ -1187,4 +1186,3 @@ func (t *jsiiProxy_TeamRoutingRule) ToTerraform() interface{} {
 
 	return returns
 }
-

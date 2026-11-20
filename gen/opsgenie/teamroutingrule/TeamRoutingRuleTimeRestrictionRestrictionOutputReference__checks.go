@@ -98,7 +98,7 @@ func (t *jsiiProxy_TeamRoutingRuleTimeRestrictionRestrictionOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_TeamRoutingRuleTimeRestrictionRestrictionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_TeamRoutingRuleTimeRestrictionRestrictionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -230,4 +230,3 @@ func validateNewTeamRoutingRuleTimeRestrictionRestrictionOutputReferenceParamete
 
 	return nil
 }
-

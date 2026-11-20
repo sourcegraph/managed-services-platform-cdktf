@@ -98,7 +98,7 @@ func (n *jsiiProxy_NotificationPolicyDeDuplicationActionDurationOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_NotificationPolicyDeDuplicationActionDurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NotificationPolicyDeDuplicationActionDurationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_NotificationPolicyDeDuplicationActionDurationOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_NotificationPolicyDeDuplicationActionDurationOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_NotificationPolicyDeDuplicationActionDurationOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewNotificationPolicyDeDuplicationActionDurationOutputReferencePara
 
 	return nil
 }
-

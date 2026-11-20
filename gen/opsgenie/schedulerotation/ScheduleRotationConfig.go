@@ -6,9 +6,9 @@ import (
 
 type ScheduleRotationConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,11 +18,11 @@ type ScheduleRotationConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// participant block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/resources/schedule_rotation#participant ScheduleRotation#participant}
-	Participant interface{} `field:"required" json:"participant" yaml:"participant"`
+	Participant any `field:"required" json:"participant" yaml:"participant"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/resources/schedule_rotation#schedule_id ScheduleRotation#schedule_id}.
 	ScheduleId *string `field:"required" json:"scheduleId" yaml:"scheduleId"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/resources/schedule_rotation#start_date ScheduleRotation#start_date}.
@@ -45,4 +45,3 @@ type ScheduleRotationConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/resources/schedule_rotation#time_restriction ScheduleRotation#time_restriction}
 	TimeRestriction *ScheduleRotationTimeRestriction `field:"optional" json:"timeRestriction" yaml:"timeRestriction"`
 }
-

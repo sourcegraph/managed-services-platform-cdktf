@@ -98,7 +98,7 @@ func (t *jsiiProxy_TeamMemberOutputReference) validateResolveParameters(_context
 	return nil
 }
 
-func (j *jsiiProxy_TeamMemberOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_TeamMemberOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_TeamMemberOutputReference) validateSetIdParameters(val *strin
 	return nil
 }
 
-func (j *jsiiProxy_TeamMemberOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_TeamMemberOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewTeamMemberOutputReferenceParameters(terraformResource cdktf.IInt
 
 	return nil
 }
-

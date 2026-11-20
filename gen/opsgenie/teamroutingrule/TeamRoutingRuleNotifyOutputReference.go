@@ -12,9 +12,9 @@ type TeamRoutingRuleNotifyOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -30,8 +30,8 @@ type TeamRoutingRuleNotifyOutputReference interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -49,7 +49,7 @@ type TeamRoutingRuleNotifyOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -74,7 +74,7 @@ type TeamRoutingRuleNotifyOutputReference interface {
 	ResetName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -87,8 +87,8 @@ type jsiiProxy_TeamRoutingRuleNotifyOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_TeamRoutingRuleNotifyOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TeamRoutingRuleNotifyOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -147,8 +147,8 @@ func (j *jsiiProxy_TeamRoutingRuleNotifyOutputReference) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_TeamRoutingRuleNotifyOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TeamRoutingRuleNotifyOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -217,7 +217,6 @@ func (j *jsiiProxy_TeamRoutingRuleNotifyOutputReference) TypeInput() *string {
 	return returns
 }
 
-
 func NewTeamRoutingRuleNotifyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) TeamRoutingRuleNotifyOutputReference {
 	_init_.Initialize()
 
@@ -228,7 +227,7 @@ func NewTeamRoutingRuleNotifyOutputReference(terraformResource cdktf.IInterpolat
 
 	_jsii_.Create(
 		"@cdktf/provider-opsgenie.teamRoutingRule.TeamRoutingRuleNotifyOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -240,12 +239,12 @@ func NewTeamRoutingRuleNotifyOutputReference_Override(t TeamRoutingRuleNotifyOut
 
 	_jsii_.Create(
 		"@cdktf/provider-opsgenie.teamRoutingRule.TeamRoutingRuleNotifyOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		t,
 	)
 }
 
-func (j *jsiiProxy_TeamRoutingRuleNotifyOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_TeamRoutingRuleNotifyOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -256,7 +255,7 @@ func (j *jsiiProxy_TeamRoutingRuleNotifyOutputReference)SetComplexObjectIndex(va
 	)
 }
 
-func (j *jsiiProxy_TeamRoutingRuleNotifyOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_TeamRoutingRuleNotifyOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -267,7 +266,7 @@ func (j *jsiiProxy_TeamRoutingRuleNotifyOutputReference)SetComplexObjectIsFromSe
 	)
 }
 
-func (j *jsiiProxy_TeamRoutingRuleNotifyOutputReference)SetId(val *string) {
+func (j *jsiiProxy_TeamRoutingRuleNotifyOutputReference) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -278,7 +277,7 @@ func (j *jsiiProxy_TeamRoutingRuleNotifyOutputReference)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_TeamRoutingRuleNotifyOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_TeamRoutingRuleNotifyOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -289,7 +288,7 @@ func (j *jsiiProxy_TeamRoutingRuleNotifyOutputReference)SetInternalValue(val int
 	)
 }
 
-func (j *jsiiProxy_TeamRoutingRuleNotifyOutputReference)SetName(val *string) {
+func (j *jsiiProxy_TeamRoutingRuleNotifyOutputReference) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -300,7 +299,7 @@ func (j *jsiiProxy_TeamRoutingRuleNotifyOutputReference)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_TeamRoutingRuleNotifyOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_TeamRoutingRuleNotifyOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -311,7 +310,7 @@ func (j *jsiiProxy_TeamRoutingRuleNotifyOutputReference)SetTerraformAttribute(va
 	)
 }
 
-func (j *jsiiProxy_TeamRoutingRuleNotifyOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_TeamRoutingRuleNotifyOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -322,7 +321,7 @@ func (j *jsiiProxy_TeamRoutingRuleNotifyOutputReference)SetTerraformResource(val
 	)
 }
 
-func (j *jsiiProxy_TeamRoutingRuleNotifyOutputReference)SetType(val *string) {
+func (j *jsiiProxy_TeamRoutingRuleNotifyOutputReference) SetType(val *string) {
 	if err := j.validateSetTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -346,16 +345,16 @@ func (t *jsiiProxy_TeamRoutingRuleNotifyOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (t *jsiiProxy_TeamRoutingRuleNotifyOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (t *jsiiProxy_TeamRoutingRuleNotifyOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := t.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		t,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -371,7 +370,7 @@ func (t *jsiiProxy_TeamRoutingRuleNotifyOutputReference) GetBooleanAttribute(ter
 	_jsii_.Invoke(
 		t,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -387,7 +386,7 @@ func (t *jsiiProxy_TeamRoutingRuleNotifyOutputReference) GetBooleanMapAttribute(
 	_jsii_.Invoke(
 		t,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -403,7 +402,7 @@ func (t *jsiiProxy_TeamRoutingRuleNotifyOutputReference) GetListAttribute(terraf
 	_jsii_.Invoke(
 		t,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -419,7 +418,7 @@ func (t *jsiiProxy_TeamRoutingRuleNotifyOutputReference) GetNumberAttribute(terr
 	_jsii_.Invoke(
 		t,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -435,7 +434,7 @@ func (t *jsiiProxy_TeamRoutingRuleNotifyOutputReference) GetNumberListAttribute(
 	_jsii_.Invoke(
 		t,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -451,7 +450,7 @@ func (t *jsiiProxy_TeamRoutingRuleNotifyOutputReference) GetNumberMapAttribute(t
 	_jsii_.Invoke(
 		t,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -467,7 +466,7 @@ func (t *jsiiProxy_TeamRoutingRuleNotifyOutputReference) GetStringAttribute(terr
 	_jsii_.Invoke(
 		t,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -483,7 +482,7 @@ func (t *jsiiProxy_TeamRoutingRuleNotifyOutputReference) GetStringMapAttribute(t
 	_jsii_.Invoke(
 		t,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -512,7 +511,7 @@ func (t *jsiiProxy_TeamRoutingRuleNotifyOutputReference) InterpolationForAttribu
 	_jsii_.Invoke(
 		t,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -535,16 +534,16 @@ func (t *jsiiProxy_TeamRoutingRuleNotifyOutputReference) ResetName() {
 	)
 }
 
-func (t *jsiiProxy_TeamRoutingRuleNotifyOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (t *jsiiProxy_TeamRoutingRuleNotifyOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := t.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		t,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -563,4 +562,3 @@ func (t *jsiiProxy_TeamRoutingRuleNotifyOutputReference) ToString() *string {
 
 	return returns
 }
-

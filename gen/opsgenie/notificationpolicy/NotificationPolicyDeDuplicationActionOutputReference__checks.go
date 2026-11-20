@@ -90,7 +90,7 @@ func (n *jsiiProxy_NotificationPolicyDeDuplicationActionOutputReference) validat
 	return nil
 }
 
-func (n *jsiiProxy_NotificationPolicyDeDuplicationActionOutputReference) validatePutDurationParameters(value interface{}) error {
+func (n *jsiiProxy_NotificationPolicyDeDuplicationActionOutputReference) validatePutDurationParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (n *jsiiProxy_NotificationPolicyDeDuplicationActionOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_NotificationPolicyDeDuplicationActionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NotificationPolicyDeDuplicationActionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -245,4 +245,3 @@ func validateNewNotificationPolicyDeDuplicationActionOutputReferenceParameters(t
 
 	return nil
 }
-

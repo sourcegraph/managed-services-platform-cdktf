@@ -98,7 +98,7 @@ func (m *jsiiProxy_MaintenanceTimeOutputReference) validateResolveParameters(_co
 	return nil
 }
 
-func (j *jsiiProxy_MaintenanceTimeOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MaintenanceTimeOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_MaintenanceTimeOutputReference) validateSetEndDateParameters(
 	return nil
 }
 
-func (j *jsiiProxy_MaintenanceTimeOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_MaintenanceTimeOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewMaintenanceTimeOutputReferenceParameters(terraformResource cdktf
 
 	return nil
 }
-

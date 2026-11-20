@@ -1,6 +1,5 @@
 package notificationrule
 
-
 type NotificationRuleCriteriaConditions struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/resources/notification_rule#field NotificationRule#field}.
 	Field *string `field:"required" json:"field" yaml:"field"`
@@ -11,8 +10,7 @@ type NotificationRuleCriteriaConditions struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/resources/notification_rule#key NotificationRule#key}.
 	Key *string `field:"optional" json:"key" yaml:"key"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/resources/notification_rule#not NotificationRule#not}.
-	Not interface{} `field:"optional" json:"not" yaml:"not"`
+	Not any `field:"optional" json:"not" yaml:"not"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/resources/notification_rule#order NotificationRule#order}.
 	Order *float64 `field:"optional" json:"order" yaml:"order"`
 }
-

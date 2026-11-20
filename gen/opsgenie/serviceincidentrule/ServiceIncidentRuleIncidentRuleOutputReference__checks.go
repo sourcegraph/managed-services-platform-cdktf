@@ -90,7 +90,7 @@ func (s *jsiiProxy_ServiceIncidentRuleIncidentRuleOutputReference) validateInter
 	return nil
 }
 
-func (s *jsiiProxy_ServiceIncidentRuleIncidentRuleOutputReference) validatePutConditionsParameters(value interface{}) error {
+func (s *jsiiProxy_ServiceIncidentRuleIncidentRuleOutputReference) validatePutConditionsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (s *jsiiProxy_ServiceIncidentRuleIncidentRuleOutputReference) validatePutCo
 	return nil
 }
 
-func (s *jsiiProxy_ServiceIncidentRuleIncidentRuleOutputReference) validatePutIncidentPropertiesParameters(value interface{}) error {
+func (s *jsiiProxy_ServiceIncidentRuleIncidentRuleOutputReference) validatePutIncidentPropertiesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -160,7 +160,7 @@ func (s *jsiiProxy_ServiceIncidentRuleIncidentRuleOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_ServiceIncidentRuleIncidentRuleOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ServiceIncidentRuleIncidentRuleOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -233,7 +233,7 @@ func (j *jsiiProxy_ServiceIncidentRuleIncidentRuleOutputReference) validateSetCo
 	return nil
 }
 
-func (j *jsiiProxy_ServiceIncidentRuleIncidentRuleOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ServiceIncidentRuleIncidentRuleOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -292,4 +292,3 @@ func validateNewServiceIncidentRuleIncidentRuleOutputReferenceParameters(terrafo
 
 	return nil
 }
-

@@ -1,6 +1,5 @@
 package integrationaction
 
-
 type IntegrationActionCreateFilterConditions struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/resources/integration_action#field IntegrationAction#field}.
 	Field *string `field:"required" json:"field" yaml:"field"`
@@ -11,8 +10,7 @@ type IntegrationActionCreateFilterConditions struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/resources/integration_action#key IntegrationAction#key}.
 	Key *string `field:"optional" json:"key" yaml:"key"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/resources/integration_action#not IntegrationAction#not}.
-	Not interface{} `field:"optional" json:"not" yaml:"not"`
+	Not any `field:"optional" json:"not" yaml:"not"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/resources/integration_action#order IntegrationAction#order}.
 	Order *float64 `field:"optional" json:"order" yaml:"order"`
 }
-

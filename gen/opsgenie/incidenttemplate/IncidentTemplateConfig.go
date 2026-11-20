@@ -6,9 +6,9 @@ import (
 
 type IncidentTemplateConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type IncidentTemplateConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/resources/incident_template#message IncidentTemplate#message}.
 	Message *string `field:"required" json:"message" yaml:"message"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/resources/incident_template#name IncidentTemplate#name}.
@@ -28,7 +28,7 @@ type IncidentTemplateConfig struct {
 	// stakeholder_properties block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/resources/incident_template#stakeholder_properties IncidentTemplate#stakeholder_properties}
-	StakeholderProperties interface{} `field:"required" json:"stakeholderProperties" yaml:"stakeholderProperties"`
+	StakeholderProperties any `field:"required" json:"stakeholderProperties" yaml:"stakeholderProperties"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/resources/incident_template#description IncidentTemplate#description}.
 	Description *string `field:"optional" json:"description" yaml:"description"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/resources/incident_template#details IncidentTemplate#details}.
@@ -43,4 +43,3 @@ type IncidentTemplateConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/resources/incident_template#tags IncidentTemplate#tags}.
 	Tags *[]*string `field:"optional" json:"tags" yaml:"tags"`
 }
-

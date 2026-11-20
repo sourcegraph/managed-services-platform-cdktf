@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-opsgenie.teamRoutingRule.TeamRoutingRule",
-		reflect.TypeOf((*TeamRoutingRule)(nil)).Elem(),
+		reflect.TypeFor[TeamRoutingRule](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -81,7 +81,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TeamRoutingRule{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -89,19 +89,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-opsgenie.teamRoutingRule.TeamRoutingRuleConfig",
-		reflect.TypeOf((*TeamRoutingRuleConfig)(nil)).Elem(),
+		reflect.TypeFor[TeamRoutingRuleConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-opsgenie.teamRoutingRule.TeamRoutingRuleCriteria",
-		reflect.TypeOf((*TeamRoutingRuleCriteria)(nil)).Elem(),
+		reflect.TypeFor[TeamRoutingRuleCriteria](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-opsgenie.teamRoutingRule.TeamRoutingRuleCriteriaConditions",
-		reflect.TypeOf((*TeamRoutingRuleCriteriaConditions)(nil)).Elem(),
+		reflect.TypeFor[TeamRoutingRuleCriteriaConditions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-opsgenie.teamRoutingRule.TeamRoutingRuleCriteriaConditionsList",
-		reflect.TypeOf((*TeamRoutingRuleCriteriaConditionsList)(nil)).Elem(),
+		reflect.TypeFor[TeamRoutingRuleCriteriaConditionsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -115,7 +115,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TeamRoutingRuleCriteriaConditionsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -123,7 +123,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-opsgenie.teamRoutingRule.TeamRoutingRuleCriteriaConditionsOutputReference",
-		reflect.TypeOf((*TeamRoutingRuleCriteriaConditionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[TeamRoutingRuleCriteriaConditionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -163,7 +163,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TeamRoutingRuleCriteriaConditionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -171,7 +171,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-opsgenie.teamRoutingRule.TeamRoutingRuleCriteriaList",
-		reflect.TypeOf((*TeamRoutingRuleCriteriaList)(nil)).Elem(),
+		reflect.TypeFor[TeamRoutingRuleCriteriaList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -185,7 +185,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TeamRoutingRuleCriteriaList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -193,7 +193,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-opsgenie.teamRoutingRule.TeamRoutingRuleCriteriaOutputReference",
-		reflect.TypeOf((*TeamRoutingRuleCriteriaOutputReference)(nil)).Elem(),
+		reflect.TypeFor[TeamRoutingRuleCriteriaOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -223,7 +223,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TeamRoutingRuleCriteriaOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -231,11 +231,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-opsgenie.teamRoutingRule.TeamRoutingRuleNotify",
-		reflect.TypeOf((*TeamRoutingRuleNotify)(nil)).Elem(),
+		reflect.TypeFor[TeamRoutingRuleNotify](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-opsgenie.teamRoutingRule.TeamRoutingRuleNotifyList",
-		reflect.TypeOf((*TeamRoutingRuleNotifyList)(nil)).Elem(),
+		reflect.TypeFor[TeamRoutingRuleNotifyList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -249,7 +249,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TeamRoutingRuleNotifyList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -257,7 +257,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-opsgenie.teamRoutingRule.TeamRoutingRuleNotifyOutputReference",
-		reflect.TypeOf((*TeamRoutingRuleNotifyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[TeamRoutingRuleNotifyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -289,7 +289,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TeamRoutingRuleNotifyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -297,11 +297,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-opsgenie.teamRoutingRule.TeamRoutingRuleTimeRestriction",
-		reflect.TypeOf((*TeamRoutingRuleTimeRestriction)(nil)).Elem(),
+		reflect.TypeFor[TeamRoutingRuleTimeRestriction](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-opsgenie.teamRoutingRule.TeamRoutingRuleTimeRestrictionOutputReference",
-		reflect.TypeOf((*TeamRoutingRuleTimeRestrictionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[TeamRoutingRuleTimeRestrictionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -335,7 +335,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TeamRoutingRuleTimeRestrictionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -343,11 +343,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-opsgenie.teamRoutingRule.TeamRoutingRuleTimeRestrictionRestriction",
-		reflect.TypeOf((*TeamRoutingRuleTimeRestrictionRestriction)(nil)).Elem(),
+		reflect.TypeFor[TeamRoutingRuleTimeRestrictionRestriction](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-opsgenie.teamRoutingRule.TeamRoutingRuleTimeRestrictionRestrictionOutputReference",
-		reflect.TypeOf((*TeamRoutingRuleTimeRestrictionRestrictionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[TeamRoutingRuleTimeRestrictionRestrictionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -379,7 +379,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TeamRoutingRuleTimeRestrictionRestrictionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -387,11 +387,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-opsgenie.teamRoutingRule.TeamRoutingRuleTimeRestrictionRestrictions",
-		reflect.TypeOf((*TeamRoutingRuleTimeRestrictionRestrictions)(nil)).Elem(),
+		reflect.TypeFor[TeamRoutingRuleTimeRestrictionRestrictions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-opsgenie.teamRoutingRule.TeamRoutingRuleTimeRestrictionRestrictionsList",
-		reflect.TypeOf((*TeamRoutingRuleTimeRestrictionRestrictionsList)(nil)).Elem(),
+		reflect.TypeFor[TeamRoutingRuleTimeRestrictionRestrictionsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -405,7 +405,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TeamRoutingRuleTimeRestrictionRestrictionsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -413,7 +413,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-opsgenie.teamRoutingRule.TeamRoutingRuleTimeRestrictionRestrictionsOutputReference",
-		reflect.TypeOf((*TeamRoutingRuleTimeRestrictionRestrictionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[TeamRoutingRuleTimeRestrictionRestrictionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -449,7 +449,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TeamRoutingRuleTimeRestrictionRestrictionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

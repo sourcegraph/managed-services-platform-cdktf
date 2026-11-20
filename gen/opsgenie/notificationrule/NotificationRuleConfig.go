@@ -6,9 +6,9 @@ import (
 
 type NotificationRuleConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type NotificationRuleConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/resources/notification_rule#action_type NotificationRule#action_type}.
 	ActionType *string `field:"required" json:"actionType" yaml:"actionType"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/resources/notification_rule#name NotificationRule#name}.
@@ -28,9 +28,9 @@ type NotificationRuleConfig struct {
 	// criteria block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/resources/notification_rule#criteria NotificationRule#criteria}
-	Criteria interface{} `field:"optional" json:"criteria" yaml:"criteria"`
+	Criteria any `field:"optional" json:"criteria" yaml:"criteria"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/resources/notification_rule#enabled NotificationRule#enabled}.
-	Enabled interface{} `field:"optional" json:"enabled" yaml:"enabled"`
+	Enabled any `field:"optional" json:"enabled" yaml:"enabled"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/resources/notification_rule#id NotificationRule#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -43,18 +43,17 @@ type NotificationRuleConfig struct {
 	// repeat block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/resources/notification_rule#repeat NotificationRule#repeat}
-	Repeat interface{} `field:"optional" json:"repeat" yaml:"repeat"`
+	Repeat any `field:"optional" json:"repeat" yaml:"repeat"`
 	// schedules block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/resources/notification_rule#schedules NotificationRule#schedules}
-	Schedules interface{} `field:"optional" json:"schedules" yaml:"schedules"`
+	Schedules any `field:"optional" json:"schedules" yaml:"schedules"`
 	// steps block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/resources/notification_rule#steps NotificationRule#steps}
-	Steps interface{} `field:"optional" json:"steps" yaml:"steps"`
+	Steps any `field:"optional" json:"steps" yaml:"steps"`
 	// time_restriction block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/resources/notification_rule#time_restriction NotificationRule#time_restriction}
 	TimeRestriction *NotificationRuleTimeRestriction `field:"optional" json:"timeRestriction" yaml:"timeRestriction"`
 }
-

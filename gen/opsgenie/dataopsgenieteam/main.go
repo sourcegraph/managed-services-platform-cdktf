@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-opsgenie.dataOpsgenieTeam.DataOpsgenieTeam",
-		reflect.TypeOf((*DataOpsgenieTeam)(nil)).Elem(),
+		reflect.TypeFor[DataOpsgenieTeam](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
@@ -57,7 +57,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataOpsgenieTeam{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -65,15 +65,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-opsgenie.dataOpsgenieTeam.DataOpsgenieTeamConfig",
-		reflect.TypeOf((*DataOpsgenieTeamConfig)(nil)).Elem(),
+		reflect.TypeFor[DataOpsgenieTeamConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-opsgenie.dataOpsgenieTeam.DataOpsgenieTeamMember",
-		reflect.TypeOf((*DataOpsgenieTeamMember)(nil)).Elem(),
+		reflect.TypeFor[DataOpsgenieTeamMember](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-opsgenie.dataOpsgenieTeam.DataOpsgenieTeamMemberList",
-		reflect.TypeOf((*DataOpsgenieTeamMemberList)(nil)).Elem(),
+		reflect.TypeFor[DataOpsgenieTeamMemberList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -87,7 +87,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataOpsgenieTeamMemberList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -95,7 +95,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-opsgenie.dataOpsgenieTeam.DataOpsgenieTeamMemberOutputReference",
-		reflect.TypeOf((*DataOpsgenieTeamMemberOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataOpsgenieTeamMemberOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -128,7 +128,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "username", GoGetter: "Username"},
 			_jsii_.MemberProperty{JsiiProperty: "usernameInput", GoGetter: "UsernameInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataOpsgenieTeamMemberOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

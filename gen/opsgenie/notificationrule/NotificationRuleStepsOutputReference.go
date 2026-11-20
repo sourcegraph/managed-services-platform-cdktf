@@ -12,28 +12,28 @@ type NotificationRuleStepsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
 	Contact() NotificationRuleStepsContactList
-	ContactInput() interface{}
+	ContactInput() any
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	Enabled() interface{}
-	SetEnabled(val interface{})
-	EnabledInput() interface{}
+	Enabled() any
+	SetEnabled(val any)
+	EnabledInput() any
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	SendAfter() *float64
 	SetSendAfter(val *float64)
 	SendAfterInput() *float64
@@ -48,7 +48,7 @@ type NotificationRuleStepsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -69,12 +69,12 @@ type NotificationRuleStepsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutContact(value interface{})
+	PutContact(value any)
 	ResetEnabled()
 	ResetSendAfter()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -87,8 +87,8 @@ type jsiiProxy_NotificationRuleStepsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_NotificationRuleStepsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NotificationRuleStepsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -117,8 +117,8 @@ func (j *jsiiProxy_NotificationRuleStepsOutputReference) Contact() NotificationR
 	return returns
 }
 
-func (j *jsiiProxy_NotificationRuleStepsOutputReference) ContactInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NotificationRuleStepsOutputReference) ContactInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"contactInput",
@@ -137,8 +137,8 @@ func (j *jsiiProxy_NotificationRuleStepsOutputReference) CreationStack() *[]*str
 	return returns
 }
 
-func (j *jsiiProxy_NotificationRuleStepsOutputReference) Enabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NotificationRuleStepsOutputReference) Enabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabled",
@@ -147,8 +147,8 @@ func (j *jsiiProxy_NotificationRuleStepsOutputReference) Enabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_NotificationRuleStepsOutputReference) EnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NotificationRuleStepsOutputReference) EnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabledInput",
@@ -167,8 +167,8 @@ func (j *jsiiProxy_NotificationRuleStepsOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_NotificationRuleStepsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NotificationRuleStepsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -217,7 +217,6 @@ func (j *jsiiProxy_NotificationRuleStepsOutputReference) TerraformResource() cdk
 	return returns
 }
 
-
 func NewNotificationRuleStepsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) NotificationRuleStepsOutputReference {
 	_init_.Initialize()
 
@@ -228,7 +227,7 @@ func NewNotificationRuleStepsOutputReference(terraformResource cdktf.IInterpolat
 
 	_jsii_.Create(
 		"@cdktf/provider-opsgenie.notificationRule.NotificationRuleStepsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -240,12 +239,12 @@ func NewNotificationRuleStepsOutputReference_Override(n NotificationRuleStepsOut
 
 	_jsii_.Create(
 		"@cdktf/provider-opsgenie.notificationRule.NotificationRuleStepsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		n,
 	)
 }
 
-func (j *jsiiProxy_NotificationRuleStepsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_NotificationRuleStepsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -256,7 +255,7 @@ func (j *jsiiProxy_NotificationRuleStepsOutputReference)SetComplexObjectIndex(va
 	)
 }
 
-func (j *jsiiProxy_NotificationRuleStepsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_NotificationRuleStepsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -267,7 +266,7 @@ func (j *jsiiProxy_NotificationRuleStepsOutputReference)SetComplexObjectIsFromSe
 	)
 }
 
-func (j *jsiiProxy_NotificationRuleStepsOutputReference)SetEnabled(val interface{}) {
+func (j *jsiiProxy_NotificationRuleStepsOutputReference) SetEnabled(val any) {
 	if err := j.validateSetEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -278,7 +277,7 @@ func (j *jsiiProxy_NotificationRuleStepsOutputReference)SetEnabled(val interface
 	)
 }
 
-func (j *jsiiProxy_NotificationRuleStepsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_NotificationRuleStepsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -289,7 +288,7 @@ func (j *jsiiProxy_NotificationRuleStepsOutputReference)SetInternalValue(val int
 	)
 }
 
-func (j *jsiiProxy_NotificationRuleStepsOutputReference)SetSendAfter(val *float64) {
+func (j *jsiiProxy_NotificationRuleStepsOutputReference) SetSendAfter(val *float64) {
 	if err := j.validateSetSendAfterParameters(val); err != nil {
 		panic(err)
 	}
@@ -300,7 +299,7 @@ func (j *jsiiProxy_NotificationRuleStepsOutputReference)SetSendAfter(val *float6
 	)
 }
 
-func (j *jsiiProxy_NotificationRuleStepsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_NotificationRuleStepsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -311,7 +310,7 @@ func (j *jsiiProxy_NotificationRuleStepsOutputReference)SetTerraformAttribute(va
 	)
 }
 
-func (j *jsiiProxy_NotificationRuleStepsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_NotificationRuleStepsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -335,16 +334,16 @@ func (n *jsiiProxy_NotificationRuleStepsOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (n *jsiiProxy_NotificationRuleStepsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (n *jsiiProxy_NotificationRuleStepsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := n.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -360,7 +359,7 @@ func (n *jsiiProxy_NotificationRuleStepsOutputReference) GetBooleanAttribute(ter
 	_jsii_.Invoke(
 		n,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -376,7 +375,7 @@ func (n *jsiiProxy_NotificationRuleStepsOutputReference) GetBooleanMapAttribute(
 	_jsii_.Invoke(
 		n,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -392,7 +391,7 @@ func (n *jsiiProxy_NotificationRuleStepsOutputReference) GetListAttribute(terraf
 	_jsii_.Invoke(
 		n,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -408,7 +407,7 @@ func (n *jsiiProxy_NotificationRuleStepsOutputReference) GetNumberAttribute(terr
 	_jsii_.Invoke(
 		n,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -424,7 +423,7 @@ func (n *jsiiProxy_NotificationRuleStepsOutputReference) GetNumberListAttribute(
 	_jsii_.Invoke(
 		n,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -440,7 +439,7 @@ func (n *jsiiProxy_NotificationRuleStepsOutputReference) GetNumberMapAttribute(t
 	_jsii_.Invoke(
 		n,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -456,7 +455,7 @@ func (n *jsiiProxy_NotificationRuleStepsOutputReference) GetStringAttribute(terr
 	_jsii_.Invoke(
 		n,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -472,7 +471,7 @@ func (n *jsiiProxy_NotificationRuleStepsOutputReference) GetStringMapAttribute(t
 	_jsii_.Invoke(
 		n,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -501,21 +500,21 @@ func (n *jsiiProxy_NotificationRuleStepsOutputReference) InterpolationForAttribu
 	_jsii_.Invoke(
 		n,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (n *jsiiProxy_NotificationRuleStepsOutputReference) PutContact(value interface{}) {
+func (n *jsiiProxy_NotificationRuleStepsOutputReference) PutContact(value any) {
 	if err := n.validatePutContactParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		n,
 		"putContact",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -535,16 +534,16 @@ func (n *jsiiProxy_NotificationRuleStepsOutputReference) ResetSendAfter() {
 	)
 }
 
-func (n *jsiiProxy_NotificationRuleStepsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (n *jsiiProxy_NotificationRuleStepsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := n.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		n,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -563,4 +562,3 @@ func (n *jsiiProxy_NotificationRuleStepsOutputReference) ToString() *string {
 
 	return returns
 }
-

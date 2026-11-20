@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-opsgenie.user.User",
-		reflect.TypeOf((*User)(nil)).Elem(),
+		reflect.TypeFor[User](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -81,7 +81,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "username", GoGetter: "Username"},
 			_jsii_.MemberProperty{JsiiProperty: "usernameInput", GoGetter: "UsernameInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_User{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -89,15 +89,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-opsgenie.user.UserConfig",
-		reflect.TypeOf((*UserConfig)(nil)).Elem(),
+		reflect.TypeFor[UserConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-opsgenie.user.UserUserAddress",
-		reflect.TypeOf((*UserUserAddress)(nil)).Elem(),
+		reflect.TypeFor[UserUserAddress](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-opsgenie.user.UserUserAddressList",
-		reflect.TypeOf((*UserUserAddressList)(nil)).Elem(),
+		reflect.TypeFor[UserUserAddressList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -111,7 +111,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_UserUserAddressList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -119,7 +119,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-opsgenie.user.UserUserAddressOutputReference",
-		reflect.TypeOf((*UserUserAddressOutputReference)(nil)).Elem(),
+		reflect.TypeFor[UserUserAddressOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "city", GoGetter: "City"},
 			_jsii_.MemberProperty{JsiiProperty: "cityInput", GoGetter: "CityInput"},
@@ -153,7 +153,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zipcode", GoGetter: "Zipcode"},
 			_jsii_.MemberProperty{JsiiProperty: "zipcodeInput", GoGetter: "ZipcodeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_UserUserAddressOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

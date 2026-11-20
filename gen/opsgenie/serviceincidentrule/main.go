@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-opsgenie.serviceIncidentRule.ServiceIncidentRule",
-		reflect.TypeOf((*ServiceIncidentRule)(nil)).Elem(),
+		reflect.TypeFor[ServiceIncidentRule](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -61,7 +61,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ServiceIncidentRule{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -69,19 +69,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-opsgenie.serviceIncidentRule.ServiceIncidentRuleConfig",
-		reflect.TypeOf((*ServiceIncidentRuleConfig)(nil)).Elem(),
+		reflect.TypeFor[ServiceIncidentRuleConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-opsgenie.serviceIncidentRule.ServiceIncidentRuleIncidentRule",
-		reflect.TypeOf((*ServiceIncidentRuleIncidentRule)(nil)).Elem(),
+		reflect.TypeFor[ServiceIncidentRuleIncidentRule](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-opsgenie.serviceIncidentRule.ServiceIncidentRuleIncidentRuleConditions",
-		reflect.TypeOf((*ServiceIncidentRuleIncidentRuleConditions)(nil)).Elem(),
+		reflect.TypeFor[ServiceIncidentRuleIncidentRuleConditions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-opsgenie.serviceIncidentRule.ServiceIncidentRuleIncidentRuleConditionsList",
-		reflect.TypeOf((*ServiceIncidentRuleIncidentRuleConditionsList)(nil)).Elem(),
+		reflect.TypeFor[ServiceIncidentRuleIncidentRuleConditionsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -95,7 +95,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ServiceIncidentRuleIncidentRuleConditionsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -103,7 +103,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-opsgenie.serviceIncidentRule.ServiceIncidentRuleIncidentRuleConditionsOutputReference",
-		reflect.TypeOf((*ServiceIncidentRuleIncidentRuleConditionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ServiceIncidentRuleIncidentRuleConditionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -140,7 +140,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ServiceIncidentRuleIncidentRuleConditionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -148,11 +148,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-opsgenie.serviceIncidentRule.ServiceIncidentRuleIncidentRuleIncidentProperties",
-		reflect.TypeOf((*ServiceIncidentRuleIncidentRuleIncidentProperties)(nil)).Elem(),
+		reflect.TypeFor[ServiceIncidentRuleIncidentRuleIncidentProperties](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-opsgenie.serviceIncidentRule.ServiceIncidentRuleIncidentRuleIncidentPropertiesList",
-		reflect.TypeOf((*ServiceIncidentRuleIncidentRuleIncidentPropertiesList)(nil)).Elem(),
+		reflect.TypeFor[ServiceIncidentRuleIncidentRuleIncidentPropertiesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -166,7 +166,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ServiceIncidentRuleIncidentRuleIncidentPropertiesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -174,7 +174,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-opsgenie.serviceIncidentRule.ServiceIncidentRuleIncidentRuleIncidentPropertiesOutputReference",
-		reflect.TypeOf((*ServiceIncidentRuleIncidentRuleIncidentPropertiesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ServiceIncidentRuleIncidentRuleIncidentPropertiesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -214,7 +214,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ServiceIncidentRuleIncidentRuleIncidentPropertiesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -222,11 +222,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-opsgenie.serviceIncidentRule.ServiceIncidentRuleIncidentRuleIncidentPropertiesStakeholderProperties",
-		reflect.TypeOf((*ServiceIncidentRuleIncidentRuleIncidentPropertiesStakeholderProperties)(nil)).Elem(),
+		reflect.TypeFor[ServiceIncidentRuleIncidentRuleIncidentPropertiesStakeholderProperties](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-opsgenie.serviceIncidentRule.ServiceIncidentRuleIncidentRuleIncidentPropertiesStakeholderPropertiesList",
-		reflect.TypeOf((*ServiceIncidentRuleIncidentRuleIncidentPropertiesStakeholderPropertiesList)(nil)).Elem(),
+		reflect.TypeFor[ServiceIncidentRuleIncidentRuleIncidentPropertiesStakeholderPropertiesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -240,7 +240,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ServiceIncidentRuleIncidentRuleIncidentPropertiesStakeholderPropertiesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -248,7 +248,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-opsgenie.serviceIncidentRule.ServiceIncidentRuleIncidentRuleIncidentPropertiesStakeholderPropertiesOutputReference",
-		reflect.TypeOf((*ServiceIncidentRuleIncidentRuleIncidentPropertiesStakeholderPropertiesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ServiceIncidentRuleIncidentRuleIncidentPropertiesStakeholderPropertiesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -280,7 +280,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ServiceIncidentRuleIncidentRuleIncidentPropertiesStakeholderPropertiesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -288,7 +288,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-opsgenie.serviceIncidentRule.ServiceIncidentRuleIncidentRuleList",
-		reflect.TypeOf((*ServiceIncidentRuleIncidentRuleList)(nil)).Elem(),
+		reflect.TypeFor[ServiceIncidentRuleIncidentRuleList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -302,7 +302,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ServiceIncidentRuleIncidentRuleList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -310,7 +310,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-opsgenie.serviceIncidentRule.ServiceIncidentRuleIncidentRuleOutputReference",
-		reflect.TypeOf((*ServiceIncidentRuleIncidentRuleOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ServiceIncidentRuleIncidentRuleOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -344,7 +344,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ServiceIncidentRuleIncidentRuleOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

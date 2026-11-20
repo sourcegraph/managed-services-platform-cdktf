@@ -34,7 +34,7 @@ func (s *jsiiProxy_ServiceIncidentRuleIncidentRuleIncidentPropertiesList) valida
 	return nil
 }
 
-func (j *jsiiProxy_ServiceIncidentRuleIncidentRuleIncidentPropertiesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ServiceIncidentRuleIncidentRuleIncidentPropertiesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewServiceIncidentRuleIncidentRuleIncidentPropertiesListParameters(
 
 	return nil
 }
-

@@ -19,7 +19,7 @@ func (s *jsiiProxy_ScheduleRotation) validateAddMoveTargetParameters(moveTarget 
 	return nil
 }
 
-func (s *jsiiProxy_ScheduleRotation) validateAddOverrideParameters(path *string, value interface{}) error {
+func (s *jsiiProxy_ScheduleRotation) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (s *jsiiProxy_ScheduleRotation) validateMoveFromIdParameters(id *string) er
 	return nil
 }
 
-func (s *jsiiProxy_ScheduleRotation) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (s *jsiiProxy_ScheduleRotation) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (s *jsiiProxy_ScheduleRotation) validateOverrideLogicalIdParameters(newLogi
 	return nil
 }
 
-func (s *jsiiProxy_ScheduleRotation) validatePutParticipantParameters(value interface{}) error {
+func (s *jsiiProxy_ScheduleRotation) validatePutParticipantParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -262,7 +262,7 @@ func validateScheduleRotation_GenerateConfigForImportParameters(scope constructs
 	return nil
 }
 
-func validateScheduleRotation_IsConstructParameters(x interface{}) error {
+func validateScheduleRotation_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -270,7 +270,7 @@ func validateScheduleRotation_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateScheduleRotation_IsTerraformElementParameters(x interface{}) error {
+func validateScheduleRotation_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -278,7 +278,7 @@ func validateScheduleRotation_IsTerraformElementParameters(x interface{}) error 
 	return nil
 }
 
-func validateScheduleRotation_IsTerraformResourceParameters(x interface{}) error {
+func validateScheduleRotation_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -286,7 +286,7 @@ func validateScheduleRotation_IsTerraformResourceParameters(x interface{}) error
 	return nil
 }
 
-func (j *jsiiProxy_ScheduleRotation) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ScheduleRotation) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -319,7 +319,7 @@ func (j *jsiiProxy_ScheduleRotation) validateSetConnectionParameters(val interfa
 	return nil
 }
 
-func (j *jsiiProxy_ScheduleRotation) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ScheduleRotation) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -416,7 +416,7 @@ func (j *jsiiProxy_ScheduleRotation) validateSetNameParameters(val *string) erro
 	return nil
 }
 
-func (j *jsiiProxy_ScheduleRotation) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ScheduleRotation) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -504,4 +504,3 @@ func validateNewScheduleRotationParameters(scope constructs.Construct, id *strin
 
 	return nil
 }
-

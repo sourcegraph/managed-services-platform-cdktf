@@ -1,6 +1,5 @@
 package notificationpolicy
 
-
 type NotificationPolicyDeDuplicationAction struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/resources/notification_policy#count NotificationPolicy#count}.
 	Count *float64 `field:"required" json:"count" yaml:"count"`
@@ -9,6 +8,5 @@ type NotificationPolicyDeDuplicationAction struct {
 	// duration block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/resources/notification_policy#duration NotificationPolicy#duration}
-	Duration interface{} `field:"optional" json:"duration" yaml:"duration"`
+	Duration any `field:"optional" json:"duration" yaml:"duration"`
 }
-

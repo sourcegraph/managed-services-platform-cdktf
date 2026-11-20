@@ -17,8 +17,8 @@ type TeamRoutingRuleCriteriaConditionsList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type TeamRoutingRuleCriteriaConditionsList interface {
 	Get(index *float64) TeamRoutingRuleCriteriaConditionsOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_TeamRoutingRuleCriteriaConditionsList) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_TeamRoutingRuleCriteriaConditionsList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TeamRoutingRuleCriteriaConditionsList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_TeamRoutingRuleCriteriaConditionsList) WrapsSet() *bool {
 	return returns
 }
 
-
 func NewTeamRoutingRuleCriteriaConditionsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) TeamRoutingRuleCriteriaConditionsList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewTeamRoutingRuleCriteriaConditionsList(terraformResource cdktf.IInterpola
 
 	_jsii_.Create(
 		"@cdktf/provider-opsgenie.teamRoutingRule.TeamRoutingRuleCriteriaConditionsList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewTeamRoutingRuleCriteriaConditionsList_Override(t TeamRoutingRuleCriteria
 
 	_jsii_.Create(
 		"@cdktf/provider-opsgenie.teamRoutingRule.TeamRoutingRuleCriteriaConditionsList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		t,
 	)
 }
 
-func (j *jsiiProxy_TeamRoutingRuleCriteriaConditionsList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_TeamRoutingRuleCriteriaConditionsList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_TeamRoutingRuleCriteriaConditionsList)SetInternalValue(val in
 	)
 }
 
-func (j *jsiiProxy_TeamRoutingRuleCriteriaConditionsList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_TeamRoutingRuleCriteriaConditionsList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_TeamRoutingRuleCriteriaConditionsList)SetTerraformAttribute(v
 	)
 }
 
-func (j *jsiiProxy_TeamRoutingRuleCriteriaConditionsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_TeamRoutingRuleCriteriaConditionsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_TeamRoutingRuleCriteriaConditionsList)SetTerraformResource(va
 	)
 }
 
-func (j *jsiiProxy_TeamRoutingRuleCriteriaConditionsList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_TeamRoutingRuleCriteriaConditionsList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (t *jsiiProxy_TeamRoutingRuleCriteriaConditionsList) AllWithMapKey(mapKeyAt
 	_jsii_.Invoke(
 		t,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (t *jsiiProxy_TeamRoutingRuleCriteriaConditionsList) Get(index *float64) Te
 	_jsii_.Invoke(
 		t,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (t *jsiiProxy_TeamRoutingRuleCriteriaConditionsList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (t *jsiiProxy_TeamRoutingRuleCriteriaConditionsList) Resolve(_context cdktf.IResolveContext) any {
 	if err := t.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		t,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (t *jsiiProxy_TeamRoutingRuleCriteriaConditionsList) ToString() *string {
 
 	return returns
 }
-

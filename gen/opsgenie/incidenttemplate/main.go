@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-opsgenie.incidentTemplate.IncidentTemplate",
-		reflect.TypeOf((*IncidentTemplate)(nil)).Elem(),
+		reflect.TypeFor[IncidentTemplate](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -77,7 +77,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IncidentTemplate{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -85,15 +85,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-opsgenie.incidentTemplate.IncidentTemplateConfig",
-		reflect.TypeOf((*IncidentTemplateConfig)(nil)).Elem(),
+		reflect.TypeFor[IncidentTemplateConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-opsgenie.incidentTemplate.IncidentTemplateStakeholderProperties",
-		reflect.TypeOf((*IncidentTemplateStakeholderProperties)(nil)).Elem(),
+		reflect.TypeFor[IncidentTemplateStakeholderProperties](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-opsgenie.incidentTemplate.IncidentTemplateStakeholderPropertiesList",
-		reflect.TypeOf((*IncidentTemplateStakeholderPropertiesList)(nil)).Elem(),
+		reflect.TypeFor[IncidentTemplateStakeholderPropertiesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -107,7 +107,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IncidentTemplateStakeholderPropertiesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -115,7 +115,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-opsgenie.incidentTemplate.IncidentTemplateStakeholderPropertiesOutputReference",
-		reflect.TypeOf((*IncidentTemplateStakeholderPropertiesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IncidentTemplateStakeholderPropertiesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -147,7 +147,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IncidentTemplateStakeholderPropertiesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

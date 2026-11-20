@@ -98,7 +98,7 @@ func (i *jsiiProxy_IncidentTemplateStakeholderPropertiesOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_IncidentTemplateStakeholderPropertiesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IncidentTemplateStakeholderPropertiesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_IncidentTemplateStakeholderPropertiesOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_IncidentTemplateStakeholderPropertiesOutputReference) validateSetEnableParameters(val interface{}) error {
+func (j *jsiiProxy_IncidentTemplateStakeholderPropertiesOutputReference) validateSetEnableParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -191,7 +191,7 @@ func (j *jsiiProxy_IncidentTemplateStakeholderPropertiesOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_IncidentTemplateStakeholderPropertiesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_IncidentTemplateStakeholderPropertiesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -258,4 +258,3 @@ func validateNewIncidentTemplateStakeholderPropertiesOutputReferenceParameters(t
 
 	return nil
 }
-

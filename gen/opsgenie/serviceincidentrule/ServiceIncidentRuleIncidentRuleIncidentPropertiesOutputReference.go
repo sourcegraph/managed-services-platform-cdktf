@@ -12,9 +12,9 @@ type ServiceIncidentRuleIncidentRuleIncidentPropertiesOutputReference interface 
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -33,8 +33,8 @@ type ServiceIncidentRuleIncidentRuleIncidentPropertiesOutputReference interface 
 	DetailsInput() *map[string]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Message() *string
 	SetMessage(val *string)
 	MessageInput() *string
@@ -42,7 +42,7 @@ type ServiceIncidentRuleIncidentRuleIncidentPropertiesOutputReference interface 
 	SetPriority(val *string)
 	PriorityInput() *string
 	StakeholderProperties() ServiceIncidentRuleIncidentRuleIncidentPropertiesStakeholderPropertiesList
-	StakeholderPropertiesInput() interface{}
+	StakeholderPropertiesInput() any
 	Tags() *[]*string
 	SetTags(val *[]*string)
 	TagsInput() *[]*string
@@ -57,7 +57,7 @@ type ServiceIncidentRuleIncidentRuleIncidentPropertiesOutputReference interface 
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -78,13 +78,13 @@ type ServiceIncidentRuleIncidentRuleIncidentPropertiesOutputReference interface 
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutStakeholderProperties(value interface{})
+	PutStakeholderProperties(value any)
 	ResetDescription()
 	ResetDetails()
 	ResetTags()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -97,8 +97,8 @@ type jsiiProxy_ServiceIncidentRuleIncidentRuleIncidentPropertiesOutputReference 
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ServiceIncidentRuleIncidentRuleIncidentPropertiesOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ServiceIncidentRuleIncidentRuleIncidentPropertiesOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -177,8 +177,8 @@ func (j *jsiiProxy_ServiceIncidentRuleIncidentRuleIncidentPropertiesOutputRefere
 	return returns
 }
 
-func (j *jsiiProxy_ServiceIncidentRuleIncidentRuleIncidentPropertiesOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ServiceIncidentRuleIncidentRuleIncidentPropertiesOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -237,8 +237,8 @@ func (j *jsiiProxy_ServiceIncidentRuleIncidentRuleIncidentPropertiesOutputRefere
 	return returns
 }
 
-func (j *jsiiProxy_ServiceIncidentRuleIncidentRuleIncidentPropertiesOutputReference) StakeholderPropertiesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ServiceIncidentRuleIncidentRuleIncidentPropertiesOutputReference) StakeholderPropertiesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"stakeholderPropertiesInput",
@@ -287,7 +287,6 @@ func (j *jsiiProxy_ServiceIncidentRuleIncidentRuleIncidentPropertiesOutputRefere
 	return returns
 }
 
-
 func NewServiceIncidentRuleIncidentRuleIncidentPropertiesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ServiceIncidentRuleIncidentRuleIncidentPropertiesOutputReference {
 	_init_.Initialize()
 
@@ -298,7 +297,7 @@ func NewServiceIncidentRuleIncidentRuleIncidentPropertiesOutputReference(terrafo
 
 	_jsii_.Create(
 		"@cdktf/provider-opsgenie.serviceIncidentRule.ServiceIncidentRuleIncidentRuleIncidentPropertiesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -310,12 +309,12 @@ func NewServiceIncidentRuleIncidentRuleIncidentPropertiesOutputReference_Overrid
 
 	_jsii_.Create(
 		"@cdktf/provider-opsgenie.serviceIncidentRule.ServiceIncidentRuleIncidentRuleIncidentPropertiesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)
 }
 
-func (j *jsiiProxy_ServiceIncidentRuleIncidentRuleIncidentPropertiesOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ServiceIncidentRuleIncidentRuleIncidentPropertiesOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -326,7 +325,7 @@ func (j *jsiiProxy_ServiceIncidentRuleIncidentRuleIncidentPropertiesOutputRefere
 	)
 }
 
-func (j *jsiiProxy_ServiceIncidentRuleIncidentRuleIncidentPropertiesOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ServiceIncidentRuleIncidentRuleIncidentPropertiesOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -337,7 +336,7 @@ func (j *jsiiProxy_ServiceIncidentRuleIncidentRuleIncidentPropertiesOutputRefere
 	)
 }
 
-func (j *jsiiProxy_ServiceIncidentRuleIncidentRuleIncidentPropertiesOutputReference)SetDescription(val *string) {
+func (j *jsiiProxy_ServiceIncidentRuleIncidentRuleIncidentPropertiesOutputReference) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -348,7 +347,7 @@ func (j *jsiiProxy_ServiceIncidentRuleIncidentRuleIncidentPropertiesOutputRefere
 	)
 }
 
-func (j *jsiiProxy_ServiceIncidentRuleIncidentRuleIncidentPropertiesOutputReference)SetDetails(val *map[string]*string) {
+func (j *jsiiProxy_ServiceIncidentRuleIncidentRuleIncidentPropertiesOutputReference) SetDetails(val *map[string]*string) {
 	if err := j.validateSetDetailsParameters(val); err != nil {
 		panic(err)
 	}
@@ -359,7 +358,7 @@ func (j *jsiiProxy_ServiceIncidentRuleIncidentRuleIncidentPropertiesOutputRefere
 	)
 }
 
-func (j *jsiiProxy_ServiceIncidentRuleIncidentRuleIncidentPropertiesOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ServiceIncidentRuleIncidentRuleIncidentPropertiesOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -370,7 +369,7 @@ func (j *jsiiProxy_ServiceIncidentRuleIncidentRuleIncidentPropertiesOutputRefere
 	)
 }
 
-func (j *jsiiProxy_ServiceIncidentRuleIncidentRuleIncidentPropertiesOutputReference)SetMessage(val *string) {
+func (j *jsiiProxy_ServiceIncidentRuleIncidentRuleIncidentPropertiesOutputReference) SetMessage(val *string) {
 	if err := j.validateSetMessageParameters(val); err != nil {
 		panic(err)
 	}
@@ -381,7 +380,7 @@ func (j *jsiiProxy_ServiceIncidentRuleIncidentRuleIncidentPropertiesOutputRefere
 	)
 }
 
-func (j *jsiiProxy_ServiceIncidentRuleIncidentRuleIncidentPropertiesOutputReference)SetPriority(val *string) {
+func (j *jsiiProxy_ServiceIncidentRuleIncidentRuleIncidentPropertiesOutputReference) SetPriority(val *string) {
 	if err := j.validateSetPriorityParameters(val); err != nil {
 		panic(err)
 	}
@@ -392,7 +391,7 @@ func (j *jsiiProxy_ServiceIncidentRuleIncidentRuleIncidentPropertiesOutputRefere
 	)
 }
 
-func (j *jsiiProxy_ServiceIncidentRuleIncidentRuleIncidentPropertiesOutputReference)SetTags(val *[]*string) {
+func (j *jsiiProxy_ServiceIncidentRuleIncidentRuleIncidentPropertiesOutputReference) SetTags(val *[]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -403,7 +402,7 @@ func (j *jsiiProxy_ServiceIncidentRuleIncidentRuleIncidentPropertiesOutputRefere
 	)
 }
 
-func (j *jsiiProxy_ServiceIncidentRuleIncidentRuleIncidentPropertiesOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ServiceIncidentRuleIncidentRuleIncidentPropertiesOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -414,7 +413,7 @@ func (j *jsiiProxy_ServiceIncidentRuleIncidentRuleIncidentPropertiesOutputRefere
 	)
 }
 
-func (j *jsiiProxy_ServiceIncidentRuleIncidentRuleIncidentPropertiesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ServiceIncidentRuleIncidentRuleIncidentPropertiesOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -438,16 +437,16 @@ func (s *jsiiProxy_ServiceIncidentRuleIncidentRuleIncidentPropertiesOutputRefere
 	return returns
 }
 
-func (s *jsiiProxy_ServiceIncidentRuleIncidentRuleIncidentPropertiesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_ServiceIncidentRuleIncidentRuleIncidentPropertiesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -463,7 +462,7 @@ func (s *jsiiProxy_ServiceIncidentRuleIncidentRuleIncidentPropertiesOutputRefere
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -479,7 +478,7 @@ func (s *jsiiProxy_ServiceIncidentRuleIncidentRuleIncidentPropertiesOutputRefere
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -495,7 +494,7 @@ func (s *jsiiProxy_ServiceIncidentRuleIncidentRuleIncidentPropertiesOutputRefere
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -511,7 +510,7 @@ func (s *jsiiProxy_ServiceIncidentRuleIncidentRuleIncidentPropertiesOutputRefere
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -527,7 +526,7 @@ func (s *jsiiProxy_ServiceIncidentRuleIncidentRuleIncidentPropertiesOutputRefere
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -543,7 +542,7 @@ func (s *jsiiProxy_ServiceIncidentRuleIncidentRuleIncidentPropertiesOutputRefere
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -559,7 +558,7 @@ func (s *jsiiProxy_ServiceIncidentRuleIncidentRuleIncidentPropertiesOutputRefere
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -575,7 +574,7 @@ func (s *jsiiProxy_ServiceIncidentRuleIncidentRuleIncidentPropertiesOutputRefere
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -604,21 +603,21 @@ func (s *jsiiProxy_ServiceIncidentRuleIncidentRuleIncidentPropertiesOutputRefere
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_ServiceIncidentRuleIncidentRuleIncidentPropertiesOutputReference) PutStakeholderProperties(value interface{}) {
+func (s *jsiiProxy_ServiceIncidentRuleIncidentRuleIncidentPropertiesOutputReference) PutStakeholderProperties(value any) {
 	if err := s.validatePutStakeholderPropertiesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"putStakeholderProperties",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -646,16 +645,16 @@ func (s *jsiiProxy_ServiceIncidentRuleIncidentRuleIncidentPropertiesOutputRefere
 	)
 }
 
-func (s *jsiiProxy_ServiceIncidentRuleIncidentRuleIncidentPropertiesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_ServiceIncidentRuleIncidentRuleIncidentPropertiesOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := s.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -674,4 +673,3 @@ func (s *jsiiProxy_ServiceIncidentRuleIncidentRuleIncidentPropertiesOutputRefere
 
 	return returns
 }
-

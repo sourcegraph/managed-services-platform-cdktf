@@ -98,7 +98,7 @@ func (a *jsiiProxy_ApiIntegrationRespondersOutputReference) validateResolveParam
 	return nil
 }
 
-func (j *jsiiProxy_ApiIntegrationRespondersOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ApiIntegrationRespondersOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_ApiIntegrationRespondersOutputReference) validateSetIdParamet
 	return nil
 }
 
-func (j *jsiiProxy_ApiIntegrationRespondersOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ApiIntegrationRespondersOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewApiIntegrationRespondersOutputReferenceParameters(terraformResou
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (e *jsiiProxy_EscalationRulesRecipientOutputReference) validateResolveParam
 	return nil
 }
 
-func (j *jsiiProxy_EscalationRulesRecipientOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EscalationRulesRecipientOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_EscalationRulesRecipientOutputReference) validateSetIdParamet
 	return nil
 }
 
-func (j *jsiiProxy_EscalationRulesRecipientOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_EscalationRulesRecipientOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewEscalationRulesRecipientOutputReferenceParameters(terraformResou
 
 	return nil
 }
-

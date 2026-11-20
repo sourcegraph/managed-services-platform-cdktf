@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-opsgenie.escalation.Escalation",
-		reflect.TypeOf((*Escalation)(nil)).Elem(),
+		reflect.TypeFor[Escalation](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -71,7 +71,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Escalation{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -79,15 +79,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-opsgenie.escalation.EscalationConfig",
-		reflect.TypeOf((*EscalationConfig)(nil)).Elem(),
+		reflect.TypeFor[EscalationConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-opsgenie.escalation.EscalationRepeat",
-		reflect.TypeOf((*EscalationRepeat)(nil)).Elem(),
+		reflect.TypeFor[EscalationRepeat](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-opsgenie.escalation.EscalationRepeatList",
-		reflect.TypeOf((*EscalationRepeatList)(nil)).Elem(),
+		reflect.TypeFor[EscalationRepeatList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -101,7 +101,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EscalationRepeatList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -109,7 +109,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-opsgenie.escalation.EscalationRepeatOutputReference",
-		reflect.TypeOf((*EscalationRepeatOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EscalationRepeatOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "closeAlertAfterAll", GoGetter: "CloseAlertAfterAll"},
 			_jsii_.MemberProperty{JsiiProperty: "closeAlertAfterAllInput", GoGetter: "CloseAlertAfterAllInput"},
@@ -145,7 +145,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "waitInterval", GoGetter: "WaitInterval"},
 			_jsii_.MemberProperty{JsiiProperty: "waitIntervalInput", GoGetter: "WaitIntervalInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EscalationRepeatOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -153,11 +153,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-opsgenie.escalation.EscalationRules",
-		reflect.TypeOf((*EscalationRules)(nil)).Elem(),
+		reflect.TypeFor[EscalationRules](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-opsgenie.escalation.EscalationRulesList",
-		reflect.TypeOf((*EscalationRulesList)(nil)).Elem(),
+		reflect.TypeFor[EscalationRulesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -171,7 +171,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EscalationRulesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -179,7 +179,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-opsgenie.escalation.EscalationRulesOutputReference",
-		reflect.TypeOf((*EscalationRulesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EscalationRulesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -212,7 +212,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EscalationRulesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -220,11 +220,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-opsgenie.escalation.EscalationRulesRecipient",
-		reflect.TypeOf((*EscalationRulesRecipient)(nil)).Elem(),
+		reflect.TypeFor[EscalationRulesRecipient](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-opsgenie.escalation.EscalationRulesRecipientList",
-		reflect.TypeOf((*EscalationRulesRecipientList)(nil)).Elem(),
+		reflect.TypeFor[EscalationRulesRecipientList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -238,7 +238,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EscalationRulesRecipientList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -246,7 +246,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-opsgenie.escalation.EscalationRulesRecipientOutputReference",
-		reflect.TypeOf((*EscalationRulesRecipientOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EscalationRulesRecipientOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -276,7 +276,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EscalationRulesRecipientOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

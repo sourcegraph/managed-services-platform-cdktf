@@ -15,11 +15,11 @@ type DataOpsgenieSchedule interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -27,9 +27,9 @@ type DataOpsgenieSchedule interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
-	Enabled() interface{}
-	SetEnabled(val interface{})
-	EnabledInput() interface{}
+	Enabled() any
+	SetEnabled(val any)
+	EnabledInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -58,20 +58,20 @@ type DataOpsgenieSchedule interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timezone() *string
 	SetTimezone(val *string)
 	TimezoneInput() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -101,18 +101,18 @@ type DataOpsgenieSchedule interface {
 	ResetOverrideLogicalId()
 	ResetOwnerTeamId()
 	ResetTimezone()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataOpsgenieSchedule
@@ -130,8 +130,8 @@ func (j *jsiiProxy_DataOpsgenieSchedule) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_DataOpsgenieSchedule) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataOpsgenieSchedule) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -140,8 +140,8 @@ func (j *jsiiProxy_DataOpsgenieSchedule) ConstructNodeMetadata() *map[string]int
 	return returns
 }
 
-func (j *jsiiProxy_DataOpsgenieSchedule) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataOpsgenieSchedule) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -180,8 +180,8 @@ func (j *jsiiProxy_DataOpsgenieSchedule) DescriptionInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataOpsgenieSchedule) Enabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataOpsgenieSchedule) Enabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabled",
@@ -190,8 +190,8 @@ func (j *jsiiProxy_DataOpsgenieSchedule) Enabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataOpsgenieSchedule) EnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataOpsgenieSchedule) EnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabledInput",
@@ -320,8 +320,8 @@ func (j *jsiiProxy_DataOpsgenieSchedule) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_DataOpsgenieSchedule) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataOpsgenieSchedule) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -340,8 +340,8 @@ func (j *jsiiProxy_DataOpsgenieSchedule) TerraformGeneratorMetadata() *cdktf.Ter
 	return returns
 }
 
-func (j *jsiiProxy_DataOpsgenieSchedule) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataOpsgenieSchedule) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -380,7 +380,6 @@ func (j *jsiiProxy_DataOpsgenieSchedule) TimezoneInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/opsgenie/opsgenie/0.6.37/docs/data-sources/schedule opsgenie_schedule} Data Source.
 func NewDataOpsgenieSchedule(scope constructs.Construct, id *string, config *DataOpsgenieScheduleConfig) DataOpsgenieSchedule {
 	_init_.Initialize()
@@ -392,7 +391,7 @@ func NewDataOpsgenieSchedule(scope constructs.Construct, id *string, config *Dat
 
 	_jsii_.Create(
 		"@cdktf/provider-opsgenie.dataOpsgenieSchedule.DataOpsgenieSchedule",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -405,12 +404,12 @@ func NewDataOpsgenieSchedule_Override(d DataOpsgenieSchedule, scope constructs.C
 
 	_jsii_.Create(
 		"@cdktf/provider-opsgenie.dataOpsgenieSchedule.DataOpsgenieSchedule",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataOpsgenieSchedule)SetCount(val interface{}) {
+func (j *jsiiProxy_DataOpsgenieSchedule) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -421,7 +420,7 @@ func (j *jsiiProxy_DataOpsgenieSchedule)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataOpsgenieSchedule)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataOpsgenieSchedule) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -429,7 +428,7 @@ func (j *jsiiProxy_DataOpsgenieSchedule)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataOpsgenieSchedule)SetDescription(val *string) {
+func (j *jsiiProxy_DataOpsgenieSchedule) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -440,7 +439,7 @@ func (j *jsiiProxy_DataOpsgenieSchedule)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataOpsgenieSchedule)SetEnabled(val interface{}) {
+func (j *jsiiProxy_DataOpsgenieSchedule) SetEnabled(val any) {
 	if err := j.validateSetEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -451,7 +450,7 @@ func (j *jsiiProxy_DataOpsgenieSchedule)SetEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataOpsgenieSchedule)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataOpsgenieSchedule) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -459,7 +458,7 @@ func (j *jsiiProxy_DataOpsgenieSchedule)SetForEach(val cdktf.ITerraformIterator)
 	)
 }
 
-func (j *jsiiProxy_DataOpsgenieSchedule)SetId(val *string) {
+func (j *jsiiProxy_DataOpsgenieSchedule) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -470,7 +469,7 @@ func (j *jsiiProxy_DataOpsgenieSchedule)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataOpsgenieSchedule)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataOpsgenieSchedule) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -481,7 +480,7 @@ func (j *jsiiProxy_DataOpsgenieSchedule)SetLifecycle(val *cdktf.TerraformResourc
 	)
 }
 
-func (j *jsiiProxy_DataOpsgenieSchedule)SetName(val *string) {
+func (j *jsiiProxy_DataOpsgenieSchedule) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -492,7 +491,7 @@ func (j *jsiiProxy_DataOpsgenieSchedule)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataOpsgenieSchedule)SetOwnerTeamId(val *string) {
+func (j *jsiiProxy_DataOpsgenieSchedule) SetOwnerTeamId(val *string) {
 	if err := j.validateSetOwnerTeamIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -503,7 +502,7 @@ func (j *jsiiProxy_DataOpsgenieSchedule)SetOwnerTeamId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataOpsgenieSchedule)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataOpsgenieSchedule) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -511,7 +510,7 @@ func (j *jsiiProxy_DataOpsgenieSchedule)SetProvider(val cdktf.TerraformProvider)
 	)
 }
 
-func (j *jsiiProxy_DataOpsgenieSchedule)SetTimezone(val *string) {
+func (j *jsiiProxy_DataOpsgenieSchedule) SetTimezone(val *string) {
 	if err := j.validateSetTimezoneParameters(val); err != nil {
 		panic(err)
 	}
@@ -534,7 +533,7 @@ func DataOpsgenieSchedule_GenerateConfigForImport(scope constructs.Construct, im
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-opsgenie.dataOpsgenieSchedule.DataOpsgenieSchedule",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -558,7 +557,7 @@ func DataOpsgenieSchedule_GenerateConfigForImport(scope constructs.Construct, im
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataOpsgenieSchedule_IsConstruct(x interface{}) *bool {
+func DataOpsgenieSchedule_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataOpsgenieSchedule_IsConstructParameters(x); err != nil {
@@ -569,7 +568,7 @@ func DataOpsgenieSchedule_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-opsgenie.dataOpsgenieSchedule.DataOpsgenieSchedule",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -577,7 +576,7 @@ func DataOpsgenieSchedule_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataOpsgenieSchedule_IsTerraformDataSource(x interface{}) *bool {
+func DataOpsgenieSchedule_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataOpsgenieSchedule_IsTerraformDataSourceParameters(x); err != nil {
@@ -588,7 +587,7 @@ func DataOpsgenieSchedule_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-opsgenie.dataOpsgenieSchedule.DataOpsgenieSchedule",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -596,7 +595,7 @@ func DataOpsgenieSchedule_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataOpsgenieSchedule_IsTerraformElement(x interface{}) *bool {
+func DataOpsgenieSchedule_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataOpsgenieSchedule_IsTerraformElementParameters(x); err != nil {
@@ -607,7 +606,7 @@ func DataOpsgenieSchedule_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-opsgenie.dataOpsgenieSchedule.DataOpsgenieSchedule",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -625,27 +624,27 @@ func DataOpsgenieSchedule_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataOpsgenieSchedule) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataOpsgenieSchedule) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataOpsgenieSchedule) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataOpsgenieSchedule) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -661,7 +660,7 @@ func (d *jsiiProxy_DataOpsgenieSchedule) GetBooleanAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -677,7 +676,7 @@ func (d *jsiiProxy_DataOpsgenieSchedule) GetBooleanMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -693,7 +692,7 @@ func (d *jsiiProxy_DataOpsgenieSchedule) GetListAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -709,7 +708,7 @@ func (d *jsiiProxy_DataOpsgenieSchedule) GetNumberAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -725,7 +724,7 @@ func (d *jsiiProxy_DataOpsgenieSchedule) GetNumberListAttribute(terraformAttribu
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -741,7 +740,7 @@ func (d *jsiiProxy_DataOpsgenieSchedule) GetNumberMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -757,7 +756,7 @@ func (d *jsiiProxy_DataOpsgenieSchedule) GetStringAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -773,7 +772,7 @@ func (d *jsiiProxy_DataOpsgenieSchedule) GetStringMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -789,7 +788,7 @@ func (d *jsiiProxy_DataOpsgenieSchedule) InterpolationForAttribute(terraformAttr
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -803,7 +802,7 @@ func (d *jsiiProxy_DataOpsgenieSchedule) OverrideLogicalId(newLogicalId *string)
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -855,8 +854,8 @@ func (d *jsiiProxy_DataOpsgenieSchedule) ResetTimezone() {
 	)
 }
 
-func (d *jsiiProxy_DataOpsgenieSchedule) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataOpsgenieSchedule) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -868,8 +867,8 @@ func (d *jsiiProxy_DataOpsgenieSchedule) SynthesizeAttributes() *map[string]inte
 	return returns
 }
 
-func (d *jsiiProxy_DataOpsgenieSchedule) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataOpsgenieSchedule) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -881,8 +880,8 @@ func (d *jsiiProxy_DataOpsgenieSchedule) SynthesizeHclAttributes() *map[string]i
 	return returns
 }
 
-func (d *jsiiProxy_DataOpsgenieSchedule) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataOpsgenieSchedule) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -894,8 +893,8 @@ func (d *jsiiProxy_DataOpsgenieSchedule) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataOpsgenieSchedule) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataOpsgenieSchedule) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -920,8 +919,8 @@ func (d *jsiiProxy_DataOpsgenieSchedule) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataOpsgenieSchedule) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataOpsgenieSchedule) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -932,4 +931,3 @@ func (d *jsiiProxy_DataOpsgenieSchedule) ToTerraform() interface{} {
 
 	return returns
 }
-

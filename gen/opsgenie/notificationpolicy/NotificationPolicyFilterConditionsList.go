@@ -17,8 +17,8 @@ type NotificationPolicyFilterConditionsList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type NotificationPolicyFilterConditionsList interface {
 	Get(index *float64) NotificationPolicyFilterConditionsOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_NotificationPolicyFilterConditionsList) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_NotificationPolicyFilterConditionsList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NotificationPolicyFilterConditionsList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_NotificationPolicyFilterConditionsList) WrapsSet() *bool {
 	return returns
 }
 
-
 func NewNotificationPolicyFilterConditionsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NotificationPolicyFilterConditionsList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewNotificationPolicyFilterConditionsList(terraformResource cdktf.IInterpol
 
 	_jsii_.Create(
 		"@cdktf/provider-opsgenie.notificationPolicy.NotificationPolicyFilterConditionsList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewNotificationPolicyFilterConditionsList_Override(n NotificationPolicyFilt
 
 	_jsii_.Create(
 		"@cdktf/provider-opsgenie.notificationPolicy.NotificationPolicyFilterConditionsList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		n,
 	)
 }
 
-func (j *jsiiProxy_NotificationPolicyFilterConditionsList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_NotificationPolicyFilterConditionsList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_NotificationPolicyFilterConditionsList)SetInternalValue(val i
 	)
 }
 
-func (j *jsiiProxy_NotificationPolicyFilterConditionsList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_NotificationPolicyFilterConditionsList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_NotificationPolicyFilterConditionsList)SetTerraformAttribute(
 	)
 }
 
-func (j *jsiiProxy_NotificationPolicyFilterConditionsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_NotificationPolicyFilterConditionsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_NotificationPolicyFilterConditionsList)SetTerraformResource(v
 	)
 }
 
-func (j *jsiiProxy_NotificationPolicyFilterConditionsList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_NotificationPolicyFilterConditionsList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (n *jsiiProxy_NotificationPolicyFilterConditionsList) AllWithMapKey(mapKeyA
 	_jsii_.Invoke(
 		n,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (n *jsiiProxy_NotificationPolicyFilterConditionsList) Get(index *float64) N
 	_jsii_.Invoke(
 		n,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (n *jsiiProxy_NotificationPolicyFilterConditionsList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (n *jsiiProxy_NotificationPolicyFilterConditionsList) Resolve(_context cdktf.IResolveContext) any {
 	if err := n.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		n,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (n *jsiiProxy_NotificationPolicyFilterConditionsList) ToString() *string {
 
 	return returns
 }
-

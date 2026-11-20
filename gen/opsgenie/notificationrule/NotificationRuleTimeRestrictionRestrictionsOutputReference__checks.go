@@ -98,7 +98,7 @@ func (n *jsiiProxy_NotificationRuleTimeRestrictionRestrictionsOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_NotificationRuleTimeRestrictionRestrictionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NotificationRuleTimeRestrictionRestrictionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -187,7 +187,7 @@ func (j *jsiiProxy_NotificationRuleTimeRestrictionRestrictionsOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_NotificationRuleTimeRestrictionRestrictionsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_NotificationRuleTimeRestrictionRestrictionsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -270,4 +270,3 @@ func validateNewNotificationRuleTimeRestrictionRestrictionsOutputReferenceParame
 
 	return nil
 }
-

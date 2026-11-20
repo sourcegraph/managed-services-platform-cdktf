@@ -34,7 +34,7 @@ func (t *jsiiProxy_TeamMemberList) validateResolveParameters(_context cdktf.IRes
 	return nil
 }
 
-func (j *jsiiProxy_TeamMemberList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_TeamMemberList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewTeamMemberListParameters(terraformResource cdktf.IInterpolatingP
 
 	return nil
 }
-

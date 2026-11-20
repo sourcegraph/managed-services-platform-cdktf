@@ -16,14 +16,14 @@ type IntegrationActionCreateOutputReference interface {
 	Alias() *string
 	SetAlias(val *string)
 	AliasInput() *string
-	AppendAttachments() interface{}
-	SetAppendAttachments(val interface{})
-	AppendAttachmentsInput() interface{}
+	AppendAttachments() any
+	SetAppendAttachments(val any)
+	AppendAttachmentsInput() any
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -47,26 +47,26 @@ type IntegrationActionCreateOutputReference interface {
 	SetExtraProperties(val *map[string]*string)
 	ExtraPropertiesInput() *map[string]*string
 	Filter() IntegrationActionCreateFilterList
-	FilterInput() interface{}
+	FilterInput() any
 	// Experimental.
 	Fqn() *string
-	IgnoreAlertActionsFromPayload() interface{}
-	SetIgnoreAlertActionsFromPayload(val interface{})
-	IgnoreAlertActionsFromPayloadInput() interface{}
-	IgnoreExtraPropertiesFromPayload() interface{}
-	SetIgnoreExtraPropertiesFromPayload(val interface{})
-	IgnoreExtraPropertiesFromPayloadInput() interface{}
-	IgnoreRespondersFromPayload() interface{}
-	SetIgnoreRespondersFromPayload(val interface{})
-	IgnoreRespondersFromPayloadInput() interface{}
-	IgnoreTagsFromPayload() interface{}
-	SetIgnoreTagsFromPayload(val interface{})
-	IgnoreTagsFromPayloadInput() interface{}
-	IgnoreTeamsFromPayload() interface{}
-	SetIgnoreTeamsFromPayload(val interface{})
-	IgnoreTeamsFromPayloadInput() interface{}
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	IgnoreAlertActionsFromPayload() any
+	SetIgnoreAlertActionsFromPayload(val any)
+	IgnoreAlertActionsFromPayloadInput() any
+	IgnoreExtraPropertiesFromPayload() any
+	SetIgnoreExtraPropertiesFromPayload(val any)
+	IgnoreExtraPropertiesFromPayloadInput() any
+	IgnoreRespondersFromPayload() any
+	SetIgnoreRespondersFromPayload(val any)
+	IgnoreRespondersFromPayloadInput() any
+	IgnoreTagsFromPayload() any
+	SetIgnoreTagsFromPayload(val any)
+	IgnoreTagsFromPayloadInput() any
+	IgnoreTeamsFromPayload() any
+	SetIgnoreTeamsFromPayload(val any)
+	IgnoreTeamsFromPayloadInput() any
+	InternalValue() any
+	SetInternalValue(val any)
 	Message() *string
 	SetMessage(val *string)
 	MessageInput() *string
@@ -83,7 +83,7 @@ type IntegrationActionCreateOutputReference interface {
 	SetPriority(val *string)
 	PriorityInput() *string
 	Responders() IntegrationActionCreateRespondersList
-	RespondersInput() interface{}
+	RespondersInput() any
 	Source() *string
 	SetSource(val *string)
 	SourceInput() *string
@@ -107,7 +107,7 @@ type IntegrationActionCreateOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -128,8 +128,8 @@ type IntegrationActionCreateOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutFilter(value interface{})
-	PutResponders(value interface{})
+	PutFilter(value any)
+	PutResponders(value any)
 	ResetAlertActions()
 	ResetAlias()
 	ResetAppendAttachments()
@@ -154,7 +154,7 @@ type IntegrationActionCreateOutputReference interface {
 	ResetUser()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -207,8 +207,8 @@ func (j *jsiiProxy_IntegrationActionCreateOutputReference) AliasInput() *string 
 	return returns
 }
 
-func (j *jsiiProxy_IntegrationActionCreateOutputReference) AppendAttachments() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IntegrationActionCreateOutputReference) AppendAttachments() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"appendAttachments",
@@ -217,8 +217,8 @@ func (j *jsiiProxy_IntegrationActionCreateOutputReference) AppendAttachments() i
 	return returns
 }
 
-func (j *jsiiProxy_IntegrationActionCreateOutputReference) AppendAttachmentsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IntegrationActionCreateOutputReference) AppendAttachmentsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"appendAttachmentsInput",
@@ -227,8 +227,8 @@ func (j *jsiiProxy_IntegrationActionCreateOutputReference) AppendAttachmentsInpu
 	return returns
 }
 
-func (j *jsiiProxy_IntegrationActionCreateOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IntegrationActionCreateOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -347,8 +347,8 @@ func (j *jsiiProxy_IntegrationActionCreateOutputReference) Filter() IntegrationA
 	return returns
 }
 
-func (j *jsiiProxy_IntegrationActionCreateOutputReference) FilterInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IntegrationActionCreateOutputReference) FilterInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"filterInput",
@@ -367,8 +367,8 @@ func (j *jsiiProxy_IntegrationActionCreateOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_IntegrationActionCreateOutputReference) IgnoreAlertActionsFromPayload() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IntegrationActionCreateOutputReference) IgnoreAlertActionsFromPayload() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ignoreAlertActionsFromPayload",
@@ -377,8 +377,8 @@ func (j *jsiiProxy_IntegrationActionCreateOutputReference) IgnoreAlertActionsFro
 	return returns
 }
 
-func (j *jsiiProxy_IntegrationActionCreateOutputReference) IgnoreAlertActionsFromPayloadInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IntegrationActionCreateOutputReference) IgnoreAlertActionsFromPayloadInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ignoreAlertActionsFromPayloadInput",
@@ -387,8 +387,8 @@ func (j *jsiiProxy_IntegrationActionCreateOutputReference) IgnoreAlertActionsFro
 	return returns
 }
 
-func (j *jsiiProxy_IntegrationActionCreateOutputReference) IgnoreExtraPropertiesFromPayload() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IntegrationActionCreateOutputReference) IgnoreExtraPropertiesFromPayload() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ignoreExtraPropertiesFromPayload",
@@ -397,8 +397,8 @@ func (j *jsiiProxy_IntegrationActionCreateOutputReference) IgnoreExtraProperties
 	return returns
 }
 
-func (j *jsiiProxy_IntegrationActionCreateOutputReference) IgnoreExtraPropertiesFromPayloadInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IntegrationActionCreateOutputReference) IgnoreExtraPropertiesFromPayloadInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ignoreExtraPropertiesFromPayloadInput",
@@ -407,8 +407,8 @@ func (j *jsiiProxy_IntegrationActionCreateOutputReference) IgnoreExtraProperties
 	return returns
 }
 
-func (j *jsiiProxy_IntegrationActionCreateOutputReference) IgnoreRespondersFromPayload() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IntegrationActionCreateOutputReference) IgnoreRespondersFromPayload() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ignoreRespondersFromPayload",
@@ -417,8 +417,8 @@ func (j *jsiiProxy_IntegrationActionCreateOutputReference) IgnoreRespondersFromP
 	return returns
 }
 
-func (j *jsiiProxy_IntegrationActionCreateOutputReference) IgnoreRespondersFromPayloadInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IntegrationActionCreateOutputReference) IgnoreRespondersFromPayloadInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ignoreRespondersFromPayloadInput",
@@ -427,8 +427,8 @@ func (j *jsiiProxy_IntegrationActionCreateOutputReference) IgnoreRespondersFromP
 	return returns
 }
 
-func (j *jsiiProxy_IntegrationActionCreateOutputReference) IgnoreTagsFromPayload() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IntegrationActionCreateOutputReference) IgnoreTagsFromPayload() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ignoreTagsFromPayload",
@@ -437,8 +437,8 @@ func (j *jsiiProxy_IntegrationActionCreateOutputReference) IgnoreTagsFromPayload
 	return returns
 }
 
-func (j *jsiiProxy_IntegrationActionCreateOutputReference) IgnoreTagsFromPayloadInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IntegrationActionCreateOutputReference) IgnoreTagsFromPayloadInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ignoreTagsFromPayloadInput",
@@ -447,8 +447,8 @@ func (j *jsiiProxy_IntegrationActionCreateOutputReference) IgnoreTagsFromPayload
 	return returns
 }
 
-func (j *jsiiProxy_IntegrationActionCreateOutputReference) IgnoreTeamsFromPayload() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IntegrationActionCreateOutputReference) IgnoreTeamsFromPayload() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ignoreTeamsFromPayload",
@@ -457,8 +457,8 @@ func (j *jsiiProxy_IntegrationActionCreateOutputReference) IgnoreTeamsFromPayloa
 	return returns
 }
 
-func (j *jsiiProxy_IntegrationActionCreateOutputReference) IgnoreTeamsFromPayloadInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IntegrationActionCreateOutputReference) IgnoreTeamsFromPayloadInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ignoreTeamsFromPayloadInput",
@@ -467,8 +467,8 @@ func (j *jsiiProxy_IntegrationActionCreateOutputReference) IgnoreTeamsFromPayloa
 	return returns
 }
 
-func (j *jsiiProxy_IntegrationActionCreateOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IntegrationActionCreateOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -587,8 +587,8 @@ func (j *jsiiProxy_IntegrationActionCreateOutputReference) Responders() Integrat
 	return returns
 }
 
-func (j *jsiiProxy_IntegrationActionCreateOutputReference) RespondersInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IntegrationActionCreateOutputReference) RespondersInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"respondersInput",
@@ -697,7 +697,6 @@ func (j *jsiiProxy_IntegrationActionCreateOutputReference) UserInput() *string {
 	return returns
 }
 
-
 func NewIntegrationActionCreateOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) IntegrationActionCreateOutputReference {
 	_init_.Initialize()
 
@@ -708,7 +707,7 @@ func NewIntegrationActionCreateOutputReference(terraformResource cdktf.IInterpol
 
 	_jsii_.Create(
 		"@cdktf/provider-opsgenie.integrationAction.IntegrationActionCreateOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -720,12 +719,12 @@ func NewIntegrationActionCreateOutputReference_Override(i IntegrationActionCreat
 
 	_jsii_.Create(
 		"@cdktf/provider-opsgenie.integrationAction.IntegrationActionCreateOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		i,
 	)
 }
 
-func (j *jsiiProxy_IntegrationActionCreateOutputReference)SetAlertActions(val *[]*string) {
+func (j *jsiiProxy_IntegrationActionCreateOutputReference) SetAlertActions(val *[]*string) {
 	if err := j.validateSetAlertActionsParameters(val); err != nil {
 		panic(err)
 	}
@@ -736,7 +735,7 @@ func (j *jsiiProxy_IntegrationActionCreateOutputReference)SetAlertActions(val *[
 	)
 }
 
-func (j *jsiiProxy_IntegrationActionCreateOutputReference)SetAlias(val *string) {
+func (j *jsiiProxy_IntegrationActionCreateOutputReference) SetAlias(val *string) {
 	if err := j.validateSetAliasParameters(val); err != nil {
 		panic(err)
 	}
@@ -747,7 +746,7 @@ func (j *jsiiProxy_IntegrationActionCreateOutputReference)SetAlias(val *string) 
 	)
 }
 
-func (j *jsiiProxy_IntegrationActionCreateOutputReference)SetAppendAttachments(val interface{}) {
+func (j *jsiiProxy_IntegrationActionCreateOutputReference) SetAppendAttachments(val any) {
 	if err := j.validateSetAppendAttachmentsParameters(val); err != nil {
 		panic(err)
 	}
@@ -758,7 +757,7 @@ func (j *jsiiProxy_IntegrationActionCreateOutputReference)SetAppendAttachments(v
 	)
 }
 
-func (j *jsiiProxy_IntegrationActionCreateOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_IntegrationActionCreateOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -769,7 +768,7 @@ func (j *jsiiProxy_IntegrationActionCreateOutputReference)SetComplexObjectIndex(
 	)
 }
 
-func (j *jsiiProxy_IntegrationActionCreateOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_IntegrationActionCreateOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -780,7 +779,7 @@ func (j *jsiiProxy_IntegrationActionCreateOutputReference)SetComplexObjectIsFrom
 	)
 }
 
-func (j *jsiiProxy_IntegrationActionCreateOutputReference)SetCustomPriority(val *string) {
+func (j *jsiiProxy_IntegrationActionCreateOutputReference) SetCustomPriority(val *string) {
 	if err := j.validateSetCustomPriorityParameters(val); err != nil {
 		panic(err)
 	}
@@ -791,7 +790,7 @@ func (j *jsiiProxy_IntegrationActionCreateOutputReference)SetCustomPriority(val 
 	)
 }
 
-func (j *jsiiProxy_IntegrationActionCreateOutputReference)SetDescription(val *string) {
+func (j *jsiiProxy_IntegrationActionCreateOutputReference) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -802,7 +801,7 @@ func (j *jsiiProxy_IntegrationActionCreateOutputReference)SetDescription(val *st
 	)
 }
 
-func (j *jsiiProxy_IntegrationActionCreateOutputReference)SetEntity(val *string) {
+func (j *jsiiProxy_IntegrationActionCreateOutputReference) SetEntity(val *string) {
 	if err := j.validateSetEntityParameters(val); err != nil {
 		panic(err)
 	}
@@ -813,7 +812,7 @@ func (j *jsiiProxy_IntegrationActionCreateOutputReference)SetEntity(val *string)
 	)
 }
 
-func (j *jsiiProxy_IntegrationActionCreateOutputReference)SetExtraProperties(val *map[string]*string) {
+func (j *jsiiProxy_IntegrationActionCreateOutputReference) SetExtraProperties(val *map[string]*string) {
 	if err := j.validateSetExtraPropertiesParameters(val); err != nil {
 		panic(err)
 	}
@@ -824,7 +823,7 @@ func (j *jsiiProxy_IntegrationActionCreateOutputReference)SetExtraProperties(val
 	)
 }
 
-func (j *jsiiProxy_IntegrationActionCreateOutputReference)SetIgnoreAlertActionsFromPayload(val interface{}) {
+func (j *jsiiProxy_IntegrationActionCreateOutputReference) SetIgnoreAlertActionsFromPayload(val any) {
 	if err := j.validateSetIgnoreAlertActionsFromPayloadParameters(val); err != nil {
 		panic(err)
 	}
@@ -835,7 +834,7 @@ func (j *jsiiProxy_IntegrationActionCreateOutputReference)SetIgnoreAlertActionsF
 	)
 }
 
-func (j *jsiiProxy_IntegrationActionCreateOutputReference)SetIgnoreExtraPropertiesFromPayload(val interface{}) {
+func (j *jsiiProxy_IntegrationActionCreateOutputReference) SetIgnoreExtraPropertiesFromPayload(val any) {
 	if err := j.validateSetIgnoreExtraPropertiesFromPayloadParameters(val); err != nil {
 		panic(err)
 	}
@@ -846,7 +845,7 @@ func (j *jsiiProxy_IntegrationActionCreateOutputReference)SetIgnoreExtraProperti
 	)
 }
 
-func (j *jsiiProxy_IntegrationActionCreateOutputReference)SetIgnoreRespondersFromPayload(val interface{}) {
+func (j *jsiiProxy_IntegrationActionCreateOutputReference) SetIgnoreRespondersFromPayload(val any) {
 	if err := j.validateSetIgnoreRespondersFromPayloadParameters(val); err != nil {
 		panic(err)
 	}
@@ -857,7 +856,7 @@ func (j *jsiiProxy_IntegrationActionCreateOutputReference)SetIgnoreRespondersFro
 	)
 }
 
-func (j *jsiiProxy_IntegrationActionCreateOutputReference)SetIgnoreTagsFromPayload(val interface{}) {
+func (j *jsiiProxy_IntegrationActionCreateOutputReference) SetIgnoreTagsFromPayload(val any) {
 	if err := j.validateSetIgnoreTagsFromPayloadParameters(val); err != nil {
 		panic(err)
 	}
@@ -868,7 +867,7 @@ func (j *jsiiProxy_IntegrationActionCreateOutputReference)SetIgnoreTagsFromPaylo
 	)
 }
 
-func (j *jsiiProxy_IntegrationActionCreateOutputReference)SetIgnoreTeamsFromPayload(val interface{}) {
+func (j *jsiiProxy_IntegrationActionCreateOutputReference) SetIgnoreTeamsFromPayload(val any) {
 	if err := j.validateSetIgnoreTeamsFromPayloadParameters(val); err != nil {
 		panic(err)
 	}
@@ -879,7 +878,7 @@ func (j *jsiiProxy_IntegrationActionCreateOutputReference)SetIgnoreTeamsFromPayl
 	)
 }
 
-func (j *jsiiProxy_IntegrationActionCreateOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_IntegrationActionCreateOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -890,7 +889,7 @@ func (j *jsiiProxy_IntegrationActionCreateOutputReference)SetInternalValue(val i
 	)
 }
 
-func (j *jsiiProxy_IntegrationActionCreateOutputReference)SetMessage(val *string) {
+func (j *jsiiProxy_IntegrationActionCreateOutputReference) SetMessage(val *string) {
 	if err := j.validateSetMessageParameters(val); err != nil {
 		panic(err)
 	}
@@ -901,7 +900,7 @@ func (j *jsiiProxy_IntegrationActionCreateOutputReference)SetMessage(val *string
 	)
 }
 
-func (j *jsiiProxy_IntegrationActionCreateOutputReference)SetName(val *string) {
+func (j *jsiiProxy_IntegrationActionCreateOutputReference) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -912,7 +911,7 @@ func (j *jsiiProxy_IntegrationActionCreateOutputReference)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IntegrationActionCreateOutputReference)SetNote(val *string) {
+func (j *jsiiProxy_IntegrationActionCreateOutputReference) SetNote(val *string) {
 	if err := j.validateSetNoteParameters(val); err != nil {
 		panic(err)
 	}
@@ -923,7 +922,7 @@ func (j *jsiiProxy_IntegrationActionCreateOutputReference)SetNote(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IntegrationActionCreateOutputReference)SetOrder(val *float64) {
+func (j *jsiiProxy_IntegrationActionCreateOutputReference) SetOrder(val *float64) {
 	if err := j.validateSetOrderParameters(val); err != nil {
 		panic(err)
 	}
@@ -934,7 +933,7 @@ func (j *jsiiProxy_IntegrationActionCreateOutputReference)SetOrder(val *float64)
 	)
 }
 
-func (j *jsiiProxy_IntegrationActionCreateOutputReference)SetPriority(val *string) {
+func (j *jsiiProxy_IntegrationActionCreateOutputReference) SetPriority(val *string) {
 	if err := j.validateSetPriorityParameters(val); err != nil {
 		panic(err)
 	}
@@ -945,7 +944,7 @@ func (j *jsiiProxy_IntegrationActionCreateOutputReference)SetPriority(val *strin
 	)
 }
 
-func (j *jsiiProxy_IntegrationActionCreateOutputReference)SetSource(val *string) {
+func (j *jsiiProxy_IntegrationActionCreateOutputReference) SetSource(val *string) {
 	if err := j.validateSetSourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -956,7 +955,7 @@ func (j *jsiiProxy_IntegrationActionCreateOutputReference)SetSource(val *string)
 	)
 }
 
-func (j *jsiiProxy_IntegrationActionCreateOutputReference)SetTags(val *[]*string) {
+func (j *jsiiProxy_IntegrationActionCreateOutputReference) SetTags(val *[]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -967,7 +966,7 @@ func (j *jsiiProxy_IntegrationActionCreateOutputReference)SetTags(val *[]*string
 	)
 }
 
-func (j *jsiiProxy_IntegrationActionCreateOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_IntegrationActionCreateOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -978,7 +977,7 @@ func (j *jsiiProxy_IntegrationActionCreateOutputReference)SetTerraformAttribute(
 	)
 }
 
-func (j *jsiiProxy_IntegrationActionCreateOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_IntegrationActionCreateOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -989,7 +988,7 @@ func (j *jsiiProxy_IntegrationActionCreateOutputReference)SetTerraformResource(v
 	)
 }
 
-func (j *jsiiProxy_IntegrationActionCreateOutputReference)SetType(val *string) {
+func (j *jsiiProxy_IntegrationActionCreateOutputReference) SetType(val *string) {
 	if err := j.validateSetTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1000,7 +999,7 @@ func (j *jsiiProxy_IntegrationActionCreateOutputReference)SetType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IntegrationActionCreateOutputReference)SetUser(val *string) {
+func (j *jsiiProxy_IntegrationActionCreateOutputReference) SetUser(val *string) {
 	if err := j.validateSetUserParameters(val); err != nil {
 		panic(err)
 	}
@@ -1024,16 +1023,16 @@ func (i *jsiiProxy_IntegrationActionCreateOutputReference) ComputeFqn() *string 
 	return returns
 }
 
-func (i *jsiiProxy_IntegrationActionCreateOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (i *jsiiProxy_IntegrationActionCreateOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := i.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1049,7 +1048,7 @@ func (i *jsiiProxy_IntegrationActionCreateOutputReference) GetBooleanAttribute(t
 	_jsii_.Invoke(
 		i,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1065,7 +1064,7 @@ func (i *jsiiProxy_IntegrationActionCreateOutputReference) GetBooleanMapAttribut
 	_jsii_.Invoke(
 		i,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1081,7 +1080,7 @@ func (i *jsiiProxy_IntegrationActionCreateOutputReference) GetListAttribute(terr
 	_jsii_.Invoke(
 		i,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1097,7 +1096,7 @@ func (i *jsiiProxy_IntegrationActionCreateOutputReference) GetNumberAttribute(te
 	_jsii_.Invoke(
 		i,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1113,7 +1112,7 @@ func (i *jsiiProxy_IntegrationActionCreateOutputReference) GetNumberListAttribut
 	_jsii_.Invoke(
 		i,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1129,7 +1128,7 @@ func (i *jsiiProxy_IntegrationActionCreateOutputReference) GetNumberMapAttribute
 	_jsii_.Invoke(
 		i,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1145,7 +1144,7 @@ func (i *jsiiProxy_IntegrationActionCreateOutputReference) GetStringAttribute(te
 	_jsii_.Invoke(
 		i,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1161,7 +1160,7 @@ func (i *jsiiProxy_IntegrationActionCreateOutputReference) GetStringMapAttribute
 	_jsii_.Invoke(
 		i,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1190,32 +1189,32 @@ func (i *jsiiProxy_IntegrationActionCreateOutputReference) InterpolationForAttri
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (i *jsiiProxy_IntegrationActionCreateOutputReference) PutFilter(value interface{}) {
+func (i *jsiiProxy_IntegrationActionCreateOutputReference) PutFilter(value any) {
 	if err := i.validatePutFilterParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		i,
 		"putFilter",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (i *jsiiProxy_IntegrationActionCreateOutputReference) PutResponders(value interface{}) {
+func (i *jsiiProxy_IntegrationActionCreateOutputReference) PutResponders(value any) {
 	if err := i.validatePutRespondersParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		i,
 		"putResponders",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1395,16 +1394,16 @@ func (i *jsiiProxy_IntegrationActionCreateOutputReference) ResetUser() {
 	)
 }
 
-func (i *jsiiProxy_IntegrationActionCreateOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (i *jsiiProxy_IntegrationActionCreateOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := i.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		i,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -1423,4 +1422,3 @@ func (i *jsiiProxy_IntegrationActionCreateOutputReference) ToString() *string {
 
 	return returns
 }
-

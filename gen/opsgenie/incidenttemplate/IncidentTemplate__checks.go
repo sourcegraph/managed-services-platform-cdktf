@@ -19,7 +19,7 @@ func (i *jsiiProxy_IncidentTemplate) validateAddMoveTargetParameters(moveTarget 
 	return nil
 }
 
-func (i *jsiiProxy_IncidentTemplate) validateAddOverrideParameters(path *string, value interface{}) error {
+func (i *jsiiProxy_IncidentTemplate) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (i *jsiiProxy_IncidentTemplate) validateMoveFromIdParameters(id *string) er
 	return nil
 }
 
-func (i *jsiiProxy_IncidentTemplate) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (i *jsiiProxy_IncidentTemplate) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (i *jsiiProxy_IncidentTemplate) validateOverrideLogicalIdParameters(newLogi
 	return nil
 }
 
-func (i *jsiiProxy_IncidentTemplate) validatePutStakeholderPropertiesParameters(value interface{}) error {
+func (i *jsiiProxy_IncidentTemplate) validatePutStakeholderPropertiesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -251,7 +251,7 @@ func validateIncidentTemplate_GenerateConfigForImportParameters(scope constructs
 	return nil
 }
 
-func validateIncidentTemplate_IsConstructParameters(x interface{}) error {
+func validateIncidentTemplate_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -259,7 +259,7 @@ func validateIncidentTemplate_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateIncidentTemplate_IsTerraformElementParameters(x interface{}) error {
+func validateIncidentTemplate_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -267,7 +267,7 @@ func validateIncidentTemplate_IsTerraformElementParameters(x interface{}) error 
 	return nil
 }
 
-func validateIncidentTemplate_IsTerraformResourceParameters(x interface{}) error {
+func validateIncidentTemplate_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -275,7 +275,7 @@ func validateIncidentTemplate_IsTerraformResourceParameters(x interface{}) error
 	return nil
 }
 
-func (j *jsiiProxy_IncidentTemplate) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_IncidentTemplate) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -308,7 +308,7 @@ func (j *jsiiProxy_IncidentTemplate) validateSetConnectionParameters(val interfa
 	return nil
 }
 
-func (j *jsiiProxy_IncidentTemplate) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_IncidentTemplate) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -429,7 +429,7 @@ func (j *jsiiProxy_IncidentTemplate) validateSetPriorityParameters(val *string) 
 	return nil
 }
 
-func (j *jsiiProxy_IncidentTemplate) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_IncidentTemplate) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -501,4 +501,3 @@ func validateNewIncidentTemplateParameters(scope constructs.Construct, id *strin
 
 	return nil
 }
-

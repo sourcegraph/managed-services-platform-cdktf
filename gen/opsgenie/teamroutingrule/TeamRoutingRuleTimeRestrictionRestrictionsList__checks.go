@@ -34,7 +34,7 @@ func (t *jsiiProxy_TeamRoutingRuleTimeRestrictionRestrictionsList) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_TeamRoutingRuleTimeRestrictionRestrictionsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_TeamRoutingRuleTimeRestrictionRestrictionsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewTeamRoutingRuleTimeRestrictionRestrictionsListParameters(terrafo
 
 	return nil
 }
-
