@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataRetentionPolicyDontDeleteOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_DataRetentionPolicyDontDeleteOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataRetentionPolicyDontDeleteOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_DataRetentionPolicyDontDeleteOutputReference) validateSetComp
 	return nil
 }
 
-func (j *jsiiProxy_DataRetentionPolicyDontDeleteOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataRetentionPolicyDontDeleteOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -214,4 +214,3 @@ func validateNewDataRetentionPolicyDontDeleteOutputReferenceParameters(terraform
 
 	return nil
 }
-

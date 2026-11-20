@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-tfe.dataTfeSamlSettings.DataTfeSamlSettings",
-		reflect.TypeOf((*DataTfeSamlSettings)(nil)).Elem(),
+		reflect.TypeFor[DataTfeSamlSettings](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "acsConsumerUrl", GoGetter: "AcsConsumerUrl"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -66,7 +66,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "wantAssertionsSigned", GoGetter: "WantAssertionsSigned"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataTfeSamlSettings{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -74,6 +74,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-tfe.dataTfeSamlSettings.DataTfeSamlSettingsConfig",
-		reflect.TypeOf((*DataTfeSamlSettingsConfig)(nil)).Elem(),
+		reflect.TypeFor[DataTfeSamlSettingsConfig](),
 	)
 }

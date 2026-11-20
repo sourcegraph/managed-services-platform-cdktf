@@ -12,9 +12,9 @@ type WorkspaceRunDestroyOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -29,11 +29,11 @@ type WorkspaceRunDestroyOutputReference interface {
 	Fqn() *string
 	InternalValue() *WorkspaceRunDestroy
 	SetInternalValue(val *WorkspaceRunDestroy)
-	ManualConfirm() interface{}
-	SetManualConfirm(val interface{})
-	ManualConfirmInput() interface{}
-	Retry() interface{}
-	SetRetry(val interface{})
+	ManualConfirm() any
+	SetManualConfirm(val any)
+	ManualConfirmInput() any
+	Retry() any
+	SetRetry(val any)
 	RetryAttempts() *float64
 	SetRetryAttempts(val *float64)
 	RetryAttemptsInput() *float64
@@ -43,7 +43,7 @@ type WorkspaceRunDestroyOutputReference interface {
 	RetryBackoffMin() *float64
 	SetRetryBackoffMin(val *float64)
 	RetryBackoffMinInput() *float64
-	RetryInput() interface{}
+	RetryInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -52,13 +52,13 @@ type WorkspaceRunDestroyOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
-	WaitForRun() interface{}
-	SetWaitForRun(val interface{})
-	WaitForRunInput() interface{}
+	WaitForRun() any
+	SetWaitForRun(val any)
+	WaitForRunInput() any
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -86,7 +86,7 @@ type WorkspaceRunDestroyOutputReference interface {
 	ResetWaitForRun()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -99,8 +99,8 @@ type jsiiProxy_WorkspaceRunDestroyOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_WorkspaceRunDestroyOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkspaceRunDestroyOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -149,8 +149,8 @@ func (j *jsiiProxy_WorkspaceRunDestroyOutputReference) InternalValue() *Workspac
 	return returns
 }
 
-func (j *jsiiProxy_WorkspaceRunDestroyOutputReference) ManualConfirm() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkspaceRunDestroyOutputReference) ManualConfirm() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"manualConfirm",
@@ -159,8 +159,8 @@ func (j *jsiiProxy_WorkspaceRunDestroyOutputReference) ManualConfirm() interface
 	return returns
 }
 
-func (j *jsiiProxy_WorkspaceRunDestroyOutputReference) ManualConfirmInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkspaceRunDestroyOutputReference) ManualConfirmInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"manualConfirmInput",
@@ -169,8 +169,8 @@ func (j *jsiiProxy_WorkspaceRunDestroyOutputReference) ManualConfirmInput() inte
 	return returns
 }
 
-func (j *jsiiProxy_WorkspaceRunDestroyOutputReference) Retry() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkspaceRunDestroyOutputReference) Retry() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"retry",
@@ -239,8 +239,8 @@ func (j *jsiiProxy_WorkspaceRunDestroyOutputReference) RetryBackoffMinInput() *f
 	return returns
 }
 
-func (j *jsiiProxy_WorkspaceRunDestroyOutputReference) RetryInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkspaceRunDestroyOutputReference) RetryInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"retryInput",
@@ -269,8 +269,8 @@ func (j *jsiiProxy_WorkspaceRunDestroyOutputReference) TerraformResource() cdktf
 	return returns
 }
 
-func (j *jsiiProxy_WorkspaceRunDestroyOutputReference) WaitForRun() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkspaceRunDestroyOutputReference) WaitForRun() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"waitForRun",
@@ -279,8 +279,8 @@ func (j *jsiiProxy_WorkspaceRunDestroyOutputReference) WaitForRun() interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_WorkspaceRunDestroyOutputReference) WaitForRunInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkspaceRunDestroyOutputReference) WaitForRunInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"waitForRunInput",
@@ -288,7 +288,6 @@ func (j *jsiiProxy_WorkspaceRunDestroyOutputReference) WaitForRunInput() interfa
 	)
 	return returns
 }
-
 
 func NewWorkspaceRunDestroyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) WorkspaceRunDestroyOutputReference {
 	_init_.Initialize()
@@ -300,7 +299,7 @@ func NewWorkspaceRunDestroyOutputReference(terraformResource cdktf.IInterpolatin
 
 	_jsii_.Create(
 		"@cdktf/provider-tfe.workspaceRun.WorkspaceRunDestroyOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -312,12 +311,12 @@ func NewWorkspaceRunDestroyOutputReference_Override(w WorkspaceRunDestroyOutputR
 
 	_jsii_.Create(
 		"@cdktf/provider-tfe.workspaceRun.WorkspaceRunDestroyOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		w,
 	)
 }
 
-func (j *jsiiProxy_WorkspaceRunDestroyOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_WorkspaceRunDestroyOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -328,7 +327,7 @@ func (j *jsiiProxy_WorkspaceRunDestroyOutputReference)SetComplexObjectIndex(val 
 	)
 }
 
-func (j *jsiiProxy_WorkspaceRunDestroyOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_WorkspaceRunDestroyOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -339,7 +338,7 @@ func (j *jsiiProxy_WorkspaceRunDestroyOutputReference)SetComplexObjectIsFromSet(
 	)
 }
 
-func (j *jsiiProxy_WorkspaceRunDestroyOutputReference)SetInternalValue(val *WorkspaceRunDestroy) {
+func (j *jsiiProxy_WorkspaceRunDestroyOutputReference) SetInternalValue(val *WorkspaceRunDestroy) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -350,7 +349,7 @@ func (j *jsiiProxy_WorkspaceRunDestroyOutputReference)SetInternalValue(val *Work
 	)
 }
 
-func (j *jsiiProxy_WorkspaceRunDestroyOutputReference)SetManualConfirm(val interface{}) {
+func (j *jsiiProxy_WorkspaceRunDestroyOutputReference) SetManualConfirm(val any) {
 	if err := j.validateSetManualConfirmParameters(val); err != nil {
 		panic(err)
 	}
@@ -361,7 +360,7 @@ func (j *jsiiProxy_WorkspaceRunDestroyOutputReference)SetManualConfirm(val inter
 	)
 }
 
-func (j *jsiiProxy_WorkspaceRunDestroyOutputReference)SetRetry(val interface{}) {
+func (j *jsiiProxy_WorkspaceRunDestroyOutputReference) SetRetry(val any) {
 	if err := j.validateSetRetryParameters(val); err != nil {
 		panic(err)
 	}
@@ -372,7 +371,7 @@ func (j *jsiiProxy_WorkspaceRunDestroyOutputReference)SetRetry(val interface{}) 
 	)
 }
 
-func (j *jsiiProxy_WorkspaceRunDestroyOutputReference)SetRetryAttempts(val *float64) {
+func (j *jsiiProxy_WorkspaceRunDestroyOutputReference) SetRetryAttempts(val *float64) {
 	if err := j.validateSetRetryAttemptsParameters(val); err != nil {
 		panic(err)
 	}
@@ -383,7 +382,7 @@ func (j *jsiiProxy_WorkspaceRunDestroyOutputReference)SetRetryAttempts(val *floa
 	)
 }
 
-func (j *jsiiProxy_WorkspaceRunDestroyOutputReference)SetRetryBackoffMax(val *float64) {
+func (j *jsiiProxy_WorkspaceRunDestroyOutputReference) SetRetryBackoffMax(val *float64) {
 	if err := j.validateSetRetryBackoffMaxParameters(val); err != nil {
 		panic(err)
 	}
@@ -394,7 +393,7 @@ func (j *jsiiProxy_WorkspaceRunDestroyOutputReference)SetRetryBackoffMax(val *fl
 	)
 }
 
-func (j *jsiiProxy_WorkspaceRunDestroyOutputReference)SetRetryBackoffMin(val *float64) {
+func (j *jsiiProxy_WorkspaceRunDestroyOutputReference) SetRetryBackoffMin(val *float64) {
 	if err := j.validateSetRetryBackoffMinParameters(val); err != nil {
 		panic(err)
 	}
@@ -405,7 +404,7 @@ func (j *jsiiProxy_WorkspaceRunDestroyOutputReference)SetRetryBackoffMin(val *fl
 	)
 }
 
-func (j *jsiiProxy_WorkspaceRunDestroyOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_WorkspaceRunDestroyOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -416,7 +415,7 @@ func (j *jsiiProxy_WorkspaceRunDestroyOutputReference)SetTerraformAttribute(val 
 	)
 }
 
-func (j *jsiiProxy_WorkspaceRunDestroyOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_WorkspaceRunDestroyOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -427,7 +426,7 @@ func (j *jsiiProxy_WorkspaceRunDestroyOutputReference)SetTerraformResource(val c
 	)
 }
 
-func (j *jsiiProxy_WorkspaceRunDestroyOutputReference)SetWaitForRun(val interface{}) {
+func (j *jsiiProxy_WorkspaceRunDestroyOutputReference) SetWaitForRun(val any) {
 	if err := j.validateSetWaitForRunParameters(val); err != nil {
 		panic(err)
 	}
@@ -451,16 +450,16 @@ func (w *jsiiProxy_WorkspaceRunDestroyOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (w *jsiiProxy_WorkspaceRunDestroyOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (w *jsiiProxy_WorkspaceRunDestroyOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := w.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		w,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -476,7 +475,7 @@ func (w *jsiiProxy_WorkspaceRunDestroyOutputReference) GetBooleanAttribute(terra
 	_jsii_.Invoke(
 		w,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -492,7 +491,7 @@ func (w *jsiiProxy_WorkspaceRunDestroyOutputReference) GetBooleanMapAttribute(te
 	_jsii_.Invoke(
 		w,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -508,7 +507,7 @@ func (w *jsiiProxy_WorkspaceRunDestroyOutputReference) GetListAttribute(terrafor
 	_jsii_.Invoke(
 		w,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -524,7 +523,7 @@ func (w *jsiiProxy_WorkspaceRunDestroyOutputReference) GetNumberAttribute(terraf
 	_jsii_.Invoke(
 		w,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -540,7 +539,7 @@ func (w *jsiiProxy_WorkspaceRunDestroyOutputReference) GetNumberListAttribute(te
 	_jsii_.Invoke(
 		w,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -556,7 +555,7 @@ func (w *jsiiProxy_WorkspaceRunDestroyOutputReference) GetNumberMapAttribute(ter
 	_jsii_.Invoke(
 		w,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -572,7 +571,7 @@ func (w *jsiiProxy_WorkspaceRunDestroyOutputReference) GetStringAttribute(terraf
 	_jsii_.Invoke(
 		w,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -588,7 +587,7 @@ func (w *jsiiProxy_WorkspaceRunDestroyOutputReference) GetStringMapAttribute(ter
 	_jsii_.Invoke(
 		w,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -617,7 +616,7 @@ func (w *jsiiProxy_WorkspaceRunDestroyOutputReference) InterpolationForAttribute
 	_jsii_.Invoke(
 		w,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -664,16 +663,16 @@ func (w *jsiiProxy_WorkspaceRunDestroyOutputReference) ResetWaitForRun() {
 	)
 }
 
-func (w *jsiiProxy_WorkspaceRunDestroyOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (w *jsiiProxy_WorkspaceRunDestroyOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := w.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		w,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -692,4 +691,3 @@ func (w *jsiiProxy_WorkspaceRunDestroyOutputReference) ToString() *string {
 
 	return returns
 }
-

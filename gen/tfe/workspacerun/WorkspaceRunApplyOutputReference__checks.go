@@ -98,7 +98,7 @@ func (w *jsiiProxy_WorkspaceRunApplyOutputReference) validateResolveParameters(_
 	return nil
 }
 
-func (j *jsiiProxy_WorkspaceRunApplyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_WorkspaceRunApplyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_WorkspaceRunApplyOutputReference) validateSetInternalValuePar
 	return nil
 }
 
-func (j *jsiiProxy_WorkspaceRunApplyOutputReference) validateSetManualConfirmParameters(val interface{}) error {
+func (j *jsiiProxy_WorkspaceRunApplyOutputReference) validateSetManualConfirmParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -191,7 +191,7 @@ func (j *jsiiProxy_WorkspaceRunApplyOutputReference) validateSetManualConfirmPar
 	return nil
 }
 
-func (j *jsiiProxy_WorkspaceRunApplyOutputReference) validateSetRetryParameters(val interface{}) error {
+func (j *jsiiProxy_WorkspaceRunApplyOutputReference) validateSetRetryParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -251,7 +251,7 @@ func (j *jsiiProxy_WorkspaceRunApplyOutputReference) validateSetTerraformResourc
 	return nil
 }
 
-func (j *jsiiProxy_WorkspaceRunApplyOutputReference) validateSetWaitForRunParameters(val interface{}) error {
+func (j *jsiiProxy_WorkspaceRunApplyOutputReference) validateSetWaitForRunParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -282,4 +282,3 @@ func validateNewWorkspaceRunApplyOutputReferenceParameters(terraformResource cdk
 
 	return nil
 }
-

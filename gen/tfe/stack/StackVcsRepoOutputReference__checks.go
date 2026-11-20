@@ -106,7 +106,7 @@ func (j *jsiiProxy_StackVcsRepoOutputReference) validateSetBranchParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_StackVcsRepoOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_StackVcsRepoOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -187,7 +187,7 @@ func (j *jsiiProxy_StackVcsRepoOutputReference) validateSetIdentifierParameters(
 	return nil
 }
 
-func (j *jsiiProxy_StackVcsRepoOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_StackVcsRepoOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewStackVcsRepoOutputReferenceParameters(terraformResource cdktf.II
 
 	return nil
 }
-

@@ -6,9 +6,9 @@ import (
 
 type PolicySetParameterConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type PolicySetParameterConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Name of the parameter.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/policy_set_parameter#key PolicySetParameter#key}
@@ -30,7 +30,7 @@ type PolicySetParameterConfig struct {
 	// Whether the value is sensitive. If true then the parameter is written once and not visible thereafter.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/policy_set_parameter#sensitive PolicySetParameter#sensitive}
-	Sensitive interface{} `field:"optional" json:"sensitive" yaml:"sensitive"`
+	Sensitive any `field:"optional" json:"sensitive" yaml:"sensitive"`
 	// Value of the parameter.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/policy_set_parameter#value PolicySetParameter#value}
@@ -40,4 +40,3 @@ type PolicySetParameterConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/policy_set_parameter#value_wo PolicySetParameter#value_wo}
 	ValueWo *string `field:"optional" json:"valueWo" yaml:"valueWo"`
 }
-

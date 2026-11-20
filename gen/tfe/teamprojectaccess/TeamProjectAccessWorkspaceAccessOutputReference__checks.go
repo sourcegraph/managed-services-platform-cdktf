@@ -98,7 +98,7 @@ func (t *jsiiProxy_TeamProjectAccessWorkspaceAccessOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_TeamProjectAccessWorkspaceAccessOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_TeamProjectAccessWorkspaceAccessOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_TeamProjectAccessWorkspaceAccessOutputReference) validateSetC
 	return nil
 }
 
-func (j *jsiiProxy_TeamProjectAccessWorkspaceAccessOutputReference) validateSetCreateParameters(val interface{}) error {
+func (j *jsiiProxy_TeamProjectAccessWorkspaceAccessOutputReference) validateSetCreateParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -183,7 +183,7 @@ func (j *jsiiProxy_TeamProjectAccessWorkspaceAccessOutputReference) validateSetC
 	return nil
 }
 
-func (j *jsiiProxy_TeamProjectAccessWorkspaceAccessOutputReference) validateSetDeleteParameters(val interface{}) error {
+func (j *jsiiProxy_TeamProjectAccessWorkspaceAccessOutputReference) validateSetDeleteParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -203,7 +203,7 @@ func (j *jsiiProxy_TeamProjectAccessWorkspaceAccessOutputReference) validateSetD
 	return nil
 }
 
-func (j *jsiiProxy_TeamProjectAccessWorkspaceAccessOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_TeamProjectAccessWorkspaceAccessOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -227,7 +227,7 @@ func (j *jsiiProxy_TeamProjectAccessWorkspaceAccessOutputReference) validateSetI
 	return nil
 }
 
-func (j *jsiiProxy_TeamProjectAccessWorkspaceAccessOutputReference) validateSetLockingParameters(val interface{}) error {
+func (j *jsiiProxy_TeamProjectAccessWorkspaceAccessOutputReference) validateSetLockingParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func (j *jsiiProxy_TeamProjectAccessWorkspaceAccessOutputReference) validateSetL
 	return nil
 }
 
-func (j *jsiiProxy_TeamProjectAccessWorkspaceAccessOutputReference) validateSetMoveParameters(val interface{}) error {
+func (j *jsiiProxy_TeamProjectAccessWorkspaceAccessOutputReference) validateSetMoveParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -275,7 +275,7 @@ func (j *jsiiProxy_TeamProjectAccessWorkspaceAccessOutputReference) validateSetR
 	return nil
 }
 
-func (j *jsiiProxy_TeamProjectAccessWorkspaceAccessOutputReference) validateSetRunTasksParameters(val interface{}) error {
+func (j *jsiiProxy_TeamProjectAccessWorkspaceAccessOutputReference) validateSetRunTasksParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -354,4 +354,3 @@ func validateNewTeamProjectAccessWorkspaceAccessOutputReferenceParameters(terraf
 
 	return nil
 }
-

@@ -15,18 +15,18 @@ type Workspace interface {
 	AgentPoolId() *string
 	SetAgentPoolId(val *string)
 	AgentPoolIdInput() *string
-	AllowDestroyPlan() interface{}
-	SetAllowDestroyPlan(val interface{})
-	AllowDestroyPlanInput() interface{}
-	AssessmentsEnabled() interface{}
-	SetAssessmentsEnabled(val interface{})
-	AssessmentsEnabledInput() interface{}
-	AutoApply() interface{}
-	SetAutoApply(val interface{})
-	AutoApplyInput() interface{}
-	AutoApplyRunTrigger() interface{}
-	SetAutoApplyRunTrigger(val interface{})
-	AutoApplyRunTriggerInput() interface{}
+	AllowDestroyPlan() any
+	SetAllowDestroyPlan(val any)
+	AllowDestroyPlanInput() any
+	AssessmentsEnabled() any
+	SetAssessmentsEnabled(val any)
+	AssessmentsEnabledInput() any
+	AutoApply() any
+	SetAutoApply(val any)
+	AutoApplyInput() any
+	AutoApplyRunTrigger() any
+	SetAutoApplyRunTrigger(val any)
+	AutoApplyRunTriggerInput() any
 	AutoDestroyActivityDuration() *string
 	SetAutoDestroyActivityDuration(val *string)
 	AutoDestroyActivityDurationInput() *string
@@ -36,15 +36,15 @@ type Workspace interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -56,12 +56,12 @@ type Workspace interface {
 	ExecutionMode() *string
 	SetExecutionMode(val *string)
 	ExecutionModeInput() *string
-	FileTriggersEnabled() interface{}
-	SetFileTriggersEnabled(val interface{})
-	FileTriggersEnabledInput() interface{}
-	ForceDelete() interface{}
-	SetForceDelete(val interface{})
-	ForceDeleteInput() interface{}
+	FileTriggersEnabled() any
+	SetFileTriggersEnabled(val any)
+	FileTriggersEnabledInput() any
+	ForceDelete() any
+	SetForceDelete(val any)
+	ForceDeleteInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -70,19 +70,19 @@ type Workspace interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
-	GlobalRemoteState() interface{}
-	SetGlobalRemoteState(val interface{})
-	GlobalRemoteStateInput() interface{}
+	GlobalRemoteState() any
+	SetGlobalRemoteState(val any)
+	GlobalRemoteStateInput() any
 	HtmlUrl() *string
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
-	IgnoreAdditionalTagNames() interface{}
-	SetIgnoreAdditionalTagNames(val interface{})
-	IgnoreAdditionalTagNamesInput() interface{}
-	IgnoreAdditionalTags() interface{}
-	SetIgnoreAdditionalTags(val interface{})
-	IgnoreAdditionalTagsInput() interface{}
+	IgnoreAdditionalTagNames() any
+	SetIgnoreAdditionalTagNames(val any)
+	IgnoreAdditionalTagNamesInput() any
+	IgnoreAdditionalTags() any
+	SetIgnoreAdditionalTags(val any)
+	IgnoreAdditionalTagsInput() any
 	InheritsProjectAutoDestroy() cdktf.IResolvable
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
@@ -93,9 +93,9 @@ type Workspace interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
-	Operations() interface{}
-	SetOperations(val interface{})
-	OperationsInput() interface{}
+	Operations() any
+	SetOperations(val any)
+	OperationsInput() any
 	Organization() *string
 	SetOrganization(val *string)
 	OrganizationInput() *string
@@ -107,14 +107,14 @@ type Workspace interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
-	QueueAllRuns() interface{}
-	SetQueueAllRuns(val interface{})
-	QueueAllRunsInput() interface{}
+	SetProvisioners(val *[]any)
+	QueueAllRuns() any
+	SetQueueAllRuns(val any)
+	QueueAllRunsInput() any
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RemoteStateConsumerIds() *[]*string
 	SetRemoteStateConsumerIds(val *[]*string)
 	RemoteStateConsumerIdsInput() *[]*string
@@ -125,15 +125,15 @@ type Workspace interface {
 	SourceUrl() *string
 	SetSourceUrl(val *string)
 	SourceUrlInput() *string
-	SpeculativeEnabled() interface{}
-	SetSpeculativeEnabled(val interface{})
-	SpeculativeEnabledInput() interface{}
+	SpeculativeEnabled() any
+	SetSpeculativeEnabled(val any)
+	SpeculativeEnabledInput() any
 	SshKeyId() *string
 	SetSshKeyId(val *string)
 	SshKeyIdInput() *string
-	StructuredRunOutputEnabled() interface{}
-	SetStructuredRunOutputEnabled(val interface{})
-	StructuredRunOutputEnabledInput() interface{}
+	StructuredRunOutputEnabled() any
+	SetStructuredRunOutputEnabled(val any)
+	StructuredRunOutputEnabledInput() any
 	TagNames() *[]*string
 	SetTagNames(val *[]*string)
 	TagNamesInput() *[]*string
@@ -143,7 +143,7 @@ type Workspace interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	TerraformVersion() *string
@@ -164,9 +164,9 @@ type Workspace interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -184,7 +184,7 @@ type Workspace interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -196,7 +196,7 @@ type Workspace interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -239,17 +239,17 @@ type Workspace interface {
 	ResetTriggerPrefixes()
 	ResetVcsRepo()
 	ResetWorkingDirectory()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for Workspace
@@ -277,8 +277,8 @@ func (j *jsiiProxy_Workspace) AgentPoolIdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Workspace) AllowDestroyPlan() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Workspace) AllowDestroyPlan() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowDestroyPlan",
@@ -287,8 +287,8 @@ func (j *jsiiProxy_Workspace) AllowDestroyPlan() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Workspace) AllowDestroyPlanInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Workspace) AllowDestroyPlanInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowDestroyPlanInput",
@@ -297,8 +297,8 @@ func (j *jsiiProxy_Workspace) AllowDestroyPlanInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Workspace) AssessmentsEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Workspace) AssessmentsEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"assessmentsEnabled",
@@ -307,8 +307,8 @@ func (j *jsiiProxy_Workspace) AssessmentsEnabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Workspace) AssessmentsEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Workspace) AssessmentsEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"assessmentsEnabledInput",
@@ -317,8 +317,8 @@ func (j *jsiiProxy_Workspace) AssessmentsEnabledInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Workspace) AutoApply() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Workspace) AutoApply() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"autoApply",
@@ -327,8 +327,8 @@ func (j *jsiiProxy_Workspace) AutoApply() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Workspace) AutoApplyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Workspace) AutoApplyInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"autoApplyInput",
@@ -337,8 +337,8 @@ func (j *jsiiProxy_Workspace) AutoApplyInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Workspace) AutoApplyRunTrigger() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Workspace) AutoApplyRunTrigger() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"autoApplyRunTrigger",
@@ -347,8 +347,8 @@ func (j *jsiiProxy_Workspace) AutoApplyRunTrigger() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Workspace) AutoApplyRunTriggerInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Workspace) AutoApplyRunTriggerInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"autoApplyRunTriggerInput",
@@ -407,8 +407,8 @@ func (j *jsiiProxy_Workspace) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_Workspace) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Workspace) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -417,8 +417,8 @@ func (j *jsiiProxy_Workspace) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Workspace) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Workspace) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -427,8 +427,8 @@ func (j *jsiiProxy_Workspace) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Workspace) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Workspace) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -497,8 +497,8 @@ func (j *jsiiProxy_Workspace) ExecutionModeInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Workspace) FileTriggersEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Workspace) FileTriggersEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"fileTriggersEnabled",
@@ -507,8 +507,8 @@ func (j *jsiiProxy_Workspace) FileTriggersEnabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Workspace) FileTriggersEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Workspace) FileTriggersEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"fileTriggersEnabledInput",
@@ -517,8 +517,8 @@ func (j *jsiiProxy_Workspace) FileTriggersEnabledInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Workspace) ForceDelete() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Workspace) ForceDelete() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"forceDelete",
@@ -527,8 +527,8 @@ func (j *jsiiProxy_Workspace) ForceDelete() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Workspace) ForceDeleteInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Workspace) ForceDeleteInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"forceDeleteInput",
@@ -567,8 +567,8 @@ func (j *jsiiProxy_Workspace) FriendlyUniqueId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Workspace) GlobalRemoteState() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Workspace) GlobalRemoteState() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"globalRemoteState",
@@ -577,8 +577,8 @@ func (j *jsiiProxy_Workspace) GlobalRemoteState() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Workspace) GlobalRemoteStateInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Workspace) GlobalRemoteStateInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"globalRemoteStateInput",
@@ -617,8 +617,8 @@ func (j *jsiiProxy_Workspace) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Workspace) IgnoreAdditionalTagNames() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Workspace) IgnoreAdditionalTagNames() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ignoreAdditionalTagNames",
@@ -627,8 +627,8 @@ func (j *jsiiProxy_Workspace) IgnoreAdditionalTagNames() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Workspace) IgnoreAdditionalTagNamesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Workspace) IgnoreAdditionalTagNamesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ignoreAdditionalTagNamesInput",
@@ -637,8 +637,8 @@ func (j *jsiiProxy_Workspace) IgnoreAdditionalTagNamesInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Workspace) IgnoreAdditionalTags() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Workspace) IgnoreAdditionalTags() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ignoreAdditionalTags",
@@ -647,8 +647,8 @@ func (j *jsiiProxy_Workspace) IgnoreAdditionalTags() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Workspace) IgnoreAdditionalTagsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Workspace) IgnoreAdditionalTagsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ignoreAdditionalTagsInput",
@@ -707,8 +707,8 @@ func (j *jsiiProxy_Workspace) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_Workspace) Operations() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Workspace) Operations() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"operations",
@@ -717,8 +717,8 @@ func (j *jsiiProxy_Workspace) Operations() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Workspace) OperationsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Workspace) OperationsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"operationsInput",
@@ -777,8 +777,8 @@ func (j *jsiiProxy_Workspace) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_Workspace) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_Workspace) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -787,8 +787,8 @@ func (j *jsiiProxy_Workspace) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Workspace) QueueAllRuns() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Workspace) QueueAllRuns() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"queueAllRuns",
@@ -797,8 +797,8 @@ func (j *jsiiProxy_Workspace) QueueAllRuns() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Workspace) QueueAllRunsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Workspace) QueueAllRunsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"queueAllRunsInput",
@@ -807,8 +807,8 @@ func (j *jsiiProxy_Workspace) QueueAllRunsInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Workspace) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Workspace) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -887,8 +887,8 @@ func (j *jsiiProxy_Workspace) SourceUrlInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Workspace) SpeculativeEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Workspace) SpeculativeEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"speculativeEnabled",
@@ -897,8 +897,8 @@ func (j *jsiiProxy_Workspace) SpeculativeEnabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Workspace) SpeculativeEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Workspace) SpeculativeEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"speculativeEnabledInput",
@@ -927,8 +927,8 @@ func (j *jsiiProxy_Workspace) SshKeyIdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Workspace) StructuredRunOutputEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Workspace) StructuredRunOutputEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"structuredRunOutputEnabled",
@@ -937,8 +937,8 @@ func (j *jsiiProxy_Workspace) StructuredRunOutputEnabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Workspace) StructuredRunOutputEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Workspace) StructuredRunOutputEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"structuredRunOutputEnabledInput",
@@ -997,8 +997,8 @@ func (j *jsiiProxy_Workspace) TerraformGeneratorMetadata() *cdktf.TerraformProvi
 	return returns
 }
 
-func (j *jsiiProxy_Workspace) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Workspace) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -1117,7 +1117,6 @@ func (j *jsiiProxy_Workspace) WorkingDirectoryInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/workspace tfe_workspace} Resource.
 func NewWorkspace(scope constructs.Construct, id *string, config *WorkspaceConfig) Workspace {
 	_init_.Initialize()
@@ -1129,7 +1128,7 @@ func NewWorkspace(scope constructs.Construct, id *string, config *WorkspaceConfi
 
 	_jsii_.Create(
 		"@cdktf/provider-tfe.workspace.Workspace",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -1142,12 +1141,12 @@ func NewWorkspace_Override(w Workspace, scope constructs.Construct, id *string, 
 
 	_jsii_.Create(
 		"@cdktf/provider-tfe.workspace.Workspace",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		w,
 	)
 }
 
-func (j *jsiiProxy_Workspace)SetAgentPoolId(val *string) {
+func (j *jsiiProxy_Workspace) SetAgentPoolId(val *string) {
 	if err := j.validateSetAgentPoolIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1158,7 +1157,7 @@ func (j *jsiiProxy_Workspace)SetAgentPoolId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Workspace)SetAllowDestroyPlan(val interface{}) {
+func (j *jsiiProxy_Workspace) SetAllowDestroyPlan(val any) {
 	if err := j.validateSetAllowDestroyPlanParameters(val); err != nil {
 		panic(err)
 	}
@@ -1169,7 +1168,7 @@ func (j *jsiiProxy_Workspace)SetAllowDestroyPlan(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Workspace)SetAssessmentsEnabled(val interface{}) {
+func (j *jsiiProxy_Workspace) SetAssessmentsEnabled(val any) {
 	if err := j.validateSetAssessmentsEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -1180,7 +1179,7 @@ func (j *jsiiProxy_Workspace)SetAssessmentsEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Workspace)SetAutoApply(val interface{}) {
+func (j *jsiiProxy_Workspace) SetAutoApply(val any) {
 	if err := j.validateSetAutoApplyParameters(val); err != nil {
 		panic(err)
 	}
@@ -1191,7 +1190,7 @@ func (j *jsiiProxy_Workspace)SetAutoApply(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Workspace)SetAutoApplyRunTrigger(val interface{}) {
+func (j *jsiiProxy_Workspace) SetAutoApplyRunTrigger(val any) {
 	if err := j.validateSetAutoApplyRunTriggerParameters(val); err != nil {
 		panic(err)
 	}
@@ -1202,7 +1201,7 @@ func (j *jsiiProxy_Workspace)SetAutoApplyRunTrigger(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Workspace)SetAutoDestroyActivityDuration(val *string) {
+func (j *jsiiProxy_Workspace) SetAutoDestroyActivityDuration(val *string) {
 	if err := j.validateSetAutoDestroyActivityDurationParameters(val); err != nil {
 		panic(err)
 	}
@@ -1213,7 +1212,7 @@ func (j *jsiiProxy_Workspace)SetAutoDestroyActivityDuration(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Workspace)SetAutoDestroyAt(val *string) {
+func (j *jsiiProxy_Workspace) SetAutoDestroyAt(val *string) {
 	if err := j.validateSetAutoDestroyAtParameters(val); err != nil {
 		panic(err)
 	}
@@ -1224,7 +1223,7 @@ func (j *jsiiProxy_Workspace)SetAutoDestroyAt(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Workspace)SetConnection(val interface{}) {
+func (j *jsiiProxy_Workspace) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1235,7 +1234,7 @@ func (j *jsiiProxy_Workspace)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Workspace)SetCount(val interface{}) {
+func (j *jsiiProxy_Workspace) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -1246,7 +1245,7 @@ func (j *jsiiProxy_Workspace)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Workspace)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_Workspace) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -1254,7 +1253,7 @@ func (j *jsiiProxy_Workspace)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Workspace)SetDescription(val *string) {
+func (j *jsiiProxy_Workspace) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1265,7 +1264,7 @@ func (j *jsiiProxy_Workspace)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Workspace)SetExecutionMode(val *string) {
+func (j *jsiiProxy_Workspace) SetExecutionMode(val *string) {
 	if err := j.validateSetExecutionModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1276,7 +1275,7 @@ func (j *jsiiProxy_Workspace)SetExecutionMode(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Workspace)SetFileTriggersEnabled(val interface{}) {
+func (j *jsiiProxy_Workspace) SetFileTriggersEnabled(val any) {
 	if err := j.validateSetFileTriggersEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -1287,7 +1286,7 @@ func (j *jsiiProxy_Workspace)SetFileTriggersEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Workspace)SetForceDelete(val interface{}) {
+func (j *jsiiProxy_Workspace) SetForceDelete(val any) {
 	if err := j.validateSetForceDeleteParameters(val); err != nil {
 		panic(err)
 	}
@@ -1298,7 +1297,7 @@ func (j *jsiiProxy_Workspace)SetForceDelete(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Workspace)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_Workspace) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -1306,7 +1305,7 @@ func (j *jsiiProxy_Workspace)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_Workspace)SetGlobalRemoteState(val interface{}) {
+func (j *jsiiProxy_Workspace) SetGlobalRemoteState(val any) {
 	if err := j.validateSetGlobalRemoteStateParameters(val); err != nil {
 		panic(err)
 	}
@@ -1317,7 +1316,7 @@ func (j *jsiiProxy_Workspace)SetGlobalRemoteState(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Workspace)SetId(val *string) {
+func (j *jsiiProxy_Workspace) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1328,7 +1327,7 @@ func (j *jsiiProxy_Workspace)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Workspace)SetIgnoreAdditionalTagNames(val interface{}) {
+func (j *jsiiProxy_Workspace) SetIgnoreAdditionalTagNames(val any) {
 	if err := j.validateSetIgnoreAdditionalTagNamesParameters(val); err != nil {
 		panic(err)
 	}
@@ -1339,7 +1338,7 @@ func (j *jsiiProxy_Workspace)SetIgnoreAdditionalTagNames(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Workspace)SetIgnoreAdditionalTags(val interface{}) {
+func (j *jsiiProxy_Workspace) SetIgnoreAdditionalTags(val any) {
 	if err := j.validateSetIgnoreAdditionalTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1350,7 +1349,7 @@ func (j *jsiiProxy_Workspace)SetIgnoreAdditionalTags(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Workspace)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_Workspace) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -1361,7 +1360,7 @@ func (j *jsiiProxy_Workspace)SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	)
 }
 
-func (j *jsiiProxy_Workspace)SetName(val *string) {
+func (j *jsiiProxy_Workspace) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -1372,7 +1371,7 @@ func (j *jsiiProxy_Workspace)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Workspace)SetOperations(val interface{}) {
+func (j *jsiiProxy_Workspace) SetOperations(val any) {
 	if err := j.validateSetOperationsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1383,7 +1382,7 @@ func (j *jsiiProxy_Workspace)SetOperations(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Workspace)SetOrganization(val *string) {
+func (j *jsiiProxy_Workspace) SetOrganization(val *string) {
 	if err := j.validateSetOrganizationParameters(val); err != nil {
 		panic(err)
 	}
@@ -1394,7 +1393,7 @@ func (j *jsiiProxy_Workspace)SetOrganization(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Workspace)SetProjectId(val *string) {
+func (j *jsiiProxy_Workspace) SetProjectId(val *string) {
 	if err := j.validateSetProjectIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1405,7 +1404,7 @@ func (j *jsiiProxy_Workspace)SetProjectId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Workspace)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_Workspace) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1413,7 +1412,7 @@ func (j *jsiiProxy_Workspace)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_Workspace)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_Workspace) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -1424,7 +1423,7 @@ func (j *jsiiProxy_Workspace)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Workspace)SetQueueAllRuns(val interface{}) {
+func (j *jsiiProxy_Workspace) SetQueueAllRuns(val any) {
 	if err := j.validateSetQueueAllRunsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1435,7 +1434,7 @@ func (j *jsiiProxy_Workspace)SetQueueAllRuns(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Workspace)SetRemoteStateConsumerIds(val *[]*string) {
+func (j *jsiiProxy_Workspace) SetRemoteStateConsumerIds(val *[]*string) {
 	if err := j.validateSetRemoteStateConsumerIdsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1446,7 +1445,7 @@ func (j *jsiiProxy_Workspace)SetRemoteStateConsumerIds(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Workspace)SetSourceName(val *string) {
+func (j *jsiiProxy_Workspace) SetSourceName(val *string) {
 	if err := j.validateSetSourceNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -1457,7 +1456,7 @@ func (j *jsiiProxy_Workspace)SetSourceName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Workspace)SetSourceUrl(val *string) {
+func (j *jsiiProxy_Workspace) SetSourceUrl(val *string) {
 	if err := j.validateSetSourceUrlParameters(val); err != nil {
 		panic(err)
 	}
@@ -1468,7 +1467,7 @@ func (j *jsiiProxy_Workspace)SetSourceUrl(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Workspace)SetSpeculativeEnabled(val interface{}) {
+func (j *jsiiProxy_Workspace) SetSpeculativeEnabled(val any) {
 	if err := j.validateSetSpeculativeEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -1479,7 +1478,7 @@ func (j *jsiiProxy_Workspace)SetSpeculativeEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Workspace)SetSshKeyId(val *string) {
+func (j *jsiiProxy_Workspace) SetSshKeyId(val *string) {
 	if err := j.validateSetSshKeyIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1490,7 +1489,7 @@ func (j *jsiiProxy_Workspace)SetSshKeyId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Workspace)SetStructuredRunOutputEnabled(val interface{}) {
+func (j *jsiiProxy_Workspace) SetStructuredRunOutputEnabled(val any) {
 	if err := j.validateSetStructuredRunOutputEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -1501,7 +1500,7 @@ func (j *jsiiProxy_Workspace)SetStructuredRunOutputEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Workspace)SetTagNames(val *[]*string) {
+func (j *jsiiProxy_Workspace) SetTagNames(val *[]*string) {
 	if err := j.validateSetTagNamesParameters(val); err != nil {
 		panic(err)
 	}
@@ -1512,7 +1511,7 @@ func (j *jsiiProxy_Workspace)SetTagNames(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Workspace)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_Workspace) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1523,7 +1522,7 @@ func (j *jsiiProxy_Workspace)SetTags(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_Workspace)SetTerraformVersion(val *string) {
+func (j *jsiiProxy_Workspace) SetTerraformVersion(val *string) {
 	if err := j.validateSetTerraformVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1534,7 +1533,7 @@ func (j *jsiiProxy_Workspace)SetTerraformVersion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Workspace)SetTriggerPatterns(val *[]*string) {
+func (j *jsiiProxy_Workspace) SetTriggerPatterns(val *[]*string) {
 	if err := j.validateSetTriggerPatternsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1545,7 +1544,7 @@ func (j *jsiiProxy_Workspace)SetTriggerPatterns(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Workspace)SetTriggerPrefixes(val *[]*string) {
+func (j *jsiiProxy_Workspace) SetTriggerPrefixes(val *[]*string) {
 	if err := j.validateSetTriggerPrefixesParameters(val); err != nil {
 		panic(err)
 	}
@@ -1556,7 +1555,7 @@ func (j *jsiiProxy_Workspace)SetTriggerPrefixes(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Workspace)SetWorkingDirectory(val *string) {
+func (j *jsiiProxy_Workspace) SetWorkingDirectory(val *string) {
 	if err := j.validateSetWorkingDirectoryParameters(val); err != nil {
 		panic(err)
 	}
@@ -1579,7 +1578,7 @@ func Workspace_GenerateConfigForImport(scope constructs.Construct, importToId *s
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-tfe.workspace.Workspace",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -1603,7 +1602,7 @@ func Workspace_GenerateConfigForImport(scope constructs.Construct, importToId *s
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func Workspace_IsConstruct(x interface{}) *bool {
+func Workspace_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateWorkspace_IsConstructParameters(x); err != nil {
@@ -1614,7 +1613,7 @@ func Workspace_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-tfe.workspace.Workspace",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1622,7 +1621,7 @@ func Workspace_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func Workspace_IsTerraformElement(x interface{}) *bool {
+func Workspace_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateWorkspace_IsTerraformElementParameters(x); err != nil {
@@ -1633,7 +1632,7 @@ func Workspace_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-tfe.workspace.Workspace",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1641,7 +1640,7 @@ func Workspace_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func Workspace_IsTerraformResource(x interface{}) *bool {
+func Workspace_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateWorkspace_IsTerraformResourceParameters(x); err != nil {
@@ -1652,7 +1651,7 @@ func Workspace_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-tfe.workspace.Workspace",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1677,31 +1676,31 @@ func (w *jsiiProxy_Workspace) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		w,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (w *jsiiProxy_Workspace) AddOverride(path *string, value interface{}) {
+func (w *jsiiProxy_Workspace) AddOverride(path *string, value any) {
 	if err := w.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		w,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (w *jsiiProxy_Workspace) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (w *jsiiProxy_Workspace) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := w.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		w,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1717,7 +1716,7 @@ func (w *jsiiProxy_Workspace) GetBooleanAttribute(terraformAttribute *string) cd
 	_jsii_.Invoke(
 		w,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1733,7 +1732,7 @@ func (w *jsiiProxy_Workspace) GetBooleanMapAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		w,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1749,7 +1748,7 @@ func (w *jsiiProxy_Workspace) GetListAttribute(terraformAttribute *string) *[]*s
 	_jsii_.Invoke(
 		w,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1765,7 +1764,7 @@ func (w *jsiiProxy_Workspace) GetNumberAttribute(terraformAttribute *string) *fl
 	_jsii_.Invoke(
 		w,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1781,7 +1780,7 @@ func (w *jsiiProxy_Workspace) GetNumberListAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		w,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1797,7 +1796,7 @@ func (w *jsiiProxy_Workspace) GetNumberMapAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		w,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1813,7 +1812,7 @@ func (w *jsiiProxy_Workspace) GetStringAttribute(terraformAttribute *string) *st
 	_jsii_.Invoke(
 		w,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1829,15 +1828,15 @@ func (w *jsiiProxy_Workspace) GetStringMapAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		w,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (w *jsiiProxy_Workspace) HasResourceMove() interface{} {
-	var returns interface{}
+func (w *jsiiProxy_Workspace) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		w,
@@ -1856,7 +1855,7 @@ func (w *jsiiProxy_Workspace) ImportFrom(id *string, provider cdktf.TerraformPro
 	_jsii_.InvokeVoid(
 		w,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1869,7 +1868,7 @@ func (w *jsiiProxy_Workspace) InterpolationForAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		w,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1883,18 +1882,18 @@ func (w *jsiiProxy_Workspace) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		w,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (w *jsiiProxy_Workspace) MoveTo(moveTarget *string, index interface{}) {
+func (w *jsiiProxy_Workspace) MoveTo(moveTarget *string, index any) {
 	if err := w.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		w,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1905,7 +1904,7 @@ func (w *jsiiProxy_Workspace) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		w,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1916,7 +1915,7 @@ func (w *jsiiProxy_Workspace) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		w,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1927,7 +1926,7 @@ func (w *jsiiProxy_Workspace) PutVcsRepo(value *WorkspaceVcsRepo) {
 	_jsii_.InvokeVoid(
 		w,
 		"putVcsRepo",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -2195,8 +2194,8 @@ func (w *jsiiProxy_Workspace) ResetWorkingDirectory() {
 	)
 }
 
-func (w *jsiiProxy_Workspace) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (w *jsiiProxy_Workspace) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		w,
@@ -2208,8 +2207,8 @@ func (w *jsiiProxy_Workspace) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (w *jsiiProxy_Workspace) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (w *jsiiProxy_Workspace) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		w,
@@ -2221,8 +2220,8 @@ func (w *jsiiProxy_Workspace) SynthesizeHclAttributes() *map[string]interface{} 
 	return returns
 }
 
-func (w *jsiiProxy_Workspace) ToHclTerraform() interface{} {
-	var returns interface{}
+func (w *jsiiProxy_Workspace) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		w,
@@ -2234,8 +2233,8 @@ func (w *jsiiProxy_Workspace) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (w *jsiiProxy_Workspace) ToMetadata() interface{} {
-	var returns interface{}
+func (w *jsiiProxy_Workspace) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		w,
@@ -2260,8 +2259,8 @@ func (w *jsiiProxy_Workspace) ToString() *string {
 	return returns
 }
 
-func (w *jsiiProxy_Workspace) ToTerraform() interface{} {
-	var returns interface{}
+func (w *jsiiProxy_Workspace) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		w,
@@ -2272,4 +2271,3 @@ func (w *jsiiProxy_Workspace) ToTerraform() interface{} {
 
 	return returns
 }
-

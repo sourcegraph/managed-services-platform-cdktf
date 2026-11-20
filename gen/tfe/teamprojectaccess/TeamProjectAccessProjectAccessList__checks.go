@@ -34,7 +34,7 @@ func (t *jsiiProxy_TeamProjectAccessProjectAccessList) validateResolveParameters
 	return nil
 }
 
-func (j *jsiiProxy_TeamProjectAccessProjectAccessList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_TeamProjectAccessProjectAccessList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewTeamProjectAccessProjectAccessListParameters(terraformResource c
 
 	return nil
 }
-

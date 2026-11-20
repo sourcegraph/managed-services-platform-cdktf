@@ -12,9 +12,9 @@ type NoCodeModuleVariableOptionsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -27,8 +27,8 @@ type NoCodeModuleVariableOptionsOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -49,7 +49,7 @@ type NoCodeModuleVariableOptionsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -72,7 +72,7 @@ type NoCodeModuleVariableOptionsOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -85,8 +85,8 @@ type jsiiProxy_NoCodeModuleVariableOptionsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_NoCodeModuleVariableOptionsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NoCodeModuleVariableOptionsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -125,8 +125,8 @@ func (j *jsiiProxy_NoCodeModuleVariableOptionsOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_NoCodeModuleVariableOptionsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NoCodeModuleVariableOptionsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -215,7 +215,6 @@ func (j *jsiiProxy_NoCodeModuleVariableOptionsOutputReference) TypeInput() *stri
 	return returns
 }
 
-
 func NewNoCodeModuleVariableOptionsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) NoCodeModuleVariableOptionsOutputReference {
 	_init_.Initialize()
 
@@ -226,7 +225,7 @@ func NewNoCodeModuleVariableOptionsOutputReference(terraformResource cdktf.IInte
 
 	_jsii_.Create(
 		"@cdktf/provider-tfe.noCodeModule.NoCodeModuleVariableOptionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -238,12 +237,12 @@ func NewNoCodeModuleVariableOptionsOutputReference_Override(n NoCodeModuleVariab
 
 	_jsii_.Create(
 		"@cdktf/provider-tfe.noCodeModule.NoCodeModuleVariableOptionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		n,
 	)
 }
 
-func (j *jsiiProxy_NoCodeModuleVariableOptionsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_NoCodeModuleVariableOptionsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -254,7 +253,7 @@ func (j *jsiiProxy_NoCodeModuleVariableOptionsOutputReference)SetComplexObjectIn
 	)
 }
 
-func (j *jsiiProxy_NoCodeModuleVariableOptionsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_NoCodeModuleVariableOptionsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -265,7 +264,7 @@ func (j *jsiiProxy_NoCodeModuleVariableOptionsOutputReference)SetComplexObjectIs
 	)
 }
 
-func (j *jsiiProxy_NoCodeModuleVariableOptionsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_NoCodeModuleVariableOptionsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,7 +275,7 @@ func (j *jsiiProxy_NoCodeModuleVariableOptionsOutputReference)SetInternalValue(v
 	)
 }
 
-func (j *jsiiProxy_NoCodeModuleVariableOptionsOutputReference)SetName(val *string) {
+func (j *jsiiProxy_NoCodeModuleVariableOptionsOutputReference) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -287,7 +286,7 @@ func (j *jsiiProxy_NoCodeModuleVariableOptionsOutputReference)SetName(val *strin
 	)
 }
 
-func (j *jsiiProxy_NoCodeModuleVariableOptionsOutputReference)SetOptions(val *[]*string) {
+func (j *jsiiProxy_NoCodeModuleVariableOptionsOutputReference) SetOptions(val *[]*string) {
 	if err := j.validateSetOptionsParameters(val); err != nil {
 		panic(err)
 	}
@@ -298,7 +297,7 @@ func (j *jsiiProxy_NoCodeModuleVariableOptionsOutputReference)SetOptions(val *[]
 	)
 }
 
-func (j *jsiiProxy_NoCodeModuleVariableOptionsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_NoCodeModuleVariableOptionsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -309,7 +308,7 @@ func (j *jsiiProxy_NoCodeModuleVariableOptionsOutputReference)SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_NoCodeModuleVariableOptionsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_NoCodeModuleVariableOptionsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -320,7 +319,7 @@ func (j *jsiiProxy_NoCodeModuleVariableOptionsOutputReference)SetTerraformResour
 	)
 }
 
-func (j *jsiiProxy_NoCodeModuleVariableOptionsOutputReference)SetType(val *string) {
+func (j *jsiiProxy_NoCodeModuleVariableOptionsOutputReference) SetType(val *string) {
 	if err := j.validateSetTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -344,16 +343,16 @@ func (n *jsiiProxy_NoCodeModuleVariableOptionsOutputReference) ComputeFqn() *str
 	return returns
 }
 
-func (n *jsiiProxy_NoCodeModuleVariableOptionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (n *jsiiProxy_NoCodeModuleVariableOptionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := n.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -369,7 +368,7 @@ func (n *jsiiProxy_NoCodeModuleVariableOptionsOutputReference) GetBooleanAttribu
 	_jsii_.Invoke(
 		n,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -385,7 +384,7 @@ func (n *jsiiProxy_NoCodeModuleVariableOptionsOutputReference) GetBooleanMapAttr
 	_jsii_.Invoke(
 		n,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -401,7 +400,7 @@ func (n *jsiiProxy_NoCodeModuleVariableOptionsOutputReference) GetListAttribute(
 	_jsii_.Invoke(
 		n,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -417,7 +416,7 @@ func (n *jsiiProxy_NoCodeModuleVariableOptionsOutputReference) GetNumberAttribut
 	_jsii_.Invoke(
 		n,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -433,7 +432,7 @@ func (n *jsiiProxy_NoCodeModuleVariableOptionsOutputReference) GetNumberListAttr
 	_jsii_.Invoke(
 		n,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -449,7 +448,7 @@ func (n *jsiiProxy_NoCodeModuleVariableOptionsOutputReference) GetNumberMapAttri
 	_jsii_.Invoke(
 		n,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -465,7 +464,7 @@ func (n *jsiiProxy_NoCodeModuleVariableOptionsOutputReference) GetStringAttribut
 	_jsii_.Invoke(
 		n,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -481,7 +480,7 @@ func (n *jsiiProxy_NoCodeModuleVariableOptionsOutputReference) GetStringMapAttri
 	_jsii_.Invoke(
 		n,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -510,23 +509,23 @@ func (n *jsiiProxy_NoCodeModuleVariableOptionsOutputReference) InterpolationForA
 	_jsii_.Invoke(
 		n,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (n *jsiiProxy_NoCodeModuleVariableOptionsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (n *jsiiProxy_NoCodeModuleVariableOptionsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := n.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		n,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -545,4 +544,3 @@ func (n *jsiiProxy_NoCodeModuleVariableOptionsOutputReference) ToString() *strin
 
 	return returns
 }
-

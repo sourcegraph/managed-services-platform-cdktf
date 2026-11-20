@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-tfe.dataTfeAgentPool.DataTfeAgentPool",
-		reflect.TypeOf((*DataTfeAgentPool)(nil)).Elem(),
+		reflect.TypeFor[DataTfeAgentPool](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "allowedWorkspaceIds", GoGetter: "AllowedWorkspaceIds"},
@@ -55,7 +55,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataTfeAgentPool{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -63,6 +63,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-tfe.dataTfeAgentPool.DataTfeAgentPoolConfig",
-		reflect.TypeOf((*DataTfeAgentPoolConfig)(nil)).Elem(),
+		reflect.TypeFor[DataTfeAgentPoolConfig](),
 	)
 }

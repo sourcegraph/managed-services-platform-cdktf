@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-tfe.dataTfeRegistryProviders.DataTfeRegistryProviders",
-		reflect.TypeOf((*DataTfeRegistryProviders)(nil)).Elem(),
+		reflect.TypeFor[DataTfeRegistryProviders](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
@@ -56,7 +56,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataTfeRegistryProviders{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -64,15 +64,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-tfe.dataTfeRegistryProviders.DataTfeRegistryProvidersConfig",
-		reflect.TypeOf((*DataTfeRegistryProvidersConfig)(nil)).Elem(),
+		reflect.TypeFor[DataTfeRegistryProvidersConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-tfe.dataTfeRegistryProviders.DataTfeRegistryProvidersProviders",
-		reflect.TypeOf((*DataTfeRegistryProvidersProviders)(nil)).Elem(),
+		reflect.TypeFor[DataTfeRegistryProvidersProviders](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-tfe.dataTfeRegistryProviders.DataTfeRegistryProvidersProvidersList",
-		reflect.TypeOf((*DataTfeRegistryProvidersProvidersList)(nil)).Elem(),
+		reflect.TypeFor[DataTfeRegistryProvidersProvidersList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -85,7 +85,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataTfeRegistryProvidersProvidersList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -93,7 +93,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-tfe.dataTfeRegistryProviders.DataTfeRegistryProvidersProvidersOutputReference",
-		reflect.TypeOf((*DataTfeRegistryProvidersProvidersOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataTfeRegistryProvidersProvidersOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -124,7 +124,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "updatedAt", GoGetter: "UpdatedAt"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataTfeRegistryProvidersProvidersOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

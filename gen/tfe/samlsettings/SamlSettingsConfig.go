@@ -6,9 +6,9 @@ import (
 
 type SamlSettingsConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type SamlSettingsConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Identity Provider Certificate specifies the PEM encoded X.509 Certificate as provided by the IdP configuration.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/saml_settings#idp_cert SamlSettings#idp_cert}
@@ -50,7 +50,7 @@ type SamlSettingsConfig struct {
 	// Ensure that <samlp:AuthnRequest> messages are signed.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/saml_settings#authn_requests_signed SamlSettings#authn_requests_signed}
-	AuthnRequestsSigned interface{} `field:"optional" json:"authnRequestsSigned" yaml:"authnRequestsSigned"`
+	AuthnRequestsSigned any `field:"optional" json:"authnRequestsSigned" yaml:"authnRequestsSigned"`
 	// The certificate used for request and assertion signing.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/saml_settings#certificate SamlSettings#certificate}
@@ -58,7 +58,7 @@ type SamlSettingsConfig struct {
 	// When sign-on fails and this is enabled, the SAMLResponse XML will be displayed on the login page.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/saml_settings#debug SamlSettings#debug}
-	Debug interface{} `field:"optional" json:"debug" yaml:"debug"`
+	Debug any `field:"optional" json:"debug" yaml:"debug"`
 	// The private key used for request and assertion signing.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/saml_settings#private_key SamlSettings#private_key}
@@ -86,10 +86,9 @@ type SamlSettingsConfig struct {
 	// Set it to false if you would rather use Terraform Enterprise to manage team membership.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/saml_settings#team_management_enabled SamlSettings#team_management_enabled}
-	TeamManagementEnabled interface{} `field:"optional" json:"teamManagementEnabled" yaml:"teamManagementEnabled"`
+	TeamManagementEnabled any `field:"optional" json:"teamManagementEnabled" yaml:"teamManagementEnabled"`
 	// Ensure that <saml:Assertion> elements are signed.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/saml_settings#want_assertions_signed SamlSettings#want_assertions_signed}
-	WantAssertionsSigned interface{} `field:"optional" json:"wantAssertionsSigned" yaml:"wantAssertionsSigned"`
+	WantAssertionsSigned any `field:"optional" json:"wantAssertionsSigned" yaml:"wantAssertionsSigned"`
 }
-

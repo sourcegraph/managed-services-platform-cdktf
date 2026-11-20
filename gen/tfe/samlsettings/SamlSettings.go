@@ -22,27 +22,27 @@ type SamlSettings interface {
 	AttrUsername() *string
 	SetAttrUsername(val *string)
 	AttrUsernameInput() *string
-	AuthnRequestsSigned() interface{}
-	SetAuthnRequestsSigned(val interface{})
-	AuthnRequestsSignedInput() interface{}
+	AuthnRequestsSigned() any
+	SetAuthnRequestsSigned(val any)
+	AuthnRequestsSignedInput() any
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	Certificate() *string
 	SetCertificate(val *string)
 	CertificateInput() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
-	Debug() interface{}
-	SetDebug(val interface{})
-	DebugInput() interface{}
+	SetCount(val any)
+	Debug() any
+	SetDebug(val any)
+	DebugInput() any
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -79,11 +79,11 @@ type SamlSettings interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	SignatureDigestMethod() *string
 	SetSignatureDigestMethod(val *string)
 	SignatureDigestMethodInput() *string
@@ -102,25 +102,25 @@ type SamlSettings interface {
 	SsoEndpointUrl() *string
 	SetSsoEndpointUrl(val *string)
 	SsoEndpointUrlInput() *string
-	TeamManagementEnabled() interface{}
-	SetTeamManagementEnabled(val interface{})
-	TeamManagementEnabledInput() interface{}
+	TeamManagementEnabled() any
+	SetTeamManagementEnabled(val any)
+	TeamManagementEnabledInput() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
-	WantAssertionsSigned() interface{}
-	SetWantAssertionsSigned(val interface{})
-	WantAssertionsSignedInput() interface{}
+	WantAssertionsSigned() any
+	SetWantAssertionsSigned(val any)
+	WantAssertionsSignedInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -138,7 +138,7 @@ type SamlSettings interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -150,7 +150,7 @@ type SamlSettings interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -174,17 +174,17 @@ type SamlSettings interface {
 	ResetSsoApiTokenSessionTimeout()
 	ResetTeamManagementEnabled()
 	ResetWantAssertionsSigned()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for SamlSettings
@@ -262,8 +262,8 @@ func (j *jsiiProxy_SamlSettings) AttrUsernameInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_SamlSettings) AuthnRequestsSigned() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SamlSettings) AuthnRequestsSigned() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"authnRequestsSigned",
@@ -272,8 +272,8 @@ func (j *jsiiProxy_SamlSettings) AuthnRequestsSigned() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SamlSettings) AuthnRequestsSignedInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SamlSettings) AuthnRequestsSignedInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"authnRequestsSignedInput",
@@ -312,8 +312,8 @@ func (j *jsiiProxy_SamlSettings) CertificateInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_SamlSettings) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SamlSettings) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -322,8 +322,8 @@ func (j *jsiiProxy_SamlSettings) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SamlSettings) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_SamlSettings) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -332,8 +332,8 @@ func (j *jsiiProxy_SamlSettings) ConstructNodeMetadata() *map[string]interface{}
 	return returns
 }
 
-func (j *jsiiProxy_SamlSettings) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SamlSettings) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -342,8 +342,8 @@ func (j *jsiiProxy_SamlSettings) Count() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SamlSettings) Debug() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SamlSettings) Debug() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"debug",
@@ -352,8 +352,8 @@ func (j *jsiiProxy_SamlSettings) Debug() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SamlSettings) DebugInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SamlSettings) DebugInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"debugInput",
@@ -532,8 +532,8 @@ func (j *jsiiProxy_SamlSettings) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_SamlSettings) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_SamlSettings) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -542,8 +542,8 @@ func (j *jsiiProxy_SamlSettings) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SamlSettings) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SamlSettings) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -672,8 +672,8 @@ func (j *jsiiProxy_SamlSettings) SsoEndpointUrlInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_SamlSettings) TeamManagementEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SamlSettings) TeamManagementEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"teamManagementEnabled",
@@ -682,8 +682,8 @@ func (j *jsiiProxy_SamlSettings) TeamManagementEnabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SamlSettings) TeamManagementEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SamlSettings) TeamManagementEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"teamManagementEnabledInput",
@@ -702,8 +702,8 @@ func (j *jsiiProxy_SamlSettings) TerraformGeneratorMetadata() *cdktf.TerraformPr
 	return returns
 }
 
-func (j *jsiiProxy_SamlSettings) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_SamlSettings) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -722,8 +722,8 @@ func (j *jsiiProxy_SamlSettings) TerraformResourceType() *string {
 	return returns
 }
 
-func (j *jsiiProxy_SamlSettings) WantAssertionsSigned() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SamlSettings) WantAssertionsSigned() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"wantAssertionsSigned",
@@ -732,8 +732,8 @@ func (j *jsiiProxy_SamlSettings) WantAssertionsSigned() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SamlSettings) WantAssertionsSignedInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SamlSettings) WantAssertionsSignedInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"wantAssertionsSignedInput",
@@ -741,7 +741,6 @@ func (j *jsiiProxy_SamlSettings) WantAssertionsSignedInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/saml_settings tfe_saml_settings} Resource.
 func NewSamlSettings(scope constructs.Construct, id *string, config *SamlSettingsConfig) SamlSettings {
@@ -754,7 +753,7 @@ func NewSamlSettings(scope constructs.Construct, id *string, config *SamlSetting
 
 	_jsii_.Create(
 		"@cdktf/provider-tfe.samlSettings.SamlSettings",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -767,12 +766,12 @@ func NewSamlSettings_Override(s SamlSettings, scope constructs.Construct, id *st
 
 	_jsii_.Create(
 		"@cdktf/provider-tfe.samlSettings.SamlSettings",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		s,
 	)
 }
 
-func (j *jsiiProxy_SamlSettings)SetAttrGroups(val *string) {
+func (j *jsiiProxy_SamlSettings) SetAttrGroups(val *string) {
 	if err := j.validateSetAttrGroupsParameters(val); err != nil {
 		panic(err)
 	}
@@ -783,7 +782,7 @@ func (j *jsiiProxy_SamlSettings)SetAttrGroups(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SamlSettings)SetAttrSiteAdmin(val *string) {
+func (j *jsiiProxy_SamlSettings) SetAttrSiteAdmin(val *string) {
 	if err := j.validateSetAttrSiteAdminParameters(val); err != nil {
 		panic(err)
 	}
@@ -794,7 +793,7 @@ func (j *jsiiProxy_SamlSettings)SetAttrSiteAdmin(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SamlSettings)SetAttrUsername(val *string) {
+func (j *jsiiProxy_SamlSettings) SetAttrUsername(val *string) {
 	if err := j.validateSetAttrUsernameParameters(val); err != nil {
 		panic(err)
 	}
@@ -805,7 +804,7 @@ func (j *jsiiProxy_SamlSettings)SetAttrUsername(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SamlSettings)SetAuthnRequestsSigned(val interface{}) {
+func (j *jsiiProxy_SamlSettings) SetAuthnRequestsSigned(val any) {
 	if err := j.validateSetAuthnRequestsSignedParameters(val); err != nil {
 		panic(err)
 	}
@@ -816,7 +815,7 @@ func (j *jsiiProxy_SamlSettings)SetAuthnRequestsSigned(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SamlSettings)SetCertificate(val *string) {
+func (j *jsiiProxy_SamlSettings) SetCertificate(val *string) {
 	if err := j.validateSetCertificateParameters(val); err != nil {
 		panic(err)
 	}
@@ -827,7 +826,7 @@ func (j *jsiiProxy_SamlSettings)SetCertificate(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SamlSettings)SetConnection(val interface{}) {
+func (j *jsiiProxy_SamlSettings) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -838,7 +837,7 @@ func (j *jsiiProxy_SamlSettings)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SamlSettings)SetCount(val interface{}) {
+func (j *jsiiProxy_SamlSettings) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -849,7 +848,7 @@ func (j *jsiiProxy_SamlSettings)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SamlSettings)SetDebug(val interface{}) {
+func (j *jsiiProxy_SamlSettings) SetDebug(val any) {
 	if err := j.validateSetDebugParameters(val); err != nil {
 		panic(err)
 	}
@@ -860,7 +859,7 @@ func (j *jsiiProxy_SamlSettings)SetDebug(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SamlSettings)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_SamlSettings) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -868,7 +867,7 @@ func (j *jsiiProxy_SamlSettings)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_SamlSettings)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_SamlSettings) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -876,7 +875,7 @@ func (j *jsiiProxy_SamlSettings)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_SamlSettings)SetIdpCert(val *string) {
+func (j *jsiiProxy_SamlSettings) SetIdpCert(val *string) {
 	if err := j.validateSetIdpCertParameters(val); err != nil {
 		panic(err)
 	}
@@ -887,7 +886,7 @@ func (j *jsiiProxy_SamlSettings)SetIdpCert(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SamlSettings)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_SamlSettings) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -898,7 +897,7 @@ func (j *jsiiProxy_SamlSettings)SetLifecycle(val *cdktf.TerraformResourceLifecyc
 	)
 }
 
-func (j *jsiiProxy_SamlSettings)SetPrivateKey(val *string) {
+func (j *jsiiProxy_SamlSettings) SetPrivateKey(val *string) {
 	if err := j.validateSetPrivateKeyParameters(val); err != nil {
 		panic(err)
 	}
@@ -909,7 +908,7 @@ func (j *jsiiProxy_SamlSettings)SetPrivateKey(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SamlSettings)SetPrivateKeyWo(val *string) {
+func (j *jsiiProxy_SamlSettings) SetPrivateKeyWo(val *string) {
 	if err := j.validateSetPrivateKeyWoParameters(val); err != nil {
 		panic(err)
 	}
@@ -920,7 +919,7 @@ func (j *jsiiProxy_SamlSettings)SetPrivateKeyWo(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SamlSettings)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_SamlSettings) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -928,7 +927,7 @@ func (j *jsiiProxy_SamlSettings)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_SamlSettings)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_SamlSettings) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -939,7 +938,7 @@ func (j *jsiiProxy_SamlSettings)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SamlSettings)SetSignatureDigestMethod(val *string) {
+func (j *jsiiProxy_SamlSettings) SetSignatureDigestMethod(val *string) {
 	if err := j.validateSetSignatureDigestMethodParameters(val); err != nil {
 		panic(err)
 	}
@@ -950,7 +949,7 @@ func (j *jsiiProxy_SamlSettings)SetSignatureDigestMethod(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SamlSettings)SetSignatureSigningMethod(val *string) {
+func (j *jsiiProxy_SamlSettings) SetSignatureSigningMethod(val *string) {
 	if err := j.validateSetSignatureSigningMethodParameters(val); err != nil {
 		panic(err)
 	}
@@ -961,7 +960,7 @@ func (j *jsiiProxy_SamlSettings)SetSignatureSigningMethod(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SamlSettings)SetSiteAdminRole(val *string) {
+func (j *jsiiProxy_SamlSettings) SetSiteAdminRole(val *string) {
 	if err := j.validateSetSiteAdminRoleParameters(val); err != nil {
 		panic(err)
 	}
@@ -972,7 +971,7 @@ func (j *jsiiProxy_SamlSettings)SetSiteAdminRole(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SamlSettings)SetSloEndpointUrl(val *string) {
+func (j *jsiiProxy_SamlSettings) SetSloEndpointUrl(val *string) {
 	if err := j.validateSetSloEndpointUrlParameters(val); err != nil {
 		panic(err)
 	}
@@ -983,7 +982,7 @@ func (j *jsiiProxy_SamlSettings)SetSloEndpointUrl(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SamlSettings)SetSsoApiTokenSessionTimeout(val *float64) {
+func (j *jsiiProxy_SamlSettings) SetSsoApiTokenSessionTimeout(val *float64) {
 	if err := j.validateSetSsoApiTokenSessionTimeoutParameters(val); err != nil {
 		panic(err)
 	}
@@ -994,7 +993,7 @@ func (j *jsiiProxy_SamlSettings)SetSsoApiTokenSessionTimeout(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_SamlSettings)SetSsoEndpointUrl(val *string) {
+func (j *jsiiProxy_SamlSettings) SetSsoEndpointUrl(val *string) {
 	if err := j.validateSetSsoEndpointUrlParameters(val); err != nil {
 		panic(err)
 	}
@@ -1005,7 +1004,7 @@ func (j *jsiiProxy_SamlSettings)SetSsoEndpointUrl(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SamlSettings)SetTeamManagementEnabled(val interface{}) {
+func (j *jsiiProxy_SamlSettings) SetTeamManagementEnabled(val any) {
 	if err := j.validateSetTeamManagementEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -1016,7 +1015,7 @@ func (j *jsiiProxy_SamlSettings)SetTeamManagementEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SamlSettings)SetWantAssertionsSigned(val interface{}) {
+func (j *jsiiProxy_SamlSettings) SetWantAssertionsSigned(val any) {
 	if err := j.validateSetWantAssertionsSignedParameters(val); err != nil {
 		panic(err)
 	}
@@ -1039,7 +1038,7 @@ func SamlSettings_GenerateConfigForImport(scope constructs.Construct, importToId
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-tfe.samlSettings.SamlSettings",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -1063,7 +1062,7 @@ func SamlSettings_GenerateConfigForImport(scope constructs.Construct, importToId
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func SamlSettings_IsConstruct(x interface{}) *bool {
+func SamlSettings_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSamlSettings_IsConstructParameters(x); err != nil {
@@ -1074,7 +1073,7 @@ func SamlSettings_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-tfe.samlSettings.SamlSettings",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1082,7 +1081,7 @@ func SamlSettings_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func SamlSettings_IsTerraformElement(x interface{}) *bool {
+func SamlSettings_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSamlSettings_IsTerraformElementParameters(x); err != nil {
@@ -1093,7 +1092,7 @@ func SamlSettings_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-tfe.samlSettings.SamlSettings",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1101,7 +1100,7 @@ func SamlSettings_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func SamlSettings_IsTerraformResource(x interface{}) *bool {
+func SamlSettings_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSamlSettings_IsTerraformResourceParameters(x); err != nil {
@@ -1112,7 +1111,7 @@ func SamlSettings_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-tfe.samlSettings.SamlSettings",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1137,31 +1136,31 @@ func (s *jsiiProxy_SamlSettings) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (s *jsiiProxy_SamlSettings) AddOverride(path *string, value interface{}) {
+func (s *jsiiProxy_SamlSettings) AddOverride(path *string, value any) {
 	if err := s.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (s *jsiiProxy_SamlSettings) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_SamlSettings) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1177,7 +1176,7 @@ func (s *jsiiProxy_SamlSettings) GetBooleanAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1193,7 +1192,7 @@ func (s *jsiiProxy_SamlSettings) GetBooleanMapAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1209,7 +1208,7 @@ func (s *jsiiProxy_SamlSettings) GetListAttribute(terraformAttribute *string) *[
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1225,7 +1224,7 @@ func (s *jsiiProxy_SamlSettings) GetNumberAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1241,7 +1240,7 @@ func (s *jsiiProxy_SamlSettings) GetNumberListAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1257,7 +1256,7 @@ func (s *jsiiProxy_SamlSettings) GetNumberMapAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1273,7 +1272,7 @@ func (s *jsiiProxy_SamlSettings) GetStringAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1289,15 +1288,15 @@ func (s *jsiiProxy_SamlSettings) GetStringMapAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_SamlSettings) HasResourceMove() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SamlSettings) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1316,7 +1315,7 @@ func (s *jsiiProxy_SamlSettings) ImportFrom(id *string, provider cdktf.Terraform
 	_jsii_.InvokeVoid(
 		s,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1329,7 +1328,7 @@ func (s *jsiiProxy_SamlSettings) InterpolationForAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1343,18 +1342,18 @@ func (s *jsiiProxy_SamlSettings) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (s *jsiiProxy_SamlSettings) MoveTo(moveTarget *string, index interface{}) {
+func (s *jsiiProxy_SamlSettings) MoveTo(moveTarget *string, index any) {
 	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1365,7 +1364,7 @@ func (s *jsiiProxy_SamlSettings) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1376,7 +1375,7 @@ func (s *jsiiProxy_SamlSettings) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1500,8 +1499,8 @@ func (s *jsiiProxy_SamlSettings) ResetWantAssertionsSigned() {
 	)
 }
 
-func (s *jsiiProxy_SamlSettings) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_SamlSettings) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1513,8 +1512,8 @@ func (s *jsiiProxy_SamlSettings) SynthesizeAttributes() *map[string]interface{} 
 	return returns
 }
 
-func (s *jsiiProxy_SamlSettings) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_SamlSettings) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1526,8 +1525,8 @@ func (s *jsiiProxy_SamlSettings) SynthesizeHclAttributes() *map[string]interface
 	return returns
 }
 
-func (s *jsiiProxy_SamlSettings) ToHclTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SamlSettings) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1539,8 +1538,8 @@ func (s *jsiiProxy_SamlSettings) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (s *jsiiProxy_SamlSettings) ToMetadata() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SamlSettings) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1565,8 +1564,8 @@ func (s *jsiiProxy_SamlSettings) ToString() *string {
 	return returns
 }
 
-func (s *jsiiProxy_SamlSettings) ToTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SamlSettings) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1577,4 +1576,3 @@ func (s *jsiiProxy_SamlSettings) ToTerraform() interface{} {
 
 	return returns
 }
-

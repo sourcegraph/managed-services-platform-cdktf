@@ -12,9 +12,9 @@ type RegistryModuleTestConfigOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -27,8 +27,8 @@ type RegistryModuleTestConfigOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -37,13 +37,13 @@ type RegistryModuleTestConfigOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
-	TestsEnabled() interface{}
-	SetTestsEnabled(val interface{})
-	TestsEnabledInput() interface{}
+	TestsEnabled() any
+	SetTestsEnabled(val any)
+	TestsEnabledInput() any
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -67,7 +67,7 @@ type RegistryModuleTestConfigOutputReference interface {
 	ResetTestsEnabled()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -80,8 +80,8 @@ type jsiiProxy_RegistryModuleTestConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_RegistryModuleTestConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RegistryModuleTestConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -120,8 +120,8 @@ func (j *jsiiProxy_RegistryModuleTestConfigOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_RegistryModuleTestConfigOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RegistryModuleTestConfigOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -150,8 +150,8 @@ func (j *jsiiProxy_RegistryModuleTestConfigOutputReference) TerraformResource() 
 	return returns
 }
 
-func (j *jsiiProxy_RegistryModuleTestConfigOutputReference) TestsEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RegistryModuleTestConfigOutputReference) TestsEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"testsEnabled",
@@ -160,8 +160,8 @@ func (j *jsiiProxy_RegistryModuleTestConfigOutputReference) TestsEnabled() inter
 	return returns
 }
 
-func (j *jsiiProxy_RegistryModuleTestConfigOutputReference) TestsEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RegistryModuleTestConfigOutputReference) TestsEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"testsEnabledInput",
@@ -169,7 +169,6 @@ func (j *jsiiProxy_RegistryModuleTestConfigOutputReference) TestsEnabledInput() 
 	)
 	return returns
 }
-
 
 func NewRegistryModuleTestConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) RegistryModuleTestConfigOutputReference {
 	_init_.Initialize()
@@ -181,7 +180,7 @@ func NewRegistryModuleTestConfigOutputReference(terraformResource cdktf.IInterpo
 
 	_jsii_.Create(
 		"@cdktf/provider-tfe.registryModule.RegistryModuleTestConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -193,12 +192,12 @@ func NewRegistryModuleTestConfigOutputReference_Override(r RegistryModuleTestCon
 
 	_jsii_.Create(
 		"@cdktf/provider-tfe.registryModule.RegistryModuleTestConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		r,
 	)
 }
 
-func (j *jsiiProxy_RegistryModuleTestConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_RegistryModuleTestConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -209,7 +208,7 @@ func (j *jsiiProxy_RegistryModuleTestConfigOutputReference)SetComplexObjectIndex
 	)
 }
 
-func (j *jsiiProxy_RegistryModuleTestConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_RegistryModuleTestConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -220,7 +219,7 @@ func (j *jsiiProxy_RegistryModuleTestConfigOutputReference)SetComplexObjectIsFro
 	)
 }
 
-func (j *jsiiProxy_RegistryModuleTestConfigOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_RegistryModuleTestConfigOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -231,7 +230,7 @@ func (j *jsiiProxy_RegistryModuleTestConfigOutputReference)SetInternalValue(val 
 	)
 }
 
-func (j *jsiiProxy_RegistryModuleTestConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_RegistryModuleTestConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -242,7 +241,7 @@ func (j *jsiiProxy_RegistryModuleTestConfigOutputReference)SetTerraformAttribute
 	)
 }
 
-func (j *jsiiProxy_RegistryModuleTestConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_RegistryModuleTestConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -253,7 +252,7 @@ func (j *jsiiProxy_RegistryModuleTestConfigOutputReference)SetTerraformResource(
 	)
 }
 
-func (j *jsiiProxy_RegistryModuleTestConfigOutputReference)SetTestsEnabled(val interface{}) {
+func (j *jsiiProxy_RegistryModuleTestConfigOutputReference) SetTestsEnabled(val any) {
 	if err := j.validateSetTestsEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,16 +276,16 @@ func (r *jsiiProxy_RegistryModuleTestConfigOutputReference) ComputeFqn() *string
 	return returns
 }
 
-func (r *jsiiProxy_RegistryModuleTestConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (r *jsiiProxy_RegistryModuleTestConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := r.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -302,7 +301,7 @@ func (r *jsiiProxy_RegistryModuleTestConfigOutputReference) GetBooleanAttribute(
 	_jsii_.Invoke(
 		r,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -318,7 +317,7 @@ func (r *jsiiProxy_RegistryModuleTestConfigOutputReference) GetBooleanMapAttribu
 	_jsii_.Invoke(
 		r,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -334,7 +333,7 @@ func (r *jsiiProxy_RegistryModuleTestConfigOutputReference) GetListAttribute(ter
 	_jsii_.Invoke(
 		r,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -350,7 +349,7 @@ func (r *jsiiProxy_RegistryModuleTestConfigOutputReference) GetNumberAttribute(t
 	_jsii_.Invoke(
 		r,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -366,7 +365,7 @@ func (r *jsiiProxy_RegistryModuleTestConfigOutputReference) GetNumberListAttribu
 	_jsii_.Invoke(
 		r,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -382,7 +381,7 @@ func (r *jsiiProxy_RegistryModuleTestConfigOutputReference) GetNumberMapAttribut
 	_jsii_.Invoke(
 		r,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -398,7 +397,7 @@ func (r *jsiiProxy_RegistryModuleTestConfigOutputReference) GetStringAttribute(t
 	_jsii_.Invoke(
 		r,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -414,7 +413,7 @@ func (r *jsiiProxy_RegistryModuleTestConfigOutputReference) GetStringMapAttribut
 	_jsii_.Invoke(
 		r,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -443,7 +442,7 @@ func (r *jsiiProxy_RegistryModuleTestConfigOutputReference) InterpolationForAttr
 	_jsii_.Invoke(
 		r,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -458,16 +457,16 @@ func (r *jsiiProxy_RegistryModuleTestConfigOutputReference) ResetTestsEnabled() 
 	)
 }
 
-func (r *jsiiProxy_RegistryModuleTestConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (r *jsiiProxy_RegistryModuleTestConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := r.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		r,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -486,4 +485,3 @@ func (r *jsiiProxy_RegistryModuleTestConfigOutputReference) ToString() *string {
 
 	return returns
 }
-

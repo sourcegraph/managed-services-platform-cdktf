@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-tfe.workspaceSettings.WorkspaceSettings",
-		reflect.TypeOf((*WorkspaceSettings)(nil)).Elem(),
+		reflect.TypeFor[WorkspaceSettings](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -69,7 +69,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "workspaceId", GoGetter: "WorkspaceId"},
 			_jsii_.MemberProperty{JsiiProperty: "workspaceIdInput", GoGetter: "WorkspaceIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WorkspaceSettings{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -77,15 +77,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsConfig",
-		reflect.TypeOf((*WorkspaceSettingsConfig)(nil)).Elem(),
+		reflect.TypeFor[WorkspaceSettingsConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsOverwrites",
-		reflect.TypeOf((*WorkspaceSettingsOverwrites)(nil)).Elem(),
+		reflect.TypeFor[WorkspaceSettingsOverwrites](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsOverwritesList",
-		reflect.TypeOf((*WorkspaceSettingsOverwritesList)(nil)).Elem(),
+		reflect.TypeFor[WorkspaceSettingsOverwritesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -98,7 +98,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WorkspaceSettingsOverwritesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -106,7 +106,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsOverwritesOutputReference",
-		reflect.TypeOf((*WorkspaceSettingsOverwritesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[WorkspaceSettingsOverwritesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "agentPool", GoGetter: "AgentPool"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -132,7 +132,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_WorkspaceSettingsOverwritesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

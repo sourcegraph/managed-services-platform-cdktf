@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-tfe.variableSet.VariableSet",
-		reflect.TypeOf((*VariableSet)(nil)).Elem(),
+		reflect.TypeFor[VariableSet](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -76,7 +76,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "workspaceIds", GoGetter: "WorkspaceIds"},
 			_jsii_.MemberProperty{JsiiProperty: "workspaceIdsInput", GoGetter: "WorkspaceIdsInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VariableSet{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -84,6 +84,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-tfe.variableSet.VariableSetConfig",
-		reflect.TypeOf((*VariableSetConfig)(nil)).Elem(),
+		reflect.TypeFor[VariableSetConfig](),
 	)
 }

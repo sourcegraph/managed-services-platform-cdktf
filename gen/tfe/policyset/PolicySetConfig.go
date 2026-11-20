@@ -6,9 +6,9 @@ import (
 
 type PolicySetConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,17 +18,17 @@ type PolicySetConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/policy_set#name PolicySet#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// Whether the policy set is executed in the HCP Terraform agent. True by default for OPA policies.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/policy_set#agent_enabled PolicySet#agent_enabled}
-	AgentEnabled interface{} `field:"optional" json:"agentEnabled" yaml:"agentEnabled"`
+	AgentEnabled any `field:"optional" json:"agentEnabled" yaml:"agentEnabled"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/policy_set#description PolicySet#description}.
 	Description *string `field:"optional" json:"description" yaml:"description"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/policy_set#global PolicySet#global}.
-	Global interface{} `field:"optional" json:"global" yaml:"global"`
+	Global any `field:"optional" json:"global" yaml:"global"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/policy_set#id PolicySet#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -39,7 +39,7 @@ type PolicySetConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/policy_set#organization PolicySet#organization}.
 	Organization *string `field:"optional" json:"organization" yaml:"organization"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/policy_set#overridable PolicySet#overridable}.
-	Overridable interface{} `field:"optional" json:"overridable" yaml:"overridable"`
+	Overridable any `field:"optional" json:"overridable" yaml:"overridable"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/policy_set#policies_path PolicySet#policies_path}.
 	PoliciesPath *string `field:"optional" json:"policiesPath" yaml:"policiesPath"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/policy_set#policy_ids PolicySet#policy_ids}.
@@ -57,4 +57,3 @@ type PolicySetConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/policy_set#workspace_ids PolicySet#workspace_ids}.
 	WorkspaceIds *[]*string `field:"optional" json:"workspaceIds" yaml:"workspaceIds"`
 }
-

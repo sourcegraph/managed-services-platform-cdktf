@@ -98,7 +98,7 @@ func (n *jsiiProxy_NoCodeModuleVariableOptionsOutputReference) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_NoCodeModuleVariableOptionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NoCodeModuleVariableOptionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_NoCodeModuleVariableOptionsOutputReference) validateSetComple
 	return nil
 }
 
-func (j *jsiiProxy_NoCodeModuleVariableOptionsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_NoCodeModuleVariableOptionsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewNoCodeModuleVariableOptionsOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

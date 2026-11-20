@@ -15,23 +15,23 @@ type DataRetentionPolicy interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	DeleteOlderThan() DataRetentionPolicyDeleteOlderThanOutputReference
-	DeleteOlderThanInput() interface{}
+	DeleteOlderThanInput() any
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	DontDelete() DataRetentionPolicyDontDeleteOutputReference
-	DontDeleteInput() interface{}
+	DontDeleteInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -55,15 +55,15 @@ type DataRetentionPolicy interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	WorkspaceId() *string
@@ -73,9 +73,9 @@ type DataRetentionPolicy interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -93,7 +93,7 @@ type DataRetentionPolicy interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -105,7 +105,7 @@ type DataRetentionPolicy interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -120,17 +120,17 @@ type DataRetentionPolicy interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetWorkspaceId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataRetentionPolicy
@@ -148,8 +148,8 @@ func (j *jsiiProxy_DataRetentionPolicy) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_DataRetentionPolicy) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataRetentionPolicy) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -158,8 +158,8 @@ func (j *jsiiProxy_DataRetentionPolicy) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataRetentionPolicy) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataRetentionPolicy) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -168,8 +168,8 @@ func (j *jsiiProxy_DataRetentionPolicy) ConstructNodeMetadata() *map[string]inte
 	return returns
 }
 
-func (j *jsiiProxy_DataRetentionPolicy) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataRetentionPolicy) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -188,8 +188,8 @@ func (j *jsiiProxy_DataRetentionPolicy) DeleteOlderThan() DataRetentionPolicyDel
 	return returns
 }
 
-func (j *jsiiProxy_DataRetentionPolicy) DeleteOlderThanInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataRetentionPolicy) DeleteOlderThanInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"deleteOlderThanInput",
@@ -218,8 +218,8 @@ func (j *jsiiProxy_DataRetentionPolicy) DontDelete() DataRetentionPolicyDontDele
 	return returns
 }
 
-func (j *jsiiProxy_DataRetentionPolicy) DontDeleteInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataRetentionPolicy) DontDeleteInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"dontDeleteInput",
@@ -318,8 +318,8 @@ func (j *jsiiProxy_DataRetentionPolicy) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_DataRetentionPolicy) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_DataRetentionPolicy) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -328,8 +328,8 @@ func (j *jsiiProxy_DataRetentionPolicy) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataRetentionPolicy) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataRetentionPolicy) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -348,8 +348,8 @@ func (j *jsiiProxy_DataRetentionPolicy) TerraformGeneratorMetadata() *cdktf.Terr
 	return returns
 }
 
-func (j *jsiiProxy_DataRetentionPolicy) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataRetentionPolicy) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -388,7 +388,6 @@ func (j *jsiiProxy_DataRetentionPolicy) WorkspaceIdInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/tfe/0.66.0/docs/resources/data_retention_policy tfe_data_retention_policy} Resource.
 func NewDataRetentionPolicy(scope constructs.Construct, id *string, config *DataRetentionPolicyConfig) DataRetentionPolicy {
 	_init_.Initialize()
@@ -400,7 +399,7 @@ func NewDataRetentionPolicy(scope constructs.Construct, id *string, config *Data
 
 	_jsii_.Create(
 		"@cdktf/provider-tfe.dataRetentionPolicy.DataRetentionPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -413,12 +412,12 @@ func NewDataRetentionPolicy_Override(d DataRetentionPolicy, scope constructs.Con
 
 	_jsii_.Create(
 		"@cdktf/provider-tfe.dataRetentionPolicy.DataRetentionPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataRetentionPolicy)SetConnection(val interface{}) {
+func (j *jsiiProxy_DataRetentionPolicy) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -429,7 +428,7 @@ func (j *jsiiProxy_DataRetentionPolicy)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataRetentionPolicy)SetCount(val interface{}) {
+func (j *jsiiProxy_DataRetentionPolicy) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -440,7 +439,7 @@ func (j *jsiiProxy_DataRetentionPolicy)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataRetentionPolicy)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataRetentionPolicy) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -448,7 +447,7 @@ func (j *jsiiProxy_DataRetentionPolicy)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataRetentionPolicy)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataRetentionPolicy) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -456,7 +455,7 @@ func (j *jsiiProxy_DataRetentionPolicy)SetForEach(val cdktf.ITerraformIterator) 
 	)
 }
 
-func (j *jsiiProxy_DataRetentionPolicy)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataRetentionPolicy) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -467,7 +466,7 @@ func (j *jsiiProxy_DataRetentionPolicy)SetLifecycle(val *cdktf.TerraformResource
 	)
 }
 
-func (j *jsiiProxy_DataRetentionPolicy)SetOrganization(val *string) {
+func (j *jsiiProxy_DataRetentionPolicy) SetOrganization(val *string) {
 	if err := j.validateSetOrganizationParameters(val); err != nil {
 		panic(err)
 	}
@@ -478,7 +477,7 @@ func (j *jsiiProxy_DataRetentionPolicy)SetOrganization(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataRetentionPolicy)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataRetentionPolicy) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -486,7 +485,7 @@ func (j *jsiiProxy_DataRetentionPolicy)SetProvider(val cdktf.TerraformProvider) 
 	)
 }
 
-func (j *jsiiProxy_DataRetentionPolicy)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_DataRetentionPolicy) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -497,7 +496,7 @@ func (j *jsiiProxy_DataRetentionPolicy)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataRetentionPolicy)SetWorkspaceId(val *string) {
+func (j *jsiiProxy_DataRetentionPolicy) SetWorkspaceId(val *string) {
 	if err := j.validateSetWorkspaceIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -520,7 +519,7 @@ func DataRetentionPolicy_GenerateConfigForImport(scope constructs.Construct, imp
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-tfe.dataRetentionPolicy.DataRetentionPolicy",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -544,7 +543,7 @@ func DataRetentionPolicy_GenerateConfigForImport(scope constructs.Construct, imp
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataRetentionPolicy_IsConstruct(x interface{}) *bool {
+func DataRetentionPolicy_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataRetentionPolicy_IsConstructParameters(x); err != nil {
@@ -555,7 +554,7 @@ func DataRetentionPolicy_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-tfe.dataRetentionPolicy.DataRetentionPolicy",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -563,7 +562,7 @@ func DataRetentionPolicy_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataRetentionPolicy_IsTerraformElement(x interface{}) *bool {
+func DataRetentionPolicy_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataRetentionPolicy_IsTerraformElementParameters(x); err != nil {
@@ -574,7 +573,7 @@ func DataRetentionPolicy_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-tfe.dataRetentionPolicy.DataRetentionPolicy",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -582,7 +581,7 @@ func DataRetentionPolicy_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func DataRetentionPolicy_IsTerraformResource(x interface{}) *bool {
+func DataRetentionPolicy_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataRetentionPolicy_IsTerraformResourceParameters(x); err != nil {
@@ -593,7 +592,7 @@ func DataRetentionPolicy_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-tfe.dataRetentionPolicy.DataRetentionPolicy",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -618,31 +617,31 @@ func (d *jsiiProxy_DataRetentionPolicy) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (d *jsiiProxy_DataRetentionPolicy) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataRetentionPolicy) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataRetentionPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataRetentionPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -658,7 +657,7 @@ func (d *jsiiProxy_DataRetentionPolicy) GetBooleanAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -674,7 +673,7 @@ func (d *jsiiProxy_DataRetentionPolicy) GetBooleanMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -690,7 +689,7 @@ func (d *jsiiProxy_DataRetentionPolicy) GetListAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -706,7 +705,7 @@ func (d *jsiiProxy_DataRetentionPolicy) GetNumberAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -722,7 +721,7 @@ func (d *jsiiProxy_DataRetentionPolicy) GetNumberListAttribute(terraformAttribut
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -738,7 +737,7 @@ func (d *jsiiProxy_DataRetentionPolicy) GetNumberMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -754,7 +753,7 @@ func (d *jsiiProxy_DataRetentionPolicy) GetStringAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -770,15 +769,15 @@ func (d *jsiiProxy_DataRetentionPolicy) GetStringMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DataRetentionPolicy) HasResourceMove() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataRetentionPolicy) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -797,7 +796,7 @@ func (d *jsiiProxy_DataRetentionPolicy) ImportFrom(id *string, provider cdktf.Te
 	_jsii_.InvokeVoid(
 		d,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -810,7 +809,7 @@ func (d *jsiiProxy_DataRetentionPolicy) InterpolationForAttribute(terraformAttri
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -824,18 +823,18 @@ func (d *jsiiProxy_DataRetentionPolicy) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (d *jsiiProxy_DataRetentionPolicy) MoveTo(moveTarget *string, index interface{}) {
+func (d *jsiiProxy_DataRetentionPolicy) MoveTo(moveTarget *string, index any) {
 	if err := d.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -846,7 +845,7 @@ func (d *jsiiProxy_DataRetentionPolicy) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -857,7 +856,7 @@ func (d *jsiiProxy_DataRetentionPolicy) OverrideLogicalId(newLogicalId *string) 
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -868,7 +867,7 @@ func (d *jsiiProxy_DataRetentionPolicy) PutDeleteOlderThan(value *DataRetentionP
 	_jsii_.InvokeVoid(
 		d,
 		"putDeleteOlderThan",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -879,7 +878,7 @@ func (d *jsiiProxy_DataRetentionPolicy) PutDontDelete(value *DataRetentionPolicy
 	_jsii_.InvokeVoid(
 		d,
 		"putDontDelete",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -915,8 +914,8 @@ func (d *jsiiProxy_DataRetentionPolicy) ResetWorkspaceId() {
 	)
 }
 
-func (d *jsiiProxy_DataRetentionPolicy) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataRetentionPolicy) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -928,8 +927,8 @@ func (d *jsiiProxy_DataRetentionPolicy) SynthesizeAttributes() *map[string]inter
 	return returns
 }
 
-func (d *jsiiProxy_DataRetentionPolicy) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataRetentionPolicy) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -941,8 +940,8 @@ func (d *jsiiProxy_DataRetentionPolicy) SynthesizeHclAttributes() *map[string]in
 	return returns
 }
 
-func (d *jsiiProxy_DataRetentionPolicy) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataRetentionPolicy) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -954,8 +953,8 @@ func (d *jsiiProxy_DataRetentionPolicy) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataRetentionPolicy) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataRetentionPolicy) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -980,8 +979,8 @@ func (d *jsiiProxy_DataRetentionPolicy) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataRetentionPolicy) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataRetentionPolicy) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -992,4 +991,3 @@ func (d *jsiiProxy_DataRetentionPolicy) ToTerraform() interface{} {
 
 	return returns
 }
-

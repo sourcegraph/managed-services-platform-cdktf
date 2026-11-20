@@ -98,7 +98,7 @@ func (r *jsiiProxy_RegistryModuleTestConfigOutputReference) validateResolveParam
 	return nil
 }
 
-func (j *jsiiProxy_RegistryModuleTestConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_RegistryModuleTestConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_RegistryModuleTestConfigOutputReference) validateSetComplexOb
 	return nil
 }
 
-func (j *jsiiProxy_RegistryModuleTestConfigOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_RegistryModuleTestConfigOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -203,7 +203,7 @@ func (j *jsiiProxy_RegistryModuleTestConfigOutputReference) validateSetTerraform
 	return nil
 }
 
-func (j *jsiiProxy_RegistryModuleTestConfigOutputReference) validateSetTestsEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_RegistryModuleTestConfigOutputReference) validateSetTestsEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -242,4 +242,3 @@ func validateNewRegistryModuleTestConfigOutputReferenceParameters(terraformResou
 
 	return nil
 }
-

@@ -36,7 +36,7 @@ type WorkspaceSettingsOverwritesList interface {
 	Get(index *float64) WorkspaceSettingsOverwritesOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -99,7 +99,6 @@ func (j *jsiiProxy_WorkspaceSettingsOverwritesList) WrapsSet() *bool {
 	return returns
 }
 
-
 func NewWorkspaceSettingsOverwritesList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WorkspaceSettingsOverwritesList {
 	_init_.Initialize()
 
@@ -110,7 +109,7 @@ func NewWorkspaceSettingsOverwritesList(terraformResource cdktf.IInterpolatingPa
 
 	_jsii_.Create(
 		"@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsOverwritesList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -122,12 +121,12 @@ func NewWorkspaceSettingsOverwritesList_Override(w WorkspaceSettingsOverwritesLi
 
 	_jsii_.Create(
 		"@cdktf/provider-tfe.workspaceSettings.WorkspaceSettingsOverwritesList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		w,
 	)
 }
 
-func (j *jsiiProxy_WorkspaceSettingsOverwritesList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_WorkspaceSettingsOverwritesList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -138,7 +137,7 @@ func (j *jsiiProxy_WorkspaceSettingsOverwritesList)SetTerraformAttribute(val *st
 	)
 }
 
-func (j *jsiiProxy_WorkspaceSettingsOverwritesList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_WorkspaceSettingsOverwritesList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -149,7 +148,7 @@ func (j *jsiiProxy_WorkspaceSettingsOverwritesList)SetTerraformResource(val cdkt
 	)
 }
 
-func (j *jsiiProxy_WorkspaceSettingsOverwritesList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_WorkspaceSettingsOverwritesList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -169,7 +168,7 @@ func (w *jsiiProxy_WorkspaceSettingsOverwritesList) AllWithMapKey(mapKeyAttribut
 	_jsii_.Invoke(
 		w,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -198,23 +197,23 @@ func (w *jsiiProxy_WorkspaceSettingsOverwritesList) Get(index *float64) Workspac
 	_jsii_.Invoke(
 		w,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (w *jsiiProxy_WorkspaceSettingsOverwritesList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (w *jsiiProxy_WorkspaceSettingsOverwritesList) Resolve(_context cdktf.IResolveContext) any {
 	if err := w.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		w,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -233,4 +232,3 @@ func (w *jsiiProxy_WorkspaceSettingsOverwritesList) ToString() *string {
 
 	return returns
 }
-
